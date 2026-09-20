@@ -13,19 +13,28 @@ export function Login({ onClose }: { onClose?: () => void }) {
   const [nickname, setNickname] = useState('')
   const [avatar, setAvatar] = useState(DEFAULT_AVATAR)
   const [err, setErr] = useState('')
+  const [info, setInfo] = useState('')
   const [busy, setBusy] = useState(false)
 
   async function submit() {
     setBusy(true)
     setErr('')
+    setInfo('')
     try {
       if (mode === 'in') {
         await signIn(email, password)
+        onClose?.()
       } else {
         if (!nickname.trim()) throw new Error('Придумай ник')
-        await signUp({ email, password, nickname: nickname.trim(), avatar })
+        const { needsConfirmation } = await signUp({ email, password, nickname: nickname.trim(), avatar })
+        if (needsConfirmation) {
+          // Account exists but email must be confirmed first — don't fake a login.
+          setMode('in')
+          setInfo('Аккаунт создан! Подтверди email по ссылке из письма, затем войди здесь.')
+          return
+        }
+        onClose?.()
       }
-      onClose?.()
     } catch (e: any) {
       setErr(e.message ?? 'Что-то пошло не так')
     } finally {
@@ -67,6 +76,7 @@ export function Login({ onClose }: { onClose?: () => void }) {
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" className={`${inputCls} w-full`} />
         <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="пароль" className={`${inputCls} w-full`} onKeyDown={(e) => e.key === 'Enter' && submit()} />
         {err && <p className="text-sm text-warn">{err}</p>}
+        {info && <p className="rounded-xl bg-lilac/70 p-3 text-sm text-plum-deep">{info}</p>}
         <Button onClick={submit} disabled={busy || !email || !password} className="w-full">
           {busy ? '…' : mode === 'in' ? 'Войти' : 'Создать аккаунт'}
         </Button>
