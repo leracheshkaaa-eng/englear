@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { supabase } from './supabase'
-import { getProfile, getSettings, saveSettings, type Profile, type Role, type Settings } from './api'
+import { claimAdmin, getProfile, getSettings, saveSettings, type Profile, type Role, type Settings } from './api'
 
 type AuthState = {
   loading: boolean
@@ -23,7 +23,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [userId, setUserId] = useState<string | null>(null)
   const [email, setEmail] = useState<string | null>(null)
   const [profile, setProfile] = useState<Profile | null>(null)
-  const [settings, setSettings] = useState<Settings>({ translations_enabled: true, translation_mode: 'on' })
+  const [settings, setSettings] = useState<Settings>({ translations_enabled: true, translation_mode: 'on', english_level: 'A1' })
 
   async function loadFor(uid: string | null, mail: string | null) {
     setUserId(uid)
@@ -36,6 +36,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         await new Promise((r) => setTimeout(r, 500))
         p = await getProfile(uid)
       }
+      // Admin self-heal: if this account's email matches the configured
+      // ADMIN_EMAIL, the server promotes it to admin (safe, checked server-side).
+      if (!p || p.role !== 'admin') {
+        const promoted = await claimAdmin().catch(() => false)
+        if (promoted) p = (await getProfile(uid)) ?? p
+      }
       // A valid session must never be treated as a guest: fall back to a minimal
       // profile so the user stays authenticated even if the read is delayed.
       setProfile(
@@ -44,7 +50,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setSettings(await getSettings(uid))
     } else {
       setProfile(null)
-      setSettings({ translations_enabled: true, translation_mode: 'on' })
+      setSettings({ translations_enabled: true, translation_mode: 'on', english_level: 'A1' })
     }
   }
 

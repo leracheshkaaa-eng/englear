@@ -43,17 +43,24 @@ export async function requestTeacher(id: string) {
   if (error) throw error
 }
 
-export type Settings = { translations_enabled: boolean; translation_mode: string }
+export type Settings = { translations_enabled: boolean; translation_mode: string; english_level: string }
+const DEFAULT_SETTINGS: Settings = { translations_enabled: true, translation_mode: 'on', english_level: 'A1' }
 export async function getSettings(userId: string): Promise<Settings> {
   const { data } = await supabase
     .from('user_settings')
-    .select('translations_enabled, translation_mode')
+    .select('translations_enabled, translation_mode, english_level')
     .eq('user_id', userId)
     .maybeSingle()
-  return data ?? { translations_enabled: true, translation_mode: 'on' }
+  return { ...DEFAULT_SETTINGS, ...(data ?? {}) }
 }
 export async function saveSettings(userId: string, s: Partial<Settings>) {
   await supabase.from('user_settings').upsert({ user_id: userId, ...s })
+}
+
+/** Self-heal admin: promotes the caller iff their JWT email == admin_email(). */
+export async function claimAdmin(): Promise<boolean> {
+  const { data } = await supabase.rpc('claim_admin')
+  return data === true
 }
 
 /* ---------- lessons + exercises ---------- */
@@ -159,6 +166,7 @@ export async function importLessons(authorId: string, lessons: NewLesson[]): Pro
 
 /* ---------- dictionary ---------- */
 
+export type WordType = 'word' | 'collocation' | 'phrasal_verb'
 export type Word = {
   id: string
   word: string
@@ -167,10 +175,79 @@ export type Word = {
   example: string
   pronunciation: string
   cefr_level: string
+  definition: string
+  examples: string[]
+  meanings: { definition?: string; translation?: string; part_of_speech?: string }[]
+  topic: string
+  related: string[]
+  word_type: WordType
+  ielts_category: string | null
+  updated_at?: string
 }
 
 export async function listWords(): Promise<Word[]> {
   const { data } = await supabase.from('dictionary_words').select('*').order('word')
+  return (data ?? []) as Word[]
+}
+
+export async function getWord(id: string): Promise<Word | null> {
+  const { data } = await supabase.from('dictionary_words').select('*').eq('id', id).maybeSingle()
+  return (data as Word) ?? null
+}
+
+export type WordFilters = {
+  q?: string
+  levels?: string[]
+  topic?: string
+  part_of_speech?: string
+  word_type?: WordType
+  ielts_category?: string
+  sort?: 'word' | 'cefr'
+  limit?: number
+}
+
+/** Search the dictionary in English OR the user's language (word + translation). */
+export async function searchWords(f: WordFilters = {}): Promise<Word[]> {
+  let query = supabase.from('dictionary_words').select('*')
+  if (f.q && f.q.trim()) {
+    const term = `%${f.q.trim()}%`
+    query = query.or(`word.ilike.${term},translation.ilike.${term},definition.ilike.${term}`)
+  }
+  if (f.levels?.length) query = query.in('cefr_level', f.levels)
+  if (f.topic) query = query.eq('topic', f.topic)
+  if (f.part_of_speech) query = query.eq('part_of_speech', f.part_of_speech)
+  if (f.word_type) query = query.eq('word_type', f.word_type)
+  if (f.ielts_category) query = query.eq('ielts_category', f.ielts_category)
+  query = query.order(f.sort === 'cefr' ? 'cefr_level' : 'word').limit(f.limit ?? 300)
+  const { data, error } = await query
+  if (error) throw error
+  return (data ?? []) as Word[]
+}
+
+/** Look up ONE word by its exact spelling (used by quick flashcard creation). */
+export async function findWordByText(text: string): Promise<Word | null> {
+  const { data } = await supabase
+    .from('dictionary_words')
+    .select('*')
+    .ilike('word', text.trim())
+    .limit(1)
+  return ((data ?? [])[0] as Word) ?? null
+}
+
+/** All dictionary words matching a topic + levels + type, ordered stably. */
+export async function dictionaryPool(f: {
+  topic?: string
+  levels?: string[]
+  word_type?: WordType
+  ielts_category?: string
+}): Promise<Word[]> {
+  let query = supabase.from('dictionary_words').select('*')
+  if (f.topic) query = query.eq('topic', f.topic)
+  if (f.word_type) query = query.eq('word_type', f.word_type)
+  if (f.ielts_category) query = query.eq('ielts_category', f.ielts_category)
+  if (f.levels?.length) query = query.in('cefr_level', f.levels)
+  const { data, error } = await query.order('word').limit(2000)
+  if (error) throw error
   return (data ?? []) as Word[]
 }
 
@@ -388,6 +465,45 @@ export async function cardProgress(studentId: string) {
     .select('flashcard_id, state, repetitions, correct_count, incorrect_count')
     .eq('student_id', studentId)
   return data ?? []
+}
+
+/* ---------- dictionary-word progress (library flashcards) ----------
+   Auto-generated library sets are built from dictionary words (not physical
+   flashcards rows), so their progress lives in student_word_progress. */
+
+export type WordProgress = { word_id: string; status: 'learning' | 'known' | 'weak'; last_seen?: string }
+
+export async function wordProgress(studentId: string): Promise<WordProgress[]> {
+  const { data } = await supabase
+    .from('student_word_progress')
+    .select('word_id, status, last_seen')
+    .eq('student_id', studentId)
+  return (data ?? []) as WordProgress[]
+}
+
+export async function recordWord(studentId: string, wordId: string, known: boolean) {
+  await supabase.from('student_word_progress').upsert(
+    {
+      student_id: studentId,
+      word_id: wordId,
+      status: known ? 'known' : 'weak',
+      last_seen: new Date().toISOString(),
+    },
+    { onConflict: 'student_id,word_id' },
+  )
+}
+
+/** Add an existing dictionary word to one of the user's own sets (no duplicate word). */
+export async function addWordToSet(setId: string, w: Word, position: number) {
+  const { error } = await supabase.from('flashcards').insert({
+    set_id: setId,
+    word_id: w.id,
+    front: w.word,
+    back: w.translation,
+    example: (w.examples?.[0] ?? w.example ?? ''),
+    position,
+  })
+  if (error) throw error
 }
 
 /* ---------- admin ----------
