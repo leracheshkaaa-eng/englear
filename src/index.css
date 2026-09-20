@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --color-sand: #f3ebdd;
+  --color-paper: #fbf7f0;
+  --color-lilac: #ece4fa;
+  --color-plum: #5b3fa0;
+  --color-plum-deep: #3d2a70;
+  --color-lavender: #9a86c9;
+  --color-ink: #2c2438;
+  --color-mute: #736b82;
+  --color-line: #e4dccc;
+  --color-good: #3f8f6b;
+  --color-warn: #b4552f;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-sand);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-lilac);
+  color: var(--color-plum-deep);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: rgba(91, 63, 160, 0.3) transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 999px;
+  border: 3px solid var(--color-sand);
+}
+*:hover::-webkit-scrollbar-thumb {
+  background: rgba(91, 63, 160, 0.3);
+}

@@ -1,0 +1,10 @@
+{
+  "description": "This user-friendly platform enables families to practice English together, featuring easy access to lessons and a teacher mode for lesson management.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
