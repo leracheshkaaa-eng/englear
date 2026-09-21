@@ -91,18 +91,38 @@ alter table public.dictionary_words add column if not exists related jsonb not n
 alter table public.dictionary_words add column if not exists word_type text not null default 'word';
 alter table public.dictionary_words add column if not exists ielts_category text;
 
-do $$ begin
-  alter table public.dictionary_words
-    add constraint dictionary_words_word_type_chk
-    check (word_type in ('word','collocation','phrasal_verb'));
-exception when duplicate_object then null; end $$;
+-- word_type allow-list. Drop-then-add (instead of "add ... exception when
+-- duplicate_object") so a rerun always reasserts the CURRENT allow-list,
+-- which includes 'verb' (used by academic-verb seed rows like "analyse").
+alter table public.dictionary_words drop constraint if exists dictionary_words_word_type_chk;
+alter table public.dictionary_words
+  add constraint dictionary_words_word_type_chk
+  check (word_type in ('word','collocation','phrasal_verb','verb'));
 
 create index if not exists idx_dict_topic     on public.dictionary_words(topic);
 create index if not exists idx_dict_cefr      on public.dictionary_words(cefr_level);
 create index if not exists idx_dict_wordtype  on public.dictionary_words(word_type);
 create index if not exists idx_dict_ielts     on public.dictionary_words(ielts_category);
-create index if not exists idx_dict_word_trgm on public.dictionary_words using gin (word gin_trgm_ops);
-create index if not exists idx_dict_tr_trgm   on public.dictionary_words using gin (translation gin_trgm_ops);
+
+-- Trigram indexes for fast ILIKE search. pg_trgm lives in the "extensions"
+-- schema on Supabase (not on the SQL Editor search_path), so the gin_trgm_ops
+-- operator class must be schema-qualified. Detect the real schema at runtime
+-- so this works no matter where the extension was installed.
+do $$
+declare ext_schema text;
+begin
+  select n.nspname into ext_schema
+  from pg_extension e join pg_namespace n on n.oid = e.extnamespace
+  where e.extname = 'pg_trgm';
+  if ext_schema is not null then
+    execute format(
+      'create index if not exists idx_dict_word_trgm on public.dictionary_words using gin (word %I.gin_trgm_ops)',
+      ext_schema);
+    execute format(
+      'create index if not exists idx_dict_tr_trgm on public.dictionary_words using gin (translation %I.gin_trgm_ops)',
+      ext_schema);
+  end if;
+end $$;
 
 -- Dictionary is GLOBAL, admin-managed. Teachers may NOT edit it.
 drop policy if exists dict_insert on public.dictionary_words;

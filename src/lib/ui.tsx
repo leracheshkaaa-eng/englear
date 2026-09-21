@@ -43,14 +43,31 @@ export const inputCls =
   'rounded-xl border border-line bg-paper px-3 py-2 font-body text-ink outline-none focus:border-plum focus:ring-4 focus:ring-plum/15'
 
 export function SpeakerButton({ text, className = '' }: { text: string; className?: string }) {
+  const [playing, setPlaying] = useState(false)
+
+  function play(e: React.MouseEvent) {
+    // Audio only: never bubble to a parent card's flip/click handler.
+    e.stopPropagation()
+    e.preventDefault()
+    setPlaying(true)
+    speak(text)
+    // SpeechSynthesis has no reliable per-utterance end event across browsers;
+    // clear the feedback after a short, length-based window.
+    const ms = Math.min(4000, 700 + text.length * 60)
+    window.setTimeout(() => setPlaying(false), ms)
+  }
+
   return (
     <button
       type="button"
-      onClick={() => speak(text)}
+      onClick={play}
       aria-label={`Прослушать: ${text}`}
-      className={`inline-grid h-8 w-8 place-items-center rounded-full bg-lilac text-plum-deep transition-colors hover:bg-lavender/40 ${className}`}
+      aria-pressed={playing}
+      className={`inline-grid h-8 w-8 place-items-center rounded-full transition-colors ${
+        playing ? 'bg-plum text-paper ring-4 ring-plum/20' : 'bg-lilac text-plum-deep hover:bg-lavender/40'
+      } ${className}`}
     >
-      🔊
+      <span className={playing ? 'animate-pulse' : ''}>🔊</span>
     </button>
   )
 }
