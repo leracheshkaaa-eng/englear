@@ -2,13 +2,24 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Badge, Button, SpeakerButton, inputCls } from '../lib/ui'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
-import type { Flashcard, FlashcardSet, Word, WordType } from '../lib/api'
+import type { Flashcard, FlashcardSet, SetProgress, SetRef, Word, WordType } from '../lib/api'
 import { CEFR_LEVELS, IELTS_CATEGORIES, SET_SIZES, TOPICS } from '../lib/config'
+import { evaluate, sameResponse, type Exercise, type Response } from '../lib/exercises'
+import { generatePractice, type StudyItem } from '../lib/practice'
+import { ExerciseView } from './lessons'
 
 type Tab = 'library' | 'mine'
 
-export function Flashcards() {
+/** `target` opens a set straight from the Progress page ("Continue"). */
+export function Flashcards({ target, onTargetDone }: { target?: SetProgress | null; onTargetDone?: () => void }) {
   const [tab, setTab] = useState<Tab>('library')
+  if (target) {
+    return (
+      <section className="mx-auto max-w-5xl px-6 pb-24">
+        <ProgressStudy progress={target} onBack={() => onTargetDone?.()} />
+      </section>
+    )
+  }
   return (
     <section className="mx-auto max-w-5xl px-6 pb-24">
       <div className="mb-6 flex items-center justify-between">
@@ -102,10 +113,13 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
   const [size, setSize] = useState<number>(20)
   const [pool, setPool] = useState<Word[]>([])
   const [known, setKnown] = useState<Set<string>>(new Set())
-  const [playing, setPlaying] = useState<Word[] | null>(null)
+  const [setProgress, setSetProgress] = useState<Record<string, SetProgress>>({})
+  const [playing, setPlaying] = useState<number | null>(null)
   const [loading, setLoading] = useState(true)
 
   const title = selection.kind === 'type' ? selection.label : selection.value
+  // identifies "Set N" of this selection; its word list is snapshotted on first open
+  const keyFor = (i: number) => `${selection.kind}:${selection.value}|${[...levels].sort().join(',')}|${size}|${i}`
 
   async function loadPool() {
     setLoading(true)
@@ -118,8 +132,9 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
           : { word_type: selection.value, levels: lv }
     setPool(await api.dictionaryPool(filter))
     if (userId) {
-      const wp = await api.wordProgress(userId)
+      const [wp, sp] = await Promise.all([api.wordProgress(userId), api.mySetProgress(userId).catch(() => [])])
       setKnown(new Set(wp.filter((w) => w.status === 'known').map((w) => w.word_id)))
+      setSetProgress(Object.fromEntries(sp.filter((p) => p.library_key).map((p) => [p.library_key!, p])))
     }
     setLoading(false)
   }
@@ -138,10 +153,17 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
     setLevels((prev) => (prev.includes(l) ? prev.filter((x) => x !== l) : [...prev, l]))
   }
 
-  if (playing) {
+  if (playing !== null) {
+    const key = keyFor(playing)
+    const saved = setProgress[key]
+    const fresh = sets[playing] ?? []
     return (
-      <WordSetPlayer
-        words={playing}
+      <StudyPlayer
+        title={`${title} · Set ${playing + 1}`}
+        sref={{ libraryKey: key }}
+        itemKind="word"
+        // a started set keeps the words it was started with, even if the dictionary changed
+        loadItems={async () => (saved ? await api.wordsByIds(saved.items) : fresh).map(wordToItem)}
         onBack={() => {
           setPlaying(null)
           loadPool()
@@ -217,18 +239,20 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
               const complete = done === s.length
               const locked = firstIncomplete !== -1 && i > firstIncomplete
               const status = complete ? 'done' : i === firstIncomplete ? 'current' : locked ? 'locked' : 'open'
+              const sp = setProgress[keyFor(i)]
               return (
                 <button
                   key={i}
-                  disabled={locked}
-                  onClick={() => setPlaying(s)}
+                  disabled={locked && !sp}
+                  onClick={() => setPlaying(i)}
                   className={`flex items-center justify-between rounded-2xl border p-4 text-left transition-colors ${
-                    locked ? 'cursor-not-allowed border-line bg-paper/60 opacity-50' : 'border-line bg-paper hover:border-plum'
+                    locked && !sp ? 'cursor-not-allowed border-line bg-paper/60 opacity-50' : 'border-line bg-paper hover:border-plum'
                   }`}
                 >
                   <div>
                     <p className="font-body font-semibold">Set {i + 1}</p>
                     <p className="text-xs text-mute">{done}/{s.length} learned</p>
+                    {sp && <p className="text-xs font-semibold text-plum">{SET_STATUS_LABEL[sp.status]}</p>}
                   </div>
                   {status === 'done' && <Badge>✓ done</Badge>}
                   {status === 'current' && <span className="text-sm font-semibold text-plum">In progress →</span>}
@@ -244,86 +268,504 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
   )
 }
 
-/* ---------- player over dictionary words (progress -> student_word_progress) ---------- */
+/* ============================================================
+   STUDY — one player for every kind of set (library, own, assigned)
+   with saved progress, rounds, completion, practice and review.
+   ============================================================ */
 
-function WordSetPlayer({ words, onBack }: { words: Word[]; onBack: () => void }) {
+export const SET_STATUS_LABEL: Record<api.SetProgressStatus, string> = {
+  in_progress: 'В процессе',
+  practice_available: 'Карточки пройдены · доступна практика',
+  completed: 'Завершён',
+}
+
+const wordToItem = (w: Word): StudyItem => ({
+  id: w.id,
+  front: w.word,
+  back: w.translation,
+  pronunciation: w.pronunciation,
+  definition: w.definition,
+  example: w.examples?.[0] ?? w.example,
+  cefr: w.cefr_level,
+})
+
+/** Cards of an own/teacher set; cards made from a dictionary word get its extra data. */
+async function loadSetItems(setId: string): Promise<StudyItem[]> {
+  const cards = await api.listCards(setId)
+  const words = await api.wordsByIds(cards.map((c) => c.word_id).filter((id): id is string => !!id))
+  const byId = new Map(words.map((w) => [w.id, w]))
+  return cards.map((c: Flashcard) => {
+    const base: StudyItem = { id: c.id, front: c.front, back: c.back, example: c.example }
+    const w = c.word_id ? byId.get(c.word_id) : undefined
+    return w
+      ? { ...base, pronunciation: w.pronunciation, definition: w.definition, cefr: w.cefr_level, example: base.example || w.examples?.[0] || w.example }
+      : base
+  })
+}
+
+/** Opens a set from its saved progress (Progress page → Continue). */
+function ProgressStudy({ progress, onBack }: { progress: SetProgress; onBack: () => void }) {
+  if (progress.set_id) {
+    const setId = progress.set_id
+    return <StudyPlayer title={progress.title} sref={{ setId }} itemKind="card" loadItems={() => loadSetItems(setId)} onBack={onBack} />
+  }
+  return (
+    <StudyPlayer
+      title={progress.title}
+      sref={{ libraryKey: progress.library_key! }}
+      itemKind="word"
+      loadItems={() => api.wordsByIds(progress.items).then((ws) => ws.map(wordToItem))}
+      onBack={onBack}
+    />
+  )
+}
+
+/** Keep saved progress in step with the set's current cards (cards may be added/removed). */
+function reconcile(p: SetProgress, list: StudyItem[]): Partial<SetProgress> | null {
+  const ids = list.map((i) => i.id)
+  if (ids.length === p.items.length && ids.every((id, k) => p.items[k] === id)) return null
+  const idSet = new Set(ids)
+  const statuses = Object.fromEntries(Object.entries(p.statuses).filter(([id]) => idSet.has(id)))
+  const current = p.queue[p.position]
+  const added = ids.filter((id) => !p.items.includes(id))
+  let queue = [...p.queue.filter((id) => idSet.has(id)), ...added]
+  let position = current && idSet.has(current) ? queue.indexOf(current) : Math.min(p.position, Math.max(queue.length - 1, 0))
+  const known = ids.filter((id) => statuses[id] === 'known').length
+  let status = p.status
+  if (known < ids.length && (status !== 'in_progress' || queue.length === 0)) {
+    // new cards in a finished set: study the ones not known yet
+    status = 'in_progress'
+    queue = ids.filter((id) => statuses[id] !== 'known')
+    position = 0
+  }
+  return { items: ids, statuses, queue, position, known_count: known, total_count: ids.length, status }
+}
+
+type StudyMode = 'loading' | 'study' | 'round' | 'done' | 'practice' | 'review' | 'empty' | 'error'
+
+function StudyPlayer({
+  title,
+  sref,
+  itemKind,
+  loadItems,
+  onBack,
+}: {
+  title: string
+  sref: SetRef
+  itemKind: 'card' | 'word'
+  loadItems: () => Promise<StudyItem[]>
+  onBack: () => void
+}) {
   const { userId } = useAuth()
-  const [i, setI] = useState(0)
+  const [items, setItems] = useState<StudyItem[]>([])
+  const [p, setP] = useState<SetProgress | null>(null)
+  const [mode, setMode] = useState<StudyMode>('loading')
   const [flipped, setFlipped] = useState(false)
-  const [dragX, setDragX] = useState(0)
-  const startX = useRef<number | null>(null)
-  const [done, setDone] = useState(false)
-  const [stats, setStats] = useState({ known: 0, unknown: 0 })
+  const [justFinished, setJustFinished] = useState(false)
+  const [reviewIndex, setReviewIndex] = useState(0)
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState('')
 
-  const w = words[i]
+  useEffect(() => {
+    let alive = true
+    ;(async () => {
+      const list = await loadItems()
+      if (!alive) return
+      if (!userId) {
+        setError('Войдите, чтобы проходить наборы и сохранять прогресс.')
+        return setMode('error')
+      }
+      let prog = (await api.getSetProgress(userId, sref)) ?? (await api.startSetProgress(userId, sref, title, itemKind, list.map((i) => i.id)))
+      const patch = reconcile(prog, list)
+      if (patch) {
+        await api.saveSetProgress(prog.id, patch)
+        prog = { ...prog, ...patch }
+      }
+      if (!alive) return
+      setItems(list)
+      setP(prog)
+      if (!list.length) setMode('empty')
+      else setMode(prog.status === 'in_progress' ? 'study' : 'done')
+    })().catch(() => {
+      if (!alive) return
+      setError('Не удалось загрузить набор. Проверьте интернет и откройте его ещё раз.')
+      setMode('error')
+    })
+    return () => {
+      alive = false
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
-  async function answer(knows: boolean) {
-    if (!w) return
-    if (userId) await api.recordWord(userId, w.id, knows).catch(() => {})
-    setStats((s) => ({ known: s.known + (knows ? 1 : 0), unknown: s.unknown + (knows ? 0 : 1) }))
+  const byId = useMemo(() => new Map(items.map((i) => [i.id, i])), [items])
+  const current = p ? byId.get(p.queue[p.position]) : undefined
+
+  async function save(patch: Partial<SetProgress>) {
+    if (!p) return
+    await api.saveSetProgress(p.id, patch)
+    setP({ ...p, ...patch })
+  }
+
+  /** Global per-card / per-word progress (the "Слов знаю" statistics). */
+  function recordGlobal(item: StudyItem, known: boolean) {
+    return itemKind === 'card' ? api.recordCard(item.id, known) : api.recordWord(userId!, item.id, known)
+  }
+
+  async function answer(known: boolean) {
+    if (!p || !current || busy) return
+    setBusy(true)
+    setError('')
+    const statuses: SetProgress['statuses'] = { ...p.statuses, [current.id]: known ? 'known' : 'review' }
+    const known_count = p.items.filter((id) => statuses[id] === 'known').length
+    let patch: Partial<SetProgress> = { statuses, known_count }
+    let next: StudyMode = 'study'
+    if (p.position + 1 < p.queue.length) {
+      patch.position = p.position + 1
+    } else {
+      const remaining = p.items.filter((id) => statuses[id] !== 'known')
+      if (remaining.length === 0) {
+        // every card marked "I know it": the set is passed
+        patch = {
+          ...patch,
+          status: 'practice_available',
+          flashcards_completed_at: new Date().toISOString(),
+          practice: generatePractice(items),
+          queue: [],
+          position: 0,
+        }
+        next = 'done'
+      } else {
+        patch = { ...patch, queue: remaining, position: 0, round: p.round + 1 }
+        next = 'round'
+      }
+    }
+    try {
+      await save(patch)
+      await recordGlobal(current, known).catch(() => {}) // statistics only; the set progress is saved
+      setFlipped(false)
+      if (next === 'done') setJustFinished(true)
+      setMode(next)
+    } catch {
+      setError('Не удалось сохранить ответ. Проверьте интернет и попробуйте ещё раз.')
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  async function startPractice() {
+    if (!p) return
+    // a retake after completion gets fresh exercises
+    const practice = p.practice?.length && p.status !== 'completed' ? p.practice : generatePractice(items)
+    try {
+      if (practice !== p.practice) await save({ practice })
+      setMode('practice')
+    } catch {
+      setError('Не удалось подготовить практику. Попробуйте ещё раз.')
+    }
+  }
+
+  async function finishPractice(correct: number, total: number) {
+    try {
+      await save({ status: 'completed', practice_correct: correct, practice_total: total, practice_completed_at: new Date().toISOString() })
+      setJustFinished(false)
+      setMode('done')
+    } catch {
+      setError('Не удалось сохранить результат практики. Попробуйте ещё раз.')
+    }
+  }
+
+  async function reviewAnswer(known: boolean) {
+    const item = items[reviewIndex]
+    if (!item || busy) return
+    setBusy(true)
+    await recordGlobal(item, known).catch(() => {})
+    setBusy(false)
     setFlipped(false)
-    setDragX(0)
-    if (i + 1 >= words.length) setDone(true)
-    else setI((v) => v + 1)
+    if (reviewIndex + 1 >= items.length) setMode('done')
+    else setReviewIndex(reviewIndex + 1)
   }
 
-  function onUp() {
-    if (startX.current === null) return
-    if (dragX > 100) answer(true)
-    else if (dragX < -100) answer(false)
-    else setDragX(0)
-    startX.current = null
-  }
+  const back = (
+    <button onClick={onBack} className="mb-4 font-body text-sm text-mute hover:text-ink">
+      ← Назад к наборам
+    </button>
+  )
 
-  if (done) {
+  if (mode === 'loading') return <div className="mx-auto max-w-md pb-24">{back}<p className="text-mute">Загрузка…</p></div>
+  if (mode === 'error' || !p) return <div className="mx-auto max-w-md pb-24">{back}<p className="text-warn">{error}</p></div>
+  if (mode === 'empty') return <div className="mx-auto max-w-md pb-24">{back}<p className="text-mute">В этом наборе пока нет карточек.</p></div>
+
+  const pct = p.total_count ? Math.round((p.known_count / p.total_count) * 100) : 0
+  const header = (
+    <>
+      {back}
+      <h3 className="font-display text-2xl font-semibold">{title}</h3>
+      <p className="mt-1 text-sm text-mute">
+        Знаю {p.known_count} / {p.total_count} слов · {SET_STATUS_LABEL[p.status]}
+      </p>
+      <div className="mt-2 mb-5 h-2 w-full overflow-hidden rounded-full bg-lilac">
+        <div className="h-full rounded-full bg-plum transition-all" style={{ width: `${pct}%` }} />
+      </div>
+    </>
+  )
+
+  if (mode === 'practice') {
     return (
-      <div className="mx-auto max-w-md pb-24 text-center">
-        <button onClick={onBack} className="mb-4 block font-body text-sm text-mute hover:text-ink">← Back to sets</button>
-        <h3 className="font-display text-3xl font-semibold">Set complete!</h3>
-        <p className="mt-4 text-lg">
-          Known: <b className="text-[var(--color-good)]">{stats.known}</b> · Review: <b className="text-warn">{stats.unknown}</b>
-        </p>
-        <div className="mt-6"><Button onClick={onBack}>Continue</Button></div>
+      <div className="mx-auto max-w-2xl pb-24">
+        {header}
+        <PracticePlayer exercises={p.practice ?? []} onFinish={finishPractice} onCancel={() => setMode('done')} />
+        {error && <p className="mt-3 text-sm text-warn">{error}</p>}
       </div>
     )
   }
 
-  if (!w) return null
+  if (mode === 'round') {
+    return (
+      <div className="mx-auto max-w-md pb-24 text-center">
+        {header}
+        <h3 className="font-display text-2xl font-semibold">Круг {p.round - 1} пройден</h3>
+        <p className="mt-3 text-mute">
+          Осталось повторить: <b className="text-ink">{p.queue.length}</b> {p.queue.length === 1 ? 'карточку' : 'карточки'}. Набор будет пройден, когда
+          вы отметите «I know it» для каждого слова.
+        </p>
+        <div className="mt-6 flex justify-center gap-3">
+          <Button onClick={() => setMode('study')}>Продолжить</Button>
+          <Button variant="ghost" onClick={onBack}>Позже</Button>
+        </div>
+      </div>
+    )
+  }
+
+  if (mode === 'done') {
+    const practiceCount = p.practice?.length ?? 0
+    return (
+      <div className="mx-auto max-w-md pb-24 text-center">
+        {header}
+        <h3 className="font-display text-3xl font-semibold">{justFinished ? 'Набор пройден! 🎉' : 'Набор пройден'}</h3>
+        <p className="mt-2 text-mute">Все {p.total_count} слов отмечены как знакомые.</p>
+
+        {p.status === 'practice_available' && (
+          <div className="mt-6 rounded-2xl border border-plum/30 bg-lilac/50 p-5">
+            <p className="font-body font-semibold">Закрепим?</p>
+            <p className="mt-1 text-sm text-mute">
+              Короткая практика{practiceCount ? ` из ${practiceCount} заданий` : ''} по словам этого набора — проверит, что вы узнаёте и
+              используете их, а не только помните перевод.
+            </p>
+            <div className="mt-4 flex justify-center gap-3">
+              <Button onClick={startPractice}>Пройти практику</Button>
+              <Button variant="ghost" onClick={onBack}>Позже</Button>
+            </div>
+          </div>
+        )}
+        {p.status === 'completed' && (
+          <div className="mt-6 rounded-2xl border border-line bg-paper p-5">
+            <p className="font-body">
+              Практика: <b className="text-[var(--color-good)]">{p.practice_correct ?? 0} / {p.practice_total ?? 0}</b>
+            </p>
+            <div className="mt-3">
+              <Button variant="soft" onClick={startPractice}>Пройти практику ещё раз</Button>
+            </div>
+          </div>
+        )}
+
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <Button
+            variant="soft"
+            onClick={() => {
+              setReviewIndex(0)
+              setFlipped(false)
+              setMode('review')
+            }}
+          >
+            Повторить карточки
+          </Button>
+          <Button variant="ghost" onClick={onBack}>К наборам</Button>
+        </div>
+        {error && <p className="mt-3 text-sm text-warn">{error}</p>}
+      </div>
+    )
+  }
+
+  const reviewing = mode === 'review'
+  const item = reviewing ? items[reviewIndex] : current
+  if (!item) return <div className="mx-auto max-w-md pb-24">{header}<p className="text-mute">Загрузка…</p></div>
 
   return (
     <div className="mx-auto max-w-md pb-24">
-      <button onClick={onBack} className="mb-4 font-body text-sm text-mute hover:text-ink">← Back to sets</button>
-      <p className="mb-3 text-center text-sm text-mute">{i + 1} / {words.length}</p>
-      <div
-        onPointerDown={(e) => (startX.current = e.clientX)}
-        onPointerMove={(e) => startX.current !== null && setDragX(e.clientX - startX.current)}
-        onPointerUp={onUp}
-        onClick={() => setFlipped((f) => !f)}
-        style={{ transform: `translateX(${dragX}px) rotate(${dragX / 30}deg)` }}
-        className="mx-auto flex min-h-[20rem] cursor-pointer select-none flex-col items-center justify-center rounded-3xl border border-line bg-paper p-8 text-center shadow-[0_16px_40px_-24px_rgba(60,42,112,0.5)] transition-transform"
-      >
-        {!flipped ? (
-          <>
-            {w.cefr_level && <Badge>{w.cefr_level}</Badge>}
-            <div className="mt-3 flex items-center gap-3">
-              <span className="font-display text-4xl font-semibold">{w.word}</span>
-              <SpeakerButton text={w.word} />
-            </div>
-            {w.pronunciation && <span className="mt-2 text-mute">{w.pronunciation}</span>}
-            <span className="mt-4 text-sm text-mute">tap to flip</span>
-          </>
-        ) : (
-          <>
-            <span className="font-display text-3xl font-semibold text-plum">{w.translation}</span>
-            {w.definition && <p className="mt-3 text-mute">{w.definition}</p>}
-            {(w.examples?.[0] || w.example) && <p className="mt-3 text-sm italic text-mute">“{w.examples?.[0] ?? w.example}”</p>}
-          </>
-        )}
-      </div>
+      {header}
+      <p className="mb-3 text-center text-sm text-mute">
+        {reviewing ? `Повторение · ${reviewIndex + 1} / ${items.length}` : `Круг ${p.round} · карточка ${p.position + 1} из ${p.queue.length}`}
+      </p>
+      <StudyCard
+        key={`${mode}-${item.id}-${p.round}`}
+        item={item}
+        flipped={flipped}
+        onFlip={() => setFlipped((f) => !f)}
+        onSwipe={(known) => (reviewing ? reviewAnswer(known) : answer(known))}
+      />
       <p className="mt-3 text-center text-xs text-mute">← swipe “review” · swipe “I know it” →</p>
       <div className="mt-4 flex justify-center gap-4">
-        <Button variant="danger" onClick={() => answer(false)}>✗ Review</Button>
-        <Button onClick={() => answer(true)}>✓ I know it</Button>
+        <Button variant="danger" disabled={busy} onClick={() => (reviewing ? reviewAnswer(false) : answer(false))}>✗ Review</Button>
+        <Button disabled={busy} onClick={() => (reviewing ? reviewAnswer(true) : answer(true))}>✓ I know it</Button>
+      </div>
+      {reviewing && (
+        <div className="mt-4 text-center">
+          <button onClick={() => setMode('done')} className="text-sm text-mute underline">Закончить повторение</button>
+        </div>
+      )}
+      {error && <p className="mt-3 text-center text-sm text-warn">{error}</p>}
+    </div>
+  )
+}
+
+/** A flashcard: tap flips it, swiping answers it. Buttons inside (🔊) never flip or swipe it. */
+function StudyCard({
+  item,
+  flipped,
+  onFlip,
+  onSwipe,
+}: {
+  item: StudyItem
+  flipped: boolean
+  onFlip: () => void
+  onSwipe: (known: boolean) => void
+}) {
+  const [dragX, setDragX] = useState(0)
+  const startX = useRef<number | null>(null)
+  const dragged = useRef(false) // the pointer moved: the following click is not a tap
+  const fromButton = (e: React.SyntheticEvent) => !!(e.target as HTMLElement).closest('button')
+
+  function end() {
+    if (startX.current === null) return
+    startX.current = null
+    const dx = dragX
+    setDragX(0)
+    if (Math.abs(dx) > 100) onSwipe(dx > 0)
+  }
+
+  return (
+    <div
+      onPointerDown={(e) => {
+        if (fromButton(e)) return
+        startX.current = e.clientX
+        dragged.current = false
+      }}
+      onPointerMove={(e) => {
+        if (startX.current === null) return
+        const dx = e.clientX - startX.current
+        if (Math.abs(dx) > 10) dragged.current = true
+        setDragX(dx)
+      }}
+      onPointerUp={end}
+      onPointerLeave={end}
+      onPointerCancel={() => {
+        startX.current = null
+        setDragX(0)
+      }}
+      onClick={(e) => {
+        if (fromButton(e) || dragged.current) {
+          dragged.current = false
+          return
+        }
+        onFlip()
+      }}
+      style={{ transform: `translateX(${dragX}px) rotate(${dragX / 30}deg)` }}
+      className="mx-auto flex min-h-[20rem] cursor-pointer select-none flex-col items-center justify-center rounded-3xl border border-line bg-paper p-8 text-center shadow-[0_16px_40px_-24px_rgba(60,42,112,0.5)] transition-transform"
+    >
+      {!flipped ? (
+        <>
+          {item.cefr && <Badge>{item.cefr}</Badge>}
+          <div className="mt-3 flex items-center gap-3">
+            <span className="font-display text-4xl font-semibold">{item.front}</span>
+            <SpeakerButton text={item.front} />
+          </div>
+          {item.pronunciation && <span className="mt-2 text-mute">{item.pronunciation}</span>}
+          <span className="mt-4 text-sm text-mute">tap to flip</span>
+        </>
+      ) : (
+        <>
+          <span className="font-display text-3xl font-semibold text-plum">{item.back}</span>
+          {item.definition && <p className="mt-3 text-mute">{item.definition}</p>}
+          {item.example && <p className="mt-3 text-sm italic text-mute">“{item.example}”</p>}
+        </>
+      )}
+    </div>
+  )
+}
+
+/** Short practice after a set, in the regular lesson exercise UI. */
+function PracticePlayer({
+  exercises,
+  onFinish,
+  onCancel,
+}: {
+  exercises: Exercise[]
+  onFinish: (correct: number, total: number) => Promise<void>
+  onCancel: () => void
+}) {
+  type A = { response: Response; checkedResponse: Response | null; firstCheck: boolean | null }
+  const [i, setI] = useState(0)
+  const [answers, setAnswers] = useState<Record<number, A>>({})
+  const [busy, setBusy] = useState(false)
+  const dict = useMemo(() => new Map<string, Word>(), [])
+
+  if (!exercises.length) {
+    return (
+      <div className="text-center">
+        <p className="text-mute">Для этого набора пока не получилось составить практику.</p>
+        <div className="mt-4"><Button variant="ghost" onClick={onCancel}>Назад</Button></div>
+      </div>
+    )
+  }
+
+  const ex = exercises[i]
+  const a = answers[i]
+
+  function update(k: number, patch: Partial<A>) {
+    const empty: A = { response: {}, checkedResponse: null, firstCheck: null }
+    setAnswers((prev) => ({ ...prev, [k]: { ...empty, ...prev[k], ...patch } }))
+  }
+
+  async function finish() {
+    setBusy(true)
+    // first check if it was checked, otherwise the answer as given; no answer = wrong
+    const correct = exercises.filter((e, k) => {
+      const x = answers[k]
+      if (!x) return false
+      return x.firstCheck ?? evaluate(e, x.response).correct
+    }).length
+    await onFinish(correct, exercises.length)
+    setBusy(false)
+  }
+
+  return (
+    <div>
+      <div className="mb-3 flex items-center justify-between text-sm text-mute">
+        <span>Практика · задание {i + 1} из {exercises.length}</span>
+        <button onClick={onCancel} className="underline">Выйти</button>
+      </div>
+      <ExerciseView
+        key={i}
+        ex={ex}
+        dict={dict}
+        translations={false}
+        initial={
+          a && {
+            response: a.response,
+            checked: !!a.checkedResponse && sameResponse(a.checkedResponse, a.response),
+            correct: evaluate(ex, a.response).correct,
+          }
+        }
+        onChange={(r) => update(i, { response: r })}
+        onCheck={(r, res) => update(i, { response: r, checkedResponse: r, firstCheck: a?.firstCheck ?? res.correct })}
+      />
+      <div className="mt-6 flex items-center justify-between">
+        <Button variant="soft" onClick={() => setI(i - 1)} disabled={i === 0}>← Назад</Button>
+        {i === exercises.length - 1 ? (
+          <Button onClick={finish} disabled={busy}>{busy ? 'Сохранение…' : 'Завершить ✓'}</Button>
+        ) : (
+          <Button onClick={() => setI(i + 1)}>Далее →</Button>
+        )}
       </div>
     </div>
   )
@@ -338,15 +780,35 @@ function MySets() {
   const [sets, setSets] = useState<FlashcardSet[]>([])
   const [active, setActive] = useState<FlashcardSet | null>(null)
   const [creating, setCreating] = useState(false)
+  const [progress, setProgress] = useState<Record<string, SetProgress>>({})
 
   async function load() {
     setSets(await api.listSets())
+    if (userId) {
+      const sp = await api.mySetProgress(userId).catch(() => [])
+      setProgress(Object.fromEntries(sp.filter((p) => p.set_id).map((p) => [p.set_id!, p])))
+    }
   }
   useEffect(() => {
     load()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  if (active) return <SetPlayer set={active} onBack={() => { setActive(null); load() }} />
+  if (active) {
+    const setId = active.id
+    return (
+      <StudyPlayer
+        title={active.title}
+        sref={{ setId }}
+        itemKind="card"
+        loadItems={() => loadSetItems(setId)}
+        onBack={() => {
+          setActive(null)
+          load()
+        }}
+      />
+    )
+  }
   if (creating) return <SetEditor onClose={() => { setCreating(false); load() }} />
 
   const mine = sets.filter((s) => s.owner_id === userId)
@@ -360,8 +822,8 @@ function MySets() {
 
       <QuickCreate ownSets={mine} onChanged={load} />
 
-      <SetGroup title={role === 'student' ? 'My cards' : 'My sets'} sets={mine} onOpen={setActive} onDelete={async (id) => { await api.deleteSet(id); load() }} owner />
-      <SetGroup title="Assigned to me" sets={assigned} onOpen={setActive} />
+      <SetGroup title={role === 'student' ? 'My cards' : 'My sets'} sets={mine} progress={progress} onOpen={setActive} onDelete={async (id) => { await api.deleteSet(id); load() }} owner />
+      <SetGroup title="Assigned to me" sets={assigned} progress={progress} onOpen={setActive} />
       {sets.length === 0 && <p className="text-mute">You have no sets yet. Create one, or use “Create flashcard” above.</p>}
     </div>
   )
@@ -455,12 +917,14 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
 function SetGroup({
   title,
   sets,
+  progress,
   onOpen,
   onDelete,
   owner,
 }: {
   title: string
   sets: FlashcardSet[]
+  progress: Record<string, SetProgress>
   onOpen: (s: FlashcardSet) => void
   onDelete?: (id: string) => void
   owner?: boolean
@@ -475,6 +939,11 @@ function SetGroup({
             <button onClick={() => onOpen(s)} className="text-left">
               <p className="font-display text-lg font-semibold">{s.title}</p>
               <p className="text-sm text-mute">{s.description || (s.is_personal ? 'Personal set' : 'Teacher set')}</p>
+              {progress[s.id] && (
+                <p className="text-xs font-semibold text-plum">
+                  {progress[s.id].known_count}/{progress[s.id].total_count} · {SET_STATUS_LABEL[progress[s.id].status]}
+                </p>
+              )}
             </button>
             <div className="flex items-center gap-2">
               {!s.is_personal && <Badge>teacher</Badge>}
@@ -533,93 +1002,6 @@ function SetEditor({ onClose }: { onClose: () => void }) {
       <div className="mt-6">
         <Button onClick={save} disabled={saving || !title.trim()}>{saving ? 'Saving…' : 'Save set'}</Button>
       </div>
-    </div>
-  )
-}
-
-function SetPlayer({ set, onBack }: { set: FlashcardSet; onBack: () => void }) {
-  const { userId } = useAuth()
-  const [cards, setCards] = useState<Flashcard[]>([])
-  const [i, setI] = useState(0)
-  const [flipped, setFlipped] = useState(false)
-  const [dragX, setDragX] = useState(0)
-  const startX = useRef<number | null>(null)
-  const [done, setDone] = useState(false)
-  const [stats, setStats] = useState({ known: 0, unknown: 0 })
-  const [saveError, setSaveError] = useState(false)
-
-  useEffect(() => {
-    api.listCards(set.id).then(setCards)
-  }, [set.id])
-
-  const card = cards[i]
-
-  async function answer(known: boolean) {
-    if (!card) return
-    if (userId) await api.recordCard(card.id, known).then(() => setSaveError(false), () => setSaveError(true))
-    setStats((s) => ({ known: s.known + (known ? 1 : 0), unknown: s.unknown + (known ? 0 : 1) }))
-    setFlipped(false)
-    setDragX(0)
-    if (i + 1 >= cards.length) setDone(true)
-    else setI((v) => v + 1)
-  }
-
-  function onUp() {
-    if (startX.current === null) return
-    if (dragX > 100) answer(true)
-    else if (dragX < -100) answer(false)
-    else setDragX(0)
-    startX.current = null
-  }
-
-  if (done) {
-    return (
-      <div className="mx-auto max-w-md pb-24 text-center">
-        <button onClick={onBack} className="mb-4 block font-body text-sm text-mute hover:text-ink">← Sets</button>
-        <h3 className="font-display text-3xl font-semibold">Done!</h3>
-        <p className="mt-4 text-lg">
-          Known: <b className="text-[var(--color-good)]">{stats.known}</b> · Review: <b className="text-warn">{stats.unknown}</b>
-        </p>
-        <div className="mt-6"><Button onClick={onBack}>Back to sets</Button></div>
-      </div>
-    )
-  }
-
-  if (!card) return <p className="text-mute">Loading…</p>
-
-  return (
-    <div className="mx-auto max-w-md pb-24">
-      <button onClick={onBack} className="mb-4 font-body text-sm text-mute hover:text-ink">← Sets</button>
-      <p className="mb-3 text-center text-sm text-mute">{i + 1} / {cards.length}</p>
-      <div
-        onPointerDown={(e) => (startX.current = e.clientX)}
-        onPointerMove={(e) => startX.current !== null && setDragX(e.clientX - startX.current)}
-        onPointerUp={onUp}
-        onClick={() => setFlipped((f) => !f)}
-        style={{ transform: `translateX(${dragX}px) rotate(${dragX / 30}deg)` }}
-        className="mx-auto flex min-h-[18rem] cursor-pointer select-none flex-col items-center justify-center rounded-3xl border border-line bg-paper p-8 text-center shadow-[0_16px_40px_-24px_rgba(60,42,112,0.5)] transition-transform"
-      >
-        {!flipped ? (
-          <>
-            <div className="flex items-center gap-3">
-              <span className="font-display text-4xl font-semibold">{card.front}</span>
-              <SpeakerButton text={card.front} />
-            </div>
-            <span className="mt-4 text-sm text-mute">tap to flip</span>
-          </>
-        ) : (
-          <>
-            <span className="font-display text-3xl font-semibold text-plum">{card.back}</span>
-            {card.example && <p className="mt-3 text-mute">{card.example}</p>}
-          </>
-        )}
-      </div>
-      <p className="mt-3 text-center text-xs text-mute">← swipe “review” · swipe “I know it” →</p>
-      <div className="mt-4 flex justify-center gap-4">
-        <Button variant="danger" onClick={() => answer(false)}>✗ Review</Button>
-        <Button onClick={() => answer(true)}>✓ I know it</Button>
-      </div>
-      {saveError && <p className="mt-3 text-center text-sm text-warn">Не удалось сохранить ответ. Проверьте интернет.</p>}
     </div>
   )
 }

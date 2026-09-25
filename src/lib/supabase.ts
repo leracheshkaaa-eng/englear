@@ -42,16 +42,27 @@ const audioUrls = new Map<string, string>() // text -> MP3 that played fine
 const noCloudAudio = new Set<string>() // texts a guest cannot generate
 let cloudDisabled = false // TTS not configured on the server: skip it this session
 let currentAudio: HTMLAudioElement | null = null
+let currentEnd: (() => void) | null = null // "finished" callback of what is playing now
 let playSeq = 0 // only the latest click may start playing
 
-export function speak(text: string) {
-  if (typeof window === 'undefined') return
+/** Speak English text. `onEnd` fires once when playback ends, fails or is replaced. */
+export function speak(text: string, onEnd?: () => void) {
+  if (typeof window === 'undefined') return onEnd?.()
   const clean = text.trim().replace(/\s+/g, ' ')
-  if (!clean) return
-  const seq = ++playSeq
+  if (!clean) return onEnd?.()
   stopSpeech()
-  playCloud(clean, seq).catch(() => {
-    if (seq === playSeq) speakWithBrowser(clean)
+  let ended = false
+  const end = () => {
+    if (ended) return
+    ended = true
+    if (currentEnd === end) currentEnd = null
+    onEnd?.()
+  }
+  currentEnd = end
+  const seq = ++playSeq
+  playCloud(clean, seq, end).catch(() => {
+    if (seq === playSeq) speakWithBrowser(clean, end)
+    else end()
   })
 }
 
@@ -59,6 +70,7 @@ function stopSpeech() {
   currentAudio?.pause()
   currentAudio = null
   if ('speechSynthesis' in window && (speechSynthesis.speaking || speechSynthesis.pending)) speechSynthesis.cancel()
+  currentEnd?.()
 }
 
 async function ttsKey(text: string) {
@@ -66,25 +78,29 @@ async function ttsKey(text: string) {
   return Array.from(new Uint8Array(hash), (b) => b.toString(16).padStart(2, '0')).join('')
 }
 
-async function playCloud(text: string, seq: number) {
+async function playCloud(text: string, seq: number, onEnd: () => void) {
   if (cloudDisabled || noCloudAudio.has(text)) throw new Error('no cloud audio')
   let url = audioUrls.get(text) ?? `${TTS_FILES_URL}${await ttsKey(text)}.mp3`
   try {
-    await playUrl(url, seq)
+    await playUrl(url, seq, onEnd)
   } catch {
-    if (seq !== playSeq) return
+    if (seq !== playSeq) return onEnd()
     url = await generateAudio(text) // not cached yet: create it once
-    await playUrl(url, seq)
+    await playUrl(url, seq, onEnd)
   }
   audioUrls.set(text, url)
 }
 
-async function playUrl(url: string, seq: number) {
-  if (seq !== playSeq) return
+async function playUrl(url: string, seq: number, onEnd: () => void) {
+  if (seq !== playSeq) return onEnd()
   const audio = new Audio(url)
   currentAudio = audio
   await audio.play() // rejects if the file does not exist
-  if (seq !== playSeq) audio.pause() // a newer click won while this was loading
+  audio.onended = onEnd
+  if (seq !== playSeq) {
+    audio.pause() // a newer click won while this was loading
+    onEnd()
+  }
 }
 
 async function generateAudio(text: string): Promise<string> {
@@ -120,13 +136,15 @@ function pickBrowserVoice(): SpeechSynthesisVoice | null {
   return us.find((v) => v.localService) ?? us[0] ?? null
 }
 
-function speakWithBrowser(text: string) {
-  if (!('speechSynthesis' in window)) return
+function speakWithBrowser(text: string, onEnd: () => void) {
+  if (!('speechSynthesis' in window)) return onEnd()
   if (!browserVoice) browserVoice = pickBrowserVoice()
   const u = new SpeechSynthesisUtterance(text)
   u.lang = 'en-US'
   u.rate = TTS_RATE
   if (browserVoice) u.voice = browserVoice
+  u.onend = onEnd
+  u.onerror = onEnd
   // Chrome may garble speech queued right after cancel(); give it a moment.
   if (speechSynthesis.speaking || speechSynthesis.pending) {
     speechSynthesis.cancel()

@@ -560,6 +560,105 @@ export async function cardProgress(studentId: string) {
   return data ?? []
 }
 
+/* ---------- progress through a flashcard set ----------
+   One row per student and set, created on first open. `items` are flashcard ids
+   (own/teacher sets) or dictionary word ids (library sets, snapshotted at start). */
+
+export type SetProgressStatus = 'in_progress' | 'practice_available' | 'completed'
+export type SetProgress = {
+  id: string
+  student_id: string
+  set_id: string | null
+  library_key: string | null
+  title: string
+  item_kind: 'card' | 'word'
+  items: string[]
+  statuses: Record<string, 'known' | 'review'>
+  queue: string[]
+  position: number
+  round: number
+  known_count: number
+  total_count: number
+  status: SetProgressStatus
+  practice: Exercise[] | null
+  practice_correct: number | null
+  practice_total: number | null
+  started_at: string
+  flashcards_completed_at: string | null
+  practice_completed_at: string | null
+  updated_at: string
+}
+export type SetRef = { setId: string; libraryKey?: undefined } | { libraryKey: string; setId?: undefined }
+
+export async function mySetProgress(studentId: string): Promise<SetProgress[]> {
+  const { data, error } = await supabase
+    .from('flashcard_set_progress')
+    .select('*')
+    .eq('student_id', studentId)
+    .order('updated_at', { ascending: false })
+  if (error) throw error
+  return (data ?? []) as SetProgress[]
+}
+
+export async function getSetProgress(studentId: string, ref: SetRef): Promise<SetProgress | null> {
+  let query = supabase.from('flashcard_set_progress').select('*').eq('student_id', studentId)
+  query = ref.setId ? query.eq('set_id', ref.setId) : query.eq('library_key', ref.libraryKey!)
+  const { data, error } = await query.maybeSingle()
+  if (error) throw error
+  return data as SetProgress | null
+}
+
+/** First open of a set: create its progress row (or return the existing one). */
+export async function startSetProgress(
+  studentId: string,
+  ref: SetRef,
+  title: string,
+  itemKind: 'card' | 'word',
+  items: string[],
+): Promise<SetProgress> {
+  const { data, error } = await supabase
+    .from('flashcard_set_progress')
+    .insert({
+      student_id: studentId,
+      set_id: ref.setId ?? null,
+      library_key: ref.libraryKey ?? null,
+      title,
+      item_kind: itemKind,
+      items,
+      queue: items,
+      total_count: items.length,
+    })
+    .select('*')
+    .single()
+  if (error?.code === '23505') {
+    // opened concurrently (e.g. two tabs): use the row that won
+    const existing = await getSetProgress(studentId, ref)
+    if (existing) return existing
+  }
+  if (error) throw error
+  return data as SetProgress
+}
+
+export async function saveSetProgress(id: string, patch: Partial<SetProgress>) {
+  const { error } = await supabase.from('flashcard_set_progress').update(patch).eq('id', id)
+  if (error) throw error
+}
+
+export async function getSet(id: string): Promise<FlashcardSet | null> {
+  const { data, error } = await supabase.from('flashcard_sets').select('*').eq('id', id).maybeSingle()
+  if (error) throw error
+  return data as FlashcardSet | null
+}
+
+/** Dictionary words by id, in the given order. */
+export async function wordsByIds(ids: string[]): Promise<Word[]> {
+  if (!ids.length) return []
+  const { data, error } = await supabase.from('dictionary_words').select('*').in('id', ids)
+  if (error) throw error
+  const byId = new Map(((data ?? []) as Word[]).map((w) => [w.id, w]))
+  return ids.map((id) => byId.get(id)).filter((w): w is Word => !!w)
+}
+
 /* ---------- dictionary-word progress (library flashcards) ----------
    Auto-generated library sets are built from dictionary words (not physical
    flashcards rows), so their progress lives in student_word_progress. */

@@ -21,6 +21,7 @@ function Shell() {
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [dict, setDict] = useState<Map<string, Word>>(new Map())
   const [active, setActive] = useState<Lesson | null>(null)
+  const [flashTarget, setFlashTarget] = useState<api.SetProgress | null>(null) // set opened from Progress
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
 
   const reload = useCallback(async () => {
@@ -66,6 +67,7 @@ function Shell() {
 
   function go(v: View) {
     setView(v)
+    setFlashTarget(null)
     if (location.pathname !== '/') history.pushState({}, '', '/')
     setDeepLink(null)
   }
@@ -163,9 +165,25 @@ function Shell() {
           <LessonPlayer lesson={active} dict={dict} onDone={() => { reload(); setView('lessons') }} />
         )}
         {view === 'teacher' && isTeacher && <TeacherMode lessons={lessons} reload={reload} />}
-        {view === 'flashcards' && userId && <Flashcards />}
+        {view === 'flashcards' && userId && (
+          <Flashcards
+            target={flashTarget}
+            onTargetDone={() => {
+              setFlashTarget(null)
+              setView('progress')
+            }}
+          />
+        )}
         {view === 'dictionary' && userId && <Dictionary />}
-        {view === 'progress' && userId && <StudentProgress lessons={lessons} />}
+        {view === 'progress' && userId && (
+          <StudentProgress
+            lessons={lessons}
+            onOpenSet={(p) => {
+              setFlashTarget(p)
+              setView('flashcards')
+            }}
+          />
+        )}
         {view === 'settings' && userId && <Settings />}
         {view === 'admin' && role === 'admin' && <AdminDashboard />}
         {view === 'login' && <Login onClose={() => { reload(); setView('home') }} />}

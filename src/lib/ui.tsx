@@ -50,17 +50,21 @@ export function SpeakerButton({ text, className = '' }: { text: string; classNam
     e.stopPropagation()
     e.preventDefault()
     setPlaying(true)
-    speak(text)
-    // SpeechSynthesis has no reliable per-utterance end event across browsers;
-    // clear the feedback after a short, length-based window.
-    const ms = Math.min(4000, 700 + text.length * 60)
-    window.setTimeout(() => setPlaying(false), ms)
+    speak(text, () => setPlaying(false))
+    // safety net in case a browser never reports the end of speech
+    window.setTimeout(() => setPlaying(false), 8000)
   }
+
+  // Pointer/touch events must not reach a parent card either (it starts swipes on them).
+  const stop = (e: React.SyntheticEvent) => e.stopPropagation()
 
   return (
     <button
       type="button"
       onClick={play}
+      onPointerDown={stop}
+      onPointerUp={stop}
+      onTouchStart={stop}
       aria-label={`Прослушать: ${text}`}
       aria-pressed={playing}
       className={`inline-grid h-8 w-8 place-items-center rounded-full transition-colors ${

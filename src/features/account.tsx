@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import { Badge, Button, inputCls } from '../lib/ui'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
-import type { Lesson } from '../lib/api'
+import type { Lesson, SetProgress } from '../lib/api'
 import { AVATARS, Avatar, AvatarPicker, DEFAULT_AVATAR } from '../lib/avatars'
+import { SET_STATUS_LABEL } from './flashcards'
 
 export function Login({ onClose }: { onClose?: () => void }) {
   const { signIn, signUp } = useAuth()
@@ -88,17 +89,19 @@ export function Login({ onClose }: { onClose?: () => void }) {
   )
 }
 
-export function StudentProgress({ lessons }: { lessons: Lesson[] }) {
+export function StudentProgress({ lessons, onOpenSet }: { lessons: Lesson[]; onOpenSet: (p: SetProgress) => void }) {
   const { userId } = useAuth()
   const [progress, setProgress] = useState<api.LessonProgress[]>([])
   const [cards, setCards] = useState<any[]>([])
   const [known, setKnown] = useState(0)
+  const [sets, setSets] = useState<SetProgress[]>([])
 
   useEffect(() => {
     if (!userId) return
     api.myProgress(userId).then(setProgress)
     api.cardProgress(userId).then(setCards)
     api.knownWordsCount(userId).then(setKnown).catch(() => setKnown(0))
+    api.mySetProgress(userId).then(setSets).catch(() => setSets([]))
   }, [userId])
 
   const byLesson = Object.fromEntries(progress.map((p) => [p.lesson_id, p]))
@@ -113,6 +116,29 @@ export function StudentProgress({ lessons }: { lessons: Lesson[] }) {
         <Stat label="Слов знаю" value={known} />
         <Stat label="Карточек в работе" value={cards.length} />
       </div>
+
+      {sets.length > 0 && (
+        <>
+          <h3 className="mb-3 font-display text-2xl font-semibold">Наборы карточек</h3>
+          <div className="mb-8 space-y-2">
+            {sets.map((s) => (
+              <div key={s.id} className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-line bg-paper p-4">
+                <div>
+                  <p className="font-body font-semibold">{s.title}</p>
+                  <p className="text-sm text-mute">
+                    {s.known_count} / {s.total_count} слов · {SET_STATUS_LABEL[s.status]}
+                    {s.status === 'completed' && s.practice_total ? ` · практика ${s.practice_correct ?? 0}/${s.practice_total}` : ''}
+                  </p>
+                </div>
+                <Button variant={s.status === 'in_progress' ? 'solid' : 'soft'} onClick={() => onOpenSet(s)}>
+                  {s.status === 'in_progress' ? 'Продолжить' : s.status === 'practice_available' ? 'Пройти практику' : 'Повторить'}
+                </Button>
+              </div>
+            ))}
+          </div>
+          <h3 className="mb-3 font-display text-2xl font-semibold">Уроки</h3>
+        </>
+      )}
 
       <div className="space-y-2">
         {lessons.map((l) => {
