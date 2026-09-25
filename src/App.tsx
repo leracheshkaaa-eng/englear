@@ -18,6 +18,7 @@ function Shell() {
   const [view, setView] = useState<View>('home')
   const [lessons, setLessons] = useState<Lesson[]>([])
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
+  const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [dict, setDict] = useState<Map<string, Word>>(new Map())
   const [active, setActive] = useState<Lesson | null>(null)
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
@@ -31,8 +32,10 @@ function Shell() {
     if (userId) {
       const p = await api.myProgress(userId)
       setProgress(Object.fromEntries(p.map((x) => [x.lesson_id, x])))
+      setPasses(api.summarizePasses(await api.studentPasses(userId).catch(() => [])))
     } else {
       setProgress({})
+      setPasses({})
     }
   }, [userId])
 
@@ -81,6 +84,7 @@ function Shell() {
               history.pushState({}, '', '/')
               setDeepLink(null)
               setView('lessons')
+              reload()
             }}
           />
         ) : (
@@ -148,6 +152,7 @@ function Shell() {
           <LessonsCatalog
             lessons={lessons}
             progress={progress}
+            passes={passes}
             onOpen={(l) => {
               setActive(l)
               setView('practice')

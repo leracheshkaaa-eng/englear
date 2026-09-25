@@ -1,5 +1,5 @@
 import { supabase } from './supabase'
-import { exerciseToRow, rowToExercise, type Exercise, type ExerciseRow } from './exercises'
+import { exerciseToRow, rowToExercise, type Exercise, type ExerciseRow, type Response } from './exercises'
 
 export type Role = 'student' | 'teacher' | 'admin'
 export type TeacherRequest = 'none' | 'pending'
@@ -136,12 +136,6 @@ export async function deleteLesson(id: string) {
 
 export async function reorderLessons(ordered: { id: string; position: number }[]) {
   for (const { id, position } of ordered) await supabase.from('lessons').update({ position }).eq('id', id)
-}
-
-/** Fetch a lesson's exercise rows WITH their DB ids (for attempt logging). */
-export async function getExerciseRows(lessonId: string) {
-  const { data } = await supabase.from('exercises').select('id, position, type').eq('lesson_id', lessonId).order('position')
-  return (data ?? []) as { id: string; position: number; type: string }[]
 }
 
 /* ---------- migration: localStorage -> Supabase ---------- */
@@ -371,47 +365,6 @@ export async function deleteSet(id: string) {
 
 /* ---------- progress ---------- */
 
-export async function startLesson(studentId: string, lessonId: string) {
-  await supabase
-    .from('lesson_progress')
-    .upsert(
-      { student_id: studentId, lesson_id: lessonId, status: 'in_progress', started_at: new Date().toISOString() },
-      { onConflict: 'student_id,lesson_id', ignoreDuplicates: true },
-    )
-}
-
-export async function recordAttempt(a: {
-  studentId: string
-  lessonId: string
-  exerciseId: string
-  attemptNumber: number
-  givenAnswer: string
-  isCorrect: boolean
-}) {
-  await supabase.from('exercise_attempts').insert({
-    student_id: a.studentId,
-    lesson_id: a.lessonId,
-    exercise_id: a.exerciseId,
-    attempt_number: a.attemptNumber,
-    given_answer: a.givenAnswer,
-    is_correct: a.isCorrect,
-  })
-}
-
-export async function completeLesson(studentId: string, lessonId: string, score: number, timeSpentSec: number) {
-  await supabase.from('lesson_progress').upsert(
-    {
-      student_id: studentId,
-      lesson_id: lessonId,
-      status: 'completed',
-      score,
-      completed_at: new Date().toISOString(),
-      time_spent_sec: timeSpentSec,
-    },
-    { onConflict: 'student_id,lesson_id' },
-  )
-}
-
 export type LessonProgress = {
   lesson_id: string
   status: string
@@ -436,6 +389,134 @@ export async function studentAttempts(studentId: string, lessonId: string) {
     .eq('lesson_id', lessonId)
     .order('answered_at')
   return data ?? []
+}
+
+/* ---------- lesson passes + saved answers ----------
+   A "pass" is one run through a lesson. Answers are saved per pass as the
+   student types (checked or not); "Проверить" additionally logs an attempt.
+   Scoring happens on the server in complete_lesson_pass(). */
+
+export type LessonPass = {
+  id: string
+  student_id: string
+  lesson_id: string
+  pass_number: number
+  status: 'in_progress' | 'completed'
+  current_index: number
+  correct_count: number | null
+  total_count: number | null
+  time_spent_sec: number
+  started_at: string
+  completed_at: string | null
+}
+
+export type SavedAnswer = {
+  pass_id: string
+  exercise_id: string
+  response: Response
+  given_answer: string
+  is_correct: boolean
+  checked: boolean
+  first_check_correct: boolean | null
+  attempts_count: number
+  last_checked_response: Response | null
+}
+
+/** Does this saved answer count as correct in the pass score? (same rule as the server) */
+export function countsAsCorrect(a: Pick<SavedAnswer, 'checked' | 'first_check_correct' | 'is_correct'> | undefined): boolean {
+  if (!a) return false
+  return a.checked ? a.first_check_correct === true : a.is_correct
+}
+
+/** All passes of one student (optionally for one lesson), oldest first. */
+export async function studentPasses(studentId: string, lessonId?: string): Promise<LessonPass[]> {
+  let query = supabase.from('lesson_passes').select('*').eq('student_id', studentId)
+  if (lessonId) query = query.eq('lesson_id', lessonId)
+  const { data, error } = await query.order('pass_number')
+  if (error) throw error
+  return (data ?? []) as LessonPass[]
+}
+
+export async function passAnswers(passIds: string[]): Promise<SavedAnswer[]> {
+  if (!passIds.length) return []
+  const { data, error } = await supabase.from('exercise_answers').select('*').in('pass_id', passIds)
+  if (error) throw error
+  return (data ?? []) as SavedAnswer[]
+}
+
+/** Resume the open pass for this lesson, or start a new one. */
+export async function startPass(lessonId: string): Promise<LessonPass> {
+  const { data, error } = await supabase.rpc('start_lesson_pass', { p_lesson_id: lessonId })
+  if (error) throw error
+  return data as LessonPass
+}
+
+/** Autosave the current answer (does not count as a check). */
+export async function saveAnswer(pass: LessonPass, exerciseId: string, response: Response, given: string, isCorrect: boolean) {
+  const { error } = await supabase.from('exercise_answers').upsert(
+    {
+      pass_id: pass.id,
+      student_id: pass.student_id,
+      lesson_id: pass.lesson_id,
+      exercise_id: exerciseId,
+      response,
+      given_answer: given,
+      is_correct: isCorrect,
+    },
+    { onConflict: 'pass_id,exercise_id' },
+  )
+  if (error) throw error
+}
+
+/** "Проверить": save the answer and log one attempt (a repeated identical check is ignored). */
+export async function recordCheck(passId: string, exerciseId: string, response: Response, given: string, isCorrect: boolean) {
+  const { data, error } = await supabase.rpc('record_exercise_check', {
+    p_pass_id: passId,
+    p_exercise_id: exerciseId,
+    p_response: response,
+    p_given: given,
+    p_is_correct: isCorrect,
+  })
+  if (error) throw error
+  return data as SavedAnswer
+}
+
+export async function savePassPosition(passId: string, index: number) {
+  const { error } = await supabase.from('lesson_passes').update({ current_index: index }).eq('id', passId)
+  if (error) throw error
+}
+
+/** Finish the pass: the server scores it and stores it as the lesson's last result. */
+export async function completePass(passId: string, timeSpentSec: number): Promise<LessonPass> {
+  const { data, error } = await supabase.rpc('complete_lesson_pass', { p_pass_id: passId, p_time_spent_sec: timeSpentSec })
+  if (error) throw error
+  return data as LessonPass
+}
+
+export type PassSummary = {
+  last: LessonPass | null // latest completed pass — the main result
+  best: LessonPass | null // completed pass with the highest score
+  completed: number // number of completed passes
+  open: LessonPass | null // pass in progress, if any
+}
+
+export function summarizePasses(passes: LessonPass[]): Record<string, PassSummary> {
+  const out: Record<string, PassSummary> = {}
+  for (const p of passes) {
+    const s = (out[p.lesson_id] ??= { last: null, best: null, completed: 0, open: null })
+    if (p.status === 'in_progress') {
+      s.open = p
+      continue
+    }
+    s.completed++
+    if (!s.last || p.pass_number > s.last.pass_number) s.last = p
+    if (!s.best || ratio(p) > ratio(s.best)) s.best = p
+  }
+  return out
+}
+
+function ratio(p: LessonPass) {
+  return p.total_count ? (p.correct_count ?? 0) / p.total_count : 0
 }
 
 /* ---------- flashcard progress ---------- */

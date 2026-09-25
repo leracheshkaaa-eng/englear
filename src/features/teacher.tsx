@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Badge, Button, inputCls } from '../lib/ui'
-import { parseExercises, validateRaw, SKILL_LABEL, type Exercise } from '../lib/exercises'
+import { parseExercises, promptText, validateRaw, SKILL_LABEL, type Exercise } from '../lib/exercises'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { Lesson, Profile } from '../lib/api'
@@ -441,16 +441,30 @@ function ProgressBoard({ lessons }: { lessons: Lesson[] }) {
 
 function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons: Lesson[]; onBack: () => void }) {
   const [progress, setProgress] = useState<api.LessonProgress[]>([])
+  const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [openLesson, setOpenLesson] = useState<Lesson | null>(null)
   const [attempts, setAttempts] = useState<any[]>([])
+  const [answers, setAnswers] = useState<Record<string, api.SavedAnswer>>({})
 
   useEffect(() => {
     api.myProgress(student.id).then(setProgress)
+    api.studentPasses(student.id).then((p) => setPasses(api.summarizePasses(p))).catch(() => setPasses({}))
   }, [student.id])
 
   useEffect(() => {
-    if (openLesson) api.studentAttempts(student.id, openLesson.id).then(setAttempts)
-  }, [openLesson, student.id])
+    setAnswers({})
+    if (!openLesson) return
+    api.studentAttempts(student.id, openLesson.id).then(setAttempts)
+    // answers of the last completed pass, or of the pass in progress
+    const s = passes[openLesson.id]
+    const pass = s?.last ?? s?.open
+    if (pass) {
+      api
+        .passAnswers([pass.id])
+        .then((rows) => setAnswers(Object.fromEntries(rows.map((a) => [a.exercise_id, a]))))
+        .catch(() => setAnswers({}))
+    }
+  }, [openLesson, student.id, passes])
 
   const byLesson = Object.fromEntries(progress.map((p) => [p.lesson_id, p]))
 
@@ -464,7 +478,9 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
       <div className="space-y-2">
         {lessons.map((l) => {
           const p = byLesson[l.id]
+          const s = passes[l.id]
           const status = p?.status ?? 'not_started'
+          const fmt = (x: api.LessonPass) => `${x.correct_count ?? 0}/${x.total_count ?? 0}`
           return (
             <div key={l.id} className="rounded-2xl border border-line bg-paper p-4">
               <div className="flex flex-wrap items-center justify-between gap-2">
@@ -472,10 +488,13 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
                   <p className="font-body font-semibold">{l.title}</p>
                   <p className="text-sm text-mute">
                     {status === 'completed'
-                      ? `Completed · ${p?.score ?? 0}% · ${p?.time_spent_sec ?? 0}s`
+                      ? s?.last
+                        ? `Completed · last ${fmt(s.last)} (${p?.score ?? 0}%) · best ${fmt(s.best ?? s.last)} · passes: ${s.completed} · ${s.last.time_spent_sec}s`
+                        : `Completed · ${p?.score ?? 0}% · ${p?.time_spent_sec ?? 0}s`
                       : status === 'in_progress'
                         ? 'In progress'
                         : 'Not started'}
+                    {status === 'completed' && s?.open && ' · новое прохождение начато'}
                   </p>
                 </div>
                 {status !== 'not_started' && (
@@ -486,6 +505,29 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
               </div>
               {openLesson?.id === l.id && (
                 <div className="mt-3 space-y-1 border-t border-line pt-3 text-sm">
+                  {Object.keys(answers).length > 0 && (
+                    <>
+                      <p className="font-semibold">
+                        Ответы {s?.last ? `(прохождение ${s.last.pass_number})` : '(текущее прохождение)'}
+                      </p>
+                      {l.exercises.map((ex, idx) => {
+                        const a = ex.id ? answers[ex.id] : undefined
+                        const ok = api.countsAsCorrect(a)
+                        return (
+                          <p key={ex.id ?? idx} className={!a ? 'text-mute' : ok ? 'text-[var(--color-good)]' : 'text-warn'}>
+                            {idx + 1}. {promptText(ex)} — {a ? `${ok ? '✓' : '✗'} «${a.given_answer || '—'}»` : 'нет ответа'}
+                            {a && (
+                              <span className="text-mute">
+                                {' '}
+                                · {a.checked ? `проверено (${a.attempts_count})` : 'не проверено'}
+                              </span>
+                            )}
+                          </p>
+                        )
+                      })}
+                      <p className="pt-2 font-semibold">История проверок</p>
+                    </>
+                  )}
                   {attempts.length === 0 && <p className="text-mute">Нет попыток.</p>}
                   {attempts.map((a, i) => (
                     <p key={i} className={a.is_correct ? 'text-[var(--color-good)]' : 'text-warn'}>

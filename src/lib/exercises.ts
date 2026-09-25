@@ -10,11 +10,12 @@
      #          explanation (never spoken by TTS)
    ============================================================ */
 
-export type Fill = { type: 'fill'; prompt: string; answer: string; explanation: string }
-export type Choice = { type: 'choice'; prompt: string; options: string[]; answer: string; explanation: string }
-export type Listen = { type: 'listen'; text: string; explanation: string }
+// `id` is the DB row id; present on exercises loaded from Supabase, absent in the editor preview.
+export type Fill = { id?: string; type: 'fill'; prompt: string; answer: string; explanation: string }
+export type Choice = { id?: string; type: 'choice'; prompt: string; options: string[]; answer: string; explanation: string }
+export type Listen = { id?: string; type: 'listen'; text: string; explanation: string }
 export type DlgLine = { speaker: string; text: string; answer?: string }
-export type Dialogue = { type: 'dialogue'; lines: DlgLine[]; explanation: string }
+export type Dialogue = { id?: string; type: 'dialogue'; lines: DlgLine[]; explanation: string }
 export type Exercise = Fill | Choice | Listen | Dialogue
 
 export const SKILL_LABEL: Record<Exercise['type'], string> = {
@@ -26,6 +27,64 @@ export const SKILL_LABEL: Record<Exercise['type'], string> = {
 
 export function norm(s: string) {
   return s.trim().toLowerCase().replace(/[.,!?;:]+$/g, '')
+}
+
+/* ---------- answers: one shape for every exercise type ---------- */
+
+/** Raw student input. fill/listen use `text`, choice uses `picked`, dialogue uses `blanks`. */
+export type Response = { text?: string; picked?: string | null; blanks?: Record<number, string> }
+
+export type Evaluation = {
+  answered: boolean // enough input to be checked
+  correct: boolean
+  given: string // human-readable answer
+}
+
+/** Check a response against the exercise (same rules as the "Проверить" button). */
+export function evaluate(ex: Exercise, r: Response): Evaluation {
+  if (ex.type === 'fill') {
+    const text = r.text ?? ''
+    return { answered: text.trim().length > 0, correct: norm(text) === norm(ex.answer), given: text }
+  }
+  if (ex.type === 'listen') {
+    const text = r.text ?? ''
+    return { answered: text.trim().length > 0, correct: norm(text) === norm(ex.text), given: text }
+  }
+  if (ex.type === 'choice') {
+    const picked = r.picked ?? null
+    return { answered: picked !== null, correct: picked === ex.answer, given: picked ?? '' }
+  }
+  const blanks = r.blanks ?? {}
+  return {
+    answered: ex.lines.every((l, i) => !l.answer || (blanks[i] || '').trim()),
+    correct: ex.lines.every((l, i) => !l.answer || norm(blanks[i] || '') === norm(l.answer)),
+    given: Object.values(blanks).join(', '),
+  }
+}
+
+/** The task as one line of text, for result lists. */
+export function promptText(ex: Exercise): string {
+  if (ex.type === 'fill' || ex.type === 'choice') return ex.prompt
+  if (ex.type === 'listen') return 'Прослушай слово и запиши его'
+  return ex.lines.map((l) => `${l.speaker}: ${l.text}`).join(' · ')
+}
+
+/** Compare two responses regardless of key order. */
+export function sameResponse(a: Response | null | undefined, b: Response | null | undefined): boolean {
+  const canon = (r: Response | null | undefined) =>
+    JSON.stringify(r ?? {}, (_k, v) =>
+      v && typeof v === 'object' && !Array.isArray(v)
+        ? Object.fromEntries(Object.entries(v).sort(([x], [y]) => x.localeCompare(y)))
+        : v,
+    )
+  return canon(a) === canon(b)
+}
+
+/** The expected answer as text, for showing mistakes. */
+export function correctAnswerText(ex: Exercise): string {
+  if (ex.type === 'fill' || ex.type === 'choice') return ex.answer
+  if (ex.type === 'listen') return ex.text
+  return ex.lines.filter((l) => l.answer).map((l) => l.answer).join(', ')
 }
 
 /** Parse one lesson's raw text into structured exercises. */
@@ -142,10 +201,11 @@ export function exerciseToRow(ex: Exercise, position: number): ExerciseRow {
 }
 
 export function rowToExercise(row: ExerciseRow): Exercise {
-  if (row.type === 'fill') return { type: 'fill', prompt: row.prompt, answer: row.answer, explanation: row.explanation }
+  const id = row.id
+  if (row.type === 'fill') return { id, type: 'fill', prompt: row.prompt, answer: row.answer, explanation: row.explanation }
   if (row.type === 'choice')
-    return { type: 'choice', prompt: row.prompt, options: row.options || [], answer: row.answer, explanation: row.explanation }
+    return { id, type: 'choice', prompt: row.prompt, options: row.options || [], answer: row.answer, explanation: row.explanation }
   if (row.type === 'listen')
-    return { type: 'listen', text: (row.data?.text as string) || row.answer, explanation: row.explanation }
-  return { type: 'dialogue', lines: row.dialogue || [], explanation: row.explanation }
+    return { id, type: 'listen', text: (row.data?.text as string) || row.answer, explanation: row.explanation }
+  return { id, type: 'dialogue', lines: row.dialogue || [], explanation: row.explanation }
 }
