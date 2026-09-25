@@ -176,8 +176,23 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
         is_published: published,
         exercises: preview,
       }
-      if (lesson) await api.updateLesson(lesson.id, payload)
-      else await api.createLesson(userId, payload)
+      if (lesson) {
+        // Removing exercises deletes students' answers to them — ask first.
+        const impact = await api.saveLessonExercises(lesson.id, payload.exercises, true)
+        const history = impact.affected_answers + impact.affected_attempts
+        if (
+          impact.deleted > 0 &&
+          history > 0 &&
+          !confirm(
+            `Будет удалено заданий: ${impact.deleted}. На них есть ответы учеников (${history}) — они тоже удалятся. Остальные ответы сохранятся. Продолжить?`,
+          )
+        ) {
+          return
+        }
+        await api.updateLesson(lesson.id, payload)
+      } else {
+        await api.createLesson(userId, payload)
+      }
       onSaved()
     } catch (e: any) {
       setErr(e.message ?? 'Ошибка сохранения')

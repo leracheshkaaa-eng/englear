@@ -92,16 +92,17 @@ export function StudentProgress({ lessons }: { lessons: Lesson[] }) {
   const { userId } = useAuth()
   const [progress, setProgress] = useState<api.LessonProgress[]>([])
   const [cards, setCards] = useState<any[]>([])
+  const [known, setKnown] = useState(0)
 
   useEffect(() => {
     if (!userId) return
     api.myProgress(userId).then(setProgress)
     api.cardProgress(userId).then(setCards)
+    api.knownWordsCount(userId).then(setKnown).catch(() => setKnown(0))
   }, [userId])
 
   const byLesson = Object.fromEntries(progress.map((p) => [p.lesson_id, p]))
   const completed = progress.filter((p) => p.status === 'completed').length
-  const known = cards.filter((c) => c.state === 'known').length
 
   return (
     <section className="mx-auto max-w-3xl px-6 pb-24">

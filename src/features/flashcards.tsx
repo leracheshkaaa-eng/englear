@@ -546,6 +546,7 @@ function SetPlayer({ set, onBack }: { set: FlashcardSet; onBack: () => void }) {
   const startX = useRef<number | null>(null)
   const [done, setDone] = useState(false)
   const [stats, setStats] = useState({ known: 0, unknown: 0 })
+  const [saveError, setSaveError] = useState(false)
 
   useEffect(() => {
     api.listCards(set.id).then(setCards)
@@ -555,7 +556,7 @@ function SetPlayer({ set, onBack }: { set: FlashcardSet; onBack: () => void }) {
 
   async function answer(known: boolean) {
     if (!card) return
-    if (userId) await api.recordCard(userId, card.id, known).catch(() => {})
+    if (userId) await api.recordCard(card.id, known).then(() => setSaveError(false), () => setSaveError(true))
     setStats((s) => ({ known: s.known + (known ? 1 : 0), unknown: s.unknown + (known ? 0 : 1) }))
     setFlipped(false)
     setDragX(0)
@@ -618,6 +619,7 @@ function SetPlayer({ set, onBack }: { set: FlashcardSet; onBack: () => void }) {
         <Button variant="danger" onClick={() => answer(false)}>✗ Review</Button>
         <Button onClick={() => answer(true)}>✓ I know it</Button>
       </div>
+      {saveError && <p className="mt-3 text-center text-sm text-warn">Не удалось сохранить ответ. Проверьте интернет.</p>}
     </div>
   )
 }

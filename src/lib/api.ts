@@ -108,7 +108,7 @@ export async function createLesson(authorId: string, input: NewLesson): Promise<
     .select('id')
     .single()
   if (error) throw error
-  await replaceExercises(lesson.id, input.exercises)
+  await saveLessonExercises(lesson.id, input.exercises)
   return lesson.id
 }
 
@@ -118,15 +118,22 @@ export async function updateLesson(id: string, patch: Partial<NewLesson>) {
     const { error } = await supabase.from('lessons').update(rest).eq('id', id)
     if (error) throw error
   }
-  if (exercises) await replaceExercises(id, exercises)
+  if (exercises) await saveLessonExercises(id, exercises)
 }
 
-export async function replaceExercises(lessonId: string, exercises: Exercise[]) {
-  await supabase.from('exercises').delete().eq('lesson_id', lessonId)
-  if (!exercises.length) return
-  const rows = exercises.map((ex, i) => ({ lesson_id: lessonId, ...exerciseToRow(ex, i) }))
-  const { error } = await supabase.from('exercises').insert(rows)
+export type ExerciseSaveImpact = { deleted: number; affected_answers: number; affected_attempts: number }
+
+/** Save a lesson's exercises in one transaction. Unchanged and edited exercises keep
+ *  their ids (and students' answers); only exercises removed from the text are deleted.
+ *  With dryRun nothing is written — it only reports what would be deleted. */
+export async function saveLessonExercises(lessonId: string, exercises: Exercise[], dryRun = false): Promise<ExerciseSaveImpact> {
+  const { data, error } = await supabase.rpc('save_lesson_exercises', {
+    p_lesson_id: lessonId,
+    p_exercises: exercises.map((ex, i) => exerciseToRow(ex, i)),
+    p_dry_run: dryRun,
+  })
   if (error) throw error
+  return data as ExerciseSaveImpact
 }
 
 export async function deleteLesson(id: string) {
@@ -521,23 +528,28 @@ function ratio(p: LessonPass) {
 
 /* ---------- flashcard progress ---------- */
 
-export async function recordCard(studentId: string, cardId: string, known: boolean, prev?: { repetitions: number; correct_count: number; incorrect_count: number }) {
-  const repetitions = (prev?.repetitions ?? 0) + 1
-  const correct = (prev?.correct_count ?? 0) + (known ? 1 : 0)
-  const incorrect = (prev?.incorrect_count ?? 0) + (known ? 0 : 1)
-  const state = known ? (correct >= 2 ? 'known' : 'learning') : 'learning'
-  await supabase.from('flashcard_progress').upsert(
-    {
-      student_id: studentId,
-      flashcard_id: cardId,
-      state,
-      repetitions,
-      correct_count: correct,
-      incorrect_count: incorrect,
-      last_reviewed: new Date().toISOString(),
-    },
-    { onConflict: 'student_id,flashcard_id' },
-  )
+/** One flashcard answer. Counted on the server: a card is known after 2 correct
+ *  answers in total; a card linked to a dictionary word also updates that word. */
+export async function recordCard(cardId: string, known: boolean) {
+  const { error } = await supabase.rpc('record_flashcard_review', { p_card_id: cardId, p_known: known })
+  if (error) throw error
+}
+
+/** Distinct known words: dictionary words (library + linked cards) plus own cards without a word. */
+export async function knownWordsCount(studentId: string): Promise<number> {
+  const [words, cards] = await Promise.all([
+    supabase.from('student_word_progress').select('word_id').eq('student_id', studentId).eq('status', 'known'),
+    supabase.from('flashcard_progress').select('flashcard_id, flashcards(word_id)').eq('student_id', studentId).eq('state', 'known'),
+  ])
+  if (words.error) throw words.error
+  if (cards.error) throw cards.error
+  const known = new Set((words.data ?? []).map((w) => `w:${w.word_id}`))
+  for (const c of cards.data ?? []) {
+    // many-to-one embed: an object at runtime (typed as an array without generated DB types)
+    const card = (Array.isArray(c.flashcards) ? c.flashcards[0] : c.flashcards) as { word_id: string | null } | null
+    known.add(card?.word_id ? `w:${card.word_id}` : `c:${c.flashcard_id}`)
+  }
+  return known.size
 }
 
 export async function cardProgress(studentId: string) {
