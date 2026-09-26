@@ -11,7 +11,6 @@ import { AdminDashboard } from './features/admin'
 import { Login, StudentProgress } from './features/account'
 import { Avatar } from './lib/avatars'
 import { useTranslation } from 'react-i18next'
-import { LanguageSelect } from './i18n/LanguageSelect'
 
 type View = 'home' | 'lessons' | 'practice' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
 
@@ -133,8 +132,7 @@ function Shell() {
             </button>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
-          <LanguageSelect compact />
+        <div>
           {userId ? (
             <div className="flex items-center gap-2">
               <button onClick={() => go('settings')} title={profile?.full_name ?? t('nav.settings')} className="rounded-full transition-transform hover:scale-105">
