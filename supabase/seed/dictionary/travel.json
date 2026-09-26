@@ -1,0 +1,831 @@
+{
+  "package": "travel",
+  "kind": "words",
+  "words": [
+    {
+      "word": "travel",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/ˈtrævəl/",
+      "definition": "To go from one place to another, often far away.",
+      "examples": [
+        "I love to travel by train."
+      ],
+      "translations": {
+        "uk": "подорожувати",
+        "de": "reisen",
+        "fr": "voyager",
+        "es": "viajar",
+        "it": "viaggiare",
+        "pt": "viajar",
+        "pl": "podróżować",
+        "ru": "путешествовать",
+        "zh": "旅行",
+        "ja": "旅行する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "trip",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/trɪp/",
+      "definition": "A visit to a place and back again.",
+      "examples": [
+        "We went on a school trip to the zoo."
+      ],
+      "translations": {
+        "uk": "поїздка",
+        "de": "Ausflug",
+        "fr": "excursion",
+        "es": "excursión",
+        "it": "gita",
+        "pt": "passeio",
+        "pl": "wycieczka",
+        "ru": "поездка",
+        "zh": "出行",
+        "ja": "小旅行"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vacation",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/veɪˈkeɪʃən/",
+      "definition": "Time away from work or school to relax.",
+      "examples": [
+        "We spent our vacation at the beach."
+      ],
+      "translations": {
+        "uk": "відпустка, канікули",
+        "de": "Urlaub",
+        "fr": "vacances",
+        "es": "vacaciones",
+        "it": "vacanza",
+        "pt": "férias",
+        "pl": "wakacje",
+        "ru": "отпуск, каникулы",
+        "zh": "假期",
+        "ja": "休暇"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hotel",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/hoʊˈtel/",
+      "definition": "A building where you pay to stay the night.",
+      "examples": [
+        "Our hotel is near the sea."
+      ],
+      "translations": {
+        "uk": "готель",
+        "de": "Hotel",
+        "fr": "hôtel",
+        "es": "hotel",
+        "it": "albergo",
+        "pt": "hotel",
+        "pl": "hotel",
+        "ru": "гостиница",
+        "zh": "酒店",
+        "ja": "ホテル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "passport",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/ˈpæspɔːrt/",
+      "definition": "An official document you need to travel abroad.",
+      "examples": [
+        "Don't forget your passport!"
+      ],
+      "translations": {
+        "uk": "паспорт",
+        "de": "Reisepass",
+        "fr": "passeport",
+        "es": "pasaporte",
+        "it": "passaporto",
+        "pt": "passaporte",
+        "pl": "paszport",
+        "ru": "паспорт",
+        "zh": "护照",
+        "ja": "パスポート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "map",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/mæp/",
+      "definition": "A drawing of an area showing roads and places.",
+      "examples": [
+        "Let's look at the map."
+      ],
+      "translations": {
+        "uk": "мапа",
+        "de": "Karte",
+        "fr": "carte",
+        "es": "mapa",
+        "it": "mappa",
+        "pt": "mapa",
+        "pl": "mapa",
+        "ru": "карта",
+        "zh": "地图",
+        "ja": "地図"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "suitcase",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/ˈsuːtkeɪs/",
+      "definition": "A large case for carrying clothes when you travel.",
+      "examples": [
+        "My suitcase is too heavy."
+      ],
+      "translations": {
+        "uk": "валіза",
+        "de": "Koffer",
+        "fr": "valise",
+        "es": "maleta",
+        "it": "valigia",
+        "pt": "mala",
+        "pl": "walizka",
+        "ru": "чемодан",
+        "zh": "行李箱",
+        "ja": "スーツケース"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "beach",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/biːtʃ/",
+      "definition": "An area of sand next to the sea.",
+      "examples": [
+        "The children played on the beach."
+      ],
+      "translations": {
+        "uk": "пляж",
+        "de": "Strand",
+        "fr": "plage",
+        "es": "playa",
+        "it": "spiaggia",
+        "pt": "praia",
+        "pl": "plaża",
+        "ru": "пляж",
+        "zh": "海滩",
+        "ja": "ビーチ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tourist",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/ˈtʊrɪst/",
+      "definition": "A person who visits a place on vacation.",
+      "examples": [
+        "The city is full of tourists in summer."
+      ],
+      "translations": {
+        "uk": "турист",
+        "de": "Tourist",
+        "fr": "touriste",
+        "es": "turista",
+        "it": "turista",
+        "pt": "turista",
+        "pl": "turysta",
+        "ru": "турист",
+        "zh": "游客",
+        "ja": "観光客"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "visit",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Travel",
+      "ipa": "/ˈvɪzɪt/",
+      "definition": "To go to see a place or a person.",
+      "examples": [
+        "We visited Paris last spring."
+      ],
+      "translations": {
+        "uk": "відвідувати",
+        "de": "besuchen",
+        "fr": "visiter",
+        "es": "visitar",
+        "it": "visitare",
+        "pt": "visitar",
+        "pl": "odwiedzać",
+        "ru": "посещать",
+        "zh": "参观",
+        "ja": "訪れる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "plane",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/pleɪn/",
+      "definition": "A vehicle with wings that flies.",
+      "examples": [
+        "The plane lands at six."
+      ],
+      "translations": {
+        "uk": "літак",
+        "de": "Flugzeug",
+        "fr": "avion",
+        "es": "avión",
+        "it": "aereo",
+        "pt": "avião",
+        "pl": "samolot",
+        "ru": "самолёт",
+        "zh": "飞机",
+        "ja": "飛行機"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "abroad",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/əˈbrɔːd/",
+      "definition": "In or to another country.",
+      "examples": [
+        "She wants to study abroad."
+      ],
+      "translations": {
+        "uk": "за кордоном",
+        "de": "im Ausland",
+        "fr": "à l'étranger",
+        "es": "en el extranjero",
+        "it": "all'estero",
+        "pt": "no exterior",
+        "pl": "za granicą",
+        "ru": "за границей",
+        "zh": "在国外",
+        "ja": "海外で"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "flight",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/flaɪt/",
+      "definition": "A trip on a plane.",
+      "examples": [
+        "Our flight was delayed."
+      ],
+      "translations": {
+        "uk": "рейс",
+        "de": "Flug",
+        "fr": "vol",
+        "es": "vuelo",
+        "it": "volo",
+        "pt": "voo",
+        "pl": "lot",
+        "ru": "рейс",
+        "zh": "航班",
+        "ja": "便"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "book",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/bʊk/",
+      "definition": "To arrange a room, seat or ticket in advance.",
+      "examples": [
+        "I booked a hotel room online."
+      ],
+      "translations": {
+        "uk": "бронювати",
+        "de": "buchen",
+        "fr": "réserver",
+        "es": "reservar",
+        "it": "prenotare",
+        "pt": "reservar",
+        "pl": "rezerwować",
+        "ru": "бронировать",
+        "zh": "预订",
+        "ja": "予約する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reservation",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ˌrezɚˈveɪʃən/",
+      "definition": "An arrangement to keep a room or table for you.",
+      "examples": [
+        "I have a reservation for two nights."
+      ],
+      "translations": {
+        "uk": "бронювання",
+        "de": "Reservierung",
+        "fr": "réservation",
+        "es": "reserva",
+        "it": "prenotazione",
+        "pt": "reserva",
+        "pl": "rezerwacja",
+        "ru": "бронь",
+        "zh": "预约",
+        "ja": "予約"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "guide",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ɡaɪd/",
+      "definition": "A person who shows tourists around a place.",
+      "examples": [
+        "Our guide told us about the castle."
+      ],
+      "translations": {
+        "uk": "гід",
+        "de": "Reiseführer",
+        "fr": "guide",
+        "es": "guía",
+        "it": "guida",
+        "pt": "guia",
+        "pl": "przewodnik",
+        "ru": "гид",
+        "zh": "导游",
+        "ja": "ガイド"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sightseeing",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ˈsaɪtsiːɪŋ/",
+      "definition": "Visiting famous places as a tourist.",
+      "examples": [
+        "We went sightseeing in Rome."
+      ],
+      "translations": {
+        "uk": "огляд пам'яток",
+        "de": "Besichtigung",
+        "fr": "visite touristique",
+        "es": "visita turística",
+        "it": "giro turistico",
+        "pt": "passeio turístico",
+        "pl": "zwiedzanie",
+        "ru": "осмотр достопримечательностей",
+        "zh": "观光",
+        "ja": "名所めぐり"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "souvenir",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ˌsuːvəˈnɪr/",
+      "definition": "Something you buy to remember a place.",
+      "examples": [
+        "I bought a souvenir for my mom."
+      ],
+      "translations": {
+        "uk": "сувенір",
+        "de": "Andenken",
+        "fr": "souvenir",
+        "es": "recuerdo",
+        "it": "souvenir",
+        "pt": "lembrança",
+        "pl": "pamiątka",
+        "ru": "сувенир",
+        "zh": "纪念品",
+        "ja": "お土産"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pack",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/pæk/",
+      "definition": "To put things into a bag or suitcase for a trip.",
+      "examples": [
+        "Have you packed your bag yet?"
+      ],
+      "translations": {
+        "uk": "пакувати речі",
+        "de": "packen",
+        "fr": "faire ses bagages",
+        "es": "hacer la maleta",
+        "it": "fare le valigie",
+        "pt": "fazer as malas",
+        "pl": "pakować się",
+        "ru": "собирать вещи",
+        "zh": "收拾行李",
+        "ja": "荷造りする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "passenger",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ˈpæsɪndʒɚ/",
+      "definition": "A person traveling in a car, bus, train or plane.",
+      "examples": [
+        "The bus has fifty passengers."
+      ],
+      "translations": {
+        "uk": "пасажир",
+        "de": "Fahrgast",
+        "fr": "passager",
+        "es": "pasajero",
+        "it": "passeggero",
+        "pt": "passageiro",
+        "pl": "pasażer",
+        "ru": "пассажир",
+        "zh": "乘客",
+        "ja": "乗客"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "backpack",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ˈbækpæk/",
+      "definition": "A bag you carry on your back.",
+      "examples": [
+        "I put my water in my backpack."
+      ],
+      "translations": {
+        "uk": "рюкзак",
+        "de": "Rucksack",
+        "fr": "sac à dos",
+        "es": "mochila",
+        "it": "zaino",
+        "pt": "mochila",
+        "pl": "plecak",
+        "ru": "рюкзак",
+        "zh": "背包",
+        "ja": "リュック"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "foreign",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ˈfɔːrən/",
+      "definition": "From or connected with another country.",
+      "examples": [
+        "Do you speak any foreign languages?"
+      ],
+      "translations": {
+        "uk": "іноземний",
+        "de": "ausländisch",
+        "fr": "étranger",
+        "es": "extranjero",
+        "it": "straniero",
+        "pt": "estrangeiro",
+        "pl": "zagraniczny",
+        "ru": "иностранный",
+        "zh": "外国的",
+        "ja": "外国の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "check in",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/tʃek ɪn/",
+      "definition": "To say you have arrived at a hotel or airport.",
+      "examples": [
+        "We checked in at the hotel at noon."
+      ],
+      "translations": {
+        "uk": "реєструватися",
+        "de": "einchecken",
+        "fr": "s'enregistrer",
+        "es": "registrarse",
+        "it": "fare il check-in",
+        "pt": "fazer check-in",
+        "pl": "zameldować się",
+        "ru": "регистрироваться",
+        "zh": "办理入住",
+        "ja": "チェックインする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "check out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/tʃek aʊt/",
+      "definition": "To pay and leave a hotel.",
+      "examples": [
+        "We must check out by eleven."
+      ],
+      "translations": {
+        "uk": "виписуватися (з готелю)",
+        "de": "auschecken",
+        "fr": "quitter l'hôtel",
+        "es": "dejar el hotel",
+        "it": "lasciare l'albergo",
+        "pt": "fazer check-out",
+        "pl": "wymeldować się",
+        "ru": "выписываться (из гостиницы)",
+        "zh": "退房",
+        "ja": "チェックアウトする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "go on vacation",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/ɡoʊ ɑːn veɪˈkeɪʃən/",
+      "definition": "To take a holiday away from home.",
+      "examples": [
+        "We go on vacation every August."
+      ],
+      "translations": {
+        "uk": "їхати у відпустку",
+        "de": "in den Urlaub fahren",
+        "fr": "partir en vacances",
+        "es": "irse de vacaciones",
+        "it": "andare in vacanza",
+        "pt": "sair de férias",
+        "pl": "jechać na wakacje",
+        "ru": "ехать в отпуск",
+        "zh": "去度假",
+        "ja": "休暇に出かける"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "take off",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/teɪk ɑːf/",
+      "definition": "When a plane leaves the ground and starts flying.",
+      "examples": [
+        "The plane will take off in ten minutes."
+      ],
+      "translations": {
+        "uk": "злітати",
+        "de": "abheben",
+        "fr": "décoller",
+        "es": "despegar",
+        "it": "decollare",
+        "pt": "decolar",
+        "pl": "startować",
+        "ru": "взлетать",
+        "zh": "起飞",
+        "ja": "離陸する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "set off",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/set ɑːf/",
+      "definition": "To start a journey.",
+      "examples": [
+        "We set off early in the morning."
+      ],
+      "translations": {
+        "uk": "вирушати",
+        "de": "aufbrechen",
+        "fr": "partir",
+        "es": "salir",
+        "it": "partire",
+        "pt": "partir",
+        "pl": "wyruszać",
+        "ru": "отправляться в путь",
+        "zh": "出发",
+        "ja": "出発する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "destination",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˌdestɪˈneɪʃən/",
+      "definition": "The place you are traveling to.",
+      "examples": [
+        "Spain is a popular destination."
+      ],
+      "translations": {
+        "uk": "пункт призначення",
+        "de": "Reiseziel",
+        "fr": "destination",
+        "es": "destino",
+        "it": "destinazione",
+        "pt": "destino",
+        "pl": "cel podróży",
+        "ru": "пункт назначения",
+        "zh": "目的地",
+        "ja": "目的地"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "accommodation",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/əˌkɑːməˈdeɪʃən/",
+      "definition": "A place to stay, like a hotel room.",
+      "examples": [
+        "The price includes accommodation."
+      ],
+      "translations": {
+        "uk": "житло",
+        "de": "Unterkunft",
+        "fr": "hébergement",
+        "es": "alojamiento",
+        "it": "alloggio",
+        "pt": "hospedagem",
+        "pl": "zakwaterowanie",
+        "ru": "жильё",
+        "zh": "住宿",
+        "ja": "宿泊施設"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "delay",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/dɪˈleɪ/",
+      "definition": "A time when something happens later than planned.",
+      "examples": [
+        "There was a two-hour delay."
+      ],
+      "translations": {
+        "uk": "затримка",
+        "de": "Verspätung",
+        "fr": "retard",
+        "es": "retraso",
+        "it": "ritardo",
+        "pt": "atraso",
+        "pl": "opóźnienie",
+        "ru": "задержка",
+        "zh": "延误",
+        "ja": "遅れ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "customs",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈkʌstəmz/",
+      "definition": "The place at a border where officials check bags.",
+      "examples": [
+        "We went through customs quickly."
+      ],
+      "translations": {
+        "uk": "митниця",
+        "de": "Zoll",
+        "fr": "douane",
+        "es": "aduana",
+        "it": "dogana",
+        "pt": "alfândega",
+        "pl": "odprawa celna",
+        "ru": "таможня",
+        "zh": "海关",
+        "ja": "税関"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "round trip",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˌraʊnd ˈtrɪp/",
+      "definition": "A journey to a place and back again.",
+      "examples": [
+        "A round trip ticket is cheaper."
+      ],
+      "translations": {
+        "uk": "поїздка туди й назад",
+        "de": "Hin- und Rückfahrt",
+        "fr": "aller-retour",
+        "es": "viaje de ida y vuelta",
+        "it": "andata e ritorno",
+        "pt": "ida e volta",
+        "pl": "podróż w obie strony",
+        "ru": "поездка туда и обратно",
+        "zh": "往返旅程",
+        "ja": "往復"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "border",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈbɔːrdɚ/",
+      "definition": "The line between two countries.",
+      "examples": [
+        "We crossed the border by car."
+      ],
+      "translations": {
+        "uk": "кордон",
+        "de": "Grenze",
+        "fr": "frontière",
+        "es": "frontera",
+        "it": "confine",
+        "pt": "fronteira",
+        "pl": "granica",
+        "ru": "граница",
+        "zh": "边境",
+        "ja": "国境"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,831 @@
+{
+  "package": "family",
+  "kind": "words",
+  "words": [
+    {
+      "word": "family",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈfæməli/",
+      "definition": "A group of people related to each other.",
+      "examples": [
+        "I have a big family."
+      ],
+      "translations": {
+        "uk": "сім'я",
+        "de": "Familie",
+        "fr": "famille",
+        "es": "familia",
+        "it": "famiglia",
+        "pt": "família",
+        "pl": "rodzina",
+        "ru": "семья",
+        "zh": "家庭",
+        "ja": "家族"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "son",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/sʌn/",
+      "definition": "A person's male child.",
+      "examples": [
+        "Their son is five years old."
+      ],
+      "translations": {
+        "uk": "син",
+        "de": "Sohn",
+        "fr": "fils",
+        "es": "hijo",
+        "it": "figlio",
+        "pt": "filho",
+        "pl": "syn",
+        "ru": "сын",
+        "zh": "儿子",
+        "ja": "息子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "daughter",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈdɔːtɚ/",
+      "definition": "A person's female child.",
+      "examples": [
+        "Their daughter plays the piano."
+      ],
+      "translations": {
+        "uk": "донька",
+        "de": "Tochter",
+        "fr": "fille",
+        "es": "hija",
+        "it": "figlia",
+        "pt": "filha",
+        "pl": "córka",
+        "ru": "дочь",
+        "zh": "女儿",
+        "ja": "娘"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "baby",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈbeɪbi/",
+      "definition": "A very young child.",
+      "examples": [
+        "The baby is sleeping."
+      ],
+      "translations": {
+        "uk": "немовля",
+        "de": "Baby",
+        "fr": "bébé",
+        "es": "bebé",
+        "it": "neonato",
+        "pt": "bebê",
+        "pl": "niemowlę",
+        "ru": "младенец",
+        "zh": "婴儿",
+        "ja": "赤ちゃん"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grandmother",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈɡrænmʌðɚ/",
+      "definition": "The mother of your mother or father.",
+      "examples": [
+        "My grandmother makes great pies."
+      ],
+      "translations": {
+        "uk": "бабуся",
+        "de": "Großmutter",
+        "fr": "grand-mère",
+        "es": "abuela",
+        "it": "nonna",
+        "pt": "avó",
+        "pl": "babcia",
+        "ru": "бабушка",
+        "zh": "祖母",
+        "ja": "祖母"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grandfather",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈɡrænfɑːðɚ/",
+      "definition": "The father of your mother or father.",
+      "examples": [
+        "My grandfather was a teacher."
+      ],
+      "translations": {
+        "uk": "дідусь",
+        "de": "Großvater",
+        "fr": "grand-père",
+        "es": "abuelo",
+        "it": "nonno",
+        "pt": "avô",
+        "pl": "dziadek",
+        "ru": "дедушка",
+        "zh": "祖父",
+        "ja": "祖父"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grandparents",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈɡrænperənts/",
+      "definition": "The parents of your mother or father.",
+      "examples": [
+        "We visit our grandparents every summer."
+      ],
+      "translations": {
+        "uk": "бабуся і дідусь",
+        "de": "Großeltern",
+        "fr": "grands-parents",
+        "es": "abuelos",
+        "it": "nonni",
+        "pt": "avós",
+        "pl": "dziadkowie",
+        "ru": "бабушка и дедушка",
+        "zh": "祖父母",
+        "ja": "祖父母"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "husband",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈhʌzbənd/",
+      "definition": "The man a woman is married to.",
+      "examples": [
+        "Her husband works in a bank."
+      ],
+      "translations": {
+        "uk": "чоловік",
+        "de": "Ehemann",
+        "fr": "mari",
+        "es": "esposo",
+        "it": "marito",
+        "pt": "marido",
+        "pl": "mąż",
+        "ru": "муж",
+        "zh": "丈夫",
+        "ja": "夫"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wife",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/waɪf/",
+      "definition": "The woman a man is married to.",
+      "examples": [
+        "His wife is a doctor."
+      ],
+      "translations": {
+        "uk": "дружина",
+        "de": "Ehefrau",
+        "fr": "femme",
+        "es": "esposa",
+        "it": "moglie",
+        "pt": "esposa",
+        "pl": "żona",
+        "ru": "жена",
+        "zh": "妻子",
+        "ja": "妻"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "aunt",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ænt/",
+      "definition": "The sister of your mother or father.",
+      "examples": [
+        "My aunt lives in Canada."
+      ],
+      "translations": {
+        "uk": "тітка",
+        "de": "Tante",
+        "fr": "tante",
+        "es": "tía",
+        "it": "zia",
+        "pt": "tia",
+        "pl": "ciocia",
+        "ru": "тётя",
+        "zh": "姑妈/姨妈",
+        "ja": "おば"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "uncle",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈʌŋkəl/",
+      "definition": "The brother of your mother or father.",
+      "examples": [
+        "My uncle has a farm."
+      ],
+      "translations": {
+        "uk": "дядько",
+        "de": "Onkel",
+        "fr": "oncle",
+        "es": "tío",
+        "it": "zio",
+        "pt": "tio",
+        "pl": "wujek",
+        "ru": "дядя",
+        "zh": "叔叔/舅舅",
+        "ja": "おじ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cousin",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈkʌzən/",
+      "definition": "The child of your aunt or uncle.",
+      "examples": [
+        "My cousin is the same age as me."
+      ],
+      "translations": {
+        "uk": "двоюрідний брат, двоюрідна сестра",
+        "de": "Cousin",
+        "fr": "cousin",
+        "es": "primo",
+        "it": "cugino",
+        "pt": "primo",
+        "pl": "kuzyn",
+        "ru": "двоюродный брат, двоюродная сестра",
+        "zh": "堂兄弟姐妹/表兄弟姐妹",
+        "ja": "いとこ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "married",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈmærid/",
+      "definition": "Having a husband or wife.",
+      "examples": [
+        "My parents have been married for twenty years."
+      ],
+      "translations": {
+        "uk": "одружений",
+        "de": "verheiratet",
+        "fr": "marié",
+        "es": "casado",
+        "it": "sposato",
+        "pt": "casado",
+        "pl": "żonaty, zamężna",
+        "ru": "женатый, замужем",
+        "zh": "已婚的",
+        "ja": "結婚している"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "birthday",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Family",
+      "ipa": "/ˈbɝːθdeɪ/",
+      "definition": "The day each year when you were born.",
+      "examples": [
+        "Happy birthday, Mom!"
+      ],
+      "translations": {
+        "uk": "день народження",
+        "de": "Geburtstag",
+        "fr": "anniversaire",
+        "es": "cumpleaños",
+        "it": "compleanno",
+        "pt": "aniversário",
+        "pl": "urodziny",
+        "ru": "день рождения",
+        "zh": "生日",
+        "ja": "誕生日"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "twin",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/twɪn/",
+      "definition": "One of two children born at the same time to the same mother.",
+      "examples": [
+        "Tom and his twin look exactly alike."
+      ],
+      "translations": {
+        "uk": "близнюк",
+        "de": "Zwilling",
+        "fr": "jumeau",
+        "es": "gemelo",
+        "it": "gemello",
+        "pt": "gêmeo",
+        "pl": "bliźniak",
+        "ru": "близнец",
+        "zh": "双胞胎之一",
+        "ja": "双子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "single",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/ˈsɪŋɡəl/",
+      "definition": "Not married or not in a relationship.",
+      "examples": [
+        "My older brother is still single."
+      ],
+      "translations": {
+        "uk": "неодружений",
+        "de": "ledig",
+        "fr": "célibataire",
+        "es": "soltero",
+        "it": "single",
+        "pt": "solteiro",
+        "pl": "stanu wolnego",
+        "ru": "холост, не замужем",
+        "zh": "单身的",
+        "ja": "独身の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "relative",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/ˈrelətɪv/",
+      "definition": "A member of your family.",
+      "examples": [
+        "All our relatives came to the party."
+      ],
+      "translations": {
+        "uk": "родич",
+        "de": "Verwandter",
+        "fr": "parent",
+        "es": "pariente",
+        "it": "parente",
+        "pt": "parente",
+        "pl": "krewny",
+        "ru": "родственник",
+        "zh": "亲戚",
+        "ja": "親戚"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wedding",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/ˈwedɪŋ/",
+      "definition": "A ceremony where two people get married.",
+      "examples": [
+        "The wedding is in June."
+      ],
+      "translations": {
+        "uk": "весілля",
+        "de": "Hochzeit",
+        "fr": "mariage",
+        "es": "boda",
+        "it": "matrimonio",
+        "pt": "casamento",
+        "pl": "ślub",
+        "ru": "свадьба",
+        "zh": "婚礼",
+        "ja": "結婚式"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "get married",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/ɡet ˈmærid/",
+      "definition": "To become husband and wife.",
+      "examples": [
+        "They want to get married next year."
+      ],
+      "translations": {
+        "uk": "одружитися",
+        "de": "heiraten",
+        "fr": "se marier",
+        "es": "casarse",
+        "it": "sposarsi",
+        "pt": "casar-se",
+        "pl": "pobrać się",
+        "ru": "пожениться",
+        "zh": "结婚",
+        "ja": "結婚する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "only child",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/ˈoʊnli tʃaɪld/",
+      "definition": "A child with no brothers or sisters.",
+      "examples": [
+        "I'm an only child."
+      ],
+      "translations": {
+        "uk": "єдина дитина",
+        "de": "Einzelkind",
+        "fr": "enfant unique",
+        "es": "hijo único",
+        "it": "figlio unico",
+        "pt": "filho único",
+        "pl": "jedynak",
+        "ru": "единственный ребёнок",
+        "zh": "独生子女",
+        "ja": "一人っ子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "look like",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/lʊk laɪk/",
+      "definition": "To have a similar appearance to someone.",
+      "examples": [
+        "You look like your father."
+      ],
+      "translations": {
+        "uk": "бути схожим (на)",
+        "de": "aussehen wie",
+        "fr": "ressembler à",
+        "es": "parecerse a",
+        "it": "somigliare a",
+        "pt": "parecer com",
+        "pl": "wyglądać jak",
+        "ru": "быть похожим (на)",
+        "zh": "看起来像",
+        "ja": "〜に似ている"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "teenager",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/ˈtiːneɪdʒɚ/",
+      "definition": "A person aged between 13 and 19.",
+      "examples": [
+        "Our son is a teenager now."
+      ],
+      "translations": {
+        "uk": "підліток",
+        "de": "Teenager",
+        "fr": "adolescent",
+        "es": "adolescente",
+        "it": "adolescente",
+        "pt": "adolescente",
+        "pl": "nastolatek",
+        "ru": "подросток",
+        "zh": "青少年",
+        "ja": "ティーンエイジャー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grandchild",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Family",
+      "ipa": "/ˈɡræntʃaɪld/",
+      "definition": "The child of your son or daughter.",
+      "examples": [
+        "She has six grandchildren."
+      ],
+      "translations": {
+        "uk": "онук, онука",
+        "de": "Enkelkind",
+        "fr": "petit-enfant",
+        "es": "nieto",
+        "it": "nipote",
+        "pt": "neto",
+        "pl": "wnuk",
+        "ru": "внук, внучка",
+        "zh": "孙子女",
+        "ja": "孫"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bring up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/brɪŋ ʌp/",
+      "definition": "To care for a child until it is an adult.",
+      "examples": [
+        "It isn't easy to bring up three children."
+      ],
+      "translations": {
+        "uk": "виховувати",
+        "de": "großziehen",
+        "fr": "élever",
+        "es": "criar",
+        "it": "crescere",
+        "pt": "criar",
+        "pl": "wychowywać",
+        "ru": "воспитывать",
+        "zh": "抚养",
+        "ja": "育てる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "take after",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/teɪk ˈæftɚ/",
+      "definition": "To look or behave like an older family member.",
+      "examples": [
+        "She takes after her mother."
+      ],
+      "translations": {
+        "uk": "бути схожим (на старшого родича)",
+        "de": "nach jemandem kommen",
+        "fr": "tenir de",
+        "es": "salir a",
+        "it": "assomigliare a",
+        "pt": "puxar a",
+        "pl": "wdać się w",
+        "ru": "пойти в (кого-то)",
+        "zh": "像(长辈)",
+        "ja": "（親などに）似ている"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "get along",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/ɡet əˈlɔːŋ/",
+      "definition": "To have a friendly relationship.",
+      "examples": [
+        "I get along well with my sister."
+      ],
+      "translations": {
+        "uk": "ладнати",
+        "de": "sich verstehen",
+        "fr": "s'entendre",
+        "es": "llevarse bien",
+        "it": "andare d'accordo",
+        "pt": "dar-se bem",
+        "pl": "dogadywać się",
+        "ru": "ладить",
+        "zh": "相处融洽",
+        "ja": "仲良くする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "raise",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/reɪz/",
+      "definition": "To take care of children until they grow up.",
+      "examples": [
+        "They raised four children."
+      ],
+      "translations": {
+        "uk": "ростити",
+        "de": "aufziehen",
+        "fr": "élever",
+        "es": "criar",
+        "it": "crescere",
+        "pt": "criar",
+        "pl": "wychowywać",
+        "ru": "растить",
+        "zh": "养育",
+        "ja": "育てる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stepmother",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/ˈstepmʌðɚ/",
+      "definition": "The woman who is married to your father but is not your mother.",
+      "examples": [
+        "My stepmother is very kind."
+      ],
+      "translations": {
+        "uk": "мачуха",
+        "de": "Stiefmutter",
+        "fr": "belle-mère",
+        "es": "madrastra",
+        "it": "matrigna",
+        "pt": "madrasta",
+        "pl": "macocha",
+        "ru": "мачеха",
+        "zh": "继母",
+        "ja": "継母"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "niece",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/niːs/",
+      "definition": "The daughter of your brother or sister.",
+      "examples": [
+        "My niece is starting school."
+      ],
+      "translations": {
+        "uk": "племінниця",
+        "de": "Nichte",
+        "fr": "nièce",
+        "es": "sobrina",
+        "it": "nipote",
+        "pt": "sobrinha",
+        "pl": "siostrzenica, bratanica",
+        "ru": "племянница",
+        "zh": "侄女/外甥女",
+        "ja": "姪"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nephew",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/ˈnefjuː/",
+      "definition": "The son of your brother or sister.",
+      "examples": [
+        "My nephew loves football."
+      ],
+      "translations": {
+        "uk": "племінник",
+        "de": "Neffe",
+        "fr": "neveu",
+        "es": "sobrino",
+        "it": "nipote",
+        "pt": "sobrinho",
+        "pl": "siostrzeniec, bratanek",
+        "ru": "племянник",
+        "zh": "侄子/外甥",
+        "ja": "甥"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "generation",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/ˌdʒenəˈreɪʃən/",
+      "definition": "All the people born at about the same time.",
+      "examples": [
+        "Three generations live in this house."
+      ],
+      "translations": {
+        "uk": "покоління",
+        "de": "Generation",
+        "fr": "génération",
+        "es": "generación",
+        "it": "generazione",
+        "pt": "geração",
+        "pl": "pokolenie",
+        "ru": "поколение",
+        "zh": "一代人",
+        "ja": "世代"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "marriage",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/ˈmærɪdʒ/",
+      "definition": "The legal relationship between a husband and wife.",
+      "examples": [
+        "Their marriage lasted fifty years."
+      ],
+      "translations": {
+        "uk": "шлюб",
+        "de": "Ehe",
+        "fr": "mariage",
+        "es": "matrimonio",
+        "it": "matrimonio",
+        "pt": "casamento",
+        "pl": "małżeństwo",
+        "ru": "брак",
+        "zh": "婚姻",
+        "ja": "結婚生活"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "divorce",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Family",
+      "ipa": "/dɪˈvɔːrs/",
+      "definition": "The legal end of a marriage.",
+      "examples": [
+        "Her parents got a divorce last year."
+      ],
+      "translations": {
+        "uk": "розлучення",
+        "de": "Scheidung",
+        "fr": "divorce",
+        "es": "divorcio",
+        "it": "divorzio",
+        "pt": "divórcio",
+        "pl": "rozwód",
+        "ru": "развод",
+        "zh": "离婚",
+        "ja": "離婚"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

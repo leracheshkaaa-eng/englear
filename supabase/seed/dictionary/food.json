@@ -1,0 +1,931 @@
+{
+  "package": "food",
+  "kind": "words",
+  "words": [
+    {
+      "word": "milk",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/mɪlk/",
+      "definition": "A white drink that comes from cows.",
+      "examples": [
+        "I drink a glass of milk every morning."
+      ],
+      "translations": {
+        "uk": "молоко",
+        "de": "Milch",
+        "fr": "lait",
+        "es": "leche",
+        "it": "latte",
+        "pt": "leite",
+        "pl": "mleko",
+        "ru": "молоко",
+        "zh": "牛奶",
+        "ja": "牛乳"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "egg",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/eɡ/",
+      "definition": "An oval food laid by a hen.",
+      "examples": [
+        "She had a boiled egg for breakfast."
+      ],
+      "translations": {
+        "uk": "яйце",
+        "de": "Ei",
+        "fr": "œuf",
+        "es": "huevo",
+        "it": "uovo",
+        "pt": "ovo",
+        "pl": "jajko",
+        "ru": "яйцо",
+        "zh": "鸡蛋",
+        "ja": "卵"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cheese",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/tʃiːz/",
+      "definition": "A solid food made from milk.",
+      "examples": [
+        "I like cheese on my pizza."
+      ],
+      "translations": {
+        "uk": "сир",
+        "de": "Käse",
+        "fr": "fromage",
+        "es": "queso",
+        "it": "formaggio",
+        "pt": "queijo",
+        "pl": "ser",
+        "ru": "сыр",
+        "zh": "奶酪",
+        "ja": "チーズ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rice",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/raɪs/",
+      "definition": "Small white or brown grains that you cook and eat.",
+      "examples": [
+        "We often eat rice with chicken."
+      ],
+      "translations": {
+        "uk": "рис",
+        "de": "Reis",
+        "fr": "riz",
+        "es": "arroz",
+        "it": "riso",
+        "pt": "arroz",
+        "pl": "ryż",
+        "ru": "рис",
+        "zh": "米饭",
+        "ja": "ご飯"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "meat",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/miːt/",
+      "definition": "The flesh of an animal eaten as food.",
+      "examples": [
+        "My brother doesn't eat meat."
+      ],
+      "translations": {
+        "uk": "м'ясо",
+        "de": "Fleisch",
+        "fr": "viande",
+        "es": "carne",
+        "it": "carne",
+        "pt": "carne",
+        "pl": "mięso",
+        "ru": "мясо",
+        "zh": "肉",
+        "ja": "肉"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fish",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/fɪʃ/",
+      "definition": "An animal that lives in water, eaten as food.",
+      "examples": [
+        "We had fish and potatoes for dinner."
+      ],
+      "translations": {
+        "uk": "риба",
+        "de": "Fisch",
+        "fr": "poisson",
+        "es": "pescado",
+        "it": "pesce",
+        "pt": "peixe",
+        "pl": "ryba",
+        "ru": "рыба",
+        "zh": "鱼",
+        "ja": "魚"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chicken",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈtʃɪkɪn/",
+      "definition": "The meat of a bird kept on farms.",
+      "examples": [
+        "Mom made chicken soup today."
+      ],
+      "translations": {
+        "uk": "курятина",
+        "de": "Hähnchen",
+        "fr": "poulet",
+        "es": "pollo",
+        "it": "pollo",
+        "pt": "frango",
+        "pl": "kurczak",
+        "ru": "курица",
+        "zh": "鸡肉",
+        "ja": "鶏肉"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "potato",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/pəˈteɪtoʊ/",
+      "definition": "A round vegetable that grows under the ground.",
+      "examples": [
+        "Can you peel a potato for me?"
+      ],
+      "translations": {
+        "uk": "картопля",
+        "de": "Kartoffel",
+        "fr": "pomme de terre",
+        "es": "papa",
+        "it": "patata",
+        "pt": "batata",
+        "pl": "ziemniak",
+        "ru": "картофель",
+        "zh": "土豆",
+        "ja": "じゃがいも"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tomato",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/təˈmeɪtoʊ/",
+      "definition": "A soft red fruit eaten as a vegetable.",
+      "examples": [
+        "I put a tomato in the salad."
+      ],
+      "translations": {
+        "uk": "помідор",
+        "de": "Tomate",
+        "fr": "tomate",
+        "es": "tomate",
+        "it": "pomodoro",
+        "pt": "tomate",
+        "pl": "pomidor",
+        "ru": "помидор",
+        "zh": "西红柿",
+        "ja": "トマト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "orange",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈɔːrɪndʒ/",
+      "definition": "A round sweet fruit with a thick skin.",
+      "examples": [
+        "She eats an orange after lunch."
+      ],
+      "translations": {
+        "uk": "апельсин",
+        "de": "Orange",
+        "fr": "orange",
+        "es": "naranja",
+        "it": "arancia",
+        "pt": "laranja",
+        "pl": "pomarańcza",
+        "ru": "апельсин",
+        "zh": "橙子",
+        "ja": "オレンジ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "banana",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/bəˈnænə/",
+      "definition": "A long yellow fruit.",
+      "examples": [
+        "A banana is a good snack."
+      ],
+      "translations": {
+        "uk": "банан",
+        "de": "Banane",
+        "fr": "banane",
+        "es": "plátano",
+        "it": "banana",
+        "pt": "banana",
+        "pl": "banan",
+        "ru": "банан",
+        "zh": "香蕉",
+        "ja": "バナナ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "juice",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/dʒuːs/",
+      "definition": "A drink made from fruit or vegetables.",
+      "examples": [
+        "Would you like some orange juice?"
+      ],
+      "translations": {
+        "uk": "сік",
+        "de": "Saft",
+        "fr": "jus",
+        "es": "jugo",
+        "it": "succo",
+        "pt": "suco",
+        "pl": "sok",
+        "ru": "сок",
+        "zh": "果汁",
+        "ja": "ジュース"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "coffee",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈkɑːfi/",
+      "definition": "A hot drink made from roasted beans.",
+      "examples": [
+        "My dad drinks coffee without sugar."
+      ],
+      "translations": {
+        "uk": "кава",
+        "de": "Kaffee",
+        "fr": "café",
+        "es": "café",
+        "it": "caffè",
+        "pt": "café",
+        "pl": "kawa",
+        "ru": "кофе",
+        "zh": "咖啡",
+        "ja": "コーヒー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tea",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/tiː/",
+      "definition": "A hot drink made from dried leaves.",
+      "examples": [
+        "Let's have a cup of tea."
+      ],
+      "translations": {
+        "uk": "чай",
+        "de": "Tee",
+        "fr": "thé",
+        "es": "té",
+        "it": "tè",
+        "pt": "chá",
+        "pl": "herbata",
+        "ru": "чай",
+        "zh": "茶",
+        "ja": "お茶"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sugar",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈʃʊɡɚ/",
+      "definition": "A sweet substance added to food and drinks.",
+      "examples": [
+        "Do you take sugar in your tea?"
+      ],
+      "translations": {
+        "uk": "цукор",
+        "de": "Zucker",
+        "fr": "sucre",
+        "es": "azúcar",
+        "it": "zucchero",
+        "pt": "açúcar",
+        "pl": "cukier",
+        "ru": "сахар",
+        "zh": "糖",
+        "ja": "砂糖"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "salt",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/sɔːlt/",
+      "definition": "A white substance that gives food more flavor.",
+      "examples": [
+        "Add a little salt to the soup."
+      ],
+      "translations": {
+        "uk": "сіль",
+        "de": "Salz",
+        "fr": "sel",
+        "es": "sal",
+        "it": "sale",
+        "pt": "sal",
+        "pl": "sól",
+        "ru": "соль",
+        "zh": "盐",
+        "ja": "塩"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "soup",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/suːp/",
+      "definition": "A hot liquid food made from vegetables or meat.",
+      "examples": [
+        "This soup is too hot to eat."
+      ],
+      "translations": {
+        "uk": "суп",
+        "de": "Suppe",
+        "fr": "soupe",
+        "es": "sopa",
+        "it": "zuppa",
+        "pt": "sopa",
+        "pl": "zupa",
+        "ru": "суп",
+        "zh": "汤",
+        "ja": "スープ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "salad",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈsæləd/",
+      "definition": "A mix of raw vegetables served cold.",
+      "examples": [
+        "I had a green salad for lunch."
+      ],
+      "translations": {
+        "uk": "салат",
+        "de": "Salat",
+        "fr": "salade",
+        "es": "ensalada",
+        "it": "insalata",
+        "pt": "salada",
+        "pl": "sałatka",
+        "ru": "салат",
+        "zh": "沙拉",
+        "ja": "サラダ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lunch",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/lʌntʃ/",
+      "definition": "A meal eaten in the middle of the day.",
+      "examples": [
+        "We have lunch at one o'clock."
+      ],
+      "translations": {
+        "uk": "обід",
+        "de": "Mittagessen",
+        "fr": "déjeuner",
+        "es": "almuerzo",
+        "it": "pranzo",
+        "pt": "almoço",
+        "pl": "obiad",
+        "ru": "обед",
+        "zh": "午餐",
+        "ja": "昼食"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dinner",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈdɪnɚ/",
+      "definition": "The main meal of the day, usually in the evening.",
+      "examples": [
+        "What's for dinner tonight?"
+      ],
+      "translations": {
+        "uk": "вечеря",
+        "de": "Abendessen",
+        "fr": "dîner",
+        "es": "cena",
+        "it": "cena",
+        "pt": "jantar",
+        "pl": "kolacja",
+        "ru": "ужин",
+        "zh": "晚餐",
+        "ja": "夕食"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eat",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/iːt/",
+      "definition": "To put food in your mouth and swallow it.",
+      "examples": [
+        "We eat together as a family."
+      ],
+      "translations": {
+        "uk": "їсти",
+        "de": "essen",
+        "fr": "manger",
+        "es": "comer",
+        "it": "mangiare",
+        "pt": "comer",
+        "pl": "jeść",
+        "ru": "есть",
+        "zh": "吃",
+        "ja": "食べる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "drink",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/drɪŋk/",
+      "definition": "To take liquid into your mouth and swallow it.",
+      "examples": [
+        "You should drink more water."
+      ],
+      "translations": {
+        "uk": "пити",
+        "de": "trinken",
+        "fr": "boire",
+        "es": "beber",
+        "it": "bere",
+        "pt": "beber",
+        "pl": "pić",
+        "ru": "пить",
+        "zh": "喝",
+        "ja": "飲む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hungry",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈhʌŋɡri/",
+      "definition": "Wanting or needing food.",
+      "examples": [
+        "I'm hungry. Let's eat."
+      ],
+      "translations": {
+        "uk": "голодний",
+        "de": "hungrig",
+        "fr": "affamé",
+        "es": "hambriento",
+        "it": "affamato",
+        "pt": "com fome",
+        "pl": "głodny",
+        "ru": "голодный",
+        "zh": "饿的",
+        "ja": "お腹がすいた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "thirsty",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈθɝːsti/",
+      "definition": "Wanting or needing a drink.",
+      "examples": [
+        "Running makes me thirsty."
+      ],
+      "translations": {
+        "uk": "спраглий",
+        "de": "durstig",
+        "fr": "assoiffé",
+        "es": "sediento",
+        "it": "assetato",
+        "pt": "com sede",
+        "pl": "spragniony",
+        "ru": "испытывающий жажду",
+        "zh": "口渴的",
+        "ja": "のどが渇いた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sweet",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/swiːt/",
+      "definition": "Tasting like sugar.",
+      "examples": [
+        "This cake is very sweet."
+      ],
+      "translations": {
+        "uk": "солодкий",
+        "de": "süß",
+        "fr": "sucré",
+        "es": "dulce",
+        "it": "dolce",
+        "pt": "doce",
+        "pl": "słodki",
+        "ru": "сладкий",
+        "zh": "甜的",
+        "ja": "甘い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "restaurant",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈrestərɑːnt/",
+      "definition": "A place where you pay to eat a meal.",
+      "examples": [
+        "We went to an Italian restaurant."
+      ],
+      "translations": {
+        "uk": "ресторан",
+        "de": "Restaurant",
+        "fr": "restaurant",
+        "es": "restaurante",
+        "it": "ristorante",
+        "pt": "restaurante",
+        "pl": "restauracja",
+        "ru": "ресторан",
+        "zh": "餐厅",
+        "ja": "レストラン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "menu",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈmenjuː/",
+      "definition": "A list of the food you can order in a restaurant.",
+      "examples": [
+        "Can I see the menu, please?"
+      ],
+      "translations": {
+        "uk": "меню",
+        "de": "Speisekarte",
+        "fr": "menu",
+        "es": "menú",
+        "it": "menù",
+        "pt": "cardápio",
+        "pl": "menu",
+        "ru": "меню",
+        "zh": "菜单",
+        "ja": "メニュー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "snack",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/snæk/",
+      "definition": "A small amount of food eaten between meals.",
+      "examples": [
+        "I take a snack to school."
+      ],
+      "translations": {
+        "uk": "перекус",
+        "de": "Snack",
+        "fr": "en-cas",
+        "es": "tentempié",
+        "it": "spuntino",
+        "pt": "lanche",
+        "pl": "przekąska",
+        "ru": "перекус",
+        "zh": "零食",
+        "ja": "おやつ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "meal",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/miːl/",
+      "definition": "The food you eat at one time, like breakfast or dinner.",
+      "examples": [
+        "Dinner is my favorite meal."
+      ],
+      "translations": {
+        "uk": "прийом їжі",
+        "de": "Mahlzeit",
+        "fr": "repas",
+        "es": "comida",
+        "it": "pasto",
+        "pt": "refeição",
+        "pl": "posiłek",
+        "ru": "приём пищи",
+        "zh": "一餐",
+        "ja": "食事"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "taste",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/teɪst/",
+      "definition": "To have a particular flavor.",
+      "examples": [
+        "This soup tastes great."
+      ],
+      "translations": {
+        "uk": "мати смак",
+        "de": "schmecken",
+        "fr": "avoir un goût",
+        "es": "saber",
+        "it": "sapere",
+        "pt": "ter gosto",
+        "pl": "smakować",
+        "ru": "иметь вкус",
+        "zh": "尝起来",
+        "ja": "味がする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fresh",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/freʃ/",
+      "definition": "Recently made or picked, not old.",
+      "examples": [
+        "We buy fresh bread every day."
+      ],
+      "translations": {
+        "uk": "свіжий",
+        "de": "frisch",
+        "fr": "frais",
+        "es": "fresco",
+        "it": "fresco",
+        "pt": "fresco",
+        "pl": "świeży",
+        "ru": "свежий",
+        "zh": "新鲜的",
+        "ja": "新鮮な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "order",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈɔːrdɚ/",
+      "definition": "To ask for food or drinks in a restaurant.",
+      "examples": [
+        "I'd like to order a pizza."
+      ],
+      "translations": {
+        "uk": "замовляти",
+        "de": "bestellen",
+        "fr": "commander",
+        "es": "pedir",
+        "it": "ordinare",
+        "pt": "pedir",
+        "pl": "zamawiać",
+        "ru": "заказывать",
+        "zh": "点餐",
+        "ja": "注文する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dessert",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/dɪˈzɝːt/",
+      "definition": "Sweet food eaten at the end of a meal.",
+      "examples": [
+        "We had ice cream for dessert."
+      ],
+      "translations": {
+        "uk": "десерт",
+        "de": "Nachtisch",
+        "fr": "dessert",
+        "es": "postre",
+        "it": "dolce",
+        "pt": "sobremesa",
+        "pl": "deser",
+        "ru": "десерт",
+        "zh": "甜点",
+        "ja": "デザート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spicy",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Food",
+      "ipa": "/ˈspaɪsi/",
+      "definition": "Having a strong hot flavor.",
+      "examples": [
+        "This curry is too spicy for me."
+      ],
+      "translations": {
+        "uk": "гострий",
+        "de": "scharf",
+        "fr": "épicé",
+        "es": "picante",
+        "it": "piccante",
+        "pt": "apimentado",
+        "pl": "ostry",
+        "ru": "острый",
+        "zh": "辣的",
+        "ja": "辛い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vegetarian",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Food",
+      "ipa": "/ˌvedʒəˈteriən/",
+      "definition": "A person who does not eat meat or fish.",
+      "examples": [
+        "My sister is a vegetarian."
+      ],
+      "translations": {
+        "uk": "вегетаріанець",
+        "de": "Vegetarier",
+        "fr": "végétarien",
+        "es": "vegetariano",
+        "it": "vegetariano",
+        "pt": "vegetariano",
+        "pl": "wegetarianin",
+        "ru": "вегетарианец",
+        "zh": "素食者",
+        "ja": "菜食主義者"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ingredient",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Food",
+      "ipa": "/ɪnˈɡriːdiənt/",
+      "definition": "One of the foods used to make a dish.",
+      "examples": [
+        "Flour is the main ingredient in bread."
+      ],
+      "translations": {
+        "uk": "інгредієнт",
+        "de": "Zutat",
+        "fr": "ingrédient",
+        "es": "ingrediente",
+        "it": "ingrediente",
+        "pt": "ingrediente",
+        "pl": "składnik",
+        "ru": "ингредиент",
+        "zh": "配料",
+        "ja": "材料"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cook",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/kʊk/",
+      "definition": "To make food ready to eat by heating it.",
+      "examples": [
+        "My dad likes to cook on Sundays."
+      ],
+      "translations": {
+        "uk": "готувати (їжу)",
+        "de": "kochen",
+        "fr": "cuisiner",
+        "es": "cocinar",
+        "it": "cucinare",
+        "pt": "cozinhar",
+        "pl": "gotować",
+        "ru": "готовить",
+        "zh": "做饭",
+        "ja": "料理する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

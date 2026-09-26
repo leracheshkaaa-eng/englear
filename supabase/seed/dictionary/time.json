@@ -1,0 +1,906 @@
+{
+  "package": "time",
+  "kind": "words",
+  "words": [
+    {
+      "word": "day",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/deɪ/",
+      "definition": "A period of 24 hours.",
+      "examples": [
+        "There are seven days in a week."
+      ],
+      "translations": {
+        "uk": "день",
+        "de": "Tag",
+        "fr": "jour",
+        "es": "día",
+        "it": "giorno",
+        "pt": "dia",
+        "pl": "dzień",
+        "ru": "день",
+        "zh": "天",
+        "ja": "日"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "month",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/mʌnθ/",
+      "definition": "One of the twelve parts of a year.",
+      "examples": [
+        "My birthday is next month."
+      ],
+      "translations": {
+        "uk": "місяць",
+        "de": "Monat",
+        "fr": "mois",
+        "es": "mes",
+        "it": "mese",
+        "pt": "mês",
+        "pl": "miesiąc",
+        "ru": "месяц",
+        "zh": "月",
+        "ja": "月"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "year",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/jɪr/",
+      "definition": "A period of twelve months.",
+      "examples": [
+        "I started school three years ago."
+      ],
+      "translations": {
+        "uk": "рік",
+        "de": "Jahr",
+        "fr": "an",
+        "es": "año",
+        "it": "anno",
+        "pt": "ano",
+        "pl": "rok",
+        "ru": "год",
+        "zh": "年",
+        "ja": "年"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hour",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/aʊɚ/",
+      "definition": "A period of sixty minutes.",
+      "examples": [
+        "The movie is two hours long."
+      ],
+      "translations": {
+        "uk": "година",
+        "de": "Stunde",
+        "fr": "heure",
+        "es": "hora",
+        "it": "ora",
+        "pt": "hora",
+        "pl": "godzina",
+        "ru": "час",
+        "zh": "小时",
+        "ja": "時間"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "minute",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈmɪnɪt/",
+      "definition": "A period of sixty seconds.",
+      "examples": [
+        "Wait a minute, please."
+      ],
+      "translations": {
+        "uk": "хвилина",
+        "de": "Minute",
+        "fr": "minute",
+        "es": "minuto",
+        "it": "minuto",
+        "pt": "minuto",
+        "pl": "minuta",
+        "ru": "минута",
+        "zh": "分钟",
+        "ja": "分"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "afternoon",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˌæftɚˈnuːn/",
+      "definition": "The part of the day between noon and evening.",
+      "examples": [
+        "I play tennis in the afternoon."
+      ],
+      "translations": {
+        "uk": "друга половина дня",
+        "de": "Nachmittag",
+        "fr": "après-midi",
+        "es": "tarde",
+        "it": "pomeriggio",
+        "pt": "tarde",
+        "pl": "popołudnie",
+        "ru": "вторая половина дня",
+        "zh": "下午",
+        "ja": "午後"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "evening",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈiːvnɪŋ/",
+      "definition": "The part of the day between afternoon and night.",
+      "examples": [
+        "We watch TV in the evening."
+      ],
+      "translations": {
+        "uk": "вечір",
+        "de": "Abend",
+        "fr": "soir",
+        "es": "noche",
+        "it": "sera",
+        "pt": "noite",
+        "pl": "wieczór",
+        "ru": "вечер",
+        "zh": "晚上",
+        "ja": "夕方"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "night",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/naɪt/",
+      "definition": "The time when it is dark and people sleep.",
+      "examples": [
+        "I sleep eight hours every night."
+      ],
+      "translations": {
+        "uk": "ніч",
+        "de": "Nacht",
+        "fr": "nuit",
+        "es": "noche",
+        "it": "notte",
+        "pt": "noite",
+        "pl": "noc",
+        "ru": "ночь",
+        "zh": "夜",
+        "ja": "夜"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "today",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/təˈdeɪ/",
+      "definition": "On this day.",
+      "examples": [
+        "What are you doing today?"
+      ],
+      "translations": {
+        "uk": "сьогодні",
+        "de": "heute",
+        "fr": "aujourd'hui",
+        "es": "hoy",
+        "it": "oggi",
+        "pt": "hoje",
+        "pl": "dzisiaj",
+        "ru": "сегодня",
+        "zh": "今天",
+        "ja": "今日"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tomorrow",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/təˈmɑːroʊ/",
+      "definition": "On the day after today.",
+      "examples": [
+        "See you tomorrow!"
+      ],
+      "translations": {
+        "uk": "завтра",
+        "de": "morgen",
+        "fr": "demain",
+        "es": "mañana",
+        "it": "domani",
+        "pt": "amanhã",
+        "pl": "jutro",
+        "ru": "завтра",
+        "zh": "明天",
+        "ja": "明日"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yesterday",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈjestɚdeɪ/",
+      "definition": "On the day before today.",
+      "examples": [
+        "I called her yesterday."
+      ],
+      "translations": {
+        "uk": "учора",
+        "de": "gestern",
+        "fr": "hier",
+        "es": "ayer",
+        "it": "ieri",
+        "pt": "ontem",
+        "pl": "wczoraj",
+        "ru": "вчера",
+        "zh": "昨天",
+        "ja": "昨日"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "weekend",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈwiːkend/",
+      "definition": "Saturday and Sunday.",
+      "examples": [
+        "What did you do on the weekend?"
+      ],
+      "translations": {
+        "uk": "вихідні",
+        "de": "Wochenende",
+        "fr": "week-end",
+        "es": "fin de semana",
+        "it": "fine settimana",
+        "pt": "fim de semana",
+        "pl": "weekend",
+        "ru": "выходные",
+        "zh": "周末",
+        "ja": "週末"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "clock",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/klɑːk/",
+      "definition": "A device that shows the time.",
+      "examples": [
+        "The clock on the wall is slow."
+      ],
+      "translations": {
+        "uk": "годинник",
+        "de": "Uhr",
+        "fr": "horloge",
+        "es": "reloj",
+        "it": "orologio",
+        "pt": "relógio",
+        "pl": "zegar",
+        "ru": "часы",
+        "zh": "钟",
+        "ja": "時計"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "late",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/leɪt/",
+      "definition": "After the expected time.",
+      "examples": [
+        "Sorry, I'm late!"
+      ],
+      "translations": {
+        "uk": "запізнілий",
+        "de": "spät",
+        "fr": "en retard",
+        "es": "tarde",
+        "it": "in ritardo",
+        "pt": "atrasado",
+        "pl": "spóźniony",
+        "ru": "опоздавший",
+        "zh": "迟到的",
+        "ja": "遅れた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "now",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/naʊ/",
+      "definition": "At this moment.",
+      "examples": [
+        "I'm busy now."
+      ],
+      "translations": {
+        "uk": "зараз",
+        "de": "jetzt",
+        "fr": "maintenant",
+        "es": "ahora",
+        "it": "adesso",
+        "pt": "agora",
+        "pl": "teraz",
+        "ru": "сейчас",
+        "zh": "现在",
+        "ja": "今"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "always",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈɔːlweɪz/",
+      "definition": "Every time; all the time.",
+      "examples": [
+        "She always walks to school."
+      ],
+      "translations": {
+        "uk": "завжди",
+        "de": "immer",
+        "fr": "toujours",
+        "es": "siempre",
+        "it": "sempre",
+        "pt": "sempre",
+        "pl": "zawsze",
+        "ru": "всегда",
+        "zh": "总是",
+        "ja": "いつも"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "never",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈnevɚ/",
+      "definition": "At no time.",
+      "examples": [
+        "I never drink coffee at night."
+      ],
+      "translations": {
+        "uk": "ніколи",
+        "de": "nie",
+        "fr": "jamais",
+        "es": "nunca",
+        "it": "mai",
+        "pt": "nunca",
+        "pl": "nigdy",
+        "ru": "никогда",
+        "zh": "从不",
+        "ja": "決して〜ない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "often",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈɔːfən/",
+      "definition": "Many times.",
+      "examples": [
+        "We often go to the park."
+      ],
+      "translations": {
+        "uk": "часто",
+        "de": "oft",
+        "fr": "souvent",
+        "es": "a menudo",
+        "it": "spesso",
+        "pt": "frequentemente",
+        "pl": "często",
+        "ru": "часто",
+        "zh": "经常",
+        "ja": "よく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sometimes",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈsʌmtaɪmz/",
+      "definition": "On some occasions but not always.",
+      "examples": [
+        "Sometimes I take the bus."
+      ],
+      "translations": {
+        "uk": "іноді",
+        "de": "manchmal",
+        "fr": "parfois",
+        "es": "a veces",
+        "it": "a volte",
+        "pt": "às vezes",
+        "pl": "czasami",
+        "ru": "иногда",
+        "zh": "有时",
+        "ja": "時々"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "usually",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈjuːʒuəli/",
+      "definition": "In most cases.",
+      "examples": [
+        "I usually get up at seven."
+      ],
+      "translations": {
+        "uk": "зазвичай",
+        "de": "normalerweise",
+        "fr": "d'habitude",
+        "es": "normalmente",
+        "it": "di solito",
+        "pt": "geralmente",
+        "pl": "zwykle",
+        "ru": "обычно",
+        "zh": "通常",
+        "ja": "普段"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spring",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/sprɪŋ/",
+      "definition": "The season after winter, when plants start to grow.",
+      "examples": [
+        "Flowers bloom in spring."
+      ],
+      "translations": {
+        "uk": "весна",
+        "de": "Frühling",
+        "fr": "printemps",
+        "es": "primavera",
+        "it": "primavera",
+        "pt": "primavera",
+        "pl": "wiosna",
+        "ru": "весна",
+        "zh": "春天",
+        "ja": "春"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "summer",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈsʌmɚ/",
+      "definition": "The warmest season of the year.",
+      "examples": [
+        "We swim in the sea every summer."
+      ],
+      "translations": {
+        "uk": "літо",
+        "de": "Sommer",
+        "fr": "été",
+        "es": "verano",
+        "it": "estate",
+        "pt": "verão",
+        "pl": "lato",
+        "ru": "лето",
+        "zh": "夏天",
+        "ja": "夏"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fall",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/fɔːl/",
+      "definition": "The season after summer, when leaves fall from trees.",
+      "examples": [
+        "The leaves turn red in the fall."
+      ],
+      "translations": {
+        "uk": "осінь",
+        "de": "Herbst",
+        "fr": "automne",
+        "es": "otoño",
+        "it": "autunno",
+        "pt": "outono",
+        "pl": "jesień",
+        "ru": "осень",
+        "zh": "秋天",
+        "ja": "秋"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "winter",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Time",
+      "ipa": "/ˈwɪntɚ/",
+      "definition": "The coldest season of the year.",
+      "examples": [
+        "It snows a lot in winter."
+      ],
+      "translations": {
+        "uk": "зима",
+        "de": "Winter",
+        "fr": "hiver",
+        "es": "invierno",
+        "it": "inverno",
+        "pt": "inverno",
+        "pl": "zima",
+        "ru": "зима",
+        "zh": "冬天",
+        "ja": "冬"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "season",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/ˈsiːzən/",
+      "definition": "One of the four parts of the year.",
+      "examples": [
+        "Summer is my favorite season."
+      ],
+      "translations": {
+        "uk": "пора року",
+        "de": "Jahreszeit",
+        "fr": "saison",
+        "es": "estación",
+        "it": "stagione",
+        "pt": "estação",
+        "pl": "pora roku",
+        "ru": "время года",
+        "zh": "季节",
+        "ja": "季節"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "midnight",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/ˈmɪdnaɪt/",
+      "definition": "Twelve o'clock at night.",
+      "examples": [
+        "The party ended at midnight."
+      ],
+      "translations": {
+        "uk": "північ",
+        "de": "Mitternacht",
+        "fr": "minuit",
+        "es": "medianoche",
+        "it": "mezzanotte",
+        "pt": "meia-noite",
+        "pl": "północ",
+        "ru": "полночь",
+        "zh": "午夜",
+        "ja": "真夜中"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "noon",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/nuːn/",
+      "definition": "Twelve o'clock in the middle of the day.",
+      "examples": [
+        "Let's meet at noon."
+      ],
+      "translations": {
+        "uk": "полудень",
+        "de": "Mittag",
+        "fr": "midi",
+        "es": "mediodía",
+        "it": "mezzogiorno",
+        "pt": "meio-dia",
+        "pl": "południe",
+        "ru": "полдень",
+        "zh": "中午",
+        "ja": "正午"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "century",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/ˈsentʃəri/",
+      "definition": "A period of one hundred years.",
+      "examples": [
+        "This church is five centuries old."
+      ],
+      "translations": {
+        "uk": "століття",
+        "de": "Jahrhundert",
+        "fr": "siècle",
+        "es": "siglo",
+        "it": "secolo",
+        "pt": "século",
+        "pl": "wiek",
+        "ru": "век",
+        "zh": "世纪",
+        "ja": "世紀"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "calendar",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/ˈkæləndɚ/",
+      "definition": "A chart showing the days, weeks and months of a year.",
+      "examples": [
+        "I wrote the date on my calendar."
+      ],
+      "translations": {
+        "uk": "календар",
+        "de": "Kalender",
+        "fr": "calendrier",
+        "es": "calendario",
+        "it": "calendario",
+        "pt": "calendário",
+        "pl": "kalendarz",
+        "ru": "календарь",
+        "zh": "日历",
+        "ja": "カレンダー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "daily",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/ˈdeɪli/",
+      "definition": "Happening every day.",
+      "examples": [
+        "Exercise is part of my daily routine."
+      ],
+      "translations": {
+        "uk": "щоденний",
+        "de": "täglich",
+        "fr": "quotidien",
+        "es": "diario",
+        "it": "quotidiano",
+        "pt": "diário",
+        "pl": "codzienny",
+        "ru": "ежедневный",
+        "zh": "每天的",
+        "ja": "毎日の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "soon",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/suːn/",
+      "definition": "In a short time from now.",
+      "examples": [
+        "The bus will be here soon."
+      ],
+      "translations": {
+        "uk": "скоро",
+        "de": "bald",
+        "fr": "bientôt",
+        "es": "pronto",
+        "it": "tra poco",
+        "pt": "em breve",
+        "pl": "wkrótce",
+        "ru": "скоро",
+        "zh": "很快",
+        "ja": "すぐに"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "on time",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/ɑːn taɪm/",
+      "definition": "At the correct time; not late.",
+      "examples": [
+        "The train arrived on time."
+      ],
+      "translations": {
+        "uk": "вчасно",
+        "de": "pünktlich",
+        "fr": "à l'heure",
+        "es": "a tiempo",
+        "it": "puntuale",
+        "pt": "na hora",
+        "pl": "punktualnie",
+        "ru": "вовремя",
+        "zh": "准时",
+        "ja": "時間通りに"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "recently",
+      "part_of_speech": "adverb",
+      "cefr": "B1",
+      "topic": "Time",
+      "ipa": "/ˈriːsəntli/",
+      "definition": "Not long ago.",
+      "examples": [
+        "I have recently started a new job."
+      ],
+      "translations": {
+        "uk": "нещодавно",
+        "de": "kürzlich",
+        "fr": "récemment",
+        "es": "recientemente",
+        "it": "recentemente",
+        "pt": "recentemente",
+        "pl": "niedawno",
+        "ru": "недавно",
+        "zh": "最近",
+        "ja": "最近"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deadline",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Time",
+      "ipa": "/ˈdedlaɪn/",
+      "definition": "The time by which you must finish something.",
+      "examples": [
+        "The deadline for the project is Friday."
+      ],
+      "translations": {
+        "uk": "крайній термін",
+        "de": "Frist",
+        "fr": "date limite",
+        "es": "fecha límite",
+        "it": "scadenza",
+        "pt": "prazo",
+        "pl": "termin",
+        "ru": "крайний срок",
+        "zh": "截止日期",
+        "ja": "締め切り"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "schedule",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Time",
+      "ipa": "/ˈskedʒuːl/",
+      "definition": "A plan that lists when things will happen.",
+      "examples": [
+        "My schedule is very busy this week."
+      ],
+      "translations": {
+        "uk": "розклад",
+        "de": "Zeitplan",
+        "fr": "emploi du temps",
+        "es": "horario",
+        "it": "programma",
+        "pt": "agenda",
+        "pl": "harmonogram",
+        "ru": "расписание",
+        "zh": "日程",
+        "ja": "予定"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "in advance",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Time",
+      "ipa": "/ɪn ədˈvæns/",
+      "definition": "Before a particular time or event.",
+      "examples": [
+        "Book your tickets in advance."
+      ],
+      "translations": {
+        "uk": "заздалегідь",
+        "de": "im Voraus",
+        "fr": "à l'avance",
+        "es": "con antelación",
+        "it": "in anticipo",
+        "pt": "com antecedência",
+        "pl": "z wyprzedzeniem",
+        "ru": "заранее",
+        "zh": "提前",
+        "ja": "前もって"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    }
+  ]
+}

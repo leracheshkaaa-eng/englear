@@ -1,0 +1,881 @@
+{
+  "package": "home",
+  "kind": "words",
+  "words": [
+    {
+      "word": "bed",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/bed/",
+      "definition": "A piece of furniture you sleep on.",
+      "examples": [
+        "I go to bed at ten."
+      ],
+      "translations": {
+        "uk": "ліжко",
+        "de": "Bett",
+        "fr": "lit",
+        "es": "cama",
+        "it": "letto",
+        "pt": "cama",
+        "pl": "łóżko",
+        "ru": "кровать",
+        "zh": "床",
+        "ja": "ベッド"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "table",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈteɪbəl/",
+      "definition": "A piece of furniture with a flat top and legs.",
+      "examples": [
+        "Put the plates on the table."
+      ],
+      "translations": {
+        "uk": "стіл",
+        "de": "Tisch",
+        "fr": "table",
+        "es": "mesa",
+        "it": "tavolo",
+        "pt": "mesa",
+        "pl": "stół",
+        "ru": "стол",
+        "zh": "桌子",
+        "ja": "テーブル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chair",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/tʃer/",
+      "definition": "A seat for one person, with a back.",
+      "examples": [
+        "Please sit on this chair."
+      ],
+      "translations": {
+        "uk": "стілець",
+        "de": "Stuhl",
+        "fr": "chaise",
+        "es": "silla",
+        "it": "sedia",
+        "pt": "cadeira",
+        "pl": "krzesło",
+        "ru": "стул",
+        "zh": "椅子",
+        "ja": "椅子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bedroom",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈbedruːm/",
+      "definition": "A room for sleeping in.",
+      "examples": [
+        "My bedroom is upstairs."
+      ],
+      "translations": {
+        "uk": "спальня",
+        "de": "Schlafzimmer",
+        "fr": "chambre",
+        "es": "dormitorio",
+        "it": "camera da letto",
+        "pt": "quarto",
+        "pl": "sypialnia",
+        "ru": "спальня",
+        "zh": "卧室",
+        "ja": "寝室"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bathroom",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈbæθruːm/",
+      "definition": "A room with a toilet and a bath or shower.",
+      "examples": [
+        "The bathroom is next to my room."
+      ],
+      "translations": {
+        "uk": "ванна кімната",
+        "de": "Badezimmer",
+        "fr": "salle de bains",
+        "es": "baño",
+        "it": "bagno",
+        "pt": "banheiro",
+        "pl": "łazienka",
+        "ru": "ванная",
+        "zh": "浴室",
+        "ja": "浴室"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "living room",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈlɪvɪŋ ruːm/",
+      "definition": "The main room where a family relaxes.",
+      "examples": [
+        "We watch TV in the living room."
+      ],
+      "translations": {
+        "uk": "вітальня",
+        "de": "Wohnzimmer",
+        "fr": "salon",
+        "es": "sala de estar",
+        "it": "soggiorno",
+        "pt": "sala de estar",
+        "pl": "salon",
+        "ru": "гостиная",
+        "zh": "客厅",
+        "ja": "居間"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "apartment",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/əˈpɑːrtmənt/",
+      "definition": "A set of rooms for living in, inside a larger building.",
+      "examples": [
+        "They live in a small apartment."
+      ],
+      "translations": {
+        "uk": "квартира",
+        "de": "Wohnung",
+        "fr": "appartement",
+        "es": "apartamento",
+        "it": "appartamento",
+        "pt": "apartamento",
+        "pl": "mieszkanie",
+        "ru": "квартира",
+        "zh": "公寓",
+        "ja": "アパート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "floor",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/flɔːr/",
+      "definition": "The surface you walk on inside a building.",
+      "examples": [
+        "The cat is sleeping on the floor."
+      ],
+      "translations": {
+        "uk": "підлога",
+        "de": "Boden",
+        "fr": "sol",
+        "es": "suelo",
+        "it": "pavimento",
+        "pt": "chão",
+        "pl": "podłoga",
+        "ru": "пол",
+        "zh": "地板",
+        "ja": "床"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wall",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/wɔːl/",
+      "definition": "One of the sides of a room or building.",
+      "examples": [
+        "There is a clock on the wall."
+      ],
+      "translations": {
+        "uk": "стіна",
+        "de": "Wand",
+        "fr": "mur",
+        "es": "pared",
+        "it": "parete",
+        "pt": "parede",
+        "pl": "ściana",
+        "ru": "стена",
+        "zh": "墙",
+        "ja": "壁"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "garden",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈɡɑːrdn/",
+      "definition": "An area next to a house where plants grow.",
+      "examples": [
+        "My grandma grows flowers in the garden."
+      ],
+      "translations": {
+        "uk": "сад",
+        "de": "Garten",
+        "fr": "jardin",
+        "es": "jardín",
+        "it": "giardino",
+        "pt": "jardim",
+        "pl": "ogród",
+        "ru": "сад",
+        "zh": "花园",
+        "ja": "庭"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sofa",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈsoʊfə/",
+      "definition": "A long soft seat for two or more people.",
+      "examples": [
+        "The dog is on the sofa again."
+      ],
+      "translations": {
+        "uk": "диван",
+        "de": "Sofa",
+        "fr": "canapé",
+        "es": "sofá",
+        "it": "divano",
+        "pt": "sofá",
+        "pl": "kanapa",
+        "ru": "диван",
+        "zh": "沙发",
+        "ja": "ソファ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lamp",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/læmp/",
+      "definition": "A device that gives light.",
+      "examples": [
+        "Turn on the lamp, please."
+      ],
+      "translations": {
+        "uk": "лампа",
+        "de": "Lampe",
+        "fr": "lampe",
+        "es": "lámpara",
+        "it": "lampada",
+        "pt": "luminária",
+        "pl": "lampa",
+        "ru": "лампа",
+        "zh": "台灯",
+        "ja": "電気スタンド"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "key",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/kiː/",
+      "definition": "A small metal object used to open a lock.",
+      "examples": [
+        "I can't find my key."
+      ],
+      "translations": {
+        "uk": "ключ",
+        "de": "Schlüssel",
+        "fr": "clé",
+        "es": "llave",
+        "it": "chiave",
+        "pt": "chave",
+        "pl": "klucz",
+        "ru": "ключ",
+        "zh": "钥匙",
+        "ja": "鍵"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stairs",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/sterz/",
+      "definition": "A set of steps between floors in a building.",
+      "examples": [
+        "Be careful on the stairs."
+      ],
+      "translations": {
+        "uk": "сходи",
+        "de": "Treppe",
+        "fr": "escalier",
+        "es": "escaleras",
+        "it": "scale",
+        "pt": "escada",
+        "pl": "schody",
+        "ru": "лестница",
+        "zh": "楼梯",
+        "ja": "階段"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shower",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈʃaʊɚ/",
+      "definition": "A device that sprays water on your body to wash.",
+      "examples": [
+        "I take a shower every morning."
+      ],
+      "translations": {
+        "uk": "душ",
+        "de": "Dusche",
+        "fr": "douche",
+        "es": "ducha",
+        "it": "doccia",
+        "pt": "chuveiro",
+        "pl": "prysznic",
+        "ru": "душ",
+        "zh": "淋浴",
+        "ja": "シャワー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wash",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/wɑːʃ/",
+      "definition": "To clean something with water.",
+      "examples": [
+        "Wash your hands before dinner."
+      ],
+      "translations": {
+        "uk": "мити",
+        "de": "waschen",
+        "fr": "laver",
+        "es": "lavar",
+        "it": "lavare",
+        "pt": "lavar",
+        "pl": "myć",
+        "ru": "мыть",
+        "zh": "洗",
+        "ja": "洗う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fridge",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/frɪdʒ/",
+      "definition": "A machine that keeps food cold.",
+      "examples": [
+        "Put the milk in the fridge."
+      ],
+      "translations": {
+        "uk": "холодильник",
+        "de": "Kühlschrank",
+        "fr": "frigo",
+        "es": "refrigerador",
+        "it": "frigorifero",
+        "pt": "geladeira",
+        "pl": "lodówka",
+        "ru": "холодильник",
+        "zh": "冰箱",
+        "ja": "冷蔵庫"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "roof",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ruːf/",
+      "definition": "The top covering of a building.",
+      "examples": [
+        "There is a bird on the roof."
+      ],
+      "translations": {
+        "uk": "дах",
+        "de": "Dach",
+        "fr": "toit",
+        "es": "tejado",
+        "it": "tetto",
+        "pt": "telhado",
+        "pl": "dach",
+        "ru": "крыша",
+        "zh": "屋顶",
+        "ja": "屋根"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "neighborhood",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈneɪbɚhʊd/",
+      "definition": "The area around your home.",
+      "examples": [
+        "Our neighborhood is quiet and safe."
+      ],
+      "translations": {
+        "uk": "район",
+        "de": "Nachbarschaft",
+        "fr": "quartier",
+        "es": "barrio",
+        "it": "quartiere",
+        "pt": "bairro",
+        "pl": "okolica",
+        "ru": "район",
+        "zh": "街区",
+        "ja": "近所"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "move",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/muːv/",
+      "definition": "To go to live in a different place.",
+      "examples": [
+        "We moved to a new house last year."
+      ],
+      "translations": {
+        "uk": "переїжджати",
+        "de": "umziehen",
+        "fr": "déménager",
+        "es": "mudarse",
+        "it": "trasferirsi",
+        "pt": "mudar-se",
+        "pl": "przeprowadzać się",
+        "ru": "переезжать",
+        "zh": "搬家",
+        "ja": "引っ越す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rent",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/rent/",
+      "definition": "Money you pay regularly to live in a place.",
+      "examples": [
+        "The rent is due on the first of the month."
+      ],
+      "translations": {
+        "uk": "орендна плата",
+        "de": "Miete",
+        "fr": "loyer",
+        "es": "alquiler",
+        "it": "affitto",
+        "pt": "aluguel",
+        "pl": "czynsz",
+        "ru": "арендная плата",
+        "zh": "房租",
+        "ja": "家賃"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "comfortable",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈkʌmftɚbəl/",
+      "definition": "Making you feel relaxed and pleasant.",
+      "examples": [
+        "This chair is very comfortable."
+      ],
+      "translations": {
+        "uk": "зручний",
+        "de": "bequem",
+        "fr": "confortable",
+        "es": "cómodo",
+        "it": "comodo",
+        "pt": "confortável",
+        "pl": "wygodny",
+        "ru": "удобный",
+        "zh": "舒适的",
+        "ja": "快適な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "messy",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈmesi/",
+      "definition": "Untidy and dirty.",
+      "examples": [
+        "Your room is really messy!"
+      ],
+      "translations": {
+        "uk": "безладний",
+        "de": "unordentlich",
+        "fr": "en désordre",
+        "es": "desordenado",
+        "it": "disordinato",
+        "pt": "bagunçado",
+        "pl": "nieposprzątany",
+        "ru": "неубранный",
+        "zh": "凌乱的",
+        "ja": "散らかった"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "do the dishes",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/duː ðə ˈdɪʃɪz/",
+      "definition": "To wash plates, cups and pans after a meal.",
+      "examples": [
+        "I do the dishes after dinner."
+      ],
+      "translations": {
+        "uk": "мити посуд",
+        "de": "abwaschen",
+        "fr": "faire la vaisselle",
+        "es": "lavar los platos",
+        "it": "lavare i piatti",
+        "pt": "lavar a louça",
+        "pl": "zmywać naczynia",
+        "ru": "мыть посуду",
+        "zh": "洗碗",
+        "ja": "皿洗いをする"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "make the bed",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/meɪk ðə bed/",
+      "definition": "To tidy the sheets and covers on a bed.",
+      "examples": [
+        "Please make the bed before school."
+      ],
+      "translations": {
+        "uk": "застеляти ліжко",
+        "de": "das Bett machen",
+        "fr": "faire le lit",
+        "es": "hacer la cama",
+        "it": "rifare il letto",
+        "pt": "arrumar a cama",
+        "pl": "ścielić łóżko",
+        "ru": "заправлять кровать",
+        "zh": "铺床",
+        "ja": "ベッドを整える"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "tidy up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈtaɪdi ʌp/",
+      "definition": "To make a place clean and in order.",
+      "examples": [
+        "Let's tidy up the living room."
+      ],
+      "translations": {
+        "uk": "наводити лад",
+        "de": "aufräumen",
+        "fr": "ranger",
+        "es": "ordenar",
+        "it": "riordinare",
+        "pt": "arrumar",
+        "pl": "posprzątać",
+        "ru": "прибираться",
+        "zh": "收拾",
+        "ja": "片付ける"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "upstairs",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˌʌpˈsterz/",
+      "definition": "On or to a higher floor of a building.",
+      "examples": [
+        "The kids are playing upstairs."
+      ],
+      "translations": {
+        "uk": "нагорі",
+        "de": "oben",
+        "fr": "en haut",
+        "es": "arriba",
+        "it": "di sopra",
+        "pt": "lá em cima",
+        "pl": "na górze",
+        "ru": "наверху",
+        "zh": "楼上",
+        "ja": "二階に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "downstairs",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˌdaʊnˈsterz/",
+      "definition": "On or to a lower floor of a building.",
+      "examples": [
+        "Breakfast is ready downstairs."
+      ],
+      "translations": {
+        "uk": "внизу",
+        "de": "unten",
+        "fr": "en bas",
+        "es": "abajo",
+        "it": "di sotto",
+        "pt": "lá embaixo",
+        "pl": "na dole",
+        "ru": "внизу",
+        "zh": "楼下",
+        "ja": "階下に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mirror",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈmɪrɚ/",
+      "definition": "A piece of glass in which you can see yourself.",
+      "examples": [
+        "She looked in the mirror."
+      ],
+      "translations": {
+        "uk": "дзеркало",
+        "de": "Spiegel",
+        "fr": "miroir",
+        "es": "espejo",
+        "it": "specchio",
+        "pt": "espelho",
+        "pl": "lustro",
+        "ru": "зеркало",
+        "zh": "镜子",
+        "ja": "鏡"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "carpet",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈkɑːrpɪt/",
+      "definition": "A thick cloth that covers a floor.",
+      "examples": [
+        "There is a red carpet in the hall."
+      ],
+      "translations": {
+        "uk": "килим",
+        "de": "Teppich",
+        "fr": "tapis",
+        "es": "alfombra",
+        "it": "tappeto",
+        "pt": "tapete",
+        "pl": "dywan",
+        "ru": "ковёр",
+        "zh": "地毯",
+        "ja": "カーペット"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "repair",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/rɪˈper/",
+      "definition": "To fix something that is broken.",
+      "examples": [
+        "We need to repair the roof."
+      ],
+      "translations": {
+        "uk": "ремонтувати",
+        "de": "reparieren",
+        "fr": "réparer",
+        "es": "reparar",
+        "it": "riparare",
+        "pt": "consertar",
+        "pl": "naprawiać",
+        "ru": "ремонтировать",
+        "zh": "修理",
+        "ja": "修理する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "landlord",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈlændlɔːrd/",
+      "definition": "A person who rents a home to other people.",
+      "examples": [
+        "Our landlord fixed the heating."
+      ],
+      "translations": {
+        "uk": "орендодавець",
+        "de": "Vermieter",
+        "fr": "propriétaire",
+        "es": "casero",
+        "it": "padrone di casa",
+        "pt": "senhorio",
+        "pl": "właściciel mieszkania",
+        "ru": "арендодатель",
+        "zh": "房东",
+        "ja": "大家"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "heating",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈhiːtɪŋ/",
+      "definition": "A system that keeps a building warm.",
+      "examples": [
+        "Turn up the heating, it's cold."
+      ],
+      "translations": {
+        "uk": "опалення",
+        "de": "Heizung",
+        "fr": "chauffage",
+        "es": "calefacción",
+        "it": "riscaldamento",
+        "pt": "aquecimento",
+        "pl": "ogrzewanie",
+        "ru": "отопление",
+        "zh": "暖气",
+        "ja": "暖房"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "household",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈhaʊshoʊld/",
+      "definition": "All the people who live together in one home.",
+      "examples": [
+        "Every household in the town has a TV."
+      ],
+      "translations": {
+        "uk": "домогосподарство",
+        "de": "Haushalt",
+        "fr": "foyer",
+        "es": "hogar",
+        "it": "nucleo familiare",
+        "pt": "lar",
+        "pl": "gospodarstwo domowe",
+        "ru": "домохозяйство",
+        "zh": "住户",
+        "ja": "世帯"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chores",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/tʃɔːrz/",
+      "definition": "Regular jobs you do at home, like cleaning.",
+      "examples": [
+        "The children help with the chores."
+      ],
+      "translations": {
+        "uk": "хатні справи",
+        "de": "Hausarbeit",
+        "fr": "tâches ménagères",
+        "es": "tareas domésticas",
+        "it": "faccende domestiche",
+        "pt": "tarefas domésticas",
+        "pl": "obowiązki domowe",
+        "ru": "домашние дела",
+        "zh": "家务",
+        "ja": "家事"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
