@@ -1,5 +1,6 @@
 import { supabase } from './supabase'
 import { exerciseToRow, rowToExercise, type Exercise, type ExerciseRow, type Response } from './exercises'
+import { translationLanguage } from '../i18n'
 
 export type Role = 'student' | 'teacher' | 'admin'
 export type TeacherRequest = 'none' | 'pending'
@@ -183,12 +184,16 @@ export async function importLessons(authorId: string, lessons: NewLesson[]): Pro
   return { imported, skipped }
 }
 
-/* ---------- dictionary ---------- */
+/* ---------- dictionary ----------
+   Words are English (the learning language); their translations live in
+   word_translations, one row per language. Reads embed only the translation
+   language needed, so the payload stays small as languages are added. */
 
 export type WordType = 'word' | 'collocation' | 'phrasal_verb'
 export type Word = {
   id: string
   word: string
+  /** legacy Russian translation column; use wordTranslation() instead */
   translation: string
   part_of_speech: string
   example: string
@@ -201,17 +206,40 @@ export type Word = {
   related: string[]
   word_type: WordType
   ielts_category: string | null
+  language?: string
+  /** translations by language code (only the requested languages are loaded) */
+  translations?: Record<string, string>
   updated_at?: string
 }
 
-export async function listWords(): Promise<Word[]> {
-  const { data } = await supabase.from('dictionary_words').select('*').order('word')
-  return (data ?? []) as Word[]
+type WordRow = Word & { word_translations?: { lang: string; translation: string }[] }
+
+const WORD_SELECT = '*, word_translations(lang, translation)'
+
+function toWord(row: WordRow): Word {
+  const { word_translations, ...w } = row
+  return { ...w, translations: Object.fromEntries((word_translations ?? []).map((t) => [t.lang, t.translation])) }
 }
 
-export async function getWord(id: string): Promise<Word | null> {
-  const { data } = await supabase.from('dictionary_words').select('*').eq('id', id).maybeSingle()
-  return (data as Word) ?? null
+/** Translation of a word in the student's translation language ('' if there is none yet). */
+export function wordTranslation(w: Pick<Word, 'translation' | 'translations'>, lang: string = translationLanguage()): string {
+  if (lang === 'en') return ''
+  return w.translations?.[lang] ?? (lang === 'ru' ? w.translation : '') ?? ''
+}
+
+/** Escape LIKE wildcards in user input. */
+const likeLiteral = (s: string) => s.replace(/[\\%_]/g, (c) => `\\${c}`)
+
+/** All words (for inline translation hints), with the given translation language only. */
+export async function listWords(lang: string = translationLanguage()): Promise<Word[]> {
+  const { data, error } = await supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang).order('word')
+  if (error) throw error
+  return ((data ?? []) as WordRow[]).map(toWord)
+}
+
+export async function getWord(id: string, lang: string = translationLanguage()): Promise<Word | null> {
+  const { data } = await supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang).eq('id', id).maybeSingle()
+  return data ? toWord(data as WordRow) : null
 }
 
 export type WordFilters = {
@@ -225,59 +253,84 @@ export type WordFilters = {
   limit?: number
 }
 
-/** Search the dictionary in English OR the user's language (word + translation). */
-export async function searchWords(f: WordFilters = {}): Promise<Word[]> {
-  let query = supabase.from('dictionary_words').select('*')
-  if (f.q && f.q.trim()) {
-    const term = `%${f.q.trim()}%`
-    query = query.or(`word.ilike.${term},translation.ilike.${term},definition.ilike.${term}`)
-  }
-  if (f.levels?.length) query = query.in('cefr_level', f.levels)
-  if (f.topic) query = query.eq('topic', f.topic)
-  if (f.part_of_speech) query = query.eq('part_of_speech', f.part_of_speech)
-  if (f.word_type) query = query.eq('word_type', f.word_type)
-  if (f.ielts_category) query = query.eq('ielts_category', f.ielts_category)
-  query = query.order(f.sort === 'cefr' ? 'cefr_level' : 'word').limit(f.limit ?? 300)
-  const { data, error } = await query
+/** Search by English word, definition or a translation in any language. */
+export async function searchWords(f: WordFilters = {}, lang: string = translationLanguage()): Promise<Word[]> {
+  const { data, error } = await supabase
+    .rpc('search_dictionary', {
+      p_q: f.q ?? '',
+      p_levels: f.levels?.length ? f.levels : null,
+      p_topic: f.topic ?? null,
+      p_pos: f.part_of_speech ?? null,
+      p_type: f.word_type ?? null,
+      p_ielts: f.ielts_category ?? null,
+      p_sort: f.sort ?? 'word',
+      p_limit: f.limit ?? 300,
+    })
+    .select(WORD_SELECT)
+    .eq('word_translations.lang', lang)
   if (error) throw error
-  return (data ?? []) as Word[]
+  return ((data ?? []) as WordRow[]).map(toWord)
 }
 
-/** Look up ONE word by its exact spelling (used by quick flashcard creation). */
-export async function findWordByText(text: string): Promise<Word | null> {
+/** Look up ONE word by its exact spelling, ignoring case (used by quick flashcard creation). */
+export async function findWordByText(text: string, lang: string = translationLanguage()): Promise<Word | null> {
   const { data } = await supabase
     .from('dictionary_words')
-    .select('*')
-    .ilike('word', text.trim())
+    .select(WORD_SELECT)
+    .eq('word_translations.lang', lang)
+    .ilike('word', likeLiteral(text.trim()))
     .limit(1)
-  return ((data ?? [])[0] as Word) ?? null
+  const row = (data ?? [])[0] as WordRow | undefined
+  return row ? toWord(row) : null
 }
 
 /** All dictionary words matching a topic + levels + type, ordered stably. */
-export async function dictionaryPool(f: {
-  topic?: string
-  levels?: string[]
-  word_type?: WordType
-  ielts_category?: string
-}): Promise<Word[]> {
-  let query = supabase.from('dictionary_words').select('*')
+export async function dictionaryPool(
+  f: { topic?: string; levels?: string[]; word_type?: WordType; ielts_category?: string },
+  lang: string = translationLanguage(),
+): Promise<Word[]> {
+  let query = supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang)
   if (f.topic) query = query.eq('topic', f.topic)
   if (f.word_type) query = query.eq('word_type', f.word_type)
   if (f.ielts_category) query = query.eq('ielts_category', f.ielts_category)
   if (f.levels?.length) query = query.in('cefr_level', f.levels)
   const { data, error } = await query.order('word').limit(2000)
   if (error) throw error
-  return (data ?? []) as Word[]
+  return ((data ?? []) as WordRow[]).map(toWord)
 }
 
-export async function upsertWord(w: Partial<Word> & { word: string }) {
-  const { data, error } = await supabase
-    .from('dictionary_words')
-    .upsert({ ...w }, { onConflict: 'word' })
-    .select()
-    .single()
+/* ---------- dictionary import (admin) ---------- */
+
+export type ImportWord = {
+  word: string
+  part_of_speech?: string
+  cefr?: string
+  topic?: string
+  ipa?: string
+  definition?: string
+  examples?: string[]
+  translations?: Record<string, string>
+  word_type?: string
+  ielts_category?: string | null
+}
+
+export type ImportReport = {
+  dry_run: boolean
+  new: number
+  updated: number
+  unchanged: number
+  translations_added: number
+  conflicts: { word: string; field: string; current: unknown; proposed: unknown }[]
+  invalid: { word: string | null; reason: string }[]
+  new_words: string[]
+}
+
+/** Add words safely: new words are added, existing ones only get their EMPTY fields filled.
+ *  Different existing values are reported as conflicts and never overwritten. */
+export async function importWords(words: ImportWord[], dryRun = true): Promise<ImportReport> {
+  const { data, error } = await supabase.rpc('import_dictionary_words', { p_words: words, p_dry_run: dryRun })
   if (error) throw error
-  return data as Word
+  return data as ImportReport
 }
 
 /* ---------- teacher <-> students ---------- */
@@ -669,11 +722,11 @@ export async function getSet(id: string): Promise<FlashcardSet | null> {
 }
 
 /** Dictionary words by id, in the given order. */
-export async function wordsByIds(ids: string[]): Promise<Word[]> {
+export async function wordsByIds(ids: string[], lang: string = translationLanguage()): Promise<Word[]> {
   if (!ids.length) return []
-  const { data, error } = await supabase.from('dictionary_words').select('*').in('id', ids)
+  const { data, error } = await supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang).in('id', ids)
   if (error) throw error
-  const byId = new Map(((data ?? []) as Word[]).map((w) => [w.id, w]))
+  const byId = new Map(((data ?? []) as WordRow[]).map((row) => [row.id, toWord(row)]))
   return ids.map((id) => byId.get(id)).filter((w): w is Word => !!w)
 }
 
@@ -703,13 +756,14 @@ export async function recordWord(studentId: string, wordId: string, known: boole
   )
 }
 
-/** Add an existing dictionary word to one of the user's own sets (no duplicate word). */
+/** Add an existing dictionary word to one of the user's own sets (no duplicate word).
+ *  The back of the card is the translation in the student's language (or the definition). */
 export async function addWordToSet(setId: string, w: Word, position: number) {
   const { error } = await supabase.from('flashcards').insert({
     set_id: setId,
     word_id: w.id,
     front: w.word,
-    back: w.translation,
+    back: wordTranslation(w) || w.definition || '',
     example: (w.examples?.[0] ?? w.example ?? ''),
     position,
   })

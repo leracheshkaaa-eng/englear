@@ -292,7 +292,9 @@
     "fieldTranslation": "tłumaczenie",
     "fieldIpa": "IPA /…/",
     "fieldDefinition": "definicja",
-    "fieldExample": "zdanie przykładowe"
+    "fieldExample": "zdanie przykładowe",
+    "noTranslationYet": "Tłumaczenia na twój język jeszcze nie ma — zobacz definicję powyżej.",
+    "adminResult": "Dodano: {{added}}, uzupełniono: {{filled}}, bez zmian (różnice lub błędy): {{conflicts}}."
   },
   "settings": {
     "title": "Ustawienia",
@@ -314,7 +316,10 @@
     "account": "Konto",
     "role": "Rola: {{role}}",
     "name": "Imię: {{name}}",
-    "yourId": "Twój ID (dla nauczyciela):"
+    "yourId": "Twój ID (dla nauczyciela):",
+    "translationLanguage": "Język tłumaczeń",
+    "translationLanguageHint": "Język, w którym pokazywane są tłumaczenia słów — w słowniku, fiszkach i lekcjach. Może się różnić od języka interfejsu.",
+    "noTranslationOption": "English — tylko definicje"
   },
   "admin": {
     "title": "Admin",
@@ -322,7 +327,13 @@
     "approve": "Zatwierdź",
     "decline": "Odrzuć",
     "users": "Użytkownicy ({{count}})",
-    "wantsToTeach": "chce zostać nauczycielem"
+    "wantsToTeach": "chce zostać nauczycielem",
+    "audioTitle": "Audio",
+    "prewarmHint": "Z wyprzedzeniem tworzy wymowę każdego słowa i przykładu ze słownika tym samym głosem, żeby uczniowie nie musieli czekać.",
+    "prewarmButton": "Wygeneruj audio dla słownika",
+    "prewarmProgress": "Generowanie… {{done}} / {{total}}",
+    "prewarmDone": "Gotowe: {{ready}} z {{total}} (błędy: {{failed}}).",
+    "prewarmNotConfigured": "Głos w chmurze nie jest jeszcze skonfigurowany (klucz Google API). Na razie używany jest głos przeglądarki."
   },
   "teacher": {
     "title": "Tryb nauczyciela",

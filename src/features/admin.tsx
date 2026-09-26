@@ -5,6 +5,7 @@ import * as api from '../lib/api'
 import type { Profile, Role } from '../lib/api'
 import { Avatar } from '../lib/avatars'
 import { errorMessage } from '../i18n/errors'
+import { prewarmSpeech } from '../lib/supabase'
 
 export function AdminDashboard() {
   const { t } = useTranslation()
@@ -61,6 +62,8 @@ export function AdminDashboard() {
         </div>
       )}
 
+      <AudioPrewarm />
+
       <h3 className="mb-3 font-display text-xl font-semibold">{t('admin.users', { count: users.length })}</h3>
       <div className="space-y-2">
         {users.map((u) => (
@@ -93,5 +96,41 @@ export function AdminDashboard() {
         ))}
       </div>
     </section>
+  )
+}
+
+/** Pre-generate the cached pronunciation of every dictionary word and example. */
+function AudioPrewarm() {
+  const { t } = useTranslation()
+  const [busy, setBusy] = useState(false)
+  const [progress, setProgress] = useState<{ done: number; total: number } | null>(null)
+  const [msg, setMsg] = useState('')
+
+  async function run() {
+    setBusy(true)
+    setMsg('')
+    try {
+      const words = await api.listWords()
+      const texts = words.flatMap((w) => [w.word, ...(w.examples?.length ? w.examples : w.example ? [w.example] : [])])
+      const res = await prewarmSpeech(texts, (done, total) => setProgress({ done, total }))
+      setMsg(res.notConfigured ? t('admin.prewarmNotConfigured') : t('admin.prewarmDone', { ready: res.ready, total: res.total, failed: res.failed }))
+    } catch (e) {
+      setMsg(errorMessage(e))
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <div className="mb-8 rounded-2xl border border-line bg-paper p-5">
+      <h3 className="font-display text-xl font-semibold">{t('admin.audioTitle')}</h3>
+      <p className="mt-1 mb-3 text-sm text-mute">{t('admin.prewarmHint')}</p>
+      <div className="flex flex-wrap items-center gap-3">
+        <Button variant="soft" onClick={run} disabled={busy}>
+          {busy && progress ? t('admin.prewarmProgress', { done: progress.done, total: progress.total }) : t('admin.prewarmButton')}
+        </Button>
+        {msg && <span className="text-sm text-mute">{msg}</span>}
+      </div>
+    </div>
   )
 }

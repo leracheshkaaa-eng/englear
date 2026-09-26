@@ -292,7 +292,9 @@
     "fieldTranslation": "перевод",
     "fieldIpa": "IPA /…/",
     "fieldDefinition": "определение",
-    "fieldExample": "предложение-пример"
+    "fieldExample": "предложение-пример",
+    "noTranslationYet": "Перевода на ваш язык пока нет — смотрите определение выше.",
+    "adminResult": "Добавлено: {{added}}, дополнено: {{filled}}, не изменено (отличается или ошибка): {{conflicts}}."
   },
   "settings": {
     "title": "Настройки",
@@ -314,7 +316,10 @@
     "account": "Аккаунт",
     "role": "Роль: {{role}}",
     "name": "Имя: {{name}}",
-    "yourId": "Ваш ID (для учителя):"
+    "yourId": "Ваш ID (для учителя):",
+    "translationLanguage": "Язык перевода",
+    "translationLanguageHint": "Язык, на котором показываются переводы слов — в словаре, карточках и уроках. Он может отличаться от языка интерфейса.",
+    "noTranslationOption": "English — только определения"
   },
   "admin": {
     "title": "Админ",
@@ -322,7 +327,13 @@
     "approve": "Одобрить",
     "decline": "Отклонить",
     "users": "Пользователи ({{count}})",
-    "wantsToTeach": "хочет стать учителем"
+    "wantsToTeach": "хочет стать учителем",
+    "audioTitle": "Аудио",
+    "prewarmHint": "Заранее создаёт произношение каждого слова и примера из словаря одним и тем же голосом, чтобы ученикам не приходилось ждать.",
+    "prewarmButton": "Сгенерировать аудио для словаря",
+    "prewarmProgress": "Генерация… {{done}} / {{total}}",
+    "prewarmDone": "Готово: {{ready}} из {{total}} (ошибок: {{failed}}).",
+    "prewarmNotConfigured": "Облачный голос ещё не настроен (ключ Google API). Пока звучит голос браузера."
   },
   "teacher": {
     "title": "Режим учителя",

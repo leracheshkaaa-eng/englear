@@ -282,7 +282,9 @@
     "fieldTranslation": "translation",
     "fieldIpa": "IPA /…/",
     "fieldDefinition": "definition",
-    "fieldExample": "example sentence"
+    "fieldExample": "example sentence",
+    "noTranslationYet": "A translation into your language is not available yet — see the definition above.",
+    "adminResult": "Added: {{added}}, filled in: {{filled}}, not changed (differs or invalid): {{conflicts}}."
   },
   "settings": {
     "title": "Settings",
@@ -304,7 +306,10 @@
     "account": "Account",
     "role": "Role: {{role}}",
     "name": "Name: {{name}}",
-    "yourId": "Your ID (for your teacher):"
+    "yourId": "Your ID (for your teacher):",
+    "translationLanguage": "Translation language",
+    "translationLanguageHint": "The language word translations are shown in — in the dictionary, flashcards and lessons. It can differ from the interface language.",
+    "noTranslationOption": "English — definitions only"
   },
   "admin": {
     "title": "Admin",
@@ -312,7 +317,13 @@
     "approve": "Approve",
     "decline": "Decline",
     "users": "Users ({{count}})",
-    "wantsToTeach": "wants to become a teacher"
+    "wantsToTeach": "wants to become a teacher",
+    "audioTitle": "Audio",
+    "prewarmHint": "Creates the pronunciation of every dictionary word and example in advance, in the same voice, so students never wait for it.",
+    "prewarmButton": "Generate audio for the dictionary",
+    "prewarmProgress": "Generating… {{done}} / {{total}}",
+    "prewarmDone": "Ready: {{ready}} of {{total}} (failed: {{failed}}).",
+    "prewarmNotConfigured": "The cloud voice is not configured yet (Google API key). The browser voice is used meanwhile."
   },
   "teacher": {
     "title": "Teacher Mode",

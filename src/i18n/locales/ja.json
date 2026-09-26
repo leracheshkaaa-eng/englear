@@ -277,7 +277,9 @@
     "fieldTranslation": "訳",
     "fieldIpa": "IPA /…/",
     "fieldDefinition": "定義",
-    "fieldExample": "例文"
+    "fieldExample": "例文",
+    "noTranslationYet": "あなたの言語の訳はまだありません。上の定義を見てください。",
+    "adminResult": "追加：{{added}}、補完：{{filled}}、変更なし（相違または無効）：{{conflicts}}。"
   },
   "settings": {
     "title": "設定",
@@ -299,7 +301,10 @@
     "account": "アカウント",
     "role": "役割：{{role}}",
     "name": "名前：{{name}}",
-    "yourId": "あなたの ID（先生に伝える用）："
+    "yourId": "あなたの ID（先生に伝える用）：",
+    "translationLanguage": "訳の言語",
+    "translationLanguageHint": "単語の訳を表示する言語です（辞書・単語カード・レッスン）。表示言語と違っていてもかまいません。",
+    "noTranslationOption": "English — 定義のみ"
   },
   "admin": {
     "title": "管理",
@@ -307,7 +312,13 @@
     "approve": "承認",
     "decline": "却下",
     "users": "ユーザー（{{count}}）",
-    "wantsToTeach": "先生になることを希望しています"
+    "wantsToTeach": "先生になることを希望しています",
+    "audioTitle": "音声",
+    "prewarmHint": "辞書のすべての単語と例文の発音を同じ声で前もって作成します。生徒が待たずに済みます。",
+    "prewarmButton": "辞書の音声を生成",
+    "prewarmProgress": "生成中… {{done}} / {{total}}",
+    "prewarmDone": "完了：{{total}} 件中 {{ready}} 件（失敗：{{failed}}）。",
+    "prewarmNotConfigured": "クラウド音声はまだ設定されていません（Google API キー）。それまではブラウザーの音声を使います。"
   },
   "teacher": {
     "title": "先生モード",

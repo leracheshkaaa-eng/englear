@@ -277,7 +277,9 @@
     "fieldTranslation": "翻译",
     "fieldIpa": "音标 /…/",
     "fieldDefinition": "释义",
-    "fieldExample": "例句"
+    "fieldExample": "例句",
+    "noTranslationYet": "暂时还没有你的语言的翻译——请看上面的释义。",
+    "adminResult": "已添加：{{added}}，已补充：{{filled}}，未更改（不一致或无效）：{{conflicts}}。"
   },
   "settings": {
     "title": "设置",
@@ -299,7 +301,10 @@
     "account": "账户",
     "role": "角色：{{role}}",
     "name": "姓名：{{name}}",
-    "yourId": "你的 ID（提供给老师）："
+    "yourId": "你的 ID（提供给老师）：",
+    "translationLanguage": "翻译语言",
+    "translationLanguageHint": "单词翻译所用的语言——用于词典、单词卡和课程。它可以与界面语言不同。",
+    "noTranslationOption": "English —— 只显示释义"
   },
   "admin": {
     "title": "管理",
@@ -307,7 +312,13 @@
     "approve": "批准",
     "decline": "拒绝",
     "users": "用户（{{count}}）",
-    "wantsToTeach": "申请成为教师"
+    "wantsToTeach": "申请成为教师",
+    "audioTitle": "音频",
+    "prewarmHint": "用同一个声音提前生成词典中每个单词和例句的发音，这样学生就不用等待。",
+    "prewarmButton": "为词典生成音频",
+    "prewarmProgress": "正在生成… {{done}} / {{total}}",
+    "prewarmDone": "已完成：{{ready}} / {{total}}（失败：{{failed}}）。",
+    "prewarmNotConfigured": "云端语音尚未配置（Google API 密钥）。在此之前使用浏览器语音。"
   },
   "teacher": {
     "title": "教师模式",

@@ -5,7 +5,7 @@ import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { Flashcard, FlashcardSet, SetProgress, SetRef, Word, WordType } from '../lib/api'
 import { CEFR_LEVELS, IELTS_CATEGORIES, SET_SIZES, TOPICS, ieltsLabel, topicLabel } from '../lib/config'
-import i18n from '../i18n'
+import i18n, { translationLanguage } from '../i18n'
 import { evaluate, sameResponse, type Exercise, type Response } from '../lib/exercises'
 import { generatePractice, type StudyItem } from '../lib/practice'
 import { ExerciseView } from './lessons'
@@ -295,7 +295,7 @@ export function libraryTitle(key: string) {
 const wordToItem = (w: Word): StudyItem => ({
   id: w.id,
   front: w.word,
-  back: w.translation,
+  back: api.wordTranslation(w) || w.definition, // the student's translation language; definition if none yet
   pronunciation: w.pronunciation,
   definition: w.definition,
   example: w.examples?.[0] ?? w.example,
@@ -909,7 +909,7 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
             <span className="font-display text-xl font-semibold">{found.word}</span>
             {found.cefr_level && <Badge>{found.cefr_level}</Badge>}
             <SpeakerButton text={found.word} className="h-7 w-7 text-sm" />
-            <span className="text-plum">{found.translation}</span>
+            <span className="text-plum">{api.wordTranslation(found) || found.definition}</span>
           </div>
           <p className="text-sm font-semibold">{t('flashcards.addToSet')}</p>
           {ownSets.length > 0 && (
@@ -993,7 +993,14 @@ function SetEditor({ onClose }: { onClose: () => void }) {
         const r = valid[i]
         // Only admins may write to the global dictionary (RLS enforces this too).
         if (role === 'admin') {
-          await api.upsertWord({ word: r.front.trim().toLowerCase(), translation: r.back, example: r.example }).catch(() => {})
+          // adds new words / fills empty fields only — never overwrites dictionary data
+          const lang = translationLanguage()
+          await api
+            .importWords(
+              [{ word: r.front.trim(), translations: r.back.trim() && lang !== 'en' ? { [lang]: r.back.trim() } : {}, examples: r.example.trim() ? [r.example.trim()] : [] }],
+              false,
+            )
+            .catch(() => {})
         }
         await api.addCard(setId, { front: r.front.trim(), back: r.back, example: r.example }, i)
       }

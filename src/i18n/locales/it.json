@@ -282,7 +282,9 @@
     "fieldTranslation": "traduzione",
     "fieldIpa": "IPA /…/",
     "fieldDefinition": "definizione",
-    "fieldExample": "frase di esempio"
+    "fieldExample": "frase di esempio",
+    "noTranslationYet": "Non c’è ancora una traduzione nella tua lingua — guarda la definizione qui sopra.",
+    "adminResult": "Aggiunte: {{added}}, completate: {{filled}}, non modificate (diverse o non valide): {{conflicts}}."
   },
   "settings": {
     "title": "Impostazioni",
@@ -304,7 +306,10 @@
     "account": "Account",
     "role": "Ruolo: {{role}}",
     "name": "Nome: {{name}}",
-    "yourId": "Il tuo ID (per il tuo insegnante):"
+    "yourId": "Il tuo ID (per il tuo insegnante):",
+    "translationLanguage": "Lingua della traduzione",
+    "translationLanguageHint": "La lingua in cui vengono mostrate le traduzioni delle parole — nel dizionario, nelle flashcard e nelle lezioni. Può essere diversa dalla lingua dell’interfaccia.",
+    "noTranslationOption": "English — solo definizioni"
   },
   "admin": {
     "title": "Admin",
@@ -312,7 +317,13 @@
     "approve": "Approva",
     "decline": "Rifiuta",
     "users": "Utenti ({{count}})",
-    "wantsToTeach": "vuole diventare insegnante"
+    "wantsToTeach": "vuole diventare insegnante",
+    "audioTitle": "Audio",
+    "prewarmHint": "Crea in anticipo la pronuncia di ogni parola ed esempio del dizionario, con la stessa voce, così gli studenti non devono aspettare.",
+    "prewarmButton": "Genera l’audio del dizionario",
+    "prewarmProgress": "Generazione… {{done}} / {{total}}",
+    "prewarmDone": "Pronti: {{ready}} su {{total}} (non riusciti: {{failed}}).",
+    "prewarmNotConfigured": "La voce cloud non è ancora configurata (chiave API di Google). Nel frattempo si usa la voce del browser."
   },
   "teacher": {
     "title": "Modalità insegnante",

@@ -15,8 +15,8 @@ import { useTranslation } from 'react-i18next'
 type View = 'home' | 'lessons' | 'practice' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
 
 function Shell() {
-  const { loading, userId, role, profile, signOut } = useAuth()
-  const { t } = useTranslation()
+  const { loading, userId, role, profile, signOut, settings } = useAuth()
+  const { t, i18n } = useTranslation()
   const [view, setView] = useState<View>('home')
   const [lessons, setLessons] = useState<Lesson[]>([])
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
@@ -42,9 +42,10 @@ function Shell() {
     }
   }, [userId])
 
+  // inline translation hints, in the student's translation language
   useEffect(() => {
     api.listWords().then((ws) => setDict(new Map(ws.map((w) => [w.word.toLowerCase(), w])))).catch(() => {})
-  }, [userId])
+  }, [userId, i18n.language, settings.native_language])
 
   useEffect(() => {
     if (!loading) reload()

@@ -7,12 +7,14 @@ import type { FlashcardSet, Word } from '../lib/api'
 import { Avatar, AvatarPicker } from '../lib/avatars'
 import { CEFR_LEVELS, TOPICS, TRANSLATION_UPFRONT_LEVELS, partOfSpeechLabel, topicLabel } from '../lib/config'
 import { LanguageSelect } from '../i18n/LanguageSelect'
+import { errorMessage } from '../i18n/errors'
+import { LANGUAGES, setNativeLanguage, translationLanguage } from '../i18n'
 
 const PARTS = ['noun', 'verb', 'adjective', 'adverb', 'phrasal verb', 'collocation']
 
 export function Dictionary() {
-  const { t } = useTranslation()
-  const { role } = useAuth()
+  const { t, i18n } = useTranslation()
+  const { role, settings } = useAuth()
   const isAdmin = role === 'admin'
   const [words, setWords] = useState<Word[]>([])
   const [loading, setLoading] = useState(true)
@@ -48,7 +50,7 @@ export function Dictionary() {
     const timer = setTimeout(load, 250) // debounce search
     return () => clearTimeout(timer)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, level, topic, pos, type, sort])
+  }, [q, level, topic, pos, type, sort, i18n.language, settings.native_language])
 
   if (selected) return <WordDetail word={selected} onBack={() => setSelected(null)} />
 
@@ -110,7 +112,11 @@ export function Dictionary() {
                     <span className="font-display text-lg font-semibold">{w.word}</span>
                     {w.cefr_level && <Badge>{w.cefr_level}</Badge>}
                   </div>
-                  <p className="text-plum">{w.translation}</p>
+                  {api.wordTranslation(w) ? (
+                    <p className="text-plum">{api.wordTranslation(w)}</p>
+                  ) : (
+                    <p className="line-clamp-1 text-sm italic text-mute">{w.definition}</p>
+                  )}
                   <p className="text-xs text-mute">
                     {topicLabel(w.topic)}
                     {w.part_of_speech ? ` · ${partOfSpeechLabel(w.part_of_speech)}` : ''}
@@ -136,6 +142,8 @@ function WordDetail({ word, onBack }: { word: Word; onBack: () => void }) {
   useEffect(() => setShowT(upfront), [upfront, word.id])
 
   const examples = word.examples?.length ? word.examples : word.example ? [word.example] : []
+  const translation = api.wordTranslation(word)
+  const showTranslationBlock = translationLanguage() !== 'en' // English speakers learn from the definition
 
   return (
     <section className="mx-auto max-w-2xl px-6 pb-24">
@@ -161,14 +169,18 @@ function WordDetail({ word, onBack }: { word: Word; onBack: () => void }) {
           </div>
         )}
 
-        <div className="mt-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-mute">{t('dictionary.translation')}</p>
-          {showT ? (
-            <p className="mt-1 text-lg text-plum">{word.translation || '—'}</p>
-          ) : (
-            <Button variant="soft" className="mt-1" onClick={() => setShowT(true)}>{t('dictionary.showTranslation')}</Button>
-          )}
-        </div>
+        {showTranslationBlock && (
+          <div className="mt-5">
+            <p className="text-xs font-semibold uppercase tracking-wide text-mute">{t('dictionary.translation')}</p>
+            {!translation ? (
+              <p className="mt-1 text-sm text-mute">{t('dictionary.noTranslationYet')}</p>
+            ) : showT ? (
+              <p className="mt-1 text-lg text-plum">{translation}</p>
+            ) : (
+              <Button variant="soft" className="mt-1" onClick={() => setShowT(true)}>{t('dictionary.showTranslation')}</Button>
+            )}
+          </div>
+        )}
 
         {word.meanings?.length > 0 && (
           <div className="mt-5">
@@ -286,18 +298,36 @@ function AddToFlashcards({ word }: { word: Word }) {
 function AdminAddWord({ onAdded }: { onAdded: () => void }) {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
-  const [f, setF] = useState({ word: '', translation: '', pronunciation: '', part_of_speech: 'noun', definition: '', example: '', cefr_level: 'A1', topic: 'Other', word_type: 'word' })
+  const [f, setF] = useState({ word: '', translation: '', translationLang: translationLanguage(), pronunciation: '', part_of_speech: 'noun', definition: '', example: '', cefr_level: 'A1', topic: 'Other', word_type: 'word' })
+  const [msg, setMsg] = useState('')
 
   async function save() {
     if (!f.word.trim()) return
-    await api.upsertWord({
-      ...f,
-      word: f.word.trim().toLowerCase(),
-      examples: f.example ? [f.example] : [],
-    } as any)
-    setF({ ...f, word: '', translation: '', pronunciation: '', definition: '', example: '' })
-    setOpen(false)
-    onAdded()
+    setMsg('')
+    try {
+      // fills only empty fields of an existing word; different values are reported, never overwritten
+      const report = await api.importWords(
+        [
+          {
+            word: f.word.trim(),
+            part_of_speech: f.part_of_speech,
+            cefr: f.cefr_level,
+            topic: f.topic,
+            ipa: f.pronunciation.trim(),
+            definition: f.definition.trim(),
+            examples: f.example.trim() ? [f.example.trim()] : [],
+            translations: f.translation.trim() && f.translationLang !== 'en' ? { [f.translationLang]: f.translation.trim() } : {},
+            word_type: f.word_type,
+          },
+        ],
+        false,
+      )
+      setMsg(t('dictionary.adminResult', { added: report.new, filled: report.updated, conflicts: report.conflicts.length + report.invalid.length }))
+      setF({ ...f, word: '', translation: '', pronunciation: '', definition: '', example: '' })
+      onAdded()
+    } catch (e) {
+      setMsg(errorMessage(e))
+    }
   }
 
   if (!open) return <Button variant="soft" className="mb-6" onClick={() => setOpen(true)}>{t('dictionary.adminAddWord')}</Button>
@@ -305,7 +335,12 @@ function AdminAddWord({ onAdded }: { onAdded: () => void }) {
   return (
     <div className="mb-6 grid gap-2 rounded-2xl border border-line bg-paper p-4 sm:grid-cols-2">
       <input placeholder={t('dictionary.fieldWord')} value={f.word} onChange={(e) => setF({ ...f, word: e.target.value })} className={inputCls} />
-      <input placeholder={t('dictionary.fieldTranslation')} value={f.translation} onChange={(e) => setF({ ...f, translation: e.target.value })} className={inputCls} />
+      <div className="flex gap-2">
+        <input placeholder={t('dictionary.fieldTranslation')} value={f.translation} onChange={(e) => setF({ ...f, translation: e.target.value })} className={`${inputCls} min-w-0 flex-1`} />
+        <select value={f.translationLang} onChange={(e) => setF({ ...f, translationLang: e.target.value })} className={inputCls} aria-label={t('settings.translationLanguage')}>
+          {LANGUAGES.filter((l) => l.code !== 'en').map((l) => <option key={l.code} value={l.code}>{l.code.toUpperCase()}</option>)}
+        </select>
+      </div>
       <input placeholder={t('dictionary.fieldIpa')} value={f.pronunciation} onChange={(e) => setF({ ...f, pronunciation: e.target.value })} className={inputCls} />
       <select value={f.part_of_speech} onChange={(e) => setF({ ...f, part_of_speech: e.target.value })} className={inputCls}>
         {PARTS.map((p) => <option key={p} value={p}>{partOfSpeechLabel(p)}</option>)}
@@ -326,6 +361,7 @@ function AdminAddWord({ onAdded }: { onAdded: () => void }) {
       <div className="flex gap-2 sm:col-span-2">
         <Button onClick={save} disabled={!f.word.trim()}>{t('common.save')}</Button>
         <Button variant="ghost" onClick={() => setOpen(false)}>{t('common.cancel')}</Button>
+        {msg && <span className="self-center text-sm text-mute">{msg}</span>}
       </div>
     </div>
   )
@@ -389,6 +425,27 @@ export function Settings() {
         <p className="font-body font-semibold">{t('settings.interfaceLanguage')}</p>
         <p className="mb-3 text-sm text-mute">{t('settings.interfaceLanguageHint')}</p>
         <LanguageSelect />
+      </div>
+
+      {/* translation language (native language) */}
+      <div className="mb-6 rounded-2xl border border-line bg-paper p-6">
+        <p className="font-body font-semibold">{t('settings.translationLanguage')}</p>
+        <p className="mb-3 text-sm text-mute">{t('settings.translationLanguageHint')}</p>
+        <select
+          value={translationLanguage()}
+          onChange={(e) => {
+            setNativeLanguage(e.target.value)
+            updateSettings({ native_language: e.target.value })
+          }}
+          aria-label={t('settings.translationLanguage')}
+          className="w-full rounded-xl border border-line bg-paper px-3 py-2 font-body text-ink"
+        >
+          {LANGUAGES.map((l) => (
+            <option key={l.code} value={l.code}>
+              {l.code === 'en' ? t('settings.noTranslationOption') : l.label}
+            </option>
+          ))}
+        </select>
       </div>
 
       {/* English level */}

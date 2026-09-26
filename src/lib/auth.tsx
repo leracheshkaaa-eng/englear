@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react'
-import { supabase } from './supabase'
+import { setSpeechAccent, supabase } from './supabase'
 import { claimAdmin, DEFAULT_SETTINGS, getProfile, getSettings, saveSettings, type Profile, type Role, type Settings } from './api'
-import { currentLanguage, setLanguage } from '../i18n'
+import { currentLanguage, setLanguage, setNativeLanguage } from '../i18n'
 import { isLanguageCode } from '../i18n/languages'
 
 type AuthState = {
@@ -56,6 +56,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         p ?? { id: uid, full_name: mail?.split('@')[0] ?? '', role: 'student', avatar: 'cat', teacher_request: 'none' },
       )
       const s = await getSettings(uid)
+      setNativeLanguage(s.native_language)
+      setSpeechAccent(s.accent)
       setSettings(s)
       // A language chosen in the profile (sign-up or settings) wins over detection.
       if (isLanguageCode(s.interface_language) && s.interface_language !== currentLanguage()) {
@@ -63,6 +65,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
     } else {
       setProfile(null)
+      setNativeLanguage(null)
+      setSpeechAccent(null)
       setSettings(DEFAULT_SETTINGS)
     }
   }
@@ -127,6 +131,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     async updateSettings(s) {
       if (!userId) return
       const next = { ...settings, ...s }
+      if ('native_language' in s) setNativeLanguage(next.native_language)
+      if ('accent' in s) setSpeechAccent(next.accent)
       setSettings(next)
       await saveSettings(userId, s)
     },

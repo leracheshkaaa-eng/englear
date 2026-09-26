@@ -1,7 +1,7 @@
 import i18n from '../i18n'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { speak } from './supabase'
-import type { Word } from './api'
+import { wordTranslation, type Word } from './api'
 
 /* ---------- buttons / inputs ---------- */
 
@@ -192,7 +192,7 @@ function WordPopup({ word, x, y, onClose }: { word: Word; x: number; y: number; 
         <span className="font-display text-base font-semibold text-ink">{word.word}</span>
         <SpeakerButton text={word.word} className="h-6 w-6 text-xs" />
       </div>
-      <p className="font-body text-sm text-plum">{word.translation || '—'}</p>
+      <p className="font-body text-sm text-plum">{wordTranslation(word) || word.definition || '—'}</p>
       {word.example && <p className="mt-1 font-body text-xs text-mute">{word.example}</p>}
     </div>
   )

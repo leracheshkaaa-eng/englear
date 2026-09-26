@@ -1,14 +1,16 @@
-// EngLear TTS: turns a short English text into an MP3 with ONE fixed Google
-// Cloud voice and caches it in the public "tts-audio" bucket, so every text
-// is synthesized once and then served as a plain file to everyone.
+// EngLear TTS: turns a short English text into an MP3 with the Google Cloud
+// voice of the chosen accent and caches it in the public "tts-audio" bucket,
+// so every text is synthesized once per voice and then served as a plain file.
 //
 // Secret (Supabase dashboard -> Edge Functions -> Secrets):
 //   GOOGLE_TTS_API_KEY  an API key restricted to the Text-to-Speech API
 // SUPABASE_URL, SUPABASE_ANON_KEY and SUPABASE_SERVICE_ROLE_KEY are provided by Supabase.
 import { createClient } from 'npm:@supabase/supabase-js@2'
 
-// Must match TTS_VOICE / TTS_RATE in src/lib/supabase.ts (they form the cache key).
-const VOICE = 'en-US-Neural2-F'
+// Voices of the accents in src/lib/accents.ts; the client picks one, anything else
+// falls back to the default. RATE must match src/lib/supabase.ts (voice + rate + text form the cache key).
+const VOICES = ['en-US-Neural2-F', 'en-GB-Neural2-A', 'en-AU-Neural2-A']
+const DEFAULT_VOICE = VOICES[0]
 const RATE = 0.9
 const MAX_CHARS = 200
 const BUCKET = 'tts-audio'
@@ -24,8 +26,8 @@ function json(body: unknown, status = 200) {
 }
 
 // Must match ttsKey() in src/lib/supabase.ts.
-async function cacheKey(text: string) {
-  const bytes = new TextEncoder().encode(`${VOICE}|${RATE}|${text}`)
+async function cacheKey(voice: string, text: string) {
+  const bytes = new TextEncoder().encode(`${voice}|${RATE}|${text}`)
   const hash = await crypto.subtle.digest('SHA-256', bytes)
   return Array.from(new Uint8Array(hash), (b) => b.toString(16).padStart(2, '0')).join('')
 }
@@ -35,8 +37,9 @@ Deno.serve(async (req) => {
   if (req.method !== 'POST') return json({ error: 'method not allowed' }, 405)
 
   try {
-    const { text } = await req.json().catch(() => ({ text: '' }))
+    const { text, voice: requested } = await req.json().catch(() => ({ text: '', voice: '' }))
     const clean = String(text ?? '').trim().replace(/\s+/g, ' ')
+    const voice = VOICES.includes(requested) ? requested : DEFAULT_VOICE
     if (!clean || clean.length > MAX_CHARS || !/[a-z]/i.test(clean)) return json({ error: 'invalid text' }, 400)
 
     const url = Deno.env.get('SUPABASE_URL')!
@@ -48,7 +51,7 @@ Deno.serve(async (req) => {
     if (!auth.user) return json({ error: 'sign in required' }, 401)
 
     const admin = createClient(url, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!)
-    const path = `${await cacheKey(clean)}.mp3`
+    const path = `${await cacheKey(voice, clean)}.mp3`
     const publicUrl = admin.storage.from(BUCKET).getPublicUrl(path).data.publicUrl
 
     const cached = await fetch(publicUrl, { method: 'HEAD' })
@@ -62,7 +65,7 @@ Deno.serve(async (req) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         input: { text: clean },
-        voice: { languageCode: 'en-US', name: VOICE },
+        voice: { languageCode: voice.slice(0, 5), name: voice },
         audioConfig: { audioEncoding: 'MP3', speakingRate: RATE },
       }),
     })

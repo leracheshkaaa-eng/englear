@@ -282,7 +282,9 @@
     "fieldTranslation": "Übersetzung",
     "fieldIpa": "IPA /…/",
     "fieldDefinition": "Definition",
-    "fieldExample": "Beispielsatz"
+    "fieldExample": "Beispielsatz",
+    "noTranslationYet": "Eine Übersetzung in deine Sprache gibt es noch nicht — sieh dir die Definition oben an.",
+    "adminResult": "Hinzugefügt: {{added}}, ergänzt: {{filled}}, nicht geändert (abweichend oder ungültig): {{conflicts}}."
   },
   "settings": {
     "title": "Einstellungen",
@@ -304,7 +306,10 @@
     "account": "Konto",
     "role": "Rolle: {{role}}",
     "name": "Name: {{name}}",
-    "yourId": "Deine ID (für deine Lehrkraft):"
+    "yourId": "Deine ID (für deine Lehrkraft):",
+    "translationLanguage": "Übersetzungssprache",
+    "translationLanguageHint": "Die Sprache, in der Wortübersetzungen angezeigt werden — im Wörterbuch, auf Karteikarten und in Lektionen. Sie kann sich von der Sprache der Oberfläche unterscheiden.",
+    "noTranslationOption": "English — nur Definitionen"
   },
   "admin": {
     "title": "Admin",
@@ -312,7 +317,13 @@
     "approve": "Genehmigen",
     "decline": "Ablehnen",
     "users": "Benutzer ({{count}})",
-    "wantsToTeach": "möchte Lehrkraft werden"
+    "wantsToTeach": "möchte Lehrkraft werden",
+    "audioTitle": "Audio",
+    "prewarmHint": "Erstellt die Aussprache aller Wörter und Beispiele im Wörterbuch vorab mit derselben Stimme, damit niemand darauf warten muss.",
+    "prewarmButton": "Audio für das Wörterbuch erzeugen",
+    "prewarmProgress": "Wird erzeugt… {{done}} / {{total}}",
+    "prewarmDone": "Fertig: {{ready}} von {{total}} (fehlgeschlagen: {{failed}}).",
+    "prewarmNotConfigured": "Die Cloud-Stimme ist noch nicht eingerichtet (Google-API-Schlüssel). Bis dahin wird die Browserstimme verwendet."
   },
   "teacher": {
     "title": "Lehrkraft-Modus",

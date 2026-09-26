@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { projectId, publicAnonKey } from '../../utils/supabase/info'
+import { accentFor, DEFAULT_ACCENT, type Accent } from './accents'
 
 export const SUPABASE_URL = `https://${projectId}.supabase.co`
 export const FUNCTION_URL = `${SUPABASE_URL}/functions/v1/make-server-526ae811`
@@ -27,18 +28,27 @@ export async function callFunction(path: string, options: RequestInit = {}) {
 }
 
 /* ---------- Speech (English only; never receives explanations/Russian) ----------
-   1. Cloud voice: one fixed Google voice, synthesized once by the "tts" edge
-      function and cached as a public MP3, so it sounds the same everywhere.
+   1. Cloud voice: the Google voice of the chosen accent (American English by
+      default), synthesized once by the "tts" edge function and cached as a
+      public MP3, so it sounds the same everywhere.
    2. Fallback: the browser's own speech synthesis with a consistently chosen
       voice (used for guests on new texts, offline, or before TTS is configured). */
 
-// Must match VOICE / RATE in supabase/functions/tts/index.ts.
-const TTS_VOICE = 'en-US-Neural2-F'
+// Must match RATE in supabase/functions/tts/index.ts (voice + rate + text form the cache key).
 const TTS_RATE = 0.9
+let accent: Accent = DEFAULT_ACCENT
+
+/** Use the voice of this accent (user_settings.accent) from now on. */
+export function setSpeechAccent(code: string | null | undefined) {
+  const next = accentFor(code)
+  if (next.code === accent.code) return
+  accent = next
+  browserVoice = undefined
+}
 const TTS_FUNCTION_URL = `${SUPABASE_URL}/functions/v1/tts`
 const TTS_FILES_URL = `${SUPABASE_URL}/storage/v1/object/public/tts-audio/`
 
-const audioUrls = new Map<string, string>() // text -> MP3 that played fine
+const audioUrls = new Map<string, string>() // voice|text -> MP3 that played fine
 const noCloudAudio = new Set<string>() // texts a guest cannot generate
 let cloudDisabled = false // TTS not configured on the server: skip it this session
 let currentAudio: HTMLAudioElement | null = null
@@ -74,13 +84,14 @@ function stopSpeech() {
 }
 
 async function ttsKey(text: string) {
-  const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${TTS_VOICE}|${TTS_RATE}|${text}`))
+  const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${accent.ttsVoice}|${TTS_RATE}|${text}`))
   return Array.from(new Uint8Array(hash), (b) => b.toString(16).padStart(2, '0')).join('')
 }
 
 async function playCloud(text: string, seq: number, onEnd: () => void) {
   if (cloudDisabled || noCloudAudio.has(text)) throw new Error('no cloud audio')
-  let url = audioUrls.get(text) ?? `${TTS_FILES_URL}${await ttsKey(text)}.mp3`
+  const cacheKey = `${accent.ttsVoice}|${text}`
+  let url = audioUrls.get(cacheKey) ?? `${TTS_FILES_URL}${await ttsKey(text)}.mp3`
   try {
     await playUrl(url, seq, onEnd)
   } catch {
@@ -88,7 +99,7 @@ async function playCloud(text: string, seq: number, onEnd: () => void) {
     url = await generateAudio(text) // not cached yet: create it once
     await playUrl(url, seq, onEnd)
   }
-  audioUrls.set(text, url)
+  audioUrls.set(cacheKey, url)
 }
 
 async function playUrl(url: string, seq: number, onEnd: () => void) {
@@ -113,14 +124,14 @@ async function generateAudio(text: string): Promise<string> {
   const res = await fetch(TTS_FUNCTION_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}`, apikey: publicAnonKey },
-    body: JSON.stringify({ text }),
+    body: JSON.stringify({ text, voice: accent.ttsVoice }),
   })
   if (res.status === 503) cloudDisabled = true
   if (!res.ok) throw new Error(`tts ${res.status}`)
   return (await res.json()).url as string
 }
 
-// Browser fallback: always prefer the same, clearest available US voice.
+// Browser fallback: always prefer the same, clearest available voice of the accent.
 const PREFERRED_VOICES = [/natural/i, /samantha/i, /google us english/i, /aria|jenny|zira/i]
 let browserVoice: SpeechSynthesisVoice | null | undefined
 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
@@ -128,7 +139,8 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
 }
 
 function pickBrowserVoice(): SpeechSynthesisVoice | null {
-  const us = speechSynthesis.getVoices().filter((v) => v.lang.replace('_', '-').toLowerCase().startsWith('en-us'))
+  const lang = accent.browserLang.toLowerCase()
+  const us = speechSynthesis.getVoices().filter((v) => v.lang.replace('_', '-').toLowerCase().startsWith(lang))
   for (const re of PREFERRED_VOICES) {
     const v = us.find((x) => re.test(x.name))
     if (v) return v
@@ -140,7 +152,7 @@ function speakWithBrowser(text: string, onEnd: () => void) {
   if (!('speechSynthesis' in window)) return onEnd()
   if (!browserVoice) browserVoice = pickBrowserVoice()
   const u = new SpeechSynthesisUtterance(text)
-  u.lang = 'en-US'
+  u.lang = accent.browserLang
   u.rate = TTS_RATE
   if (browserVoice) u.voice = browserVoice
   u.onend = onEnd
@@ -152,4 +164,37 @@ function speakWithBrowser(text: string, onEnd: () => void) {
   } else {
     speechSynthesis.speak(u)
   }
+}
+
+/* ---------- Audio prewarm (admin) ----------
+   Creates the cached MP3 for every text that does not have one yet, so students
+   never wait for the first synthesis. Stops early if cloud TTS is not configured. */
+export type PrewarmResult = { total: number; ready: number; created: number; failed: number; notConfigured: boolean }
+
+export async function prewarmSpeech(texts: string[], onProgress?: (done: number, total: number) => void): Promise<PrewarmResult> {
+  const unique = [...new Set(texts.map((t) => t.trim().replace(/\s+/g, ' ')).filter(Boolean))]
+  const result: PrewarmResult = { total: unique.length, ready: 0, created: 0, failed: 0, notConfigured: false }
+  let next = 0
+  let done = 0
+  async function worker() {
+    while (next < unique.length && !result.notConfigured) {
+      const text = unique[next++]
+      try {
+        const url = `${TTS_FILES_URL}${await ttsKey(text)}.mp3`
+        const head = await fetch(url, { method: 'HEAD' })
+        if (head.ok) result.ready++
+        else {
+          await generateAudio(text)
+          result.created++
+          result.ready++
+        }
+      } catch {
+        if (cloudDisabled) result.notConfigured = true
+        else result.failed++
+      }
+      onProgress?.(++done, unique.length)
+    }
+  }
+  await Promise.all([worker(), worker(), worker()])
+  return result
 }

@@ -70,6 +70,19 @@ export async function initI18n() {
   await setLanguage(initial, false)
 }
 
+/* ---------- translation (native) language ----------
+   The language word translations are shown in. It is a separate setting from the
+   interface language; while the student has not chosen one it follows the UI language. */
+let nativeLanguage: string | null = null
+
+export function setNativeLanguage(code: string | null) {
+  nativeLanguage = code
+}
+
+export function translationLanguage(): string {
+  return nativeLanguage ?? currentLanguage()
+}
+
 /** For data-driven keys (topics, statuses…) that TypeScript cannot check. */
 export function tKey(key: string, fallback?: string): string {
   return i18n.t(key as never, { defaultValue: fallback ?? key }) as string

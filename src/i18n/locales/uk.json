@@ -292,7 +292,9 @@
     "fieldTranslation": "переклад",
     "fieldIpa": "IPA /…/",
     "fieldDefinition": "визначення",
-    "fieldExample": "речення-приклад"
+    "fieldExample": "речення-приклад",
+    "noTranslationYet": "Перекладу вашою мовою поки немає — дивіться визначення вище.",
+    "adminResult": "Додано: {{added}}, доповнено: {{filled}}, не змінено (відрізняється або помилка): {{conflicts}}."
   },
   "settings": {
     "title": "Налаштування",
@@ -314,7 +316,10 @@
     "account": "Акаунт",
     "role": "Роль: {{role}}",
     "name": "Ім'я: {{name}}",
-    "yourId": "Твій ID (для вчителя):"
+    "yourId": "Твій ID (для вчителя):",
+    "translationLanguage": "Мова перекладу",
+    "translationLanguageHint": "Мова, якою показуються переклади слів — у словнику, картках і уроках. Вона може відрізнятися від мови інтерфейсу.",
+    "noTranslationOption": "English — лише визначення"
   },
   "admin": {
     "title": "Адмін",
@@ -322,7 +327,13 @@
     "approve": "Схвалити",
     "decline": "Відхилити",
     "users": "Користувачі ({{count}})",
-    "wantsToTeach": "хоче стати вчителем"
+    "wantsToTeach": "хоче стати вчителем",
+    "audioTitle": "Аудіо",
+    "prewarmHint": "Заздалегідь створює вимову кожного слова й прикладу зі словника тим самим голосом, щоб учням не доводилося чекати.",
+    "prewarmButton": "Згенерувати аудіо для словника",
+    "prewarmProgress": "Генерація… {{done}} / {{total}}",
+    "prewarmDone": "Готово: {{ready}} з {{total}} (помилок: {{failed}}).",
+    "prewarmNotConfigured": "Хмарний голос ще не налаштовано (ключ Google API). Поки що звучить голос браузера."
   },
   "teacher": {
     "title": "Режим учителя",
