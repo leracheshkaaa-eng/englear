@@ -1,0 +1,2091 @@
+{
+  "package": "existing-translations",
+  "kind": "translations",
+  "words": [
+    {
+      "word": "adult",
+      "translations": {
+        "uk": "дорослий",
+        "de": "Erwachsener",
+        "fr": "adulte",
+        "es": "adulto",
+        "it": "adulto",
+        "pt": "adulto",
+        "pl": "dorosły",
+        "ru": "взрослый",
+        "zh": "成年人",
+        "ja": "大人"
+      }
+    },
+    {
+      "word": "afford",
+      "translations": {
+        "uk": "дозволити собі",
+        "de": "sich leisten",
+        "fr": "se permettre",
+        "es": "permitirse",
+        "it": "permettersi",
+        "pt": "poder pagar",
+        "pl": "pozwolić sobie",
+        "ru": "позволить себе",
+        "zh": "买得起",
+        "ja": "（お金を）払う余裕がある"
+      }
+    },
+    {
+      "word": "afraid",
+      "translations": {
+        "uk": "наляканий",
+        "de": "ängstlich",
+        "fr": "effrayé",
+        "es": "asustado",
+        "it": "spaventato",
+        "pt": "com medo",
+        "pl": "przestraszony",
+        "ru": "боящийся, испуганный",
+        "zh": "害怕的",
+        "ja": "怖がって"
+      }
+    },
+    {
+      "word": "airport",
+      "translations": {
+        "uk": "аеропорт",
+        "de": "Flughafen",
+        "fr": "aéroport",
+        "es": "aeropuerto",
+        "it": "aeroporto",
+        "pt": "aeroporto",
+        "pl": "lotnisko",
+        "ru": "аэропорт",
+        "zh": "机场",
+        "ja": "空港"
+      }
+    },
+    {
+      "word": "analyze",
+      "translations": {
+        "uk": "аналізувати",
+        "de": "analysieren",
+        "fr": "analyser",
+        "es": "analizar",
+        "it": "analizzare",
+        "pt": "analisar",
+        "pl": "analizować",
+        "ru": "анализировать",
+        "zh": "分析",
+        "ja": "分析する"
+      }
+    },
+    {
+      "word": "apple",
+      "translations": {
+        "uk": "яблуко",
+        "de": "Apfel",
+        "fr": "pomme",
+        "es": "manzana",
+        "it": "mela",
+        "pt": "maçã",
+        "pl": "jabłko",
+        "ru": "яблоко",
+        "zh": "苹果",
+        "ja": "りんご"
+      }
+    },
+    {
+      "word": "bag",
+      "translations": {
+        "uk": "сумка",
+        "de": "Tasche",
+        "fr": "sac",
+        "es": "bolsa",
+        "it": "borsa",
+        "pt": "bolsa",
+        "pl": "torba",
+        "ru": "сумка",
+        "zh": "包",
+        "ja": "かばん"
+      }
+    },
+    {
+      "word": "bird",
+      "translations": {
+        "uk": "птах",
+        "de": "Vogel",
+        "fr": "oiseau",
+        "es": "pájaro",
+        "it": "uccello",
+        "pt": "pássaro",
+        "pl": "ptak",
+        "ru": "птица",
+        "zh": "鸟",
+        "ja": "鳥"
+      }
+    },
+    {
+      "word": "boil",
+      "translations": {
+        "uk": "кип'ятити",
+        "de": "kochen",
+        "fr": "faire bouillir",
+        "es": "hervir",
+        "it": "bollire",
+        "pt": "ferver",
+        "pl": "gotować",
+        "ru": "кипятить",
+        "zh": "煮沸",
+        "ja": "沸かす"
+      }
+    },
+    {
+      "word": "bread",
+      "translations": {
+        "uk": "хліб",
+        "de": "Brot",
+        "fr": "pain",
+        "es": "pan",
+        "it": "pane",
+        "pt": "pão",
+        "pl": "chleb",
+        "ru": "хлеб",
+        "zh": "面包",
+        "ja": "パン"
+      }
+    },
+    {
+      "word": "breakfast",
+      "translations": {
+        "uk": "сніданок",
+        "de": "Frühstück",
+        "fr": "petit-déjeuner",
+        "es": "desayuno",
+        "it": "colazione",
+        "pt": "café da manhã",
+        "pl": "śniadanie",
+        "ru": "завтрак",
+        "zh": "早餐",
+        "ja": "朝食"
+      }
+    },
+    {
+      "word": "brother",
+      "translations": {
+        "uk": "брат",
+        "de": "Bruder",
+        "fr": "frère",
+        "es": "hermano",
+        "it": "fratello",
+        "pt": "irmão",
+        "pl": "brat",
+        "ru": "брат",
+        "zh": "兄弟",
+        "ja": "兄弟"
+      }
+    },
+    {
+      "word": "carry on",
+      "translations": {
+        "uk": "продовжувати",
+        "de": "weitermachen",
+        "fr": "continuer",
+        "es": "continuar",
+        "it": "continuare",
+        "pt": "continuar",
+        "pl": "kontynuować",
+        "ru": "продолжать",
+        "zh": "继续",
+        "ja": "続ける"
+      }
+    },
+    {
+      "word": "cat",
+      "translations": {
+        "uk": "кіт",
+        "de": "Katze",
+        "fr": "chat",
+        "es": "gato",
+        "it": "gatto",
+        "pt": "gato",
+        "pl": "kot",
+        "ru": "кот",
+        "zh": "猫",
+        "ja": "猫"
+      }
+    },
+    {
+      "word": "ceiling",
+      "translations": {
+        "uk": "стеля",
+        "de": "Decke",
+        "fr": "plafond",
+        "es": "techo",
+        "it": "soffitto",
+        "pt": "teto",
+        "pl": "sufit",
+        "ru": "потолок",
+        "zh": "天花板",
+        "ja": "天井"
+      }
+    },
+    {
+      "word": "child",
+      "translations": {
+        "uk": "дитина",
+        "de": "Kind",
+        "fr": "enfant",
+        "es": "niño",
+        "it": "bambino",
+        "pt": "criança",
+        "pl": "dziecko",
+        "ru": "ребёнок",
+        "zh": "孩子",
+        "ja": "子ども"
+      }
+    },
+    {
+      "word": "city",
+      "translations": {
+        "uk": "місто",
+        "de": "Stadt",
+        "fr": "ville",
+        "es": "ciudad",
+        "it": "città",
+        "pt": "cidade",
+        "pl": "miasto",
+        "ru": "город",
+        "zh": "城市",
+        "ja": "都市"
+      }
+    },
+    {
+      "word": "clean",
+      "translations": {
+        "uk": "прибирати",
+        "de": "putzen",
+        "fr": "nettoyer",
+        "es": "limpiar",
+        "it": "pulire",
+        "pt": "limpar",
+        "pl": "sprzątać",
+        "ru": "убирать",
+        "zh": "打扫",
+        "ja": "掃除する"
+      }
+    },
+    {
+      "word": "cold",
+      "translations": {
+        "uk": "холодний",
+        "de": "kalt",
+        "fr": "froid",
+        "es": "frío",
+        "it": "freddo",
+        "pt": "frio",
+        "pl": "zimny",
+        "ru": "холодный",
+        "zh": "冷的",
+        "ja": "寒い、冷たい"
+      }
+    },
+    {
+      "word": "colleague",
+      "translations": {
+        "uk": "колега",
+        "de": "Kollege",
+        "fr": "collègue",
+        "es": "colega",
+        "it": "collega",
+        "pt": "colega",
+        "pl": "kolega",
+        "ru": "коллега",
+        "zh": "同事",
+        "ja": "同僚"
+      }
+    },
+    {
+      "word": "come across",
+      "translations": {
+        "uk": "натрапити",
+        "de": "zufällig finden",
+        "fr": "tomber sur",
+        "es": "encontrarse con",
+        "it": "imbattersi in",
+        "pt": "deparar-se com",
+        "pl": "natknąć się na",
+        "ru": "наткнуться",
+        "zh": "偶然遇到",
+        "ja": "偶然見つける"
+      }
+    },
+    {
+      "word": "computer",
+      "translations": {
+        "uk": "комп'ютер",
+        "de": "Computer",
+        "fr": "ordinateur",
+        "es": "computadora",
+        "it": "computer",
+        "pt": "computador",
+        "pl": "komputer",
+        "ru": "компьютер",
+        "zh": "电脑",
+        "ja": "コンピューター"
+      }
+    },
+    {
+      "word": "consequence",
+      "translations": {
+        "uk": "наслідок",
+        "de": "Folge",
+        "fr": "conséquence",
+        "es": "consecuencia",
+        "it": "conseguenza",
+        "pt": "consequência",
+        "pl": "konsekwencja",
+        "ru": "последствие",
+        "zh": "后果",
+        "ja": "結果"
+      }
+    },
+    {
+      "word": "crime",
+      "translations": {
+        "uk": "злочин",
+        "de": "Verbrechen",
+        "fr": "crime",
+        "es": "delito",
+        "it": "crimine",
+        "pt": "crime",
+        "pl": "przestępstwo",
+        "ru": "преступление",
+        "zh": "犯罪",
+        "ja": "犯罪"
+      }
+    },
+    {
+      "word": "curriculum",
+      "translations": {
+        "uk": "навчальна програма",
+        "de": "Lehrplan",
+        "fr": "programme scolaire",
+        "es": "plan de estudios",
+        "it": "programma di studi",
+        "pt": "currículo",
+        "pl": "program nauczania",
+        "ru": "учебный план",
+        "zh": "课程",
+        "ja": "カリキュラム"
+      }
+    },
+    {
+      "word": "customer",
+      "translations": {
+        "uk": "клієнт",
+        "de": "Kunde",
+        "fr": "client",
+        "es": "cliente",
+        "it": "cliente",
+        "pt": "cliente",
+        "pl": "klient",
+        "ru": "клиент",
+        "zh": "顾客",
+        "ja": "顧客"
+      }
+    },
+    {
+      "word": "deal with",
+      "translations": {
+        "uk": "впоратися (з), мати справу (з)",
+        "de": "sich kümmern um",
+        "fr": "s'occuper de",
+        "es": "ocuparse de",
+        "it": "occuparsi di",
+        "pt": "lidar com",
+        "pl": "radzić sobie z",
+        "ru": "справляться (с), иметь дело (с)",
+        "zh": "处理",
+        "ja": "対処する"
+      }
+    },
+    {
+      "word": "degree",
+      "translations": {
+        "uk": "науковий ступінь, диплом",
+        "de": "Studienabschluss",
+        "fr": "diplôme",
+        "es": "título universitario",
+        "it": "laurea",
+        "pt": "diploma",
+        "pl": "dyplom",
+        "ru": "учёная степень, диплом",
+        "zh": "学位",
+        "ja": "学位"
+      }
+    },
+    {
+      "word": "delicious",
+      "translations": {
+        "uk": "смачний",
+        "de": "lecker",
+        "fr": "délicieux",
+        "es": "delicioso",
+        "it": "delizioso",
+        "pt": "delicioso",
+        "pl": "pyszny",
+        "ru": "вкусный",
+        "zh": "美味的",
+        "ja": "おいしい"
+      }
+    },
+    {
+      "word": "demonstrate",
+      "translations": {
+        "uk": "демонструвати",
+        "de": "zeigen",
+        "fr": "démontrer",
+        "es": "demostrar",
+        "it": "dimostrare",
+        "pt": "demonstrar",
+        "pl": "wykazać",
+        "ru": "демонстрировать",
+        "zh": "证明",
+        "ja": "示す"
+      }
+    },
+    {
+      "word": "device",
+      "translations": {
+        "uk": "пристрій",
+        "de": "Gerät",
+        "fr": "appareil",
+        "es": "dispositivo",
+        "it": "dispositivo",
+        "pt": "dispositivo",
+        "pl": "urządzenie",
+        "ru": "устройство",
+        "zh": "设备",
+        "ja": "機器"
+      }
+    },
+    {
+      "word": "do research",
+      "translations": {
+        "uk": "проводити дослідження",
+        "de": "forschen",
+        "fr": "faire des recherches",
+        "es": "investigar",
+        "it": "fare ricerca",
+        "pt": "fazer pesquisa",
+        "pl": "prowadzić badania",
+        "ru": "проводить исследование",
+        "zh": "做研究",
+        "ja": "研究する"
+      }
+    },
+    {
+      "word": "doctor",
+      "translations": {
+        "uk": "лікар",
+        "de": "Arzt",
+        "fr": "médecin",
+        "es": "médico",
+        "it": "medico",
+        "pt": "médico",
+        "pl": "lekarz",
+        "ru": "врач",
+        "zh": "医生",
+        "ja": "医者"
+      }
+    },
+    {
+      "word": "dog",
+      "translations": {
+        "uk": "собака",
+        "de": "Hund",
+        "fr": "chien",
+        "es": "perro",
+        "it": "cane",
+        "pt": "cachorro",
+        "pl": "pies",
+        "ru": "собака",
+        "zh": "狗",
+        "ja": "犬"
+      }
+    },
+    {
+      "word": "door",
+      "translations": {
+        "uk": "двері",
+        "de": "Tür",
+        "fr": "porte",
+        "es": "puerta",
+        "it": "porta",
+        "pt": "porta",
+        "pl": "drzwi",
+        "ru": "дверь",
+        "zh": "门",
+        "ja": "ドア"
+      }
+    },
+    {
+      "word": "download",
+      "translations": {
+        "uk": "завантажувати",
+        "de": "herunterladen",
+        "fr": "télécharger",
+        "es": "descargar",
+        "it": "scaricare",
+        "pt": "baixar",
+        "pl": "pobierać",
+        "ru": "скачивать",
+        "zh": "下载",
+        "ja": "ダウンロードする"
+      }
+    },
+    {
+      "word": "early",
+      "translations": {
+        "uk": "рано",
+        "de": "früh",
+        "fr": "tôt",
+        "es": "temprano",
+        "it": "presto",
+        "pt": "cedo",
+        "pl": "wcześnie",
+        "ru": "рано",
+        "zh": "早",
+        "ja": "早く"
+      }
+    },
+    {
+      "word": "economy",
+      "translations": {
+        "uk": "економіка",
+        "de": "Wirtschaft",
+        "fr": "économie",
+        "es": "economía",
+        "it": "economia",
+        "pt": "economia",
+        "pl": "gospodarka",
+        "ru": "экономика",
+        "zh": "经济",
+        "ja": "経済"
+      }
+    },
+    {
+      "word": "efficient",
+      "translations": {
+        "uk": "ефективний",
+        "de": "effizient",
+        "fr": "efficace",
+        "es": "eficiente",
+        "it": "efficiente",
+        "pt": "eficiente",
+        "pl": "wydajny",
+        "ru": "эффективный",
+        "zh": "高效的",
+        "ja": "効率的な"
+      }
+    },
+    {
+      "word": "emphasize",
+      "translations": {
+        "uk": "підкреслювати",
+        "de": "betonen",
+        "fr": "souligner",
+        "es": "enfatizar",
+        "it": "sottolineare",
+        "pt": "enfatizar",
+        "pl": "podkreślać",
+        "ru": "подчёркивать",
+        "zh": "强调",
+        "ja": "強調する"
+      }
+    },
+    {
+      "word": "exam",
+      "translations": {
+        "uk": "іспит",
+        "de": "Prüfung",
+        "fr": "examen",
+        "es": "examen",
+        "it": "esame",
+        "pt": "prova",
+        "pl": "egzamin",
+        "ru": "экзамен",
+        "zh": "考试",
+        "ja": "試験"
+      }
+    },
+    {
+      "word": "expensive",
+      "translations": {
+        "uk": "дорогий",
+        "de": "teuer",
+        "fr": "cher",
+        "es": "caro",
+        "it": "costoso",
+        "pt": "caro",
+        "pl": "drogi",
+        "ru": "дорогой",
+        "zh": "昂贵的",
+        "ja": "高い"
+      }
+    },
+    {
+      "word": "experiment",
+      "translations": {
+        "uk": "експеримент",
+        "de": "Experiment",
+        "fr": "expérience",
+        "es": "experimento",
+        "it": "esperimento",
+        "pt": "experimento",
+        "pl": "eksperyment",
+        "ru": "эксперимент",
+        "zh": "实验",
+        "ja": "実験"
+      }
+    },
+    {
+      "word": "father",
+      "translations": {
+        "uk": "батько",
+        "de": "Vater",
+        "fr": "père",
+        "es": "padre",
+        "it": "padre",
+        "pt": "pai",
+        "pl": "ojciec",
+        "ru": "отец",
+        "zh": "父亲",
+        "ja": "父"
+      }
+    },
+    {
+      "word": "find out",
+      "translations": {
+        "uk": "з'ясувати",
+        "de": "herausfinden",
+        "fr": "découvrir",
+        "es": "averiguar",
+        "it": "scoprire",
+        "pt": "descobrir",
+        "pl": "dowiedzieć się",
+        "ru": "выяснить",
+        "zh": "查明",
+        "ja": "知る、調べる"
+      }
+    },
+    {
+      "word": "forest",
+      "translations": {
+        "uk": "ліс",
+        "de": "Wald",
+        "fr": "forêt",
+        "es": "bosque",
+        "it": "foresta",
+        "pt": "floresta",
+        "pl": "las",
+        "ru": "лес",
+        "zh": "森林",
+        "ja": "森"
+      }
+    },
+    {
+      "word": "Friday",
+      "translations": {
+        "uk": "п'ятниця",
+        "de": "Freitag",
+        "fr": "vendredi",
+        "es": "viernes",
+        "it": "venerdì",
+        "pt": "sexta-feira",
+        "pl": "piątek",
+        "ru": "пятница",
+        "zh": "星期五",
+        "ja": "金曜日"
+      }
+    },
+    {
+      "word": "friend",
+      "translations": {
+        "uk": "друг",
+        "de": "Freund",
+        "fr": "ami",
+        "es": "amigo",
+        "it": "amico",
+        "pt": "amigo",
+        "pl": "przyjaciel",
+        "ru": "друг",
+        "zh": "朋友",
+        "ja": "友達"
+      }
+    },
+    {
+      "word": "fry",
+      "translations": {
+        "uk": "смажити",
+        "de": "braten",
+        "fr": "frire",
+        "es": "freír",
+        "it": "friggere",
+        "pt": "fritar",
+        "pl": "smażyć",
+        "ru": "жарить",
+        "zh": "煎",
+        "ja": "揚げる、炒める"
+      }
+    },
+    {
+      "word": "furniture",
+      "translations": {
+        "uk": "меблі",
+        "de": "Möbel",
+        "fr": "meubles",
+        "es": "muebles",
+        "it": "mobili",
+        "pt": "móveis",
+        "pl": "meble",
+        "ru": "мебель",
+        "zh": "家具",
+        "ja": "家具"
+      }
+    },
+    {
+      "word": "furthermore",
+      "translations": {
+        "uk": "більше того",
+        "de": "außerdem",
+        "fr": "de plus",
+        "es": "además",
+        "it": "inoltre",
+        "pt": "além disso",
+        "pl": "ponadto",
+        "ru": "более того",
+        "zh": "此外",
+        "ja": "さらに"
+      }
+    },
+    {
+      "word": "give up",
+      "translations": {
+        "uk": "здаватися",
+        "de": "aufgeben",
+        "fr": "abandonner",
+        "es": "rendirse",
+        "it": "arrendersi",
+        "pt": "desistir",
+        "pl": "poddać się",
+        "ru": "сдаваться",
+        "zh": "放弃",
+        "ja": "あきらめる"
+      }
+    },
+    {
+      "word": "government",
+      "translations": {
+        "uk": "уряд",
+        "de": "Regierung",
+        "fr": "gouvernement",
+        "es": "gobierno",
+        "it": "governo",
+        "pt": "governo",
+        "pl": "rząd",
+        "ru": "правительство",
+        "zh": "政府",
+        "ja": "政府"
+      }
+    },
+    {
+      "word": "grow up",
+      "translations": {
+        "uk": "дорослішати",
+        "de": "aufwachsen",
+        "fr": "grandir",
+        "es": "crecer",
+        "it": "crescere",
+        "pt": "crescer",
+        "pl": "dorastać",
+        "ru": "взрослеть",
+        "zh": "长大",
+        "ja": "成長する"
+      }
+    },
+    {
+      "word": "hand",
+      "translations": {
+        "uk": "рука",
+        "de": "Hand",
+        "fr": "main",
+        "es": "mano",
+        "it": "mano",
+        "pt": "mão",
+        "pl": "ręka",
+        "ru": "рука",
+        "zh": "手",
+        "ja": "手"
+      }
+    },
+    {
+      "word": "happy",
+      "translations": {
+        "uk": "щасливий",
+        "de": "glücklich",
+        "fr": "heureux",
+        "es": "feliz",
+        "it": "felice",
+        "pt": "feliz",
+        "pl": "szczęśliwy",
+        "ru": "счастливый",
+        "zh": "快乐的",
+        "ja": "幸せな"
+      }
+    },
+    {
+      "word": "head",
+      "translations": {
+        "uk": "голова",
+        "de": "Kopf",
+        "fr": "tête",
+        "es": "cabeza",
+        "it": "testa",
+        "pt": "cabeça",
+        "pl": "głowa",
+        "ru": "голова",
+        "zh": "头",
+        "ja": "頭"
+      }
+    },
+    {
+      "word": "healthy",
+      "translations": {
+        "uk": "здоровий",
+        "de": "gesund",
+        "fr": "sain",
+        "es": "sano",
+        "it": "sano",
+        "pt": "saudável",
+        "pl": "zdrowy",
+        "ru": "здоровый",
+        "zh": "健康的",
+        "ja": "健康な"
+      }
+    },
+    {
+      "word": "heart",
+      "translations": {
+        "uk": "серце",
+        "de": "Herz",
+        "fr": "cœur",
+        "es": "corazón",
+        "it": "cuore",
+        "pt": "coração",
+        "pl": "serce",
+        "ru": "сердце",
+        "zh": "心脏",
+        "ja": "心臓"
+      }
+    },
+    {
+      "word": "heavy rain",
+      "translations": {
+        "uk": "сильний дощ",
+        "de": "starker Regen",
+        "fr": "forte pluie",
+        "es": "lluvia intensa",
+        "it": "pioggia forte",
+        "pt": "chuva forte",
+        "pl": "ulewa",
+        "ru": "сильный дождь",
+        "zh": "大雨",
+        "ja": "大雨"
+      }
+    },
+    {
+      "word": "highly recommended",
+      "translations": {
+        "uk": "наполегливо рекомендується",
+        "de": "sehr empfehlenswert",
+        "fr": "vivement recommandé",
+        "es": "muy recomendable",
+        "it": "vivamente consigliato",
+        "pt": "altamente recomendado",
+        "pl": "gorąco polecany",
+        "ru": "настоятельно рекомендуется",
+        "zh": "强烈推荐",
+        "ja": "強くおすすめ"
+      }
+    },
+    {
+      "word": "homework",
+      "translations": {
+        "uk": "домашнє завдання",
+        "de": "Hausaufgaben",
+        "fr": "devoirs",
+        "es": "tarea",
+        "it": "compiti",
+        "pt": "lição de casa",
+        "pl": "praca domowa",
+        "ru": "домашнее задание",
+        "zh": "家庭作业",
+        "ja": "宿題"
+      }
+    },
+    {
+      "word": "house",
+      "translations": {
+        "uk": "будинок",
+        "de": "Haus",
+        "fr": "maison",
+        "es": "casa",
+        "it": "casa",
+        "pt": "casa",
+        "pl": "dom",
+        "ru": "дом",
+        "zh": "房子",
+        "ja": "家"
+      }
+    },
+    {
+      "word": "hypothesis",
+      "translations": {
+        "uk": "гіпотеза",
+        "de": "Hypothese",
+        "fr": "hypothèse",
+        "es": "hipótesis",
+        "it": "ipotesi",
+        "pt": "hipótese",
+        "pl": "hipoteza",
+        "ru": "гипотеза",
+        "zh": "假设",
+        "ja": "仮説"
+      }
+    },
+    {
+      "word": "immigration",
+      "translations": {
+        "uk": "імміграція",
+        "de": "Einwanderung",
+        "fr": "immigration",
+        "es": "inmigración",
+        "it": "immigrazione",
+        "pt": "imigração",
+        "pl": "imigracja",
+        "ru": "иммиграция",
+        "zh": "移民",
+        "ja": "移民"
+      }
+    },
+    {
+      "word": "infrastructure",
+      "translations": {
+        "uk": "інфраструктура",
+        "de": "Infrastruktur",
+        "fr": "infrastructure",
+        "es": "infraestructura",
+        "it": "infrastruttura",
+        "pt": "infraestrutura",
+        "pl": "infrastruktura",
+        "ru": "инфраструктура",
+        "zh": "基础设施",
+        "ja": "インフラ"
+      }
+    },
+    {
+      "word": "job",
+      "translations": {
+        "uk": "робота",
+        "de": "Job",
+        "fr": "emploi",
+        "es": "trabajo",
+        "it": "lavoro",
+        "pt": "emprego",
+        "pl": "praca",
+        "ru": "работа",
+        "zh": "工作",
+        "ja": "仕事"
+      }
+    },
+    {
+      "word": "journey",
+      "translations": {
+        "uk": "подорож",
+        "de": "Reise",
+        "fr": "voyage",
+        "es": "viaje",
+        "it": "viaggio",
+        "pt": "viagem",
+        "pl": "podróż",
+        "ru": "поездка",
+        "zh": "旅程",
+        "ja": "旅"
+      }
+    },
+    {
+      "word": "kitchen",
+      "translations": {
+        "uk": "кухня",
+        "de": "Küche",
+        "fr": "cuisine",
+        "es": "cocina",
+        "it": "cucina",
+        "pt": "cozinha",
+        "pl": "kuchnia",
+        "ru": "кухня",
+        "zh": "厨房",
+        "ja": "台所"
+      }
+    },
+    {
+      "word": "law",
+      "translations": {
+        "uk": "закон",
+        "de": "Gesetz",
+        "fr": "loi",
+        "es": "ley",
+        "it": "legge",
+        "pt": "lei",
+        "pl": "prawo",
+        "ru": "закон",
+        "zh": "法律",
+        "ja": "法律"
+      }
+    },
+    {
+      "word": "lesson",
+      "translations": {
+        "uk": "урок",
+        "de": "Unterrichtsstunde",
+        "fr": "leçon",
+        "es": "lección",
+        "it": "lezione",
+        "pt": "aula",
+        "pl": "lekcja",
+        "ru": "урок",
+        "zh": "课",
+        "ja": "授業"
+      }
+    },
+    {
+      "word": "look after",
+      "translations": {
+        "uk": "доглядати, піклуватися",
+        "de": "sich kümmern um",
+        "fr": "s'occuper de",
+        "es": "cuidar",
+        "it": "prendersi cura di",
+        "pt": "cuidar de",
+        "pl": "opiekować się",
+        "ru": "присматривать, заботиться",
+        "zh": "照顾",
+        "ja": "世話をする"
+      }
+    },
+    {
+      "word": "luggage",
+      "translations": {
+        "uk": "багаж",
+        "de": "Gepäck",
+        "fr": "bagages",
+        "es": "equipaje",
+        "it": "bagaglio",
+        "pt": "bagagem",
+        "pl": "bagaż",
+        "ru": "багаж",
+        "zh": "行李",
+        "ja": "荷物"
+      }
+    },
+    {
+      "word": "make a decision",
+      "translations": {
+        "uk": "ухвалити рішення",
+        "de": "eine Entscheidung treffen",
+        "fr": "prendre une décision",
+        "es": "tomar una decisión",
+        "it": "prendere una decisione",
+        "pt": "tomar uma decisão",
+        "pl": "podjąć decyzję",
+        "ru": "принять решение",
+        "zh": "做决定",
+        "ja": "決断する"
+      }
+    },
+    {
+      "word": "make progress",
+      "translations": {
+        "uk": "робити успіхи",
+        "de": "Fortschritte machen",
+        "fr": "faire des progrès",
+        "es": "progresar",
+        "it": "fare progressi",
+        "pt": "progredir",
+        "pl": "robić postępy",
+        "ru": "делать успехи",
+        "zh": "取得进步",
+        "ja": "上達する"
+      }
+    },
+    {
+      "word": "media",
+      "translations": {
+        "uk": "ЗМІ",
+        "de": "Medien",
+        "fr": "médias",
+        "es": "medios de comunicación",
+        "it": "media",
+        "pt": "mídia",
+        "pl": "media",
+        "ru": "СМИ",
+        "zh": "媒体",
+        "ja": "メディア"
+      }
+    },
+    {
+      "word": "medicine",
+      "translations": {
+        "uk": "ліки",
+        "de": "Medikament",
+        "fr": "médicament",
+        "es": "medicamento",
+        "it": "medicina",
+        "pt": "remédio",
+        "pl": "lekarstwo",
+        "ru": "лекарство",
+        "zh": "药",
+        "ja": "薬"
+      }
+    },
+    {
+      "word": "meeting",
+      "translations": {
+        "uk": "зустріч",
+        "de": "Besprechung",
+        "fr": "réunion",
+        "es": "reunión",
+        "it": "riunione",
+        "pt": "reunião",
+        "pl": "spotkanie",
+        "ru": "встреча",
+        "zh": "会议",
+        "ja": "会議"
+      }
+    },
+    {
+      "word": "Monday",
+      "translations": {
+        "uk": "понеділок",
+        "de": "Montag",
+        "fr": "lundi",
+        "es": "lunes",
+        "it": "lunedì",
+        "pt": "segunda-feira",
+        "pl": "poniedziałek",
+        "ru": "понедельник",
+        "zh": "星期一",
+        "ja": "月曜日"
+      }
+    },
+    {
+      "word": "money",
+      "translations": {
+        "uk": "гроші",
+        "de": "Geld",
+        "fr": "argent",
+        "es": "dinero",
+        "it": "soldi",
+        "pt": "dinheiro",
+        "pl": "pieniądze",
+        "ru": "деньги",
+        "zh": "钱",
+        "ja": "お金"
+      }
+    },
+    {
+      "word": "morning",
+      "translations": {
+        "uk": "ранок",
+        "de": "Morgen",
+        "fr": "matin",
+        "es": "mañana",
+        "it": "mattina",
+        "pt": "manhã",
+        "pl": "rano",
+        "ru": "утро",
+        "zh": "早上",
+        "ja": "朝"
+      }
+    },
+    {
+      "word": "mother",
+      "translations": {
+        "uk": "мати",
+        "de": "Mutter",
+        "fr": "mère",
+        "es": "madre",
+        "it": "madre",
+        "pt": "mãe",
+        "pl": "matka",
+        "ru": "мать",
+        "zh": "母亲",
+        "ja": "母"
+      }
+    },
+    {
+      "word": "mountain",
+      "translations": {
+        "uk": "гора",
+        "de": "Berg",
+        "fr": "montagne",
+        "es": "montaña",
+        "it": "montagna",
+        "pt": "montanha",
+        "pl": "góra",
+        "ru": "гора",
+        "zh": "山",
+        "ja": "山"
+      }
+    },
+    {
+      "word": "neighbor",
+      "translations": {
+        "uk": "сусід",
+        "de": "Nachbar",
+        "fr": "voisin",
+        "es": "vecino",
+        "it": "vicino di casa",
+        "pt": "vizinho",
+        "pl": "sąsiad",
+        "ru": "сосед",
+        "zh": "邻居",
+        "ja": "隣人"
+      }
+    },
+    {
+      "word": "nevertheless",
+      "translations": {
+        "uk": "проте",
+        "de": "trotzdem",
+        "fr": "néanmoins",
+        "es": "sin embargo",
+        "it": "tuttavia",
+        "pt": "no entanto",
+        "pl": "niemniej jednak",
+        "ru": "тем не менее",
+        "zh": "然而",
+        "ja": "それにもかかわらず"
+      }
+    },
+    {
+      "word": "obesity",
+      "translations": {
+        "uk": "ожиріння",
+        "de": "Fettleibigkeit",
+        "fr": "obésité",
+        "es": "obesidad",
+        "it": "obesità",
+        "pt": "obesidade",
+        "pl": "otyłość",
+        "ru": "ожирение",
+        "zh": "肥胖",
+        "ja": "肥満"
+      }
+    },
+    {
+      "word": "office",
+      "translations": {
+        "uk": "офіс",
+        "de": "Büro",
+        "fr": "bureau",
+        "es": "oficina",
+        "it": "ufficio",
+        "pt": "escritório",
+        "pl": "biuro",
+        "ru": "офис",
+        "zh": "办公室",
+        "ja": "オフィス"
+      }
+    },
+    {
+      "word": "parent",
+      "translations": {
+        "uk": "батько або мати",
+        "de": "Elternteil",
+        "fr": "parent",
+        "es": "padre o madre",
+        "it": "genitore",
+        "pt": "pai ou mãe",
+        "pl": "rodzic",
+        "ru": "родитель",
+        "zh": "父母",
+        "ja": "親"
+      }
+    },
+    {
+      "word": "pay attention",
+      "translations": {
+        "uk": "звертати увагу",
+        "de": "aufpassen",
+        "fr": "faire attention",
+        "es": "prestar atención",
+        "it": "prestare attenzione",
+        "pt": "prestar atenção",
+        "pl": "zwracać uwagę",
+        "ru": "обращать внимание",
+        "zh": "注意",
+        "ja": "注意を払う"
+      }
+    },
+    {
+      "word": "pen",
+      "translations": {
+        "uk": "ручка",
+        "de": "Kugelschreiber",
+        "fr": "stylo",
+        "es": "bolígrafo",
+        "it": "penna",
+        "pt": "caneta",
+        "pl": "długopis",
+        "ru": "ручка",
+        "zh": "笔",
+        "ja": "ペン"
+      }
+    },
+    {
+      "word": "phenomenon",
+      "translations": {
+        "uk": "явище",
+        "de": "Phänomen",
+        "fr": "phénomène",
+        "es": "fenómeno",
+        "it": "fenomeno",
+        "pt": "fenômeno",
+        "pl": "zjawisko",
+        "ru": "явление",
+        "zh": "现象",
+        "ja": "現象"
+      }
+    },
+    {
+      "word": "phone",
+      "translations": {
+        "uk": "телефон",
+        "de": "Telefon",
+        "fr": "téléphone",
+        "es": "teléfono",
+        "it": "telefono",
+        "pt": "telefone",
+        "pl": "telefon",
+        "ru": "телефон",
+        "zh": "电话",
+        "ja": "電話"
+      }
+    },
+    {
+      "word": "pollution",
+      "translations": {
+        "uk": "забруднення",
+        "de": "Umweltverschmutzung",
+        "fr": "pollution",
+        "es": "contaminación",
+        "it": "inquinamento",
+        "pt": "poluição",
+        "pl": "zanieczyszczenie",
+        "ru": "загрязнение",
+        "zh": "污染",
+        "ja": "汚染"
+      }
+    },
+    {
+      "word": "price",
+      "translations": {
+        "uk": "ціна",
+        "de": "Preis",
+        "fr": "prix",
+        "es": "precio",
+        "it": "prezzo",
+        "pt": "preço",
+        "pl": "cena",
+        "ru": "цена",
+        "zh": "价格",
+        "ja": "値段"
+      }
+    },
+    {
+      "word": "profit",
+      "translations": {
+        "uk": "прибуток",
+        "de": "Gewinn",
+        "fr": "bénéfice",
+        "es": "ganancia",
+        "it": "profitto",
+        "pt": "lucro",
+        "pl": "zysk",
+        "ru": "прибыль",
+        "zh": "利润",
+        "ja": "利益"
+      }
+    },
+    {
+      "word": "proud",
+      "translations": {
+        "uk": "гордий",
+        "de": "stolz",
+        "fr": "fier",
+        "es": "orgulloso",
+        "it": "orgoglioso",
+        "pt": "orgulhoso",
+        "pl": "dumny",
+        "ru": "гордый",
+        "zh": "自豪的",
+        "ja": "誇りに思う"
+      }
+    },
+    {
+      "word": "put off",
+      "translations": {
+        "uk": "відкладати",
+        "de": "verschieben",
+        "fr": "reporter",
+        "es": "posponer",
+        "it": "rimandare",
+        "pt": "adiar",
+        "pl": "odkładać",
+        "ru": "откладывать",
+        "zh": "推迟",
+        "ja": "延期する"
+      }
+    },
+    {
+      "word": "rain",
+      "translations": {
+        "uk": "дощ",
+        "de": "Regen",
+        "fr": "pluie",
+        "es": "lluvia",
+        "it": "pioggia",
+        "pt": "chuva",
+        "pl": "deszcz",
+        "ru": "дождь",
+        "zh": "雨",
+        "ja": "雨"
+      }
+    },
+    {
+      "word": "reach a conclusion",
+      "translations": {
+        "uk": "дійти висновку",
+        "de": "zu einem Schluss kommen",
+        "fr": "parvenir à une conclusion",
+        "es": "llegar a una conclusión",
+        "it": "giungere a una conclusione",
+        "pt": "chegar a uma conclusão",
+        "pl": "dojść do wniosku",
+        "ru": "прийти к выводу",
+        "zh": "得出结论",
+        "ja": "結論に達する"
+      }
+    },
+    {
+      "word": "recipe",
+      "translations": {
+        "uk": "рецепт",
+        "de": "Rezept",
+        "fr": "recette",
+        "es": "receta",
+        "it": "ricetta",
+        "pt": "receita",
+        "pl": "przepis",
+        "ru": "рецепт",
+        "zh": "食谱",
+        "ja": "レシピ"
+      }
+    },
+    {
+      "word": "research",
+      "translations": {
+        "uk": "дослідження",
+        "de": "Forschung",
+        "fr": "recherche",
+        "es": "investigación",
+        "it": "ricerca",
+        "pt": "pesquisa",
+        "pl": "badania",
+        "ru": "исследование",
+        "zh": "研究",
+        "ja": "研究"
+      }
+    },
+    {
+      "word": "river",
+      "translations": {
+        "uk": "річка",
+        "de": "Fluss",
+        "fr": "rivière",
+        "es": "río",
+        "it": "fiume",
+        "pt": "rio",
+        "pl": "rzeka",
+        "ru": "река",
+        "zh": "河",
+        "ja": "川"
+      }
+    },
+    {
+      "word": "room",
+      "translations": {
+        "uk": "кімната",
+        "de": "Zimmer",
+        "fr": "pièce",
+        "es": "habitación",
+        "it": "stanza",
+        "pt": "quarto",
+        "pl": "pokój",
+        "ru": "комната",
+        "zh": "房间",
+        "ja": "部屋"
+      }
+    },
+    {
+      "word": "sad",
+      "translations": {
+        "uk": "сумний",
+        "de": "traurig",
+        "fr": "triste",
+        "es": "triste",
+        "it": "triste",
+        "pt": "triste",
+        "pl": "smutny",
+        "ru": "грустный",
+        "zh": "难过的",
+        "ja": "悲しい"
+      }
+    },
+    {
+      "word": "salary",
+      "translations": {
+        "uk": "зарплата",
+        "de": "Gehalt",
+        "fr": "salaire",
+        "es": "salario",
+        "it": "stipendio",
+        "pt": "salário",
+        "pl": "pensja",
+        "ru": "зарплата",
+        "zh": "工资",
+        "ja": "給料"
+      }
+    },
+    {
+      "word": "Saturday",
+      "translations": {
+        "uk": "субота",
+        "de": "Samstag",
+        "fr": "samedi",
+        "es": "sábado",
+        "it": "sabato",
+        "pt": "sábado",
+        "pl": "sobota",
+        "ru": "суббота",
+        "zh": "星期六",
+        "ja": "土曜日"
+      }
+    },
+    {
+      "word": "save time",
+      "translations": {
+        "uk": "заощаджувати час",
+        "de": "Zeit sparen",
+        "fr": "gagner du temps",
+        "es": "ahorrar tiempo",
+        "it": "risparmiare tempo",
+        "pt": "economizar tempo",
+        "pl": "oszczędzać czas",
+        "ru": "экономить время",
+        "zh": "节省时间",
+        "ja": "時間を節約する"
+      }
+    },
+    {
+      "word": "set up",
+      "translations": {
+        "uk": "заснувати, створити",
+        "de": "gründen",
+        "fr": "créer",
+        "es": "establecer",
+        "it": "avviare",
+        "pt": "criar",
+        "pl": "założyć",
+        "ru": "основать, создать",
+        "zh": "建立",
+        "ja": "設立する"
+      }
+    },
+    {
+      "word": "shirt",
+      "translations": {
+        "uk": "сорочка",
+        "de": "Hemd",
+        "fr": "chemise",
+        "es": "camisa",
+        "it": "camicia",
+        "pt": "camisa",
+        "pl": "koszula",
+        "ru": "рубашка",
+        "zh": "衬衫",
+        "ja": "シャツ"
+      }
+    },
+    {
+      "word": "shoes",
+      "translations": {
+        "uk": "взуття",
+        "de": "Schuhe",
+        "fr": "chaussures",
+        "es": "zapatos",
+        "it": "scarpe",
+        "pt": "sapatos",
+        "pl": "buty",
+        "ru": "обувь",
+        "zh": "鞋",
+        "ja": "靴"
+      }
+    },
+    {
+      "word": "shop",
+      "translations": {
+        "uk": "магазин",
+        "de": "Geschäft",
+        "fr": "magasin",
+        "es": "tienda",
+        "it": "negozio",
+        "pt": "loja",
+        "pl": "sklep",
+        "ru": "магазин",
+        "zh": "商店",
+        "ja": "店"
+      }
+    },
+    {
+      "word": "significant",
+      "translations": {
+        "uk": "значний",
+        "de": "bedeutend",
+        "fr": "important",
+        "es": "significativo",
+        "it": "significativo",
+        "pt": "significativo",
+        "pl": "znaczący",
+        "ru": "значительный",
+        "zh": "重大的",
+        "ja": "重要な"
+      }
+    },
+    {
+      "word": "sister",
+      "translations": {
+        "uk": "сестра",
+        "de": "Schwester",
+        "fr": "sœur",
+        "es": "hermana",
+        "it": "sorella",
+        "pt": "irmã",
+        "pl": "siostra",
+        "ru": "сестра",
+        "zh": "姐妹",
+        "ja": "姉妹"
+      }
+    },
+    {
+      "word": "sleep",
+      "translations": {
+        "uk": "спати",
+        "de": "schlafen",
+        "fr": "dormir",
+        "es": "dormir",
+        "it": "dormire",
+        "pt": "dormir",
+        "pl": "spać",
+        "ru": "спать",
+        "zh": "睡觉",
+        "ja": "眠る"
+      }
+    },
+    {
+      "word": "software",
+      "translations": {
+        "uk": "програмне забезпечення",
+        "de": "Software",
+        "fr": "logiciel",
+        "es": "software",
+        "it": "software",
+        "pt": "software",
+        "pl": "oprogramowanie",
+        "ru": "программное обеспечение",
+        "zh": "软件",
+        "ja": "ソフトウェア"
+      }
+    },
+    {
+      "word": "station",
+      "translations": {
+        "uk": "станція",
+        "de": "Bahnhof",
+        "fr": "gare",
+        "es": "estación",
+        "it": "stazione",
+        "pt": "estação",
+        "pl": "stacja",
+        "ru": "станция",
+        "zh": "车站",
+        "ja": "駅"
+      }
+    },
+    {
+      "word": "street",
+      "translations": {
+        "uk": "вулиця",
+        "de": "Straße",
+        "fr": "rue",
+        "es": "calle",
+        "it": "strada",
+        "pt": "rua",
+        "pl": "ulica",
+        "ru": "улица",
+        "zh": "街道",
+        "ja": "通り"
+      }
+    },
+    {
+      "word": "strong economy",
+      "translations": {
+        "uk": "сильна економіка",
+        "de": "starke Wirtschaft",
+        "fr": "économie forte",
+        "es": "economía fuerte",
+        "it": "economia forte",
+        "pt": "economia forte",
+        "pl": "silna gospodarka",
+        "ru": "сильная экономика",
+        "zh": "强劲的经济",
+        "ja": "好調な経済"
+      }
+    },
+    {
+      "word": "sun",
+      "translations": {
+        "uk": "сонце",
+        "de": "Sonne",
+        "fr": "soleil",
+        "es": "sol",
+        "it": "sole",
+        "pt": "sol",
+        "pl": "słońce",
+        "ru": "солнце",
+        "zh": "太阳",
+        "ja": "太陽"
+      }
+    },
+    {
+      "word": "Sunday",
+      "translations": {
+        "uk": "неділя",
+        "de": "Sonntag",
+        "fr": "dimanche",
+        "es": "domingo",
+        "it": "domenica",
+        "pt": "domingo",
+        "pl": "niedziela",
+        "ru": "воскресенье",
+        "zh": "星期日",
+        "ja": "日曜日"
+      }
+    },
+    {
+      "word": "sustainable",
+      "translations": {
+        "uk": "сталий",
+        "de": "nachhaltig",
+        "fr": "durable",
+        "es": "sostenible",
+        "it": "sostenibile",
+        "pt": "sustentável",
+        "pl": "zrównoważony",
+        "ru": "устойчивый",
+        "zh": "可持续的",
+        "ja": "持続可能な"
+      }
+    },
+    {
+      "word": "take a break",
+      "translations": {
+        "uk": "зробити перерву",
+        "de": "eine Pause machen",
+        "fr": "faire une pause",
+        "es": "tomar un descanso",
+        "it": "fare una pausa",
+        "pt": "fazer uma pausa",
+        "pl": "zrobić przerwę",
+        "ru": "сделать перерыв",
+        "zh": "休息一下",
+        "ja": "休憩する"
+      }
+    },
+    {
+      "word": "teacher",
+      "translations": {
+        "uk": "учитель",
+        "de": "Lehrer",
+        "fr": "professeur",
+        "es": "profesor",
+        "it": "insegnante",
+        "pt": "professor",
+        "pl": "nauczyciel",
+        "ru": "учитель",
+        "zh": "老师",
+        "ja": "先生"
+      }
+    },
+    {
+      "word": "theory",
+      "translations": {
+        "uk": "теорія",
+        "de": "Theorie",
+        "fr": "théorie",
+        "es": "teoría",
+        "it": "teoria",
+        "pt": "teoria",
+        "pl": "teoria",
+        "ru": "теория",
+        "zh": "理论",
+        "ja": "理論"
+      }
+    },
+    {
+      "word": "Thursday",
+      "translations": {
+        "uk": "четвер",
+        "de": "Donnerstag",
+        "fr": "jeudi",
+        "es": "jueves",
+        "it": "giovedì",
+        "pt": "quinta-feira",
+        "pl": "czwartek",
+        "ru": "четверг",
+        "zh": "星期四",
+        "ja": "木曜日"
+      }
+    },
+    {
+      "word": "ticket",
+      "translations": {
+        "uk": "квиток",
+        "de": "Fahrkarte",
+        "fr": "billet",
+        "es": "boleto",
+        "it": "biglietto",
+        "pt": "passagem",
+        "pl": "bilet",
+        "ru": "билет",
+        "zh": "票",
+        "ja": "切符"
+      }
+    },
+    {
+      "word": "tourism",
+      "translations": {
+        "uk": "туризм",
+        "de": "Tourismus",
+        "fr": "tourisme",
+        "es": "turismo",
+        "it": "turismo",
+        "pt": "turismo",
+        "pl": "turystyka",
+        "ru": "туризм",
+        "zh": "旅游业",
+        "ja": "観光"
+      }
+    },
+    {
+      "word": "tradition",
+      "translations": {
+        "uk": "традиція",
+        "de": "Tradition",
+        "fr": "tradition",
+        "es": "tradición",
+        "it": "tradizione",
+        "pt": "tradição",
+        "pl": "tradycja",
+        "ru": "традиция",
+        "zh": "传统",
+        "ja": "伝統"
+      }
+    },
+    {
+      "word": "tree",
+      "translations": {
+        "uk": "дерево",
+        "de": "Baum",
+        "fr": "arbre",
+        "es": "árbol",
+        "it": "albero",
+        "pt": "árvore",
+        "pl": "drzewo",
+        "ru": "дерево",
+        "zh": "树",
+        "ja": "木"
+      }
+    },
+    {
+      "word": "trust",
+      "translations": {
+        "uk": "довіряти",
+        "de": "vertrauen",
+        "fr": "faire confiance",
+        "es": "confiar",
+        "it": "fidarsi",
+        "pt": "confiar",
+        "pl": "ufać",
+        "ru": "доверять",
+        "zh": "信任",
+        "ja": "信頼する"
+      }
+    },
+    {
+      "word": "Tuesday",
+      "translations": {
+        "uk": "вівторок",
+        "de": "Dienstag",
+        "fr": "mardi",
+        "es": "martes",
+        "it": "martedì",
+        "pt": "terça-feira",
+        "pl": "wtorek",
+        "ru": "вторник",
+        "zh": "星期二",
+        "ja": "火曜日"
+      }
+    },
+    {
+      "word": "turn off",
+      "translations": {
+        "uk": "вимкнути",
+        "de": "ausschalten",
+        "fr": "éteindre",
+        "es": "apagar",
+        "it": "spegnere",
+        "pt": "desligar",
+        "pl": "wyłączyć",
+        "ru": "выключить",
+        "zh": "关掉",
+        "ja": "消す"
+      }
+    },
+    {
+      "word": "unemployment",
+      "translations": {
+        "uk": "безробіття",
+        "de": "Arbeitslosigkeit",
+        "fr": "chômage",
+        "es": "desempleo",
+        "it": "disoccupazione",
+        "pt": "desemprego",
+        "pl": "bezrobocie",
+        "ru": "безработица",
+        "zh": "失业",
+        "ja": "失業"
+      }
+    },
+    {
+      "word": "vegetable",
+      "translations": {
+        "uk": "овоч",
+        "de": "Gemüse",
+        "fr": "légume",
+        "es": "verdura",
+        "it": "verdura",
+        "pt": "legume",
+        "pl": "warzywo",
+        "ru": "овощ",
+        "zh": "蔬菜",
+        "ja": "野菜"
+      }
+    },
+    {
+      "word": "water",
+      "translations": {
+        "uk": "вода",
+        "de": "Wasser",
+        "fr": "eau",
+        "es": "agua",
+        "it": "acqua",
+        "pt": "água",
+        "pl": "woda",
+        "ru": "вода",
+        "zh": "水",
+        "ja": "水"
+      }
+    },
+    {
+      "word": "website",
+      "translations": {
+        "uk": "вебсайт",
+        "de": "Website",
+        "fr": "site web",
+        "es": "sitio web",
+        "it": "sito web",
+        "pt": "site",
+        "pl": "strona internetowa",
+        "ru": "сайт",
+        "zh": "网站",
+        "ja": "ウェブサイト"
+      }
+    },
+    {
+      "word": "Wednesday",
+      "translations": {
+        "uk": "середа",
+        "de": "Mittwoch",
+        "fr": "mercredi",
+        "es": "miércoles",
+        "it": "mercoledì",
+        "pt": "quarta-feira",
+        "pl": "środa",
+        "ru": "среда",
+        "zh": "星期三",
+        "ja": "水曜日"
+      }
+    },
+    {
+      "word": "week",
+      "translations": {
+        "uk": "тиждень",
+        "de": "Woche",
+        "fr": "semaine",
+        "es": "semana",
+        "it": "settimana",
+        "pt": "semana",
+        "pl": "tydzień",
+        "ru": "неделя",
+        "zh": "星期",
+        "ja": "週"
+      }
+    },
+    {
+      "word": "window",
+      "translations": {
+        "uk": "вікно",
+        "de": "Fenster",
+        "fr": "fenêtre",
+        "es": "ventana",
+        "it": "finestra",
+        "pt": "janela",
+        "pl": "okno",
+        "ru": "окно",
+        "zh": "窗户",
+        "ja": "窓"
+      }
+    }
+  ]
+}
