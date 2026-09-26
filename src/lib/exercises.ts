@@ -10,6 +10,8 @@
      #          explanation (never spoken by TTS)
    ============================================================ */
 
+import i18n from '../i18n'
+
 // `id` is the DB row id; present on exercises loaded from Supabase, absent in the editor preview.
 export type Fill = { id?: string; type: 'fill'; prompt: string; answer: string; explanation: string }
 export type Choice = { id?: string; type: 'choice'; prompt: string; options: string[]; answer: string; explanation: string }
@@ -18,12 +20,8 @@ export type DlgLine = { speaker: string; text: string; answer?: string }
 export type Dialogue = { id?: string; type: 'dialogue'; lines: DlgLine[]; explanation: string }
 export type Exercise = Fill | Choice | Listen | Dialogue
 
-export const SKILL_LABEL: Record<Exercise['type'], string> = {
-  fill: 'Грамматика',
-  choice: 'Выбор',
-  listen: 'Аудирование',
-  dialogue: 'Диалог',
-}
+/** Translated name of an exercise type ("Grammar", "Listening", …). */
+export const skillLabel = (type: Exercise['type']) => i18n.t(`skills.${type}`)
 
 export function norm(s: string) {
   return s.trim().toLowerCase().replace(/[.,!?;:]+$/g, '')
@@ -40,7 +38,7 @@ export type Evaluation = {
   given: string // human-readable answer
 }
 
-/** Check a response against the exercise (same rules as the "Проверить" button). */
+/** Check a response against the exercise (same rules as the "Check" button). */
 export function evaluate(ex: Exercise, r: Response): Evaluation {
   if (ex.type === 'fill') {
     const text = r.text ?? ''
@@ -65,7 +63,7 @@ export function evaluate(ex: Exercise, r: Response): Evaluation {
 /** The task as one line of text, for result lists. */
 export function promptText(ex: Exercise): string {
   if (ex.type === 'fill' || ex.type === 'choice') return ex.prompt
-  if (ex.type === 'listen') return 'Прослушай слово и запиши его'
+  if (ex.type === 'listen') return i18n.t('player.listenInstruction')
   return ex.lines.map((l) => `${l.speaker}: ${l.text}`).join(' · ')
 }
 
@@ -158,20 +156,20 @@ export function validateRaw(raw: string): string[] {
   const parsed = parseExercises(raw)
   parsed.forEach((ex, i) => {
     const n = i + 1
-    if (ex.type === 'fill' && !ex.answer) issues.push(`Задание ${n} (fill): нет ответа после «=».`)
-    if (ex.type === 'choice' && !ex.answer) issues.push(`Задание ${n} (choice): отметьте верный вариант «*».`)
+    if (ex.type === 'fill' && !ex.answer) issues.push(i18n.t('teacher.validation.fillNoAnswer', { n }))
+    if (ex.type === 'choice' && !ex.answer) issues.push(i18n.t('teacher.validation.choiceNoAnswer', { n }))
     if (ex.type === 'dialogue') {
       // Rule: blank (___) only in the SECOND turn (B).
       const blankLines = ex.lines
         .map((l, idx) => ({ idx, has: /___/.test(l.text) || l.answer !== undefined }))
         .filter((x) => x.has)
       if (blankLines.length === 0) {
-        issues.push(`Задание ${n} (dialogue): нет пропуска ___ во второй реплике.`)
+        issues.push(i18n.t('teacher.validation.dialogueNoBlank', { n }))
       } else if (blankLines.some((x) => x.idx !== 1)) {
-        issues.push(`Задание ${n} (dialogue): пропуск ___ допустим только во второй реплике (B).`)
+        issues.push(i18n.t('teacher.validation.dialogueBlankOnlyB', { n }))
       }
       if (ex.lines[1] && ex.lines[1].answer === undefined && /___/.test(ex.lines[1].text)) {
-        issues.push(`Задание ${n} (dialogue): у пропуска нет ответа в скобках (…).`)
+        issues.push(i18n.t('teacher.validation.dialogueBlankNoAnswer', { n }))
       }
     }
   })

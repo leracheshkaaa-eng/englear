@@ -1,7 +1,11 @@
 // 12 cute animal avatars, drawn as inline SVG so they scale crisply and need no assets.
-// Each avatar is keyed by a stable id stored in profiles.avatar.
+// Each avatar is keyed by a stable id stored in profiles.avatar; names live in the translations.
+import { tKey } from '../i18n'
 
-export type AvatarDef = { id: string; label: string; bg: string; draw: () => React.ReactNode }
+/** Translated animal name for an avatar id. */
+export const avatarLabel = (id: string | null | undefined) => tKey(`avatars.${id ?? 'cat'}`, id ?? '')
+
+export type AvatarDef = { id: string; bg: string; draw: () => React.ReactNode }
 
 const eyes = (
   <>
@@ -23,7 +27,7 @@ const smile = (
 
 export const AVATARS: AvatarDef[] = [
   {
-    id: 'cat', label: 'Котик', bg: '#ffd8a8',
+    id: 'cat', bg: '#ffd8a8',
     draw: () => (
       <>
         <path d="M28 30 L36 46 L22 46 Z" fill="#f6b26b" />
@@ -37,7 +41,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'dog', label: 'Щенок', bg: '#ffe0b2',
+    id: 'dog', bg: '#ffe0b2',
     draw: () => (
       <>
         <ellipse cx="26" cy="44" rx="10" ry="16" fill="#a97c50" />
@@ -51,7 +55,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'fox', label: 'Лисёнок', bg: '#ffd0b5',
+    id: 'fox', bg: '#ffd0b5',
     draw: () => (
       <>
         <path d="M24 26 L40 46 L20 44 Z" fill="#e8743b" />
@@ -65,7 +69,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'bear', label: 'Мишка', bg: '#e7d3b3',
+    id: 'bear', bg: '#e7d3b3',
     draw: () => (
       <>
         <circle cx="30" cy="34" r="11" fill="#b98a5e" />
@@ -81,7 +85,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'panda', label: 'Панда', bg: '#e9e9ef',
+    id: 'panda', bg: '#e9e9ef',
     draw: () => (
       <>
         <circle cx="28" cy="32" r="10" fill="#2f2b33" />
@@ -97,7 +101,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'rabbit', label: 'Зайка', bg: '#f4d7e6',
+    id: 'rabbit', bg: '#f4d7e6',
     draw: () => (
       <>
         <ellipse cx="40" cy="24" rx="7" ry="18" fill="#fbeef4" />
@@ -112,7 +116,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'koala', label: 'Коала', bg: '#d7dde3',
+    id: 'koala', bg: '#d7dde3',
     draw: () => (
       <>
         <circle cx="26" cy="42" r="14" fill="#9aa7b0" />
@@ -127,7 +131,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'lion', label: 'Львёнок', bg: '#ffe6a7',
+    id: 'lion', bg: '#ffe6a7',
     draw: () => (
       <>
         <g fill="#e2953b">
@@ -144,7 +148,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'frog', label: 'Лягушка', bg: '#cdeecb',
+    id: 'frog', bg: '#cdeecb',
     draw: () => (
       <>
         <circle cx="34" cy="34" r="13" fill="#8fce7f" />
@@ -160,7 +164,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'penguin', label: 'Пингвин', bg: '#cfe3f2',
+    id: 'penguin', bg: '#cfe3f2',
     draw: () => (
       <>
         <circle cx="50" cy="54" r="27" fill="#3a3f4a" />
@@ -173,7 +177,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'owl', label: 'Совёнок', bg: '#e5d8f0',
+    id: 'owl', bg: '#e5d8f0',
     draw: () => (
       <>
         <path d="M28 30 L38 44 L26 44 Z" fill="#9b7bbd" />
@@ -188,7 +192,7 @@ export const AVATARS: AvatarDef[] = [
     ),
   },
   {
-    id: 'hamster', label: 'Хомяк', bg: '#ffe9cf',
+    id: 'hamster', bg: '#ffe9cf',
     draw: () => (
       <>
         <circle cx="32" cy="38" r="8" fill="#e6b98a" />
@@ -214,7 +218,7 @@ export function Avatar({ id, size = 44, ring = false }: { id?: string | null; si
       className={`inline-grid place-items-center overflow-hidden rounded-full ${ring ? 'ring-2 ring-plum ring-offset-2 ring-offset-paper' : ''}`}
       style={{ width: size, height: size, background: a.bg }}
     >
-      <svg viewBox="0 0 100 100" width={size} height={size} aria-label={a.label} role="img">
+      <svg viewBox="0 0 100 100" width={size} height={size} aria-label={avatarLabel(a.id)} role="img">
         {a.draw()}
       </svg>
     </span>
@@ -229,7 +233,7 @@ export function AvatarPicker({ value, onChange }: { value: string; onChange: (id
           key={a.id}
           type="button"
           onClick={() => onChange(a.id)}
-          title={a.label}
+          title={avatarLabel(a.id)}
           className={`grid place-items-center rounded-2xl p-1 transition-transform hover:scale-105 ${
             value === a.id ? 'ring-2 ring-plum' : 'ring-1 ring-line'
           }`}

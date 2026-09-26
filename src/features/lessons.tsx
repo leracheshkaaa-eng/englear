@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Badge, Button, TranslatableText, inputCls } from '../lib/ui'
 import { speak } from '../lib/supabase'
 import {
@@ -7,7 +8,7 @@ import {
   norm,
   promptText,
   sameResponse,
-  SKILL_LABEL,
+  skillLabel,
   type Evaluation,
   type Exercise,
   type Response,
@@ -15,16 +16,10 @@ import {
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { Lesson, LessonPass, PassSummary, SavedAnswer, Word } from '../lib/api'
-
-function plural(n: number, forms: [string, string, string]) {
-  const m10 = n % 10
-  const m100 = n % 100
-  if (m10 === 1 && m100 !== 11) return forms[0]
-  if (m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return forms[1]
-  return forms[2]
-}
+import { lessonLevelLabel } from '../lib/config'
 
 function Verdict({ correct, explanation, answer }: { correct: boolean; explanation: string; answer?: string }) {
+  const { t } = useTranslation()
   return (
     <div
       className="mt-4 rounded-2xl border px-4 py-3 text-sm"
@@ -35,13 +30,13 @@ function Verdict({ correct, explanation, answer }: { correct: boolean; explanati
       }
     >
       {correct ? (
-        <p className="font-semibold">✓ Верно! Отличная работа.</p>
+        <p className="font-semibold">✓ {t('player.correct')}</p>
       ) : (
         <>
-          <p className="font-semibold">✗ Пока не так.</p>
+          <p className="font-semibold">✗ {t('player.notYet')}</p>
           {answer && (
             <p className="mt-1 text-ink/80">
-              Правильный ответ: <b>{answer}</b>
+              {t('player.correctAnswer')} <b>{answer}</b>
             </p>
           )}
           {explanation && <p className="mt-1 text-ink/70">💬 {explanation}</p>}
@@ -68,6 +63,7 @@ export function ExerciseView({
   onChange?: (r: Response) => void
   onCheck?: (r: Response, result: Evaluation) => void
 }) {
+  const { t } = useTranslation()
   const [checked, setChecked] = useState(initial?.checked ?? false)
   const [correct, setCorrect] = useState(initial?.correct ?? false)
   const [response, setResponse] = useState<Response>(initial?.response ?? {})
@@ -98,7 +94,7 @@ export function ExerciseView({
 
   return (
     <div className="rounded-3xl border border-line bg-paper p-6 shadow-[0_10px_30px_-18px_rgba(60,42,112,0.5)] sm:p-8">
-      <Badge>{SKILL_LABEL[ex.type]}</Badge>
+      <Badge>{skillLabel(ex.type)}</Badge>
 
       {ex.type === 'fill' && (
         <div className="mt-5">
@@ -106,7 +102,7 @@ export function ExerciseView({
           <input
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Впиши слово"
+            placeholder={t('player.typeWord')}
             className={`${inputCls} mt-4 w-full sm:w-72`}
             onKeyDown={(e) => e.key === 'Enter' && canCheck && !checked && check()}
           />
@@ -137,18 +133,18 @@ export function ExerciseView({
 
       {ex.type === 'listen' && (
         <div className="mt-5">
-          <p className="text-mute">Прослушай слово и запиши его по-английски.</p>
+          <p className="text-mute">{t('player.listenAndWrite')}</p>
           <button
             onClick={() => speak(ex.text)}
             className="mt-4 inline-flex items-center gap-3 rounded-2xl border border-line bg-lilac px-5 py-4 font-body font-semibold text-plum-deep transition-colors hover:bg-lavender/40"
           >
             <span className="grid h-10 w-10 place-items-center rounded-full bg-plum text-paper">▶</span>
-            Прослушать
+            {t('player.listen')}
           </button>
           <input
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Запиши, что услышал(а)"
+            placeholder={t('player.typeWhatYouHeard')}
             className={`${inputCls} mt-4 block w-full`}
             onKeyDown={(e) => e.key === 'Enter' && canCheck && !checked && check()}
           />
@@ -157,7 +153,7 @@ export function ExerciseView({
 
       {ex.type === 'dialogue' && (
         <div className="mt-5 space-y-3">
-          <p className="text-mute">Прочитай диалог и заполни пропуск во второй реплике.</p>
+          <p className="text-mute">{t('player.dialogueInstruction')}</p>
           {ex.lines.map((l, i) => {
             const parts = l.text.split('___')
             return (
@@ -177,7 +173,7 @@ export function ExerciseView({
                 </p>
                 <button
                   onClick={() => speak(`${l.text.replace('___', l.answer || '')}`)}
-                  aria-label="Прослушать реплику"
+                  aria-label={t('player.listenLine')}
                   className="mt-0.5 shrink-0 self-start rounded-full bg-lilac px-3 py-1 text-plum-deep hover:bg-lavender/40"
                 >
                   ▶
@@ -190,11 +186,11 @@ export function ExerciseView({
 
       <div className="mt-6 flex items-center gap-3">
         <Button onClick={check} disabled={!canCheck || checked}>
-          Проверить
+          {t('player.check')}
         </Button>
         {checked && !correct && (
           <Button variant="ghost" onClick={() => update({})}>
-            Ещё раз
+            {t('player.tryAgain')}
           </Button>
         )}
       </div>
@@ -256,6 +252,7 @@ export function LessonPlayer({
   dict: Map<string, Word>
   onDone: () => void
 }) {
+  const { t } = useTranslation()
   const { userId, role, settings } = useAuth()
   const signedIn = !!userId // guests just practice; nothing saved
   const [phase, setPhase] = useState<'loading' | 'play' | 'result' | 'review'>('loading')
@@ -333,7 +330,7 @@ export function LessonPlayer({
       await resume(await api.startPass(lesson.id), isAlive)
     })().catch(() => {
       if (!alive) return
-      setError('Не удалось загрузить урок. Проверьте интернет и откройте урок ещё раз.')
+      setError(t('player.errors.load'))
       setPhase('result')
     })
     return () => {
@@ -362,7 +359,7 @@ export function LessonPlayer({
     } catch {
       // keep them queued (newer edits win) and retry on the next save
       pending.current = { ...Object.fromEntries(items), ...pending.current }
-      setError('Не удалось сохранить ответ. Проверьте интернет — мы попробуем ещё раз.')
+      setError(t('player.errors.saveAnswer'))
       return false
     }
   }
@@ -409,7 +406,7 @@ export function LessonPlayer({
           }
         })
       } catch {
-        setError('Не удалось сохранить проверку. Проверьте интернет и нажмите «Проверить» ещё раз.')
+        setError(t('player.errors.saveCheck'))
       }
       return
     }
@@ -463,7 +460,7 @@ export function LessonPlayer({
         setPhase('result')
       }
     } catch {
-      setError('Не удалось завершить урок. Проверьте интернет и нажмите «Завершить» ещё раз.')
+      setError(t('player.errors.finish'))
     } finally {
       setBusy(false)
     }
@@ -476,7 +473,7 @@ export function LessonPlayer({
     try {
       await resume(await api.startPass(lesson.id), () => true)
     } catch {
-      setError('Не удалось начать урок заново. Попробуйте ещё раз.')
+      setError(t('player.errors.restart'))
     } finally {
       setBusy(false)
     }
@@ -485,11 +482,11 @@ export function LessonPlayer({
   const header = (
     <>
       <button onClick={leave} className="mb-4 font-body text-sm text-mute hover:text-ink">
-        ← Все уроки
+        ← {t('lessons.allLessons')}
       </button>
       <div className="flex items-center gap-2">
         <h2 className="font-display text-3xl font-semibold">{lesson.title}</h2>
-        {lesson.visibility === 'private' && <Badge>приватный</Badge>}
+        {lesson.visibility === 'private' && <Badge>{t('visibility.private')}</Badge>}
       </div>
     </>
   )
@@ -498,7 +495,7 @@ export function LessonPlayer({
     return (
       <section className="mx-auto max-w-2xl px-6 pb-24">
         {header}
-        <p className="mt-6 text-mute">Загрузка…</p>
+        <p className="mt-6 text-mute">{t('common.loading')}</p>
       </section>
     )
   }
@@ -532,7 +529,7 @@ export function LessonPlayer({
     return (
       <section className="mx-auto max-w-2xl px-6 pb-24">
         {header}
-        <p className="mt-6 text-mute">В этом уроке пока нет заданий.</p>
+        <p className="mt-6 text-mute">{t('player.noExercises')}</p>
       </section>
     )
   }
@@ -545,7 +542,7 @@ export function LessonPlayer({
     <section className="mx-auto max-w-2xl px-6 pb-24">
       {header}
       {!signedIn && (
-        <p className="mt-2 text-sm text-mute">Вы не вошли — прогресс не сохранится. Войдите, чтобы отслеживать результаты.</p>
+        <p className="mt-2 text-sm text-mute">{t('player.guestNotice')}</p>
       )}
       <div className="my-5 h-2 w-full overflow-hidden rounded-full bg-line">
         <div className="h-full bg-plum transition-all duration-300" style={{ width: `${progress}%` }} />
@@ -570,17 +567,17 @@ export function LessonPlayer({
 
       <div className="mt-6 flex items-center justify-between">
         <Button variant="soft" onClick={() => goTo(Math.max(0, i - 1))} disabled={i === 0}>
-          ← Назад
+          ← {t('common.back')}
         </Button>
         <span className="font-body text-sm text-mute">
           {i + 1} / {exs.length}
         </span>
         {i === exs.length - 1 ? (
           <Button onClick={finish} disabled={busy}>
-            {busy ? 'Сохранение…' : 'Завершить ✓'}
+            {busy ? t('common.saving') : `${t('player.finish')} ✓`}
           </Button>
         ) : (
-          <Button onClick={() => goTo(Math.min(exs.length - 1, i + 1))}>Далее →</Button>
+          <Button onClick={() => goTo(Math.min(exs.length - 1, i + 1))}>{t('common.next')} →</Button>
         )}
       </div>
       {error && <p className="mt-4 text-sm text-warn">{error}</p>}
@@ -604,6 +601,7 @@ function LessonResult({
   onRetry: () => void
   onDone: () => void
 }) {
+  const { t } = useTranslation()
   const { correct, total, best } = outcome
   const legacy = outcome.legacyScore !== undefined
   const pct = legacy ? outcome.legacyScore! : total ? Math.round((correct / total) * 100) : 0
@@ -612,7 +610,7 @@ function LessonResult({
   return (
     <div className="mt-6 rounded-3xl border border-line bg-paper p-8 text-center shadow-[0_10px_30px_-18px_rgba(60,42,112,0.5)]">
       <span className="rounded-full bg-[rgba(63,143,107,.12)] px-3 py-1 text-sm font-semibold text-[var(--color-good)]">
-        ✓ Урок завершён
+        ✓ {t('result.completed')}
       </span>
       {legacy ? (
         <p className="mt-5 font-display text-6xl font-semibold text-plum">{pct}%</p>
@@ -623,33 +621,33 @@ function LessonResult({
           </p>
           <p className="mt-1 text-xl text-mute">{pct}%</p>
           <p className="mt-4 font-body">
-            Правильных: <b className="text-[var(--color-good)]">{correct}</b> · Ошибок: <b className="text-warn">{mistakes}</b>
+            {t('result.correct')} <b className="text-[var(--color-good)]">{correct}</b> · {t('result.mistakes')} <b className="text-warn">{mistakes}</b>
           </p>
         </>
       )}
       {best && (
         <p className="mt-2 text-sm text-mute">
-          Лучший результат: {best.correct_count ?? 0}/{best.total_count ?? 0} · Прохождений: {outcome.completed}
+          {t('result.best', { best: `${best.correct_count ?? 0}/${best.total_count ?? 0}`, passes: outcome.completed })}
         </p>
       )}
-      {legacy && <p className="mt-3 text-sm text-mute">Ответы этого прохождения не сохранялись.</p>}
+      {legacy && <p className="mt-3 text-sm text-mute">{t('result.legacyNoAnswers')}</p>}
 
       <div className="mt-6 flex flex-wrap justify-center gap-3">
         {outcome.answers && (
           <Button variant="soft" onClick={() => onReview('all')}>
-            Все ответы
+            {t('result.allAnswers')}
           </Button>
         )}
         {outcome.answers && mistakes > 0 && (
           <Button variant="soft" onClick={() => onReview('mistakes')}>
-            Посмотреть ошибки
+            {t('result.viewMistakes')}
           </Button>
         )}
         <Button onClick={onRetry} disabled={busy}>
-          Пройти заново
+          {t('result.tryAgain')}
         </Button>
         <Button variant="ghost" onClick={onDone}>
-          К урокам
+          {t('lessons.backToLessons')}
         </Button>
       </div>
       {error && <p className="mt-4 text-sm text-warn">{error}</p>}
@@ -669,6 +667,7 @@ function AnswersReview({
   initialFilter: 'all' | 'mistakes'
   onBack: () => void
 }) {
+  const { t } = useTranslation()
   const [filter, setFilter] = useState(initialFilter)
   const all = exs.map((ex, idx) => {
     const a = answers[exKey(ex, idx)]
@@ -680,10 +679,10 @@ function AnswersReview({
   return (
     <div className="mt-6 space-y-3">
       <button onClick={onBack} className="font-body text-sm text-mute hover:text-ink">
-        ← К результату
+        ← {t('review.backToResult')}
       </button>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h3 className="font-display text-2xl font-semibold">{filter === 'all' ? 'Мои ответы' : 'Ошибки'}</h3>
+        <h3 className="font-display text-2xl font-semibold">{filter === 'all' ? t('review.myAnswers') : t('review.mistakes')}</h3>
         <div className="flex rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold">
           {(['all', 'mistakes'] as const).map((f) => (
             <button
@@ -691,12 +690,12 @@ function AnswersReview({
               onClick={() => setFilter(f)}
               className={`rounded-full px-3.5 py-1 transition-colors ${filter === f ? 'bg-plum text-paper' : 'text-mute hover:text-ink'}`}
             >
-              {f === 'all' ? `Все (${all.length})` : `Ошибки (${mistakes})`}
+              {f === 'all' ? t('review.filterAll', { count: all.length }) : t('review.filterMistakes', { count: mistakes })}
             </button>
           ))}
         </div>
       </div>
-      {items.length === 0 && <p className="text-mute">Ошибок нет — отличная работа!</p>}
+      {items.length === 0 && <p className="text-mute">{t('review.noMistakes')}</p>}
       {items.map(({ ex, idx, a, ok }) => (
         <div
           key={exKey(ex, idx)}
@@ -705,9 +704,9 @@ function AnswersReview({
         >
           <div className="flex flex-wrap items-center gap-2 text-sm">
             <span className={`font-semibold ${ok ? 'text-[var(--color-good)]' : 'text-warn'}`}>{ok ? '✓' : '✗'}</span>
-            <span className="font-semibold">Задание {idx + 1}</span>
-            <Badge>{SKILL_LABEL[ex.type]}</Badge>
-            {a && !a.checked && <span className="text-xs text-mute">не проверялось</span>}
+            <span className="font-semibold">{t('review.exerciseN', { n: idx + 1 })}</span>
+            <Badge>{skillLabel(ex.type)}</Badge>
+            {a && !a.checked && <span className="text-xs text-mute">{t('review.notChecked')}</span>}
           </div>
           <p className="mt-2 font-body">{promptText(ex)}</p>
           {ex.type === 'dialogue' ? (
@@ -717,11 +716,11 @@ function AnswersReview({
               const blankOk = given !== '' && norm(given) === norm(l.answer)
               return (
                 <p key={li} className="mt-2 text-sm">
-                  Пропуск в реплике {l.speaker}:{' '}
+                  {t('review.blankInLine', { speaker: l.speaker })}{' '}
                   {given ? (
                     <b className={blankOk ? 'text-[var(--color-good)]' : 'text-warn'}>{given}</b>
                   ) : (
-                    <span className="text-mute">нет ответа</span>
+                    <span className="text-mute">{t('review.noAnswer')}</span>
                   )}{' '}
                   {blankOk ? '✓' : '✗'}
                 </p>
@@ -729,21 +728,21 @@ function AnswersReview({
             })
           ) : (
             <p className="mt-2 text-sm">
-              Твой ответ:{' '}
+              {t('review.yourAnswer')}{' '}
               {a?.given_answer ? (
                 <b className={a.is_correct ? 'text-[var(--color-good)]' : 'text-warn'}>{a.given_answer}</b>
               ) : (
-                <span className="text-mute">нет ответа</span>
+                <span className="text-mute">{t('review.noAnswer')}</span>
               )}
             </p>
           )}
           {!ok && (
             <>
               <p className="mt-1 text-sm">
-                Правильный ответ: <b className="text-[var(--color-good)]">{correctAnswerText(ex)}</b>
+                {t('player.correctAnswer')} <b className="text-[var(--color-good)]">{correctAnswerText(ex)}</b>
               </p>
               {a?.checked && a.first_check_correct === false && a.is_correct && (
-                <p className="mt-1 text-xs text-mute">Исправлено после проверки — в результат идёт первая проверка.</p>
+                <p className="mt-1 text-xs text-mute">{t('review.fixedAfterCheck')}</p>
               )}
               {ex.explanation && <p className="mt-1 text-sm text-ink/70">💬 {ex.explanation}</p>}
             </>
@@ -766,13 +765,14 @@ export function LessonsCatalog({
   passes?: Record<string, PassSummary>
   onOpen: (l: Lesson) => void
 }) {
+  const { t } = useTranslation()
   return (
     <section className="mx-auto max-w-4xl px-6 pb-24">
-      <h2 className="mb-8 font-display text-4xl font-semibold">Уроки</h2>
-      {lessons.length === 0 && <p className="text-mute">Пока нет доступных уроков.</p>}
+      <h2 className="mb-8 font-display text-4xl font-semibold">{t('nav.lessons')}</h2>
+      {lessons.length === 0 && <p className="text-mute">{t('lessons.none')}</p>}
       <div className="grid gap-4">
         {lessons.map((l) => {
-          const skills = Array.from(new Set(l.exercises.map((e) => SKILL_LABEL[e.type])))
+          const skills = Array.from(new Set(l.exercises.map((e) => skillLabel(e.type))))
           const pr = progress[l.id]
           const s = passes?.[l.id]
           const done = pr?.status === 'completed' || !!s?.last
@@ -794,25 +794,25 @@ export function LessonsCatalog({
               <div>
                 <div className="flex flex-wrap items-center gap-2">
                   <h3 className={`font-display text-2xl font-semibold ${done ? 'text-ink/75' : ''}`}>{l.title}</h3>
-                  <Badge>{l.level}</Badge>
-                  {l.visibility === 'public' ? <Badge>public</Badge> : <Badge>private</Badge>}
+                  <Badge>{lessonLevelLabel(l.level)}</Badge>
+                  <Badge>{t(`visibility.${l.visibility}`)}</Badge>
                   {done && (
                     <span className="rounded-full bg-[rgba(63,143,107,.12)] px-2.5 py-0.5 text-xs font-semibold text-[var(--color-good)]">
-                      ✓ Пройден
+                      ✓ {t('lessons.completedBadge')}
                     </span>
                   )}
                 </div>
                 <p className="mt-1 text-mute">{l.description}</p>
                 {done && lastResult && (
-                  <p className="mt-1 text-sm font-semibold text-[var(--color-good)]">Последний результат: {lastResult}</p>
+                  <p className="mt-1 text-sm font-semibold text-[var(--color-good)]">{t('lessons.lastResult', { result: lastResult })}</p>
                 )}
                 {open ? (
                   <p className="mt-1 text-sm text-plum">
-                    {done ? 'Новое прохождение' : 'В процессе'} · задание {Math.min(open.current_index + 1, l.exercises.length)} из{' '}
-                    {l.exercises.length}
+                    {done ? t('lessons.newPass') : t('progress.inProgress')} ·{' '}
+                    {t('lessons.exerciseOf', { n: Math.min(open.current_index + 1, l.exercises.length), total: l.exercises.length })}
                   </p>
                 ) : (
-                  !done && pr?.status === 'in_progress' && <p className="mt-1 text-sm text-plum">В процессе</p>
+                  !done && pr?.status === 'in_progress' && <p className="mt-1 text-sm text-plum">{t('progress.inProgress')}</p>
                 )}
                 <div className="mt-3 flex flex-wrap gap-2">
                   {skills.map((s) => (
@@ -823,7 +823,7 @@ export function LessonsCatalog({
                 </div>
               </div>
               <span className="shrink-0 font-body font-semibold text-plum">
-                {l.exercises.length} {plural(l.exercises.length, ['задание', 'задания', 'заданий'])} →
+                {t('lessons.exerciseCount', { count: l.exercises.length })} →
               </span>
             </button>
           )
@@ -832,5 +832,3 @@ export function LessonsCatalog({
     </section>
   )
 }
-
-export { plural }

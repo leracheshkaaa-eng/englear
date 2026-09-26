@@ -5,6 +5,7 @@
    regular exercise types so the lesson player UI can be reused.
    generatePractice() is the single place to swap in an AI generator later.
    ============================================================ */
+import i18n from '../i18n'
 import type { Exercise } from './exercises'
 
 /** One card of a set, whatever its source (own card or dictionary word). */
@@ -65,13 +66,13 @@ export function generatePractice(items: StudyItem[]): Exercise[] {
       if (!it.back) return null
       const opts = options(it.back, others(it).map((x) => x.back).filter(Boolean))
       if (opts.length < 2) return null
-      return { type: 'choice', prompt: `Выбери перевод: ${it.front}`, options: opts, answer: it.back, explanation: `${it.front} — ${it.back}` }
+      return { type: 'choice', prompt: i18n.t('practice.chooseTranslation', { word: it.front }), options: opts, answer: it.back, explanation: `${it.front} — ${it.back}` }
     },
     reverse: (it) => {
       if (!it.back) return null
       const opts = options(it.front, others(it).map((x) => x.front))
       if (opts.length < 2) return null
-      return { type: 'choice', prompt: `«${it.back}» по-английски — это…`, options: opts, answer: it.front, explanation: `${it.back} — ${it.front}` }
+      return { type: 'choice', prompt: i18n.t('practice.whichEnglishWord', { translation: it.back }), options: opts, answer: it.front, explanation: `${it.back} — ${it.front}` }
     },
     sentence: (it) => {
       const b = it.example && blankOut(it.example, it.front)
@@ -89,7 +90,7 @@ export function generatePractice(items: StudyItem[]): Exercise[] {
       if (!it.definition) return null
       const opts = options(it.front, others(it).map((x) => x.front))
       if (opts.length < 2) return null
-      return { type: 'choice', prompt: `Какое слово подходит: “${it.definition}”`, options: opts, answer: it.front, explanation: '' }
+      return { type: 'choice', prompt: i18n.t('practice.whichWordFits', { definition: it.definition }), options: opts, answer: it.front, explanation: '' }
     },
     listen: (it) => ({ type: 'listen', text: it.front, explanation: it.back ? `${it.front} — ${it.back}` : '' }),
   }

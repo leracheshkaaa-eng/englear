@@ -43,12 +43,30 @@ export async function requestTeacher(id: string) {
   if (error) throw error
 }
 
-export type Settings = { translations_enabled: boolean; translation_mode: string; english_level: string }
-const DEFAULT_SETTINGS: Settings = { translations_enabled: true, translation_mode: 'on', english_level: 'A1' }
+export type Settings = {
+  translations_enabled: boolean
+  translation_mode: string
+  english_level: string
+  /** UI language; null = not chosen yet (detected from the browser) */
+  interface_language: string | null
+  /** language of word translations; null = same as the UI language */
+  native_language: string | null
+  learning_language: string
+  accent: string
+}
+export const DEFAULT_SETTINGS: Settings = {
+  translations_enabled: true,
+  translation_mode: 'on',
+  english_level: 'A1',
+  interface_language: null,
+  native_language: null,
+  learning_language: 'en',
+  accent: 'en-US',
+}
 export async function getSettings(userId: string): Promise<Settings> {
   const { data } = await supabase
     .from('user_settings')
-    .select('translations_enabled, translation_mode, english_level')
+    .select('translations_enabled, translation_mode, english_level, interface_language, native_language, learning_language, accent')
     .eq('user_id', userId)
     .maybeSingle()
   return { ...DEFAULT_SETTINGS, ...(data ?? {}) }
@@ -400,7 +418,7 @@ export async function studentAttempts(studentId: string, lessonId: string) {
 
 /* ---------- lesson passes + saved answers ----------
    A "pass" is one run through a lesson. Answers are saved per pass as the
-   student types (checked or not); "Проверить" additionally logs an attempt.
+   student types (checked or not); "Check" additionally logs an attempt.
    Scoring happens on the server in complete_lesson_pass(). */
 
 export type LessonPass = {
@@ -475,7 +493,7 @@ export async function saveAnswer(pass: LessonPass, exerciseId: string, response:
   if (error) throw error
 }
 
-/** "Проверить": save the answer and log one attempt (a repeated identical check is ignored). */
+/** "Check": save the answer and log one attempt (a repeated identical check is ignored). */
 export async function recordCheck(passId: string, exerciseId: string, response: Response, given: string, isCorrect: boolean) {
   const { data, error } = await supabase.rpc('record_exercise_check', {
     p_pass_id: passId,

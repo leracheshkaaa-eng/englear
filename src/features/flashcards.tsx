@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Badge, Button, SpeakerButton, inputCls } from '../lib/ui'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { Flashcard, FlashcardSet, SetProgress, SetRef, Word, WordType } from '../lib/api'
-import { CEFR_LEVELS, IELTS_CATEGORIES, SET_SIZES, TOPICS } from '../lib/config'
+import { CEFR_LEVELS, IELTS_CATEGORIES, SET_SIZES, TOPICS, ieltsLabel, topicLabel } from '../lib/config'
+import i18n from '../i18n'
 import { evaluate, sameResponse, type Exercise, type Response } from '../lib/exercises'
 import { generatePractice, type StudyItem } from '../lib/practice'
 import { ExerciseView } from './lessons'
@@ -12,6 +14,7 @@ type Tab = 'library' | 'mine'
 
 /** `target` opens a set straight from the Progress page ("Continue"). */
 export function Flashcards({ target, onTargetDone }: { target?: SetProgress | null; onTargetDone?: () => void }) {
+  const { t } = useTranslation()
   const [tab, setTab] = useState<Tab>('library')
   if (target) {
     return (
@@ -23,15 +26,15 @@ export function Flashcards({ target, onTargetDone }: { target?: SetProgress | nu
   return (
     <section className="mx-auto max-w-5xl px-6 pb-24">
       <div className="mb-6 flex items-center justify-between">
-        <h2 className="font-display text-4xl font-semibold">Flashcards</h2>
+        <h2 className="font-display text-4xl font-semibold">{t('nav.flashcards')}</h2>
         <div className="flex rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold">
-          {(['library', 'mine'] as Tab[]).map((t) => (
+          {(['library', 'mine'] as Tab[]).map((tb) => (
             <button
-              key={t}
-              onClick={() => setTab(t)}
-              className={`rounded-full px-4 py-1.5 transition-colors ${tab === t ? 'bg-plum text-paper' : 'text-mute'}`}
+              key={tb}
+              onClick={() => setTab(tb)}
+              className={`rounded-full px-4 py-1.5 transition-colors ${tab === tb ? 'bg-plum text-paper' : 'text-mute'}`}
             >
-              {t === 'library' ? 'Library' : 'My sets'}
+              {tb === 'library' ? t('flashcards.library') : t('flashcards.mySets')}
             </button>
           ))}
         </div>
@@ -48,29 +51,30 @@ export function Flashcards({ target, onTargetDone }: { target?: SetProgress | nu
 type Selection =
   | { kind: 'topic'; value: string }
   | { kind: 'ielts'; value: string }
-  | { kind: 'type'; value: WordType; label: string }
+  | { kind: 'type'; value: WordType }
 
 function Library() {
+  const { t } = useTranslation()
   const [sel, setSel] = useState<Selection | null>(null)
   if (sel) return <TopicSetup selection={sel} onBack={() => setSel(null)} />
 
   return (
     <div className="space-y-10">
-      <Group title="Topics" hint="Everyday vocabulary by subject">
-        {TOPICS.filter((t) => t !== 'Other').map((t) => (
-          <Tile key={t} label={t} onClick={() => setSel({ kind: 'topic', value: t })} />
+      <Group title={t('flashcards.topics')} hint={t('flashcards.topicsHint')}>
+        {TOPICS.filter((tp) => tp !== 'Other').map((tp) => (
+          <Tile key={tp} label={topicLabel(tp)} onClick={() => setSel({ kind: 'topic', value: tp })} />
         ))}
       </Group>
 
-      <Group title="IELTS Vocabulary" hint="Academic & exam-focused sets" accent>
+      <Group title={t('flashcards.ielts')} hint={t('flashcards.ieltsHint')} accent>
         {IELTS_CATEGORIES.map((c) => (
-          <Tile key={c} label={c} onClick={() => setSel({ kind: 'ielts', value: c })} accent />
+          <Tile key={c} label={ieltsLabel(c)} onClick={() => setSel({ kind: 'ielts', value: c })} accent />
         ))}
       </Group>
 
-      <Group title="Lexical focus" hint="Chunks & multi-word units">
-        <Tile label="Collocations" onClick={() => setSel({ kind: 'type', value: 'collocation', label: 'Collocations' })} />
-        <Tile label="Phrasal Verbs" onClick={() => setSel({ kind: 'type', value: 'phrasal_verb', label: 'Phrasal Verbs' })} />
+      <Group title={t('flashcards.lexicalFocus')} hint={t('flashcards.lexicalFocusHint')}>
+        <Tile label={t('wordTypes.collocation')} onClick={() => setSel({ kind: 'type', value: 'collocation' })} />
+        <Tile label={t('wordTypes.phrasal_verb')} onClick={() => setSel({ kind: 'type', value: 'phrasal_verb' })} />
       </Group>
     </div>
   )
@@ -108,6 +112,7 @@ function chunk<T>(arr: T[], n: number): T[][] {
 }
 
 function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () => void }) {
+  const { t } = useTranslation()
   const { userId } = useAuth()
   const [levels, setLevels] = useState<string[]>([])
   const [size, setSize] = useState<number>(20)
@@ -117,7 +122,7 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
   const [playing, setPlaying] = useState<number | null>(null)
   const [loading, setLoading] = useState(true)
 
-  const title = selection.kind === 'type' ? selection.label : selection.value
+  const title = selectionLabel(selection.kind, selection.value)
   // identifies "Set N" of this selection; its word list is snapshotted on first open
   const keyFor = (i: number) => `${selection.kind}:${selection.value}|${[...levels].sort().join(',')}|${size}|${i}`
 
@@ -159,7 +164,7 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
     const fresh = sets[playing] ?? []
     return (
       <StudyPlayer
-        title={`${title} · Set ${playing + 1}`}
+        title={libraryTitle(key)}
         sref={{ libraryKey: key }}
         itemKind="word"
         // a started set keeps the words it was started with, even if the dictionary changed
@@ -174,11 +179,11 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
 
   return (
     <div>
-      <button onClick={onBack} className="mb-4 font-body text-sm text-mute hover:text-ink">← Library</button>
+      <button onClick={onBack} className="mb-4 font-body text-sm text-mute hover:text-ink">← {t('flashcards.library')}</button>
       <h3 className="font-display text-3xl font-semibold">{title}</h3>
 
       {/* level picker (multi-select) */}
-      <p className="mt-5 mb-2 text-sm font-semibold">Choose levels</p>
+      <p className="mt-5 mb-2 text-sm font-semibold">{t('flashcards.chooseLevels')}</p>
       <div className="flex flex-wrap gap-2">
         {CEFR_LEVELS.map((l) => (
           <button
@@ -192,13 +197,13 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
           </button>
         ))}
         {levels.length > 0 && (
-          <button onClick={() => setLevels([])} className="px-3 text-sm text-mute underline">clear</button>
+          <button onClick={() => setLevels([])} className="px-3 text-sm text-mute underline">{t('flashcards.clear')}</button>
         )}
       </div>
-      <p className="mt-1 text-xs text-mute">No level selected = all levels.</p>
+      <p className="mt-1 text-xs text-mute">{t('flashcards.noLevelHint')}</p>
 
       {/* size picker */}
-      <p className="mt-5 mb-2 text-sm font-semibold">Cards per set</p>
+      <p className="mt-5 mb-2 text-sm font-semibold">{t('flashcards.cardsPerSet')}</p>
       <div className="flex flex-wrap gap-2">
         {SET_SIZES.map((s) => (
           <button
@@ -215,21 +220,21 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
 
       {/* progress summary + generated sets */}
       {loading ? (
-        <p className="mt-8 text-mute">Loading…</p>
+        <p className="mt-8 text-mute">{t('common.loading')}</p>
       ) : pool.length === 0 ? (
-        <p className="mt-8 text-mute">No vocabulary yet for this selection. Try other levels.</p>
+        <p className="mt-8 text-mute">{t('flashcards.noVocabulary')}</p>
       ) : (
         <>
           <div className="mt-8 rounded-2xl border border-line bg-paper p-5">
             <div className="flex items-center justify-between">
-              <p className="font-body font-semibold">{knownCount} / {pool.length} words learned</p>
+              <p className="font-body font-semibold">{t('flashcards.wordsLearned', { known: knownCount, total: pool.length })}</p>
               <Badge>{pct}%</Badge>
             </div>
             <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-lilac">
               <div className="h-full rounded-full bg-plum transition-all" style={{ width: `${pct}%` }} />
             </div>
             <p className="mt-2 text-xs text-mute">
-              {sets.length} sets × up to {size} cards · {pool.length} available cards
+              {t('flashcards.setsSummary', { sets: sets.length, size, total: pool.length })}
             </p>
           </div>
 
@@ -250,14 +255,14 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
                   }`}
                 >
                   <div>
-                    <p className="font-body font-semibold">Set {i + 1}</p>
-                    <p className="text-xs text-mute">{done}/{s.length} learned</p>
-                    {sp && <p className="text-xs font-semibold text-plum">{SET_STATUS_LABEL[sp.status]}</p>}
+                    <p className="font-body font-semibold">{t('flashcards.setN', { n: i + 1 })}</p>
+                    <p className="text-xs text-mute">{t('flashcards.learnedOf', { known: done, total: s.length })}</p>
+                    {sp && <p className="text-xs font-semibold text-plum">{t(`sets.status.${sp.status}`)}</p>}
                   </div>
-                  {status === 'done' && <Badge>✓ done</Badge>}
-                  {status === 'current' && <span className="text-sm font-semibold text-plum">In progress →</span>}
-                  {status === 'open' && <span className="text-sm text-mute">Start →</span>}
-                  {status === 'locked' && <span className="text-sm text-mute">🔒 Locked</span>}
+                  {status === 'done' && <Badge>✓ {t('flashcards.done')}</Badge>}
+                  {status === 'current' && <span className="text-sm font-semibold text-plum">{t('progress.inProgress')} →</span>}
+                  {status === 'open' && <span className="text-sm text-mute">{t('flashcards.start')} →</span>}
+                  {status === 'locked' && <span className="text-sm text-mute">🔒 {t('flashcards.locked')}</span>}
                 </button>
               )
             })}
@@ -273,10 +278,18 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
    with saved progress, rounds, completion, practice and review.
    ============================================================ */
 
-export const SET_STATUS_LABEL: Record<api.SetProgressStatus, string> = {
-  in_progress: 'В процессе',
-  practice_available: 'Карточки пройдены · доступна практика',
-  completed: 'Завершён',
+/** Translated name of a library selection (topic, IELTS category or word type). */
+function selectionLabel(kind: string, value: string) {
+  if (kind === 'topic') return topicLabel(value)
+  if (kind === 'ielts') return ieltsLabel(value)
+  return i18n.t(`wordTypes.${value}` as never) as string
+}
+
+/** Title of a library set from its key ("topic:Food|A1|20|0" -> "Food · Set 1"), in the current language. */
+export function libraryTitle(key: string) {
+  const [head, , , index] = key.split('|')
+  const [kind, ...rest] = head.split(':')
+  return `${selectionLabel(kind, rest.join(':'))} · ${i18n.t('flashcards.setN', { n: Number(index) + 1 })}`
 }
 
 const wordToItem = (w: Word): StudyItem => ({
@@ -311,7 +324,7 @@ function ProgressStudy({ progress, onBack }: { progress: SetProgress; onBack: ()
   }
   return (
     <StudyPlayer
-      title={progress.title}
+      title={libraryTitle(progress.library_key!)}
       sref={{ libraryKey: progress.library_key! }}
       itemKind="word"
       loadItems={() => api.wordsByIds(progress.items).then((ws) => ws.map(wordToItem))}
@@ -356,6 +369,7 @@ function StudyPlayer({
   loadItems: () => Promise<StudyItem[]>
   onBack: () => void
 }) {
+  const { t } = useTranslation()
   const { userId } = useAuth()
   const [items, setItems] = useState<StudyItem[]>([])
   const [p, setP] = useState<SetProgress | null>(null)
@@ -372,7 +386,7 @@ function StudyPlayer({
       const list = await loadItems()
       if (!alive) return
       if (!userId) {
-        setError('Войдите, чтобы проходить наборы и сохранять прогресс.')
+        setError(t('study.errors.signIn'))
         return setMode('error')
       }
       let prog = (await api.getSetProgress(userId, sref)) ?? (await api.startSetProgress(userId, sref, title, itemKind, list.map((i) => i.id)))
@@ -388,7 +402,7 @@ function StudyPlayer({
       else setMode(prog.status === 'in_progress' ? 'study' : 'done')
     })().catch(() => {
       if (!alive) return
-      setError('Не удалось загрузить набор. Проверьте интернет и откройте его ещё раз.')
+      setError(t('study.errors.load'))
       setMode('error')
     })
     return () => {
@@ -406,7 +420,7 @@ function StudyPlayer({
     setP({ ...p, ...patch })
   }
 
-  /** Global per-card / per-word progress (the "Слов знаю" statistics). */
+  /** Global per-card / per-word progress (the "words known" statistics). */
   function recordGlobal(item: StudyItem, known: boolean) {
     return itemKind === 'card' ? api.recordCard(item.id, known) : api.recordWord(userId!, item.id, known)
   }
@@ -446,7 +460,7 @@ function StudyPlayer({
       if (next === 'done') setJustFinished(true)
       setMode(next)
     } catch {
-      setError('Не удалось сохранить ответ. Проверьте интернет и попробуйте ещё раз.')
+      setError(t('study.errors.saveAnswer'))
     } finally {
       setBusy(false)
     }
@@ -460,7 +474,7 @@ function StudyPlayer({
       if (practice !== p.practice) await save({ practice })
       setMode('practice')
     } catch {
-      setError('Не удалось подготовить практику. Попробуйте ещё раз.')
+      setError(t('study.errors.preparePractice'))
     }
   }
 
@@ -470,7 +484,7 @@ function StudyPlayer({
       setJustFinished(false)
       setMode('done')
     } catch {
-      setError('Не удалось сохранить результат практики. Попробуйте ещё раз.')
+      setError(t('study.errors.savePractice'))
     }
   }
 
@@ -487,13 +501,13 @@ function StudyPlayer({
 
   const back = (
     <button onClick={onBack} className="mb-4 font-body text-sm text-mute hover:text-ink">
-      ← Назад к наборам
+      ← {t('study.backToSets')}
     </button>
   )
 
-  if (mode === 'loading') return <div className="mx-auto max-w-md pb-24">{back}<p className="text-mute">Загрузка…</p></div>
+  if (mode === 'loading') return <div className="mx-auto max-w-md pb-24">{back}<p className="text-mute">{t('common.loading')}</p></div>
   if (mode === 'error' || !p) return <div className="mx-auto max-w-md pb-24">{back}<p className="text-warn">{error}</p></div>
-  if (mode === 'empty') return <div className="mx-auto max-w-md pb-24">{back}<p className="text-mute">В этом наборе пока нет карточек.</p></div>
+  if (mode === 'empty') return <div className="mx-auto max-w-md pb-24">{back}<p className="text-mute">{t('study.emptySet')}</p></div>
 
   const pct = p.total_count ? Math.round((p.known_count / p.total_count) * 100) : 0
   const header = (
@@ -501,7 +515,7 @@ function StudyPlayer({
       {back}
       <h3 className="font-display text-2xl font-semibold">{title}</h3>
       <p className="mt-1 text-sm text-mute">
-        Знаю {p.known_count} / {p.total_count} слов · {SET_STATUS_LABEL[p.status]}
+        {t('study.knownOf', { known: p.known_count, total: p.total_count })} · {t(`sets.status.${p.status}`)}
       </p>
       <div className="mt-2 mb-5 h-2 w-full overflow-hidden rounded-full bg-lilac">
         <div className="h-full rounded-full bg-plum transition-all" style={{ width: `${pct}%` }} />
@@ -523,14 +537,13 @@ function StudyPlayer({
     return (
       <div className="mx-auto max-w-md pb-24 text-center">
         {header}
-        <h3 className="font-display text-2xl font-semibold">Круг {p.round - 1} пройден</h3>
+        <h3 className="font-display text-2xl font-semibold">{t('study.roundDone', { round: p.round - 1 })}</h3>
         <p className="mt-3 text-mute">
-          Осталось повторить: <b className="text-ink">{p.queue.length}</b> {p.queue.length === 1 ? 'карточку' : 'карточки'}. Набор будет пройден, когда
-          вы отметите «I know it» для каждого слова.
+          {t('study.roundRemaining', { count: p.queue.length })} {t('study.roundHint')}
         </p>
         <div className="mt-6 flex justify-center gap-3">
-          <Button onClick={() => setMode('study')}>Продолжить</Button>
-          <Button variant="ghost" onClick={onBack}>Позже</Button>
+          <Button onClick={() => setMode('study')}>{t('sets.continue')}</Button>
+          <Button variant="ghost" onClick={onBack}>{t('study.later')}</Button>
         </div>
       </div>
     )
@@ -541,29 +554,28 @@ function StudyPlayer({
     return (
       <div className="mx-auto max-w-md pb-24 text-center">
         {header}
-        <h3 className="font-display text-3xl font-semibold">{justFinished ? 'Набор пройден! 🎉' : 'Набор пройден'}</h3>
-        <p className="mt-2 text-mute">Все {p.total_count} слов отмечены как знакомые.</p>
+        <h3 className="font-display text-3xl font-semibold">{justFinished ? `${t('study.setPassed')} 🎉` : t('study.setPassed')}</h3>
+        <p className="mt-2 text-mute">{t('study.allKnown', { count: p.total_count })}</p>
 
         {p.status === 'practice_available' && (
           <div className="mt-6 rounded-2xl border border-plum/30 bg-lilac/50 p-5">
-            <p className="font-body font-semibold">Закрепим?</p>
+            <p className="font-body font-semibold">{t('study.practiceTitle')}</p>
             <p className="mt-1 text-sm text-mute">
-              Короткая практика{practiceCount ? ` из ${practiceCount} заданий` : ''} по словам этого набора — проверит, что вы узнаёте и
-              используете их, а не только помните перевод.
+              {t('study.practiceOffer', { count: practiceCount })}
             </p>
             <div className="mt-4 flex justify-center gap-3">
-              <Button onClick={startPractice}>Пройти практику</Button>
-              <Button variant="ghost" onClick={onBack}>Позже</Button>
+              <Button onClick={startPractice}>{t('sets.takePractice')}</Button>
+              <Button variant="ghost" onClick={onBack}>{t('study.later')}</Button>
             </div>
           </div>
         )}
         {p.status === 'completed' && (
           <div className="mt-6 rounded-2xl border border-line bg-paper p-5">
             <p className="font-body">
-              Практика: <b className="text-[var(--color-good)]">{p.practice_correct ?? 0} / {p.practice_total ?? 0}</b>
+              {t('study.practiceResult')} <b className="text-[var(--color-good)]">{p.practice_correct ?? 0} / {p.practice_total ?? 0}</b>
             </p>
             <div className="mt-3">
-              <Button variant="soft" onClick={startPractice}>Пройти практику ещё раз</Button>
+              <Button variant="soft" onClick={startPractice}>{t('study.practiceAgain')}</Button>
             </div>
           </div>
         )}
@@ -577,9 +589,9 @@ function StudyPlayer({
               setMode('review')
             }}
           >
-            Повторить карточки
+            {t('study.reviewCards')}
           </Button>
-          <Button variant="ghost" onClick={onBack}>К наборам</Button>
+          <Button variant="ghost" onClick={onBack}>{t('study.toSets')}</Button>
         </div>
         {error && <p className="mt-3 text-sm text-warn">{error}</p>}
       </div>
@@ -588,13 +600,15 @@ function StudyPlayer({
 
   const reviewing = mode === 'review'
   const item = reviewing ? items[reviewIndex] : current
-  if (!item) return <div className="mx-auto max-w-md pb-24">{header}<p className="text-mute">Загрузка…</p></div>
+  if (!item) return <div className="mx-auto max-w-md pb-24">{header}<p className="text-mute">{t('common.loading')}</p></div>
 
   return (
     <div className="mx-auto max-w-md pb-24">
       {header}
       <p className="mb-3 text-center text-sm text-mute">
-        {reviewing ? `Повторение · ${reviewIndex + 1} / ${items.length}` : `Круг ${p.round} · карточка ${p.position + 1} из ${p.queue.length}`}
+        {reviewing
+          ? t('study.reviewProgress', { n: reviewIndex + 1, total: items.length })
+          : t('study.roundProgress', { round: p.round, n: p.position + 1, total: p.queue.length })}
       </p>
       <StudyCard
         key={`${mode}-${item.id}-${p.round}`}
@@ -603,14 +617,14 @@ function StudyPlayer({
         onFlip={() => setFlipped((f) => !f)}
         onSwipe={(known) => (reviewing ? reviewAnswer(known) : answer(known))}
       />
-      <p className="mt-3 text-center text-xs text-mute">← swipe “review” · swipe “I know it” →</p>
+      <p className="mt-3 text-center text-xs text-mute">{t('study.swipeHint')}</p>
       <div className="mt-4 flex justify-center gap-4">
-        <Button variant="danger" disabled={busy} onClick={() => (reviewing ? reviewAnswer(false) : answer(false))}>✗ Review</Button>
-        <Button disabled={busy} onClick={() => (reviewing ? reviewAnswer(true) : answer(true))}>✓ I know it</Button>
+        <Button variant="danger" disabled={busy} onClick={() => (reviewing ? reviewAnswer(false) : answer(false))}>✗ {t('study.review')}</Button>
+        <Button disabled={busy} onClick={() => (reviewing ? reviewAnswer(true) : answer(true))}>✓ {t('study.know')}</Button>
       </div>
       {reviewing && (
         <div className="mt-4 text-center">
-          <button onClick={() => setMode('done')} className="text-sm text-mute underline">Закончить повторение</button>
+          <button onClick={() => setMode('done')} className="text-sm text-mute underline">{t('study.finishReview')}</button>
         </div>
       )}
       {error && <p className="mt-3 text-center text-sm text-warn">{error}</p>}
@@ -630,6 +644,7 @@ function StudyCard({
   onFlip: () => void
   onSwipe: (known: boolean) => void
 }) {
+  const { t } = useTranslation()
   const [dragX, setDragX] = useState(0)
   const startX = useRef<number | null>(null)
   const dragged = useRef(false) // the pointer moved: the following click is not a tap
@@ -680,7 +695,7 @@ function StudyCard({
             <SpeakerButton text={item.front} />
           </div>
           {item.pronunciation && <span className="mt-2 text-mute">{item.pronunciation}</span>}
-          <span className="mt-4 text-sm text-mute">tap to flip</span>
+          <span className="mt-4 text-sm text-mute">{t('study.tapToFlip')}</span>
         </>
       ) : (
         <>
@@ -703,6 +718,7 @@ function PracticePlayer({
   onFinish: (correct: number, total: number) => Promise<void>
   onCancel: () => void
 }) {
+  const { t } = useTranslation()
   type A = { response: Response; checkedResponse: Response | null; firstCheck: boolean | null }
   const [i, setI] = useState(0)
   const [answers, setAnswers] = useState<Record<number, A>>({})
@@ -712,8 +728,8 @@ function PracticePlayer({
   if (!exercises.length) {
     return (
       <div className="text-center">
-        <p className="text-mute">Для этого набора пока не получилось составить практику.</p>
-        <div className="mt-4"><Button variant="ghost" onClick={onCancel}>Назад</Button></div>
+        <p className="text-mute">{t('study.noPractice')}</p>
+        <div className="mt-4"><Button variant="ghost" onClick={onCancel}>{t('common.back')}</Button></div>
       </div>
     )
   }
@@ -741,8 +757,8 @@ function PracticePlayer({
   return (
     <div>
       <div className="mb-3 flex items-center justify-between text-sm text-mute">
-        <span>Практика · задание {i + 1} из {exercises.length}</span>
-        <button onClick={onCancel} className="underline">Выйти</button>
+        <span>{t('study.practiceProgress', { n: i + 1, total: exercises.length })}</span>
+        <button onClick={onCancel} className="underline">{t('study.exit')}</button>
       </div>
       <ExerciseView
         key={i}
@@ -760,11 +776,11 @@ function PracticePlayer({
         onCheck={(r, res) => update(i, { response: r, checkedResponse: r, firstCheck: a?.firstCheck ?? res.correct })}
       />
       <div className="mt-6 flex items-center justify-between">
-        <Button variant="soft" onClick={() => setI(i - 1)} disabled={i === 0}>← Назад</Button>
+        <Button variant="soft" onClick={() => setI(i - 1)} disabled={i === 0}>← {t('common.back')}</Button>
         {i === exercises.length - 1 ? (
-          <Button onClick={finish} disabled={busy}>{busy ? 'Сохранение…' : 'Завершить ✓'}</Button>
+          <Button onClick={finish} disabled={busy}>{busy ? t('common.saving') : `${t('player.finish')} ✓`}</Button>
         ) : (
-          <Button onClick={() => setI(i + 1)}>Далее →</Button>
+          <Button onClick={() => setI(i + 1)}>{t('common.next')} →</Button>
         )}
       </div>
     </div>
@@ -776,6 +792,7 @@ function PracticePlayer({
    ============================================================ */
 
 function MySets() {
+  const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [sets, setSets] = useState<FlashcardSet[]>([])
   const [active, setActive] = useState<FlashcardSet | null>(null)
@@ -817,14 +834,14 @@ function MySets() {
   return (
     <div>
       <div className="mb-6 flex justify-end">
-        <Button onClick={() => setCreating(true)}>+ New set</Button>
+        <Button onClick={() => setCreating(true)}>+ {t('flashcards.newSet')}</Button>
       </div>
 
       <QuickCreate ownSets={mine} onChanged={load} />
 
-      <SetGroup title={role === 'student' ? 'My cards' : 'My sets'} sets={mine} progress={progress} onOpen={setActive} onDelete={async (id) => { await api.deleteSet(id); load() }} owner />
-      <SetGroup title="Assigned to me" sets={assigned} progress={progress} onOpen={setActive} />
-      {sets.length === 0 && <p className="text-mute">You have no sets yet. Create one, or use “Create flashcard” above.</p>}
+      <SetGroup title={role === 'student' ? t('flashcards.myCards') : t('flashcards.mySets')} sets={mine} progress={progress} onOpen={setActive} onDelete={async (id) => { await api.deleteSet(id); load() }} owner />
+      <SetGroup title={t('flashcards.assignedToMe')} sets={assigned} progress={progress} onOpen={setActive} />
+      {sets.length === 0 && <p className="text-mute">{t('flashcards.noSets')}</p>}
     </div>
   )
 }
@@ -832,6 +849,7 @@ function MySets() {
 /* ---------- quick create: type a word, auto-fill from Dictionary ---------- */
 
 function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChanged: () => void }) {
+  const { t } = useTranslation()
   const { userId } = useAuth()
   const [term, setTerm] = useState('')
   const [found, setFound] = useState<Word | 'none' | null>(null)
@@ -850,9 +868,9 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
   async function addTo(setId: string) {
     if (!found || found === 'none') return
     const cards = await api.listCards(setId)
-    if (cards.some((c) => c.word_id === found.id)) { setMsg('Already in that set'); return }
+    if (cards.some((c) => c.word_id === found.id)) { setMsg(t('dictionary.alreadyInSet')); return }
     await api.addWordToSet(setId, found, cards.length)
-    setMsg(`Added “${found.word}” ✓`)
+    setMsg(t('flashcards.addedWord', { word: found.word }))
     setFound(null); setTerm(''); onChanged()
   }
 
@@ -860,28 +878,28 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
     if (!userId || !newTitle.trim() || !found || found === 'none') return
     const id = await api.createSet(userId, { title: newTitle.trim(), is_personal: true })
     await api.addWordToSet(id, found, 0)
-    setMsg(`Added to “${newTitle.trim()}” ✓`)
+    setMsg(t('flashcards.addedToSet', { title: newTitle.trim() }))
     setNewTitle(''); setFound(null); setTerm(''); onChanged()
   }
 
   return (
     <div className="mb-6 rounded-2xl border border-line bg-paper p-5">
-      <p className="mb-2 font-body font-semibold">Create flashcard</p>
-      <p className="mb-3 text-sm text-mute">Type a word — we fill the translation, IPA, definition, example and level from the Dictionary automatically.</p>
+      <p className="mb-2 font-body font-semibold">{t('flashcards.createFlashcard')}</p>
+      <p className="mb-3 text-sm text-mute">{t('flashcards.createFlashcardHint')}</p>
       <div className="flex flex-wrap gap-2">
         <input
           value={term}
           onChange={(e) => setTerm(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && lookup()}
-          placeholder="e.g. consequence"
+          placeholder={t('flashcards.wordPlaceholder')}
           className={`${inputCls} flex-1`}
         />
-        <Button onClick={lookup} disabled={busy || !term.trim()}>{busy ? '…' : 'Find'}</Button>
+        <Button onClick={lookup} disabled={busy || !term.trim()}>{busy ? '…' : t('flashcards.find')}</Button>
       </div>
 
       {found === 'none' && (
         <p className="mt-3 text-sm text-warn">
-          “{term}” isn’t in the Dictionary yet, so we won’t create a fake card. Ask an admin to add it, or try another word.
+          {t('flashcards.notInDictionary', { term })}
         </p>
       )}
 
@@ -893,7 +911,7 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
             <SpeakerButton text={found.word} className="h-7 w-7 text-sm" />
             <span className="text-plum">{found.translation}</span>
           </div>
-          <p className="text-sm font-semibold">Add to a set:</p>
+          <p className="text-sm font-semibold">{t('flashcards.addToSet')}</p>
           {ownSets.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {ownSets.map((s) => (
@@ -904,8 +922,8 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
             </div>
           )}
           <div className="flex flex-wrap items-center gap-2">
-            <input value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder="…or new set name" className={inputCls} />
-            <Button variant="soft" onClick={createAndAdd} disabled={!newTitle.trim()}>Create & add</Button>
+            <input value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder={t('flashcards.newSetNamePlaceholder')} className={inputCls} />
+            <Button variant="soft" onClick={createAndAdd} disabled={!newTitle.trim()}>{t('flashcards.createAndAdd')}</Button>
           </div>
         </div>
       )}
@@ -929,6 +947,7 @@ function SetGroup({
   onDelete?: (id: string) => void
   owner?: boolean
 }) {
+  const { t } = useTranslation()
   if (sets.length === 0) return null
   return (
     <div className="mb-8">
@@ -938,15 +957,15 @@ function SetGroup({
           <div key={s.id} className="flex items-center justify-between rounded-2xl border border-line bg-paper p-4">
             <button onClick={() => onOpen(s)} className="text-left">
               <p className="font-display text-lg font-semibold">{s.title}</p>
-              <p className="text-sm text-mute">{s.description || (s.is_personal ? 'Personal set' : 'Teacher set')}</p>
+              <p className="text-sm text-mute">{s.description || (s.is_personal ? t('flashcards.personalSet') : t('flashcards.teacherSet'))}</p>
               {progress[s.id] && (
                 <p className="text-xs font-semibold text-plum">
-                  {progress[s.id].known_count}/{progress[s.id].total_count} · {SET_STATUS_LABEL[progress[s.id].status]}
+                  {progress[s.id].known_count}/{progress[s.id].total_count} · {t(`sets.status.${progress[s.id].status}`)}
                 </p>
               )}
             </button>
             <div className="flex items-center gap-2">
-              {!s.is_personal && <Badge>teacher</Badge>}
+              {!s.is_personal && <Badge>{t('roles.teacher')}</Badge>}
               {owner && onDelete && <Button variant="ghost" onClick={() => onDelete(s.id)}>✕</Button>}
             </div>
           </div>
@@ -957,6 +976,7 @@ function SetGroup({
 }
 
 function SetEditor({ onClose }: { onClose: () => void }) {
+  const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [title, setTitle] = useState('')
   const [rows, setRows] = useState<{ front: string; back: string; example: string }[]>([{ front: '', back: '', example: '' }])
@@ -985,22 +1005,22 @@ function SetEditor({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="mx-auto max-w-3xl pb-24">
-      <button onClick={onClose} className="mb-4 font-body text-sm text-mute hover:text-ink">← Back</button>
-      <h3 className="mb-6 font-display text-3xl font-semibold">New set</h3>
-      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Set name" className={`${inputCls} mb-4 w-full`} />
+      <button onClick={onClose} className="mb-4 font-body text-sm text-mute hover:text-ink">← {t('common.back')}</button>
+      <h3 className="mb-6 font-display text-3xl font-semibold">{t('flashcards.newSet')}</h3>
+      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder={t('flashcards.setName')} className={`${inputCls} mb-4 w-full`} />
       <div className="space-y-2">
         {rows.map((r, i) => (
           <div key={i} className="grid gap-2 sm:grid-cols-[1fr_1fr_1.5fr_auto]">
-            <input value={r.front} onChange={(e) => setRows((rs) => rs.map((x, j) => (j === i ? { ...x, front: e.target.value } : x)))} placeholder="English" className={inputCls} />
-            <input value={r.back} onChange={(e) => setRows((rs) => rs.map((x, j) => (j === i ? { ...x, back: e.target.value } : x)))} placeholder="translation" className={inputCls} />
-            <input value={r.example} onChange={(e) => setRows((rs) => rs.map((x, j) => (j === i ? { ...x, example: e.target.value } : x)))} placeholder="example (optional)" className={inputCls} />
+            <input value={r.front} onChange={(e) => setRows((rs) => rs.map((x, j) => (j === i ? { ...x, front: e.target.value } : x)))} placeholder={t('flashcards.fieldEnglish')} className={inputCls} />
+            <input value={r.back} onChange={(e) => setRows((rs) => rs.map((x, j) => (j === i ? { ...x, back: e.target.value } : x)))} placeholder={t('flashcards.fieldTranslation')} className={inputCls} />
+            <input value={r.example} onChange={(e) => setRows((rs) => rs.map((x, j) => (j === i ? { ...x, example: e.target.value } : x)))} placeholder={t('flashcards.fieldExample')} className={inputCls} />
             <button onClick={() => setRows((rs) => (rs.length > 1 ? rs.filter((_, j) => j !== i) : rs))} className="rounded-xl border border-line px-3 text-mute hover:text-warn">✕</button>
           </div>
         ))}
       </div>
-      <button onClick={() => setRows((rs) => [...rs, { front: '', back: '', example: '' }])} className="mt-3 font-body font-semibold text-plum">+ Add card</button>
+      <button onClick={() => setRows((rs) => [...rs, { front: '', back: '', example: '' }])} className="mt-3 font-body font-semibold text-plum">+ {t('flashcards.addCard')}</button>
       <div className="mt-6">
-        <Button onClick={save} disabled={saving || !title.trim()}>{saving ? 'Saving…' : 'Save set'}</Button>
+        <Button onClick={save} disabled={saving || !title.trim()}>{saving ? t('common.saving') : t('flashcards.saveSet')}</Button>
       </div>
     </div>
   )

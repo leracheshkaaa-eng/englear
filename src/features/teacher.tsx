@@ -1,14 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Badge, Button, inputCls } from '../lib/ui'
-import { parseExercises, promptText, validateRaw, SKILL_LABEL, type Exercise } from '../lib/exercises'
+import { parseExercises, promptText, skillLabel, validateRaw, type Exercise } from '../lib/exercises'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { Lesson, Profile } from '../lib/api'
-
-const SAMPLE = `fill: I ___ to school every day. = go # Present Simple с I — глагол без окончания.
-choice: She ___ a teacher. * is / are / am # Для she/he/it используем is.
-listen: door # Прослушай английское слово и запиши его.
-dialogue: A: Where are you? >> B: I ___ here. (am) # We use "am" with "I".`
+import { LESSON_LEVELS, lessonLevelCode, lessonLevelLabel } from '../lib/config'
+import { errorMessage } from '../i18n/errors'
 
 /* ---------- read legacy localStorage lessons ---------- */
 type LegacyLesson = { title: string; description?: string; level?: string; exercises?: Exercise[] }
@@ -23,7 +21,7 @@ function readLocalLessons(): api.NewLesson[] {
       .map((l: LegacyLesson) => ({
         title: l.title,
         description: l.description ?? '',
-        level: l.level ?? 'Начальный',
+        level: lessonLevelCode(l.level),
         visibility: 'private' as const,
         is_published: false,
         exercises: l.exercises as Exercise[],
@@ -38,23 +36,24 @@ function readLocalLessons(): api.NewLesson[] {
    ============================================================ */
 
 export function TeacherMode({ lessons, reload }: { lessons: Lesson[]; reload: () => void }) {
+  const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [tab, setTab] = useState<'lessons' | 'students' | 'progress'>('lessons')
   const mine = lessons.filter((l) => l.author_id === userId || role === 'admin')
 
   return (
     <section className="mx-auto max-w-5xl px-6 pb-24">
-      <h2 className="font-display text-4xl font-semibold">Teacher Mode</h2>
+      <h2 className="font-display text-4xl font-semibold">{t('teacher.title')}</h2>
       <div className="mt-5 mb-8 flex flex-wrap gap-2">
-        {(['lessons', 'students', 'progress'] as const).map((t) => (
+        {(['lessons', 'students', 'progress'] as const).map((tb) => (
           <button
-            key={t}
-            onClick={() => setTab(t)}
+            key={tb}
+            onClick={() => setTab(tb)}
             className={`rounded-full border px-4 py-1.5 font-body font-semibold transition-colors ${
-              tab === t ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-mute hover:border-lavender'
+              tab === tb ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-mute hover:border-lavender'
             }`}
           >
-            {t === 'lessons' ? 'Мои уроки' : t === 'students' ? 'Мои ученики' : 'Прогресс'}
+            {t(`teacher.tabs.${tb}`)}
           </button>
         ))}
       </div>
@@ -69,6 +68,7 @@ export function TeacherMode({ lessons, reload }: { lessons: Lesson[]; reload: ()
 /* ---------- lessons ---------- */
 
 function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => void }) {
+  const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [editing, setEditing] = useState<Lesson | 'new' | null>(null)
   const [importMsg, setImportMsg] = useState('')
@@ -77,7 +77,7 @@ function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => v
   async function doImport() {
     if (!userId) return
     const res = await api.importLessons(userId, local)
-    setImportMsg(`Импортировано: ${res.imported}, пропущено (дубликаты): ${res.skipped}. localStorage сохранён как резерв.`)
+    setImportMsg(t('teacher.importResult', { imported: res.imported, skipped: res.skipped }))
     reload()
   }
 
@@ -86,10 +86,10 @@ function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => v
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center gap-3">
-        <Button onClick={() => setEditing('new')}>+ Новый урок</Button>
+        <Button onClick={() => setEditing('new')}>{t('teacher.newLesson')}</Button>
         {local.length > 0 && (
           <Button variant="soft" onClick={doImport}>
-            Импортировать локальные уроки ({local.length})
+            {t('teacher.importLocal', { count: local.length })}
           </Button>
         )}
       </div>
@@ -102,16 +102,16 @@ function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => v
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
                   <p className="font-display text-lg font-semibold">{l.title}</p>
-                  <Badge>{l.visibility}</Badge>
-                  {l.is_published ? <Badge>published</Badge> : <span className="text-xs text-mute">черновик</span>}
+                  <Badge>{t(`visibility.${l.visibility}`)}</Badge>
+                  {l.is_published ? <Badge>{t('teacher.published')}</Badge> : <span className="text-xs text-mute">{t('teacher.draft')}</span>}
                 </div>
                 <p className="text-sm text-mute">
-                  {l.exercises.length} заданий · {l.level}
+                  {t('lessons.exerciseCount', { count: l.exercises.length })} · {lessonLevelLabel(l.level)}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
                 <Button variant="soft" onClick={() => setEditing(l)}>
-                  Редактировать
+                  {t('common.edit')}
                 </Button>
                 <AssignMenu lesson={l} />
                 <Button
@@ -120,39 +120,36 @@ function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => v
                     navigator.clipboard?.writeText(`${location.origin}/lesson/${l.id}`)
                   }}
                 >
-                  🔗 Ссылка
+                  🔗 {t('teacher.link')}
                 </Button>
                 <Button
                   variant="danger"
                   onClick={async () => {
-                    if (confirm(`Удалить урок «${l.title}»?`)) {
+                    if (confirm(t('teacher.confirmDelete', { title: l.title }))) {
                       await api.deleteLesson(l.id)
                       reload()
                     }
                   }}
                 >
-                  Удалить
+                  {t('common.delete')}
                 </Button>
               </div>
             </div>
           </div>
         ))}
-        {lessons.length === 0 && <p className="text-mute">Пока нет уроков. Создайте первый.</p>}
+        {lessons.length === 0 && <p className="text-mute">{t('teacher.noLessons')}</p>}
       </div>
-      {role === 'admin' && (
-        <p className="text-xs text-mute">
-          Вы admin: можете делать уроки публичными (доступны по ссылке без входа). Учителя создают только приватные уроки.
-        </p>
-      )}
+      {role === 'admin' && <p className="text-xs text-mute">{t('teacher.adminPublicHint')}</p>}
     </div>
   )
 }
 
 function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onClose: () => void; onSaved: () => void }) {
+  const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [title, setTitle] = useState(lesson?.title ?? '')
   const [description, setDescription] = useState(lesson?.description ?? '')
-  const [level, setLevel] = useState(lesson?.level ?? 'Начальный')
+  const [level, setLevel] = useState(lessonLevelCode(lesson?.level))
   const [visibility, setVisibility] = useState<'public' | 'private'>(lesson?.visibility ?? (role === 'admin' ? 'public' : 'private'))
   const [published, setPublished] = useState(lesson?.is_published ?? false)
   const [raw, setRaw] = useState(lesson ? serialize(lesson.exercises) : '')
@@ -180,13 +177,7 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
         // Removing exercises deletes students' answers to them — ask first.
         const impact = await api.saveLessonExercises(lesson.id, payload.exercises, true)
         const history = impact.affected_answers + impact.affected_attempts
-        if (
-          impact.deleted > 0 &&
-          history > 0 &&
-          !confirm(
-            `Будет удалено заданий: ${impact.deleted}. На них есть ответы учеников (${history}) — они тоже удалятся. Остальные ответы сохранятся. Продолжить?`,
-          )
-        ) {
+        if (impact.deleted > 0 && history > 0 && !confirm(t('teacher.confirmRemoveExercises', { deleted: impact.deleted, answers: history }))) {
           return
         }
         await api.updateLesson(lesson.id, payload)
@@ -194,8 +185,8 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
         await api.createLesson(userId, payload)
       }
       onSaved()
-    } catch (e: any) {
-      setErr(e.message ?? 'Ошибка сохранения')
+    } catch (e) {
+      setErr(errorMessage(e))
     } finally {
       setSaving(false)
     }
@@ -204,16 +195,16 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
   return (
     <div className="space-y-6">
       <button onClick={onClose} className="font-body text-sm text-mute hover:text-ink">
-        ← Назад к урокам
+        ← {t('teacher.backToLessons')}
       </button>
       <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
         <div className="space-y-4">
           <div className="grid gap-3 sm:grid-cols-2">
-            <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Название урока" className={`${inputCls} w-full`} />
-            <input value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Описание" className={`${inputCls} w-full`} />
+            <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder={t('teacher.lessonTitle')} className={`${inputCls} w-full`} />
+            <input value={description} onChange={(e) => setDescription(e.target.value)} placeholder={t('teacher.lessonDescription')} className={`${inputCls} w-full`} />
           </div>
           <div className="flex flex-wrap gap-2">
-            {['Начальный', 'Средний', 'Продвинутый'].map((lv) => (
+            {LESSON_LEVELS.map((lv) => (
               <button
                 key={lv}
                 onClick={() => setLevel(lv)}
@@ -221,7 +212,7 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
                   level === lv ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-mute hover:border-lavender'
                 }`}
               >
-                {lv}
+                {t(`lessonLevels.${lv}`)}
               </button>
             ))}
           </div>
@@ -230,12 +221,12 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
             {role === 'admin' && (
               <label className="flex items-center gap-2 text-sm">
                 <input type="checkbox" checked={visibility === 'public'} onChange={(e) => setVisibility(e.target.checked ? 'public' : 'private')} />
-                Публичный (доступен по ссылке без входа)
+                {t('teacher.publicCheckbox')}
               </label>
             )}
             <label className="flex items-center gap-2 text-sm">
               <input type="checkbox" checked={published} onChange={(e) => setPublished(e.target.checked)} />
-              Опубликован
+              {t('teacher.publishedCheckbox')}
             </label>
           </div>
 
@@ -243,34 +234,34 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
             value={raw}
             onChange={(e) => setRaw(e.target.value)}
             rows={12}
-            placeholder="Вставьте задания сюда…"
+            placeholder={t('teacher.exercisesPlaceholder')}
             className={`${inputCls} w-full font-mono text-sm leading-relaxed`}
           />
           <div className="flex items-center gap-3">
             <Button onClick={save} disabled={!valid || saving}>
-              {saving ? 'Сохранение…' : 'Сохранить урок'}
+              {saving ? t('common.saving') : t('teacher.saveLesson')}
             </Button>
-            <Button variant="ghost" onClick={() => setRaw(SAMPLE)}>
-              Вставить пример
+            <Button variant="ghost" onClick={() => setRaw(t('teacher.sample'))}>
+              {t('teacher.insertSample')}
             </Button>
           </div>
           {err && <p className="text-sm text-warn">{err}</p>}
 
           <details className="rounded-2xl border border-line bg-paper p-4 text-sm text-mute">
-            <summary className="cursor-pointer font-semibold text-ink">Как писать задания</summary>
+            <summary className="cursor-pointer font-semibold text-ink">{t('teacher.syntaxTitle')}</summary>
             <div className="mt-3 space-y-2 font-mono text-xs leading-relaxed">
-              <p>fill: I ___ home. = go # пояснение</p>
-              <p>choice: She ___ here. * is / are / am # пояснение</p>
-              <p>listen: door # пояснение (озвучивается только «door»)</p>
-              <p>dialogue: A: How are you? &gt;&gt; B: I ___ fine. (am) # пояснение</p>
+              <p>fill: I ___ home. = go # {t('teacher.syntaxExplanation')}</p>
+              <p>choice: She ___ here. * is / are / am # {t('teacher.syntaxExplanation')}</p>
+              <p>listen: door # {t('teacher.syntaxListen')}</p>
+              <p>dialogue: A: How are you? &gt;&gt; B: I ___ fine. (am) # {t('teacher.syntaxExplanation')}</p>
             </div>
-            <p className="mt-3">В диалоге пропуск ___ должен быть только во второй реплике (B).</p>
+            <p className="mt-3">{t('teacher.syntaxDialogueRule')}</p>
           </details>
         </div>
 
         <div className="space-y-4">
           <h3 className="font-display text-xl font-semibold">
-            Превью {preview.length ? `· ${preview.length}` : ''}
+            {t('teacher.preview')} {preview.length ? `· ${preview.length}` : ''}
           </h3>
           {issues.length > 0 && (
             <div className="rounded-xl border border-warn/40 bg-warn/10 p-3 text-sm text-warn">
@@ -281,13 +272,13 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
           )}
           {preview.length === 0 ? (
             <p className="rounded-2xl border border-dashed border-line bg-paper/60 p-6 text-center text-sm text-mute">
-              Задания появятся здесь по мере ввода.
+              {t('teacher.previewEmpty')}
             </p>
           ) : (
             <div className="space-y-2">
               {preview.map((ex, idx) => (
                 <div key={idx} className="flex items-start gap-2 rounded-xl border border-line bg-paper p-3 text-sm">
-                  <Badge>{SKILL_LABEL[ex.type]}</Badge>
+                  <Badge>{skillLabel(ex.type)}</Badge>
                   <span className="text-ink/80">
                     {ex.type === 'dialogue'
                       ? ex.lines.map((l) => `${l.speaker}: ${l.text}`).join(' · ')
@@ -321,6 +312,7 @@ function serialize(exs: Exercise[]): string {
 /* ---------- assign menu ---------- */
 
 function AssignMenu({ lesson }: { lesson: Lesson }) {
+  const { t } = useTranslation()
   const { userId } = useAuth()
   const [open, setOpen] = useState(false)
   const [students, setStudents] = useState<Profile[]>([])
@@ -346,11 +338,11 @@ function AssignMenu({ lesson }: { lesson: Lesson }) {
   return (
     <div className="relative">
       <Button variant="soft" onClick={() => setOpen((o) => !o)}>
-        Назначить
+        {t('teacher.assign')}
       </Button>
       {open && (
         <div className="absolute right-0 z-20 mt-2 w-56 rounded-2xl border border-line bg-paper p-2 shadow-[0_16px_40px_-24px_rgba(60,42,112,0.6)]">
-          {students.length === 0 && <p className="p-2 text-sm text-mute">Нет учеников. Добавьте во вкладке «Мои ученики».</p>}
+          {students.length === 0 && <p className="p-2 text-sm text-mute">{t('teacher.noStudentsToAssign')}</p>}
           {students.map((s) => (
             <label key={s.id} className="flex cursor-pointer items-center gap-2 rounded-lg p-2 text-sm hover:bg-lilac/50">
               <input type="checkbox" checked={assigned.includes(s.id)} onChange={() => toggle(s.id)} />
@@ -366,6 +358,7 @@ function AssignMenu({ lesson }: { lesson: Lesson }) {
 /* ---------- students ---------- */
 
 function StudentManager() {
+  const { t } = useTranslation()
   const { userId } = useAuth()
   const [students, setStudents] = useState<Profile[]>([])
   const [newId, setNewId] = useState('')
@@ -376,6 +369,7 @@ function StudentManager() {
   }
   useEffect(() => {
     load()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userId])
 
   async function add() {
@@ -383,26 +377,26 @@ function StudentManager() {
     try {
       await api.linkStudent(userId, newId.trim())
       setNewId('')
-      setMsg('Ученик добавлен.')
+      setMsg(t('teacher.studentAdded'))
       load()
-    } catch (e: any) {
-      setMsg(e.message ?? 'Не удалось добавить (проверьте ID).')
+    } catch (e) {
+      setMsg(`${t('teacher.studentAddFailed')} ${errorMessage(e)}`)
     }
   }
 
   return (
     <div className="space-y-4">
-      <p className="text-mute">Добавьте ученика по его ID (ученик найдёт свой ID в разделе «Прогресс»).</p>
+      <p className="text-mute">{t('teacher.addStudentHint')}</p>
       <div className="flex flex-wrap gap-2">
-        <input value={newId} onChange={(e) => setNewId(e.target.value)} placeholder="ID ученика (uuid)" className={`${inputCls} w-80`} />
-        <Button onClick={add}>Добавить</Button>
+        <input value={newId} onChange={(e) => setNewId(e.target.value)} placeholder={t('teacher.studentIdPlaceholder')} className={`${inputCls} w-80`} />
+        <Button onClick={add}>{t('common.add')}</Button>
       </div>
       {msg && <p className="text-sm text-mute">{msg}</p>}
       <div className="space-y-2">
         {students.map((s) => (
           <div key={s.id} className="flex items-center justify-between rounded-2xl border border-line bg-paper p-4">
             <div>
-              <p className="font-body font-semibold">{s.full_name || 'Без имени'}</p>
+              <p className="font-body font-semibold">{s.full_name || t('common.noName')}</p>
               <p className="text-xs text-mute">{s.id}</p>
             </div>
             <Button
@@ -414,11 +408,11 @@ function StudentManager() {
                 }
               }}
             >
-              Убрать
+              {t('common.remove')}
             </Button>
           </div>
         ))}
-        {students.length === 0 && <p className="text-mute">Пока нет учеников.</p>}
+        {students.length === 0 && <p className="text-mute">{t('teacher.noStudents')}</p>}
       </div>
     </div>
   )
@@ -427,6 +421,7 @@ function StudentManager() {
 /* ---------- progress board ---------- */
 
 function ProgressBoard({ lessons }: { lessons: Lesson[] }) {
+  const { t } = useTranslation()
   const { userId } = useAuth()
   const [students, setStudents] = useState<Profile[]>([])
   const [selected, setSelected] = useState<Profile | null>(null)
@@ -439,7 +434,7 @@ function ProgressBoard({ lessons }: { lessons: Lesson[] }) {
 
   return (
     <div className="space-y-3">
-      {students.length === 0 && <p className="text-mute">Добавьте учеников, чтобы видеть их прогресс.</p>}
+      {students.length === 0 && <p className="text-mute">{t('teacher.addStudentsToSeeProgress')}</p>}
       {students.map((s) => (
         <button
           key={s.id}
@@ -447,7 +442,7 @@ function ProgressBoard({ lessons }: { lessons: Lesson[] }) {
           className="flex w-full items-center justify-between rounded-2xl border border-line bg-paper p-4 text-left hover:border-lavender"
         >
           <span className="font-display text-lg font-semibold">{s.full_name || s.id.slice(0, 8)}</span>
-          <span className="text-plum">Открыть →</span>
+          <span className="text-plum">{t('common.open')} →</span>
         </button>
       ))}
     </div>
@@ -455,6 +450,7 @@ function ProgressBoard({ lessons }: { lessons: Lesson[] }) {
 }
 
 function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons: Lesson[]; onBack: () => void }) {
+  const { t } = useTranslation()
   const [progress, setProgress] = useState<api.LessonProgress[]>([])
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [openLesson, setOpenLesson] = useState<Lesson | null>(null)
@@ -486,9 +482,9 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
   return (
     <div className="space-y-5">
       <button onClick={onBack} className="font-body text-sm text-mute hover:text-ink">
-        ← Все ученики
+        ← {t('teacher.allStudents')}
       </button>
-      <h3 className="font-display text-2xl font-semibold">{student.full_name || 'Ученик'}</h3>
+      <h3 className="font-display text-2xl font-semibold">{student.full_name || t('teacher.student')}</h3>
 
       <div className="space-y-2">
         {lessons.map((l) => {
@@ -504,17 +500,23 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
                   <p className="text-sm text-mute">
                     {status === 'completed'
                       ? s?.last
-                        ? `Completed · last ${fmt(s.last)} (${p?.score ?? 0}%) · best ${fmt(s.best ?? s.last)} · passes: ${s.completed} · ${s.last.time_spent_sec}s`
-                        : `Completed · ${p?.score ?? 0}% · ${p?.time_spent_sec ?? 0}s`
+                        ? t('teacher.completedWithPasses', {
+                            last: fmt(s.last),
+                            score: p?.score ?? 0,
+                            best: fmt(s.best ?? s.last),
+                            passes: s.completed,
+                            seconds: s.last.time_spent_sec,
+                          })
+                        : t('teacher.completedLegacy', { score: p?.score ?? 0, seconds: p?.time_spent_sec ?? 0 })
                       : status === 'in_progress'
-                        ? 'In progress'
-                        : 'Not started'}
-                    {status === 'completed' && s?.open && ' · новое прохождение начато'}
+                        ? t('progress.inProgress')
+                        : t('progress.notStarted')}
+                    {status === 'completed' && s?.open && ` · ${t('teacher.newPassStarted')}`}
                   </p>
                 </div>
                 {status !== 'not_started' && (
                   <Button variant="soft" onClick={() => setOpenLesson(openLesson?.id === l.id ? null : l)}>
-                    Детали
+                    {t('teacher.details')}
                   </Button>
                 )}
               </div>
@@ -523,30 +525,30 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
                   {Object.keys(answers).length > 0 && (
                     <>
                       <p className="font-semibold">
-                        Ответы {s?.last ? `(прохождение ${s.last.pass_number})` : '(текущее прохождение)'}
+                        {s?.last ? t('teacher.answersOfPass', { n: s.last.pass_number }) : t('teacher.answersCurrentPass')}
                       </p>
                       {l.exercises.map((ex, idx) => {
                         const a = ex.id ? answers[ex.id] : undefined
                         const ok = api.countsAsCorrect(a)
                         return (
                           <p key={ex.id ?? idx} className={!a ? 'text-mute' : ok ? 'text-[var(--color-good)]' : 'text-warn'}>
-                            {idx + 1}. {promptText(ex)} — {a ? `${ok ? '✓' : '✗'} «${a.given_answer || '—'}»` : 'нет ответа'}
+                            {idx + 1}. {promptText(ex)} — {a ? `${ok ? '✓' : '✗'} «${a.given_answer || '—'}»` : t('review.noAnswer')}
                             {a && (
                               <span className="text-mute">
                                 {' '}
-                                · {a.checked ? `проверено (${a.attempts_count})` : 'не проверено'}
+                                · {a.checked ? t('teacher.checkedTimes', { count: a.attempts_count }) : t('review.notChecked')}
                               </span>
                             )}
                           </p>
                         )
                       })}
-                      <p className="pt-2 font-semibold">История проверок</p>
+                      <p className="pt-2 font-semibold">{t('teacher.checkHistory')}</p>
                     </>
                   )}
-                  {attempts.length === 0 && <p className="text-mute">Нет попыток.</p>}
+                  {attempts.length === 0 && <p className="text-mute">{t('teacher.noAttempts')}</p>}
                   {attempts.map((a, i) => (
                     <p key={i} className={a.is_correct ? 'text-[var(--color-good)]' : 'text-warn'}>
-                      {a.is_correct ? '✓' : '✗'} попытка {a.attempt_number}: «{a.given_answer || '—'}»
+                      {a.is_correct ? '✓' : '✗'} {t('teacher.attemptN', { n: a.attempt_number })}: «{a.given_answer || '—'}»
                     </p>
                   ))}
                 </div>

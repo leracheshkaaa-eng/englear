@@ -1,3 +1,4 @@
+import i18n from '../i18n'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { speak } from './supabase'
 import type { Word } from './api'
@@ -65,7 +66,7 @@ export function SpeakerButton({ text, className = '' }: { text: string; classNam
       onPointerDown={stop}
       onPointerUp={stop}
       onTouchStart={stop}
-      aria-label={`Прослушать: ${text}`}
+      aria-label={i18n.t('player.listenTo', { text })}
       aria-pressed={playing}
       className={`inline-grid h-8 w-8 place-items-center rounded-full transition-colors ${
         playing ? 'bg-plum text-paper ring-4 ring-plum/20' : 'bg-lilac text-plum-deep hover:bg-lavender/40'

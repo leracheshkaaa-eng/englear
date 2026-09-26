@@ -10,11 +10,14 @@ import { Flashcards } from './features/flashcards'
 import { AdminDashboard } from './features/admin'
 import { Login, StudentProgress } from './features/account'
 import { Avatar } from './lib/avatars'
+import { useTranslation } from 'react-i18next'
+import { LanguageSelect } from './i18n/LanguageSelect'
 
 type View = 'home' | 'lessons' | 'practice' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
 
 function Shell() {
   const { loading, userId, role, profile, signOut } = useAuth()
+  const { t } = useTranslation()
   const [view, setView] = useState<View>('home')
   const [lessons, setLessons] = useState<Lesson[]>([])
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
@@ -72,7 +75,7 @@ function Shell() {
     setDeepLink(null)
   }
 
-  if (loading) return <div className="grid min-h-screen place-items-center text-mute">Загрузка…</div>
+  if (loading) return <div className="grid min-h-screen place-items-center text-mute">{t('common.loading')}</div>
 
   // ---- deep-linked lesson takes over the whole screen ----
   if (deepLink) {
@@ -91,11 +94,11 @@ function Shell() {
           />
         ) : (
           <section className="mx-auto max-w-md px-6 pt-24 text-center">
-            <h2 className="font-display text-3xl font-semibold">Урок недоступен</h2>
-            <p className="mt-3 text-mute">This lesson is private. You don't have access to this lesson.</p>
+            <h2 className="font-display text-3xl font-semibold">{t('lessons.unavailableTitle')}</h2>
+            <p className="mt-3 text-mute">{t('lessons.unavailableText')}</p>
             <div className="mt-6 flex justify-center gap-3">
-              <Button onClick={() => { history.pushState({}, '', '/'); setDeepLink(null); setView('lessons') }}>К урокам</Button>
-              {!userId && <Button variant="soft" onClick={() => { history.pushState({}, '', '/'); setDeepLink(null); setView('login') }}>Войти</Button>}
+              <Button onClick={() => { history.pushState({}, '', '/'); setDeepLink(null); setView('lessons') }}>{t('lessons.backToLessons')}</Button>
+              {!userId && <Button variant="soft" onClick={() => { history.pushState({}, '', '/'); setDeepLink(null); setView('login') }}>{t('common.signIn')}</Button>}
             </div>
           </section>
         )}
@@ -105,12 +108,12 @@ function Shell() {
 
   const isTeacher = role === 'teacher' || role === 'admin'
   const nav: [View, string][] = [
-    ['home', 'Главная'],
-    ['lessons', 'Уроки'],
+    ['home', t('nav.home')],
+    ['lessons', t('nav.lessons')],
   ]
-  if (userId) nav.push(['flashcards', 'Карточки'], ['dictionary', 'Словарь'], ['progress', 'Прогресс'])
-  if (isTeacher) nav.push(['teacher', 'Teacher'])
-  if (role === 'admin') nav.push(['admin', 'Admin'])
+  if (userId) nav.push(['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
+  if (isTeacher) nav.push(['teacher', t('nav.teacher')])
+  if (role === 'admin') nav.push(['admin', t('nav.admin')])
 
   return (
     <Page>
@@ -130,19 +133,20 @@ function Shell() {
             </button>
           ))}
         </nav>
-        <div>
+        <div className="flex items-center gap-2">
+          <LanguageSelect compact />
           {userId ? (
             <div className="flex items-center gap-2">
-              <button onClick={() => go('settings')} title={profile?.full_name ?? 'Настройки'} className="rounded-full transition-transform hover:scale-105">
+              <button onClick={() => go('settings')} title={profile?.full_name ?? t('nav.settings')} className="rounded-full transition-transform hover:scale-105">
                 <Avatar id={profile?.avatar} size={36} />
               </button>
               <Button variant="ghost" onClick={() => signOut()}>
-                Выйти
+                {t('common.signOut')}
               </Button>
             </div>
           ) : (
             <Button variant="soft" onClick={() => go('login')}>
-              Войти
+              {t('common.signIn')}
             </Button>
           )}
         </div>
@@ -197,31 +201,29 @@ function Page({ children }: { children: React.ReactNode }) {
 }
 
 function Home({ role, onStart, onLogin, count }: { role: string; onStart: () => void; onLogin: () => void; count: number }) {
+  const { t } = useTranslation()
   return (
     <section className="mx-auto max-w-3xl px-6 pt-20 pb-24 text-center">
       <span className="inline-block rounded-full border border-line bg-paper px-4 py-1 font-body text-sm text-mute">
-        английский всей семьёй
+        {t('home.tagline')}
       </span>
       <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.02] sm:text-7xl">
-        Учитесь спокойно,
+        {t('home.titleLine1')}
         <br />
-        <span className="italic text-plum">шаг за шагом</span>
+        <span className="italic text-plum">{t('home.titleLine2')}</span>
       </h1>
-      <p className="mx-auto mt-6 max-w-xl text-lg text-mute">
-        Полноценные упражнения на все навыки, словарь, флеш-карточки и прогресс. Уроки, классы и назначения —
-        всё в одном месте.
-      </p>
+      <p className="mx-auto mt-6 max-w-xl text-lg text-mute">{t('home.subtitle')}</p>
       <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <Button onClick={onStart} className="px-8 py-4 text-lg">
-          Начать урок
+          {t('home.start')}
         </Button>
         {role === 'guest' && (
           <Button variant="ghost" onClick={onLogin}>
-            Войти →
+            {t('home.signIn')}
           </Button>
         )}
       </div>
-      <p className="mt-6 font-body text-sm text-mute/80">Доступно уроков: {count}</p>
+      <p className="mt-6 font-body text-sm text-mute/80">{t('home.available', { count })}</p>
     </section>
   )
 }

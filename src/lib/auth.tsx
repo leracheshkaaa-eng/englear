@@ -1,6 +1,8 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { supabase } from './supabase'
-import { claimAdmin, getProfile, getSettings, saveSettings, type Profile, type Role, type Settings } from './api'
+import { claimAdmin, DEFAULT_SETTINGS, getProfile, getSettings, saveSettings, type Profile, type Role, type Settings } from './api'
+import { currentLanguage, setLanguage } from '../i18n'
+import { isLanguageCode } from '../i18n/languages'
 
 type AuthState = {
   loading: boolean
@@ -10,7 +12,13 @@ type AuthState = {
   role: Role | 'guest'
   settings: Settings
   signIn: (email: string, password: string) => Promise<void>
-  signUp: (input: { email: string; password: string; nickname: string; avatar: string }) => Promise<{ needsConfirmation: boolean }>
+  signUp: (input: {
+    email: string
+    password: string
+    nickname: string
+    avatar: string
+    interfaceLanguage: string
+  }) => Promise<{ needsConfirmation: boolean }>
   signOut: () => Promise<void>
   refresh: () => Promise<void>
   updateSettings: (s: Partial<Settings>) => Promise<void>
@@ -23,7 +31,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [userId, setUserId] = useState<string | null>(null)
   const [email, setEmail] = useState<string | null>(null)
   const [profile, setProfile] = useState<Profile | null>(null)
-  const [settings, setSettings] = useState<Settings>({ translations_enabled: true, translation_mode: 'on', english_level: 'A1' })
+  const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS)
 
   async function loadFor(uid: string | null, mail: string | null) {
     setUserId(uid)
@@ -47,10 +55,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setProfile(
         p ?? { id: uid, full_name: mail?.split('@')[0] ?? '', role: 'student', avatar: 'cat', teacher_request: 'none' },
       )
-      setSettings(await getSettings(uid))
+      const s = await getSettings(uid)
+      setSettings(s)
+      // A language chosen in the profile (sign-up or settings) wins over detection.
+      if (isLanguageCode(s.interface_language) && s.interface_language !== currentLanguage()) {
+        await setLanguage(s.interface_language)
+      }
     } else {
       setProfile(null)
-      setSettings({ translations_enabled: true, translation_mode: 'on', english_level: 'A1' })
+      setSettings(DEFAULT_SETTINGS)
     }
   }
 
@@ -76,11 +89,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const { error } = await supabase.auth.signInWithPassword({ email: mail, password })
       if (error) throw error
     },
-    async signUp({ email: mail, password, nickname, avatar }) {
+    async signUp({ email: mail, password, nickname, avatar, interfaceLanguage }) {
       const { data, error } = await supabase.auth.signUp({
         email: mail,
         password,
-        options: { data: { full_name: nickname, avatar } },
+        // interface_language is stored in user_settings by the handle_new_user trigger
+        options: { data: { full_name: nickname, avatar, interface_language: interfaceLanguage } },
       })
       if (error) throw error
 
