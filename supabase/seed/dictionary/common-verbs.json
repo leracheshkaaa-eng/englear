@@ -1,0 +1,1121 @@
+{
+  "package": "common-verbs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "add",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/æd/",
+      "definition": "To put something with something else.",
+      "examples": [
+        "Add some salt to the soup."
+      ],
+      "translations": {
+        "uk": "додавати",
+        "de": "hinzufügen",
+        "fr": "ajouter",
+        "es": "añadir",
+        "it": "aggiungere",
+        "pt": "adicionar",
+        "pl": "dodawać",
+        "ru": "добавлять",
+        "zh": "加",
+        "ja": "加える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "join",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/dʒɔɪn/",
+      "definition": "To become a member of a group; to meet someone.",
+      "examples": [
+        "Would you like to join our team?"
+      ],
+      "translations": {
+        "uk": "приєднуватися",
+        "de": "beitreten",
+        "fr": "rejoindre",
+        "es": "unirse",
+        "it": "unirsi",
+        "pt": "juntar-se",
+        "pl": "dołączyć",
+        "ru": "присоединяться",
+        "zh": "加入",
+        "ja": "参加する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "plan",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/plæn/",
+      "definition": "To decide what you will do.",
+      "examples": [
+        "We are planning a trip to Spain."
+      ],
+      "translations": {
+        "uk": "планувати",
+        "de": "planen",
+        "fr": "prévoir",
+        "es": "planear",
+        "it": "pianificare",
+        "pt": "planejar",
+        "pl": "planować",
+        "ru": "планировать",
+        "zh": "计划",
+        "ja": "計画する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "An idea about what you will do.",
+          "examples": [
+            "What are your plans for the summer?"
+          ],
+          "translations": {
+            "uk": "план",
+            "de": "Plan",
+            "fr": "projet",
+            "es": "plan",
+            "it": "piano",
+            "pt": "plano",
+            "pl": "plan",
+            "ru": "план",
+            "zh": "计划",
+            "ja": "計画"
+          }
+        }
+      ]
+    },
+    {
+      "word": "repeat",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈpiːt/",
+      "definition": "To say or do something again.",
+      "examples": [
+        "Can you repeat the question?"
+      ],
+      "translations": {
+        "uk": "повторювати",
+        "de": "wiederholen",
+        "fr": "répéter",
+        "es": "repetir",
+        "it": "ripetere",
+        "pt": "repetir",
+        "pl": "powtarzać",
+        "ru": "повторять",
+        "zh": "重复",
+        "ja": "繰り返す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spell",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/spel/",
+      "definition": "To say or write the letters of a word in order.",
+      "examples": [
+        "How do you spell your name?"
+      ],
+      "translations": {
+        "uk": "писати (по буквах)",
+        "de": "buchstabieren",
+        "fr": "épeler",
+        "es": "deletrear",
+        "it": "compitare",
+        "pt": "soletrar",
+        "pl": "przeliterować",
+        "ru": "произносить по буквам",
+        "zh": "拼写",
+        "ja": "つづる"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "magic",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "Magic words that make something happen.",
+          "examples": [
+            "The witch cast a spell on the prince."
+          ],
+          "translations": {
+            "uk": "закляття",
+            "de": "Zauber",
+            "fr": "sort",
+            "es": "hechizo",
+            "it": "incantesimo",
+            "pt": "feitiço",
+            "pl": "zaklęcie",
+            "ru": "заклинание",
+            "zh": "咒语",
+            "ja": "呪文"
+          }
+        }
+      ]
+    },
+    {
+      "word": "touch",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/tʌtʃ/",
+      "definition": "To put your hand on something.",
+      "examples": [
+        "Don't touch the paint—it's wet!"
+      ],
+      "translations": {
+        "uk": "торкатися",
+        "de": "berühren",
+        "fr": "toucher",
+        "es": "tocar",
+        "it": "toccare",
+        "pt": "tocar",
+        "pl": "dotykać",
+        "ru": "трогать",
+        "zh": "触摸",
+        "ja": "触る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "worry",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈwɝːi/",
+      "definition": "To feel nervous about something.",
+      "examples": [
+        "Don't worry, everything will be fine."
+      ],
+      "translations": {
+        "uk": "хвилюватися",
+        "de": "sich Sorgen machen",
+        "fr": "s'inquiéter",
+        "es": "preocuparse",
+        "it": "preoccuparsi",
+        "pt": "preocupar-se",
+        "pl": "martwić się",
+        "ru": "беспокоиться",
+        "zh": "担心",
+        "ja": "心配する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "accept",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/əkˈsept/",
+      "definition": "To agree to take something.",
+      "examples": [
+        "She accepted the job offer."
+      ],
+      "translations": {
+        "uk": "приймати",
+        "de": "annehmen",
+        "fr": "accepter",
+        "es": "aceptar",
+        "it": "accettare",
+        "pt": "aceitar",
+        "pl": "przyjmować",
+        "ru": "принимать",
+        "zh": "接受",
+        "ja": "受け入れる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "collect",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/kəˈlekt/",
+      "definition": "To bring things together.",
+      "examples": [
+        "He collects old coins."
+      ],
+      "translations": {
+        "uk": "збирати",
+        "de": "sammeln",
+        "fr": "collectionner",
+        "es": "coleccionar",
+        "it": "collezionare",
+        "pt": "colecionar",
+        "pl": "zbierać",
+        "ru": "собирать",
+        "zh": "收集",
+        "ja": "集める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "continue",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/kənˈtɪnjuː/",
+      "definition": "To keep doing something.",
+      "examples": [
+        "Please continue reading."
+      ],
+      "translations": {
+        "uk": "продовжувати",
+        "de": "weitermachen",
+        "fr": "continuer",
+        "es": "continuar",
+        "it": "continuare",
+        "pt": "continuar",
+        "pl": "kontynuować",
+        "ru": "продолжать",
+        "zh": "继续",
+        "ja": "続ける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "create",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/kriˈeɪt/",
+      "definition": "To make something new.",
+      "examples": [
+        "She created a beautiful painting."
+      ],
+      "translations": {
+        "uk": "створювати",
+        "de": "schaffen",
+        "fr": "créer",
+        "es": "crear",
+        "it": "creare",
+        "pt": "criar",
+        "pl": "tworzyć",
+        "ru": "создавать",
+        "zh": "创造",
+        "ja": "作り出す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "discuss",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈskʌs/",
+      "definition": "To talk about something with someone.",
+      "examples": [
+        "We discussed the problem at the meeting."
+      ],
+      "translations": {
+        "uk": "обговорювати",
+        "de": "besprechen",
+        "fr": "discuter",
+        "es": "discutir",
+        "it": "discutere",
+        "pt": "discutir",
+        "pl": "omawiać",
+        "ru": "обсуждать",
+        "zh": "讨论",
+        "ja": "話し合う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "enter",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈentɚ/",
+      "definition": "To go into a place.",
+      "examples": [
+        "Please knock before you enter."
+      ],
+      "translations": {
+        "uk": "входити",
+        "de": "betreten",
+        "fr": "entrer",
+        "es": "entrar",
+        "it": "entrare",
+        "pt": "entrar",
+        "pl": "wchodzić",
+        "ru": "входить",
+        "zh": "进入",
+        "ja": "入る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fix",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/fɪks/",
+      "definition": "To repair something.",
+      "examples": [
+        "Can you fix my bike?"
+      ],
+      "translations": {
+        "uk": "лагодити",
+        "de": "reparieren",
+        "fr": "réparer",
+        "es": "arreglar",
+        "it": "aggiustare",
+        "pt": "consertar",
+        "pl": "naprawić",
+        "ru": "чинить",
+        "zh": "修理",
+        "ja": "直す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "guess",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ɡes/",
+      "definition": "To give an answer without knowing if it is right.",
+      "examples": [
+        "Guess how old I am!"
+      ],
+      "translations": {
+        "uk": "вгадувати",
+        "de": "raten",
+        "fr": "deviner",
+        "es": "adivinar",
+        "it": "indovinare",
+        "pt": "adivinhar",
+        "pl": "zgadywać",
+        "ru": "угадывать",
+        "zh": "猜",
+        "ja": "推測する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "imagine",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈmædʒɪn/",
+      "definition": "To form a picture of something in your mind.",
+      "examples": [
+        "Imagine you are on a beach."
+      ],
+      "translations": {
+        "uk": "уявляти",
+        "de": "sich vorstellen",
+        "fr": "imaginer",
+        "es": "imaginar",
+        "it": "immaginare",
+        "pt": "imaginar",
+        "pl": "wyobrażać sobie",
+        "ru": "представлять",
+        "zh": "想象",
+        "ja": "想像する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "receive",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈsiːv/",
+      "definition": "To get something that someone gives or sends you.",
+      "examples": [
+        "Did you receive my email?"
+      ],
+      "translations": {
+        "uk": "отримувати",
+        "de": "erhalten",
+        "fr": "recevoir",
+        "es": "recibir",
+        "it": "ricevere",
+        "pt": "receber",
+        "pl": "otrzymywać",
+        "ru": "получать",
+        "zh": "收到",
+        "ja": "受け取る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "relax",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈlæks/",
+      "definition": "To rest and stop worrying.",
+      "examples": [
+        "I like to relax on the weekend."
+      ],
+      "translations": {
+        "uk": "відпочивати, розслаблятися",
+        "de": "sich entspannen",
+        "fr": "se détendre",
+        "es": "relajarse",
+        "it": "rilassarsi",
+        "pt": "relaxar",
+        "pl": "odpoczywać",
+        "ru": "расслабляться",
+        "zh": "放松",
+        "ja": "くつろぐ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shout",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ʃaʊt/",
+      "definition": "To say something very loudly.",
+      "examples": [
+        "Don't shout, I can hear you."
+      ],
+      "translations": {
+        "uk": "кричати",
+        "de": "schreien",
+        "fr": "crier",
+        "es": "gritar",
+        "it": "gridare",
+        "pt": "gritar",
+        "pl": "krzyczeć",
+        "ru": "кричать",
+        "zh": "喊",
+        "ja": "叫ぶ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "smell",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/smel/",
+      "definition": "To have a particular smell; to notice a smell.",
+      "examples": [
+        "The flowers smell lovely."
+      ],
+      "translations": {
+        "uk": "пахнути; нюхати",
+        "de": "riechen",
+        "fr": "sentir",
+        "es": "oler",
+        "it": "profumare",
+        "pt": "cheirar",
+        "pl": "pachnieć",
+        "ru": "пахнуть; нюхать",
+        "zh": "闻",
+        "ja": "においがする"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "Something that you notice with your nose.",
+          "examples": [
+            "I love the smell of fresh bread."
+          ],
+          "translations": {
+            "uk": "запах",
+            "de": "Geruch",
+            "fr": "odeur",
+            "es": "olor",
+            "it": "odore",
+            "pt": "cheiro",
+            "pl": "zapach",
+            "ru": "запах",
+            "zh": "气味",
+            "ja": "におい"
+          }
+        }
+      ]
+    },
+    {
+      "word": "translate",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈtrænsleɪt/",
+      "definition": "To change words into another language.",
+      "examples": [
+        "Can you translate this into English?"
+      ],
+      "translations": {
+        "uk": "перекладати",
+        "de": "übersetzen",
+        "fr": "traduire",
+        "es": "traducir",
+        "it": "tradurre",
+        "pt": "traduzir",
+        "pl": "tłumaczyć",
+        "ru": "переводить",
+        "zh": "翻译",
+        "ja": "翻訳する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lie",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/laɪ/",
+      "definition": "To say something that is not true.",
+      "examples": [
+        "Don't lie to me."
+      ],
+      "translations": {
+        "uk": "брехати",
+        "de": "lügen",
+        "fr": "mentir",
+        "es": "mentir",
+        "it": "mentire",
+        "pt": "mentir",
+        "pl": "kłamać",
+        "ru": "лгать",
+        "zh": "说谎",
+        "ja": "嘘をつく"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "rest",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To be in a flat position, for example on a bed.",
+          "examples": [
+            "I lay on the sofa and watched TV."
+          ],
+          "translations": {
+            "uk": "лежати",
+            "de": "liegen",
+            "fr": "être allongé",
+            "es": "estar tumbado",
+            "it": "stare sdraiato",
+            "pt": "deitar-se",
+            "pl": "leżeć",
+            "ru": "лежать",
+            "zh": "躺",
+            "ja": "横になる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "lift",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/lɪft/",
+      "definition": "To move something up.",
+      "examples": [
+        "Can you help me lift this box?"
+      ],
+      "translations": {
+        "uk": "піднімати",
+        "de": "heben",
+        "fr": "soulever",
+        "es": "levantar",
+        "it": "sollevare",
+        "pt": "levantar",
+        "pl": "podnosić",
+        "ru": "поднимать",
+        "zh": "举起",
+        "ja": "持ち上げる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mention",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈmenʃən/",
+      "definition": "To speak about something briefly.",
+      "examples": [
+        "He didn't mention his new job."
+      ],
+      "translations": {
+        "uk": "згадувати",
+        "de": "erwähnen",
+        "fr": "mentionner",
+        "es": "mencionar",
+        "it": "menzionare",
+        "pt": "mencionar",
+        "pl": "wspominać",
+        "ru": "упоминать",
+        "zh": "提到",
+        "ja": "言及する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "notice",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈnoʊtɪs/",
+      "definition": "To see or become aware of something.",
+      "examples": [
+        "Did you notice her new haircut?"
+      ],
+      "translations": {
+        "uk": "помічати",
+        "de": "bemerken",
+        "fr": "remarquer",
+        "es": "notar",
+        "it": "notare",
+        "pt": "notar",
+        "pl": "zauważać",
+        "ru": "замечать",
+        "zh": "注意到",
+        "ja": "気づく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "own",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/oʊn/",
+      "definition": "To have something that belongs to you.",
+      "examples": [
+        "They own a house by the sea."
+      ],
+      "translations": {
+        "uk": "володіти",
+        "de": "besitzen",
+        "fr": "posséder",
+        "es": "poseer",
+        "it": "possedere",
+        "pt": "possuir",
+        "pl": "posiadać",
+        "ru": "владеть",
+        "zh": "拥有",
+        "ja": "所有する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pour",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/pɔːr/",
+      "definition": "To make a liquid flow out of a container.",
+      "examples": [
+        "Pour the milk into the glass."
+      ],
+      "translations": {
+        "uk": "наливати",
+        "de": "gießen",
+        "fr": "verser",
+        "es": "verter",
+        "it": "versare",
+        "pt": "despejar",
+        "pl": "nalewać",
+        "ru": "наливать",
+        "zh": "倒",
+        "ja": "注ぐ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "realize",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈriːəlaɪz/",
+      "definition": "To suddenly understand something.",
+      "examples": [
+        "I realized I had left my keys at home."
+      ],
+      "translations": {
+        "uk": "усвідомлювати",
+        "de": "erkennen",
+        "fr": "se rendre compte",
+        "es": "darse cuenta",
+        "it": "rendersi conto",
+        "pt": "perceber",
+        "pl": "uświadomić sobie",
+        "ru": "осознавать",
+        "zh": "意识到",
+        "ja": "気づく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "refuse",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈfjuːz/",
+      "definition": "To say you will not do something.",
+      "examples": [
+        "He refused to help us."
+      ],
+      "translations": {
+        "uk": "відмовлятися",
+        "de": "sich weigern",
+        "fr": "refuser",
+        "es": "negarse",
+        "it": "rifiutarsi",
+        "pt": "recusar-se",
+        "pl": "odmawiać",
+        "ru": "отказываться",
+        "zh": "拒绝",
+        "ja": "拒む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "remind",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈmaɪnd/",
+      "definition": "To make someone remember something.",
+      "examples": [
+        "Remind me to call Mom."
+      ],
+      "translations": {
+        "uk": "нагадувати",
+        "de": "erinnern",
+        "fr": "rappeler",
+        "es": "recordar",
+        "it": "ricordare",
+        "pt": "lembrar",
+        "pl": "przypominać",
+        "ru": "напоминать",
+        "zh": "提醒",
+        "ja": "思い出させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rescue",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈreskjuː/",
+      "definition": "To save someone from danger.",
+      "examples": [
+        "The firefighters rescued the family."
+      ],
+      "translations": {
+        "uk": "рятувати",
+        "de": "retten",
+        "fr": "secourir",
+        "es": "rescatar",
+        "it": "soccorrere",
+        "pt": "resgatar",
+        "pl": "ratować",
+        "ru": "спасать",
+        "zh": "营救",
+        "ja": "救助する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wonder",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈwʌndɚ/",
+      "definition": "To think about something and want to know more.",
+      "examples": [
+        "I wonder what time it is."
+      ],
+      "translations": {
+        "uk": "цікавитися, дивуватися",
+        "de": "sich fragen",
+        "fr": "se demander",
+        "es": "preguntarse",
+        "it": "chiedersi",
+        "pt": "perguntar-se",
+        "pl": "zastanawiać się",
+        "ru": "интересоваться, задаваться вопросом",
+        "zh": "想知道",
+        "ja": "〜かしらと思う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "compete",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kəmˈpiːt/",
+      "definition": "To try to win against others.",
+      "examples": [
+        "Ten teams will compete in the final."
+      ],
+      "translations": {
+        "uk": "змагатися",
+        "de": "konkurrieren",
+        "fr": "concourir",
+        "es": "competir",
+        "it": "competere",
+        "pt": "competir",
+        "pl": "rywalizować",
+        "ru": "соревноваться",
+        "zh": "竞争",
+        "ja": "競う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "connect",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kəˈnekt/",
+      "definition": "To join two things together.",
+      "examples": [
+        "Connect the printer to the computer."
+      ],
+      "translations": {
+        "uk": "з'єднувати",
+        "de": "verbinden",
+        "fr": "connecter",
+        "es": "conectar",
+        "it": "collegare",
+        "pt": "conectar",
+        "pl": "łączyć",
+        "ru": "соединять",
+        "zh": "连接",
+        "ja": "接続する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "contain",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kənˈteɪn/",
+      "definition": "To have something inside.",
+      "examples": [
+        "This box contains old photos."
+      ],
+      "translations": {
+        "uk": "містити",
+        "de": "enthalten",
+        "fr": "contenir",
+        "es": "contener",
+        "it": "contenere",
+        "pt": "conter",
+        "pl": "zawierać",
+        "ru": "содержать",
+        "zh": "包含",
+        "ja": "含む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "damage",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈdæmɪdʒ/",
+      "definition": "To harm or break something.",
+      "examples": [
+        "The storm damaged our roof."
+      ],
+      "translations": {
+        "uk": "пошкоджувати",
+        "de": "beschädigen",
+        "fr": "endommager",
+        "es": "dañar",
+        "it": "danneggiare",
+        "pt": "danificar",
+        "pl": "uszkodzić",
+        "ru": "повреждать",
+        "zh": "损坏",
+        "ja": "損傷を与える"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "Physical harm to something.",
+          "examples": [
+            "The storm caused a lot of damage."
+          ],
+          "translations": {
+            "uk": "шкода, пошкодження",
+            "de": "Schaden",
+            "fr": "dégâts",
+            "es": "daño",
+            "it": "danno",
+            "pt": "dano",
+            "pl": "szkoda",
+            "ru": "ущерб",
+            "zh": "损坏",
+            "ja": "損害"
+          }
+        }
+      ]
+    },
+    {
+      "word": "deliver",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈlɪvɚ/",
+      "definition": "To take something to a place or person.",
+      "examples": [
+        "The pizza will be delivered in 30 minutes."
+      ],
+      "translations": {
+        "uk": "доставляти",
+        "de": "liefern",
+        "fr": "livrer",
+        "es": "entregar",
+        "it": "consegnare",
+        "pt": "entregar",
+        "pl": "dostarczać",
+        "ru": "доставлять",
+        "zh": "递送",
+        "ja": "配達する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "divide",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈvaɪd/",
+      "definition": "To separate into parts.",
+      "examples": [
+        "Divide the cake into eight pieces."
+      ],
+      "translations": {
+        "uk": "ділити",
+        "de": "teilen",
+        "fr": "diviser",
+        "es": "dividir",
+        "it": "dividere",
+        "pt": "dividir",
+        "pl": "dzielić",
+        "ru": "делить",
+        "zh": "分",
+        "ja": "分ける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "doubt",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/daʊt/",
+      "definition": "To not feel sure about something.",
+      "examples": [
+        "I doubt that he will come."
+      ],
+      "translations": {
+        "uk": "сумніватися",
+        "de": "bezweifeln",
+        "fr": "douter",
+        "es": "dudar",
+        "it": "dubitare",
+        "pt": "duvidar",
+        "pl": "wątpić",
+        "ru": "сомневаться",
+        "zh": "怀疑",
+        "ja": "疑う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "knock",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/nɑːk/",
+      "definition": "To hit a door to ask to come in.",
+      "examples": [
+        "Someone is knocking at the door."
+      ],
+      "translations": {
+        "uk": "стукати",
+        "de": "klopfen",
+        "fr": "frapper",
+        "es": "llamar a la puerta",
+        "it": "bussare",
+        "pt": "bater",
+        "pl": "pukać",
+        "ru": "стучать",
+        "zh": "敲",
+        "ja": "ノックする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
