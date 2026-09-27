@@ -1,0 +1,473 @@
+{
+  "package": "sports",
+  "kind": "words",
+  "words": [
+    {
+      "word": "tennis",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈtenɪs/",
+      "definition": "A game where two or four players hit a ball over a net.",
+      "examples": [
+        "We play tennis every Saturday."
+      ],
+      "translations": {
+        "uk": "теніс",
+        "de": "Tennis",
+        "fr": "tennis",
+        "es": "tenis",
+        "it": "tennis",
+        "pt": "tênis",
+        "pl": "tenis",
+        "ru": "теннис",
+        "zh": "网球",
+        "ja": "テニス"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "basketball",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈbæskɪtbɔːl/",
+      "definition": "A game where players throw a ball through a high ring.",
+      "examples": [
+        "He is tall and good at basketball."
+      ],
+      "translations": {
+        "uk": "баскетбол",
+        "de": "Basketball",
+        "fr": "basket",
+        "es": "baloncesto",
+        "it": "pallacanestro",
+        "pt": "basquete",
+        "pl": "koszykówka",
+        "ru": "баскетбол",
+        "zh": "篮球",
+        "ja": "バスケットボール"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "baseball",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈbeɪsbɔːl/",
+      "definition": "A game played with a bat and ball by two teams of nine.",
+      "examples": [
+        "Baseball is very popular in the US."
+      ],
+      "translations": {
+        "uk": "бейсбол",
+        "de": "Baseball",
+        "fr": "baseball",
+        "es": "béisbol",
+        "it": "baseball",
+        "pt": "beisebol",
+        "pl": "baseball",
+        "ru": "бейсбол",
+        "zh": "棒球",
+        "ja": "野球"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "volleyball",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈvɑːlibɔːl/",
+      "definition": "A game where two teams hit a ball over a high net with their hands.",
+      "examples": [
+        "We played volleyball on the beach."
+      ],
+      "translations": {
+        "uk": "волейбол",
+        "de": "Volleyball",
+        "fr": "volley-ball",
+        "es": "voleibol",
+        "it": "pallavolo",
+        "pt": "vôlei",
+        "pl": "siatkówka",
+        "ru": "волейбол",
+        "zh": "排球",
+        "ja": "バレーボール"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "gym",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/dʒɪm/",
+      "definition": "A place where people exercise.",
+      "examples": [
+        "I go to the gym after work."
+      ],
+      "translations": {
+        "uk": "спортзал",
+        "de": "Fitnessstudio",
+        "fr": "salle de sport",
+        "es": "gimnasio",
+        "it": "palestra",
+        "pt": "academia",
+        "pl": "siłownia",
+        "ru": "спортзал",
+        "zh": "健身房",
+        "ja": "ジム"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ball",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/bɔːl/",
+      "definition": "A round object used in games.",
+      "examples": [
+        "Throw the ball to the dog."
+      ],
+      "translations": {
+        "uk": "м'яч",
+        "de": "Ball",
+        "fr": "ballon",
+        "es": "pelota",
+        "it": "palla",
+        "pt": "bola",
+        "pl": "piłka",
+        "ru": "мяч",
+        "zh": "球",
+        "ja": "ボール"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "player",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈpleɪɚ/",
+      "definition": "A person who takes part in a game or sport.",
+      "examples": [
+        "He is the best player on the team."
+      ],
+      "translations": {
+        "uk": "гравець",
+        "de": "Spieler",
+        "fr": "joueur",
+        "es": "jugador",
+        "it": "giocatore",
+        "pt": "jogador",
+        "pl": "zawodnik",
+        "ru": "игрок",
+        "zh": "运动员",
+        "ja": "選手"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "match",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/mætʃ/",
+      "definition": "A sports competition between two teams or players.",
+      "examples": [
+        "We watched the soccer match on TV."
+      ],
+      "translations": {
+        "uk": "матч",
+        "de": "Spiel",
+        "fr": "match",
+        "es": "partido",
+        "it": "partita",
+        "pt": "partida",
+        "pl": "mecz",
+        "ru": "матч",
+        "zh": "比赛",
+        "ja": "試合"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "fire",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A small stick that makes fire when you rub it.",
+          "examples": [
+            "He lit a candle with a match."
+          ],
+          "translations": {
+            "uk": "сірник",
+            "de": "Streichholz",
+            "fr": "allumette",
+            "es": "cerilla",
+            "it": "fiammifero",
+            "pt": "fósforo",
+            "pl": "zapałka",
+            "ru": "спичка",
+            "zh": "火柴",
+            "ja": "マッチ"
+          }
+        }
+      ]
+    },
+    {
+      "word": "coach",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/koʊtʃ/",
+      "definition": "A person who trains a sports team or player.",
+      "examples": [
+        "Our coach is very strict."
+      ],
+      "translations": {
+        "uk": "тренер",
+        "de": "Trainer",
+        "fr": "entraîneur",
+        "es": "entrenador",
+        "it": "allenatore",
+        "pt": "treinador",
+        "pl": "trener",
+        "ru": "тренер",
+        "zh": "教练",
+        "ja": "コーチ"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "bus",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "A comfortable bus for long trips.",
+          "examples": [
+            "We traveled to London by coach."
+          ],
+          "translations": {
+            "uk": "автобус (міжміський)",
+            "de": "Reisebus",
+            "fr": "autocar",
+            "es": "autocar",
+            "it": "pullman",
+            "pt": "ônibus de viagem",
+            "pl": "autokar",
+            "ru": "междугородний автобус",
+            "zh": "长途汽车",
+            "ja": "長距離バス"
+          }
+        }
+      ]
+    },
+    {
+      "word": "ski",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/skiː/",
+      "definition": "To move over snow on skis.",
+      "examples": [
+        "We go skiing every winter."
+      ],
+      "translations": {
+        "uk": "кататися на лижах",
+        "de": "Ski fahren",
+        "fr": "skier",
+        "es": "esquiar",
+        "it": "sciare",
+        "pt": "esquiar",
+        "pl": "jeździć na nartach",
+        "ru": "кататься на лыжах",
+        "zh": "滑雪",
+        "ja": "スキーをする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "race",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/reɪs/",
+      "definition": "A competition to see who is fastest.",
+      "examples": [
+        "She won the race."
+      ],
+      "translations": {
+        "uk": "перегони, забіг",
+        "de": "Rennen",
+        "fr": "course",
+        "es": "carrera",
+        "it": "gara",
+        "pt": "corrida",
+        "pl": "wyścig",
+        "ru": "гонка, забег",
+        "zh": "比赛",
+        "ja": "レース"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "people",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "One of the groups that people are divided into by physical features.",
+          "examples": [
+            "Discrimination based on race is illegal."
+          ],
+          "translations": {
+            "uk": "раса",
+            "de": "Rasse",
+            "fr": "race",
+            "es": "raza",
+            "it": "razza",
+            "pt": "raça",
+            "pl": "rasa",
+            "ru": "раса",
+            "zh": "种族",
+            "ja": "人種"
+          }
+        }
+      ]
+    },
+    {
+      "word": "score",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/skɔːr/",
+      "definition": "To get a point in a game.",
+      "examples": [
+        "He scored in the last minute."
+      ],
+      "translations": {
+        "uk": "забивати (гол), набирати очки",
+        "de": "ein Tor schießen",
+        "fr": "marquer",
+        "es": "marcar",
+        "it": "segnare",
+        "pt": "marcar",
+        "pl": "zdobyć punkt",
+        "ru": "забивать (гол), набирать очки",
+        "zh": "得分",
+        "ja": "得点する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "The number of points in a game or test.",
+          "examples": [
+            "The final score was 2–1."
+          ],
+          "translations": {
+            "uk": "рахунок",
+            "de": "Spielstand",
+            "fr": "score",
+            "es": "marcador",
+            "it": "punteggio",
+            "pt": "placar",
+            "pl": "wynik",
+            "ru": "счёт",
+            "zh": "比分",
+            "ja": "スコア"
+          }
+        }
+      ]
+    },
+    {
+      "word": "stadium",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈsteɪdiəm/",
+      "definition": "A large place where people watch sports.",
+      "examples": [
+        "The stadium was full of fans."
+      ],
+      "translations": {
+        "uk": "стадіон",
+        "de": "Stadion",
+        "fr": "stade",
+        "es": "estadio",
+        "it": "stadio",
+        "pt": "estádio",
+        "pl": "stadion",
+        "ru": "стадион",
+        "zh": "体育场",
+        "ja": "スタジアム"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "champion",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈtʃæmpiən/",
+      "definition": "A person or team that wins a competition.",
+      "examples": [
+        "She is the national tennis champion."
+      ],
+      "translations": {
+        "uk": "чемпіон",
+        "de": "Meister",
+        "fr": "champion",
+        "es": "campeón",
+        "it": "campione",
+        "pt": "campeão",
+        "pl": "mistrz",
+        "ru": "чемпион",
+        "zh": "冠军",
+        "ja": "チャンピオン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "medal",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈmedəl/",
+      "definition": "A small metal disk given as a prize.",
+      "examples": [
+        "He won a gold medal at the Olympics."
+      ],
+      "translations": {
+        "uk": "медаль",
+        "de": "Medaille",
+        "fr": "médaille",
+        "es": "medalla",
+        "it": "medaglia",
+        "pt": "medalha",
+        "pl": "medal",
+        "ru": "медаль",
+        "zh": "奖牌",
+        "ja": "メダル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

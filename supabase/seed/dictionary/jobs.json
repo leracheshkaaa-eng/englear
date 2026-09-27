@@ -1,0 +1,381 @@
+{
+  "package": "jobs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "job title",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˈdʒɑːb ˌtaɪtəl/",
+      "definition": "The name of a person's job.",
+      "examples": [
+        "What's your job title?"
+      ],
+      "translations": {
+        "uk": "назва посади",
+        "de": "Berufsbezeichnung",
+        "fr": "intitulé de poste",
+        "es": "cargo",
+        "it": "qualifica",
+        "pt": "cargo",
+        "pl": "stanowisko",
+        "ru": "название должности",
+        "zh": "职位",
+        "ja": "役職名"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chef",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ʃef/",
+      "definition": "A professional cook in a restaurant.",
+      "examples": [
+        "The chef made a delicious soup."
+      ],
+      "translations": {
+        "uk": "шеф-кухар",
+        "de": "Koch",
+        "fr": "chef cuisinier",
+        "es": "chef",
+        "it": "chef",
+        "pt": "chef",
+        "pl": "szef kuchni",
+        "ru": "шеф-повар",
+        "zh": "厨师长",
+        "ja": "シェフ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "waiter",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/ˈweɪtɚ/",
+      "definition": "A person who brings food to tables in a restaurant.",
+      "examples": [
+        "The waiter brought us the menu."
+      ],
+      "translations": {
+        "uk": "офіціант",
+        "de": "Kellner",
+        "fr": "serveur",
+        "es": "camarero",
+        "it": "cameriere",
+        "pt": "garçom",
+        "pl": "kelner",
+        "ru": "официант",
+        "zh": "服务员",
+        "ja": "ウェイター"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pilot",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ˈpaɪlət/",
+      "definition": "A person who flies a plane.",
+      "examples": [
+        "The pilot said we would land soon."
+      ],
+      "translations": {
+        "uk": "пілот",
+        "de": "Pilot",
+        "fr": "pilote",
+        "es": "piloto",
+        "it": "pilota",
+        "pt": "piloto",
+        "pl": "pilot",
+        "ru": "пилот",
+        "zh": "飞行员",
+        "ja": "パイロット"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "firefighter",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ˈfaɪɚˌfaɪtɚ/",
+      "definition": "A person whose job is to stop fires.",
+      "examples": [
+        "The firefighters arrived quickly."
+      ],
+      "translations": {
+        "uk": "пожежник",
+        "de": "Feuerwehrmann",
+        "fr": "pompier",
+        "es": "bombero",
+        "it": "vigile del fuoco",
+        "pt": "bombeiro",
+        "pl": "strażak",
+        "ru": "пожарный",
+        "zh": "消防员",
+        "ja": "消防士"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mechanic",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/məˈkænɪk/",
+      "definition": "A person who repairs cars and machines.",
+      "examples": [
+        "The mechanic fixed my car."
+      ],
+      "translations": {
+        "uk": "механік",
+        "de": "Mechaniker",
+        "fr": "mécanicien",
+        "es": "mecánico",
+        "it": "meccanico",
+        "pt": "mecânico",
+        "pl": "mechanik",
+        "ru": "механик",
+        "zh": "修理工",
+        "ja": "整備士"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "designer",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/dɪˈzaɪnɚ/",
+      "definition": "A person who plans how things will look.",
+      "examples": [
+        "She is a fashion designer."
+      ],
+      "translations": {
+        "uk": "дизайнер",
+        "de": "Designer",
+        "fr": "designer",
+        "es": "diseñador",
+        "it": "designer",
+        "pt": "designer",
+        "pl": "projektant",
+        "ru": "дизайнер",
+        "zh": "设计师",
+        "ja": "デザイナー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "accountant",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/əˈkaʊntənt/",
+      "definition": "A person whose job is to keep financial records.",
+      "examples": [
+        "Our accountant helps us with taxes."
+      ],
+      "translations": {
+        "uk": "бухгалтер",
+        "de": "Buchhalter",
+        "fr": "comptable",
+        "es": "contador",
+        "it": "contabile",
+        "pt": "contador",
+        "pl": "księgowy",
+        "ru": "бухгалтер",
+        "zh": "会计",
+        "ja": "会計士"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cashier",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/kæˈʃɪr/",
+      "definition": "A person who takes money in a store.",
+      "examples": [
+        "The cashier gave me my change."
+      ],
+      "translations": {
+        "uk": "касир",
+        "de": "Kassierer",
+        "fr": "caissier",
+        "es": "cajero",
+        "it": "cassiere",
+        "pt": "caixa",
+        "pl": "kasjer",
+        "ru": "кассир",
+        "zh": "收银员",
+        "ja": "レジ係"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "receptionist",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/rɪˈsepʃənɪst/",
+      "definition": "A person who welcomes visitors in a hotel or office.",
+      "examples": [
+        "The receptionist gave us our room keys."
+      ],
+      "translations": {
+        "uk": "адміністратор (на рецепції)",
+        "de": "Rezeptionist",
+        "fr": "réceptionniste",
+        "es": "recepcionista",
+        "it": "receptionist",
+        "pt": "recepcionista",
+        "pl": "recepcjonista",
+        "ru": "администратор (на ресепшене)",
+        "zh": "前台接待员",
+        "ja": "受付係"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "architect",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˈɑːrkɪtekt/",
+      "definition": "A person who designs buildings.",
+      "examples": [
+        "The architect designed a modern museum."
+      ],
+      "translations": {
+        "uk": "архітектор",
+        "de": "Architekt",
+        "fr": "architecte",
+        "es": "arquitecto",
+        "it": "architetto",
+        "pt": "arquiteto",
+        "pl": "architekt",
+        "ru": "архитектор",
+        "zh": "建筑师",
+        "ja": "建築家"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "programmer",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˈproʊɡræmɚ/",
+      "definition": "A person who writes computer programs.",
+      "examples": [
+        "My brother works as a programmer."
+      ],
+      "translations": {
+        "uk": "програміст",
+        "de": "Programmierer",
+        "fr": "programmeur",
+        "es": "programador",
+        "it": "programmatore",
+        "pt": "programador",
+        "pl": "programista",
+        "ru": "программист",
+        "zh": "程序员",
+        "ja": "プログラマー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "electrician",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ɪˌlekˈtrɪʃən/",
+      "definition": "A person who fixes electrical equipment.",
+      "examples": [
+        "We called an electrician to fix the lights."
+      ],
+      "translations": {
+        "uk": "електрик",
+        "de": "Elektriker",
+        "fr": "électricien",
+        "es": "electricista",
+        "it": "elettricista",
+        "pt": "eletricista",
+        "pl": "elektryk",
+        "ru": "электрик",
+        "zh": "电工",
+        "ja": "電気技師"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "plumber",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˈplʌmɚ/",
+      "definition": "A person who fixes water pipes.",
+      "examples": [
+        "The plumber fixed the leak in the kitchen."
+      ],
+      "translations": {
+        "uk": "сантехнік",
+        "de": "Klempner",
+        "fr": "plombier",
+        "es": "fontanero",
+        "it": "idraulico",
+        "pt": "encanador",
+        "pl": "hydraulik",
+        "ru": "сантехник",
+        "zh": "水管工",
+        "ja": "配管工"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "soldier",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˈsoʊldʒɚ/",
+      "definition": "A member of an army.",
+      "examples": [
+        "The soldier returned home after the war."
+      ],
+      "translations": {
+        "uk": "солдат",
+        "de": "Soldat",
+        "fr": "soldat",
+        "es": "soldado",
+        "it": "soldato",
+        "pt": "soldado",
+        "pl": "żołnierz",
+        "ru": "солдат",
+        "zh": "士兵",
+        "ja": "兵士"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

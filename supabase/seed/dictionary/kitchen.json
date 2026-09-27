@@ -1,0 +1,229 @@
+{
+  "package": "kitchen",
+  "kind": "words",
+  "words": [
+    {
+      "word": "knife",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/naɪf/",
+      "definition": "A tool with a sharp edge for cutting.",
+      "examples": [
+        "Cut the bread with a knife."
+      ],
+      "translations": {
+        "uk": "ніж",
+        "de": "Messer",
+        "fr": "couteau",
+        "es": "cuchillo",
+        "it": "coltello",
+        "pt": "faca",
+        "pl": "nóż",
+        "ru": "нож",
+        "zh": "刀",
+        "ja": "ナイフ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fork",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/fɔːrk/",
+      "definition": "A tool with points that you use to eat food.",
+      "examples": [
+        "Use a fork to eat your salad."
+      ],
+      "translations": {
+        "uk": "виделка",
+        "de": "Gabel",
+        "fr": "fourchette",
+        "es": "tenedor",
+        "it": "forchetta",
+        "pt": "garfo",
+        "pl": "widelec",
+        "ru": "вилка",
+        "zh": "叉子",
+        "ja": "フォーク"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spoon",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/spuːn/",
+      "definition": "A tool with a small bowl at the end, used for eating soup.",
+      "examples": [
+        "Eat your soup with a spoon."
+      ],
+      "translations": {
+        "uk": "ложка",
+        "de": "Löffel",
+        "fr": "cuillère",
+        "es": "cuchara",
+        "it": "cucchiaio",
+        "pt": "colher",
+        "pl": "łyżka",
+        "ru": "ложка",
+        "zh": "勺子",
+        "ja": "スプーン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "plate",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/pleɪt/",
+      "definition": "A flat dish that you eat food from.",
+      "examples": [
+        "Put the food on the plate."
+      ],
+      "translations": {
+        "uk": "тарілка",
+        "de": "Teller",
+        "fr": "assiette",
+        "es": "plato",
+        "it": "piatto",
+        "pt": "prato",
+        "pl": "talerz",
+        "ru": "тарелка",
+        "zh": "盘子",
+        "ja": "皿"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cup",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/kʌp/",
+      "definition": "A small container with a handle for hot drinks.",
+      "examples": [
+        "Would you like a cup of coffee?"
+      ],
+      "translations": {
+        "uk": "чашка",
+        "de": "Tasse",
+        "fr": "tasse",
+        "es": "taza",
+        "it": "tazza",
+        "pt": "xícara",
+        "pl": "filiżanka",
+        "ru": "чашка",
+        "zh": "杯子",
+        "ja": "カップ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "glass",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/ɡlæs/",
+      "definition": "A container made of glass for drinking.",
+      "examples": [
+        "Can I have a glass of water?"
+      ],
+      "translations": {
+        "uk": "склянка",
+        "de": "Glas",
+        "fr": "verre",
+        "es": "vaso",
+        "it": "bicchiere",
+        "pt": "copo",
+        "pl": "szklanka",
+        "ru": "стакан",
+        "zh": "玻璃杯",
+        "ja": "グラス"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "material",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A hard clear material used to make windows and bottles.",
+          "examples": [
+            "The table is made of glass."
+          ],
+          "translations": {
+            "uk": "скло",
+            "de": "Glas",
+            "fr": "verre",
+            "es": "vidrio",
+            "it": "vetro",
+            "pt": "vidro",
+            "pl": "szkło",
+            "ru": "стекло",
+            "zh": "玻璃",
+            "ja": "ガラス"
+          }
+        }
+      ]
+    },
+    {
+      "word": "bowl",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/boʊl/",
+      "definition": "A round deep dish for food like soup or cereal.",
+      "examples": [
+        "I eat a bowl of cereal every morning."
+      ],
+      "translations": {
+        "uk": "миска",
+        "de": "Schüssel",
+        "fr": "bol",
+        "es": "tazón",
+        "it": "ciotola",
+        "pt": "tigela",
+        "pl": "miska",
+        "ru": "миска",
+        "zh": "碗",
+        "ja": "ボウル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bottle",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Cooking",
+      "ipa": "/ˈbɑːtəl/",
+      "definition": "A container with a narrow top for liquids.",
+      "examples": [
+        "I bought a bottle of water."
+      ],
+      "translations": {
+        "uk": "пляшка",
+        "de": "Flasche",
+        "fr": "bouteille",
+        "es": "botella",
+        "it": "bottiglia",
+        "pt": "garrafa",
+        "pl": "butelka",
+        "ru": "бутылка",
+        "zh": "瓶",
+        "ja": "瓶"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

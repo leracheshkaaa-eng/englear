@@ -1,0 +1,529 @@
+{
+  "package": "food-items",
+  "kind": "words",
+  "words": [
+    {
+      "word": "butter",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈbʌtɚ/",
+      "definition": "A yellow food made from milk, used on bread.",
+      "examples": [
+        "I put butter on my toast."
+      ],
+      "translations": {
+        "uk": "масло (вершкове)",
+        "de": "Butter",
+        "fr": "beurre",
+        "es": "mantequilla",
+        "it": "burro",
+        "pt": "manteiga",
+        "pl": "masło",
+        "ru": "сливочное масло",
+        "zh": "黄油",
+        "ja": "バター"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pasta",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈpɑːstə/",
+      "definition": "Italian food made from flour and water, like spaghetti.",
+      "examples": [
+        "We had pasta with tomato sauce."
+      ],
+      "translations": {
+        "uk": "макарони, паста",
+        "de": "Nudeln",
+        "fr": "pâtes",
+        "es": "pasta",
+        "it": "pasta",
+        "pt": "macarrão",
+        "pl": "makaron",
+        "ru": "макароны, паста",
+        "zh": "意大利面",
+        "ja": "パスタ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pizza",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈpiːtsə/",
+      "definition": "A flat round bread with tomato and cheese on top.",
+      "examples": [
+        "Let's order a pizza."
+      ],
+      "translations": {
+        "uk": "піца",
+        "de": "Pizza",
+        "fr": "pizza",
+        "es": "pizza",
+        "it": "pizza",
+        "pt": "pizza",
+        "pl": "pizza",
+        "ru": "пицца",
+        "zh": "比萨饼",
+        "ja": "ピザ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sandwich",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈsænwɪtʃ/",
+      "definition": "Two pieces of bread with food between them.",
+      "examples": [
+        "I made a cheese sandwich for lunch."
+      ],
+      "translations": {
+        "uk": "сендвіч, бутерброд",
+        "de": "Sandwich",
+        "fr": "sandwich",
+        "es": "sándwich",
+        "it": "panino",
+        "pt": "sanduíche",
+        "pl": "kanapka",
+        "ru": "сэндвич, бутерброд",
+        "zh": "三明治",
+        "ja": "サンドイッチ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cake",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/keɪk/",
+      "definition": "A sweet food made from flour, eggs and sugar.",
+      "examples": [
+        "Mom baked a chocolate cake."
+      ],
+      "translations": {
+        "uk": "торт",
+        "de": "Kuchen",
+        "fr": "gâteau",
+        "es": "pastel",
+        "it": "torta",
+        "pt": "bolo",
+        "pl": "ciasto",
+        "ru": "торт",
+        "zh": "蛋糕",
+        "ja": "ケーキ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cookie",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈkʊki/",
+      "definition": "A small flat sweet cake.",
+      "examples": [
+        "The kids ate all the cookies."
+      ],
+      "translations": {
+        "uk": "печиво",
+        "de": "Keks",
+        "fr": "biscuit",
+        "es": "galleta",
+        "it": "biscotto",
+        "pt": "biscoito",
+        "pl": "ciastko",
+        "ru": "печенье",
+        "zh": "饼干",
+        "ja": "クッキー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chocolate",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈtʃɑːklət/",
+      "definition": "A sweet brown food made from cocoa.",
+      "examples": [
+        "I love dark chocolate."
+      ],
+      "translations": {
+        "uk": "шоколад",
+        "de": "Schokolade",
+        "fr": "chocolat",
+        "es": "chocolate",
+        "it": "cioccolato",
+        "pt": "chocolate",
+        "pl": "czekolada",
+        "ru": "шоколад",
+        "zh": "巧克力",
+        "ja": "チョコレート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ice cream",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˌaɪs ˈkriːm/",
+      "definition": "A frozen sweet food made from milk.",
+      "examples": [
+        "Let's get some ice cream."
+      ],
+      "translations": {
+        "uk": "морозиво",
+        "de": "Eis",
+        "fr": "glace",
+        "es": "helado",
+        "it": "gelato",
+        "pt": "sorvete",
+        "pl": "lody",
+        "ru": "мороженое",
+        "zh": "冰淇淋",
+        "ja": "アイスクリーム"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lemon",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈlemən/",
+      "definition": "A sour yellow fruit.",
+      "examples": [
+        "Add some lemon to your tea."
+      ],
+      "translations": {
+        "uk": "лимон",
+        "de": "Zitrone",
+        "fr": "citron",
+        "es": "limón",
+        "it": "limone",
+        "pt": "limão",
+        "pl": "cytryna",
+        "ru": "лимон",
+        "zh": "柠檬",
+        "ja": "レモン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "strawberry",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈstrɔːberi/",
+      "definition": "A small red fruit with seeds on the outside.",
+      "examples": [
+        "Strawberries are my favorite fruit."
+      ],
+      "translations": {
+        "uk": "полуниця",
+        "de": "Erdbeere",
+        "fr": "fraise",
+        "es": "fresa",
+        "it": "fragola",
+        "pt": "morango",
+        "pl": "truskawka",
+        "ru": "клубника",
+        "zh": "草莓",
+        "ja": "イチゴ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grape",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ɡreɪp/",
+      "definition": "A small round fruit that grows in groups.",
+      "examples": [
+        "These grapes are very sweet."
+      ],
+      "translations": {
+        "uk": "виноград",
+        "de": "Traube",
+        "fr": "raisin",
+        "es": "uva",
+        "it": "uva",
+        "pt": "uva",
+        "pl": "winogrono",
+        "ru": "виноград",
+        "zh": "葡萄",
+        "ja": "ブドウ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "carrot",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈkærət/",
+      "definition": "A long orange vegetable.",
+      "examples": [
+        "Rabbits love carrots."
+      ],
+      "translations": {
+        "uk": "морква",
+        "de": "Karotte",
+        "fr": "carotte",
+        "es": "zanahoria",
+        "it": "carota",
+        "pt": "cenoura",
+        "pl": "marchewka",
+        "ru": "морковь",
+        "zh": "胡萝卜",
+        "ja": "ニンジン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "onion",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Food",
+      "ipa": "/ˈʌnjən/",
+      "definition": "A round vegetable with a strong smell.",
+      "examples": [
+        "Chopping onions makes me cry."
+      ],
+      "translations": {
+        "uk": "цибуля",
+        "de": "Zwiebel",
+        "fr": "oignon",
+        "es": "cebolla",
+        "it": "cipolla",
+        "pt": "cebola",
+        "pl": "cebula",
+        "ru": "лук",
+        "zh": "洋葱",
+        "ja": "玉ねぎ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "beans",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/biːnz/",
+      "definition": "Seeds of some plants that you cook and eat.",
+      "examples": [
+        "We had rice and beans for dinner."
+      ],
+      "translations": {
+        "uk": "квасоля",
+        "de": "Bohnen",
+        "fr": "haricots",
+        "es": "frijoles",
+        "it": "fagioli",
+        "pt": "feijão",
+        "pl": "fasola",
+        "ru": "фасоль",
+        "zh": "豆",
+        "ja": "豆"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pepper",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈpepɚ/",
+      "definition": "A black or white spice that makes food hot.",
+      "examples": [
+        "Add salt and pepper to the soup."
+      ],
+      "translations": {
+        "uk": "перець",
+        "de": "Pfeffer",
+        "fr": "poivre",
+        "es": "pimienta",
+        "it": "pepe",
+        "pt": "pimenta",
+        "pl": "pieprz",
+        "ru": "перец",
+        "zh": "胡椒",
+        "ja": "コショウ"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "vegetable",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A red, green or yellow vegetable that is hollow inside.",
+          "examples": [
+            "I put red pepper in the salad."
+          ],
+          "translations": {
+            "uk": "солодкий перець",
+            "de": "Paprika",
+            "fr": "poivron",
+            "es": "pimiento",
+            "it": "peperone",
+            "pt": "pimentão",
+            "pl": "papryka",
+            "ru": "сладкий перец",
+            "zh": "甜椒",
+            "ja": "ピーマン"
+          }
+        }
+      ]
+    },
+    {
+      "word": "oil",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ɔɪl/",
+      "definition": "A thick liquid used in cooking.",
+      "examples": [
+        "Fry the eggs in a little oil."
+      ],
+      "translations": {
+        "uk": "олія",
+        "de": "Öl",
+        "fr": "huile",
+        "es": "aceite",
+        "it": "olio",
+        "pt": "óleo",
+        "pl": "olej",
+        "ru": "масло (растительное)",
+        "zh": "油",
+        "ja": "油"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "flour",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈflaʊɚ/",
+      "definition": "A white powder made from grain, used to make bread.",
+      "examples": [
+        "You need flour to make pancakes."
+      ],
+      "translations": {
+        "uk": "борошно",
+        "de": "Mehl",
+        "fr": "farine",
+        "es": "harina",
+        "it": "farina",
+        "pt": "farinha",
+        "pl": "mąka",
+        "ru": "мука",
+        "zh": "面粉",
+        "ja": "小麦粉"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yogurt",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈjoʊɡɚt/",
+      "definition": "A thick food made from milk.",
+      "examples": [
+        "I have yogurt with fruit for breakfast."
+      ],
+      "translations": {
+        "uk": "йогурт",
+        "de": "Joghurt",
+        "fr": "yaourt",
+        "es": "yogur",
+        "it": "yogurt",
+        "pt": "iogurte",
+        "pl": "jogurt",
+        "ru": "йогурт",
+        "zh": "酸奶",
+        "ja": "ヨーグルト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "beef",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/biːf/",
+      "definition": "Meat from a cow.",
+      "examples": [
+        "We had roast beef on Sunday."
+      ],
+      "translations": {
+        "uk": "яловичина",
+        "de": "Rindfleisch",
+        "fr": "bœuf",
+        "es": "carne de res",
+        "it": "manzo",
+        "pt": "carne bovina",
+        "pl": "wołowina",
+        "ru": "говядина",
+        "zh": "牛肉",
+        "ja": "牛肉"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "honey",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈhʌni/",
+      "definition": "A sweet sticky food made by bees.",
+      "examples": [
+        "I put honey in my tea."
+      ],
+      "translations": {
+        "uk": "мед",
+        "de": "Honig",
+        "fr": "miel",
+        "es": "miel",
+        "it": "miele",
+        "pt": "mel",
+        "pl": "miód",
+        "ru": "мёд",
+        "zh": "蜂蜜",
+        "ja": "はちみつ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
