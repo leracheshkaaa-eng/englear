@@ -260,6 +260,8 @@
     "sortLevel": "按级别排序",
     "noResults": "没有找到单词。请换个关键词或筛选条件。",
     "entries_other": "{{count}} 个词条",
+    "showMore": "显示更多",
+    "shownOf": "已显示 {{shown}}/{{total}}",
     "definition": "释义",
     "translation": "翻译",
     "showTranslation": "显示翻译",

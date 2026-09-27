@@ -260,6 +260,8 @@
     "sortLevel": "レベル順",
     "noResults": "単語が見つかりません。別のキーワードや条件を試してください。",
     "entries_other": "{{count}} 件",
+    "showMore": "もっと見る",
+    "shownOf": "{{total}} 件中 {{shown}} 件を表示",
     "definition": "定義",
     "translation": "訳",
     "showTranslation": "訳を表示",

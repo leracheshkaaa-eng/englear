@@ -275,6 +275,8 @@
     "entries_few": "{{count}} hasła",
     "entries_many": "{{count}} haseł",
     "entries_other": "{{count}} hasła",
+    "showMore": "Pokaż więcej",
+    "shownOf": "Wyświetlono {{shown}} z {{total}}",
     "definition": "Definicja",
     "translation": "Tłumaczenie",
     "showTranslation": "Pokaż tłumaczenie",

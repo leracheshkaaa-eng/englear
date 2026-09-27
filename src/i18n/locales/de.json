@@ -265,6 +265,8 @@
     "noResults": "Keine Wörter gefunden. Versuche eine andere Suche oder einen anderen Filter.",
     "entries_one": "{{count}} Eintrag",
     "entries_other": "{{count}} Einträge",
+    "showMore": "Mehr anzeigen",
+    "shownOf": "{{shown}} von {{total}} angezeigt",
     "definition": "Definition",
     "translation": "Übersetzung",
     "showTranslation": "Übersetzung anzeigen",

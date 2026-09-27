@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Badge, Button, SpeakerButton, inputCls } from '../lib/ui'
 import { useAuth } from '../lib/auth'
@@ -12,14 +12,18 @@ import { LANGUAGES, setNativeLanguage, translationLanguage } from '../i18n'
 import { MeaningTabs } from './meanings'
 
 const PARTS = ['noun', 'verb', 'adjective', 'adverb', 'preposition', 'pronoun', 'conjunction', 'number', 'phrasal verb', 'collocation']
+const PAGE_SIZE = 300
 
 export function Dictionary() {
   const { t, i18n } = useTranslation()
   const { role, settings } = useAuth()
   const isAdmin = role === 'admin'
   const [words, setWords] = useState<Word[]>([])
+  const [total, setTotal] = useState(0)
   const [loading, setLoading] = useState(true)
+  const [loadingMore, setLoadingMore] = useState(false)
   const [selected, setSelected] = useState<Word | null>(null)
+  const request = useRef(0) // ignores answers to an older search
 
   // filters
   const [q, setQ] = useState('')
@@ -29,21 +33,38 @@ export function Dictionary() {
   const [type, setType] = useState('')
   const [sort, setSort] = useState<'word' | 'cefr'>('word')
 
+  const filters = (): api.WordFilters => ({
+    q,
+    levels: level ? [level] : undefined,
+    topic: topic || undefined,
+    part_of_speech: pos || undefined,
+    word_type: (type || undefined) as any,
+    sort,
+  })
+
   async function load() {
+    const id = ++request.current
     setLoading(true)
     try {
-      setWords(
-        await api.searchWords({
-          q,
-          levels: level ? [level] : undefined,
-          topic: topic || undefined,
-          part_of_speech: pos || undefined,
-          word_type: (type || undefined) as any,
-          sort,
-        }),
-      )
+      const page = await api.searchWordsPage(filters(), 0, PAGE_SIZE)
+      if (id !== request.current) return
+      setWords(page.words)
+      setTotal(page.total)
     } finally {
-      setLoading(false)
+      if (id === request.current) setLoading(false)
+    }
+  }
+
+  async function loadMore() {
+    const id = request.current
+    setLoadingMore(true)
+    try {
+      const page = await api.searchWordsPage(filters(), words.length, PAGE_SIZE)
+      if (id !== request.current) return
+      setWords((ws) => [...ws, ...page.words])
+      setTotal(page.total)
+    } finally {
+      setLoadingMore(false)
     }
   }
 
@@ -100,7 +121,7 @@ export function Dictionary() {
         <p className="text-mute">{t('dictionary.noResults')}</p>
       ) : (
         <>
-          <p className="mb-3 text-sm text-mute">{t('dictionary.entries', { count: words.length })}</p>
+          <p className="mb-3 text-sm text-mute">{t('dictionary.entries', { count: total })}</p>
           <div className="grid gap-2 sm:grid-cols-2">
             {words.map((w) => (
               <button
@@ -127,6 +148,14 @@ export function Dictionary() {
               </button>
             ))}
           </div>
+          {words.length < total && (
+            <div className="mt-6 flex flex-col items-center gap-2">
+              <p className="text-sm text-mute">{t('dictionary.shownOf', { shown: words.length, total })}</p>
+              <Button variant="soft" onClick={loadMore} disabled={loadingMore}>
+                {loadingMore ? t('common.loading') : t('dictionary.showMore')}
+              </Button>
+            </div>
+          )}
         </>
       )}
     </section>

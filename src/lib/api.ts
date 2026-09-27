@@ -344,6 +344,36 @@ export async function searchWords(f: WordFilters = {}, lang: string = translatio
   return ((data ?? []) as WordRow[]).map(toWord)
 }
 
+/** One page of the dictionary search plus the total number of matches. */
+export async function searchWordsPage(
+  f: WordFilters,
+  from: number,
+  pageSize: number,
+  lang: string = translationLanguage(),
+): Promise<{ words: Word[]; total: number }> {
+  const { data, error, count } = await supabase
+    .rpc(
+      'search_dictionary',
+      {
+        p_q: f.q ?? '',
+        p_levels: f.levels?.length ? f.levels : null,
+        p_topic: f.topic ?? null,
+        p_pos: f.part_of_speech ?? null,
+        p_type: f.word_type ?? null,
+        p_ielts: f.ielts_category ?? null,
+        p_sort: f.sort ?? 'word',
+        p_limit: null, // all matches; the page is cut by range() below
+      },
+      { count: 'exact' },
+    )
+    .select(WORD_SELECT)
+    .eq('word_translations.lang', lang)
+    .range(from, from + pageSize - 1)
+  if (error) throw error
+  const words = ((data ?? []) as WordRow[]).map(toWord)
+  return { words, total: count ?? from + words.length }
+}
+
 /** Look up ONE word by its exact spelling, ignoring case (used by quick flashcard creation). */
 export async function findWordByText(text: string, lang: string = translationLanguage()): Promise<Word | null> {
   const { data } = await supabase

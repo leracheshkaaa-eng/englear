@@ -275,6 +275,8 @@
     "entries_few": "{{count}} записи",
     "entries_many": "{{count}} записів",
     "entries_other": "{{count}} запису",
+    "showMore": "Показати ще",
+    "shownOf": "Показано {{shown}} з {{total}}",
     "definition": "Визначення",
     "translation": "Переклад",
     "showTranslation": "Показати переклад",
