@@ -1,0 +1,306 @@
+{
+  "package": "c2-words",
+  "kind": "words",
+  "words": [
+    {
+      "word": "aesthetic",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/esˈθetɪk/",
+      "definition": "Related to beauty and art.",
+      "examples": [
+        "The building has great aesthetic value."
+      ],
+      "translations": {
+        "uk": "естетичний",
+        "de": "ästhetisch",
+        "fr": "esthétique",
+        "es": "estético",
+        "it": "estetico",
+        "pt": "estético",
+        "pl": "estetyczny",
+        "ru": "эстетический",
+        "zh": "美学的",
+        "ja": "美的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "candid",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkændɪd/",
+      "definition": "Honest and direct.",
+      "examples": [
+        "She gave me a candid answer."
+      ],
+      "translations": {
+        "uk": "відвертий",
+        "de": "offen",
+        "fr": "franc",
+        "es": "franco",
+        "it": "franco",
+        "pt": "franco",
+        "pl": "szczery",
+        "ru": "откровенный",
+        "zh": "坦率的",
+        "ja": "率直な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cynical",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈsɪnɪkəl/",
+      "definition": "Believing that people are only interested in themselves.",
+      "examples": [
+        "He is cynical about politicians."
+      ],
+      "translations": {
+        "uk": "цинічний",
+        "de": "zynisch",
+        "fr": "cynique",
+        "es": "cínico",
+        "it": "cinico",
+        "pt": "cínico",
+        "pl": "cyniczny",
+        "ru": "циничный",
+        "zh": "愤世嫉俗的",
+        "ja": "皮肉な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eloquent",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈeləkwənt/",
+      "definition": "Able to speak or write well and persuasively.",
+      "examples": [
+        "She gave an eloquent speech."
+      ],
+      "translations": {
+        "uk": "красномовний",
+        "de": "redegewandt",
+        "fr": "éloquent",
+        "es": "elocuente",
+        "it": "eloquente",
+        "pt": "eloquente",
+        "pl": "elokwentny",
+        "ru": "красноречивый",
+        "zh": "雄辩的",
+        "ja": "雄弁な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ephemeral",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈfemərəl/",
+      "definition": "Lasting for a very short time.",
+      "examples": [
+        "Fame on social media is often ephemeral."
+      ],
+      "translations": {
+        "uk": "швидкоплинний",
+        "de": "vergänglich",
+        "fr": "éphémère",
+        "es": "efímero",
+        "it": "effimero",
+        "pt": "efêmero",
+        "pl": "ulotny",
+        "ru": "мимолётный",
+        "zh": "短暂的",
+        "ja": "はかない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pervasive",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/pɚˈveɪsɪv/",
+      "definition": "Present everywhere.",
+      "examples": [
+        "The influence of technology is pervasive."
+      ],
+      "translations": {
+        "uk": "всеохопний",
+        "de": "allgegenwärtig",
+        "fr": "omniprésent",
+        "es": "generalizado",
+        "it": "pervasivo",
+        "pt": "generalizado",
+        "pl": "wszechobecny",
+        "ru": "всепроникающий",
+        "zh": "普遍存在的",
+        "ja": "浸透した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prolific",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/prəˈlɪfɪk/",
+      "definition": "Producing a lot of something.",
+      "examples": [
+        "He was a prolific writer."
+      ],
+      "translations": {
+        "uk": "плідний",
+        "de": "produktiv",
+        "fr": "prolifique",
+        "es": "prolífico",
+        "it": "prolifico",
+        "pt": "prolífico",
+        "pl": "płodny",
+        "ru": "плодовитый",
+        "zh": "多产的",
+        "ja": "多作の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scrupulous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈskruːpjələs/",
+      "definition": "Very careful to be honest and correct.",
+      "examples": [
+        "She is scrupulous about paying her taxes."
+      ],
+      "translations": {
+        "uk": "скрупульозний",
+        "de": "gewissenhaft",
+        "fr": "scrupuleux",
+        "es": "escrupuloso",
+        "it": "scrupoloso",
+        "pt": "escrupuloso",
+        "pl": "skrupulatny",
+        "ru": "щепетильный",
+        "zh": "一丝不苟的",
+        "ja": "細心の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tenacious",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/təˈneɪʃəs/",
+      "definition": "Not giving up easily.",
+      "examples": [
+        "She is a tenacious negotiator."
+      ],
+      "translations": {
+        "uk": "наполегливий",
+        "de": "hartnäckig",
+        "fr": "tenace",
+        "es": "tenaz",
+        "it": "tenace",
+        "pt": "tenaz",
+        "pl": "wytrwały",
+        "ru": "упорный",
+        "zh": "顽强的",
+        "ja": "粘り強い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vindicate",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈvɪndɪkeɪt/",
+      "definition": "To prove that someone was right.",
+      "examples": [
+        "The new evidence vindicated her."
+      ],
+      "translations": {
+        "uk": "виправдовувати, доводити правоту",
+        "de": "rechtfertigen",
+        "fr": "donner raison à",
+        "es": "justificar",
+        "it": "dare ragione a",
+        "pt": "justificar",
+        "pl": "potwierdzić rację",
+        "ru": "подтверждать правоту",
+        "zh": "证明…正确",
+        "ja": "正しさを証明する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "inadvertently",
+      "part_of_speech": "adverb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɪnədˈvɝːtəntli/",
+      "definition": "By accident; without intending to.",
+      "examples": [
+        "I inadvertently deleted the file."
+      ],
+      "translations": {
+        "uk": "ненавмисно",
+        "de": "versehentlich",
+        "fr": "par inadvertance",
+        "es": "sin querer",
+        "it": "inavvertitamente",
+        "pt": "sem querer",
+        "pl": "niechcący",
+        "ru": "нечаянно",
+        "zh": "无意中",
+        "ja": "うっかり"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "zealous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈzeləs/",
+      "definition": "Very enthusiastic about a belief or cause.",
+      "examples": [
+        "He is a zealous supporter of the team."
+      ],
+      "translations": {
+        "uk": "завзятий",
+        "de": "eifrig",
+        "fr": "zélé",
+        "es": "ferviente",
+        "it": "zelante",
+        "pt": "zeloso",
+        "pl": "gorliwy",
+        "ru": "рьяный",
+        "zh": "热心的",
+        "ja": "熱狂的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

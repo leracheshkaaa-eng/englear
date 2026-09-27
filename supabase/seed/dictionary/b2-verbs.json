@@ -1,0 +1,725 @@
+{
+  "package": "b2-verbs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "adapt",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/əˈdæpt/",
+      "definition": "To change to fit a new situation.",
+      "examples": [
+        "Children adapt quickly to new schools."
+      ],
+      "translations": {
+        "uk": "пристосовуватися",
+        "de": "sich anpassen",
+        "fr": "s'adapter",
+        "es": "adaptarse",
+        "it": "adattarsi",
+        "pt": "adaptar-se",
+        "pl": "przystosować się",
+        "ru": "приспосабливаться",
+        "zh": "适应",
+        "ja": "適応する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "appreciate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/əˈpriːʃieɪt/",
+      "definition": "To be grateful for something; to understand its value.",
+      "examples": [
+        "I really appreciate your help."
+      ],
+      "translations": {
+        "uk": "цінувати",
+        "de": "schätzen",
+        "fr": "apprécier",
+        "es": "agradecer",
+        "it": "apprezzare",
+        "pt": "agradecer",
+        "pl": "doceniać",
+        "ru": "ценить",
+        "zh": "感激",
+        "ja": "感謝する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "claim",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/kleɪm/",
+      "definition": "To say that something is true, without proof.",
+      "examples": [
+        "He claims that he saw a ghost."
+      ],
+      "translations": {
+        "uk": "стверджувати",
+        "de": "behaupten",
+        "fr": "affirmer",
+        "es": "afirmar",
+        "it": "sostenere",
+        "pt": "alegar",
+        "pl": "twierdzić",
+        "ru": "утверждать",
+        "zh": "声称",
+        "ja": "主張する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "A statement that something is true.",
+          "examples": [
+            "His claim was not true."
+          ],
+          "translations": {
+            "uk": "твердження",
+            "de": "Behauptung",
+            "fr": "affirmation",
+            "es": "afirmación",
+            "it": "affermazione",
+            "pt": "alegação",
+            "pl": "twierdzenie",
+            "ru": "утверждение",
+            "zh": "说法",
+            "ja": "主張"
+          }
+        }
+      ]
+    },
+    {
+      "word": "concentrate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈkɑːnsəntreɪt/",
+      "definition": "To give all your attention to something.",
+      "examples": [
+        "I can't concentrate with this noise."
+      ],
+      "translations": {
+        "uk": "зосереджуватися",
+        "de": "sich konzentrieren",
+        "fr": "se concentrer",
+        "es": "concentrarse",
+        "it": "concentrarsi",
+        "pt": "concentrar-se",
+        "pl": "skupić się",
+        "ru": "сосредотачиваться",
+        "zh": "集中",
+        "ja": "集中する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "convince",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/kənˈvɪns/",
+      "definition": "To make someone believe something.",
+      "examples": [
+        "She convinced me to try again."
+      ],
+      "translations": {
+        "uk": "переконувати",
+        "de": "überzeugen",
+        "fr": "convaincre",
+        "es": "convencer",
+        "it": "convincere",
+        "pt": "convencer",
+        "pl": "przekonać",
+        "ru": "убеждать",
+        "zh": "说服",
+        "ja": "納得させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "criticize",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈkrɪtɪsaɪz/",
+      "definition": "To say what is wrong with someone or something.",
+      "examples": [
+        "The film was criticized for being too long."
+      ],
+      "translations": {
+        "uk": "критикувати",
+        "de": "kritisieren",
+        "fr": "critiquer",
+        "es": "criticar",
+        "it": "criticare",
+        "pt": "criticar",
+        "pl": "krytykować",
+        "ru": "критиковать",
+        "zh": "批评",
+        "ja": "批判する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "demand",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈmænd/",
+      "definition": "To ask for something very firmly.",
+      "examples": [
+        "The workers demanded higher pay."
+      ],
+      "translations": {
+        "uk": "вимагати",
+        "de": "fordern",
+        "fr": "exiger",
+        "es": "exigir",
+        "it": "esigere",
+        "pt": "exigir",
+        "pl": "żądać",
+        "ru": "требовать",
+        "zh": "要求",
+        "ja": "要求する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "The need or desire for goods or services.",
+          "examples": [
+            "There is a high demand for nurses."
+          ],
+          "translations": {
+            "uk": "попит",
+            "de": "Nachfrage",
+            "fr": "demande",
+            "es": "demanda",
+            "it": "domanda",
+            "pt": "demanda",
+            "pl": "popyt",
+            "ru": "спрос",
+            "zh": "需求",
+            "ja": "需要"
+          }
+        }
+      ]
+    },
+    {
+      "word": "determine",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈtɝːmɪn/",
+      "definition": "To find out or decide something.",
+      "examples": [
+        "Tests will determine the cause of the illness."
+      ],
+      "translations": {
+        "uk": "визначати",
+        "de": "bestimmen",
+        "fr": "déterminer",
+        "es": "determinar",
+        "it": "determinare",
+        "pt": "determinar",
+        "pl": "ustalać",
+        "ru": "определять",
+        "zh": "确定",
+        "ja": "決定する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "expand",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪkˈspænd/",
+      "definition": "To become or make something bigger.",
+      "examples": [
+        "The company plans to expand into Asia."
+      ],
+      "translations": {
+        "uk": "розширювати(ся)",
+        "de": "expandieren",
+        "fr": "se développer",
+        "es": "expandirse",
+        "it": "espandersi",
+        "pt": "expandir",
+        "pl": "rozszerzać (się)",
+        "ru": "расширять(ся)",
+        "zh": "扩张",
+        "ja": "拡大する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "express",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪkˈspres/",
+      "definition": "To show a feeling or idea in words or actions.",
+      "examples": [
+        "It's hard to express how I feel."
+      ],
+      "translations": {
+        "uk": "висловлювати",
+        "de": "ausdrücken",
+        "fr": "exprimer",
+        "es": "expresar",
+        "it": "esprimere",
+        "pt": "expressar",
+        "pl": "wyrażać",
+        "ru": "выражать",
+        "zh": "表达",
+        "ja": "表現する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "train",
+          "part_of_speech": "adjective",
+          "cefr": "B2",
+          "definition": "Fast, with few stops.",
+          "examples": [
+            "We took the express train to the airport."
+          ],
+          "translations": {
+            "uk": "експрес",
+            "de": "Express-",
+            "fr": "express",
+            "es": "exprés",
+            "it": "espresso",
+            "pt": "expresso",
+            "pl": "ekspresowy",
+            "ru": "скорый",
+            "zh": "特快的",
+            "ja": "急行の"
+          }
+        }
+      ]
+    },
+    {
+      "word": "gain",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɡeɪn/",
+      "definition": "To get something useful or valuable.",
+      "examples": [
+        "She gained a lot of experience abroad."
+      ],
+      "translations": {
+        "uk": "здобувати",
+        "de": "gewinnen",
+        "fr": "acquérir",
+        "es": "ganar",
+        "it": "acquisire",
+        "pt": "ganhar",
+        "pl": "zdobywać",
+        "ru": "приобретать",
+        "zh": "获得",
+        "ja": "得る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ignore",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪɡˈnɔːr/",
+      "definition": "To pay no attention to something.",
+      "examples": [
+        "Don't ignore the warning signs."
+      ],
+      "translations": {
+        "uk": "ігнорувати",
+        "de": "ignorieren",
+        "fr": "ignorer",
+        "es": "ignorar",
+        "it": "ignorare",
+        "pt": "ignorar",
+        "pl": "ignorować",
+        "ru": "игнорировать",
+        "zh": "忽视",
+        "ja": "無視する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "maintain",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/meɪnˈteɪn/",
+      "definition": "To keep something in good condition or at the same level.",
+      "examples": [
+        "It's important to maintain a healthy weight."
+      ],
+      "translations": {
+        "uk": "підтримувати",
+        "de": "aufrechterhalten",
+        "fr": "maintenir",
+        "es": "mantener",
+        "it": "mantenere",
+        "pt": "manter",
+        "pl": "utrzymywać",
+        "ru": "поддерживать",
+        "zh": "保持",
+        "ja": "維持する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "occur",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/əˈkɝː/",
+      "definition": "To happen.",
+      "examples": [
+        "The accident occurred at night."
+      ],
+      "translations": {
+        "uk": "траплятися",
+        "de": "sich ereignen",
+        "fr": "se produire",
+        "es": "ocurrir",
+        "it": "accadere",
+        "pt": "ocorrer",
+        "pl": "wydarzyć się",
+        "ru": "происходить",
+        "zh": "发生",
+        "ja": "起こる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "persuade",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/pɚˈsweɪd/",
+      "definition": "To make someone agree to do something.",
+      "examples": [
+        "I persuaded my dad to buy a dog."
+      ],
+      "translations": {
+        "uk": "умовляти",
+        "de": "überreden",
+        "fr": "persuader",
+        "es": "persuadir",
+        "it": "persuadere",
+        "pt": "persuadir",
+        "pl": "namówić",
+        "ru": "уговаривать",
+        "zh": "说服",
+        "ja": "説得する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "predict",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/prɪˈdɪkt/",
+      "definition": "To say what will happen in the future.",
+      "examples": [
+        "Experts predict a hot summer."
+      ],
+      "translations": {
+        "uk": "передбачати",
+        "de": "vorhersagen",
+        "fr": "prédire",
+        "es": "predecir",
+        "it": "prevedere",
+        "pt": "prever",
+        "pl": "przewidywać",
+        "ru": "предсказывать",
+        "zh": "预测",
+        "ja": "予測する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "recognize",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈrekəɡnaɪz/",
+      "definition": "To know someone or something because you have seen it before.",
+      "examples": [
+        "I didn't recognize you with short hair."
+      ],
+      "translations": {
+        "uk": "впізнавати",
+        "de": "erkennen",
+        "fr": "reconnaître",
+        "es": "reconocer",
+        "it": "riconoscere",
+        "pt": "reconhecer",
+        "pl": "rozpoznać",
+        "ru": "узнавать",
+        "zh": "认出",
+        "ja": "見分ける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reflect",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈflekt/",
+      "definition": "To show an image like a mirror; to show something.",
+      "examples": [
+        "The lake reflects the mountains."
+      ],
+      "translations": {
+        "uk": "відбивати, відображати",
+        "de": "spiegeln",
+        "fr": "refléter",
+        "es": "reflejar",
+        "it": "riflettere",
+        "pt": "refletir",
+        "pl": "odbijać",
+        "ru": "отражать",
+        "zh": "反射",
+        "ja": "映す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reject",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈdʒekt/",
+      "definition": "To refuse to accept something.",
+      "examples": [
+        "The company rejected my application."
+      ],
+      "translations": {
+        "uk": "відхиляти",
+        "de": "ablehnen",
+        "fr": "rejeter",
+        "es": "rechazar",
+        "it": "respingere",
+        "pt": "rejeitar",
+        "pl": "odrzucać",
+        "ru": "отвергать",
+        "zh": "拒绝",
+        "ja": "拒否する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reveal",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈviːl/",
+      "definition": "To make something known.",
+      "examples": [
+        "She revealed her secret to me."
+      ],
+      "translations": {
+        "uk": "розкривати",
+        "de": "enthüllen",
+        "fr": "révéler",
+        "es": "revelar",
+        "it": "rivelare",
+        "pt": "revelar",
+        "pl": "ujawnić",
+        "ru": "раскрывать",
+        "zh": "揭示",
+        "ja": "明かす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "seek",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/siːk/",
+      "definition": "To try to find or get something.",
+      "examples": [
+        "Many people seek advice online."
+      ],
+      "translations": {
+        "uk": "шукати",
+        "de": "suchen",
+        "fr": "chercher",
+        "es": "buscar",
+        "it": "cercare",
+        "pt": "buscar",
+        "pl": "szukać",
+        "ru": "искать",
+        "zh": "寻求",
+        "ja": "求める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "struggle",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈstrʌɡəl/",
+      "definition": "To try very hard to do something difficult.",
+      "examples": [
+        "He struggled to find a job."
+      ],
+      "translations": {
+        "uk": "боротися, насилу справлятися",
+        "de": "kämpfen",
+        "fr": "avoir du mal à",
+        "es": "luchar",
+        "it": "faticare",
+        "pt": "lutar",
+        "pl": "zmagać się",
+        "ru": "бороться, с трудом справляться",
+        "zh": "挣扎",
+        "ja": "苦労する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tend",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/tend/",
+      "definition": "To usually do something.",
+      "examples": [
+        "I tend to wake up early."
+      ],
+      "translations": {
+        "uk": "бути схильним",
+        "de": "neigen",
+        "fr": "avoir tendance à",
+        "es": "tender a",
+        "it": "tendere a",
+        "pt": "tender a",
+        "pl": "mieć skłonność",
+        "ru": "иметь склонность",
+        "zh": "倾向于",
+        "ja": "〜しがちである"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "transform",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/trænsˈfɔːrm/",
+      "definition": "To change something completely.",
+      "examples": [
+        "The internet has transformed our lives."
+      ],
+      "translations": {
+        "uk": "перетворювати",
+        "de": "verwandeln",
+        "fr": "transformer",
+        "es": "transformar",
+        "it": "trasformare",
+        "pt": "transformar",
+        "pl": "przekształcać",
+        "ru": "преобразовывать",
+        "zh": "改变",
+        "ja": "一変させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "warn",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/wɔːrn/",
+      "definition": "To tell someone about a possible danger.",
+      "examples": [
+        "The doctor warned him about smoking."
+      ],
+      "translations": {
+        "uk": "попереджати",
+        "de": "warnen",
+        "fr": "avertir",
+        "es": "advertir",
+        "it": "avvertire",
+        "pt": "avisar",
+        "pl": "ostrzegać",
+        "ru": "предупреждать",
+        "zh": "警告",
+        "ja": "警告する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "promote",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/prəˈmoʊt/",
+      "definition": "To help something become popular or successful.",
+      "examples": [
+        "The campaign promotes healthy eating."
+      ],
+      "translations": {
+        "uk": "просувати",
+        "de": "fördern",
+        "fr": "promouvoir",
+        "es": "promover",
+        "it": "promuovere",
+        "pt": "promover",
+        "pl": "promować",
+        "ru": "продвигать",
+        "zh": "推广",
+        "ja": "促進する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

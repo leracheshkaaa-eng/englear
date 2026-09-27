@@ -1,0 +1,629 @@
+{
+  "package": "b2-adjectives",
+  "kind": "words",
+  "words": [
+    {
+      "word": "accurate",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈækjɚət/",
+      "definition": "Correct in every detail.",
+      "examples": [
+        "The weather forecast was accurate."
+      ],
+      "translations": {
+        "uk": "точний",
+        "de": "genau",
+        "fr": "exact",
+        "es": "preciso",
+        "it": "accurato",
+        "pt": "preciso",
+        "pl": "dokładny",
+        "ru": "точный",
+        "zh": "准确的",
+        "ja": "正確な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "capable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈkeɪpəbəl/",
+      "definition": "Having the ability to do something.",
+      "examples": [
+        "She is capable of winning."
+      ],
+      "translations": {
+        "uk": "здатний",
+        "de": "fähig",
+        "fr": "capable",
+        "es": "capaz",
+        "it": "capace",
+        "pt": "capaz",
+        "pl": "zdolny",
+        "ru": "способный",
+        "zh": "有能力的",
+        "ja": "能力のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "complex",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/kəmˈpleks/",
+      "definition": "Having many connected parts; difficult to understand.",
+      "examples": [
+        "This is a complex problem."
+      ],
+      "translations": {
+        "uk": "складний",
+        "de": "komplex",
+        "fr": "complexe",
+        "es": "complejo",
+        "it": "complesso",
+        "pt": "complexo",
+        "pl": "złożony",
+        "ru": "сложный",
+        "zh": "复杂的",
+        "ja": "複雑な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "consistent",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/kənˈsɪstənt/",
+      "definition": "Always behaving or happening in the same way.",
+      "examples": [
+        "She is a consistent player."
+      ],
+      "translations": {
+        "uk": "послідовний",
+        "de": "beständig",
+        "fr": "constant",
+        "es": "constante",
+        "it": "costante",
+        "pt": "consistente",
+        "pl": "konsekwentny",
+        "ru": "последовательный",
+        "zh": "一贯的",
+        "ja": "一貫した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "convenient",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/kənˈviːniənt/",
+      "definition": "Easy to use or suitable for your plans.",
+      "examples": [
+        "Is 3 p.m. a convenient time for you?"
+      ],
+      "translations": {
+        "uk": "зручний",
+        "de": "günstig",
+        "fr": "pratique",
+        "es": "conveniente",
+        "it": "comodo",
+        "pt": "conveniente",
+        "pl": "dogodny",
+        "ru": "удобный",
+        "zh": "方便的",
+        "ja": "都合の良い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "curious",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈkjʊriəs/",
+      "definition": "Wanting to know about something.",
+      "examples": [
+        "Children are naturally curious."
+      ],
+      "translations": {
+        "uk": "допитливий",
+        "de": "neugierig",
+        "fr": "curieux",
+        "es": "curioso",
+        "it": "curioso",
+        "pt": "curioso",
+        "pl": "ciekawski",
+        "ru": "любопытный",
+        "zh": "好奇的",
+        "ja": "好奇心の強い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eager",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈiːɡɚ/",
+      "definition": "Wanting very much to do something.",
+      "examples": [
+        "The students are eager to learn."
+      ],
+      "translations": {
+        "uk": "палкий, охочий",
+        "de": "eifrig",
+        "fr": "impatient de",
+        "es": "ansioso",
+        "it": "desideroso",
+        "pt": "ansioso",
+        "pl": "chętny",
+        "ru": "жаждущий",
+        "zh": "渴望的",
+        "ja": "熱心な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "enthusiastic",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˌθuːziˈæstɪk/",
+      "definition": "Showing a lot of interest and excitement.",
+      "examples": [
+        "He is very enthusiastic about his new job."
+      ],
+      "translations": {
+        "uk": "захоплений",
+        "de": "begeistert",
+        "fr": "enthousiaste",
+        "es": "entusiasta",
+        "it": "entusiasta",
+        "pt": "entusiasmado",
+        "pl": "entuzjastyczny",
+        "ru": "увлечённый",
+        "zh": "热情的",
+        "ja": "熱心な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "genuine",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈdʒenjuɪn/",
+      "definition": "Real; honest.",
+      "examples": [
+        "She showed genuine interest in my work."
+      ],
+      "translations": {
+        "uk": "щирий, справжній",
+        "de": "echt",
+        "fr": "sincère",
+        "es": "genuino",
+        "it": "genuino",
+        "pt": "genuíno",
+        "pl": "szczery",
+        "ru": "искренний, подлинный",
+        "zh": "真诚的",
+        "ja": "本物の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "gentle",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈdʒentəl/",
+      "definition": "Kind and calm; not strong or violent.",
+      "examples": [
+        "He is gentle with animals."
+      ],
+      "translations": {
+        "uk": "лагідний",
+        "de": "sanft",
+        "fr": "doux",
+        "es": "amable",
+        "it": "gentile",
+        "pt": "gentil",
+        "pl": "łagodny",
+        "ru": "мягкий, нежный",
+        "zh": "温柔的",
+        "ja": "優しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "impressive",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪmˈpresɪv/",
+      "definition": "Making you admire it.",
+      "examples": [
+        "Her English is very impressive."
+      ],
+      "translations": {
+        "uk": "вражаючий",
+        "de": "beeindruckend",
+        "fr": "impressionnant",
+        "es": "impresionante",
+        "it": "impressionante",
+        "pt": "impressionante",
+        "pl": "imponujący",
+        "ru": "впечатляющий",
+        "zh": "令人印象深刻的",
+        "ja": "印象的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "logical",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈlɑːdʒɪkəl/",
+      "definition": "Based on clear reasoning.",
+      "examples": [
+        "There must be a logical explanation."
+      ],
+      "translations": {
+        "uk": "логічний",
+        "de": "logisch",
+        "fr": "logique",
+        "es": "lógico",
+        "it": "logico",
+        "pt": "lógico",
+        "pl": "logiczny",
+        "ru": "логичный",
+        "zh": "合乎逻辑的",
+        "ja": "論理的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mysterious",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/mɪˈstɪriəs/",
+      "definition": "Strange and difficult to explain.",
+      "examples": [
+        "A mysterious man called yesterday."
+      ],
+      "translations": {
+        "uk": "загадковий",
+        "de": "geheimnisvoll",
+        "fr": "mystérieux",
+        "es": "misterioso",
+        "it": "misterioso",
+        "pt": "misterioso",
+        "pl": "tajemniczy",
+        "ru": "загадочный",
+        "zh": "神秘的",
+        "ja": "謎めいた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "numerous",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈnuːmərəs/",
+      "definition": "Many.",
+      "examples": [
+        "She has won numerous awards."
+      ],
+      "translations": {
+        "uk": "численний",
+        "de": "zahlreich",
+        "fr": "nombreux",
+        "es": "numeroso",
+        "it": "numeroso",
+        "pt": "numeroso",
+        "pl": "liczny",
+        "ru": "многочисленный",
+        "zh": "许多的",
+        "ja": "数多くの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "outstanding",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˌaʊtˈstændɪŋ/",
+      "definition": "Extremely good.",
+      "examples": [
+        "He is an outstanding student."
+      ],
+      "translations": {
+        "uk": "видатний",
+        "de": "hervorragend",
+        "fr": "exceptionnel",
+        "es": "excepcional",
+        "it": "eccezionale",
+        "pt": "excepcional",
+        "pl": "wybitny",
+        "ru": "выдающийся",
+        "zh": "杰出的",
+        "ja": "傑出した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "precise",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/prɪˈsaɪs/",
+      "definition": "Exact and accurate.",
+      "examples": [
+        "Please give me the precise time."
+      ],
+      "translations": {
+        "uk": "точний",
+        "de": "präzise",
+        "fr": "précis",
+        "es": "preciso",
+        "it": "preciso",
+        "pt": "preciso",
+        "pl": "precyzyjny",
+        "ru": "точный",
+        "zh": "精确的",
+        "ja": "正確な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rare",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rer/",
+      "definition": "Not happening or seen very often.",
+      "examples": [
+        "This is a very rare bird."
+      ],
+      "translations": {
+        "uk": "рідкісний",
+        "de": "selten",
+        "fr": "rare",
+        "es": "raro",
+        "it": "raro",
+        "pt": "raro",
+        "pl": "rzadki",
+        "ru": "редкий",
+        "zh": "罕见的",
+        "ja": "珍しい"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "meat",
+          "part_of_speech": "adjective",
+          "cefr": "B2",
+          "definition": "Cooked for a very short time, still red inside.",
+          "examples": [
+            "I like my steak rare."
+          ],
+          "translations": {
+            "uk": "з кров'ю",
+            "de": "englisch (gebraten)",
+            "fr": "saignant",
+            "es": "poco hecho",
+            "it": "al sangue",
+            "pt": "mal passado",
+            "pl": "krwisty",
+            "ru": "с кровью",
+            "zh": "三分熟的",
+            "ja": "レアの"
+          }
+        }
+      ]
+    },
+    {
+      "word": "relevant",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈreləvənt/",
+      "definition": "Connected to what is being discussed.",
+      "examples": [
+        "Only include relevant information."
+      ],
+      "translations": {
+        "uk": "доречний",
+        "de": "relevant",
+        "fr": "pertinent",
+        "es": "relevante",
+        "it": "pertinente",
+        "pt": "relevante",
+        "pl": "istotny",
+        "ru": "относящийся к делу",
+        "zh": "相关的",
+        "ja": "関連のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "remarkable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈmɑːrkəbəl/",
+      "definition": "Unusual and surprising in a good way.",
+      "examples": [
+        "She made a remarkable recovery."
+      ],
+      "translations": {
+        "uk": "дивовижний",
+        "de": "bemerkenswert",
+        "fr": "remarquable",
+        "es": "notable",
+        "it": "notevole",
+        "pt": "notável",
+        "pl": "niezwykły",
+        "ru": "замечательный",
+        "zh": "非凡的",
+        "ja": "注目すべき"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "severe",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/səˈvɪr/",
+      "definition": "Very serious or bad.",
+      "examples": [
+        "The storm caused severe damage."
+      ],
+      "translations": {
+        "uk": "суворий, серйозний",
+        "de": "schwer",
+        "fr": "grave",
+        "es": "grave",
+        "it": "grave",
+        "pt": "grave",
+        "pl": "poważny",
+        "ru": "суровый, серьёзный",
+        "zh": "严重的",
+        "ja": "深刻な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "temporary",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈtempəreri/",
+      "definition": "Lasting only a short time.",
+      "examples": [
+        "She has a temporary job for the summer."
+      ],
+      "translations": {
+        "uk": "тимчасовий",
+        "de": "vorübergehend",
+        "fr": "temporaire",
+        "es": "temporal",
+        "it": "temporaneo",
+        "pt": "temporário",
+        "pl": "tymczasowy",
+        "ru": "временный",
+        "zh": "临时的",
+        "ja": "一時的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "permanent",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈpɝːmənənt/",
+      "definition": "Lasting for a long time or forever.",
+      "examples": [
+        "He is looking for a permanent job."
+      ],
+      "translations": {
+        "uk": "постійний",
+        "de": "dauerhaft",
+        "fr": "permanent",
+        "es": "permanente",
+        "it": "permanente",
+        "pt": "permanente",
+        "pl": "stały",
+        "ru": "постоянный",
+        "zh": "永久的",
+        "ja": "永久的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "visible",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈvɪzəbəl/",
+      "definition": "Able to be seen.",
+      "examples": [
+        "The mountains are visible from here."
+      ],
+      "translations": {
+        "uk": "видимий",
+        "de": "sichtbar",
+        "fr": "visible",
+        "es": "visible",
+        "it": "visibile",
+        "pt": "visível",
+        "pl": "widoczny",
+        "ru": "видимый",
+        "zh": "可见的",
+        "ja": "見える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "widespread",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈwaɪdspred/",
+      "definition": "Existing in many places.",
+      "examples": [
+        "The disease is widespread in the region."
+      ],
+      "translations": {
+        "uk": "поширений",
+        "de": "weit verbreitet",
+        "fr": "répandu",
+        "es": "generalizado",
+        "it": "diffuso",
+        "pt": "generalizado",
+        "pl": "powszechny",
+        "ru": "широко распространённый",
+        "zh": "普遍的",
+        "ja": "広範囲にわたる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
