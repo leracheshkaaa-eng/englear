@@ -1,0 +1,156 @@
+{
+  "package": "idioms-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "pull someone's leg",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/pʊl ˌsʌmwʌnz ˈleɡ/",
+      "definition": "To joke with someone by telling them something untrue.",
+      "examples": [
+        "Don't worry, I'm just pulling your leg."
+      ],
+      "translations": {
+        "uk": "розігрувати",
+        "de": "jemanden auf den Arm nehmen",
+        "fr": "faire marcher quelqu'un",
+        "es": "tomar el pelo",
+        "it": "prendere in giro",
+        "pt": "zoar com alguém",
+        "pl": "robić sobie żarty",
+        "ru": "разыгрывать",
+        "zh": "开玩笑",
+        "ja": "からかう"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "in a nutshell",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/ɪn ə ˈnʌtʃel/",
+      "definition": "In a few words.",
+      "examples": [
+        "In a nutshell, the trip was a disaster."
+      ],
+      "translations": {
+        "uk": "коротко кажучи",
+        "de": "kurz gesagt",
+        "fr": "en un mot",
+        "es": "en pocas palabras",
+        "it": "in poche parole",
+        "pt": "em poucas palavras",
+        "pl": "w skrócie",
+        "ru": "в двух словах",
+        "zh": "简而言之",
+        "ja": "要するに"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "get cold feet",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ɡet koʊld ˈfiːt/",
+      "definition": "To suddenly feel too nervous to do something.",
+      "examples": [
+        "Many people get cold feet before a big decision."
+      ],
+      "translations": {
+        "uk": "злякатися в останній момент",
+        "de": "kalte Füße bekommen",
+        "fr": "se dégonfler",
+        "es": "echarse atrás",
+        "it": "tirarsi indietro",
+        "pt": "amarelar",
+        "pl": "stchórzyć",
+        "ru": "струсить в последний момент",
+        "zh": "临阵退缩",
+        "ja": "怖じ気づく"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "the ball is in your court",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ðə ˈbɔːl ɪz ɪn jɚ ˈkɔːrt/",
+      "definition": "It is your turn to make a decision.",
+      "examples": [
+        "I've made my offer; the ball is in your court."
+      ],
+      "translations": {
+        "uk": "тепер ваша черга",
+        "de": "jetzt bist du am Zug",
+        "fr": "la balle est dans ton camp",
+        "es": "la pelota está en tu tejado",
+        "it": "la palla passa a te",
+        "pt": "a bola está com você",
+        "pl": "piłka jest po twojej stronie",
+        "ru": "теперь ваш ход",
+        "zh": "该你了",
+        "ja": "あなた次第だ"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "up in the air",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ʌp ɪn ði ˈer/",
+      "definition": "Not yet decided.",
+      "examples": [
+        "Our vacation plans are still up in the air."
+      ],
+      "translations": {
+        "uk": "ще не вирішено",
+        "de": "noch offen",
+        "fr": "en suspens",
+        "es": "en el aire",
+        "it": "in sospeso",
+        "pt": "no ar",
+        "pl": "niepewne",
+        "ru": "ещё не решено",
+        "zh": "悬而未决",
+        "ja": "未定の"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "go the extra mile",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ɡoʊ ði ˈekstrə ˈmaɪl/",
+      "definition": "To make more effort than is expected.",
+      "examples": [
+        "She always goes the extra mile for her customers."
+      ],
+      "translations": {
+        "uk": "докладати максимум зусиль",
+        "de": "noch einen Schritt weiter gehen",
+        "fr": "se donner à fond",
+        "es": "hacer un esfuerzo adicional",
+        "it": "fare di più",
+        "pt": "fazer um esforço extra",
+        "pl": "dać z siebie więcej",
+        "ru": "приложить дополнительные усилия",
+        "zh": "加倍努力",
+        "ja": "一層努力する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    }
+  ]
+}

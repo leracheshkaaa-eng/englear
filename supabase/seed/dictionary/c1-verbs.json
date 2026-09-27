@@ -1,0 +1,256 @@
+{
+  "package": "c1-verbs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "comply",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kəmˈplaɪ/",
+      "definition": "To obey a rule or law.",
+      "examples": [
+        "All companies must comply with the law."
+      ],
+      "translations": {
+        "uk": "дотримуватися",
+        "de": "einhalten",
+        "fr": "se conformer",
+        "es": "cumplir",
+        "it": "rispettare",
+        "pt": "cumprir",
+        "pl": "przestrzegać",
+        "ru": "соблюдать",
+        "zh": "遵守",
+        "ja": "従う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "consolidate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈsɑːlɪdeɪt/",
+      "definition": "To make something stronger.",
+      "examples": [
+        "Review helps consolidate what you learned."
+      ],
+      "translations": {
+        "uk": "закріплювати",
+        "de": "festigen",
+        "fr": "consolider",
+        "es": "consolidar",
+        "it": "consolidare",
+        "pt": "consolidar",
+        "pl": "utrwalać",
+        "ru": "закреплять",
+        "zh": "巩固",
+        "ja": "強固にする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deduce",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈduːs/",
+      "definition": "To reach a conclusion from facts.",
+      "examples": [
+        "From the clues, she deduced who the thief was."
+      ],
+      "translations": {
+        "uk": "робити висновок",
+        "de": "folgern",
+        "fr": "déduire",
+        "es": "deducir",
+        "it": "dedurre",
+        "pt": "deduzir",
+        "pl": "wywnioskować",
+        "ru": "делать вывод",
+        "zh": "推断",
+        "ja": "推論する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "depict",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈpɪkt/",
+      "definition": "To show something in a picture or story.",
+      "examples": [
+        "The painting depicts a village in winter."
+      ],
+      "translations": {
+        "uk": "зображувати",
+        "de": "darstellen",
+        "fr": "représenter",
+        "es": "representar",
+        "it": "raffigurare",
+        "pt": "retratar",
+        "pl": "przedstawiać",
+        "ru": "изображать",
+        "zh": "描绘",
+        "ja": "描く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "diversify",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/daɪˈvɝːsɪfaɪ/",
+      "definition": "To start to include more types of things.",
+      "examples": [
+        "Farmers are diversifying into tourism."
+      ],
+      "translations": {
+        "uk": "урізноманітнювати",
+        "de": "diversifizieren",
+        "fr": "diversifier",
+        "es": "diversificar",
+        "it": "diversificare",
+        "pt": "diversificar",
+        "pl": "dywersyfikować",
+        "ru": "разнообразить",
+        "zh": "使多样化",
+        "ja": "多角化する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "facilitate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/fəˈsɪlɪteɪt/",
+      "definition": "To make something easier.",
+      "examples": [
+        "The new software facilitates communication."
+      ],
+      "translations": {
+        "uk": "полегшувати",
+        "de": "erleichtern",
+        "fr": "faciliter",
+        "es": "facilitar",
+        "it": "facilitare",
+        "pt": "facilitar",
+        "pl": "ułatwiać",
+        "ru": "содействовать",
+        "zh": "促进",
+        "ja": "容易にする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hinder",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈhɪndɚ/",
+      "definition": "To make something difficult.",
+      "examples": [
+        "Bad weather hindered the rescue."
+      ],
+      "translations": {
+        "uk": "перешкоджати",
+        "de": "behindern",
+        "fr": "entraver",
+        "es": "obstaculizar",
+        "it": "ostacolare",
+        "pt": "dificultar",
+        "pl": "utrudniać",
+        "ru": "препятствовать",
+        "zh": "阻碍",
+        "ja": "妨げる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prioritize",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/praɪˈɔːrətaɪz/",
+      "definition": "To decide which things are most important.",
+      "examples": [
+        "You need to prioritize your tasks."
+      ],
+      "translations": {
+        "uk": "розставляти пріоритети",
+        "de": "priorisieren",
+        "fr": "donner la priorité à",
+        "es": "priorizar",
+        "it": "dare priorità a",
+        "pt": "priorizar",
+        "pl": "ustalać priorytety",
+        "ru": "расставлять приоритеты",
+        "zh": "优先考虑",
+        "ja": "優先する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "refrain",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rɪˈfreɪn/",
+      "definition": "To stop yourself from doing something.",
+      "examples": [
+        "Please refrain from smoking."
+      ],
+      "translations": {
+        "uk": "утримуватися",
+        "de": "unterlassen",
+        "fr": "s'abstenir",
+        "es": "abstenerse",
+        "it": "astenersi",
+        "pt": "abster-se",
+        "pl": "powstrzymać się",
+        "ru": "воздерживаться",
+        "zh": "克制",
+        "ja": "控える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sustain",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/səˈsteɪn/",
+      "definition": "To keep something going over time.",
+      "examples": [
+        "It's hard to sustain this level of growth."
+      ],
+      "translations": {
+        "uk": "підтримувати",
+        "de": "aufrechterhalten",
+        "fr": "soutenir",
+        "es": "sostener",
+        "it": "sostenere",
+        "pt": "sustentar",
+        "pl": "utrzymywać",
+        "ru": "поддерживать",
+        "zh": "维持",
+        "ja": "持続させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

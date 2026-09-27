@@ -1,0 +1,750 @@
+{
+  "package": "b2-nouns",
+  "kind": "words",
+  "words": [
+    {
+      "word": "aim",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/eɪm/",
+      "definition": "Something you hope to achieve.",
+      "examples": [
+        "Our aim is to help people learn English."
+      ],
+      "translations": {
+        "uk": "мета",
+        "de": "Ziel",
+        "fr": "but",
+        "es": "objetivo",
+        "it": "scopo",
+        "pt": "objetivo",
+        "pl": "cel",
+        "ru": "цель",
+        "zh": "目的",
+        "ja": "目標"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "argument",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɑːrɡjəmənt/",
+      "definition": "An angry discussion.",
+      "examples": [
+        "They had an argument about money."
+      ],
+      "translations": {
+        "uk": "сварка",
+        "de": "Streit",
+        "fr": "dispute",
+        "es": "discusión",
+        "it": "litigio",
+        "pt": "discussão",
+        "pl": "kłótnia",
+        "ru": "ссора",
+        "zh": "争吵",
+        "ja": "口論"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "reason",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "A reason that supports an idea.",
+          "examples": [
+            "That's a strong argument for change."
+          ],
+          "translations": {
+            "uk": "аргумент",
+            "de": "Argument",
+            "fr": "argument",
+            "es": "argumento",
+            "it": "argomento",
+            "pt": "argumento",
+            "pl": "argument",
+            "ru": "аргумент",
+            "zh": "论点",
+            "ja": "論拠"
+          }
+        }
+      ]
+    },
+    {
+      "word": "behavior",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/bɪˈheɪvjɚ/",
+      "definition": "The way someone acts.",
+      "examples": [
+        "The children's behavior was excellent."
+      ],
+      "translations": {
+        "uk": "поведінка",
+        "de": "Verhalten",
+        "fr": "comportement",
+        "es": "comportamiento",
+        "it": "comportamento",
+        "pt": "comportamento",
+        "pl": "zachowanie",
+        "ru": "поведение",
+        "zh": "行为",
+        "ja": "行動"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "belief",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/bɪˈliːf/",
+      "definition": "A feeling that something is true.",
+      "examples": [
+        "She has strong religious beliefs."
+      ],
+      "translations": {
+        "uk": "переконання, віра",
+        "de": "Glaube",
+        "fr": "croyance",
+        "es": "creencia",
+        "it": "convinzione",
+        "pt": "crença",
+        "pl": "przekonanie",
+        "ru": "убеждение, вера",
+        "zh": "信念",
+        "ja": "信念"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cause",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kɔːz/",
+      "definition": "The reason why something happens.",
+      "examples": [
+        "What was the cause of the fire?"
+      ],
+      "translations": {
+        "uk": "причина",
+        "de": "Ursache",
+        "fr": "cause",
+        "es": "causa",
+        "it": "causa",
+        "pt": "causa",
+        "pl": "przyczyna",
+        "ru": "причина",
+        "zh": "原因",
+        "ja": "原因"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To make something happen.",
+          "examples": [
+            "Smoking can cause serious diseases."
+          ],
+          "translations": {
+            "uk": "спричиняти",
+            "de": "verursachen",
+            "fr": "causer",
+            "es": "causar",
+            "it": "causare",
+            "pt": "causar",
+            "pl": "powodować",
+            "ru": "вызывать",
+            "zh": "导致",
+            "ja": "引き起こす"
+          }
+        }
+      ]
+    },
+    {
+      "word": "detail",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈdiːteɪl/",
+      "definition": "A small fact or piece of information.",
+      "examples": [
+        "Tell me all the details."
+      ],
+      "translations": {
+        "uk": "деталь",
+        "de": "Detail",
+        "fr": "détail",
+        "es": "detalle",
+        "it": "dettaglio",
+        "pt": "detalhe",
+        "pl": "szczegół",
+        "ru": "деталь",
+        "zh": "细节",
+        "ja": "詳細"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "emergency",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈmɝːdʒənsi/",
+      "definition": "A sudden dangerous situation.",
+      "examples": [
+        "In an emergency, call 911."
+      ],
+      "translations": {
+        "uk": "надзвичайна ситуація",
+        "de": "Notfall",
+        "fr": "urgence",
+        "es": "emergencia",
+        "it": "emergenza",
+        "pt": "emergência",
+        "pl": "nagły wypadek",
+        "ru": "чрезвычайная ситуация",
+        "zh": "紧急情况",
+        "ja": "緊急事態"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "emotion",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈmoʊʃən/",
+      "definition": "A strong feeling, like love or anger.",
+      "examples": [
+        "He didn't show any emotion."
+      ],
+      "translations": {
+        "uk": "емоція",
+        "de": "Emotion",
+        "fr": "émotion",
+        "es": "emoción",
+        "it": "emozione",
+        "pt": "emoção",
+        "pl": "emocja",
+        "ru": "эмоция",
+        "zh": "情绪",
+        "ja": "感情"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reaction",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/riˈækʃən/",
+      "definition": "What you do or feel because of something.",
+      "examples": [
+        "What was his reaction to the news?"
+      ],
+      "translations": {
+        "uk": "реакція",
+        "de": "Reaktion",
+        "fr": "réaction",
+        "es": "reacción",
+        "it": "reazione",
+        "pt": "reação",
+        "pl": "reakcja",
+        "ru": "реакция",
+        "zh": "反应",
+        "ja": "反応"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "crisis",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈkraɪsɪs/",
+      "definition": "A time of great difficulty or danger.",
+      "examples": [
+        "The country is facing an economic crisis."
+      ],
+      "translations": {
+        "uk": "криза",
+        "de": "Krise",
+        "fr": "crise",
+        "es": "crisis",
+        "it": "crisi",
+        "pt": "crise",
+        "pl": "kryzys",
+        "ru": "кризис",
+        "zh": "危机",
+        "ja": "危機"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "debate",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈbeɪt/",
+      "definition": "A discussion where people express different opinions.",
+      "examples": [
+        "There was a debate about school uniforms."
+      ],
+      "translations": {
+        "uk": "дебати",
+        "de": "Debatte",
+        "fr": "débat",
+        "es": "debate",
+        "it": "dibattito",
+        "pt": "debate",
+        "pl": "debata",
+        "ru": "дебаты",
+        "zh": "辩论",
+        "ja": "討論"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "feature",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈfiːtʃɚ/",
+      "definition": "An important or typical part of something.",
+      "examples": [
+        "The phone has many new features."
+      ],
+      "translations": {
+        "uk": "особливість, функція",
+        "de": "Merkmal",
+        "fr": "caractéristique",
+        "es": "característica",
+        "it": "caratteristica",
+        "pt": "característica",
+        "pl": "cecha",
+        "ru": "особенность, функция",
+        "zh": "特征",
+        "ja": "特徴"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "C1",
+          "definition": "To include someone or something as an important part.",
+          "examples": [
+            "The movie features a famous actor."
+          ],
+          "translations": {
+            "uk": "показувати, містити",
+            "de": "zeigen",
+            "fr": "mettre en vedette",
+            "es": "presentar",
+            "it": "presentare",
+            "pt": "apresentar",
+            "pl": "przedstawiać",
+            "ru": "показывать, включать",
+            "zh": "以…为特色",
+            "ja": "取り上げる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "focus",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈfoʊkəs/",
+      "definition": "To give attention to one thing.",
+      "examples": [
+        "Focus on your studies."
+      ],
+      "translations": {
+        "uk": "фокусуватися",
+        "de": "sich fokussieren",
+        "fr": "se focaliser",
+        "es": "enfocarse",
+        "it": "focalizzarsi",
+        "pt": "focar",
+        "pl": "koncentrować się",
+        "ru": "фокусироваться",
+        "zh": "聚焦",
+        "ja": "焦点を当てる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "impact",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈɪmpækt/",
+      "definition": "A strong effect.",
+      "examples": [
+        "Technology has a big impact on our lives."
+      ],
+      "translations": {
+        "uk": "вплив",
+        "de": "Auswirkung",
+        "fr": "impact",
+        "es": "impacto",
+        "it": "impatto",
+        "pt": "impacto",
+        "pl": "wpływ",
+        "ru": "влияние",
+        "zh": "影响",
+        "ja": "影響"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "occasion",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/əˈkeɪʒən/",
+      "definition": "A special event or time.",
+      "examples": [
+        "Her birthday is a special occasion."
+      ],
+      "translations": {
+        "uk": "нагода, подія",
+        "de": "Anlass",
+        "fr": "occasion",
+        "es": "ocasión",
+        "it": "occasione",
+        "pt": "ocasião",
+        "pl": "okazja",
+        "ru": "случай, повод",
+        "zh": "场合",
+        "ja": "機会"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "outcome",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈaʊtkʌm/",
+      "definition": "The final result.",
+      "examples": [
+        "We are waiting for the outcome of the election."
+      ],
+      "translations": {
+        "uk": "результат",
+        "de": "Ergebnis",
+        "fr": "issue",
+        "es": "resultado",
+        "it": "esito",
+        "pt": "resultado",
+        "pl": "wynik",
+        "ru": "исход",
+        "zh": "结果",
+        "ja": "結果"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pressure",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈpreʃɚ/",
+      "definition": "A feeling of stress because you must do something.",
+      "examples": [
+        "Students are under a lot of pressure."
+      ],
+      "translations": {
+        "uk": "тиск",
+        "de": "Druck",
+        "fr": "pression",
+        "es": "presión",
+        "it": "pressione",
+        "pt": "pressão",
+        "pl": "presja",
+        "ru": "давление",
+        "zh": "压力",
+        "ja": "プレッシャー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "principle",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈprɪnsəpəl/",
+      "definition": "A basic rule or belief.",
+      "examples": [
+        "It's against my principles to lie."
+      ],
+      "translations": {
+        "uk": "принцип",
+        "de": "Prinzip",
+        "fr": "principe",
+        "es": "principio",
+        "it": "principio",
+        "pt": "princípio",
+        "pl": "zasada",
+        "ru": "принцип",
+        "zh": "原则",
+        "ja": "原則"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "range",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/reɪndʒ/",
+      "definition": "A group of different things of the same type.",
+      "examples": [
+        "The store sells a wide range of shoes."
+      ],
+      "translations": {
+        "uk": "асортимент, діапазон",
+        "de": "Auswahl",
+        "fr": "gamme",
+        "es": "gama",
+        "it": "gamma",
+        "pt": "variedade",
+        "pl": "asortyment",
+        "ru": "ассортимент, диапазон",
+        "zh": "范围",
+        "ja": "範囲"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "resource",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈriːsɔːrs/",
+      "definition": "Something useful, like money, materials or people.",
+      "examples": [
+        "Water is a precious natural resource."
+      ],
+      "translations": {
+        "uk": "ресурс",
+        "de": "Ressource",
+        "fr": "ressource",
+        "es": "recurso",
+        "it": "risorsa",
+        "pt": "recurso",
+        "pl": "zasób",
+        "ru": "ресурс",
+        "zh": "资源",
+        "ja": "資源"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "responsibility",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˌspɑːnsəˈbɪləti/",
+      "definition": "A duty to take care of something.",
+      "examples": [
+        "Parents have a responsibility to their children."
+      ],
+      "translations": {
+        "uk": "відповідальність",
+        "de": "Verantwortung",
+        "fr": "responsabilité",
+        "es": "responsabilidad",
+        "it": "responsabilità",
+        "pt": "responsabilidade",
+        "pl": "odpowiedzialność",
+        "ru": "ответственность",
+        "zh": "责任",
+        "ja": "責任"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "role",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/roʊl/",
+      "definition": "The position or job someone has in a situation.",
+      "examples": [
+        "Teachers play an important role in society."
+      ],
+      "translations": {
+        "uk": "роль",
+        "de": "Rolle",
+        "fr": "rôle",
+        "es": "papel",
+        "it": "ruolo",
+        "pt": "papel",
+        "pl": "rola",
+        "ru": "роль",
+        "zh": "角色",
+        "ja": "役割"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "standard",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈstændɚd/",
+      "definition": "A level of quality.",
+      "examples": [
+        "The hotel has high standards."
+      ],
+      "translations": {
+        "uk": "стандарт",
+        "de": "Standard",
+        "fr": "norme",
+        "es": "estándar",
+        "it": "standard",
+        "pt": "padrão",
+        "pl": "standard",
+        "ru": "стандарт",
+        "zh": "标准",
+        "ja": "水準"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "strategy",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈstrætədʒi/",
+      "definition": "A plan to achieve something.",
+      "examples": [
+        "We need a new marketing strategy."
+      ],
+      "translations": {
+        "uk": "стратегія",
+        "de": "Strategie",
+        "fr": "stratégie",
+        "es": "estrategia",
+        "it": "strategia",
+        "pt": "estratégia",
+        "pl": "strategia",
+        "ru": "стратегия",
+        "zh": "策略",
+        "ja": "戦略"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "structure",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈstrʌktʃɚ/",
+      "definition": "The way parts of something are organized.",
+      "examples": [
+        "The structure of the essay is clear."
+      ],
+      "translations": {
+        "uk": "структура",
+        "de": "Struktur",
+        "fr": "structure",
+        "es": "estructura",
+        "it": "struttura",
+        "pt": "estrutura",
+        "pl": "struktura",
+        "ru": "структура",
+        "zh": "结构",
+        "ja": "構造"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "threat",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/θret/",
+      "definition": "Something that could cause harm.",
+      "examples": [
+        "Climate change is a threat to many species."
+      ],
+      "translations": {
+        "uk": "загроза",
+        "de": "Bedrohung",
+        "fr": "menace",
+        "es": "amenaza",
+        "it": "minaccia",
+        "pt": "ameaça",
+        "pl": "zagrożenie",
+        "ru": "угроза",
+        "zh": "威胁",
+        "ja": "脅威"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "variety",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/vəˈraɪəti/",
+      "definition": "Many different kinds.",
+      "examples": [
+        "The market sells a variety of fruit."
+      ],
+      "translations": {
+        "uk": "різноманітність",
+        "de": "Vielfalt",
+        "fr": "variété",
+        "es": "variedad",
+        "it": "varietà",
+        "pt": "variedade",
+        "pl": "różnorodność",
+        "ru": "разнообразие",
+        "zh": "多样",
+        "ja": "多様性"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

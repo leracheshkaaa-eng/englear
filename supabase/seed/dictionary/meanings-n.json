@@ -1,0 +1,58 @@
+{
+  "package": "meanings-n",
+  "kind": "meanings",
+  "words": [
+    {
+      "word": "measure",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "An official action to deal with a problem.",
+          "examples": [
+            "The government took measures to reduce pollution."
+          ],
+          "translations": {
+            "uk": "захід",
+            "de": "Maßnahme",
+            "fr": "mesure",
+            "es": "medida",
+            "it": "misura",
+            "pt": "medida",
+            "pl": "środek",
+            "ru": "мера",
+            "zh": "措施",
+            "ja": "対策"
+          }
+        }
+      ]
+    },
+    {
+      "word": "influence",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "The power to affect how someone thinks or behaves.",
+          "examples": [
+            "Parents have a big influence on their children."
+          ],
+          "translations": {
+            "uk": "вплив",
+            "de": "Einfluss",
+            "fr": "influence",
+            "es": "influencia",
+            "it": "influenza",
+            "pt": "influência",
+            "pl": "wpływ",
+            "ru": "влияние",
+            "zh": "影响",
+            "ja": "影響"
+          }
+        }
+      ]
+    }
+  ]
+}
