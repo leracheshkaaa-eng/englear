@@ -1,0 +1,352 @@
+{
+  "package": "household",
+  "kind": "words",
+  "words": [
+    {
+      "word": "soap",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/soʊp/",
+      "definition": "A substance you use with water to wash.",
+      "examples": [
+        "Wash your hands with soap."
+      ],
+      "translations": {
+        "uk": "мило",
+        "de": "Seife",
+        "fr": "savon",
+        "es": "jabón",
+        "it": "sapone",
+        "pt": "sabonete",
+        "pl": "mydło",
+        "ru": "мыло",
+        "zh": "肥皂",
+        "ja": "石けん"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "toothbrush",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Home",
+      "ipa": "/ˈtuːθbrʌʃ/",
+      "definition": "A small brush for cleaning your teeth.",
+      "examples": [
+        "I need a new toothbrush."
+      ],
+      "translations": {
+        "uk": "зубна щітка",
+        "de": "Zahnbürste",
+        "fr": "brosse à dents",
+        "es": "cepillo de dientes",
+        "it": "spazzolino",
+        "pt": "escova de dentes",
+        "pl": "szczoteczka do zębów",
+        "ru": "зубная щётка",
+        "zh": "牙刷",
+        "ja": "歯ブラシ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sink",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/sɪŋk/",
+      "definition": "A bowl in a kitchen or bathroom with water taps.",
+      "examples": [
+        "Put the dirty dishes in the sink."
+      ],
+      "translations": {
+        "uk": "раковина",
+        "de": "Spüle",
+        "fr": "évier",
+        "es": "fregadero",
+        "it": "lavandino",
+        "pt": "pia",
+        "pl": "zlew",
+        "ru": "раковина",
+        "zh": "水槽",
+        "ja": "流し"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To go down under water.",
+          "examples": [
+            "The boat began to sink."
+          ],
+          "translations": {
+            "uk": "тонути",
+            "de": "sinken",
+            "fr": "couler",
+            "es": "hundirse",
+            "it": "affondare",
+            "pt": "afundar",
+            "pl": "tonąć",
+            "ru": "тонуть",
+            "zh": "下沉",
+            "ja": "沈む"
+          }
+        }
+      ]
+    },
+    {
+      "word": "towel",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈtaʊəl/",
+      "definition": "A piece of cloth for drying your body.",
+      "examples": [
+        "Can I have a clean towel?"
+      ],
+      "translations": {
+        "uk": "рушник",
+        "de": "Handtuch",
+        "fr": "serviette",
+        "es": "toalla",
+        "it": "asciugamano",
+        "pt": "toalha",
+        "pl": "ręcznik",
+        "ru": "полотенце",
+        "zh": "毛巾",
+        "ja": "タオル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "trash",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/træʃ/",
+      "definition": "Things you throw away.",
+      "examples": [
+        "Please take out the trash."
+      ],
+      "translations": {
+        "uk": "сміття",
+        "de": "Müll",
+        "fr": "ordures",
+        "es": "basura",
+        "it": "spazzatura",
+        "pt": "lixo",
+        "pl": "śmieci",
+        "ru": "мусор",
+        "zh": "垃圾",
+        "ja": "ごみ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "washing machine",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈwɑːʃɪŋ məˌʃiːn/",
+      "definition": "A machine for washing clothes.",
+      "examples": [
+        "The washing machine is broken again."
+      ],
+      "translations": {
+        "uk": "пральна машина",
+        "de": "Waschmaschine",
+        "fr": "machine à laver",
+        "es": "lavadora",
+        "it": "lavatrice",
+        "pt": "máquina de lavar",
+        "pl": "pralka",
+        "ru": "стиральная машина",
+        "zh": "洗衣机",
+        "ja": "洗濯機"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "microwave",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈmaɪkrəweɪv/",
+      "definition": "An oven that cooks food very quickly.",
+      "examples": [
+        "Heat the soup in the microwave."
+      ],
+      "translations": {
+        "uk": "мікрохвильовка",
+        "de": "Mikrowelle",
+        "fr": "micro-ondes",
+        "es": "microondas",
+        "it": "microonde",
+        "pt": "micro-ondas",
+        "pl": "mikrofalówka",
+        "ru": "микроволновка",
+        "zh": "微波炉",
+        "ja": "電子レンジ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "drawer",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/drɔːr/",
+      "definition": "A box in furniture that slides in and out.",
+      "examples": [
+        "The knives are in the top drawer."
+      ],
+      "translations": {
+        "uk": "шухляда",
+        "de": "Schublade",
+        "fr": "tiroir",
+        "es": "cajón",
+        "it": "cassetto",
+        "pt": "gaveta",
+        "pl": "szuflada",
+        "ru": "ящик",
+        "zh": "抽屉",
+        "ja": "引き出し"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vacuum",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈvækjuːm/",
+      "definition": "To clean with a machine that sucks up dirt.",
+      "examples": [
+        "I vacuum the carpet every Saturday."
+      ],
+      "translations": {
+        "uk": "пилососити",
+        "de": "staubsaugen",
+        "fr": "passer l'aspirateur",
+        "es": "pasar la aspiradora",
+        "it": "passare l'aspirapolvere",
+        "pt": "aspirar",
+        "pl": "odkurzać",
+        "ru": "пылесосить",
+        "zh": "用吸尘器清扫",
+        "ja": "掃除機をかける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "iron",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈaɪɚn/",
+      "definition": "To make clothes smooth with a hot iron.",
+      "examples": [
+        "I need to iron my shirt."
+      ],
+      "translations": {
+        "uk": "прасувати",
+        "de": "bügeln",
+        "fr": "repasser",
+        "es": "planchar",
+        "it": "stirare",
+        "pt": "passar",
+        "pl": "prasować",
+        "ru": "гладить",
+        "zh": "熨",
+        "ja": "アイロンをかける"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "metal",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "A strong hard metal.",
+          "examples": [
+            "The gate is made of iron."
+          ],
+          "translations": {
+            "uk": "залізо",
+            "de": "Eisen",
+            "fr": "fer",
+            "es": "hierro",
+            "it": "ferro",
+            "pt": "ferro",
+            "pl": "żelazo",
+            "ru": "железо",
+            "zh": "铁",
+            "ja": "鉄"
+          }
+        }
+      ]
+    },
+    {
+      "word": "laundry",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈlɔːndri/",
+      "definition": "Clothes that need to be washed.",
+      "examples": [
+        "I do the laundry on Sundays."
+      ],
+      "translations": {
+        "uk": "прання",
+        "de": "Wäsche",
+        "fr": "linge",
+        "es": "ropa sucia",
+        "it": "bucato",
+        "pt": "roupa suja",
+        "pl": "pranie",
+        "ru": "стирка",
+        "zh": "要洗的衣服",
+        "ja": "洗濯物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "light bulb",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈlaɪt bʌlb/",
+      "definition": "A glass object that gives light when electricity passes through it.",
+      "examples": [
+        "The light bulb in the kitchen doesn't work."
+      ],
+      "translations": {
+        "uk": "лампочка",
+        "de": "Glühbirne",
+        "fr": "ampoule",
+        "es": "bombilla",
+        "it": "lampadina",
+        "pt": "lâmpada",
+        "pl": "żarówka",
+        "ru": "лампочка",
+        "zh": "灯泡",
+        "ja": "電球"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

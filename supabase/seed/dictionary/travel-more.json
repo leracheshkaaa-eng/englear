@@ -1,0 +1,256 @@
+{
+  "package": "travel-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "tent",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/tent/",
+      "definition": "A shelter made of cloth that you sleep in outdoors.",
+      "examples": [
+        "We slept in a tent."
+      ],
+      "translations": {
+        "uk": "намет",
+        "de": "Zelt",
+        "fr": "tente",
+        "es": "tienda de campaña",
+        "it": "tenda",
+        "pt": "barraca",
+        "pl": "namiot",
+        "ru": "палатка",
+        "zh": "帐篷",
+        "ja": "テント"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "currency",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈkɝːrənsi/",
+      "definition": "The money used in a country.",
+      "examples": [
+        "The euro is the currency of many countries."
+      ],
+      "translations": {
+        "uk": "валюта",
+        "de": "Währung",
+        "fr": "monnaie",
+        "es": "moneda",
+        "it": "valuta",
+        "pt": "moeda",
+        "pl": "waluta",
+        "ru": "валюта",
+        "zh": "货币",
+        "ja": "通貨"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "visa",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈviːzə/",
+      "definition": "An official document that allows you to enter a country.",
+      "examples": [
+        "You need a visa to visit that country."
+      ],
+      "translations": {
+        "uk": "віза",
+        "de": "Visum",
+        "fr": "visa",
+        "es": "visado",
+        "it": "visto",
+        "pt": "visto",
+        "pl": "wiza",
+        "ru": "виза",
+        "zh": "签证",
+        "ja": "ビザ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "jet lag",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈdʒet læɡ/",
+      "definition": "Feeling tired after a long flight across time zones.",
+      "examples": [
+        "I had terrible jet lag after flying to Japan."
+      ],
+      "translations": {
+        "uk": "джетлаг",
+        "de": "Jetlag",
+        "fr": "décalage horaire",
+        "es": "desfase horario",
+        "it": "jet lag",
+        "pt": "jet lag",
+        "pl": "jet lag",
+        "ru": "джетлаг",
+        "zh": "时差反应",
+        "ja": "時差ぼけ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "campsite",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈkæmpsaɪt/",
+      "definition": "A place where people stay in tents.",
+      "examples": [
+        "We stayed at a campsite near the lake."
+      ],
+      "translations": {
+        "uk": "кемпінг",
+        "de": "Campingplatz",
+        "fr": "camping",
+        "es": "camping",
+        "it": "campeggio",
+        "pt": "área de camping",
+        "pl": "kemping",
+        "ru": "кемпинг",
+        "zh": "露营地",
+        "ja": "キャンプ場"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cruise",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/kruːz/",
+      "definition": "A vacation on a large ship.",
+      "examples": [
+        "They went on a cruise around the Caribbean."
+      ],
+      "translations": {
+        "uk": "круїз",
+        "de": "Kreuzfahrt",
+        "fr": "croisière",
+        "es": "crucero",
+        "it": "crociera",
+        "pt": "cruzeiro",
+        "pl": "rejs",
+        "ru": "круиз",
+        "zh": "游轮旅行",
+        "ja": "クルーズ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hostel",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈhɑːstəl/",
+      "definition": "A cheap place to stay, often for young travelers.",
+      "examples": [
+        "We stayed in a hostel in Berlin."
+      ],
+      "translations": {
+        "uk": "хостел",
+        "de": "Hostel",
+        "fr": "auberge de jeunesse",
+        "es": "albergue",
+        "it": "ostello",
+        "pt": "albergue",
+        "pl": "hostel",
+        "ru": "хостел",
+        "zh": "青年旅舍",
+        "ja": "ホステル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "departure",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/dɪˈpɑːrtʃɚ/",
+      "definition": "The act of leaving a place.",
+      "examples": [
+        "Check the departure time of your flight."
+      ],
+      "translations": {
+        "uk": "відправлення",
+        "de": "Abfahrt",
+        "fr": "départ",
+        "es": "salida",
+        "it": "partenza",
+        "pt": "partida",
+        "pl": "odjazd",
+        "ru": "отправление",
+        "zh": "出发",
+        "ja": "出発"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "arrival",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/əˈraɪvəl/",
+      "definition": "The act of reaching a place.",
+      "examples": [
+        "The arrival of the train was delayed."
+      ],
+      "translations": {
+        "uk": "прибуття",
+        "de": "Ankunft",
+        "fr": "arrivée",
+        "es": "llegada",
+        "it": "arrivo",
+        "pt": "chegada",
+        "pl": "przyjazd",
+        "ru": "прибытие",
+        "zh": "到达",
+        "ja": "到着"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "platform",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ˈplætfɔːrm/",
+      "definition": "The place at a station where you get on a train.",
+      "examples": [
+        "The train leaves from platform 3."
+      ],
+      "translations": {
+        "uk": "платформа",
+        "de": "Bahnsteig",
+        "fr": "quai",
+        "es": "andén",
+        "it": "binario",
+        "pt": "plataforma",
+        "pl": "peron",
+        "ru": "платформа",
+        "zh": "站台",
+        "ja": "ホーム"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

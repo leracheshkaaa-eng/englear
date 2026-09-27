@@ -1,0 +1,206 @@
+{
+  "package": "health-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "pharmacy",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ˈfɑːrməsi/",
+      "definition": "A store where you can buy medicine.",
+      "examples": [
+        "I bought some pills at the pharmacy."
+      ],
+      "translations": {
+        "uk": "аптека",
+        "de": "Apotheke",
+        "fr": "pharmacie",
+        "es": "farmacia",
+        "it": "farmacia",
+        "pt": "farmácia",
+        "pl": "apteka",
+        "ru": "аптека",
+        "zh": "药店",
+        "ja": "薬局"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "toothache",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ˈtuːθeɪk/",
+      "definition": "A pain in a tooth.",
+      "examples": [
+        "I have a terrible toothache."
+      ],
+      "translations": {
+        "uk": "зубний біль",
+        "de": "Zahnschmerzen",
+        "fr": "mal de dents",
+        "es": "dolor de muelas",
+        "it": "mal di denti",
+        "pt": "dor de dente",
+        "pl": "ból zęba",
+        "ru": "зубная боль",
+        "zh": "牙痛",
+        "ja": "歯痛"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bandage",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈbændɪdʒ/",
+      "definition": "A strip of cloth to cover a wound.",
+      "examples": [
+        "The nurse put a bandage on my arm."
+      ],
+      "translations": {
+        "uk": "бинт, пов'язка",
+        "de": "Verband",
+        "fr": "bandage",
+        "es": "venda",
+        "it": "benda",
+        "pt": "atadura",
+        "pl": "bandaż",
+        "ru": "бинт, повязка",
+        "zh": "绷带",
+        "ja": "包帯"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "heal",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/hiːl/",
+      "definition": "To become healthy again after an injury.",
+      "examples": [
+        "The cut healed quickly."
+      ],
+      "translations": {
+        "uk": "загоюватися",
+        "de": "heilen",
+        "fr": "cicatriser",
+        "es": "curarse",
+        "it": "guarire",
+        "pt": "cicatrizar",
+        "pl": "goić się",
+        "ru": "заживать",
+        "zh": "愈合",
+        "ja": "治る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sneeze",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/sniːz/",
+      "definition": "To suddenly blow air out through your nose.",
+      "examples": [
+        "Dust makes me sneeze."
+      ],
+      "translations": {
+        "uk": "чхати",
+        "de": "niesen",
+        "fr": "éternuer",
+        "es": "estornudar",
+        "it": "starnutire",
+        "pt": "espirrar",
+        "pl": "kichać",
+        "ru": "чихать",
+        "zh": "打喷嚏",
+        "ja": "くしゃみをする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prescription",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/prɪˈskrɪpʃən/",
+      "definition": "A doctor's written order for medicine.",
+      "examples": [
+        "You need a prescription for this medicine."
+      ],
+      "translations": {
+        "uk": "рецепт (лікаря)",
+        "de": "Rezept",
+        "fr": "ordonnance",
+        "es": "receta médica",
+        "it": "ricetta medica",
+        "pt": "receita médica",
+        "pl": "recepta",
+        "ru": "рецепт (врача)",
+        "zh": "处方",
+        "ja": "処方箋"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dizzy",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈdɪzi/",
+      "definition": "Feeling that everything is spinning.",
+      "examples": [
+        "I feel dizzy when I stand up quickly."
+      ],
+      "translations": {
+        "uk": "з запамороченням",
+        "de": "schwindlig",
+        "fr": "pris de vertiges",
+        "es": "mareado",
+        "it": "stordito",
+        "pt": "tonto",
+        "pl": "oszołomiony",
+        "ru": "с головокружением",
+        "zh": "头晕的",
+        "ja": "めまいがする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wound",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/wuːnd/",
+      "definition": "An injury where the skin is cut.",
+      "examples": [
+        "The wound took weeks to heal."
+      ],
+      "translations": {
+        "uk": "рана",
+        "de": "Wunde",
+        "fr": "plaie",
+        "es": "herida",
+        "it": "ferita",
+        "pt": "ferida",
+        "pl": "rana",
+        "ru": "рана",
+        "zh": "伤口",
+        "ja": "傷"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

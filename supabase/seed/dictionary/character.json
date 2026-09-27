@@ -1,0 +1,379 @@
+{
+  "package": "character",
+  "kind": "words",
+  "words": [
+    {
+      "word": "brave",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/breɪv/",
+      "definition": "Not afraid of danger.",
+      "examples": [
+        "The brave firefighter saved the child."
+      ],
+      "translations": {
+        "uk": "хоробрий",
+        "de": "mutig",
+        "fr": "courageux",
+        "es": "valiente",
+        "it": "coraggioso",
+        "pt": "corajoso",
+        "pl": "odważny",
+        "ru": "храбрый",
+        "zh": "勇敢的",
+        "ja": "勇敢な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "careful",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ˈkerfəl/",
+      "definition": "Paying attention to avoid danger or mistakes.",
+      "examples": [
+        "Be careful when you cross the street."
+      ],
+      "translations": {
+        "uk": "обережний",
+        "de": "vorsichtig",
+        "fr": "prudent",
+        "es": "cuidadoso",
+        "it": "attento",
+        "pt": "cuidadoso",
+        "pl": "ostrożny",
+        "ru": "осторожный",
+        "zh": "小心的",
+        "ja": "注意深い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rude",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ruːd/",
+      "definition": "Not polite.",
+      "examples": [
+        "It's rude to interrupt people."
+      ],
+      "translations": {
+        "uk": "грубий",
+        "de": "unhöflich",
+        "fr": "impoli",
+        "es": "grosero",
+        "it": "maleducato",
+        "pt": "grosseiro",
+        "pl": "niegrzeczny",
+        "ru": "грубый",
+        "zh": "粗鲁的",
+        "ja": "失礼な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "silly",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ˈsɪli/",
+      "definition": "Not serious or sensible.",
+      "examples": [
+        "Don't be silly!"
+      ],
+      "translations": {
+        "uk": "безглуздий",
+        "de": "albern",
+        "fr": "bête",
+        "es": "tonto",
+        "it": "sciocco",
+        "pt": "bobo",
+        "pl": "niemądry",
+        "ru": "глупый",
+        "zh": "傻的",
+        "ja": "ばかげた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "careless",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˈkerləs/",
+      "definition": "Not paying enough attention.",
+      "examples": [
+        "He made a careless mistake."
+      ],
+      "translations": {
+        "uk": "недбалий",
+        "de": "unvorsichtig",
+        "fr": "négligent",
+        "es": "descuidado",
+        "it": "sbadato",
+        "pt": "descuidado",
+        "pl": "nieostrożny",
+        "ru": "небрежный",
+        "zh": "粗心的",
+        "ja": "不注意な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cheerful",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˈtʃɪrfəl/",
+      "definition": "Happy and positive.",
+      "examples": [
+        "She is always cheerful in the morning."
+      ],
+      "translations": {
+        "uk": "життєрадісний",
+        "de": "fröhlich",
+        "fr": "joyeux",
+        "es": "alegre",
+        "it": "allegro",
+        "pt": "alegre",
+        "pl": "pogodny",
+        "ru": "жизнерадостный",
+        "zh": "快乐的",
+        "ja": "陽気な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "selfish",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˈselfɪʃ/",
+      "definition": "Caring only about yourself.",
+      "examples": [
+        "Don't be so selfish—share your toys."
+      ],
+      "translations": {
+        "uk": "егоїстичний",
+        "de": "egoistisch",
+        "fr": "égoïste",
+        "es": "egoísta",
+        "it": "egoista",
+        "pt": "egoísta",
+        "pl": "samolubny",
+        "ru": "эгоистичный",
+        "zh": "自私的",
+        "ja": "わがままな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ambitious",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/æmˈbɪʃəs/",
+      "definition": "Wanting very much to be successful.",
+      "examples": [
+        "She is ambitious and works very hard."
+      ],
+      "translations": {
+        "uk": "амбітний",
+        "de": "ehrgeizig",
+        "fr": "ambitieux",
+        "es": "ambicioso",
+        "it": "ambizioso",
+        "pt": "ambicioso",
+        "pl": "ambitny",
+        "ru": "амбициозный",
+        "zh": "有抱负的",
+        "ja": "野心的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "talkative",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˈtɔːkətɪv/",
+      "definition": "Liking to talk a lot.",
+      "examples": [
+        "My little sister is very talkative."
+      ],
+      "translations": {
+        "uk": "балакучий",
+        "de": "gesprächig",
+        "fr": "bavard",
+        "es": "hablador",
+        "it": "chiacchierone",
+        "pt": "falador",
+        "pl": "gadatliwy",
+        "ru": "болтливый",
+        "zh": "健谈的",
+        "ja": "おしゃべりな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "strict",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/strɪkt/",
+      "definition": "Making people obey rules.",
+      "examples": [
+        "Our teacher is strict but fair."
+      ],
+      "translations": {
+        "uk": "суворий",
+        "de": "streng",
+        "fr": "strict",
+        "es": "estricto",
+        "it": "severo",
+        "pt": "rigoroso",
+        "pl": "surowy",
+        "ru": "строгий",
+        "zh": "严格的",
+        "ja": "厳しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wise",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/waɪz/",
+      "definition": "Having good judgment from experience.",
+      "examples": [
+        "My grandfather is a wise man."
+      ],
+      "translations": {
+        "uk": "мудрий",
+        "de": "weise",
+        "fr": "sage",
+        "es": "sabio",
+        "it": "saggio",
+        "pt": "sábio",
+        "pl": "rozsądny",
+        "ru": "мудрый",
+        "zh": "明智的",
+        "ja": "賢明な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fair",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/fer/",
+      "definition": "Treating people equally.",
+      "examples": [
+        "The referee was fair to both teams."
+      ],
+      "translations": {
+        "uk": "справедливий",
+        "de": "fair",
+        "fr": "juste",
+        "es": "justo",
+        "it": "giusto",
+        "pt": "justo",
+        "pl": "sprawiedliwy",
+        "ru": "справедливый",
+        "zh": "公平的",
+        "ja": "公平な"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "hair",
+          "part_of_speech": "adjective",
+          "cefr": "B1",
+          "definition": "Light in color (about hair or skin).",
+          "examples": [
+            "She has fair hair and blue eyes."
+          ],
+          "translations": {
+            "uk": "світлий (про волосся)",
+            "de": "blond, hell",
+            "fr": "blond",
+            "es": "rubio",
+            "it": "biondo",
+            "pt": "loiro",
+            "pl": "jasny (o włosach)",
+            "ru": "светлый (о волосах)",
+            "zh": "金色的",
+            "ja": "金髪の"
+          }
+        }
+      ]
+    },
+    {
+      "word": "stubborn",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˈstʌbɚn/",
+      "definition": "Not willing to change your mind.",
+      "examples": [
+        "My brother is very stubborn."
+      ],
+      "translations": {
+        "uk": "упертий",
+        "de": "stur",
+        "fr": "têtu",
+        "es": "terco",
+        "it": "testardo",
+        "pt": "teimoso",
+        "pl": "uparty",
+        "ru": "упрямый",
+        "zh": "固执的",
+        "ja": "頑固な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sensitive",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˈsensətɪv/",
+      "definition": "Easily upset; understanding other people's feelings.",
+      "examples": [
+        "He is very sensitive to criticism."
+      ],
+      "translations": {
+        "uk": "чутливий",
+        "de": "empfindlich",
+        "fr": "sensible",
+        "es": "sensible",
+        "it": "sensibile",
+        "pt": "sensível",
+        "pl": "wrażliwy",
+        "ru": "чувствительный",
+        "zh": "敏感的",
+        "ja": "敏感な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
