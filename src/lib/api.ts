@@ -304,9 +304,12 @@ export async function listWords(lang: string = translationLanguage()): Promise<W
 /** What an inline lesson hint needs: the word and its main translation. */
 export type WordHint = { id: string; word: string; translation: string | null; definition: string; example: string | null }
 
-/** Hints for every word, in the given translation language (small: no other fields). */
-export async function dictionaryHints(lang: string = translationLanguage()): Promise<WordHint[]> {
-  return fetchAllPages<WordHint>((from, to) => supabase.rpc('dictionary_hints', { p_lang: lang, p_offset: from, p_limit: to - from + 1 }))
+/** Hints only for the given words (the words of one lesson), in the translation language. */
+export async function lessonHints(words: string[], lang: string = translationLanguage()): Promise<WordHint[]> {
+  if (!words.length) return []
+  const { data, error } = await supabase.rpc('lesson_hints', { p_words: words.slice(0, 3000), p_lang: lang })
+  if (error) throw error
+  return (data ?? []) as WordHint[]
 }
 
 export async function getWord(id: string, lang: string = translationLanguage()): Promise<Word | null> {

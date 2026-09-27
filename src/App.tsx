@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { AuthProvider, useAuth } from './lib/auth'
 import * as api from './lib/api'
-import type { Lesson, WordHint } from './lib/api'
+import type { Lesson } from './lib/api'
 import { Button } from './lib/ui'
 import { LessonsCatalog, LessonPlayer } from './features/lessons'
 import { TeacherMode } from './features/teacher'
@@ -21,7 +21,6 @@ function Shell() {
   const [lessons, setLessons] = useState<Lesson[]>([])
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
-  const [dict, setDict] = useState<Map<string, WordHint>>(new Map())
   const [active, setActive] = useState<Lesson | null>(null)
   const [flashTarget, setFlashTarget] = useState<api.SetProgress | null>(null) // set opened from Progress
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
@@ -42,10 +41,6 @@ function Shell() {
     }
   }, [userId])
 
-  // inline translation hints, in the student's translation language
-  useEffect(() => {
-    api.dictionaryHints().then((ws) => setDict(new Map(ws.map((w) => [w.word.toLowerCase(), w])))).catch(() => {})
-  }, [userId, i18n.language, settings.native_language])
 
   useEffect(() => {
     if (!loading) reload()
@@ -84,7 +79,6 @@ function Shell() {
         {deepLink.lesson ? (
           <LessonPlayer
             lesson={deepLink.lesson}
-            dict={dict}
             onDone={() => {
               history.pushState({}, '', '/')
               setDeepLink(null)
@@ -165,7 +159,7 @@ function Shell() {
           />
         )}
         {view === 'practice' && active && (
-          <LessonPlayer lesson={active} dict={dict} onDone={() => { reload(); setView('lessons') }} />
+          <LessonPlayer lesson={active} onDone={() => { reload(); setView('lessons') }} />
         )}
         {view === 'teacher' && isTeacher && <TeacherMode lessons={lessons} reload={reload} />}
         {view === 'flashcards' && userId && (

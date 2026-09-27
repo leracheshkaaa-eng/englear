@@ -241,15 +241,42 @@ type Outcome = {
 
 const SAVE_DELAY_MS = 500
 
+/** Every English word that appears anywhere in the given values (strings, arrays, objects). */
+function lessonWords(value: unknown, out = new Set<string>()): Set<string> {
+  if (typeof value === 'string') {
+    for (const m of value.matchAll(/[A-Za-z][A-Za-z'-]*/g)) out.add(m[0].replace(/[-']+$/, '').toLowerCase())
+  } else if (Array.isArray(value)) {
+    for (const v of value) lessonWords(v, out)
+  } else if (value && typeof value === 'object') {
+    for (const v of Object.values(value)) lessonWords(v, out)
+  }
+  return out
+}
+
+/** Inline translation hints for the words of this lesson only (not the whole dictionary). */
+function useLessonHints(lesson: Lesson, exercises: Exercise[]): Map<string, WordHint> {
+  const { i18n } = useTranslation()
+  const { settings } = useAuth()
+  const [hints, setHints] = useState<Map<string, WordHint>>(new Map())
+  const words = [...lessonWords([lesson.title, lesson.description, exercises])].sort().join(' ')
+  useEffect(() => {
+    let cancelled = false
+    api
+      .lessonHints(words ? words.split(' ') : [])
+      .then((ws) => { if (!cancelled) setHints(new Map(ws.map((w) => [w.word.toLowerCase(), w]))) })
+      .catch(() => {})
+    return () => { cancelled = true }
+  }, [words, i18n.language, settings.native_language])
+  return hints
+}
+
 /** Lesson player. For signed-in students every answer is saved (checked or not),
  *  an unfinished pass is resumed, and a finished lesson opens on its last result. */
 export function LessonPlayer({
   lesson,
-  dict,
   onDone,
 }: {
   lesson: Lesson
-  dict: Map<string, WordHint>
   onDone: () => void
 }) {
   const { t } = useTranslation()
@@ -257,6 +284,7 @@ export function LessonPlayer({
   const signedIn = !!userId // guests just practice; nothing saved
   const [phase, setPhase] = useState<'loading' | 'play' | 'result' | 'review'>('loading')
   const [exs, setExs] = useState<Exercise[]>(lesson.exercises)
+  const dict = useLessonHints(lesson, exs)
   const [i, setI] = useState(0)
   const [pass, setPass] = useState<LessonPass | null>(null)
   const [answers, setAnswers] = useState<Record<string, Ans>>({})
