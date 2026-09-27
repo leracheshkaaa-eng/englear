@@ -190,6 +190,18 @@ export async function importLessons(authorId: string, lessons: NewLesson[]): Pro
    language needed, so the payload stays small as languages are added. */
 
 export type WordType = 'word' | 'collocation' | 'phrasal_verb'
+
+/** An extra meaning of a word (the main meaning lives in the word's own fields). */
+export type Meaning = {
+  /** stable id within the word; flashcards refer to a meaning by it */
+  key: string
+  part_of_speech?: string
+  cefr?: string
+  definition?: string
+  examples?: string[]
+  translations?: Record<string, string>
+}
+
 export type Word = {
   id: string
   word: string
@@ -201,7 +213,7 @@ export type Word = {
   cefr_level: string
   definition: string
   examples: string[]
-  meanings: { definition?: string; translation?: string; part_of_speech?: string }[]
+  meanings: Meaning[]
   topic: string
   related: string[]
   word_type: WordType
@@ -227,14 +239,74 @@ export function wordTranslation(w: Pick<Word, 'translation' | 'translations'>, l
   return w.translations?.[lang] ?? (lang === 'ru' ? w.translation : '') ?? ''
 }
 
+/** One meaning of a word in a uniform shape: the main one (key null) or an extra one. */
+export type Sense = {
+  key: string | null
+  part_of_speech: string
+  cefr: string
+  definition: string
+  examples: string[]
+  translation: string
+}
+
+/** All meanings of a word, the main one first. */
+export function wordSenses(w: Word, lang: string = translationLanguage()): Sense[] {
+  const main: Sense = {
+    key: null,
+    part_of_speech: w.part_of_speech,
+    cefr: w.cefr_level,
+    definition: w.definition,
+    examples: w.examples?.length ? w.examples : w.example ? [w.example] : [],
+    translation: wordTranslation(w, lang),
+  }
+  const extra = (w.meanings ?? []).map(
+    (m): Sense => ({
+      key: m.key,
+      part_of_speech: m.part_of_speech ?? '',
+      cefr: m.cefr ?? '',
+      definition: m.definition ?? '',
+      examples: m.examples ?? [],
+      translation: lang === 'en' ? '' : (m.translations?.[lang] ?? ''),
+    }),
+  )
+  return [main, ...extra]
+}
+
+/** The meaning with this key (null or unknown key = the main meaning). */
+export function wordSense(w: Word, key: string | null | undefined, lang: string = translationLanguage()): Sense {
+  const senses = wordSenses(w, lang)
+  return senses.find((s) => s.key === (key ?? null)) ?? senses[0]
+}
+
+/** PostgREST returns at most 1000 rows per request: read every page. */
+async function fetchAllPages<T>(page: (from: number, to: number) => PromiseLike<{ data: T[] | null; error: unknown }>): Promise<T[]> {
+  const size = 1000
+  const all: T[] = []
+  for (let from = 0; ; from += size) {
+    const { data, error } = await page(from, from + size - 1)
+    if (error) throw error
+    all.push(...(data ?? []))
+    if (!data || data.length < size) return all
+  }
+}
+
 /** Escape LIKE wildcards in user input. */
 const likeLiteral = (s: string) => s.replace(/[\\%_]/g, (c) => `\\${c}`)
 
-/** All words (for inline translation hints), with the given translation language only. */
+/** All words with every field, with the given translation language only (admin tools). */
 export async function listWords(lang: string = translationLanguage()): Promise<Word[]> {
-  const { data, error } = await supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang).order('word')
-  if (error) throw error
-  return ((data ?? []) as WordRow[]).map(toWord)
+  const rows = await fetchAllPages<WordRow>((from, to) =>
+    supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang).order('word').order('id').range(from, to),
+  )
+  return rows.map(toWord)
+}
+
+/** What an inline lesson hint needs: the word and its main translation. */
+export type WordHint = { id: string; word: string; translation: string | null; definition: string; example: string | null }
+
+/** Hints for every word, in the given translation language (small: no other fields). */
+export async function dictionaryHints(lang: string = translationLanguage()): Promise<WordHint[]> {
+  return fetchAllPages<WordHint>((from, to) => supabase.rpc('dictionary_hints', { p_lang: lang, p_offset: from, p_limit: to - from + 1 }))
 }
 
 export async function getWord(id: string, lang: string = translationLanguage()): Promise<Word | null> {
@@ -289,14 +361,15 @@ export async function dictionaryPool(
   f: { topic?: string; levels?: string[]; word_type?: WordType; ielts_category?: string },
   lang: string = translationLanguage(),
 ): Promise<Word[]> {
-  let query = supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang)
-  if (f.topic) query = query.eq('topic', f.topic)
-  if (f.word_type) query = query.eq('word_type', f.word_type)
-  if (f.ielts_category) query = query.eq('ielts_category', f.ielts_category)
-  if (f.levels?.length) query = query.in('cefr_level', f.levels)
-  const { data, error } = await query.order('word').limit(2000)
-  if (error) throw error
-  return ((data ?? []) as WordRow[]).map(toWord)
+  const rows = await fetchAllPages<WordRow>((from, to) => {
+    let query = supabase.from('dictionary_words').select(WORD_SELECT).eq('word_translations.lang', lang)
+    if (f.topic) query = query.eq('topic', f.topic)
+    if (f.word_type) query = query.eq('word_type', f.word_type)
+    if (f.ielts_category) query = query.eq('ielts_category', f.ielts_category)
+    if (f.levels?.length) query = query.in('cefr_level', f.levels)
+    return query.order('word').order('id').range(from, to)
+  })
+  return rows.map(toWord)
 }
 
 /* ---------- dictionary import (admin) ---------- */
@@ -396,6 +469,8 @@ export type Flashcard = {
   id: string
   set_id: string
   word_id: string | null
+  /** the word's meaning this card was made from (null = the main meaning) */
+  meaning_key: string | null
   front: string
   back: string
   example: string
@@ -610,15 +685,16 @@ export async function recordCard(cardId: string, known: boolean) {
 export async function knownWordsCount(studentId: string): Promise<number> {
   const [words, cards] = await Promise.all([
     supabase.from('student_word_progress').select('word_id').eq('student_id', studentId).eq('status', 'known'),
-    supabase.from('flashcard_progress').select('flashcard_id, flashcards(word_id)').eq('student_id', studentId).eq('state', 'known'),
+    supabase.from('flashcard_progress').select('flashcard_id, flashcards(word_id, meaning_key)').eq('student_id', studentId).eq('state', 'known'),
   ])
   if (words.error) throw words.error
   if (cards.error) throw cards.error
   const known = new Set((words.data ?? []).map((w) => `w:${w.word_id}`))
   for (const c of cards.data ?? []) {
     // many-to-one embed: an object at runtime (typed as an array without generated DB types)
-    const card = (Array.isArray(c.flashcards) ? c.flashcards[0] : c.flashcards) as { word_id: string | null } | null
-    known.add(card?.word_id ? `w:${card.word_id}` : `c:${c.flashcard_id}`)
+    const card = (Array.isArray(c.flashcards) ? c.flashcards[0] : c.flashcards) as { word_id: string | null; meaning_key: string | null } | null
+    // each meaning of a word counts once; the main meaning shares its key with library progress
+    known.add(card?.word_id ? `w:${card.word_id}${card.meaning_key ? `#${card.meaning_key}` : ''}` : `c:${c.flashcard_id}`)
   }
   return known.size
 }
@@ -756,15 +832,21 @@ export async function recordWord(studentId: string, wordId: string, known: boole
   )
 }
 
-/** Add an existing dictionary word to one of the user's own sets (no duplicate word).
- *  The back of the card is the translation in the student's language (or the definition). */
-export async function addWordToSet(setId: string, w: Word, position: number) {
+/** Is this meaning of the word already a card in the set? */
+export const hasWordCard = (cards: Flashcard[], wordId: string, meaningKey: string | null) =>
+  cards.some((c) => c.word_id === wordId && (c.meaning_key ?? null) === meaningKey)
+
+/** Add one meaning of a dictionary word to one of the user's own sets.
+ *  The back of the card is that meaning's translation in the student's language (or its definition). */
+export async function addWordToSet(setId: string, w: Word, position: number, meaningKey: string | null = null) {
+  const sense = wordSense(w, meaningKey)
   const { error } = await supabase.from('flashcards').insert({
     set_id: setId,
     word_id: w.id,
+    meaning_key: sense.key,
     front: w.word,
-    back: wordTranslation(w) || w.definition || '',
-    example: (w.examples?.[0] ?? w.example ?? ''),
+    back: sense.translation || sense.definition || '',
+    example: sense.examples[0] ?? '',
     position,
   })
   if (error) throw error

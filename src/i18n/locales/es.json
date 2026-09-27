@@ -269,6 +269,8 @@
     "translation": "Traducción",
     "showTranslation": "Mostrar traducción",
     "otherMeanings": "Otros significados",
+    "chooseMeaning": "¿Qué significado quieres añadir?",
+    "meaningOf": "Significado {{n}} de {{total}}",
     "examples": "Ejemplos",
     "related": "Palabras relacionadas",
     "cefrNote": "El nivel MCER es una guía de dificultad, no una regla absoluta para cada palabra.",

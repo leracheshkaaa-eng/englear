@@ -269,6 +269,8 @@
     "translation": "Übersetzung",
     "showTranslation": "Übersetzung anzeigen",
     "otherMeanings": "Weitere Bedeutungen",
+    "chooseMeaning": "Welche Bedeutung möchtest du hinzufügen?",
+    "meaningOf": "Bedeutung {{n}} von {{total}}",
     "examples": "Beispiele",
     "related": "Verwandte Wörter",
     "cefrNote": "Das GER-Niveau ist eine Orientierung für die Schwierigkeit, keine feste Regel für jedes Wort.",

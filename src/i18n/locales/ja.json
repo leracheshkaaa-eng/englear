@@ -264,6 +264,8 @@
     "translation": "訳",
     "showTranslation": "訳を表示",
     "otherMeanings": "ほかの意味",
+    "chooseMeaning": "どの意味を追加しますか？",
+    "meaningOf": "意味 {{n}}/{{total}}",
     "examples": "例文",
     "related": "関連語",
     "cefrNote": "CEFR レベルは難しさの目安であり、すべての単語に当てはまる絶対的なルールではありません。",

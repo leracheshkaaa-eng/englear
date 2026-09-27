@@ -264,6 +264,8 @@
     "translation": "翻译",
     "showTranslation": "显示翻译",
     "otherMeanings": "其他含义",
+    "chooseMeaning": "要添加哪个含义？",
+    "meaningOf": "含义 {{n}}/{{total}}",
     "examples": "例句",
     "related": "相关词",
     "cefrNote": "CEFR 级别是难度参考，并不是每个单词的绝对标准。",

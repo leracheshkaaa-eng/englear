@@ -279,6 +279,8 @@
     "translation": "Tłumaczenie",
     "showTranslation": "Pokaż tłumaczenie",
     "otherMeanings": "Inne znaczenia",
+    "chooseMeaning": "Które znaczenie chcesz dodać?",
+    "meaningOf": "Znaczenie {{n}} z {{total}}",
     "examples": "Przykłady",
     "related": "Powiązane słowa",
     "cefrNote": "Poziom CEFR to wskazówka trudności, a nie sztywna reguła dla każdego słowa.",

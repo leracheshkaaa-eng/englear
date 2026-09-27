@@ -9,6 +9,7 @@ import { CEFR_LEVELS, TOPICS, TRANSLATION_UPFRONT_LEVELS, partOfSpeechLabel, top
 import { LanguageSelect } from '../i18n/LanguageSelect'
 import { errorMessage } from '../i18n/errors'
 import { LANGUAGES, setNativeLanguage, translationLanguage } from '../i18n'
+import { MeaningTabs } from './meanings'
 
 const PARTS = ['noun', 'verb', 'adjective', 'adverb', 'phrasal verb', 'collocation']
 
@@ -139,10 +140,17 @@ function WordDetail({ word, onBack }: { word: Word; onBack: () => void }) {
   const { settings } = useAuth()
   const upfront = TRANSLATION_UPFRONT_LEVELS.includes(settings.english_level) && settings.translations_enabled
   const [showT, setShowT] = useState(upfront)
+  const [meaningKey, setMeaningKey] = useState<string | null>(null)
+  const [meaningsOpen, setMeaningsOpen] = useState(false)
   useEffect(() => setShowT(upfront), [upfront, word.id])
+  useEffect(() => {
+    setMeaningKey(null)
+    setMeaningsOpen(false)
+  }, [word.id])
 
-  const examples = word.examples?.length ? word.examples : word.example ? [word.example] : []
-  const translation = api.wordTranslation(word)
+  const senses = api.wordSenses(word)
+  const index = Math.max(0, senses.findIndex((s) => s.key === meaningKey))
+  const sense = senses[index]
   const showTranslationBlock = translationLanguage() !== 'en' // English speakers learn from the definition
 
   return (
@@ -152,55 +160,57 @@ function WordDetail({ word, onBack }: { word: Word; onBack: () => void }) {
       <div className="rounded-3xl border border-line bg-paper p-8">
         <div className="flex flex-wrap items-center gap-3">
           <h2 className="font-display text-5xl font-semibold">{word.word}</h2>
-          {word.cefr_level && <Badge>{word.cefr_level}</Badge>}
+          {sense.cefr && <Badge>{sense.cefr}</Badge>}
           <SpeakerButton text={word.word} className="h-10 w-10 text-lg" />
         </div>
         <p className="mt-2 font-body text-mute">
           {word.pronunciation && <span className="mr-3">{word.pronunciation}</span>}
-          {word.part_of_speech && <span className="italic">{partOfSpeechLabel(word.part_of_speech)}</span>}
+          {sense.part_of_speech && <span className="italic">{partOfSpeechLabel(sense.part_of_speech)}</span>}
           {word.topic && <span> · {topicLabel(word.topic)}</span>}
           {word.ielts_category && <span> · IELTS: {word.ielts_category}</span>}
         </p>
 
-        {word.definition && (
+        {senses.length > 1 && (
+          <div className="mt-4">
+            <div className="flex flex-wrap items-center gap-3">
+              <Button variant="soft" onClick={() => setMeaningsOpen((o) => !o)}>
+                {t('dictionary.otherMeanings')} ({senses.length - 1}) {meaningsOpen ? '▴' : '▾'}
+              </Button>
+              {index > 0 && <span className="text-sm text-mute">{t('dictionary.meaningOf', { n: index + 1, total: senses.length })}</span>}
+            </div>
+            {meaningsOpen && (
+              <div className="mt-3">
+                <MeaningTabs senses={senses} value={sense.key} onChange={setMeaningKey} withTranslation={showTranslationBlock ? showT : true} />
+              </div>
+            )}
+          </div>
+        )}
+
+        {sense.definition && (
           <div className="mt-6">
             <p className="text-xs font-semibold uppercase tracking-wide text-mute">{t('dictionary.definition')}</p>
-            <p className="mt-1 text-lg">{word.definition}</p>
+            <p className="mt-1 text-lg">{sense.definition}</p>
           </div>
         )}
 
         {showTranslationBlock && (
           <div className="mt-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-mute">{t('dictionary.translation')}</p>
-            {!translation ? (
+            {!sense.translation ? (
               <p className="mt-1 text-sm text-mute">{t('dictionary.noTranslationYet')}</p>
             ) : showT ? (
-              <p className="mt-1 text-lg text-plum">{translation}</p>
+              <p className="mt-1 text-lg text-plum">{sense.translation}</p>
             ) : (
               <Button variant="soft" className="mt-1" onClick={() => setShowT(true)}>{t('dictionary.showTranslation')}</Button>
             )}
           </div>
         )}
 
-        {word.meanings?.length > 0 && (
-          <div className="mt-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-mute">{t('dictionary.otherMeanings')}</p>
-            <ul className="mt-1 list-disc space-y-1 pl-5">
-              {word.meanings.map((m, i) => (
-                <li key={i}>
-                  {m.definition}
-                  {showT && m.translation ? <span className="text-plum"> — {m.translation}</span> : null}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {examples.length > 0 && (
+        {sense.examples.length > 0 && (
           <div className="mt-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-mute">{t('dictionary.examples')}</p>
             <ul className="mt-1 space-y-2">
-              {examples.map((ex, i) => (
+              {sense.examples.map((ex, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <SpeakerButton text={ex} className="mt-0.5 h-6 w-6 shrink-0 text-xs" />
                   <span>{ex}</span>
@@ -217,7 +227,7 @@ function WordDetail({ word, onBack }: { word: Word; onBack: () => void }) {
           </div>
         )}
 
-        <AddToFlashcards word={word} />
+        <AddToFlashcards word={word} meaningKey={sense.key} />
       </div>
       <p className="mt-3 text-center text-xs text-mute/80">{t('dictionary.cefrNote')}</p>
     </section>
@@ -226,28 +236,32 @@ function WordDetail({ word, onBack }: { word: Word; onBack: () => void }) {
 
 /* ---------- add a dictionary word to one of my sets ---------- */
 
-function AddToFlashcards({ word }: { word: Word }) {
+function AddToFlashcards({ word, meaningKey }: { word: Word; meaningKey: string | null }) {
   const { t } = useTranslation()
   const { userId } = useAuth()
   const [open, setOpen] = useState(false)
   const [sets, setSets] = useState<FlashcardSet[]>([])
   const [newTitle, setNewTitle] = useState('')
   const [msg, setMsg] = useState('')
+  const [chosen, setChosen] = useState<string | null>(meaningKey)
+  const senses = api.wordSenses(word)
 
   async function openPicker() {
     if (!userId) return
     const all = await api.listSets()
     setSets(all.filter((s) => s.owner_id === userId))
+    setChosen(meaningKey) // start from the meaning on screen
+    setMsg('')
     setOpen(true)
   }
 
   async function addTo(setId: string) {
     const cards = await api.listCards(setId)
-    if (cards.some((c) => c.word_id === word.id)) {
+    if (api.hasWordCard(cards, word.id, chosen)) {
       setMsg(t('dictionary.alreadyInSet'))
       return
     }
-    await api.addWordToSet(setId, word, cards.length)
+    await api.addWordToSet(setId, word, cards.length, chosen)
     setMsg(t('dictionary.added'))
     setOpen(false)
   }
@@ -255,7 +269,7 @@ function AddToFlashcards({ word }: { word: Word }) {
   async function createAndAdd() {
     if (!userId || !newTitle.trim()) return
     const id = await api.createSet(userId, { title: newTitle.trim(), is_personal: true })
-    await api.addWordToSet(id, word, 0)
+    await api.addWordToSet(id, word, 0, chosen)
     setMsg(t('dictionary.addedToNewSet'))
     setOpen(false)
     setNewTitle('')
@@ -273,6 +287,12 @@ function AddToFlashcards({ word }: { word: Word }) {
       ) : (
         <div className="space-y-3 rounded-2xl bg-lilac/40 p-4">
           <p className="font-body font-semibold">{t('dictionary.addWordToSet', { word: word.word })}</p>
+          {senses.length > 1 && (
+            <div className="space-y-2">
+              <p className="text-sm font-semibold">{t('dictionary.chooseMeaning')}</p>
+              <MeaningTabs senses={senses} value={chosen} onChange={setChosen} />
+            </div>
+          )}
           {sets.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {sets.map((s) => (
@@ -282,6 +302,7 @@ function AddToFlashcards({ word }: { word: Word }) {
               ))}
             </div>
           )}
+          {msg && <p className="text-sm text-warn">{msg}</p>}
           <div className="flex flex-wrap items-center gap-2">
             <input value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder={t('flashcards.newSetNamePlaceholder')} className={inputCls} />
             <Button variant="soft" onClick={createAndAdd} disabled={!newTitle.trim()}>{t('flashcards.createAndAdd')}</Button>

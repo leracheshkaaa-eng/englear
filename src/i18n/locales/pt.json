@@ -269,6 +269,8 @@
     "translation": "Tradução",
     "showTranslation": "Mostrar tradução",
     "otherMeanings": "Outros significados",
+    "chooseMeaning": "Qual significado você quer adicionar?",
+    "meaningOf": "Significado {{n}} de {{total}}",
     "examples": "Exemplos",
     "related": "Palavras relacionadas",
     "cefrNote": "O nível QECR é uma referência de dificuldade, não uma regra absoluta para cada palavra.",

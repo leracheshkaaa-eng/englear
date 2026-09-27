@@ -1,7 +1,7 @@
 import i18n from '../i18n'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { speak } from './supabase'
-import { wordTranslation, type Word } from './api'
+import type { WordHint } from './api'
 
 /* ---------- buttons / inputs ---------- */
 
@@ -101,10 +101,10 @@ export function TranslatableText({
   enabled,
 }: {
   text: string
-  dict: Map<string, Word>
+  dict: Map<string, WordHint>
   enabled: boolean
 }) {
-  const [active, setActive] = useState<{ word: Word; x: number; y: number } | null>(null)
+  const [active, setActive] = useState<{ word: WordHint; x: number; y: number } | null>(null)
 
   useEffect(() => {
     if (!active) return
@@ -154,7 +154,7 @@ export function TranslatableText({
   )
 }
 
-function WordPopup({ word, x, y, onClose }: { word: Word; x: number; y: number; onClose: () => void }) {
+function WordPopup({ word, x, y, onClose }: { word: WordHint; x: number; y: number; onClose: () => void }) {
   const ref = useRef<HTMLDivElement>(null)
   const [pos, setPos] = useState({ left: x, top: y, placement: 'top' as 'top' | 'bottom' })
 
@@ -192,7 +192,7 @@ function WordPopup({ word, x, y, onClose }: { word: Word; x: number; y: number; 
         <span className="font-display text-base font-semibold text-ink">{word.word}</span>
         <SpeakerButton text={word.word} className="h-6 w-6 text-xs" />
       </div>
-      <p className="font-body text-sm text-plum">{wordTranslation(word) || word.definition || '—'}</p>
+      <p className="font-body text-sm text-plum">{word.translation || word.definition || '—'}</p>
       {word.example && <p className="mt-1 font-body text-xs text-mute">{word.example}</p>}
     </div>
   )

@@ -269,6 +269,8 @@
     "translation": "Traduction",
     "showTranslation": "Afficher la traduction",
     "otherMeanings": "Autres sens",
+    "chooseMeaning": "Quel sens veux-tu ajouter ?",
+    "meaningOf": "Sens {{n}} sur {{total}}",
     "examples": "Exemples",
     "related": "Mots liés",
     "cefrNote": "Le niveau CECRL est un repère de difficulté, pas une règle absolue pour chaque mot.",

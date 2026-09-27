@@ -111,7 +111,7 @@ function AudioPrewarm() {
     setMsg('')
     try {
       const words = await api.listWords()
-      const texts = words.flatMap((w) => [w.word, ...(w.examples?.length ? w.examples : w.example ? [w.example] : [])])
+      const texts = words.flatMap((w) => [w.word, ...api.wordSenses(w).flatMap((s) => s.examples)])
       const res = await prewarmSpeech(texts, (done, total) => setProgress({ done, total }))
       setMsg(res.notConfigured ? t('admin.prewarmNotConfigured') : t('admin.prewarmDone', { ready: res.ready, total: res.total, failed: res.failed }))
     } catch (e) {

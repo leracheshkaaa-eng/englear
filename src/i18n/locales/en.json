@@ -269,6 +269,8 @@
     "translation": "Translation",
     "showTranslation": "Show translation",
     "otherMeanings": "Other meanings",
+    "chooseMeaning": "Which meaning do you want to add?",
+    "meaningOf": "Meaning {{n}} of {{total}}",
     "examples": "Examples",
     "related": "Related",
     "cefrNote": "The CEFR level is a learning-difficulty guide, not an absolute rule for every word.",

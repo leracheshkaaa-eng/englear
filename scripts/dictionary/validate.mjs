@@ -63,6 +63,26 @@ for (const file of files) {
     }
     for (const lang of Object.keys(tr)) if (!LANGS.includes(lang)) err(label, `unknown translation language "${lang}"`)
 
+    // extra meanings: same requirements as the main one, identified by a stable key
+    if (w.meanings !== undefined) {
+      if (!Array.isArray(w.meanings)) err(label, 'meanings must be an array')
+      else {
+        const keys = new Set()
+        for (const m of w.meanings) {
+          const ml = `${label} [meaning ${m?.key ?? '?'}]`
+          if (typeof m?.key !== 'string' || !/^[a-z0-9][a-z0-9_-]{0,31}$/.test(m.key)) err(ml, 'key must be lowercase letters/digits/-/_ (max 32)')
+          else if (keys.has(m.key)) err(ml, 'duplicate key')
+          else keys.add(m.key)
+          if (!m?.part_of_speech) err(ml, 'missing part_of_speech')
+          if (m?.cefr != null && !CEFR.includes(m.cefr)) err(ml, `cefr must be one of ${CEFR.join(', ')}`)
+          if (!m?.definition?.trim()) err(ml, 'missing definition')
+          if (!Array.isArray(m?.examples) || !m.examples.length || m.examples.some((e) => typeof e !== 'string' || !e.trim())) err(ml, 'examples must be a non-empty array of sentences')
+          for (const lang of LANGS) if (typeof m?.translations?.[lang] !== 'string' || !m.translations[lang].trim()) err(ml, `missing translation "${lang}"`)
+          for (const lang of Object.keys(m?.translations ?? {})) if (!LANGS.includes(lang)) err(ml, `unknown translation language "${lang}"`)
+        }
+      }
+    }
+
     if (pkg.kind !== 'words') continue
     if (!w.part_of_speech) err(label, 'missing part_of_speech')
     if (!CEFR.includes(w.cefr)) err(label, `cefr must be one of ${CEFR.join(', ')}`)

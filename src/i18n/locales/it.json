@@ -269,6 +269,8 @@
     "translation": "Traduzione",
     "showTranslation": "Mostra traduzione",
     "otherMeanings": "Altri significati",
+    "chooseMeaning": "Quale significato vuoi aggiungere?",
+    "meaningOf": "Significato {{n}} di {{total}}",
     "examples": "Esempi",
     "related": "Parole correlate",
     "cefrNote": "Il livello QCER è un'indicazione della difficoltà, non una regola assoluta per ogni parola.",

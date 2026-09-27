@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Badge, Button, SpeakerButton, inputCls } from '../lib/ui'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
+import { MeaningTabs } from './meanings'
 import type { Flashcard, FlashcardSet, SetProgress, SetRef, Word, WordType } from '../lib/api'
 import { CEFR_LEVELS, IELTS_CATEGORIES, SET_SIZES, TOPICS, ieltsLabel, topicLabel } from '../lib/config'
 import i18n, { translationLanguage } from '../i18n'
@@ -310,9 +311,9 @@ async function loadSetItems(setId: string): Promise<StudyItem[]> {
   return cards.map((c: Flashcard) => {
     const base: StudyItem = { id: c.id, front: c.front, back: c.back, example: c.example }
     const w = c.word_id ? byId.get(c.word_id) : undefined
-    return w
-      ? { ...base, pronunciation: w.pronunciation, definition: w.definition, cefr: w.cefr_level, example: base.example || w.examples?.[0] || w.example }
-      : base
+    if (!w) return base
+    const sense = api.wordSense(w, c.meaning_key) // the meaning the card was made from
+    return { ...base, pronunciation: w.pronunciation, definition: sense.definition, cefr: sense.cefr || w.cefr_level, example: base.example || sense.examples[0] }
   })
 }
 
@@ -723,7 +724,7 @@ function PracticePlayer({
   const [i, setI] = useState(0)
   const [answers, setAnswers] = useState<Record<number, A>>({})
   const [busy, setBusy] = useState(false)
-  const dict = useMemo(() => new Map<string, Word>(), [])
+  const dict = useMemo(() => new Map<string, api.WordHint>(), [])
 
   if (!exercises.length) {
     return (
@@ -853,6 +854,7 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
   const { userId } = useAuth()
   const [term, setTerm] = useState('')
   const [found, setFound] = useState<Word | 'none' | null>(null)
+  const [meaning, setMeaning] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const [newTitle, setNewTitle] = useState('')
   const [msg, setMsg] = useState('')
@@ -862,14 +864,15 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
     setBusy(true)
     setMsg('')
     setFound(await api.findWordByText(term).then((w) => w ?? 'none'))
+    setMeaning(null)
     setBusy(false)
   }
 
   async function addTo(setId: string) {
     if (!found || found === 'none') return
     const cards = await api.listCards(setId)
-    if (cards.some((c) => c.word_id === found.id)) { setMsg(t('dictionary.alreadyInSet')); return }
-    await api.addWordToSet(setId, found, cards.length)
+    if (api.hasWordCard(cards, found.id, meaning)) { setMsg(t('dictionary.alreadyInSet')); return }
+    await api.addWordToSet(setId, found, cards.length, meaning)
     setMsg(t('flashcards.addedWord', { word: found.word }))
     setFound(null); setTerm(''); onChanged()
   }
@@ -877,7 +880,7 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
   async function createAndAdd() {
     if (!userId || !newTitle.trim() || !found || found === 'none') return
     const id = await api.createSet(userId, { title: newTitle.trim(), is_personal: true })
-    await api.addWordToSet(id, found, 0)
+    await api.addWordToSet(id, found, 0, meaning)
     setMsg(t('flashcards.addedToSet', { title: newTitle.trim() }))
     setNewTitle(''); setFound(null); setTerm(''); onChanged()
   }
@@ -907,10 +910,16 @@ function QuickCreate({ ownSets, onChanged }: { ownSets: FlashcardSet[]; onChange
         <div className="mt-3 space-y-3 rounded-2xl bg-lilac/40 p-4">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-display text-xl font-semibold">{found.word}</span>
-            {found.cefr_level && <Badge>{found.cefr_level}</Badge>}
+            {api.wordSense(found, meaning).cefr && <Badge>{api.wordSense(found, meaning).cefr}</Badge>}
             <SpeakerButton text={found.word} className="h-7 w-7 text-sm" />
-            <span className="text-plum">{api.wordTranslation(found) || found.definition}</span>
+            <span className="text-plum">{api.wordSense(found, meaning).translation || api.wordSense(found, meaning).definition}</span>
           </div>
+          {api.wordSenses(found).length > 1 && (
+            <div className="space-y-2">
+              <p className="text-sm font-semibold">{t('dictionary.chooseMeaning')}</p>
+              <MeaningTabs senses={api.wordSenses(found)} value={meaning} onChange={setMeaning} />
+            </div>
+          )}
           <p className="text-sm font-semibold">{t('flashcards.addToSet')}</p>
           {ownSets.length > 0 && (
             <div className="flex flex-wrap gap-2">

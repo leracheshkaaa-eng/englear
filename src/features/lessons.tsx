@@ -15,7 +15,7 @@ import {
 } from '../lib/exercises'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
-import type { Lesson, LessonPass, PassSummary, SavedAnswer, Word } from '../lib/api'
+import type { Lesson, LessonPass, PassSummary, SavedAnswer, WordHint } from '../lib/api'
 import { lessonLevelLabel } from '../lib/config'
 
 function Verdict({ correct, explanation, answer }: { correct: boolean; explanation: string; answer?: string }) {
@@ -57,7 +57,7 @@ export function ExerciseView({
   onCheck,
 }: {
   ex: Exercise
-  dict: Map<string, Word>
+  dict: Map<string, WordHint>
   translations: boolean
   initial?: { response: Response; checked: boolean; correct: boolean }
   onChange?: (r: Response) => void
@@ -249,7 +249,7 @@ export function LessonPlayer({
   onDone,
 }: {
   lesson: Lesson
-  dict: Map<string, Word>
+  dict: Map<string, WordHint>
   onDone: () => void
 }) {
   const { t } = useTranslation()
