@@ -954,6 +954,42 @@ export const hasWordCard = (cards: Flashcard[], wordId: string, meaningKey: stri
 
 /** Add one meaning of a dictionary word to one of the user's own sets.
  *  The back of the card is that meaning's translation in the student's language (or its definition). */
+/* ---------- "My words": the personal set filled from lesson hints ---------- */
+
+/** Marks the auto-created "My words" set (its title is in the user's language). */
+export const MY_WORDS_MARK = '#my-words'
+
+async function myWordsSetId(ownerId: string): Promise<string | null> {
+  const { data } = await supabase
+    .from('flashcard_sets')
+    .select('id')
+    .eq('owner_id', ownerId)
+    .eq('description', MY_WORDS_MARK)
+    .order('created_at')
+    .limit(1)
+  return data?.[0]?.id ?? null
+}
+
+/** Is this word (main meaning) already in the "My words" set? */
+export async function inMyWords(ownerId: string, wordId: string): Promise<boolean> {
+  const setId = await myWordsSetId(ownerId)
+  if (!setId) return false
+  const { count } = await supabase.from('flashcards').select('id', { count: 'exact', head: true }).eq('set_id', setId).eq('word_id', wordId)
+  return (count ?? 0) > 0
+}
+
+/** Adds a word (main meaning) to "My words"; creates the set on first use. */
+export async function addToMyWords(ownerId: string, wordId: string, setTitle: string): Promise<'added' | 'exists'> {
+  const [word] = await wordsByIds([wordId])
+  if (!word) throw new Error('word not found')
+  let setId = await myWordsSetId(ownerId)
+  if (!setId) setId = await createSet(ownerId, { title: setTitle, description: MY_WORDS_MARK, is_personal: true })
+  const cards = await listCards(setId)
+  if (hasWordCard(cards, wordId, null)) return 'exists'
+  await addWordToSet(setId, word, cards.length, null)
+  return 'added'
+}
+
 export async function addWordToSet(setId: string, w: Word, position: number, meaningKey: string | null = null) {
   const sense = wordSense(w, meaningKey)
   const { error } = await supabase.from('flashcards').insert({

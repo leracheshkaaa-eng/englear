@@ -1,7 +1,9 @@
 import i18n from '../i18n'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { speak } from './supabase'
+import * as api from './api'
 import type { WordHint } from './api'
+import { useAuth } from './auth'
 
 /* ---------- buttons / inputs ---------- */
 
@@ -105,6 +107,14 @@ export function TranslatableText({
   enabled: boolean
 }) {
   const [active, setActive] = useState<{ word: WordHint; x: number; y: number } | null>(null)
+  // leaving the word closes the popup after a short delay, so the mouse can reach it
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const keepOpen = () => clearTimeout(closeTimer.current)
+  const closeSoon = (id?: string) => {
+    clearTimeout(closeTimer.current)
+    closeTimer.current = setTimeout(() => setActive((a) => (!id || a?.word.id === id ? null : a)), 250)
+  }
+  useEffect(() => () => clearTimeout(closeTimer.current), [])
 
   useEffect(() => {
     if (!active) return
@@ -128,6 +138,7 @@ export function TranslatableText({
         const word = key ? dict.get(key) : undefined
         if (!word) return <span key={i}>{tok}</span>
         const show = (e: React.MouseEvent | React.FocusEvent) => {
+          keepOpen()
           const r = (e.currentTarget as HTMLElement).getBoundingClientRect()
           setActive({ word, x: r.left + r.width / 2, y: r.top })
         }
@@ -136,9 +147,12 @@ export function TranslatableText({
             key={i}
             tabIndex={0}
             onMouseEnter={show}
-            onMouseLeave={() => setActive((a) => (a?.word.id === word.id ? null : a))}
+            onMouseLeave={() => closeSoon(word.id)}
             onFocus={show}
-            onBlur={() => setActive(null)}
+            onBlur={(e) => {
+              // keep it open when focus moves into the popup (its button)
+              if (!(e.relatedTarget as HTMLElement | null)?.closest('[data-word-popup]')) setActive(null)
+            }}
             onClick={(e) => {
               e.stopPropagation()
               show(e)
@@ -149,12 +163,28 @@ export function TranslatableText({
           </span>
         )
       })}
-      {active && <WordPopup word={active.word} x={active.x} y={active.y} onClose={() => setActive(null)} />}
+      {active && (
+        <WordPopup word={active.word} x={active.x} y={active.y} onClose={() => setActive(null)} onEnter={keepOpen} onLeave={() => closeSoon()} />
+      )}
     </>
   )
 }
 
-function WordPopup({ word, x, y, onClose }: { word: WordHint; x: number; y: number; onClose: () => void }) {
+function WordPopup({
+  word,
+  x,
+  y,
+  onClose,
+  onEnter,
+  onLeave,
+}: {
+  word: WordHint
+  x: number
+  y: number
+  onClose: () => void
+  onEnter: () => void
+  onLeave: () => void
+}) {
   const ref = useRef<HTMLDivElement>(null)
   const [pos, setPos] = useState({ left: x, top: y, placement: 'top' as 'top' | 'bottom' })
 
@@ -184,7 +214,10 @@ function WordPopup({ word, x, y, onClose }: { word: WordHint; x: number; y: numb
   return (
     <div
       ref={ref}
+      data-word-popup
       onClick={(e) => e.stopPropagation()}
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
       style={{ position: 'fixed', left: pos.left, top: pos.top, zIndex: 50 }}
       className="pointer-events-auto max-w-[240px] rounded-xl border border-line bg-paper px-3 py-2 shadow-[0_12px_30px_-14px_rgba(60,42,112,0.6)]"
     >
@@ -194,6 +227,46 @@ function WordPopup({ word, x, y, onClose }: { word: WordHint; x: number; y: numb
       </div>
       <p className="font-body text-sm text-plum">{word.translation || word.definition || '—'}</p>
       {word.example && <p className="mt-1 font-body text-xs text-mute">{word.example}</p>}
+      <MyWordsButton wordId={word.id} />
     </div>
+  )
+}
+
+/** Small "add to my cards" button: puts the word into the personal "My words" set. */
+function MyWordsButton({ wordId }: { wordId: string }) {
+  const { userId } = useAuth()
+  const [state, setState] = useState<'unknown' | 'no' | 'saving' | 'yes'>('unknown')
+
+  useEffect(() => {
+    if (!userId) return
+    let cancelled = false
+    setState('unknown')
+    api.inMyWords(userId, wordId).then((yes) => { if (!cancelled) setState(yes ? 'yes' : 'no') }).catch(() => { if (!cancelled) setState('no') })
+    return () => { cancelled = true }
+  }, [userId, wordId])
+
+  if (!userId) return null
+  const t = i18n.t.bind(i18n)
+  async function add() {
+    if (!userId || state !== 'no') return
+    setState('saving')
+    try {
+      await api.addToMyWords(userId, wordId, t('flashcards.myWordsSet'))
+      setState('yes')
+    } catch {
+      setState('no')
+    }
+  }
+  const done = state === 'yes'
+  return (
+    <button
+      onClick={add}
+      disabled={state !== 'no'}
+      className={`mt-2 inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 font-body text-xs font-semibold transition-colors ${
+        done ? 'border-transparent bg-[rgba(63,143,107,.12)] text-[var(--color-good)]' : 'border-line text-plum hover:border-lavender hover:bg-lilac/50 disabled:opacity-50'
+      }`}
+    >
+      {done ? `✓ ${t('flashcards.inMyCards')}` : `+ ${t('flashcards.addToMyCards')}`}
+    </button>
   )
 }

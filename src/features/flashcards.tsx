@@ -966,7 +966,7 @@ function SetGroup({
           <div key={s.id} className="flex items-center justify-between rounded-2xl border border-line bg-paper p-4">
             <button onClick={() => onOpen(s)} className="text-left">
               <p className="font-display text-lg font-semibold">{s.title}</p>
-              <p className="text-sm text-mute">{s.description || (s.is_personal ? t('flashcards.personalSet') : t('flashcards.teacherSet'))}</p>
+              <p className="text-sm text-mute">{(s.description !== api.MY_WORDS_MARK && s.description) || (s.is_personal ? t('flashcards.personalSet') : t('flashcards.teacherSet'))}</p>
               {progress[s.id] && (
                 <p className="text-xs font-semibold text-plum">
                   {progress[s.id].known_count}/{progress[s.id].total_count} · {t(`sets.status.${progress[s.id].status}`)}
