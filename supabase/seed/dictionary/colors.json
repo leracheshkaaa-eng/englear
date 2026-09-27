@@ -1,0 +1,450 @@
+{
+  "package": "colors",
+  "kind": "words",
+  "words": [
+    {
+      "word": "color",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/ˈkʌlɚ/",
+      "definition": "Red, blue, green and other things that we see.",
+      "examples": [
+        "What color is your car?"
+      ],
+      "translations": {
+        "uk": "колір",
+        "de": "Farbe",
+        "fr": "couleur",
+        "es": "color",
+        "it": "colore",
+        "pt": "cor",
+        "pl": "kolor",
+        "ru": "цвет",
+        "zh": "颜色",
+        "ja": "色"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "red",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/red/",
+      "definition": "Having the color of blood.",
+      "examples": [
+        "She wore a red dress."
+      ],
+      "translations": {
+        "uk": "червоний",
+        "de": "rot",
+        "fr": "rouge",
+        "es": "rojo",
+        "it": "rosso",
+        "pt": "vermelho",
+        "pl": "czerwony",
+        "ru": "красный",
+        "zh": "红色的",
+        "ja": "赤い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "blue",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/bluː/",
+      "definition": "Having the color of the sky on a clear day.",
+      "examples": [
+        "The sky is blue."
+      ],
+      "translations": {
+        "uk": "синій, блакитний",
+        "de": "blau",
+        "fr": "bleu",
+        "es": "azul",
+        "it": "blu",
+        "pt": "azul",
+        "pl": "niebieski",
+        "ru": "синий, голубой",
+        "zh": "蓝色的",
+        "ja": "青い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "green",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/ɡriːn/",
+      "definition": "Having the color of grass.",
+      "examples": [
+        "The leaves are green in spring."
+      ],
+      "translations": {
+        "uk": "зелений",
+        "de": "grün",
+        "fr": "vert",
+        "es": "verde",
+        "it": "verde",
+        "pt": "verde",
+        "pl": "zielony",
+        "ru": "зелёный",
+        "zh": "绿色的",
+        "ja": "緑の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yellow",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/ˈjeloʊ/",
+      "definition": "Having the color of a lemon.",
+      "examples": [
+        "A banana is yellow."
+      ],
+      "translations": {
+        "uk": "жовтий",
+        "de": "gelb",
+        "fr": "jaune",
+        "es": "amarillo",
+        "it": "giallo",
+        "pt": "amarelo",
+        "pl": "żółty",
+        "ru": "жёлтый",
+        "zh": "黄色的",
+        "ja": "黄色い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "black",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/blæk/",
+      "definition": "Having the darkest color, like the night.",
+      "examples": [
+        "He has a black cat."
+      ],
+      "translations": {
+        "uk": "чорний",
+        "de": "schwarz",
+        "fr": "noir",
+        "es": "negro",
+        "it": "nero",
+        "pt": "preto",
+        "pl": "czarny",
+        "ru": "чёрный",
+        "zh": "黑色的",
+        "ja": "黒い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "white",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/waɪt/",
+      "definition": "Having the color of snow.",
+      "examples": [
+        "The walls are white."
+      ],
+      "translations": {
+        "uk": "білий",
+        "de": "weiß",
+        "fr": "blanc",
+        "es": "blanco",
+        "it": "bianco",
+        "pt": "branco",
+        "pl": "biały",
+        "ru": "белый",
+        "zh": "白色的",
+        "ja": "白い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "brown",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/braʊn/",
+      "definition": "Having the color of wood or chocolate.",
+      "examples": [
+        "She has brown eyes."
+      ],
+      "translations": {
+        "uk": "коричневий",
+        "de": "braun",
+        "fr": "marron",
+        "es": "marrón",
+        "it": "marrone",
+        "pt": "marrom",
+        "pl": "brązowy",
+        "ru": "коричневый",
+        "zh": "棕色的",
+        "ja": "茶色の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "gray",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/ɡreɪ/",
+      "definition": "Having a color between black and white.",
+      "examples": [
+        "The sky is gray today."
+      ],
+      "translations": {
+        "uk": "сірий",
+        "de": "grau",
+        "fr": "gris",
+        "es": "gris",
+        "it": "grigio",
+        "pt": "cinza",
+        "pl": "szary",
+        "ru": "серый",
+        "zh": "灰色的",
+        "ja": "灰色の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pink",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/pɪŋk/",
+      "definition": "Having a pale red color.",
+      "examples": [
+        "She painted her room pink."
+      ],
+      "translations": {
+        "uk": "рожевий",
+        "de": "rosa",
+        "fr": "rose",
+        "es": "rosa",
+        "it": "rosa",
+        "pt": "rosa",
+        "pl": "różowy",
+        "ru": "розовый",
+        "zh": "粉红色的",
+        "ja": "ピンクの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "purple",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/ˈpɝːpəl/",
+      "definition": "Having a color made by mixing red and blue.",
+      "examples": [
+        "Grapes can be purple or green."
+      ],
+      "translations": {
+        "uk": "фіолетовий",
+        "de": "lila",
+        "fr": "violet",
+        "es": "morado",
+        "it": "viola",
+        "pt": "roxo",
+        "pl": "fioletowy",
+        "ru": "фиолетовый",
+        "zh": "紫色的",
+        "ja": "紫の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dark",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Colors",
+      "ipa": "/dɑːrk/",
+      "definition": "With little or no light; deep in color.",
+      "examples": [
+        "It gets dark early in winter."
+      ],
+      "translations": {
+        "uk": "темний",
+        "de": "dunkel",
+        "fr": "sombre",
+        "es": "oscuro",
+        "it": "scuro",
+        "pt": "escuro",
+        "pl": "ciemny",
+        "ru": "тёмный",
+        "zh": "黑暗的",
+        "ja": "暗い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "light",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Colors",
+      "ipa": "/laɪt/",
+      "definition": "Pale in color, not dark.",
+      "examples": [
+        "She's wearing a light blue shirt."
+      ],
+      "translations": {
+        "uk": "світлий",
+        "de": "hell",
+        "fr": "clair",
+        "es": "claro",
+        "it": "chiaro",
+        "pt": "claro",
+        "pl": "jasny",
+        "ru": "светлый",
+        "zh": "浅色的",
+        "ja": "明るい"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "The brightness from the sun or a lamp.",
+          "examples": [
+            "Turn on the light, please."
+          ],
+          "translations": {
+            "uk": "світло",
+            "de": "Licht",
+            "fr": "lumière",
+            "es": "luz",
+            "it": "luce",
+            "pt": "luz",
+            "pl": "światło",
+            "ru": "свет",
+            "zh": "光",
+            "ja": "光"
+          }
+        },
+        {
+          "key": "weight",
+          "part_of_speech": "adjective",
+          "cefr": "A2",
+          "definition": "Not heavy.",
+          "examples": [
+            "This bag is very light."
+          ],
+          "translations": {
+            "uk": "легкий",
+            "de": "leicht",
+            "fr": "léger",
+            "es": "ligero",
+            "it": "leggero",
+            "pt": "leve",
+            "pl": "lekki",
+            "ru": "лёгкий",
+            "zh": "轻的",
+            "ja": "軽い"
+          }
+        }
+      ]
+    },
+    {
+      "word": "colorful",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Colors",
+      "ipa": "/ˈkʌlɚfəl/",
+      "definition": "Having many bright colors.",
+      "examples": [
+        "The market is full of colorful fruit."
+      ],
+      "translations": {
+        "uk": "барвистий",
+        "de": "bunt",
+        "fr": "coloré",
+        "es": "colorido",
+        "it": "colorato",
+        "pt": "colorido",
+        "pl": "kolorowy",
+        "ru": "красочный",
+        "zh": "多彩的",
+        "ja": "カラフルな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "gold",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Colors",
+      "ipa": "/ɡoʊld/",
+      "definition": "A yellow precious metal.",
+      "examples": [
+        "Her ring is made of gold."
+      ],
+      "translations": {
+        "uk": "золото",
+        "de": "Gold",
+        "fr": "or",
+        "es": "oro",
+        "it": "oro",
+        "pt": "ouro",
+        "pl": "złoto",
+        "ru": "золото",
+        "zh": "金",
+        "ja": "金"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "silver",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Colors",
+      "ipa": "/ˈsɪlvɚ/",
+      "definition": "A shiny gray precious metal.",
+      "examples": [
+        "This spoon is made of silver."
+      ],
+      "translations": {
+        "uk": "срібло",
+        "de": "Silber",
+        "fr": "argent",
+        "es": "plata",
+        "it": "argento",
+        "pt": "prata",
+        "pl": "srebro",
+        "ru": "серебро",
+        "zh": "银",
+        "ja": "銀"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

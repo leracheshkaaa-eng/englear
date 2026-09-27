@@ -405,6 +405,10 @@
     "verb": "дієслово",
     "adjective": "прикметник",
     "adverb": "прислівник",
+    "number": "числівник",
+    "preposition": "прийменник",
+    "pronoun": "займенник",
+    "conjunction": "сполучник",
     "phrasal verb": "фразове дієслово",
     "collocation": "колокація"
   },
@@ -416,6 +420,9 @@
   },
   "topics": {
     "Daily Life": "Повсякденне життя",
+    "Basic Words": "Базові слова",
+    "Numbers": "Числа",
+    "Colors": "Кольори",
     "Home": "Дім",
     "People": "Люди",
     "Family": "Родина",

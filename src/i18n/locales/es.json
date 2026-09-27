@@ -393,6 +393,10 @@
     "verb": "verbo",
     "adjective": "adjetivo",
     "adverb": "adverbio",
+    "number": "numeral",
+    "preposition": "preposición",
+    "pronoun": "pronombre",
+    "conjunction": "conjunción",
     "phrasal verb": "phrasal verb",
     "collocation": "colocación"
   },
@@ -404,6 +408,9 @@
   },
   "topics": {
     "Daily Life": "Vida diaria",
+    "Basic Words": "Palabras básicas",
+    "Numbers": "Números",
+    "Colors": "Colores",
     "Home": "Hogar",
     "People": "Personas",
     "Family": "Familia",

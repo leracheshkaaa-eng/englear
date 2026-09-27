@@ -387,6 +387,10 @@
     "verb": "動詞",
     "adjective": "形容詞",
     "adverb": "副詞",
+    "number": "数詞",
+    "preposition": "前置詞",
+    "pronoun": "代名詞",
+    "conjunction": "接続詞",
     "phrasal verb": "句動詞",
     "collocation": "コロケーション"
   },
@@ -398,6 +402,9 @@
   },
   "topics": {
     "Daily Life": "日常生活",
+    "Basic Words": "基本語",
+    "Numbers": "数",
+    "Colors": "色",
     "Home": "家",
     "People": "人",
     "Family": "家族",

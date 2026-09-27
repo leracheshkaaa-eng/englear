@@ -1,0 +1,954 @@
+{
+  "package": "basic-adjectives",
+  "kind": "words",
+  "words": [
+    {
+      "word": "big",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/bɪɡ/",
+      "definition": "Large in size.",
+      "examples": [
+        "They live in a big house."
+      ],
+      "translations": {
+        "uk": "великий",
+        "de": "groß",
+        "fr": "grand",
+        "es": "grande",
+        "it": "grande",
+        "pt": "grande",
+        "pl": "duży",
+        "ru": "большой",
+        "zh": "大的",
+        "ja": "大きい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "small",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/smɔːl/",
+      "definition": "Little in size.",
+      "examples": [
+        "I have a small dog."
+      ],
+      "translations": {
+        "uk": "маленький",
+        "de": "klein",
+        "fr": "petit",
+        "es": "pequeño",
+        "it": "piccolo",
+        "pt": "pequeno",
+        "pl": "mały",
+        "ru": "маленький",
+        "zh": "小的",
+        "ja": "小さい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "good",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɡʊd/",
+      "definition": "Of high quality; nice.",
+      "examples": [
+        "This is a good book."
+      ],
+      "translations": {
+        "uk": "добрий, хороший",
+        "de": "gut",
+        "fr": "bon",
+        "es": "bueno",
+        "it": "buono",
+        "pt": "bom",
+        "pl": "dobry",
+        "ru": "хороший",
+        "zh": "好的",
+        "ja": "良い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bad",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/bæd/",
+      "definition": "Not good.",
+      "examples": [
+        "The weather is bad today."
+      ],
+      "translations": {
+        "uk": "поганий",
+        "de": "schlecht",
+        "fr": "mauvais",
+        "es": "malo",
+        "it": "cattivo",
+        "pt": "ruim",
+        "pl": "zły",
+        "ru": "плохой",
+        "zh": "坏的",
+        "ja": "悪い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "new",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/nuː/",
+      "definition": "Not old; recently made or bought.",
+      "examples": [
+        "I have a new phone."
+      ],
+      "translations": {
+        "uk": "новий",
+        "de": "neu",
+        "fr": "nouveau",
+        "es": "nuevo",
+        "it": "nuovo",
+        "pt": "novo",
+        "pl": "nowy",
+        "ru": "новый",
+        "zh": "新的",
+        "ja": "新しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "long",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/lɔːŋ/",
+      "definition": "Measuring a lot from one end to the other.",
+      "examples": [
+        "She has long hair."
+      ],
+      "translations": {
+        "uk": "довгий",
+        "de": "lang",
+        "fr": "long",
+        "es": "largo",
+        "it": "lungo",
+        "pt": "longo",
+        "pl": "długi",
+        "ru": "длинный",
+        "zh": "长的",
+        "ja": "長い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "easy",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈiːzi/",
+      "definition": "Not difficult.",
+      "examples": [
+        "The test was easy."
+      ],
+      "translations": {
+        "uk": "легкий",
+        "de": "leicht",
+        "fr": "facile",
+        "es": "fácil",
+        "it": "facile",
+        "pt": "fácil",
+        "pl": "łatwy",
+        "ru": "лёгкий",
+        "zh": "容易的",
+        "ja": "簡単な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "difficult",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈdɪfɪkəlt/",
+      "definition": "Not easy.",
+      "examples": [
+        "This question is difficult."
+      ],
+      "translations": {
+        "uk": "складний",
+        "de": "schwierig",
+        "fr": "difficile",
+        "es": "difícil",
+        "it": "difficile",
+        "pt": "difícil",
+        "pl": "trudny",
+        "ru": "трудный",
+        "zh": "难的",
+        "ja": "難しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "important",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɪmˈpɔːrtənt/",
+      "definition": "Having great value or effect.",
+      "examples": [
+        "It's important to drink water."
+      ],
+      "translations": {
+        "uk": "важливий",
+        "de": "wichtig",
+        "fr": "important",
+        "es": "importante",
+        "it": "importante",
+        "pt": "importante",
+        "pl": "ważny",
+        "ru": "важный",
+        "zh": "重要的",
+        "ja": "大切な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "different",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈdɪfərənt/",
+      "definition": "Not the same.",
+      "examples": [
+        "My sister and I are very different."
+      ],
+      "translations": {
+        "uk": "різний, інший",
+        "de": "verschieden",
+        "fr": "différent",
+        "es": "diferente",
+        "it": "diverso",
+        "pt": "diferente",
+        "pl": "różny",
+        "ru": "разный, другой",
+        "zh": "不同的",
+        "ja": "違う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "same",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/seɪm/",
+      "definition": "Exactly like another.",
+      "examples": [
+        "We go to the same school."
+      ],
+      "translations": {
+        "uk": "той самий",
+        "de": "gleich",
+        "fr": "même",
+        "es": "mismo",
+        "it": "stesso",
+        "pt": "mesmo",
+        "pl": "taki sam",
+        "ru": "тот же, одинаковый",
+        "zh": "相同的",
+        "ja": "同じ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "right",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/raɪt/",
+      "definition": "Correct.",
+      "examples": [
+        "That's the right answer."
+      ],
+      "translations": {
+        "uk": "правильний",
+        "de": "richtig",
+        "fr": "correct",
+        "es": "correcto",
+        "it": "giusto",
+        "pt": "certo",
+        "pl": "poprawny",
+        "ru": "правильный",
+        "zh": "正确的",
+        "ja": "正しい"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "side",
+          "part_of_speech": "adjective",
+          "cefr": "A1",
+          "definition": "On the side of the body that most people write with.",
+          "examples": [
+            "Raise your right hand."
+          ],
+          "translations": {
+            "uk": "правий",
+            "de": "rechte",
+            "fr": "droit",
+            "es": "derecho",
+            "it": "destro",
+            "pt": "direito",
+            "pl": "prawy",
+            "ru": "правый",
+            "zh": "右边的",
+            "ja": "右の"
+          }
+        }
+      ]
+    },
+    {
+      "word": "wrong",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/rɔːŋ/",
+      "definition": "Not correct.",
+      "examples": [
+        "Sorry, wrong number."
+      ],
+      "translations": {
+        "uk": "неправильний",
+        "de": "falsch",
+        "fr": "faux",
+        "es": "incorrecto",
+        "it": "sbagliato",
+        "pt": "errado",
+        "pl": "błędny",
+        "ru": "неправильный",
+        "zh": "错误的",
+        "ja": "間違った"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "full",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/fʊl/",
+      "definition": "Containing as much as possible.",
+      "examples": [
+        "The bus is full."
+      ],
+      "translations": {
+        "uk": "повний",
+        "de": "voll",
+        "fr": "plein",
+        "es": "lleno",
+        "it": "pieno",
+        "pt": "cheio",
+        "pl": "pełny",
+        "ru": "полный",
+        "zh": "满的",
+        "ja": "いっぱいの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "empty",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈempti/",
+      "definition": "Containing nothing.",
+      "examples": [
+        "The fridge is empty."
+      ],
+      "translations": {
+        "uk": "порожній",
+        "de": "leer",
+        "fr": "vide",
+        "es": "vacío",
+        "it": "vuoto",
+        "pt": "vazio",
+        "pl": "pusty",
+        "ru": "пустой",
+        "zh": "空的",
+        "ja": "空の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dirty",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈdɝːti/",
+      "definition": "Not clean.",
+      "examples": [
+        "Your shoes are dirty."
+      ],
+      "translations": {
+        "uk": "брудний",
+        "de": "schmutzig",
+        "fr": "sale",
+        "es": "sucio",
+        "it": "sporco",
+        "pt": "sujo",
+        "pl": "brudny",
+        "ru": "грязный",
+        "zh": "脏的",
+        "ja": "汚い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "heavy",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈhevi/",
+      "definition": "Weighing a lot.",
+      "examples": [
+        "This box is very heavy."
+      ],
+      "translations": {
+        "uk": "важкий",
+        "de": "schwer",
+        "fr": "lourd",
+        "es": "pesado",
+        "it": "pesante",
+        "pt": "pesado",
+        "pl": "ciężki",
+        "ru": "тяжёлый",
+        "zh": "重的",
+        "ja": "重い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nice",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/naɪs/",
+      "definition": "Pleasant or kind.",
+      "examples": [
+        "Have a nice day!"
+      ],
+      "translations": {
+        "uk": "приємний, гарний",
+        "de": "nett, schön",
+        "fr": "agréable",
+        "es": "agradable",
+        "it": "piacevole",
+        "pt": "agradável",
+        "pl": "miły",
+        "ru": "приятный, милый",
+        "zh": "好的",
+        "ja": "すてきな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "great",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɡreɪt/",
+      "definition": "Very good.",
+      "examples": [
+        "We had a great time."
+      ],
+      "translations": {
+        "uk": "чудовий",
+        "de": "toll",
+        "fr": "génial",
+        "es": "genial",
+        "it": "fantastico",
+        "pt": "ótimo",
+        "pl": "świetny",
+        "ru": "отличный",
+        "zh": "很棒的",
+        "ja": "すばらしい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "favorite",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈfeɪvərɪt/",
+      "definition": "Liked more than others.",
+      "examples": [
+        "What's your favorite color?"
+      ],
+      "translations": {
+        "uk": "улюблений",
+        "de": "Lieblings-",
+        "fr": "préféré",
+        "es": "favorito",
+        "it": "preferito",
+        "pt": "favorito",
+        "pl": "ulubiony",
+        "ru": "любимый",
+        "zh": "最喜欢的",
+        "ja": "お気に入りの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ready",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈredi/",
+      "definition": "Prepared.",
+      "examples": [
+        "Dinner is ready!"
+      ],
+      "translations": {
+        "uk": "готовий",
+        "de": "fertig, bereit",
+        "fr": "prêt",
+        "es": "listo",
+        "it": "pronto",
+        "pt": "pronto",
+        "pl": "gotowy",
+        "ru": "готовый",
+        "zh": "准备好的",
+        "ja": "準備ができた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "strong",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/strɔːŋ/",
+      "definition": "Having a lot of power.",
+      "examples": [
+        "He is strong enough to lift the box."
+      ],
+      "translations": {
+        "uk": "сильний",
+        "de": "stark",
+        "fr": "fort",
+        "es": "fuerte",
+        "it": "forte",
+        "pt": "forte",
+        "pl": "silny",
+        "ru": "сильный",
+        "zh": "强壮的",
+        "ja": "強い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "quiet",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈkwaɪət/",
+      "definition": "Making little or no noise.",
+      "examples": [
+        "The library is very quiet."
+      ],
+      "translations": {
+        "uk": "тихий",
+        "de": "leise, ruhig",
+        "fr": "calme",
+        "es": "tranquilo",
+        "it": "silenzioso",
+        "pt": "silencioso",
+        "pl": "cichy",
+        "ru": "тихий",
+        "zh": "安静的",
+        "ja": "静かな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "interesting",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɪntrəstɪŋ/",
+      "definition": "Making you want to know more.",
+      "examples": [
+        "This is an interesting book."
+      ],
+      "translations": {
+        "uk": "цікавий",
+        "de": "interessant",
+        "fr": "intéressant",
+        "es": "interesante",
+        "it": "interessante",
+        "pt": "interessante",
+        "pl": "ciekawy",
+        "ru": "интересный",
+        "zh": "有趣的",
+        "ja": "興味深い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "boring",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈbɔːrɪŋ/",
+      "definition": "Not interesting.",
+      "examples": [
+        "The movie was boring."
+      ],
+      "translations": {
+        "uk": "нудний",
+        "de": "langweilig",
+        "fr": "ennuyeux",
+        "es": "aburrido",
+        "it": "noioso",
+        "pt": "chato",
+        "pl": "nudny",
+        "ru": "скучный",
+        "zh": "无聊的",
+        "ja": "退屈な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "weak",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/wiːk/",
+      "definition": "Not strong.",
+      "examples": [
+        "I feel weak after being sick."
+      ],
+      "translations": {
+        "uk": "слабкий",
+        "de": "schwach",
+        "fr": "faible",
+        "es": "débil",
+        "it": "debole",
+        "pt": "fraco",
+        "pl": "słaby",
+        "ru": "слабый",
+        "zh": "虚弱的",
+        "ja": "弱い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "loud",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/laʊd/",
+      "definition": "Making a lot of noise.",
+      "examples": [
+        "The music is too loud."
+      ],
+      "translations": {
+        "uk": "гучний",
+        "de": "laut",
+        "fr": "fort",
+        "es": "alto",
+        "it": "forte",
+        "pt": "alto",
+        "pl": "głośny",
+        "ru": "громкий",
+        "zh": "大声的",
+        "ja": "うるさい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "safe",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/seɪf/",
+      "definition": "Not in danger.",
+      "examples": [
+        "Is it safe to swim here?"
+      ],
+      "translations": {
+        "uk": "безпечний",
+        "de": "sicher",
+        "fr": "sûr",
+        "es": "seguro",
+        "it": "sicuro",
+        "pt": "seguro",
+        "pl": "bezpieczny",
+        "ru": "безопасный",
+        "zh": "安全的",
+        "ja": "安全な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dangerous",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈdeɪndʒərəs/",
+      "definition": "Able to hurt you.",
+      "examples": [
+        "It's dangerous to cross here."
+      ],
+      "translations": {
+        "uk": "небезпечний",
+        "de": "gefährlich",
+        "fr": "dangereux",
+        "es": "peligroso",
+        "it": "pericoloso",
+        "pt": "perigoso",
+        "pl": "niebezpieczny",
+        "ru": "опасный",
+        "zh": "危险的",
+        "ja": "危険な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "true",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/truː/",
+      "definition": "Correct; real.",
+      "examples": [
+        "Is it true that you're moving?"
+      ],
+      "translations": {
+        "uk": "правдивий",
+        "de": "wahr",
+        "fr": "vrai",
+        "es": "verdadero",
+        "it": "vero",
+        "pt": "verdadeiro",
+        "pl": "prawdziwy",
+        "ru": "верный, правдивый",
+        "zh": "真的",
+        "ja": "本当の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "real",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/riːl/",
+      "definition": "Existing; not imaginary.",
+      "examples": [
+        "Is that a real diamond?"
+      ],
+      "translations": {
+        "uk": "справжній",
+        "de": "echt",
+        "fr": "vrai",
+        "es": "real",
+        "it": "vero",
+        "pt": "real",
+        "pl": "prawdziwy",
+        "ru": "настоящий",
+        "zh": "真正的",
+        "ja": "本物の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "simple",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈsɪmpəl/",
+      "definition": "Easy to understand or do.",
+      "examples": [
+        "The instructions are simple."
+      ],
+      "translations": {
+        "uk": "простий",
+        "de": "einfach",
+        "fr": "simple",
+        "es": "sencillo",
+        "it": "semplice",
+        "pt": "simples",
+        "pl": "prosty",
+        "ru": "простой",
+        "zh": "简单的",
+        "ja": "シンプルな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "special",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈspeʃəl/",
+      "definition": "Different from normal; important.",
+      "examples": [
+        "Today is a special day."
+      ],
+      "translations": {
+        "uk": "особливий",
+        "de": "besonders",
+        "fr": "spécial",
+        "es": "especial",
+        "it": "speciale",
+        "pt": "especial",
+        "pl": "wyjątkowy",
+        "ru": "особенный",
+        "zh": "特别的",
+        "ja": "特別な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "famous",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈfeɪməs/",
+      "definition": "Known by many people.",
+      "examples": [
+        "She is a famous singer."
+      ],
+      "translations": {
+        "uk": "відомий",
+        "de": "berühmt",
+        "fr": "célèbre",
+        "es": "famoso",
+        "it": "famoso",
+        "pt": "famoso",
+        "pl": "sławny",
+        "ru": "знаменитый",
+        "zh": "著名的",
+        "ja": "有名な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "popular",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈpɑːpjəlɚ/",
+      "definition": "Liked by many people.",
+      "examples": [
+        "Soccer is very popular in Brazil."
+      ],
+      "translations": {
+        "uk": "популярний",
+        "de": "beliebt",
+        "fr": "populaire",
+        "es": "popular",
+        "it": "popolare",
+        "pt": "popular",
+        "pl": "popularny",
+        "ru": "популярный",
+        "zh": "受欢迎的",
+        "ja": "人気のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "possible",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈpɑːsəbəl/",
+      "definition": "Able to happen or be done.",
+      "examples": [
+        "Is it possible to change my ticket?"
+      ],
+      "translations": {
+        "uk": "можливий",
+        "de": "möglich",
+        "fr": "possible",
+        "es": "posible",
+        "it": "possibile",
+        "pt": "possível",
+        "pl": "możliwy",
+        "ru": "возможный",
+        "zh": "可能的",
+        "ja": "可能な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "normal",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈnɔːrməl/",
+      "definition": "Usual; ordinary.",
+      "examples": [
+        "It's normal to feel nervous."
+      ],
+      "translations": {
+        "uk": "нормальний, звичайний",
+        "de": "normal",
+        "fr": "normal",
+        "es": "normal",
+        "it": "normale",
+        "pt": "normal",
+        "pl": "normalny",
+        "ru": "нормальный, обычный",
+        "zh": "正常的",
+        "ja": "普通の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

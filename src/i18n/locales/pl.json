@@ -405,6 +405,10 @@
     "verb": "czasownik",
     "adjective": "przymiotnik",
     "adverb": "przysłówek",
+    "number": "liczebnik",
+    "preposition": "przyimek",
+    "pronoun": "zaimek",
+    "conjunction": "spójnik",
     "phrasal verb": "czasownik frazowy",
     "collocation": "kolokacja"
   },
@@ -416,6 +420,9 @@
   },
   "topics": {
     "Daily Life": "Życie codzienne",
+    "Basic Words": "Podstawowe słowa",
+    "Numbers": "Liczby",
+    "Colors": "Kolory",
     "Home": "Dom",
     "People": "Ludzie",
     "Family": "Rodzina",

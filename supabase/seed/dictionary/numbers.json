@@ -1,0 +1,679 @@
+{
+  "package": "numbers",
+  "kind": "words",
+  "words": [
+    {
+      "word": "zero",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ˈzɪroʊ/",
+      "definition": "The number 0.",
+      "examples": [
+        "The temperature is below zero."
+      ],
+      "translations": {
+        "uk": "нуль",
+        "de": "null",
+        "fr": "zéro",
+        "es": "cero",
+        "it": "zero",
+        "pt": "zero",
+        "pl": "zero",
+        "ru": "ноль",
+        "zh": "零",
+        "ja": "ゼロ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "one",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/wʌn/",
+      "definition": "The number 1.",
+      "examples": [
+        "I have one brother."
+      ],
+      "translations": {
+        "uk": "один",
+        "de": "eins",
+        "fr": "un",
+        "es": "uno",
+        "it": "uno",
+        "pt": "um",
+        "pl": "jeden",
+        "ru": "один",
+        "zh": "一",
+        "ja": "一"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "two",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/tuː/",
+      "definition": "The number 2.",
+      "examples": [
+        "She has two cats."
+      ],
+      "translations": {
+        "uk": "два",
+        "de": "zwei",
+        "fr": "deux",
+        "es": "dos",
+        "it": "due",
+        "pt": "dois",
+        "pl": "dwa",
+        "ru": "два",
+        "zh": "二",
+        "ja": "二"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "three",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/θriː/",
+      "definition": "The number 3.",
+      "examples": [
+        "We stayed there for three days."
+      ],
+      "translations": {
+        "uk": "три",
+        "de": "drei",
+        "fr": "trois",
+        "es": "tres",
+        "it": "tre",
+        "pt": "três",
+        "pl": "trzy",
+        "ru": "три",
+        "zh": "三",
+        "ja": "三"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "four",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/fɔːr/",
+      "definition": "The number 4.",
+      "examples": [
+        "A table has four legs."
+      ],
+      "translations": {
+        "uk": "чотири",
+        "de": "vier",
+        "fr": "quatre",
+        "es": "cuatro",
+        "it": "quattro",
+        "pt": "quatro",
+        "pl": "cztery",
+        "ru": "четыре",
+        "zh": "四",
+        "ja": "四"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "five",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/faɪv/",
+      "definition": "The number 5.",
+      "examples": [
+        "I get up at five o'clock."
+      ],
+      "translations": {
+        "uk": "п'ять",
+        "de": "fünf",
+        "fr": "cinq",
+        "es": "cinco",
+        "it": "cinque",
+        "pt": "cinco",
+        "pl": "pięć",
+        "ru": "пять",
+        "zh": "五",
+        "ja": "五"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "six",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/sɪks/",
+      "definition": "The number 6.",
+      "examples": [
+        "There are six eggs in the box."
+      ],
+      "translations": {
+        "uk": "шість",
+        "de": "sechs",
+        "fr": "six",
+        "es": "seis",
+        "it": "sei",
+        "pt": "seis",
+        "pl": "sześć",
+        "ru": "шесть",
+        "zh": "六",
+        "ja": "六"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "seven",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ˈsevən/",
+      "definition": "The number 7.",
+      "examples": [
+        "My little brother is seven."
+      ],
+      "translations": {
+        "uk": "сім",
+        "de": "sieben",
+        "fr": "sept",
+        "es": "siete",
+        "it": "sette",
+        "pt": "sete",
+        "pl": "siedem",
+        "ru": "семь",
+        "zh": "七",
+        "ja": "七"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eight",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/eɪt/",
+      "definition": "The number 8.",
+      "examples": [
+        "A spider has eight legs."
+      ],
+      "translations": {
+        "uk": "вісім",
+        "de": "acht",
+        "fr": "huit",
+        "es": "ocho",
+        "it": "otto",
+        "pt": "oito",
+        "pl": "osiem",
+        "ru": "восемь",
+        "zh": "八",
+        "ja": "八"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nine",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/naɪn/",
+      "definition": "The number 9.",
+      "examples": [
+        "The store opens at nine."
+      ],
+      "translations": {
+        "uk": "дев'ять",
+        "de": "neun",
+        "fr": "neuf",
+        "es": "nueve",
+        "it": "nove",
+        "pt": "nove",
+        "pl": "dziewięć",
+        "ru": "девять",
+        "zh": "九",
+        "ja": "九"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ten",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ten/",
+      "definition": "The number 10.",
+      "examples": [
+        "I have ten fingers."
+      ],
+      "translations": {
+        "uk": "десять",
+        "de": "zehn",
+        "fr": "dix",
+        "es": "diez",
+        "it": "dieci",
+        "pt": "dez",
+        "pl": "dziesięć",
+        "ru": "десять",
+        "zh": "十",
+        "ja": "十"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eleven",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ɪˈlevən/",
+      "definition": "The number 11.",
+      "examples": [
+        "A soccer team has eleven players."
+      ],
+      "translations": {
+        "uk": "одинадцять",
+        "de": "elf",
+        "fr": "onze",
+        "es": "once",
+        "it": "undici",
+        "pt": "onze",
+        "pl": "jedenaście",
+        "ru": "одиннадцать",
+        "zh": "十一",
+        "ja": "十一"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "twelve",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/twelv/",
+      "definition": "The number 12.",
+      "examples": [
+        "There are twelve months in a year."
+      ],
+      "translations": {
+        "uk": "дванадцять",
+        "de": "zwölf",
+        "fr": "douze",
+        "es": "doce",
+        "it": "dodici",
+        "pt": "doze",
+        "pl": "dwanaście",
+        "ru": "двенадцать",
+        "zh": "十二",
+        "ja": "十二"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "twenty",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ˈtwenti/",
+      "definition": "The number 20.",
+      "examples": [
+        "She is twenty years old."
+      ],
+      "translations": {
+        "uk": "двадцять",
+        "de": "zwanzig",
+        "fr": "vingt",
+        "es": "veinte",
+        "it": "venti",
+        "pt": "vinte",
+        "pl": "dwadzieścia",
+        "ru": "двадцать",
+        "zh": "二十",
+        "ja": "二十"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hundred",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ˈhʌndrəd/",
+      "definition": "The number 100.",
+      "examples": [
+        "The book has a hundred pages."
+      ],
+      "translations": {
+        "uk": "сто",
+        "de": "hundert",
+        "fr": "cent",
+        "es": "cien",
+        "it": "cento",
+        "pt": "cem",
+        "pl": "sto",
+        "ru": "сто",
+        "zh": "百",
+        "ja": "百"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "thousand",
+      "part_of_speech": "number",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ˈθaʊzənd/",
+      "definition": "The number 1,000.",
+      "examples": [
+        "A thousand people came to the concert."
+      ],
+      "translations": {
+        "uk": "тисяча",
+        "de": "tausend",
+        "fr": "mille",
+        "es": "mil",
+        "it": "mille",
+        "pt": "mil",
+        "pl": "tysiąc",
+        "ru": "тысяча",
+        "zh": "千",
+        "ja": "千"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "first",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/fɝːst/",
+      "definition": "Coming before all others.",
+      "examples": [
+        "January is the first month of the year."
+      ],
+      "translations": {
+        "uk": "перший",
+        "de": "erste",
+        "fr": "premier",
+        "es": "primero",
+        "it": "primo",
+        "pt": "primeiro",
+        "pl": "pierwszy",
+        "ru": "первый",
+        "zh": "第一",
+        "ja": "最初の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "second",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ˈsekənd/",
+      "definition": "Coming after the first.",
+      "examples": [
+        "My office is on the second floor."
+      ],
+      "translations": {
+        "uk": "другий",
+        "de": "zweite",
+        "fr": "deuxième",
+        "es": "segundo",
+        "it": "secondo",
+        "pt": "segundo",
+        "pl": "drugi",
+        "ru": "второй",
+        "zh": "第二",
+        "ja": "二番目の"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "time",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "One of the sixty parts of a minute.",
+          "examples": [
+            "Wait a second, please."
+          ],
+          "translations": {
+            "uk": "секунда",
+            "de": "Sekunde",
+            "fr": "seconde",
+            "es": "segundo",
+            "it": "secondo",
+            "pt": "segundo",
+            "pl": "sekunda",
+            "ru": "секунда",
+            "zh": "秒",
+            "ja": "秒"
+          }
+        }
+      ]
+    },
+    {
+      "word": "third",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/θɝːd/",
+      "definition": "Coming after the second.",
+      "examples": [
+        "This is my third visit to New York."
+      ],
+      "translations": {
+        "uk": "третій",
+        "de": "dritte",
+        "fr": "troisième",
+        "es": "tercero",
+        "it": "terzo",
+        "pt": "terceiro",
+        "pl": "trzeci",
+        "ru": "третий",
+        "zh": "第三",
+        "ja": "三番目の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "last",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/læst/",
+      "definition": "Coming after all others.",
+      "examples": [
+        "December is the last month of the year."
+      ],
+      "translations": {
+        "uk": "останній",
+        "de": "letzte",
+        "fr": "dernier",
+        "es": "último",
+        "it": "ultimo",
+        "pt": "último",
+        "pl": "ostatni",
+        "ru": "последний",
+        "zh": "最后的",
+        "ja": "最後の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "half",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/hæf/",
+      "definition": "One of two equal parts.",
+      "examples": [
+        "Cut the apple in half."
+      ],
+      "translations": {
+        "uk": "половина",
+        "de": "Hälfte",
+        "fr": "moitié",
+        "es": "mitad",
+        "it": "metà",
+        "pt": "metade",
+        "pl": "połowa",
+        "ru": "половина",
+        "zh": "一半",
+        "ja": "半分"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "number",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/ˈnʌmbɚ/",
+      "definition": "A word or sign like 1, 2 or 3.",
+      "examples": [
+        "What's your phone number?"
+      ],
+      "translations": {
+        "uk": "число, номер",
+        "de": "Zahl, Nummer",
+        "fr": "nombre, numéro",
+        "es": "número",
+        "it": "numero",
+        "pt": "número",
+        "pl": "liczba, numer",
+        "ru": "число, номер",
+        "zh": "数字",
+        "ja": "数"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "count",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Numbers",
+      "ipa": "/kaʊnt/",
+      "definition": "To say numbers in order.",
+      "examples": [
+        "Can you count to ten in English?"
+      ],
+      "translations": {
+        "uk": "рахувати",
+        "de": "zählen",
+        "fr": "compter",
+        "es": "contar",
+        "it": "contare",
+        "pt": "contar",
+        "pl": "liczyć",
+        "ru": "считать",
+        "zh": "数",
+        "ja": "数える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "million",
+      "part_of_speech": "number",
+      "cefr": "A2",
+      "topic": "Numbers",
+      "ipa": "/ˈmɪljən/",
+      "definition": "The number 1,000,000.",
+      "examples": [
+        "The city has two million people."
+      ],
+      "translations": {
+        "uk": "мільйон",
+        "de": "Million",
+        "fr": "million",
+        "es": "millón",
+        "it": "milione",
+        "pt": "milhão",
+        "pl": "milion",
+        "ru": "миллион",
+        "zh": "百万",
+        "ja": "百万"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dozen",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Numbers",
+      "ipa": "/ˈdʌzən/",
+      "definition": "A group of twelve.",
+      "examples": [
+        "I bought a dozen eggs."
+      ],
+      "translations": {
+        "uk": "дюжина",
+        "de": "Dutzend",
+        "fr": "douzaine",
+        "es": "docena",
+        "it": "dozzina",
+        "pt": "dúzia",
+        "pl": "tuzin",
+        "ru": "дюжина",
+        "zh": "一打",
+        "ja": "ダース"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "percent",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Numbers",
+      "ipa": "/pɚˈsent/",
+      "definition": "One part in every hundred.",
+      "examples": [
+        "Fifty percent of the students passed."
+      ],
+      "translations": {
+        "uk": "відсоток",
+        "de": "Prozent",
+        "fr": "pour cent",
+        "es": "por ciento",
+        "it": "per cento",
+        "pt": "por cento",
+        "pl": "procent",
+        "ru": "процент",
+        "zh": "百分之",
+        "ja": "パーセント"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

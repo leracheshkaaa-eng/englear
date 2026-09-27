@@ -405,6 +405,10 @@
     "verb": "глагол",
     "adjective": "прилагательное",
     "adverb": "наречие",
+    "number": "числительное",
+    "preposition": "предлог",
+    "pronoun": "местоимение",
+    "conjunction": "союз",
     "phrasal verb": "фразовый глагол",
     "collocation": "коллокация"
   },
@@ -416,6 +420,9 @@
   },
   "topics": {
     "Daily Life": "Повседневная жизнь",
+    "Basic Words": "Базовые слова",
+    "Numbers": "Числа",
+    "Colors": "Цвета",
     "Home": "Дом",
     "People": "Люди",
     "Family": "Семья",
