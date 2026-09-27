@@ -1,0 +1,802 @@
+{
+  "package": "b1-verbs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "improve",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪmˈpruːv/",
+      "definition": "To make something better or become better.",
+      "examples": [
+        "I want to improve my English."
+      ],
+      "translations": {
+        "uk": "покращувати",
+        "de": "verbessern",
+        "fr": "améliorer",
+        "es": "mejorar",
+        "it": "migliorare",
+        "pt": "melhorar",
+        "pl": "poprawiać",
+        "ru": "улучшать",
+        "zh": "提高",
+        "ja": "改善する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "increase",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˈkriːs/",
+      "definition": "To become or make something larger in amount.",
+      "examples": [
+        "Prices increase every year."
+      ],
+      "translations": {
+        "uk": "збільшувати(ся)",
+        "de": "steigen, erhöhen",
+        "fr": "augmenter",
+        "es": "aumentar",
+        "it": "aumentare",
+        "pt": "aumentar",
+        "pl": "zwiększać (się)",
+        "ru": "увеличивать(ся)",
+        "zh": "增加",
+        "ja": "増える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "decrease",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈkriːs/",
+      "definition": "To become or make something smaller in amount.",
+      "examples": [
+        "The number of students decreased last year."
+      ],
+      "translations": {
+        "uk": "зменшувати(ся)",
+        "de": "sinken, verringern",
+        "fr": "diminuer",
+        "es": "disminuir",
+        "it": "diminuire",
+        "pt": "diminuir",
+        "pl": "zmniejszać (się)",
+        "ru": "уменьшать(ся)",
+        "zh": "减少",
+        "ja": "減る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "develop",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈveləp/",
+      "definition": "To grow or change into something bigger or better.",
+      "examples": [
+        "Children develop quickly in their first years."
+      ],
+      "translations": {
+        "uk": "розвивати(ся)",
+        "de": "entwickeln",
+        "fr": "développer",
+        "es": "desarrollar",
+        "it": "sviluppare",
+        "pt": "desenvolver",
+        "pl": "rozwijać (się)",
+        "ru": "развивать(ся)",
+        "zh": "发展",
+        "ja": "発達する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "provide",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/prəˈvaɪd/",
+      "definition": "To give someone something they need.",
+      "examples": [
+        "The hotel provides free breakfast."
+      ],
+      "translations": {
+        "uk": "надавати",
+        "de": "bereitstellen",
+        "fr": "fournir",
+        "es": "proporcionar",
+        "it": "fornire",
+        "pt": "fornecer",
+        "pl": "zapewniać",
+        "ru": "предоставлять",
+        "zh": "提供",
+        "ja": "提供する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "suggest",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/səɡˈdʒest/",
+      "definition": "To give an idea for someone to think about.",
+      "examples": [
+        "I suggest we meet at six."
+      ],
+      "translations": {
+        "uk": "пропонувати",
+        "de": "vorschlagen",
+        "fr": "suggérer",
+        "es": "sugerir",
+        "it": "suggerire",
+        "pt": "sugerir",
+        "pl": "proponować",
+        "ru": "предлагать",
+        "zh": "建议",
+        "ja": "提案する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "describe",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈskraɪb/",
+      "definition": "To say what someone or something is like.",
+      "examples": [
+        "Can you describe the man you saw?"
+      ],
+      "translations": {
+        "uk": "описувати",
+        "de": "beschreiben",
+        "fr": "décrire",
+        "es": "describir",
+        "it": "descrivere",
+        "pt": "descrever",
+        "pl": "opisywać",
+        "ru": "описывать",
+        "zh": "描述",
+        "ja": "描写する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "include",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˈkluːd/",
+      "definition": "To have something as a part of a whole.",
+      "examples": [
+        "The price includes breakfast."
+      ],
+      "translations": {
+        "uk": "включати",
+        "de": "enthalten",
+        "fr": "inclure",
+        "es": "incluir",
+        "it": "includere",
+        "pt": "incluir",
+        "pl": "zawierać",
+        "ru": "включать",
+        "zh": "包括",
+        "ja": "含む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "manage",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈmænɪdʒ/",
+      "definition": "To be in charge of a business, team or project.",
+      "examples": [
+        "She manages a small hotel."
+      ],
+      "translations": {
+        "uk": "керувати",
+        "de": "leiten",
+        "fr": "gérer",
+        "es": "dirigir",
+        "it": "gestire",
+        "pt": "gerenciar",
+        "pl": "zarządzać",
+        "ru": "управлять",
+        "zh": "管理",
+        "ja": "管理する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "cope",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To succeed in doing something difficult.",
+          "examples": [
+            "Did you manage to finish the report?"
+          ],
+          "translations": {
+            "uk": "впоратися",
+            "de": "schaffen",
+            "fr": "réussir à",
+            "es": "lograr",
+            "it": "riuscire",
+            "pt": "conseguir",
+            "pl": "dać radę",
+            "ru": "справиться",
+            "zh": "设法完成",
+            "ja": "なんとかやり遂げる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "avoid",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈvɔɪd/",
+      "definition": "To stay away from someone or something.",
+      "examples": [
+        "Try to avoid sugary drinks."
+      ],
+      "translations": {
+        "uk": "уникати",
+        "de": "vermeiden",
+        "fr": "éviter",
+        "es": "evitar",
+        "it": "evitare",
+        "pt": "evitar",
+        "pl": "unikać",
+        "ru": "избегать",
+        "zh": "避免",
+        "ja": "避ける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "allow",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈlaʊ/",
+      "definition": "To let someone do something.",
+      "examples": [
+        "Dogs are not allowed in the store."
+      ],
+      "translations": {
+        "uk": "дозволяти",
+        "de": "erlauben",
+        "fr": "permettre",
+        "es": "permitir",
+        "it": "permettere",
+        "pt": "permitir",
+        "pl": "pozwalać",
+        "ru": "разрешать",
+        "zh": "允许",
+        "ja": "許す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "expect",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪkˈspekt/",
+      "definition": "To think that something will happen.",
+      "examples": [
+        "I expect it will rain tomorrow."
+      ],
+      "translations": {
+        "uk": "очікувати",
+        "de": "erwarten",
+        "fr": "s'attendre à",
+        "es": "esperar",
+        "it": "aspettarsi",
+        "pt": "esperar",
+        "pl": "oczekiwać",
+        "ru": "ожидать",
+        "zh": "期待",
+        "ja": "予想する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prefer",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/prɪˈfɝː/",
+      "definition": "To like one thing more than another.",
+      "examples": [
+        "I prefer tea to coffee."
+      ],
+      "translations": {
+        "uk": "віддавати перевагу",
+        "de": "bevorzugen",
+        "fr": "préférer",
+        "es": "preferir",
+        "it": "preferire",
+        "pt": "preferir",
+        "pl": "woleć",
+        "ru": "предпочитать",
+        "zh": "更喜欢",
+        "ja": "〜の方を好む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "offer",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɔːfɚ/",
+      "definition": "To ask if someone wants something.",
+      "examples": [
+        "She offered me a cup of tea."
+      ],
+      "translations": {
+        "uk": "пропонувати",
+        "de": "anbieten",
+        "fr": "offrir",
+        "es": "ofrecer",
+        "it": "offrire",
+        "pt": "oferecer",
+        "pl": "oferować",
+        "ru": "предлагать",
+        "zh": "提供",
+        "ja": "申し出る"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "Something that someone offers you, or a lower price.",
+          "examples": [
+            "She accepted the job offer."
+          ],
+          "translations": {
+            "uk": "пропозиція",
+            "de": "Angebot",
+            "fr": "offre",
+            "es": "oferta",
+            "it": "offerta",
+            "pt": "oferta",
+            "pl": "oferta",
+            "ru": "предложение",
+            "zh": "提议",
+            "ja": "申し出"
+          }
+        }
+      ]
+    },
+    {
+      "word": "complain",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kəmˈpleɪn/",
+      "definition": "To say that you are not happy about something.",
+      "examples": [
+        "He always complains about the food."
+      ],
+      "translations": {
+        "uk": "скаржитися",
+        "de": "sich beschweren",
+        "fr": "se plaindre",
+        "es": "quejarse",
+        "it": "lamentarsi",
+        "pt": "reclamar",
+        "pl": "narzekać",
+        "ru": "жаловаться",
+        "zh": "抱怨",
+        "ja": "文句を言う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "recommend",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˌrekəˈmend/",
+      "definition": "To say that something is good and someone should try it.",
+      "examples": [
+        "Can you recommend a good restaurant?"
+      ],
+      "translations": {
+        "uk": "рекомендувати",
+        "de": "empfehlen",
+        "fr": "recommander",
+        "es": "recomendar",
+        "it": "consigliare",
+        "pt": "recomendar",
+        "pl": "polecać",
+        "ru": "рекомендовать",
+        "zh": "推荐",
+        "ja": "勧める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "succeed",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/səkˈsiːd/",
+      "definition": "To do what you tried to do.",
+      "examples": [
+        "If you work hard, you will succeed."
+      ],
+      "translations": {
+        "uk": "досягати успіху",
+        "de": "Erfolg haben",
+        "fr": "réussir",
+        "es": "tener éxito",
+        "it": "avere successo",
+        "pt": "ter sucesso",
+        "pl": "odnieść sukces",
+        "ru": "преуспевать",
+        "zh": "成功",
+        "ja": "成功する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "depend on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈpend ɑːn/",
+      "definition": "To be decided by something else; to need someone's help.",
+      "examples": [
+        "Our plans depend on the weather."
+      ],
+      "translations": {
+        "uk": "залежати від",
+        "de": "abhängen von",
+        "fr": "dépendre de",
+        "es": "depender de",
+        "it": "dipendere da",
+        "pt": "depender de",
+        "pl": "zależeć od",
+        "ru": "зависеть от",
+        "zh": "取决于",
+        "ja": "〜次第である"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "achieve",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈtʃiːv/",
+      "definition": "To succeed in doing something after a lot of effort.",
+      "examples": [
+        "She achieved her goal of running a marathon."
+      ],
+      "translations": {
+        "uk": "досягати",
+        "de": "erreichen",
+        "fr": "atteindre",
+        "es": "lograr",
+        "it": "raggiungere",
+        "pt": "alcançar",
+        "pl": "osiągać",
+        "ru": "достигать",
+        "zh": "实现",
+        "ja": "達成する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "solve",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/sɑːlv/",
+      "definition": "To find an answer to a problem.",
+      "examples": [
+        "We need to solve this problem quickly."
+      ],
+      "translations": {
+        "uk": "розв'язувати",
+        "de": "lösen",
+        "fr": "résoudre",
+        "es": "resolver",
+        "it": "risolvere",
+        "pt": "resolver",
+        "pl": "rozwiązywać",
+        "ru": "решать",
+        "zh": "解决",
+        "ja": "解決する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "require",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈkwaɪɚ/",
+      "definition": "To need something.",
+      "examples": [
+        "This job requires good English."
+      ],
+      "translations": {
+        "uk": "вимагати",
+        "de": "erfordern",
+        "fr": "exiger",
+        "es": "requerir",
+        "it": "richiedere",
+        "pt": "exigir",
+        "pl": "wymagać",
+        "ru": "требовать",
+        "zh": "需要",
+        "ja": "必要とする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "involve",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˈvɑːlv/",
+      "definition": "To include something as a necessary part.",
+      "examples": [
+        "The job involves a lot of travel."
+      ],
+      "translations": {
+        "uk": "передбачати, залучати",
+        "de": "beinhalten",
+        "fr": "impliquer",
+        "es": "implicar",
+        "it": "comportare",
+        "pt": "envolver",
+        "pl": "obejmować",
+        "ru": "включать, вовлекать",
+        "zh": "涉及",
+        "ja": "伴う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rely on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈlaɪ ɑːn/",
+      "definition": "To trust or depend on someone or something.",
+      "examples": [
+        "You can always rely on me."
+      ],
+      "translations": {
+        "uk": "покладатися на",
+        "de": "sich verlassen auf",
+        "fr": "compter sur",
+        "es": "contar con",
+        "it": "contare su",
+        "pt": "contar com",
+        "pl": "polegać na",
+        "ru": "полагаться на",
+        "zh": "依靠",
+        "ja": "頼る"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "admit",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ədˈmɪt/",
+      "definition": "To agree that something bad is true.",
+      "examples": [
+        "He admitted that he was wrong."
+      ],
+      "translations": {
+        "uk": "визнавати",
+        "de": "zugeben",
+        "fr": "admettre",
+        "es": "admitir",
+        "it": "ammettere",
+        "pt": "admitir",
+        "pl": "przyznawać",
+        "ru": "признавать",
+        "zh": "承认",
+        "ja": "認める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deny",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈnaɪ/",
+      "definition": "To say that something is not true.",
+      "examples": [
+        "She denied taking the money."
+      ],
+      "translations": {
+        "uk": "заперечувати",
+        "de": "leugnen",
+        "fr": "nier",
+        "es": "negar",
+        "it": "negare",
+        "pt": "negar",
+        "pl": "zaprzeczać",
+        "ru": "отрицать",
+        "zh": "否认",
+        "ja": "否定する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "obtain",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/əbˈteɪn/",
+      "definition": "To get something, often with effort.",
+      "examples": [
+        "You need to obtain a visa first."
+      ],
+      "translations": {
+        "uk": "отримувати",
+        "de": "erhalten",
+        "fr": "obtenir",
+        "es": "obtener",
+        "it": "ottenere",
+        "pt": "obter",
+        "pl": "uzyskać",
+        "ru": "получать",
+        "zh": "获得",
+        "ja": "入手する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "suffer",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈsʌfɚ/",
+      "definition": "To feel pain or have a problem.",
+      "examples": [
+        "He suffers from headaches."
+      ],
+      "translations": {
+        "uk": "страждати",
+        "de": "leiden",
+        "fr": "souffrir",
+        "es": "sufrir",
+        "it": "soffrire",
+        "pt": "sofrer",
+        "pl": "cierpieć",
+        "ru": "страдать",
+        "zh": "受苦",
+        "ja": "苦しむ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "encourage",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˈkɝːɪdʒ/",
+      "definition": "To give someone hope or confidence to do something.",
+      "examples": [
+        "My parents encouraged me to study music."
+      ],
+      "translations": {
+        "uk": "заохочувати",
+        "de": "ermutigen",
+        "fr": "encourager",
+        "es": "animar",
+        "it": "incoraggiare",
+        "pt": "encorajar",
+        "pl": "zachęcać",
+        "ru": "поощрять",
+        "zh": "鼓励",
+        "ja": "励ます"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "replace",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈpleɪs/",
+      "definition": "To put something new in the place of something old.",
+      "examples": [
+        "We need to replace the old window."
+      ],
+      "translations": {
+        "uk": "замінювати",
+        "de": "ersetzen",
+        "fr": "remplacer",
+        "es": "reemplazar",
+        "it": "sostituire",
+        "pt": "substituir",
+        "pl": "wymieniać",
+        "ru": "заменять",
+        "zh": "替换",
+        "ja": "取り替える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prepare",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/prɪˈper/",
+      "definition": "To make something ready.",
+      "examples": [
+        "I need to prepare for the exam."
+      ],
+      "translations": {
+        "uk": "готувати(ся)",
+        "de": "vorbereiten",
+        "fr": "préparer",
+        "es": "preparar",
+        "it": "preparare",
+        "pt": "preparar",
+        "pl": "przygotowywać (się)",
+        "ru": "готовить(ся)",
+        "zh": "准备",
+        "ja": "準備する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,848 @@
+{
+  "package": "b1-nouns",
+  "kind": "words",
+  "words": [
+    {
+      "word": "advice",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ədˈvaɪs/",
+      "definition": "An opinion about what someone should do.",
+      "examples": [
+        "Can I give you some advice?"
+      ],
+      "translations": {
+        "uk": "порада",
+        "de": "Rat",
+        "fr": "conseil",
+        "es": "consejo",
+        "it": "consiglio",
+        "pt": "conselho",
+        "pl": "rada",
+        "ru": "совет",
+        "zh": "建议",
+        "ja": "助言"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "idea",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/aɪˈdiːə/",
+      "definition": "A thought or plan.",
+      "examples": [
+        "That's a great idea!"
+      ],
+      "translations": {
+        "uk": "ідея",
+        "de": "Idee",
+        "fr": "idée",
+        "es": "idea",
+        "it": "idea",
+        "pt": "ideia",
+        "pl": "pomysł",
+        "ru": "идея",
+        "zh": "主意",
+        "ja": "考え"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "problem",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈprɑːbləm/",
+      "definition": "Something that causes difficulty.",
+      "examples": [
+        "We have a problem with the car."
+      ],
+      "translations": {
+        "uk": "проблема",
+        "de": "Problem",
+        "fr": "problème",
+        "es": "problema",
+        "it": "problema",
+        "pt": "problema",
+        "pl": "problem",
+        "ru": "проблема",
+        "zh": "问题",
+        "ja": "問題"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "information",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˌɪnfɚˈmeɪʃən/",
+      "definition": "Facts about something.",
+      "examples": [
+        "I need more information about the course."
+      ],
+      "translations": {
+        "uk": "інформація",
+        "de": "Informationen",
+        "fr": "informations",
+        "es": "información",
+        "it": "informazioni",
+        "pt": "informação",
+        "pl": "informacja",
+        "ru": "информация",
+        "zh": "信息",
+        "ja": "情報"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reason",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈriːzən/",
+      "definition": "Why something happens.",
+      "examples": [
+        "What's the reason for the delay?"
+      ],
+      "translations": {
+        "uk": "причина",
+        "de": "Grund",
+        "fr": "raison",
+        "es": "razón",
+        "it": "motivo",
+        "pt": "razão",
+        "pl": "powód",
+        "ru": "причина",
+        "zh": "原因",
+        "ja": "理由"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "result",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈzʌlt/",
+      "definition": "What happens because of something.",
+      "examples": [
+        "The test results were good."
+      ],
+      "translations": {
+        "uk": "результат",
+        "de": "Ergebnis",
+        "fr": "résultat",
+        "es": "resultado",
+        "it": "risultato",
+        "pt": "resultado",
+        "pl": "wynik",
+        "ru": "результат",
+        "zh": "结果",
+        "ja": "結果"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "choice",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/tʃɔɪs/",
+      "definition": "The act of choosing, or the options you have.",
+      "examples": [
+        "You have a choice of two desserts."
+      ],
+      "translations": {
+        "uk": "вибір",
+        "de": "Wahl",
+        "fr": "choix",
+        "es": "elección",
+        "it": "scelta",
+        "pt": "escolha",
+        "pl": "wybór",
+        "ru": "выбор",
+        "zh": "选择",
+        "ja": "選択"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chance",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/tʃæns/",
+      "definition": "A possibility or an opportunity.",
+      "examples": [
+        "Is there any chance of rain?"
+      ],
+      "translations": {
+        "uk": "шанс",
+        "de": "Chance",
+        "fr": "chance",
+        "es": "posibilidad",
+        "it": "possibilità",
+        "pt": "chance",
+        "pl": "szansa",
+        "ru": "шанс",
+        "zh": "机会",
+        "ja": "可能性"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "luck",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "Luck; something that happens without a plan.",
+          "examples": [
+            "We met by chance at the airport."
+          ],
+          "translations": {
+            "uk": "випадок",
+            "de": "Zufall",
+            "fr": "hasard",
+            "es": "casualidad",
+            "it": "caso",
+            "pt": "acaso",
+            "pl": "przypadek",
+            "ru": "случайность",
+            "zh": "偶然",
+            "ja": "偶然"
+          }
+        }
+      ]
+    },
+    {
+      "word": "goal",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɡoʊl/",
+      "definition": "Something you want to achieve.",
+      "examples": [
+        "My goal is to speak English fluently."
+      ],
+      "translations": {
+        "uk": "мета",
+        "de": "Ziel",
+        "fr": "objectif",
+        "es": "objetivo",
+        "it": "obiettivo",
+        "pt": "objetivo",
+        "pl": "cel",
+        "ru": "цель",
+        "zh": "目标",
+        "ja": "目標"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "sport",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A point scored in soccer and other games.",
+          "examples": [
+            "He scored two goals in the match."
+          ],
+          "translations": {
+            "uk": "гол",
+            "de": "Tor",
+            "fr": "but",
+            "es": "gol",
+            "it": "gol",
+            "pt": "gol",
+            "pl": "gol",
+            "ru": "гол",
+            "zh": "进球",
+            "ja": "ゴール"
+          }
+        }
+      ]
+    },
+    {
+      "word": "opportunity",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˌɑːpɚˈtuːnəti/",
+      "definition": "A chance to do something good.",
+      "examples": [
+        "This job is a great opportunity."
+      ],
+      "translations": {
+        "uk": "можливість",
+        "de": "Gelegenheit",
+        "fr": "occasion",
+        "es": "oportunidad",
+        "it": "opportunità",
+        "pt": "oportunidade",
+        "pl": "okazja",
+        "ru": "возможность",
+        "zh": "机会",
+        "ja": "機会"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "solution",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/səˈluːʃən/",
+      "definition": "An answer to a problem.",
+      "examples": [
+        "We need to find a solution."
+      ],
+      "translations": {
+        "uk": "розв'язання, рішення",
+        "de": "Lösung",
+        "fr": "solution",
+        "es": "solución",
+        "it": "soluzione",
+        "pt": "solução",
+        "pl": "rozwiązanie",
+        "ru": "решение",
+        "zh": "解决办法",
+        "ja": "解決策"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "situation",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˌsɪtʃuˈeɪʃən/",
+      "definition": "The things that are happening at a particular time.",
+      "examples": [
+        "The situation is getting better."
+      ],
+      "translations": {
+        "uk": "ситуація",
+        "de": "Situation",
+        "fr": "situation",
+        "es": "situación",
+        "it": "situazione",
+        "pt": "situação",
+        "pl": "sytuacja",
+        "ru": "ситуация",
+        "zh": "情况",
+        "ja": "状況"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "effect",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈfekt/",
+      "definition": "A change that happens because of something.",
+      "examples": [
+        "The medicine had no effect."
+      ],
+      "translations": {
+        "uk": "вплив, ефект",
+        "de": "Wirkung",
+        "fr": "effet",
+        "es": "efecto",
+        "it": "effetto",
+        "pt": "efeito",
+        "pl": "efekt",
+        "ru": "эффект, влияние",
+        "zh": "影响",
+        "ja": "効果"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "benefit",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈbenɪfɪt/",
+      "definition": "A good or helpful result.",
+      "examples": [
+        "Exercise has many benefits."
+      ],
+      "translations": {
+        "uk": "користь",
+        "de": "Vorteil",
+        "fr": "bienfait",
+        "es": "beneficio",
+        "it": "beneficio",
+        "pt": "benefício",
+        "pl": "korzyść",
+        "ru": "польза",
+        "zh": "好处",
+        "ja": "利益"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "challenge",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈtʃælɪndʒ/",
+      "definition": "Something difficult that tests your ability.",
+      "examples": [
+        "Learning a new language is a challenge."
+      ],
+      "translations": {
+        "uk": "виклик",
+        "de": "Herausforderung",
+        "fr": "défi",
+        "es": "desafío",
+        "it": "sfida",
+        "pt": "desafio",
+        "pl": "wyzwanie",
+        "ru": "вызов, трудная задача",
+        "zh": "挑战",
+        "ja": "挑戦"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "decision",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈsɪʒən/",
+      "definition": "A choice that you make.",
+      "examples": [
+        "It was a difficult decision."
+      ],
+      "translations": {
+        "uk": "рішення",
+        "de": "Entscheidung",
+        "fr": "décision",
+        "es": "decisión",
+        "it": "decisione",
+        "pt": "decisão",
+        "pl": "decyzja",
+        "ru": "решение",
+        "zh": "决定",
+        "ja": "決定"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "event",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈvent/",
+      "definition": "Something important that happens.",
+      "examples": [
+        "The concert was the biggest event of the year."
+      ],
+      "translations": {
+        "uk": "подія",
+        "de": "Ereignis",
+        "fr": "événement",
+        "es": "evento",
+        "it": "evento",
+        "pt": "evento",
+        "pl": "wydarzenie",
+        "ru": "событие",
+        "zh": "事件",
+        "ja": "出来事"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "attitude",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈætɪtuːd/",
+      "definition": "The way you think and feel about something.",
+      "examples": [
+        "She has a positive attitude to work."
+      ],
+      "translations": {
+        "uk": "ставлення",
+        "de": "Einstellung",
+        "fr": "attitude",
+        "es": "actitud",
+        "it": "atteggiamento",
+        "pt": "atitude",
+        "pl": "postawa",
+        "ru": "отношение",
+        "zh": "态度",
+        "ja": "態度"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ability",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈbɪləti/",
+      "definition": "The skill or power to do something.",
+      "examples": [
+        "She has the ability to learn fast."
+      ],
+      "translations": {
+        "uk": "здатність",
+        "de": "Fähigkeit",
+        "fr": "capacité",
+        "es": "capacidad",
+        "it": "capacità",
+        "pt": "capacidade",
+        "pl": "zdolność",
+        "ru": "способность",
+        "zh": "能力",
+        "ja": "能力"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "purpose",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈpɝːpəs/",
+      "definition": "The reason why something is done.",
+      "examples": [
+        "What is the purpose of your visit?"
+      ],
+      "translations": {
+        "uk": "мета",
+        "de": "Zweck",
+        "fr": "but",
+        "es": "propósito",
+        "it": "scopo",
+        "pt": "propósito",
+        "pl": "cel",
+        "ru": "цель",
+        "zh": "目的",
+        "ja": "目的"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "quality",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈkwɑːləti/",
+      "definition": "How good or bad something is.",
+      "examples": [
+        "The quality of the food is excellent."
+      ],
+      "translations": {
+        "uk": "якість",
+        "de": "Qualität",
+        "fr": "qualité",
+        "es": "calidad",
+        "it": "qualità",
+        "pt": "qualidade",
+        "pl": "jakość",
+        "ru": "качество",
+        "zh": "质量",
+        "ja": "品質"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "success",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/səkˈses/",
+      "definition": "Achieving what you wanted.",
+      "examples": [
+        "The party was a great success."
+      ],
+      "translations": {
+        "uk": "успіх",
+        "de": "Erfolg",
+        "fr": "succès",
+        "es": "éxito",
+        "it": "successo",
+        "pt": "sucesso",
+        "pl": "sukces",
+        "ru": "успех",
+        "zh": "成功",
+        "ja": "成功"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "risk",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪsk/",
+      "definition": "The possibility that something bad will happen.",
+      "examples": [
+        "Smoking increases the risk of disease."
+      ],
+      "translations": {
+        "uk": "ризик",
+        "de": "Risiko",
+        "fr": "risque",
+        "es": "riesgo",
+        "it": "rischio",
+        "pt": "risco",
+        "pl": "ryzyko",
+        "ru": "риск",
+        "zh": "风险",
+        "ja": "危険"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "condition",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kənˈdɪʃən/",
+      "definition": "The state that something or someone is in.",
+      "examples": [
+        "The car is in good condition."
+      ],
+      "translations": {
+        "uk": "стан",
+        "de": "Zustand",
+        "fr": "état",
+        "es": "estado",
+        "it": "condizione",
+        "pt": "condição",
+        "pl": "stan",
+        "ru": "состояние",
+        "zh": "状况",
+        "ja": "状態"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "rule",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "Something that must happen before something else can happen.",
+          "examples": [
+            "You can go out on one condition: be home by ten."
+          ],
+          "translations": {
+            "uk": "умова",
+            "de": "Bedingung",
+            "fr": "condition",
+            "es": "condición",
+            "it": "condizione",
+            "pt": "condição",
+            "pl": "warunek",
+            "ru": "условие",
+            "zh": "条件",
+            "ja": "条件"
+          }
+        }
+      ]
+    },
+    {
+      "word": "factor",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈfæktɚ/",
+      "definition": "One of the things that cause a situation.",
+      "examples": [
+        "Cost is an important factor."
+      ],
+      "translations": {
+        "uk": "чинник",
+        "de": "Faktor",
+        "fr": "facteur",
+        "es": "factor",
+        "it": "fattore",
+        "pt": "fator",
+        "pl": "czynnik",
+        "ru": "фактор",
+        "zh": "因素",
+        "ja": "要因"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "issue",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈɪʃuː/",
+      "definition": "An important problem or topic.",
+      "examples": [
+        "Pollution is a serious issue."
+      ],
+      "translations": {
+        "uk": "питання, проблема",
+        "de": "Thema, Problem",
+        "fr": "question, problème",
+        "es": "cuestión",
+        "it": "questione",
+        "pt": "questão",
+        "pl": "kwestia",
+        "ru": "вопрос, проблема",
+        "zh": "问题",
+        "ja": "問題"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary",
+      "meanings": [
+        {
+          "key": "edition",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "One copy of a magazine or newspaper printed at a particular time.",
+          "examples": [
+            "Have you read the latest issue of the magazine?"
+          ],
+          "translations": {
+            "uk": "випуск, номер",
+            "de": "Ausgabe",
+            "fr": "numéro",
+            "es": "número",
+            "it": "numero",
+            "pt": "edição",
+            "pl": "numer",
+            "ru": "выпуск, номер",
+            "zh": "期",
+            "ja": "号"
+          }
+        }
+      ]
+    },
+    {
+      "word": "method",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈmeθəd/",
+      "definition": "A way of doing something.",
+      "examples": [
+        "This is a new method of teaching."
+      ],
+      "translations": {
+        "uk": "метод",
+        "de": "Methode",
+        "fr": "méthode",
+        "es": "método",
+        "it": "metodo",
+        "pt": "método",
+        "pl": "metoda",
+        "ru": "метод",
+        "zh": "方法",
+        "ja": "方法"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "process",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈprɑːses/",
+      "definition": "A series of actions to achieve a result.",
+      "examples": [
+        "Learning a language is a long process."
+      ],
+      "translations": {
+        "uk": "процес",
+        "de": "Prozess",
+        "fr": "processus",
+        "es": "proceso",
+        "it": "processo",
+        "pt": "processo",
+        "pl": "proces",
+        "ru": "процесс",
+        "zh": "过程",
+        "ja": "過程"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "trend",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/trend/",
+      "definition": "A general change in a situation.",
+      "examples": [
+        "There is a trend toward healthy eating."
+      ],
+      "translations": {
+        "uk": "тенденція",
+        "de": "Trend",
+        "fr": "tendance",
+        "es": "tendencia",
+        "it": "tendenza",
+        "pt": "tendência",
+        "pl": "trend",
+        "ru": "тенденция",
+        "zh": "趋势",
+        "ja": "傾向"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "source",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/sɔːrs/",
+      "definition": "The place where something comes from.",
+      "examples": [
+        "The sun is a source of energy."
+      ],
+      "translations": {
+        "uk": "джерело",
+        "de": "Quelle",
+        "fr": "source",
+        "es": "fuente",
+        "it": "fonte",
+        "pt": "fonte",
+        "pl": "źródło",
+        "ru": "источник",
+        "zh": "来源",
+        "ja": "源"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

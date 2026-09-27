@@ -1,0 +1,681 @@
+{
+  "package": "b1-adjectives",
+  "kind": "words",
+  "words": [
+    {
+      "word": "available",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈveɪləbəl/",
+      "definition": "Able to be used or bought; free to talk.",
+      "examples": [
+        "Is this room available tonight?"
+      ],
+      "translations": {
+        "uk": "доступний, вільний",
+        "de": "verfügbar",
+        "fr": "disponible",
+        "es": "disponible",
+        "it": "disponibile",
+        "pt": "disponível",
+        "pl": "dostępny",
+        "ru": "доступный, свободный",
+        "zh": "可用的",
+        "ja": "利用できる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "necessary",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈnesəseri/",
+      "definition": "Needed.",
+      "examples": [
+        "It's not necessary to bring food."
+      ],
+      "translations": {
+        "uk": "необхідний",
+        "de": "notwendig",
+        "fr": "nécessaire",
+        "es": "necesario",
+        "it": "necessario",
+        "pt": "necessário",
+        "pl": "konieczny",
+        "ru": "необходимый",
+        "zh": "必要的",
+        "ja": "必要な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "similar",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈsɪməlɚ/",
+      "definition": "Almost the same.",
+      "examples": [
+        "My sister and I have similar tastes."
+      ],
+      "translations": {
+        "uk": "схожий",
+        "de": "ähnlich",
+        "fr": "similaire",
+        "es": "similar",
+        "it": "simile",
+        "pt": "semelhante",
+        "pl": "podobny",
+        "ru": "похожий",
+        "zh": "相似的",
+        "ja": "似ている"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "useful",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈjuːsfəl/",
+      "definition": "Helping you to do something.",
+      "examples": [
+        "This app is very useful for learning words."
+      ],
+      "translations": {
+        "uk": "корисний",
+        "de": "nützlich",
+        "fr": "utile",
+        "es": "útil",
+        "it": "utile",
+        "pt": "útil",
+        "pl": "przydatny",
+        "ru": "полезный",
+        "zh": "有用的",
+        "ja": "役に立つ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "huge",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/hjuːdʒ/",
+      "definition": "Very big.",
+      "examples": [
+        "They live in a huge house."
+      ],
+      "translations": {
+        "uk": "величезний",
+        "de": "riesig",
+        "fr": "énorme",
+        "es": "enorme",
+        "it": "enorme",
+        "pt": "enorme",
+        "pl": "ogromny",
+        "ru": "огромный",
+        "zh": "巨大的",
+        "ja": "巨大な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tiny",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈtaɪni/",
+      "definition": "Very small.",
+      "examples": [
+        "The baby has tiny hands."
+      ],
+      "translations": {
+        "uk": "крихітний",
+        "de": "winzig",
+        "fr": "minuscule",
+        "es": "diminuto",
+        "it": "minuscolo",
+        "pt": "minúsculo",
+        "pl": "malutki",
+        "ru": "крошечный",
+        "zh": "极小的",
+        "ja": "とても小さい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "modern",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈmɑːdɚn/",
+      "definition": "New and using the latest ideas.",
+      "examples": [
+        "They live in a modern apartment."
+      ],
+      "translations": {
+        "uk": "сучасний",
+        "de": "modern",
+        "fr": "moderne",
+        "es": "moderno",
+        "it": "moderno",
+        "pt": "moderno",
+        "pl": "nowoczesny",
+        "ru": "современный",
+        "zh": "现代的",
+        "ja": "現代的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "traditional",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/trəˈdɪʃənəl/",
+      "definition": "Following old customs.",
+      "examples": [
+        "We ate traditional Italian food."
+      ],
+      "translations": {
+        "uk": "традиційний",
+        "de": "traditionell",
+        "fr": "traditionnel",
+        "es": "tradicional",
+        "it": "tradizionale",
+        "pt": "tradicional",
+        "pl": "tradycyjny",
+        "ru": "традиционный",
+        "zh": "传统的",
+        "ja": "伝統的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ancient",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈeɪnʃənt/",
+      "definition": "Very old; from a long time ago.",
+      "examples": [
+        "We visited an ancient castle."
+      ],
+      "translations": {
+        "uk": "стародавній",
+        "de": "antik",
+        "fr": "ancien",
+        "es": "antiguo",
+        "it": "antico",
+        "pt": "antigo",
+        "pl": "starożytny",
+        "ru": "древний",
+        "zh": "古代的",
+        "ja": "古代の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "main",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/meɪn/",
+      "definition": "Most important.",
+      "examples": [
+        "The main problem is money."
+      ],
+      "translations": {
+        "uk": "головний",
+        "de": "Haupt-",
+        "fr": "principal",
+        "es": "principal",
+        "it": "principale",
+        "pt": "principal",
+        "pl": "główny",
+        "ru": "главный",
+        "zh": "主要的",
+        "ja": "主な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "serious",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈsɪriəs/",
+      "definition": "Bad or dangerous; not joking.",
+      "examples": [
+        "This is a serious problem."
+      ],
+      "translations": {
+        "uk": "серйозний",
+        "de": "ernst",
+        "fr": "sérieux",
+        "es": "serio",
+        "it": "serio",
+        "pt": "sério",
+        "pl": "poważny",
+        "ru": "серьёзный",
+        "zh": "严重的",
+        "ja": "深刻な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "successful",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/səkˈsesfəl/",
+      "definition": "Having achieved what you wanted.",
+      "examples": [
+        "She is a successful writer."
+      ],
+      "translations": {
+        "uk": "успішний",
+        "de": "erfolgreich",
+        "fr": "qui a du succès",
+        "es": "exitoso",
+        "it": "di successo",
+        "pt": "bem-sucedido",
+        "pl": "odnoszący sukcesy",
+        "ru": "успешный",
+        "zh": "成功的",
+        "ja": "成功した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "responsible",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈspɑːnsəbəl/",
+      "definition": "Having a duty to look after something; able to be trusted.",
+      "examples": [
+        "Who is responsible for the kids today?"
+      ],
+      "translations": {
+        "uk": "відповідальний",
+        "de": "verantwortlich",
+        "fr": "responsable",
+        "es": "responsable",
+        "it": "responsabile",
+        "pt": "responsável",
+        "pl": "odpowiedzialny",
+        "ru": "ответственный",
+        "zh": "负责的",
+        "ja": "責任のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "independent",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˌɪndɪˈpendənt/",
+      "definition": "Not needing help from other people.",
+      "examples": [
+        "She is very independent for her age."
+      ],
+      "translations": {
+        "uk": "незалежний",
+        "de": "unabhängig",
+        "fr": "indépendant",
+        "es": "independiente",
+        "it": "indipendente",
+        "pt": "independente",
+        "pl": "niezależny",
+        "ru": "независимый",
+        "zh": "独立的",
+        "ja": "自立した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "aware",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈwer/",
+      "definition": "Knowing about something.",
+      "examples": [
+        "Are you aware of the risks?"
+      ],
+      "translations": {
+        "uk": "обізнаний",
+        "de": "bewusst",
+        "fr": "conscient",
+        "es": "consciente",
+        "it": "consapevole",
+        "pt": "ciente",
+        "pl": "świadomy",
+        "ru": "осведомлённый",
+        "zh": "意识到的",
+        "ja": "気づいている"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "familiar",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/fəˈmɪljɚ/",
+      "definition": "Known to you.",
+      "examples": [
+        "Her face looks familiar."
+      ],
+      "translations": {
+        "uk": "знайомий",
+        "de": "vertraut",
+        "fr": "familier",
+        "es": "familiar",
+        "it": "familiare",
+        "pt": "familiar",
+        "pl": "znajomy",
+        "ru": "знакомый",
+        "zh": "熟悉的",
+        "ja": "見覚えのある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "likely",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈlaɪkli/",
+      "definition": "Probably going to happen.",
+      "examples": [
+        "It's likely to rain later."
+      ],
+      "translations": {
+        "uk": "імовірний",
+        "de": "wahrscheinlich",
+        "fr": "probable",
+        "es": "probable",
+        "it": "probabile",
+        "pt": "provável",
+        "pl": "prawdopodobny",
+        "ru": "вероятный",
+        "zh": "可能的",
+        "ja": "〜しそうな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "certain",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈsɝːtən/",
+      "definition": "Completely sure.",
+      "examples": [
+        "I'm certain that I locked the door."
+      ],
+      "translations": {
+        "uk": "певний, упевнений",
+        "de": "sicher",
+        "fr": "certain",
+        "es": "seguro",
+        "it": "certo",
+        "pt": "certo",
+        "pl": "pewny",
+        "ru": "уверенный",
+        "zh": "确定的",
+        "ja": "確かな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "effective",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈfektɪv/",
+      "definition": "Working well and giving the result you want.",
+      "examples": [
+        "This medicine is very effective."
+      ],
+      "translations": {
+        "uk": "дієвий",
+        "de": "wirksam",
+        "fr": "efficace",
+        "es": "eficaz",
+        "it": "efficace",
+        "pt": "eficaz",
+        "pl": "skuteczny",
+        "ru": "действенный",
+        "zh": "有效的",
+        "ja": "効果的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "positive",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈpɑːzətɪv/",
+      "definition": "Good or hopeful.",
+      "examples": [
+        "Try to stay positive."
+      ],
+      "translations": {
+        "uk": "позитивний",
+        "de": "positiv",
+        "fr": "positif",
+        "es": "positivo",
+        "it": "positivo",
+        "pt": "positivo",
+        "pl": "pozytywny",
+        "ru": "позитивный",
+        "zh": "积极的",
+        "ja": "前向きな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "negative",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈneɡətɪv/",
+      "definition": "Bad or harmful; not hopeful.",
+      "examples": [
+        "Stress has a negative effect on health."
+      ],
+      "translations": {
+        "uk": "негативний",
+        "de": "negativ",
+        "fr": "négatif",
+        "es": "negativo",
+        "it": "negativo",
+        "pt": "negativo",
+        "pl": "negatywny",
+        "ru": "негативный",
+        "zh": "消极的",
+        "ja": "否定的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "essential",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈsenʃəl/",
+      "definition": "Very important and necessary.",
+      "examples": [
+        "Water is essential for life."
+      ],
+      "translations": {
+        "uk": "суттєвий, необхідний",
+        "de": "unerlässlich",
+        "fr": "essentiel",
+        "es": "esencial",
+        "it": "essenziale",
+        "pt": "essencial",
+        "pl": "niezbędny",
+        "ru": "необходимый, существенный",
+        "zh": "必不可少的",
+        "ja": "不可欠な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "valuable",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈvæljuəbəl/",
+      "definition": "Worth a lot of money; very useful.",
+      "examples": [
+        "This is valuable advice."
+      ],
+      "translations": {
+        "uk": "цінний",
+        "de": "wertvoll",
+        "fr": "précieux",
+        "es": "valioso",
+        "it": "prezioso",
+        "pt": "valioso",
+        "pl": "cenny",
+        "ru": "ценный",
+        "zh": "宝贵的",
+        "ja": "貴重な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reliable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈlaɪəbəl/",
+      "definition": "Able to be trusted.",
+      "examples": [
+        "My old car is still very reliable."
+      ],
+      "translations": {
+        "uk": "надійний",
+        "de": "zuverlässig",
+        "fr": "fiable",
+        "es": "fiable",
+        "it": "affidabile",
+        "pt": "confiável",
+        "pl": "niezawodny",
+        "ru": "надёжный",
+        "zh": "可靠的",
+        "ja": "信頼できる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "flexible",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈfleksəbəl/",
+      "definition": "Able to change easily.",
+      "examples": [
+        "I have flexible working hours."
+      ],
+      "translations": {
+        "uk": "гнучкий",
+        "de": "flexibel",
+        "fr": "flexible",
+        "es": "flexible",
+        "it": "flessibile",
+        "pt": "flexível",
+        "pl": "elastyczny",
+        "ru": "гибкий",
+        "zh": "灵活的",
+        "ja": "柔軟な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "obvious",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈɑːbviəs/",
+      "definition": "Easy to see or understand.",
+      "examples": [
+        "The answer is obvious."
+      ],
+      "translations": {
+        "uk": "очевидний",
+        "de": "offensichtlich",
+        "fr": "évident",
+        "es": "obvio",
+        "it": "ovvio",
+        "pt": "óbvio",
+        "pl": "oczywisty",
+        "ru": "очевидный",
+        "zh": "明显的",
+        "ja": "明らかな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "suitable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈsuːtəbəl/",
+      "definition": "Right for a particular purpose.",
+      "examples": [
+        "This movie is not suitable for children."
+      ],
+      "translations": {
+        "uk": "придатний, відповідний",
+        "de": "geeignet",
+        "fr": "approprié",
+        "es": "adecuado",
+        "it": "adatto",
+        "pt": "adequado",
+        "pl": "odpowiedni",
+        "ru": "подходящий",
+        "zh": "合适的",
+        "ja": "適した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
