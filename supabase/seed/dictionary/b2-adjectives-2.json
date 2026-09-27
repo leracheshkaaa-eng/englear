@@ -1,0 +1,1406 @@
+{
+  "package": "b2-adjectives-2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "local",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈloʊkəl/",
+      "definition": "From or in the area near you.",
+      "examples": [
+        "We buy vegetables from local farmers."
+      ],
+      "translations": {
+        "uk": "місцевий",
+        "de": "örtlich",
+        "fr": "local",
+        "es": "local",
+        "it": "locale",
+        "pt": "local",
+        "pl": "lokalny",
+        "ru": "местный",
+        "zh": "当地的",
+        "ja": "地元の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "public",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈpʌblɪk/",
+      "definition": "For everyone to use.",
+      "examples": [
+        "This is a public park."
+      ],
+      "translations": {
+        "uk": "громадський",
+        "de": "öffentlich",
+        "fr": "public",
+        "es": "público",
+        "it": "pubblico",
+        "pt": "público",
+        "pl": "publiczny",
+        "ru": "общественный",
+        "zh": "公共的",
+        "ja": "公共の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "private",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈpraɪvət/",
+      "definition": "For one person or group only.",
+      "examples": [
+        "This is a private beach."
+      ],
+      "translations": {
+        "uk": "приватний",
+        "de": "privat",
+        "fr": "privé",
+        "es": "privado",
+        "it": "privato",
+        "pt": "privado",
+        "pl": "prywatny",
+        "ru": "частный",
+        "zh": "私人的",
+        "ja": "私的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "recent",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈriːsənt/",
+      "definition": "Happening a short time ago.",
+      "examples": [
+        "This is a recent photo of my family."
+      ],
+      "translations": {
+        "uk": "недавній",
+        "de": "neu",
+        "fr": "récent",
+        "es": "reciente",
+        "it": "recente",
+        "pt": "recente",
+        "pl": "niedawny",
+        "ru": "недавний",
+        "zh": "最近的",
+        "ja": "最近の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "regular",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈreɡjəlɚ/",
+      "definition": "Happening often at the same times.",
+      "examples": [
+        "Regular exercise is good for you."
+      ],
+      "translations": {
+        "uk": "регулярний",
+        "de": "regelmäßig",
+        "fr": "régulier",
+        "es": "regular",
+        "it": "regolare",
+        "pt": "regular",
+        "pl": "regularny",
+        "ru": "регулярный",
+        "zh": "定期的",
+        "ja": "定期的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "original",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈrɪdʒənəl/",
+      "definition": "First; new and different.",
+      "examples": [
+        "The original plan was better."
+      ],
+      "translations": {
+        "uk": "оригінальний, початковий",
+        "de": "ursprünglich",
+        "fr": "original",
+        "es": "original",
+        "it": "originale",
+        "pt": "original",
+        "pl": "oryginalny",
+        "ru": "первоначальный, оригинальный",
+        "zh": "原来的",
+        "ja": "元の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ordinary",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɔːrdəneri/",
+      "definition": "Normal; not special.",
+      "examples": [
+        "It was just an ordinary day."
+      ],
+      "translations": {
+        "uk": "звичайний",
+        "de": "gewöhnlich",
+        "fr": "ordinaire",
+        "es": "corriente",
+        "it": "ordinario",
+        "pt": "comum",
+        "pl": "zwykły",
+        "ru": "обычный",
+        "zh": "普通的",
+        "ja": "普通の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "international",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˌɪntɚˈnæʃənəl/",
+      "definition": "Between different countries.",
+      "examples": [
+        "She works for an international company."
+      ],
+      "translations": {
+        "uk": "міжнародний",
+        "de": "international",
+        "fr": "international",
+        "es": "internacional",
+        "it": "internazionale",
+        "pt": "internacional",
+        "pl": "międzynarodowy",
+        "ru": "международный",
+        "zh": "国际的",
+        "ja": "国際的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "official",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈfɪʃəl/",
+      "definition": "Approved by the government or people in power.",
+      "examples": [
+        "English is the official language of the country."
+      ],
+      "translations": {
+        "uk": "офіційний",
+        "de": "offiziell",
+        "fr": "officiel",
+        "es": "oficial",
+        "it": "ufficiale",
+        "pt": "oficial",
+        "pl": "oficjalny",
+        "ru": "официальный",
+        "zh": "官方的",
+        "ja": "公式の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "typical",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈtɪpɪkəl/",
+      "definition": "Having the usual qualities of something.",
+      "examples": [
+        "This is a typical English breakfast."
+      ],
+      "translations": {
+        "uk": "типовий",
+        "de": "typisch",
+        "fr": "typique",
+        "es": "típico",
+        "it": "tipico",
+        "pt": "típico",
+        "pl": "typowy",
+        "ru": "типичный",
+        "zh": "典型的",
+        "ja": "典型的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "unique",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/juˈniːk/",
+      "definition": "The only one of its kind.",
+      "examples": [
+        "Every person is unique."
+      ],
+      "translations": {
+        "uk": "унікальний",
+        "de": "einzigartig",
+        "fr": "unique",
+        "es": "único",
+        "it": "unico",
+        "pt": "único",
+        "pl": "wyjątkowy",
+        "ru": "уникальный",
+        "zh": "独特的",
+        "ja": "唯一の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "urgent",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɝːdʒənt/",
+      "definition": "Needing attention immediately.",
+      "examples": [
+        "I have an urgent message for you."
+      ],
+      "translations": {
+        "uk": "терміновий",
+        "de": "dringend",
+        "fr": "urgent",
+        "es": "urgente",
+        "it": "urgente",
+        "pt": "urgente",
+        "pl": "pilny",
+        "ru": "срочный",
+        "zh": "紧急的",
+        "ja": "緊急の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "useless",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈjuːsləs/",
+      "definition": "Not useful.",
+      "examples": [
+        "This old phone is useless."
+      ],
+      "translations": {
+        "uk": "марний",
+        "de": "nutzlos",
+        "fr": "inutile",
+        "es": "inútil",
+        "it": "inutile",
+        "pt": "inútil",
+        "pl": "bezużyteczny",
+        "ru": "бесполезный",
+        "zh": "无用的",
+        "ja": "役に立たない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "confused",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kənˈfjuːzd/",
+      "definition": "Not able to understand something.",
+      "examples": [
+        "I'm confused by the instructions."
+      ],
+      "translations": {
+        "uk": "збентежений, розгублений",
+        "de": "verwirrt",
+        "fr": "confus",
+        "es": "confundido",
+        "it": "confuso",
+        "pt": "confuso",
+        "pl": "zdezorientowany",
+        "ru": "сбитый с толку",
+        "zh": "困惑的",
+        "ja": "混乱した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "complicated",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈkɑːmplɪkeɪtɪd/",
+      "definition": "Difficult to understand.",
+      "examples": [
+        "The rules are too complicated."
+      ],
+      "translations": {
+        "uk": "складний, заплутаний",
+        "de": "kompliziert",
+        "fr": "compliqué",
+        "es": "complicado",
+        "it": "complicato",
+        "pt": "complicado",
+        "pl": "skomplikowany",
+        "ru": "запутанный",
+        "zh": "复杂的",
+        "ja": "複雑な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "attractive",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈtræktɪv/",
+      "definition": "Pleasant to look at; interesting.",
+      "examples": [
+        "The city is attractive to tourists."
+      ],
+      "translations": {
+        "uk": "привабливий",
+        "de": "attraktiv",
+        "fr": "attirant",
+        "es": "atractivo",
+        "it": "attraente",
+        "pt": "atraente",
+        "pl": "atrakcyjny",
+        "ru": "привлекательный",
+        "zh": "有吸引力的",
+        "ja": "魅力的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "elderly",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈeldɚli/",
+      "definition": "Old (a polite word for old people).",
+      "examples": [
+        "She helps elderly people in her village."
+      ],
+      "translations": {
+        "uk": "літній",
+        "de": "älter",
+        "fr": "âgé",
+        "es": "anciano",
+        "it": "anziano",
+        "pt": "idoso",
+        "pl": "starszy",
+        "ru": "пожилой",
+        "zh": "年长的",
+        "ja": "年配の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "entire",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˈtaɪɚ/",
+      "definition": "Whole; complete.",
+      "examples": [
+        "I spent the entire day at the beach."
+      ],
+      "translations": {
+        "uk": "цілий, весь",
+        "de": "ganz",
+        "fr": "entier",
+        "es": "entero",
+        "it": "intero",
+        "pt": "inteiro",
+        "pl": "cały",
+        "ru": "целый, весь",
+        "zh": "整个的",
+        "ja": "全体の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exact",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪɡˈzækt/",
+      "definition": "Completely correct in every detail.",
+      "examples": [
+        "What is the exact time?"
+      ],
+      "translations": {
+        "uk": "точний",
+        "de": "genau",
+        "fr": "exact",
+        "es": "exacto",
+        "it": "esatto",
+        "pt": "exato",
+        "pl": "dokładny",
+        "ru": "точный",
+        "zh": "确切的",
+        "ja": "正確な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "frequent",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈfriːkwənt/",
+      "definition": "Happening often.",
+      "examples": [
+        "There are frequent buses to the airport."
+      ],
+      "translations": {
+        "uk": "частий",
+        "de": "häufig",
+        "fr": "fréquent",
+        "es": "frecuente",
+        "it": "frequente",
+        "pt": "frequente",
+        "pl": "częsty",
+        "ru": "частый",
+        "zh": "频繁的",
+        "ja": "頻繁な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ideal",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/aɪˈdiːəl/",
+      "definition": "Perfect.",
+      "examples": [
+        "This is the ideal place for a picnic."
+      ],
+      "translations": {
+        "uk": "ідеальний",
+        "de": "ideal",
+        "fr": "idéal",
+        "es": "ideal",
+        "it": "ideale",
+        "pt": "ideal",
+        "pl": "idealny",
+        "ru": "идеальный",
+        "zh": "理想的",
+        "ja": "理想的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "legal",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈliːɡəl/",
+      "definition": "Allowed by law.",
+      "examples": [
+        "Is it legal to park here?"
+      ],
+      "translations": {
+        "uk": "законний",
+        "de": "legal",
+        "fr": "légal",
+        "es": "legal",
+        "it": "legale",
+        "pt": "legal",
+        "pl": "legalny",
+        "ru": "законный",
+        "zh": "合法的",
+        "ja": "合法の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "major",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈmeɪdʒɚ/",
+      "definition": "Very large or important.",
+      "examples": [
+        "Traffic is a major problem in the city."
+      ],
+      "translations": {
+        "uk": "головний, великий",
+        "de": "bedeutend",
+        "fr": "majeur",
+        "es": "importante",
+        "it": "importante",
+        "pt": "principal",
+        "pl": "poważny",
+        "ru": "главный, крупный",
+        "zh": "主要的",
+        "ja": "主要な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "minor",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈmaɪnɚ/",
+      "definition": "Small and not very important.",
+      "examples": [
+        "It's just a minor problem."
+      ],
+      "translations": {
+        "uk": "незначний",
+        "de": "gering",
+        "fr": "mineur",
+        "es": "menor",
+        "it": "minore",
+        "pt": "menor",
+        "pl": "drobny",
+        "ru": "незначительный",
+        "zh": "次要的",
+        "ja": "小さな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "native",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈneɪtɪv/",
+      "definition": "Connected with the place where you were born.",
+      "examples": [
+        "Her native language is Spanish."
+      ],
+      "translations": {
+        "uk": "рідний",
+        "de": "Mutter-",
+        "fr": "natal",
+        "es": "nativo",
+        "it": "nativo",
+        "pt": "nativo",
+        "pl": "ojczysty",
+        "ru": "родной",
+        "zh": "本土的",
+        "ja": "母国の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "physical",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈfɪzɪkəl/",
+      "definition": "Related to the body.",
+      "examples": [
+        "Physical exercise keeps you healthy."
+      ],
+      "translations": {
+        "uk": "фізичний",
+        "de": "körperlich",
+        "fr": "physique",
+        "es": "físico",
+        "it": "fisico",
+        "pt": "físico",
+        "pl": "fizyczny",
+        "ru": "физический",
+        "zh": "身体的",
+        "ja": "身体の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "practical",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈpræktɪkəl/",
+      "definition": "Useful and suitable for a situation.",
+      "examples": [
+        "These shoes are very practical."
+      ],
+      "translations": {
+        "uk": "практичний",
+        "de": "praktisch",
+        "fr": "pratique",
+        "es": "práctico",
+        "it": "pratico",
+        "pt": "prático",
+        "pl": "praktyczny",
+        "ru": "практичный",
+        "zh": "实用的",
+        "ja": "実用的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "previous",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈpriːviəs/",
+      "definition": "Happening before.",
+      "examples": [
+        "I met him on a previous trip."
+      ],
+      "translations": {
+        "uk": "попередній",
+        "de": "vorherig",
+        "fr": "précédent",
+        "es": "anterior",
+        "it": "precedente",
+        "pt": "anterior",
+        "pl": "poprzedni",
+        "ru": "предыдущий",
+        "zh": "以前的",
+        "ja": "以前の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rapid",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈræpɪd/",
+      "definition": "Very fast.",
+      "examples": [
+        "The city saw rapid growth."
+      ],
+      "translations": {
+        "uk": "стрімкий",
+        "de": "schnell",
+        "fr": "rapide",
+        "es": "rápido",
+        "it": "rapido",
+        "pt": "rápido",
+        "pl": "szybki",
+        "ru": "быстрый, стремительный",
+        "zh": "快速的",
+        "ja": "急速な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reasonable",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈriːzənəbəl/",
+      "definition": "Fair and sensible; not too expensive.",
+      "examples": [
+        "The prices here are reasonable."
+      ],
+      "translations": {
+        "uk": "розумний, помірний",
+        "de": "vernünftig",
+        "fr": "raisonnable",
+        "es": "razonable",
+        "it": "ragionevole",
+        "pt": "razoável",
+        "pl": "rozsądny",
+        "ru": "разумный, умеренный",
+        "zh": "合理的",
+        "ja": "手頃な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rural",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈrʊrəl/",
+      "definition": "Related to the countryside.",
+      "examples": [
+        "They live in a rural area."
+      ],
+      "translations": {
+        "uk": "сільський",
+        "de": "ländlich",
+        "fr": "rural",
+        "es": "rural",
+        "it": "rurale",
+        "pt": "rural",
+        "pl": "wiejski",
+        "ru": "сельский",
+        "zh": "农村的",
+        "ja": "田舎の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "urban",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɝːbən/",
+      "definition": "Related to towns and cities.",
+      "examples": [
+        "Most people live in urban areas."
+      ],
+      "translations": {
+        "uk": "міський",
+        "de": "städtisch",
+        "fr": "urbain",
+        "es": "urbano",
+        "it": "urbano",
+        "pt": "urbano",
+        "pl": "miejski",
+        "ru": "городской",
+        "zh": "城市的",
+        "ja": "都市の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "willing",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈwɪlɪŋ/",
+      "definition": "Happy to do something.",
+      "examples": [
+        "Are you willing to help?"
+      ],
+      "translations": {
+        "uk": "готовий, охочий",
+        "de": "bereit",
+        "fr": "disposé",
+        "es": "dispuesto",
+        "it": "disposto",
+        "pt": "disposto",
+        "pl": "chętny",
+        "ru": "готовый (что-то сделать)",
+        "zh": "愿意的",
+        "ja": "進んで〜する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "alternative",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɔːlˈtɝːnətɪv/",
+      "definition": "Available as another choice.",
+      "examples": [
+        "We need an alternative plan."
+      ],
+      "translations": {
+        "uk": "альтернативний",
+        "de": "alternativ",
+        "fr": "alternatif",
+        "es": "alternativo",
+        "it": "alternativo",
+        "pt": "alternativo",
+        "pl": "alternatywny",
+        "ru": "альтернативный",
+        "zh": "替代的",
+        "ja": "代わりの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "artificial",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˌɑːrtɪˈfɪʃəl/",
+      "definition": "Made by people, not natural.",
+      "examples": [
+        "The drink has artificial colors."
+      ],
+      "translations": {
+        "uk": "штучний",
+        "de": "künstlich",
+        "fr": "artificiel",
+        "es": "artificial",
+        "it": "artificiale",
+        "pt": "artificial",
+        "pl": "sztuczny",
+        "ru": "искусственный",
+        "zh": "人造的",
+        "ja": "人工の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "awkward",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈɑːkwɚd/",
+      "definition": "Embarrassing or uncomfortable.",
+      "examples": [
+        "There was an awkward silence."
+      ],
+      "translations": {
+        "uk": "незручний, ніяковий",
+        "de": "peinlich",
+        "fr": "gênant",
+        "es": "incómodo",
+        "it": "imbarazzante",
+        "pt": "constrangedor",
+        "pl": "niezręczny",
+        "ru": "неловкий",
+        "zh": "尴尬的",
+        "ja": "気まずい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "brief",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/briːf/",
+      "definition": "Short.",
+      "examples": [
+        "She gave a brief speech."
+      ],
+      "translations": {
+        "uk": "короткий",
+        "de": "kurz",
+        "fr": "bref",
+        "es": "breve",
+        "it": "breve",
+        "pt": "breve",
+        "pl": "krótki",
+        "ru": "краткий",
+        "zh": "简短的",
+        "ja": "短い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "casual",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈkæʒuəl/",
+      "definition": "Relaxed and informal.",
+      "examples": [
+        "I wear casual clothes on weekends."
+      ],
+      "translations": {
+        "uk": "повсякденний, невимушений",
+        "de": "lässig",
+        "fr": "décontracté",
+        "es": "informal",
+        "it": "casual",
+        "pt": "casual",
+        "pl": "swobodny",
+        "ru": "повседневный",
+        "zh": "休闲的",
+        "ja": "カジュアルな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "constant",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈkɑːnstənt/",
+      "definition": "Happening all the time.",
+      "examples": [
+        "The constant noise kept me awake."
+      ],
+      "translations": {
+        "uk": "постійний",
+        "de": "ständig",
+        "fr": "constant",
+        "es": "constante",
+        "it": "costante",
+        "pt": "constante",
+        "pl": "ciągły",
+        "ru": "постоянный",
+        "zh": "持续的",
+        "ja": "絶え間ない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "delicate",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈdelɪkət/",
+      "definition": "Easily damaged; needing care.",
+      "examples": [
+        "Be careful, the glass is delicate."
+      ],
+      "translations": {
+        "uk": "делікатний, тендітний",
+        "de": "zart",
+        "fr": "délicat",
+        "es": "delicado",
+        "it": "delicato",
+        "pt": "delicado",
+        "pl": "delikatny",
+        "ru": "хрупкий, деликатный",
+        "zh": "脆弱的",
+        "ja": "繊細な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "distant",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈdɪstənt/",
+      "definition": "Far away.",
+      "examples": [
+        "They traveled to distant countries."
+      ],
+      "translations": {
+        "uk": "далекий",
+        "de": "fern",
+        "fr": "lointain",
+        "es": "lejano",
+        "it": "lontano",
+        "pt": "distante",
+        "pl": "odległy",
+        "ru": "далёкий",
+        "zh": "遥远的",
+        "ja": "遠い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "extreme",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪkˈstriːm/",
+      "definition": "Very great or very bad.",
+      "examples": [
+        "The region has extreme weather."
+      ],
+      "translations": {
+        "uk": "екстремальний",
+        "de": "extrem",
+        "fr": "extrême",
+        "es": "extremo",
+        "it": "estremo",
+        "pt": "extremo",
+        "pl": "ekstremalny",
+        "ru": "экстремальный",
+        "zh": "极端的",
+        "ja": "極端な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "financial",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/faɪˈnænʃəl/",
+      "definition": "Related to money.",
+      "examples": [
+        "The company has financial problems."
+      ],
+      "translations": {
+        "uk": "фінансовий",
+        "de": "finanziell",
+        "fr": "financier",
+        "es": "financiero",
+        "it": "finanziario",
+        "pt": "financeiro",
+        "pl": "finansowy",
+        "ru": "финансовый",
+        "zh": "财务的",
+        "ja": "財政的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "former",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈfɔːrmɚ/",
+      "definition": "Existing in the past.",
+      "examples": [
+        "He is a former soldier."
+      ],
+      "translations": {
+        "uk": "колишній",
+        "de": "ehemalig",
+        "fr": "ancien",
+        "es": "antiguo",
+        "it": "ex",
+        "pt": "antigo",
+        "pl": "były",
+        "ru": "бывший",
+        "zh": "以前的",
+        "ja": "元の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fundamental",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˌfʌndəˈmentəl/",
+      "definition": "Basic and very important.",
+      "examples": [
+        "Education is a fundamental right."
+      ],
+      "translations": {
+        "uk": "основоположний",
+        "de": "grundlegend",
+        "fr": "fondamental",
+        "es": "fundamental",
+        "it": "fondamentale",
+        "pt": "fundamental",
+        "pl": "podstawowy",
+        "ru": "основополагающий",
+        "zh": "基本的",
+        "ja": "根本的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "harmful",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈhɑːrmfəl/",
+      "definition": "Causing damage.",
+      "examples": [
+        "Smoking is harmful to your health."
+      ],
+      "translations": {
+        "uk": "шкідливий",
+        "de": "schädlich",
+        "fr": "nocif",
+        "es": "dañino",
+        "it": "nocivo",
+        "pt": "prejudicial",
+        "pl": "szkodliwy",
+        "ru": "вредный",
+        "zh": "有害的",
+        "ja": "有害な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "immediate",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈmiːdiət/",
+      "definition": "Happening now, without delay.",
+      "examples": [
+        "We need an immediate answer."
+      ],
+      "translations": {
+        "uk": "негайний",
+        "de": "sofortig",
+        "fr": "immédiat",
+        "es": "inmediato",
+        "it": "immediato",
+        "pt": "imediato",
+        "pl": "natychmiastowy",
+        "ru": "немедленный",
+        "zh": "立即的",
+        "ja": "即座の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "individual",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˌɪndəˈvɪdʒuəl/",
+      "definition": "For one person; single and separate.",
+      "examples": [
+        "Each student gets individual help."
+      ],
+      "translations": {
+        "uk": "індивідуальний",
+        "de": "individuell",
+        "fr": "individuel",
+        "es": "individual",
+        "it": "individuale",
+        "pt": "individual",
+        "pl": "indywidualny",
+        "ru": "индивидуальный",
+        "zh": "个人的",
+        "ja": "個々の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "loyal",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈlɔɪəl/",
+      "definition": "Always supporting someone.",
+      "examples": [
+        "Dogs are very loyal animals."
+      ],
+      "translations": {
+        "uk": "вірний, відданий",
+        "de": "treu",
+        "fr": "fidèle",
+        "es": "leal",
+        "it": "leale",
+        "pt": "leal",
+        "pl": "lojalny",
+        "ru": "верный, преданный",
+        "zh": "忠诚的",
+        "ja": "忠実な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "particular",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/pɚˈtɪkjəlɚ/",
+      "definition": "Special; one specific.",
+      "examples": [
+        "Is there a particular reason?"
+      ],
+      "translations": {
+        "uk": "конкретний, особливий",
+        "de": "bestimmt",
+        "fr": "particulier",
+        "es": "particular",
+        "it": "particolare",
+        "pt": "específico",
+        "pl": "szczególny",
+        "ru": "конкретный, особый",
+        "zh": "特定的",
+        "ja": "特定の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "potential",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/pəˈtenʃəl/",
+      "definition": "Possible in the future.",
+      "examples": [
+        "We found a potential problem."
+      ],
+      "translations": {
+        "uk": "потенційний",
+        "de": "potenziell",
+        "fr": "potentiel",
+        "es": "potencial",
+        "it": "potenziale",
+        "pt": "potencial",
+        "pl": "potencjalny",
+        "ru": "потенциальный",
+        "zh": "潜在的",
+        "ja": "潜在的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "specific",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/spəˈsɪfɪk/",
+      "definition": "Clearly described; particular.",
+      "examples": [
+        "Can you give me a specific example?"
+      ],
+      "translations": {
+        "uk": "конкретний",
+        "de": "spezifisch",
+        "fr": "spécifique",
+        "es": "específico",
+        "it": "specifico",
+        "pt": "específico",
+        "pl": "konkretny",
+        "ru": "конкретный",
+        "zh": "具体的",
+        "ja": "具体的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sufficient",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/səˈfɪʃənt/",
+      "definition": "Enough.",
+      "examples": [
+        "We don't have sufficient time."
+      ],
+      "translations": {
+        "uk": "достатній",
+        "de": "ausreichend",
+        "fr": "suffisant",
+        "es": "suficiente",
+        "it": "sufficiente",
+        "pt": "suficiente",
+        "pl": "wystarczający",
+        "ru": "достаточный",
+        "zh": "足够的",
+        "ja": "十分な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "valid",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈvælɪd/",
+      "definition": "Legally accepted; reasonable.",
+      "examples": [
+        "Your passport is valid for ten years."
+      ],
+      "translations": {
+        "uk": "дійсний",
+        "de": "gültig",
+        "fr": "valide",
+        "es": "válido",
+        "it": "valido",
+        "pt": "válido",
+        "pl": "ważny",
+        "ru": "действительный",
+        "zh": "有效的",
+        "ja": "有効な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vast",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/væst/",
+      "definition": "Extremely large.",
+      "examples": [
+        "The desert is vast."
+      ],
+      "translations": {
+        "uk": "величезний",
+        "de": "riesig",
+        "fr": "vaste",
+        "es": "vasto",
+        "it": "vasto",
+        "pt": "vasto",
+        "pl": "rozległy",
+        "ru": "огромный",
+        "zh": "广阔的",
+        "ja": "広大な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vital",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈvaɪtəl/",
+      "definition": "Extremely important.",
+      "examples": [
+        "Water is vital for life."
+      ],
+      "translations": {
+        "uk": "життєво важливий",
+        "de": "lebenswichtig",
+        "fr": "vital",
+        "es": "vital",
+        "it": "vitale",
+        "pt": "vital",
+        "pl": "niezbędny",
+        "ru": "жизненно важный",
+        "zh": "至关重要的",
+        "ja": "不可欠な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

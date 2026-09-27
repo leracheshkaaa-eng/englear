@@ -1,0 +1,1246 @@
+{
+  "package": "b2-verbs-2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "disappear",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˌdɪsəˈpɪr/",
+      "definition": "To go where no one can see or find it.",
+      "examples": [
+        "The cat disappeared under the bed."
+      ],
+      "translations": {
+        "uk": "зникати",
+        "de": "verschwinden",
+        "fr": "disparaître",
+        "es": "desaparecer",
+        "it": "scomparire",
+        "pt": "desaparecer",
+        "pl": "znikać",
+        "ru": "исчезать",
+        "zh": "消失",
+        "ja": "消える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hide",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/haɪd/",
+      "definition": "To put something where no one can see it; to go where no one can find you.",
+      "examples": [
+        "The kids hid behind the tree."
+      ],
+      "translations": {
+        "uk": "ховати(ся)",
+        "de": "verstecken",
+        "fr": "cacher",
+        "es": "esconder",
+        "it": "nascondere",
+        "pt": "esconder",
+        "pl": "chować (się)",
+        "ru": "прятать(ся)",
+        "zh": "藏",
+        "ja": "隠れる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "organize",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɔːrɡənaɪz/",
+      "definition": "To plan or arrange something.",
+      "examples": [
+        "She organized a party for her mom."
+      ],
+      "translations": {
+        "uk": "організовувати",
+        "de": "organisieren",
+        "fr": "organiser",
+        "es": "organizar",
+        "it": "organizzare",
+        "pt": "organizar",
+        "pl": "organizować",
+        "ru": "организовывать",
+        "zh": "组织",
+        "ja": "準備する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pretend",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/prɪˈtend/",
+      "definition": "To act as if something is true when it is not.",
+      "examples": [
+        "He pretended to be asleep."
+      ],
+      "translations": {
+        "uk": "вдавати, прикидатися",
+        "de": "so tun, als ob",
+        "fr": "faire semblant",
+        "es": "fingir",
+        "it": "fingere",
+        "pt": "fingir",
+        "pl": "udawać",
+        "ru": "притворяться",
+        "zh": "假装",
+        "ja": "ふりをする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "produce",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/prəˈduːs/",
+      "definition": "To make or grow something.",
+      "examples": [
+        "This farm produces milk and cheese."
+      ],
+      "translations": {
+        "uk": "виробляти",
+        "de": "herstellen",
+        "fr": "produire",
+        "es": "producir",
+        "it": "produrre",
+        "pt": "produzir",
+        "pl": "produkować",
+        "ru": "производить",
+        "zh": "生产",
+        "ja": "生産する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "remove",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈmuːv/",
+      "definition": "To take something away.",
+      "examples": [
+        "Please remove your shoes."
+      ],
+      "translations": {
+        "uk": "прибирати, знімати",
+        "de": "entfernen",
+        "fr": "enlever",
+        "es": "quitar",
+        "it": "togliere",
+        "pt": "remover",
+        "pl": "usuwać",
+        "ru": "убирать, снимать",
+        "zh": "移除",
+        "ja": "取り除く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "survive",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/sɚˈvaɪv/",
+      "definition": "To continue to live after something dangerous.",
+      "examples": [
+        "Only two people survived the crash."
+      ],
+      "translations": {
+        "uk": "виживати",
+        "de": "überleben",
+        "fr": "survivre",
+        "es": "sobrevivir",
+        "it": "sopravvivere",
+        "pt": "sobreviver",
+        "pl": "przetrwać",
+        "ru": "выживать",
+        "zh": "幸存",
+        "ja": "生き残る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "arrange",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈreɪndʒ/",
+      "definition": "To plan or organize something.",
+      "examples": [
+        "I arranged a meeting for Monday."
+      ],
+      "translations": {
+        "uk": "домовлятися, влаштовувати",
+        "de": "vereinbaren",
+        "fr": "organiser",
+        "es": "organizar",
+        "it": "organizzare",
+        "pt": "combinar",
+        "pl": "zorganizować",
+        "ru": "договариваться, устраивать",
+        "zh": "安排",
+        "ja": "手配する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "calculate",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈkælkjəleɪt/",
+      "definition": "To find a number using math.",
+      "examples": [
+        "Calculate the total cost."
+      ],
+      "translations": {
+        "uk": "обчислювати",
+        "de": "berechnen",
+        "fr": "calculer",
+        "es": "calcular",
+        "it": "calcolare",
+        "pt": "calcular",
+        "pl": "obliczać",
+        "ru": "вычислять",
+        "zh": "计算",
+        "ja": "計算する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "confirm",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kənˈfɝːm/",
+      "definition": "To say that something is true or will happen.",
+      "examples": [
+        "Please confirm your booking."
+      ],
+      "translations": {
+        "uk": "підтверджувати",
+        "de": "bestätigen",
+        "fr": "confirmer",
+        "es": "confirmar",
+        "it": "confermare",
+        "pt": "confirmar",
+        "pl": "potwierdzać",
+        "ru": "подтверждать",
+        "zh": "确认",
+        "ja": "確認する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exist",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪɡˈzɪst/",
+      "definition": "To be real.",
+      "examples": [
+        "Do ghosts exist?"
+      ],
+      "translations": {
+        "uk": "існувати",
+        "de": "existieren",
+        "fr": "exister",
+        "es": "existir",
+        "it": "esistere",
+        "pt": "existir",
+        "pl": "istnieć",
+        "ru": "существовать",
+        "zh": "存在",
+        "ja": "存在する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "interrupt",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˌɪntəˈrʌpt/",
+      "definition": "To stop someone while they are speaking.",
+      "examples": [
+        "Please don't interrupt me."
+      ],
+      "translations": {
+        "uk": "перебивати",
+        "de": "unterbrechen",
+        "fr": "interrompre",
+        "es": "interrumpir",
+        "it": "interrompere",
+        "pt": "interromper",
+        "pl": "przerywać",
+        "ru": "перебивать",
+        "zh": "打断",
+        "ja": "遮る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "participate",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/pɑːrˈtɪsɪpeɪt/",
+      "definition": "To take part in an activity.",
+      "examples": [
+        "All students participate in the project."
+      ],
+      "translations": {
+        "uk": "брати участь",
+        "de": "teilnehmen",
+        "fr": "participer",
+        "es": "participar",
+        "it": "partecipare",
+        "pt": "participar",
+        "pl": "uczestniczyć",
+        "ru": "участвовать",
+        "zh": "参与",
+        "ja": "参加する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "quit",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/kwɪt/",
+      "definition": "To stop doing something; to leave a job.",
+      "examples": [
+        "He quit his job last month."
+      ],
+      "translations": {
+        "uk": "кидати, звільнятися",
+        "de": "aufhören, kündigen",
+        "fr": "quitter",
+        "es": "dejar",
+        "it": "lasciare",
+        "pt": "largar",
+        "pl": "rzucić",
+        "ru": "бросать, уходить",
+        "zh": "辞去",
+        "ja": "辞める"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "stop",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To stop doing something.",
+          "examples": [
+            "I quit smoking last year."
+          ],
+          "translations": {
+            "uk": "кидати (звичку)",
+            "de": "aufhören mit",
+            "fr": "arrêter de",
+            "es": "dejar de",
+            "it": "smettere di",
+            "pt": "parar de",
+            "pl": "rzucić (nałóg)",
+            "ru": "бросить (привычку)",
+            "zh": "戒掉",
+            "ja": "やめる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "regret",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈɡret/",
+      "definition": "To feel sorry about something you did.",
+      "examples": [
+        "I regret not studying harder."
+      ],
+      "translations": {
+        "uk": "шкодувати",
+        "de": "bereuen",
+        "fr": "regretter",
+        "es": "arrepentirse",
+        "it": "pentirsi",
+        "pt": "arrepender-se",
+        "pl": "żałować",
+        "ru": "сожалеть",
+        "zh": "后悔",
+        "ja": "後悔する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "respond",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈspɑːnd/",
+      "definition": "To answer or react.",
+      "examples": [
+        "She didn't respond to my message."
+      ],
+      "translations": {
+        "uk": "відповідати, реагувати",
+        "de": "antworten",
+        "fr": "répondre",
+        "es": "responder",
+        "it": "rispondere",
+        "pt": "responder",
+        "pl": "odpowiadać",
+        "ru": "отвечать, реагировать",
+        "zh": "回应",
+        "ja": "返答する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "select",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/sɪˈlekt/",
+      "definition": "To choose something.",
+      "examples": [
+        "Select the correct answer."
+      ],
+      "translations": {
+        "uk": "обирати",
+        "de": "auswählen",
+        "fr": "sélectionner",
+        "es": "seleccionar",
+        "it": "selezionare",
+        "pt": "selecionar",
+        "pl": "wybierać",
+        "ru": "выбирать",
+        "zh": "选择",
+        "ja": "選ぶ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "separate",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈsepəreɪt/",
+      "definition": "To divide or keep apart.",
+      "examples": [
+        "Separate the eggs into two bowls."
+      ],
+      "translations": {
+        "uk": "розділяти",
+        "de": "trennen",
+        "fr": "séparer",
+        "es": "separar",
+        "it": "separare",
+        "pt": "separar",
+        "pl": "oddzielać",
+        "ru": "разделять",
+        "zh": "分开",
+        "ja": "分ける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "supply",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/səˈplaɪ/",
+      "definition": "To give people something they need.",
+      "examples": [
+        "The farm supplies vegetables to local stores."
+      ],
+      "translations": {
+        "uk": "постачати",
+        "de": "liefern",
+        "fr": "fournir",
+        "es": "suministrar",
+        "it": "fornire",
+        "pt": "fornecer",
+        "pl": "dostarczać",
+        "ru": "снабжать",
+        "zh": "供应",
+        "ja": "供給する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "An amount of something that is available to use.",
+          "examples": [
+            "We have a good supply of food."
+          ],
+          "translations": {
+            "uk": "запас",
+            "de": "Vorrat",
+            "fr": "réserve",
+            "es": "provisión",
+            "it": "scorta",
+            "pt": "estoque",
+            "pl": "zapas",
+            "ru": "запас",
+            "zh": "供应",
+            "ja": "供給"
+          }
+        }
+      ]
+    },
+    {
+      "word": "weigh",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/weɪ/",
+      "definition": "To have a particular weight; to measure how heavy something is.",
+      "examples": [
+        "The baby weighs three kilos."
+      ],
+      "translations": {
+        "uk": "важити",
+        "de": "wiegen",
+        "fr": "peser",
+        "es": "pesar",
+        "it": "pesare",
+        "pt": "pesar",
+        "pl": "ważyć",
+        "ru": "весить",
+        "zh": "重",
+        "ja": "重さがある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "approve",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/əˈpruːv/",
+      "definition": "To officially agree to something.",
+      "examples": [
+        "The school approved the new plan."
+      ],
+      "translations": {
+        "uk": "схвалювати",
+        "de": "genehmigen",
+        "fr": "approuver",
+        "es": "aprobar",
+        "it": "approvare",
+        "pt": "aprovar",
+        "pl": "zatwierdzać",
+        "ru": "одобрять",
+        "zh": "批准",
+        "ja": "承認する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "attract",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/əˈtrækt/",
+      "definition": "To make people want to come or be interested.",
+      "examples": [
+        "The festival attracts many tourists."
+      ],
+      "translations": {
+        "uk": "приваблювати",
+        "de": "anziehen",
+        "fr": "attirer",
+        "es": "atraer",
+        "it": "attirare",
+        "pt": "atrair",
+        "pl": "przyciągać",
+        "ru": "привлекать",
+        "zh": "吸引",
+        "ja": "引きつける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "combine",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/kəmˈbaɪn/",
+      "definition": "To join two or more things together.",
+      "examples": [
+        "Combine the flour and sugar."
+      ],
+      "translations": {
+        "uk": "поєднувати",
+        "de": "kombinieren",
+        "fr": "combiner",
+        "es": "combinar",
+        "it": "combinare",
+        "pt": "combinar",
+        "pl": "łączyć",
+        "ru": "сочетать",
+        "zh": "结合",
+        "ja": "組み合わせる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "consume",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/kənˈsuːm/",
+      "definition": "To use or eat something.",
+      "examples": [
+        "Cars consume a lot of fuel."
+      ],
+      "translations": {
+        "uk": "споживати",
+        "de": "verbrauchen",
+        "fr": "consommer",
+        "es": "consumir",
+        "it": "consumare",
+        "pt": "consumir",
+        "pl": "zużywać",
+        "ru": "потреблять",
+        "zh": "消耗",
+        "ja": "消費する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cope",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/koʊp/",
+      "definition": "To deal successfully with a difficult situation.",
+      "examples": [
+        "She coped well with the stress."
+      ],
+      "translations": {
+        "uk": "справлятися",
+        "de": "bewältigen",
+        "fr": "faire face",
+        "es": "afrontar",
+        "it": "farcela",
+        "pt": "lidar",
+        "pl": "radzić sobie",
+        "ru": "справляться",
+        "zh": "应付",
+        "ja": "対処する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "define",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈfaɪn/",
+      "definition": "To explain the meaning of something.",
+      "examples": [
+        "How would you define success?"
+      ],
+      "translations": {
+        "uk": "визначати",
+        "de": "definieren",
+        "fr": "définir",
+        "es": "definir",
+        "it": "definire",
+        "pt": "definir",
+        "pl": "definiować",
+        "ru": "определять",
+        "zh": "定义",
+        "ja": "定義する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deserve",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/dɪˈzɝːv/",
+      "definition": "To have earned something because of what you did.",
+      "examples": [
+        "You deserve a break."
+      ],
+      "translations": {
+        "uk": "заслуговувати",
+        "de": "verdienen",
+        "fr": "mériter",
+        "es": "merecer",
+        "it": "meritare",
+        "pt": "merecer",
+        "pl": "zasługiwać",
+        "ru": "заслуживать",
+        "zh": "应得",
+        "ja": "〜に値する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "examine",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪɡˈzæmɪn/",
+      "definition": "To look at something carefully.",
+      "examples": [
+        "The doctor examined my throat."
+      ],
+      "translations": {
+        "uk": "оглядати, вивчати",
+        "de": "untersuchen",
+        "fr": "examiner",
+        "es": "examinar",
+        "it": "esaminare",
+        "pt": "examinar",
+        "pl": "badać",
+        "ru": "осматривать, изучать",
+        "zh": "检查",
+        "ja": "調べる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "extend",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪkˈstend/",
+      "definition": "To make something longer or bigger.",
+      "examples": [
+        "We extended our stay by two days."
+      ],
+      "translations": {
+        "uk": "продовжувати, розширювати",
+        "de": "verlängern",
+        "fr": "prolonger",
+        "es": "extender",
+        "it": "prolungare",
+        "pt": "prolongar",
+        "pl": "przedłużać",
+        "ru": "продлевать, расширять",
+        "zh": "延长",
+        "ja": "延長する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hesitate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈhezɪteɪt/",
+      "definition": "To pause before doing something because you are unsure.",
+      "examples": [
+        "Don't hesitate to call me."
+      ],
+      "translations": {
+        "uk": "вагатися",
+        "de": "zögern",
+        "fr": "hésiter",
+        "es": "dudar",
+        "it": "esitare",
+        "pt": "hesitar",
+        "pl": "wahać się",
+        "ru": "колебаться",
+        "zh": "犹豫",
+        "ja": "ためらう"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "insist",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˈsɪst/",
+      "definition": "To say firmly that something must happen.",
+      "examples": [
+        "She insisted on paying for dinner."
+      ],
+      "translations": {
+        "uk": "наполягати",
+        "de": "bestehen auf",
+        "fr": "insister",
+        "es": "insistir",
+        "it": "insistere",
+        "pt": "insistir",
+        "pl": "nalegać",
+        "ru": "настаивать",
+        "zh": "坚持",
+        "ja": "言い張る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "install",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ɪnˈstɔːl/",
+      "definition": "To put equipment or software in place.",
+      "examples": [
+        "I need to install the new app."
+      ],
+      "translations": {
+        "uk": "встановлювати",
+        "de": "installieren",
+        "fr": "installer",
+        "es": "instalar",
+        "it": "installare",
+        "pt": "instalar",
+        "pl": "instalować",
+        "ru": "устанавливать",
+        "zh": "安装",
+        "ja": "インストールする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "judge",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/dʒʌdʒ/",
+      "definition": "To form an opinion about someone or something.",
+      "examples": [
+        "Don't judge people by their clothes."
+      ],
+      "translations": {
+        "uk": "судити, оцінювати",
+        "de": "beurteilen",
+        "fr": "juger",
+        "es": "juzgar",
+        "it": "giudicare",
+        "pt": "julgar",
+        "pl": "oceniać",
+        "ru": "судить, оценивать",
+        "zh": "评判",
+        "ja": "判断する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "A person who decides cases in a court of law.",
+          "examples": [
+            "The judge sent him to prison."
+          ],
+          "translations": {
+            "uk": "суддя",
+            "de": "Richter",
+            "fr": "juge",
+            "es": "juez",
+            "it": "giudice",
+            "pt": "juiz",
+            "pl": "sędzia",
+            "ru": "судья",
+            "zh": "法官",
+            "ja": "裁判官"
+          }
+        }
+      ]
+    },
+    {
+      "word": "launch",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/lɔːntʃ/",
+      "definition": "To start something new; to send a rocket into space.",
+      "examples": [
+        "The company will launch a new phone next month."
+      ],
+      "translations": {
+        "uk": "запускати",
+        "de": "einführen",
+        "fr": "lancer",
+        "es": "lanzar",
+        "it": "lanciare",
+        "pt": "lançar",
+        "pl": "wprowadzać",
+        "ru": "запускать",
+        "zh": "推出",
+        "ja": "発売する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "limit",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈlɪmɪt/",
+      "definition": "To keep something within a certain amount.",
+      "examples": [
+        "Try to limit your screen time."
+      ],
+      "translations": {
+        "uk": "обмежувати",
+        "de": "begrenzen",
+        "fr": "limiter",
+        "es": "limitar",
+        "it": "limitare",
+        "pt": "limitar",
+        "pl": "ograniczać",
+        "ru": "ограничивать",
+        "zh": "限制",
+        "ja": "制限する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "The greatest amount that is allowed.",
+          "examples": [
+            "The speed limit here is 30 miles per hour."
+          ],
+          "translations": {
+            "uk": "межа, обмеження",
+            "de": "Grenze",
+            "fr": "limite",
+            "es": "límite",
+            "it": "limite",
+            "pt": "limite",
+            "pl": "limit",
+            "ru": "предел, ограничение",
+            "zh": "限制",
+            "ja": "制限"
+          }
+        }
+      ]
+    },
+    {
+      "word": "protest",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/prəˈtest/",
+      "definition": "To show strongly that you disagree.",
+      "examples": [
+        "Students protested against the new rules."
+      ],
+      "translations": {
+        "uk": "протестувати",
+        "de": "protestieren",
+        "fr": "protester",
+        "es": "protestar",
+        "it": "protestare",
+        "pt": "protestar",
+        "pl": "protestować",
+        "ru": "протестовать",
+        "zh": "抗议",
+        "ja": "抗議する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "A public event where people show they disagree.",
+          "examples": [
+            "Thousands joined the protest."
+          ],
+          "translations": {
+            "uk": "протест",
+            "de": "Protest",
+            "fr": "manifestation",
+            "es": "protesta",
+            "it": "protesta",
+            "pt": "protesto",
+            "pl": "protest",
+            "ru": "протест",
+            "zh": "抗议",
+            "ja": "抗議"
+          }
+        }
+      ]
+    },
+    {
+      "word": "represent",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˌreprɪˈzent/",
+      "definition": "To act or speak for someone; to be a sign of something.",
+      "examples": [
+        "She represents our school at the competition."
+      ],
+      "translations": {
+        "uk": "представляти",
+        "de": "vertreten",
+        "fr": "représenter",
+        "es": "representar",
+        "it": "rappresentare",
+        "pt": "representar",
+        "pl": "reprezentować",
+        "ru": "представлять",
+        "zh": "代表",
+        "ja": "代表する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "resist",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/rɪˈzɪst/",
+      "definition": "To fight against something; to not accept it.",
+      "examples": [
+        "I can't resist chocolate."
+      ],
+      "translations": {
+        "uk": "опиратися",
+        "de": "widerstehen",
+        "fr": "résister",
+        "es": "resistir",
+        "it": "resistere",
+        "pt": "resistir",
+        "pl": "opierać się",
+        "ru": "сопротивляться",
+        "zh": "抵抗",
+        "ja": "抵抗する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "split",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/splɪt/",
+      "definition": "To divide into parts.",
+      "examples": [
+        "Let's split the bill."
+      ],
+      "translations": {
+        "uk": "ділити",
+        "de": "teilen",
+        "fr": "partager",
+        "es": "dividir",
+        "it": "dividere",
+        "pt": "dividir",
+        "pl": "dzielić",
+        "ru": "делить",
+        "zh": "分摊",
+        "ja": "分ける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "submit",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/səbˈmɪt/",
+      "definition": "To give a document to someone for a decision.",
+      "examples": [
+        "Submit your essay by Friday."
+      ],
+      "translations": {
+        "uk": "подавати",
+        "de": "einreichen",
+        "fr": "soumettre",
+        "es": "entregar",
+        "it": "consegnare",
+        "pt": "enviar",
+        "pl": "złożyć",
+        "ru": "подавать",
+        "zh": "提交",
+        "ja": "提出する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "suspect",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/səˈspekt/",
+      "definition": "To think that something is probably true, especially something bad.",
+      "examples": [
+        "I suspect he is lying."
+      ],
+      "translations": {
+        "uk": "підозрювати",
+        "de": "vermuten",
+        "fr": "soupçonner",
+        "es": "sospechar",
+        "it": "sospettare",
+        "pt": "suspeitar",
+        "pl": "podejrzewać",
+        "ru": "подозревать",
+        "zh": "怀疑",
+        "ja": "疑う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "threaten",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈθretən/",
+      "definition": "To say you will harm someone.",
+      "examples": [
+        "Pollution threatens many animals."
+      ],
+      "translations": {
+        "uk": "загрожувати",
+        "de": "bedrohen",
+        "fr": "menacer",
+        "es": "amenazar",
+        "it": "minacciare",
+        "pt": "ameaçar",
+        "pl": "zagrażać",
+        "ru": "угрожать",
+        "zh": "威胁",
+        "ja": "脅かす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tolerate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈtɑːləreɪt/",
+      "definition": "To accept something unpleasant.",
+      "examples": [
+        "I can't tolerate such bad behavior."
+      ],
+      "translations": {
+        "uk": "терпіти",
+        "de": "dulden",
+        "fr": "tolérer",
+        "es": "tolerar",
+        "it": "tollerare",
+        "pt": "tolerar",
+        "pl": "tolerować",
+        "ru": "терпеть",
+        "zh": "容忍",
+        "ja": "我慢する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vary",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈveri/",
+      "definition": "To be different in different situations.",
+      "examples": [
+        "Prices vary from store to store."
+      ],
+      "translations": {
+        "uk": "різнитися",
+        "de": "variieren",
+        "fr": "varier",
+        "es": "variar",
+        "it": "variare",
+        "pt": "variar",
+        "pl": "różnić się",
+        "ru": "различаться",
+        "zh": "变化",
+        "ja": "異なる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wander",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Basic Words",
+      "ipa": "/ˈwɑːndɚ/",
+      "definition": "To walk slowly without a clear direction.",
+      "examples": [
+        "We wandered around the old town."
+      ],
+      "translations": {
+        "uk": "блукати",
+        "de": "umherwandern",
+        "fr": "errer",
+        "es": "deambular",
+        "it": "girovagare",
+        "pt": "vagar",
+        "pl": "wędrować",
+        "ru": "бродить",
+        "zh": "漫步",
+        "ja": "歩き回る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
