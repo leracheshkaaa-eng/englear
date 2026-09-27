@@ -411,6 +411,7 @@
     "preposition": "przyimek",
     "pronoun": "zaimek",
     "conjunction": "spójnik",
+    "idiom": "idiom",
     "phrasal verb": "czasownik frazowy",
     "collocation": "kolokacja"
   },
@@ -425,6 +426,8 @@
     "Basic Words": "Podstawowe słowa",
     "Numbers": "Liczby",
     "Colors": "Kolory",
+    "Idioms": "Idiomy",
+    "Advanced Words": "Słownictwo zaawansowane",
     "Home": "Dom",
     "People": "Ludzie",
     "Family": "Rodzina",

@@ -1,0 +1,675 @@
+{
+  "package": "ielts-graphs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "rise",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/raɪz/",
+      "definition": "To go up; to increase.",
+      "examples": [
+        "Prices are expected to rise next year."
+      ],
+      "translations": {
+        "uk": "зростати",
+        "de": "steigen",
+        "fr": "augmenter",
+        "es": "subir",
+        "it": "aumentare",
+        "pt": "subir",
+        "pl": "rosnąć",
+        "ru": "расти",
+        "zh": "上升",
+        "ja": "上昇する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "An increase in amount or number.",
+          "examples": [
+            "There was a sharp rise in sales."
+          ],
+          "translations": {
+            "uk": "зростання",
+            "de": "Anstieg",
+            "fr": "hausse",
+            "es": "aumento",
+            "it": "aumento",
+            "pt": "aumento",
+            "pl": "wzrost",
+            "ru": "рост",
+            "zh": "增长",
+            "ja": "上昇"
+          }
+        }
+      ]
+    },
+    {
+      "word": "double",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˈdʌbəl/",
+      "definition": "To become twice as big.",
+      "examples": [
+        "The price of houses has doubled."
+      ],
+      "translations": {
+        "uk": "подвоюватися",
+        "de": "sich verdoppeln",
+        "fr": "doubler",
+        "es": "duplicarse",
+        "it": "raddoppiare",
+        "pt": "dobrar",
+        "pl": "podwoić się",
+        "ru": "удваиваться",
+        "zh": "翻倍",
+        "ja": "倍になる"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "remain",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/rɪˈmeɪn/",
+      "definition": "To stay the same.",
+      "examples": [
+        "The number of students remained the same."
+      ],
+      "translations": {
+        "uk": "залишатися",
+        "de": "bleiben",
+        "fr": "rester",
+        "es": "permanecer",
+        "it": "rimanere",
+        "pt": "permanecer",
+        "pl": "pozostawać",
+        "ru": "оставаться",
+        "zh": "保持",
+        "ja": "〜のままである"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "percentage",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/pɚˈsentɪdʒ/",
+      "definition": "An amount shown as part of 100.",
+      "examples": [
+        "What percentage of people own a car?"
+      ],
+      "translations": {
+        "uk": "відсоток",
+        "de": "Prozentsatz",
+        "fr": "pourcentage",
+        "es": "porcentaje",
+        "it": "percentuale",
+        "pt": "porcentagem",
+        "pl": "odsetek",
+        "ru": "процент",
+        "zh": "百分比",
+        "ja": "割合"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "chart",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/tʃɑːrt/",
+      "definition": "A picture that shows information, such as a graph.",
+      "examples": [
+        "The chart shows sales by month."
+      ],
+      "translations": {
+        "uk": "діаграма",
+        "de": "Diagramm",
+        "fr": "graphique",
+        "es": "gráfico",
+        "it": "grafico",
+        "pt": "gráfico",
+        "pl": "wykres",
+        "ru": "диаграмма",
+        "zh": "图表",
+        "ja": "図表"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "graph",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ɡræf/",
+      "definition": "A drawing with lines that shows how numbers change.",
+      "examples": [
+        "The graph shows a rise in temperature."
+      ],
+      "translations": {
+        "uk": "графік",
+        "de": "Graph",
+        "fr": "courbe",
+        "es": "gráfica",
+        "it": "diagramma",
+        "pt": "gráfico de linhas",
+        "pl": "wykres liniowy",
+        "ru": "график",
+        "zh": "曲线图",
+        "ja": "グラフ"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "compared to",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/kəmˈperd tuː/",
+      "definition": "When you compare it with.",
+      "examples": [
+        "Compared to last year, sales are up."
+      ],
+      "translations": {
+        "uk": "порівняно з",
+        "de": "im Vergleich zu",
+        "fr": "par rapport à",
+        "es": "en comparación con",
+        "it": "rispetto a",
+        "pt": "em comparação com",
+        "pl": "w porównaniu z",
+        "ru": "по сравнению с",
+        "zh": "与…相比",
+        "ja": "〜と比べて"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "decline",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/dɪˈklaɪn/",
+      "definition": "To become less or worse.",
+      "examples": [
+        "The number of visitors declined in 2020."
+      ],
+      "translations": {
+        "uk": "знижуватися",
+        "de": "zurückgehen",
+        "fr": "diminuer",
+        "es": "disminuir",
+        "it": "calare",
+        "pt": "declinar",
+        "pl": "spadać",
+        "ru": "снижаться",
+        "zh": "下降",
+        "ja": "減少する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary",
+      "meanings": [
+        {
+          "key": "refuse",
+          "part_of_speech": "verb",
+          "cefr": "C1",
+          "definition": "To say politely that you will not accept something.",
+          "examples": [
+            "She declined the invitation."
+          ],
+          "translations": {
+            "uk": "відхиляти",
+            "de": "ablehnen",
+            "fr": "décliner",
+            "es": "rechazar",
+            "it": "declinare",
+            "pt": "recusar",
+            "pl": "odmówić",
+            "ru": "отклонять",
+            "zh": "婉拒",
+            "ja": "断る"
+          }
+        }
+      ]
+    },
+    {
+      "word": "fluctuate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈflʌktʃueɪt/",
+      "definition": "To go up and down many times.",
+      "examples": [
+        "Oil prices fluctuate a lot."
+      ],
+      "translations": {
+        "uk": "коливатися",
+        "de": "schwanken",
+        "fr": "fluctuer",
+        "es": "fluctuar",
+        "it": "oscillare",
+        "pt": "flutuar",
+        "pl": "wahać się",
+        "ru": "колебаться",
+        "zh": "波动",
+        "ja": "変動する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "peak",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/piːk/",
+      "definition": "The highest point or level.",
+      "examples": [
+        "Sales reached a peak in December."
+      ],
+      "translations": {
+        "uk": "пік",
+        "de": "Höhepunkt",
+        "fr": "pic",
+        "es": "pico",
+        "it": "picco",
+        "pt": "pico",
+        "pl": "szczyt",
+        "ru": "пик",
+        "zh": "顶峰",
+        "ja": "ピーク"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "stable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈsteɪbəl/",
+      "definition": "Not changing much.",
+      "examples": [
+        "The population remained stable."
+      ],
+      "translations": {
+        "uk": "стабільний",
+        "de": "stabil",
+        "fr": "stable",
+        "es": "estable",
+        "it": "stabile",
+        "pt": "estável",
+        "pl": "stabilny",
+        "ru": "стабильный",
+        "zh": "稳定的",
+        "ja": "安定した"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "steady",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈstedi/",
+      "definition": "Changing slowly and regularly.",
+      "examples": [
+        "There was a steady increase in prices."
+      ],
+      "translations": {
+        "uk": "рівномірний",
+        "de": "stetig",
+        "fr": "régulier",
+        "es": "constante",
+        "it": "costante",
+        "pt": "constante",
+        "pl": "stały",
+        "ru": "равномерный",
+        "zh": "稳步的",
+        "ja": "着実な"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "sharp",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ʃɑːrp/",
+      "definition": "Sudden and large.",
+      "examples": [
+        "There was a sharp fall in sales."
+      ],
+      "translations": {
+        "uk": "різкий",
+        "de": "stark",
+        "fr": "brusque",
+        "es": "brusco",
+        "it": "brusco",
+        "pt": "acentuado",
+        "pl": "gwałtowny",
+        "ru": "резкий",
+        "zh": "急剧的",
+        "ja": "急激な"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary",
+      "meanings": [
+        {
+          "key": "knife",
+          "part_of_speech": "adjective",
+          "cefr": "A2",
+          "definition": "Having a thin edge that can cut.",
+          "examples": [
+            "Be careful, the knife is very sharp."
+          ],
+          "translations": {
+            "uk": "гострий",
+            "de": "scharf",
+            "fr": "tranchant",
+            "es": "afilado",
+            "it": "affilato",
+            "pt": "afiado",
+            "pl": "ostry",
+            "ru": "острый",
+            "zh": "锋利的",
+            "ja": "鋭い"
+          }
+        }
+      ]
+    },
+    {
+      "word": "gradual",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈɡrædʒuəl/",
+      "definition": "Happening slowly over time.",
+      "examples": [
+        "There was a gradual increase in temperature."
+      ],
+      "translations": {
+        "uk": "поступовий",
+        "de": "allmählich",
+        "fr": "progressif",
+        "es": "gradual",
+        "it": "graduale",
+        "pt": "gradual",
+        "pl": "stopniowy",
+        "ru": "постепенный",
+        "zh": "逐渐的",
+        "ja": "緩やかな"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "significantly",
+      "part_of_speech": "adverb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/sɪɡˈnɪfɪkəntli/",
+      "definition": "By a large amount.",
+      "examples": [
+        "Costs have increased significantly."
+      ],
+      "translations": {
+        "uk": "значно",
+        "de": "erheblich",
+        "fr": "considérablement",
+        "es": "significativamente",
+        "it": "notevolmente",
+        "pt": "significativamente",
+        "pl": "znacząco",
+        "ru": "значительно",
+        "zh": "显著地",
+        "ja": "大幅に"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "slightly",
+      "part_of_speech": "adverb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈslaɪtli/",
+      "definition": "A little.",
+      "examples": [
+        "Prices fell slightly in March."
+      ],
+      "translations": {
+        "uk": "трохи",
+        "de": "leicht",
+        "fr": "légèrement",
+        "es": "ligeramente",
+        "it": "leggermente",
+        "pt": "ligeiramente",
+        "pl": "nieznacznie",
+        "ru": "слегка",
+        "zh": "稍微",
+        "ja": "わずかに"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "dramatically",
+      "part_of_speech": "adverb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/drəˈmætɪkli/",
+      "definition": "Very suddenly and by a large amount.",
+      "examples": [
+        "The number of users grew dramatically."
+      ],
+      "translations": {
+        "uk": "різко",
+        "de": "drastisch",
+        "fr": "de façon spectaculaire",
+        "es": "drásticamente",
+        "it": "drasticamente",
+        "pt": "drasticamente",
+        "pl": "drastycznie",
+        "ru": "резко",
+        "zh": "急剧地",
+        "ja": "劇的に"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "overall",
+      "part_of_speech": "adverb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˌoʊvɚˈɔːl/",
+      "definition": "In general; when you consider everything.",
+      "examples": [
+        "Overall, sales increased over the period."
+      ],
+      "translations": {
+        "uk": "загалом",
+        "de": "insgesamt",
+        "fr": "dans l'ensemble",
+        "es": "en general",
+        "it": "nel complesso",
+        "pt": "no geral",
+        "pl": "ogólnie",
+        "ru": "в целом",
+        "zh": "总体上",
+        "ja": "全体として"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "proportion",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/prəˈpɔːrʃən/",
+      "definition": "A part of a total, compared to the whole.",
+      "examples": [
+        "A large proportion of students live at home."
+      ],
+      "translations": {
+        "uk": "частка",
+        "de": "Anteil",
+        "fr": "proportion",
+        "es": "proporción",
+        "it": "proporzione",
+        "pt": "proporção",
+        "pl": "część",
+        "ru": "доля",
+        "zh": "比例",
+        "ja": "割合"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "approximately",
+      "part_of_speech": "adverb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/əˈprɑːksɪmətli/",
+      "definition": "Close to an exact number; about.",
+      "examples": [
+        "The trip takes approximately two hours."
+      ],
+      "translations": {
+        "uk": "приблизно",
+        "de": "ungefähr",
+        "fr": "environ",
+        "es": "aproximadamente",
+        "it": "circa",
+        "pt": "aproximadamente",
+        "pl": "około",
+        "ru": "приблизительно",
+        "zh": "大约",
+        "ja": "約"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "account for",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/əˈkaʊnt fɔːr/",
+      "definition": "To form a particular amount of a total.",
+      "examples": [
+        "Young people account for 30 percent of users."
+      ],
+      "translations": {
+        "uk": "становити (частку)",
+        "de": "ausmachen",
+        "fr": "représenter",
+        "es": "representar",
+        "it": "rappresentare",
+        "pt": "representar",
+        "pl": "stanowić",
+        "ru": "составлять (долю)",
+        "zh": "占",
+        "ja": "占める"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "level off",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈlevəl ɑːf/",
+      "definition": "To stop rising or falling and stay the same.",
+      "examples": [
+        "After years of growth, sales leveled off."
+      ],
+      "translations": {
+        "uk": "стабілізуватися",
+        "de": "sich einpendeln",
+        "fr": "se stabiliser",
+        "es": "estabilizarse",
+        "it": "stabilizzarsi",
+        "pt": "estabilizar-se",
+        "pl": "ustabilizować się",
+        "ru": "выровняться",
+        "zh": "趋于平稳",
+        "ja": "横ばいになる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "whereas",
+      "part_of_speech": "conjunction",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/werˈæz/",
+      "definition": "While; in contrast.",
+      "examples": [
+        "Tom likes tea, whereas Anna prefers coffee."
+      ],
+      "translations": {
+        "uk": "тоді як",
+        "de": "während",
+        "fr": "alors que",
+        "es": "mientras que",
+        "it": "mentre",
+        "pt": "enquanto",
+        "pl": "podczas gdy",
+        "ru": "тогда как",
+        "zh": "而",
+        "ja": "一方で"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "respectively",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/rɪˈspektɪvli/",
+      "definition": "In the same order as the things you just mentioned.",
+      "examples": [
+        "Tom and Anna are 10 and 12 respectively."
+      ],
+      "translations": {
+        "uk": "відповідно",
+        "de": "beziehungsweise",
+        "fr": "respectivement",
+        "es": "respectivamente",
+        "it": "rispettivamente",
+        "pt": "respectivamente",
+        "pl": "odpowiednio",
+        "ru": "соответственно",
+        "zh": "分别",
+        "ja": "それぞれ"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    }
+  ]
+}

@@ -399,6 +399,7 @@
     "preposition": "Präposition",
     "pronoun": "Pronomen",
     "conjunction": "Konjunktion",
+    "idiom": "Redewendung",
     "phrasal verb": "Phrasal Verb",
     "collocation": "Kollokation"
   },
@@ -413,6 +414,8 @@
     "Basic Words": "Grundwortschatz",
     "Numbers": "Zahlen",
     "Colors": "Farben",
+    "Idioms": "Redewendungen",
+    "Advanced Words": "Wortschatz für Fortgeschrittene",
     "Home": "Zuhause",
     "People": "Menschen",
     "Family": "Familie",

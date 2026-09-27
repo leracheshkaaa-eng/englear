@@ -1,0 +1,631 @@
+{
+  "package": "advanced-c1",
+  "kind": "words",
+  "words": [
+    {
+      "word": "acknowledge",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əkˈnɑːlɪdʒ/",
+      "definition": "To accept that something is true.",
+      "examples": [
+        "He acknowledged his mistake."
+      ],
+      "translations": {
+        "uk": "визнавати",
+        "de": "anerkennen",
+        "fr": "reconnaître",
+        "es": "reconocer",
+        "it": "riconoscere",
+        "pt": "reconhecer",
+        "pl": "uznawać",
+        "ru": "признавать",
+        "zh": "承认",
+        "ja": "認める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "anticipate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ænˈtɪsəpeɪt/",
+      "definition": "To expect something and prepare for it.",
+      "examples": [
+        "We anticipate a lot of visitors this summer."
+      ],
+      "translations": {
+        "uk": "передбачати",
+        "de": "erwarten",
+        "fr": "prévoir",
+        "es": "prever",
+        "it": "prevedere",
+        "pt": "prever",
+        "pl": "przewidywać",
+        "ru": "предвидеть",
+        "zh": "预期",
+        "ja": "予期する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "compensate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑːmpənseɪt/",
+      "definition": "To pay or do something to make up for a loss.",
+      "examples": [
+        "The company will compensate you for the damage."
+      ],
+      "translations": {
+        "uk": "компенсувати",
+        "de": "entschädigen",
+        "fr": "indemniser",
+        "es": "compensar",
+        "it": "risarcire",
+        "pt": "compensar",
+        "pl": "rekompensować",
+        "ru": "компенсировать",
+        "zh": "赔偿",
+        "ja": "補償する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deteriorate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈtɪriəreɪt/",
+      "definition": "To become worse.",
+      "examples": [
+        "His health deteriorated quickly."
+      ],
+      "translations": {
+        "uk": "погіршуватися",
+        "de": "sich verschlechtern",
+        "fr": "se détériorer",
+        "es": "deteriorarse",
+        "it": "peggiorare",
+        "pt": "deteriorar-se",
+        "pl": "pogarszać się",
+        "ru": "ухудшаться",
+        "zh": "恶化",
+        "ja": "悪化する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "diminish",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈmɪnɪʃ/",
+      "definition": "To become smaller or less important.",
+      "examples": [
+        "The pain will diminish over time."
+      ],
+      "translations": {
+        "uk": "зменшуватися",
+        "de": "abnehmen",
+        "fr": "diminuer",
+        "es": "disminuir",
+        "it": "diminuire",
+        "pt": "diminuir",
+        "pl": "słabnąć",
+        "ru": "уменьшаться",
+        "zh": "减少",
+        "ja": "減少する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exaggerate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪɡˈzædʒəreɪt/",
+      "definition": "To say something is bigger or worse than it is.",
+      "examples": [
+        "Don't exaggerate, it wasn't that bad."
+      ],
+      "translations": {
+        "uk": "перебільшувати",
+        "de": "übertreiben",
+        "fr": "exagérer",
+        "es": "exagerar",
+        "it": "esagerare",
+        "pt": "exagerar",
+        "pl": "przesadzać",
+        "ru": "преувеличивать",
+        "zh": "夸张",
+        "ja": "誇張する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "overcome",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌoʊvɚˈkʌm/",
+      "definition": "To succeed in dealing with a difficulty.",
+      "examples": [
+        "It takes time to overcome a fear of flying."
+      ],
+      "translations": {
+        "uk": "долати",
+        "de": "überwinden",
+        "fr": "surmonter",
+        "es": "superar",
+        "it": "superare",
+        "pt": "superar",
+        "pl": "pokonać",
+        "ru": "преодолевать",
+        "zh": "克服",
+        "ja": "克服する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pursue",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/pɚˈsuː/",
+      "definition": "To try to achieve something over time.",
+      "examples": [
+        "She wants to pursue a career in medicine."
+      ],
+      "translations": {
+        "uk": "прагнути (до мети)",
+        "de": "verfolgen",
+        "fr": "poursuivre",
+        "es": "perseguir",
+        "it": "perseguire",
+        "pt": "seguir",
+        "pl": "realizować",
+        "ru": "стремиться к",
+        "zh": "追求",
+        "ja": "追求する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "undermine",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌʌndɚˈmaɪn/",
+      "definition": "To make something weaker gradually.",
+      "examples": [
+        "Constant criticism can undermine confidence."
+      ],
+      "translations": {
+        "uk": "підривати",
+        "de": "untergraben",
+        "fr": "saper",
+        "es": "socavar",
+        "it": "minare",
+        "pt": "minar",
+        "pl": "podważać",
+        "ru": "подрывать",
+        "zh": "破坏",
+        "ja": "損なう"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "thrive",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/θraɪv/",
+      "definition": "To grow or develop very well.",
+      "examples": [
+        "The business is thriving."
+      ],
+      "translations": {
+        "uk": "процвітати",
+        "de": "gedeihen",
+        "fr": "prospérer",
+        "es": "prosperar",
+        "it": "prosperare",
+        "pt": "prosperar",
+        "pl": "kwitnąć",
+        "ru": "процветать",
+        "zh": "繁荣",
+        "ja": "繁栄する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ambiguous",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/æmˈbɪɡjuəs/",
+      "definition": "Having more than one possible meaning.",
+      "examples": [
+        "The instructions were ambiguous."
+      ],
+      "translations": {
+        "uk": "двозначний",
+        "de": "mehrdeutig",
+        "fr": "ambigu",
+        "es": "ambiguo",
+        "it": "ambiguo",
+        "pt": "ambíguo",
+        "pl": "niejednoznaczny",
+        "ru": "двусмысленный",
+        "zh": "模棱两可的",
+        "ja": "曖昧な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "arbitrary",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɑːrbɪtreri/",
+      "definition": "Based on chance, not reason.",
+      "examples": [
+        "The decision seemed arbitrary."
+      ],
+      "translations": {
+        "uk": "довільний",
+        "de": "willkürlich",
+        "fr": "arbitraire",
+        "es": "arbitrario",
+        "it": "arbitrario",
+        "pt": "arbitrário",
+        "pl": "arbitralny",
+        "ru": "произвольный",
+        "zh": "任意的",
+        "ja": "恣意的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "coherent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/koʊˈhɪrənt/",
+      "definition": "Clear and logical.",
+      "examples": [
+        "Your essay needs a more coherent structure."
+      ],
+      "translations": {
+        "uk": "зв'язний, логічний",
+        "de": "kohärent",
+        "fr": "cohérent",
+        "es": "coherente",
+        "it": "coerente",
+        "pt": "coerente",
+        "pl": "spójny",
+        "ru": "связный, логичный",
+        "zh": "连贯的",
+        "ja": "首尾一貫した"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "competent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑːmpətənt/",
+      "definition": "Having enough skill to do something well.",
+      "examples": [
+        "She is a very competent manager."
+      ],
+      "translations": {
+        "uk": "компетентний",
+        "de": "kompetent",
+        "fr": "compétent",
+        "es": "competente",
+        "it": "competente",
+        "pt": "competente",
+        "pl": "kompetentny",
+        "ru": "компетентный",
+        "zh": "称职的",
+        "ja": "有能な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "diverse",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/daɪˈvɝːs/",
+      "definition": "Including many different types.",
+      "examples": [
+        "London is a very diverse city."
+      ],
+      "translations": {
+        "uk": "різноманітний",
+        "de": "vielfältig",
+        "fr": "divers",
+        "es": "diverso",
+        "it": "variegato",
+        "pt": "diverso",
+        "pl": "zróżnicowany",
+        "ru": "разнообразный",
+        "zh": "多样的",
+        "ja": "多様な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "feasible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈfiːzəbəl/",
+      "definition": "Possible to do.",
+      "examples": [
+        "Is it feasible to finish by Friday?"
+      ],
+      "translations": {
+        "uk": "здійсненний",
+        "de": "machbar",
+        "fr": "faisable",
+        "es": "factible",
+        "it": "fattibile",
+        "pt": "viável",
+        "pl": "wykonalny",
+        "ru": "осуществимый",
+        "zh": "可行的",
+        "ja": "実行可能な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "profound",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/prəˈfaʊnd/",
+      "definition": "Very great or deep.",
+      "examples": [
+        "The book had a profound effect on me."
+      ],
+      "translations": {
+        "uk": "глибокий",
+        "de": "tiefgreifend",
+        "fr": "profond",
+        "es": "profundo",
+        "it": "profondo",
+        "pt": "profundo",
+        "pl": "głęboki",
+        "ru": "глубокий",
+        "zh": "深刻的",
+        "ja": "深い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reluctant",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rɪˈlʌktənt/",
+      "definition": "Not wanting to do something.",
+      "examples": [
+        "He was reluctant to leave."
+      ],
+      "translations": {
+        "uk": "неохочий",
+        "de": "widerwillig",
+        "fr": "réticent",
+        "es": "reacio",
+        "it": "riluttante",
+        "pt": "relutante",
+        "pl": "niechętny",
+        "ru": "неохотный",
+        "zh": "不情愿的",
+        "ja": "気が進まない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vulnerable",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈvʌlnɚəbəl/",
+      "definition": "Easy to hurt or attack.",
+      "examples": [
+        "Old people are vulnerable to the flu."
+      ],
+      "translations": {
+        "uk": "вразливий",
+        "de": "verletzlich",
+        "fr": "vulnérable",
+        "es": "vulnerable",
+        "it": "vulnerabile",
+        "pt": "vulnerável",
+        "pl": "bezbronny",
+        "ru": "уязвимый",
+        "zh": "脆弱的",
+        "ja": "弱い立場の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "consensus",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈsensəs/",
+      "definition": "Agreement among a group.",
+      "examples": [
+        "There is no consensus on the issue."
+      ],
+      "translations": {
+        "uk": "консенсус",
+        "de": "Konsens",
+        "fr": "consensus",
+        "es": "consenso",
+        "it": "consenso",
+        "pt": "consenso",
+        "pl": "konsensus",
+        "ru": "консенсус",
+        "zh": "共识",
+        "ja": "合意"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dilemma",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈlemə/",
+      "definition": "A difficult choice between two things.",
+      "examples": [
+        "I'm in a dilemma about which job to take."
+      ],
+      "translations": {
+        "uk": "дилема",
+        "de": "Dilemma",
+        "fr": "dilemme",
+        "es": "dilema",
+        "it": "dilemma",
+        "pt": "dilema",
+        "pl": "dylemat",
+        "ru": "дилемма",
+        "zh": "困境",
+        "ja": "ジレンマ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "drawback",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈdrɔːbæk/",
+      "definition": "A disadvantage.",
+      "examples": [
+        "The main drawback of the plan is the cost."
+      ],
+      "translations": {
+        "uk": "вада",
+        "de": "Haken",
+        "fr": "inconvénient",
+        "es": "inconveniente",
+        "it": "svantaggio",
+        "pt": "inconveniente",
+        "pl": "minus",
+        "ru": "недостаток",
+        "zh": "弊端",
+        "ja": "難点"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "incentive",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈsentɪv/",
+      "definition": "Something that encourages you to do something.",
+      "examples": [
+        "Tax cuts are an incentive for businesses."
+      ],
+      "translations": {
+        "uk": "стимул",
+        "de": "Anreiz",
+        "fr": "incitation",
+        "es": "incentivo",
+        "it": "incentivo",
+        "pt": "incentivo",
+        "pl": "zachęta",
+        "ru": "стимул",
+        "zh": "激励",
+        "ja": "奨励"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "misconception",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌmɪskənˈsepʃən/",
+      "definition": "A wrong idea.",
+      "examples": [
+        "It's a common misconception that bats are blind."
+      ],
+      "translations": {
+        "uk": "хибне уявлення",
+        "de": "Irrtum",
+        "fr": "idée fausse",
+        "es": "concepto erróneo",
+        "it": "idea sbagliata",
+        "pt": "equívoco",
+        "pl": "błędne przekonanie",
+        "ru": "заблуждение",
+        "zh": "误解",
+        "ja": "誤解"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "setback",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈsetbæk/",
+      "definition": "A problem that delays progress.",
+      "examples": [
+        "The injury was a setback for the team."
+      ],
+      "translations": {
+        "uk": "невдача",
+        "de": "Rückschlag",
+        "fr": "revers",
+        "es": "contratiempo",
+        "it": "battuta d'arresto",
+        "pt": "revés",
+        "pl": "niepowodzenie",
+        "ru": "неудача",
+        "zh": "挫折",
+        "ja": "挫折"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

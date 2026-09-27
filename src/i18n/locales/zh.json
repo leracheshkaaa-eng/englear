@@ -393,6 +393,7 @@
     "preposition": "介词",
     "pronoun": "代词",
     "conjunction": "连词",
+    "idiom": "习语",
     "phrasal verb": "短语动词",
     "collocation": "搭配"
   },
@@ -407,6 +408,8 @@
     "Basic Words": "基础词汇",
     "Numbers": "数字",
     "Colors": "颜色",
+    "Idioms": "习语",
+    "Advanced Words": "高级词汇",
     "Home": "家居",
     "People": "人物",
     "Family": "家庭",

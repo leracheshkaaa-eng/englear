@@ -399,6 +399,7 @@
     "preposition": "preposición",
     "pronoun": "pronombre",
     "conjunction": "conjunción",
+    "idiom": "modismo",
     "phrasal verb": "phrasal verb",
     "collocation": "colocación"
   },
@@ -413,6 +414,8 @@
     "Basic Words": "Palabras básicas",
     "Numbers": "Números",
     "Colors": "Colores",
+    "Idioms": "Modismos",
+    "Advanced Words": "Palabras avanzadas",
     "Home": "Hogar",
     "People": "Personas",
     "Family": "Familia",

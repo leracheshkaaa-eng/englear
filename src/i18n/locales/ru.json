@@ -411,6 +411,7 @@
     "preposition": "предлог",
     "pronoun": "местоимение",
     "conjunction": "союз",
+    "idiom": "идиома",
     "phrasal verb": "фразовый глагол",
     "collocation": "коллокация"
   },
@@ -425,6 +426,8 @@
     "Basic Words": "Базовые слова",
     "Numbers": "Числа",
     "Colors": "Цвета",
+    "Idioms": "Идиомы",
+    "Advanced Words": "Продвинутая лексика",
     "Home": "Дом",
     "People": "Люди",
     "Family": "Семья",

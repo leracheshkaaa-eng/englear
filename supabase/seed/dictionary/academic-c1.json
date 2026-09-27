@@ -1,0 +1,681 @@
+{
+  "package": "academic-c1",
+  "kind": "words",
+  "words": [
+    {
+      "word": "analysis",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/əˈnæləsɪs/",
+      "definition": "A careful study of something.",
+      "examples": [
+        "The analysis showed some interesting results."
+      ],
+      "translations": {
+        "uk": "аналіз",
+        "de": "Analyse",
+        "fr": "analyse",
+        "es": "análisis",
+        "it": "analisi",
+        "pt": "análise",
+        "pl": "analiza",
+        "ru": "анализ",
+        "zh": "分析",
+        "ja": "分析"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "approach",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/əˈproʊtʃ/",
+      "definition": "A way of dealing with something.",
+      "examples": [
+        "We need a new approach to the problem."
+      ],
+      "translations": {
+        "uk": "підхід",
+        "de": "Ansatz",
+        "fr": "approche",
+        "es": "enfoque",
+        "it": "approccio",
+        "pt": "abordagem",
+        "pl": "podejście",
+        "ru": "подход",
+        "zh": "方法",
+        "ja": "アプローチ"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "concept",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈkɑːnsept/",
+      "definition": "An idea.",
+      "examples": [
+        "The concept of time is hard to explain."
+      ],
+      "translations": {
+        "uk": "поняття, концепція",
+        "de": "Konzept",
+        "fr": "concept",
+        "es": "concepto",
+        "it": "concetto",
+        "pt": "conceito",
+        "pl": "pojęcie",
+        "ru": "понятие, концепция",
+        "zh": "概念",
+        "ja": "概念"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "context",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈkɑːntekst/",
+      "definition": "The situation in which something happens.",
+      "examples": [
+        "You can guess the meaning from the context."
+      ],
+      "translations": {
+        "uk": "контекст",
+        "de": "Kontext",
+        "fr": "contexte",
+        "es": "contexto",
+        "it": "contesto",
+        "pt": "contexto",
+        "pl": "kontekst",
+        "ru": "контекст",
+        "zh": "上下文",
+        "ja": "文脈"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "estimate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈestɪmeɪt/",
+      "definition": "To guess a number or amount.",
+      "examples": [
+        "We estimate that 500 people will come."
+      ],
+      "translations": {
+        "uk": "оцінювати (приблизно)",
+        "de": "schätzen",
+        "fr": "estimer",
+        "es": "estimar",
+        "it": "stimare",
+        "pt": "estimar",
+        "pl": "szacować",
+        "ru": "оценивать (приблизительно)",
+        "zh": "估计",
+        "ja": "見積もる"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "interpret",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ɪnˈtɝːprɪt/",
+      "definition": "To explain the meaning of something.",
+      "examples": [
+        "How do you interpret these results?"
+      ],
+      "translations": {
+        "uk": "тлумачити",
+        "de": "interpretieren",
+        "fr": "interpréter",
+        "es": "interpretar",
+        "it": "interpretare",
+        "pt": "interpretar",
+        "pl": "interpretować",
+        "ru": "толковать",
+        "zh": "解释",
+        "ja": "解釈する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "establish",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ɪˈstæblɪʃ/",
+      "definition": "To start or create something that will last.",
+      "examples": [
+        "The school was established in 1900."
+      ],
+      "translations": {
+        "uk": "засновувати",
+        "de": "gründen",
+        "fr": "établir",
+        "es": "establecer",
+        "it": "fondare",
+        "pt": "estabelecer",
+        "pl": "założyć",
+        "ru": "основывать",
+        "zh": "建立",
+        "ja": "設立する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "identify",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/aɪˈdentɪfaɪ/",
+      "definition": "To recognize or find something.",
+      "examples": [
+        "We need to identify the cause of the problem."
+      ],
+      "translations": {
+        "uk": "визначати",
+        "de": "identifizieren",
+        "fr": "identifier",
+        "es": "identificar",
+        "it": "identificare",
+        "pt": "identificar",
+        "pl": "zidentyfikować",
+        "ru": "определять",
+        "zh": "识别",
+        "ja": "特定する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "assume",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/əˈsuːm/",
+      "definition": "To think something is true without proof.",
+      "examples": [
+        "I assume you know the rules."
+      ],
+      "translations": {
+        "uk": "припускати",
+        "de": "annehmen",
+        "fr": "supposer",
+        "es": "suponer",
+        "it": "supporre",
+        "pt": "supor",
+        "pl": "zakładać",
+        "ru": "предполагать",
+        "zh": "假设",
+        "ja": "想定する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "conclude",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/kənˈkluːd/",
+      "definition": "To decide something after thinking about it.",
+      "examples": [
+        "The study concludes that exercise helps memory."
+      ],
+      "translations": {
+        "uk": "робити висновок",
+        "de": "folgern",
+        "fr": "conclure",
+        "es": "concluir",
+        "it": "concludere",
+        "pt": "concluir",
+        "pl": "stwierdzić",
+        "ru": "делать вывод",
+        "zh": "得出结论",
+        "ja": "結論づける"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "distribute",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/dɪˈstrɪbjuːt/",
+      "definition": "To give things to many people.",
+      "examples": [
+        "Volunteers distributed food to the families."
+      ],
+      "translations": {
+        "uk": "розподіляти",
+        "de": "verteilen",
+        "fr": "distribuer",
+        "es": "distribuir",
+        "it": "distribuire",
+        "pt": "distribuir",
+        "pl": "rozdawać",
+        "ru": "распределять",
+        "zh": "分发",
+        "ja": "配る"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "emerge",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ɪˈmɝːdʒ/",
+      "definition": "To appear or become known.",
+      "examples": [
+        "New problems emerged during the project."
+      ],
+      "translations": {
+        "uk": "виникати",
+        "de": "auftauchen",
+        "fr": "émerger",
+        "es": "surgir",
+        "it": "emergere",
+        "pt": "surgir",
+        "pl": "pojawiać się",
+        "ru": "возникать",
+        "zh": "出现",
+        "ja": "現れる"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "imply",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ɪmˈplaɪ/",
+      "definition": "To suggest something without saying it directly.",
+      "examples": [
+        "Are you implying that I'm lying?"
+      ],
+      "translations": {
+        "uk": "натякати",
+        "de": "andeuten",
+        "fr": "sous-entendre",
+        "es": "insinuar",
+        "it": "insinuare",
+        "pt": "insinuar",
+        "pl": "sugerować",
+        "ru": "подразумевать",
+        "zh": "暗示",
+        "ja": "ほのめかす"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "justify",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˈdʒʌstɪfaɪ/",
+      "definition": "To give a good reason for something.",
+      "examples": [
+        "How can you justify such a high price?"
+      ],
+      "translations": {
+        "uk": "виправдовувати",
+        "de": "rechtfertigen",
+        "fr": "justifier",
+        "es": "justificar",
+        "it": "giustificare",
+        "pt": "justificar",
+        "pl": "uzasadniać",
+        "ru": "оправдывать",
+        "zh": "证明…合理",
+        "ja": "正当化する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "enhance",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ɪnˈhæns/",
+      "definition": "To improve the quality of something.",
+      "examples": [
+        "Good lighting enhances the room."
+      ],
+      "translations": {
+        "uk": "посилювати",
+        "de": "steigern",
+        "fr": "rehausser",
+        "es": "realzar",
+        "it": "valorizzare",
+        "pt": "aprimorar",
+        "pl": "wzmacniać",
+        "ru": "усиливать",
+        "zh": "增强",
+        "ja": "高める"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "comprehensive",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˌkɑːmprɪˈhensɪv/",
+      "definition": "Including everything or almost everything.",
+      "examples": [
+        "The book gives a comprehensive guide to the city."
+      ],
+      "translations": {
+        "uk": "вичерпний",
+        "de": "umfassend",
+        "fr": "complet",
+        "es": "completo",
+        "it": "completo",
+        "pt": "abrangente",
+        "pl": "wyczerpujący",
+        "ru": "всесторонний",
+        "zh": "全面的",
+        "ja": "包括的な"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "crucial",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˈkruːʃəl/",
+      "definition": "Extremely important.",
+      "examples": [
+        "Sleep is crucial for good health."
+      ],
+      "translations": {
+        "uk": "вирішальний",
+        "de": "äußerst wichtig",
+        "fr": "crucial",
+        "es": "crucial",
+        "it": "cruciale",
+        "pt": "crucial",
+        "pl": "kluczowy",
+        "ru": "решающий",
+        "zh": "至关重要的",
+        "ja": "極めて重要な"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "inevitable",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ɪˈnevɪtəbəl/",
+      "definition": "Certain to happen.",
+      "examples": [
+        "Change is inevitable."
+      ],
+      "translations": {
+        "uk": "неминучий",
+        "de": "unvermeidlich",
+        "fr": "inévitable",
+        "es": "inevitable",
+        "it": "inevitabile",
+        "pt": "inevitável",
+        "pl": "nieunikniony",
+        "ru": "неизбежный",
+        "zh": "不可避免的",
+        "ja": "避けられない"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "substantial",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/səbˈstænʃəl/",
+      "definition": "Large in amount or value.",
+      "examples": [
+        "She earns a substantial salary."
+      ],
+      "translations": {
+        "uk": "значний",
+        "de": "beträchtlich",
+        "fr": "considérable",
+        "es": "sustancial",
+        "it": "consistente",
+        "pt": "substancial",
+        "pl": "znaczny",
+        "ru": "существенный",
+        "zh": "大量的",
+        "ja": "相当な"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "controversial",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˌkɑːntrəˈvɝːʃəl/",
+      "definition": "Causing a lot of disagreement.",
+      "examples": [
+        "The new law is very controversial."
+      ],
+      "translations": {
+        "uk": "суперечливий",
+        "de": "umstritten",
+        "fr": "controversé",
+        "es": "polémico",
+        "it": "controverso",
+        "pt": "controverso",
+        "pl": "kontrowersyjny",
+        "ru": "спорный",
+        "zh": "有争议的",
+        "ja": "物議を醸す"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "consequently",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˈkɑːnsəkwentli/",
+      "definition": "As a result.",
+      "examples": [
+        "He didn't study; consequently, he failed."
+      ],
+      "translations": {
+        "uk": "внаслідок цього",
+        "de": "folglich",
+        "fr": "par conséquent",
+        "es": "por consiguiente",
+        "it": "di conseguenza",
+        "pt": "consequentemente",
+        "pl": "w rezultacie",
+        "ru": "следовательно",
+        "zh": "所以",
+        "ja": "その結果"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "moreover",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/mɔːrˈoʊvɚ/",
+      "definition": "In addition to what has been said.",
+      "examples": [
+        "The plan is cheap; moreover, it is easy."
+      ],
+      "translations": {
+        "uk": "до того ж",
+        "de": "zudem",
+        "fr": "de plus",
+        "es": "además",
+        "it": "inoltre",
+        "pt": "além disso",
+        "pl": "co więcej",
+        "ru": "более того",
+        "zh": "而且",
+        "ja": "さらに"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "thus",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ðʌs/",
+      "definition": "As a result; in this way.",
+      "examples": [
+        "Prices rose, thus reducing demand."
+      ],
+      "translations": {
+        "uk": "таким чином",
+        "de": "somit",
+        "fr": "ainsi",
+        "es": "así",
+        "it": "così",
+        "pt": "assim",
+        "pl": "w ten sposób",
+        "ru": "таким образом",
+        "zh": "因此",
+        "ja": "したがって"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "nonetheless",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˌnʌnðəˈles/",
+      "definition": "Despite what has just been said.",
+      "examples": [
+        "The task was hard; nonetheless, we finished it."
+      ],
+      "translations": {
+        "uk": "проте",
+        "de": "dennoch",
+        "fr": "néanmoins",
+        "es": "no obstante",
+        "it": "ciononostante",
+        "pt": "mesmo assim",
+        "pl": "mimo to",
+        "ru": "тем не менее",
+        "zh": "尽管如此",
+        "ja": "それでもなお"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "perspective",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/pɚˈspektɪv/",
+      "definition": "A particular way of thinking about something.",
+      "examples": [
+        "Try to see it from my perspective."
+      ],
+      "translations": {
+        "uk": "точка зору",
+        "de": "Perspektive",
+        "fr": "point de vue",
+        "es": "perspectiva",
+        "it": "prospettiva",
+        "pt": "perspectiva",
+        "pl": "perspektywa",
+        "ru": "точка зрения",
+        "zh": "角度",
+        "ja": "視点"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "criteria",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/kraɪˈtɪriə/",
+      "definition": "Standards used to judge something.",
+      "examples": [
+        "What are the criteria for the award?"
+      ],
+      "translations": {
+        "uk": "критерії",
+        "de": "Kriterien",
+        "fr": "critères",
+        "es": "criterios",
+        "it": "criteri",
+        "pt": "critérios",
+        "pl": "kryteria",
+        "ru": "критерии",
+        "zh": "标准",
+        "ja": "基準"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "framework",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˈfreɪmwɝːk/",
+      "definition": "A set of ideas or rules used to solve a problem.",
+      "examples": [
+        "The report provides a framework for future research."
+      ],
+      "translations": {
+        "uk": "структура, рамки",
+        "de": "Rahmen",
+        "fr": "cadre",
+        "es": "marco",
+        "it": "quadro",
+        "pt": "estrutura",
+        "pl": "ramy",
+        "ru": "структура, рамки",
+        "zh": "框架",
+        "ja": "枠組み"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    }
+  ]
+}

@@ -399,6 +399,7 @@
     "preposition": "preposizione",
     "pronoun": "pronome",
     "conjunction": "congiunzione",
+    "idiom": "modo di dire",
     "phrasal verb": "phrasal verb",
     "collocation": "collocazione"
   },
@@ -413,6 +414,8 @@
     "Basic Words": "Parole di base",
     "Numbers": "Numeri",
     "Colors": "Colori",
+    "Idioms": "Modi di dire",
+    "Advanced Words": "Parole avanzate",
     "Home": "Casa",
     "People": "Persone",
     "Family": "Famiglia",

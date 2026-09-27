@@ -1,0 +1,356 @@
+{
+  "package": "idioms",
+  "kind": "words",
+  "words": [
+    {
+      "word": "piece of cake",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/ˌpiːs əv ˈkeɪk/",
+      "definition": "Something very easy.",
+      "examples": [
+        "The test was a piece of cake."
+      ],
+      "translations": {
+        "uk": "простіше простого",
+        "de": "ein Kinderspiel",
+        "fr": "du gâteau",
+        "es": "pan comido",
+        "it": "un gioco da ragazzi",
+        "pt": "moleza",
+        "pl": "bułka z masłem",
+        "ru": "проще простого",
+        "zh": "小菜一碟",
+        "ja": "朝飯前"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "break the ice",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/breɪk ði aɪs/",
+      "definition": "To make people feel more relaxed when they first meet.",
+      "examples": [
+        "He told a joke to break the ice."
+      ],
+      "translations": {
+        "uk": "розрядити атмосферу",
+        "de": "das Eis brechen",
+        "fr": "briser la glace",
+        "es": "romper el hielo",
+        "it": "rompere il ghiaccio",
+        "pt": "quebrar o gelo",
+        "pl": "przełamać lody",
+        "ru": "растопить лёд",
+        "zh": "打破僵局",
+        "ja": "場を和ませる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "under the weather",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/ˈʌndɚ ðə ˈweðɚ/",
+      "definition": "A little ill.",
+      "examples": [
+        "I'm feeling a bit under the weather today."
+      ],
+      "translations": {
+        "uk": "нездужати",
+        "de": "angeschlagen",
+        "fr": "patraque",
+        "es": "indispuesto",
+        "it": "giù di corda",
+        "pt": "indisposto",
+        "pl": "nie w formie",
+        "ru": "неважно себя чувствовать",
+        "zh": "不舒服",
+        "ja": "体調がすぐれない"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "once in a blue moon",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/wʌns ɪn ə bluː ˈmuːn/",
+      "definition": "Very rarely.",
+      "examples": [
+        "I see my cousin once in a blue moon."
+      ],
+      "translations": {
+        "uk": "раз на сто років",
+        "de": "alle Jubeljahre",
+        "fr": "tous les trente-six du mois",
+        "es": "de Pascuas a Ramos",
+        "it": "una volta ogni morte di papa",
+        "pt": "uma vez na vida",
+        "pl": "raz na ruski rok",
+        "ru": "раз в сто лет",
+        "zh": "千载难逢",
+        "ja": "ごくまれに"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "hit the books",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/hɪt ðə bʊks/",
+      "definition": "To start studying hard.",
+      "examples": [
+        "I have an exam tomorrow, so I need to hit the books."
+      ],
+      "translations": {
+        "uk": "засісти за книжки",
+        "de": "büffeln",
+        "fr": "potasser",
+        "es": "ponerse a estudiar",
+        "it": "mettersi sui libri",
+        "pt": "cair nos livros",
+        "pl": "zakuwać",
+        "ru": "засесть за учебники",
+        "zh": "用功读书",
+        "ja": "猛勉強する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "cost an arm and a leg",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/kɔːst ən ˈɑːrm ən ə ˈleɡ/",
+      "definition": "To be very expensive.",
+      "examples": [
+        "That car costs an arm and a leg."
+      ],
+      "translations": {
+        "uk": "коштувати цілий статок",
+        "de": "ein Vermögen kosten",
+        "fr": "coûter les yeux de la tête",
+        "es": "costar un ojo de la cara",
+        "it": "costare un occhio della testa",
+        "pt": "custar os olhos da cara",
+        "pl": "kosztować majątek",
+        "ru": "стоить целое состояние",
+        "zh": "非常昂贵",
+        "ja": "とても高い"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "on the same page",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/ɑːn ðə seɪm ˈpeɪdʒ/",
+      "definition": "Agreeing about something.",
+      "examples": [
+        "Let's make sure we're all on the same page."
+      ],
+      "translations": {
+        "uk": "однаково розуміти",
+        "de": "auf dem gleichen Stand",
+        "fr": "sur la même longueur d'onde",
+        "es": "en la misma sintonía",
+        "it": "sulla stessa lunghezza d'onda",
+        "pt": "na mesma página",
+        "pl": "na tej samej stronie",
+        "ru": "на одной волне",
+        "zh": "意见一致",
+        "ja": "認識が一致している"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "get the hang of",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/ɡet ðə ˈhæŋ əv/",
+      "definition": "To learn how to do something.",
+      "examples": [
+        "Driving is hard at first, but you'll get the hang of it."
+      ],
+      "translations": {
+        "uk": "набити руку",
+        "de": "den Dreh rauskriegen",
+        "fr": "prendre le coup de main",
+        "es": "agarrarle la mano",
+        "it": "prenderci la mano",
+        "pt": "pegar o jeito",
+        "pl": "nabrać wprawy",
+        "ru": "наловчиться",
+        "zh": "掌握窍门",
+        "ja": "コツをつかむ"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "keep an eye on",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/kiːp ən ˈaɪ ɑːn/",
+      "definition": "To watch someone or something carefully.",
+      "examples": [
+        "Can you keep an eye on my bag?"
+      ],
+      "translations": {
+        "uk": "наглядати за",
+        "de": "ein Auge haben auf",
+        "fr": "garder un œil sur",
+        "es": "echar un ojo a",
+        "it": "tenere d'occhio",
+        "pt": "ficar de olho em",
+        "pl": "mieć na oku",
+        "ru": "присматривать за",
+        "zh": "照看",
+        "ja": "目を離さない"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "call it a day",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/kɔːl ɪt ə ˈdeɪ/",
+      "definition": "To stop working for the day.",
+      "examples": [
+        "We're tired, let's call it a day."
+      ],
+      "translations": {
+        "uk": "на сьогодні досить",
+        "de": "Feierabend machen",
+        "fr": "arrêter pour aujourd'hui",
+        "es": "dar por terminado el día",
+        "it": "chiudere per oggi",
+        "pt": "encerrar o dia",
+        "pl": "zakończyć na dziś",
+        "ru": "закончить на сегодня",
+        "zh": "今天就到这里",
+        "ja": "今日はここまでにする"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "the last straw",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ðə læst ˈstrɔː/",
+      "definition": "The last problem in a series that makes you lose patience.",
+      "examples": [
+        "When he was late again, it was the last straw."
+      ],
+      "translations": {
+        "uk": "остання крапля",
+        "de": "der Tropfen, der das Fass zum Überlaufen bringt",
+        "fr": "la goutte d'eau qui fait déborder le vase",
+        "es": "la gota que colma el vaso",
+        "it": "la goccia che fa traboccare il vaso",
+        "pt": "a gota d'água",
+        "pl": "kropla, która przelała czarę",
+        "ru": "последняя капля",
+        "zh": "最后一根稻草",
+        "ja": "堪忍袋の緒が切れる原因"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "a blessing in disguise",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ə ˈblesɪŋ ɪn dɪsˈɡaɪz/",
+      "definition": "Something that seems bad but turns out to be good.",
+      "examples": [
+        "Losing that job was a blessing in disguise."
+      ],
+      "translations": {
+        "uk": "не було б щастя, та нещастя допомогло",
+        "de": "ein Glück im Unglück",
+        "fr": "un mal pour un bien",
+        "es": "no hay mal que por bien no venga",
+        "it": "una benedizione sotto mentite spoglie",
+        "pt": "há males que vêm para bem",
+        "pl": "błogosławieństwo w przebraniu",
+        "ru": "не было бы счастья, да несчастье помогло",
+        "zh": "因祸得福",
+        "ja": "災い転じて福となる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "beat around the bush",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/biːt əˈraʊnd ðə ˈbʊʃ/",
+      "definition": "To avoid talking directly about something.",
+      "examples": [
+        "Stop beating around the bush and tell me the truth."
+      ],
+      "translations": {
+        "uk": "ходити околясом",
+        "de": "um den heißen Brei herumreden",
+        "fr": "tourner autour du pot",
+        "es": "andarse por las ramas",
+        "it": "menare il can per l'aia",
+        "pt": "enrolar",
+        "pl": "owijać w bawełnę",
+        "ru": "ходить вокруг да около",
+        "zh": "拐弯抹角",
+        "ja": "遠回しに言う"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "let the cat out of the bag",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/let ðə ˈkæt aʊt əv ðə ˈbæɡ/",
+      "definition": "To tell a secret by mistake.",
+      "examples": [
+        "Who let the cat out of the bag about the party?"
+      ],
+      "translations": {
+        "uk": "пробовкатися",
+        "de": "die Katze aus dem Sack lassen",
+        "fr": "vendre la mèche",
+        "es": "irse de la lengua",
+        "it": "lasciarsi sfuggire il segreto",
+        "pt": "dar com a língua nos dentes",
+        "pl": "wygadać się",
+        "ru": "проболтаться",
+        "zh": "泄露秘密",
+        "ja": "秘密を漏らす"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    }
+  ]
+}

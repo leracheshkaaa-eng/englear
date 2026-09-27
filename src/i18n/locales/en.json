@@ -399,6 +399,7 @@
     "preposition": "preposition",
     "pronoun": "pronoun",
     "conjunction": "conjunction",
+    "idiom": "idiom",
     "phrasal verb": "phrasal verb",
     "collocation": "collocation"
   },
@@ -413,6 +414,8 @@
     "Basic Words": "Basic Words",
     "Numbers": "Numbers",
     "Colors": "Colors",
+    "Idioms": "Idioms",
+    "Advanced Words": "Advanced Words",
     "Home": "Home",
     "People": "People",
     "Family": "Family",

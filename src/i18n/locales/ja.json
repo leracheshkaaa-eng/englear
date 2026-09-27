@@ -393,6 +393,7 @@
     "preposition": "前置詞",
     "pronoun": "代名詞",
     "conjunction": "接続詞",
+    "idiom": "慣用句",
     "phrasal verb": "句動詞",
     "collocation": "コロケーション"
   },
@@ -407,6 +408,8 @@
     "Basic Words": "基本語",
     "Numbers": "数",
     "Colors": "色",
+    "Idioms": "慣用句",
+    "Advanced Words": "上級語彙",
     "Home": "家",
     "People": "人",
     "Family": "家族",

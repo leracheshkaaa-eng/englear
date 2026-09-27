@@ -18,7 +18,7 @@ export const SET_SIZES = [5, 10, 15, 20, 25, 30, 40, 50] as const
 
 // Topic / category ids are stored in the database; only their labels are translated.
 export const TOPICS = [
-  'Daily Life', 'Basic Words', 'Numbers', 'Colors', 'Home', 'People', 'Family', 'Food', 'Cooking', 'Travel', 'Transport',
+  'Daily Life', 'Basic Words', 'Numbers', 'Colors', 'Idioms', 'Advanced Words', 'Home', 'People', 'Family', 'Food', 'Cooking', 'Travel', 'Transport',
   'Education', 'School', 'University', 'Work', 'Business', 'Technology', 'Internet',
   'Nature', 'Animals', 'Health', 'Body', 'Clothes', 'Shopping', 'Money', 'City',
   'Places', 'Weather', 'Time', 'Emotions', 'Relationships', 'Society', 'Science',

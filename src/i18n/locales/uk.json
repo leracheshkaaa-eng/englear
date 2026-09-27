@@ -411,6 +411,7 @@
     "preposition": "прийменник",
     "pronoun": "займенник",
     "conjunction": "сполучник",
+    "idiom": "ідіома",
     "phrasal verb": "фразове дієслово",
     "collocation": "колокація"
   },
@@ -425,6 +426,8 @@
     "Basic Words": "Базові слова",
     "Numbers": "Числа",
     "Colors": "Кольори",
+    "Idioms": "Ідіоми",
+    "Advanced Words": "Лексика високого рівня",
     "Home": "Дім",
     "People": "Люди",
     "Family": "Родина",
