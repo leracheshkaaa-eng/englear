@@ -1,0 +1,754 @@
+{
+  "package": "people",
+  "kind": "words",
+  "words": [
+    {
+      "word": "person",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ˈpɝːsən/",
+      "definition": "A man, woman or child.",
+      "examples": [
+        "She is a very kind person."
+      ],
+      "translations": {
+        "uk": "людина",
+        "de": "Person",
+        "fr": "personne",
+        "es": "persona",
+        "it": "persona",
+        "pt": "pessoa",
+        "pl": "osoba",
+        "ru": "человек",
+        "zh": "人",
+        "ja": "人"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "people",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ˈpiːpəl/",
+      "definition": "More than one person.",
+      "examples": [
+        "There were many people at the concert."
+      ],
+      "translations": {
+        "uk": "люди",
+        "de": "Leute",
+        "fr": "gens",
+        "es": "gente",
+        "it": "gente",
+        "pt": "pessoas",
+        "pl": "ludzie",
+        "ru": "люди",
+        "zh": "人们",
+        "ja": "人々"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "man",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/mæn/",
+      "definition": "An adult male person.",
+      "examples": [
+        "A man is waiting at the door."
+      ],
+      "translations": {
+        "uk": "чоловік",
+        "de": "Mann",
+        "fr": "homme",
+        "es": "hombre",
+        "it": "uomo",
+        "pt": "homem",
+        "pl": "mężczyzna",
+        "ru": "мужчина",
+        "zh": "男人",
+        "ja": "男性"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "woman",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ˈwʊmən/",
+      "definition": "An adult female person.",
+      "examples": [
+        "The woman in the red coat is my aunt."
+      ],
+      "translations": {
+        "uk": "жінка",
+        "de": "Frau",
+        "fr": "femme",
+        "es": "mujer",
+        "it": "donna",
+        "pt": "mulher",
+        "pl": "kobieta",
+        "ru": "женщина",
+        "zh": "女人",
+        "ja": "女性"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "boy",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/bɔɪ/",
+      "definition": "A male child.",
+      "examples": [
+        "The boy is playing with a ball."
+      ],
+      "translations": {
+        "uk": "хлопчик",
+        "de": "Junge",
+        "fr": "garçon",
+        "es": "niño",
+        "it": "ragazzo",
+        "pt": "menino",
+        "pl": "chłopiec",
+        "ru": "мальчик",
+        "zh": "男孩",
+        "ja": "男の子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "girl",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ɡɝːl/",
+      "definition": "A female child.",
+      "examples": [
+        "The girl has a new bike."
+      ],
+      "translations": {
+        "uk": "дівчинка",
+        "de": "Mädchen",
+        "fr": "fille",
+        "es": "niña",
+        "it": "ragazza",
+        "pt": "menina",
+        "pl": "dziewczynka",
+        "ru": "девочка",
+        "zh": "女孩",
+        "ja": "女の子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "name",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/neɪm/",
+      "definition": "The word that someone is called.",
+      "examples": [
+        "What's your name?"
+      ],
+      "translations": {
+        "uk": "ім'я",
+        "de": "Name",
+        "fr": "nom",
+        "es": "nombre",
+        "it": "nome",
+        "pt": "nome",
+        "pl": "imię",
+        "ru": "имя",
+        "zh": "名字",
+        "ja": "名前"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "age",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/eɪdʒ/",
+      "definition": "How old someone is.",
+      "examples": [
+        "He started school at the age of six."
+      ],
+      "translations": {
+        "uk": "вік",
+        "de": "Alter",
+        "fr": "âge",
+        "es": "edad",
+        "it": "età",
+        "pt": "idade",
+        "pl": "wiek",
+        "ru": "возраст",
+        "zh": "年龄",
+        "ja": "年齢"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tall",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/tɔːl/",
+      "definition": "Higher than most people.",
+      "examples": [
+        "My brother is very tall."
+      ],
+      "translations": {
+        "uk": "високий",
+        "de": "groß",
+        "fr": "grand",
+        "es": "alto",
+        "it": "alto",
+        "pt": "alto",
+        "pl": "wysoki",
+        "ru": "высокий",
+        "zh": "高的",
+        "ja": "背が高い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "short",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ʃɔːrt/",
+      "definition": "Not tall; not long.",
+      "examples": [
+        "She is short and has curly hair."
+      ],
+      "translations": {
+        "uk": "низький, короткий",
+        "de": "klein",
+        "fr": "petit",
+        "es": "bajo",
+        "it": "basso",
+        "pt": "baixo",
+        "pl": "niski",
+        "ru": "низкий, короткий",
+        "zh": "矮的",
+        "ja": "背が低い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "young",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/jʌŋ/",
+      "definition": "Not old.",
+      "examples": [
+        "My parents were young when I was born."
+      ],
+      "translations": {
+        "uk": "молодий",
+        "de": "jung",
+        "fr": "jeune",
+        "es": "joven",
+        "it": "giovane",
+        "pt": "jovem",
+        "pl": "młody",
+        "ru": "молодой",
+        "zh": "年轻的",
+        "ja": "若い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "old",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/oʊld/",
+      "definition": "Having lived for a long time.",
+      "examples": [
+        "My grandfather is very old."
+      ],
+      "translations": {
+        "uk": "старий",
+        "de": "alt",
+        "fr": "vieux",
+        "es": "viejo",
+        "it": "vecchio",
+        "pt": "velho",
+        "pl": "stary",
+        "ru": "старый",
+        "zh": "老的",
+        "ja": "年を取った"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "friendly",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ˈfrendli/",
+      "definition": "Kind and pleasant to other people.",
+      "examples": [
+        "Our new neighbors are very friendly."
+      ],
+      "translations": {
+        "uk": "дружній",
+        "de": "freundlich",
+        "fr": "amical",
+        "es": "amable",
+        "it": "cordiale",
+        "pt": "simpático",
+        "pl": "przyjazny",
+        "ru": "дружелюбный",
+        "zh": "友好的",
+        "ja": "親切な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "funny",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ˈfʌni/",
+      "definition": "Making you laugh.",
+      "examples": [
+        "He tells very funny stories."
+      ],
+      "translations": {
+        "uk": "смішний",
+        "de": "lustig",
+        "fr": "drôle",
+        "es": "gracioso",
+        "it": "divertente",
+        "pt": "engraçado",
+        "pl": "zabawny",
+        "ru": "смешной",
+        "zh": "有趣的",
+        "ja": "面白い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "beautiful",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/ˈbjuːtəfəl/",
+      "definition": "Very nice to look at.",
+      "examples": [
+        "She has a beautiful voice."
+      ],
+      "translations": {
+        "uk": "красивий",
+        "de": "schön",
+        "fr": "beau",
+        "es": "hermoso",
+        "it": "bello",
+        "pt": "bonito",
+        "pl": "piękny",
+        "ru": "красивый",
+        "zh": "美丽的",
+        "ja": "美しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "meet",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "People",
+      "ipa": "/miːt/",
+      "definition": "To see and talk to someone for the first time or by arrangement.",
+      "examples": [
+        "Nice to meet you!"
+      ],
+      "translations": {
+        "uk": "зустрічати, знайомитися",
+        "de": "treffen, kennenlernen",
+        "fr": "rencontrer",
+        "es": "conocer",
+        "it": "conoscere",
+        "pt": "conhecer",
+        "pl": "poznać, spotkać",
+        "ru": "встречать, знакомиться",
+        "zh": "见面",
+        "ja": "会う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "kind",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/kaɪnd/",
+      "definition": "Caring and helpful to others.",
+      "examples": [
+        "It was kind of you to help me."
+      ],
+      "translations": {
+        "uk": "добрий",
+        "de": "nett",
+        "fr": "gentil",
+        "es": "amable",
+        "it": "gentile",
+        "pt": "gentil",
+        "pl": "miły",
+        "ru": "добрый",
+        "zh": "善良的",
+        "ja": "優しい"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "type",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A type of something.",
+          "examples": [
+            "What kind of music do you like?"
+          ],
+          "translations": {
+            "uk": "вид, тип",
+            "de": "Art",
+            "fr": "sorte",
+            "es": "tipo",
+            "it": "tipo",
+            "pt": "tipo",
+            "pl": "rodzaj",
+            "ru": "вид, тип",
+            "zh": "种类",
+            "ja": "種類"
+          }
+        }
+      ]
+    },
+    {
+      "word": "polite",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/pəˈlaɪt/",
+      "definition": "Behaving well and showing respect.",
+      "examples": [
+        "It's polite to say \"thank you\"."
+      ],
+      "translations": {
+        "uk": "ввічливий",
+        "de": "höflich",
+        "fr": "poli",
+        "es": "educado",
+        "it": "educato",
+        "pt": "educado",
+        "pl": "uprzejmy",
+        "ru": "вежливый",
+        "zh": "礼貌的",
+        "ja": "礼儀正しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shy",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ʃaɪ/",
+      "definition": "Nervous about talking to people you don't know.",
+      "examples": [
+        "He is too shy to speak in class."
+      ],
+      "translations": {
+        "uk": "сором'язливий",
+        "de": "schüchtern",
+        "fr": "timide",
+        "es": "tímido",
+        "it": "timido",
+        "pt": "tímido",
+        "pl": "nieśmiały",
+        "ru": "застенчивый",
+        "zh": "害羞的",
+        "ja": "恥ずかしがりの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lazy",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ˈleɪzi/",
+      "definition": "Not wanting to work or do anything.",
+      "examples": [
+        "My cat is fat and lazy."
+      ],
+      "translations": {
+        "uk": "лінивий",
+        "de": "faul",
+        "fr": "paresseux",
+        "es": "perezoso",
+        "it": "pigro",
+        "pt": "preguiçoso",
+        "pl": "leniwy",
+        "ru": "ленивый",
+        "zh": "懒的",
+        "ja": "怠惰な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "clever",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ˈklevɚ/",
+      "definition": "Able to learn and understand things quickly.",
+      "examples": [
+        "She is a clever student."
+      ],
+      "translations": {
+        "uk": "розумний",
+        "de": "klug",
+        "fr": "intelligent",
+        "es": "listo",
+        "it": "intelligente",
+        "pt": "inteligente",
+        "pl": "mądry",
+        "ru": "умный",
+        "zh": "聪明的",
+        "ja": "賢い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "guest",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ɡest/",
+      "definition": "A person you invite to your home or to an event.",
+      "examples": [
+        "We have guests for dinner tonight."
+      ],
+      "translations": {
+        "uk": "гість",
+        "de": "Gast",
+        "fr": "invité",
+        "es": "invitado",
+        "it": "ospite",
+        "pt": "convidado",
+        "pl": "gość",
+        "ru": "гость",
+        "zh": "客人",
+        "ja": "客"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "member",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ˈmembɚ/",
+      "definition": "A person who belongs to a group.",
+      "examples": [
+        "He is a member of the chess club."
+      ],
+      "translations": {
+        "uk": "член, учасник",
+        "de": "Mitglied",
+        "fr": "membre",
+        "es": "miembro",
+        "it": "membro",
+        "pt": "membro",
+        "pl": "członek",
+        "ru": "член, участник",
+        "zh": "成员",
+        "ja": "メンバー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "introduce",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "People",
+      "ipa": "/ˌɪntrəˈduːs/",
+      "definition": "To tell people each other's names when they first meet.",
+      "examples": [
+        "Let me introduce my friend Anna."
+      ],
+      "translations": {
+        "uk": "знайомити",
+        "de": "vorstellen",
+        "fr": "présenter",
+        "es": "presentar",
+        "it": "presentare",
+        "pt": "apresentar",
+        "pl": "przedstawiać",
+        "ru": "знакомить",
+        "zh": "介绍",
+        "ja": "紹介する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "honest",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˈɑːnɪst/",
+      "definition": "Telling the truth.",
+      "examples": [
+        "Thank you for being honest with me."
+      ],
+      "translations": {
+        "uk": "чесний",
+        "de": "ehrlich",
+        "fr": "honnête",
+        "es": "honesto",
+        "it": "onesto",
+        "pt": "honesto",
+        "pl": "uczciwy",
+        "ru": "честный",
+        "zh": "诚实的",
+        "ja": "正直な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "generous",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˈdʒenərəs/",
+      "definition": "Happy to give money, time or help to others.",
+      "examples": [
+        "My aunt is very generous."
+      ],
+      "translations": {
+        "uk": "щедрий",
+        "de": "großzügig",
+        "fr": "généreux",
+        "es": "generoso",
+        "it": "generoso",
+        "pt": "generoso",
+        "pl": "hojny",
+        "ru": "щедрый",
+        "zh": "慷慨的",
+        "ja": "気前のよい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "personality",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˌpɝːsəˈnæləti/",
+      "definition": "The type of person someone is.",
+      "examples": [
+        "She has a warm personality."
+      ],
+      "translations": {
+        "uk": "характер, особистість",
+        "de": "Persönlichkeit",
+        "fr": "personnalité",
+        "es": "personalidad",
+        "it": "personalità",
+        "pt": "personalidade",
+        "pl": "osobowość",
+        "ru": "характер, личность",
+        "zh": "性格",
+        "ja": "性格"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stranger",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/ˈstreɪndʒɚ/",
+      "definition": "A person you do not know.",
+      "examples": [
+        "Don't talk to strangers."
+      ],
+      "translations": {
+        "uk": "незнайомець",
+        "de": "Fremder",
+        "fr": "inconnu",
+        "es": "desconocido",
+        "it": "sconosciuto",
+        "pt": "estranho",
+        "pl": "nieznajomy",
+        "ru": "незнакомец",
+        "zh": "陌生人",
+        "ja": "見知らぬ人"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "appearance",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "People",
+      "ipa": "/əˈpɪrəns/",
+      "definition": "The way someone looks.",
+      "examples": [
+        "She changed her appearance completely."
+      ],
+      "translations": {
+        "uk": "зовнішність",
+        "de": "Aussehen",
+        "fr": "apparence",
+        "es": "apariencia",
+        "it": "aspetto",
+        "pt": "aparência",
+        "pl": "wygląd",
+        "ru": "внешность",
+        "zh": "外貌",
+        "ja": "外見"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

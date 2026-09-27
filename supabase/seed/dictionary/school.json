@@ -1,0 +1,875 @@
+{
+  "package": "school",
+  "kind": "words",
+  "words": [
+    {
+      "word": "school",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/skuːl/",
+      "definition": "A place where children go to learn.",
+      "examples": [
+        "I walk to school every day."
+      ],
+      "translations": {
+        "uk": "школа",
+        "de": "Schule",
+        "fr": "école",
+        "es": "escuela",
+        "it": "scuola",
+        "pt": "escola",
+        "pl": "szkoła",
+        "ru": "школа",
+        "zh": "学校",
+        "ja": "学校"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "student",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈstuːdənt/",
+      "definition": "A person who is studying at a school or university.",
+      "examples": [
+        "There are thirty students in my class."
+      ],
+      "translations": {
+        "uk": "учень, студент",
+        "de": "Schüler, Student",
+        "fr": "élève, étudiant",
+        "es": "estudiante",
+        "it": "studente",
+        "pt": "aluno",
+        "pl": "uczeń, student",
+        "ru": "ученик, студент",
+        "zh": "学生",
+        "ja": "生徒"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "class",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/klæs/",
+      "definition": "A group of students who learn together.",
+      "examples": [
+        "Our class has a new teacher."
+      ],
+      "translations": {
+        "uk": "клас",
+        "de": "Klasse",
+        "fr": "classe",
+        "es": "clase",
+        "it": "classe",
+        "pt": "turma",
+        "pl": "klasa",
+        "ru": "класс",
+        "zh": "班级",
+        "ja": "クラス"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "classroom",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈklæsruːm/",
+      "definition": "A room where students have lessons.",
+      "examples": [
+        "The classroom is on the second floor."
+      ],
+      "translations": {
+        "uk": "класна кімната",
+        "de": "Klassenzimmer",
+        "fr": "salle de classe",
+        "es": "aula",
+        "it": "aula",
+        "pt": "sala de aula",
+        "pl": "sala lekcyjna",
+        "ru": "классная комната",
+        "zh": "教室",
+        "ja": "教室"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pencil",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈpensəl/",
+      "definition": "A thin wooden tool for writing or drawing.",
+      "examples": [
+        "Can I borrow your pencil?"
+      ],
+      "translations": {
+        "uk": "олівець",
+        "de": "Bleistift",
+        "fr": "crayon",
+        "es": "lápiz",
+        "it": "matita",
+        "pt": "lápis",
+        "pl": "ołówek",
+        "ru": "карандаш",
+        "zh": "铅笔",
+        "ja": "鉛筆"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "notebook",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈnoʊtbʊk/",
+      "definition": "A book with empty pages for writing notes.",
+      "examples": [
+        "Write the new words in your notebook."
+      ],
+      "translations": {
+        "uk": "зошит",
+        "de": "Heft",
+        "fr": "cahier",
+        "es": "cuaderno",
+        "it": "quaderno",
+        "pt": "caderno",
+        "pl": "zeszyt",
+        "ru": "тетрадь",
+        "zh": "笔记本",
+        "ja": "ノート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dictionary",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈdɪkʃəneri/",
+      "definition": "A book or website that explains the meanings of words.",
+      "examples": [
+        "I use a dictionary to check new words."
+      ],
+      "translations": {
+        "uk": "словник",
+        "de": "Wörterbuch",
+        "fr": "dictionnaire",
+        "es": "diccionario",
+        "it": "dizionario",
+        "pt": "dicionário",
+        "pl": "słownik",
+        "ru": "словарь",
+        "zh": "词典",
+        "ja": "辞書"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "learn",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/lɝːn/",
+      "definition": "To get new knowledge or skills.",
+      "examples": [
+        "I want to learn English."
+      ],
+      "translations": {
+        "uk": "вчити, вивчати",
+        "de": "lernen",
+        "fr": "apprendre",
+        "es": "aprender",
+        "it": "imparare",
+        "pt": "aprender",
+        "pl": "uczyć się",
+        "ru": "учить, изучать",
+        "zh": "学",
+        "ja": "学ぶ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "study",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈstʌdi/",
+      "definition": "To spend time learning about a subject.",
+      "examples": [
+        "She studies every evening."
+      ],
+      "translations": {
+        "uk": "вчитися",
+        "de": "lernen, studieren",
+        "fr": "étudier",
+        "es": "estudiar",
+        "it": "studiare",
+        "pt": "estudar",
+        "pl": "studiować, uczyć się",
+        "ru": "учиться, заниматься",
+        "zh": "学习",
+        "ja": "勉強する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "teach",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/tiːtʃ/",
+      "definition": "To help someone learn something.",
+      "examples": [
+        "My mom teaches math."
+      ],
+      "translations": {
+        "uk": "навчати, викладати",
+        "de": "unterrichten",
+        "fr": "enseigner",
+        "es": "enseñar",
+        "it": "insegnare",
+        "pt": "ensinar",
+        "pl": "uczyć",
+        "ru": "учить, преподавать",
+        "zh": "教",
+        "ja": "教える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "read",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/riːd/",
+      "definition": "To look at words and understand them.",
+      "examples": [
+        "I read a book every week."
+      ],
+      "translations": {
+        "uk": "читати",
+        "de": "lesen",
+        "fr": "lire",
+        "es": "leer",
+        "it": "leggere",
+        "pt": "ler",
+        "pl": "czytać",
+        "ru": "читать",
+        "zh": "读",
+        "ja": "読む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "write",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/raɪt/",
+      "definition": "To make letters or words on paper or a screen.",
+      "examples": [
+        "Write your name at the top of the page."
+      ],
+      "translations": {
+        "uk": "писати",
+        "de": "schreiben",
+        "fr": "écrire",
+        "es": "escribir",
+        "it": "scrivere",
+        "pt": "escrever",
+        "pl": "pisać",
+        "ru": "писать",
+        "zh": "写",
+        "ja": "書く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "question",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈkwestʃən/",
+      "definition": "Something you ask to get information.",
+      "examples": [
+        "Can I ask a question?"
+      ],
+      "translations": {
+        "uk": "питання",
+        "de": "Frage",
+        "fr": "question",
+        "es": "pregunta",
+        "it": "domanda",
+        "pt": "pergunta",
+        "pl": "pytanie",
+        "ru": "вопрос",
+        "zh": "问题",
+        "ja": "質問"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "answer",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈænsɚ/",
+      "definition": "What you say or write when someone asks a question.",
+      "examples": [
+        "I don't know the answer."
+      ],
+      "translations": {
+        "uk": "відповідь",
+        "de": "Antwort",
+        "fr": "réponse",
+        "es": "respuesta",
+        "it": "risposta",
+        "pt": "resposta",
+        "pl": "odpowiedź",
+        "ru": "ответ",
+        "zh": "答案",
+        "ja": "答え"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "To say or write something when someone asks you a question.",
+          "examples": [
+            "Please answer the question."
+          ],
+          "translations": {
+            "uk": "відповідати",
+            "de": "antworten",
+            "fr": "répondre",
+            "es": "responder",
+            "it": "rispondere",
+            "pt": "responder",
+            "pl": "odpowiadać",
+            "ru": "отвечать",
+            "zh": "回答",
+            "ja": "答える"
+          }
+        }
+      ]
+    },
+    {
+      "word": "test",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/test/",
+      "definition": "A set of questions to check what you know.",
+      "examples": [
+        "We have a spelling test on Friday."
+      ],
+      "translations": {
+        "uk": "тест, контрольна",
+        "de": "Test",
+        "fr": "contrôle",
+        "es": "prueba",
+        "it": "verifica",
+        "pt": "prova",
+        "pl": "sprawdzian",
+        "ru": "тест, контрольная",
+        "zh": "测验",
+        "ja": "テスト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "subject",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈsʌbdʒɪkt/",
+      "definition": "Something you study at school, like math or history.",
+      "examples": [
+        "My favorite subject is art."
+      ],
+      "translations": {
+        "uk": "предмет",
+        "de": "Fach",
+        "fr": "matière",
+        "es": "asignatura",
+        "it": "materia",
+        "pt": "matéria",
+        "pl": "przedmiot",
+        "ru": "предмет",
+        "zh": "科目",
+        "ja": "教科"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "math",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/mæθ/",
+      "definition": "The study of numbers and shapes.",
+      "examples": [
+        "I'm good at math."
+      ],
+      "translations": {
+        "uk": "математика",
+        "de": "Mathe",
+        "fr": "maths",
+        "es": "matemáticas",
+        "it": "matematica",
+        "pt": "matemática",
+        "pl": "matematyka",
+        "ru": "математика",
+        "zh": "数学",
+        "ja": "数学"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "history",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈhɪstəri/",
+      "definition": "The study of past events.",
+      "examples": [
+        "We are learning about Roman history."
+      ],
+      "translations": {
+        "uk": "історія",
+        "de": "Geschichte",
+        "fr": "histoire",
+        "es": "historia",
+        "it": "storia",
+        "pt": "história",
+        "pl": "historia",
+        "ru": "история",
+        "zh": "历史",
+        "ja": "歴史"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "science",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/ˈsaɪəns/",
+      "definition": "The study of the natural world through experiments.",
+      "examples": [
+        "We did an experiment in science class."
+      ],
+      "translations": {
+        "uk": "природничі науки",
+        "de": "Naturwissenschaften",
+        "fr": "sciences",
+        "es": "ciencias",
+        "it": "scienze",
+        "pt": "ciências",
+        "pl": "nauki przyrodnicze",
+        "ru": "естественные науки",
+        "zh": "科学",
+        "ja": "理科"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mistake",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/mɪˈsteɪk/",
+      "definition": "Something that is wrong.",
+      "examples": [
+        "I made a mistake in my homework."
+      ],
+      "translations": {
+        "uk": "помилка",
+        "de": "Fehler",
+        "fr": "erreur",
+        "es": "error",
+        "it": "errore",
+        "pt": "erro",
+        "pl": "błąd",
+        "ru": "ошибка",
+        "zh": "错误",
+        "ja": "間違い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grade",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/ɡreɪd/",
+      "definition": "A mark that shows how good a student's work is.",
+      "examples": [
+        "She got a good grade in English."
+      ],
+      "translations": {
+        "uk": "оцінка",
+        "de": "Note",
+        "fr": "note",
+        "es": "nota",
+        "it": "voto",
+        "pt": "nota",
+        "pl": "ocena",
+        "ru": "оценка",
+        "zh": "成绩",
+        "ja": "成績"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "year",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A year of school.",
+          "examples": [
+            "My sister is in third grade."
+          ],
+          "translations": {
+            "uk": "клас (рік навчання)",
+            "de": "Klasse",
+            "fr": "classe",
+            "es": "grado",
+            "it": "classe",
+            "pt": "série",
+            "pl": "klasa",
+            "ru": "класс (год обучения)",
+            "zh": "年级",
+            "ja": "学年"
+          }
+        }
+      ]
+    },
+    {
+      "word": "pass",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/pæs/",
+      "definition": "To succeed in a test or exam.",
+      "examples": [
+        "I hope I pass the exam."
+      ],
+      "translations": {
+        "uk": "скласти (іспит)",
+        "de": "bestehen",
+        "fr": "réussir",
+        "es": "aprobar",
+        "it": "superare",
+        "pt": "passar",
+        "pl": "zdać",
+        "ru": "сдать (экзамен)",
+        "zh": "通过",
+        "ja": "合格する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fail",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/feɪl/",
+      "definition": "To not succeed in a test or exam.",
+      "examples": [
+        "He failed his driving test."
+      ],
+      "translations": {
+        "uk": "провалити",
+        "de": "durchfallen",
+        "fr": "échouer",
+        "es": "suspender",
+        "it": "essere bocciato",
+        "pt": "reprovar",
+        "pl": "oblać",
+        "ru": "провалить",
+        "zh": "不及格",
+        "ja": "落ちる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "break",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/breɪk/",
+      "definition": "A short time to rest between lessons.",
+      "examples": [
+        "We play outside during the break."
+      ],
+      "translations": {
+        "uk": "перерва",
+        "de": "Pause",
+        "fr": "récréation",
+        "es": "recreo",
+        "it": "intervallo",
+        "pt": "recreio",
+        "pl": "przerwa",
+        "ru": "перемена",
+        "zh": "课间休息",
+        "ja": "休み時間"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "To make something go into pieces.",
+          "examples": [
+            "Be careful, don't break the glass."
+          ],
+          "translations": {
+            "uk": "ламати, розбивати",
+            "de": "kaputt machen",
+            "fr": "casser",
+            "es": "romper",
+            "it": "rompere",
+            "pt": "quebrar",
+            "pl": "łamać, tłuc",
+            "ru": "ломать, разбивать",
+            "zh": "打破",
+            "ja": "壊す"
+          }
+        }
+      ]
+    },
+    {
+      "word": "explain",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/ɪkˈspleɪn/",
+      "definition": "To make something clear so people understand.",
+      "examples": [
+        "Can you explain this rule again?"
+      ],
+      "translations": {
+        "uk": "пояснювати",
+        "de": "erklären",
+        "fr": "expliquer",
+        "es": "explicar",
+        "it": "spiegare",
+        "pt": "explicar",
+        "pl": "wyjaśniać",
+        "ru": "объяснять",
+        "zh": "解释",
+        "ja": "説明する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "practice",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/ˈpræktɪs/",
+      "definition": "To do something again and again to get better.",
+      "examples": [
+        "I practice the piano every day."
+      ],
+      "translations": {
+        "uk": "практикуватися",
+        "de": "üben",
+        "fr": "s'entraîner",
+        "es": "practicar",
+        "it": "esercitarsi",
+        "pt": "praticar",
+        "pl": "ćwiczyć",
+        "ru": "практиковаться",
+        "zh": "练习",
+        "ja": "練習する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "look up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/lʊk ʌp/",
+      "definition": "To find information in a book or online.",
+      "examples": [
+        "Look up the word in a dictionary."
+      ],
+      "translations": {
+        "uk": "шукати (у словнику)",
+        "de": "nachschlagen",
+        "fr": "chercher",
+        "es": "buscar",
+        "it": "cercare",
+        "pt": "procurar",
+        "pl": "sprawdzić",
+        "ru": "искать (в словаре)",
+        "zh": "查",
+        "ja": "調べる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "knowledge",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "School",
+      "ipa": "/ˈnɑːlɪdʒ/",
+      "definition": "What you know about a subject.",
+      "examples": [
+        "Reading improves your knowledge."
+      ],
+      "translations": {
+        "uk": "знання",
+        "de": "Wissen",
+        "fr": "connaissances",
+        "es": "conocimiento",
+        "it": "conoscenza",
+        "pt": "conhecimento",
+        "pl": "wiedza",
+        "ru": "знания",
+        "zh": "知识",
+        "ja": "知識"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "attend",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "School",
+      "ipa": "/əˈtend/",
+      "definition": "To go to an event or a place like a school.",
+      "examples": [
+        "All students must attend the meeting."
+      ],
+      "translations": {
+        "uk": "відвідувати",
+        "de": "besuchen",
+        "fr": "assister à",
+        "es": "asistir a",
+        "it": "frequentare",
+        "pt": "frequentar",
+        "pl": "uczęszczać",
+        "ru": "посещать",
+        "zh": "参加",
+        "ja": "出席する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "university",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "University",
+      "ipa": "/ˌjuːnɪˈvɝːsəti/",
+      "definition": "A place where people study for a degree after school.",
+      "examples": [
+        "My brother goes to university in Boston."
+      ],
+      "translations": {
+        "uk": "університет",
+        "de": "Universität",
+        "fr": "université",
+        "es": "universidad",
+        "it": "università",
+        "pt": "universidade",
+        "pl": "uniwersytet",
+        "ru": "университет",
+        "zh": "大学",
+        "ja": "大学"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "graduate",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "University",
+      "ipa": "/ˈɡrædʒueɪt/",
+      "definition": "To finish your studies at a school or university.",
+      "examples": [
+        "She graduated from college last year."
+      ],
+      "translations": {
+        "uk": "закінчувати (навчання)",
+        "de": "den Abschluss machen",
+        "fr": "obtenir son diplôme",
+        "es": "graduarse",
+        "it": "laurearsi",
+        "pt": "formar-se",
+        "pl": "ukończyć studia",
+        "ru": "окончить (учёбу)",
+        "zh": "毕业",
+        "ja": "卒業する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "semester",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "University",
+      "ipa": "/sɪˈmestɚ/",
+      "definition": "One of the two parts of a school year.",
+      "examples": [
+        "The new semester starts in September."
+      ],
+      "translations": {
+        "uk": "семестр",
+        "de": "Semester",
+        "fr": "semestre",
+        "es": "semestre",
+        "it": "semestre",
+        "pt": "semestre",
+        "pl": "semestr",
+        "ru": "семестр",
+        "zh": "学期",
+        "ja": "学期"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

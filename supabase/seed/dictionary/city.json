@@ -1,0 +1,702 @@
+{
+  "package": "city",
+  "kind": "words",
+  "words": [
+    {
+      "word": "town",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/taʊn/",
+      "definition": "A place with many houses and shops, smaller than a city.",
+      "examples": [
+        "I grew up in a small town."
+      ],
+      "translations": {
+        "uk": "містечко",
+        "de": "Kleinstadt",
+        "fr": "ville",
+        "es": "pueblo",
+        "it": "cittadina",
+        "pt": "cidade pequena",
+        "pl": "miasteczko",
+        "ru": "городок",
+        "zh": "小镇",
+        "ja": "町"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "village",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/ˈvɪlɪdʒ/",
+      "definition": "A very small town in the country.",
+      "examples": [
+        "My grandparents live in a village."
+      ],
+      "translations": {
+        "uk": "село",
+        "de": "Dorf",
+        "fr": "village",
+        "es": "aldea",
+        "it": "villaggio",
+        "pt": "aldeia",
+        "pl": "wieś",
+        "ru": "деревня",
+        "zh": "村庄",
+        "ja": "村"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "park",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/pɑːrk/",
+      "definition": "A public area with grass and trees.",
+      "examples": [
+        "Let's have a picnic in the park."
+      ],
+      "translations": {
+        "uk": "парк",
+        "de": "Park",
+        "fr": "parc",
+        "es": "parque",
+        "it": "parco",
+        "pt": "parque",
+        "pl": "park",
+        "ru": "парк",
+        "zh": "公园",
+        "ja": "公園"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To leave a car in a place for a time.",
+          "examples": [
+            "You can't park here."
+          ],
+          "translations": {
+            "uk": "паркувати",
+            "de": "parken",
+            "fr": "se garer",
+            "es": "estacionar",
+            "it": "parcheggiare",
+            "pt": "estacionar",
+            "pl": "parkować",
+            "ru": "парковать",
+            "zh": "停车",
+            "ja": "駐車する"
+          }
+        }
+      ]
+    },
+    {
+      "word": "bank",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/bæŋk/",
+      "definition": "A place where people keep their money.",
+      "examples": [
+        "I need to go to the bank."
+      ],
+      "translations": {
+        "uk": "банк",
+        "de": "Bank",
+        "fr": "banque",
+        "es": "banco",
+        "it": "banca",
+        "pt": "banco",
+        "pl": "bank",
+        "ru": "банк",
+        "zh": "银行",
+        "ja": "銀行"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "library",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/ˈlaɪbreri/",
+      "definition": "A place where you can borrow books.",
+      "examples": [
+        "I borrowed three books from the library."
+      ],
+      "translations": {
+        "uk": "бібліотека",
+        "de": "Bibliothek",
+        "fr": "bibliothèque",
+        "es": "biblioteca",
+        "it": "biblioteca",
+        "pt": "biblioteca",
+        "pl": "biblioteka",
+        "ru": "библиотека",
+        "zh": "图书馆",
+        "ja": "図書館"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "museum",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/mjuˈziːəm/",
+      "definition": "A building where you can see art or old objects.",
+      "examples": [
+        "We visited the science museum."
+      ],
+      "translations": {
+        "uk": "музей",
+        "de": "Museum",
+        "fr": "musée",
+        "es": "museo",
+        "it": "museo",
+        "pt": "museu",
+        "pl": "muzeum",
+        "ru": "музей",
+        "zh": "博物馆",
+        "ja": "博物館"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "church",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/tʃɝːtʃ/",
+      "definition": "A building where Christians pray.",
+      "examples": [
+        "There is an old church in the square."
+      ],
+      "translations": {
+        "uk": "церква",
+        "de": "Kirche",
+        "fr": "église",
+        "es": "iglesia",
+        "it": "chiesa",
+        "pt": "igreja",
+        "pl": "kościół",
+        "ru": "церковь",
+        "zh": "教堂",
+        "ja": "教会"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "post office",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/ˈpoʊst ˌɔːfɪs/",
+      "definition": "A place where you can send letters and packages.",
+      "examples": [
+        "Where is the nearest post office?"
+      ],
+      "translations": {
+        "uk": "пошта",
+        "de": "Post",
+        "fr": "bureau de poste",
+        "es": "oficina de correos",
+        "it": "ufficio postale",
+        "pt": "correio",
+        "pl": "poczta",
+        "ru": "почта",
+        "zh": "邮局",
+        "ja": "郵便局"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "building",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/ˈbɪldɪŋ/",
+      "definition": "A structure with walls and a roof.",
+      "examples": [
+        "They live in a tall building."
+      ],
+      "translations": {
+        "uk": "будівля",
+        "de": "Gebäude",
+        "fr": "bâtiment",
+        "es": "edificio",
+        "it": "edificio",
+        "pt": "prédio",
+        "pl": "budynek",
+        "ru": "здание",
+        "zh": "建筑",
+        "ja": "建物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "movie theater",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/ˈmuːvi ˌθiːətɚ/",
+      "definition": "A building where you watch movies.",
+      "examples": [
+        "Let's meet at the movie theater."
+      ],
+      "translations": {
+        "uk": "кінотеатр",
+        "de": "Kino",
+        "fr": "cinéma",
+        "es": "cine",
+        "it": "cinema",
+        "pt": "cinema",
+        "pl": "kino",
+        "ru": "кинотеатр",
+        "zh": "电影院",
+        "ja": "映画館"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "address",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/ˈædres/",
+      "definition": "The number and street where someone lives.",
+      "examples": [
+        "What's your address?"
+      ],
+      "translations": {
+        "uk": "адреса",
+        "de": "Adresse",
+        "fr": "adresse",
+        "es": "dirección",
+        "it": "indirizzo",
+        "pt": "endereço",
+        "pl": "adres",
+        "ru": "адрес",
+        "zh": "地址",
+        "ja": "住所"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "turn left",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/tɝːn left/",
+      "definition": "To go in the direction of your left hand.",
+      "examples": [
+        "Turn left at the bank."
+      ],
+      "translations": {
+        "uk": "повернути ліворуч",
+        "de": "links abbiegen",
+        "fr": "tourner à gauche",
+        "es": "girar a la izquierda",
+        "it": "girare a sinistra",
+        "pt": "virar à esquerda",
+        "pl": "skręcić w lewo",
+        "ru": "повернуть налево",
+        "zh": "向左转",
+        "ja": "左に曲がる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "turn right",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "City",
+      "ipa": "/tɝːn raɪt/",
+      "definition": "To go in the direction of your right hand.",
+      "examples": [
+        "Turn right at the traffic light."
+      ],
+      "translations": {
+        "uk": "повернути праворуч",
+        "de": "rechts abbiegen",
+        "fr": "tourner à droite",
+        "es": "girar a la derecha",
+        "it": "girare a destra",
+        "pt": "virar à direita",
+        "pl": "skręcić w prawo",
+        "ru": "повернуть направо",
+        "zh": "向右转",
+        "ja": "右に曲がる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "bridge",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/brɪdʒ/",
+      "definition": "A structure that goes over a river or road.",
+      "examples": [
+        "We walked across the bridge."
+      ],
+      "translations": {
+        "uk": "міст",
+        "de": "Brücke",
+        "fr": "pont",
+        "es": "puente",
+        "it": "ponte",
+        "pt": "ponte",
+        "pl": "most",
+        "ru": "мост",
+        "zh": "桥",
+        "ja": "橋"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "square",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/skwer/",
+      "definition": "An open area in a town with buildings around it.",
+      "examples": [
+        "There's a market in the main square."
+      ],
+      "translations": {
+        "uk": "площа",
+        "de": "Platz",
+        "fr": "place",
+        "es": "plaza",
+        "it": "piazza",
+        "pt": "praça",
+        "pl": "plac",
+        "ru": "площадь",
+        "zh": "广场",
+        "ja": "広場"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "shape",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A shape with four equal sides.",
+          "examples": [
+            "Draw a square on the board."
+          ],
+          "translations": {
+            "uk": "квадрат",
+            "de": "Quadrat",
+            "fr": "carré",
+            "es": "cuadrado",
+            "it": "quadrato",
+            "pt": "quadrado",
+            "pl": "kwadrat",
+            "ru": "квадрат",
+            "zh": "正方形",
+            "ja": "正方形"
+          }
+        }
+      ]
+    },
+    {
+      "word": "downtown",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˌdaʊnˈtaʊn/",
+      "definition": "In or to the center of a city.",
+      "examples": [
+        "We took the bus downtown."
+      ],
+      "translations": {
+        "uk": "у центр міста",
+        "de": "in die Innenstadt",
+        "fr": "en ville",
+        "es": "al centro",
+        "it": "in centro",
+        "pt": "para o centro",
+        "pl": "do centrum",
+        "ru": "в центр города",
+        "zh": "去市中心",
+        "ja": "繁華街へ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "corner",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈkɔːrnɚ/",
+      "definition": "The place where two streets meet.",
+      "examples": [
+        "The bakery is on the corner."
+      ],
+      "translations": {
+        "uk": "ріг",
+        "de": "Ecke",
+        "fr": "coin",
+        "es": "esquina",
+        "it": "angolo",
+        "pt": "esquina",
+        "pl": "róg",
+        "ru": "угол",
+        "zh": "拐角",
+        "ja": "角"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sidewalk",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈsaɪdwɔːk/",
+      "definition": "A path for people to walk on next to a street.",
+      "examples": [
+        "Kids were riding bikes on the sidewalk."
+      ],
+      "translations": {
+        "uk": "тротуар",
+        "de": "Bürgersteig",
+        "fr": "trottoir",
+        "es": "acera",
+        "it": "marciapiede",
+        "pt": "calçada",
+        "pl": "chodnik",
+        "ru": "тротуар",
+        "zh": "人行道",
+        "ja": "歩道"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "traffic",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈtræfɪk/",
+      "definition": "The cars and other vehicles on a road.",
+      "examples": [
+        "There's a lot of traffic in the morning."
+      ],
+      "translations": {
+        "uk": "рух (транспорту)",
+        "de": "Verkehr",
+        "fr": "circulation",
+        "es": "tráfico",
+        "it": "traffico",
+        "pt": "trânsito",
+        "pl": "ruch uliczny",
+        "ru": "движение (транспорта)",
+        "zh": "交通",
+        "ja": "交通"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "traffic light",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈtræfɪk laɪt/",
+      "definition": "A set of colored lights that control traffic.",
+      "examples": [
+        "Stop at the red traffic light."
+      ],
+      "translations": {
+        "uk": "світлофор",
+        "de": "Ampel",
+        "fr": "feu de circulation",
+        "es": "semáforo",
+        "it": "semaforo",
+        "pt": "semáforo",
+        "pl": "sygnalizacja świetlna",
+        "ru": "светофор",
+        "zh": "红绿灯",
+        "ja": "信号機"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "crowded",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈkraʊdɪd/",
+      "definition": "Full of people.",
+      "examples": [
+        "The train was very crowded."
+      ],
+      "translations": {
+        "uk": "переповнений",
+        "de": "überfüllt",
+        "fr": "bondé",
+        "es": "abarrotado",
+        "it": "affollato",
+        "pt": "lotado",
+        "pl": "zatłoczony",
+        "ru": "переполненный",
+        "zh": "拥挤的",
+        "ja": "混んでいる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "noisy",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈnɔɪzi/",
+      "definition": "Making a lot of noise.",
+      "examples": [
+        "Our street is very noisy at night."
+      ],
+      "translations": {
+        "uk": "галасливий",
+        "de": "laut",
+        "fr": "bruyant",
+        "es": "ruidoso",
+        "it": "rumoroso",
+        "pt": "barulhento",
+        "pl": "hałaśliwy",
+        "ru": "шумный",
+        "zh": "吵闹的",
+        "ja": "うるさい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "capital",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈkæpətl/",
+      "definition": "The main city of a country.",
+      "examples": [
+        "Paris is the capital of France."
+      ],
+      "translations": {
+        "uk": "столиця",
+        "de": "Hauptstadt",
+        "fr": "capitale",
+        "es": "capital",
+        "it": "capitale",
+        "pt": "capital",
+        "pl": "stolica",
+        "ru": "столица",
+        "zh": "首都",
+        "ja": "首都"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "straight ahead",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/streɪt əˈhed/",
+      "definition": "Directly forward.",
+      "examples": [
+        "Go straight ahead for two blocks."
+      ],
+      "translations": {
+        "uk": "прямо",
+        "de": "geradeaus",
+        "fr": "tout droit",
+        "es": "todo recto",
+        "it": "dritto",
+        "pt": "em frente",
+        "pl": "prosto",
+        "ru": "прямо",
+        "zh": "一直往前",
+        "ja": "まっすぐ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "population",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "City",
+      "ipa": "/ˌpɑːpjəˈleɪʃən/",
+      "definition": "The number of people who live in a place.",
+      "examples": [
+        "The city has a population of two million."
+      ],
+      "translations": {
+        "uk": "населення",
+        "de": "Bevölkerung",
+        "fr": "population",
+        "es": "población",
+        "it": "popolazione",
+        "pt": "população",
+        "pl": "ludność",
+        "ru": "население",
+        "zh": "人口",
+        "ja": "人口"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "citizen",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "City",
+      "ipa": "/ˈsɪtɪzən/",
+      "definition": "A person who lives in a town or country and has rights there.",
+      "examples": [
+        "She is a citizen of Canada."
+      ],
+      "translations": {
+        "uk": "громадянин",
+        "de": "Bürger",
+        "fr": "citoyen",
+        "es": "ciudadano",
+        "it": "cittadino",
+        "pt": "cidadão",
+        "pl": "obywatel",
+        "ru": "гражданин",
+        "zh": "公民",
+        "ja": "市民"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

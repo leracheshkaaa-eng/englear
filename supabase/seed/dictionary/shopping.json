@@ -1,0 +1,627 @@
+{
+  "package": "shopping",
+  "kind": "words",
+  "words": [
+    {
+      "word": "buy",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/baɪ/",
+      "definition": "To get something by paying money for it.",
+      "examples": [
+        "I want to buy a new phone."
+      ],
+      "translations": {
+        "uk": "купувати",
+        "de": "kaufen",
+        "fr": "acheter",
+        "es": "comprar",
+        "it": "comprare",
+        "pt": "comprar",
+        "pl": "kupować",
+        "ru": "покупать",
+        "zh": "买",
+        "ja": "買う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sell",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/sel/",
+      "definition": "To give something to someone for money.",
+      "examples": [
+        "They sell fresh fruit at the market."
+      ],
+      "translations": {
+        "uk": "продавати",
+        "de": "verkaufen",
+        "fr": "vendre",
+        "es": "vender",
+        "it": "vendere",
+        "pt": "vender",
+        "pl": "sprzedawać",
+        "ru": "продавать",
+        "zh": "卖",
+        "ja": "売る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pay",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/peɪ/",
+      "definition": "To give money for something.",
+      "examples": [
+        "Can I pay by card?"
+      ],
+      "translations": {
+        "uk": "платити",
+        "de": "bezahlen",
+        "fr": "payer",
+        "es": "pagar",
+        "it": "pagare",
+        "pt": "pagar",
+        "pl": "płacić",
+        "ru": "платить",
+        "zh": "付钱",
+        "ja": "払う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cheap",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/tʃiːp/",
+      "definition": "Not costing a lot of money.",
+      "examples": [
+        "This T-shirt was very cheap."
+      ],
+      "translations": {
+        "uk": "дешевий",
+        "de": "billig",
+        "fr": "bon marché",
+        "es": "barato",
+        "it": "economico",
+        "pt": "barato",
+        "pl": "tani",
+        "ru": "дешёвый",
+        "zh": "便宜的",
+        "ja": "安い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "store",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/stɔːr/",
+      "definition": "A place where you buy things.",
+      "examples": [
+        "The store closes at nine."
+      ],
+      "translations": {
+        "uk": "магазин",
+        "de": "Laden",
+        "fr": "boutique",
+        "es": "tienda",
+        "it": "negozio",
+        "pt": "loja",
+        "pl": "sklep",
+        "ru": "магазин",
+        "zh": "商店",
+        "ja": "店"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "market",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/ˈmɑːrkɪt/",
+      "definition": "A place where people buy and sell food and other things.",
+      "examples": [
+        "We buy vegetables at the market."
+      ],
+      "translations": {
+        "uk": "ринок",
+        "de": "Markt",
+        "fr": "marché",
+        "es": "mercado",
+        "it": "mercato",
+        "pt": "mercado",
+        "pl": "targ",
+        "ru": "рынок",
+        "zh": "市场",
+        "ja": "市場"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "supermarket",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/ˈsuːpɚmɑːrkɪt/",
+      "definition": "A large store that sells food and things for the home.",
+      "examples": [
+        "I go to the supermarket on Saturdays."
+      ],
+      "translations": {
+        "uk": "супермаркет",
+        "de": "Supermarkt",
+        "fr": "supermarché",
+        "es": "supermercado",
+        "it": "supermercato",
+        "pt": "supermercado",
+        "pl": "supermarket",
+        "ru": "супермаркет",
+        "zh": "超市",
+        "ja": "スーパー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cost",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/kɔːst/",
+      "definition": "To have a price.",
+      "examples": [
+        "How much does this cost?"
+      ],
+      "translations": {
+        "uk": "коштувати",
+        "de": "kosten",
+        "fr": "coûter",
+        "es": "costar",
+        "it": "costare",
+        "pt": "custar",
+        "pl": "kosztować",
+        "ru": "стоить",
+        "zh": "花费",
+        "ja": "（値段が）かかる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shopping",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/ˈʃɑːpɪŋ/",
+      "definition": "The activity of going to stores to buy things.",
+      "examples": [
+        "Let's go shopping on Saturday."
+      ],
+      "translations": {
+        "uk": "покупки, шопінг",
+        "de": "Einkaufen",
+        "fr": "shopping",
+        "es": "compras",
+        "it": "shopping",
+        "pt": "compras",
+        "pl": "zakupy",
+        "ru": "покупки, шопинг",
+        "zh": "购物",
+        "ja": "買い物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "how much",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Shopping",
+      "ipa": "/haʊ mʌtʃ/",
+      "definition": "Used to ask about price or amount.",
+      "examples": [
+        "How much is this bag?"
+      ],
+      "translations": {
+        "uk": "скільки (коштує)",
+        "de": "wie viel",
+        "fr": "combien",
+        "es": "cuánto",
+        "it": "quanto",
+        "pt": "quanto",
+        "pl": "ile",
+        "ru": "сколько (стоит)",
+        "zh": "多少钱",
+        "ja": "いくら"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "receipt",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/rɪˈsiːt/",
+      "definition": "A piece of paper that shows what you paid.",
+      "examples": [
+        "Keep the receipt in case you want to return it."
+      ],
+      "translations": {
+        "uk": "чек",
+        "de": "Kassenbon",
+        "fr": "ticket de caisse",
+        "es": "recibo",
+        "it": "scontrino",
+        "pt": "recibo",
+        "pl": "paragon",
+        "ru": "чек",
+        "zh": "收据",
+        "ja": "レシート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cash",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/kæʃ/",
+      "definition": "Money in coins or bills.",
+      "examples": [
+        "Do you want to pay in cash?"
+      ],
+      "translations": {
+        "uk": "готівка",
+        "de": "Bargeld",
+        "fr": "espèces",
+        "es": "efectivo",
+        "it": "contanti",
+        "pt": "dinheiro vivo",
+        "pl": "gotówka",
+        "ru": "наличные",
+        "zh": "现金",
+        "ja": "現金"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "credit card",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/ˈkredɪt kɑːrd/",
+      "definition": "A plastic card you use to buy things and pay later.",
+      "examples": [
+        "Can I pay with a credit card?"
+      ],
+      "translations": {
+        "uk": "кредитна картка",
+        "de": "Kreditkarte",
+        "fr": "carte de crédit",
+        "es": "tarjeta de crédito",
+        "it": "carta di credito",
+        "pt": "cartão de crédito",
+        "pl": "karta kredytowa",
+        "ru": "кредитная карта",
+        "zh": "信用卡",
+        "ja": "クレジットカード"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sale",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/seɪl/",
+      "definition": "A time when a store sells things at lower prices.",
+      "examples": [
+        "I bought these shoes on sale."
+      ],
+      "translations": {
+        "uk": "розпродаж",
+        "de": "Ausverkauf",
+        "fr": "soldes",
+        "es": "rebajas",
+        "it": "saldi",
+        "pt": "liquidação",
+        "pl": "wyprzedaż",
+        "ru": "распродажа",
+        "zh": "打折",
+        "ja": "セール"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "change",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/tʃeɪndʒ/",
+      "definition": "The money you get back when you pay more than the price.",
+      "examples": [
+        "Here is your change."
+      ],
+      "translations": {
+        "uk": "решта",
+        "de": "Wechselgeld",
+        "fr": "monnaie",
+        "es": "cambio",
+        "it": "resto",
+        "pt": "troco",
+        "pl": "reszta",
+        "ru": "сдача",
+        "zh": "找零",
+        "ja": "お釣り"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "To become different or make something different.",
+          "examples": [
+            "The city has changed a lot."
+          ],
+          "translations": {
+            "uk": "змінювати(ся)",
+            "de": "ändern",
+            "fr": "changer",
+            "es": "cambiar",
+            "it": "cambiare",
+            "pt": "mudar",
+            "pl": "zmieniać (się)",
+            "ru": "менять(ся)",
+            "zh": "改变",
+            "ja": "変わる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "return",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/rɪˈtɝːn/",
+      "definition": "To take something back to a store.",
+      "examples": [
+        "I want to return this jacket."
+      ],
+      "translations": {
+        "uk": "повертати (товар)",
+        "de": "zurückgeben",
+        "fr": "rapporter",
+        "es": "devolver",
+        "it": "restituire",
+        "pt": "devolver",
+        "pl": "zwrócić",
+        "ru": "возвращать (товар)",
+        "zh": "退货",
+        "ja": "返品する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "come-back",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To go or come back to a place.",
+          "examples": [
+            "She returned home late."
+          ],
+          "translations": {
+            "uk": "повертатися",
+            "de": "zurückkehren",
+            "fr": "revenir",
+            "es": "volver",
+            "it": "tornare",
+            "pt": "voltar",
+            "pl": "wracać",
+            "ru": "возвращаться",
+            "zh": "回来",
+            "ja": "戻る"
+          }
+        }
+      ]
+    },
+    {
+      "word": "cart",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/kɑːrt/",
+      "definition": "A large metal basket on wheels used in a supermarket.",
+      "examples": [
+        "Put the milk in the cart."
+      ],
+      "translations": {
+        "uk": "візок",
+        "de": "Einkaufswagen",
+        "fr": "chariot",
+        "es": "carrito",
+        "it": "carrello",
+        "pt": "carrinho",
+        "pl": "wózek",
+        "ru": "тележка",
+        "zh": "购物车",
+        "ja": "カート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spend",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/spend/",
+      "definition": "To use money to buy things.",
+      "examples": [
+        "Don't spend all your money on candy."
+      ],
+      "translations": {
+        "uk": "витрачати",
+        "de": "ausgeben",
+        "fr": "dépenser",
+        "es": "gastar",
+        "it": "spendere",
+        "pt": "gastar",
+        "pl": "wydawać",
+        "ru": "тратить",
+        "zh": "花",
+        "ja": "使う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "online",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/ˌɑːnˈlaɪn/",
+      "definition": "On the internet.",
+      "examples": [
+        "I buy most of my clothes online."
+      ],
+      "translations": {
+        "uk": "онлайн",
+        "de": "online",
+        "fr": "en ligne",
+        "es": "en línea",
+        "it": "online",
+        "pt": "online",
+        "pl": "online",
+        "ru": "онлайн",
+        "zh": "在线",
+        "ja": "オンラインで"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wallet",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Shopping",
+      "ipa": "/ˈwɑːlɪt/",
+      "definition": "A small flat case for money and cards.",
+      "examples": [
+        "I left my wallet at home."
+      ],
+      "translations": {
+        "uk": "гаманець",
+        "de": "Geldbörse",
+        "fr": "portefeuille",
+        "es": "cartera",
+        "it": "portafoglio",
+        "pt": "carteira",
+        "pl": "portfel",
+        "ru": "кошелёк",
+        "zh": "钱包",
+        "ja": "財布"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "discount",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Shopping",
+      "ipa": "/ˈdɪskaʊnt/",
+      "definition": "A lower price than usual.",
+      "examples": [
+        "Students get a ten percent discount."
+      ],
+      "translations": {
+        "uk": "знижка",
+        "de": "Rabatt",
+        "fr": "réduction",
+        "es": "descuento",
+        "it": "sconto",
+        "pt": "desconto",
+        "pl": "zniżka",
+        "ru": "скидка",
+        "zh": "折扣",
+        "ja": "割引"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bargain",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Shopping",
+      "ipa": "/ˈbɑːrɡən/",
+      "definition": "Something you buy for a lower price than usual.",
+      "examples": [
+        "This coat was a real bargain."
+      ],
+      "translations": {
+        "uk": "вигідна покупка",
+        "de": "Schnäppchen",
+        "fr": "bonne affaire",
+        "es": "ganga",
+        "it": "affare",
+        "pt": "pechincha",
+        "pl": "okazja",
+        "ru": "выгодная покупка",
+        "zh": "便宜货",
+        "ja": "掘り出し物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "window shopping",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Shopping",
+      "ipa": "/ˈwɪndoʊ ˌʃɑːpɪŋ/",
+      "definition": "Looking at things in stores without buying anything.",
+      "examples": [
+        "We went window shopping downtown."
+      ],
+      "translations": {
+        "uk": "розглядання вітрин",
+        "de": "Schaufensterbummel",
+        "fr": "lèche-vitrine",
+        "es": "mirar escaparates",
+        "it": "guardare le vetrine",
+        "pt": "olhar vitrines",
+        "pl": "oglądanie wystaw",
+        "ru": "разглядывание витрин",
+        "zh": "逛街",
+        "ja": "ウインドーショッピング"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

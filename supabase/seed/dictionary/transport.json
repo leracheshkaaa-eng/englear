@@ -1,0 +1,677 @@
+{
+  "package": "transport",
+  "kind": "words",
+  "words": [
+    {
+      "word": "car",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/kɑːr/",
+      "definition": "A vehicle with four wheels and an engine.",
+      "examples": [
+        "My dad drives an old car."
+      ],
+      "translations": {
+        "uk": "автомобіль",
+        "de": "Auto",
+        "fr": "voiture",
+        "es": "coche",
+        "it": "macchina",
+        "pt": "carro",
+        "pl": "samochód",
+        "ru": "машина",
+        "zh": "汽车",
+        "ja": "車"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bus",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/bʌs/",
+      "definition": "A large vehicle that carries many passengers.",
+      "examples": [
+        "I take the bus to school."
+      ],
+      "translations": {
+        "uk": "автобус",
+        "de": "Bus",
+        "fr": "bus",
+        "es": "autobús",
+        "it": "autobus",
+        "pt": "ônibus",
+        "pl": "autobus",
+        "ru": "автобус",
+        "zh": "公共汽车",
+        "ja": "バス"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "train",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/treɪn/",
+      "definition": "A vehicle that travels on rails.",
+      "examples": [
+        "The train leaves at seven."
+      ],
+      "translations": {
+        "uk": "потяг",
+        "de": "Zug",
+        "fr": "train",
+        "es": "tren",
+        "it": "treno",
+        "pt": "trem",
+        "pl": "pociąg",
+        "ru": "поезд",
+        "zh": "火车",
+        "ja": "電車"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To practice a sport or learn skills for a job.",
+          "examples": [
+            "She trains every morning."
+          ],
+          "translations": {
+            "uk": "тренуватися",
+            "de": "trainieren",
+            "fr": "s'entraîner",
+            "es": "entrenar",
+            "it": "allenarsi",
+            "pt": "treinar",
+            "pl": "trenować",
+            "ru": "тренироваться",
+            "zh": "训练",
+            "ja": "トレーニングする"
+          }
+        }
+      ]
+    },
+    {
+      "word": "bike",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/baɪk/",
+      "definition": "A vehicle with two wheels that you ride by pushing pedals.",
+      "examples": [
+        "I ride my bike to school."
+      ],
+      "translations": {
+        "uk": "велосипед",
+        "de": "Fahrrad",
+        "fr": "vélo",
+        "es": "bici",
+        "it": "bici",
+        "pt": "bicicleta",
+        "pl": "rower",
+        "ru": "велосипед",
+        "zh": "自行车",
+        "ja": "自転車"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "taxi",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/ˈtæksi/",
+      "definition": "A car with a driver that you pay to take you somewhere.",
+      "examples": [
+        "Let's take a taxi to the airport."
+      ],
+      "translations": {
+        "uk": "таксі",
+        "de": "Taxi",
+        "fr": "taxi",
+        "es": "taxi",
+        "it": "taxi",
+        "pt": "táxi",
+        "pl": "taksówka",
+        "ru": "такси",
+        "zh": "出租车",
+        "ja": "タクシー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "boat",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/boʊt/",
+      "definition": "A small vehicle that travels on water.",
+      "examples": [
+        "We went fishing in a boat."
+      ],
+      "translations": {
+        "uk": "човен",
+        "de": "Boot",
+        "fr": "bateau",
+        "es": "barca",
+        "it": "barca",
+        "pt": "barco",
+        "pl": "łódź",
+        "ru": "лодка",
+        "zh": "船",
+        "ja": "ボート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "drive",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/draɪv/",
+      "definition": "To control a car or other vehicle.",
+      "examples": [
+        "Can you drive?"
+      ],
+      "translations": {
+        "uk": "керувати (автомобілем)",
+        "de": "fahren",
+        "fr": "conduire",
+        "es": "conducir",
+        "it": "guidare",
+        "pt": "dirigir",
+        "pl": "prowadzić (samochód)",
+        "ru": "водить (машину)",
+        "zh": "开车",
+        "ja": "運転する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ride",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/raɪd/",
+      "definition": "To sit on a bike or horse and make it move.",
+      "examples": [
+        "She rides a horse every weekend."
+      ],
+      "translations": {
+        "uk": "їздити (верхи, на велосипеді)",
+        "de": "reiten, fahren",
+        "fr": "monter",
+        "es": "montar",
+        "it": "andare",
+        "pt": "andar",
+        "pl": "jeździć",
+        "ru": "ездить (верхом, на велосипеде)",
+        "zh": "骑",
+        "ja": "乗る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "driver",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/ˈdraɪvɚ/",
+      "definition": "A person who drives a vehicle.",
+      "examples": [
+        "The bus driver said hello."
+      ],
+      "translations": {
+        "uk": "водій",
+        "de": "Fahrer",
+        "fr": "conducteur",
+        "es": "conductor",
+        "it": "autista",
+        "pt": "motorista",
+        "pl": "kierowca",
+        "ru": "водитель",
+        "zh": "司机",
+        "ja": "運転手"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "road",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/roʊd/",
+      "definition": "A hard surface for cars to travel on.",
+      "examples": [
+        "The road to the village is narrow."
+      ],
+      "translations": {
+        "uk": "дорога",
+        "de": "Straße",
+        "fr": "route",
+        "es": "carretera",
+        "it": "strada",
+        "pt": "estrada",
+        "pl": "droga",
+        "ru": "дорога",
+        "zh": "路",
+        "ja": "道路"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bus stop",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/ˈbʌs stɑːp/",
+      "definition": "A place where a bus stops for passengers.",
+      "examples": [
+        "I'll meet you at the bus stop."
+      ],
+      "translations": {
+        "uk": "автобусна зупинка",
+        "de": "Bushaltestelle",
+        "fr": "arrêt de bus",
+        "es": "parada de autobús",
+        "it": "fermata dell'autobus",
+        "pt": "ponto de ônibus",
+        "pl": "przystanek autobusowy",
+        "ru": "автобусная остановка",
+        "zh": "公交车站",
+        "ja": "バス停"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fast",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/fæst/",
+      "definition": "Moving quickly.",
+      "examples": [
+        "This is a very fast train."
+      ],
+      "translations": {
+        "uk": "швидкий",
+        "de": "schnell",
+        "fr": "rapide",
+        "es": "rápido",
+        "it": "veloce",
+        "pt": "rápido",
+        "pl": "szybki",
+        "ru": "быстрый",
+        "zh": "快的",
+        "ja": "速い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "slow",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Transport",
+      "ipa": "/sloʊ/",
+      "definition": "Not moving quickly.",
+      "examples": [
+        "The old bus is very slow."
+      ],
+      "translations": {
+        "uk": "повільний",
+        "de": "langsam",
+        "fr": "lent",
+        "es": "lento",
+        "it": "lento",
+        "pt": "lento",
+        "pl": "wolny",
+        "ru": "медленный",
+        "zh": "慢的",
+        "ja": "遅い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ship",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/ʃɪp/",
+      "definition": "A large boat that carries people or goods.",
+      "examples": [
+        "The ship crossed the ocean."
+      ],
+      "translations": {
+        "uk": "корабель",
+        "de": "Schiff",
+        "fr": "navire",
+        "es": "buque",
+        "it": "nave",
+        "pt": "navio",
+        "pl": "statek",
+        "ru": "корабль",
+        "zh": "轮船",
+        "ja": "船"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "subway",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/ˈsʌbweɪ/",
+      "definition": "An underground train system in a city.",
+      "examples": [
+        "The subway is the fastest way to get around."
+      ],
+      "translations": {
+        "uk": "метро",
+        "de": "U-Bahn",
+        "fr": "métro",
+        "es": "metro",
+        "it": "metropolitana",
+        "pt": "metrô",
+        "pl": "metro",
+        "ru": "метро",
+        "zh": "地铁",
+        "ja": "地下鉄"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "get on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/ɡet ɑːn/",
+      "definition": "To go onto a bus, train or plane.",
+      "examples": [
+        "Get on the bus at the next stop."
+      ],
+      "translations": {
+        "uk": "сідати (в транспорт)",
+        "de": "einsteigen",
+        "fr": "monter",
+        "es": "subir",
+        "it": "salire",
+        "pt": "embarcar",
+        "pl": "wsiadać",
+        "ru": "садиться (в транспорт)",
+        "zh": "上车",
+        "ja": "乗る"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "get off",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/ɡet ɑːf/",
+      "definition": "To leave a bus, train or plane.",
+      "examples": [
+        "Get off the train at the last stop."
+      ],
+      "translations": {
+        "uk": "виходити (з транспорту)",
+        "de": "aussteigen",
+        "fr": "descendre",
+        "es": "bajar",
+        "it": "scendere",
+        "pt": "descer",
+        "pl": "wysiadać",
+        "ru": "выходить (из транспорта)",
+        "zh": "下车",
+        "ja": "降りる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "parking lot",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/ˈpɑːrkɪŋ lɑːt/",
+      "definition": "An area where people leave their cars.",
+      "examples": [
+        "The parking lot is full."
+      ],
+      "translations": {
+        "uk": "автостоянка",
+        "de": "Parkplatz",
+        "fr": "parking",
+        "es": "estacionamiento",
+        "it": "parcheggio",
+        "pt": "estacionamento",
+        "pl": "parking",
+        "ru": "парковка",
+        "zh": "停车场",
+        "ja": "駐車場"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "gas station",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/ˈɡæs ˌsteɪʃən/",
+      "definition": "A place where you buy fuel for your car.",
+      "examples": [
+        "We stopped at a gas station."
+      ],
+      "translations": {
+        "uk": "автозаправка",
+        "de": "Tankstelle",
+        "fr": "station-service",
+        "es": "gasolinera",
+        "it": "distributore di benzina",
+        "pt": "posto de gasolina",
+        "pl": "stacja benzynowa",
+        "ru": "заправка",
+        "zh": "加油站",
+        "ja": "ガソリンスタンド"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "miss",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/mɪs/",
+      "definition": "To be too late for a bus, train or plane.",
+      "examples": [
+        "Hurry, or we'll miss the train!"
+      ],
+      "translations": {
+        "uk": "запізнитися (на)",
+        "de": "verpassen",
+        "fr": "rater",
+        "es": "perder",
+        "it": "perdere",
+        "pt": "perder",
+        "pl": "spóźnić się na",
+        "ru": "опоздать (на)",
+        "zh": "错过",
+        "ja": "乗り遅れる"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "feel",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To feel sad because someone is not with you.",
+          "examples": [
+            "I miss my grandparents."
+          ],
+          "translations": {
+            "uk": "сумувати",
+            "de": "vermissen",
+            "fr": "manquer à",
+            "es": "extrañar",
+            "it": "sentire la mancanza di",
+            "pt": "sentir falta de",
+            "pl": "tęsknić",
+            "ru": "скучать",
+            "zh": "想念",
+            "ja": "恋しく思う"
+          }
+        }
+      ]
+    },
+    {
+      "word": "seat",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Transport",
+      "ipa": "/siːt/",
+      "definition": "A place where you can sit.",
+      "examples": [
+        "Is this seat free?"
+      ],
+      "translations": {
+        "uk": "місце, сидіння",
+        "de": "Sitzplatz",
+        "fr": "place",
+        "es": "asiento",
+        "it": "posto",
+        "pt": "assento",
+        "pl": "miejsce",
+        "ru": "место, сиденье",
+        "zh": "座位",
+        "ja": "席"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "highway",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Transport",
+      "ipa": "/ˈhaɪweɪ/",
+      "definition": "A main road for fast traffic between cities.",
+      "examples": [
+        "We drove on the highway for three hours."
+      ],
+      "translations": {
+        "uk": "шосе",
+        "de": "Autobahn",
+        "fr": "autoroute",
+        "es": "autopista",
+        "it": "autostrada",
+        "pt": "rodovia",
+        "pl": "autostrada",
+        "ru": "шоссе",
+        "zh": "公路",
+        "ja": "幹線道路"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vehicle",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Transport",
+      "ipa": "/ˈviːɪkəl/",
+      "definition": "A machine that carries people or things, like a car or bus.",
+      "examples": [
+        "No vehicles are allowed in the park."
+      ],
+      "translations": {
+        "uk": "транспортний засіб",
+        "de": "Fahrzeug",
+        "fr": "véhicule",
+        "es": "vehículo",
+        "it": "veicolo",
+        "pt": "veículo",
+        "pl": "pojazd",
+        "ru": "транспортное средство",
+        "zh": "车辆",
+        "ja": "乗り物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "traffic jam",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Transport",
+      "ipa": "/ˈtræfɪk dʒæm/",
+      "definition": "A long line of cars that cannot move.",
+      "examples": [
+        "We were stuck in a traffic jam for an hour."
+      ],
+      "translations": {
+        "uk": "затор",
+        "de": "Stau",
+        "fr": "embouteillage",
+        "es": "atasco",
+        "it": "ingorgo",
+        "pt": "engarrafamento",
+        "pl": "korek",
+        "ru": "пробка",
+        "zh": "堵车",
+        "ja": "渋滞"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "public transportation",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Transport",
+      "ipa": "/ˌpʌblɪk ˌtrænspɚˈteɪʃən/",
+      "definition": "Buses and trains that everyone can use.",
+      "examples": [
+        "Public transportation in this city is cheap."
+      ],
+      "translations": {
+        "uk": "громадський транспорт",
+        "de": "öffentliche Verkehrsmittel",
+        "fr": "transports en commun",
+        "es": "transporte público",
+        "it": "trasporto pubblico",
+        "pt": "transporte público",
+        "pl": "komunikacja miejska",
+        "ru": "общественный транспорт",
+        "zh": "公共交通",
+        "ja": "公共交通機関"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,654 @@
+{
+  "package": "work",
+  "kind": "words",
+  "words": [
+    {
+      "word": "work",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/wɝːk/",
+      "definition": "To do a job, usually for money.",
+      "examples": [
+        "My mom works in a bank."
+      ],
+      "translations": {
+        "uk": "працювати",
+        "de": "arbeiten",
+        "fr": "travailler",
+        "es": "trabajar",
+        "it": "lavorare",
+        "pt": "trabalhar",
+        "pl": "pracować",
+        "ru": "работать",
+        "zh": "工作",
+        "ja": "働く"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "A job, or the place where you do it.",
+          "examples": [
+            "I go to work by bus."
+          ],
+          "translations": {
+            "uk": "робота",
+            "de": "Arbeit",
+            "fr": "travail",
+            "es": "trabajo",
+            "it": "lavoro",
+            "pt": "trabalho",
+            "pl": "praca",
+            "ru": "работа",
+            "zh": "工作",
+            "ja": "仕事"
+          }
+        }
+      ]
+    },
+    {
+      "word": "boss",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/bɔːs/",
+      "definition": "The person who is in charge of other workers.",
+      "examples": [
+        "My boss is very friendly."
+      ],
+      "translations": {
+        "uk": "начальник",
+        "de": "Chef",
+        "fr": "patron",
+        "es": "jefe",
+        "it": "capo",
+        "pt": "chefe",
+        "pl": "szef",
+        "ru": "начальник",
+        "zh": "老板",
+        "ja": "上司"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "worker",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/ˈwɝːkɚ/",
+      "definition": "A person who works, especially in a particular way.",
+      "examples": [
+        "The factory has two hundred workers."
+      ],
+      "translations": {
+        "uk": "працівник",
+        "de": "Arbeiter",
+        "fr": "travailleur",
+        "es": "trabajador",
+        "it": "lavoratore",
+        "pt": "trabalhador",
+        "pl": "pracownik",
+        "ru": "работник",
+        "zh": "工人",
+        "ja": "労働者"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "busy",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/ˈbɪzi/",
+      "definition": "Having a lot of things to do.",
+      "examples": [
+        "I'm very busy this week."
+      ],
+      "translations": {
+        "uk": "зайнятий",
+        "de": "beschäftigt",
+        "fr": "occupé",
+        "es": "ocupado",
+        "it": "occupato",
+        "pt": "ocupado",
+        "pl": "zajęty",
+        "ru": "занятый",
+        "zh": "忙的",
+        "ja": "忙しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "email",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/ˈiːmeɪl/",
+      "definition": "A message sent from one computer or phone to another.",
+      "examples": [
+        "I sent you an email this morning."
+      ],
+      "translations": {
+        "uk": "електронний лист",
+        "de": "E-Mail",
+        "fr": "e-mail",
+        "es": "correo electrónico",
+        "it": "email",
+        "pt": "e-mail",
+        "pl": "e-mail",
+        "ru": "электронное письмо",
+        "zh": "电子邮件",
+        "ja": "メール"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "farmer",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/ˈfɑːrmɚ/",
+      "definition": "A person who owns or works on a farm.",
+      "examples": [
+        "The farmer has fifty cows."
+      ],
+      "translations": {
+        "uk": "фермер",
+        "de": "Bauer",
+        "fr": "agriculteur",
+        "es": "granjero",
+        "it": "contadino",
+        "pt": "fazendeiro",
+        "pl": "rolnik",
+        "ru": "фермер",
+        "zh": "农民",
+        "ja": "農家"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "police officer",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Work",
+      "ipa": "/pəˈliːs ˌɔːfɪsɚ/",
+      "definition": "A person whose job is to protect people and stop crime.",
+      "examples": [
+        "A police officer helped us find the way."
+      ],
+      "translations": {
+        "uk": "поліцейський",
+        "de": "Polizist",
+        "fr": "policier",
+        "es": "policía",
+        "it": "poliziotto",
+        "pt": "policial",
+        "pl": "policjant",
+        "ru": "полицейский",
+        "zh": "警察",
+        "ja": "警察官"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "company",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ˈkʌmpəni/",
+      "definition": "A business that makes or sells things.",
+      "examples": [
+        "She works for a big company."
+      ],
+      "translations": {
+        "uk": "компанія",
+        "de": "Firma",
+        "fr": "entreprise",
+        "es": "empresa",
+        "it": "azienda",
+        "pt": "empresa",
+        "pl": "firma",
+        "ru": "компания",
+        "zh": "公司",
+        "ja": "会社"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "factory",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ˈfæktəri/",
+      "definition": "A building where things are made by machines.",
+      "examples": [
+        "He works in a car factory."
+      ],
+      "translations": {
+        "uk": "фабрика, завод",
+        "de": "Fabrik",
+        "fr": "usine",
+        "es": "fábrica",
+        "it": "fabbrica",
+        "pt": "fábrica",
+        "pl": "fabryka",
+        "ru": "фабрика, завод",
+        "zh": "工厂",
+        "ja": "工場"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "manager",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ˈmænɪdʒɚ/",
+      "definition": "A person who controls a business or a team.",
+      "examples": [
+        "The manager spoke to all the staff."
+      ],
+      "translations": {
+        "uk": "менеджер, керівник",
+        "de": "Manager",
+        "fr": "responsable",
+        "es": "gerente",
+        "it": "direttore",
+        "pt": "gerente",
+        "pl": "kierownik",
+        "ru": "менеджер, руководитель",
+        "zh": "经理",
+        "ja": "マネージャー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "interview",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ˈɪntɚvjuː/",
+      "definition": "A meeting where someone is asked questions for a job.",
+      "examples": [
+        "I have a job interview tomorrow."
+      ],
+      "translations": {
+        "uk": "співбесіда",
+        "de": "Vorstellungsgespräch",
+        "fr": "entretien",
+        "es": "entrevista",
+        "it": "colloquio",
+        "pt": "entrevista",
+        "pl": "rozmowa kwalifikacyjna",
+        "ru": "собеседование",
+        "zh": "面试",
+        "ja": "面接"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "earn",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ɝːn/",
+      "definition": "To get money for work you do.",
+      "examples": [
+        "She earns a good salary."
+      ],
+      "translations": {
+        "uk": "заробляти",
+        "de": "verdienen",
+        "fr": "gagner",
+        "es": "ganar",
+        "it": "guadagnare",
+        "pt": "ganhar",
+        "pl": "zarabiać",
+        "ru": "зарабатывать",
+        "zh": "挣",
+        "ja": "稼ぐ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "task",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/tæsk/",
+      "definition": "A piece of work that you must do.",
+      "examples": [
+        "My first task is to answer the emails."
+      ],
+      "translations": {
+        "uk": "завдання",
+        "de": "Aufgabe",
+        "fr": "tâche",
+        "es": "tarea",
+        "it": "compito",
+        "pt": "tarefa",
+        "pl": "zadanie",
+        "ru": "задача",
+        "zh": "任务",
+        "ja": "作業"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "team",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/tiːm/",
+      "definition": "A group of people who work or play together.",
+      "examples": [
+        "Our team won the game."
+      ],
+      "translations": {
+        "uk": "команда",
+        "de": "Team",
+        "fr": "équipe",
+        "es": "equipo",
+        "it": "squadra",
+        "pt": "equipe",
+        "pl": "drużyna",
+        "ru": "команда",
+        "zh": "团队",
+        "ja": "チーム"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "engineer",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Work",
+      "ipa": "/ˌendʒɪˈnɪr/",
+      "definition": "A person who designs machines, roads or buildings.",
+      "examples": [
+        "My sister is an engineer."
+      ],
+      "translations": {
+        "uk": "інженер",
+        "de": "Ingenieur",
+        "fr": "ingénieur",
+        "es": "ingeniero",
+        "it": "ingegnere",
+        "pt": "engenheiro",
+        "pl": "inżynier",
+        "ru": "инженер",
+        "zh": "工程师",
+        "ja": "エンジニア"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "business",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Business",
+      "ipa": "/ˈbɪznəs/",
+      "definition": "The work of buying and selling things.",
+      "examples": [
+        "My father runs a small business."
+      ],
+      "translations": {
+        "uk": "бізнес, справа",
+        "de": "Geschäft",
+        "fr": "entreprise",
+        "es": "negocio",
+        "it": "attività",
+        "pt": "negócio",
+        "pl": "działalność",
+        "ru": "бизнес, дело",
+        "zh": "生意",
+        "ja": "事業"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "career",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/kəˈrɪr/",
+      "definition": "The jobs you do during your working life.",
+      "examples": [
+        "He had a long career as a pilot."
+      ],
+      "translations": {
+        "uk": "кар'єра",
+        "de": "Karriere",
+        "fr": "carrière",
+        "es": "carrera",
+        "it": "carriera",
+        "pt": "carreira",
+        "pl": "kariera",
+        "ru": "карьера",
+        "zh": "职业生涯",
+        "ja": "経歴"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "experience",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ɪkˈspɪriəns/",
+      "definition": "Knowledge and skills you get from doing something.",
+      "examples": [
+        "Do you have any work experience?"
+      ],
+      "translations": {
+        "uk": "досвід",
+        "de": "Erfahrung",
+        "fr": "expérience",
+        "es": "experiencia",
+        "it": "esperienza",
+        "pt": "experiência",
+        "pl": "doświadczenie",
+        "ru": "опыт",
+        "zh": "经验",
+        "ja": "経験"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "skill",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/skɪl/",
+      "definition": "An ability to do something well.",
+      "examples": [
+        "Good writing is an important skill."
+      ],
+      "translations": {
+        "uk": "навичка",
+        "de": "Fähigkeit",
+        "fr": "compétence",
+        "es": "habilidad",
+        "it": "abilità",
+        "pt": "habilidade",
+        "pl": "umiejętność",
+        "ru": "навык",
+        "zh": "技能",
+        "ja": "技能"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "apply",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/əˈplaɪ/",
+      "definition": "To ask formally for something, like a job.",
+      "examples": [
+        "She applied for a job at the bank."
+      ],
+      "translations": {
+        "uk": "подавати заявку",
+        "de": "sich bewerben",
+        "fr": "postuler",
+        "es": "solicitar",
+        "it": "candidarsi",
+        "pt": "candidatar-se",
+        "pl": "ubiegać się",
+        "ru": "подавать заявку",
+        "zh": "申请",
+        "ja": "応募する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "employee",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ɪmˈplɔɪiː/",
+      "definition": "A person who is paid to work for a company.",
+      "examples": [
+        "The company has fifty employees."
+      ],
+      "translations": {
+        "uk": "співробітник",
+        "de": "Angestellter",
+        "fr": "employé",
+        "es": "empleado",
+        "it": "dipendente",
+        "pt": "funcionário",
+        "pl": "pracownik etatowy",
+        "ru": "сотрудник",
+        "zh": "员工",
+        "ja": "従業員"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "retire",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/rɪˈtaɪɚ/",
+      "definition": "To stop working because you are old.",
+      "examples": [
+        "My grandfather retired at sixty-five."
+      ],
+      "translations": {
+        "uk": "виходити на пенсію",
+        "de": "in Rente gehen",
+        "fr": "prendre sa retraite",
+        "es": "jubilarse",
+        "it": "andare in pensione",
+        "pt": "aposentar-se",
+        "pl": "przejść na emeryturę",
+        "ru": "выходить на пенсию",
+        "zh": "退休",
+        "ja": "退職する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "part-time",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˌpɑːrtˈtaɪm/",
+      "definition": "Working only some of the day or week.",
+      "examples": [
+        "She has a part-time job in a café."
+      ],
+      "translations": {
+        "uk": "з неповним робочим днем",
+        "de": "Teilzeit-",
+        "fr": "à temps partiel",
+        "es": "a tiempo parcial",
+        "it": "part-time",
+        "pt": "de meio período",
+        "pl": "na pół etatu",
+        "ru": "с неполной занятостью",
+        "zh": "兼职的",
+        "ja": "パートタイムの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "unemployed",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˌʌnɪmˈplɔɪd/",
+      "definition": "Without a job.",
+      "examples": [
+        "He has been unemployed for six months."
+      ],
+      "translations": {
+        "uk": "безробітний",
+        "de": "arbeitslos",
+        "fr": "au chômage",
+        "es": "desempleado",
+        "it": "disoccupato",
+        "pt": "desempregado",
+        "pl": "bezrobotny",
+        "ru": "безработный",
+        "zh": "失业的",
+        "ja": "失業中の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lawyer",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˈlɔːjɚ/",
+      "definition": "A person whose job is to give advice about the law.",
+      "examples": [
+        "You should talk to a lawyer."
+      ],
+      "translations": {
+        "uk": "юрист",
+        "de": "Anwalt",
+        "fr": "avocat",
+        "es": "abogado",
+        "it": "avvocato",
+        "pt": "advogado",
+        "pl": "prawnik",
+        "ru": "юрист",
+        "zh": "律师",
+        "ja": "弁護士"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
