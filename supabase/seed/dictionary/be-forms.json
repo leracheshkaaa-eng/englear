@@ -1,0 +1,131 @@
+{
+  "package": "be-forms",
+  "kind": "words",
+  "words": [
+    {
+      "word": "am",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/æm/",
+      "definition": "Form of \"be\" used with \"I\".",
+      "examples": [
+        "I am happy."
+      ],
+      "translations": {
+        "uk": "є (форма be з I)",
+        "de": "bin",
+        "fr": "suis",
+        "es": "soy, estoy",
+        "it": "sono",
+        "pt": "sou, estou",
+        "pl": "jestem",
+        "ru": "есть (форма be с I)",
+        "zh": "是",
+        "ja": "です"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "is",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɪz/",
+      "definition": "Form of \"be\" used with he, she and it.",
+      "examples": [
+        "She is my sister."
+      ],
+      "translations": {
+        "uk": "є (форма be)",
+        "de": "ist",
+        "fr": "est",
+        "es": "es, está",
+        "it": "è",
+        "pt": "é, está",
+        "pl": "jest",
+        "ru": "есть (форма be)",
+        "zh": "是",
+        "ja": "です"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "are",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɑːr/",
+      "definition": "Form of \"be\" used with you, we and they.",
+      "examples": [
+        "We are friends."
+      ],
+      "translations": {
+        "uk": "є (форма be)",
+        "de": "sind",
+        "fr": "sont",
+        "es": "son, están",
+        "it": "sono",
+        "pt": "são, estão",
+        "pl": "są",
+        "ru": "есть (форма be)",
+        "zh": "是",
+        "ja": "です"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "was",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wʌz/",
+      "definition": "Past form of \"be\" used with I, he, she and it.",
+      "examples": [
+        "I was tired yesterday."
+      ],
+      "translations": {
+        "uk": "був, була",
+        "de": "war",
+        "fr": "était",
+        "es": "era, estaba",
+        "it": "era",
+        "pt": "era, estava",
+        "pl": "był, była",
+        "ru": "был, была",
+        "zh": "是（过去式）",
+        "ja": "〜だった"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "were",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wɝː/",
+      "definition": "Past form of \"be\" used with you, we and they.",
+      "examples": [
+        "They were at home."
+      ],
+      "translations": {
+        "uk": "були",
+        "de": "waren",
+        "fr": "étaient",
+        "es": "eran, estaban",
+        "it": "erano",
+        "pt": "eram, estavam",
+        "pl": "byli",
+        "ru": "были",
+        "zh": "是（过去式）",
+        "ja": "〜だった"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

@@ -11,7 +11,7 @@ import { errorMessage } from '../i18n/errors'
 import { LANGUAGES, setNativeLanguage, translationLanguage } from '../i18n'
 import { MeaningTabs } from './meanings'
 
-const PARTS = ['noun', 'verb', 'adjective', 'adverb', 'preposition', 'pronoun', 'conjunction', 'number', 'idiom', 'phrasal verb', 'collocation']
+const PARTS = ['noun', 'verb', 'adjective', 'adverb', 'preposition', 'pronoun', 'conjunction', 'number', 'article', 'idiom', 'phrasal verb', 'collocation']
 const PAGE_SIZE = 300
 
 export function Dictionary() {

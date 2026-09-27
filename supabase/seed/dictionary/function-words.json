@@ -1,0 +1,706 @@
+{
+  "package": "function-words",
+  "kind": "words",
+  "words": [
+    {
+      "word": "the",
+      "part_of_speech": "article",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ðə/",
+      "definition": "Used before a noun when it is clear which one you mean.",
+      "examples": [
+        "The book on the table is mine."
+      ],
+      "translations": {
+        "uk": "(означений артикль)",
+        "de": "der, die, das",
+        "fr": "le, la, les",
+        "es": "el, la, los, las",
+        "it": "il, la, lo",
+        "pt": "o, a",
+        "pl": "(rodzajnik określony)",
+        "ru": "(определённый артикль)",
+        "zh": "（定冠词）",
+        "ja": "（定冠詞）"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "a",
+      "part_of_speech": "article",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ə/",
+      "definition": "Used before a singular noun that is not specific.",
+      "examples": [
+        "I have a dog."
+      ],
+      "translations": {
+        "uk": "(неозначений артикль)",
+        "de": "ein, eine",
+        "fr": "un, une",
+        "es": "un, una",
+        "it": "un, una",
+        "pt": "um, uma",
+        "pl": "(rodzajnik nieokreślony)",
+        "ru": "(неопределённый артикль)",
+        "zh": "一个",
+        "ja": "（不定冠詞）"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "an",
+      "part_of_speech": "article",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/æn/",
+      "definition": "Used instead of \"a\" before a vowel sound.",
+      "examples": [
+        "She eats an apple every day."
+      ],
+      "translations": {
+        "uk": "(неозначений артикль перед голосною)",
+        "de": "ein, eine",
+        "fr": "un, une",
+        "es": "un, una",
+        "it": "un, una",
+        "pt": "um, uma",
+        "pl": "(rodzajnik nieokreślony)",
+        "ru": "(неопределённый артикль перед гласной)",
+        "zh": "一个",
+        "ja": "（不定冠詞）"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "and",
+      "part_of_speech": "conjunction",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ænd/",
+      "definition": "Used to join words or ideas.",
+      "examples": [
+        "I like tea and coffee."
+      ],
+      "translations": {
+        "uk": "і, та",
+        "de": "und",
+        "fr": "et",
+        "es": "y",
+        "it": "e",
+        "pt": "e",
+        "pl": "i",
+        "ru": "и",
+        "zh": "和",
+        "ja": "と"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "or",
+      "part_of_speech": "conjunction",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɔːr/",
+      "definition": "Used to show a choice.",
+      "examples": [
+        "Do you want tea or coffee?"
+      ],
+      "translations": {
+        "uk": "або",
+        "de": "oder",
+        "fr": "ou",
+        "es": "o",
+        "it": "o",
+        "pt": "ou",
+        "pl": "albo, czy",
+        "ru": "или",
+        "zh": "或者",
+        "ja": "または"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "so",
+      "part_of_speech": "conjunction",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/soʊ/",
+      "definition": "For this reason.",
+      "examples": [
+        "It was raining, so we stayed home."
+      ],
+      "translations": {
+        "uk": "тому",
+        "de": "also",
+        "fr": "donc",
+        "es": "así que",
+        "it": "quindi",
+        "pt": "então",
+        "pl": "więc",
+        "ru": "поэтому",
+        "zh": "所以",
+        "ja": "だから"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "not",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/nɑːt/",
+      "definition": "Used to make a negative.",
+      "examples": [
+        "I am not tired."
+      ],
+      "translations": {
+        "uk": "не",
+        "de": "nicht",
+        "fr": "ne... pas",
+        "es": "no",
+        "it": "non",
+        "pt": "não",
+        "pl": "nie",
+        "ru": "не",
+        "zh": "不",
+        "ja": "〜ない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "to",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/tuː/",
+      "definition": "Toward a place.",
+      "examples": [
+        "I go to school by bus."
+      ],
+      "translations": {
+        "uk": "до, в",
+        "de": "zu, nach",
+        "fr": "à",
+        "es": "a",
+        "it": "a",
+        "pt": "para",
+        "pl": "do",
+        "ru": "в, к",
+        "zh": "到",
+        "ja": "〜へ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "with",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wɪð/",
+      "definition": "Together with someone or something.",
+      "examples": [
+        "I live with my parents."
+      ],
+      "translations": {
+        "uk": "з",
+        "de": "mit",
+        "fr": "avec",
+        "es": "con",
+        "it": "con",
+        "pt": "com",
+        "pl": "z",
+        "ru": "с",
+        "zh": "和…一起",
+        "ja": "〜と一緒に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "in",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɪn/",
+      "definition": "Inside a place or thing.",
+      "examples": [
+        "The keys are in my bag."
+      ],
+      "translations": {
+        "uk": "у, в",
+        "de": "in",
+        "fr": "dans",
+        "es": "en",
+        "it": "in",
+        "pt": "em",
+        "pl": "w",
+        "ru": "в",
+        "zh": "在…里",
+        "ja": "〜の中に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "on",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɑːn/",
+      "definition": "On the surface of something.",
+      "examples": [
+        "The book is on the table."
+      ],
+      "translations": {
+        "uk": "на",
+        "de": "auf",
+        "fr": "sur",
+        "es": "sobre",
+        "it": "su",
+        "pt": "sobre",
+        "pl": "na",
+        "ru": "на",
+        "zh": "在…上",
+        "ja": "〜の上に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "at",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/æt/",
+      "definition": "Used to show a place or time.",
+      "examples": [
+        "I'll meet you at the station at six."
+      ],
+      "translations": {
+        "uk": "у, о (годині)",
+        "de": "an, um",
+        "fr": "à",
+        "es": "en, a",
+        "it": "a",
+        "pt": "em, às",
+        "pl": "w, o",
+        "ru": "в, у",
+        "zh": "在",
+        "ja": "〜で、〜に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "for",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/fɔːr/",
+      "definition": "Intended for someone; used to show purpose.",
+      "examples": [
+        "This present is for you."
+      ],
+      "translations": {
+        "uk": "для",
+        "de": "für",
+        "fr": "pour",
+        "es": "para",
+        "it": "per",
+        "pt": "para",
+        "pl": "dla",
+        "ru": "для",
+        "zh": "给",
+        "ja": "〜のために"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "from",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/frʌm/",
+      "definition": "Showing where someone or something starts.",
+      "examples": [
+        "I am from Canada."
+      ],
+      "translations": {
+        "uk": "з, від",
+        "de": "aus, von",
+        "fr": "de",
+        "es": "de",
+        "it": "da",
+        "pt": "de",
+        "pl": "z, od",
+        "ru": "из, от",
+        "zh": "从",
+        "ja": "〜から"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "of",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/əv/",
+      "definition": "Belonging to; showing a part.",
+      "examples": [
+        "The color of the car is red."
+      ],
+      "translations": {
+        "uk": "(родовий відмінок)",
+        "de": "von",
+        "fr": "de",
+        "es": "de",
+        "it": "di",
+        "pt": "de",
+        "pl": "(dopełniacz)",
+        "ru": "(родительный падеж)",
+        "zh": "的",
+        "ja": "〜の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "about",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/əˈbaʊt/",
+      "definition": "On the subject of something.",
+      "examples": [
+        "This book is about animals."
+      ],
+      "translations": {
+        "uk": "про",
+        "de": "über",
+        "fr": "sur",
+        "es": "sobre",
+        "it": "su",
+        "pt": "sobre",
+        "pl": "o",
+        "ru": "о, про",
+        "zh": "关于",
+        "ja": "〜について"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "after",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈæftɚ/",
+      "definition": "Later than something.",
+      "examples": [
+        "Let's meet after lunch."
+      ],
+      "translations": {
+        "uk": "після",
+        "de": "nach",
+        "fr": "après",
+        "es": "después de",
+        "it": "dopo",
+        "pt": "depois de",
+        "pl": "po",
+        "ru": "после",
+        "zh": "在…之后",
+        "ja": "〜の後で"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "before",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/bɪˈfɔːr/",
+      "definition": "Earlier than something.",
+      "examples": [
+        "Wash your hands before dinner."
+      ],
+      "translations": {
+        "uk": "до, перед",
+        "de": "vor",
+        "fr": "avant",
+        "es": "antes de",
+        "it": "prima di",
+        "pt": "antes de",
+        "pl": "przed",
+        "ru": "до, перед",
+        "zh": "在…之前",
+        "ja": "〜の前に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yes",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/jes/",
+      "definition": "Used to agree or say that something is true.",
+      "examples": [
+        "Yes, I'd love some tea."
+      ],
+      "translations": {
+        "uk": "так",
+        "de": "ja",
+        "fr": "oui",
+        "es": "sí",
+        "it": "sì",
+        "pt": "sim",
+        "pl": "tak",
+        "ru": "да",
+        "zh": "是的",
+        "ja": "はい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "no",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/noʊ/",
+      "definition": "Used to disagree or refuse.",
+      "examples": [
+        "No, thank you."
+      ],
+      "translations": {
+        "uk": "ні",
+        "de": "nein",
+        "fr": "non",
+        "es": "no",
+        "it": "no",
+        "pt": "não",
+        "pl": "nie",
+        "ru": "нет",
+        "zh": "不",
+        "ja": "いいえ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "please",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/pliːz/",
+      "definition": "Used to ask for something politely.",
+      "examples": [
+        "Can I have some water, please?"
+      ],
+      "translations": {
+        "uk": "будь ласка",
+        "de": "bitte",
+        "fr": "s'il vous plaît",
+        "es": "por favor",
+        "it": "per favore",
+        "pt": "por favor",
+        "pl": "proszę",
+        "ru": "пожалуйста",
+        "zh": "请",
+        "ja": "お願いします"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "thank you",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈθæŋk juː/",
+      "definition": "Used to show you are grateful.",
+      "examples": [
+        "Thank you for your help."
+      ],
+      "translations": {
+        "uk": "дякую",
+        "de": "danke",
+        "fr": "merci",
+        "es": "gracias",
+        "it": "grazie",
+        "pt": "obrigado",
+        "pl": "dziękuję",
+        "ru": "спасибо",
+        "zh": "谢谢",
+        "ja": "ありがとう"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "all",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɔːl/",
+      "definition": "Every one; the whole of.",
+      "examples": [
+        "All my friends came to the party."
+      ],
+      "translations": {
+        "uk": "усі, весь",
+        "de": "alle",
+        "fr": "tout, tous",
+        "es": "todo, todos",
+        "it": "tutto, tutti",
+        "pt": "todo, todos",
+        "pl": "wszyscy, cały",
+        "ru": "все, весь",
+        "zh": "所有",
+        "ja": "すべて"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "some",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/sʌm/",
+      "definition": "An amount or number of something.",
+      "examples": [
+        "Would you like some tea?"
+      ],
+      "translations": {
+        "uk": "трохи, деякі",
+        "de": "etwas, einige",
+        "fr": "du, quelques",
+        "es": "algo de, algunos",
+        "it": "un po' di, alcuni",
+        "pt": "um pouco de, alguns",
+        "pl": "trochę, kilka",
+        "ru": "немного, некоторые",
+        "zh": "一些",
+        "ja": "いくらか"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "many",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈmeni/",
+      "definition": "A large number of.",
+      "examples": [
+        "Many people like music."
+      ],
+      "translations": {
+        "uk": "багато",
+        "de": "viele",
+        "fr": "beaucoup de",
+        "es": "muchos",
+        "it": "molti",
+        "pt": "muitos",
+        "pl": "wiele",
+        "ru": "много",
+        "zh": "许多",
+        "ja": "たくさんの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "much",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/mʌtʃ/",
+      "definition": "A large amount of (with uncountable nouns).",
+      "examples": [
+        "I don't have much time."
+      ],
+      "translations": {
+        "uk": "багато",
+        "de": "viel",
+        "fr": "beaucoup de",
+        "es": "mucho",
+        "it": "molto",
+        "pt": "muito",
+        "pl": "dużo",
+        "ru": "много",
+        "zh": "很多",
+        "ja": "たくさんの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "every",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈevri/",
+      "definition": "All the people or things in a group, one by one.",
+      "examples": [
+        "I go running every morning."
+      ],
+      "translations": {
+        "uk": "кожен",
+        "de": "jeder",
+        "fr": "chaque",
+        "es": "cada",
+        "it": "ogni",
+        "pt": "cada",
+        "pl": "każdy",
+        "ru": "каждый",
+        "zh": "每个",
+        "ja": "毎〜"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "other",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈʌðɚ/",
+      "definition": "Different from the one already mentioned.",
+      "examples": [
+        "Where is my other shoe?"
+      ],
+      "translations": {
+        "uk": "інший",
+        "de": "andere",
+        "fr": "autre",
+        "es": "otro",
+        "it": "altro",
+        "pt": "outro",
+        "pl": "inny",
+        "ru": "другой",
+        "zh": "另外的",
+        "ja": "ほかの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
