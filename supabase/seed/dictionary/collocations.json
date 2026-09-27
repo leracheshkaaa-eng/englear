@@ -1,0 +1,456 @@
+{
+  "package": "collocations",
+  "kind": "words",
+  "words": [
+    {
+      "word": "have fun",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/hæv fʌn/",
+      "definition": "To enjoy yourself.",
+      "examples": [
+        "Have fun at the party!"
+      ],
+      "translations": {
+        "uk": "розважатися",
+        "de": "Spaß haben",
+        "fr": "s'amuser",
+        "es": "divertirse",
+        "it": "divertirsi",
+        "pt": "divertir-se",
+        "pl": "dobrze się bawić",
+        "ru": "веселиться",
+        "zh": "玩得开心",
+        "ja": "楽しむ"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "do homework",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "School",
+      "ipa": "/duː ˈhoʊmwɝːk/",
+      "definition": "To work on tasks from school at home.",
+      "examples": [
+        "I do my homework after dinner."
+      ],
+      "translations": {
+        "uk": "робити домашнє завдання",
+        "de": "Hausaufgaben machen",
+        "fr": "faire ses devoirs",
+        "es": "hacer los deberes",
+        "it": "fare i compiti",
+        "pt": "fazer a lição de casa",
+        "pl": "odrabiać lekcje",
+        "ru": "делать домашнее задание",
+        "zh": "做作业",
+        "ja": "宿題をする"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "take a photo",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/teɪk ə ˈfoʊtoʊ/",
+      "definition": "To use a camera to make a picture.",
+      "examples": [
+        "Let's take a photo by the lake."
+      ],
+      "translations": {
+        "uk": "сфотографувати",
+        "de": "ein Foto machen",
+        "fr": "prendre une photo",
+        "es": "sacar una foto",
+        "it": "fare una foto",
+        "pt": "tirar uma foto",
+        "pl": "zrobić zdjęcie",
+        "ru": "сфотографировать",
+        "zh": "拍照",
+        "ja": "写真を撮る"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "make a mistake",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "School",
+      "ipa": "/meɪk ə mɪˈsteɪk/",
+      "definition": "To do something wrong.",
+      "examples": [
+        "Everyone makes mistakes."
+      ],
+      "translations": {
+        "uk": "помилитися",
+        "de": "einen Fehler machen",
+        "fr": "faire une erreur",
+        "es": "cometer un error",
+        "it": "fare un errore",
+        "pt": "cometer um erro",
+        "pl": "popełnić błąd",
+        "ru": "сделать ошибку",
+        "zh": "犯错",
+        "ja": "間違える"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "make money",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Money",
+      "ipa": "/meɪk ˈmʌni/",
+      "definition": "To earn money.",
+      "examples": [
+        "He makes money by selling cakes."
+      ],
+      "translations": {
+        "uk": "заробляти гроші",
+        "de": "Geld verdienen",
+        "fr": "gagner de l'argent",
+        "es": "ganar dinero",
+        "it": "guadagnare soldi",
+        "pt": "ganhar dinheiro",
+        "pl": "zarabiać pieniądze",
+        "ru": "зарабатывать деньги",
+        "zh": "赚钱",
+        "ja": "お金を稼ぐ"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "spend time",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/spend taɪm/",
+      "definition": "To use time doing something.",
+      "examples": [
+        "I like to spend time with my family."
+      ],
+      "translations": {
+        "uk": "проводити час",
+        "de": "Zeit verbringen",
+        "fr": "passer du temps",
+        "es": "pasar tiempo",
+        "it": "passare del tempo",
+        "pt": "passar tempo",
+        "pl": "spędzać czas",
+        "ru": "проводить время",
+        "zh": "花时间",
+        "ja": "時間を過ごす"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "catch a cold",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/kætʃ ə koʊld/",
+      "definition": "To become ill with a cold.",
+      "examples": [
+        "Wear a coat or you'll catch a cold."
+      ],
+      "translations": {
+        "uk": "застудитися",
+        "de": "sich erkälten",
+        "fr": "attraper un rhume",
+        "es": "resfriarse",
+        "it": "prendere il raffreddore",
+        "pt": "pegar um resfriado",
+        "pl": "przeziębić się",
+        "ru": "простудиться",
+        "zh": "感冒",
+        "ja": "風邪をひく"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "take care",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/teɪk ker/",
+      "definition": "To be careful; also used to say goodbye.",
+      "examples": [
+        "Take care on the icy roads."
+      ],
+      "translations": {
+        "uk": "берегти себе",
+        "de": "aufpassen",
+        "fr": "faire attention",
+        "es": "cuidarse",
+        "it": "stare attento",
+        "pt": "cuidar-se",
+        "pl": "uważać",
+        "ru": "беречь себя",
+        "zh": "保重",
+        "ja": "気をつける"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "make plans",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/meɪk plænz/",
+      "definition": "To decide what you will do.",
+      "examples": [
+        "Let's make plans for the weekend."
+      ],
+      "translations": {
+        "uk": "будувати плани",
+        "de": "Pläne machen",
+        "fr": "faire des projets",
+        "es": "hacer planes",
+        "it": "fare progetti",
+        "pt": "fazer planos",
+        "pl": "robić plany",
+        "ru": "строить планы",
+        "zh": "制定计划",
+        "ja": "計画を立てる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "keep in touch",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/kiːp ɪn tʌtʃ/",
+      "definition": "To continue to talk or write to someone.",
+      "examples": [
+        "Let's keep in touch after school ends."
+      ],
+      "translations": {
+        "uk": "підтримувати зв'язок",
+        "de": "in Kontakt bleiben",
+        "fr": "rester en contact",
+        "es": "mantenerse en contacto",
+        "it": "restare in contatto",
+        "pt": "manter contato",
+        "pl": "być w kontakcie",
+        "ru": "поддерживать связь",
+        "zh": "保持联系",
+        "ja": "連絡を取り合う"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "pay a visit",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/peɪ ə ˈvɪzɪt/",
+      "definition": "To visit someone or a place.",
+      "examples": [
+        "Let's pay a visit to Grandma this weekend."
+      ],
+      "translations": {
+        "uk": "навідатися",
+        "de": "einen Besuch abstatten",
+        "fr": "rendre visite",
+        "es": "hacer una visita",
+        "it": "fare visita",
+        "pt": "fazer uma visita",
+        "pl": "złożyć wizytę",
+        "ru": "навестить",
+        "zh": "拜访",
+        "ja": "訪問する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "take part in",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/teɪk pɑːrt ɪn/",
+      "definition": "To join in an activity.",
+      "examples": [
+        "Many students take part in the competition."
+      ],
+      "translations": {
+        "uk": "брати участь",
+        "de": "teilnehmen an",
+        "fr": "participer à",
+        "es": "participar en",
+        "it": "partecipare a",
+        "pt": "participar de",
+        "pl": "brać udział w",
+        "ru": "принимать участие",
+        "zh": "参加",
+        "ja": "参加する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "make sure",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/meɪk ʃʊr/",
+      "definition": "To check that something is true or done.",
+      "examples": [
+        "Make sure you lock the door."
+      ],
+      "translations": {
+        "uk": "переконатися",
+        "de": "sicherstellen",
+        "fr": "s'assurer",
+        "es": "asegurarse",
+        "it": "assicurarsi",
+        "pt": "certificar-se",
+        "pl": "upewnić się",
+        "ru": "убедиться",
+        "zh": "确保",
+        "ja": "確かめる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "make an effort",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "School",
+      "ipa": "/meɪk ən ˈefɚt/",
+      "definition": "To try hard to do something.",
+      "examples": [
+        "You need to make an effort to learn new words."
+      ],
+      "translations": {
+        "uk": "докладати зусиль",
+        "de": "sich Mühe geben",
+        "fr": "faire un effort",
+        "es": "esforzarse",
+        "it": "fare uno sforzo",
+        "pt": "fazer um esforço",
+        "pl": "starać się",
+        "ru": "прилагать усилия",
+        "zh": "努力",
+        "ja": "努力する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "take responsibility",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/teɪk rɪˌspɑːnsəˈbɪləti/",
+      "definition": "To accept that something is your duty or your fault.",
+      "examples": [
+        "You must take responsibility for your actions."
+      ],
+      "translations": {
+        "uk": "брати відповідальність",
+        "de": "Verantwortung übernehmen",
+        "fr": "prendre ses responsabilités",
+        "es": "asumir la responsabilidad",
+        "it": "assumersi la responsabilità",
+        "pt": "assumir a responsabilidade",
+        "pl": "wziąć odpowiedzialność",
+        "ru": "брать ответственность",
+        "zh": "承担责任",
+        "ja": "責任を取る"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "raise awareness",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/reɪz əˈwernəs/",
+      "definition": "To make people know more about a problem.",
+      "examples": [
+        "The campaign aims to raise awareness of climate change."
+      ],
+      "translations": {
+        "uk": "підвищувати обізнаність",
+        "de": "das Bewusstsein schärfen",
+        "fr": "sensibiliser",
+        "es": "concienciar",
+        "it": "sensibilizzare",
+        "pt": "conscientizar",
+        "pl": "zwiększać świadomość",
+        "ru": "повышать осведомлённость",
+        "zh": "提高意识",
+        "ja": "意識を高める"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "play a role",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/pleɪ ə roʊl/",
+      "definition": "To be important in a situation.",
+      "examples": [
+        "Parents play an important role in education."
+      ],
+      "translations": {
+        "uk": "відігравати роль",
+        "de": "eine Rolle spielen",
+        "fr": "jouer un rôle",
+        "es": "desempeñar un papel",
+        "it": "svolgere un ruolo",
+        "pt": "desempenhar um papel",
+        "pl": "odgrywać rolę",
+        "ru": "играть роль",
+        "zh": "发挥作用",
+        "ja": "役割を果たす"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "have an impact on",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/hæv ən ˈɪmpækt ɑːn/",
+      "definition": "To affect someone or something strongly.",
+      "examples": [
+        "Diet can have an impact on your mood."
+      ],
+      "translations": {
+        "uk": "впливати на",
+        "de": "sich auswirken auf",
+        "fr": "avoir un impact sur",
+        "es": "tener un impacto en",
+        "it": "avere un impatto su",
+        "pt": "ter um impacto em",
+        "pl": "mieć wpływ na",
+        "ru": "оказывать влияние на",
+        "zh": "对…产生影响",
+        "ja": "影響を与える"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    }
+  ]
+}

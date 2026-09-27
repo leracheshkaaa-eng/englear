@@ -1,0 +1,704 @@
+{
+  "package": "b1-topics",
+  "kind": "words",
+  "words": [
+    {
+      "word": "flavor",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Food",
+      "ipa": "/ˈfleɪvɚ/",
+      "definition": "The taste of food or drink.",
+      "examples": [
+        "Which ice cream flavor do you like?"
+      ],
+      "translations": {
+        "uk": "смак",
+        "de": "Geschmacksrichtung",
+        "fr": "parfum",
+        "es": "sabor",
+        "it": "gusto",
+        "pt": "sabor",
+        "pl": "smak",
+        "ru": "вкус",
+        "zh": "口味",
+        "ja": "味"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bake",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Cooking",
+      "ipa": "/beɪk/",
+      "definition": "To cook food in an oven.",
+      "examples": [
+        "My mom bakes bread on Sundays."
+      ],
+      "translations": {
+        "uk": "пекти",
+        "de": "backen",
+        "fr": "faire cuire au four",
+        "es": "hornear",
+        "it": "cuocere al forno",
+        "pt": "assar",
+        "pl": "piec",
+        "ru": "печь",
+        "zh": "烘烤",
+        "ja": "焼く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "oven",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Cooking",
+      "ipa": "/ˈʌvən/",
+      "definition": "A box-shaped part of a kitchen where you bake food.",
+      "examples": [
+        "Put the cake in the oven."
+      ],
+      "translations": {
+        "uk": "духовка",
+        "de": "Backofen",
+        "fr": "four",
+        "es": "horno",
+        "it": "forno",
+        "pt": "forno",
+        "pl": "piekarnik",
+        "ru": "духовка",
+        "zh": "烤箱",
+        "ja": "オーブン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pan",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Cooking",
+      "ipa": "/pæn/",
+      "definition": "A metal container used for cooking.",
+      "examples": [
+        "Heat some oil in a pan."
+      ],
+      "translations": {
+        "uk": "сковорідка",
+        "de": "Pfanne",
+        "fr": "poêle",
+        "es": "sartén",
+        "it": "padella",
+        "pt": "frigideira",
+        "pl": "patelnia",
+        "ru": "сковорода",
+        "zh": "平底锅",
+        "ja": "フライパン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "slice",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Cooking",
+      "ipa": "/slaɪs/",
+      "definition": "A thin flat piece cut from something.",
+      "examples": [
+        "Can I have a slice of pizza?"
+      ],
+      "translations": {
+        "uk": "шматок",
+        "de": "Scheibe",
+        "fr": "tranche",
+        "es": "rebanada",
+        "it": "fetta",
+        "pt": "fatia",
+        "pl": "kawałek",
+        "ru": "ломтик, кусок",
+        "zh": "片",
+        "ja": "一切れ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mix",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Cooking",
+      "ipa": "/mɪks/",
+      "definition": "To combine two or more things.",
+      "examples": [
+        "Mix the flour and the eggs."
+      ],
+      "translations": {
+        "uk": "змішувати",
+        "de": "mischen",
+        "fr": "mélanger",
+        "es": "mezclar",
+        "it": "mescolare",
+        "pt": "misturar",
+        "pl": "mieszać",
+        "ru": "смешивать",
+        "zh": "混合",
+        "ja": "混ぜる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "raw",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Cooking",
+      "ipa": "/rɔː/",
+      "definition": "Not cooked.",
+      "examples": [
+        "Don't eat raw chicken."
+      ],
+      "translations": {
+        "uk": "сирий",
+        "de": "roh",
+        "fr": "cru",
+        "es": "crudo",
+        "it": "crudo",
+        "pt": "cru",
+        "pl": "surowy",
+        "ru": "сырой",
+        "zh": "生的",
+        "ja": "生の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "portion",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Food",
+      "ipa": "/ˈpɔːrʃən/",
+      "definition": "The amount of food for one person.",
+      "examples": [
+        "The portions in this restaurant are huge."
+      ],
+      "translations": {
+        "uk": "порція",
+        "de": "Portion",
+        "fr": "portion",
+        "es": "porción",
+        "it": "porzione",
+        "pt": "porção",
+        "pl": "porcja",
+        "ru": "порция",
+        "zh": "一份",
+        "ja": "一人前"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "homemade",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Food",
+      "ipa": "/ˌhoʊmˈmeɪd/",
+      "definition": "Made at home, not bought.",
+      "examples": [
+        "I love homemade cookies."
+      ],
+      "translations": {
+        "uk": "домашній",
+        "de": "hausgemacht",
+        "fr": "fait maison",
+        "es": "casero",
+        "it": "fatto in casa",
+        "pt": "caseiro",
+        "pl": "domowy",
+        "ru": "домашний",
+        "zh": "自制的",
+        "ja": "手作りの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tour",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Travel",
+      "ipa": "/tʊr/",
+      "definition": "A trip to visit different places.",
+      "examples": [
+        "We went on a tour of the old town."
+      ],
+      "translations": {
+        "uk": "екскурсія, тур",
+        "de": "Rundgang",
+        "fr": "visite",
+        "es": "recorrido",
+        "it": "giro",
+        "pt": "passeio",
+        "pl": "wycieczka",
+        "ru": "экскурсия, тур",
+        "zh": "游览",
+        "ja": "ツアー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "crowd",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/kraʊd/",
+      "definition": "A large group of people together.",
+      "examples": [
+        "There was a huge crowd at the concert."
+      ],
+      "translations": {
+        "uk": "натовп",
+        "de": "Menschenmenge",
+        "fr": "foule",
+        "es": "multitud",
+        "it": "folla",
+        "pt": "multidão",
+        "pl": "tłum",
+        "ru": "толпа",
+        "zh": "人群",
+        "ja": "群衆"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "view",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/vjuː/",
+      "definition": "What you can see from a place.",
+      "examples": [
+        "The room has a beautiful view of the sea."
+      ],
+      "translations": {
+        "uk": "краєвид",
+        "de": "Aussicht",
+        "fr": "vue",
+        "es": "vista",
+        "it": "vista",
+        "pt": "vista",
+        "pl": "widok",
+        "ru": "вид",
+        "zh": "景色",
+        "ja": "眺め"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "opinion",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "What you think about something.",
+          "examples": [
+            "In my view, the plan is too expensive."
+          ],
+          "translations": {
+            "uk": "погляд, думка",
+            "de": "Ansicht",
+            "fr": "avis",
+            "es": "opinión",
+            "it": "parere",
+            "pt": "ponto de vista",
+            "pl": "zdanie",
+            "ru": "взгляд, мнение",
+            "zh": "观点",
+            "ja": "意見"
+          }
+        }
+      ]
+    },
+    {
+      "word": "explore",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Travel",
+      "ipa": "/ɪkˈsplɔːr/",
+      "definition": "To travel around a place to learn about it.",
+      "examples": [
+        "We spent the day exploring the city."
+      ],
+      "translations": {
+        "uk": "досліджувати",
+        "de": "erkunden",
+        "fr": "explorer",
+        "es": "explorar",
+        "it": "esplorare",
+        "pt": "explorar",
+        "pl": "zwiedzać",
+        "ru": "исследовать",
+        "zh": "探索",
+        "ja": "探検する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "landmark",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˈlændmɑːrk/",
+      "definition": "A famous building or place that is easy to recognize.",
+      "examples": [
+        "The Eiffel Tower is a famous landmark."
+      ],
+      "translations": {
+        "uk": "пам'ятка",
+        "de": "Wahrzeichen",
+        "fr": "monument",
+        "es": "monumento emblemático",
+        "it": "luogo simbolo",
+        "pt": "marco",
+        "pl": "zabytek",
+        "ru": "достопримечательность",
+        "zh": "地标",
+        "ja": "名所"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shelf",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ʃelf/",
+      "definition": "A flat board on a wall for putting things on.",
+      "examples": [
+        "Put the books on the shelf."
+      ],
+      "translations": {
+        "uk": "полиця",
+        "de": "Regal",
+        "fr": "étagère",
+        "es": "estante",
+        "it": "mensola",
+        "pt": "prateleira",
+        "pl": "półka",
+        "ru": "полка",
+        "zh": "架子",
+        "ja": "棚"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "curtain",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈkɝːtən/",
+      "definition": "A piece of cloth that covers a window.",
+      "examples": [
+        "Close the curtains, please."
+      ],
+      "translations": {
+        "uk": "штора",
+        "de": "Vorhang",
+        "fr": "rideau",
+        "es": "cortina",
+        "it": "tenda",
+        "pt": "cortina",
+        "pl": "zasłona",
+        "ru": "штора",
+        "zh": "窗帘",
+        "ja": "カーテン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pillow",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈpɪloʊ/",
+      "definition": "A soft thing you put your head on in bed.",
+      "examples": [
+        "I need a softer pillow."
+      ],
+      "translations": {
+        "uk": "подушка",
+        "de": "Kissen",
+        "fr": "oreiller",
+        "es": "almohada",
+        "it": "cuscino",
+        "pt": "travesseiro",
+        "pl": "poduszka",
+        "ru": "подушка",
+        "zh": "枕头",
+        "ja": "枕"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "blanket",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈblæŋkɪt/",
+      "definition": "A warm cover for a bed.",
+      "examples": [
+        "It's cold, take an extra blanket."
+      ],
+      "translations": {
+        "uk": "ковдра",
+        "de": "Bettdecke",
+        "fr": "couverture",
+        "es": "manta",
+        "it": "coperta",
+        "pt": "cobertor",
+        "pl": "koc",
+        "ru": "одеяло",
+        "zh": "毯子",
+        "ja": "毛布"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "garage",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ɡəˈrɑːʒ/",
+      "definition": "A building where you keep a car.",
+      "examples": [
+        "Dad parks the car in the garage."
+      ],
+      "translations": {
+        "uk": "гараж",
+        "de": "Garage",
+        "fr": "garage",
+        "es": "garaje",
+        "it": "garage",
+        "pt": "garagem",
+        "pl": "garaż",
+        "ru": "гараж",
+        "zh": "车库",
+        "ja": "ガレージ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yard",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/jɑːrd/",
+      "definition": "The area of grass around a house.",
+      "examples": [
+        "The kids are playing in the yard."
+      ],
+      "translations": {
+        "uk": "подвір'я",
+        "de": "Hof",
+        "fr": "cour",
+        "es": "patio",
+        "it": "cortile",
+        "pt": "quintal",
+        "pl": "podwórko",
+        "ru": "двор",
+        "zh": "院子",
+        "ja": "庭"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "doorbell",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈdɔːrbel/",
+      "definition": "A button you press to make a sound at someone's door.",
+      "examples": [
+        "Someone rang the doorbell."
+      ],
+      "translations": {
+        "uk": "дверний дзвінок",
+        "de": "Türklingel",
+        "fr": "sonnette",
+        "es": "timbre",
+        "it": "campanello",
+        "pt": "campainha",
+        "pl": "dzwonek do drzwi",
+        "ru": "дверной звонок",
+        "zh": "门铃",
+        "ja": "玄関のベル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "annoyed",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/əˈnɔɪd/",
+      "definition": "A little angry.",
+      "examples": [
+        "I'm annoyed that the bus is late again."
+      ],
+      "translations": {
+        "uk": "роздратований",
+        "de": "genervt",
+        "fr": "agacé",
+        "es": "molesto",
+        "it": "infastidito",
+        "pt": "irritado",
+        "pl": "zirytowany",
+        "ru": "раздражённый",
+        "zh": "恼火的",
+        "ja": "いらいらした"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "delighted",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/dɪˈlaɪtɪd/",
+      "definition": "Very happy.",
+      "examples": [
+        "We were delighted with the results."
+      ],
+      "translations": {
+        "uk": "у захваті",
+        "de": "hocherfreut",
+        "fr": "ravi",
+        "es": "encantado",
+        "it": "felicissimo",
+        "pt": "encantado",
+        "pl": "zachwycony",
+        "ru": "в восторге",
+        "zh": "非常高兴的",
+        "ja": "大喜びの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "terrified",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ˈterəfaɪd/",
+      "definition": "Very frightened.",
+      "examples": [
+        "I'm terrified of snakes."
+      ],
+      "translations": {
+        "uk": "нажаханий",
+        "de": "zu Tode erschrocken",
+        "fr": "terrifié",
+        "es": "aterrorizado",
+        "it": "terrorizzato",
+        "pt": "apavorado",
+        "pl": "przerażony",
+        "ru": "в ужасе",
+        "zh": "吓坏的",
+        "ja": "怖くてたまらない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "satisfied",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ˈsætɪsfaɪd/",
+      "definition": "Pleased because you got what you wanted.",
+      "examples": [
+        "Are you satisfied with your new job?"
+      ],
+      "translations": {
+        "uk": "задоволений",
+        "de": "zufrieden",
+        "fr": "satisfait",
+        "es": "satisfecho",
+        "it": "soddisfatto",
+        "pt": "satisfeito",
+        "pl": "usatysfakcjonowany",
+        "ru": "довольный",
+        "zh": "满意的",
+        "ja": "満足した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "anxious",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ˈæŋkʃəs/",
+      "definition": "Worried and nervous.",
+      "examples": [
+        "She felt anxious before the interview."
+      ],
+      "translations": {
+        "uk": "тривожний",
+        "de": "unruhig",
+        "fr": "anxieux",
+        "es": "ansioso",
+        "it": "ansioso",
+        "pt": "ansioso",
+        "pl": "niespokojny",
+        "ru": "тревожный",
+        "zh": "焦虑的",
+        "ja": "不安な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "frustrated",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ˈfrʌstreɪtɪd/",
+      "definition": "Annoyed because you cannot do what you want.",
+      "examples": [
+        "I get frustrated when my computer is slow."
+      ],
+      "translations": {
+        "uk": "роздратований (через невдачу)",
+        "de": "frustriert",
+        "fr": "frustré",
+        "es": "frustrado",
+        "it": "frustrato",
+        "pt": "frustrado",
+        "pl": "sfrustrowany",
+        "ru": "раздосадованный",
+        "zh": "沮丧的",
+        "ja": "いらだった"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

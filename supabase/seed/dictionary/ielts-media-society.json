@@ -1,0 +1,729 @@
+{
+  "package": "ielts-media-society",
+  "kind": "words",
+  "words": [
+    {
+      "word": "news",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Media",
+      "ipa": "/nuːz/",
+      "definition": "Information about recent events.",
+      "examples": [
+        "I watch the news every evening."
+      ],
+      "translations": {
+        "uk": "новини",
+        "de": "Nachrichten",
+        "fr": "informations",
+        "es": "noticias",
+        "it": "notizie",
+        "pt": "notícias",
+        "pl": "wiadomości",
+        "ru": "новости",
+        "zh": "新闻",
+        "ja": "ニュース"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "newspaper",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Media",
+      "ipa": "/ˈnuːzpeɪpɚ/",
+      "definition": "Printed pages with news, published every day or week.",
+      "examples": [
+        "My grandpa reads the newspaper every morning."
+      ],
+      "translations": {
+        "uk": "газета",
+        "de": "Zeitung",
+        "fr": "journal",
+        "es": "periódico",
+        "it": "giornale",
+        "pt": "jornal",
+        "pl": "gazeta",
+        "ru": "газета",
+        "zh": "报纸",
+        "ja": "新聞"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "police",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Society",
+      "ipa": "/pəˈliːs/",
+      "definition": "The organization that makes people obey the law.",
+      "examples": [
+        "Call the police!"
+      ],
+      "translations": {
+        "uk": "поліція",
+        "de": "Polizei",
+        "fr": "police",
+        "es": "policía",
+        "it": "polizia",
+        "pt": "polícia",
+        "pl": "policja",
+        "ru": "полиция",
+        "zh": "警方",
+        "ja": "警察"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "magazine",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Media",
+      "ipa": "/ˈmæɡəziːn/",
+      "definition": "A thin book with articles and pictures, published regularly.",
+      "examples": [
+        "I bought a fashion magazine."
+      ],
+      "translations": {
+        "uk": "журнал",
+        "de": "Zeitschrift",
+        "fr": "magazine",
+        "es": "revista",
+        "it": "rivista",
+        "pt": "revista",
+        "pl": "czasopismo",
+        "ru": "журнал",
+        "zh": "杂志",
+        "ja": "雑誌"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "advertisement",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˌædvɚˈtaɪzmənt/",
+      "definition": "A picture, film or text that tries to make people buy something.",
+      "examples": [
+        "There are too many advertisements on TV."
+      ],
+      "translations": {
+        "uk": "реклама",
+        "de": "Werbung",
+        "fr": "publicité",
+        "es": "anuncio",
+        "it": "pubblicità",
+        "pt": "anúncio",
+        "pl": "reklama",
+        "ru": "реклама",
+        "zh": "广告",
+        "ja": "広告"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "journalist",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˈdʒɝːnəlɪst/",
+      "definition": "A person who writes news for newspapers, TV or websites.",
+      "examples": [
+        "The journalist interviewed the president."
+      ],
+      "translations": {
+        "uk": "журналіст",
+        "de": "Journalist",
+        "fr": "journaliste",
+        "es": "periodista",
+        "it": "giornalista",
+        "pt": "jornalista",
+        "pl": "dziennikarz",
+        "ru": "журналист",
+        "zh": "记者",
+        "ja": "記者"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "article",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˈɑːrtɪkəl/",
+      "definition": "A piece of writing in a newspaper or magazine.",
+      "examples": [
+        "I read an interesting article about sleep."
+      ],
+      "translations": {
+        "uk": "стаття",
+        "de": "Artikel",
+        "fr": "article",
+        "es": "artículo",
+        "it": "articolo",
+        "pt": "artigo",
+        "pl": "artykuł",
+        "ru": "статья",
+        "zh": "报道",
+        "ja": "記事"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "headline",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˈhedlaɪn/",
+      "definition": "The title of a newspaper story.",
+      "examples": [
+        "The headline was about the election."
+      ],
+      "translations": {
+        "uk": "заголовок",
+        "de": "Schlagzeile",
+        "fr": "gros titre",
+        "es": "titular",
+        "it": "titolo",
+        "pt": "manchete",
+        "pl": "nagłówek",
+        "ru": "заголовок",
+        "zh": "标题",
+        "ja": "見出し"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "digital",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Technology",
+      "ipa": "/ˈdɪdʒɪtəl/",
+      "definition": "Using computer technology.",
+      "examples": [
+        "Most photos today are digital."
+      ],
+      "translations": {
+        "uk": "цифровий",
+        "de": "digital",
+        "fr": "numérique",
+        "es": "digital",
+        "it": "digitale",
+        "pt": "digital",
+        "pl": "cyfrowy",
+        "ru": "цифровой",
+        "zh": "数字的",
+        "ja": "デジタルの"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "war",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/wɔːr/",
+      "definition": "Fighting between countries or groups using weapons.",
+      "examples": [
+        "The war lasted five years."
+      ],
+      "translations": {
+        "uk": "війна",
+        "de": "Krieg",
+        "fr": "guerre",
+        "es": "guerra",
+        "it": "guerra",
+        "pt": "guerra",
+        "pl": "wojna",
+        "ru": "война",
+        "zh": "战争",
+        "ja": "戦争"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "peace",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/piːs/",
+      "definition": "A time when there is no war.",
+      "examples": [
+        "Everyone wants peace."
+      ],
+      "translations": {
+        "uk": "мир",
+        "de": "Frieden",
+        "fr": "paix",
+        "es": "paz",
+        "it": "pace",
+        "pt": "paz",
+        "pl": "pokój",
+        "ru": "мир",
+        "zh": "和平",
+        "ja": "平和"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "hunger",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ˈhʌŋɡɚ/",
+      "definition": "The state of not having enough food.",
+      "examples": [
+        "Millions of people suffer from hunger."
+      ],
+      "translations": {
+        "uk": "голод",
+        "de": "Hunger",
+        "fr": "faim",
+        "es": "hambre",
+        "it": "fame",
+        "pt": "fome",
+        "pl": "głód",
+        "ru": "голод",
+        "zh": "饥饿",
+        "ja": "飢え"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "thief",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/θiːf/",
+      "definition": "A person who steals.",
+      "examples": [
+        "The thief took my wallet."
+      ],
+      "translations": {
+        "uk": "злодій",
+        "de": "Dieb",
+        "fr": "voleur",
+        "es": "ladrón",
+        "it": "ladro",
+        "pt": "ladrão",
+        "pl": "złodziej",
+        "ru": "вор",
+        "zh": "小偷",
+        "ja": "泥棒"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "illegal",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ɪˈliːɡəl/",
+      "definition": "Not allowed by law.",
+      "examples": [
+        "It's illegal to drive without a license."
+      ],
+      "translations": {
+        "uk": "незаконний",
+        "de": "illegal",
+        "fr": "illégal",
+        "es": "ilegal",
+        "it": "illegale",
+        "pt": "ilegal",
+        "pl": "nielegalny",
+        "ru": "незаконный",
+        "zh": "违法的",
+        "ja": "違法な"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "arrest",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/əˈrest/",
+      "definition": "When the police take someone because they think they did a crime.",
+      "examples": [
+        "The police arrested two men."
+      ],
+      "translations": {
+        "uk": "заарештувати",
+        "de": "verhaften",
+        "fr": "arrêter",
+        "es": "arrestar",
+        "it": "arrestare",
+        "pt": "prender",
+        "pl": "aresztować",
+        "ru": "арестовать",
+        "zh": "逮捕",
+        "ja": "逮捕する"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "fake news",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Media",
+      "ipa": "/ˌfeɪk ˈnuːz/",
+      "definition": "False stories that look like real news.",
+      "examples": [
+        "Fake news spreads quickly online."
+      ],
+      "translations": {
+        "uk": "фейкові новини",
+        "de": "Falschnachrichten",
+        "fr": "fausses informations",
+        "es": "noticias falsas",
+        "it": "notizie false",
+        "pt": "notícias falsas",
+        "pl": "fałszywe wiadomości",
+        "ru": "фейковые новости",
+        "zh": "假新闻",
+        "ja": "フェイクニュース"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "influence",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Media",
+      "ipa": "/ˈɪnfluəns/",
+      "definition": "To have an effect on what someone does or thinks.",
+      "examples": [
+        "Advertising influences what we buy."
+      ],
+      "translations": {
+        "uk": "впливати",
+        "de": "beeinflussen",
+        "fr": "influencer",
+        "es": "influir",
+        "it": "influenzare",
+        "pt": "influenciar",
+        "pl": "wpływać",
+        "ru": "влиять",
+        "zh": "影响",
+        "ja": "影響を与える"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "broadcast",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Media",
+      "ipa": "/ˈbrɔːdkæst/",
+      "definition": "To send out a program on TV or radio.",
+      "examples": [
+        "The match will be broadcast live."
+      ],
+      "translations": {
+        "uk": "транслювати",
+        "de": "senden",
+        "fr": "diffuser",
+        "es": "transmitir",
+        "it": "trasmettere",
+        "pt": "transmitir",
+        "pl": "nadawać",
+        "ru": "транслировать",
+        "zh": "广播",
+        "ja": "放送する"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "privacy",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˈpraɪvəsi/",
+      "definition": "The state of being free from public attention.",
+      "examples": [
+        "Social media can be a risk to your privacy."
+      ],
+      "translations": {
+        "uk": "приватність",
+        "de": "Privatsphäre",
+        "fr": "vie privée",
+        "es": "privacidad",
+        "it": "privacy",
+        "pt": "privacidade",
+        "pl": "prywatność",
+        "ru": "конфиденциальность",
+        "zh": "隐私",
+        "ja": "プライバシー"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "innovation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˌɪnəˈveɪʃən/",
+      "definition": "A new idea, method or invention.",
+      "examples": [
+        "The company is known for innovation."
+      ],
+      "translations": {
+        "uk": "інновація",
+        "de": "Innovation",
+        "fr": "innovation",
+        "es": "innovación",
+        "it": "innovazione",
+        "pt": "inovação",
+        "pl": "innowacja",
+        "ru": "инновация",
+        "zh": "创新",
+        "ja": "革新"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "screen time",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˈskriːn taɪm/",
+      "definition": "The time a person spends looking at a screen.",
+      "examples": [
+        "Parents should limit children's screen time."
+      ],
+      "translations": {
+        "uk": "час перед екраном",
+        "de": "Bildschirmzeit",
+        "fr": "temps d'écran",
+        "es": "tiempo de pantalla",
+        "it": "tempo davanti allo schermo",
+        "pt": "tempo de tela",
+        "pl": "czas przed ekranem",
+        "ru": "экранное время",
+        "zh": "屏幕时间",
+        "ja": "スクリーンタイム"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "addicted",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/əˈdɪktɪd/",
+      "definition": "Unable to stop doing or using something.",
+      "examples": [
+        "Many teenagers are addicted to their phones."
+      ],
+      "translations": {
+        "uk": "залежний",
+        "de": "süchtig",
+        "fr": "accro",
+        "es": "adicto",
+        "it": "dipendente",
+        "pt": "viciado",
+        "pl": "uzależniony",
+        "ru": "зависимый",
+        "zh": "上瘾的",
+        "ja": "依存した"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "cyberbullying",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˈsaɪbɚˌbʊliɪŋ/",
+      "definition": "Using the internet to hurt or frighten someone.",
+      "examples": [
+        "Schools are working to stop cyberbullying."
+      ],
+      "translations": {
+        "uk": "кібербулінг",
+        "de": "Cybermobbing",
+        "fr": "cyberharcèlement",
+        "es": "ciberacoso",
+        "it": "cyberbullismo",
+        "pt": "cyberbullying",
+        "pl": "cyberprzemoc",
+        "ru": "кибербуллинг",
+        "zh": "网络欺凌",
+        "ja": "ネットいじめ"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "refugee",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˌrefjuˈdʒiː/",
+      "definition": "A person who has left their country because of war or danger.",
+      "examples": [
+        "The camp gives shelter to refugees."
+      ],
+      "translations": {
+        "uk": "біженець",
+        "de": "Flüchtling",
+        "fr": "réfugié",
+        "es": "refugiado",
+        "it": "rifugiato",
+        "pt": "refugiado",
+        "pl": "uchodźca",
+        "ru": "беженец",
+        "zh": "难民",
+        "ja": "難民"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "shortage",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈʃɔːrtɪdʒ/",
+      "definition": "A situation where there is not enough of something.",
+      "examples": [
+        "There is a shortage of clean water."
+      ],
+      "translations": {
+        "uk": "нестача",
+        "de": "Mangel",
+        "fr": "pénurie",
+        "es": "escasez",
+        "it": "carenza",
+        "pt": "escassez",
+        "pl": "niedobór",
+        "ru": "нехватка",
+        "zh": "短缺",
+        "ja": "不足"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "overpopulation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˌoʊvɚˌpɑːpjəˈleɪʃən/",
+      "definition": "Too many people living in one area.",
+      "examples": [
+        "Overpopulation puts pressure on cities."
+      ],
+      "translations": {
+        "uk": "перенаселення",
+        "de": "Überbevölkerung",
+        "fr": "surpopulation",
+        "es": "superpoblación",
+        "it": "sovrappopolazione",
+        "pt": "superpopulação",
+        "pl": "przeludnienie",
+        "ru": "перенаселение",
+        "zh": "人口过剩",
+        "ja": "人口過剰"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "court",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/kɔːrt/",
+      "definition": "The place where a judge decides if someone is guilty.",
+      "examples": [
+        "The case will go to court next month."
+      ],
+      "translations": {
+        "uk": "суд",
+        "de": "Gericht",
+        "fr": "tribunal",
+        "es": "tribunal",
+        "it": "tribunale",
+        "pt": "tribunal",
+        "pl": "sąd",
+        "ru": "суд",
+        "zh": "法院",
+        "ja": "裁判所"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime",
+      "meanings": [
+        {
+          "key": "sport",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "An area where some sports, like tennis, are played.",
+          "examples": [
+            "The tennis court is behind the school."
+          ],
+          "translations": {
+            "uk": "корт",
+            "de": "Platz",
+            "fr": "court",
+            "es": "pista",
+            "it": "campo",
+            "pt": "quadra",
+            "pl": "kort",
+            "ru": "корт",
+            "zh": "球场",
+            "ja": "コート"
+          }
+        }
+      ]
+    },
+    {
+      "word": "guilty",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈɡɪlti/",
+      "definition": "Having done something wrong or illegal.",
+      "examples": [
+        "The jury found him guilty."
+      ],
+      "translations": {
+        "uk": "винний",
+        "de": "schuldig",
+        "fr": "coupable",
+        "es": "culpable",
+        "it": "colpevole",
+        "pt": "culpado",
+        "pl": "winny",
+        "ru": "виновный",
+        "zh": "有罪的",
+        "ja": "有罪の"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    }
+  ]
+}

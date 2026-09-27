@@ -1,0 +1,675 @@
+{
+  "package": "phrasal-verbs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "look for",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/lʊk fɔːr/",
+      "definition": "To try to find something.",
+      "examples": [
+        "I'm looking for my keys."
+      ],
+      "translations": {
+        "uk": "шукати",
+        "de": "suchen",
+        "fr": "chercher",
+        "es": "buscar",
+        "it": "cercare",
+        "pt": "procurar",
+        "pl": "szukać",
+        "ru": "искать",
+        "zh": "寻找",
+        "ja": "探す"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "go out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ɡoʊ aʊt/",
+      "definition": "To leave home to do something for fun.",
+      "examples": [
+        "Let's go out tonight."
+      ],
+      "translations": {
+        "uk": "виходити (розважитися)",
+        "de": "ausgehen",
+        "fr": "sortir",
+        "es": "salir",
+        "it": "uscire",
+        "pt": "sair",
+        "pl": "wychodzić",
+        "ru": "выходить (развлечься)",
+        "zh": "出去玩",
+        "ja": "出かける"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "come back",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/kʌm bæk/",
+      "definition": "To return to a place.",
+      "examples": [
+        "Come back soon!"
+      ],
+      "translations": {
+        "uk": "повертатися",
+        "de": "zurückkommen",
+        "fr": "revenir",
+        "es": "volver",
+        "it": "tornare",
+        "pt": "voltar",
+        "pl": "wracać",
+        "ru": "возвращаться",
+        "zh": "回来",
+        "ja": "戻ってくる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "sit down",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/sɪt daʊn/",
+      "definition": "To move into a sitting position.",
+      "examples": [
+        "Sit down and have a cup of tea."
+      ],
+      "translations": {
+        "uk": "сідати",
+        "de": "sich setzen",
+        "fr": "s'asseoir",
+        "es": "sentarse",
+        "it": "sedersi",
+        "pt": "sentar-se",
+        "pl": "usiąść",
+        "ru": "садиться",
+        "zh": "坐下",
+        "ja": "座る"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "stand up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/stænd ʌp/",
+      "definition": "To get up onto your feet.",
+      "examples": [
+        "Stand up when the teacher comes in."
+      ],
+      "translations": {
+        "uk": "вставати",
+        "de": "aufstehen",
+        "fr": "se lever",
+        "es": "ponerse de pie",
+        "it": "alzarsi",
+        "pt": "levantar-se",
+        "pl": "wstać",
+        "ru": "вставать",
+        "zh": "站起来",
+        "ja": "立ち上がる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "pick up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/pɪk ʌp/",
+      "definition": "To lift something from a surface.",
+      "examples": [
+        "Please pick up your toys."
+      ],
+      "translations": {
+        "uk": "піднімати",
+        "de": "aufheben",
+        "fr": "ramasser",
+        "es": "recoger",
+        "it": "raccogliere",
+        "pt": "pegar",
+        "pl": "podnieść",
+        "ru": "поднимать",
+        "zh": "捡起",
+        "ja": "拾う"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "collect",
+          "part_of_speech": "phrasal verb",
+          "cefr": "B1",
+          "definition": "To go and get someone, often in a car.",
+          "examples": [
+            "I'll pick you up at six."
+          ],
+          "translations": {
+            "uk": "забрати (когось)",
+            "de": "abholen",
+            "fr": "aller chercher",
+            "es": "recoger",
+            "it": "andare a prendere",
+            "pt": "buscar",
+            "pl": "odebrać",
+            "ru": "заехать за (кем-то)",
+            "zh": "接",
+            "ja": "迎えに行く"
+          }
+        }
+      ]
+    },
+    {
+      "word": "fill out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/fɪl aʊt/",
+      "definition": "To write information in the spaces on a form.",
+      "examples": [
+        "Please fill out this form."
+      ],
+      "translations": {
+        "uk": "заповнювати",
+        "de": "ausfüllen",
+        "fr": "remplir",
+        "es": "rellenar",
+        "it": "compilare",
+        "pt": "preencher",
+        "pl": "wypełnić",
+        "ru": "заполнять",
+        "zh": "填写",
+        "ja": "記入する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "throw away",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/θroʊ əˈweɪ/",
+      "definition": "To put something in the trash.",
+      "examples": [
+        "Don't throw away old clothes."
+      ],
+      "translations": {
+        "uk": "викидати",
+        "de": "wegwerfen",
+        "fr": "jeter",
+        "es": "tirar",
+        "it": "buttare via",
+        "pt": "jogar fora",
+        "pl": "wyrzucać",
+        "ru": "выбрасывать",
+        "zh": "扔掉",
+        "ja": "捨てる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "give back",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/ɡɪv bæk/",
+      "definition": "To return something to its owner.",
+      "examples": [
+        "Give me back my pen!"
+      ],
+      "translations": {
+        "uk": "повертати",
+        "de": "zurückgeben",
+        "fr": "rendre",
+        "es": "devolver",
+        "it": "restituire",
+        "pt": "devolver",
+        "pl": "oddać",
+        "ru": "возвращать",
+        "zh": "归还",
+        "ja": "返す"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "turn down",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/tɝːn daʊn/",
+      "definition": "To make a sound or heat lower.",
+      "examples": [
+        "Please turn down the music."
+      ],
+      "translations": {
+        "uk": "робити тихіше",
+        "de": "leiser stellen",
+        "fr": "baisser",
+        "es": "bajar",
+        "it": "abbassare",
+        "pt": "abaixar",
+        "pl": "ściszyć",
+        "ru": "убавлять",
+        "zh": "调低",
+        "ja": "（音を）小さくする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "refuse",
+          "part_of_speech": "phrasal verb",
+          "cefr": "B1",
+          "definition": "To say no to an offer or request.",
+          "examples": [
+            "She turned down the job offer."
+          ],
+          "translations": {
+            "uk": "відхиляти",
+            "de": "ablehnen",
+            "fr": "refuser",
+            "es": "rechazar",
+            "it": "rifiutare",
+            "pt": "recusar",
+            "pl": "odrzucić",
+            "ru": "отклонять",
+            "zh": "拒绝",
+            "ja": "断る"
+          }
+        }
+      ]
+    },
+    {
+      "word": "turn up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/tɝːn ʌp/",
+      "definition": "To make a sound or heat higher.",
+      "examples": [
+        "Turn up the volume, please."
+      ],
+      "translations": {
+        "uk": "робити гучніше",
+        "de": "lauter stellen",
+        "fr": "monter",
+        "es": "subir",
+        "it": "alzare",
+        "pt": "aumentar",
+        "pl": "podgłośnić",
+        "ru": "прибавлять",
+        "zh": "调高",
+        "ja": "（音を）大きくする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "look forward to",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/lʊk ˈfɔːrwɚd tuː/",
+      "definition": "To feel happy about something that is going to happen.",
+      "examples": [
+        "I'm looking forward to the holidays."
+      ],
+      "translations": {
+        "uk": "з нетерпінням чекати",
+        "de": "sich freuen auf",
+        "fr": "avoir hâte de",
+        "es": "tener ganas de",
+        "it": "non vedere l'ora di",
+        "pt": "estar ansioso por",
+        "pl": "nie móc się doczekać",
+        "ru": "с нетерпением ждать",
+        "zh": "期待",
+        "ja": "楽しみにする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "run out of",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/rʌn aʊt əv/",
+      "definition": "To have none of something left.",
+      "examples": [
+        "We've run out of milk."
+      ],
+      "translations": {
+        "uk": "закінчитися (про запаси)",
+        "de": "ausgehen",
+        "fr": "manquer de",
+        "es": "quedarse sin",
+        "it": "rimanere senza",
+        "pt": "ficar sem",
+        "pl": "skończyć się",
+        "ru": "закончиться (о запасах)",
+        "zh": "用完",
+        "ja": "切らす"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "get over",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ɡet ˈoʊvɚ/",
+      "definition": "To feel better after an illness or a sad experience.",
+      "examples": [
+        "It took her weeks to get over the flu."
+      ],
+      "translations": {
+        "uk": "оговтатися",
+        "de": "überwinden",
+        "fr": "se remettre de",
+        "es": "superar",
+        "it": "superare",
+        "pt": "superar",
+        "pl": "dojść do siebie",
+        "ru": "оправиться",
+        "zh": "从…中恢复",
+        "ja": "立ち直る"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "figure out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/ˈfɪɡjɚ aʊt/",
+      "definition": "To understand or solve something.",
+      "examples": [
+        "I can't figure out this puzzle."
+      ],
+      "translations": {
+        "uk": "розібратися",
+        "de": "herausfinden",
+        "fr": "comprendre",
+        "es": "averiguar",
+        "it": "capire",
+        "pt": "descobrir",
+        "pl": "rozgryźć",
+        "ru": "разобраться",
+        "zh": "弄明白",
+        "ja": "解明する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "work out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/wɝːk aʊt/",
+      "definition": "To do exercise to stay fit.",
+      "examples": [
+        "I work out at the gym three times a week."
+      ],
+      "translations": {
+        "uk": "тренуватися",
+        "de": "trainieren",
+        "fr": "s'entraîner",
+        "es": "hacer ejercicio",
+        "it": "allenarsi",
+        "pt": "malhar",
+        "pl": "ćwiczyć",
+        "ru": "тренироваться",
+        "zh": "锻炼",
+        "ja": "運動する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "solve",
+          "part_of_speech": "phrasal verb",
+          "cefr": "B1",
+          "definition": "To find the answer to a problem.",
+          "examples": [
+            "Can you work out the answer?"
+          ],
+          "translations": {
+            "uk": "розв'язати",
+            "de": "lösen",
+            "fr": "résoudre",
+            "es": "resolver",
+            "it": "risolvere",
+            "pt": "resolver",
+            "pl": "rozwiązać",
+            "ru": "решить",
+            "zh": "解决",
+            "ja": "解く"
+          }
+        }
+      ]
+    },
+    {
+      "word": "catch up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "School",
+      "ipa": "/kætʃ ʌp/",
+      "definition": "To reach the same level as someone else.",
+      "examples": [
+        "I missed a week of school, so I need to catch up."
+      ],
+      "translations": {
+        "uk": "надолужити",
+        "de": "aufholen",
+        "fr": "rattraper",
+        "es": "ponerse al día",
+        "it": "recuperare",
+        "pt": "pôr em dia",
+        "pl": "nadrobić",
+        "ru": "наверстать",
+        "zh": "赶上",
+        "ja": "追いつく"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "show up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/ʃoʊ ʌp/",
+      "definition": "To arrive, often late or unexpectedly.",
+      "examples": [
+        "He showed up an hour late."
+      ],
+      "translations": {
+        "uk": "з'являтися",
+        "de": "auftauchen",
+        "fr": "se pointer",
+        "es": "aparecer",
+        "it": "presentarsi",
+        "pt": "aparecer",
+        "pl": "pojawić się",
+        "ru": "появляться",
+        "zh": "出现",
+        "ja": "現れる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "hang out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/hæŋ aʊt/",
+      "definition": "To spend time relaxing with friends.",
+      "examples": [
+        "We hang out at the mall on weekends."
+      ],
+      "translations": {
+        "uk": "проводити час",
+        "de": "abhängen",
+        "fr": "traîner",
+        "es": "pasar el rato",
+        "it": "uscire insieme",
+        "pt": "sair",
+        "pl": "spędzać czas",
+        "ru": "тусоваться",
+        "zh": "闲逛",
+        "ja": "ぶらぶらする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "come up with",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/kʌm ˈʌp wɪð/",
+      "definition": "To think of an idea or plan.",
+      "examples": [
+        "We need to come up with a new plan."
+      ],
+      "translations": {
+        "uk": "придумати",
+        "de": "sich ausdenken",
+        "fr": "trouver",
+        "es": "idear",
+        "it": "farsi venire in mente",
+        "pt": "ter (uma ideia)",
+        "pl": "wymyślić",
+        "ru": "придумать",
+        "zh": "想出",
+        "ja": "思いつく"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "point out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "School",
+      "ipa": "/pɔɪnt aʊt/",
+      "definition": "To tell someone about a fact they had not noticed.",
+      "examples": [
+        "He pointed out a mistake in my essay."
+      ],
+      "translations": {
+        "uk": "вказувати (на)",
+        "de": "hinweisen auf",
+        "fr": "signaler",
+        "es": "señalar",
+        "it": "far notare",
+        "pt": "apontar",
+        "pl": "zwrócić uwagę na",
+        "ru": "указывать (на)",
+        "zh": "指出",
+        "ja": "指摘する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "look into",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/lʊk ˈɪntuː/",
+      "definition": "To try to find out the facts about something.",
+      "examples": [
+        "The manager will look into the problem."
+      ],
+      "translations": {
+        "uk": "розібратися (в)",
+        "de": "prüfen",
+        "fr": "examiner",
+        "es": "investigar",
+        "it": "esaminare",
+        "pt": "verificar",
+        "pl": "zbadać",
+        "ru": "разобраться (в)",
+        "zh": "调查",
+        "ja": "調べる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "put up with",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/pʊt ˈʌp wɪð/",
+      "definition": "To accept something unpleasant without complaining.",
+      "examples": [
+        "I can't put up with the noise anymore."
+      ],
+      "translations": {
+        "uk": "терпіти",
+        "de": "ertragen",
+        "fr": "supporter",
+        "es": "aguantar",
+        "it": "sopportare",
+        "pt": "aguentar",
+        "pl": "znosić",
+        "ru": "терпеть",
+        "zh": "忍受",
+        "ja": "我慢する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "cut down on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/kʌt ˈdaʊn ɑːn/",
+      "definition": "To eat, drink or use less of something.",
+      "examples": [
+        "I'm trying to cut down on sugar."
+      ],
+      "translations": {
+        "uk": "скорочувати (споживання)",
+        "de": "einschränken",
+        "fr": "réduire",
+        "es": "reducir",
+        "it": "ridurre",
+        "pt": "diminuir",
+        "pl": "ograniczyć",
+        "ru": "сокращать (потребление)",
+        "zh": "减少",
+        "ja": "減らす"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    }
+  ]
+}
