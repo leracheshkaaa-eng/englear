@@ -1,0 +1,456 @@
+{
+  "package": "prepositions-conjunctions",
+  "kind": "words",
+  "words": [
+    {
+      "word": "under",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈʌndɚ/",
+      "definition": "Below something.",
+      "examples": [
+        "The cat is under the table."
+      ],
+      "translations": {
+        "uk": "під",
+        "de": "unter",
+        "fr": "sous",
+        "es": "debajo de",
+        "it": "sotto",
+        "pt": "embaixo de",
+        "pl": "pod",
+        "ru": "под",
+        "zh": "在…下面",
+        "ja": "〜の下に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "behind",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/bɪˈhaɪnd/",
+      "definition": "At the back of something.",
+      "examples": [
+        "The garden is behind the house."
+      ],
+      "translations": {
+        "uk": "за, позаду",
+        "de": "hinter",
+        "fr": "derrière",
+        "es": "detrás de",
+        "it": "dietro",
+        "pt": "atrás de",
+        "pl": "za",
+        "ru": "за, позади",
+        "zh": "在…后面",
+        "ja": "〜の後ろに"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "between",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/bɪˈtwiːn/",
+      "definition": "In the space that separates two things.",
+      "examples": [
+        "The bank is between the post office and the café."
+      ],
+      "translations": {
+        "uk": "між",
+        "de": "zwischen",
+        "fr": "entre",
+        "es": "entre",
+        "it": "tra",
+        "pt": "entre",
+        "pl": "między",
+        "ru": "между",
+        "zh": "在…之间",
+        "ja": "〜の間に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "next to",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈnekst tuː/",
+      "definition": "Beside.",
+      "examples": [
+        "Sit next to me."
+      ],
+      "translations": {
+        "uk": "поруч з",
+        "de": "neben",
+        "fr": "à côté de",
+        "es": "al lado de",
+        "it": "accanto a",
+        "pt": "ao lado de",
+        "pl": "obok",
+        "ru": "рядом с",
+        "zh": "在…旁边",
+        "ja": "〜の隣に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "in front of",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɪn ˈfrʌnt əv/",
+      "definition": "Facing something; ahead of it.",
+      "examples": [
+        "There's a car in front of the house."
+      ],
+      "translations": {
+        "uk": "перед",
+        "de": "vor",
+        "fr": "devant",
+        "es": "delante de",
+        "it": "davanti a",
+        "pt": "na frente de",
+        "pl": "przed",
+        "ru": "перед",
+        "zh": "在…前面",
+        "ja": "〜の前に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "because",
+      "part_of_speech": "conjunction",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/bɪˈkɔːz/",
+      "definition": "For the reason that.",
+      "examples": [
+        "I'm happy because it's Friday."
+      ],
+      "translations": {
+        "uk": "тому що",
+        "de": "weil",
+        "fr": "parce que",
+        "es": "porque",
+        "it": "perché",
+        "pt": "porque",
+        "pl": "ponieważ",
+        "ru": "потому что",
+        "zh": "因为",
+        "ja": "なぜなら"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "but",
+      "part_of_speech": "conjunction",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/bʌt/",
+      "definition": "Used to add something different.",
+      "examples": [
+        "I like tea, but I don't like coffee."
+      ],
+      "translations": {
+        "uk": "але",
+        "de": "aber",
+        "fr": "mais",
+        "es": "pero",
+        "it": "ma",
+        "pt": "mas",
+        "pl": "ale",
+        "ru": "но",
+        "zh": "但是",
+        "ja": "でも"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "if",
+      "part_of_speech": "conjunction",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɪf/",
+      "definition": "Used to talk about a possible situation.",
+      "examples": [
+        "If it rains, we'll stay home."
+      ],
+      "translations": {
+        "uk": "якщо",
+        "de": "wenn",
+        "fr": "si",
+        "es": "si",
+        "it": "se",
+        "pt": "se",
+        "pl": "jeśli",
+        "ru": "если",
+        "zh": "如果",
+        "ja": "もし"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "above",
+      "part_of_speech": "preposition",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/əˈbʌv/",
+      "definition": "Higher than something.",
+      "examples": [
+        "There is a picture above the bed."
+      ],
+      "translations": {
+        "uk": "над",
+        "de": "über",
+        "fr": "au-dessus de",
+        "es": "encima de",
+        "it": "sopra",
+        "pt": "acima de",
+        "pl": "nad",
+        "ru": "над",
+        "zh": "在…上方",
+        "ja": "〜の上に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "below",
+      "part_of_speech": "preposition",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/bɪˈloʊ/",
+      "definition": "Lower than something.",
+      "examples": [
+        "The temperature is below zero."
+      ],
+      "translations": {
+        "uk": "нижче",
+        "de": "unter",
+        "fr": "en dessous de",
+        "es": "por debajo de",
+        "it": "sotto",
+        "pt": "abaixo de",
+        "pl": "poniżej",
+        "ru": "ниже",
+        "zh": "在…下方",
+        "ja": "〜より下に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "across",
+      "part_of_speech": "preposition",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/əˈkrɔːs/",
+      "definition": "From one side to the other.",
+      "examples": [
+        "We walked across the bridge."
+      ],
+      "translations": {
+        "uk": "через",
+        "de": "über",
+        "fr": "à travers",
+        "es": "a través de",
+        "it": "attraverso",
+        "pt": "através de",
+        "pl": "przez",
+        "ru": "через",
+        "zh": "穿过",
+        "ja": "〜を横切って"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "through",
+      "part_of_speech": "preposition",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/θruː/",
+      "definition": "From one end or side to the other, inside something.",
+      "examples": [
+        "The train goes through a long tunnel."
+      ],
+      "translations": {
+        "uk": "крізь",
+        "de": "durch",
+        "fr": "par",
+        "es": "por",
+        "it": "attraverso",
+        "pt": "por",
+        "pl": "przez",
+        "ru": "сквозь",
+        "zh": "通过",
+        "ja": "〜を通って"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "during",
+      "part_of_speech": "preposition",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈdʊrɪŋ/",
+      "definition": "All through a period of time.",
+      "examples": [
+        "I fell asleep during the movie."
+      ],
+      "translations": {
+        "uk": "під час",
+        "de": "während",
+        "fr": "pendant",
+        "es": "durante",
+        "it": "durante",
+        "pt": "durante",
+        "pl": "podczas",
+        "ru": "во время",
+        "zh": "在…期间",
+        "ja": "〜の間"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "without",
+      "part_of_speech": "preposition",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/wɪˈðaʊt/",
+      "definition": "Not having something.",
+      "examples": [
+        "I drink coffee without sugar."
+      ],
+      "translations": {
+        "uk": "без",
+        "de": "ohne",
+        "fr": "sans",
+        "es": "sin",
+        "it": "senza",
+        "pt": "sem",
+        "pl": "bez",
+        "ru": "без",
+        "zh": "没有",
+        "ja": "〜なしで"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "until",
+      "part_of_speech": "conjunction",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ənˈtɪl/",
+      "definition": "Up to the time when.",
+      "examples": [
+        "Wait until I come back."
+      ],
+      "translations": {
+        "uk": "доки не",
+        "de": "bis",
+        "fr": "jusqu'à ce que",
+        "es": "hasta que",
+        "it": "finché",
+        "pt": "até que",
+        "pl": "dopóki",
+        "ru": "пока не",
+        "zh": "直到",
+        "ja": "〜まで"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "among",
+      "part_of_speech": "preposition",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/əˈmʌŋ/",
+      "definition": "In the middle of a group.",
+      "examples": [
+        "She is popular among her classmates."
+      ],
+      "translations": {
+        "uk": "серед",
+        "de": "unter",
+        "fr": "parmi",
+        "es": "entre",
+        "it": "tra",
+        "pt": "entre",
+        "pl": "wśród",
+        "ru": "среди",
+        "zh": "在…之中",
+        "ja": "〜の間で"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "unless",
+      "part_of_speech": "conjunction",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ənˈles/",
+      "definition": "Except if.",
+      "examples": [
+        "You can't go unless you finish your homework."
+      ],
+      "translations": {
+        "uk": "якщо не",
+        "de": "es sei denn",
+        "fr": "à moins que",
+        "es": "a menos que",
+        "it": "a meno che",
+        "pt": "a menos que",
+        "pl": "chyba że",
+        "ru": "если не",
+        "zh": "除非",
+        "ja": "〜しない限り"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "while",
+      "part_of_speech": "conjunction",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/waɪl/",
+      "definition": "During the time that.",
+      "examples": [
+        "I listened to music while I cooked."
+      ],
+      "translations": {
+        "uk": "поки",
+        "de": "während",
+        "fr": "pendant que",
+        "es": "mientras",
+        "it": "mentre",
+        "pt": "enquanto",
+        "pl": "podczas gdy",
+        "ru": "пока",
+        "zh": "当…时",
+        "ja": "〜する間に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

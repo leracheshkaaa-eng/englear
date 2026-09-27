@@ -1,0 +1,181 @@
+{
+  "package": "question-words",
+  "kind": "words",
+  "words": [
+    {
+      "word": "what",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wʌt/",
+      "definition": "Used to ask about things.",
+      "examples": [
+        "What is your name?"
+      ],
+      "translations": {
+        "uk": "що",
+        "de": "was",
+        "fr": "quoi",
+        "es": "qué",
+        "it": "che cosa",
+        "pt": "o que",
+        "pl": "co",
+        "ru": "что",
+        "zh": "什么",
+        "ja": "何"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "where",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wer/",
+      "definition": "In or to what place.",
+      "examples": [
+        "Where do you live?"
+      ],
+      "translations": {
+        "uk": "де",
+        "de": "wo",
+        "fr": "où",
+        "es": "dónde",
+        "it": "dove",
+        "pt": "onde",
+        "pl": "gdzie",
+        "ru": "где",
+        "zh": "哪里",
+        "ja": "どこ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "when",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wen/",
+      "definition": "At what time.",
+      "examples": [
+        "When does the movie start?"
+      ],
+      "translations": {
+        "uk": "коли",
+        "de": "wann",
+        "fr": "quand",
+        "es": "cuándo",
+        "it": "quando",
+        "pt": "quando",
+        "pl": "kiedy",
+        "ru": "когда",
+        "zh": "什么时候",
+        "ja": "いつ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "why",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/waɪ/",
+      "definition": "For what reason.",
+      "examples": [
+        "Why are you sad?"
+      ],
+      "translations": {
+        "uk": "чому",
+        "de": "warum",
+        "fr": "pourquoi",
+        "es": "por qué",
+        "it": "perché",
+        "pt": "por que",
+        "pl": "dlaczego",
+        "ru": "почему",
+        "zh": "为什么",
+        "ja": "なぜ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "how",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/haʊ/",
+      "definition": "In what way.",
+      "examples": [
+        "How do you spell your name?"
+      ],
+      "translations": {
+        "uk": "як",
+        "de": "wie",
+        "fr": "comment",
+        "es": "cómo",
+        "it": "come",
+        "pt": "como",
+        "pl": "jak",
+        "ru": "как",
+        "zh": "怎么",
+        "ja": "どのように"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "who",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/huː/",
+      "definition": "What person.",
+      "examples": [
+        "Who is that man?"
+      ],
+      "translations": {
+        "uk": "хто",
+        "de": "wer",
+        "fr": "qui",
+        "es": "quién",
+        "it": "chi",
+        "pt": "quem",
+        "pl": "kto",
+        "ru": "кто",
+        "zh": "谁",
+        "ja": "誰"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "which",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wɪtʃ/",
+      "definition": "Used to ask about one of a group.",
+      "examples": [
+        "Which color do you want?"
+      ],
+      "translations": {
+        "uk": "який",
+        "de": "welcher",
+        "fr": "quel",
+        "es": "cuál",
+        "it": "quale",
+        "pt": "qual",
+        "pl": "który",
+        "ru": "какой",
+        "zh": "哪个",
+        "ja": "どれ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

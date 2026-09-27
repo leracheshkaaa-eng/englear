@@ -1,0 +1,531 @@
+{
+  "package": "basic-adverbs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "again",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/əˈɡen/",
+      "definition": "One more time.",
+      "examples": [
+        "Can you say that again?"
+      ],
+      "translations": {
+        "uk": "знову",
+        "de": "wieder",
+        "fr": "encore",
+        "es": "otra vez",
+        "it": "di nuovo",
+        "pt": "de novo",
+        "pl": "znowu",
+        "ru": "снова",
+        "zh": "再",
+        "ja": "もう一度"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "also",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈɔːlsoʊ/",
+      "definition": "In addition; too.",
+      "examples": [
+        "She speaks French and also Spanish."
+      ],
+      "translations": {
+        "uk": "також",
+        "de": "auch",
+        "fr": "aussi",
+        "es": "también",
+        "it": "anche",
+        "pt": "também",
+        "pl": "też",
+        "ru": "также",
+        "zh": "也",
+        "ja": "〜も"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "only",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈoʊnli/",
+      "definition": "No more than; just.",
+      "examples": [
+        "I only have five dollars."
+      ],
+      "translations": {
+        "uk": "тільки",
+        "de": "nur",
+        "fr": "seulement",
+        "es": "solo",
+        "it": "solo",
+        "pt": "só",
+        "pl": "tylko",
+        "ru": "только",
+        "zh": "只",
+        "ja": "〜だけ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "very",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈveri/",
+      "definition": "To a great degree.",
+      "examples": [
+        "It's very cold today."
+      ],
+      "translations": {
+        "uk": "дуже",
+        "de": "sehr",
+        "fr": "très",
+        "es": "muy",
+        "it": "molto",
+        "pt": "muito",
+        "pl": "bardzo",
+        "ru": "очень",
+        "zh": "很",
+        "ja": "とても"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "really",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈriːəli/",
+      "definition": "Very; in fact.",
+      "examples": [
+        "I really like this song."
+      ],
+      "translations": {
+        "uk": "дійсно, дуже",
+        "de": "wirklich",
+        "fr": "vraiment",
+        "es": "realmente",
+        "it": "davvero",
+        "pt": "realmente",
+        "pl": "naprawdę",
+        "ru": "действительно, очень",
+        "zh": "真的",
+        "ja": "本当に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "maybe",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈmeɪbi/",
+      "definition": "Perhaps.",
+      "examples": [
+        "Maybe it will rain tomorrow."
+      ],
+      "translations": {
+        "uk": "можливо",
+        "de": "vielleicht",
+        "fr": "peut-être",
+        "es": "quizás",
+        "it": "forse",
+        "pt": "talvez",
+        "pl": "może",
+        "ru": "может быть",
+        "zh": "也许",
+        "ja": "たぶん"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "quickly",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈkwɪkli/",
+      "definition": "Fast.",
+      "examples": [
+        "She walked quickly to the bus stop."
+      ],
+      "translations": {
+        "uk": "швидко",
+        "de": "schnell",
+        "fr": "rapidement",
+        "es": "rápidamente",
+        "it": "velocemente",
+        "pt": "rapidamente",
+        "pl": "szybko",
+        "ru": "быстро",
+        "zh": "快速地",
+        "ja": "速く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "slowly",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈsloʊli/",
+      "definition": "Not fast.",
+      "examples": [
+        "Please speak slowly."
+      ],
+      "translations": {
+        "uk": "повільно",
+        "de": "langsam",
+        "fr": "lentement",
+        "es": "despacio",
+        "it": "lentamente",
+        "pt": "devagar",
+        "pl": "powoli",
+        "ru": "медленно",
+        "zh": "慢慢地",
+        "ja": "ゆっくり"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "too",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/tuː/",
+      "definition": "More than is good.",
+      "examples": [
+        "This coffee is too hot."
+      ],
+      "translations": {
+        "uk": "занадто",
+        "de": "zu",
+        "fr": "trop",
+        "es": "demasiado",
+        "it": "troppo",
+        "pt": "demais",
+        "pl": "zbyt",
+        "ru": "слишком",
+        "zh": "太",
+        "ja": "〜すぎる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ago",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/əˈɡoʊ/",
+      "definition": "Before now.",
+      "examples": [
+        "I met her two years ago."
+      ],
+      "translations": {
+        "uk": "тому (назад)",
+        "de": "vor",
+        "fr": "il y a",
+        "es": "hace",
+        "it": "fa",
+        "pt": "atrás",
+        "pl": "temu",
+        "ru": "назад",
+        "zh": "以前",
+        "ja": "〜前に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "already",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ɔːlˈredi/",
+      "definition": "Before now or sooner than expected.",
+      "examples": [
+        "I've already finished my homework."
+      ],
+      "translations": {
+        "uk": "вже",
+        "de": "schon",
+        "fr": "déjà",
+        "es": "ya",
+        "it": "già",
+        "pt": "já",
+        "pl": "już",
+        "ru": "уже",
+        "zh": "已经",
+        "ja": "もう"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "still",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/stɪl/",
+      "definition": "Continuing until now.",
+      "examples": [
+        "Are you still at work?"
+      ],
+      "translations": {
+        "uk": "досі, ще",
+        "de": "noch",
+        "fr": "encore",
+        "es": "todavía",
+        "it": "ancora",
+        "pt": "ainda",
+        "pl": "nadal",
+        "ru": "всё ещё",
+        "zh": "仍然",
+        "ja": "まだ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yet",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/jet/",
+      "definition": "Until now (in questions and negatives).",
+      "examples": [
+        "Have you eaten yet?"
+      ],
+      "translations": {
+        "uk": "ще, вже",
+        "de": "schon, noch",
+        "fr": "déjà, encore",
+        "es": "ya, todavía",
+        "it": "già, ancora",
+        "pt": "já, ainda",
+        "pl": "już, jeszcze",
+        "ru": "уже, ещё",
+        "zh": "还",
+        "ja": "もう、まだ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "almost",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈɔːlmoʊst/",
+      "definition": "Nearly.",
+      "examples": [
+        "It's almost midnight."
+      ],
+      "translations": {
+        "uk": "майже",
+        "de": "fast",
+        "fr": "presque",
+        "es": "casi",
+        "it": "quasi",
+        "pt": "quase",
+        "pl": "prawie",
+        "ru": "почти",
+        "zh": "几乎",
+        "ja": "ほとんど"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "probably",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈprɑːbəbli/",
+      "definition": "Almost certainly.",
+      "examples": [
+        "She will probably be late."
+      ],
+      "translations": {
+        "uk": "напевно",
+        "de": "wahrscheinlich",
+        "fr": "probablement",
+        "es": "probablemente",
+        "it": "probabilmente",
+        "pt": "provavelmente",
+        "pl": "prawdopodobnie",
+        "ru": "вероятно",
+        "zh": "大概",
+        "ja": "おそらく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "suddenly",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈsʌdənli/",
+      "definition": "Quickly and unexpectedly.",
+      "examples": [
+        "Suddenly, the lights went out."
+      ],
+      "translations": {
+        "uk": "раптом",
+        "de": "plötzlich",
+        "fr": "soudain",
+        "es": "de repente",
+        "it": "improvvisamente",
+        "pt": "de repente",
+        "pl": "nagle",
+        "ru": "вдруг",
+        "zh": "突然",
+        "ja": "突然"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "finally",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈfaɪnəli/",
+      "definition": "After a long time.",
+      "examples": [
+        "We finally arrived home."
+      ],
+      "translations": {
+        "uk": "нарешті",
+        "de": "endlich",
+        "fr": "enfin",
+        "es": "finalmente",
+        "it": "finalmente",
+        "pt": "finalmente",
+        "pl": "w końcu",
+        "ru": "наконец",
+        "zh": "终于",
+        "ja": "ついに"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "enough",
+      "part_of_speech": "adverb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈnʌf/",
+      "definition": "As much as is needed.",
+      "examples": [
+        "Are you old enough to drive?"
+      ],
+      "translations": {
+        "uk": "досить, достатньо",
+        "de": "genug",
+        "fr": "assez",
+        "es": "suficiente",
+        "it": "abbastanza",
+        "pt": "suficiente",
+        "pl": "wystarczająco",
+        "ru": "достаточно",
+        "zh": "足够",
+        "ja": "十分に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "actually",
+      "part_of_speech": "adverb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈæktʃuəli/",
+      "definition": "In fact; really.",
+      "examples": [
+        "Actually, I don't like coffee."
+      ],
+      "translations": {
+        "uk": "насправді",
+        "de": "eigentlich",
+        "fr": "en fait",
+        "es": "en realidad",
+        "it": "in realtà",
+        "pt": "na verdade",
+        "pl": "właściwie",
+        "ru": "на самом деле",
+        "zh": "其实",
+        "ja": "実は"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "especially",
+      "part_of_speech": "adverb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ɪˈspeʃəli/",
+      "definition": "More than usual; in particular.",
+      "examples": [
+        "I love fruit, especially apples."
+      ],
+      "translations": {
+        "uk": "особливо",
+        "de": "besonders",
+        "fr": "surtout",
+        "es": "especialmente",
+        "it": "soprattutto",
+        "pt": "especialmente",
+        "pl": "szczególnie",
+        "ru": "особенно",
+        "zh": "尤其",
+        "ja": "特に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "even",
+      "part_of_speech": "adverb",
+      "cefr": "B1",
+      "topic": "Basic Words",
+      "ipa": "/ˈiːvən/",
+      "definition": "Used to show that something is surprising.",
+      "examples": [
+        "Even my grandma uses a smartphone."
+      ],
+      "translations": {
+        "uk": "навіть",
+        "de": "sogar",
+        "fr": "même",
+        "es": "incluso",
+        "it": "perfino",
+        "pt": "até",
+        "pl": "nawet",
+        "ru": "даже",
+        "zh": "甚至",
+        "ja": "〜さえ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
