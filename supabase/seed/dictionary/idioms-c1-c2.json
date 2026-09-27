@@ -1,0 +1,156 @@
+{
+  "package": "idioms-c1-c2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "bite the bullet",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/baɪt ðə ˈbʊlɪt/",
+      "definition": "To do something unpleasant that you have been avoiding.",
+      "examples": [
+        "I finally bit the bullet and went to the dentist."
+      ],
+      "translations": {
+        "uk": "зціпити зуби",
+        "de": "in den sauren Apfel beißen",
+        "fr": "prendre son courage à deux mains",
+        "es": "hacer de tripas corazón",
+        "it": "stringere i denti",
+        "pt": "encarar o problema",
+        "pl": "zacisnąć zęby",
+        "ru": "стиснуть зубы",
+        "zh": "硬着头皮",
+        "ja": "覚悟を決める"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "burn the midnight oil",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/bɝːn ðə ˌmɪdnaɪt ˈɔɪl/",
+      "definition": "To study or work late into the night.",
+      "examples": [
+        "She burned the midnight oil before the exam."
+      ],
+      "translations": {
+        "uk": "працювати допізна",
+        "de": "bis spät in die Nacht arbeiten",
+        "fr": "travailler tard dans la nuit",
+        "es": "quemarse las pestañas",
+        "it": "lavorare fino a tarda notte",
+        "pt": "virar a noite",
+        "pl": "pracować po nocach",
+        "ru": "засиживаться допоздна",
+        "zh": "开夜车",
+        "ja": "夜遅くまで勉強する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "hit the nail on the head",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/hɪt ðə ˈneɪl ɑːn ðə ˈhed/",
+      "definition": "To describe exactly what is causing a situation.",
+      "examples": [
+        "You hit the nail on the head with that comment."
+      ],
+      "translations": {
+        "uk": "влучити в ціль",
+        "de": "den Nagel auf den Kopf treffen",
+        "fr": "mettre le doigt dessus",
+        "es": "dar en el clavo",
+        "it": "colpire nel segno",
+        "pt": "acertar em cheio",
+        "pl": "trafić w sedno",
+        "ru": "попасть в точку",
+        "zh": "一针见血",
+        "ja": "核心を突く"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "on the fence",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ɑːn ðə ˈfens/",
+      "definition": "Not able to decide.",
+      "examples": [
+        "I'm still on the fence about the new job."
+      ],
+      "translations": {
+        "uk": "вагатися",
+        "de": "unentschlossen sein",
+        "fr": "hésiter",
+        "es": "estar indeciso",
+        "it": "essere indeciso",
+        "pt": "estar em cima do muro",
+        "pl": "nie móc się zdecydować",
+        "ru": "колебаться",
+        "zh": "犹豫不决",
+        "ja": "決めかねている"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "the tip of the iceberg",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ðə ˈtɪp əv ði ˈaɪsbɝːɡ/",
+      "definition": "A small part of a much bigger problem.",
+      "examples": [
+        "These complaints are just the tip of the iceberg."
+      ],
+      "translations": {
+        "uk": "верхівка айсберга",
+        "de": "die Spitze des Eisbergs",
+        "fr": "la partie émergée de l'iceberg",
+        "es": "la punta del iceberg",
+        "it": "la punta dell'iceberg",
+        "pt": "a ponta do iceberg",
+        "pl": "wierzchołek góry lodowej",
+        "ru": "верхушка айсберга",
+        "zh": "冰山一角",
+        "ja": "氷山の一角"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "a double-edged sword",
+      "part_of_speech": "idiom",
+      "cefr": "C2",
+      "topic": "Idioms",
+      "ipa": "/ə ˌdʌbəl ˈedʒd ˈsɔːrd/",
+      "definition": "Something that has both good and bad effects.",
+      "examples": [
+        "Social media is a double-edged sword."
+      ],
+      "translations": {
+        "uk": "палиця з двома кінцями",
+        "de": "ein zweischneidiges Schwert",
+        "fr": "une arme à double tranchant",
+        "es": "un arma de doble filo",
+        "it": "un'arma a doppio taglio",
+        "pt": "uma faca de dois gumes",
+        "pl": "miecz obosieczny",
+        "ru": "палка о двух концах",
+        "zh": "双刃剑",
+        "ja": "諸刃の剣"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "package": "essay-c1-c2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "hence",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/hens/",
+      "definition": "For this reason.",
+      "examples": [
+        "The road was icy; hence the accident."
+      ],
+      "translations": {
+        "uk": "отже",
+        "de": "daher",
+        "fr": "d'où",
+        "es": "de ahí",
+        "it": "quindi",
+        "pt": "daí",
+        "pl": "stąd",
+        "ru": "следовательно",
+        "zh": "因此",
+        "ja": "それゆえ"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "notwithstanding",
+      "part_of_speech": "preposition",
+      "cefr": "C2",
+      "topic": "Education",
+      "ipa": "/ˌnɑːtwɪθˈstændɪŋ/",
+      "definition": "Despite.",
+      "examples": [
+        "Notwithstanding the bad weather, the event was a success."
+      ],
+      "translations": {
+        "uk": "незважаючи на",
+        "de": "ungeachtet",
+        "fr": "nonobstant",
+        "es": "no obstante",
+        "it": "nonostante",
+        "pt": "não obstante",
+        "pl": "pomimo",
+        "ru": "несмотря на",
+        "zh": "尽管",
+        "ja": "〜にもかかわらず"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "albeit",
+      "part_of_speech": "conjunction",
+      "cefr": "C2",
+      "topic": "Education",
+      "ipa": "/ɔːlˈbiːɪt/",
+      "definition": "Although.",
+      "examples": [
+        "He accepted the offer, albeit reluctantly."
+      ],
+      "translations": {
+        "uk": "хоча й",
+        "de": "wenn auch",
+        "fr": "bien que",
+        "es": "aunque",
+        "it": "sebbene",
+        "pt": "embora",
+        "pl": "choć",
+        "ru": "хотя и",
+        "zh": "虽然",
+        "ja": "〜ではあるが"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "whereby",
+      "part_of_speech": "adverb",
+      "cefr": "C2",
+      "topic": "Education",
+      "ipa": "/werˈbaɪ/",
+      "definition": "By which.",
+      "examples": [
+        "They introduced a system whereby students can study online."
+      ],
+      "translations": {
+        "uk": "за допомогою якого",
+        "de": "wodurch",
+        "fr": "par lequel",
+        "es": "mediante el cual",
+        "it": "per cui",
+        "pt": "pelo qual",
+        "pl": "dzięki któremu",
+        "ru": "посредством которого",
+        "zh": "借此",
+        "ja": "それによって"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    }
+  ]
+}

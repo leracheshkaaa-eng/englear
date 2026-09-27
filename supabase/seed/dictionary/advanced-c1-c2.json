@@ -1,0 +1,906 @@
+{
+  "package": "advanced-c1-c2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "priority",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/praɪˈɔːrəti/",
+      "definition": "Something that is more important than other things.",
+      "examples": [
+        "Safety is our top priority."
+      ],
+      "translations": {
+        "uk": "пріоритет",
+        "de": "Priorität",
+        "fr": "priorité",
+        "es": "prioridad",
+        "it": "priorità",
+        "pt": "prioridade",
+        "pl": "priorytet",
+        "ru": "приоритет",
+        "zh": "优先事项",
+        "ja": "優先事項"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "advocate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈædvəkeɪt/",
+      "definition": "To publicly support an idea.",
+      "examples": [
+        "She advocates equal pay for women."
+      ],
+      "translations": {
+        "uk": "виступати за",
+        "de": "befürworten",
+        "fr": "préconiser",
+        "es": "abogar por",
+        "it": "sostenere",
+        "pt": "defender",
+        "pl": "opowiadać się za",
+        "ru": "выступать за",
+        "zh": "倡导",
+        "ja": "提唱する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "allocate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈæləkeɪt/",
+      "definition": "To give something for a particular purpose.",
+      "examples": [
+        "The city allocated money for new parks."
+      ],
+      "translations": {
+        "uk": "виділяти",
+        "de": "zuweisen",
+        "fr": "allouer",
+        "es": "asignar",
+        "it": "stanziare",
+        "pt": "alocar",
+        "pl": "przydzielać",
+        "ru": "выделять",
+        "zh": "分配",
+        "ja": "割り当てる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "alleviate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈliːvieɪt/",
+      "definition": "To make a pain or problem less severe.",
+      "examples": [
+        "This medicine will alleviate the pain."
+      ],
+      "translations": {
+        "uk": "полегшувати",
+        "de": "lindern",
+        "fr": "soulager",
+        "es": "aliviar",
+        "it": "alleviare",
+        "pt": "aliviar",
+        "pl": "łagodzić",
+        "ru": "облегчать",
+        "zh": "缓解",
+        "ja": "和らげる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cultivate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkʌltɪveɪt/",
+      "definition": "To develop a skill or relationship.",
+      "examples": [
+        "He cultivates good relationships with clients."
+      ],
+      "translations": {
+        "uk": "плекати",
+        "de": "pflegen",
+        "fr": "cultiver",
+        "es": "cultivar",
+        "it": "coltivare",
+        "pt": "cultivar",
+        "pl": "pielęgnować",
+        "ru": "развивать",
+        "zh": "培养",
+        "ja": "育む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "endorse",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈdɔːrs/",
+      "definition": "To publicly say that you support someone or something.",
+      "examples": [
+        "Many doctors endorse this diet."
+      ],
+      "translations": {
+        "uk": "схвалювати",
+        "de": "unterstützen",
+        "fr": "approuver",
+        "es": "respaldar",
+        "it": "approvare",
+        "pt": "endossar",
+        "pl": "poprzeć",
+        "ru": "одобрять",
+        "zh": "认可",
+        "ja": "支持する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "foster",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈfɑːstɚ/",
+      "definition": "To help something develop.",
+      "examples": [
+        "Teachers should foster creativity."
+      ],
+      "translations": {
+        "uk": "сприяти розвитку",
+        "de": "fördern",
+        "fr": "favoriser",
+        "es": "fomentar",
+        "it": "promuovere",
+        "pt": "fomentar",
+        "pl": "wspierać",
+        "ru": "способствовать развитию",
+        "zh": "促进",
+        "ja": "育成する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mitigate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈmɪtɪɡeɪt/",
+      "definition": "To make something less harmful.",
+      "examples": [
+        "Trees help mitigate the effects of pollution."
+      ],
+      "translations": {
+        "uk": "пом'якшувати",
+        "de": "abmildern",
+        "fr": "atténuer",
+        "es": "mitigar",
+        "it": "mitigare",
+        "pt": "mitigar",
+        "pl": "ograniczać",
+        "ru": "смягчать",
+        "zh": "减轻",
+        "ja": "緩和する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "adequate",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈædɪkwət/",
+      "definition": "Enough or good enough.",
+      "examples": [
+        "The room is small but adequate."
+      ],
+      "translations": {
+        "uk": "достатній",
+        "de": "angemessen",
+        "fr": "adéquat",
+        "es": "suficiente",
+        "it": "adeguato",
+        "pt": "adequado",
+        "pl": "wystarczający",
+        "ru": "достаточный",
+        "zh": "足够的",
+        "ja": "十分な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "authentic",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɔːˈθentɪk/",
+      "definition": "Real, not false.",
+      "examples": [
+        "The restaurant serves authentic Mexican food."
+      ],
+      "translations": {
+        "uk": "автентичний",
+        "de": "authentisch",
+        "fr": "authentique",
+        "es": "auténtico",
+        "it": "autentico",
+        "pt": "autêntico",
+        "pl": "autentyczny",
+        "ru": "подлинный",
+        "zh": "正宗的",
+        "ja": "本物の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "biased",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈbaɪəst/",
+      "definition": "Unfairly preferring one side.",
+      "examples": [
+        "The report was biased."
+      ],
+      "translations": {
+        "uk": "упереджений",
+        "de": "voreingenommen",
+        "fr": "partial",
+        "es": "parcial",
+        "it": "di parte",
+        "pt": "tendencioso",
+        "pl": "stronniczy",
+        "ru": "предвзятый",
+        "zh": "有偏见的",
+        "ja": "偏った"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "compelling",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kəmˈpelɪŋ/",
+      "definition": "Very interesting or convincing.",
+      "examples": [
+        "She made a compelling argument."
+      ],
+      "translations": {
+        "uk": "переконливий",
+        "de": "überzeugend",
+        "fr": "convaincant",
+        "es": "convincente",
+        "it": "convincente",
+        "pt": "convincente",
+        "pl": "przekonujący",
+        "ru": "убедительный",
+        "zh": "令人信服的",
+        "ja": "説得力のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "explicit",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪkˈsplɪsɪt/",
+      "definition": "Clear and exact.",
+      "examples": [
+        "The rules are explicit."
+      ],
+      "translations": {
+        "uk": "чіткий, явний",
+        "de": "ausdrücklich",
+        "fr": "explicite",
+        "es": "explícito",
+        "it": "esplicito",
+        "pt": "explícito",
+        "pl": "wyraźny",
+        "ru": "явный, чёткий",
+        "zh": "明确的",
+        "ja": "明確な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "inherent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈhɪrənt/",
+      "definition": "Existing as a natural part of something.",
+      "examples": [
+        "There are risks inherent in any sport."
+      ],
+      "translations": {
+        "uk": "притаманний",
+        "de": "innewohnend",
+        "fr": "inhérent",
+        "es": "inherente",
+        "it": "intrinseco",
+        "pt": "inerente",
+        "pl": "nieodłączny",
+        "ru": "присущий",
+        "zh": "固有的",
+        "ja": "本来の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pragmatic",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/præɡˈmætɪk/",
+      "definition": "Dealing with problems in a practical way.",
+      "examples": [
+        "We need a pragmatic solution."
+      ],
+      "translations": {
+        "uk": "прагматичний",
+        "de": "pragmatisch",
+        "fr": "pragmatique",
+        "es": "pragmático",
+        "it": "pragmatico",
+        "pt": "pragmático",
+        "pl": "pragmatyczny",
+        "ru": "прагматичный",
+        "zh": "务实的",
+        "ja": "実用的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "resilient",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rɪˈzɪliənt/",
+      "definition": "Able to recover quickly from problems.",
+      "examples": [
+        "Children are often very resilient."
+      ],
+      "translations": {
+        "uk": "стійкий",
+        "de": "widerstandsfähig",
+        "fr": "résilient",
+        "es": "resiliente",
+        "it": "resiliente",
+        "pt": "resiliente",
+        "pl": "odporny",
+        "ru": "стойкий",
+        "zh": "有韧性的",
+        "ja": "回復力のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "integrity",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈteɡrəti/",
+      "definition": "The quality of being honest and having strong morals.",
+      "examples": [
+        "He is a man of great integrity."
+      ],
+      "translations": {
+        "uk": "доброчесність",
+        "de": "Integrität",
+        "fr": "intégrité",
+        "es": "integridad",
+        "it": "integrità",
+        "pt": "integridade",
+        "pl": "uczciwość",
+        "ru": "порядочность",
+        "zh": "正直",
+        "ja": "誠実さ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "insight",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɪnsaɪt/",
+      "definition": "A deep understanding of something.",
+      "examples": [
+        "The book gives an insight into life in China."
+      ],
+      "translations": {
+        "uk": "глибоке розуміння",
+        "de": "Einblick",
+        "fr": "aperçu",
+        "es": "visión",
+        "it": "intuizione",
+        "pt": "percepção",
+        "pl": "wgląd",
+        "ru": "глубокое понимание",
+        "zh": "洞察",
+        "ja": "洞察"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "burden",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈbɝːdən/",
+      "definition": "Something difficult that you have to deal with.",
+      "examples": [
+        "Taxes are a heavy burden for families."
+      ],
+      "translations": {
+        "uk": "тягар",
+        "de": "Last",
+        "fr": "fardeau",
+        "es": "carga",
+        "it": "peso",
+        "pt": "fardo",
+        "pl": "ciężar",
+        "ru": "бремя",
+        "zh": "负担",
+        "ja": "負担"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dedication",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌdedɪˈkeɪʃən/",
+      "definition": "Hard work and commitment to something.",
+      "examples": [
+        "Her dedication to the job is impressive."
+      ],
+      "translations": {
+        "uk": "відданість",
+        "de": "Hingabe",
+        "fr": "dévouement",
+        "es": "dedicación",
+        "it": "dedizione",
+        "pt": "dedicação",
+        "pl": "poświęcenie",
+        "ru": "преданность",
+        "zh": "奉献",
+        "ja": "献身"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "empathy",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈempəθi/",
+      "definition": "The ability to understand other people's feelings.",
+      "examples": [
+        "Good doctors show empathy."
+      ],
+      "translations": {
+        "uk": "емпатія",
+        "de": "Empathie",
+        "fr": "empathie",
+        "es": "empatía",
+        "it": "empatia",
+        "pt": "empatia",
+        "pl": "empatia",
+        "ru": "эмпатия",
+        "zh": "同理心",
+        "ja": "共感"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scrutinize",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈskruːtənaɪz/",
+      "definition": "To examine something very carefully.",
+      "examples": [
+        "The committee will scrutinize the report."
+      ],
+      "translations": {
+        "uk": "ретельно вивчати",
+        "de": "genau prüfen",
+        "fr": "examiner minutieusement",
+        "es": "escudriñar",
+        "it": "esaminare attentamente",
+        "pt": "examinar minuciosamente",
+        "pl": "dokładnie badać",
+        "ru": "тщательно изучать",
+        "zh": "仔细审查",
+        "ja": "精査する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exacerbate",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪɡˈzæsɚbeɪt/",
+      "definition": "To make a bad situation worse.",
+      "examples": [
+        "Stress can exacerbate health problems."
+      ],
+      "translations": {
+        "uk": "загострювати",
+        "de": "verschärfen",
+        "fr": "aggraver",
+        "es": "agravar",
+        "it": "aggravare",
+        "pt": "agravar",
+        "pl": "pogłębiać",
+        "ru": "усугублять",
+        "zh": "加剧",
+        "ja": "悪化させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "circumvent",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌsɝːkəmˈvent/",
+      "definition": "To find a way around a rule or problem.",
+      "examples": [
+        "They tried to circumvent the law."
+      ],
+      "translations": {
+        "uk": "обходити",
+        "de": "umgehen",
+        "fr": "contourner",
+        "es": "eludir",
+        "it": "aggirare",
+        "pt": "contornar",
+        "pl": "obchodzić",
+        "ru": "обходить",
+        "zh": "规避",
+        "ja": "回避する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reconcile",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈrekənsaɪl/",
+      "definition": "To make two ideas or needs fit together.",
+      "examples": [
+        "It's hard to reconcile work and family life."
+      ],
+      "translations": {
+        "uk": "поєднувати",
+        "de": "vereinbaren",
+        "fr": "concilier",
+        "es": "conciliar",
+        "it": "conciliare",
+        "pt": "conciliar",
+        "pl": "pogodzić",
+        "ru": "совмещать",
+        "zh": "调和",
+        "ja": "両立させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "substantiate",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/səbˈstænʃieɪt/",
+      "definition": "To show that something is true with evidence.",
+      "examples": [
+        "Can you substantiate your claims?"
+      ],
+      "translations": {
+        "uk": "обґрунтовувати",
+        "de": "belegen",
+        "fr": "étayer",
+        "es": "corroborar",
+        "it": "comprovare",
+        "pt": "comprovar",
+        "pl": "uzasadnić",
+        "ru": "обосновывать",
+        "zh": "证实",
+        "ja": "立証する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "implicit",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪmˈplɪsɪt/",
+      "definition": "Suggested but not said directly.",
+      "examples": [
+        "There was an implicit criticism in her words."
+      ],
+      "translations": {
+        "uk": "неявний",
+        "de": "implizit",
+        "fr": "implicite",
+        "es": "implícito",
+        "it": "implicito",
+        "pt": "implícito",
+        "pl": "ukryty",
+        "ru": "подразумеваемый",
+        "zh": "含蓄的",
+        "ja": "暗黙の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "meticulous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/məˈtɪkjələs/",
+      "definition": "Very careful about small details.",
+      "examples": [
+        "She is meticulous about her work."
+      ],
+      "translations": {
+        "uk": "прискіпливий",
+        "de": "akribisch",
+        "fr": "méticuleux",
+        "es": "meticuloso",
+        "it": "meticoloso",
+        "pt": "meticuloso",
+        "pl": "drobiazgowy",
+        "ru": "скрупулёзный",
+        "zh": "一丝不苟的",
+        "ja": "細心の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ubiquitous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/juːˈbɪkwɪtəs/",
+      "definition": "Found everywhere.",
+      "examples": [
+        "Smartphones are ubiquitous today."
+      ],
+      "translations": {
+        "uk": "всюдисущий",
+        "de": "allgegenwärtig",
+        "fr": "omniprésent",
+        "es": "omnipresente",
+        "it": "onnipresente",
+        "pt": "onipresente",
+        "pl": "wszechobecny",
+        "ru": "вездесущий",
+        "zh": "无处不在的",
+        "ja": "至る所にある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "unprecedented",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ʌnˈpresɪdentɪd/",
+      "definition": "Never having happened before.",
+      "examples": [
+        "The storm caused unprecedented damage."
+      ],
+      "translations": {
+        "uk": "безпрецедентний",
+        "de": "beispiellos",
+        "fr": "sans précédent",
+        "es": "sin precedentes",
+        "it": "senza precedenti",
+        "pt": "sem precedentes",
+        "pl": "bezprecedensowy",
+        "ru": "беспрецедентный",
+        "zh": "前所未有的",
+        "ja": "前例のない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tangible",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈtændʒəbəl/",
+      "definition": "Real and able to be seen or measured.",
+      "examples": [
+        "The project brought tangible benefits."
+      ],
+      "translations": {
+        "uk": "відчутний",
+        "de": "greifbar",
+        "fr": "tangible",
+        "es": "tangible",
+        "it": "tangibile",
+        "pt": "tangível",
+        "pl": "namacalny",
+        "ru": "ощутимый",
+        "zh": "切实的",
+        "ja": "具体的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "detrimental",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌdetrɪˈmentəl/",
+      "definition": "Causing harm.",
+      "examples": [
+        "Smoking is detrimental to your health."
+      ],
+      "translations": {
+        "uk": "згубний",
+        "de": "schädlich",
+        "fr": "préjudiciable",
+        "es": "perjudicial",
+        "it": "dannoso",
+        "pt": "prejudicial",
+        "pl": "szkodliwy",
+        "ru": "пагубный",
+        "zh": "有害的",
+        "ja": "有害な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "paradigm",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈpærədaɪm/",
+      "definition": "A model or typical example of how something works.",
+      "examples": [
+        "The internet created a new paradigm for business."
+      ],
+      "translations": {
+        "uk": "парадигма",
+        "de": "Paradigma",
+        "fr": "paradigme",
+        "es": "paradigma",
+        "it": "paradigma",
+        "pt": "paradigma",
+        "pl": "paradygmat",
+        "ru": "парадигма",
+        "zh": "范式",
+        "ja": "パラダイム"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "discrepancy",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈskrepənsi/",
+      "definition": "A difference between things that should be the same.",
+      "examples": [
+        "There is a discrepancy between the two reports."
+      ],
+      "translations": {
+        "uk": "розбіжність",
+        "de": "Diskrepanz",
+        "fr": "écart",
+        "es": "discrepancia",
+        "it": "discrepanza",
+        "pt": "discrepância",
+        "pl": "rozbieżność",
+        "ru": "расхождение",
+        "zh": "差异",
+        "ja": "食い違い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nuance",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈnuːɑːns/",
+      "definition": "A very small difference in meaning or feeling.",
+      "examples": [
+        "It's hard to translate the nuances of the poem."
+      ],
+      "translations": {
+        "uk": "нюанс",
+        "de": "Nuance",
+        "fr": "nuance",
+        "es": "matiz",
+        "it": "sfumatura",
+        "pt": "nuance",
+        "pl": "niuans",
+        "ru": "нюанс",
+        "zh": "细微差别",
+        "ja": "ニュアンス"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scrutiny",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈskruːtəni/",
+      "definition": "Careful examination.",
+      "examples": [
+        "The plan is under close scrutiny."
+      ],
+      "translations": {
+        "uk": "пильна увага",
+        "de": "genaue Prüfung",
+        "fr": "examen minutieux",
+        "es": "escrutinio",
+        "it": "esame accurato",
+        "pt": "escrutínio",
+        "pl": "kontrola",
+        "ru": "тщательная проверка",
+        "zh": "审查",
+        "ja": "精査"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
