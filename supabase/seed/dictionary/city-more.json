@@ -1,0 +1,231 @@
+{
+  "package": "city-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "bakery",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈbeɪkəri/",
+      "definition": "A store that makes and sells bread and cakes.",
+      "examples": [
+        "I buy bread at the bakery."
+      ],
+      "translations": {
+        "uk": "пекарня",
+        "de": "Bäckerei",
+        "fr": "boulangerie",
+        "es": "panadería",
+        "it": "panetteria",
+        "pt": "padaria",
+        "pl": "piekarnia",
+        "ru": "пекарня",
+        "zh": "面包店",
+        "ja": "パン屋"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "police station",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/pəˈliːs ˌsteɪʃən/",
+      "definition": "A building where police officers work.",
+      "examples": [
+        "We reported the theft at the police station."
+      ],
+      "translations": {
+        "uk": "поліцейська дільниця",
+        "de": "Polizeiwache",
+        "fr": "commissariat",
+        "es": "comisaría",
+        "it": "commissariato",
+        "pt": "delegacia",
+        "pl": "posterunek policji",
+        "ru": "полицейский участок",
+        "zh": "警察局",
+        "ja": "警察署"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mall",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/mɔːl/",
+      "definition": "A large building with many stores.",
+      "examples": [
+        "Let's go to the mall on Saturday."
+      ],
+      "translations": {
+        "uk": "торговий центр",
+        "de": "Einkaufszentrum",
+        "fr": "centre commercial",
+        "es": "centro comercial",
+        "it": "centro commerciale",
+        "pt": "shopping",
+        "pl": "centrum handlowe",
+        "ru": "торговый центр",
+        "zh": "购物中心",
+        "ja": "ショッピングモール"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tower",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈtaʊɚ/",
+      "definition": "A tall narrow building.",
+      "examples": [
+        "We climbed to the top of the tower."
+      ],
+      "translations": {
+        "uk": "вежа",
+        "de": "Turm",
+        "fr": "tour",
+        "es": "torre",
+        "it": "torre",
+        "pt": "torre",
+        "pl": "wieża",
+        "ru": "башня",
+        "zh": "塔",
+        "ja": "塔"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "castle",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "City",
+      "ipa": "/ˈkæsəl/",
+      "definition": "A large old building with thick walls, built to protect people.",
+      "examples": [
+        "The king lived in a castle."
+      ],
+      "translations": {
+        "uk": "замок",
+        "de": "Burg",
+        "fr": "château",
+        "es": "castillo",
+        "it": "castello",
+        "pt": "castelo",
+        "pl": "zamek",
+        "ru": "замок",
+        "zh": "城堡",
+        "ja": "城"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "palace",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "City",
+      "ipa": "/ˈpæləs/",
+      "definition": "A large house where a king or queen lives.",
+      "examples": [
+        "We visited the royal palace."
+      ],
+      "translations": {
+        "uk": "палац",
+        "de": "Palast",
+        "fr": "palais",
+        "es": "palacio",
+        "it": "palazzo",
+        "pt": "palácio",
+        "pl": "pałac",
+        "ru": "дворец",
+        "zh": "宫殿",
+        "ja": "宮殿"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "skyscraper",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "City",
+      "ipa": "/ˈskaɪˌskreɪpɚ/",
+      "definition": "A very tall building in a city.",
+      "examples": [
+        "New York has many skyscrapers."
+      ],
+      "translations": {
+        "uk": "хмарочос",
+        "de": "Wolkenkratzer",
+        "fr": "gratte-ciel",
+        "es": "rascacielos",
+        "it": "grattacielo",
+        "pt": "arranha-céu",
+        "pl": "wieżowiec",
+        "ru": "небоскрёб",
+        "zh": "摩天大楼",
+        "ja": "超高層ビル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "suburb",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "City",
+      "ipa": "/ˈsʌbɝːb/",
+      "definition": "An area where people live outside the center of a city.",
+      "examples": [
+        "They live in a quiet suburb."
+      ],
+      "translations": {
+        "uk": "передмістя",
+        "de": "Vorort",
+        "fr": "banlieue",
+        "es": "suburbio",
+        "it": "periferia",
+        "pt": "subúrbio",
+        "pl": "przedmieście",
+        "ru": "пригород",
+        "zh": "郊区",
+        "ja": "郊外"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "resident",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "City",
+      "ipa": "/ˈrezɪdənt/",
+      "definition": "A person who lives in a particular place.",
+      "examples": [
+        "Local residents complained about the noise."
+      ],
+      "translations": {
+        "uk": "мешканець",
+        "de": "Bewohner",
+        "fr": "habitant",
+        "es": "residente",
+        "it": "residente",
+        "pt": "morador",
+        "pl": "mieszkaniec",
+        "ru": "житель",
+        "zh": "居民",
+        "ja": "住民"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

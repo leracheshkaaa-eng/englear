@@ -1,0 +1,179 @@
+{
+  "package": "work-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "shift",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ʃɪft/",
+      "definition": "A period of time when a group of people work.",
+      "examples": [
+        "The nurse works the night shift."
+      ],
+      "translations": {
+        "uk": "зміна",
+        "de": "Schicht",
+        "fr": "poste",
+        "es": "turno",
+        "it": "turno",
+        "pt": "turno",
+        "pl": "zmiana",
+        "ru": "смена",
+        "zh": "班次",
+        "ja": "シフト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "overtime",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˈoʊvɚtaɪm/",
+      "definition": "Extra time spent working after your usual hours.",
+      "examples": [
+        "I worked two hours of overtime."
+      ],
+      "translations": {
+        "uk": "понаднормова робота",
+        "de": "Überstunden",
+        "fr": "heures supplémentaires",
+        "es": "horas extra",
+        "it": "straordinario",
+        "pt": "hora extra",
+        "pl": "nadgodziny",
+        "ru": "сверхурочная работа",
+        "zh": "加班",
+        "ja": "残業"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "staff",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/stæf/",
+      "definition": "The people who work for an organization.",
+      "examples": [
+        "The hotel staff were very friendly."
+      ],
+      "translations": {
+        "uk": "персонал",
+        "de": "Personal",
+        "fr": "personnel",
+        "es": "personal",
+        "it": "personale",
+        "pt": "equipe",
+        "pl": "personel",
+        "ru": "персонал",
+        "zh": "员工",
+        "ja": "スタッフ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "report",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/rɪˈpɔːrt/",
+      "definition": "A written document about a subject.",
+      "examples": [
+        "I have to write a report for my boss."
+      ],
+      "translations": {
+        "uk": "звіт",
+        "de": "Bericht",
+        "fr": "rapport",
+        "es": "informe",
+        "it": "rapporto",
+        "pt": "relatório",
+        "pl": "raport",
+        "ru": "отчёт",
+        "zh": "报告",
+        "ja": "報告書"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To tell people about something officially.",
+          "examples": [
+            "You should report the accident to the police."
+          ],
+          "translations": {
+            "uk": "повідомляти",
+            "de": "melden",
+            "fr": "signaler",
+            "es": "informar",
+            "it": "segnalare",
+            "pt": "relatar",
+            "pl": "zgłaszać",
+            "ru": "сообщать",
+            "zh": "报告",
+            "ja": "報告する"
+          }
+        }
+      ]
+    },
+    {
+      "word": "hire",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/haɪɚ/",
+      "definition": "To give someone a job.",
+      "examples": [
+        "The company hired ten new workers."
+      ],
+      "translations": {
+        "uk": "наймати",
+        "de": "einstellen",
+        "fr": "embaucher",
+        "es": "contratar",
+        "it": "assumere",
+        "pt": "contratar",
+        "pl": "zatrudniać",
+        "ru": "нанимать",
+        "zh": "雇用",
+        "ja": "雇う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "customer service",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ˌkʌstəmɚ ˈsɝːvɪs/",
+      "definition": "The help a company gives to its customers.",
+      "examples": [
+        "The customer service was excellent."
+      ],
+      "translations": {
+        "uk": "обслуговування клієнтів",
+        "de": "Kundenservice",
+        "fr": "service client",
+        "es": "atención al cliente",
+        "it": "servizio clienti",
+        "pt": "atendimento ao cliente",
+        "pl": "obsługa klienta",
+        "ru": "обслуживание клиентов",
+        "zh": "客户服务",
+        "ja": "カスタマーサービス"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

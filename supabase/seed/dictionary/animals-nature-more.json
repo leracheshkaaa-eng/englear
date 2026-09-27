@@ -1,0 +1,525 @@
+{
+  "package": "animals-nature-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "tiger",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ˈtaɪɡɚ/",
+      "definition": "A large wild cat with orange fur and black stripes.",
+      "examples": [
+        "The tiger is a dangerous animal."
+      ],
+      "translations": {
+        "uk": "тигр",
+        "de": "Tiger",
+        "fr": "tigre",
+        "es": "tigre",
+        "it": "tigre",
+        "pt": "tigre",
+        "pl": "tygrys",
+        "ru": "тигр",
+        "zh": "老虎",
+        "ja": "トラ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "giraffe",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/dʒəˈræf/",
+      "definition": "A tall African animal with a very long neck.",
+      "examples": [
+        "Giraffes eat leaves from tall trees."
+      ],
+      "translations": {
+        "uk": "жираф",
+        "de": "Giraffe",
+        "fr": "girafe",
+        "es": "jirafa",
+        "it": "giraffa",
+        "pt": "girafa",
+        "pl": "żyrafa",
+        "ru": "жираф",
+        "zh": "长颈鹿",
+        "ja": "キリン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "goat",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ɡoʊt/",
+      "definition": "A farm animal with horns.",
+      "examples": [
+        "The goat is eating grass."
+      ],
+      "translations": {
+        "uk": "коза",
+        "de": "Ziege",
+        "fr": "chèvre",
+        "es": "cabra",
+        "it": "capra",
+        "pt": "cabra",
+        "pl": "koza",
+        "ru": "коза",
+        "zh": "山羊",
+        "ja": "ヤギ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "frog",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/frɔːɡ/",
+      "definition": "A small green animal that lives near water and jumps.",
+      "examples": [
+        "A frog jumped into the pond."
+      ],
+      "translations": {
+        "uk": "жаба",
+        "de": "Frosch",
+        "fr": "grenouille",
+        "es": "rana",
+        "it": "rana",
+        "pt": "sapo",
+        "pl": "żaba",
+        "ru": "лягушка",
+        "zh": "青蛙",
+        "ja": "カエル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "butterfly",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ˈbʌtɚflaɪ/",
+      "definition": "An insect with large colorful wings.",
+      "examples": [
+        "A butterfly landed on the flower."
+      ],
+      "translations": {
+        "uk": "метелик",
+        "de": "Schmetterling",
+        "fr": "papillon",
+        "es": "mariposa",
+        "it": "farfalla",
+        "pt": "borboleta",
+        "pl": "motyl",
+        "ru": "бабочка",
+        "zh": "蝴蝶",
+        "ja": "チョウ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ant",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ænt/",
+      "definition": "A very small insect that lives in large groups.",
+      "examples": [
+        "There are ants in the kitchen."
+      ],
+      "translations": {
+        "uk": "мураха",
+        "de": "Ameise",
+        "fr": "fourmi",
+        "es": "hormiga",
+        "it": "formica",
+        "pt": "formiga",
+        "pl": "mrówka",
+        "ru": "муравей",
+        "zh": "蚂蚁",
+        "ja": "アリ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "whale",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/weɪl/",
+      "definition": "A very large animal that lives in the sea.",
+      "examples": [
+        "We saw a whale from the boat."
+      ],
+      "translations": {
+        "uk": "кит",
+        "de": "Wal",
+        "fr": "baleine",
+        "es": "ballena",
+        "it": "balena",
+        "pt": "baleia",
+        "pl": "wieloryb",
+        "ru": "кит",
+        "zh": "鲸",
+        "ja": "クジラ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shark",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ʃɑːrk/",
+      "definition": "A large sea fish with sharp teeth.",
+      "examples": [
+        "Sharks live in the ocean."
+      ],
+      "translations": {
+        "uk": "акула",
+        "de": "Hai",
+        "fr": "requin",
+        "es": "tiburón",
+        "it": "squalo",
+        "pt": "tubarão",
+        "pl": "rekin",
+        "ru": "акула",
+        "zh": "鲨鱼",
+        "ja": "サメ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "kitten",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ˈkɪtən/",
+      "definition": "A young cat.",
+      "examples": [
+        "The kitten is playing with a ball."
+      ],
+      "translations": {
+        "uk": "кошеня",
+        "de": "Kätzchen",
+        "fr": "chaton",
+        "es": "gatito",
+        "it": "gattino",
+        "pt": "gatinho",
+        "pl": "kotek",
+        "ru": "котёнок",
+        "zh": "小猫",
+        "ja": "子猫"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "puppy",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ˈpʌpi/",
+      "definition": "A young dog.",
+      "examples": [
+        "We got a new puppy."
+      ],
+      "translations": {
+        "uk": "цуценя",
+        "de": "Welpe",
+        "fr": "chiot",
+        "es": "cachorro",
+        "it": "cucciolo",
+        "pt": "filhote",
+        "pl": "szczeniak",
+        "ru": "щенок",
+        "zh": "小狗",
+        "ja": "子犬"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fur",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Animals",
+      "ipa": "/fɝː/",
+      "definition": "The thick hair on an animal's body.",
+      "examples": [
+        "The cat has soft fur."
+      ],
+      "translations": {
+        "uk": "хутро",
+        "de": "Fell",
+        "fr": "fourrure",
+        "es": "pelaje",
+        "it": "pelliccia",
+        "pt": "pelo",
+        "pl": "futro",
+        "ru": "мех",
+        "zh": "毛皮",
+        "ja": "毛"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wing",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Animals",
+      "ipa": "/wɪŋ/",
+      "definition": "The part of a bird or insect used for flying.",
+      "examples": [
+        "The bird hurt its wing."
+      ],
+      "translations": {
+        "uk": "крило",
+        "de": "Flügel",
+        "fr": "aile",
+        "es": "ala",
+        "it": "ala",
+        "pt": "asa",
+        "pl": "skrzydło",
+        "ru": "крыло",
+        "zh": "翅膀",
+        "ja": "翼"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rock",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/rɑːk/",
+      "definition": "The hard material that mountains are made of.",
+      "examples": [
+        "We sat on a big rock."
+      ],
+      "translations": {
+        "uk": "скеля, камінь",
+        "de": "Fels",
+        "fr": "rocher",
+        "es": "roca",
+        "it": "roccia",
+        "pt": "rocha",
+        "pl": "skała",
+        "ru": "скала, камень",
+        "zh": "岩石",
+        "ja": "岩"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "music",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A type of loud popular music.",
+          "examples": [
+            "My brother listens to rock."
+          ],
+          "translations": {
+            "uk": "рок (музика)",
+            "de": "Rock",
+            "fr": "rock",
+            "es": "rock",
+            "it": "rock",
+            "pt": "rock",
+            "pl": "rock",
+            "ru": "рок (музыка)",
+            "zh": "摇滚乐",
+            "ja": "ロック"
+          }
+        }
+      ]
+    },
+    {
+      "word": "field",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/fiːld/",
+      "definition": "An area of land used for growing crops or keeping animals.",
+      "examples": [
+        "The cows are in the field."
+      ],
+      "translations": {
+        "uk": "поле",
+        "de": "Feld",
+        "fr": "champ",
+        "es": "campo",
+        "it": "campo",
+        "pt": "campo",
+        "pl": "pole",
+        "ru": "поле",
+        "zh": "田野",
+        "ja": "畑"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "area",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "An area of study or activity.",
+          "examples": [
+            "She is an expert in the field of medicine."
+          ],
+          "translations": {
+            "uk": "галузь",
+            "de": "Bereich",
+            "fr": "domaine",
+            "es": "campo",
+            "it": "campo",
+            "pt": "área",
+            "pl": "dziedzina",
+            "ru": "область, сфера",
+            "zh": "领域",
+            "ja": "分野"
+          }
+        }
+      ]
+    },
+    {
+      "word": "wood",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/wʊd/",
+      "definition": "The hard material that trees are made of.",
+      "examples": [
+        "The table is made of wood."
+      ],
+      "translations": {
+        "uk": "деревина",
+        "de": "Holz",
+        "fr": "bois",
+        "es": "madera",
+        "it": "legno",
+        "pt": "madeira",
+        "pl": "drewno",
+        "ru": "древесина",
+        "zh": "木头",
+        "ja": "木材"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "forest",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "An area with a lot of trees; a small forest.",
+          "examples": [
+            "We went for a walk in the woods."
+          ],
+          "translations": {
+            "uk": "ліс, гай",
+            "de": "Wald",
+            "fr": "bois",
+            "es": "bosque",
+            "it": "bosco",
+            "pt": "bosque",
+            "pl": "las",
+            "ru": "лес, роща",
+            "zh": "树林",
+            "ja": "森"
+          }
+        }
+      ]
+    },
+    {
+      "word": "volcano",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/vɑːlˈkeɪnoʊ/",
+      "definition": "A mountain that can throw out hot rock and fire.",
+      "examples": [
+        "The volcano erupted last year."
+      ],
+      "translations": {
+        "uk": "вулкан",
+        "de": "Vulkan",
+        "fr": "volcan",
+        "es": "volcán",
+        "it": "vulcano",
+        "pt": "vulcão",
+        "pl": "wulkan",
+        "ru": "вулкан",
+        "zh": "火山",
+        "ja": "火山"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "earthquake",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/ˈɝːθkweɪk/",
+      "definition": "A sudden shaking of the ground.",
+      "examples": [
+        "The earthquake damaged many buildings."
+      ],
+      "translations": {
+        "uk": "землетрус",
+        "de": "Erdbeben",
+        "fr": "tremblement de terre",
+        "es": "terremoto",
+        "it": "terremoto",
+        "pt": "terremoto",
+        "pl": "trzęsienie ziemi",
+        "ru": "землетрясение",
+        "zh": "地震",
+        "ja": "地震"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "jungle",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/ˈdʒʌŋɡəl/",
+      "definition": "A thick tropical forest.",
+      "examples": [
+        "Monkeys live in the jungle."
+      ],
+      "translations": {
+        "uk": "джунглі",
+        "de": "Dschungel",
+        "fr": "jungle",
+        "es": "selva",
+        "it": "giungla",
+        "pt": "selva",
+        "pl": "dżungla",
+        "ru": "джунгли",
+        "zh": "丛林",
+        "ja": "ジャングル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

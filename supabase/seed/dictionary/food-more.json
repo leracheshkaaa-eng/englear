@@ -1,0 +1,231 @@
+{
+  "package": "food-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "cereal",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈsɪriəl/",
+      "definition": "Food made from grain, eaten with milk for breakfast.",
+      "examples": [
+        "I eat cereal every morning."
+      ],
+      "translations": {
+        "uk": "пластівці",
+        "de": "Müsli",
+        "fr": "céréales",
+        "es": "cereales",
+        "it": "cereali",
+        "pt": "cereal",
+        "pl": "płatki",
+        "ru": "хлопья",
+        "zh": "麦片",
+        "ja": "シリアル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pancake",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈpænkeɪk/",
+      "definition": "A thin flat cake cooked in a pan.",
+      "examples": [
+        "We had pancakes with honey."
+      ],
+      "translations": {
+        "uk": "млинець",
+        "de": "Pfannkuchen",
+        "fr": "crêpe",
+        "es": "panqueque",
+        "it": "frittella",
+        "pt": "panqueca",
+        "pl": "naleśnik",
+        "ru": "блин",
+        "zh": "煎饼",
+        "ja": "パンケーキ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "noodles",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈnuːdəlz/",
+      "definition": "Long thin strips of dough that you boil.",
+      "examples": [
+        "I love noodles with vegetables."
+      ],
+      "translations": {
+        "uk": "локшина",
+        "de": "Nudeln",
+        "fr": "nouilles",
+        "es": "fideos",
+        "it": "noodles",
+        "pt": "macarrão",
+        "pl": "makaron",
+        "ru": "лапша",
+        "zh": "面条",
+        "ja": "麺"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "peach",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/piːtʃ/",
+      "definition": "A soft round fruit with a large seed.",
+      "examples": [
+        "This peach is very juicy."
+      ],
+      "translations": {
+        "uk": "персик",
+        "de": "Pfirsich",
+        "fr": "pêche",
+        "es": "melocotón",
+        "it": "pesca",
+        "pt": "pêssego",
+        "pl": "brzoskwinia",
+        "ru": "персик",
+        "zh": "桃子",
+        "ja": "桃"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pear",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/per/",
+      "definition": "A sweet fruit that is narrow at the top.",
+      "examples": [
+        "She ate a green pear."
+      ],
+      "translations": {
+        "uk": "груша",
+        "de": "Birne",
+        "fr": "poire",
+        "es": "pera",
+        "it": "pera",
+        "pt": "pera",
+        "pl": "gruszka",
+        "ru": "груша",
+        "zh": "梨",
+        "ja": "梨"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cucumber",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈkjuːkʌmbɚ/",
+      "definition": "A long green vegetable eaten raw.",
+      "examples": [
+        "I put cucumber in the salad."
+      ],
+      "translations": {
+        "uk": "огірок",
+        "de": "Gurke",
+        "fr": "concombre",
+        "es": "pepino",
+        "it": "cetriolo",
+        "pt": "pepino",
+        "pl": "ogórek",
+        "ru": "огурец",
+        "zh": "黄瓜",
+        "ja": "キュウリ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "garlic",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈɡɑːrlɪk/",
+      "definition": "A plant with a strong taste, used in cooking.",
+      "examples": [
+        "Add some garlic to the sauce."
+      ],
+      "translations": {
+        "uk": "часник",
+        "de": "Knoblauch",
+        "fr": "ail",
+        "es": "ajo",
+        "it": "aglio",
+        "pt": "alho",
+        "pl": "czosnek",
+        "ru": "чеснок",
+        "zh": "大蒜",
+        "ja": "ニンニク"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mushroom",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/ˈmʌʃruːm/",
+      "definition": "A plant with a round top that you can eat.",
+      "examples": [
+        "I like mushrooms on my pizza."
+      ],
+      "translations": {
+        "uk": "гриб",
+        "de": "Pilz",
+        "fr": "champignon",
+        "es": "champiñón",
+        "it": "fungo",
+        "pt": "cogumelo",
+        "pl": "grzyb",
+        "ru": "гриб",
+        "zh": "蘑菇",
+        "ja": "キノコ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sauce",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Food",
+      "ipa": "/sɔːs/",
+      "definition": "A thick liquid served with food.",
+      "examples": [
+        "The pasta comes with tomato sauce."
+      ],
+      "translations": {
+        "uk": "соус",
+        "de": "Soße",
+        "fr": "sauce",
+        "es": "salsa",
+        "it": "salsa",
+        "pt": "molho",
+        "pl": "sos",
+        "ru": "соус",
+        "zh": "酱汁",
+        "ja": "ソース"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
