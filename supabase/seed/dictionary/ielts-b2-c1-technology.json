@@ -1,0 +1,206 @@
+{
+  "package": "ielts-b2-c1-technology",
+  "kind": "words",
+  "words": [
+    {
+      "word": "hacker",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˈhækɚ/",
+      "definition": "A person who gets into other people's computers illegally.",
+      "examples": [
+        "Hackers stole customer data."
+      ],
+      "translations": {
+        "uk": "хакер",
+        "de": "Hacker",
+        "fr": "pirate informatique",
+        "es": "hacker",
+        "it": "hacker",
+        "pt": "hacker",
+        "pl": "haker",
+        "ru": "хакер",
+        "zh": "黑客",
+        "ja": "ハッカー"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "virtual reality",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˌvɝːtʃuəl riˈæləti/",
+      "definition": "A computer world that seems real, seen through a special headset.",
+      "examples": [
+        "Virtual reality is used in games and training."
+      ],
+      "translations": {
+        "uk": "віртуальна реальність",
+        "de": "virtuelle Realität",
+        "fr": "réalité virtuelle",
+        "es": "realidad virtual",
+        "it": "realtà virtuale",
+        "pt": "realidade virtual",
+        "pl": "rzeczywistość wirtualna",
+        "ru": "виртуальная реальность",
+        "zh": "虚拟现实",
+        "ja": "仮想現実"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "gadget",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˈɡædʒɪt/",
+      "definition": "A small useful machine or tool.",
+      "examples": [
+        "He loves buying new gadgets."
+      ],
+      "translations": {
+        "uk": "гаджет",
+        "de": "Gerät",
+        "fr": "gadget",
+        "es": "aparato",
+        "it": "aggeggio",
+        "pt": "aparelho",
+        "pl": "gadżet",
+        "ru": "гаджет",
+        "zh": "小装置",
+        "ja": "ガジェット"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "user-friendly",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/ˌjuːzɚ ˈfrendli/",
+      "definition": "Easy to use.",
+      "examples": [
+        "The new app is very user-friendly."
+      ],
+      "translations": {
+        "uk": "зручний у користуванні",
+        "de": "benutzerfreundlich",
+        "fr": "convivial",
+        "es": "fácil de usar",
+        "it": "facile da usare",
+        "pt": "fácil de usar",
+        "pl": "przyjazny dla użytkownika",
+        "ru": "удобный в использовании",
+        "zh": "用户友好的",
+        "ja": "使いやすい"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "algorithm",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Technology",
+      "ipa": "/ˈælɡərɪðəm/",
+      "definition": "A set of rules a computer follows to solve a problem.",
+      "examples": [
+        "The app uses an algorithm to suggest songs."
+      ],
+      "translations": {
+        "uk": "алгоритм",
+        "de": "Algorithmus",
+        "fr": "algorithme",
+        "es": "algoritmo",
+        "it": "algoritmo",
+        "pt": "algoritmo",
+        "pl": "algorytm",
+        "ru": "алгоритм",
+        "zh": "算法",
+        "ja": "アルゴリズム"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "automation",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Technology",
+      "ipa": "/ˌɔːtəˈmeɪʃən/",
+      "definition": "Using machines to do work instead of people.",
+      "examples": [
+        "Automation may replace some jobs."
+      ],
+      "translations": {
+        "uk": "автоматизація",
+        "de": "Automatisierung",
+        "fr": "automatisation",
+        "es": "automatización",
+        "it": "automazione",
+        "pt": "automação",
+        "pl": "automatyzacja",
+        "ru": "автоматизация",
+        "zh": "自动化",
+        "ja": "自動化"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "cutting-edge",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Technology",
+      "ipa": "/ˌkʌtɪŋ ˈedʒ/",
+      "definition": "Very modern and advanced.",
+      "examples": [
+        "The lab uses cutting-edge technology."
+      ],
+      "translations": {
+        "uk": "передовий",
+        "de": "hochmodern",
+        "fr": "de pointe",
+        "es": "de vanguardia",
+        "it": "all'avanguardia",
+        "pt": "de ponta",
+        "pl": "najnowocześniejszy",
+        "ru": "передовой",
+        "zh": "尖端的",
+        "ja": "最先端の"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    },
+    {
+      "word": "data protection",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Technology",
+      "ipa": "/ˈdeɪtə prəˌtekʃən/",
+      "definition": "Laws that keep personal information safe.",
+      "examples": [
+        "Data protection laws are very strict in Europe."
+      ],
+      "translations": {
+        "uk": "захист даних",
+        "de": "Datenschutz",
+        "fr": "protection des données",
+        "es": "protección de datos",
+        "it": "protezione dei dati",
+        "pt": "proteção de dados",
+        "pl": "ochrona danych",
+        "ru": "защита данных",
+        "zh": "数据保护",
+        "ja": "データ保護"
+      },
+      "word_type": "word",
+      "ielts_category": "Technology"
+    }
+  ]
+}

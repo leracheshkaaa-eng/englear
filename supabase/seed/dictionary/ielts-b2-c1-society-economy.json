@@ -1,0 +1,381 @@
+{
+  "package": "ielts-b2-c1-society-economy",
+  "kind": "words",
+  "words": [
+    {
+      "word": "migrant",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈmaɪɡrənt/",
+      "definition": "A person who moves to another country to find work.",
+      "examples": [
+        "Many migrants work in farming."
+      ],
+      "translations": {
+        "uk": "мігрант",
+        "de": "Migrant",
+        "fr": "migrant",
+        "es": "migrante",
+        "it": "migrante",
+        "pt": "migrante",
+        "pl": "migrant",
+        "ru": "мигрант",
+        "zh": "外来务工人员",
+        "ja": "移住者"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "generation gap",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˌdʒenəˈreɪʃən ɡæp/",
+      "definition": "Differences between older and younger people.",
+      "examples": [
+        "There is a generation gap in how we use technology."
+      ],
+      "translations": {
+        "uk": "розрив між поколіннями",
+        "de": "Generationenkonflikt",
+        "fr": "fossé des générations",
+        "es": "brecha generacional",
+        "it": "divario generazionale",
+        "pt": "conflito de gerações",
+        "pl": "przepaść pokoleniowa",
+        "ru": "разрыв поколений",
+        "zh": "代沟",
+        "ja": "世代間ギャップ"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "tolerance",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈtɑːlərəns/",
+      "definition": "Accepting people and ideas that are different.",
+      "examples": [
+        "We need more tolerance in society."
+      ],
+      "translations": {
+        "uk": "толерантність",
+        "de": "Toleranz",
+        "fr": "tolérance",
+        "es": "tolerancia",
+        "it": "tolleranza",
+        "pt": "tolerância",
+        "pl": "tolerancja",
+        "ru": "терпимость",
+        "zh": "宽容",
+        "ja": "寛容"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "multicultural",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˌmʌltiˈkʌltʃərəl/",
+      "definition": "Including people of many different cultures.",
+      "examples": [
+        "Canada is a multicultural country."
+      ],
+      "translations": {
+        "uk": "багатокультурний",
+        "de": "multikulturell",
+        "fr": "multiculturel",
+        "es": "multicultural",
+        "it": "multiculturale",
+        "pt": "multicultural",
+        "pl": "wielokulturowy",
+        "ru": "многокультурный",
+        "zh": "多元文化的",
+        "ja": "多文化の"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "urbanization",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/ˌɝːbənəˈzeɪʃən/",
+      "definition": "The process of more people moving to cities.",
+      "examples": [
+        "Urbanization is changing the country."
+      ],
+      "translations": {
+        "uk": "урбанізація",
+        "de": "Verstädterung",
+        "fr": "urbanisation",
+        "es": "urbanización",
+        "it": "urbanizzazione",
+        "pt": "urbanização",
+        "pl": "urbanizacja",
+        "ru": "урбанизация",
+        "zh": "城市化",
+        "ja": "都市化"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "welfare",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/ˈwelfer/",
+      "definition": "Help given by the government to people who need it.",
+      "examples": [
+        "The government spends a lot on welfare."
+      ],
+      "translations": {
+        "uk": "соціальне забезпечення",
+        "de": "Sozialhilfe",
+        "fr": "aide sociale",
+        "es": "asistencia social",
+        "it": "assistenza sociale",
+        "pt": "assistência social",
+        "pl": "opieka społeczna",
+        "ru": "социальное обеспечение",
+        "zh": "福利",
+        "ja": "福祉"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "corruption",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/kəˈrʌpʃən/",
+      "definition": "Dishonest behavior by people in power.",
+      "examples": [
+        "The new president promised to fight corruption."
+      ],
+      "translations": {
+        "uk": "корупція",
+        "de": "Korruption",
+        "fr": "corruption",
+        "es": "corrupción",
+        "it": "corruzione",
+        "pt": "corrupção",
+        "pl": "korupcja",
+        "ru": "коррупция",
+        "zh": "腐败",
+        "ja": "汚職"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "globalization",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/ˌɡloʊbələˈzeɪʃən/",
+      "definition": "The process of countries becoming more connected through trade and culture.",
+      "examples": [
+        "Globalization has changed the way we work."
+      ],
+      "translations": {
+        "uk": "глобалізація",
+        "de": "Globalisierung",
+        "fr": "mondialisation",
+        "es": "globalización",
+        "it": "globalizzazione",
+        "pt": "globalização",
+        "pl": "globalizacja",
+        "ru": "глобализация",
+        "zh": "全球化",
+        "ja": "グローバル化"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "consumer",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/kənˈsuːmɚ/",
+      "definition": "A person who buys goods or services.",
+      "examples": [
+        "Consumers want cheaper products."
+      ],
+      "translations": {
+        "uk": "споживач",
+        "de": "Verbraucher",
+        "fr": "consommateur",
+        "es": "consumidor",
+        "it": "consumatore",
+        "pt": "consumidor",
+        "pl": "konsument",
+        "ru": "потребитель",
+        "zh": "消费者",
+        "ja": "消費者"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "investment",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ɪnˈvestmənt/",
+      "definition": "Putting money into something to make a profit.",
+      "examples": [
+        "Buying a house is a good investment."
+      ],
+      "translations": {
+        "uk": "інвестиція",
+        "de": "Investition",
+        "fr": "investissement",
+        "es": "inversión",
+        "it": "investimento",
+        "pt": "investimento",
+        "pl": "inwestycja",
+        "ru": "инвестиция",
+        "zh": "投资",
+        "ja": "投資"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "profitable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ˈprɑːfɪtəbəl/",
+      "definition": "Making money.",
+      "examples": [
+        "The business is very profitable."
+      ],
+      "translations": {
+        "uk": "прибутковий",
+        "de": "profitabel",
+        "fr": "rentable",
+        "es": "rentable",
+        "it": "redditizio",
+        "pt": "lucrativo",
+        "pl": "dochodowy",
+        "ru": "прибыльный",
+        "zh": "有利可图的",
+        "ja": "利益になる"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "supply and demand",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/səˌplaɪ ənd dɪˈmænd/",
+      "definition": "The relationship between how much is available and how much people want.",
+      "examples": [
+        "Prices depend on supply and demand."
+      ],
+      "translations": {
+        "uk": "попит і пропозиція",
+        "de": "Angebot und Nachfrage",
+        "fr": "l'offre et la demande",
+        "es": "oferta y demanda",
+        "it": "domanda e offerta",
+        "pt": "oferta e demanda",
+        "pl": "podaż i popyt",
+        "ru": "спрос и предложение",
+        "zh": "供求",
+        "ja": "需要と供給"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "entrepreneur",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ˌɑːntrəprəˈnɝː/",
+      "definition": "A person who starts their own business.",
+      "examples": [
+        "She is a successful young entrepreneur."
+      ],
+      "translations": {
+        "uk": "підприємець",
+        "de": "Unternehmer",
+        "fr": "entrepreneur",
+        "es": "emprendedor",
+        "it": "imprenditore",
+        "pt": "empreendedor",
+        "pl": "przedsiębiorca",
+        "ru": "предприниматель",
+        "zh": "企业家",
+        "ja": "起業家"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "revenue",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Business",
+      "ipa": "/ˈrevənuː/",
+      "definition": "Money a business receives.",
+      "examples": [
+        "The company's revenue grew by 10 percent."
+      ],
+      "translations": {
+        "uk": "виручка",
+        "de": "Umsatz",
+        "fr": "chiffre d'affaires",
+        "es": "ingresos",
+        "it": "fatturato",
+        "pt": "receita",
+        "pl": "przychód",
+        "ru": "выручка",
+        "zh": "营收",
+        "ja": "収益"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "recession",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Business",
+      "ipa": "/rɪˈseʃən/",
+      "definition": "A time when the economy is doing badly.",
+      "examples": [
+        "Many people lost their jobs during the recession."
+      ],
+      "translations": {
+        "uk": "рецесія",
+        "de": "Rezession",
+        "fr": "récession",
+        "es": "recesión",
+        "it": "recessione",
+        "pt": "recessão",
+        "pl": "recesja",
+        "ru": "рецессия",
+        "zh": "经济衰退",
+        "ja": "景気後退"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    }
+  ]
+}

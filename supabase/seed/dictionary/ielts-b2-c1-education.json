@@ -1,0 +1,252 @@
+{
+  "package": "ielts-b2-c1-education",
+  "kind": "words",
+  "words": [
+    {
+      "word": "pupil",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˈpjuːpəl/",
+      "definition": "A child at school.",
+      "examples": [
+        "The school has 500 pupils."
+      ],
+      "translations": {
+        "uk": "учень",
+        "de": "Schüler",
+        "fr": "élève",
+        "es": "alumno",
+        "it": "alunno",
+        "pt": "aluno",
+        "pl": "uczeń",
+        "ru": "ученик",
+        "zh": "小学生",
+        "ja": "児童"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "cheat",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/tʃiːt/",
+      "definition": "To act dishonestly to win or pass a test.",
+      "examples": [
+        "He was caught cheating on the test."
+      ],
+      "translations": {
+        "uk": "списувати, шахраювати",
+        "de": "schummeln",
+        "fr": "tricher",
+        "es": "hacer trampa",
+        "it": "imbrogliare",
+        "pt": "colar",
+        "pl": "ściągać",
+        "ru": "списывать, жульничать",
+        "zh": "作弊",
+        "ja": "カンニングする"
+      },
+      "word_type": "word",
+      "ielts_category": "Education",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "A person who is not honest, especially in a game or relationship.",
+          "examples": [
+            "He's a cheat, don't play cards with him."
+          ],
+          "translations": {
+            "uk": "шахрай",
+            "de": "Betrüger",
+            "fr": "tricheur",
+            "es": "tramposo",
+            "it": "imbroglione",
+            "pt": "trapaceiro",
+            "pl": "oszust",
+            "ru": "обманщик",
+            "zh": "骗子",
+            "ja": "ずるい人"
+          }
+        }
+      ]
+    },
+    {
+      "word": "memorize",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˈmeməraɪz/",
+      "definition": "To learn something so you can remember it exactly.",
+      "examples": [
+        "I memorized the poem."
+      ],
+      "translations": {
+        "uk": "запам'ятовувати",
+        "de": "auswendig lernen",
+        "fr": "mémoriser",
+        "es": "memorizar",
+        "it": "memorizzare",
+        "pt": "memorizar",
+        "pl": "zapamiętywać",
+        "ru": "запоминать",
+        "zh": "记住",
+        "ja": "暗記する"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "review",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/rɪˈvjuː/",
+      "definition": "To study again before a test.",
+      "examples": [
+        "I need to review my notes before the exam."
+      ],
+      "translations": {
+        "uk": "повторювати",
+        "de": "wiederholen",
+        "fr": "réviser",
+        "es": "repasar",
+        "it": "ripassare",
+        "pt": "revisar",
+        "pl": "powtarzać",
+        "ru": "повторять",
+        "zh": "复习",
+        "ja": "復習する"
+      },
+      "word_type": "word",
+      "ielts_category": "Education",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "A report giving an opinion about a book, movie or product.",
+          "examples": [
+            "The movie got great reviews."
+          ],
+          "translations": {
+            "uk": "відгук, рецензія",
+            "de": "Rezension",
+            "fr": "critique",
+            "es": "reseña",
+            "it": "recensione",
+            "pt": "resenha",
+            "pl": "recenzja",
+            "ru": "отзыв, рецензия",
+            "zh": "评论",
+            "ja": "レビュー"
+          }
+        }
+      ]
+    },
+    {
+      "word": "critical thinking",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˌkrɪtɪkəl ˈθɪŋkɪŋ/",
+      "definition": "The ability to think carefully and judge ideas.",
+      "examples": [
+        "Schools should teach critical thinking."
+      ],
+      "translations": {
+        "uk": "критичне мислення",
+        "de": "kritisches Denken",
+        "fr": "esprit critique",
+        "es": "pensamiento crítico",
+        "it": "pensiero critico",
+        "pt": "pensamento crítico",
+        "pl": "krytyczne myślenie",
+        "ru": "критическое мышление",
+        "zh": "批判性思维",
+        "ja": "批判的思考"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "distance learning",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈdɪstəns ˌlɝːnɪŋ/",
+      "definition": "Studying from home using the internet.",
+      "examples": [
+        "Distance learning is popular with adults."
+      ],
+      "translations": {
+        "uk": "дистанційне навчання",
+        "de": "Fernunterricht",
+        "fr": "enseignement à distance",
+        "es": "educación a distancia",
+        "it": "didattica a distanza",
+        "pt": "educação a distância",
+        "pl": "nauczanie zdalne",
+        "ru": "дистанционное обучение",
+        "zh": "远程教育",
+        "ja": "遠隔教育"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "vocational",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/voʊˈkeɪʃənəl/",
+      "definition": "Teaching skills needed for a particular job.",
+      "examples": [
+        "He went to a vocational school to become a chef."
+      ],
+      "translations": {
+        "uk": "професійний",
+        "de": "berufsbildend",
+        "fr": "professionnel",
+        "es": "profesional",
+        "it": "professionale",
+        "pt": "profissionalizante",
+        "pl": "zawodowy",
+        "ru": "профессиональный",
+        "zh": "职业的",
+        "ja": "職業の"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "dropout",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ˈdrɑːpaʊt/",
+      "definition": "A person who leaves school before finishing.",
+      "examples": [
+        "The school wants to reduce the number of dropouts."
+      ],
+      "translations": {
+        "uk": "той, хто кинув навчання",
+        "de": "Schulabbrecher",
+        "fr": "décrocheur",
+        "es": "desertor escolar",
+        "it": "chi abbandona gli studi",
+        "pt": "evadido",
+        "pl": "osoba bez ukończonej szkoły",
+        "ru": "бросивший учёбу",
+        "zh": "辍学者",
+        "ja": "中退者"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    }
+  ]
+}

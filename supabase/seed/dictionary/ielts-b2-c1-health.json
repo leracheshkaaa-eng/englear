@@ -1,0 +1,181 @@
+{
+  "package": "ielts-b2-c1-health",
+  "kind": "words",
+  "words": [
+    {
+      "word": "nutrition",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/nuˈtrɪʃən/",
+      "definition": "The food you eat and how it affects your health.",
+      "examples": [
+        "Good nutrition is important for children."
+      ],
+      "translations": {
+        "uk": "харчування",
+        "de": "Ernährung",
+        "fr": "nutrition",
+        "es": "nutrición",
+        "it": "nutrizione",
+        "pt": "nutrição",
+        "pl": "odżywianie",
+        "ru": "питание",
+        "zh": "营养",
+        "ja": "栄養"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "well-being",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/ˌwel ˈbiːɪŋ/",
+      "definition": "The state of being healthy and happy.",
+      "examples": [
+        "Exercise improves mental well-being."
+      ],
+      "translations": {
+        "uk": "добробут, самопочуття",
+        "de": "Wohlbefinden",
+        "fr": "bien-être",
+        "es": "bienestar",
+        "it": "benessere",
+        "pt": "bem-estar",
+        "pl": "dobre samopoczucie",
+        "ru": "благополучие",
+        "zh": "幸福",
+        "ja": "幸福"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "surgery",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/ˈsɝːdʒəri/",
+      "definition": "Medical treatment where a doctor cuts the body.",
+      "examples": [
+        "She needs surgery on her knee."
+      ],
+      "translations": {
+        "uk": "операція",
+        "de": "Operation",
+        "fr": "chirurgie",
+        "es": "cirugía",
+        "it": "intervento chirurgico",
+        "pt": "cirurgia",
+        "pl": "operacja",
+        "ru": "операция",
+        "zh": "手术",
+        "ja": "手術"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "healthcare",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/ˈhelθker/",
+      "definition": "The service of looking after people's health.",
+      "examples": [
+        "Everyone should have access to healthcare."
+      ],
+      "translations": {
+        "uk": "охорона здоров'я",
+        "de": "Gesundheitsversorgung",
+        "fr": "soins de santé",
+        "es": "atención médica",
+        "it": "assistenza sanitaria",
+        "pt": "saúde",
+        "pl": "opieka zdrowotna",
+        "ru": "здравоохранение",
+        "zh": "医疗保健",
+        "ja": "医療"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "sedentary",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Health",
+      "ipa": "/ˈsedənteri/",
+      "definition": "Involving a lot of sitting and not much exercise.",
+      "examples": [
+        "A sedentary lifestyle is bad for your health."
+      ],
+      "translations": {
+        "uk": "малорухливий",
+        "de": "sitzend",
+        "fr": "sédentaire",
+        "es": "sedentario",
+        "it": "sedentario",
+        "pt": "sedentário",
+        "pl": "siedzący",
+        "ru": "малоподвижный",
+        "zh": "久坐的",
+        "ja": "座りがちな"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "epidemic",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Health",
+      "ipa": "/ˌepɪˈdemɪk/",
+      "definition": "A disease that spreads quickly to many people.",
+      "examples": [
+        "The flu epidemic closed many schools."
+      ],
+      "translations": {
+        "uk": "епідемія",
+        "de": "Epidemie",
+        "fr": "épidémie",
+        "es": "epidemia",
+        "it": "epidemia",
+        "pt": "epidemia",
+        "pl": "epidemia",
+        "ru": "эпидемия",
+        "zh": "流行病",
+        "ja": "伝染病の流行"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "life expectancy",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Health",
+      "ipa": "/ˈlaɪf ɪkˌspektənsi/",
+      "definition": "The number of years a person is expected to live.",
+      "examples": [
+        "Life expectancy has increased in most countries."
+      ],
+      "translations": {
+        "uk": "очікувана тривалість життя",
+        "de": "Lebenserwartung",
+        "fr": "espérance de vie",
+        "es": "esperanza de vida",
+        "it": "aspettativa di vita",
+        "pt": "expectativa de vida",
+        "pl": "średnia długość życia",
+        "ru": "ожидаемая продолжительность жизни",
+        "zh": "预期寿命",
+        "ja": "平均寿命"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    }
+  ]
+}

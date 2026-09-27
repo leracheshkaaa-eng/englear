@@ -1,0 +1,256 @@
+{
+  "package": "ielts-b2-c1-environment",
+  "kind": "words",
+  "words": [
+    {
+      "word": "solar power",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/ˌsoʊlɚ ˈpaʊɚ/",
+      "definition": "Energy from the sun.",
+      "examples": [
+        "Our house uses solar power."
+      ],
+      "translations": {
+        "uk": "сонячна енергія",
+        "de": "Solarenergie",
+        "fr": "énergie solaire",
+        "es": "energía solar",
+        "it": "energia solare",
+        "pt": "energia solar",
+        "pl": "energia słoneczna",
+        "ru": "солнечная энергия",
+        "zh": "太阳能",
+        "ja": "太陽光発電"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "ecosystem",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈiːkoʊˌsɪstəm/",
+      "definition": "All the living things in an area and how they affect each other.",
+      "examples": [
+        "Pollution can damage the ecosystem."
+      ],
+      "translations": {
+        "uk": "екосистема",
+        "de": "Ökosystem",
+        "fr": "écosystème",
+        "es": "ecosistema",
+        "it": "ecosistema",
+        "pt": "ecossistema",
+        "pl": "ekosystem",
+        "ru": "экосистема",
+        "zh": "生态系统",
+        "ja": "生態系"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "landfill",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈlændfɪl/",
+      "definition": "A place where waste is buried under the ground.",
+      "examples": [
+        "Most plastic ends up in landfill."
+      ],
+      "translations": {
+        "uk": "сміттєзвалище",
+        "de": "Mülldeponie",
+        "fr": "décharge",
+        "es": "vertedero",
+        "it": "discarica",
+        "pt": "aterro sanitário",
+        "pl": "wysypisko",
+        "ru": "свалка",
+        "zh": "垃圾填埋场",
+        "ja": "埋立地"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "wind turbine",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈwɪnd ˌtɝːbaɪn/",
+      "definition": "A tall machine that makes electricity from wind.",
+      "examples": [
+        "There are wind turbines on the hills."
+      ],
+      "translations": {
+        "uk": "вітрова турбіна",
+        "de": "Windrad",
+        "fr": "éolienne",
+        "es": "aerogenerador",
+        "it": "turbina eolica",
+        "pt": "turbina eólica",
+        "pl": "turbina wiatrowa",
+        "ru": "ветряная турбина",
+        "zh": "风力涡轮机",
+        "ja": "風力タービン"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "ozone layer",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈoʊzoʊn ˌleɪɚ/",
+      "definition": "A layer of gas high above the earth that protects it from the sun.",
+      "examples": [
+        "The ozone layer protects us from UV rays."
+      ],
+      "translations": {
+        "uk": "озоновий шар",
+        "de": "Ozonschicht",
+        "fr": "couche d'ozone",
+        "es": "capa de ozono",
+        "it": "strato di ozono",
+        "pt": "camada de ozônio",
+        "pl": "warstwa ozonowa",
+        "ru": "озоновый слой",
+        "zh": "臭氧层",
+        "ja": "オゾン層"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "sea level",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈsiː ˌlevəl/",
+      "definition": "The average height of the sea.",
+      "examples": [
+        "Sea levels are rising."
+      ],
+      "translations": {
+        "uk": "рівень моря",
+        "de": "Meeresspiegel",
+        "fr": "niveau de la mer",
+        "es": "nivel del mar",
+        "it": "livello del mare",
+        "pt": "nível do mar",
+        "pl": "poziom morza",
+        "ru": "уровень моря",
+        "zh": "海平面",
+        "ja": "海面"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "disposable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/dɪˈspoʊzəbəl/",
+      "definition": "Made to be used once and then thrown away.",
+      "examples": [
+        "Avoid disposable plastic cups."
+      ],
+      "translations": {
+        "uk": "одноразовий",
+        "de": "Einweg-",
+        "fr": "jetable",
+        "es": "desechable",
+        "it": "usa e getta",
+        "pt": "descartável",
+        "pl": "jednorazowy",
+        "ru": "одноразовый",
+        "zh": "一次性的",
+        "ja": "使い捨ての"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "biodiversity",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Environment",
+      "ipa": "/ˌbaɪoʊdaɪˈvɝːsəti/",
+      "definition": "The variety of plants and animals in an area.",
+      "examples": [
+        "Rainforests have great biodiversity."
+      ],
+      "translations": {
+        "uk": "біорізноманіття",
+        "de": "Artenvielfalt",
+        "fr": "biodiversité",
+        "es": "biodiversidad",
+        "it": "biodiversità",
+        "pt": "biodiversidade",
+        "pl": "bioróżnorodność",
+        "ru": "биоразнообразие",
+        "zh": "生物多样性",
+        "ja": "生物多様性"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "sustainability",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Environment",
+      "ipa": "/səˌsteɪnəˈbɪləti/",
+      "definition": "Using resources in a way that can continue for a long time.",
+      "examples": [
+        "The company focuses on sustainability."
+      ],
+      "translations": {
+        "uk": "сталий розвиток",
+        "de": "Nachhaltigkeit",
+        "fr": "durabilité",
+        "es": "sostenibilidad",
+        "it": "sostenibilità",
+        "pt": "sustentabilidade",
+        "pl": "zrównoważony rozwój",
+        "ru": "устойчивое развитие",
+        "zh": "可持续性",
+        "ja": "持続可能性"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "contaminate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Environment",
+      "ipa": "/kənˈtæmɪneɪt/",
+      "definition": "To make something dirty or harmful.",
+      "examples": [
+        "Chemicals contaminated the river."
+      ],
+      "translations": {
+        "uk": "забруднювати",
+        "de": "verunreinigen",
+        "fr": "contaminer",
+        "es": "contaminar",
+        "it": "contaminare",
+        "pt": "contaminar",
+        "pl": "skażać",
+        "ru": "загрязнять",
+        "zh": "污染",
+        "ja": "汚染する"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    }
+  ]
+}

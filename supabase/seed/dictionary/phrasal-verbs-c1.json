@@ -1,0 +1,131 @@
+{
+  "package": "phrasal-verbs-c1",
+  "kind": "words",
+  "words": [
+    {
+      "word": "brush up on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "School",
+      "ipa": "/brʌʃ ˈʌp ɑːn/",
+      "definition": "To improve a skill you had before.",
+      "examples": [
+        "I need to brush up on my French."
+      ],
+      "translations": {
+        "uk": "освіжити (знання)",
+        "de": "auffrischen",
+        "fr": "se remettre à niveau en",
+        "es": "repasar",
+        "it": "rinfrescare",
+        "pt": "dar uma revisada em",
+        "pl": "odświeżyć",
+        "ru": "освежить (знания)",
+        "zh": "温习",
+        "ja": "磨き直す"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "come down with",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/kʌm ˈdaʊn wɪð/",
+      "definition": "To start to have an illness.",
+      "examples": [
+        "I think I'm coming down with a cold."
+      ],
+      "translations": {
+        "uk": "захворіти на",
+        "de": "krank werden an",
+        "fr": "attraper",
+        "es": "enfermarse de",
+        "it": "prendersi",
+        "pt": "pegar",
+        "pl": "zachorować na",
+        "ru": "заболеть",
+        "zh": "得了(病)",
+        "ja": "（病気に）かかる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "drop out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "School",
+      "ipa": "/drɑːp aʊt/",
+      "definition": "To leave school or a course before finishing.",
+      "examples": [
+        "He dropped out of college."
+      ],
+      "translations": {
+        "uk": "кинути (навчання)",
+        "de": "abbrechen",
+        "fr": "abandonner",
+        "es": "abandonar",
+        "it": "ritirarsi",
+        "pt": "largar",
+        "pl": "rzucić (szkołę)",
+        "ru": "бросить (учёбу)",
+        "zh": "退学",
+        "ja": "中退する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "phase out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "C1",
+      "topic": "Environment",
+      "ipa": "/feɪz aʊt/",
+      "definition": "To stop using something gradually.",
+      "examples": [
+        "The city will phase out plastic bags."
+      ],
+      "translations": {
+        "uk": "поступово вилучати",
+        "de": "auslaufen lassen",
+        "fr": "supprimer progressivement",
+        "es": "eliminar gradualmente",
+        "it": "eliminare gradualmente",
+        "pt": "eliminar gradualmente",
+        "pl": "stopniowo wycofywać",
+        "ru": "постепенно отказываться от",
+        "zh": "逐步淘汰",
+        "ja": "段階的に廃止する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "iron out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "C1",
+      "topic": "Work",
+      "ipa": "/ˈaɪɚn aʊt/",
+      "definition": "To solve small problems.",
+      "examples": [
+        "We need to iron out a few details."
+      ],
+      "translations": {
+        "uk": "залагодити",
+        "de": "ausbügeln",
+        "fr": "régler",
+        "es": "resolver",
+        "it": "appianare",
+        "pt": "resolver",
+        "pl": "dopracować",
+        "ru": "уладить",
+        "zh": "解决",
+        "ja": "解決する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    }
+  ]
+}
