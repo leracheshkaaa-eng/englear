@@ -1,0 +1,952 @@
+{
+  "package": "daily-life",
+  "kind": "words",
+  "words": [
+    {
+      "word": "get up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ɡet ʌp/",
+      "definition": "To get out of bed after sleeping.",
+      "examples": [
+        "I get up at seven every day."
+      ],
+      "translations": {
+        "uk": "вставати",
+        "de": "aufstehen",
+        "fr": "se lever",
+        "es": "levantarse",
+        "it": "alzarsi",
+        "pt": "levantar-se",
+        "pl": "wstawać",
+        "ru": "вставать",
+        "zh": "起床",
+        "ja": "起きる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "wake up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/weɪk ʌp/",
+      "definition": "To stop sleeping.",
+      "examples": [
+        "I wake up when my alarm rings."
+      ],
+      "translations": {
+        "uk": "прокидатися",
+        "de": "aufwachen",
+        "fr": "se réveiller",
+        "es": "despertarse",
+        "it": "svegliarsi",
+        "pt": "acordar",
+        "pl": "budzić się",
+        "ru": "просыпаться",
+        "zh": "醒来",
+        "ja": "目が覚める"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "go to bed",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ɡoʊ tə bed/",
+      "definition": "To lie down in your bed to sleep.",
+      "examples": [
+        "The kids go to bed at nine."
+      ],
+      "translations": {
+        "uk": "лягати спати",
+        "de": "ins Bett gehen",
+        "fr": "aller au lit",
+        "es": "irse a la cama",
+        "it": "andare a letto",
+        "pt": "ir para a cama",
+        "pl": "iść spać",
+        "ru": "ложиться спать",
+        "zh": "上床睡觉",
+        "ja": "寝る"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "brush",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/brʌʃ/",
+      "definition": "To clean something, like your teeth or hair, with a brush.",
+      "examples": [
+        "Brush your teeth before bed."
+      ],
+      "translations": {
+        "uk": "чистити (щіткою)",
+        "de": "putzen, bürsten",
+        "fr": "brosser",
+        "es": "cepillar",
+        "it": "spazzolare",
+        "pt": "escovar",
+        "pl": "szczotkować",
+        "ru": "чистить (щёткой)",
+        "zh": "刷",
+        "ja": "磨く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "take a shower",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/teɪk ə ˈʃaʊɚ/",
+      "definition": "To wash your body under a shower.",
+      "examples": [
+        "I take a shower after the gym."
+      ],
+      "translations": {
+        "uk": "приймати душ",
+        "de": "duschen",
+        "fr": "prendre une douche",
+        "es": "ducharse",
+        "it": "fare la doccia",
+        "pt": "tomar banho",
+        "pl": "brać prysznic",
+        "ru": "принимать душ",
+        "zh": "洗澡",
+        "ja": "シャワーを浴びる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "walk",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/wɔːk/",
+      "definition": "To move by putting one foot in front of the other.",
+      "examples": [
+        "I walk to work every day."
+      ],
+      "translations": {
+        "uk": "ходити пішки",
+        "de": "zu Fuß gehen",
+        "fr": "marcher",
+        "es": "caminar",
+        "it": "camminare",
+        "pt": "andar",
+        "pl": "chodzić",
+        "ru": "ходить пешком",
+        "zh": "走路",
+        "ja": "歩く"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "A trip on foot for pleasure or exercise.",
+          "examples": [
+            "Let's go for a walk."
+          ],
+          "translations": {
+            "uk": "прогулянка",
+            "de": "Spaziergang",
+            "fr": "promenade",
+            "es": "paseo",
+            "it": "passeggiata",
+            "pt": "passeio",
+            "pl": "spacer",
+            "ru": "прогулка",
+            "zh": "散步",
+            "ja": "散歩"
+          }
+        }
+      ]
+    },
+    {
+      "word": "run",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/rʌn/",
+      "definition": "To move quickly on your feet.",
+      "examples": [
+        "He runs in the park every morning."
+      ],
+      "translations": {
+        "uk": "бігати",
+        "de": "laufen",
+        "fr": "courir",
+        "es": "correr",
+        "it": "correre",
+        "pt": "correr",
+        "pl": "biegać",
+        "ru": "бегать",
+        "zh": "跑",
+        "ja": "走る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sit",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/sɪt/",
+      "definition": "To rest your body on a chair or seat.",
+      "examples": [
+        "Please sit down."
+      ],
+      "translations": {
+        "uk": "сидіти, сідати",
+        "de": "sitzen",
+        "fr": "s'asseoir",
+        "es": "sentarse",
+        "it": "sedersi",
+        "pt": "sentar",
+        "pl": "siadać",
+        "ru": "сидеть, садиться",
+        "zh": "坐",
+        "ja": "座る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stand",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/stænd/",
+      "definition": "To be on your feet.",
+      "examples": [
+        "We had to stand on the bus."
+      ],
+      "translations": {
+        "uk": "стояти",
+        "de": "stehen",
+        "fr": "être debout",
+        "es": "estar de pie",
+        "it": "stare in piedi",
+        "pt": "ficar em pé",
+        "pl": "stać",
+        "ru": "стоять",
+        "zh": "站",
+        "ja": "立つ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "open",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ˈoʊpən/",
+      "definition": "To move something so that it is not closed.",
+      "examples": [
+        "Can you open the window?"
+      ],
+      "translations": {
+        "uk": "відчиняти",
+        "de": "öffnen",
+        "fr": "ouvrir",
+        "es": "abrir",
+        "it": "aprire",
+        "pt": "abrir",
+        "pl": "otwierać",
+        "ru": "открывать",
+        "zh": "打开",
+        "ja": "開ける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "close",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/kloʊz/",
+      "definition": "To move something so that it is not open.",
+      "examples": [
+        "Please close the door."
+      ],
+      "translations": {
+        "uk": "зачиняти",
+        "de": "schließen",
+        "fr": "fermer",
+        "es": "cerrar",
+        "it": "chiudere",
+        "pt": "fechar",
+        "pl": "zamykać",
+        "ru": "закрывать",
+        "zh": "关",
+        "ja": "閉める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "help",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/help/",
+      "definition": "To make it easier for someone to do something.",
+      "examples": [
+        "Can you help me with my bag?"
+      ],
+      "translations": {
+        "uk": "допомагати",
+        "de": "helfen",
+        "fr": "aider",
+        "es": "ayudar",
+        "it": "aiutare",
+        "pt": "ajudar",
+        "pl": "pomagać",
+        "ru": "помогать",
+        "zh": "帮助",
+        "ja": "手伝う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wait",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/weɪt/",
+      "definition": "To stay somewhere until something happens.",
+      "examples": [
+        "Wait for me here."
+      ],
+      "translations": {
+        "uk": "чекати",
+        "de": "warten",
+        "fr": "attendre",
+        "es": "esperar",
+        "it": "aspettare",
+        "pt": "esperar",
+        "pl": "czekać",
+        "ru": "ждать",
+        "zh": "等",
+        "ja": "待つ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "need",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/niːd/",
+      "definition": "To require something because it is necessary.",
+      "examples": [
+        "I need a new pair of shoes."
+      ],
+      "translations": {
+        "uk": "потребувати",
+        "de": "brauchen",
+        "fr": "avoir besoin de",
+        "es": "necesitar",
+        "it": "avere bisogno di",
+        "pt": "precisar",
+        "pl": "potrzebować",
+        "ru": "нуждаться",
+        "zh": "需要",
+        "ja": "必要とする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "want",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/wɑːnt/",
+      "definition": "To wish to have or do something.",
+      "examples": [
+        "I want a cup of coffee."
+      ],
+      "translations": {
+        "uk": "хотіти",
+        "de": "wollen",
+        "fr": "vouloir",
+        "es": "querer",
+        "it": "volere",
+        "pt": "querer",
+        "pl": "chcieć",
+        "ru": "хотеть",
+        "zh": "想要",
+        "ja": "欲しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "like",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/laɪk/",
+      "definition": "To enjoy something or think it is nice.",
+      "examples": [
+        "I like chocolate."
+      ],
+      "translations": {
+        "uk": "подобатися",
+        "de": "mögen",
+        "fr": "aimer",
+        "es": "gustar",
+        "it": "piacere",
+        "pt": "gostar",
+        "pl": "lubić",
+        "ru": "нравиться",
+        "zh": "喜欢",
+        "ja": "好き"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "go",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ɡoʊ/",
+      "definition": "To move from one place to another.",
+      "examples": [
+        "We go to the beach every summer."
+      ],
+      "translations": {
+        "uk": "іти, їхати",
+        "de": "gehen, fahren",
+        "fr": "aller",
+        "es": "ir",
+        "it": "andare",
+        "pt": "ir",
+        "pl": "iść, jechać",
+        "ru": "идти, ехать",
+        "zh": "去",
+        "ja": "行く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "come",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/kʌm/",
+      "definition": "To move toward the speaker.",
+      "examples": [
+        "Come here, please."
+      ],
+      "translations": {
+        "uk": "приходити",
+        "de": "kommen",
+        "fr": "venir",
+        "es": "venir",
+        "it": "venire",
+        "pt": "vir",
+        "pl": "przychodzić",
+        "ru": "приходить",
+        "zh": "来",
+        "ja": "来る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "give",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ɡɪv/",
+      "definition": "To put something in someone's hand or let them have it.",
+      "examples": [
+        "Give me the ball, please."
+      ],
+      "translations": {
+        "uk": "давати",
+        "de": "geben",
+        "fr": "donner",
+        "es": "dar",
+        "it": "dare",
+        "pt": "dar",
+        "pl": "dawać",
+        "ru": "давать",
+        "zh": "给",
+        "ja": "あげる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "take",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/teɪk/",
+      "definition": "To get something into your hands or carry it.",
+      "examples": [
+        "Take an apple from the table."
+      ],
+      "translations": {
+        "uk": "брати",
+        "de": "nehmen",
+        "fr": "prendre",
+        "es": "tomar",
+        "it": "prendere",
+        "pt": "pegar",
+        "pl": "brać",
+        "ru": "брать",
+        "zh": "拿",
+        "ja": "取る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "make",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/meɪk/",
+      "definition": "To create or produce something.",
+      "examples": [
+        "Let's make a cake."
+      ],
+      "translations": {
+        "uk": "робити, створювати",
+        "de": "machen",
+        "fr": "faire",
+        "es": "hacer",
+        "it": "fare",
+        "pt": "fazer",
+        "pl": "robić",
+        "ru": "делать, создавать",
+        "zh": "做",
+        "ja": "作る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "find",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/faɪnd/",
+      "definition": "To discover where something is.",
+      "examples": [
+        "I can't find my keys."
+      ],
+      "translations": {
+        "uk": "знаходити",
+        "de": "finden",
+        "fr": "trouver",
+        "es": "encontrar",
+        "it": "trovare",
+        "pt": "encontrar",
+        "pl": "znajdować",
+        "ru": "находить",
+        "zh": "找到",
+        "ja": "見つける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lose",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/luːz/",
+      "definition": "To not be able to find something.",
+      "examples": [
+        "I often lose my glasses."
+      ],
+      "translations": {
+        "uk": "губити",
+        "de": "verlieren",
+        "fr": "perdre",
+        "es": "perder",
+        "it": "perdere",
+        "pt": "perder",
+        "pl": "gubić",
+        "ru": "терять",
+        "zh": "丢失",
+        "ja": "なくす"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "game",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To not win a game or competition.",
+          "examples": [
+            "Our team lost the match."
+          ],
+          "translations": {
+            "uk": "програвати",
+            "de": "verlieren",
+            "fr": "perdre",
+            "es": "perder",
+            "it": "perdere",
+            "pt": "perder",
+            "pl": "przegrywać",
+            "ru": "проигрывать",
+            "zh": "输",
+            "ja": "負ける"
+          }
+        }
+      ]
+    },
+    {
+      "word": "forget",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/fɚˈɡet/",
+      "definition": "To not remember something.",
+      "examples": [
+        "Don't forget your umbrella."
+      ],
+      "translations": {
+        "uk": "забувати",
+        "de": "vergessen",
+        "fr": "oublier",
+        "es": "olvidar",
+        "it": "dimenticare",
+        "pt": "esquecer",
+        "pl": "zapominać",
+        "ru": "забывать",
+        "zh": "忘记",
+        "ja": "忘れる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "remember",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/rɪˈmembɚ/",
+      "definition": "To keep something in your mind.",
+      "examples": [
+        "Do you remember her name?"
+      ],
+      "translations": {
+        "uk": "пам'ятати",
+        "de": "sich erinnern",
+        "fr": "se souvenir",
+        "es": "recordar",
+        "it": "ricordare",
+        "pt": "lembrar",
+        "pl": "pamiętać",
+        "ru": "помнить",
+        "zh": "记得",
+        "ja": "覚えている"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "carry",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ˈkæri/",
+      "definition": "To hold something and take it with you.",
+      "examples": [
+        "Can you carry this box?"
+      ],
+      "translations": {
+        "uk": "нести",
+        "de": "tragen",
+        "fr": "porter",
+        "es": "llevar",
+        "it": "portare",
+        "pt": "carregar",
+        "pl": "nieść",
+        "ru": "нести",
+        "zh": "搬",
+        "ja": "運ぶ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "put",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/pʊt/",
+      "definition": "To move something to a place.",
+      "examples": [
+        "Put your coat on the chair."
+      ],
+      "translations": {
+        "uk": "класти, ставити",
+        "de": "legen, stellen",
+        "fr": "mettre",
+        "es": "poner",
+        "it": "mettere",
+        "pt": "colocar",
+        "pl": "kłaść",
+        "ru": "класть, ставить",
+        "zh": "放",
+        "ja": "置く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "try",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/traɪ/",
+      "definition": "To attempt to do something.",
+      "examples": [
+        "I'll try to finish it today."
+      ],
+      "translations": {
+        "uk": "намагатися",
+        "de": "versuchen",
+        "fr": "essayer",
+        "es": "intentar",
+        "it": "provare",
+        "pt": "tentar",
+        "pl": "próbować",
+        "ru": "пытаться",
+        "zh": "尝试",
+        "ja": "やってみる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "use",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/juːz/",
+      "definition": "To do something with a tool or object for a purpose.",
+      "examples": [
+        "Can I use your phone?"
+      ],
+      "translations": {
+        "uk": "використовувати",
+        "de": "benutzen",
+        "fr": "utiliser",
+        "es": "usar",
+        "it": "usare",
+        "pt": "usar",
+        "pl": "używać",
+        "ru": "использовать",
+        "zh": "使用",
+        "ja": "使う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "free time",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Daily Life",
+      "ipa": "/ˌfriː ˈtaɪm/",
+      "definition": "Time when you are not working or studying.",
+      "examples": [
+        "What do you do in your free time?"
+      ],
+      "translations": {
+        "uk": "вільний час",
+        "de": "Freizeit",
+        "fr": "temps libre",
+        "es": "tiempo libre",
+        "it": "tempo libero",
+        "pt": "tempo livre",
+        "pl": "czas wolny",
+        "ru": "свободное время",
+        "zh": "空闲时间",
+        "ja": "自由時間"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hurry",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/ˈhɝːi/",
+      "definition": "To do something or go somewhere quickly.",
+      "examples": [
+        "Hurry up, we're late!"
+      ],
+      "translations": {
+        "uk": "поспішати",
+        "de": "sich beeilen",
+        "fr": "se dépêcher",
+        "es": "darse prisa",
+        "it": "sbrigarsi",
+        "pt": "apressar-se",
+        "pl": "spieszyć się",
+        "ru": "спешить",
+        "zh": "赶快",
+        "ja": "急ぐ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "borrow",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/ˈbɑːroʊ/",
+      "definition": "To take something from someone and give it back later.",
+      "examples": [
+        "Can I borrow your pen?"
+      ],
+      "translations": {
+        "uk": "позичати (у когось)",
+        "de": "ausleihen",
+        "fr": "emprunter",
+        "es": "pedir prestado",
+        "it": "prendere in prestito",
+        "pt": "pegar emprestado",
+        "pl": "pożyczać (od kogoś)",
+        "ru": "брать взаймы",
+        "zh": "借",
+        "ja": "借りる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lend",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/lend/",
+      "definition": "To give something to someone for a short time.",
+      "examples": [
+        "Can you lend me five dollars?"
+      ],
+      "translations": {
+        "uk": "позичати (комусь)",
+        "de": "leihen",
+        "fr": "prêter",
+        "es": "prestar",
+        "it": "prestare",
+        "pt": "emprestar",
+        "pl": "pożyczać (komuś)",
+        "ru": "одалживать",
+        "zh": "借给",
+        "ja": "貸す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chat",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/tʃæt/",
+      "definition": "To talk in a friendly, informal way.",
+      "examples": [
+        "We chatted for hours."
+      ],
+      "translations": {
+        "uk": "балакати",
+        "de": "plaudern",
+        "fr": "bavarder",
+        "es": "charlar",
+        "it": "chiacchierare",
+        "pt": "conversar",
+        "pl": "pogadać",
+        "ru": "болтать",
+        "zh": "聊天",
+        "ja": "おしゃべりする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "routine",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/ruːˈtiːn/",
+      "definition": "The things you usually do every day, in the same order.",
+      "examples": [
+        "Exercise is part of my morning routine."
+      ],
+      "translations": {
+        "uk": "розпорядок",
+        "de": "Routine",
+        "fr": "routine",
+        "es": "rutina",
+        "it": "routine",
+        "pt": "rotina",
+        "pl": "rutyna",
+        "ru": "распорядок",
+        "zh": "日常安排",
+        "ja": "日課"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "habit",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/ˈhæbɪt/",
+      "definition": "Something you do often, usually without thinking.",
+      "examples": [
+        "Biting your nails is a bad habit."
+      ],
+      "translations": {
+        "uk": "звичка",
+        "de": "Gewohnheit",
+        "fr": "habitude",
+        "es": "hábito",
+        "it": "abitudine",
+        "pt": "hábito",
+        "pl": "nawyk",
+        "ru": "привычка",
+        "zh": "习惯",
+        "ja": "癖"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "package": "money",
+  "kind": "words",
+  "words": [
+    {
+      "word": "dollar",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Money",
+      "ipa": "/ˈdɑːlɚ/",
+      "definition": "The money used in the US and some other countries.",
+      "examples": [
+        "This book costs ten dollars."
+      ],
+      "translations": {
+        "uk": "долар",
+        "de": "Dollar",
+        "fr": "dollar",
+        "es": "dólar",
+        "it": "dollaro",
+        "pt": "dólar",
+        "pl": "dolar",
+        "ru": "доллар",
+        "zh": "美元",
+        "ja": "ドル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rich",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Money",
+      "ipa": "/rɪtʃ/",
+      "definition": "Having a lot of money.",
+      "examples": [
+        "He became rich after selling his company."
+      ],
+      "translations": {
+        "uk": "багатий",
+        "de": "reich",
+        "fr": "riche",
+        "es": "rico",
+        "it": "ricco",
+        "pt": "rico",
+        "pl": "bogaty",
+        "ru": "богатый",
+        "zh": "富有的",
+        "ja": "金持ちの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "poor",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Money",
+      "ipa": "/pʊr/",
+      "definition": "Having very little money.",
+      "examples": [
+        "They were poor, but happy."
+      ],
+      "translations": {
+        "uk": "бідний",
+        "de": "arm",
+        "fr": "pauvre",
+        "es": "pobre",
+        "it": "povero",
+        "pt": "pobre",
+        "pl": "biedny",
+        "ru": "бедный",
+        "zh": "贫穷的",
+        "ja": "貧しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "free",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Money",
+      "ipa": "/friː/",
+      "definition": "Costing nothing.",
+      "examples": [
+        "The museum is free on Sundays."
+      ],
+      "translations": {
+        "uk": "безкоштовний",
+        "de": "kostenlos",
+        "fr": "gratuit",
+        "es": "gratis",
+        "it": "gratuito",
+        "pt": "grátis",
+        "pl": "darmowy",
+        "ru": "бесплатный",
+        "zh": "免费的",
+        "ja": "無料の"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "available",
+          "part_of_speech": "adjective",
+          "cefr": "A1",
+          "definition": "Not busy; not being used.",
+          "examples": [
+            "Are you free tonight?"
+          ],
+          "translations": {
+            "uk": "вільний",
+            "de": "frei",
+            "fr": "libre",
+            "es": "libre",
+            "it": "libero",
+            "pt": "livre",
+            "pl": "wolny",
+            "ru": "свободный",
+            "zh": "有空的",
+            "ja": "暇な"
+          }
+        }
+      ]
+    },
+    {
+      "word": "coin",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Money",
+      "ipa": "/kɔɪn/",
+      "definition": "A small round piece of metal money.",
+      "examples": [
+        "I found a coin on the street."
+      ],
+      "translations": {
+        "uk": "монета",
+        "de": "Münze",
+        "fr": "pièce",
+        "es": "moneda",
+        "it": "moneta",
+        "pt": "moeda",
+        "pl": "moneta",
+        "ru": "монета",
+        "zh": "硬币",
+        "ja": "硬貨"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bill",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Money",
+      "ipa": "/bɪl/",
+      "definition": "A piece of paper money.",
+      "examples": [
+        "I paid with a twenty-dollar bill."
+      ],
+      "translations": {
+        "uk": "банкнота",
+        "de": "Geldschein",
+        "fr": "billet",
+        "es": "billete",
+        "it": "banconota",
+        "pt": "nota",
+        "pl": "banknot",
+        "ru": "купюра",
+        "zh": "纸币",
+        "ja": "紙幣"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "invoice",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A paper that shows how much you must pay.",
+          "examples": [
+            "We need to pay the electricity bill."
+          ],
+          "translations": {
+            "uk": "рахунок",
+            "de": "Rechnung",
+            "fr": "facture",
+            "es": "factura",
+            "it": "bolletta",
+            "pt": "conta",
+            "pl": "rachunek",
+            "ru": "счёт",
+            "zh": "账单",
+            "ja": "請求書"
+          }
+        }
+      ]
+    },
+    {
+      "word": "bank account",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Money",
+      "ipa": "/ˈbæŋk əˌkaʊnt/",
+      "definition": "An arrangement with a bank to keep your money there.",
+      "examples": [
+        "I opened a bank account."
+      ],
+      "translations": {
+        "uk": "банківський рахунок",
+        "de": "Bankkonto",
+        "fr": "compte bancaire",
+        "es": "cuenta bancaria",
+        "it": "conto bancario",
+        "pt": "conta bancária",
+        "pl": "konto bankowe",
+        "ru": "банковский счёт",
+        "zh": "银行账户",
+        "ja": "銀行口座"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "save money",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Money",
+      "ipa": "/seɪv ˈmʌni/",
+      "definition": "To keep money instead of spending it.",
+      "examples": [
+        "We're trying to save money for a vacation."
+      ],
+      "translations": {
+        "uk": "заощаджувати гроші",
+        "de": "Geld sparen",
+        "fr": "économiser de l'argent",
+        "es": "ahorrar dinero",
+        "it": "risparmiare soldi",
+        "pt": "economizar dinheiro",
+        "pl": "oszczędzać pieniądze",
+        "ru": "копить деньги",
+        "zh": "存钱",
+        "ja": "お金を貯める"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "ATM",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Money",
+      "ipa": "/ˌeɪ tiː ˈem/",
+      "definition": "A machine where you can get money from your bank account.",
+      "examples": [
+        "Is there an ATM near here?"
+      ],
+      "translations": {
+        "uk": "банкомат",
+        "de": "Geldautomat",
+        "fr": "distributeur",
+        "es": "cajero automático",
+        "it": "bancomat",
+        "pt": "caixa eletrônico",
+        "pl": "bankomat",
+        "ru": "банкомат",
+        "zh": "自动取款机",
+        "ja": "ATM"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "budget",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/ˈbʌdʒɪt/",
+      "definition": "A plan of how much money you can spend.",
+      "examples": [
+        "We need to stay within our budget."
+      ],
+      "translations": {
+        "uk": "бюджет",
+        "de": "Budget",
+        "fr": "budget",
+        "es": "presupuesto",
+        "it": "budget",
+        "pt": "orçamento",
+        "pl": "budżet",
+        "ru": "бюджет",
+        "zh": "预算",
+        "ja": "予算"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "debt",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/det/",
+      "definition": "Money that you owe to someone.",
+      "examples": [
+        "He is trying to pay off his debt."
+      ],
+      "translations": {
+        "uk": "борг",
+        "de": "Schulden",
+        "fr": "dette",
+        "es": "deuda",
+        "it": "debito",
+        "pt": "dívida",
+        "pl": "dług",
+        "ru": "долг",
+        "zh": "债务",
+        "ja": "借金"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "loan",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/loʊn/",
+      "definition": "Money that you borrow and must pay back.",
+      "examples": [
+        "They got a loan from the bank."
+      ],
+      "translations": {
+        "uk": "позика, кредит",
+        "de": "Kredit",
+        "fr": "prêt",
+        "es": "préstamo",
+        "it": "prestito",
+        "pt": "empréstimo",
+        "pl": "pożyczka",
+        "ru": "заём, кредит",
+        "zh": "贷款",
+        "ja": "ローン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tax",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/tæks/",
+      "definition": "Money that you must pay to the government.",
+      "examples": [
+        "Everyone has to pay taxes."
+      ],
+      "translations": {
+        "uk": "податок",
+        "de": "Steuer",
+        "fr": "impôt",
+        "es": "impuesto",
+        "it": "tassa",
+        "pt": "imposto",
+        "pl": "podatek",
+        "ru": "налог",
+        "zh": "税",
+        "ja": "税金"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "owe",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/oʊ/",
+      "definition": "To have to pay money back to someone.",
+      "examples": [
+        "I owe you ten dollars."
+      ],
+      "translations": {
+        "uk": "бути винним",
+        "de": "schulden",
+        "fr": "devoir",
+        "es": "deber",
+        "it": "dovere",
+        "pt": "dever",
+        "pl": "być winnym",
+        "ru": "быть должным",
+        "zh": "欠",
+        "ja": "借りがある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "waste",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/weɪst/",
+      "definition": "To use more money, time or things than you need.",
+      "examples": [
+        "Don't waste money on things you don't need."
+      ],
+      "translations": {
+        "uk": "марнувати",
+        "de": "verschwenden",
+        "fr": "gaspiller",
+        "es": "desperdiciar",
+        "it": "sprecare",
+        "pt": "desperdiçar",
+        "pl": "marnować",
+        "ru": "тратить впустую",
+        "zh": "浪费",
+        "ja": "無駄にする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "worth",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/wɝːθ/",
+      "definition": "Having a particular value.",
+      "examples": [
+        "This painting is worth a lot of money."
+      ],
+      "translations": {
+        "uk": "вартий",
+        "de": "wert",
+        "fr": "qui vaut",
+        "es": "que vale",
+        "it": "che vale",
+        "pt": "que vale",
+        "pl": "wart",
+        "ru": "стоящий (какую-то сумму)",
+        "zh": "值",
+        "ja": "価値がある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exchange",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/ɪksˈtʃeɪndʒ/",
+      "definition": "To give one thing and get another in return, like money.",
+      "examples": [
+        "I need to exchange dollars for euros."
+      ],
+      "translations": {
+        "uk": "обмінювати",
+        "de": "umtauschen",
+        "fr": "échanger",
+        "es": "cambiar",
+        "it": "cambiare",
+        "pt": "trocar",
+        "pl": "wymieniać",
+        "ru": "обменивать",
+        "zh": "兑换",
+        "ja": "両替する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "income",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/ˈɪnkʌm/",
+      "definition": "The money you get from work or other sources.",
+      "examples": [
+        "Their income is not very high."
+      ],
+      "translations": {
+        "uk": "дохід",
+        "de": "Einkommen",
+        "fr": "revenu",
+        "es": "ingresos",
+        "it": "reddito",
+        "pt": "renda",
+        "pl": "dochód",
+        "ru": "доход",
+        "zh": "收入",
+        "ja": "収入"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "invest",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Money",
+      "ipa": "/ɪnˈvest/",
+      "definition": "To put money into something to make more money.",
+      "examples": [
+        "She invested in a small company."
+      ],
+      "translations": {
+        "uk": "інвестувати",
+        "de": "investieren",
+        "fr": "investir",
+        "es": "invertir",
+        "it": "investire",
+        "pt": "investir",
+        "pl": "inwestować",
+        "ru": "инвестировать",
+        "zh": "投资",
+        "ja": "投資する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

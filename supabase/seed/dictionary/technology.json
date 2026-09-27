@@ -1,0 +1,729 @@
+{
+  "package": "technology",
+  "kind": "words",
+  "words": [
+    {
+      "word": "internet",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Internet",
+      "ipa": "/ˈɪntɚnet/",
+      "definition": "The global network that connects computers.",
+      "examples": [
+        "I use the internet every day."
+      ],
+      "translations": {
+        "uk": "інтернет",
+        "de": "Internet",
+        "fr": "internet",
+        "es": "internet",
+        "it": "internet",
+        "pt": "internet",
+        "pl": "internet",
+        "ru": "интернет",
+        "zh": "互联网",
+        "ja": "インターネット"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "laptop",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Technology",
+      "ipa": "/ˈlæptɑːp/",
+      "definition": "A small computer you can carry.",
+      "examples": [
+        "She does her homework on a laptop."
+      ],
+      "translations": {
+        "uk": "ноутбук",
+        "de": "Laptop",
+        "fr": "ordinateur portable",
+        "es": "portátil",
+        "it": "portatile",
+        "pt": "notebook",
+        "pl": "laptop",
+        "ru": "ноутбук",
+        "zh": "笔记本电脑",
+        "ja": "ノートパソコン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "message",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Technology",
+      "ipa": "/ˈmesɪdʒ/",
+      "definition": "A piece of written or spoken information sent to someone.",
+      "examples": [
+        "I sent her a message."
+      ],
+      "translations": {
+        "uk": "повідомлення",
+        "de": "Nachricht",
+        "fr": "message",
+        "es": "mensaje",
+        "it": "messaggio",
+        "pt": "mensagem",
+        "pl": "wiadomość",
+        "ru": "сообщение",
+        "zh": "消息",
+        "ja": "メッセージ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "video",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Technology",
+      "ipa": "/ˈvɪdioʊ/",
+      "definition": "A recording of moving pictures.",
+      "examples": [
+        "We watched a funny video."
+      ],
+      "translations": {
+        "uk": "відео",
+        "de": "Video",
+        "fr": "vidéo",
+        "es": "video",
+        "it": "video",
+        "pt": "vídeo",
+        "pl": "wideo",
+        "ru": "видео",
+        "zh": "视频",
+        "ja": "動画"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "camera",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Technology",
+      "ipa": "/ˈkæmərə/",
+      "definition": "A device for taking photos or videos.",
+      "examples": [
+        "I bought a new camera."
+      ],
+      "translations": {
+        "uk": "фотоапарат",
+        "de": "Kamera",
+        "fr": "appareil photo",
+        "es": "cámara",
+        "it": "macchina fotografica",
+        "pt": "câmera",
+        "pl": "aparat fotograficzny",
+        "ru": "фотоаппарат",
+        "zh": "相机",
+        "ja": "カメラ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "photo",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Technology",
+      "ipa": "/ˈfoʊtoʊ/",
+      "definition": "A picture made with a camera.",
+      "examples": [
+        "Can you take a photo of us?"
+      ],
+      "translations": {
+        "uk": "фото",
+        "de": "Foto",
+        "fr": "photo",
+        "es": "foto",
+        "it": "foto",
+        "pt": "foto",
+        "pl": "zdjęcie",
+        "ru": "фото",
+        "zh": "照片",
+        "ja": "写真"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "turn on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Technology",
+      "ipa": "/tɝːn ɑːn/",
+      "definition": "To make a machine or light start working.",
+      "examples": [
+        "Turn on the TV, please."
+      ],
+      "translations": {
+        "uk": "увімкнути",
+        "de": "einschalten",
+        "fr": "allumer",
+        "es": "encender",
+        "it": "accendere",
+        "pt": "ligar",
+        "pl": "włączyć",
+        "ru": "включить",
+        "zh": "打开",
+        "ja": "つける"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "television",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Media",
+      "ipa": "/ˈteləvɪʒən/",
+      "definition": "A device that shows programs with pictures and sound.",
+      "examples": [
+        "We watch television in the evening."
+      ],
+      "translations": {
+        "uk": "телевізор",
+        "de": "Fernseher",
+        "fr": "télévision",
+        "es": "televisión",
+        "it": "televisione",
+        "pt": "televisão",
+        "pl": "telewizor",
+        "ru": "телевизор",
+        "zh": "电视",
+        "ja": "テレビ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "screen",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/skriːn/",
+      "definition": "The flat surface on a computer, TV or phone that shows pictures.",
+      "examples": [
+        "The screen of my phone is broken."
+      ],
+      "translations": {
+        "uk": "екран",
+        "de": "Bildschirm",
+        "fr": "écran",
+        "es": "pantalla",
+        "it": "schermo",
+        "pt": "tela",
+        "pl": "ekran",
+        "ru": "экран",
+        "zh": "屏幕",
+        "ja": "画面"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "keyboard",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/ˈkiːbɔːrd/",
+      "definition": "The set of keys you type on.",
+      "examples": [
+        "My keyboard has a missing key."
+      ],
+      "translations": {
+        "uk": "клавіатура",
+        "de": "Tastatur",
+        "fr": "clavier",
+        "es": "teclado",
+        "it": "tastiera",
+        "pt": "teclado",
+        "pl": "klawiatura",
+        "ru": "клавиатура",
+        "zh": "键盘",
+        "ja": "キーボード"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "password",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/ˈpæswɝːd/",
+      "definition": "A secret word that lets you use a computer or account.",
+      "examples": [
+        "Don't tell anyone your password."
+      ],
+      "translations": {
+        "uk": "пароль",
+        "de": "Passwort",
+        "fr": "mot de passe",
+        "es": "contraseña",
+        "it": "password",
+        "pt": "senha",
+        "pl": "hasło",
+        "ru": "пароль",
+        "zh": "密码",
+        "ja": "パスワード"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "app",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/æp/",
+      "definition": "A program on a phone or computer.",
+      "examples": [
+        "I use an app to learn English."
+      ],
+      "translations": {
+        "uk": "застосунок",
+        "de": "App",
+        "fr": "appli",
+        "es": "aplicación",
+        "it": "app",
+        "pt": "aplicativo",
+        "pl": "aplikacja",
+        "ru": "приложение",
+        "zh": "应用",
+        "ja": "アプリ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "text",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/tekst/",
+      "definition": "To send a written message by phone.",
+      "examples": [
+        "Text me when you get home."
+      ],
+      "translations": {
+        "uk": "писати повідомлення",
+        "de": "eine Nachricht schicken",
+        "fr": "envoyer un texto",
+        "es": "mandar un mensaje",
+        "it": "mandare un messaggio",
+        "pt": "mandar mensagem",
+        "pl": "napisać SMS",
+        "ru": "писать сообщение",
+        "zh": "发短信",
+        "ja": "メッセージを送る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "click",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/klɪk/",
+      "definition": "To press a button on a mouse or screen.",
+      "examples": [
+        "Click on the link to open the page."
+      ],
+      "translations": {
+        "uk": "клацати",
+        "de": "klicken",
+        "fr": "cliquer",
+        "es": "hacer clic",
+        "it": "cliccare",
+        "pt": "clicar",
+        "pl": "kliknąć",
+        "ru": "нажимать, кликать",
+        "zh": "点击",
+        "ja": "クリックする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "search",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Internet",
+      "ipa": "/sɝːtʃ/",
+      "definition": "To look for information, especially on the internet.",
+      "examples": [
+        "I searched for the recipe online."
+      ],
+      "translations": {
+        "uk": "шукати",
+        "de": "suchen",
+        "fr": "chercher",
+        "es": "buscar",
+        "it": "cercare",
+        "pt": "pesquisar",
+        "pl": "szukać",
+        "ru": "искать",
+        "zh": "搜索",
+        "ja": "検索する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "save",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/seɪv/",
+      "definition": "To store a document or file on a computer.",
+      "examples": [
+        "Don't forget to save your work."
+      ],
+      "translations": {
+        "uk": "зберігати",
+        "de": "speichern",
+        "fr": "enregistrer",
+        "es": "guardar",
+        "it": "salvare",
+        "pt": "salvar",
+        "pl": "zapisywać",
+        "ru": "сохранять",
+        "zh": "保存",
+        "ja": "保存する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "rescue",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To help someone or something get out of danger.",
+          "examples": [
+            "The firefighter saved the child."
+          ],
+          "translations": {
+            "uk": "рятувати",
+            "de": "retten",
+            "fr": "sauver",
+            "es": "salvar",
+            "it": "salvare",
+            "pt": "salvar",
+            "pl": "ratować",
+            "ru": "спасать",
+            "zh": "救",
+            "ja": "救う"
+          }
+        }
+      ]
+    },
+    {
+      "word": "battery",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/ˈbætəri/",
+      "definition": "An object that gives electricity to a device.",
+      "examples": [
+        "My phone battery is almost dead."
+      ],
+      "translations": {
+        "uk": "акумулятор, батарейка",
+        "de": "Akku",
+        "fr": "batterie",
+        "es": "batería",
+        "it": "batteria",
+        "pt": "bateria",
+        "pl": "bateria",
+        "ru": "аккумулятор, батарейка",
+        "zh": "电池",
+        "ja": "電池"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "machine",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/məˈʃiːn/",
+      "definition": "A piece of equipment that does work.",
+      "examples": [
+        "The washing machine is broken."
+      ],
+      "translations": {
+        "uk": "машина, пристрій",
+        "de": "Maschine",
+        "fr": "machine",
+        "es": "máquina",
+        "it": "macchina",
+        "pt": "máquina",
+        "pl": "maszyna",
+        "ru": "машина, механизм",
+        "zh": "机器",
+        "ja": "機械"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "robot",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Technology",
+      "ipa": "/ˈroʊbɑːt/",
+      "definition": "A machine that can do work automatically.",
+      "examples": [
+        "Robots build cars in this factory."
+      ],
+      "translations": {
+        "uk": "робот",
+        "de": "Roboter",
+        "fr": "robot",
+        "es": "robot",
+        "it": "robot",
+        "pt": "robô",
+        "pl": "robot",
+        "ru": "робот",
+        "zh": "机器人",
+        "ja": "ロボット"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wifi",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Internet",
+      "ipa": "/ˈwaɪfaɪ/",
+      "definition": "A way to connect to the internet without wires.",
+      "examples": [
+        "Is there free wifi here?"
+      ],
+      "translations": {
+        "uk": "вайфай",
+        "de": "WLAN",
+        "fr": "wifi",
+        "es": "wifi",
+        "it": "wifi",
+        "pt": "wi-fi",
+        "pl": "wifi",
+        "ru": "вайфай",
+        "zh": "无线网络",
+        "ja": "Wi-Fi"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "charge",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Technology",
+      "ipa": "/tʃɑːrdʒ/",
+      "definition": "To put electricity into a battery.",
+      "examples": [
+        "I need to charge my phone."
+      ],
+      "translations": {
+        "uk": "заряджати",
+        "de": "aufladen",
+        "fr": "recharger",
+        "es": "cargar",
+        "it": "caricare",
+        "pt": "carregar",
+        "pl": "ładować",
+        "ru": "заряжать",
+        "zh": "充电",
+        "ja": "充電する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "social media",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˌsoʊʃəl ˈmiːdiə/",
+      "definition": "Websites and apps where people share messages and photos.",
+      "examples": [
+        "Teenagers spend a lot of time on social media."
+      ],
+      "translations": {
+        "uk": "соціальні мережі",
+        "de": "soziale Medien",
+        "fr": "réseaux sociaux",
+        "es": "redes sociales",
+        "it": "social media",
+        "pt": "redes sociais",
+        "pl": "media społecznościowe",
+        "ru": "социальные сети",
+        "zh": "社交媒体",
+        "ja": "SNS"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "technology",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Technology",
+      "ipa": "/tekˈnɑːlədʒi/",
+      "definition": "The use of science to make useful machines and tools.",
+      "examples": [
+        "Technology changes our lives."
+      ],
+      "translations": {
+        "uk": "технології",
+        "de": "Technologie",
+        "fr": "technologie",
+        "es": "tecnología",
+        "it": "tecnologia",
+        "pt": "tecnologia",
+        "pl": "technologia",
+        "ru": "технологии",
+        "zh": "技术",
+        "ja": "技術"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "artificial intelligence",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Technology",
+      "ipa": "/ˌɑːrtɪfɪʃəl ɪnˈtelɪdʒəns/",
+      "definition": "Computer systems that can do tasks that need human thinking.",
+      "examples": [
+        "Artificial intelligence can translate texts."
+      ],
+      "translations": {
+        "uk": "штучний інтелект",
+        "de": "künstliche Intelligenz",
+        "fr": "intelligence artificielle",
+        "es": "inteligencia artificial",
+        "it": "intelligenza artificiale",
+        "pt": "inteligência artificial",
+        "pl": "sztuczna inteligencja",
+        "ru": "искусственный интеллект",
+        "zh": "人工智能",
+        "ja": "人工知能"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "upload",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Internet",
+      "ipa": "/ˈʌploʊd/",
+      "definition": "To send a file from your computer to the internet.",
+      "examples": [
+        "She uploaded the photos to her blog."
+      ],
+      "translations": {
+        "uk": "завантажувати (в мережу)",
+        "de": "hochladen",
+        "fr": "mettre en ligne",
+        "es": "subir",
+        "it": "caricare",
+        "pt": "enviar",
+        "pl": "przesyłać",
+        "ru": "загружать (в сеть)",
+        "zh": "上传",
+        "ja": "アップロードする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "account",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Internet",
+      "ipa": "/əˈkaʊnt/",
+      "definition": "A personal space on a website or app that you log in to.",
+      "examples": [
+        "I created a new account."
+      ],
+      "translations": {
+        "uk": "обліковий запис",
+        "de": "Konto",
+        "fr": "compte",
+        "es": "cuenta",
+        "it": "account",
+        "pt": "conta",
+        "pl": "konto",
+        "ru": "аккаунт",
+        "zh": "账户",
+        "ja": "アカウント"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "log in",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Internet",
+      "ipa": "/lɔːɡ ˈɪn/",
+      "definition": "To enter your name and password to use a computer or website.",
+      "examples": [
+        "Log in with your email address."
+      ],
+      "translations": {
+        "uk": "увійти (в систему)",
+        "de": "sich anmelden",
+        "fr": "se connecter",
+        "es": "iniciar sesión",
+        "it": "accedere",
+        "pt": "entrar",
+        "pl": "zalogować się",
+        "ru": "войти (в систему)",
+        "zh": "登录",
+        "ja": "ログインする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "update",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Technology",
+      "ipa": "/ˌʌpˈdeɪt/",
+      "definition": "To add the newest information or version.",
+      "examples": [
+        "You should update the app."
+      ],
+      "translations": {
+        "uk": "оновлювати",
+        "de": "aktualisieren",
+        "fr": "mettre à jour",
+        "es": "actualizar",
+        "it": "aggiornare",
+        "pt": "atualizar",
+        "pl": "aktualizować",
+        "ru": "обновлять",
+        "zh": "更新",
+        "ja": "更新する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

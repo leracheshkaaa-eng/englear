@@ -1,0 +1,579 @@
+{
+  "package": "relationships",
+  "kind": "words",
+  "words": [
+    {
+      "word": "boyfriend",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Relationships",
+      "ipa": "/ˈbɔɪfrend/",
+      "definition": "A man or boy that someone is in a romantic relationship with.",
+      "examples": [
+        "Her boyfriend is from Spain."
+      ],
+      "translations": {
+        "uk": "хлопець",
+        "de": "Freund",
+        "fr": "petit ami",
+        "es": "novio",
+        "it": "fidanzato",
+        "pt": "namorado",
+        "pl": "chłopak",
+        "ru": "парень",
+        "zh": "男朋友",
+        "ja": "彼氏"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "girlfriend",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Relationships",
+      "ipa": "/ˈɡɝːlfrend/",
+      "definition": "A woman or girl that someone is in a romantic relationship with.",
+      "examples": [
+        "He met his girlfriend at college."
+      ],
+      "translations": {
+        "uk": "дівчина",
+        "de": "Freundin",
+        "fr": "petite amie",
+        "es": "novia",
+        "it": "fidanzata",
+        "pt": "namorada",
+        "pl": "dziewczyna",
+        "ru": "девушка",
+        "zh": "女朋友",
+        "ja": "彼女"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "party",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Relationships",
+      "ipa": "/ˈpɑːrti/",
+      "definition": "An event where people meet to have fun.",
+      "examples": [
+        "We're having a party on Saturday."
+      ],
+      "translations": {
+        "uk": "вечірка",
+        "de": "Party",
+        "fr": "fête",
+        "es": "fiesta",
+        "it": "festa",
+        "pt": "festa",
+        "pl": "impreza",
+        "ru": "вечеринка",
+        "zh": "聚会",
+        "ja": "パーティー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "together",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Relationships",
+      "ipa": "/təˈɡeðɚ/",
+      "definition": "With each other.",
+      "examples": [
+        "We walk to school together."
+      ],
+      "translations": {
+        "uk": "разом",
+        "de": "zusammen",
+        "fr": "ensemble",
+        "es": "juntos",
+        "it": "insieme",
+        "pt": "juntos",
+        "pl": "razem",
+        "ru": "вместе",
+        "zh": "一起",
+        "ja": "一緒に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "friendship",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/ˈfrendʃɪp/",
+      "definition": "A relationship between friends.",
+      "examples": [
+        "Their friendship started at school."
+      ],
+      "translations": {
+        "uk": "дружба",
+        "de": "Freundschaft",
+        "fr": "amitié",
+        "es": "amistad",
+        "it": "amicizia",
+        "pt": "amizade",
+        "pl": "przyjaźń",
+        "ru": "дружба",
+        "zh": "友谊",
+        "ja": "友情"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "date",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/deɪt/",
+      "definition": "A romantic meeting between two people.",
+      "examples": [
+        "They went on a date to the movies."
+      ],
+      "translations": {
+        "uk": "побачення",
+        "de": "Date",
+        "fr": "rendez-vous",
+        "es": "cita",
+        "it": "appuntamento",
+        "pt": "encontro",
+        "pl": "randka",
+        "ru": "свидание",
+        "zh": "约会",
+        "ja": "デート"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "calendar",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "A particular day of the month or year.",
+          "examples": [
+            "What's the date today?"
+          ],
+          "translations": {
+            "uk": "дата",
+            "de": "Datum",
+            "fr": "date",
+            "es": "fecha",
+            "it": "data",
+            "pt": "data",
+            "pl": "data",
+            "ru": "дата",
+            "zh": "日期",
+            "ja": "日付"
+          }
+        }
+      ]
+    },
+    {
+      "word": "hug",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/hʌɡ/",
+      "definition": "To put your arms around someone.",
+      "examples": [
+        "She hugged her mother."
+      ],
+      "translations": {
+        "uk": "обіймати",
+        "de": "umarmen",
+        "fr": "serrer dans ses bras",
+        "es": "abrazar",
+        "it": "abbracciare",
+        "pt": "abraçar",
+        "pl": "przytulać",
+        "ru": "обнимать",
+        "zh": "拥抱",
+        "ja": "抱きしめる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "kiss",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/kɪs/",
+      "definition": "To touch someone with your lips.",
+      "examples": [
+        "He kissed his wife goodbye."
+      ],
+      "translations": {
+        "uk": "цілувати",
+        "de": "küssen",
+        "fr": "embrasser",
+        "es": "besar",
+        "it": "baciare",
+        "pt": "beijar",
+        "pl": "całować",
+        "ru": "целовать",
+        "zh": "亲吻",
+        "ja": "キスする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "make friends",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/meɪk frendz/",
+      "definition": "To become friends with someone.",
+      "examples": [
+        "It's easy to make friends at school."
+      ],
+      "translations": {
+        "uk": "заводити друзів",
+        "de": "Freunde finden",
+        "fr": "se faire des amis",
+        "es": "hacer amigos",
+        "it": "fare amicizia",
+        "pt": "fazer amigos",
+        "pl": "zaprzyjaźniać się",
+        "ru": "заводить друзей",
+        "zh": "交朋友",
+        "ja": "友達を作る"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "share",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/ʃer/",
+      "definition": "To have or use something together with other people.",
+      "examples": [
+        "We share a room."
+      ],
+      "translations": {
+        "uk": "ділитися",
+        "de": "teilen",
+        "fr": "partager",
+        "es": "compartir",
+        "it": "condividere",
+        "pt": "compartilhar",
+        "pl": "dzielić się",
+        "ru": "делиться",
+        "zh": "分享",
+        "ja": "共有する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "promise",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/ˈprɑːmɪs/",
+      "definition": "To say that you will certainly do something.",
+      "examples": [
+        "I promise I'll call you."
+      ],
+      "translations": {
+        "uk": "обіцяти",
+        "de": "versprechen",
+        "fr": "promettre",
+        "es": "prometer",
+        "it": "promettere",
+        "pt": "prometer",
+        "pl": "obiecywać",
+        "ru": "обещать",
+        "zh": "答应",
+        "ja": "約束する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "invite",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/ɪnˈvaɪt/",
+      "definition": "To ask someone to come to an event.",
+      "examples": [
+        "She invited me to her party."
+      ],
+      "translations": {
+        "uk": "запрошувати",
+        "de": "einladen",
+        "fr": "inviter",
+        "es": "invitar",
+        "it": "invitare",
+        "pt": "convidar",
+        "pl": "zapraszać",
+        "ru": "приглашать",
+        "zh": "邀请",
+        "ja": "招待する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "alone",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Relationships",
+      "ipa": "/əˈloʊn/",
+      "definition": "Without other people.",
+      "examples": [
+        "She lives alone."
+      ],
+      "translations": {
+        "uk": "сам, наодинці",
+        "de": "allein",
+        "fr": "seul",
+        "es": "solo",
+        "it": "da solo",
+        "pt": "sozinho",
+        "pl": "sam",
+        "ru": "один, в одиночестве",
+        "zh": "独自",
+        "ja": "一人で"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "partner",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/ˈpɑːrtnɚ/",
+      "definition": "The person you live with or are married to.",
+      "examples": [
+        "She lives with her partner."
+      ],
+      "translations": {
+        "uk": "партнер",
+        "de": "Partner",
+        "fr": "partenaire",
+        "es": "pareja",
+        "it": "compagno",
+        "pt": "parceiro",
+        "pl": "partner",
+        "ru": "партнёр",
+        "zh": "伴侣",
+        "ja": "パートナー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "relationship",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/rɪˈleɪʃənʃɪp/",
+      "definition": "The way two people feel and behave toward each other.",
+      "examples": [
+        "They have a good relationship."
+      ],
+      "translations": {
+        "uk": "стосунки",
+        "de": "Beziehung",
+        "fr": "relation",
+        "es": "relación",
+        "it": "rapporto",
+        "pt": "relacionamento",
+        "pl": "związek",
+        "ru": "отношения",
+        "zh": "关系",
+        "ja": "関係"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "argue",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/ˈɑːrɡjuː/",
+      "definition": "To speak angrily to someone because you disagree.",
+      "examples": [
+        "My brothers argue all the time."
+      ],
+      "translations": {
+        "uk": "сперечатися",
+        "de": "streiten",
+        "fr": "se disputer",
+        "es": "discutir",
+        "it": "litigare",
+        "pt": "discutir",
+        "pl": "kłócić się",
+        "ru": "спорить, ссориться",
+        "zh": "争吵",
+        "ja": "口論する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fall in love",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/fɔːl ɪn lʌv/",
+      "definition": "To start to love someone.",
+      "examples": [
+        "It's easy to fall in love in Paris."
+      ],
+      "translations": {
+        "uk": "закохатися",
+        "de": "sich verlieben",
+        "fr": "tomber amoureux",
+        "es": "enamorarse",
+        "it": "innamorarsi",
+        "pt": "apaixonar-se",
+        "pl": "zakochać się",
+        "ru": "влюбиться",
+        "zh": "爱上",
+        "ja": "恋に落ちる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "break up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/breɪk ʌp/",
+      "definition": "To end a romantic relationship.",
+      "examples": [
+        "They decided to break up after two years."
+      ],
+      "translations": {
+        "uk": "розійтися",
+        "de": "sich trennen",
+        "fr": "rompre",
+        "es": "romper",
+        "it": "lasciarsi",
+        "pt": "terminar",
+        "pl": "rozstać się",
+        "ru": "расстаться",
+        "zh": "分手",
+        "ja": "別れる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "support",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/səˈpɔːrt/",
+      "definition": "To help someone, especially when they have problems.",
+      "examples": [
+        "My family always supports me."
+      ],
+      "translations": {
+        "uk": "підтримувати",
+        "de": "unterstützen",
+        "fr": "soutenir",
+        "es": "apoyar",
+        "it": "sostenere",
+        "pt": "apoiar",
+        "pl": "wspierać",
+        "ru": "поддерживать",
+        "zh": "支持",
+        "ja": "支える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "apologize",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/əˈpɑːlədʒaɪz/",
+      "definition": "To say that you are sorry.",
+      "examples": [
+        "He apologized for being late."
+      ],
+      "translations": {
+        "uk": "вибачатися",
+        "de": "sich entschuldigen",
+        "fr": "s'excuser",
+        "es": "disculparse",
+        "it": "scusarsi",
+        "pt": "desculpar-se",
+        "pl": "przepraszać",
+        "ru": "извиняться",
+        "zh": "道歉",
+        "ja": "謝る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "forgive",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/fɚˈɡɪv/",
+      "definition": "To stop being angry with someone.",
+      "examples": [
+        "Please forgive me."
+      ],
+      "translations": {
+        "uk": "пробачати",
+        "de": "verzeihen",
+        "fr": "pardonner",
+        "es": "perdonar",
+        "it": "perdonare",
+        "pt": "perdoar",
+        "pl": "wybaczać",
+        "ru": "прощать",
+        "zh": "原谅",
+        "ja": "許す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "respect",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Relationships",
+      "ipa": "/rɪˈspekt/",
+      "definition": "A feeling that someone is good or important.",
+      "examples": [
+        "Students should show respect to their teachers."
+      ],
+      "translations": {
+        "uk": "повага",
+        "de": "Respekt",
+        "fr": "respect",
+        "es": "respeto",
+        "it": "rispetto",
+        "pt": "respeito",
+        "pl": "szacunek",
+        "ru": "уважение",
+        "zh": "尊重",
+        "ja": "尊敬"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

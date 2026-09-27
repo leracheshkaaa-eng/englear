@@ -8,8 +8,8 @@ const dir = join(root, 'supabase', 'seed', 'dictionary')
 const LANGS = ['uk', 'de', 'fr', 'es', 'it', 'pt', 'pl', 'ru', 'zh', 'ja']
 const CEFR = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 const WORD_TYPES = ['word', 'collocation', 'phrasal_verb', 'verb']
-// British vowels; ɪə/ʊə only on their own (in aɪə "lion", aʊə they are two American sounds)
-const BRITISH_IPA = /ɒ|əʊ|ɜː|eə|(?<![aeɔ])ɪə|(?<!a)ʊə/
+// British vowels; ɪə/ʊə only on their own (in aɪə "lion", aʊə, oʊə "poem" they are two American sounds)
+const BRITISH_IPA = /ɒ|əʊ|ɜː|eə|(?<![aeɔ])ɪə|(?<![ao])ʊə/
 
 // topics and IELTS categories come from the app config, so there is one list
 const config = readFileSync(join(root, 'src', 'lib', 'config.ts'), 'utf8')

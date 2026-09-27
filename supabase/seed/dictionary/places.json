@@ -1,0 +1,431 @@
+{
+  "package": "places",
+  "kind": "words",
+  "words": [
+    {
+      "word": "country",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/ˈkʌntri/",
+      "definition": "An area of land with its own government.",
+      "examples": [
+        "France is a beautiful country."
+      ],
+      "translations": {
+        "uk": "країна",
+        "de": "Land",
+        "fr": "pays",
+        "es": "país",
+        "it": "paese",
+        "pt": "país",
+        "pl": "kraj",
+        "ru": "страна",
+        "zh": "国家",
+        "ja": "国"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "world",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/wɝːld/",
+      "definition": "The earth and all the people and things on it.",
+      "examples": [
+        "He wants to travel around the world."
+      ],
+      "translations": {
+        "uk": "світ",
+        "de": "Welt",
+        "fr": "monde",
+        "es": "mundo",
+        "it": "mondo",
+        "pt": "mundo",
+        "pl": "świat",
+        "ru": "мир",
+        "zh": "世界",
+        "ja": "世界"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "place",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/pleɪs/",
+      "definition": "A particular area or position.",
+      "examples": [
+        "This is a nice place for a picnic."
+      ],
+      "translations": {
+        "uk": "місце",
+        "de": "Ort",
+        "fr": "endroit",
+        "es": "lugar",
+        "it": "posto",
+        "pt": "lugar",
+        "pl": "miejsce",
+        "ru": "место",
+        "zh": "地方",
+        "ja": "場所"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "near",
+      "part_of_speech": "preposition",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/nɪr/",
+      "definition": "Not far from.",
+      "examples": [
+        "The school is near my house."
+      ],
+      "translations": {
+        "uk": "біля, поблизу",
+        "de": "in der Nähe von",
+        "fr": "près de",
+        "es": "cerca de",
+        "it": "vicino a",
+        "pt": "perto de",
+        "pl": "blisko",
+        "ru": "рядом, близко",
+        "zh": "附近",
+        "ja": "近くに"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "far",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/fɑːr/",
+      "definition": "A long way from here.",
+      "examples": [
+        "Is the station far from here?"
+      ],
+      "translations": {
+        "uk": "далеко",
+        "de": "weit",
+        "fr": "loin",
+        "es": "lejos",
+        "it": "lontano",
+        "pt": "longe",
+        "pl": "daleko",
+        "ru": "далеко",
+        "zh": "远",
+        "ja": "遠い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "here",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/hɪr/",
+      "definition": "In or at this place.",
+      "examples": [
+        "Come here!"
+      ],
+      "translations": {
+        "uk": "тут, сюди",
+        "de": "hier",
+        "fr": "ici",
+        "es": "aquí",
+        "it": "qui",
+        "pt": "aqui",
+        "pl": "tutaj",
+        "ru": "здесь, сюда",
+        "zh": "这里",
+        "ja": "ここ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "there",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/ðer/",
+      "definition": "In or at that place.",
+      "examples": [
+        "Put the box over there."
+      ],
+      "translations": {
+        "uk": "там, туди",
+        "de": "dort",
+        "fr": "là",
+        "es": "allí",
+        "it": "lì",
+        "pt": "lá",
+        "pl": "tam",
+        "ru": "там, туда",
+        "zh": "那里",
+        "ja": "そこ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "inside",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/ˌɪnˈsaɪd/",
+      "definition": "In a room or building.",
+      "examples": [
+        "It's raining, let's go inside."
+      ],
+      "translations": {
+        "uk": "всередині",
+        "de": "drinnen",
+        "fr": "à l'intérieur",
+        "es": "dentro",
+        "it": "dentro",
+        "pt": "dentro",
+        "pl": "w środku",
+        "ru": "внутри",
+        "zh": "里面",
+        "ja": "中に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "outside",
+      "part_of_speech": "adverb",
+      "cefr": "A1",
+      "topic": "Places",
+      "ipa": "/ˌaʊtˈsaɪd/",
+      "definition": "Not in a building.",
+      "examples": [
+        "The children are playing outside."
+      ],
+      "translations": {
+        "uk": "надворі, зовні",
+        "de": "draußen",
+        "fr": "dehors",
+        "es": "afuera",
+        "it": "fuori",
+        "pt": "lá fora",
+        "pl": "na zewnątrz",
+        "ru": "снаружи, на улице",
+        "zh": "外面",
+        "ja": "外で"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "north",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Places",
+      "ipa": "/nɔːrθ/",
+      "definition": "The direction toward the top of a map.",
+      "examples": [
+        "They live in the north of the country."
+      ],
+      "translations": {
+        "uk": "північ",
+        "de": "Norden",
+        "fr": "nord",
+        "es": "norte",
+        "it": "nord",
+        "pt": "norte",
+        "pl": "północ",
+        "ru": "север",
+        "zh": "北方",
+        "ja": "北"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "south",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Places",
+      "ipa": "/saʊθ/",
+      "definition": "The direction toward the bottom of a map.",
+      "examples": [
+        "Birds fly south in winter."
+      ],
+      "translations": {
+        "uk": "південь",
+        "de": "Süden",
+        "fr": "sud",
+        "es": "sur",
+        "it": "sud",
+        "pt": "sul",
+        "pl": "południe",
+        "ru": "юг",
+        "zh": "南方",
+        "ja": "南"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "east",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Places",
+      "ipa": "/iːst/",
+      "definition": "The direction where the sun rises.",
+      "examples": [
+        "The sun rises in the east."
+      ],
+      "translations": {
+        "uk": "схід",
+        "de": "Osten",
+        "fr": "est",
+        "es": "este",
+        "it": "est",
+        "pt": "leste",
+        "pl": "wschód",
+        "ru": "восток",
+        "zh": "东方",
+        "ja": "東"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "west",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Places",
+      "ipa": "/west/",
+      "definition": "The direction where the sun sets.",
+      "examples": [
+        "The sun sets in the west."
+      ],
+      "translations": {
+        "uk": "захід",
+        "de": "Westen",
+        "fr": "ouest",
+        "es": "oeste",
+        "it": "ovest",
+        "pt": "oeste",
+        "pl": "zachód",
+        "ru": "запад",
+        "zh": "西方",
+        "ja": "西"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "continent",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Places",
+      "ipa": "/ˈkɑːntɪnənt/",
+      "definition": "One of the seven large areas of land on earth.",
+      "examples": [
+        "Africa is a large continent."
+      ],
+      "translations": {
+        "uk": "континент",
+        "de": "Kontinent",
+        "fr": "continent",
+        "es": "continente",
+        "it": "continente",
+        "pt": "continente",
+        "pl": "kontynent",
+        "ru": "континент",
+        "zh": "大洲",
+        "ja": "大陸"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "area",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Places",
+      "ipa": "/ˈeriə/",
+      "definition": "A part of a place, town or country.",
+      "examples": [
+        "This area has a lot of parks."
+      ],
+      "translations": {
+        "uk": "район, територія",
+        "de": "Gegend",
+        "fr": "zone",
+        "es": "zona",
+        "it": "zona",
+        "pt": "área",
+        "pl": "obszar",
+        "ru": "район, территория",
+        "zh": "地区",
+        "ja": "地域"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "countryside",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Places",
+      "ipa": "/ˈkʌntrisaɪd/",
+      "definition": "Land with fields and forests, away from towns.",
+      "examples": [
+        "We spent the weekend in the countryside."
+      ],
+      "translations": {
+        "uk": "сільська місцевість",
+        "de": "Land",
+        "fr": "campagne",
+        "es": "campo",
+        "it": "campagna",
+        "pt": "campo",
+        "pl": "wieś",
+        "ru": "сельская местность",
+        "zh": "乡村",
+        "ja": "田舎"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "region",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Places",
+      "ipa": "/ˈriːdʒən/",
+      "definition": "A large area of a country or the world.",
+      "examples": [
+        "This region is famous for its wine."
+      ],
+      "translations": {
+        "uk": "регіон",
+        "de": "Region",
+        "fr": "région",
+        "es": "región",
+        "it": "regione",
+        "pt": "região",
+        "pl": "region",
+        "ru": "регион",
+        "zh": "区域",
+        "ja": "地方"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

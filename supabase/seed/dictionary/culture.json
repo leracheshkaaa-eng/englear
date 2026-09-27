@@ -1,0 +1,777 @@
+{
+  "package": "culture",
+  "kind": "words",
+  "words": [
+    {
+      "word": "music",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈmjuːzɪk/",
+      "definition": "Sounds arranged in a pleasant way, like songs.",
+      "examples": [
+        "I listen to music every day."
+      ],
+      "translations": {
+        "uk": "музика",
+        "de": "Musik",
+        "fr": "musique",
+        "es": "música",
+        "it": "musica",
+        "pt": "música",
+        "pl": "muzyka",
+        "ru": "музыка",
+        "zh": "音乐",
+        "ja": "音楽"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "song",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/sɔːŋ/",
+      "definition": "A short piece of music with words.",
+      "examples": [
+        "This is my favorite song."
+      ],
+      "translations": {
+        "uk": "пісня",
+        "de": "Lied",
+        "fr": "chanson",
+        "es": "canción",
+        "it": "canzone",
+        "pt": "canção",
+        "pl": "piosenka",
+        "ru": "песня",
+        "zh": "歌曲",
+        "ja": "歌"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sing",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/sɪŋ/",
+      "definition": "To make music with your voice.",
+      "examples": [
+        "She sings in a choir."
+      ],
+      "translations": {
+        "uk": "співати",
+        "de": "singen",
+        "fr": "chanter",
+        "es": "cantar",
+        "it": "cantare",
+        "pt": "cantar",
+        "pl": "śpiewać",
+        "ru": "петь",
+        "zh": "唱歌",
+        "ja": "歌う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dance",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/dæns/",
+      "definition": "To move your body to music.",
+      "examples": [
+        "Let's dance!"
+      ],
+      "translations": {
+        "uk": "танцювати",
+        "de": "tanzen",
+        "fr": "danser",
+        "es": "bailar",
+        "it": "ballare",
+        "pt": "dançar",
+        "pl": "tańczyć",
+        "ru": "танцевать",
+        "zh": "跳舞",
+        "ja": "踊る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "play",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/pleɪ/",
+      "definition": "To do an activity for fun, like a game or sport.",
+      "examples": [
+        "The children play in the garden."
+      ],
+      "translations": {
+        "uk": "грати, гратися",
+        "de": "spielen",
+        "fr": "jouer",
+        "es": "jugar",
+        "it": "giocare",
+        "pt": "brincar",
+        "pl": "bawić się, grać",
+        "ru": "играть",
+        "zh": "玩",
+        "ja": "遊ぶ"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "theater",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A story performed by actors in a theater.",
+          "examples": [
+            "We saw a play last night."
+          ],
+          "translations": {
+            "uk": "п'єса",
+            "de": "Theaterstück",
+            "fr": "pièce de théâtre",
+            "es": "obra de teatro",
+            "it": "opera teatrale",
+            "pt": "peça",
+            "pl": "sztuka",
+            "ru": "пьеса",
+            "zh": "戏剧",
+            "ja": "劇"
+          }
+        }
+      ]
+    },
+    {
+      "word": "game",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ɡeɪm/",
+      "definition": "An activity with rules that you play for fun.",
+      "examples": [
+        "Let's play a board game."
+      ],
+      "translations": {
+        "uk": "гра",
+        "de": "Spiel",
+        "fr": "jeu",
+        "es": "juego",
+        "it": "gioco",
+        "pt": "jogo",
+        "pl": "gra",
+        "ru": "игра",
+        "zh": "游戏",
+        "ja": "ゲーム"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sport",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/spɔːrt/",
+      "definition": "A game or activity where you use your body, like soccer.",
+      "examples": [
+        "What's your favorite sport?"
+      ],
+      "translations": {
+        "uk": "спорт",
+        "de": "Sport",
+        "fr": "sport",
+        "es": "deporte",
+        "it": "sport",
+        "pt": "esporte",
+        "pl": "sport",
+        "ru": "спорт",
+        "zh": "运动",
+        "ja": "スポーツ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "soccer",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈsɑːkɚ/",
+      "definition": "A game where two teams kick a ball into a goal.",
+      "examples": [
+        "The boys play soccer after school."
+      ],
+      "translations": {
+        "uk": "футбол",
+        "de": "Fußball",
+        "fr": "football",
+        "es": "fútbol",
+        "it": "calcio",
+        "pt": "futebol",
+        "pl": "piłka nożna",
+        "ru": "футбол",
+        "zh": "足球",
+        "ja": "サッカー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "swim",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/swɪm/",
+      "definition": "To move through water using your arms and legs.",
+      "examples": [
+        "I can swim very well."
+      ],
+      "translations": {
+        "uk": "плавати",
+        "de": "schwimmen",
+        "fr": "nager",
+        "es": "nadar",
+        "it": "nuotare",
+        "pt": "nadar",
+        "pl": "pływać",
+        "ru": "плавать",
+        "zh": "游泳",
+        "ja": "泳ぐ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "movie",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈmuːvi/",
+      "definition": "A story shown with moving pictures.",
+      "examples": [
+        "We watched a movie last night."
+      ],
+      "translations": {
+        "uk": "фільм",
+        "de": "Film",
+        "fr": "film",
+        "es": "película",
+        "it": "film",
+        "pt": "filme",
+        "pl": "film",
+        "ru": "фильм",
+        "zh": "电影",
+        "ja": "映画"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "draw",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/drɔː/",
+      "definition": "To make a picture with a pen or pencil.",
+      "examples": [
+        "My son loves to draw animals."
+      ],
+      "translations": {
+        "uk": "малювати",
+        "de": "zeichnen",
+        "fr": "dessiner",
+        "es": "dibujar",
+        "it": "disegnare",
+        "pt": "desenhar",
+        "pl": "rysować",
+        "ru": "рисовать",
+        "zh": "画",
+        "ja": "描く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hobby",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈhɑːbi/",
+      "definition": "An activity you enjoy doing in your free time.",
+      "examples": [
+        "My hobby is photography."
+      ],
+      "translations": {
+        "uk": "хобі",
+        "de": "Hobby",
+        "fr": "passe-temps",
+        "es": "pasatiempo",
+        "it": "hobby",
+        "pt": "passatempo",
+        "pl": "hobby",
+        "ru": "хобби",
+        "zh": "爱好",
+        "ja": "趣味"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "guitar",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ɡɪˈtɑːr/",
+      "definition": "A musical instrument with strings.",
+      "examples": [
+        "He plays the guitar in a band."
+      ],
+      "translations": {
+        "uk": "гітара",
+        "de": "Gitarre",
+        "fr": "guitare",
+        "es": "guitarra",
+        "it": "chitarra",
+        "pt": "violão",
+        "pl": "gitara",
+        "ru": "гитара",
+        "zh": "吉他",
+        "ja": "ギター"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "piano",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/piˈænoʊ/",
+      "definition": "A large musical instrument with black and white keys.",
+      "examples": [
+        "She is learning to play the piano."
+      ],
+      "translations": {
+        "uk": "піаніно",
+        "de": "Klavier",
+        "fr": "piano",
+        "es": "piano",
+        "it": "pianoforte",
+        "pt": "piano",
+        "pl": "pianino",
+        "ru": "пианино",
+        "zh": "钢琴",
+        "ja": "ピアノ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "art",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ɑːrt/",
+      "definition": "Paintings, drawings and other beautiful things people make.",
+      "examples": [
+        "I love modern art."
+      ],
+      "translations": {
+        "uk": "мистецтво",
+        "de": "Kunst",
+        "fr": "art",
+        "es": "arte",
+        "it": "arte",
+        "pt": "arte",
+        "pl": "sztuka",
+        "ru": "искусство",
+        "zh": "艺术",
+        "ja": "芸術"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "language",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈlæŋɡwɪdʒ/",
+      "definition": "The words people use to speak and write.",
+      "examples": [
+        "How many languages do you speak?"
+      ],
+      "translations": {
+        "uk": "мова",
+        "de": "Sprache",
+        "fr": "langue",
+        "es": "idioma",
+        "it": "lingua",
+        "pt": "idioma",
+        "pl": "język",
+        "ru": "язык",
+        "zh": "语言",
+        "ja": "言語"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "win",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/wɪn/",
+      "definition": "To be the best in a game or competition.",
+      "examples": [
+        "I hope our team will win the match."
+      ],
+      "translations": {
+        "uk": "перемагати",
+        "de": "gewinnen",
+        "fr": "gagner",
+        "es": "ganar",
+        "it": "vincere",
+        "pt": "ganhar",
+        "pl": "wygrywać",
+        "ru": "побеждать",
+        "zh": "赢",
+        "ja": "勝つ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "paint",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/peɪnt/",
+      "definition": "To make a picture with paint.",
+      "examples": [
+        "She paints landscapes."
+      ],
+      "translations": {
+        "uk": "малювати фарбами",
+        "de": "malen",
+        "fr": "peindre",
+        "es": "pintar",
+        "it": "dipingere",
+        "pt": "pintar",
+        "pl": "malować",
+        "ru": "писать красками",
+        "zh": "绘画",
+        "ja": "（絵の具で）描く"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A colored liquid you put on walls or pictures.",
+          "examples": [
+            "The paint on the door is still wet."
+          ],
+          "translations": {
+            "uk": "фарба",
+            "de": "Farbe",
+            "fr": "peinture",
+            "es": "pintura",
+            "it": "vernice",
+            "pt": "tinta",
+            "pl": "farba",
+            "ru": "краска",
+            "zh": "油漆",
+            "ja": "ペンキ"
+          }
+        }
+      ]
+    },
+    {
+      "word": "concert",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/ˈkɑːnsɚt/",
+      "definition": "A performance of music.",
+      "examples": [
+        "We went to a rock concert."
+      ],
+      "translations": {
+        "uk": "концерт",
+        "de": "Konzert",
+        "fr": "concert",
+        "es": "concierto",
+        "it": "concerto",
+        "pt": "show",
+        "pl": "koncert",
+        "ru": "концерт",
+        "zh": "音乐会",
+        "ja": "コンサート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "artist",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/ˈɑːrtɪst/",
+      "definition": "A person who paints, draws or makes art.",
+      "examples": [
+        "Picasso was a famous artist."
+      ],
+      "translations": {
+        "uk": "художник",
+        "de": "Künstler",
+        "fr": "artiste",
+        "es": "artista",
+        "it": "artista",
+        "pt": "artista",
+        "pl": "artysta",
+        "ru": "художник",
+        "zh": "艺术家",
+        "ja": "芸術家"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "theater",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/ˈθiːətɚ/",
+      "definition": "A building where people watch plays.",
+      "examples": [
+        "We went to the theater on Saturday."
+      ],
+      "translations": {
+        "uk": "театр",
+        "de": "Theater",
+        "fr": "théâtre",
+        "es": "teatro",
+        "it": "teatro",
+        "pt": "teatro",
+        "pl": "teatr",
+        "ru": "театр",
+        "zh": "剧院",
+        "ja": "劇場"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "holiday",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/ˈhɑːlədeɪ/",
+      "definition": "A special day when people don't work, like a national celebration.",
+      "examples": [
+        "Thanksgiving is an important holiday in the US."
+      ],
+      "translations": {
+        "uk": "свято",
+        "de": "Feiertag",
+        "fr": "jour férié",
+        "es": "día festivo",
+        "it": "festa",
+        "pt": "feriado",
+        "pl": "święto",
+        "ru": "праздник",
+        "zh": "节日",
+        "ja": "祝日"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "celebrate",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/ˈseləbreɪt/",
+      "definition": "To do something special for an important event.",
+      "examples": [
+        "We celebrated her birthday at home."
+      ],
+      "translations": {
+        "uk": "святкувати",
+        "de": "feiern",
+        "fr": "fêter",
+        "es": "celebrar",
+        "it": "festeggiare",
+        "pt": "comemorar",
+        "pl": "świętować",
+        "ru": "праздновать",
+        "zh": "庆祝",
+        "ja": "祝う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "festival",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈfestɪvəl/",
+      "definition": "A special event with music, food or films.",
+      "examples": [
+        "The town has a music festival every summer."
+      ],
+      "translations": {
+        "uk": "фестиваль",
+        "de": "Festival",
+        "fr": "festival",
+        "es": "festival",
+        "it": "festival",
+        "pt": "festival",
+        "pl": "festiwal",
+        "ru": "фестиваль",
+        "zh": "文化节",
+        "ja": "フェスティバル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "culture",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈkʌltʃɚ/",
+      "definition": "The customs, art and way of life of a group of people.",
+      "examples": [
+        "I'm interested in Japanese culture."
+      ],
+      "translations": {
+        "uk": "культура",
+        "de": "Kultur",
+        "fr": "culture",
+        "es": "cultura",
+        "it": "cultura",
+        "pt": "cultura",
+        "pl": "kultura",
+        "ru": "культура",
+        "zh": "文化",
+        "ja": "文化"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "competition",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˌkɑːmpəˈtɪʃən/",
+      "definition": "An event where people try to win something.",
+      "examples": [
+        "She won first prize in a singing competition."
+      ],
+      "translations": {
+        "uk": "змагання, конкурс",
+        "de": "Wettbewerb",
+        "fr": "concours",
+        "es": "concurso",
+        "it": "gara",
+        "pt": "competição",
+        "pl": "konkurs",
+        "ru": "соревнование, конкурс",
+        "zh": "比赛",
+        "ja": "コンテスト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "photography",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/fəˈtɑːɡrəfi/",
+      "definition": "The skill of taking photos.",
+      "examples": [
+        "He's taking a photography class."
+      ],
+      "translations": {
+        "uk": "фотографія (заняття)",
+        "de": "Fotografie",
+        "fr": "photographie",
+        "es": "fotografía",
+        "it": "fotografia",
+        "pt": "fotografia",
+        "pl": "fotografia",
+        "ru": "фотография (занятие)",
+        "zh": "摄影",
+        "ja": "写真撮影"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "novel",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈnɑːvəl/",
+      "definition": "A long written story.",
+      "examples": [
+        "She is writing her first novel."
+      ],
+      "translations": {
+        "uk": "роман",
+        "de": "Roman",
+        "fr": "roman",
+        "es": "novela",
+        "it": "romanzo",
+        "pt": "romance",
+        "pl": "powieść",
+        "ru": "роман",
+        "zh": "小说",
+        "ja": "小説"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "poem",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈpoʊəm/",
+      "definition": "A piece of writing with short lines that often rhyme.",
+      "examples": [
+        "The children learned a poem by heart."
+      ],
+      "translations": {
+        "uk": "вірш",
+        "de": "Gedicht",
+        "fr": "poème",
+        "es": "poema",
+        "it": "poesia",
+        "pt": "poema",
+        "pl": "wiersz",
+        "ru": "стихотворение",
+        "zh": "诗",
+        "ja": "詩"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
