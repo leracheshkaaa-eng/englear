@@ -23,6 +23,7 @@ const files = process.argv.slice(2).length
 let errors = 0
 let warnings = 0
 const seenAll = new Map() // lower(word) -> file
+const meaningRefs = [] // words that meanings packages add meanings to: [label, file]
 for (const file of files) {
   const name = basename(file)
   const err = (w, msg) => {
@@ -40,7 +41,7 @@ for (const file of files) {
     err('file', `invalid JSON: ${e.message}`)
     continue
   }
-  if (!['words', 'translations'].includes(pkg.kind)) err('file', 'kind must be "words" or "translations"')
+  if (!['words', 'translations', 'meanings'].includes(pkg.kind)) err('file', 'kind must be "words", "translations" or "meanings"')
   if (!Array.isArray(pkg.words) || !pkg.words.length) {
     err('file', 'words must be a non-empty array')
     continue
@@ -52,11 +53,15 @@ for (const file of files) {
     if (!word) err(label, 'empty word')
     if (word !== w.word) err(label, 'leading/trailing spaces')
     const key = word.toLowerCase()
-    if (seenAll.has(key)) err(label, `duplicate (also in ${seenAll.get(key)})`)
+    if (pkg.kind === 'meanings') {
+      // only extra meanings of a word defined in another package
+      meaningRefs.push([label, name])
+      if (!Array.isArray(w.meanings) || !w.meanings.length) err(label, 'meanings package entry without meanings')
+    } else if (seenAll.has(key)) err(label, `duplicate (also in ${seenAll.get(key)})`)
     else seenAll.set(key, name)
 
     const tr = w.translations ?? {}
-    for (const lang of LANGS) {
+    for (const lang of pkg.kind === 'meanings' ? [] : LANGS) {
       const v = tr[lang]
       if (typeof v !== 'string' || !v.trim()) err(label, `missing translation "${lang}"`)
       else if (v !== v.trim()) err(label, `translation "${lang}" has leading/trailing spaces`)
@@ -100,6 +105,12 @@ for (const file of files) {
     }
   }
   console.log(`${name}: ${pkg.words.length} word(s), ${errors - before ? `${errors - before} error(s)` : 'OK'}`)
+}
+for (const [label, file] of meaningRefs) {
+  if (!seenAll.has(label.toLowerCase())) {
+    errors++
+    console.log(`  ✗ [${file}] ${label}: word is not in any words/translations package`)
+  }
 }
 console.log(`\n${seenAll.size} unique word(s) in ${files.length} package(s); ${errors} error(s), ${warnings} warning(s)`)
 process.exit(errors ? 1 : 0)

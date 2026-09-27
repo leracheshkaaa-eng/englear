@@ -1,0 +1,963 @@
+{
+  "package": "meanings-existing",
+  "kind": "meanings",
+  "words": [
+    {
+      "word": "book",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "A set of printed pages that you read.",
+          "examples": [
+            "I'm reading a good book."
+          ],
+          "translations": {
+            "uk": "книга",
+            "de": "Buch",
+            "fr": "livre",
+            "es": "libro",
+            "it": "libro",
+            "pt": "livro",
+            "pl": "książka",
+            "ru": "книга",
+            "zh": "书",
+            "ja": "本"
+          }
+        }
+      ]
+    },
+    {
+      "word": "fall",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "To go down to the ground by accident.",
+          "examples": [
+            "Be careful not to fall on the ice."
+          ],
+          "translations": {
+            "uk": "падати",
+            "de": "fallen",
+            "fr": "tomber",
+            "es": "caer",
+            "it": "cadere",
+            "pt": "cair",
+            "pl": "upadać",
+            "ru": "падать",
+            "zh": "摔倒",
+            "ja": "転ぶ"
+          }
+        }
+      ]
+    },
+    {
+      "word": "order",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A request for food, drinks or goods.",
+          "examples": [
+            "The waiter took our order."
+          ],
+          "translations": {
+            "uk": "замовлення",
+            "de": "Bestellung",
+            "fr": "commande",
+            "es": "pedido",
+            "it": "ordinazione",
+            "pt": "pedido",
+            "pl": "zamówienie",
+            "ru": "заказ",
+            "zh": "订单",
+            "ja": "注文"
+          }
+        },
+        {
+          "key": "sequence",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "The way things are arranged, one after another.",
+          "examples": [
+            "Put the words in the right order."
+          ],
+          "translations": {
+            "uk": "порядок",
+            "de": "Reihenfolge",
+            "fr": "ordre",
+            "es": "orden",
+            "it": "ordine",
+            "pt": "ordem",
+            "pl": "kolejność",
+            "ru": "порядок",
+            "zh": "顺序",
+            "ja": "順番"
+          }
+        }
+      ]
+    },
+    {
+      "word": "move",
+      "meanings": [
+        {
+          "key": "motion",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "To change position or to make something change position.",
+          "examples": [
+            "Can you move your chair a little?"
+          ],
+          "translations": {
+            "uk": "рухати(ся)",
+            "de": "bewegen",
+            "fr": "bouger",
+            "es": "mover",
+            "it": "muovere",
+            "pt": "mover",
+            "pl": "ruszać (się)",
+            "ru": "двигать(ся)",
+            "zh": "移动",
+            "ja": "動かす"
+          }
+        }
+      ]
+    },
+    {
+      "word": "taste",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "The flavor that food or drink has.",
+          "examples": [
+            "I love the taste of fresh strawberries."
+          ],
+          "translations": {
+            "uk": "смак",
+            "de": "Geschmack",
+            "fr": "goût",
+            "es": "sabor",
+            "it": "sapore",
+            "pt": "sabor",
+            "pl": "smak",
+            "ru": "вкус",
+            "zh": "味道",
+            "ja": "味"
+          }
+        }
+      ]
+    },
+    {
+      "word": "drink",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "A liquid that you drink.",
+          "examples": [
+            "Would you like a cold drink?"
+          ],
+          "translations": {
+            "uk": "напій",
+            "de": "Getränk",
+            "fr": "boisson",
+            "es": "bebida",
+            "it": "bevanda",
+            "pt": "bebida",
+            "pl": "napój",
+            "ru": "напиток",
+            "zh": "饮料",
+            "ja": "飲み物"
+          }
+        }
+      ]
+    },
+    {
+      "word": "cook",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "A person who prepares and cooks food.",
+          "examples": [
+            "My brother is a very good cook."
+          ],
+          "translations": {
+            "uk": "кухар",
+            "de": "Koch",
+            "fr": "cuisinier",
+            "es": "cocinero",
+            "it": "cuoco",
+            "pt": "cozinheiro",
+            "pl": "kucharz",
+            "ru": "повар",
+            "zh": "厨师",
+            "ja": "料理人"
+          }
+        }
+      ]
+    },
+    {
+      "word": "rent",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To pay money to live in a place or use something.",
+          "examples": [
+            "We rent a small apartment downtown."
+          ],
+          "translations": {
+            "uk": "орендувати, винаймати",
+            "de": "mieten",
+            "fr": "louer",
+            "es": "alquilar",
+            "it": "affittare",
+            "pt": "alugar",
+            "pl": "wynajmować",
+            "ru": "арендовать, снимать",
+            "zh": "租",
+            "ja": "借りる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "floor",
+      "meanings": [
+        {
+          "key": "level",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "All the rooms on one level of a building.",
+          "examples": [
+            "My office is on the third floor."
+          ],
+          "translations": {
+            "uk": "поверх",
+            "de": "Stockwerk",
+            "fr": "étage",
+            "es": "piso",
+            "it": "piano",
+            "pt": "andar",
+            "pl": "piętro",
+            "ru": "этаж",
+            "zh": "楼层",
+            "ja": "階"
+          }
+        }
+      ]
+    },
+    {
+      "word": "visit",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "An occasion when you go to see a place or a person.",
+          "examples": [
+            "We enjoyed our visit to the museum."
+          ],
+          "translations": {
+            "uk": "візит, відвідування",
+            "de": "Besuch",
+            "fr": "visite",
+            "es": "visita",
+            "it": "visita",
+            "pt": "visita",
+            "pl": "wizyta",
+            "ru": "визит, посещение",
+            "zh": "访问",
+            "ja": "訪問"
+          }
+        }
+      ]
+    },
+    {
+      "word": "delay",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To make something happen later than planned.",
+          "examples": [
+            "Heavy snow delayed our flight."
+          ],
+          "translations": {
+            "uk": "затримувати",
+            "de": "verzögern",
+            "fr": "retarder",
+            "es": "retrasar",
+            "it": "ritardare",
+            "pt": "atrasar",
+            "pl": "opóźniać",
+            "ru": "задерживать",
+            "zh": "延误",
+            "ja": "遅らせる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "guide",
+      "meanings": [
+        {
+          "key": "book",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A book with information about a place.",
+          "examples": [
+            "We bought a guide to Paris."
+          ],
+          "translations": {
+            "uk": "путівник",
+            "de": "Reiseführer",
+            "fr": "guide",
+            "es": "guía",
+            "it": "guida",
+            "pt": "guia",
+            "pl": "przewodnik",
+            "ru": "путеводитель",
+            "zh": "指南",
+            "ja": "ガイドブック"
+          }
+        }
+      ]
+    },
+    {
+      "word": "orange",
+      "meanings": [
+        {
+          "key": "color",
+          "part_of_speech": "adjective",
+          "cefr": "A1",
+          "definition": "Having the color of an orange.",
+          "examples": [
+            "She has an orange bag."
+          ],
+          "translations": {
+            "uk": "помаранчевий",
+            "de": "orange",
+            "fr": "orange",
+            "es": "anaranjado",
+            "it": "arancione",
+            "pt": "laranja",
+            "pl": "pomarańczowy",
+            "ru": "оранжевый",
+            "zh": "橙色的",
+            "ja": "オレンジ色の"
+          }
+        }
+      ]
+    },
+    {
+      "word": "clean",
+      "meanings": [
+        {
+          "key": "adjective",
+          "part_of_speech": "adjective",
+          "cefr": "A1",
+          "definition": "Not dirty.",
+          "examples": [
+            "Put on a clean shirt."
+          ],
+          "translations": {
+            "uk": "чистий",
+            "de": "sauber",
+            "fr": "propre",
+            "es": "limpio",
+            "it": "pulito",
+            "pt": "limpo",
+            "pl": "czysty",
+            "ru": "чистый",
+            "zh": "干净的",
+            "ja": "きれいな"
+          }
+        }
+      ]
+    },
+    {
+      "word": "cold",
+      "meanings": [
+        {
+          "key": "illness",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A common illness that makes you sneeze and cough.",
+          "examples": [
+            "I have a cold, so I'm staying home."
+          ],
+          "translations": {
+            "uk": "застуда",
+            "de": "Erkältung",
+            "fr": "rhume",
+            "es": "resfriado",
+            "it": "raffreddore",
+            "pt": "resfriado",
+            "pl": "przeziębienie",
+            "ru": "простуда",
+            "zh": "感冒",
+            "ja": "風邪"
+          }
+        }
+      ]
+    },
+    {
+      "word": "degree",
+      "meanings": [
+        {
+          "key": "temperature",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A unit for measuring temperature.",
+          "examples": [
+            "It's twenty degrees outside."
+          ],
+          "translations": {
+            "uk": "градус",
+            "de": "Grad",
+            "fr": "degré",
+            "es": "grado",
+            "it": "grado",
+            "pt": "grau",
+            "pl": "stopień",
+            "ru": "градус",
+            "zh": "度",
+            "ja": "度"
+          }
+        }
+      ]
+    },
+    {
+      "word": "research",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To study a subject carefully to find new facts.",
+          "examples": [
+            "She is researching the history of her town."
+          ],
+          "translations": {
+            "uk": "досліджувати",
+            "de": "erforschen",
+            "fr": "faire des recherches sur",
+            "es": "investigar",
+            "it": "fare ricerche su",
+            "pt": "pesquisar",
+            "pl": "badać",
+            "ru": "исследовать",
+            "zh": "研究",
+            "ja": "研究する"
+          }
+        }
+      ]
+    },
+    {
+      "word": "trust",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "The belief that someone is honest and good.",
+          "examples": [
+            "Trust is important in a friendship."
+          ],
+          "translations": {
+            "uk": "довіра",
+            "de": "Vertrauen",
+            "fr": "confiance",
+            "es": "confianza",
+            "it": "fiducia",
+            "pt": "confiança",
+            "pl": "zaufanie",
+            "ru": "доверие",
+            "zh": "信任",
+            "ja": "信頼"
+          }
+        }
+      ]
+    },
+    {
+      "word": "rain",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "When water falls from the sky.",
+          "examples": [
+            "It's raining, so take an umbrella."
+          ],
+          "translations": {
+            "uk": "іти (про дощ)",
+            "de": "regnen",
+            "fr": "pleuvoir",
+            "es": "llover",
+            "it": "piovere",
+            "pt": "chover",
+            "pl": "padać (o deszczu)",
+            "ru": "идти (о дожде)",
+            "zh": "下雨",
+            "ja": "雨が降る"
+          }
+        }
+      ]
+    },
+    {
+      "word": "sleep",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "The state of resting with your eyes closed.",
+          "examples": [
+            "I need eight hours of sleep."
+          ],
+          "translations": {
+            "uk": "сон",
+            "de": "Schlaf",
+            "fr": "sommeil",
+            "es": "sueño",
+            "it": "sonno",
+            "pt": "sono",
+            "pl": "sen",
+            "ru": "сон",
+            "zh": "睡眠",
+            "ja": "睡眠"
+          }
+        }
+      ]
+    },
+    {
+      "word": "shop",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "To buy things in stores.",
+          "examples": [
+            "We shop for food on Saturdays."
+          ],
+          "translations": {
+            "uk": "робити покупки",
+            "de": "einkaufen",
+            "fr": "faire les courses",
+            "es": "hacer compras",
+            "it": "fare acquisti",
+            "pt": "fazer compras",
+            "pl": "robić zakupy",
+            "ru": "делать покупки",
+            "zh": "购物",
+            "ja": "買い物をする"
+          }
+        }
+      ]
+    },
+    {
+      "word": "water",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To give water to plants.",
+          "examples": [
+            "Please water the flowers every day."
+          ],
+          "translations": {
+            "uk": "поливати",
+            "de": "gießen",
+            "fr": "arroser",
+            "es": "regar",
+            "it": "annaffiare",
+            "pt": "regar",
+            "pl": "podlewać",
+            "ru": "поливать",
+            "zh": "浇水",
+            "ja": "水をやる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "phone",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To call someone on the phone.",
+          "examples": [
+            "I'll phone you tomorrow."
+          ],
+          "translations": {
+            "uk": "телефонувати",
+            "de": "anrufen",
+            "fr": "téléphoner",
+            "es": "llamar por teléfono",
+            "it": "telefonare",
+            "pt": "telefonar",
+            "pl": "dzwonić",
+            "ru": "звонить",
+            "zh": "打电话",
+            "ja": "電話する"
+          }
+        }
+      ]
+    },
+    {
+      "word": "fish",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To try to catch fish.",
+          "examples": [
+            "My grandfather likes to fish in the river."
+          ],
+          "translations": {
+            "uk": "ловити рибу",
+            "de": "angeln",
+            "fr": "pêcher",
+            "es": "pescar",
+            "it": "pescare",
+            "pt": "pescar",
+            "pl": "łowić ryby",
+            "ru": "ловить рыбу",
+            "zh": "钓鱼",
+            "ja": "釣りをする"
+          }
+        }
+      ]
+    },
+    {
+      "word": "late",
+      "meanings": [
+        {
+          "key": "adverb",
+          "part_of_speech": "adverb",
+          "cefr": "A1",
+          "definition": "After the usual or expected time.",
+          "examples": [
+            "I got up late this morning."
+          ],
+          "translations": {
+            "uk": "пізно",
+            "de": "spät",
+            "fr": "tard",
+            "es": "tarde",
+            "it": "tardi",
+            "pt": "tarde",
+            "pl": "późno",
+            "ru": "поздно",
+            "zh": "晚",
+            "ja": "遅く"
+          }
+        }
+      ]
+    },
+    {
+      "word": "early",
+      "meanings": [
+        {
+          "key": "adjective",
+          "part_of_speech": "adjective",
+          "cefr": "A2",
+          "definition": "Happening near the beginning of a period of time.",
+          "examples": [
+            "I took an early train."
+          ],
+          "translations": {
+            "uk": "ранній",
+            "de": "früh",
+            "fr": "matinal",
+            "es": "temprano",
+            "it": "mattutino",
+            "pt": "matinal",
+            "pl": "wczesny",
+            "ru": "ранний",
+            "zh": "早的",
+            "ja": "早い"
+          }
+        }
+      ]
+    },
+    {
+      "word": "daily",
+      "meanings": [
+        {
+          "key": "adverb",
+          "part_of_speech": "adverb",
+          "cefr": "A2",
+          "definition": "Every day.",
+          "examples": [
+            "The museum is open daily."
+          ],
+          "translations": {
+            "uk": "щодня",
+            "de": "täglich",
+            "fr": "tous les jours",
+            "es": "a diario",
+            "it": "ogni giorno",
+            "pt": "diariamente",
+            "pl": "codziennie",
+            "ru": "ежедневно",
+            "zh": "每天",
+            "ja": "毎日"
+          }
+        }
+      ]
+    },
+    {
+      "word": "take off",
+      "meanings": [
+        {
+          "key": "clothes",
+          "part_of_speech": "phrasal verb",
+          "cefr": "A2",
+          "definition": "To remove a piece of clothing.",
+          "examples": [
+            "Please take off your shoes."
+          ],
+          "translations": {
+            "uk": "знімати (одяг)",
+            "de": "ausziehen",
+            "fr": "enlever",
+            "es": "quitarse",
+            "it": "togliersi",
+            "pt": "tirar",
+            "pl": "zdejmować",
+            "ru": "снимать (одежду)",
+            "zh": "脱下",
+            "ja": "脱ぐ"
+          }
+        }
+      ]
+    },
+    {
+      "word": "table",
+      "meanings": [
+        {
+          "key": "chart",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "Information arranged in rows and columns.",
+          "examples": [
+            "Look at the table on page ten."
+          ],
+          "translations": {
+            "uk": "таблиця",
+            "de": "Tabelle",
+            "fr": "tableau",
+            "es": "tabla",
+            "it": "tabella",
+            "pt": "tabela",
+            "pl": "tabela",
+            "ru": "таблица",
+            "zh": "表格",
+            "ja": "表"
+          }
+        }
+      ]
+    },
+    {
+      "word": "room",
+      "meanings": [
+        {
+          "key": "space",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "Enough empty space for someone or something.",
+          "examples": [
+            "Is there room for one more person?"
+          ],
+          "translations": {
+            "uk": "місце",
+            "de": "Platz",
+            "fr": "place",
+            "es": "espacio",
+            "it": "spazio",
+            "pt": "espaço",
+            "pl": "miejsce",
+            "ru": "место, пространство",
+            "zh": "空间",
+            "ja": "余地"
+          }
+        }
+      ]
+    },
+    {
+      "word": "head",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To go in a particular direction.",
+          "examples": [
+            "We headed home after the movie."
+          ],
+          "translations": {
+            "uk": "прямувати",
+            "de": "sich begeben",
+            "fr": "se diriger",
+            "es": "dirigirse",
+            "it": "dirigersi",
+            "pt": "dirigir-se",
+            "pl": "kierować się",
+            "ru": "направляться",
+            "zh": "前往",
+            "ja": "向かう"
+          }
+        }
+      ]
+    },
+    {
+      "word": "trip",
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To hit your foot on something and almost fall.",
+          "examples": [
+            "I tripped on the stairs."
+          ],
+          "translations": {
+            "uk": "спіткнутися",
+            "de": "stolpern",
+            "fr": "trébucher",
+            "es": "tropezar",
+            "it": "inciampare",
+            "pt": "tropeçar",
+            "pl": "potknąć się",
+            "ru": "споткнуться",
+            "zh": "绊倒",
+            "ja": "つまずく"
+          }
+        }
+      ]
+    },
+    {
+      "word": "pack",
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A small box or bag with several things in it.",
+          "examples": [
+            "I bought a pack of cards."
+          ],
+          "translations": {
+            "uk": "пачка, упаковка",
+            "de": "Packung",
+            "fr": "paquet",
+            "es": "paquete",
+            "it": "pacchetto",
+            "pt": "pacote",
+            "pl": "paczka",
+            "ru": "пачка, упаковка",
+            "zh": "包",
+            "ja": "パック"
+          }
+        }
+      ]
+    },
+    {
+      "word": "raise",
+      "meanings": [
+        {
+          "key": "lift",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To lift something to a higher position.",
+          "examples": [
+            "Raise your hand if you know the answer."
+          ],
+          "translations": {
+            "uk": "піднімати",
+            "de": "heben",
+            "fr": "lever",
+            "es": "levantar",
+            "it": "alzare",
+            "pt": "levantar",
+            "pl": "podnosić",
+            "ru": "поднимать",
+            "zh": "举起",
+            "ja": "上げる"
+          }
+        }
+      ]
+    },
+    {
+      "word": "key",
+      "meanings": [
+        {
+          "key": "adjective",
+          "part_of_speech": "adjective",
+          "cefr": "B1",
+          "definition": "Very important.",
+          "examples": [
+            "Practice is the key factor in learning a language."
+          ],
+          "translations": {
+            "uk": "ключовий",
+            "de": "entscheidend",
+            "fr": "clé",
+            "es": "clave",
+            "it": "chiave",
+            "pt": "fundamental",
+            "pl": "kluczowy",
+            "ru": "ключевой",
+            "zh": "关键的",
+            "ja": "重要な"
+          }
+        }
+      ]
+    },
+    {
+      "word": "customs",
+      "meanings": [
+        {
+          "key": "traditions",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "Traditional ways of behaving in a group or place.",
+          "examples": [
+            "We learned about local customs in Japan."
+          ],
+          "translations": {
+            "uk": "звичаї",
+            "de": "Bräuche",
+            "fr": "coutumes",
+            "es": "costumbres",
+            "it": "usanze",
+            "pt": "costumes",
+            "pl": "zwyczaje",
+            "ru": "обычаи",
+            "zh": "习俗",
+            "ja": "習慣"
+          }
+        }
+      ]
+    }
+  ]
+}

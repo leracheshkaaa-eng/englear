@@ -40,6 +40,8 @@ level. Sets a student has already started keep their own word list.
   `word_type` (default `word`), `ielts_category` and `meanings`.
 - `kind: "translations"` — only `word` + `translations` (and optionally `meanings`),
   for words that already exist.
+- `kind: "meanings"` — only `word` + `meanings`: extra meanings for words
+  defined in another package (the validator checks that they exist).
 
 ### Several meanings
 
