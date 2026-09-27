@@ -1,0 +1,506 @@
+{
+  "package": "c1-adjectives-2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "optimistic",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɑːptɪˈmɪstɪk/",
+      "definition": "Hoping that good things will happen.",
+      "examples": [
+        "I'm optimistic about the future."
+      ],
+      "translations": {
+        "uk": "оптимістичний",
+        "de": "optimistisch",
+        "fr": "optimiste",
+        "es": "optimista",
+        "it": "ottimista",
+        "pt": "otimista",
+        "pl": "optymistyczny",
+        "ru": "оптимистичный",
+        "zh": "乐观的",
+        "ja": "楽観的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pessimistic",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌpesɪˈmɪstɪk/",
+      "definition": "Expecting bad things to happen.",
+      "examples": [
+        "He is pessimistic about his chances."
+      ],
+      "translations": {
+        "uk": "песимістичний",
+        "de": "pessimistisch",
+        "fr": "pessimiste",
+        "es": "pesimista",
+        "it": "pessimista",
+        "pt": "pessimista",
+        "pl": "pesymistyczny",
+        "ru": "пессимистичный",
+        "zh": "悲观的",
+        "ja": "悲観的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "accountable",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈkaʊntəbəl/",
+      "definition": "Responsible for your actions and able to explain them.",
+      "examples": [
+        "Politicians must be accountable to voters."
+      ],
+      "translations": {
+        "uk": "підзвітний",
+        "de": "rechenschaftspflichtig",
+        "fr": "responsable",
+        "es": "responsable",
+        "it": "responsabile",
+        "pt": "responsável",
+        "pl": "rozliczalny",
+        "ru": "подотчётный",
+        "zh": "负有责任的",
+        "ja": "説明責任のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "adverse",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ædˈvɝːs/",
+      "definition": "Negative or harmful.",
+      "examples": [
+        "The medicine has no adverse effects."
+      ],
+      "translations": {
+        "uk": "несприятливий",
+        "de": "nachteilig",
+        "fr": "indésirable",
+        "es": "adverso",
+        "it": "avverso",
+        "pt": "adverso",
+        "pl": "niekorzystny",
+        "ru": "неблагоприятный",
+        "zh": "不利的",
+        "ja": "悪い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "apparent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈpærənt/",
+      "definition": "Easy to see or understand.",
+      "examples": [
+        "It soon became apparent that he was lying."
+      ],
+      "translations": {
+        "uk": "явний",
+        "de": "offenkundig",
+        "fr": "manifeste",
+        "es": "evidente",
+        "it": "evidente",
+        "pt": "aparente",
+        "pl": "widoczny",
+        "ru": "явный",
+        "zh": "明显的",
+        "ja": "明らかな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bold",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/boʊld/",
+      "definition": "Brave and confident.",
+      "examples": [
+        "It was a bold decision to quit her job."
+      ],
+      "translations": {
+        "uk": "сміливий",
+        "de": "kühn",
+        "fr": "audacieux",
+        "es": "audaz",
+        "it": "audace",
+        "pt": "ousado",
+        "pl": "śmiały",
+        "ru": "смелый",
+        "zh": "大胆的",
+        "ja": "大胆な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cautious",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɔːʃəs/",
+      "definition": "Careful to avoid risks.",
+      "examples": [
+        "Be cautious when driving in the snow."
+      ],
+      "translations": {
+        "uk": "обачний",
+        "de": "behutsam",
+        "fr": "prudent",
+        "es": "cauteloso",
+        "it": "cauto",
+        "pt": "cauteloso",
+        "pl": "ostrożny",
+        "ru": "осмотрительный",
+        "zh": "谨慎的",
+        "ja": "慎重な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "comparable",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑːmpərəbəl/",
+      "definition": "Similar in size, amount or quality.",
+      "examples": [
+        "The two cars are comparable in price."
+      ],
+      "translations": {
+        "uk": "порівнянний",
+        "de": "vergleichbar",
+        "fr": "comparable",
+        "es": "comparable",
+        "it": "paragonabile",
+        "pt": "comparável",
+        "pl": "porównywalny",
+        "ru": "сопоставимый",
+        "zh": "可比较的",
+        "ja": "同等の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "concise",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈsaɪs/",
+      "definition": "Short and clear.",
+      "examples": [
+        "Write a concise summary."
+      ],
+      "translations": {
+        "uk": "стислий",
+        "de": "prägnant",
+        "fr": "concis",
+        "es": "conciso",
+        "it": "conciso",
+        "pt": "conciso",
+        "pl": "zwięzły",
+        "ru": "сжатый",
+        "zh": "简明的",
+        "ja": "簡潔な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "decisive",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈsaɪsɪv/",
+      "definition": "Able to make decisions quickly.",
+      "examples": [
+        "She is a decisive leader."
+      ],
+      "translations": {
+        "uk": "рішучий",
+        "de": "entschlossen",
+        "fr": "décidé",
+        "es": "decidido",
+        "it": "deciso",
+        "pt": "decidido",
+        "pl": "zdecydowany",
+        "ru": "решительный",
+        "zh": "果断的",
+        "ja": "決断力のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "distinct",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈstɪŋkt/",
+      "definition": "Clearly different.",
+      "examples": [
+        "There are three distinct groups."
+      ],
+      "translations": {
+        "uk": "відмінний, окремий",
+        "de": "deutlich verschieden",
+        "fr": "distinct",
+        "es": "distinto",
+        "it": "distinto",
+        "pt": "distinto",
+        "pl": "odrębny",
+        "ru": "отличный, отдельный",
+        "zh": "明显不同的",
+        "ja": "はっきり異なる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dominant",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈdɑːmɪnənt/",
+      "definition": "More powerful or important than others.",
+      "examples": [
+        "English is the dominant language online."
+      ],
+      "translations": {
+        "uk": "домінантний",
+        "de": "dominant",
+        "fr": "dominant",
+        "es": "dominante",
+        "it": "dominante",
+        "pt": "dominante",
+        "pl": "dominujący",
+        "ru": "доминирующий",
+        "zh": "占主导地位的",
+        "ja": "支配的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "inclined",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈklaɪnd/",
+      "definition": "Likely or wanting to do something.",
+      "examples": [
+        "I'm inclined to agree with you."
+      ],
+      "translations": {
+        "uk": "схильний",
+        "de": "geneigt",
+        "fr": "enclin",
+        "es": "dispuesto",
+        "it": "incline",
+        "pt": "inclinado",
+        "pl": "skłonny",
+        "ru": "склонный",
+        "zh": "倾向于",
+        "ja": "〜したい気がする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "intense",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈtens/",
+      "definition": "Very strong.",
+      "examples": [
+        "The heat was intense."
+      ],
+      "translations": {
+        "uk": "інтенсивний",
+        "de": "intensiv",
+        "fr": "intense",
+        "es": "intenso",
+        "it": "intenso",
+        "pt": "intenso",
+        "pl": "intensywny",
+        "ru": "интенсивный",
+        "zh": "强烈的",
+        "ja": "激しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "marginal",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈmɑːrdʒɪnəl/",
+      "definition": "Very small and not important.",
+      "examples": [
+        "There was a marginal increase in sales."
+      ],
+      "translations": {
+        "uk": "незначний",
+        "de": "geringfügig",
+        "fr": "marginal",
+        "es": "marginal",
+        "it": "marginale",
+        "pt": "marginal",
+        "pl": "marginalny",
+        "ru": "незначительный",
+        "zh": "微小的",
+        "ja": "わずかな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "notable",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈnoʊtəbəl/",
+      "definition": "Important or interesting enough to notice.",
+      "examples": [
+        "The museum has several notable paintings."
+      ],
+      "translations": {
+        "uk": "помітний",
+        "de": "nennenswert",
+        "fr": "notable",
+        "es": "notable",
+        "it": "notevole",
+        "pt": "notável",
+        "pl": "godny uwagi",
+        "ru": "примечательный",
+        "zh": "值得注意的",
+        "ja": "注目に値する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "radical",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈrædɪkəl/",
+      "definition": "Very new and different; complete.",
+      "examples": [
+        "The company made radical changes."
+      ],
+      "translations": {
+        "uk": "радикальний",
+        "de": "radikal",
+        "fr": "radical",
+        "es": "radical",
+        "it": "radicale",
+        "pt": "radical",
+        "pl": "radykalny",
+        "ru": "радикальный",
+        "zh": "根本的",
+        "ja": "抜本的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rigid",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈrɪdʒɪd/",
+      "definition": "Not able to change; stiff.",
+      "examples": [
+        "The rules are too rigid."
+      ],
+      "translations": {
+        "uk": "жорсткий",
+        "de": "starr",
+        "fr": "rigide",
+        "es": "rígido",
+        "it": "rigido",
+        "pt": "rígido",
+        "pl": "sztywny",
+        "ru": "жёсткий",
+        "zh": "死板的",
+        "ja": "厳格な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "superficial",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌsuːpɚˈfɪʃəl/",
+      "definition": "Not deep or serious.",
+      "examples": [
+        "He has only a superficial knowledge of history."
+      ],
+      "translations": {
+        "uk": "поверховий",
+        "de": "oberflächlich",
+        "fr": "superficiel",
+        "es": "superficial",
+        "it": "superficiale",
+        "pt": "superficial",
+        "pl": "powierzchowny",
+        "ru": "поверхностный",
+        "zh": "肤浅的",
+        "ja": "表面的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "trivial",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈtrɪviəl/",
+      "definition": "Not important.",
+      "examples": [
+        "Don't worry about trivial details."
+      ],
+      "translations": {
+        "uk": "дріб'язковий",
+        "de": "trivial",
+        "fr": "insignifiant",
+        "es": "trivial",
+        "it": "banale",
+        "pt": "trivial",
+        "pl": "błahy",
+        "ru": "пустяковый",
+        "zh": "琐碎的",
+        "ja": "ささいな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

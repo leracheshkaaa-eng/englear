@@ -1,0 +1,131 @@
+{
+  "package": "c1-verbs-2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "articulate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɑːrˈtɪkjəleɪt/",
+      "definition": "To express ideas clearly.",
+      "examples": [
+        "She articulated her ideas very well."
+      ],
+      "translations": {
+        "uk": "чітко висловлювати",
+        "de": "artikulieren",
+        "fr": "exprimer clairement",
+        "es": "expresar con claridad",
+        "it": "esprimere chiaramente",
+        "pt": "expressar com clareza",
+        "pl": "jasno wyrażać",
+        "ru": "чётко выражать",
+        "zh": "清楚表达",
+        "ja": "はっきり述べる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "convey",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈveɪ/",
+      "definition": "To communicate an idea or feeling.",
+      "examples": [
+        "The poem conveys a feeling of sadness."
+      ],
+      "translations": {
+        "uk": "передавати",
+        "de": "vermitteln",
+        "fr": "transmettre",
+        "es": "transmitir",
+        "it": "trasmettere",
+        "pt": "transmitir",
+        "pl": "przekazywać",
+        "ru": "передавать",
+        "zh": "传达",
+        "ja": "伝える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "formulate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈfɔːrmjəleɪt/",
+      "definition": "To develop a plan or idea carefully.",
+      "examples": [
+        "We need to formulate a new strategy."
+      ],
+      "translations": {
+        "uk": "формулювати",
+        "de": "formulieren",
+        "fr": "formuler",
+        "es": "formular",
+        "it": "formulare",
+        "pt": "formular",
+        "pl": "formułować",
+        "ru": "формулировать",
+        "zh": "制定",
+        "ja": "策定する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reinforce",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌriːɪnˈfɔːrs/",
+      "definition": "To make stronger.",
+      "examples": [
+        "Practice reinforces what you learn."
+      ],
+      "translations": {
+        "uk": "закріплювати",
+        "de": "verstärken",
+        "fr": "renforcer",
+        "es": "reforzar",
+        "it": "rafforzare",
+        "pt": "reforçar",
+        "pl": "wzmacniać",
+        "ru": "укреплять",
+        "zh": "加强",
+        "ja": "強化する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "speculate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈspekjəleɪt/",
+      "definition": "To guess without knowing all the facts.",
+      "examples": [
+        "It's too early to speculate about the results."
+      ],
+      "translations": {
+        "uk": "робити припущення",
+        "de": "spekulieren",
+        "fr": "spéculer",
+        "es": "especular",
+        "it": "speculare",
+        "pt": "especular",
+        "pl": "spekulować",
+        "ru": "строить догадки",
+        "zh": "推测",
+        "ja": "推測する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

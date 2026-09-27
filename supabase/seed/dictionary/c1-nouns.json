@@ -1,0 +1,331 @@
+{
+  "package": "c1-nouns",
+  "kind": "words",
+  "words": [
+    {
+      "word": "aspect",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈæspekt/",
+      "definition": "One part or feature of a situation.",
+      "examples": [
+        "Cost is an important aspect of the plan."
+      ],
+      "translations": {
+        "uk": "аспект",
+        "de": "Aspekt",
+        "fr": "aspect",
+        "es": "aspecto",
+        "it": "aspetto",
+        "pt": "aspecto",
+        "pl": "aspekt",
+        "ru": "аспект",
+        "zh": "方面",
+        "ja": "側面"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bias",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈbaɪəs/",
+      "definition": "An unfair preference for one side.",
+      "examples": [
+        "The article shows a clear bias."
+      ],
+      "translations": {
+        "uk": "упередженість",
+        "de": "Voreingenommenheit",
+        "fr": "parti pris",
+        "es": "sesgo",
+        "it": "pregiudizio",
+        "pt": "viés",
+        "pl": "stronniczość",
+        "ru": "предвзятость",
+        "zh": "偏见",
+        "ja": "偏見"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "commitment",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kəˈmɪtmənt/",
+      "definition": "A promise to do something; loyalty.",
+      "examples": [
+        "She showed great commitment to her work."
+      ],
+      "translations": {
+        "uk": "відданість, зобов'язання",
+        "de": "Engagement",
+        "fr": "engagement",
+        "es": "compromiso",
+        "it": "impegno",
+        "pt": "compromisso",
+        "pl": "zaangażowanie",
+        "ru": "преданность, обязательство",
+        "zh": "承诺",
+        "ja": "献身"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "compromise",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑːmprəmaɪz/",
+      "definition": "An agreement where each side accepts less than they wanted.",
+      "examples": [
+        "After hours of talks, they reached a compromise."
+      ],
+      "translations": {
+        "uk": "компроміс",
+        "de": "Kompromiss",
+        "fr": "compromis",
+        "es": "acuerdo",
+        "it": "compromesso",
+        "pt": "acordo",
+        "pl": "kompromis",
+        "ru": "компромисс",
+        "zh": "妥协",
+        "ja": "妥協"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "controversy",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑːntrəvɝːsi/",
+      "definition": "A lot of disagreement about something.",
+      "examples": [
+        "The decision caused a lot of controversy."
+      ],
+      "translations": {
+        "uk": "суперечки",
+        "de": "Kontroverse",
+        "fr": "controverse",
+        "es": "controversia",
+        "it": "controversia",
+        "pt": "controvérsia",
+        "pl": "kontrowersja",
+        "ru": "полемика",
+        "zh": "争议",
+        "ja": "論争"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dimension",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/daɪˈmenʃən/",
+      "definition": "A measurement like length or width; an aspect.",
+      "examples": [
+        "The problem has a political dimension."
+      ],
+      "translations": {
+        "uk": "вимір",
+        "de": "Dimension",
+        "fr": "dimension",
+        "es": "dimensión",
+        "it": "dimensione",
+        "pt": "dimensão",
+        "pl": "wymiar",
+        "ru": "измерение, аспект",
+        "zh": "维度",
+        "ja": "次元"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "equivalent",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈkwɪvələnt/",
+      "definition": "Something with the same value or meaning.",
+      "examples": [
+        "Is there an English equivalent of this word?"
+      ],
+      "translations": {
+        "uk": "еквівалент",
+        "de": "Entsprechung",
+        "fr": "équivalent",
+        "es": "equivalente",
+        "it": "equivalente",
+        "pt": "equivalente",
+        "pl": "odpowiednik",
+        "ru": "эквивалент",
+        "zh": "对应物",
+        "ja": "相当するもの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "implication",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɪmplɪˈkeɪʃən/",
+      "definition": "A possible effect of an action or decision.",
+      "examples": [
+        "Think about the implications of your choice."
+      ],
+      "translations": {
+        "uk": "наслідок",
+        "de": "Auswirkung",
+        "fr": "implication",
+        "es": "implicación",
+        "it": "implicazione",
+        "pt": "implicação",
+        "pl": "implikacja",
+        "ru": "последствие",
+        "zh": "影响",
+        "ja": "影響"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "initiative",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈnɪʃətɪv/",
+      "definition": "The ability to act without being told; a new plan.",
+      "examples": [
+        "She showed initiative by solving the problem herself."
+      ],
+      "translations": {
+        "uk": "ініціатива",
+        "de": "Initiative",
+        "fr": "initiative",
+        "es": "iniciativa",
+        "it": "iniziativa",
+        "pt": "iniciativa",
+        "pl": "inicjatywa",
+        "ru": "инициатива",
+        "zh": "主动性",
+        "ja": "主導権"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prospect",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈprɑːspekt/",
+      "definition": "The possibility that something will happen.",
+      "examples": [
+        "There is little prospect of rain."
+      ],
+      "translations": {
+        "uk": "перспектива",
+        "de": "Aussicht",
+        "fr": "perspective",
+        "es": "perspectiva",
+        "it": "prospettiva",
+        "pt": "perspectiva",
+        "pl": "perspektywa",
+        "ru": "перспектива",
+        "zh": "前景",
+        "ja": "見込み"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scope",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/skoʊp/",
+      "definition": "The range of things that a subject deals with.",
+      "examples": [
+        "That question is outside the scope of this lesson."
+      ],
+      "translations": {
+        "uk": "межі, обсяг",
+        "de": "Umfang",
+        "fr": "portée",
+        "es": "alcance",
+        "it": "ambito",
+        "pt": "âmbito",
+        "pl": "zakres",
+        "ru": "рамки, объём",
+        "zh": "范围",
+        "ja": "範囲"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tendency",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈtendənsi/",
+      "definition": "A likelihood to behave in a particular way.",
+      "examples": [
+        "He has a tendency to talk too much."
+      ],
+      "translations": {
+        "uk": "схильність",
+        "de": "Neigung",
+        "fr": "tendance",
+        "es": "tendencia",
+        "it": "tendenza",
+        "pt": "tendência",
+        "pl": "skłonność",
+        "ru": "склонность",
+        "zh": "倾向",
+        "ja": "傾向"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "threshold",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈθreʃhoʊld/",
+      "definition": "The level at which something starts to happen.",
+      "examples": [
+        "The pain threshold is different for everyone."
+      ],
+      "translations": {
+        "uk": "поріг",
+        "de": "Schwelle",
+        "fr": "seuil",
+        "es": "umbral",
+        "it": "soglia",
+        "pt": "limiar",
+        "pl": "próg",
+        "ru": "порог",
+        "zh": "门槛",
+        "ja": "閾値"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
