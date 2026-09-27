@@ -1,0 +1,531 @@
+{
+  "package": "ielts-academic",
+  "kind": "words",
+  "words": [
+    {
+      "word": "compare",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/kəmˈper/",
+      "definition": "To look at two things to see how they are similar or different.",
+      "examples": [
+        "Compare the two pictures."
+      ],
+      "translations": {
+        "uk": "порівнювати",
+        "de": "vergleichen",
+        "fr": "comparer",
+        "es": "comparar",
+        "it": "confrontare",
+        "pt": "comparar",
+        "pl": "porównywać",
+        "ru": "сравнивать",
+        "zh": "比较",
+        "ja": "比較する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "assess",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/əˈses/",
+      "definition": "To judge the quality or value of something.",
+      "examples": [
+        "Teachers assess students' progress."
+      ],
+      "translations": {
+        "uk": "оцінювати",
+        "de": "beurteilen",
+        "fr": "évaluer",
+        "es": "evaluar",
+        "it": "valutare",
+        "pt": "avaliar",
+        "pl": "oceniać",
+        "ru": "оценивать",
+        "zh": "评估",
+        "ja": "評価する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "indicate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈɪndɪkeɪt/",
+      "definition": "To show that something is true or exists.",
+      "examples": [
+        "The results indicate a clear trend."
+      ],
+      "translations": {
+        "uk": "вказувати",
+        "de": "hinweisen",
+        "fr": "indiquer",
+        "es": "indicar",
+        "it": "indicare",
+        "pt": "indicar",
+        "pl": "wskazywać",
+        "ru": "указывать",
+        "zh": "表明",
+        "ja": "示す"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "contribute",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/kənˈtrɪbjuːt/",
+      "definition": "To help cause something or give something.",
+      "examples": [
+        "Many factors contribute to success."
+      ],
+      "translations": {
+        "uk": "сприяти",
+        "de": "beitragen",
+        "fr": "contribuer",
+        "es": "contribuir",
+        "it": "contribuire",
+        "pt": "contribuir",
+        "pl": "przyczyniać się",
+        "ru": "способствовать",
+        "zh": "促成",
+        "ja": "貢献する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "illustrate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈɪləstreɪt/",
+      "definition": "To explain something by giving examples.",
+      "examples": [
+        "The graph illustrates the changes in population."
+      ],
+      "translations": {
+        "uk": "ілюструвати",
+        "de": "veranschaulichen",
+        "fr": "illustrer",
+        "es": "ilustrar",
+        "it": "illustrare",
+        "pt": "ilustrar",
+        "pl": "ilustrować",
+        "ru": "иллюстрировать",
+        "zh": "说明",
+        "ja": "説明する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "evaluate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ɪˈvæljueɪt/",
+      "definition": "To think carefully about something to judge it.",
+      "examples": [
+        "We need to evaluate the results."
+      ],
+      "translations": {
+        "uk": "оцінювати",
+        "de": "bewerten",
+        "fr": "évaluer",
+        "es": "evaluar",
+        "it": "valutare",
+        "pt": "avaliar",
+        "pl": "oceniać",
+        "ru": "оценивать",
+        "zh": "评价",
+        "ja": "評価する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "investigate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ɪnˈvestɪɡeɪt/",
+      "definition": "To try to find out the facts about something.",
+      "examples": [
+        "The police are investigating the crime."
+      ],
+      "translations": {
+        "uk": "розслідувати",
+        "de": "untersuchen",
+        "fr": "enquêter",
+        "es": "investigar",
+        "it": "indagare",
+        "pt": "investigar",
+        "pl": "badać",
+        "ru": "расследовать",
+        "zh": "调查",
+        "ja": "調査する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "opinion",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Education",
+      "ipa": "/əˈpɪnjən/",
+      "definition": "What you think about something.",
+      "examples": [
+        "In my opinion, the movie was too long."
+      ],
+      "translations": {
+        "uk": "думка",
+        "de": "Meinung",
+        "fr": "opinion",
+        "es": "opinión",
+        "it": "opinione",
+        "pt": "opinião",
+        "pl": "opinia",
+        "ru": "мнение",
+        "zh": "意见",
+        "ja": "意見"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "for example",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Education",
+      "ipa": "/fɔːr ɪɡˈzæmpəl/",
+      "definition": "Used to give an example.",
+      "examples": [
+        "Some fruits, for example oranges, have a lot of vitamin C."
+      ],
+      "translations": {
+        "uk": "наприклад",
+        "de": "zum Beispiel",
+        "fr": "par exemple",
+        "es": "por ejemplo",
+        "it": "per esempio",
+        "pt": "por exemplo",
+        "pl": "na przykład",
+        "ru": "например",
+        "zh": "例如",
+        "ja": "例えば"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "however",
+      "part_of_speech": "adverb",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/haʊˈevɚ/",
+      "definition": "Used to add a statement that is different from the one before.",
+      "examples": [
+        "It was raining. However, we went for a walk."
+      ],
+      "translations": {
+        "uk": "однак",
+        "de": "jedoch",
+        "fr": "cependant",
+        "es": "sin embargo",
+        "it": "tuttavia",
+        "pt": "no entanto",
+        "pl": "jednak",
+        "ru": "однако",
+        "zh": "然而",
+        "ja": "しかし"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "although",
+      "part_of_speech": "conjunction",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ɔːlˈðoʊ/",
+      "definition": "Despite the fact that.",
+      "examples": [
+        "Although it was cold, we swam in the sea."
+      ],
+      "translations": {
+        "uk": "хоча",
+        "de": "obwohl",
+        "fr": "bien que",
+        "es": "aunque",
+        "it": "anche se",
+        "pt": "embora",
+        "pl": "chociaż",
+        "ru": "хотя",
+        "zh": "虽然",
+        "ja": "〜だけれども"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "in addition",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ɪn əˈdɪʃən/",
+      "definition": "Also; as well as.",
+      "examples": [
+        "In addition, the city has two airports."
+      ],
+      "translations": {
+        "uk": "крім того",
+        "de": "außerdem",
+        "fr": "en outre",
+        "es": "además",
+        "it": "inoltre",
+        "pt": "além disso",
+        "pl": "ponadto",
+        "ru": "кроме того",
+        "zh": "此外",
+        "ja": "さらに"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "on the other hand",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ɑːn ði ˈʌðɚ hænd/",
+      "definition": "Used to give a different point of view.",
+      "examples": [
+        "The city is exciting. On the other hand, it's expensive."
+      ],
+      "translations": {
+        "uk": "з іншого боку",
+        "de": "andererseits",
+        "fr": "d'un autre côté",
+        "es": "por otro lado",
+        "it": "d'altra parte",
+        "pt": "por outro lado",
+        "pl": "z drugiej strony",
+        "ru": "с другой стороны",
+        "zh": "另一方面",
+        "ja": "一方で"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "advantage",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ədˈvæntɪdʒ/",
+      "definition": "Something that helps you or is good.",
+      "examples": [
+        "One advantage of living in a city is good transportation."
+      ],
+      "translations": {
+        "uk": "перевага",
+        "de": "Vorteil",
+        "fr": "avantage",
+        "es": "ventaja",
+        "it": "vantaggio",
+        "pt": "vantagem",
+        "pl": "zaleta",
+        "ru": "преимущество",
+        "zh": "优点",
+        "ja": "利点"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "disadvantage",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˌdɪsədˈvæntɪdʒ/",
+      "definition": "Something that makes a situation less good.",
+      "examples": [
+        "The main disadvantage is the high cost."
+      ],
+      "translations": {
+        "uk": "недолік",
+        "de": "Nachteil",
+        "fr": "inconvénient",
+        "es": "desventaja",
+        "it": "svantaggio",
+        "pt": "desvantagem",
+        "pl": "wada",
+        "ru": "недостаток",
+        "zh": "缺点",
+        "ja": "欠点"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "therefore",
+      "part_of_speech": "adverb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈðerfɔːr/",
+      "definition": "For that reason.",
+      "examples": [
+        "He was ill and therefore missed the exam."
+      ],
+      "translations": {
+        "uk": "тому",
+        "de": "daher",
+        "fr": "donc",
+        "es": "por lo tanto",
+        "it": "quindi",
+        "pt": "portanto",
+        "pl": "dlatego",
+        "ru": "поэтому",
+        "zh": "因此",
+        "ja": "したがって"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "in conclusion",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ɪn kənˈkluːʒən/",
+      "definition": "Used to introduce the final part of an essay or speech.",
+      "examples": [
+        "In conclusion, technology has more advantages than disadvantages."
+      ],
+      "translations": {
+        "uk": "на завершення",
+        "de": "abschließend",
+        "fr": "en conclusion",
+        "es": "en conclusión",
+        "it": "in conclusione",
+        "pt": "em conclusão",
+        "pl": "podsumowując",
+        "ru": "в заключение",
+        "zh": "总之",
+        "ja": "結論として"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "to be honest",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/tə bi ˈɑːnɪst/",
+      "definition": "Used when you say what you really think.",
+      "examples": [
+        "To be honest, I don't like coffee."
+      ],
+      "translations": {
+        "uk": "чесно кажучи",
+        "de": "ehrlich gesagt",
+        "fr": "pour être honnête",
+        "es": "la verdad",
+        "it": "a dire il vero",
+        "pt": "para ser sincero",
+        "pl": "szczerze mówiąc",
+        "ru": "честно говоря",
+        "zh": "说实话",
+        "ja": "正直に言うと"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "it depends",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ɪt dɪˈpendz/",
+      "definition": "Used when the answer changes in different situations.",
+      "examples": [
+        "Do I like sports? It depends on the sport."
+      ],
+      "translations": {
+        "uk": "залежить",
+        "de": "es kommt darauf an",
+        "fr": "ça dépend",
+        "es": "depende",
+        "it": "dipende",
+        "pt": "depende",
+        "pl": "to zależy",
+        "ru": "зависит",
+        "zh": "看情况",
+        "ja": "場合による"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "I'd rather",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/aɪd ˈræðɚ/",
+      "definition": "Used to say what you prefer.",
+      "examples": [
+        "I'd rather stay at home tonight."
+      ],
+      "translations": {
+        "uk": "я б краще",
+        "de": "ich würde lieber",
+        "fr": "je préférerais",
+        "es": "preferiría",
+        "it": "preferirei",
+        "pt": "eu preferiria",
+        "pl": "wolałbym",
+        "ru": "я бы предпочёл",
+        "zh": "我宁愿",
+        "ja": "〜の方がいい"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "as far as I know",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/æz fɑːr æz aɪ noʊ/",
+      "definition": "Used to say that you believe something is true but are not certain.",
+      "examples": [
+        "As far as I know, the store is still open."
+      ],
+      "translations": {
+        "uk": "наскільки я знаю",
+        "de": "soweit ich weiß",
+        "fr": "pour autant que je sache",
+        "es": "que yo sepa",
+        "it": "per quanto ne so",
+        "pt": "até onde eu sei",
+        "pl": "o ile wiem",
+        "ru": "насколько я знаю",
+        "zh": "据我所知",
+        "ja": "私の知る限り"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    }
+  ]
+}

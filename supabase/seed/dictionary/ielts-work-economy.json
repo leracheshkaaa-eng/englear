@@ -1,0 +1,429 @@
+{
+  "package": "ielts-work-economy",
+  "kind": "words",
+  "words": [
+    {
+      "word": "employer",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/ɪmˈplɔɪɚ/",
+      "definition": "A person or company that pays people to work for them.",
+      "examples": [
+        "My employer gives us free lunch."
+      ],
+      "translations": {
+        "uk": "роботодавець",
+        "de": "Arbeitgeber",
+        "fr": "employeur",
+        "es": "empleador",
+        "it": "datore di lavoro",
+        "pt": "empregador",
+        "pl": "pracodawca",
+        "ru": "работодатель",
+        "zh": "雇主",
+        "ja": "雇用主"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "promotion",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Work",
+      "ipa": "/prəˈmoʊʃən/",
+      "definition": "A move to a better job in the same company.",
+      "examples": [
+        "She got a promotion last month."
+      ],
+      "translations": {
+        "uk": "підвищення (на роботі)",
+        "de": "Beförderung",
+        "fr": "promotion",
+        "es": "ascenso",
+        "it": "promozione",
+        "pt": "promoção",
+        "pl": "awans",
+        "ru": "повышение (по службе)",
+        "zh": "晋升",
+        "ja": "昇進"
+      },
+      "word_type": "word",
+      "ielts_category": "Work",
+      "meanings": [
+        {
+          "key": "sales",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "Activities to make people buy a product, like special prices or ads.",
+          "examples": [
+            "The store has a promotion on winter coats."
+          ],
+          "translations": {
+            "uk": "рекламна акція",
+            "de": "Werbeaktion",
+            "fr": "promotion",
+            "es": "promoción",
+            "it": "promozione",
+            "pt": "promoção",
+            "pl": "promocja",
+            "ru": "рекламная акция",
+            "zh": "促销",
+            "ja": "販売促進"
+          }
+        }
+      ]
+    },
+    {
+      "word": "industry",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Business",
+      "ipa": "/ˈɪndəstri/",
+      "definition": "The production of goods in factories.",
+      "examples": [
+        "The car industry employs many people."
+      ],
+      "translations": {
+        "uk": "промисловість",
+        "de": "Industrie",
+        "fr": "industrie",
+        "es": "industria",
+        "it": "industria",
+        "pt": "indústria",
+        "pl": "przemysł",
+        "ru": "промышленность",
+        "zh": "工业",
+        "ja": "産業"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "trade",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Business",
+      "ipa": "/treɪd/",
+      "definition": "The buying and selling of goods between countries.",
+      "examples": [
+        "Trade between the two countries is growing."
+      ],
+      "translations": {
+        "uk": "торгівля",
+        "de": "Handel",
+        "fr": "commerce",
+        "es": "comercio",
+        "it": "commercio",
+        "pt": "comércio",
+        "pl": "handel",
+        "ru": "торговля",
+        "zh": "贸易",
+        "ja": "貿易"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "growth",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Business",
+      "ipa": "/ɡroʊθ/",
+      "definition": "An increase in size or amount.",
+      "examples": [
+        "The country's economic growth is slow."
+      ],
+      "translations": {
+        "uk": "зростання",
+        "de": "Wachstum",
+        "fr": "croissance",
+        "es": "crecimiento",
+        "it": "crescita",
+        "pt": "crescimento",
+        "pl": "wzrost",
+        "ru": "рост",
+        "zh": "增长",
+        "ja": "成長"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "contract",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Business",
+      "ipa": "/ˈkɑːntrækt/",
+      "definition": "A written legal agreement.",
+      "examples": [
+        "She signed a two-year contract."
+      ],
+      "translations": {
+        "uk": "договір, контракт",
+        "de": "Vertrag",
+        "fr": "contrat",
+        "es": "contrato",
+        "it": "contratto",
+        "pt": "contrato",
+        "pl": "umowa",
+        "ru": "договор, контракт",
+        "zh": "合同",
+        "ja": "契約"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "resign",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/rɪˈzaɪn/",
+      "definition": "To leave your job officially.",
+      "examples": [
+        "He resigned from his job last week."
+      ],
+      "translations": {
+        "uk": "звільнятися (за власним бажанням)",
+        "de": "kündigen",
+        "fr": "démissionner",
+        "es": "dimitir",
+        "it": "dimettersi",
+        "pt": "demitir-se",
+        "pl": "zrezygnować z pracy",
+        "ru": "увольняться (по собственному желанию)",
+        "zh": "辞职",
+        "ja": "辞職する"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "workplace",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˈwɝːkpleɪs/",
+      "definition": "The place where people work.",
+      "examples": [
+        "The workplace should be safe."
+      ],
+      "translations": {
+        "uk": "робоче місце",
+        "de": "Arbeitsplatz",
+        "fr": "lieu de travail",
+        "es": "lugar de trabajo",
+        "it": "posto di lavoro",
+        "pt": "local de trabalho",
+        "pl": "miejsce pracy",
+        "ru": "рабочее место",
+        "zh": "工作场所",
+        "ja": "職場"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "work-life balance",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˌwɝːk laɪf ˈbæləns/",
+      "definition": "The right amount of time for work and for private life.",
+      "examples": [
+        "A good work-life balance is important for health."
+      ],
+      "translations": {
+        "uk": "баланс між роботою та особистим життям",
+        "de": "Work-Life-Balance",
+        "fr": "équilibre vie pro-vie perso",
+        "es": "conciliación laboral",
+        "it": "equilibrio vita-lavoro",
+        "pt": "equilíbrio entre vida pessoal e profissional",
+        "pl": "równowaga między pracą a życiem prywatnym",
+        "ru": "баланс работы и личной жизни",
+        "zh": "工作与生活的平衡",
+        "ja": "ワークライフバランス"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "remote work",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/rɪˌmoʊt ˈwɝːk/",
+      "definition": "Working from home or another place away from the office.",
+      "examples": [
+        "Remote work saves time on commuting."
+      ],
+      "translations": {
+        "uk": "віддалена робота",
+        "de": "Homeoffice",
+        "fr": "télétravail",
+        "es": "teletrabajo",
+        "it": "lavoro da remoto",
+        "pt": "trabalho remoto",
+        "pl": "praca zdalna",
+        "ru": "удалённая работа",
+        "zh": "远程工作",
+        "ja": "リモートワーク"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "commute",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/kəˈmjuːt/",
+      "definition": "To travel regularly between home and work.",
+      "examples": [
+        "I commute to the city by train."
+      ],
+      "translations": {
+        "uk": "їздити на роботу",
+        "de": "pendeln",
+        "fr": "faire la navette",
+        "es": "desplazarse al trabajo",
+        "it": "fare il pendolare",
+        "pt": "deslocar-se para o trabalho",
+        "pl": "dojeżdżać do pracy",
+        "ru": "ездить на работу",
+        "zh": "通勤",
+        "ja": "通勤する"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "inflation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ɪnˈfleɪʃən/",
+      "definition": "A general rise in prices.",
+      "examples": [
+        "Inflation makes everything more expensive."
+      ],
+      "translations": {
+        "uk": "інфляція",
+        "de": "Inflation",
+        "fr": "inflation",
+        "es": "inflación",
+        "it": "inflazione",
+        "pt": "inflação",
+        "pl": "inflacja",
+        "ru": "инфляция",
+        "zh": "通货膨胀",
+        "ja": "インフレ"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "export",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ɪkˈspɔːrt/",
+      "definition": "To sell goods to another country.",
+      "examples": [
+        "Brazil exports a lot of coffee."
+      ],
+      "translations": {
+        "uk": "експортувати",
+        "de": "exportieren",
+        "fr": "exporter",
+        "es": "exportar",
+        "it": "esportare",
+        "pt": "exportar",
+        "pl": "eksportować",
+        "ru": "экспортировать",
+        "zh": "出口",
+        "ja": "輸出する"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "import",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ɪmˈpɔːrt/",
+      "definition": "To buy goods from another country.",
+      "examples": [
+        "We import oil from other countries."
+      ],
+      "translations": {
+        "uk": "імпортувати",
+        "de": "importieren",
+        "fr": "importer",
+        "es": "importar",
+        "it": "importare",
+        "pt": "importar",
+        "pl": "importować",
+        "ru": "импортировать",
+        "zh": "进口",
+        "ja": "輸入する"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "startup",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ˈstɑːrtʌp/",
+      "definition": "A new small company.",
+      "examples": [
+        "He works for a tech startup."
+      ],
+      "translations": {
+        "uk": "стартап",
+        "de": "Start-up",
+        "fr": "start-up",
+        "es": "startup",
+        "it": "startup",
+        "pt": "startup",
+        "pl": "startup",
+        "ru": "стартап",
+        "zh": "初创企业",
+        "ja": "スタートアップ"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "negotiate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/nɪˈɡoʊʃieɪt/",
+      "definition": "To discuss something to reach an agreement.",
+      "examples": [
+        "They negotiated a new contract."
+      ],
+      "translations": {
+        "uk": "вести переговори",
+        "de": "verhandeln",
+        "fr": "négocier",
+        "es": "negociar",
+        "it": "negoziare",
+        "pt": "negociar",
+        "pl": "negocjować",
+        "ru": "вести переговоры",
+        "zh": "谈判",
+        "ja": "交渉する"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    }
+  ]
+}

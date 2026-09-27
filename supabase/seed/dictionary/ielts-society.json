@@ -1,0 +1,456 @@
+{
+  "package": "ielts-society",
+  "kind": "words",
+  "words": [
+    {
+      "word": "society",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/səˈsaɪəti/",
+      "definition": "People living together in a community or country.",
+      "examples": [
+        "Technology has changed society."
+      ],
+      "translations": {
+        "uk": "суспільство",
+        "de": "Gesellschaft",
+        "fr": "société",
+        "es": "sociedad",
+        "it": "società",
+        "pt": "sociedade",
+        "pl": "społeczeństwo",
+        "ru": "общество",
+        "zh": "社会",
+        "ja": "社会"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "community",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/kəˈmjuːnəti/",
+      "definition": "The people who live in one area.",
+      "examples": [
+        "The library is important for the local community."
+      ],
+      "translations": {
+        "uk": "громада",
+        "de": "Gemeinschaft",
+        "fr": "communauté",
+        "es": "comunidad",
+        "it": "comunità",
+        "pt": "comunidade",
+        "pl": "społeczność",
+        "ru": "сообщество",
+        "zh": "社区",
+        "ja": "地域社会"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "homeless",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ˈhoʊmləs/",
+      "definition": "Having no place to live.",
+      "examples": [
+        "The charity helps homeless people."
+      ],
+      "translations": {
+        "uk": "бездомний",
+        "de": "obdachlos",
+        "fr": "sans-abri",
+        "es": "sin hogar",
+        "it": "senzatetto",
+        "pt": "sem-teto",
+        "pl": "bezdomny",
+        "ru": "бездомный",
+        "zh": "无家可归的",
+        "ja": "ホームレスの"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "charity",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ˈtʃærəti/",
+      "definition": "An organization that helps people in need.",
+      "examples": [
+        "She gives money to charity every month."
+      ],
+      "translations": {
+        "uk": "благодійність",
+        "de": "Wohltätigkeit",
+        "fr": "association caritative",
+        "es": "organización benéfica",
+        "it": "ente di beneficenza",
+        "pt": "instituição de caridade",
+        "pl": "organizacja charytatywna",
+        "ru": "благотворительность",
+        "zh": "慈善",
+        "ja": "慈善"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "volunteer",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ˌvɑːlənˈtɪr/",
+      "definition": "A person who works without being paid.",
+      "examples": [
+        "Volunteers cleaned the beach."
+      ],
+      "translations": {
+        "uk": "волонтер",
+        "de": "Freiwilliger",
+        "fr": "bénévole",
+        "es": "voluntario",
+        "it": "volontario",
+        "pt": "voluntário",
+        "pl": "wolontariusz",
+        "ru": "волонтёр",
+        "zh": "志愿者",
+        "ja": "ボランティア"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "rights",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/raɪts/",
+      "definition": "Things that people are allowed to have or do by law.",
+      "examples": [
+        "Everyone should know their rights."
+      ],
+      "translations": {
+        "uk": "права",
+        "de": "Rechte",
+        "fr": "droits",
+        "es": "derechos",
+        "it": "diritti",
+        "pt": "direitos",
+        "pl": "prawa",
+        "ru": "права",
+        "zh": "权利",
+        "ja": "権利"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "vote",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/voʊt/",
+      "definition": "To choose someone or something in an election.",
+      "examples": [
+        "Citizens over eighteen can vote."
+      ],
+      "translations": {
+        "uk": "голосувати",
+        "de": "wählen",
+        "fr": "voter",
+        "es": "votar",
+        "it": "votare",
+        "pt": "votar",
+        "pl": "głosować",
+        "ru": "голосовать",
+        "zh": "投票",
+        "ja": "投票する"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "election",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/iˈlekʃən/",
+      "definition": "The process of choosing people for government by voting.",
+      "examples": [
+        "The election is in November."
+      ],
+      "translations": {
+        "uk": "вибори",
+        "de": "Wahl",
+        "fr": "élection",
+        "es": "elección",
+        "it": "elezione",
+        "pt": "eleição",
+        "pl": "wybory",
+        "ru": "выборы",
+        "zh": "选举",
+        "ja": "選挙"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "politics",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ˈpɑːlətɪks/",
+      "definition": "Activities related to government and power.",
+      "examples": [
+        "He is not interested in politics."
+      ],
+      "translations": {
+        "uk": "політика",
+        "de": "Politik",
+        "fr": "politique",
+        "es": "política",
+        "it": "politica",
+        "pt": "política",
+        "pl": "polityka",
+        "ru": "политика",
+        "zh": "政治",
+        "ja": "政治"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "criminal",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ˈkrɪmɪnəl/",
+      "definition": "A person who has committed a crime.",
+      "examples": [
+        "The police caught the criminal."
+      ],
+      "translations": {
+        "uk": "злочинець",
+        "de": "Verbrecher",
+        "fr": "criminel",
+        "es": "delincuente",
+        "it": "criminale",
+        "pt": "criminoso",
+        "pl": "przestępca",
+        "ru": "преступник",
+        "zh": "罪犯",
+        "ja": "犯罪者"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "prison",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/ˈprɪzən/",
+      "definition": "A building where criminals are kept.",
+      "examples": [
+        "He spent five years in prison."
+      ],
+      "translations": {
+        "uk": "в'язниця",
+        "de": "Gefängnis",
+        "fr": "prison",
+        "es": "cárcel",
+        "it": "prigione",
+        "pt": "prisão",
+        "pl": "więzienie",
+        "ru": "тюрьма",
+        "zh": "监狱",
+        "ja": "刑務所"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "steal",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Society",
+      "ipa": "/stiːl/",
+      "definition": "To take something that is not yours.",
+      "examples": [
+        "It is wrong to steal from stores."
+      ],
+      "translations": {
+        "uk": "красти",
+        "de": "stehlen",
+        "fr": "voler",
+        "es": "robar",
+        "it": "rubare",
+        "pt": "roubar",
+        "pl": "kraść",
+        "ru": "красть",
+        "zh": "偷",
+        "ja": "盗む"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "poverty",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈpɑːvɚti/",
+      "definition": "The state of being very poor.",
+      "examples": [
+        "Millions of people live in poverty."
+      ],
+      "translations": {
+        "uk": "бідність",
+        "de": "Armut",
+        "fr": "pauvreté",
+        "es": "pobreza",
+        "it": "povertà",
+        "pt": "pobreza",
+        "pl": "ubóstwo",
+        "ru": "бедность",
+        "zh": "贫困",
+        "ja": "貧困"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "inequality",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˌɪnɪˈkwɑːləti/",
+      "definition": "An unfair situation where some people have more than others.",
+      "examples": [
+        "Income inequality is growing."
+      ],
+      "translations": {
+        "uk": "нерівність",
+        "de": "Ungleichheit",
+        "fr": "inégalité",
+        "es": "desigualdad",
+        "it": "disuguaglianza",
+        "pt": "desigualdade",
+        "pl": "nierówność",
+        "ru": "неравенство",
+        "zh": "不平等",
+        "ja": "不平等"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "punishment",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈpʌnɪʃmənt/",
+      "definition": "Something bad done to a person because they did something wrong.",
+      "examples": [
+        "The punishment for stealing is a fine."
+      ],
+      "translations": {
+        "uk": "покарання",
+        "de": "Strafe",
+        "fr": "punition",
+        "es": "castigo",
+        "it": "punizione",
+        "pt": "punição",
+        "pl": "kara",
+        "ru": "наказание",
+        "zh": "惩罚",
+        "ja": "罰"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "aging population",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˌeɪdʒɪŋ ˌpɑːpjəˈleɪʃən/",
+      "definition": "A population with a growing number of old people.",
+      "examples": [
+        "Japan has an aging population."
+      ],
+      "translations": {
+        "uk": "старіння населення",
+        "de": "alternde Bevölkerung",
+        "fr": "population vieillissante",
+        "es": "envejecimiento de la población",
+        "it": "invecchiamento della popolazione",
+        "pt": "envelhecimento da população",
+        "pl": "starzejące się społeczeństwo",
+        "ru": "стареющее население",
+        "zh": "人口老龄化",
+        "ja": "高齢化社会"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "equality",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/iˈkwɑːləti/",
+      "definition": "The same rights and chances for everyone.",
+      "examples": [
+        "They fight for gender equality."
+      ],
+      "translations": {
+        "uk": "рівність",
+        "de": "Gleichheit",
+        "fr": "égalité",
+        "es": "igualdad",
+        "it": "uguaglianza",
+        "pt": "igualdade",
+        "pl": "równość",
+        "ru": "равенство",
+        "zh": "平等",
+        "ja": "平等"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    },
+    {
+      "word": "discrimination",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/dɪˌskrɪmɪˈneɪʃən/",
+      "definition": "Treating people unfairly because of their race, sex or age.",
+      "examples": [
+        "Discrimination at work is illegal."
+      ],
+      "translations": {
+        "uk": "дискримінація",
+        "de": "Diskriminierung",
+        "fr": "discrimination",
+        "es": "discriminación",
+        "it": "discriminazione",
+        "pt": "discriminação",
+        "pl": "dyskryminacja",
+        "ru": "дискриминация",
+        "zh": "歧视",
+        "ja": "差別"
+      },
+      "word_type": "word",
+      "ielts_category": "Society"
+    }
+  ]
+}

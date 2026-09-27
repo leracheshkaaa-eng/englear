@@ -1,0 +1,456 @@
+{
+  "package": "ielts-education",
+  "kind": "words",
+  "words": [
+    {
+      "word": "education",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˌedʒəˈkeɪʃən/",
+      "definition": "The process of teaching and learning, especially at school.",
+      "examples": [
+        "Everyone has the right to a good education."
+      ],
+      "translations": {
+        "uk": "освіта",
+        "de": "Bildung",
+        "fr": "éducation",
+        "es": "educación",
+        "it": "istruzione",
+        "pt": "educação",
+        "pl": "edukacja",
+        "ru": "образование",
+        "zh": "教育",
+        "ja": "教育"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "lecture",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˈlektʃɚ/",
+      "definition": "A talk on a subject, especially at a university.",
+      "examples": [
+        "The lecture starts at nine."
+      ],
+      "translations": {
+        "uk": "лекція",
+        "de": "Vorlesung",
+        "fr": "cours magistral",
+        "es": "clase magistral",
+        "it": "lezione",
+        "pt": "palestra",
+        "pl": "wykład",
+        "ru": "лекция",
+        "zh": "讲座",
+        "ja": "講義"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "assignment",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/əˈsaɪnmənt/",
+      "definition": "A piece of work given to a student.",
+      "examples": [
+        "I have to finish my history assignment."
+      ],
+      "translations": {
+        "uk": "завдання",
+        "de": "Aufgabe",
+        "fr": "devoir",
+        "es": "tarea",
+        "it": "compito",
+        "pt": "trabalho",
+        "pl": "zadanie",
+        "ru": "задание",
+        "zh": "作业",
+        "ja": "課題"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "essay",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˈeseɪ/",
+      "definition": "A short piece of writing on a subject.",
+      "examples": [
+        "Write an essay about your hometown."
+      ],
+      "translations": {
+        "uk": "есе, твір",
+        "de": "Aufsatz",
+        "fr": "rédaction",
+        "es": "ensayo",
+        "it": "saggio",
+        "pt": "redação",
+        "pl": "wypracowanie",
+        "ru": "эссе, сочинение",
+        "zh": "文章",
+        "ja": "作文"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "tutor",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˈtuːtɚ/",
+      "definition": "A teacher who teaches one student or a small group.",
+      "examples": [
+        "I have a math tutor."
+      ],
+      "translations": {
+        "uk": "репетитор",
+        "de": "Nachhilfelehrer",
+        "fr": "professeur particulier",
+        "es": "tutor",
+        "it": "insegnante privato",
+        "pt": "professor particular",
+        "pl": "korepetytor",
+        "ru": "репетитор",
+        "zh": "家教",
+        "ja": "家庭教師"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "online learning",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Education",
+      "ipa": "/ˌɑːnlaɪn ˈlɝːnɪŋ/",
+      "definition": "Studying using the internet instead of a classroom.",
+      "examples": [
+        "Online learning became very popular."
+      ],
+      "translations": {
+        "uk": "онлайн-навчання",
+        "de": "Online-Lernen",
+        "fr": "apprentissage en ligne",
+        "es": "aprendizaje en línea",
+        "it": "apprendimento online",
+        "pt": "ensino a distância",
+        "pl": "nauka online",
+        "ru": "онлайн-обучение",
+        "zh": "在线学习",
+        "ja": "オンライン学習"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "elementary school",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Education",
+      "ipa": "/ˌeləˈmentri skuːl/",
+      "definition": "A school for children aged about 5 to 11.",
+      "examples": [
+        "My daughter goes to elementary school."
+      ],
+      "translations": {
+        "uk": "початкова школа",
+        "de": "Grundschule",
+        "fr": "école primaire",
+        "es": "escuela primaria",
+        "it": "scuola elementare",
+        "pt": "escola primária",
+        "pl": "szkoła podstawowa",
+        "ru": "начальная школа",
+        "zh": "小学",
+        "ja": "小学校"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "high school",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Education",
+      "ipa": "/ˈhaɪ skuːl/",
+      "definition": "A school for students aged about 14 to 18.",
+      "examples": [
+        "My brother is in high school."
+      ],
+      "translations": {
+        "uk": "старша школа",
+        "de": "Oberschule",
+        "fr": "lycée",
+        "es": "secundaria",
+        "it": "scuola superiore",
+        "pt": "ensino médio",
+        "pl": "liceum",
+        "ru": "старшая школа",
+        "zh": "高中",
+        "ja": "高校"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "qualification",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˌkwɑːləfɪˈkeɪʃən/",
+      "definition": "An official record that you have finished a course or have a skill.",
+      "examples": [
+        "You need a teaching qualification for this job."
+      ],
+      "translations": {
+        "uk": "кваліфікація",
+        "de": "Qualifikation",
+        "fr": "qualification",
+        "es": "titulación",
+        "it": "qualifica",
+        "pt": "qualificação",
+        "pl": "kwalifikacje",
+        "ru": "квалификация",
+        "zh": "资格",
+        "ja": "資格"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "scholarship",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈskɑːlɚʃɪp/",
+      "definition": "Money given to a student to help pay for their studies.",
+      "examples": [
+        "She won a scholarship to study in the US."
+      ],
+      "translations": {
+        "uk": "стипендія",
+        "de": "Stipendium",
+        "fr": "bourse",
+        "es": "beca",
+        "it": "borsa di studio",
+        "pt": "bolsa de estudos",
+        "pl": "stypendium",
+        "ru": "стипендия",
+        "zh": "奖学金",
+        "ja": "奨学金"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "tuition",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/tuˈɪʃən/",
+      "definition": "Money you pay to study at a school or university.",
+      "examples": [
+        "Tuition fees have gone up again."
+      ],
+      "translations": {
+        "uk": "плата за навчання",
+        "de": "Studiengebühren",
+        "fr": "frais de scolarité",
+        "es": "matrícula",
+        "it": "tasse universitarie",
+        "pt": "mensalidade",
+        "pl": "czesne",
+        "ru": "плата за обучение",
+        "zh": "学费",
+        "ja": "授業料"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "literacy",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈlɪtərəsi/",
+      "definition": "The ability to read and write.",
+      "examples": [
+        "The literacy rate in the country is 98 percent."
+      ],
+      "translations": {
+        "uk": "грамотність",
+        "de": "Lese- und Schreibfähigkeit",
+        "fr": "alphabétisation",
+        "es": "alfabetización",
+        "it": "alfabetizzazione",
+        "pt": "alfabetização",
+        "pl": "umiejętność czytania i pisania",
+        "ru": "грамотность",
+        "zh": "识字能力",
+        "ja": "識字"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "compulsory",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/kəmˈpʌlsəri/",
+      "definition": "Required by law or a rule.",
+      "examples": [
+        "School is compulsory until the age of sixteen."
+      ],
+      "translations": {
+        "uk": "обов'язковий",
+        "de": "Pflicht-",
+        "fr": "obligatoire",
+        "es": "obligatorio",
+        "it": "obbligatorio",
+        "pt": "obrigatório",
+        "pl": "obowiązkowy",
+        "ru": "обязательный",
+        "zh": "义务的",
+        "ja": "義務的な"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "academic",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˌækəˈdemɪk/",
+      "definition": "Related to schools, colleges and studying.",
+      "examples": [
+        "Her academic results are excellent."
+      ],
+      "translations": {
+        "uk": "академічний",
+        "de": "akademisch",
+        "fr": "universitaire",
+        "es": "académico",
+        "it": "accademico",
+        "pt": "acadêmico",
+        "pl": "akademicki",
+        "ru": "академический",
+        "zh": "学术的",
+        "ja": "学業の"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "discipline",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈdɪsəplɪn/",
+      "definition": "Training people to obey rules and control their behavior.",
+      "examples": [
+        "Good teachers keep discipline in class."
+      ],
+      "translations": {
+        "uk": "дисципліна",
+        "de": "Disziplin",
+        "fr": "discipline",
+        "es": "disciplina",
+        "it": "disciplina",
+        "pt": "disciplina",
+        "pl": "dyscyplina",
+        "ru": "дисциплина",
+        "zh": "纪律",
+        "ja": "規律"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "motivate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈmoʊtəveɪt/",
+      "definition": "To make someone want to do something.",
+      "examples": [
+        "Good teachers motivate their students."
+      ],
+      "translations": {
+        "uk": "мотивувати",
+        "de": "motivieren",
+        "fr": "motiver",
+        "es": "motivar",
+        "it": "motivare",
+        "pt": "motivar",
+        "pl": "motywować",
+        "ru": "мотивировать",
+        "zh": "激励",
+        "ja": "やる気にさせる"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "acquire",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/əˈkwaɪɚ/",
+      "definition": "To get or learn a skill or knowledge.",
+      "examples": [
+        "Children acquire languages easily."
+      ],
+      "translations": {
+        "uk": "набувати, засвоювати",
+        "de": "erwerben",
+        "fr": "acquérir",
+        "es": "adquirir",
+        "it": "acquisire",
+        "pt": "adquirir",
+        "pl": "nabywać",
+        "ru": "приобретать, усваивать",
+        "zh": "获得",
+        "ja": "習得する"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    },
+    {
+      "word": "enroll",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ɪnˈroʊl/",
+      "definition": "To officially join a course or school.",
+      "examples": [
+        "She enrolled in an evening class."
+      ],
+      "translations": {
+        "uk": "записуватися (на курс)",
+        "de": "sich einschreiben",
+        "fr": "s'inscrire",
+        "es": "matricularse",
+        "it": "iscriversi",
+        "pt": "matricular-se",
+        "pl": "zapisać się",
+        "ru": "записываться (на курс)",
+        "zh": "注册",
+        "ja": "入学する"
+      },
+      "word_type": "word",
+      "ielts_category": "Education"
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "package": "ielts-health-science",
+  "kind": "words",
+  "words": [
+    {
+      "word": "lifestyle",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈlaɪfstaɪl/",
+      "definition": "The way a person lives.",
+      "examples": [
+        "A healthy lifestyle includes exercise."
+      ],
+      "translations": {
+        "uk": "спосіб життя",
+        "de": "Lebensstil",
+        "fr": "mode de vie",
+        "es": "estilo de vida",
+        "it": "stile di vita",
+        "pt": "estilo de vida",
+        "pl": "styl życia",
+        "ru": "образ жизни",
+        "zh": "生活方式",
+        "ja": "ライフスタイル"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "balanced diet",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˌbælənst ˈdaɪət/",
+      "definition": "Eating the right amounts of different kinds of food.",
+      "examples": [
+        "A balanced diet keeps you healthy."
+      ],
+      "translations": {
+        "uk": "збалансоване харчування",
+        "de": "ausgewogene Ernährung",
+        "fr": "alimentation équilibrée",
+        "es": "dieta equilibrada",
+        "it": "dieta equilibrata",
+        "pt": "dieta equilibrada",
+        "pl": "zbilansowana dieta",
+        "ru": "сбалансированное питание",
+        "zh": "均衡饮食",
+        "ja": "バランスの取れた食事"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "mental health",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˌmentəl ˈhelθ/",
+      "definition": "The condition of a person's mind and feelings.",
+      "examples": [
+        "Sport is good for your mental health."
+      ],
+      "translations": {
+        "uk": "психічне здоров'я",
+        "de": "psychische Gesundheit",
+        "fr": "santé mentale",
+        "es": "salud mental",
+        "it": "salute mentale",
+        "pt": "saúde mental",
+        "pl": "zdrowie psychiczne",
+        "ru": "психическое здоровье",
+        "zh": "心理健康",
+        "ja": "メンタルヘルス"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "disease",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/dɪˈziːz/",
+      "definition": "An illness.",
+      "examples": [
+        "Heart disease is very common."
+      ],
+      "translations": {
+        "uk": "хвороба",
+        "de": "Krankheit",
+        "fr": "maladie",
+        "es": "enfermedad",
+        "it": "malattia",
+        "pt": "doença",
+        "pl": "choroba",
+        "ru": "болезнь",
+        "zh": "疾病",
+        "ja": "病気"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "treatment",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈtriːtmənt/",
+      "definition": "Medical care for an illness or injury.",
+      "examples": [
+        "The treatment was successful."
+      ],
+      "translations": {
+        "uk": "лікування",
+        "de": "Behandlung",
+        "fr": "traitement",
+        "es": "tratamiento",
+        "it": "cura",
+        "pt": "tratamento",
+        "pl": "leczenie",
+        "ru": "лечение",
+        "zh": "治疗",
+        "ja": "治療"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "prevent",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/prɪˈvent/",
+      "definition": "To stop something from happening.",
+      "examples": [
+        "Washing your hands prevents illness."
+      ],
+      "translations": {
+        "uk": "запобігати",
+        "de": "verhindern",
+        "fr": "prévenir",
+        "es": "prevenir",
+        "it": "prevenire",
+        "pt": "prevenir",
+        "pl": "zapobiegać",
+        "ru": "предотвращать",
+        "zh": "预防",
+        "ja": "防ぐ"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "vaccine",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/vækˈsiːn/",
+      "definition": "A substance that protects you from a disease.",
+      "examples": [
+        "The vaccine protects against flu."
+      ],
+      "translations": {
+        "uk": "вакцина",
+        "de": "Impfstoff",
+        "fr": "vaccin",
+        "es": "vacuna",
+        "it": "vaccino",
+        "pt": "vacina",
+        "pl": "szczepionka",
+        "ru": "вакцина",
+        "zh": "疫苗",
+        "ja": "ワクチン"
+      },
+      "word_type": "word",
+      "ielts_category": "Health"
+    },
+    {
+      "word": "scientist",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Science",
+      "ipa": "/ˈsaɪəntɪst/",
+      "definition": "A person who studies science.",
+      "examples": [
+        "Scientists are studying the virus."
+      ],
+      "translations": {
+        "uk": "науковець",
+        "de": "Wissenschaftler",
+        "fr": "scientifique",
+        "es": "científico",
+        "it": "scienziato",
+        "pt": "cientista",
+        "pl": "naukowiec",
+        "ru": "учёный",
+        "zh": "科学家",
+        "ja": "科学者"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "discovery",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/dɪˈskʌvəri/",
+      "definition": "Finding something that was not known before.",
+      "examples": [
+        "The discovery of penicillin saved millions of lives."
+      ],
+      "translations": {
+        "uk": "відкриття",
+        "de": "Entdeckung",
+        "fr": "découverte",
+        "es": "descubrimiento",
+        "it": "scoperta",
+        "pt": "descoberta",
+        "pl": "odkrycie",
+        "ru": "открытие",
+        "zh": "发现",
+        "ja": "発見"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "invention",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ɪnˈvenʃən/",
+      "definition": "Something new that someone has made or designed.",
+      "examples": [
+        "The telephone was an important invention."
+      ],
+      "translations": {
+        "uk": "винахід",
+        "de": "Erfindung",
+        "fr": "invention",
+        "es": "invento",
+        "it": "invenzione",
+        "pt": "invenção",
+        "pl": "wynalazek",
+        "ru": "изобретение",
+        "zh": "发明",
+        "ja": "発明"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "laboratory",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈlæbrətɔːri/",
+      "definition": "A room where scientists do experiments.",
+      "examples": [
+        "The samples were tested in a laboratory."
+      ],
+      "translations": {
+        "uk": "лабораторія",
+        "de": "Labor",
+        "fr": "laboratoire",
+        "es": "laboratorio",
+        "it": "laboratorio",
+        "pt": "laboratório",
+        "pl": "laboratorium",
+        "ru": "лаборатория",
+        "zh": "实验室",
+        "ja": "実験室"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "data",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈdeɪtə/",
+      "definition": "Facts and numbers collected to be studied.",
+      "examples": [
+        "We collected data from 500 students."
+      ],
+      "translations": {
+        "uk": "дані",
+        "de": "Daten",
+        "fr": "données",
+        "es": "datos",
+        "it": "dati",
+        "pt": "dados",
+        "pl": "dane",
+        "ru": "данные",
+        "zh": "数据",
+        "ja": "データ"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "survey",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈsɝːveɪ/",
+      "definition": "A set of questions to find out what people think.",
+      "examples": [
+        "The survey shows that most people like the park."
+      ],
+      "translations": {
+        "uk": "опитування",
+        "de": "Umfrage",
+        "fr": "sondage",
+        "es": "encuesta",
+        "it": "sondaggio",
+        "pt": "pesquisa",
+        "pl": "ankieta",
+        "ru": "опрос",
+        "zh": "调查",
+        "ja": "アンケート"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "evidence",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/ˈevɪdəns/",
+      "definition": "Facts that show that something is true.",
+      "examples": [
+        "There is no evidence that he did it."
+      ],
+      "translations": {
+        "uk": "докази",
+        "de": "Beweise",
+        "fr": "preuve",
+        "es": "prueba",
+        "it": "prova",
+        "pt": "evidência",
+        "pl": "dowód",
+        "ru": "доказательства",
+        "zh": "证据",
+        "ja": "証拠"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    }
+  ]
+}

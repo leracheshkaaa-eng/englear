@@ -1,0 +1,58 @@
+{
+  "package": "meanings-ielts",
+  "kind": "meanings",
+  "words": [
+    {
+      "word": "waste",
+      "meanings": [
+        {
+          "key": "rubbish",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "Things that people throw away.",
+          "examples": [
+            "We produce too much plastic waste."
+          ],
+          "translations": {
+            "uk": "відходи",
+            "de": "Abfall",
+            "fr": "déchets",
+            "es": "residuos",
+            "it": "rifiuti",
+            "pt": "lixo",
+            "pl": "odpady",
+            "ru": "отходы",
+            "zh": "废物",
+            "ja": "ごみ"
+          }
+        }
+      ]
+    },
+    {
+      "word": "competition",
+      "meanings": [
+        {
+          "key": "business",
+          "part_of_speech": "noun",
+          "cefr": "B2",
+          "definition": "A situation where companies try to be more successful than others.",
+          "examples": [
+            "There is strong competition between the two phone companies."
+          ],
+          "translations": {
+            "uk": "конкуренція",
+            "de": "Konkurrenz",
+            "fr": "concurrence",
+            "es": "competencia",
+            "it": "concorrenza",
+            "pt": "concorrência",
+            "pl": "konkurencja",
+            "ru": "конкуренция",
+            "zh": "竞争",
+            "ja": "競争"
+          }
+        }
+      ]
+    }
+  ]
+}

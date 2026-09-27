@@ -1,0 +1,431 @@
+{
+  "package": "ielts-environment",
+  "kind": "words",
+  "words": [
+    {
+      "word": "protect",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Environment",
+      "ipa": "/prəˈtekt/",
+      "definition": "To keep someone or something safe.",
+      "examples": [
+        "We must protect the rainforest."
+      ],
+      "translations": {
+        "uk": "захищати",
+        "de": "schützen",
+        "fr": "protéger",
+        "es": "proteger",
+        "it": "proteggere",
+        "pt": "proteger",
+        "pl": "chronić",
+        "ru": "защищать",
+        "zh": "保护",
+        "ja": "守る"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "climate change",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/ˈklaɪmət tʃeɪndʒ/",
+      "definition": "Changes in the world's weather, especially caused by people.",
+      "examples": [
+        "Climate change is a global problem."
+      ],
+      "translations": {
+        "uk": "зміна клімату",
+        "de": "Klimawandel",
+        "fr": "changement climatique",
+        "es": "cambio climático",
+        "it": "cambiamento climatico",
+        "pt": "mudança climática",
+        "pl": "zmiana klimatu",
+        "ru": "изменение климата",
+        "zh": "气候变化",
+        "ja": "気候変動"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "global warming",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/ˌɡloʊbəl ˈwɔːrmɪŋ/",
+      "definition": "The rise in the earth's temperature.",
+      "examples": [
+        "Global warming is melting the ice."
+      ],
+      "translations": {
+        "uk": "глобальне потепління",
+        "de": "Erderwärmung",
+        "fr": "réchauffement climatique",
+        "es": "calentamiento global",
+        "it": "riscaldamento globale",
+        "pt": "aquecimento global",
+        "pl": "globalne ocieplenie",
+        "ru": "глобальное потепление",
+        "zh": "全球变暖",
+        "ja": "地球温暖化"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "reduce",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/rɪˈduːs/",
+      "definition": "To make something smaller or less.",
+      "examples": [
+        "We should reduce the use of plastic."
+      ],
+      "translations": {
+        "uk": "зменшувати",
+        "de": "verringern",
+        "fr": "réduire",
+        "es": "reducir",
+        "it": "ridurre",
+        "pt": "reduzir",
+        "pl": "zmniejszać",
+        "ru": "сокращать",
+        "zh": "减少",
+        "ja": "減らす"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "flood",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/flʌd/",
+      "definition": "A large amount of water covering land that is usually dry.",
+      "examples": [
+        "The flood damaged many homes."
+      ],
+      "translations": {
+        "uk": "повінь",
+        "de": "Überschwemmung",
+        "fr": "inondation",
+        "es": "inundación",
+        "it": "alluvione",
+        "pt": "enchente",
+        "pl": "powódź",
+        "ru": "наводнение",
+        "zh": "洪水",
+        "ja": "洪水"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "natural disaster",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/ˌnætʃərəl dɪˈzæstɚ/",
+      "definition": "An event in nature, like an earthquake, that causes great damage.",
+      "examples": [
+        "Earthquakes are natural disasters."
+      ],
+      "translations": {
+        "uk": "стихійне лихо",
+        "de": "Naturkatastrophe",
+        "fr": "catastrophe naturelle",
+        "es": "desastre natural",
+        "it": "disastro naturale",
+        "pt": "desastre natural",
+        "pl": "klęska żywiołowa",
+        "ru": "стихийное бедствие",
+        "zh": "自然灾害",
+        "ja": "自然災害"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "greenhouse gas",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈɡriːnhaʊs ɡæs/",
+      "definition": "A gas that traps heat in the earth's atmosphere.",
+      "examples": [
+        "Cars produce greenhouse gases."
+      ],
+      "translations": {
+        "uk": "парниковий газ",
+        "de": "Treibhausgas",
+        "fr": "gaz à effet de serre",
+        "es": "gas de efecto invernadero",
+        "it": "gas serra",
+        "pt": "gás de efeito estufa",
+        "pl": "gaz cieplarniany",
+        "ru": "парниковый газ",
+        "zh": "温室气体",
+        "ja": "温室効果ガス"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "renewable energy",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/rɪˌnuːəbəl ˈenɚdʒi/",
+      "definition": "Energy from sources that do not run out, like wind or sun.",
+      "examples": [
+        "The country invests in renewable energy."
+      ],
+      "translations": {
+        "uk": "відновлювана енергія",
+        "de": "erneuerbare Energie",
+        "fr": "énergie renouvelable",
+        "es": "energía renovable",
+        "it": "energia rinnovabile",
+        "pt": "energia renovável",
+        "pl": "energia odnawialna",
+        "ru": "возобновляемая энергия",
+        "zh": "可再生能源",
+        "ja": "再生可能エネルギー"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "fossil fuel",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈfɑːsəl ˌfjuːəl/",
+      "definition": "Fuel like coal, oil or gas that comes from the ground.",
+      "examples": [
+        "Burning fossil fuels pollutes the air."
+      ],
+      "translations": {
+        "uk": "викопне паливо",
+        "de": "fossiler Brennstoff",
+        "fr": "combustible fossile",
+        "es": "combustible fósil",
+        "it": "combustibile fossile",
+        "pt": "combustível fóssil",
+        "pl": "paliwo kopalne",
+        "ru": "ископаемое топливо",
+        "zh": "化石燃料",
+        "ja": "化石燃料"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "carbon footprint",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˌkɑːrbən ˈfʊtprɪnt/",
+      "definition": "The amount of carbon dioxide a person or activity produces.",
+      "examples": [
+        "Flying less reduces your carbon footprint."
+      ],
+      "translations": {
+        "uk": "вуглецевий слід",
+        "de": "CO2-Fußabdruck",
+        "fr": "empreinte carbone",
+        "es": "huella de carbono",
+        "it": "impronta di carbonio",
+        "pt": "pegada de carbono",
+        "pl": "ślad węglowy",
+        "ru": "углеродный след",
+        "zh": "碳足迹",
+        "ja": "カーボンフットプリント"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "deforestation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/diːˌfɔːrɪˈsteɪʃən/",
+      "definition": "Cutting down large areas of forest.",
+      "examples": [
+        "Deforestation destroys animal habitats."
+      ],
+      "translations": {
+        "uk": "вирубка лісів",
+        "de": "Abholzung",
+        "fr": "déforestation",
+        "es": "deforestación",
+        "it": "deforestazione",
+        "pt": "desmatamento",
+        "pl": "wylesianie",
+        "ru": "вырубка лесов",
+        "zh": "森林砍伐",
+        "ja": "森林破壊"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "habitat",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈhæbɪtæt/",
+      "definition": "The natural home of an animal or plant.",
+      "examples": [
+        "Pandas are losing their habitat."
+      ],
+      "translations": {
+        "uk": "середовище існування",
+        "de": "Lebensraum",
+        "fr": "habitat",
+        "es": "hábitat",
+        "it": "habitat",
+        "pt": "habitat",
+        "pl": "siedlisko",
+        "ru": "среда обитания",
+        "zh": "栖息地",
+        "ja": "生息地"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "extinct",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ɪkˈstɪŋkt/",
+      "definition": "No longer existing.",
+      "examples": [
+        "Dinosaurs have been extinct for millions of years."
+      ],
+      "translations": {
+        "uk": "вимерлий",
+        "de": "ausgestorben",
+        "fr": "disparu",
+        "es": "extinto",
+        "it": "estinto",
+        "pt": "extinto",
+        "pl": "wymarły",
+        "ru": "вымерший",
+        "zh": "灭绝的",
+        "ja": "絶滅した"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "conservation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˌkɑːnsɚˈveɪʃən/",
+      "definition": "The protection of nature, animals and plants.",
+      "examples": [
+        "The group works on wildlife conservation."
+      ],
+      "translations": {
+        "uk": "охорона природи",
+        "de": "Naturschutz",
+        "fr": "protection de la nature",
+        "es": "conservación",
+        "it": "conservazione",
+        "pt": "conservação",
+        "pl": "ochrona przyrody",
+        "ru": "охрана природы",
+        "zh": "保护",
+        "ja": "保護"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "emission",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/iˈmɪʃən/",
+      "definition": "Gas or other substance sent into the air.",
+      "examples": [
+        "The city wants to cut car emissions."
+      ],
+      "translations": {
+        "uk": "викид",
+        "de": "Emission",
+        "fr": "émission",
+        "es": "emisión",
+        "it": "emissione",
+        "pt": "emissão",
+        "pl": "emisja",
+        "ru": "выброс",
+        "zh": "排放",
+        "ja": "排出"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "drought",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/draʊt/",
+      "definition": "A long period without rain.",
+      "examples": [
+        "The drought destroyed the crops."
+      ],
+      "translations": {
+        "uk": "посуха",
+        "de": "Dürre",
+        "fr": "sécheresse",
+        "es": "sequía",
+        "it": "siccità",
+        "pt": "seca",
+        "pl": "susza",
+        "ru": "засуха",
+        "zh": "干旱",
+        "ja": "干ばつ"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "environmentally friendly",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ɪnˌvaɪrənˈmentəli ˈfrendli/",
+      "definition": "Not harmful to the environment.",
+      "examples": [
+        "We use environmentally friendly products."
+      ],
+      "translations": {
+        "uk": "екологічно чистий",
+        "de": "umweltfreundlich",
+        "fr": "écologique",
+        "es": "ecológico",
+        "it": "ecologico",
+        "pt": "ecológico",
+        "pl": "przyjazny dla środowiska",
+        "ru": "экологичный",
+        "zh": "环保的",
+        "ja": "環境に優しい"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    }
+  ]
+}
