@@ -1,0 +1,381 @@
+{
+  "package": "pronouns",
+  "kind": "words",
+  "words": [
+    {
+      "word": "I",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/aɪ/",
+      "definition": "The person who is speaking.",
+      "examples": [
+        "I am a student."
+      ],
+      "translations": {
+        "uk": "я",
+        "de": "ich",
+        "fr": "je",
+        "es": "yo",
+        "it": "io",
+        "pt": "eu",
+        "pl": "ja",
+        "ru": "я",
+        "zh": "我",
+        "ja": "私"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "you",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/juː/",
+      "definition": "The person you are speaking to.",
+      "examples": [
+        "Are you ready?"
+      ],
+      "translations": {
+        "uk": "ти, ви",
+        "de": "du, Sie",
+        "fr": "tu, vous",
+        "es": "tú, usted",
+        "it": "tu, Lei",
+        "pt": "você",
+        "pl": "ty, wy",
+        "ru": "ты, вы",
+        "zh": "你",
+        "ja": "あなた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "he",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/hiː/",
+      "definition": "A man or boy already mentioned.",
+      "examples": [
+        "He is my brother."
+      ],
+      "translations": {
+        "uk": "він",
+        "de": "er",
+        "fr": "il",
+        "es": "él",
+        "it": "lui",
+        "pt": "ele",
+        "pl": "on",
+        "ru": "он",
+        "zh": "他",
+        "ja": "彼"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "she",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ʃiː/",
+      "definition": "A woman or girl already mentioned.",
+      "examples": [
+        "She is a doctor."
+      ],
+      "translations": {
+        "uk": "вона",
+        "de": "sie",
+        "fr": "elle",
+        "es": "ella",
+        "it": "lei",
+        "pt": "ela",
+        "pl": "ona",
+        "ru": "она",
+        "zh": "她",
+        "ja": "彼女"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "it",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɪt/",
+      "definition": "A thing or animal already mentioned.",
+      "examples": [
+        "It is a big house."
+      ],
+      "translations": {
+        "uk": "воно",
+        "de": "es",
+        "fr": "il, elle",
+        "es": "ello",
+        "it": "esso",
+        "pt": "ele, ela",
+        "pl": "ono",
+        "ru": "оно, это",
+        "zh": "它",
+        "ja": "それ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "we",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wiː/",
+      "definition": "The speaker and other people.",
+      "examples": [
+        "We live in a small town."
+      ],
+      "translations": {
+        "uk": "ми",
+        "de": "wir",
+        "fr": "nous",
+        "es": "nosotros",
+        "it": "noi",
+        "pt": "nós",
+        "pl": "my",
+        "ru": "мы",
+        "zh": "我们",
+        "ja": "私たち"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "they",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ðeɪ/",
+      "definition": "Other people or things already mentioned.",
+      "examples": [
+        "They are my friends."
+      ],
+      "translations": {
+        "uk": "вони",
+        "de": "sie",
+        "fr": "ils, elles",
+        "es": "ellos",
+        "it": "loro",
+        "pt": "eles",
+        "pl": "oni",
+        "ru": "они",
+        "zh": "他们",
+        "ja": "彼ら"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "my",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/maɪ/",
+      "definition": "Belonging to me.",
+      "examples": [
+        "This is my bag."
+      ],
+      "translations": {
+        "uk": "мій",
+        "de": "mein",
+        "fr": "mon, ma",
+        "es": "mi",
+        "it": "mio",
+        "pt": "meu",
+        "pl": "mój",
+        "ru": "мой",
+        "zh": "我的",
+        "ja": "私の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "your",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/jʊr/",
+      "definition": "Belonging to you.",
+      "examples": [
+        "Is this your phone?"
+      ],
+      "translations": {
+        "uk": "твій, ваш",
+        "de": "dein, Ihr",
+        "fr": "ton, votre",
+        "es": "tu",
+        "it": "tuo",
+        "pt": "seu",
+        "pl": "twój, wasz",
+        "ru": "твой, ваш",
+        "zh": "你的",
+        "ja": "あなたの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "his",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/hɪz/",
+      "definition": "Belonging to him.",
+      "examples": [
+        "His car is red."
+      ],
+      "translations": {
+        "uk": "його",
+        "de": "sein",
+        "fr": "son, sa",
+        "es": "su",
+        "it": "suo",
+        "pt": "dele",
+        "pl": "jego",
+        "ru": "его",
+        "zh": "他的",
+        "ja": "彼の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "her",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/hɝː/",
+      "definition": "Belonging to her.",
+      "examples": [
+        "Her name is Anna."
+      ],
+      "translations": {
+        "uk": "її",
+        "de": "ihr",
+        "fr": "son, sa",
+        "es": "su",
+        "it": "suo",
+        "pt": "dela",
+        "pl": "jej",
+        "ru": "её",
+        "zh": "她的",
+        "ja": "彼女の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "our",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈaʊɚ/",
+      "definition": "Belonging to us.",
+      "examples": [
+        "Our house is small."
+      ],
+      "translations": {
+        "uk": "наш",
+        "de": "unser",
+        "fr": "notre",
+        "es": "nuestro",
+        "it": "nostro",
+        "pt": "nosso",
+        "pl": "nasz",
+        "ru": "наш",
+        "zh": "我们的",
+        "ja": "私たちの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "their",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ðer/",
+      "definition": "Belonging to them.",
+      "examples": [
+        "Their dog is very friendly."
+      ],
+      "translations": {
+        "uk": "їхній",
+        "de": "ihr",
+        "fr": "leur",
+        "es": "su",
+        "it": "loro",
+        "pt": "deles",
+        "pl": "ich",
+        "ru": "их",
+        "zh": "他们的",
+        "ja": "彼らの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "this",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ðɪs/",
+      "definition": "The person or thing near you.",
+      "examples": [
+        "This is my friend Tom."
+      ],
+      "translations": {
+        "uk": "цей",
+        "de": "dies",
+        "fr": "ce, ceci",
+        "es": "este",
+        "it": "questo",
+        "pt": "este",
+        "pl": "ten",
+        "ru": "этот",
+        "zh": "这个",
+        "ja": "これ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "that",
+      "part_of_speech": "pronoun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ðæt/",
+      "definition": "The person or thing further away.",
+      "examples": [
+        "Who is that man?"
+      ],
+      "translations": {
+        "uk": "той",
+        "de": "das, jener",
+        "fr": "ce, cela",
+        "es": "ese, aquel",
+        "it": "quello",
+        "pt": "aquele",
+        "pl": "tamten",
+        "ru": "тот",
+        "zh": "那个",
+        "ja": "あれ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

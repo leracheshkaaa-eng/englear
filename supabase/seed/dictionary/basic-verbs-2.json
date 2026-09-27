@@ -1,0 +1,204 @@
+{
+  "package": "basic-verbs-2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "be",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/biː/",
+      "definition": "To exist; used to describe people and things.",
+      "examples": [
+        "I want to be a teacher."
+      ],
+      "translations": {
+        "uk": "бути",
+        "de": "sein",
+        "fr": "être",
+        "es": "ser, estar",
+        "it": "essere",
+        "pt": "ser, estar",
+        "pl": "być",
+        "ru": "быть",
+        "zh": "是",
+        "ja": "〜である"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "have",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/hæv/",
+      "definition": "To own or hold something.",
+      "examples": [
+        "I have two sisters."
+      ],
+      "translations": {
+        "uk": "мати",
+        "de": "haben",
+        "fr": "avoir",
+        "es": "tener",
+        "it": "avere",
+        "pt": "ter",
+        "pl": "mieć",
+        "ru": "иметь",
+        "zh": "有",
+        "ja": "持っている"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "do",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/duː/",
+      "definition": "To perform an action.",
+      "examples": [
+        "What do you do on weekends?"
+      ],
+      "translations": {
+        "uk": "робити",
+        "de": "machen, tun",
+        "fr": "faire",
+        "es": "hacer",
+        "it": "fare",
+        "pt": "fazer",
+        "pl": "robić",
+        "ru": "делать",
+        "zh": "做",
+        "ja": "する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "can",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/kæn/",
+      "definition": "To be able to.",
+      "examples": [
+        "I can swim."
+      ],
+      "translations": {
+        "uk": "могти, вміти",
+        "de": "können",
+        "fr": "pouvoir",
+        "es": "poder",
+        "it": "potere",
+        "pt": "poder",
+        "pl": "móc, umieć",
+        "ru": "мочь, уметь",
+        "zh": "能",
+        "ja": "できる"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "container",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A metal container for food or drinks.",
+          "examples": [
+            "I bought a can of soda."
+          ],
+          "translations": {
+            "uk": "бляшанка",
+            "de": "Dose",
+            "fr": "canette",
+            "es": "lata",
+            "it": "lattina",
+            "pt": "lata",
+            "pl": "puszka",
+            "ru": "банка",
+            "zh": "罐",
+            "ja": "缶"
+          }
+        }
+      ]
+    },
+    {
+      "word": "must",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/mʌst/",
+      "definition": "To have to; used for strong necessity.",
+      "examples": [
+        "You must wear a seat belt."
+      ],
+      "translations": {
+        "uk": "мусити",
+        "de": "müssen",
+        "fr": "devoir",
+        "es": "deber",
+        "it": "dovere",
+        "pt": "dever",
+        "pl": "musieć",
+        "ru": "должен",
+        "zh": "必须",
+        "ja": "〜しなければならない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "should",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ʃʊd/",
+      "definition": "Used to give advice.",
+      "examples": [
+        "You should see a doctor."
+      ],
+      "translations": {
+        "uk": "слід, варто",
+        "de": "sollte",
+        "fr": "devrait",
+        "es": "debería",
+        "it": "dovrebbe",
+        "pt": "deveria",
+        "pl": "powinien",
+        "ru": "следует",
+        "zh": "应该",
+        "ja": "〜すべきだ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "get",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɡet/",
+      "definition": "To receive or obtain something.",
+      "examples": [
+        "Did you get my message?"
+      ],
+      "translations": {
+        "uk": "отримувати",
+        "de": "bekommen",
+        "fr": "recevoir",
+        "es": "recibir",
+        "it": "ricevere",
+        "pt": "receber",
+        "pl": "dostać",
+        "ru": "получать",
+        "zh": "得到",
+        "ja": "もらう"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

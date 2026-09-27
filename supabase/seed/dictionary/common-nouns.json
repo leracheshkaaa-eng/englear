@@ -1,0 +1,402 @@
+{
+  "package": "common-nouns",
+  "kind": "words",
+  "words": [
+    {
+      "word": "thing",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/θɪŋ/",
+      "definition": "An object or idea.",
+      "examples": [
+        "What's that thing on the table?"
+      ],
+      "translations": {
+        "uk": "річ",
+        "de": "Ding",
+        "fr": "chose",
+        "es": "cosa",
+        "it": "cosa",
+        "pt": "coisa",
+        "pl": "rzecz",
+        "ru": "вещь",
+        "zh": "东西",
+        "ja": "物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "way",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/weɪ/",
+      "definition": "A method; a road or direction.",
+      "examples": [
+        "Is this the way to the station?"
+      ],
+      "translations": {
+        "uk": "шлях, спосіб",
+        "de": "Weg",
+        "fr": "chemin, façon",
+        "es": "camino, manera",
+        "it": "strada, modo",
+        "pt": "caminho, maneira",
+        "pl": "droga, sposób",
+        "ru": "путь, способ",
+        "zh": "路, 方法",
+        "ja": "道、方法"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "time",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/taɪm/",
+      "definition": "What we measure in hours and minutes.",
+      "examples": [
+        "What time is it?"
+      ],
+      "translations": {
+        "uk": "час",
+        "de": "Zeit",
+        "fr": "temps",
+        "es": "tiempo",
+        "it": "tempo",
+        "pt": "tempo",
+        "pl": "czas",
+        "ru": "время",
+        "zh": "时间",
+        "ja": "時間"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "occasion",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "An occasion when something happens.",
+          "examples": [
+            "I've been to Paris three times."
+          ],
+          "translations": {
+            "uk": "раз",
+            "de": "Mal",
+            "fr": "fois",
+            "es": "vez",
+            "it": "volta",
+            "pt": "vez",
+            "pl": "raz",
+            "ru": "раз",
+            "zh": "次",
+            "ja": "回"
+          }
+        }
+      ]
+    },
+    {
+      "word": "life",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/laɪf/",
+      "definition": "The period between birth and death.",
+      "examples": [
+        "She had a happy life."
+      ],
+      "translations": {
+        "uk": "життя",
+        "de": "Leben",
+        "fr": "vie",
+        "es": "vida",
+        "it": "vita",
+        "pt": "vida",
+        "pl": "życie",
+        "ru": "жизнь",
+        "zh": "生活",
+        "ja": "人生"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "home",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/hoʊm/",
+      "definition": "The place where you live.",
+      "examples": [
+        "I'm going home."
+      ],
+      "translations": {
+        "uk": "дім",
+        "de": "Zuhause",
+        "fr": "maison",
+        "es": "casa",
+        "it": "casa",
+        "pt": "casa",
+        "pl": "dom",
+        "ru": "дом",
+        "zh": "家",
+        "ja": "家"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "word",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/wɝːd/",
+      "definition": "A unit of language.",
+      "examples": [
+        "What does this word mean?"
+      ],
+      "translations": {
+        "uk": "слово",
+        "de": "Wort",
+        "fr": "mot",
+        "es": "palabra",
+        "it": "parola",
+        "pt": "palavra",
+        "pl": "słowo",
+        "ru": "слово",
+        "zh": "单词",
+        "ja": "単語"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "story",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈstɔːri/",
+      "definition": "A description of events, real or imagined.",
+      "examples": [
+        "Tell me a story."
+      ],
+      "translations": {
+        "uk": "історія, розповідь",
+        "de": "Geschichte",
+        "fr": "histoire",
+        "es": "historia",
+        "it": "storia",
+        "pt": "história",
+        "pl": "opowieść",
+        "ru": "история, рассказ",
+        "zh": "故事",
+        "ja": "物語"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "letter",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈletɚ/",
+      "definition": "A written message sent by mail.",
+      "examples": [
+        "I wrote a letter to my grandma."
+      ],
+      "translations": {
+        "uk": "лист",
+        "de": "Brief",
+        "fr": "lettre",
+        "es": "carta",
+        "it": "lettera",
+        "pt": "carta",
+        "pl": "list",
+        "ru": "письмо",
+        "zh": "信",
+        "ja": "手紙"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "alphabet",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "One of the signs like A, B or C that we use to write words.",
+          "examples": [
+            "The word \"cat\" has three letters."
+          ],
+          "translations": {
+            "uk": "літера",
+            "de": "Buchstabe",
+            "fr": "lettre",
+            "es": "letra",
+            "it": "lettera",
+            "pt": "letra",
+            "pl": "litera",
+            "ru": "буква",
+            "zh": "字母",
+            "ja": "文字"
+          }
+        }
+      ]
+    },
+    {
+      "word": "picture",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ˈpɪktʃɚ/",
+      "definition": "A drawing, painting or photo.",
+      "examples": [
+        "Look at this picture."
+      ],
+      "translations": {
+        "uk": "картинка",
+        "de": "Bild",
+        "fr": "image",
+        "es": "imagen",
+        "it": "immagine",
+        "pt": "imagem",
+        "pl": "obrazek",
+        "ru": "картинка",
+        "zh": "图片",
+        "ja": "絵"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "group",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/ɡruːp/",
+      "definition": "A number of people or things together.",
+      "examples": [
+        "We worked in groups of four."
+      ],
+      "translations": {
+        "uk": "група",
+        "de": "Gruppe",
+        "fr": "groupe",
+        "es": "grupo",
+        "it": "gruppo",
+        "pt": "grupo",
+        "pl": "grupa",
+        "ru": "группа",
+        "zh": "组",
+        "ja": "グループ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "part",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/pɑːrt/",
+      "definition": "A piece of something.",
+      "examples": [
+        "This is the best part of the movie."
+      ],
+      "translations": {
+        "uk": "частина",
+        "de": "Teil",
+        "fr": "partie",
+        "es": "parte",
+        "it": "parte",
+        "pt": "parte",
+        "pl": "część",
+        "ru": "часть",
+        "zh": "部分",
+        "ja": "部分"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "end",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Basic Words",
+      "ipa": "/end/",
+      "definition": "The last part of something.",
+      "examples": [
+        "The end of the movie was sad."
+      ],
+      "translations": {
+        "uk": "кінець",
+        "de": "Ende",
+        "fr": "fin",
+        "es": "final",
+        "it": "fine",
+        "pt": "fim",
+        "pl": "koniec",
+        "ru": "конец",
+        "zh": "结尾",
+        "ja": "終わり"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "moment",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/ˈmoʊmənt/",
+      "definition": "A very short time.",
+      "examples": [
+        "Wait a moment, please."
+      ],
+      "translations": {
+        "uk": "мить",
+        "de": "Moment",
+        "fr": "moment",
+        "es": "momento",
+        "it": "momento",
+        "pt": "momento",
+        "pl": "chwila",
+        "ru": "момент",
+        "zh": "片刻",
+        "ja": "瞬間"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fact",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Basic Words",
+      "ipa": "/fækt/",
+      "definition": "Something that is true.",
+      "examples": [
+        "It's a fact that water boils at 100 degrees."
+      ],
+      "translations": {
+        "uk": "факт",
+        "de": "Tatsache",
+        "fr": "fait",
+        "es": "hecho",
+        "it": "fatto",
+        "pt": "fato",
+        "pl": "fakt",
+        "ru": "факт",
+        "zh": "事实",
+        "ja": "事実"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
