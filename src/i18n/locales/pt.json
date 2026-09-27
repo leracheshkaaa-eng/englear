@@ -208,7 +208,10 @@
     "fieldTranslation": "tradução",
     "fieldExample": "exemplo (opcional)",
     "addCard": "Adicionar cartão",
-    "saveSet": "Salvar baralho"
+    "saveSet": "Salvar baralho",
+    "addToMyCards": "Adicionar aos meus cartões",
+    "inMyCards": "Nos meus cartões",
+    "myWordsSet": "Minhas palavras"
   },
   "study": {
     "backToSets": "Voltar aos baralhos",
@@ -388,7 +391,19 @@
       "dialogueNoBlank": "Exercício {{n}} (dialogue): falta a lacuna ___ na segunda fala.",
       "dialogueBlankOnlyB": "Exercício {{n}} (dialogue): a lacuna ___ só é permitida na segunda fala (B).",
       "dialogueBlankNoAnswer": "Exercício {{n}} (dialogue): a lacuna não tem resposta entre parênteses (…)."
-    }
+    },
+    "cefr": "Nível",
+    "skill": "Habilidade",
+    "topic": "Tema",
+    "noTopic": "Sem tema",
+    "libraryCheckbox": "Aula da biblioteca do site (visível para todos)",
+    "sequence": "Ordem na biblioteca",
+    "lessonWords": "Palavras da aula",
+    "findWords": "Encontrar palavras do dicionário nesta aula",
+    "noWordsFound": "Nenhuma palavra do dicionário encontrada nesta aula.",
+    "libraryBadge": "Biblioteca",
+    "teacherBadge": "Meus alunos",
+    "wordsSelected": "Selecionadas: {{count}}"
   },
   "partsOfSpeech": {
     "noun": "substantivo",
@@ -484,5 +499,23 @@
     "penguin": "Pinguim",
     "owl": "Corujinha",
     "hamster": "Hamster"
+  },
+  "lessonSkills": {
+    "vocabulary": "Vocabulário",
+    "grammar": "Gramática",
+    "listening": "Compreensão oral",
+    "reading": "Leitura",
+    "writing": "Escrita",
+    "speaking": "Conversação",
+    "mixed": "Misto"
+  },
+  "library": {
+    "libraryTab": "Biblioteca",
+    "fromTeacher": "Do meu professor",
+    "allSkills": "Todas as habilidades",
+    "search": "Pesquisar aulas…",
+    "empty": "A biblioteca de aulas está sendo preparada — novas aulas chegam em breve!",
+    "noResults": "Nenhuma aula corresponde a esses filtros.",
+    "count": "Aulas: {{count}}"
   }
 }

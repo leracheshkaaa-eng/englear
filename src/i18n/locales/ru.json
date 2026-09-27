@@ -210,7 +210,10 @@
     "fieldTranslation": "перевод",
     "fieldExample": "пример (необязательно)",
     "addCard": "Добавить карточку",
-    "saveSet": "Сохранить набор"
+    "saveSet": "Сохранить набор",
+    "addToMyCards": "Добавить в мои карточки",
+    "inMyCards": "В моих карточках",
+    "myWordsSet": "Мои слова"
   },
   "study": {
     "backToSets": "Назад к наборам",
@@ -400,7 +403,19 @@
       "dialogueNoBlank": "Задание {{n}} (dialogue): нет пропуска ___ во второй реплике.",
       "dialogueBlankOnlyB": "Задание {{n}} (dialogue): пропуск ___ допустим только во второй реплике (B).",
       "dialogueBlankNoAnswer": "Задание {{n}} (dialogue): у пропуска нет ответа в скобках (…)."
-    }
+    },
+    "cefr": "Уровень",
+    "skill": "Навык",
+    "topic": "Тема",
+    "noTopic": "Без темы",
+    "libraryCheckbox": "Урок библиотеки сайта (виден всем)",
+    "sequence": "Порядок в библиотеке",
+    "lessonWords": "Слова урока",
+    "findWords": "Найти слова словаря в этом уроке",
+    "noWordsFound": "В этом уроке не найдено слов из словаря.",
+    "libraryBadge": "Библиотека",
+    "teacherBadge": "Мои ученики",
+    "wordsSelected": "Выбрано: {{count}}"
   },
   "partsOfSpeech": {
     "noun": "существительное",
@@ -496,5 +511,23 @@
     "penguin": "Пингвин",
     "owl": "Совёнок",
     "hamster": "Хомяк"
+  },
+  "lessonSkills": {
+    "vocabulary": "Лексика",
+    "grammar": "Грамматика",
+    "listening": "Аудирование",
+    "reading": "Чтение",
+    "writing": "Письмо",
+    "speaking": "Говорение",
+    "mixed": "Смешанный"
+  },
+  "library": {
+    "libraryTab": "Библиотека",
+    "fromTeacher": "От моего учителя",
+    "allSkills": "Все навыки",
+    "search": "Поиск уроков…",
+    "empty": "Библиотека уроков готовится — новые уроки появятся совсем скоро!",
+    "noResults": "Нет уроков по этим фильтрам.",
+    "count": "Уроков: {{count}}"
   }
 }

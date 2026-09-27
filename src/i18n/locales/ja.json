@@ -207,7 +207,10 @@
     "fieldTranslation": "訳",
     "fieldExample": "例文（任意）",
     "addCard": "カードを追加",
-    "saveSet": "セットを保存"
+    "saveSet": "セットを保存",
+    "addToMyCards": "マイカードに追加",
+    "inMyCards": "マイカードにあります",
+    "myWordsSet": "マイ単語"
   },
   "study": {
     "backToSets": "セット一覧に戻る",
@@ -382,7 +385,19 @@
       "dialogueNoBlank": "問題 {{n}}（dialogue）：2番目のセリフに空欄 ___ がありません。",
       "dialogueBlankOnlyB": "問題 {{n}}（dialogue）：空欄 ___ は2番目のセリフ（B）にしか入れられません。",
       "dialogueBlankNoAnswer": "問題 {{n}}（dialogue）：空欄の答えがかっこ（…）に書かれていません。"
-    }
+    },
+    "cefr": "レベル",
+    "skill": "スキル",
+    "topic": "トピック",
+    "noTopic": "トピックなし",
+    "libraryCheckbox": "サイトのライブラリーのレッスン（全員に公開）",
+    "sequence": "ライブラリー内の順番",
+    "lessonWords": "レッスンの単語",
+    "findWords": "このレッスンの辞書の単語を探す",
+    "noWordsFound": "このレッスンには辞書の単語が見つかりませんでした。",
+    "libraryBadge": "ライブラリー",
+    "teacherBadge": "自分の生徒",
+    "wordsSelected": "選択済み：{{count}}"
   },
   "partsOfSpeech": {
     "noun": "名詞",
@@ -478,5 +493,23 @@
     "penguin": "ペンギン",
     "owl": "子ふくろう",
     "hamster": "ハムスター"
+  },
+  "lessonSkills": {
+    "vocabulary": "語彙",
+    "grammar": "文法",
+    "listening": "リスニング",
+    "reading": "リーディング",
+    "writing": "ライティング",
+    "speaking": "スピーキング",
+    "mixed": "総合"
+  },
+  "library": {
+    "libraryTab": "ライブラリー",
+    "fromTeacher": "先生から",
+    "allSkills": "すべてのスキル",
+    "search": "レッスンを検索…",
+    "empty": "レッスンライブラリーを準備中です。新しいレッスンはもうすぐ公開されます！",
+    "noResults": "この条件に合うレッスンはありません。",
+    "count": "レッスン数：{{count}}"
   }
 }

@@ -210,7 +210,10 @@
     "fieldTranslation": "переклад",
     "fieldExample": "приклад (необов'язково)",
     "addCard": "Додати картку",
-    "saveSet": "Зберегти набір"
+    "saveSet": "Зберегти набір",
+    "addToMyCards": "Додати в мої картки",
+    "inMyCards": "У моїх картках",
+    "myWordsSet": "Мої слова"
   },
   "study": {
     "backToSets": "Назад до наборів",
@@ -400,7 +403,19 @@
       "dialogueNoBlank": "Завдання {{n}} (dialogue): немає пропуску ___ у другій репліці.",
       "dialogueBlankOnlyB": "Завдання {{n}} (dialogue): пропуск ___ дозволено лише в другій репліці (B).",
       "dialogueBlankNoAnswer": "Завдання {{n}} (dialogue): у пропуску немає відповіді в дужках (…)."
-    }
+    },
+    "cefr": "Рівень",
+    "skill": "Навичка",
+    "topic": "Тема",
+    "noTopic": "Без теми",
+    "libraryCheckbox": "Урок бібліотеки сайту (видно всім)",
+    "sequence": "Порядок у бібліотеці",
+    "lessonWords": "Слова уроку",
+    "findWords": "Знайти слова словника в цьому уроці",
+    "noWordsFound": "У цьому уроці не знайдено слів зі словника.",
+    "libraryBadge": "Бібліотека",
+    "teacherBadge": "Мої учні",
+    "wordsSelected": "Вибрано: {{count}}"
   },
   "partsOfSpeech": {
     "noun": "іменник",
@@ -496,5 +511,23 @@
     "penguin": "Пінгвін",
     "owl": "Совеня",
     "hamster": "Хом'ячок"
+  },
+  "lessonSkills": {
+    "vocabulary": "Лексика",
+    "grammar": "Граматика",
+    "listening": "Аудіювання",
+    "reading": "Читання",
+    "writing": "Письмо",
+    "speaking": "Говоріння",
+    "mixed": "Змішаний"
+  },
+  "library": {
+    "libraryTab": "Бібліотека",
+    "fromTeacher": "Від мого вчителя",
+    "allSkills": "Усі навички",
+    "search": "Пошук уроків…",
+    "empty": "Бібліотека уроків готується — нові уроки з’являться зовсім скоро!",
+    "noResults": "Немає уроків за цими фільтрами.",
+    "count": "Уроків: {{count}}"
   }
 }

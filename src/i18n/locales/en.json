@@ -208,7 +208,10 @@
     "fieldTranslation": "translation",
     "fieldExample": "example (optional)",
     "addCard": "Add card",
-    "saveSet": "Save set"
+    "saveSet": "Save set",
+    "addToMyCards": "Add to my cards",
+    "inMyCards": "In my cards",
+    "myWordsSet": "My words"
   },
   "study": {
     "backToSets": "Back to sets",
@@ -388,7 +391,19 @@
       "dialogueNoBlank": "Exercise {{n}} (dialogue): there is no gap ___ in the second line.",
       "dialogueBlankOnlyB": "Exercise {{n}} (dialogue): the gap ___ is allowed only in the second line (B).",
       "dialogueBlankNoAnswer": "Exercise {{n}} (dialogue): the gap has no answer in brackets (…)."
-    }
+    },
+    "cefr": "Level",
+    "skill": "Skill",
+    "topic": "Topic",
+    "noTopic": "No topic",
+    "libraryCheckbox": "Site library lesson (visible to everyone)",
+    "sequence": "Order in the library",
+    "lessonWords": "Lesson words",
+    "findWords": "Find dictionary words in this lesson",
+    "noWordsFound": "No dictionary words found in this lesson.",
+    "libraryBadge": "Library",
+    "teacherBadge": "My students",
+    "wordsSelected": "Selected: {{count}}"
   },
   "partsOfSpeech": {
     "noun": "noun",
@@ -484,5 +499,23 @@
     "penguin": "Penguin",
     "owl": "Owlet",
     "hamster": "Hamster"
+  },
+  "lessonSkills": {
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar",
+    "listening": "Listening",
+    "reading": "Reading",
+    "writing": "Writing",
+    "speaking": "Speaking",
+    "mixed": "Mixed"
+  },
+  "library": {
+    "libraryTab": "Library",
+    "fromTeacher": "From my teacher",
+    "allSkills": "All skills",
+    "search": "Search lessons…",
+    "empty": "The lesson library is being prepared — new lessons are coming soon!",
+    "noResults": "No lessons match these filters.",
+    "count": "Lessons: {{count}}"
   }
 }

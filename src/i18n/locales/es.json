@@ -208,7 +208,10 @@
     "fieldTranslation": "traducción",
     "fieldExample": "ejemplo (opcional)",
     "addCard": "Añadir tarjeta",
-    "saveSet": "Guardar mazo"
+    "saveSet": "Guardar mazo",
+    "addToMyCards": "Añadir a mis tarjetas",
+    "inMyCards": "En mis tarjetas",
+    "myWordsSet": "Mis palabras"
   },
   "study": {
     "backToSets": "Volver a los mazos",
@@ -388,7 +391,19 @@
       "dialogueNoBlank": "Ejercicio {{n}} (dialogue): falta el hueco ___ en la segunda línea.",
       "dialogueBlankOnlyB": "Ejercicio {{n}} (dialogue): el hueco ___ solo se permite en la segunda línea (B).",
       "dialogueBlankNoAnswer": "Ejercicio {{n}} (dialogue): el hueco no tiene respuesta entre paréntesis (…)."
-    }
+    },
+    "cefr": "Nivel",
+    "skill": "Habilidad",
+    "topic": "Tema",
+    "noTopic": "Sin tema",
+    "libraryCheckbox": "Lección de la biblioteca del sitio (visible para todos)",
+    "sequence": "Orden en la biblioteca",
+    "lessonWords": "Palabras de la lección",
+    "findWords": "Buscar palabras del diccionario en esta lección",
+    "noWordsFound": "No se encontraron palabras del diccionario en esta lección.",
+    "libraryBadge": "Biblioteca",
+    "teacherBadge": "Mis alumnos",
+    "wordsSelected": "Seleccionadas: {{count}}"
   },
   "partsOfSpeech": {
     "noun": "sustantivo",
@@ -484,5 +499,23 @@
     "penguin": "Pingüino",
     "owl": "Buhito",
     "hamster": "Hámster"
+  },
+  "lessonSkills": {
+    "vocabulary": "Vocabulario",
+    "grammar": "Gramática",
+    "listening": "Comprensión auditiva",
+    "reading": "Lectura",
+    "writing": "Escritura",
+    "speaking": "Expresión oral",
+    "mixed": "Mixto"
+  },
+  "library": {
+    "libraryTab": "Biblioteca",
+    "fromTeacher": "De mi profesor",
+    "allSkills": "Todas las habilidades",
+    "search": "Buscar lecciones…",
+    "empty": "La biblioteca de lecciones se está preparando: ¡pronto habrá nuevas lecciones!",
+    "noResults": "No hay lecciones con estos filtros.",
+    "count": "Lecciones: {{count}}"
   }
 }

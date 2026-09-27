@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Badge, Button, inputCls } from '../lib/ui'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
-import type { Lesson, SetProgress } from '../lib/api'
+import type { LessonSummary, SetProgress } from '../lib/api'
 import { Avatar, AvatarPicker, DEFAULT_AVATAR, avatarLabel } from '../lib/avatars'
 import { LanguageSelect } from '../i18n/LanguageSelect'
 import { currentLanguage } from '../i18n'
@@ -100,9 +100,10 @@ export function Login({ onClose }: { onClose?: () => void }) {
   )
 }
 
-export function StudentProgress({ lessons, onOpenSet }: { lessons: Lesson[]; onOpenSet: (p: SetProgress) => void }) {
+export function StudentProgress({ onOpenSet }: { onOpenSet: (p: SetProgress) => void }) {
   const { t } = useTranslation()
-  const { userId } = useAuth()
+  const { userId, role } = useAuth()
+  const [lessons, setLessons] = useState<LessonSummary[]>([])
   const [progress, setProgress] = useState<api.LessonProgress[]>([])
   const [cards, setCards] = useState<any[]>([])
   const [known, setKnown] = useState(0)
@@ -110,11 +111,20 @@ export function StudentProgress({ lessons, onOpenSet }: { lessons: Lesson[]; onO
 
   useEffect(() => {
     if (!userId) return
-    api.myProgress(userId).then(setProgress)
+    // lessons the student has worked on + (for a student) lessons a teacher assigned
+    Promise.all([
+      api.myProgress(userId),
+      role === 'student' ? api.lessonCatalog({ scope: 'teacher' }, 0, 200).then((r) => r.lessons).catch(() => []) : [],
+    ]).then(async ([p, assigned]) => {
+      setProgress(p)
+      const have = new Set(assigned.map((l) => l.id))
+      const rest = await api.lessonSummaries(p.map((x) => x.lesson_id).filter((id) => !have.has(id))).catch(() => [])
+      setLessons([...assigned, ...rest])
+    })
     api.cardProgress(userId).then(setCards)
     api.knownWordsCount(userId).then(setKnown).catch(() => setKnown(0))
     api.mySetProgress(userId).then(setSets).catch(() => setSets([]))
-  }, [userId])
+  }, [userId, role])
 
   const byLesson = Object.fromEntries(progress.map((p) => [p.lesson_id, p]))
   const completed = progress.filter((p) => p.status === 'completed').length

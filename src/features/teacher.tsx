@@ -1,12 +1,15 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Badge, Button, inputCls } from '../lib/ui'
 import { parseExercises, promptText, skillLabel, validateRaw, type Exercise } from '../lib/exercises'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
-import type { Lesson, Profile } from '../lib/api'
-import { LESSON_LEVELS, lessonLevelCode, lessonLevelLabel } from '../lib/config'
+import type { Lesson, LessonSummary, Profile } from '../lib/api'
+import { CEFR_LEVELS, TOPICS, lessonLevelCode, lessonSkillLabel, topicLabel } from '../lib/config'
 import { errorMessage } from '../i18n/errors'
+import { lessonWords } from './lessons'
+
+const LEGACY_CEFR = { beginner: 'A1', intermediate: 'B1', advanced: 'C1' } as const
 
 /* ---------- read legacy localStorage lessons ---------- */
 type LegacyLesson = { title: string; description?: string; level?: string; exercises?: Exercise[] }
@@ -21,9 +24,12 @@ function readLocalLessons(): api.NewLesson[] {
       .map((l: LegacyLesson) => ({
         title: l.title,
         description: l.description ?? '',
-        level: lessonLevelCode(l.level),
-        visibility: 'private' as const,
-        is_published: false,
+        cefr: LEGACY_CEFR[lessonLevelCode(l.level)],
+        skill: 'mixed' as const,
+        topic: null,
+        scope: 'teacher' as const,
+        status: 'draft' as const,
+        sequence: 0,
         exercises: l.exercises as Exercise[],
       }))
   } catch {
@@ -35,11 +41,20 @@ function readLocalLessons(): api.NewLesson[] {
    Teacher Mode — tabs
    ============================================================ */
 
-export function TeacherMode({ lessons, reload }: { lessons: Lesson[]; reload: () => void }) {
+export function TeacherMode({ reload }: { reload: () => void }) {
   const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [tab, setTab] = useState<'lessons' | 'students' | 'progress'>('lessons')
-  const mine = lessons.filter((l) => l.author_id === userId || role === 'admin')
+  const [lessons, setLessons] = useState<LessonSummary[]>([])
+
+  // own lessons (an admin: all lessons, library + teacher)
+  const refresh = useCallback(async () => {
+    if (!userId) return
+    setLessons(await api.teacherLessons(userId, role === 'admin').catch(() => []))
+  }, [userId, role])
+  useEffect(() => {
+    refresh()
+  }, [refresh])
 
   return (
     <section className="mx-auto max-w-5xl px-6 pb-24">
@@ -58,19 +73,20 @@ export function TeacherMode({ lessons, reload }: { lessons: Lesson[]; reload: ()
         ))}
       </div>
 
-      {tab === 'lessons' && <LessonManager lessons={mine} reload={reload} />}
+      {tab === 'lessons' && <LessonManager lessons={lessons} reload={() => { refresh(); reload() }} />}
       {tab === 'students' && <StudentManager />}
-      {tab === 'progress' && <ProgressBoard lessons={mine} />}
+      {tab === 'progress' && <ProgressBoard lessons={lessons} />}
     </section>
   )
 }
 
 /* ---------- lessons ---------- */
 
-function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => void }) {
+function LessonManager({ lessons, reload }: { lessons: LessonSummary[]; reload: () => void }) {
   const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [editing, setEditing] = useState<Lesson | 'new' | null>(null)
+  const [opening, setOpening] = useState<string | null>(null)
   const [importMsg, setImportMsg] = useState('')
   const local = useMemo(readLocalLessons, [])
 
@@ -79,6 +95,16 @@ function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => v
     const res = await api.importLessons(userId, local)
     setImportMsg(t('teacher.importResult', { imported: res.imported, skipped: res.skipped }))
     reload()
+  }
+
+  async function edit(id: string) {
+    setOpening(id)
+    try {
+      const full = await api.getLesson(id)
+      if (full) setEditing(full)
+    } finally {
+      setOpening(null)
+    }
   }
 
   if (editing) return <LessonEditor lesson={editing === 'new' ? null : editing} onClose={() => setEditing(null)} onSaved={() => { setEditing(null); reload() }} />
@@ -102,16 +128,18 @@ function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => v
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
                   <p className="font-display text-lg font-semibold">{l.title}</p>
-                  <Badge>{t(`visibility.${l.visibility}`)}</Badge>
-                  {l.is_published ? <Badge>{t('teacher.published')}</Badge> : <span className="text-xs text-mute">{t('teacher.draft')}</span>}
+                  {role === 'admin' && <Badge>{l.scope === 'library' ? t('teacher.libraryBadge') : t('teacher.teacherBadge')}</Badge>}
+                  {l.status === 'published' ? <Badge>{t('teacher.published')}</Badge> : <span className="text-xs text-mute">{t('teacher.draft')}</span>}
                 </div>
                 <p className="text-sm text-mute">
-                  {t('lessons.exerciseCount', { count: l.exercises.length })} · {lessonLevelLabel(l.level)}
+                  {[l.cefr, lessonSkillLabel(l.skill), l.topic && topicLabel(l.topic), t('lessons.exerciseCount', { count: l.exercise_count })]
+                    .filter(Boolean)
+                    .join(' · ')}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <Button variant="soft" onClick={() => setEditing(l)}>
-                  {t('common.edit')}
+                <Button variant="soft" onClick={() => edit(l.id)} disabled={opening === l.id}>
+                  {opening === l.id ? t('common.loading') : t('common.edit')}
                 </Button>
                 <AssignMenu lesson={l} />
                 <Button
@@ -139,26 +167,67 @@ function LessonManager({ lessons, reload }: { lessons: Lesson[]; reload: () => v
         ))}
         {lessons.length === 0 && <p className="text-mute">{t('teacher.noLessons')}</p>}
       </div>
-      {role === 'admin' && <p className="text-xs text-mute">{t('teacher.adminPublicHint')}</p>}
     </div>
   )
 }
 
+const chipCls = (on: boolean) =>
+  `rounded-full border px-4 py-1.5 font-body font-semibold transition-colors ${
+    on ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-mute hover:border-lavender'
+  }`
+
 function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onClose: () => void; onSaved: () => void }) {
   const { t } = useTranslation()
   const { userId, role } = useAuth()
+  const isAdmin = role === 'admin'
   const [title, setTitle] = useState(lesson?.title ?? '')
   const [description, setDescription] = useState(lesson?.description ?? '')
-  const [level, setLevel] = useState(lessonLevelCode(lesson?.level))
-  const [visibility, setVisibility] = useState<'public' | 'private'>(lesson?.visibility ?? (role === 'admin' ? 'public' : 'private'))
-  const [published, setPublished] = useState(lesson?.is_published ?? false)
+  const [cefr, setCefr] = useState<string>(lesson?.cefr ?? 'A1')
+  const [skill, setSkill] = useState<api.LessonSkill>(lesson?.skill ?? 'mixed')
+  const [topic, setTopic] = useState(lesson?.topic ?? '')
+  const [library, setLibrary] = useState(lesson ? lesson.scope === 'library' : false)
+  const [sequence, setSequence] = useState(lesson?.sequence ?? 0)
+  const [published, setPublished] = useState(lesson ? lesson.status === 'published' : false)
   const [raw, setRaw] = useState(lesson ? serialize(lesson.exercises) : '')
   const [saving, setSaving] = useState(false)
   const [err, setErr] = useState('')
 
+  // dictionary words linked to the lesson
+  const [words, setWords] = useState<api.Word[]>([])
+  const [picked, setPicked] = useState<Set<string>>(new Set())
+  const [finding, setFinding] = useState(false)
+  const [nothingFound, setNothingFound] = useState(false)
+
+  useEffect(() => {
+    if (!lesson) return
+    api
+      .lessonWordIds(lesson.id)
+      .then(async (ids) => {
+        setWords(await api.wordsByIds(ids))
+        setPicked(new Set(ids))
+      })
+      .catch(() => {})
+  }, [lesson])
+
   const preview = useMemo(() => parseExercises(raw), [raw])
   const issues = useMemo(() => validateRaw(raw), [raw])
   const valid = title.trim() && preview.length > 0 && issues.length === 0
+
+  async function findWords() {
+    setFinding(true)
+    setNothingFound(false)
+    try {
+      const found = await api.lessonHints([...lessonWords([title, description, preview])])
+      const known = new Set(words.map((w) => w.id))
+      const fresh = (await api.wordsByIds(found.map((h) => h.id).filter((id) => !known.has(id))))
+        .filter((w) => w.topic !== 'Basic Words') // pronouns, be-forms, articles…
+      setWords((ws) => [...ws, ...fresh])
+      setPicked((p) => new Set([...p, ...fresh.map((w) => w.id)]))
+      setNothingFound(fresh.length === 0 && words.length === 0)
+    } finally {
+      setFinding(false)
+    }
+  }
 
   async function save() {
     if (!userId || !valid) return
@@ -168,11 +237,15 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
       const payload: api.NewLesson = {
         title: title.trim(),
         description: description.trim(),
-        level,
-        visibility: role === 'admin' ? visibility : 'private',
-        is_published: published,
+        cefr,
+        skill,
+        topic: topic || null,
+        scope: isAdmin && library ? 'library' : 'teacher',
+        status: published ? 'published' : lesson?.status === 'review' ? 'review' : 'draft',
+        sequence: isAdmin ? sequence : (lesson?.sequence ?? 0),
         exercises: preview,
       }
+      let id = lesson?.id
       if (lesson) {
         // Removing exercises deletes students' answers to them — ask first.
         const impact = await api.saveLessonExercises(lesson.id, payload.exercises, true)
@@ -182,8 +255,9 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
         }
         await api.updateLesson(lesson.id, payload)
       } else {
-        await api.createLesson(userId, payload)
+        id = await api.createLesson(userId, payload)
       }
+      if (id) await api.setLessonWords(id, [...picked])
       onSaved()
     } catch (e) {
       setErr(errorMessage(e))
@@ -203,25 +277,45 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
             <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder={t('teacher.lessonTitle')} className={`${inputCls} w-full`} />
             <input value={description} onChange={(e) => setDescription(e.target.value)} placeholder={t('teacher.lessonDescription')} className={`${inputCls} w-full`} />
           </div>
-          <div className="flex flex-wrap gap-2">
-            {LESSON_LEVELS.map((lv) => (
-              <button
-                key={lv}
-                onClick={() => setLevel(lv)}
-                className={`rounded-full border px-4 py-1.5 font-body font-semibold transition-colors ${
-                  level === lv ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-mute hover:border-lavender'
-                }`}
-              >
-                {t(`lessonLevels.${lv}`)}
-              </button>
-            ))}
+
+          <div>
+            <p className="mb-2 text-sm font-semibold text-mute">{t('teacher.cefr')}</p>
+            <div className="flex flex-wrap gap-2">
+              {CEFR_LEVELS.map((lv) => (
+                <button key={lv} onClick={() => setCefr(lv)} className={chipCls(cefr === lv)}>
+                  {lv}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            <label className="text-sm font-semibold text-mute">
+              {t('teacher.skill')}
+              <select value={skill} onChange={(e) => setSkill(e.target.value as api.LessonSkill)} className={`${inputCls} mt-1 w-full font-normal text-ink`}>
+                {api.LESSON_SKILLS.map((s) => <option key={s} value={s}>{lessonSkillLabel(s)}</option>)}
+              </select>
+            </label>
+            <label className="text-sm font-semibold text-mute">
+              {t('teacher.topic')}
+              <select value={topic} onChange={(e) => setTopic(e.target.value)} className={`${inputCls} mt-1 w-full font-normal text-ink`}>
+                <option value="">{t('teacher.noTopic')}</option>
+                {TOPICS.map((tp) => <option key={tp} value={tp}>{topicLabel(tp)}</option>)}
+              </select>
+            </label>
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            {role === 'admin' && (
+            {isAdmin && (
               <label className="flex items-center gap-2 text-sm">
-                <input type="checkbox" checked={visibility === 'public'} onChange={(e) => setVisibility(e.target.checked ? 'public' : 'private')} />
-                {t('teacher.publicCheckbox')}
+                <input type="checkbox" checked={library} onChange={(e) => setLibrary(e.target.checked)} />
+                {t('teacher.libraryCheckbox')}
+              </label>
+            )}
+            {isAdmin && library && (
+              <label className="flex items-center gap-2 text-sm">
+                {t('teacher.sequence')}
+                <input type="number" value={sequence} onChange={(e) => setSequence(Number(e.target.value) || 0)} className={`${inputCls} w-24`} />
               </label>
             )}
             <label className="flex items-center gap-2 text-sm">
@@ -237,6 +331,46 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
             placeholder={t('teacher.exercisesPlaceholder')}
             className={`${inputCls} w-full font-mono text-sm leading-relaxed`}
           />
+
+          <div className="rounded-2xl border border-line bg-paper p-4">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="font-semibold">
+                {t('teacher.lessonWords')}
+                {words.length > 0 && <span className="ml-2 text-sm font-normal text-mute">{t('teacher.wordsSelected', { count: picked.size })}</span>}
+              </p>
+              <Button variant="soft" onClick={findWords} disabled={finding}>
+                {finding ? t('common.loading') : t('teacher.findWords')}
+              </Button>
+            </div>
+            {nothingFound && <p className="mt-2 text-sm text-mute">{t('teacher.noWordsFound')}</p>}
+            {words.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {words.map((w) => {
+                  const on = picked.has(w.id)
+                  const tr = api.wordTranslation(w)
+                  return (
+                    <label key={w.id} className={`flex cursor-pointer items-center gap-1.5 rounded-full border px-3 py-1 text-sm ${on ? 'border-plum bg-lilac' : 'border-line text-mute'}`}>
+                      <input
+                        type="checkbox"
+                        checked={on}
+                        onChange={() =>
+                          setPicked((p) => {
+                            const n = new Set(p)
+                            if (n.has(w.id)) n.delete(w.id)
+                            else n.add(w.id)
+                            return n
+                          })
+                        }
+                      />
+                      <b>{w.word}</b>
+                      {tr && <span className="text-mute">— {tr}</span>}
+                    </label>
+                  )
+                })}
+              </div>
+            )}
+          </div>
+
           <div className="flex items-center gap-3">
             <Button onClick={save} disabled={!valid || saving}>
               {saving ? t('common.saving') : t('teacher.saveLesson')}
@@ -311,7 +445,7 @@ function serialize(exs: Exercise[]): string {
 
 /* ---------- assign menu ---------- */
 
-function AssignMenu({ lesson }: { lesson: Lesson }) {
+function AssignMenu({ lesson }: { lesson: { id: string } }) {
   const { t } = useTranslation()
   const { userId } = useAuth()
   const [open, setOpen] = useState(false)
@@ -420,7 +554,7 @@ function StudentManager() {
 
 /* ---------- progress board ---------- */
 
-function ProgressBoard({ lessons }: { lessons: Lesson[] }) {
+function ProgressBoard({ lessons }: { lessons: LessonSummary[] }) {
   const { t } = useTranslation()
   const { userId } = useAuth()
   const [students, setStudents] = useState<Profile[]>([])
@@ -449,11 +583,12 @@ function ProgressBoard({ lessons }: { lessons: Lesson[] }) {
   )
 }
 
-function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons: Lesson[]; onBack: () => void }) {
+function StudentDetail({ student, lessons: own, onBack }: { student: Profile; lessons: LessonSummary[]; onBack: () => void }) {
   const { t } = useTranslation()
   const [progress, setProgress] = useState<api.LessonProgress[]>([])
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [openLesson, setOpenLesson] = useState<Lesson | null>(null)
+  const [others, setOthers] = useState<LessonSummary[]>([]) // library lessons the student worked on
   const [attempts, setAttempts] = useState<any[]>([])
   const [answers, setAnswers] = useState<Record<string, api.SavedAnswer>>({})
 
@@ -478,6 +613,18 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
   }, [openLesson, student.id, passes])
 
   const byLesson = Object.fromEntries(progress.map((p) => [p.lesson_id, p]))
+  // the teacher's own lessons + any other lesson this student has progress in
+  const ownIds = useMemo(() => new Set(own.filter((l) => l.scope === 'teacher').map((l) => l.id)), [own])
+  const extraIds = [...new Set([...progress.map((p) => p.lesson_id), ...Object.keys(passes)])].filter((id) => !ownIds.has(id)).sort().join(',')
+  useEffect(() => {
+    api.lessonSummaries(extraIds ? extraIds.split(',') : []).then(setOthers).catch(() => setOthers([]))
+  }, [extraIds])
+  const lessons = [...own.filter((l) => ownIds.has(l.id)), ...others]
+
+  async function toggleDetails(id: string) {
+    if (openLesson?.id === id) return setOpenLesson(null)
+    setOpenLesson(await api.getLesson(id).catch(() => null))
+  }
 
   return (
     <div className="space-y-5">
@@ -515,7 +662,7 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
                   </p>
                 </div>
                 {status !== 'not_started' && (
-                  <Button variant="soft" onClick={() => setOpenLesson(openLesson?.id === l.id ? null : l)}>
+                  <Button variant="soft" onClick={() => toggleDetails(l.id)}>
                     {t('teacher.details')}
                   </Button>
                 )}
@@ -527,7 +674,7 @@ function StudentDetail({ student, lessons, onBack }: { student: Profile; lessons
                       <p className="font-semibold">
                         {s?.last ? t('teacher.answersOfPass', { n: s.last.pass_number }) : t('teacher.answersCurrentPass')}
                       </p>
-                      {l.exercises.map((ex, idx) => {
+                      {openLesson.exercises.map((ex, idx) => {
                         const a = ex.id ? answers[ex.id] : undefined
                         const ok = api.countsAsCorrect(a)
                         return (

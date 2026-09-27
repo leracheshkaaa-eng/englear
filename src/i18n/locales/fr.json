@@ -208,7 +208,10 @@
     "fieldTranslation": "traduction",
     "fieldExample": "exemple (facultatif)",
     "addCard": "Ajouter une carte",
-    "saveSet": "Enregistrer le paquet"
+    "saveSet": "Enregistrer le paquet",
+    "addToMyCards": "Ajouter à mes cartes",
+    "inMyCards": "Dans mes cartes",
+    "myWordsSet": "Mes mots"
   },
   "study": {
     "backToSets": "Retour aux paquets",
@@ -388,7 +391,19 @@
       "dialogueNoBlank": "Exercice {{n}} (dialogue) : il manque le trou ___ dans la deuxième réplique.",
       "dialogueBlankOnlyB": "Exercice {{n}} (dialogue) : le trou ___ n'est autorisé que dans la deuxième réplique (B).",
       "dialogueBlankNoAnswer": "Exercice {{n}} (dialogue) : le trou n'a pas de réponse entre parenthèses (…)."
-    }
+    },
+    "cefr": "Niveau",
+    "skill": "Compétence",
+    "topic": "Thème",
+    "noTopic": "Sans thème",
+    "libraryCheckbox": "Leçon de la bibliothèque du site (visible par tous)",
+    "sequence": "Ordre dans la bibliothèque",
+    "lessonWords": "Mots de la leçon",
+    "findWords": "Trouver les mots du dictionnaire dans cette leçon",
+    "noWordsFound": "Aucun mot du dictionnaire trouvé dans cette leçon.",
+    "libraryBadge": "Bibliothèque",
+    "teacherBadge": "Mes élèves",
+    "wordsSelected": "Sélectionnés : {{count}}"
   },
   "partsOfSpeech": {
     "noun": "nom",
@@ -484,5 +499,23 @@
     "penguin": "Pingouin",
     "owl": "Chouette",
     "hamster": "Hamster"
+  },
+  "lessonSkills": {
+    "vocabulary": "Vocabulaire",
+    "grammar": "Grammaire",
+    "listening": "Compréhension orale",
+    "reading": "Lecture",
+    "writing": "Écriture",
+    "speaking": "Expression orale",
+    "mixed": "Mixte"
+  },
+  "library": {
+    "libraryTab": "Bibliothèque",
+    "fromTeacher": "De mon professeur",
+    "allSkills": "Toutes les compétences",
+    "search": "Rechercher des leçons…",
+    "empty": "La bibliothèque de leçons est en préparation — de nouvelles leçons arrivent bientôt !",
+    "noResults": "Aucune leçon ne correspond à ces filtres.",
+    "count": "Leçons : {{count}}"
   }
 }

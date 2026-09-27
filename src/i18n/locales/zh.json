@@ -207,7 +207,10 @@
     "fieldTranslation": "翻译",
     "fieldExample": "例句（可选）",
     "addCard": "添加卡片",
-    "saveSet": "保存卡组"
+    "saveSet": "保存卡组",
+    "addToMyCards": "添加到我的卡片",
+    "inMyCards": "已在我的卡片中",
+    "myWordsSet": "我的单词"
   },
   "study": {
     "backToSets": "返回卡组",
@@ -382,7 +385,19 @@
       "dialogueNoBlank": "第 {{n}} 题（dialogue）：第二句中没有空格 ___。",
       "dialogueBlankOnlyB": "第 {{n}} 题（dialogue）：空格 ___ 只能出现在第二句（B）。",
       "dialogueBlankNoAnswer": "第 {{n}} 题（dialogue）：空格没有写在括号中的答案（…）。"
-    }
+    },
+    "cefr": "级别",
+    "skill": "技能",
+    "topic": "主题",
+    "noTopic": "无主题",
+    "libraryCheckbox": "网站课程库的课程（所有人可见）",
+    "sequence": "在课程库中的顺序",
+    "lessonWords": "课程词汇",
+    "findWords": "在本课中查找词典单词",
+    "noWordsFound": "本课中未找到词典单词。",
+    "libraryBadge": "课程库",
+    "teacherBadge": "我的学生",
+    "wordsSelected": "已选择：{{count}}"
   },
   "partsOfSpeech": {
     "noun": "名词",
@@ -478,5 +493,23 @@
     "penguin": "企鹅",
     "owl": "小猫头鹰",
     "hamster": "仓鼠"
+  },
+  "lessonSkills": {
+    "vocabulary": "词汇",
+    "grammar": "语法",
+    "listening": "听力",
+    "reading": "阅读",
+    "writing": "写作",
+    "speaking": "口语",
+    "mixed": "综合"
+  },
+  "library": {
+    "libraryTab": "课程库",
+    "fromTeacher": "来自我的老师",
+    "allSkills": "全部技能",
+    "search": "搜索课程…",
+    "empty": "课程库正在准备中——新课程即将上线！",
+    "noResults": "没有符合这些筛选条件的课程。",
+    "count": "课程：{{count}}"
   }
 }

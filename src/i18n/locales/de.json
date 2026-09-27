@@ -208,7 +208,10 @@
     "fieldTranslation": "Übersetzung",
     "fieldExample": "Beispiel (optional)",
     "addCard": "Karte hinzufügen",
-    "saveSet": "Satz speichern"
+    "saveSet": "Satz speichern",
+    "addToMyCards": "Zu meinen Karten hinzufügen",
+    "inMyCards": "In meinen Karten",
+    "myWordsSet": "Meine Wörter"
   },
   "study": {
     "backToSets": "Zurück zu den Sätzen",
@@ -388,7 +391,19 @@
       "dialogueNoBlank": "Aufgabe {{n}} (dialogue): in der zweiten Zeile fehlt die Lücke ___.",
       "dialogueBlankOnlyB": "Aufgabe {{n}} (dialogue): die Lücke ___ ist nur in der zweiten Zeile (B) erlaubt.",
       "dialogueBlankNoAnswer": "Aufgabe {{n}} (dialogue): die Lücke hat keine Antwort in Klammern (…)."
-    }
+    },
+    "cefr": "Niveau",
+    "skill": "Fertigkeit",
+    "topic": "Thema",
+    "noTopic": "Kein Thema",
+    "libraryCheckbox": "Lektion der Website-Bibliothek (für alle sichtbar)",
+    "sequence": "Reihenfolge in der Bibliothek",
+    "lessonWords": "Wörter der Lektion",
+    "findWords": "Wörterbuchwörter in dieser Lektion finden",
+    "noWordsFound": "In dieser Lektion wurden keine Wörterbuchwörter gefunden.",
+    "libraryBadge": "Bibliothek",
+    "teacherBadge": "Meine Schüler",
+    "wordsSelected": "Ausgewählt: {{count}}"
   },
   "partsOfSpeech": {
     "noun": "Substantiv",
@@ -484,5 +499,23 @@
     "penguin": "Pinguin",
     "owl": "Eulchen",
     "hamster": "Hamster"
+  },
+  "lessonSkills": {
+    "vocabulary": "Wortschatz",
+    "grammar": "Grammatik",
+    "listening": "Hören",
+    "reading": "Lesen",
+    "writing": "Schreiben",
+    "speaking": "Sprechen",
+    "mixed": "Gemischt"
+  },
+  "library": {
+    "libraryTab": "Bibliothek",
+    "fromTeacher": "Von meiner Lehrkraft",
+    "allSkills": "Alle Fertigkeiten",
+    "search": "Lektionen suchen…",
+    "empty": "Die Lektionsbibliothek wird vorbereitet — neue Lektionen kommen bald!",
+    "noResults": "Keine Lektionen für diese Filter.",
+    "count": "Lektionen: {{count}}"
   }
 }

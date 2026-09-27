@@ -18,7 +18,7 @@ function Shell() {
   const { loading, userId, role, profile, signOut, settings } = useAuth()
   const { t, i18n } = useTranslation()
   const [view, setView] = useState<View>('home')
-  const [lessons, setLessons] = useState<Lesson[]>([])
+  const [lessonCount, setLessonCount] = useState(0) // library + teacher lessons this viewer can open
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [active, setActive] = useState<Lesson | null>(null)
@@ -26,11 +26,11 @@ function Shell() {
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
 
   const reload = useCallback(async () => {
-    try {
-      setLessons(await api.listLessons())
-    } catch {
-      setLessons([])
-    }
+    // only totals here: the catalog loads its own pages
+    Promise.all([
+      api.lessonCatalog({ scope: 'library' }, 0, 1).then((r) => r.total).catch(() => 0),
+      userId ? api.lessonCatalog({ scope: 'teacher' }, 0, 1).then((r) => r.total).catch(() => 0) : 0,
+    ]).then(([a, b]) => setLessonCount(a + b))
     if (userId) {
       const p = await api.myProgress(userId)
       setProgress(Object.fromEntries(p.map((x) => [x.lesson_id, x])))
@@ -146,14 +146,15 @@ function Shell() {
       </header>
 
       <main>
-        {view === 'home' && <Home role={role} onStart={() => go('lessons')} onLogin={() => go('login')} count={lessons.length} />}
+        {view === 'home' && <Home role={role} onStart={() => go('lessons')} onLogin={() => go('login')} count={lessonCount} />}
         {view === 'lessons' && (
           <LessonsCatalog
-            lessons={lessons}
             progress={progress}
             passes={passes}
-            onOpen={(l) => {
-              setActive(l)
+            onOpen={async (id) => {
+              const lesson = await api.getLesson(id).catch(() => null)
+              if (!lesson) return
+              setActive(lesson)
               setView('practice')
             }}
           />
@@ -161,7 +162,7 @@ function Shell() {
         {view === 'practice' && active && (
           <LessonPlayer lesson={active} onDone={() => { reload(); setView('lessons') }} />
         )}
-        {view === 'teacher' && isTeacher && <TeacherMode lessons={lessons} reload={reload} />}
+        {view === 'teacher' && isTeacher && <TeacherMode reload={reload} />}
         {view === 'flashcards' && userId && (
           <Flashcards
             target={flashTarget}
@@ -174,7 +175,6 @@ function Shell() {
         {view === 'dictionary' && userId && <Dictionary />}
         {view === 'progress' && userId && (
           <StudentProgress
-            lessons={lessons}
             onOpenSet={(p) => {
               setFlashTarget(p)
               setView('flashcards')

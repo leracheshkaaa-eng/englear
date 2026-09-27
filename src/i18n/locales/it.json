@@ -208,7 +208,10 @@
     "fieldTranslation": "traduzione",
     "fieldExample": "esempio (facoltativo)",
     "addCard": "Aggiungi carta",
-    "saveSet": "Salva mazzo"
+    "saveSet": "Salva mazzo",
+    "addToMyCards": "Aggiungi alle mie carte",
+    "inMyCards": "Nelle mie carte",
+    "myWordsSet": "Le mie parole"
   },
   "study": {
     "backToSets": "Torna ai mazzi",
@@ -388,7 +391,19 @@
       "dialogueNoBlank": "Esercizio {{n}} (dialogue): manca lo spazio ___ nella seconda battuta.",
       "dialogueBlankOnlyB": "Esercizio {{n}} (dialogue): lo spazio ___ è consentito solo nella seconda battuta (B).",
       "dialogueBlankNoAnswer": "Esercizio {{n}} (dialogue): lo spazio non ha una risposta tra parentesi (…)."
-    }
+    },
+    "cefr": "Livello",
+    "skill": "Abilità",
+    "topic": "Argomento",
+    "noTopic": "Nessun argomento",
+    "libraryCheckbox": "Lezione della biblioteca del sito (visibile a tutti)",
+    "sequence": "Ordine nella biblioteca",
+    "lessonWords": "Parole della lezione",
+    "findWords": "Trova le parole del dizionario in questa lezione",
+    "noWordsFound": "Nessuna parola del dizionario trovata in questa lezione.",
+    "libraryBadge": "Biblioteca",
+    "teacherBadge": "I miei studenti",
+    "wordsSelected": "Selezionate: {{count}}"
   },
   "partsOfSpeech": {
     "noun": "sostantivo",
@@ -484,5 +499,23 @@
     "penguin": "Pinguino",
     "owl": "Gufetto",
     "hamster": "Criceto"
+  },
+  "lessonSkills": {
+    "vocabulary": "Lessico",
+    "grammar": "Grammatica",
+    "listening": "Ascolto",
+    "reading": "Lettura",
+    "writing": "Scrittura",
+    "speaking": "Conversazione",
+    "mixed": "Misto"
+  },
+  "library": {
+    "libraryTab": "Biblioteca",
+    "fromTeacher": "Dal mio insegnante",
+    "allSkills": "Tutte le abilità",
+    "search": "Cerca lezioni…",
+    "empty": "La biblioteca delle lezioni è in preparazione: presto arriveranno nuove lezioni!",
+    "noResults": "Nessuna lezione corrisponde a questi filtri.",
+    "count": "Lezioni: {{count}}"
   }
 }

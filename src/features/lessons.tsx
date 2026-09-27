@@ -16,7 +16,7 @@ import {
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { Lesson, LessonPass, PassSummary, SavedAnswer, WordHint } from '../lib/api'
-import { lessonLevelLabel } from '../lib/config'
+import { CEFR_LEVELS, TOPICS, lessonLevelLabel, lessonSkillLabel, topicLabel } from '../lib/config'
 
 function Verdict({ correct, explanation, answer }: { correct: boolean; explanation: string; answer?: string }) {
   const { t } = useTranslation()
@@ -242,7 +242,7 @@ type Outcome = {
 const SAVE_DELAY_MS = 500
 
 /** Every English word that appears anywhere in the given values (strings, arrays, objects). */
-function lessonWords(value: unknown, out = new Set<string>()): Set<string> {
+export function lessonWords(value: unknown, out = new Set<string>()): Set<string> {
   if (typeof value === 'string') {
     for (const m of value.matchAll(/[A-Za-z][A-Za-z'-]*/g)) out.add(m[0].replace(/[-']+$/, '').toLowerCase())
   } else if (Array.isArray(value)) {
@@ -781,82 +781,194 @@ function AnswersReview({
   )
 }
 
-/** Catalog of lessons the current viewer can see (RLS-filtered). */
+/** Lesson catalog: the site's library (for everyone) and, separately, the lessons
+ *  a teacher assigned to this student (or a teacher's own lessons). Loaded page by page. */
+const CATALOG_PAGE = 30
+
 export function LessonsCatalog({
-  lessons,
   progress,
   passes,
   onOpen,
 }: {
-  lessons: Lesson[]
   progress: Record<string, api.LessonProgress>
   passes?: Record<string, PassSummary>
-  onOpen: (l: Lesson) => void
+  onOpen: (id: string) => void
 }) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const { userId, role } = useAuth()
+  const [scope, setScope] = useState<api.LessonScope>('library')
+  const [hasTeacherLessons, setHasTeacherLessons] = useState(false)
+  const [level, setLevel] = useState('')
+  const [skill, setSkill] = useState('')
+  const [topic, setTopic] = useState('')
+  const [q, setQ] = useState('')
+  const [lessons, setLessons] = useState<api.LessonSummary[]>([])
+  const [total, setTotal] = useState(0)
+  const [loading, setLoading] = useState(true)
+  const [loadingMore, setLoadingMore] = useState(false)
+  const request = useRef(0) // ignores answers to an older search
+
+  // show the "from my teacher" / "my lessons" tab only when there is something in it
+  useEffect(() => {
+    if (!userId) {
+      setHasTeacherLessons(false)
+      setScope('library')
+      return
+    }
+    api
+      .lessonCatalog({ scope: 'teacher' }, 0, 1)
+      .then((r) => setHasTeacherLessons(r.total > 0))
+      .catch(() => setHasTeacherLessons(false))
+  }, [userId])
+
+  const filters = (): api.LessonFilters => ({ scope, cefr: level ? [level] : undefined, skill, topic, q })
+
+  async function load() {
+    const id = ++request.current
+    setLoading(true)
+    try {
+      const page = await api.lessonCatalog(filters(), 0, CATALOG_PAGE)
+      if (id !== request.current) return
+      setLessons(page.lessons)
+      setTotal(page.total)
+    } catch {
+      if (id === request.current) { setLessons([]); setTotal(0) }
+    } finally {
+      if (id === request.current) setLoading(false)
+    }
+  }
+
+  async function loadMore() {
+    const id = request.current
+    setLoadingMore(true)
+    try {
+      const page = await api.lessonCatalog(filters(), lessons.length, CATALOG_PAGE)
+      if (id !== request.current) return
+      setLessons((ls) => [...ls, ...page.lessons])
+      setTotal(page.total)
+    } finally {
+      setLoadingMore(false)
+    }
+  }
+
+  useEffect(() => {
+    const timer = setTimeout(load, q ? 250 : 0) // debounce typing
+    return () => clearTimeout(timer)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scope, level, skill, topic, q, userId, i18n.language])
+
+  const filtered = !!(level || skill || topic || q.trim())
+  const teacherTabLabel = role === 'student' ? t('library.fromTeacher') : t('teacher.tabs.lessons')
+
   return (
     <section className="mx-auto max-w-4xl px-6 pb-24">
-      <h2 className="mb-8 font-display text-4xl font-semibold">{t('nav.lessons')}</h2>
-      {lessons.length === 0 && <p className="text-mute">{t('lessons.none')}</p>}
-      <div className="grid gap-4">
-        {lessons.map((l) => {
-          const skills = Array.from(new Set(l.exercises.map((e) => skillLabel(e.type))))
-          const pr = progress[l.id]
-          const s = passes?.[l.id]
-          const done = pr?.status === 'completed' || !!s?.last
-          // last result as N/M; lessons finished before passes existed only have a percent
-          const lastResult = s?.last
-            ? `${s.last.correct_count ?? 0}/${s.last.total_count ?? 0}`
-            : pr?.status === 'completed'
-              ? `${pr.score}%`
-              : null
-          const open = s?.open
-          return (
+      <h2 className="mb-6 font-display text-4xl font-semibold">{t('nav.lessons')}</h2>
+
+      {hasTeacherLessons && (
+        <div className="mb-5 inline-flex rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold">
+          {(['library', 'teacher'] as const).map((s) => (
             <button
-              key={l.id}
-              onClick={() => onOpen(l)}
-              className={`group flex flex-col gap-3 rounded-3xl border border-line p-6 text-left transition-all hover:border-lavender hover:shadow-[0_16px_40px_-24px_rgba(60,42,112,0.5)] sm:flex-row sm:items-center sm:justify-between ${
-                done ? 'bg-paper/70' : 'bg-paper'
-              }`}
+              key={s}
+              onClick={() => setScope(s)}
+              className={`rounded-full px-4 py-1.5 transition-colors ${scope === s ? 'bg-plum text-paper' : 'text-mute hover:text-ink'}`}
             >
-              <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className={`font-display text-2xl font-semibold ${done ? 'text-ink/75' : ''}`}>{l.title}</h3>
-                  <Badge>{lessonLevelLabel(l.level)}</Badge>
-                  <Badge>{t(`visibility.${l.visibility}`)}</Badge>
-                  {done && (
-                    <span className="rounded-full bg-[rgba(63,143,107,.12)] px-2.5 py-0.5 text-xs font-semibold text-[var(--color-good)]">
-                      ✓ {t('lessons.completedBadge')}
-                    </span>
-                  )}
-                </div>
-                <p className="mt-1 text-mute">{l.description}</p>
-                {done && lastResult && (
-                  <p className="mt-1 text-sm font-semibold text-[var(--color-good)]">{t('lessons.lastResult', { result: lastResult })}</p>
-                )}
-                {open ? (
-                  <p className="mt-1 text-sm text-plum">
-                    {done ? t('lessons.newPass') : t('progress.inProgress')} ·{' '}
-                    {t('lessons.exerciseOf', { n: Math.min(open.current_index + 1, l.exercises.length), total: l.exercises.length })}
-                  </p>
-                ) : (
-                  !done && pr?.status === 'in_progress' && <p className="mt-1 text-sm text-plum">{t('progress.inProgress')}</p>
-                )}
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {skills.map((s) => (
-                    <span key={s} className="rounded-full border border-line px-2.5 py-0.5 font-body text-xs text-mute">
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <span className="shrink-0 font-body font-semibold text-plum">
-                {t('lessons.exerciseCount', { count: l.exercises.length })} →
-              </span>
+              {s === 'library' ? t('library.libraryTab') : teacherTabLabel}
             </button>
-          )
-        })}
+          ))}
+        </div>
+      )}
+
+      <div className="mb-6 flex flex-wrap gap-2">
+        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('library.search')} className={`${inputCls} min-w-0 flex-1`} />
+        <select value={level} onChange={(e) => setLevel(e.target.value)} className={inputCls}>
+          <option value="">{t('dictionary.allLevels')}</option>
+          {CEFR_LEVELS.map((l) => <option key={l} value={l}>{l}</option>)}
+        </select>
+        <select value={skill} onChange={(e) => setSkill(e.target.value)} className={inputCls}>
+          <option value="">{t('library.allSkills')}</option>
+          {api.LESSON_SKILLS.map((s) => <option key={s} value={s}>{lessonSkillLabel(s)}</option>)}
+        </select>
+        <select value={topic} onChange={(e) => setTopic(e.target.value)} className={inputCls}>
+          <option value="">{t('dictionary.allTopics')}</option>
+          {TOPICS.map((tp) => <option key={tp} value={tp}>{topicLabel(tp)}</option>)}
+        </select>
       </div>
+
+      {loading ? (
+        <p className="text-mute">{t('common.loading')}</p>
+      ) : lessons.length === 0 ? (
+        <p className="rounded-3xl border border-dashed border-line bg-paper/60 p-8 text-center text-mute">
+          {filtered ? t('library.noResults') : scope === 'library' ? t('library.empty') : t('lessons.none')}
+        </p>
+      ) : (
+        <>
+          <p className="mb-3 text-sm text-mute">{t('library.count', { count: total })}</p>
+          <div className="grid gap-4">
+            {lessons.map((l) => (
+              <LessonCard key={l.id} lesson={l} progress={progress[l.id]} pass={passes?.[l.id]} onOpen={() => onOpen(l.id)} />
+            ))}
+          </div>
+          {lessons.length < total && (
+            <div className="mt-6 flex justify-center">
+              <Button variant="soft" onClick={loadMore} disabled={loadingMore}>
+                {loadingMore ? t('common.loading') : t('dictionary.showMore')}
+              </Button>
+            </div>
+          )}
+        </>
+      )}
     </section>
+  )
+}
+
+function LessonCard({
+  lesson: l,
+  progress: pr,
+  pass: s,
+  onOpen,
+}: {
+  lesson: api.LessonSummary
+  progress?: api.LessonProgress
+  pass?: PassSummary
+  onOpen: () => void
+}) {
+  const { t } = useTranslation()
+  const done = pr?.status === 'completed' || !!s?.last
+  // last result as N/M; lessons finished before passes existed only have a percent
+  const lastResult = s?.last ? `${s.last.correct_count ?? 0}/${s.last.total_count ?? 0}` : pr?.status === 'completed' ? `${pr.score}%` : null
+  const open = s?.open
+  return (
+    <button
+      onClick={onOpen}
+      className={`group flex flex-col gap-3 rounded-3xl border border-line p-6 text-left transition-all hover:border-lavender hover:shadow-[0_16px_40px_-24px_rgba(60,42,112,0.5)] sm:flex-row sm:items-center sm:justify-between ${
+        done ? 'bg-paper/70' : 'bg-paper'
+      }`}
+    >
+      <div>
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className={`font-display text-2xl font-semibold ${done ? 'text-ink/75' : ''}`}>{l.title}</h3>
+          {l.cefr && <Badge>{l.cefr}</Badge>}
+          <Badge>{lessonSkillLabel(l.skill)}</Badge>
+          {l.status !== 'published' && <span className="text-xs text-mute">{t('teacher.draft')}</span>}
+          {done && (
+            <span className="rounded-full bg-[rgba(63,143,107,.12)] px-2.5 py-0.5 text-xs font-semibold text-[var(--color-good)]">
+              ✓ {t('lessons.completedBadge')}
+            </span>
+          )}
+        </div>
+        {l.description && <p className="mt-1 text-mute">{l.description}</p>}
+        {l.topic && <p className="mt-1 text-xs text-mute">{topicLabel(l.topic)}</p>}
+        {done && lastResult && <p className="mt-1 text-sm font-semibold text-[var(--color-good)]">{t('lessons.lastResult', { result: lastResult })}</p>}
+        {open ? (
+          <p className="mt-1 text-sm text-plum">
+            {done ? t('lessons.newPass') : t('progress.inProgress')} ·{' '}
+            {t('lessons.exerciseOf', { n: Math.min(open.current_index + 1, l.exercise_count), total: l.exercise_count })}
+          </p>
+        ) : (
+          !done && pr?.status === 'in_progress' && <p className="mt-1 text-sm text-plum">{t('progress.inProgress')}</p>
+        )}
+      </div>
+      <span className="shrink-0 font-body font-semibold text-plum">{t('lessons.exerciseCount', { count: l.exercise_count })} →</span>
+    </button>
   )
 }

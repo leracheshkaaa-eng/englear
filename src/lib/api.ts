@@ -13,17 +13,43 @@ export type Profile = {
   created_at?: string
 }
 
-export type Lesson = {
+export type LessonScope = 'library' | 'teacher'
+export type LessonStatus = 'draft' | 'review' | 'published'
+export const LESSON_SKILLS = ['vocabulary', 'grammar', 'listening', 'reading', 'writing', 'speaking', 'mixed'] as const
+export type LessonSkill = (typeof LESSON_SKILLS)[number]
+
+/** A lesson without its exercises (catalog cards, lists). */
+export type LessonSummary = {
   id: string
   title: string
   description: string
+  /** legacy level (beginner / intermediate / advanced); cefr is the real level */
   level: string
+  cefr: string | null
+  scope: LessonScope
+  skill: LessonSkill
+  topic: string | null
+  grammar_topic_id: string | null
+  sequence: number
+  status: LessonStatus
+  author_id: string | null
+  exercise_count: number
   position: number
+}
+
+export type Lesson = LessonSummary & {
+  /** kept in sync with scope/status by the database */
   visibility: 'public' | 'private'
   is_published: boolean
-  author_id: string | null
   exercises: Exercise[]
 }
+
+const LESSON_SUMMARY =
+  'id, title, description, level, cefr, scope, skill, topic, grammar_topic_id, sequence, status, author_id, exercise_count, position'
+
+/** Legacy level for the old `level` column, derived from the CEFR level. */
+const legacyLevel = (cefr: string | null | undefined) =>
+  cefr?.startsWith('C') ? 'advanced' : cefr?.startsWith('B') ? 'intermediate' : 'beginner'
 
 /* ---------- profiles / settings ---------- */
 
@@ -84,17 +110,49 @@ export async function claimAdmin(): Promise<boolean> {
 
 /* ---------- lessons + exercises ---------- */
 
-export async function listLessons(): Promise<Lesson[]> {
-  // RLS decides which rows are visible (public+published, own, assigned, admin).
-  const { data: lessons, error } = await supabase.from('lessons').select('*').order('position')
+export type LessonFilters = {
+  scope: LessonScope
+  cefr?: string[]
+  skill?: string
+  topic?: string
+  grammarTopicId?: string
+  q?: string
+}
+
+/** One page of the lesson catalog (no exercises) and the total number of matches.
+ *  RLS decides what is visible: published library lessons for everyone;
+ *  teacher lessons for their author, assigned students and admins. */
+export async function lessonCatalog(f: LessonFilters, from: number, pageSize: number): Promise<{ lessons: LessonSummary[]; total: number }> {
+  const { data, error } = await supabase.rpc('lesson_catalog', {
+    p_scope: f.scope,
+    p_cefr: f.cefr?.length ? f.cefr : null,
+    p_skill: f.skill || null,
+    p_topic: f.topic || null,
+    p_grammar: f.grammarTopicId || null,
+    p_q: f.q ?? '',
+    p_limit: pageSize,
+    p_offset: from,
+  })
   if (error) throw error
-  if (!lessons?.length) return []
-  const ids = lessons.map((l) => l.id)
-  const { data: exs } = await supabase.from('exercises').select('*').in('lesson_id', ids).order('position')
-  return lessons.map((l) => ({
-    ...l,
-    exercises: (exs ?? []).filter((e) => e.lesson_id === l.id).map((e) => rowToExercise(e as ExerciseRow)),
-  })) as Lesson[]
+  const rows = (data ?? []) as (LessonSummary & { total: number })[]
+  return { lessons: rows.map(({ total: _total, ...l }) => l), total: rows[0]?.total ?? 0 }
+}
+
+/** Lessons for the teacher tab: the teacher's own lessons; an admin sees all (library + teacher). */
+export async function teacherLessons(userId: string, isAdmin: boolean): Promise<LessonSummary[]> {
+  let query = supabase.from('lessons').select(LESSON_SUMMARY)
+  if (!isAdmin) query = query.eq('author_id', userId)
+  const { data, error } = await query.order('scope').order('cefr').order('sequence').order('position')
+  if (error) throw error
+  return (data ?? []) as LessonSummary[]
+}
+
+/** Summaries of the given lessons (e.g. the ones a student has progress in). */
+export async function lessonSummaries(ids: string[]): Promise<LessonSummary[]> {
+  if (!ids.length) return []
+  const { data, error } = await supabase.from('lessons').select(LESSON_SUMMARY).in('id', ids)
+  if (error) throw error
+  return (data ?? []) as LessonSummary[]
 }
 
 export async function getLesson(id: string): Promise<Lesson | null> {
@@ -107,23 +165,25 @@ export async function getLesson(id: string): Promise<Lesson | null> {
 export type NewLesson = {
   title: string
   description: string
-  level: string
-  visibility: 'public' | 'private'
-  is_published: boolean
+  cefr: string
+  skill: LessonSkill
+  topic: string | null
+  /** 'library' only for admins (enforced by the database) */
+  scope: LessonScope
+  status: LessonStatus
+  sequence: number
   exercises: Exercise[]
+}
+
+const lessonRow = (input: Partial<NewLesson>) => {
+  const { exercises: _exercises, ...rest } = input
+  return rest.cefr ? { ...rest, level: legacyLevel(rest.cefr) } : rest
 }
 
 export async function createLesson(authorId: string, input: NewLesson): Promise<string> {
   const { data: lesson, error } = await supabase
     .from('lessons')
-    .insert({
-      title: input.title,
-      description: input.description,
-      level: input.level,
-      visibility: input.visibility,
-      is_published: input.is_published,
-      author_id: authorId,
-    })
+    .insert({ ...lessonRow(input), author_id: authorId })
     .select('id')
     .single()
   if (error) throw error
@@ -132,12 +192,35 @@ export async function createLesson(authorId: string, input: NewLesson): Promise<
 }
 
 export async function updateLesson(id: string, patch: Partial<NewLesson>) {
-  const { exercises, ...rest } = patch
-  if (Object.keys(rest).length) {
-    const { error } = await supabase.from('lessons').update(rest).eq('id', id)
+  const row = lessonRow(patch)
+  if (Object.keys(row).length) {
+    const { error } = await supabase.from('lessons').update(row).eq('id', id)
     if (error) throw error
   }
-  if (exercises) await saveLessonExercises(id, exercises)
+  if (patch.exercises) await saveLessonExercises(id, patch.exercises)
+}
+
+/** Dictionary words linked to a lesson. */
+export async function lessonWordIds(lessonId: string): Promise<string[]> {
+  const { data, error } = await supabase.from('lesson_words').select('word_id').eq('lesson_id', lessonId)
+  if (error) throw error
+  return (data ?? []).map((r) => r.word_id as string)
+}
+
+/** Replace the dictionary words linked to a lesson. */
+export async function setLessonWords(lessonId: string, wordIds: string[]) {
+  const current = new Set(await lessonWordIds(lessonId))
+  const wanted = new Set(wordIds)
+  const remove = [...current].filter((id) => !wanted.has(id))
+  const add = [...wanted].filter((id) => !current.has(id))
+  if (remove.length) {
+    const { error } = await supabase.from('lesson_words').delete().eq('lesson_id', lessonId).in('word_id', remove)
+    if (error) throw error
+  }
+  if (add.length) {
+    const { error } = await supabase.from('lesson_words').insert(add.map((word_id) => ({ lesson_id: lessonId, word_id })))
+    if (error) throw error
+  }
 }
 
 export type ExerciseSaveImpact = { deleted: number; affected_answers: number; affected_attempts: number }

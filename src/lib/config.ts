@@ -47,4 +47,5 @@ export function lessonLevelCode(level: string | null | undefined): LessonLevel {
   if (level && (LESSON_LEVELS as readonly string[]).includes(level)) return level as LessonLevel
   return LEGACY_LESSON_LEVELS[level ?? ''] ?? 'beginner'
 }
-export const lessonLevelLabel = (level: string | null | undefined) => tKey(`lessonLevels.${lessonLevelCode(level)}`)
+export const lessonSkillLabel = (skill: string) => tKey(`lessonSkills.${skill}`, skill)
+export const lessonLevelLabel =(level: string | null | undefined) => tKey(`lessonLevels.${lessonLevelCode(level)}`)
