@@ -1,0 +1,679 @@
+{
+  "package": "animals",
+  "kind": "words",
+  "words": [
+    {
+      "word": "animal",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ˈænəməl/",
+      "definition": "A living creature that is not a plant or a person.",
+      "examples": [
+        "What's your favorite animal?"
+      ],
+      "translations": {
+        "uk": "тварина",
+        "de": "Tier",
+        "fr": "animal",
+        "es": "animal",
+        "it": "animale",
+        "pt": "animal",
+        "pl": "zwierzę",
+        "ru": "животное",
+        "zh": "动物",
+        "ja": "動物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "horse",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/hɔːrs/",
+      "definition": "A large animal that people ride.",
+      "examples": [
+        "She rides her horse every weekend."
+      ],
+      "translations": {
+        "uk": "кінь",
+        "de": "Pferd",
+        "fr": "cheval",
+        "es": "caballo",
+        "it": "cavallo",
+        "pt": "cavalo",
+        "pl": "koń",
+        "ru": "лошадь",
+        "zh": "马",
+        "ja": "馬"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cow",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/kaʊ/",
+      "definition": "A large farm animal that gives milk.",
+      "examples": [
+        "The cows are in the field."
+      ],
+      "translations": {
+        "uk": "корова",
+        "de": "Kuh",
+        "fr": "vache",
+        "es": "vaca",
+        "it": "mucca",
+        "pt": "vaca",
+        "pl": "krowa",
+        "ru": "корова",
+        "zh": "奶牛",
+        "ja": "牛"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pig",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/pɪɡ/",
+      "definition": "A pink farm animal with a short tail.",
+      "examples": [
+        "The pig is rolling in the mud."
+      ],
+      "translations": {
+        "uk": "свиня",
+        "de": "Schwein",
+        "fr": "cochon",
+        "es": "cerdo",
+        "it": "maiale",
+        "pt": "porco",
+        "pl": "świnia",
+        "ru": "свинья",
+        "zh": "猪",
+        "ja": "豚"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sheep",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ʃiːp/",
+      "definition": "A farm animal with thick wool.",
+      "examples": [
+        "There are hundreds of sheep on the hill."
+      ],
+      "translations": {
+        "uk": "вівця",
+        "de": "Schaf",
+        "fr": "mouton",
+        "es": "oveja",
+        "it": "pecora",
+        "pt": "ovelha",
+        "pl": "owca",
+        "ru": "овца",
+        "zh": "羊",
+        "ja": "羊"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mouse",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/maʊs/",
+      "definition": "A very small animal with a long tail.",
+      "examples": [
+        "The cat caught a mouse."
+      ],
+      "translations": {
+        "uk": "миша",
+        "de": "Maus",
+        "fr": "souris",
+        "es": "ratón",
+        "it": "topo",
+        "pt": "rato",
+        "pl": "mysz",
+        "ru": "мышь",
+        "zh": "老鼠",
+        "ja": "ネズミ"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "computer",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A small device you move with your hand to use a computer.",
+          "examples": [
+            "Click the left button of the mouse."
+          ],
+          "translations": {
+            "uk": "мишка (комп'ютерна)",
+            "de": "Maus",
+            "fr": "souris",
+            "es": "ratón",
+            "it": "mouse",
+            "pt": "mouse",
+            "pl": "myszka",
+            "ru": "мышь (компьютерная)",
+            "zh": "鼠标",
+            "ja": "マウス"
+          }
+        }
+      ]
+    },
+    {
+      "word": "rabbit",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ˈræbɪt/",
+      "definition": "A small animal with long ears.",
+      "examples": [
+        "My sister has a pet rabbit."
+      ],
+      "translations": {
+        "uk": "кролик",
+        "de": "Kaninchen",
+        "fr": "lapin",
+        "es": "conejo",
+        "it": "coniglio",
+        "pt": "coelho",
+        "pl": "królik",
+        "ru": "кролик",
+        "zh": "兔子",
+        "ja": "ウサギ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lion",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ˈlaɪən/",
+      "definition": "A large wild cat that lives in Africa.",
+      "examples": [
+        "The lion is sleeping under a tree."
+      ],
+      "translations": {
+        "uk": "лев",
+        "de": "Löwe",
+        "fr": "lion",
+        "es": "león",
+        "it": "leone",
+        "pt": "leão",
+        "pl": "lew",
+        "ru": "лев",
+        "zh": "狮子",
+        "ja": "ライオン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "elephant",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ˈeləfənt/",
+      "definition": "A very large gray animal with a long nose.",
+      "examples": [
+        "Elephants have very good memories."
+      ],
+      "translations": {
+        "uk": "слон",
+        "de": "Elefant",
+        "fr": "éléphant",
+        "es": "elefante",
+        "it": "elefante",
+        "pt": "elefante",
+        "pl": "słoń",
+        "ru": "слон",
+        "zh": "大象",
+        "ja": "象"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "monkey",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ˈmʌŋki/",
+      "definition": "An animal with a long tail that climbs trees.",
+      "examples": [
+        "The monkey is eating a banana."
+      ],
+      "translations": {
+        "uk": "мавпа",
+        "de": "Affe",
+        "fr": "singe",
+        "es": "mono",
+        "it": "scimmia",
+        "pt": "macaco",
+        "pl": "małpa",
+        "ru": "обезьяна",
+        "zh": "猴子",
+        "ja": "猿"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bear",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/ber/",
+      "definition": "A large heavy wild animal with thick fur.",
+      "examples": [
+        "We saw a bear in the forest."
+      ],
+      "translations": {
+        "uk": "ведмідь",
+        "de": "Bär",
+        "fr": "ours",
+        "es": "oso",
+        "it": "orso",
+        "pt": "urso",
+        "pl": "niedźwiedź",
+        "ru": "медведь",
+        "zh": "熊",
+        "ja": "クマ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "duck",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/dʌk/",
+      "definition": "A bird that swims and says \"quack\".",
+      "examples": [
+        "The children fed the ducks."
+      ],
+      "translations": {
+        "uk": "качка",
+        "de": "Ente",
+        "fr": "canard",
+        "es": "pato",
+        "it": "anatra",
+        "pt": "pato",
+        "pl": "kaczka",
+        "ru": "утка",
+        "zh": "鸭子",
+        "ja": "アヒル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pet",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/pet/",
+      "definition": "An animal that you keep at home.",
+      "examples": [
+        "Do you have a pet?"
+      ],
+      "translations": {
+        "uk": "домашній улюбленець",
+        "de": "Haustier",
+        "fr": "animal de compagnie",
+        "es": "mascota",
+        "it": "animale domestico",
+        "pt": "animal de estimação",
+        "pl": "zwierzę domowe",
+        "ru": "домашний питомец",
+        "zh": "宠物",
+        "ja": "ペット"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "farm",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/fɑːrm/",
+      "definition": "Land with buildings where people grow food and keep animals.",
+      "examples": [
+        "My uncle lives on a farm."
+      ],
+      "translations": {
+        "uk": "ферма",
+        "de": "Bauernhof",
+        "fr": "ferme",
+        "es": "granja",
+        "it": "fattoria",
+        "pt": "fazenda",
+        "pl": "farma",
+        "ru": "ферма",
+        "zh": "农场",
+        "ja": "農場"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "zoo",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Animals",
+      "ipa": "/zuː/",
+      "definition": "A place where people can see wild animals.",
+      "examples": [
+        "We went to the zoo on Sunday."
+      ],
+      "translations": {
+        "uk": "зоопарк",
+        "de": "Zoo",
+        "fr": "zoo",
+        "es": "zoológico",
+        "it": "zoo",
+        "pt": "zoológico",
+        "pl": "zoo",
+        "ru": "зоопарк",
+        "zh": "动物园",
+        "ja": "動物園"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "snake",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/sneɪk/",
+      "definition": "A long animal with no legs.",
+      "examples": [
+        "Some snakes are dangerous."
+      ],
+      "translations": {
+        "uk": "змія",
+        "de": "Schlange",
+        "fr": "serpent",
+        "es": "serpiente",
+        "it": "serpente",
+        "pt": "cobra",
+        "pl": "wąż",
+        "ru": "змея",
+        "zh": "蛇",
+        "ja": "ヘビ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "insect",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ˈɪnsekt/",
+      "definition": "A very small animal with six legs.",
+      "examples": [
+        "Bees and ants are insects."
+      ],
+      "translations": {
+        "uk": "комаха",
+        "de": "Insekt",
+        "fr": "insecte",
+        "es": "insecto",
+        "it": "insetto",
+        "pt": "inseto",
+        "pl": "owad",
+        "ru": "насекомое",
+        "zh": "昆虫",
+        "ja": "昆虫"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bee",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/biː/",
+      "definition": "A flying insect that makes honey.",
+      "examples": [
+        "A bee is flying around the flowers."
+      ],
+      "translations": {
+        "uk": "бджола",
+        "de": "Biene",
+        "fr": "abeille",
+        "es": "abeja",
+        "it": "ape",
+        "pt": "abelha",
+        "pl": "pszczoła",
+        "ru": "пчела",
+        "zh": "蜜蜂",
+        "ja": "ハチ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spider",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ˈspaɪdɚ/",
+      "definition": "A small animal with eight legs.",
+      "examples": [
+        "There's a spider in the bath."
+      ],
+      "translations": {
+        "uk": "павук",
+        "de": "Spinne",
+        "fr": "araignée",
+        "es": "araña",
+        "it": "ragno",
+        "pt": "aranha",
+        "pl": "pająk",
+        "ru": "паук",
+        "zh": "蜘蛛",
+        "ja": "クモ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wolf",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/wʊlf/",
+      "definition": "A wild animal like a large dog.",
+      "examples": [
+        "A wolf howled in the night."
+      ],
+      "translations": {
+        "uk": "вовк",
+        "de": "Wolf",
+        "fr": "loup",
+        "es": "lobo",
+        "it": "lupo",
+        "pt": "lobo",
+        "pl": "wilk",
+        "ru": "волк",
+        "zh": "狼",
+        "ja": "オオカミ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tail",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/teɪl/",
+      "definition": "The part at the back of an animal's body.",
+      "examples": [
+        "The dog is wagging its tail."
+      ],
+      "translations": {
+        "uk": "хвіст",
+        "de": "Schwanz",
+        "fr": "queue",
+        "es": "cola",
+        "it": "coda",
+        "pt": "rabo",
+        "pl": "ogon",
+        "ru": "хвост",
+        "zh": "尾巴",
+        "ja": "しっぽ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wild",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/waɪld/",
+      "definition": "Living in nature, not kept by people.",
+      "examples": [
+        "Wild animals should not be kept as pets."
+      ],
+      "translations": {
+        "uk": "дикий",
+        "de": "wild",
+        "fr": "sauvage",
+        "es": "salvaje",
+        "it": "selvatico",
+        "pt": "selvagem",
+        "pl": "dziki",
+        "ru": "дикий",
+        "zh": "野生的",
+        "ja": "野生の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "feed",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/fiːd/",
+      "definition": "To give food to a person or an animal.",
+      "examples": [
+        "Don't forget to feed the cat."
+      ],
+      "translations": {
+        "uk": "годувати",
+        "de": "füttern",
+        "fr": "nourrir",
+        "es": "alimentar",
+        "it": "dare da mangiare",
+        "pt": "alimentar",
+        "pl": "karmić",
+        "ru": "кормить",
+        "zh": "喂",
+        "ja": "えさをやる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dolphin",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Animals",
+      "ipa": "/ˈdɑːlfɪn/",
+      "definition": "A clever sea animal that looks like a large fish.",
+      "examples": [
+        "We saw dolphins from the boat."
+      ],
+      "translations": {
+        "uk": "дельфін",
+        "de": "Delfin",
+        "fr": "dauphin",
+        "es": "delfín",
+        "it": "delfino",
+        "pt": "golfinho",
+        "pl": "delfin",
+        "ru": "дельфин",
+        "zh": "海豚",
+        "ja": "イルカ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "species",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Animals",
+      "ipa": "/ˈspiːʃiːz/",
+      "definition": "A group of animals or plants of the same kind.",
+      "examples": [
+        "Many species are in danger."
+      ],
+      "translations": {
+        "uk": "вид",
+        "de": "Art",
+        "fr": "espèce",
+        "es": "especie",
+        "it": "specie",
+        "pt": "espécie",
+        "pl": "gatunek",
+        "ru": "вид",
+        "zh": "物种",
+        "ja": "種"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "endangered",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Animals",
+      "ipa": "/ɪnˈdeɪndʒɚd/",
+      "definition": "In danger of disappearing from the world.",
+      "examples": [
+        "The panda is an endangered animal."
+      ],
+      "translations": {
+        "uk": "зникаючий",
+        "de": "vom Aussterben bedroht",
+        "fr": "en voie de disparition",
+        "es": "en peligro de extinción",
+        "it": "in via di estinzione",
+        "pt": "ameaçado de extinção",
+        "pl": "zagrożony wyginięciem",
+        "ru": "исчезающий",
+        "zh": "濒危的",
+        "ja": "絶滅危惧の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

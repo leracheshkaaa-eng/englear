@@ -1,0 +1,677 @@
+{
+  "package": "emotions",
+  "kind": "words",
+  "words": [
+    {
+      "word": "angry",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/ˈæŋɡri/",
+      "definition": "Having a strong feeling against someone who has done something bad.",
+      "examples": [
+        "Dad was angry when I broke the window."
+      ],
+      "translations": {
+        "uk": "сердитий",
+        "de": "wütend",
+        "fr": "en colère",
+        "es": "enojado",
+        "it": "arrabbiato",
+        "pt": "bravo",
+        "pl": "zły",
+        "ru": "сердитый",
+        "zh": "生气的",
+        "ja": "怒った"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scared",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/skerd/",
+      "definition": "Frightened.",
+      "examples": [
+        "I'm scared of spiders."
+      ],
+      "translations": {
+        "uk": "наляканий",
+        "de": "verängstigt",
+        "fr": "apeuré",
+        "es": "asustado",
+        "it": "impaurito",
+        "pt": "assustado",
+        "pl": "wystraszony",
+        "ru": "испуганный",
+        "zh": "害怕的",
+        "ja": "怖がった"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "excited",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/ɪkˈsaɪtɪd/",
+      "definition": "Very happy and interested because something good will happen.",
+      "examples": [
+        "The kids are excited about the trip."
+      ],
+      "translations": {
+        "uk": "схвильований (від радості)",
+        "de": "aufgeregt",
+        "fr": "enthousiaste",
+        "es": "emocionado",
+        "it": "entusiasta",
+        "pt": "animado",
+        "pl": "podekscytowany",
+        "ru": "взволнованный (от радости)",
+        "zh": "兴奋的",
+        "ja": "わくわくした"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bored",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/bɔːrd/",
+      "definition": "Not interested because nothing is happening.",
+      "examples": [
+        "I'm bored. Let's go outside."
+      ],
+      "translations": {
+        "uk": "знуджений",
+        "de": "gelangweilt",
+        "fr": "qui s'ennuie",
+        "es": "aburrido",
+        "it": "annoiato",
+        "pt": "entediado",
+        "pl": "znudzony",
+        "ru": "скучающий",
+        "zh": "无聊的",
+        "ja": "退屈した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "love",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/lʌv/",
+      "definition": "To like someone or something very much.",
+      "examples": [
+        "I love my family."
+      ],
+      "translations": {
+        "uk": "любити",
+        "de": "lieben",
+        "fr": "aimer",
+        "es": "amar",
+        "it": "amare",
+        "pt": "amar",
+        "pl": "kochać",
+        "ru": "любить",
+        "zh": "爱",
+        "ja": "愛する"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "A very strong feeling of liking someone.",
+          "examples": [
+            "Their love grew stronger every year."
+          ],
+          "translations": {
+            "uk": "кохання, любов",
+            "de": "Liebe",
+            "fr": "amour",
+            "es": "amor",
+            "it": "amore",
+            "pt": "amor",
+            "pl": "miłość",
+            "ru": "любовь",
+            "zh": "爱",
+            "ja": "愛"
+          }
+        }
+      ]
+    },
+    {
+      "word": "hate",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/heɪt/",
+      "definition": "To dislike someone or something very much.",
+      "examples": [
+        "I hate waiting in lines."
+      ],
+      "translations": {
+        "uk": "ненавидіти",
+        "de": "hassen",
+        "fr": "détester",
+        "es": "odiar",
+        "it": "odiare",
+        "pt": "odiar",
+        "pl": "nienawidzić",
+        "ru": "ненавидеть",
+        "zh": "讨厌",
+        "ja": "大嫌いだ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "smile",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/smaɪl/",
+      "definition": "To make your mouth curve up because you are happy.",
+      "examples": [
+        "She smiled at me."
+      ],
+      "translations": {
+        "uk": "усміхатися",
+        "de": "lächeln",
+        "fr": "sourire",
+        "es": "sonreír",
+        "it": "sorridere",
+        "pt": "sorrir",
+        "pl": "uśmiechać się",
+        "ru": "улыбаться",
+        "zh": "微笑",
+        "ja": "ほほえむ"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "noun",
+          "part_of_speech": "noun",
+          "cefr": "A1",
+          "definition": "The expression on your face when you smile.",
+          "examples": [
+            "She has a beautiful smile."
+          ],
+          "translations": {
+            "uk": "усмішка",
+            "de": "Lächeln",
+            "fr": "sourire",
+            "es": "sonrisa",
+            "it": "sorriso",
+            "pt": "sorriso",
+            "pl": "uśmiech",
+            "ru": "улыбка",
+            "zh": "微笑",
+            "ja": "笑顔"
+          }
+        }
+      ]
+    },
+    {
+      "word": "cry",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/kraɪ/",
+      "definition": "To have tears coming from your eyes because you are sad.",
+      "examples": [
+        "The baby cried all night."
+      ],
+      "translations": {
+        "uk": "плакати",
+        "de": "weinen",
+        "fr": "pleurer",
+        "es": "llorar",
+        "it": "piangere",
+        "pt": "chorar",
+        "pl": "płakać",
+        "ru": "плакать",
+        "zh": "哭",
+        "ja": "泣く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "laugh",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Emotions",
+      "ipa": "/læf/",
+      "definition": "To make sounds with your voice because something is funny.",
+      "examples": [
+        "We laughed at his jokes."
+      ],
+      "translations": {
+        "uk": "сміятися",
+        "de": "lachen",
+        "fr": "rire",
+        "es": "reír",
+        "it": "ridere",
+        "pt": "rir",
+        "pl": "śmiać się",
+        "ru": "смеяться",
+        "zh": "笑",
+        "ja": "笑う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "worried",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/ˈwɝːid/",
+      "definition": "Unhappy because you think something bad might happen.",
+      "examples": [
+        "Mom is worried about my exam."
+      ],
+      "translations": {
+        "uk": "стурбований",
+        "de": "besorgt",
+        "fr": "inquiet",
+        "es": "preocupado",
+        "it": "preoccupato",
+        "pt": "preocupado",
+        "pl": "zmartwiony",
+        "ru": "обеспокоенный",
+        "zh": "担心的",
+        "ja": "心配した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "surprised",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/sɚˈpraɪzd/",
+      "definition": "Feeling that something is unexpected.",
+      "examples": [
+        "I was surprised to see him there."
+      ],
+      "translations": {
+        "uk": "здивований",
+        "de": "überrascht",
+        "fr": "surpris",
+        "es": "sorprendido",
+        "it": "sorpreso",
+        "pt": "surpreso",
+        "pl": "zaskoczony",
+        "ru": "удивлённый",
+        "zh": "惊讶的",
+        "ja": "驚いた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nervous",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/ˈnɝːvəs/",
+      "definition": "Worried and a little afraid.",
+      "examples": [
+        "I always get nervous before a test."
+      ],
+      "translations": {
+        "uk": "знервований",
+        "de": "nervös",
+        "fr": "nerveux",
+        "es": "nervioso",
+        "it": "nervoso",
+        "pt": "nervoso",
+        "pl": "zdenerwowany",
+        "ru": "нервный",
+        "zh": "紧张的",
+        "ja": "緊張した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lonely",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/ˈloʊnli/",
+      "definition": "Sad because you are alone.",
+      "examples": [
+        "She felt lonely in the new city."
+      ],
+      "translations": {
+        "uk": "самотній",
+        "de": "einsam",
+        "fr": "seul",
+        "es": "solo",
+        "it": "solo",
+        "pt": "sozinho",
+        "pl": "samotny",
+        "ru": "одинокий",
+        "zh": "孤独的",
+        "ja": "寂しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "glad",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/ɡlæd/",
+      "definition": "Happy and pleased.",
+      "examples": [
+        "I'm glad you came."
+      ],
+      "translations": {
+        "uk": "радий",
+        "de": "froh",
+        "fr": "content",
+        "es": "contento",
+        "it": "contento",
+        "pt": "contente",
+        "pl": "zadowolony",
+        "ru": "рад",
+        "zh": "高兴的",
+        "ja": "うれしい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "calm",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/kɑːm/",
+      "definition": "Relaxed and not worried.",
+      "examples": [
+        "Stay calm and listen."
+      ],
+      "translations": {
+        "uk": "спокійний",
+        "de": "ruhig",
+        "fr": "calme",
+        "es": "tranquilo",
+        "it": "calmo",
+        "pt": "calmo",
+        "pl": "spokojny",
+        "ru": "спокойный",
+        "zh": "平静的",
+        "ja": "落ち着いた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "feeling",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/ˈfiːlɪŋ/",
+      "definition": "Something that you feel, like happiness or anger.",
+      "examples": [
+        "It's hard to talk about my feelings."
+      ],
+      "translations": {
+        "uk": "почуття",
+        "de": "Gefühl",
+        "fr": "sentiment",
+        "es": "sentimiento",
+        "it": "sentimento",
+        "pt": "sentimento",
+        "pl": "uczucie",
+        "ru": "чувство",
+        "zh": "感觉",
+        "ja": "気持ち"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "relaxed",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Emotions",
+      "ipa": "/rɪˈlækst/",
+      "definition": "Calm and not worried.",
+      "examples": [
+        "I feel relaxed after a hot bath."
+      ],
+      "translations": {
+        "uk": "розслаблений",
+        "de": "entspannt",
+        "fr": "détendu",
+        "es": "relajado",
+        "it": "rilassato",
+        "pt": "relaxado",
+        "pl": "zrelaksowany",
+        "ru": "расслабленный",
+        "zh": "放松的",
+        "ja": "リラックスした"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "upset",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ʌpˈset/",
+      "definition": "Unhappy or worried because something bad happened.",
+      "examples": [
+        "She was upset about the news."
+      ],
+      "translations": {
+        "uk": "засмучений",
+        "de": "verärgert",
+        "fr": "contrarié",
+        "es": "disgustado",
+        "it": "turbato",
+        "pt": "chateado",
+        "pl": "przygnębiony",
+        "ru": "расстроенный",
+        "zh": "难过的",
+        "ja": "動揺した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "embarrassed",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ɪmˈberəst/",
+      "definition": "Feeling shy or ashamed in front of other people.",
+      "examples": [
+        "I was embarrassed when I fell on stage."
+      ],
+      "translations": {
+        "uk": "збентежений",
+        "de": "verlegen",
+        "fr": "gêné",
+        "es": "avergonzado",
+        "it": "imbarazzato",
+        "pt": "envergonhado",
+        "pl": "zawstydzony",
+        "ru": "смущённый",
+        "zh": "尴尬的",
+        "ja": "恥ずかしい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "jealous",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ˈdʒeləs/",
+      "definition": "Unhappy because someone has something you want.",
+      "examples": [
+        "He's jealous of his brother's new bike."
+      ],
+      "translations": {
+        "uk": "заздрісний",
+        "de": "eifersüchtig",
+        "fr": "jaloux",
+        "es": "celoso",
+        "it": "geloso",
+        "pt": "com ciúmes",
+        "pl": "zazdrosny",
+        "ru": "завистливый, ревнивый",
+        "zh": "嫉妒的",
+        "ja": "嫉妬した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "disappointed",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ˌdɪsəˈpɔɪntɪd/",
+      "definition": "Unhappy because something was not as good as you hoped.",
+      "examples": [
+        "I was disappointed with my score."
+      ],
+      "translations": {
+        "uk": "розчарований",
+        "de": "enttäuscht",
+        "fr": "déçu",
+        "es": "decepcionado",
+        "it": "deluso",
+        "pt": "decepcionado",
+        "pl": "rozczarowany",
+        "ru": "разочарованный",
+        "zh": "失望的",
+        "ja": "がっかりした"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "confident",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ˈkɑːnfɪdənt/",
+      "definition": "Sure that you can do something well.",
+      "examples": [
+        "She feels confident about the interview."
+      ],
+      "translations": {
+        "uk": "впевнений",
+        "de": "selbstbewusst",
+        "fr": "confiant",
+        "es": "seguro",
+        "it": "sicuro",
+        "pt": "confiante",
+        "pl": "pewny siebie",
+        "ru": "уверенный",
+        "zh": "自信的",
+        "ja": "自信のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fear",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/fɪr/",
+      "definition": "The feeling you have when you are afraid.",
+      "examples": [
+        "She has a fear of flying."
+      ],
+      "translations": {
+        "uk": "страх",
+        "de": "Angst",
+        "fr": "peur",
+        "es": "miedo",
+        "it": "paura",
+        "pt": "medo",
+        "pl": "strach",
+        "ru": "страх",
+        "zh": "恐惧",
+        "ja": "恐怖"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mood",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/muːd/",
+      "definition": "The way you feel at a particular time.",
+      "examples": [
+        "He's in a good mood today."
+      ],
+      "translations": {
+        "uk": "настрій",
+        "de": "Laune",
+        "fr": "humeur",
+        "es": "humor",
+        "it": "umore",
+        "pt": "humor",
+        "pl": "nastrój",
+        "ru": "настроение",
+        "zh": "心情",
+        "ja": "気分"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grateful",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ˈɡreɪtfəl/",
+      "definition": "Wanting to thank someone for something.",
+      "examples": [
+        "I'm grateful for your help."
+      ],
+      "translations": {
+        "uk": "вдячний",
+        "de": "dankbar",
+        "fr": "reconnaissant",
+        "es": "agradecido",
+        "it": "grato",
+        "pt": "grato",
+        "pl": "wdzięczny",
+        "ru": "благодарный",
+        "zh": "感激的",
+        "ja": "感謝している"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

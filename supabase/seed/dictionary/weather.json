@@ -1,0 +1,652 @@
+{
+  "package": "weather",
+  "kind": "words",
+  "words": [
+    {
+      "word": "weather",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/ˈweðɚ/",
+      "definition": "The conditions in the air, like sun, rain or wind.",
+      "examples": [
+        "The weather is nice today."
+      ],
+      "translations": {
+        "uk": "погода",
+        "de": "Wetter",
+        "fr": "temps",
+        "es": "tiempo",
+        "it": "tempo",
+        "pt": "tempo",
+        "pl": "pogoda",
+        "ru": "погода",
+        "zh": "天气",
+        "ja": "天気"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hot",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/hɑːt/",
+      "definition": "Having a high temperature.",
+      "examples": [
+        "It's very hot in July."
+      ],
+      "translations": {
+        "uk": "спекотний, гарячий",
+        "de": "heiß",
+        "fr": "chaud",
+        "es": "caluroso",
+        "it": "caldo",
+        "pt": "quente",
+        "pl": "gorący",
+        "ru": "жаркий, горячий",
+        "zh": "热的",
+        "ja": "暑い"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "spicy",
+          "part_of_speech": "adjective",
+          "cefr": "A2",
+          "definition": "Having a strong burning taste.",
+          "examples": [
+            "This sauce is really hot."
+          ],
+          "translations": {
+            "uk": "гострий",
+            "de": "scharf",
+            "fr": "piquant",
+            "es": "picante",
+            "it": "piccante",
+            "pt": "picante",
+            "pl": "ostry",
+            "ru": "острый",
+            "zh": "辣的",
+            "ja": "辛い"
+          }
+        }
+      ]
+    },
+    {
+      "word": "warm",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/wɔːrm/",
+      "definition": "A little hot, in a pleasant way.",
+      "examples": [
+        "It's warm and sunny today."
+      ],
+      "translations": {
+        "uk": "теплий",
+        "de": "warm",
+        "fr": "doux",
+        "es": "templado",
+        "it": "mite",
+        "pt": "ameno",
+        "pl": "ciepły",
+        "ru": "тёплый",
+        "zh": "温暖的",
+        "ja": "暖かい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "snow",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/snoʊ/",
+      "definition": "Soft white pieces of frozen water that fall from the sky.",
+      "examples": [
+        "The children played in the snow."
+      ],
+      "translations": {
+        "uk": "сніг",
+        "de": "Schnee",
+        "fr": "neige",
+        "es": "nieve",
+        "it": "neve",
+        "pt": "neve",
+        "pl": "śnieg",
+        "ru": "снег",
+        "zh": "雪",
+        "ja": "雪"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A1",
+          "definition": "When snow falls from the sky.",
+          "examples": [
+            "It snowed all night."
+          ],
+          "translations": {
+            "uk": "іти (про сніг)",
+            "de": "schneien",
+            "fr": "neiger",
+            "es": "nevar",
+            "it": "nevicare",
+            "pt": "nevar",
+            "pl": "padać (o śniegu)",
+            "ru": "идти (о снеге)",
+            "zh": "下雪",
+            "ja": "雪が降る"
+          }
+        }
+      ]
+    },
+    {
+      "word": "wind",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/wɪnd/",
+      "definition": "Air that moves quickly outside.",
+      "examples": [
+        "The wind is very strong today."
+      ],
+      "translations": {
+        "uk": "вітер",
+        "de": "Wind",
+        "fr": "vent",
+        "es": "viento",
+        "it": "vento",
+        "pt": "vento",
+        "pl": "wiatr",
+        "ru": "ветер",
+        "zh": "风",
+        "ja": "風"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cloud",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/klaʊd/",
+      "definition": "A white or gray mass in the sky made of small drops of water.",
+      "examples": [
+        "There isn't a cloud in the sky."
+      ],
+      "translations": {
+        "uk": "хмара",
+        "de": "Wolke",
+        "fr": "nuage",
+        "es": "nube",
+        "it": "nuvola",
+        "pt": "nuvem",
+        "pl": "chmura",
+        "ru": "облако",
+        "zh": "云",
+        "ja": "雲"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sunny",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/ˈsʌni/",
+      "definition": "With a lot of sunshine.",
+      "examples": [
+        "It's a sunny day."
+      ],
+      "translations": {
+        "uk": "сонячний",
+        "de": "sonnig",
+        "fr": "ensoleillé",
+        "es": "soleado",
+        "it": "soleggiato",
+        "pt": "ensolarado",
+        "pl": "słoneczny",
+        "ru": "солнечный",
+        "zh": "晴朗的",
+        "ja": "晴れた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cloudy",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/ˈklaʊdi/",
+      "definition": "With a lot of clouds in the sky.",
+      "examples": [
+        "It's cloudy, but it isn't raining."
+      ],
+      "translations": {
+        "uk": "хмарний",
+        "de": "bewölkt",
+        "fr": "nuageux",
+        "es": "nublado",
+        "it": "nuvoloso",
+        "pt": "nublado",
+        "pl": "pochmurny",
+        "ru": "облачный",
+        "zh": "多云的",
+        "ja": "曇った"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "windy",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/ˈwɪndi/",
+      "definition": "With a lot of wind.",
+      "examples": [
+        "It's too windy to go sailing."
+      ],
+      "translations": {
+        "uk": "вітряний",
+        "de": "windig",
+        "fr": "venteux",
+        "es": "ventoso",
+        "it": "ventoso",
+        "pt": "ventoso",
+        "pl": "wietrzny",
+        "ru": "ветреный",
+        "zh": "有风的",
+        "ja": "風の強い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rainy",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/ˈreɪni/",
+      "definition": "With a lot of rain.",
+      "examples": [
+        "I stay home on rainy days."
+      ],
+      "translations": {
+        "uk": "дощовий",
+        "de": "regnerisch",
+        "fr": "pluvieux",
+        "es": "lluvioso",
+        "it": "piovoso",
+        "pt": "chuvoso",
+        "pl": "deszczowy",
+        "ru": "дождливый",
+        "zh": "下雨的",
+        "ja": "雨の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ice",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/aɪs/",
+      "definition": "Water that has frozen.",
+      "examples": [
+        "The lake is covered with ice."
+      ],
+      "translations": {
+        "uk": "лід",
+        "de": "Eis",
+        "fr": "glace",
+        "es": "hielo",
+        "it": "ghiaccio",
+        "pt": "gelo",
+        "pl": "lód",
+        "ru": "лёд",
+        "zh": "冰",
+        "ja": "氷"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "umbrella",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/ʌmˈbrelə/",
+      "definition": "An object you hold over your head to stay dry in the rain.",
+      "examples": [
+        "Take an umbrella with you."
+      ],
+      "translations": {
+        "uk": "парасолька",
+        "de": "Regenschirm",
+        "fr": "parapluie",
+        "es": "paraguas",
+        "it": "ombrello",
+        "pt": "guarda-chuva",
+        "pl": "parasol",
+        "ru": "зонт",
+        "zh": "雨伞",
+        "ja": "傘"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dry",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/draɪ/",
+      "definition": "Without water or rain.",
+      "examples": [
+        "The summer was hot and dry."
+      ],
+      "translations": {
+        "uk": "сухий",
+        "de": "trocken",
+        "fr": "sec",
+        "es": "seco",
+        "it": "secco",
+        "pt": "seco",
+        "pl": "suchy",
+        "ru": "сухой",
+        "zh": "干燥的",
+        "ja": "乾いた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wet",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Weather",
+      "ipa": "/wet/",
+      "definition": "Covered with water.",
+      "examples": [
+        "My shoes are wet from the rain."
+      ],
+      "translations": {
+        "uk": "мокрий",
+        "de": "nass",
+        "fr": "mouillé",
+        "es": "mojado",
+        "it": "bagnato",
+        "pt": "molhado",
+        "pl": "mokry",
+        "ru": "мокрый",
+        "zh": "湿的",
+        "ja": "濡れた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "temperature",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Weather",
+      "ipa": "/ˈtemprətʃɚ/",
+      "definition": "How hot or cold something is.",
+      "examples": [
+        "The temperature will drop tonight."
+      ],
+      "translations": {
+        "uk": "температура",
+        "de": "Temperatur",
+        "fr": "température",
+        "es": "temperatura",
+        "it": "temperatura",
+        "pt": "temperatura",
+        "pl": "temperatura",
+        "ru": "температура",
+        "zh": "温度",
+        "ja": "気温"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "storm",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Weather",
+      "ipa": "/stɔːrm/",
+      "definition": "Very bad weather with strong wind and rain.",
+      "examples": [
+        "The storm knocked down some trees."
+      ],
+      "translations": {
+        "uk": "буря, гроза",
+        "de": "Sturm",
+        "fr": "tempête",
+        "es": "tormenta",
+        "it": "tempesta",
+        "pt": "tempestade",
+        "pl": "burza",
+        "ru": "буря, гроза",
+        "zh": "暴风雨",
+        "ja": "嵐"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fog",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Weather",
+      "ipa": "/fɑːɡ/",
+      "definition": "A thick cloud close to the ground that is hard to see through.",
+      "examples": [
+        "The fog was so thick we couldn't see the road."
+      ],
+      "translations": {
+        "uk": "туман",
+        "de": "Nebel",
+        "fr": "brouillard",
+        "es": "niebla",
+        "it": "nebbia",
+        "pt": "neblina",
+        "pl": "mgła",
+        "ru": "туман",
+        "zh": "雾",
+        "ja": "霧"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "freezing",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Weather",
+      "ipa": "/ˈfriːzɪŋ/",
+      "definition": "Extremely cold.",
+      "examples": [
+        "It's freezing outside!"
+      ],
+      "translations": {
+        "uk": "морозний, крижаний",
+        "de": "eiskalt",
+        "fr": "glacial",
+        "es": "helado",
+        "it": "gelido",
+        "pt": "congelante",
+        "pl": "lodowaty",
+        "ru": "морозный, ледяной",
+        "zh": "冰冷的",
+        "ja": "凍えるほど寒い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rainbow",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Weather",
+      "ipa": "/ˈreɪnboʊ/",
+      "definition": "An arc of colors in the sky after rain.",
+      "examples": [
+        "Look, there's a rainbow!"
+      ],
+      "translations": {
+        "uk": "веселка",
+        "de": "Regenbogen",
+        "fr": "arc-en-ciel",
+        "es": "arcoíris",
+        "it": "arcobaleno",
+        "pt": "arco-íris",
+        "pl": "tęcza",
+        "ru": "радуга",
+        "zh": "彩虹",
+        "ja": "虹"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "forecast",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Weather",
+      "ipa": "/ˈfɔːrkæst/",
+      "definition": "A statement about what the weather will be like.",
+      "examples": [
+        "The forecast says it will rain tomorrow."
+      ],
+      "translations": {
+        "uk": "прогноз",
+        "de": "Vorhersage",
+        "fr": "prévisions",
+        "es": "pronóstico",
+        "it": "previsioni",
+        "pt": "previsão",
+        "pl": "prognoza",
+        "ru": "прогноз",
+        "zh": "预报",
+        "ja": "予報"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "thunder",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Weather",
+      "ipa": "/ˈθʌndɚ/",
+      "definition": "The loud noise in the sky during a storm.",
+      "examples": [
+        "The dog is afraid of thunder."
+      ],
+      "translations": {
+        "uk": "грім",
+        "de": "Donner",
+        "fr": "tonnerre",
+        "es": "trueno",
+        "it": "tuono",
+        "pt": "trovão",
+        "pl": "grzmot",
+        "ru": "гром",
+        "zh": "雷声",
+        "ja": "雷"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lightning",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Weather",
+      "ipa": "/ˈlaɪtnɪŋ/",
+      "definition": "A bright flash of light in the sky during a storm.",
+      "examples": [
+        "Lightning hit the old tree."
+      ],
+      "translations": {
+        "uk": "блискавка",
+        "de": "Blitz",
+        "fr": "éclair",
+        "es": "relámpago",
+        "it": "fulmine",
+        "pt": "relâmpago",
+        "pl": "błyskawica",
+        "ru": "молния",
+        "zh": "闪电",
+        "ja": "稲妻"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "humid",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Weather",
+      "ipa": "/ˈhjuːmɪd/",
+      "definition": "Warm and wet in a way that feels uncomfortable.",
+      "examples": [
+        "Summers here are hot and humid."
+      ],
+      "translations": {
+        "uk": "вологий",
+        "de": "schwül",
+        "fr": "humide",
+        "es": "húmedo",
+        "it": "umido",
+        "pt": "úmido",
+        "pl": "wilgotny",
+        "ru": "влажный",
+        "zh": "潮湿的",
+        "ja": "湿気の多い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "climate",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Weather",
+      "ipa": "/ˈklaɪmət/",
+      "definition": "The usual weather in a place.",
+      "examples": [
+        "The climate here is mild."
+      ],
+      "translations": {
+        "uk": "клімат",
+        "de": "Klima",
+        "fr": "climat",
+        "es": "clima",
+        "it": "clima",
+        "pt": "clima",
+        "pl": "klimat",
+        "ru": "климат",
+        "zh": "气候",
+        "ja": "気候"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

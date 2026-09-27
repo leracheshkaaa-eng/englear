@@ -1,0 +1,729 @@
+{
+  "package": "body",
+  "kind": "words",
+  "words": [
+    {
+      "word": "body",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/ˈbɑːdi/",
+      "definition": "All the physical parts of a person or animal.",
+      "examples": [
+        "Exercise is good for your body."
+      ],
+      "translations": {
+        "uk": "тіло",
+        "de": "Körper",
+        "fr": "corps",
+        "es": "cuerpo",
+        "it": "corpo",
+        "pt": "corpo",
+        "pl": "ciało",
+        "ru": "тело",
+        "zh": "身体",
+        "ja": "体"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "face",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/feɪs/",
+      "definition": "The front part of the head.",
+      "examples": [
+        "She has a kind face."
+      ],
+      "translations": {
+        "uk": "обличчя",
+        "de": "Gesicht",
+        "fr": "visage",
+        "es": "cara",
+        "it": "viso",
+        "pt": "rosto",
+        "pl": "twarz",
+        "ru": "лицо",
+        "zh": "脸",
+        "ja": "顔"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eye",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/aɪ/",
+      "definition": "The part of the body you see with.",
+      "examples": [
+        "He has blue eyes."
+      ],
+      "translations": {
+        "uk": "око",
+        "de": "Auge",
+        "fr": "œil",
+        "es": "ojo",
+        "it": "occhio",
+        "pt": "olho",
+        "pl": "oko",
+        "ru": "глаз",
+        "zh": "眼睛",
+        "ja": "目"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ear",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/ɪr/",
+      "definition": "The part of the body you hear with.",
+      "examples": [
+        "My ear hurts."
+      ],
+      "translations": {
+        "uk": "вухо",
+        "de": "Ohr",
+        "fr": "oreille",
+        "es": "oreja",
+        "it": "orecchio",
+        "pt": "orelha",
+        "pl": "ucho",
+        "ru": "ухо",
+        "zh": "耳朵",
+        "ja": "耳"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nose",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/noʊz/",
+      "definition": "The part of the face you breathe and smell with.",
+      "examples": [
+        "The clown has a red nose."
+      ],
+      "translations": {
+        "uk": "ніс",
+        "de": "Nase",
+        "fr": "nez",
+        "es": "nariz",
+        "it": "naso",
+        "pt": "nariz",
+        "pl": "nos",
+        "ru": "нос",
+        "zh": "鼻子",
+        "ja": "鼻"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mouth",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/maʊθ/",
+      "definition": "The part of the face you eat and speak with.",
+      "examples": [
+        "Open your mouth, please."
+      ],
+      "translations": {
+        "uk": "рот",
+        "de": "Mund",
+        "fr": "bouche",
+        "es": "boca",
+        "it": "bocca",
+        "pt": "boca",
+        "pl": "usta",
+        "ru": "рот",
+        "zh": "嘴",
+        "ja": "口"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tooth",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/tuːθ/",
+      "definition": "One of the hard white things in your mouth.",
+      "examples": [
+        "My tooth hurts when I eat ice cream."
+      ],
+      "translations": {
+        "uk": "зуб",
+        "de": "Zahn",
+        "fr": "dent",
+        "es": "diente",
+        "it": "dente",
+        "pt": "dente",
+        "pl": "ząb",
+        "ru": "зуб",
+        "zh": "牙齿",
+        "ja": "歯"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hair",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/her/",
+      "definition": "The thin threads that grow on your head.",
+      "examples": [
+        "She has long dark hair."
+      ],
+      "translations": {
+        "uk": "волосся",
+        "de": "Haare",
+        "fr": "cheveux",
+        "es": "pelo",
+        "it": "capelli",
+        "pt": "cabelo",
+        "pl": "włosy",
+        "ru": "волосы",
+        "zh": "头发",
+        "ja": "髪"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "arm",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/ɑːrm/",
+      "definition": "The part of the body between the shoulder and the hand.",
+      "examples": [
+        "He broke his arm."
+      ],
+      "translations": {
+        "uk": "рука (від плеча до кисті)",
+        "de": "Arm",
+        "fr": "bras",
+        "es": "brazo",
+        "it": "braccio",
+        "pt": "braço",
+        "pl": "ramię",
+        "ru": "рука (от плеча до кисти)",
+        "zh": "手臂",
+        "ja": "腕"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "leg",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/leɡ/",
+      "definition": "One of the parts of the body you stand and walk on.",
+      "examples": [
+        "My legs are tired after the run."
+      ],
+      "translations": {
+        "uk": "нога",
+        "de": "Bein",
+        "fr": "jambe",
+        "es": "pierna",
+        "it": "gamba",
+        "pt": "perna",
+        "pl": "noga",
+        "ru": "нога",
+        "zh": "腿",
+        "ja": "脚"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "foot",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/fʊt/",
+      "definition": "The part of the body at the end of the leg.",
+      "examples": [
+        "I hurt my foot playing soccer."
+      ],
+      "translations": {
+        "uk": "стопа",
+        "de": "Fuß",
+        "fr": "pied",
+        "es": "pie",
+        "it": "piede",
+        "pt": "pé",
+        "pl": "stopa",
+        "ru": "ступня",
+        "zh": "脚",
+        "ja": "足"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "finger",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/ˈfɪŋɡɚ/",
+      "definition": "One of the five long parts at the end of your hand.",
+      "examples": [
+        "She wears a ring on her finger."
+      ],
+      "translations": {
+        "uk": "палець",
+        "de": "Finger",
+        "fr": "doigt",
+        "es": "dedo",
+        "it": "dito",
+        "pt": "dedo",
+        "pl": "palec",
+        "ru": "палец",
+        "zh": "手指",
+        "ja": "指"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "back",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/bæk/",
+      "definition": "The part of the body behind the chest, from the neck to the legs.",
+      "examples": [
+        "My back hurts."
+      ],
+      "translations": {
+        "uk": "спина",
+        "de": "Rücken",
+        "fr": "dos",
+        "es": "espalda",
+        "it": "schiena",
+        "pt": "costas",
+        "pl": "plecy",
+        "ru": "спина",
+        "zh": "背",
+        "ja": "背中"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "adverb",
+          "part_of_speech": "adverb",
+          "cefr": "A1",
+          "definition": "To the place where someone or something was before.",
+          "examples": [
+            "I'll be back in five minutes."
+          ],
+          "translations": {
+            "uk": "назад",
+            "de": "zurück",
+            "fr": "de retour",
+            "es": "de vuelta",
+            "it": "indietro",
+            "pt": "de volta",
+            "pl": "z powrotem",
+            "ru": "назад",
+            "zh": "回来",
+            "ja": "戻って"
+          }
+        }
+      ]
+    },
+    {
+      "word": "neck",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Body",
+      "ipa": "/nek/",
+      "definition": "The part of the body between the head and the shoulders.",
+      "examples": [
+        "She wore a scarf around her neck."
+      ],
+      "translations": {
+        "uk": "шия",
+        "de": "Hals",
+        "fr": "cou",
+        "es": "cuello",
+        "it": "collo",
+        "pt": "pescoço",
+        "pl": "szyja",
+        "ru": "шея",
+        "zh": "脖子",
+        "ja": "首"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shoulder",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/ˈʃoʊldɚ/",
+      "definition": "The part of the body where the arm joins the body.",
+      "examples": [
+        "He carried the bag on his shoulder."
+      ],
+      "translations": {
+        "uk": "плече",
+        "de": "Schulter",
+        "fr": "épaule",
+        "es": "hombro",
+        "it": "spalla",
+        "pt": "ombro",
+        "pl": "bark",
+        "ru": "плечо",
+        "zh": "肩膀",
+        "ja": "肩"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "knee",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/niː/",
+      "definition": "The joint in the middle of the leg.",
+      "examples": [
+        "I fell and hurt my knee."
+      ],
+      "translations": {
+        "uk": "коліно",
+        "de": "Knie",
+        "fr": "genou",
+        "es": "rodilla",
+        "it": "ginocchio",
+        "pt": "joelho",
+        "pl": "kolano",
+        "ru": "колено",
+        "zh": "膝盖",
+        "ja": "膝"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stomach",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/ˈstʌmək/",
+      "definition": "The part inside the body where food goes.",
+      "examples": [
+        "I have a pain in my stomach."
+      ],
+      "translations": {
+        "uk": "шлунок",
+        "de": "Magen",
+        "fr": "estomac",
+        "es": "estómago",
+        "it": "stomaco",
+        "pt": "estômago",
+        "pl": "żołądek",
+        "ru": "желудок",
+        "zh": "胃",
+        "ja": "胃"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "skin",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/skɪn/",
+      "definition": "The outer layer of the body.",
+      "examples": [
+        "Use sunscreen to protect your skin."
+      ],
+      "translations": {
+        "uk": "шкіра",
+        "de": "Haut",
+        "fr": "peau",
+        "es": "piel",
+        "it": "pelle",
+        "pt": "pele",
+        "pl": "skóra",
+        "ru": "кожа",
+        "zh": "皮肤",
+        "ja": "肌"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "blood",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/blʌd/",
+      "definition": "The red liquid that moves around the body.",
+      "examples": [
+        "The nurse took a blood sample."
+      ],
+      "translations": {
+        "uk": "кров",
+        "de": "Blut",
+        "fr": "sang",
+        "es": "sangre",
+        "it": "sangue",
+        "pt": "sangue",
+        "pl": "krew",
+        "ru": "кровь",
+        "zh": "血",
+        "ja": "血"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bone",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/boʊn/",
+      "definition": "One of the hard parts inside the body.",
+      "examples": [
+        "He broke a bone in his hand."
+      ],
+      "translations": {
+        "uk": "кістка",
+        "de": "Knochen",
+        "fr": "os",
+        "es": "hueso",
+        "it": "osso",
+        "pt": "osso",
+        "pl": "kość",
+        "ru": "кость",
+        "zh": "骨头",
+        "ja": "骨"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "toe",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/toʊ/",
+      "definition": "One of the five small parts at the end of the foot.",
+      "examples": [
+        "I hurt my toe on the door."
+      ],
+      "translations": {
+        "uk": "палець ноги",
+        "de": "Zeh",
+        "fr": "orteil",
+        "es": "dedo del pie",
+        "it": "dito del piede",
+        "pt": "dedo do pé",
+        "pl": "palec u nogi",
+        "ru": "палец ноги",
+        "zh": "脚趾",
+        "ja": "足の指"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lip",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/lɪp/",
+      "definition": "One of the two soft edges of the mouth.",
+      "examples": [
+        "My lips are dry in winter."
+      ],
+      "translations": {
+        "uk": "губа",
+        "de": "Lippe",
+        "fr": "lèvre",
+        "es": "labio",
+        "it": "labbro",
+        "pt": "lábio",
+        "pl": "warga",
+        "ru": "губа",
+        "zh": "嘴唇",
+        "ja": "唇"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "brain",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/breɪn/",
+      "definition": "The organ inside the head that controls thinking.",
+      "examples": [
+        "The brain needs a lot of oxygen."
+      ],
+      "translations": {
+        "uk": "мозок",
+        "de": "Gehirn",
+        "fr": "cerveau",
+        "es": "cerebro",
+        "it": "cervello",
+        "pt": "cérebro",
+        "pl": "mózg",
+        "ru": "мозг",
+        "zh": "大脑",
+        "ja": "脳"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "muscle",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈmʌsəl/",
+      "definition": "A part of the body that helps you move.",
+      "examples": [
+        "Swimming builds strong muscles."
+      ],
+      "translations": {
+        "uk": "м'яз",
+        "de": "Muskel",
+        "fr": "muscle",
+        "es": "músculo",
+        "it": "muscolo",
+        "pt": "músculo",
+        "pl": "mięsień",
+        "ru": "мышца",
+        "zh": "肌肉",
+        "ja": "筋肉"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lungs",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/lʌŋz/",
+      "definition": "The two organs in your chest that you breathe with.",
+      "examples": [
+        "Smoking damages your lungs."
+      ],
+      "translations": {
+        "uk": "легені",
+        "de": "Lunge",
+        "fr": "poumons",
+        "es": "pulmones",
+        "it": "polmoni",
+        "pt": "pulmões",
+        "pl": "płuca",
+        "ru": "лёгкие",
+        "zh": "肺",
+        "ja": "肺"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chest",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/tʃest/",
+      "definition": "The front part of the body between the neck and the stomach.",
+      "examples": [
+        "He felt a pain in his chest."
+      ],
+      "translations": {
+        "uk": "грудна клітка",
+        "de": "Brust",
+        "fr": "poitrine",
+        "es": "pecho",
+        "it": "petto",
+        "pt": "peito",
+        "pl": "klatka piersiowa",
+        "ru": "грудь",
+        "zh": "胸部",
+        "ja": "胸"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wrist",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/rɪst/",
+      "definition": "The joint between the hand and the arm.",
+      "examples": [
+        "She wears a watch on her wrist."
+      ],
+      "translations": {
+        "uk": "зап'ясток",
+        "de": "Handgelenk",
+        "fr": "poignet",
+        "es": "muñeca",
+        "it": "polso",
+        "pt": "pulso",
+        "pl": "nadgarstek",
+        "ru": "запястье",
+        "zh": "手腕",
+        "ja": "手首"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "thumb",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/θʌm/",
+      "definition": "The short thick finger on the side of the hand.",
+      "examples": [
+        "He gave me a thumbs-up."
+      ],
+      "translations": {
+        "uk": "великий палець",
+        "de": "Daumen",
+        "fr": "pouce",
+        "es": "pulgar",
+        "it": "pollice",
+        "pt": "polegar",
+        "pl": "kciuk",
+        "ru": "большой палец",
+        "zh": "大拇指",
+        "ja": "親指"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

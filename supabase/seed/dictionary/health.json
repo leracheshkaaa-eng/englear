@@ -1,0 +1,725 @@
+{
+  "package": "health",
+  "kind": "words",
+  "words": [
+    {
+      "word": "sick",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/sɪk/",
+      "definition": "Not feeling well; ill.",
+      "examples": [
+        "I stayed home because I was sick."
+      ],
+      "translations": {
+        "uk": "хворий",
+        "de": "krank",
+        "fr": "malade",
+        "es": "enfermo",
+        "it": "malato",
+        "pt": "doente",
+        "pl": "chory",
+        "ru": "больной",
+        "zh": "生病的",
+        "ja": "病気の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tired",
+      "part_of_speech": "adjective",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/taɪɚd/",
+      "definition": "Needing rest or sleep.",
+      "examples": [
+        "I'm tired after a long day."
+      ],
+      "translations": {
+        "uk": "втомлений",
+        "de": "müde",
+        "fr": "fatigué",
+        "es": "cansado",
+        "it": "stanco",
+        "pt": "cansado",
+        "pl": "zmęczony",
+        "ru": "уставший",
+        "zh": "累的",
+        "ja": "疲れた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hurt",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/hɝːt/",
+      "definition": "To feel pain or to cause pain.",
+      "examples": [
+        "My head hurts."
+      ],
+      "translations": {
+        "uk": "боліти",
+        "de": "wehtun",
+        "fr": "faire mal",
+        "es": "doler",
+        "it": "fare male",
+        "pt": "doer",
+        "pl": "boleć",
+        "ru": "болеть",
+        "zh": "疼",
+        "ja": "痛む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "headache",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/ˈhedeɪk/",
+      "definition": "A pain in your head.",
+      "examples": [
+        "I have a terrible headache."
+      ],
+      "translations": {
+        "uk": "головний біль",
+        "de": "Kopfschmerzen",
+        "fr": "mal de tête",
+        "es": "dolor de cabeza",
+        "it": "mal di testa",
+        "pt": "dor de cabeça",
+        "pl": "ból głowy",
+        "ru": "головная боль",
+        "zh": "头痛",
+        "ja": "頭痛"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hospital",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/ˈhɑːspɪtl/",
+      "definition": "A place where sick or injured people are treated.",
+      "examples": [
+        "She works at the city hospital."
+      ],
+      "translations": {
+        "uk": "лікарня",
+        "de": "Krankenhaus",
+        "fr": "hôpital",
+        "es": "hospital",
+        "it": "ospedale",
+        "pt": "hospital",
+        "pl": "szpital",
+        "ru": "больница",
+        "zh": "医院",
+        "ja": "病院"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nurse",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/nɝːs/",
+      "definition": "A person who cares for sick people in a hospital.",
+      "examples": [
+        "The nurse gave me some water."
+      ],
+      "translations": {
+        "uk": "медсестра",
+        "de": "Krankenpfleger",
+        "fr": "infirmier",
+        "es": "enfermero",
+        "it": "infermiere",
+        "pt": "enfermeiro",
+        "pl": "pielęgniarka",
+        "ru": "медсестра",
+        "zh": "护士",
+        "ja": "看護師"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dentist",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/ˈdentɪst/",
+      "definition": "A doctor who takes care of teeth.",
+      "examples": [
+        "I go to the dentist twice a year."
+      ],
+      "translations": {
+        "uk": "стоматолог",
+        "de": "Zahnarzt",
+        "fr": "dentiste",
+        "es": "dentista",
+        "it": "dentista",
+        "pt": "dentista",
+        "pl": "dentysta",
+        "ru": "стоматолог",
+        "zh": "牙医",
+        "ja": "歯医者"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "feel better",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Health",
+      "ipa": "/fiːl ˈbetɚ/",
+      "definition": "To be less sick or less sad than before.",
+      "examples": [
+        "I hope you feel better soon."
+      ],
+      "translations": {
+        "uk": "почуватися краще",
+        "de": "sich besser fühlen",
+        "fr": "se sentir mieux",
+        "es": "sentirse mejor",
+        "it": "sentirsi meglio",
+        "pt": "sentir-se melhor",
+        "pl": "czuć się lepiej",
+        "ru": "чувствовать себя лучше",
+        "zh": "感觉好些",
+        "ja": "気分が良くなる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "pain",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/peɪn/",
+      "definition": "The feeling you have when part of your body hurts.",
+      "examples": [
+        "I have a pain in my leg."
+      ],
+      "translations": {
+        "uk": "біль",
+        "de": "Schmerz",
+        "fr": "douleur",
+        "es": "dolor",
+        "it": "dolore",
+        "pt": "dor",
+        "pl": "ból",
+        "ru": "боль",
+        "zh": "疼痛",
+        "ja": "痛み"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fever",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ˈfiːvɚ/",
+      "definition": "A body temperature that is higher than normal.",
+      "examples": [
+        "The child has a high fever."
+      ],
+      "translations": {
+        "uk": "гарячка, температура",
+        "de": "Fieber",
+        "fr": "fièvre",
+        "es": "fiebre",
+        "it": "febbre",
+        "pt": "febre",
+        "pl": "gorączka",
+        "ru": "жар, температура",
+        "zh": "发烧",
+        "ja": "熱"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cough",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/kɔːf/",
+      "definition": "The act or sound of pushing air out of your throat.",
+      "examples": [
+        "He has a bad cough."
+      ],
+      "translations": {
+        "uk": "кашель",
+        "de": "Husten",
+        "fr": "toux",
+        "es": "tos",
+        "it": "tosse",
+        "pt": "tosse",
+        "pl": "kaszel",
+        "ru": "кашель",
+        "zh": "咳嗽",
+        "ja": "咳"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To push air out of your throat with a sudden noise.",
+          "examples": [
+            "He coughed all night."
+          ],
+          "translations": {
+            "uk": "кашляти",
+            "de": "husten",
+            "fr": "tousser",
+            "es": "toser",
+            "it": "tossire",
+            "pt": "tossir",
+            "pl": "kaszleć",
+            "ru": "кашлять",
+            "zh": "咳嗽",
+            "ja": "咳をする"
+          }
+        }
+      ]
+    },
+    {
+      "word": "sore throat",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ˌsɔːr ˈθroʊt/",
+      "definition": "A pain in your throat, often when you have a cold.",
+      "examples": [
+        "I can't sing because I have a sore throat."
+      ],
+      "translations": {
+        "uk": "біль у горлі",
+        "de": "Halsschmerzen",
+        "fr": "mal de gorge",
+        "es": "dolor de garganta",
+        "it": "mal di gola",
+        "pt": "dor de garganta",
+        "pl": "ból gardła",
+        "ru": "боль в горле",
+        "zh": "喉咙痛",
+        "ja": "喉の痛み"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exercise",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ˈeksɚsaɪz/",
+      "definition": "Physical activity that keeps you healthy.",
+      "examples": [
+        "Exercise is good for your heart."
+      ],
+      "translations": {
+        "uk": "фізичні вправи",
+        "de": "Bewegung",
+        "fr": "exercice physique",
+        "es": "ejercicio",
+        "it": "esercizio fisico",
+        "pt": "exercício",
+        "pl": "ćwiczenia",
+        "ru": "физические упражнения",
+        "zh": "锻炼",
+        "ja": "運動"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "diet",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ˈdaɪət/",
+      "definition": "The food that you usually eat.",
+      "examples": [
+        "A healthy diet includes lots of vegetables."
+      ],
+      "translations": {
+        "uk": "харчування, раціон",
+        "de": "Ernährung",
+        "fr": "alimentation",
+        "es": "alimentación",
+        "it": "alimentazione",
+        "pt": "alimentação",
+        "pl": "sposób odżywiania",
+        "ru": "рацион, питание",
+        "zh": "饮食",
+        "ja": "食生活"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "weight-loss",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "A special eating plan to lose weight.",
+          "examples": [
+            "I'm on a diet, so no cake for me."
+          ],
+          "translations": {
+            "uk": "дієта",
+            "de": "Diät",
+            "fr": "régime",
+            "es": "dieta",
+            "it": "dieta",
+            "pt": "dieta",
+            "pl": "dieta",
+            "ru": "диета",
+            "zh": "节食",
+            "ja": "ダイエット"
+          }
+        }
+      ]
+    },
+    {
+      "word": "pill",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/pɪl/",
+      "definition": "A small solid piece of medicine that you swallow.",
+      "examples": [
+        "Take one pill after each meal."
+      ],
+      "translations": {
+        "uk": "пігулка",
+        "de": "Tablette",
+        "fr": "comprimé",
+        "es": "pastilla",
+        "it": "pillola",
+        "pt": "comprimido",
+        "pl": "tabletka",
+        "ru": "таблетка",
+        "zh": "药片",
+        "ja": "錠剤"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ambulance",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ˈæmbjələns/",
+      "definition": "A vehicle that takes sick or hurt people to the hospital.",
+      "examples": [
+        "Call an ambulance!"
+      ],
+      "translations": {
+        "uk": "швидка допомога",
+        "de": "Krankenwagen",
+        "fr": "ambulance",
+        "es": "ambulancia",
+        "it": "ambulanza",
+        "pt": "ambulância",
+        "pl": "karetka",
+        "ru": "скорая помощь",
+        "zh": "救护车",
+        "ja": "救急車"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "get well",
+      "part_of_speech": "collocation",
+      "cefr": "A2",
+      "topic": "Health",
+      "ipa": "/ɡet wel/",
+      "definition": "To become healthy again.",
+      "examples": [
+        "Get well soon!"
+      ],
+      "translations": {
+        "uk": "одужати",
+        "de": "gesund werden",
+        "fr": "guérir",
+        "es": "ponerse bien",
+        "it": "guarire",
+        "pt": "melhorar",
+        "pl": "wyzdrowieć",
+        "ru": "выздороветь",
+        "zh": "康复",
+        "ja": "元気になる"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "injury",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈɪndʒəri/",
+      "definition": "Damage to the body, for example from an accident.",
+      "examples": [
+        "He missed the game because of an injury."
+      ],
+      "translations": {
+        "uk": "травма",
+        "de": "Verletzung",
+        "fr": "blessure",
+        "es": "lesión",
+        "it": "infortunio",
+        "pt": "lesão",
+        "pl": "uraz",
+        "ru": "травма",
+        "zh": "受伤",
+        "ja": "けが"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "patient",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈpeɪʃənt/",
+      "definition": "A person who is getting medical care.",
+      "examples": [
+        "The doctor has ten patients this morning."
+      ],
+      "translations": {
+        "uk": "пацієнт",
+        "de": "Patient",
+        "fr": "patient",
+        "es": "paciente",
+        "it": "paziente",
+        "pt": "paciente",
+        "pl": "pacjent",
+        "ru": "пациент",
+        "zh": "病人",
+        "ja": "患者"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "adjective",
+          "part_of_speech": "adjective",
+          "cefr": "B1",
+          "definition": "Able to wait calmly without getting angry.",
+          "examples": [
+            "Be patient, the bus will come soon."
+          ],
+          "translations": {
+            "uk": "терплячий",
+            "de": "geduldig",
+            "fr": "patient",
+            "es": "paciente",
+            "it": "paziente",
+            "pt": "paciente",
+            "pl": "cierpliwy",
+            "ru": "терпеливый",
+            "zh": "耐心的",
+            "ja": "我慢強い"
+          }
+        }
+      ]
+    },
+    {
+      "word": "appointment",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/əˈpɔɪntmənt/",
+      "definition": "An arranged time to see someone, like a doctor.",
+      "examples": [
+        "I have a dentist appointment at four."
+      ],
+      "translations": {
+        "uk": "запис (на прийом)",
+        "de": "Termin",
+        "fr": "rendez-vous",
+        "es": "cita",
+        "it": "appuntamento",
+        "pt": "consulta",
+        "pl": "wizyta",
+        "ru": "запись (на приём)",
+        "zh": "预约",
+        "ja": "予約"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "symptom",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈsɪmptəm/",
+      "definition": "A sign that you have an illness.",
+      "examples": [
+        "A sore throat is a common symptom of a cold."
+      ],
+      "translations": {
+        "uk": "симптом",
+        "de": "Symptom",
+        "fr": "symptôme",
+        "es": "síntoma",
+        "it": "sintomo",
+        "pt": "sintoma",
+        "pl": "objaw",
+        "ru": "симптом",
+        "zh": "症状",
+        "ja": "症状"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "recover",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/rɪˈkʌvɚ/",
+      "definition": "To become healthy again after an illness.",
+      "examples": [
+        "She recovered quickly after the operation."
+      ],
+      "translations": {
+        "uk": "одужувати",
+        "de": "sich erholen",
+        "fr": "se rétablir",
+        "es": "recuperarse",
+        "it": "riprendersi",
+        "pt": "recuperar-se",
+        "pl": "dochodzić do siebie",
+        "ru": "выздоравливать",
+        "zh": "恢复",
+        "ja": "回復する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stay in shape",
+      "part_of_speech": "collocation",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/steɪ ɪn ʃeɪp/",
+      "definition": "To keep your body fit and healthy.",
+      "examples": [
+        "I swim every week to stay in shape."
+      ],
+      "translations": {
+        "uk": "підтримувати форму",
+        "de": "fit bleiben",
+        "fr": "garder la forme",
+        "es": "mantenerse en forma",
+        "it": "mantenersi in forma",
+        "pt": "manter a forma",
+        "pl": "utrzymywać formę",
+        "ru": "поддерживать форму",
+        "zh": "保持身材",
+        "ja": "体型を維持する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "allergy",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈælɚdʒi/",
+      "definition": "A bad reaction of the body to something, like food or dust.",
+      "examples": [
+        "I have an allergy to cats."
+      ],
+      "translations": {
+        "uk": "алергія",
+        "de": "Allergie",
+        "fr": "allergie",
+        "es": "alergia",
+        "it": "allergia",
+        "pt": "alergia",
+        "pl": "alergia",
+        "ru": "аллергия",
+        "zh": "过敏",
+        "ja": "アレルギー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stress",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/stres/",
+      "definition": "A feeling of worry caused by problems or too much work.",
+      "examples": [
+        "Exams cause a lot of stress."
+      ],
+      "translations": {
+        "uk": "стрес",
+        "de": "Stress",
+        "fr": "stress",
+        "es": "estrés",
+        "it": "stress",
+        "pt": "estresse",
+        "pl": "stres",
+        "ru": "стресс",
+        "zh": "压力",
+        "ja": "ストレス"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "breathe",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/briːð/",
+      "definition": "To take air into your body and let it out.",
+      "examples": [
+        "Breathe slowly and relax."
+      ],
+      "translations": {
+        "uk": "дихати",
+        "de": "atmen",
+        "fr": "respirer",
+        "es": "respirar",
+        "it": "respirare",
+        "pt": "respirar",
+        "pl": "oddychać",
+        "ru": "дышать",
+        "zh": "呼吸",
+        "ja": "呼吸する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

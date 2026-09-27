@@ -1,0 +1,677 @@
+{
+  "package": "nature",
+  "kind": "words",
+  "words": [
+    {
+      "word": "flower",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/ˈflaʊɚ/",
+      "definition": "The colorful part of a plant.",
+      "examples": [
+        "She picked some flowers in the garden."
+      ],
+      "translations": {
+        "uk": "квітка",
+        "de": "Blume",
+        "fr": "fleur",
+        "es": "flor",
+        "it": "fiore",
+        "pt": "flor",
+        "pl": "kwiat",
+        "ru": "цветок",
+        "zh": "花",
+        "ja": "花"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "plant",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/plænt/",
+      "definition": "A living thing that grows in the ground.",
+      "examples": [
+        "Water the plants every morning."
+      ],
+      "translations": {
+        "uk": "рослина",
+        "de": "Pflanze",
+        "fr": "plante",
+        "es": "planta",
+        "it": "pianta",
+        "pt": "planta",
+        "pl": "roślina",
+        "ru": "растение",
+        "zh": "植物",
+        "ja": "植物"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "verb",
+          "part_of_speech": "verb",
+          "cefr": "A2",
+          "definition": "To put a seed or plant in the ground to grow.",
+          "examples": [
+            "We planted tomatoes in the garden."
+          ],
+          "translations": {
+            "uk": "садити",
+            "de": "pflanzen",
+            "fr": "planter",
+            "es": "plantar",
+            "it": "piantare",
+            "pt": "plantar",
+            "pl": "sadzić",
+            "ru": "сажать",
+            "zh": "种植",
+            "ja": "植える"
+          }
+        }
+      ]
+    },
+    {
+      "word": "grass",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/ɡræs/",
+      "definition": "A common green plant that covers the ground.",
+      "examples": [
+        "The kids are playing on the grass."
+      ],
+      "translations": {
+        "uk": "трава",
+        "de": "Gras",
+        "fr": "herbe",
+        "es": "hierba",
+        "it": "erba",
+        "pt": "grama",
+        "pl": "trawa",
+        "ru": "трава",
+        "zh": "草",
+        "ja": "草"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sea",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/siː/",
+      "definition": "A large area of salt water.",
+      "examples": [
+        "We swam in the sea."
+      ],
+      "translations": {
+        "uk": "море",
+        "de": "Meer",
+        "fr": "mer",
+        "es": "mar",
+        "it": "mare",
+        "pt": "mar",
+        "pl": "morze",
+        "ru": "море",
+        "zh": "海",
+        "ja": "海"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lake",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/leɪk/",
+      "definition": "A large area of water with land all around it.",
+      "examples": [
+        "We went fishing on the lake."
+      ],
+      "translations": {
+        "uk": "озеро",
+        "de": "See",
+        "fr": "lac",
+        "es": "lago",
+        "it": "lago",
+        "pt": "lago",
+        "pl": "jezioro",
+        "ru": "озеро",
+        "zh": "湖",
+        "ja": "湖"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sky",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/skaɪ/",
+      "definition": "The space above the earth where you see the sun and clouds.",
+      "examples": [
+        "The sky is blue today."
+      ],
+      "translations": {
+        "uk": "небо",
+        "de": "Himmel",
+        "fr": "ciel",
+        "es": "cielo",
+        "it": "cielo",
+        "pt": "céu",
+        "pl": "niebo",
+        "ru": "небо",
+        "zh": "天空",
+        "ja": "空"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "star",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/stɑːr/",
+      "definition": "A bright point of light in the night sky.",
+      "examples": [
+        "We looked at the stars."
+      ],
+      "translations": {
+        "uk": "зірка",
+        "de": "Stern",
+        "fr": "étoile",
+        "es": "estrella",
+        "it": "stella",
+        "pt": "estrela",
+        "pl": "gwiazda",
+        "ru": "звезда",
+        "zh": "星星",
+        "ja": "星"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "moon",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/muːn/",
+      "definition": "The round object that shines in the sky at night.",
+      "examples": [
+        "The moon is full tonight."
+      ],
+      "translations": {
+        "uk": "місяць",
+        "de": "Mond",
+        "fr": "lune",
+        "es": "luna",
+        "it": "luna",
+        "pt": "lua",
+        "pl": "księżyc",
+        "ru": "луна",
+        "zh": "月亮",
+        "ja": "月"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "air",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/er/",
+      "definition": "The mix of gases around the earth that we breathe.",
+      "examples": [
+        "The air in the mountains is fresh."
+      ],
+      "translations": {
+        "uk": "повітря",
+        "de": "Luft",
+        "fr": "air",
+        "es": "aire",
+        "it": "aria",
+        "pt": "ar",
+        "pl": "powietrze",
+        "ru": "воздух",
+        "zh": "空气",
+        "ja": "空気"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fire",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Nature",
+      "ipa": "/faɪɚ/",
+      "definition": "The heat, light and flames when something burns.",
+      "examples": [
+        "We sat around the fire."
+      ],
+      "translations": {
+        "uk": "вогонь",
+        "de": "Feuer",
+        "fr": "feu",
+        "es": "fuego",
+        "it": "fuoco",
+        "pt": "fogo",
+        "pl": "ogień",
+        "ru": "огонь",
+        "zh": "火",
+        "ja": "火"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "dismiss",
+          "part_of_speech": "verb",
+          "cefr": "B1",
+          "definition": "To make someone leave their job.",
+          "examples": [
+            "The company fired ten workers."
+          ],
+          "translations": {
+            "uk": "звільняти",
+            "de": "entlassen",
+            "fr": "licencier",
+            "es": "despedir",
+            "it": "licenziare",
+            "pt": "demitir",
+            "pl": "zwalniać",
+            "ru": "увольнять",
+            "zh": "解雇",
+            "ja": "解雇する"
+          }
+        }
+      ]
+    },
+    {
+      "word": "nature",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/ˈneɪtʃɚ/",
+      "definition": "Plants, animals and everything in the world not made by people.",
+      "examples": [
+        "I love spending time in nature."
+      ],
+      "translations": {
+        "uk": "природа",
+        "de": "Natur",
+        "fr": "nature",
+        "es": "naturaleza",
+        "it": "natura",
+        "pt": "natureza",
+        "pl": "przyroda",
+        "ru": "природа",
+        "zh": "大自然",
+        "ja": "自然"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "island",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/ˈaɪlənd/",
+      "definition": "A piece of land with water all around it.",
+      "examples": [
+        "They live on a small island."
+      ],
+      "translations": {
+        "uk": "острів",
+        "de": "Insel",
+        "fr": "île",
+        "es": "isla",
+        "it": "isola",
+        "pt": "ilha",
+        "pl": "wyspa",
+        "ru": "остров",
+        "zh": "岛",
+        "ja": "島"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "earth",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/ɝːθ/",
+      "definition": "The planet we live on.",
+      "examples": [
+        "The Earth goes around the sun."
+      ],
+      "translations": {
+        "uk": "Земля",
+        "de": "Erde",
+        "fr": "Terre",
+        "es": "Tierra",
+        "it": "Terra",
+        "pt": "Terra",
+        "pl": "Ziemia",
+        "ru": "Земля",
+        "zh": "地球",
+        "ja": "地球"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stone",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/stoʊn/",
+      "definition": "A small piece of rock.",
+      "examples": [
+        "He threw a stone into the lake."
+      ],
+      "translations": {
+        "uk": "камінь",
+        "de": "Stein",
+        "fr": "pierre",
+        "es": "piedra",
+        "it": "pietra",
+        "pt": "pedra",
+        "pl": "kamień",
+        "ru": "камень",
+        "zh": "石头",
+        "ja": "石"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "leaf",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/liːf/",
+      "definition": "One of the flat green parts of a plant.",
+      "examples": [
+        "A leaf fell from the tree."
+      ],
+      "translations": {
+        "uk": "листок",
+        "de": "Blatt",
+        "fr": "feuille",
+        "es": "hoja",
+        "it": "foglia",
+        "pt": "folha",
+        "pl": "liść",
+        "ru": "лист",
+        "zh": "叶子",
+        "ja": "葉"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hill",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/hɪl/",
+      "definition": "An area of land that is higher than the land around it.",
+      "examples": [
+        "Our house is at the top of the hill."
+      ],
+      "translations": {
+        "uk": "пагорб",
+        "de": "Hügel",
+        "fr": "colline",
+        "es": "colina",
+        "it": "collina",
+        "pt": "colina",
+        "pl": "wzgórze",
+        "ru": "холм",
+        "zh": "小山",
+        "ja": "丘"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "desert",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/ˈdezɚt/",
+      "definition": "A large dry area with very little rain.",
+      "examples": [
+        "It rarely rains in the desert."
+      ],
+      "translations": {
+        "uk": "пустеля",
+        "de": "Wüste",
+        "fr": "désert",
+        "es": "desierto",
+        "it": "deserto",
+        "pt": "deserto",
+        "pl": "pustynia",
+        "ru": "пустыня",
+        "zh": "沙漠",
+        "ja": "砂漠"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ocean",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/ˈoʊʃən/",
+      "definition": "The very large area of salt water that covers most of the earth.",
+      "examples": [
+        "Whales live in the ocean."
+      ],
+      "translations": {
+        "uk": "океан",
+        "de": "Ozean",
+        "fr": "océan",
+        "es": "océano",
+        "it": "oceano",
+        "pt": "oceano",
+        "pl": "ocean",
+        "ru": "океан",
+        "zh": "海洋",
+        "ja": "海洋"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sunrise",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/ˈsʌnraɪz/",
+      "definition": "The time when the sun appears in the morning.",
+      "examples": [
+        "We got up early to watch the sunrise."
+      ],
+      "translations": {
+        "uk": "схід сонця",
+        "de": "Sonnenaufgang",
+        "fr": "lever du soleil",
+        "es": "amanecer",
+        "it": "alba",
+        "pt": "nascer do sol",
+        "pl": "wschód słońca",
+        "ru": "рассвет",
+        "zh": "日出",
+        "ja": "日の出"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sunset",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Nature",
+      "ipa": "/ˈsʌnset/",
+      "definition": "The time when the sun goes down in the evening.",
+      "examples": [
+        "The sunset over the sea was beautiful."
+      ],
+      "translations": {
+        "uk": "захід сонця",
+        "de": "Sonnenuntergang",
+        "fr": "coucher du soleil",
+        "es": "atardecer",
+        "it": "tramonto",
+        "pt": "pôr do sol",
+        "pl": "zachód słońca",
+        "ru": "закат",
+        "zh": "日落",
+        "ja": "夕日"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "coast",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/koʊst/",
+      "definition": "The land next to the sea.",
+      "examples": [
+        "We drove along the coast."
+      ],
+      "translations": {
+        "uk": "узбережжя",
+        "de": "Küste",
+        "fr": "côte",
+        "es": "costa",
+        "it": "costa",
+        "pt": "costa",
+        "pl": "wybrzeże",
+        "ru": "побережье",
+        "zh": "海岸",
+        "ja": "海岸"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "valley",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/ˈvæli/",
+      "definition": "Low land between hills or mountains.",
+      "examples": [
+        "A river runs through the valley."
+      ],
+      "translations": {
+        "uk": "долина",
+        "de": "Tal",
+        "fr": "vallée",
+        "es": "valle",
+        "it": "valle",
+        "pt": "vale",
+        "pl": "dolina",
+        "ru": "долина",
+        "zh": "山谷",
+        "ja": "谷"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wildlife",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/ˈwaɪldlaɪf/",
+      "definition": "Animals and plants that live in nature.",
+      "examples": [
+        "The park is full of wildlife."
+      ],
+      "translations": {
+        "uk": "дика природа",
+        "de": "Tierwelt",
+        "fr": "faune",
+        "es": "fauna",
+        "it": "fauna",
+        "pt": "vida selvagem",
+        "pl": "dzika przyroda",
+        "ru": "дикая природа",
+        "zh": "野生动植物",
+        "ja": "野生生物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "environment",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/ɪnˈvaɪrənmənt/",
+      "definition": "The air, water and land around us.",
+      "examples": [
+        "We must protect the environment."
+      ],
+      "translations": {
+        "uk": "довкілля",
+        "de": "Umwelt",
+        "fr": "environnement",
+        "es": "medio ambiente",
+        "it": "ambiente",
+        "pt": "meio ambiente",
+        "pl": "środowisko",
+        "ru": "окружающая среда",
+        "zh": "环境",
+        "ja": "環境"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "recycle",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Environment",
+      "ipa": "/ˌriːˈsaɪkəl/",
+      "definition": "To use something again or make it into something new.",
+      "examples": [
+        "We recycle paper and plastic."
+      ],
+      "translations": {
+        "uk": "переробляти",
+        "de": "recyceln",
+        "fr": "recycler",
+        "es": "reciclar",
+        "it": "riciclare",
+        "pt": "reciclar",
+        "pl": "poddawać recyklingowi",
+        "ru": "перерабатывать",
+        "zh": "回收利用",
+        "ja": "リサイクルする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

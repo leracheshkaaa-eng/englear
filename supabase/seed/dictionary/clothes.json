@@ -1,0 +1,704 @@
+{
+  "package": "clothes",
+  "kind": "words",
+  "words": [
+    {
+      "word": "clothes",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/kloʊðz/",
+      "definition": "Things you wear, like shirts and pants.",
+      "examples": [
+        "I need to buy new clothes."
+      ],
+      "translations": {
+        "uk": "одяг",
+        "de": "Kleidung",
+        "fr": "vêtements",
+        "es": "ropa",
+        "it": "vestiti",
+        "pt": "roupas",
+        "pl": "ubrania",
+        "ru": "одежда",
+        "zh": "衣服",
+        "ja": "服"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dress",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/dres/",
+      "definition": "A piece of clothing for women or girls that covers the body and legs.",
+      "examples": [
+        "She wore a red dress to the party."
+      ],
+      "translations": {
+        "uk": "сукня",
+        "de": "Kleid",
+        "fr": "robe",
+        "es": "vestido",
+        "it": "vestito",
+        "pt": "vestido",
+        "pl": "sukienka",
+        "ru": "платье",
+        "zh": "连衣裙",
+        "ja": "ワンピース"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pants",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/pænts/",
+      "definition": "A piece of clothing that covers each leg separately.",
+      "examples": [
+        "These pants are too long."
+      ],
+      "translations": {
+        "uk": "штани",
+        "de": "Hose",
+        "fr": "pantalon",
+        "es": "pantalones",
+        "it": "pantaloni",
+        "pt": "calça",
+        "pl": "spodnie",
+        "ru": "брюки",
+        "zh": "裤子",
+        "ja": "ズボン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "jeans",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/dʒiːnz/",
+      "definition": "Pants made of strong blue cotton.",
+      "examples": [
+        "I usually wear jeans on weekends."
+      ],
+      "translations": {
+        "uk": "джинси",
+        "de": "Jeans",
+        "fr": "jean",
+        "es": "vaqueros",
+        "it": "jeans",
+        "pt": "calça jeans",
+        "pl": "dżinsy",
+        "ru": "джинсы",
+        "zh": "牛仔裤",
+        "ja": "ジーンズ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "skirt",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/skɝːt/",
+      "definition": "A piece of clothing for women that hangs from the waist.",
+      "examples": [
+        "She has a long blue skirt."
+      ],
+      "translations": {
+        "uk": "спідниця",
+        "de": "Rock",
+        "fr": "jupe",
+        "es": "falda",
+        "it": "gonna",
+        "pt": "saia",
+        "pl": "spódnica",
+        "ru": "юбка",
+        "zh": "裙子",
+        "ja": "スカート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "jacket",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/ˈdʒækɪt/",
+      "definition": "A short coat.",
+      "examples": [
+        "Take a jacket, it's cold outside."
+      ],
+      "translations": {
+        "uk": "куртка",
+        "de": "Jacke",
+        "fr": "veste",
+        "es": "chaqueta",
+        "it": "giacca",
+        "pt": "jaqueta",
+        "pl": "kurtka",
+        "ru": "куртка",
+        "zh": "夹克",
+        "ja": "ジャケット"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "coat",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/koʊt/",
+      "definition": "A long piece of clothing worn over other clothes to keep warm.",
+      "examples": [
+        "Put on your coat before you go out."
+      ],
+      "translations": {
+        "uk": "пальто",
+        "de": "Mantel",
+        "fr": "manteau",
+        "es": "abrigo",
+        "it": "cappotto",
+        "pt": "casaco",
+        "pl": "płaszcz",
+        "ru": "пальто",
+        "zh": "大衣",
+        "ja": "コート"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hat",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/hæt/",
+      "definition": "A covering for the head.",
+      "examples": [
+        "He wears a hat in the sun."
+      ],
+      "translations": {
+        "uk": "капелюх",
+        "de": "Hut",
+        "fr": "chapeau",
+        "es": "sombrero",
+        "it": "cappello",
+        "pt": "chapéu",
+        "pl": "kapelusz",
+        "ru": "шляпа",
+        "zh": "帽子",
+        "ja": "帽子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sweater",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/ˈswetɚ/",
+      "definition": "A warm piece of clothing for the upper body, often made of wool.",
+      "examples": [
+        "My grandma knitted this sweater."
+      ],
+      "translations": {
+        "uk": "светр",
+        "de": "Pullover",
+        "fr": "pull",
+        "es": "suéter",
+        "it": "maglione",
+        "pt": "suéter",
+        "pl": "sweter",
+        "ru": "свитер",
+        "zh": "毛衣",
+        "ja": "セーター"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "T-shirt",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/ˈtiː ʃɝːt/",
+      "definition": "A simple shirt with short sleeves and no collar.",
+      "examples": [
+        "I bought a white T-shirt."
+      ],
+      "translations": {
+        "uk": "футболка",
+        "de": "T-Shirt",
+        "fr": "tee-shirt",
+        "es": "camiseta",
+        "it": "maglietta",
+        "pt": "camiseta",
+        "pl": "koszulka",
+        "ru": "футболка",
+        "zh": "T恤",
+        "ja": "Tシャツ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "socks",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/sɑːks/",
+      "definition": "Pieces of clothing that you wear on your feet inside shoes.",
+      "examples": [
+        "I need a new pair of socks."
+      ],
+      "translations": {
+        "uk": "шкарпетки",
+        "de": "Socken",
+        "fr": "chaussettes",
+        "es": "calcetines",
+        "it": "calzini",
+        "pt": "meias",
+        "pl": "skarpetki",
+        "ru": "носки",
+        "zh": "袜子",
+        "ja": "靴下"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wear",
+      "part_of_speech": "verb",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/wer/",
+      "definition": "To have clothes on your body.",
+      "examples": [
+        "She always wears a hat."
+      ],
+      "translations": {
+        "uk": "носити (одяг)",
+        "de": "tragen",
+        "fr": "porter",
+        "es": "llevar",
+        "it": "indossare",
+        "pt": "usar",
+        "pl": "nosić",
+        "ru": "носить (одежду)",
+        "zh": "穿",
+        "ja": "着ている"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "put on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/pʊt ɑːn/",
+      "definition": "To start wearing a piece of clothing.",
+      "examples": [
+        "Put on your jacket."
+      ],
+      "translations": {
+        "uk": "одягати",
+        "de": "anziehen",
+        "fr": "mettre",
+        "es": "ponerse",
+        "it": "mettersi",
+        "pt": "vestir",
+        "pl": "zakładać",
+        "ru": "надевать",
+        "zh": "穿上",
+        "ja": "身につける"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "get dressed",
+      "part_of_speech": "collocation",
+      "cefr": "A1",
+      "topic": "Clothes",
+      "ipa": "/ɡet drest/",
+      "definition": "To put your clothes on.",
+      "examples": [
+        "I get dressed after breakfast."
+      ],
+      "translations": {
+        "uk": "одягатися",
+        "de": "sich anziehen",
+        "fr": "s'habiller",
+        "es": "vestirse",
+        "it": "vestirsi",
+        "pt": "vestir-se",
+        "pl": "ubierać się",
+        "ru": "одеваться",
+        "zh": "穿衣服",
+        "ja": "服を着る"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "boots",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/buːts/",
+      "definition": "Strong shoes that cover the foot and part of the leg.",
+      "examples": [
+        "Wear boots when it snows."
+      ],
+      "translations": {
+        "uk": "чоботи, черевики",
+        "de": "Stiefel",
+        "fr": "bottes",
+        "es": "botas",
+        "it": "stivali",
+        "pt": "botas",
+        "pl": "kozaki",
+        "ru": "сапоги, ботинки",
+        "zh": "靴子",
+        "ja": "ブーツ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scarf",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/skɑːrf/",
+      "definition": "A long piece of cloth you wear around your neck.",
+      "examples": [
+        "She wore a warm scarf."
+      ],
+      "translations": {
+        "uk": "шарф",
+        "de": "Schal",
+        "fr": "écharpe",
+        "es": "bufanda",
+        "it": "sciarpa",
+        "pt": "cachecol",
+        "pl": "szalik",
+        "ru": "шарф",
+        "zh": "围巾",
+        "ja": "マフラー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "gloves",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/ɡlʌvz/",
+      "definition": "Things you wear on your hands to keep them warm.",
+      "examples": [
+        "Don't forget your gloves."
+      ],
+      "translations": {
+        "uk": "рукавички",
+        "de": "Handschuhe",
+        "fr": "gants",
+        "es": "guantes",
+        "it": "guanti",
+        "pt": "luvas",
+        "pl": "rękawiczki",
+        "ru": "перчатки",
+        "zh": "手套",
+        "ja": "手袋"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "uniform",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/ˈjuːnɪfɔːrm/",
+      "definition": "Special clothes that people wear at school or work.",
+      "examples": [
+        "Students must wear a uniform."
+      ],
+      "translations": {
+        "uk": "форма",
+        "de": "Uniform",
+        "fr": "uniforme",
+        "es": "uniforme",
+        "it": "divisa",
+        "pt": "uniforme",
+        "pl": "mundurek",
+        "ru": "форма",
+        "zh": "制服",
+        "ja": "制服"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pocket",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/ˈpɑːkɪt/",
+      "definition": "A small bag sewn into clothes to keep things in.",
+      "examples": [
+        "My keys are in my pocket."
+      ],
+      "translations": {
+        "uk": "кишеня",
+        "de": "Tasche",
+        "fr": "poche",
+        "es": "bolsillo",
+        "it": "tasca",
+        "pt": "bolso",
+        "pl": "kieszeń",
+        "ru": "карман",
+        "zh": "口袋",
+        "ja": "ポケット"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "size",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/saɪz/",
+      "definition": "How big or small something is.",
+      "examples": [
+        "Do you have this shirt in a larger size?"
+      ],
+      "translations": {
+        "uk": "розмір",
+        "de": "Größe",
+        "fr": "taille",
+        "es": "talla",
+        "it": "taglia",
+        "pt": "tamanho",
+        "pl": "rozmiar",
+        "ru": "размер",
+        "zh": "尺码",
+        "ja": "サイズ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pajamas",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/pəˈdʒɑːməz/",
+      "definition": "Loose clothes that you wear in bed.",
+      "examples": [
+        "The kids are already in their pajamas."
+      ],
+      "translations": {
+        "uk": "піжама",
+        "de": "Schlafanzug",
+        "fr": "pyjama",
+        "es": "pijama",
+        "it": "pigiama",
+        "pt": "pijama",
+        "pl": "piżama",
+        "ru": "пижама",
+        "zh": "睡衣",
+        "ja": "パジャマ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "belt",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/belt/",
+      "definition": "A strip of leather you wear around your waist.",
+      "examples": [
+        "These pants need a belt."
+      ],
+      "translations": {
+        "uk": "ремінь",
+        "de": "Gürtel",
+        "fr": "ceinture",
+        "es": "cinturón",
+        "it": "cintura",
+        "pt": "cinto",
+        "pl": "pasek",
+        "ru": "ремень",
+        "zh": "腰带",
+        "ja": "ベルト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "try on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/traɪ ɑːn/",
+      "definition": "To put on clothes to see if they fit.",
+      "examples": [
+        "Can I try on these shoes?"
+      ],
+      "translations": {
+        "uk": "приміряти",
+        "de": "anprobieren",
+        "fr": "essayer",
+        "es": "probarse",
+        "it": "provare",
+        "pt": "experimentar",
+        "pl": "przymierzyć",
+        "ru": "примерять",
+        "zh": "试穿",
+        "ja": "試着する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "fit",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Clothes",
+      "ipa": "/fɪt/",
+      "definition": "To be the right size for someone.",
+      "examples": [
+        "These jeans don't fit me."
+      ],
+      "translations": {
+        "uk": "пасувати (за розміром)",
+        "de": "passen",
+        "fr": "aller",
+        "es": "quedar bien",
+        "it": "stare bene",
+        "pt": "servir",
+        "pl": "pasować",
+        "ru": "подходить (по размеру)",
+        "zh": "合身",
+        "ja": "サイズが合う"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "healthy",
+          "part_of_speech": "adjective",
+          "cefr": "B1",
+          "definition": "Healthy and strong, especially because of exercise.",
+          "examples": [
+            "He runs every day to stay fit."
+          ],
+          "translations": {
+            "uk": "у формі",
+            "de": "fit",
+            "fr": "en forme",
+            "es": "en forma",
+            "it": "in forma",
+            "pt": "em forma",
+            "pl": "wysportowany",
+            "ru": "в хорошей форме",
+            "zh": "健康的",
+            "ja": "健康な"
+          }
+        }
+      ]
+    },
+    {
+      "word": "fashion",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Clothes",
+      "ipa": "/ˈfæʃən/",
+      "definition": "The popular style of clothes at a particular time.",
+      "examples": [
+        "She is interested in fashion."
+      ],
+      "translations": {
+        "uk": "мода",
+        "de": "Mode",
+        "fr": "mode",
+        "es": "moda",
+        "it": "moda",
+        "pt": "moda",
+        "pl": "moda",
+        "ru": "мода",
+        "zh": "时尚",
+        "ja": "ファッション"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tight",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Clothes",
+      "ipa": "/taɪt/",
+      "definition": "Fitting the body very closely.",
+      "examples": [
+        "These shoes are too tight."
+      ],
+      "translations": {
+        "uk": "тісний",
+        "de": "eng",
+        "fr": "serré",
+        "es": "ajustado",
+        "it": "stretto",
+        "pt": "apertado",
+        "pl": "ciasny",
+        "ru": "тесный",
+        "zh": "紧的",
+        "ja": "きつい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "loose",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Clothes",
+      "ipa": "/luːs/",
+      "definition": "Not fitting the body closely.",
+      "examples": [
+        "He likes to wear loose clothes in summer."
+      ],
+      "translations": {
+        "uk": "вільний",
+        "de": "weit",
+        "fr": "ample",
+        "es": "holgado",
+        "it": "largo",
+        "pt": "folgado",
+        "pl": "luźny",
+        "ru": "свободный",
+        "zh": "宽松的",
+        "ja": "ゆるい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
