@@ -1,0 +1,527 @@
+{
+  "package": "science",
+  "kind": "words",
+  "words": [
+    {
+      "word": "energy",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Science",
+      "ipa": "/ˈenɚdʒi/",
+      "definition": "The power that makes machines work or that people have to be active.",
+      "examples": [
+        "Solar panels produce clean energy."
+      ],
+      "translations": {
+        "uk": "енергія",
+        "de": "Energie",
+        "fr": "énergie",
+        "es": "energía",
+        "it": "energia",
+        "pt": "energia",
+        "pl": "energia",
+        "ru": "энергия",
+        "zh": "能源",
+        "ja": "エネルギー"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "planet",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Science",
+      "ipa": "/ˈplænɪt/",
+      "definition": "A large round object that moves around a star.",
+      "examples": [
+        "Mars is a red planet."
+      ],
+      "translations": {
+        "uk": "планета",
+        "de": "Planet",
+        "fr": "planète",
+        "es": "planeta",
+        "it": "pianeta",
+        "pt": "planeta",
+        "pl": "planeta",
+        "ru": "планета",
+        "zh": "行星",
+        "ja": "惑星"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "space",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Science",
+      "ipa": "/speɪs/",
+      "definition": "The area outside the earth where the stars and planets are.",
+      "examples": [
+        "Astronauts travel into space."
+      ],
+      "translations": {
+        "uk": "космос",
+        "de": "Weltraum",
+        "fr": "espace",
+        "es": "espacio",
+        "it": "spazio",
+        "pt": "espaço",
+        "pl": "kosmos",
+        "ru": "космос",
+        "zh": "太空",
+        "ja": "宇宙"
+      },
+      "word_type": "word",
+      "ielts_category": "Science",
+      "meanings": [
+        {
+          "key": "room",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "An empty area that can be used.",
+          "examples": [
+            "There's no space for my bag."
+          ],
+          "translations": {
+            "uk": "місце, простір",
+            "de": "Platz",
+            "fr": "place",
+            "es": "espacio",
+            "it": "spazio",
+            "pt": "espaço",
+            "pl": "miejsce",
+            "ru": "место, пространство",
+            "zh": "空间",
+            "ja": "スペース"
+          }
+        }
+      ]
+    },
+    {
+      "word": "biology",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Science",
+      "ipa": "/baɪˈɑːlədʒi/",
+      "definition": "The study of living things.",
+      "examples": [
+        "She is studying biology at university."
+      ],
+      "translations": {
+        "uk": "біологія",
+        "de": "Biologie",
+        "fr": "biologie",
+        "es": "biología",
+        "it": "biologia",
+        "pt": "biologia",
+        "pl": "biologia",
+        "ru": "биология",
+        "zh": "生物学",
+        "ja": "生物学"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "chemistry",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Science",
+      "ipa": "/ˈkemɪstri/",
+      "definition": "The study of substances and how they change.",
+      "examples": [
+        "We did an experiment in chemistry class."
+      ],
+      "translations": {
+        "uk": "хімія",
+        "de": "Chemie",
+        "fr": "chimie",
+        "es": "química",
+        "it": "chimica",
+        "pt": "química",
+        "pl": "chemia",
+        "ru": "химия",
+        "zh": "化学",
+        "ja": "化学"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "physics",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Science",
+      "ipa": "/ˈfɪzɪks/",
+      "definition": "The study of energy, force and matter.",
+      "examples": [
+        "Physics explains how things move."
+      ],
+      "translations": {
+        "uk": "фізика",
+        "de": "Physik",
+        "fr": "physique",
+        "es": "física",
+        "it": "fisica",
+        "pt": "física",
+        "pl": "fizyka",
+        "ru": "физика",
+        "zh": "物理",
+        "ja": "物理学"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "oxygen",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈɑːksɪdʒən/",
+      "definition": "A gas in the air that people and animals need to breathe.",
+      "examples": [
+        "Plants produce oxygen."
+      ],
+      "translations": {
+        "uk": "кисень",
+        "de": "Sauerstoff",
+        "fr": "oxygène",
+        "es": "oxígeno",
+        "it": "ossigeno",
+        "pt": "oxigênio",
+        "pl": "tlen",
+        "ru": "кислород",
+        "zh": "氧气",
+        "ja": "酸素"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "chemical",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈkemɪkəl/",
+      "definition": "A substance used or made in chemistry.",
+      "examples": [
+        "Some chemicals are dangerous."
+      ],
+      "translations": {
+        "uk": "хімічна речовина",
+        "de": "Chemikalie",
+        "fr": "produit chimique",
+        "es": "sustancia química",
+        "it": "sostanza chimica",
+        "pt": "produto químico",
+        "pl": "substancja chemiczna",
+        "ru": "химическое вещество",
+        "zh": "化学品",
+        "ja": "化学物質"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "microscope",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈmaɪkrəskoʊp/",
+      "definition": "A tool that makes very small things look bigger.",
+      "examples": [
+        "We looked at cells under a microscope."
+      ],
+      "translations": {
+        "uk": "мікроскоп",
+        "de": "Mikroskop",
+        "fr": "microscope",
+        "es": "microscopio",
+        "it": "microscopio",
+        "pt": "microscópio",
+        "pl": "mikroskop",
+        "ru": "микроскоп",
+        "zh": "显微镜",
+        "ja": "顕微鏡"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "measure",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈmeʒɚ/",
+      "definition": "To find the size, weight or amount of something.",
+      "examples": [
+        "Measure the length of the table."
+      ],
+      "translations": {
+        "uk": "вимірювати",
+        "de": "messen",
+        "fr": "mesurer",
+        "es": "medir",
+        "it": "misurare",
+        "pt": "medir",
+        "pl": "mierzyć",
+        "ru": "измерять",
+        "zh": "测量",
+        "ja": "測る"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "prove",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/pruːv/",
+      "definition": "To show that something is true.",
+      "examples": [
+        "Can you prove it?"
+      ],
+      "translations": {
+        "uk": "доводити",
+        "de": "beweisen",
+        "fr": "prouver",
+        "es": "demostrar",
+        "it": "dimostrare",
+        "pt": "provar",
+        "pl": "udowodnić",
+        "ru": "доказывать",
+        "zh": "证明",
+        "ja": "証明する"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "solar system",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˈsoʊlɚ ˌsɪstəm/",
+      "definition": "The sun and the planets that move around it.",
+      "examples": [
+        "Jupiter is the biggest planet in the solar system."
+      ],
+      "translations": {
+        "uk": "Сонячна система",
+        "de": "Sonnensystem",
+        "fr": "système solaire",
+        "es": "sistema solar",
+        "it": "sistema solare",
+        "pt": "sistema solar",
+        "pl": "Układ Słoneczny",
+        "ru": "Солнечная система",
+        "zh": "太阳系",
+        "ja": "太陽系"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "scientific",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Science",
+      "ipa": "/ˌsaɪənˈtɪfɪk/",
+      "definition": "Related to science.",
+      "examples": [
+        "There is no scientific evidence for it."
+      ],
+      "translations": {
+        "uk": "науковий",
+        "de": "wissenschaftlich",
+        "fr": "scientifique",
+        "es": "científico",
+        "it": "scientifico",
+        "pt": "científico",
+        "pl": "naukowy",
+        "ru": "научный",
+        "zh": "科学的",
+        "ja": "科学的な"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "atom",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/ˈætəm/",
+      "definition": "The smallest part of a chemical element.",
+      "examples": [
+        "Everything is made of atoms."
+      ],
+      "translations": {
+        "uk": "атом",
+        "de": "Atom",
+        "fr": "atome",
+        "es": "átomo",
+        "it": "atomo",
+        "pt": "átomo",
+        "pl": "atom",
+        "ru": "атом",
+        "zh": "原子",
+        "ja": "原子"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "gravity",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/ˈɡrævəti/",
+      "definition": "The force that pulls things toward the ground.",
+      "examples": [
+        "Gravity keeps us on the ground."
+      ],
+      "translations": {
+        "uk": "гравітація",
+        "de": "Schwerkraft",
+        "fr": "gravité",
+        "es": "gravedad",
+        "it": "gravità",
+        "pt": "gravidade",
+        "pl": "grawitacja",
+        "ru": "гравитация",
+        "zh": "重力",
+        "ja": "重力"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "cell",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/sel/",
+      "definition": "The smallest living part of a plant or animal.",
+      "examples": [
+        "The human body has trillions of cells."
+      ],
+      "translations": {
+        "uk": "клітина",
+        "de": "Zelle",
+        "fr": "cellule",
+        "es": "célula",
+        "it": "cellula",
+        "pt": "célula",
+        "pl": "komórka",
+        "ru": "клетка",
+        "zh": "细胞",
+        "ja": "細胞"
+      },
+      "word_type": "word",
+      "ielts_category": "Science",
+      "meanings": [
+        {
+          "key": "phone",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A mobile phone.",
+          "examples": [
+            "Call me on my cell."
+          ],
+          "translations": {
+            "uk": "мобільний телефон",
+            "de": "Handy",
+            "fr": "portable",
+            "es": "celular",
+            "it": "cellulare",
+            "pt": "celular",
+            "pl": "komórka",
+            "ru": "мобильный телефон",
+            "zh": "手机",
+            "ja": "携帯電話"
+          }
+        }
+      ]
+    },
+    {
+      "word": "observe",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/əbˈzɝːv/",
+      "definition": "To watch something carefully.",
+      "examples": [
+        "Scientists observed the animals for a year."
+      ],
+      "translations": {
+        "uk": "спостерігати",
+        "de": "beobachten",
+        "fr": "observer",
+        "es": "observar",
+        "it": "osservare",
+        "pt": "observar",
+        "pl": "obserwować",
+        "ru": "наблюдать",
+        "zh": "观察",
+        "ja": "観察する"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "genetic",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Science",
+      "ipa": "/dʒəˈnetɪk/",
+      "definition": "Related to genes.",
+      "examples": [
+        "Eye color is genetic."
+      ],
+      "translations": {
+        "uk": "генетичний",
+        "de": "genetisch",
+        "fr": "génétique",
+        "es": "genético",
+        "it": "genetico",
+        "pt": "genético",
+        "pl": "genetyczny",
+        "ru": "генетический",
+        "zh": "遗传的",
+        "ja": "遺伝の"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    },
+    {
+      "word": "breakthrough",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Science",
+      "ipa": "/ˈbreɪkθruː/",
+      "definition": "An important discovery.",
+      "examples": [
+        "Scientists made a breakthrough in cancer research."
+      ],
+      "translations": {
+        "uk": "прорив",
+        "de": "Durchbruch",
+        "fr": "percée",
+        "es": "avance",
+        "it": "svolta",
+        "pt": "avanço",
+        "pl": "przełom",
+        "ru": "прорыв",
+        "zh": "突破",
+        "ja": "大発見"
+      },
+      "word_type": "word",
+      "ielts_category": "Science"
+    }
+  ]
+}

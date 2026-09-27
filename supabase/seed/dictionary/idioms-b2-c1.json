@@ -1,0 +1,181 @@
+{
+  "package": "idioms-b2-c1",
+  "kind": "words",
+  "words": [
+    {
+      "word": "break a leg",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/breɪk ə ˈleɡ/",
+      "definition": "Good luck (said before a performance).",
+      "examples": [
+        "Break a leg at your concert tonight!"
+      ],
+      "translations": {
+        "uk": "ні пуху ні пера",
+        "de": "Hals- und Beinbruch",
+        "fr": "merde",
+        "es": "mucha suerte",
+        "it": "in bocca al lupo",
+        "pt": "merda",
+        "pl": "połamania nóg",
+        "ru": "ни пуха ни пера",
+        "zh": "祝你好运",
+        "ja": "頑張って"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "spill the beans",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/spɪl ðə ˈbiːnz/",
+      "definition": "To tell a secret.",
+      "examples": [
+        "Come on, spill the beans! What happened?"
+      ],
+      "translations": {
+        "uk": "розкрити секрет",
+        "de": "auspacken",
+        "fr": "cracher le morceau",
+        "es": "soltar la sopa",
+        "it": "vuotare il sacco",
+        "pt": "abrir o jogo",
+        "pl": "puścić farbę",
+        "ru": "выложить всё",
+        "zh": "说出秘密",
+        "ja": "白状する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "take it easy",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/teɪk ɪt ˈiːzi/",
+      "definition": "To relax.",
+      "examples": [
+        "Take it easy this weekend."
+      ],
+      "translations": {
+        "uk": "не перенапружуватися",
+        "de": "es ruhig angehen lassen",
+        "fr": "se détendre",
+        "es": "tomárselo con calma",
+        "it": "prendersela comoda",
+        "pt": "relaxar",
+        "pl": "wyluzować",
+        "ru": "не напрягаться",
+        "zh": "放轻松",
+        "ja": "のんびりする"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "time flies",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/taɪm flaɪz/",
+      "definition": "Time passes very quickly.",
+      "examples": [
+        "Time flies when you're having fun."
+      ],
+      "translations": {
+        "uk": "час летить",
+        "de": "die Zeit vergeht wie im Flug",
+        "fr": "le temps passe vite",
+        "es": "el tiempo vuela",
+        "it": "il tempo vola",
+        "pt": "o tempo voa",
+        "pl": "czas leci",
+        "ru": "время летит",
+        "zh": "时光飞逝",
+        "ja": "時が経つのは早い"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "better late than never",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/ˈbetɚ leɪt ðən ˈnevɚ/",
+      "definition": "It is better to do something late than not at all.",
+      "examples": [
+        "You finally finished it? Better late than never!"
+      ],
+      "translations": {
+        "uk": "краще пізно, ніж ніколи",
+        "de": "besser spät als nie",
+        "fr": "mieux vaut tard que jamais",
+        "es": "más vale tarde que nunca",
+        "it": "meglio tardi che mai",
+        "pt": "antes tarde do que nunca",
+        "pl": "lepiej późno niż wcale",
+        "ru": "лучше поздно, чем никогда",
+        "zh": "迟做总比不做好",
+        "ja": "遅れてもしないよりはまし"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "in hot water",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ɪn hɑːt ˈwɑːtɚ/",
+      "definition": "In trouble.",
+      "examples": [
+        "He's in hot water with his boss."
+      ],
+      "translations": {
+        "uk": "у халепі",
+        "de": "in der Klemme",
+        "fr": "dans le pétrin",
+        "es": "en apuros",
+        "it": "nei guai",
+        "pt": "em apuros",
+        "pl": "w tarapatach",
+        "ru": "в беде",
+        "zh": "陷入困境",
+        "ja": "困ったことになって"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    },
+    {
+      "word": "see eye to eye",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/siː ˌaɪ tə ˈaɪ/",
+      "definition": "To agree with someone.",
+      "examples": [
+        "My brother and I don't always see eye to eye."
+      ],
+      "translations": {
+        "uk": "сходитися в поглядах",
+        "de": "einer Meinung sein",
+        "fr": "être d'accord",
+        "es": "estar de acuerdo",
+        "it": "essere d'accordo",
+        "pt": "concordar",
+        "pl": "zgadzać się",
+        "ru": "сходиться во мнениях",
+        "zh": "看法一致",
+        "ja": "意見が一致する"
+      },
+      "word_type": "collocation",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "package": "culture-media",
+  "kind": "words",
+  "words": [
+    {
+      "word": "actor",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Culture",
+      "ipa": "/ˈæktɚ/",
+      "definition": "A person who performs in plays or movies.",
+      "examples": [
+        "He is a famous actor."
+      ],
+      "translations": {
+        "uk": "актор",
+        "de": "Schauspieler",
+        "fr": "acteur",
+        "es": "actor",
+        "it": "attore",
+        "pt": "ator",
+        "pl": "aktor",
+        "ru": "актёр",
+        "zh": "演员",
+        "ja": "俳優"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "radio",
+      "part_of_speech": "noun",
+      "cefr": "A1",
+      "topic": "Media",
+      "ipa": "/ˈreɪdioʊ/",
+      "definition": "A device that you use to listen to programs.",
+      "examples": [
+        "I listen to the radio in the car."
+      ],
+      "translations": {
+        "uk": "радіо",
+        "de": "Radio",
+        "fr": "radio",
+        "es": "radio",
+        "it": "radio",
+        "pt": "rádio",
+        "pl": "radio",
+        "ru": "радио",
+        "zh": "收音机",
+        "ja": "ラジオ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "painting",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/ˈpeɪntɪŋ/",
+      "definition": "A picture made with paint.",
+      "examples": [
+        "The museum has famous paintings."
+      ],
+      "translations": {
+        "uk": "картина",
+        "de": "Gemälde",
+        "fr": "tableau",
+        "es": "cuadro",
+        "it": "dipinto",
+        "pt": "pintura",
+        "pl": "obraz",
+        "ru": "картина",
+        "zh": "画",
+        "ja": "絵画"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "musician",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/mjuˈzɪʃən/",
+      "definition": "A person who plays music.",
+      "examples": [
+        "My uncle is a professional musician."
+      ],
+      "translations": {
+        "uk": "музикант",
+        "de": "Musiker",
+        "fr": "musicien",
+        "es": "músico",
+        "it": "musicista",
+        "pt": "músico",
+        "pl": "muzyk",
+        "ru": "музыкант",
+        "zh": "音乐家",
+        "ja": "音楽家"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "band",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Culture",
+      "ipa": "/bænd/",
+      "definition": "A group of musicians.",
+      "examples": [
+        "My brother plays drums in a band."
+      ],
+      "translations": {
+        "uk": "гурт",
+        "de": "Band",
+        "fr": "groupe",
+        "es": "grupo",
+        "it": "gruppo",
+        "pt": "banda",
+        "pl": "zespół",
+        "ru": "группа",
+        "zh": "乐队",
+        "ja": "バンド"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "channel",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Media",
+      "ipa": "/ˈtʃænəl/",
+      "definition": "A TV station.",
+      "examples": [
+        "What channel is the game on?"
+      ],
+      "translations": {
+        "uk": "канал",
+        "de": "Sender",
+        "fr": "chaîne",
+        "es": "canal",
+        "it": "canale",
+        "pt": "canal",
+        "pl": "kanał",
+        "ru": "канал",
+        "zh": "频道",
+        "ja": "チャンネル"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "program",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Media",
+      "ipa": "/ˈproʊɡræm/",
+      "definition": "A show on TV or radio.",
+      "examples": [
+        "My favorite TV program starts at eight."
+      ],
+      "translations": {
+        "uk": "передача",
+        "de": "Sendung",
+        "fr": "émission",
+        "es": "programa",
+        "it": "programma",
+        "pt": "programa",
+        "pl": "program",
+        "ru": "передача",
+        "zh": "节目",
+        "ja": "番組"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "software",
+          "part_of_speech": "noun",
+          "cefr": "A2",
+          "definition": "A set of instructions that makes a computer do something.",
+          "examples": [
+            "This program helps you edit photos."
+          ],
+          "translations": {
+            "uk": "програма",
+            "de": "Programm",
+            "fr": "programme",
+            "es": "programa",
+            "it": "programma",
+            "pt": "programa",
+            "pl": "program",
+            "ru": "программа",
+            "zh": "程序",
+            "ja": "プログラム"
+          }
+        }
+      ]
+    },
+    {
+      "word": "audience",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈɔːdiəns/",
+      "definition": "The people who watch or listen to a performance.",
+      "examples": [
+        "The audience clapped loudly."
+      ],
+      "translations": {
+        "uk": "глядачі",
+        "de": "Publikum",
+        "fr": "public",
+        "es": "público",
+        "it": "pubblico",
+        "pt": "plateia",
+        "pl": "publiczność",
+        "ru": "зрители",
+        "zh": "观众",
+        "ja": "観客"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stage",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/steɪdʒ/",
+      "definition": "The raised area in a theater where actors perform.",
+      "examples": [
+        "The singer walked onto the stage."
+      ],
+      "translations": {
+        "uk": "сцена",
+        "de": "Bühne",
+        "fr": "scène",
+        "es": "escenario",
+        "it": "palcoscenico",
+        "pt": "palco",
+        "pl": "scena",
+        "ru": "сцена",
+        "zh": "舞台",
+        "ja": "舞台"
+      },
+      "word_type": "word",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "phase",
+          "part_of_speech": "noun",
+          "cefr": "B1",
+          "definition": "A period or step in a process.",
+          "examples": [
+            "The project is in its final stage."
+          ],
+          "translations": {
+            "uk": "етап",
+            "de": "Phase",
+            "fr": "étape",
+            "es": "etapa",
+            "it": "fase",
+            "pt": "etapa",
+            "pl": "etap",
+            "ru": "этап",
+            "zh": "阶段",
+            "ja": "段階"
+          }
+        }
+      ]
+    },
+    {
+      "word": "exhibition",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˌeksɪˈbɪʃən/",
+      "definition": "A show of art or objects for the public.",
+      "examples": [
+        "We went to a photography exhibition."
+      ],
+      "translations": {
+        "uk": "виставка",
+        "de": "Ausstellung",
+        "fr": "exposition",
+        "es": "exposición",
+        "it": "mostra",
+        "pt": "exposição",
+        "pl": "wystawa",
+        "ru": "выставка",
+        "zh": "展览",
+        "ja": "展覧会"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "author",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈɔːθɚ/",
+      "definition": "A person who writes books.",
+      "examples": [
+        "Who is the author of this book?"
+      ],
+      "translations": {
+        "uk": "автор",
+        "de": "Autor",
+        "fr": "auteur",
+        "es": "autor",
+        "it": "autore",
+        "pt": "autor",
+        "pl": "autor",
+        "ru": "автор",
+        "zh": "作者",
+        "ja": "著者"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "perform",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/pɚˈfɔːrm/",
+      "definition": "To act, sing or play music for an audience.",
+      "examples": [
+        "The band will perform tonight."
+      ],
+      "translations": {
+        "uk": "виступати",
+        "de": "auftreten",
+        "fr": "se produire",
+        "es": "actuar",
+        "it": "esibirsi",
+        "pt": "apresentar-se",
+        "pl": "występować",
+        "ru": "выступать",
+        "zh": "表演",
+        "ja": "演じる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "creative",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/kriˈeɪtɪv/",
+      "definition": "Good at making new things or having new ideas.",
+      "examples": [
+        "She is a very creative designer."
+      ],
+      "translations": {
+        "uk": "творчий",
+        "de": "kreativ",
+        "fr": "créatif",
+        "es": "creativo",
+        "it": "creativo",
+        "pt": "criativo",
+        "pl": "kreatywny",
+        "ru": "творческий",
+        "zh": "有创造力的",
+        "ja": "創造的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "entertainment",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˌentɚˈteɪnmənt/",
+      "definition": "Things like movies and music that people enjoy.",
+      "examples": [
+        "The hotel offers live entertainment."
+      ],
+      "translations": {
+        "uk": "розваги",
+        "de": "Unterhaltung",
+        "fr": "divertissement",
+        "es": "entretenimiento",
+        "it": "intrattenimento",
+        "pt": "entretenimento",
+        "pl": "rozrywka",
+        "ru": "развлечения",
+        "zh": "娱乐",
+        "ja": "娯楽"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "documentary",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˌdɑːkjəˈmentri/",
+      "definition": "A film or program about real events.",
+      "examples": [
+        "We watched a documentary about whales."
+      ],
+      "translations": {
+        "uk": "документальний фільм",
+        "de": "Dokumentarfilm",
+        "fr": "documentaire",
+        "es": "documental",
+        "it": "documentario",
+        "pt": "documentário",
+        "pl": "film dokumentalny",
+        "ru": "документальный фильм",
+        "zh": "纪录片",
+        "ja": "ドキュメンタリー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "celebrity",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/səˈlebrəti/",
+      "definition": "A famous person.",
+      "examples": [
+        "The magazine is full of celebrity news."
+      ],
+      "translations": {
+        "uk": "знаменитість",
+        "de": "Prominenter",
+        "fr": "célébrité",
+        "es": "famoso",
+        "it": "celebrità",
+        "pt": "celebridade",
+        "pl": "celebryta",
+        "ru": "знаменитость",
+        "zh": "名人",
+        "ja": "有名人"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "podcast",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˈpɑːdkæst/",
+      "definition": "An audio program you can download and listen to.",
+      "examples": [
+        "I listen to a podcast on my way to work."
+      ],
+      "translations": {
+        "uk": "подкаст",
+        "de": "Podcast",
+        "fr": "podcast",
+        "es": "pódcast",
+        "it": "podcast",
+        "pt": "podcast",
+        "pl": "podcast",
+        "ru": "подкаст",
+        "zh": "播客",
+        "ja": "ポッドキャスト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "blog",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/blɑːɡ/",
+      "definition": "A website where someone writes regularly about their life or interests.",
+      "examples": [
+        "She writes a travel blog."
+      ],
+      "translations": {
+        "uk": "блог",
+        "de": "Blog",
+        "fr": "blog",
+        "es": "blog",
+        "it": "blog",
+        "pt": "blog",
+        "pl": "blog",
+        "ru": "блог",
+        "zh": "博客",
+        "ja": "ブログ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "publish",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Media",
+      "ipa": "/ˈpʌblɪʃ/",
+      "definition": "To print and sell a book or put something online.",
+      "examples": [
+        "The book was published in 2020."
+      ],
+      "translations": {
+        "uk": "публікувати",
+        "de": "veröffentlichen",
+        "fr": "publier",
+        "es": "publicar",
+        "it": "pubblicare",
+        "pt": "publicar",
+        "pl": "publikować",
+        "ru": "публиковать",
+        "zh": "出版",
+        "ja": "出版する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "heritage",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Culture",
+      "ipa": "/ˈherɪtɪdʒ/",
+      "definition": "The history, traditions and buildings of a country.",
+      "examples": [
+        "The old town is part of our cultural heritage."
+      ],
+      "translations": {
+        "uk": "спадщина",
+        "de": "Erbe",
+        "fr": "patrimoine",
+        "es": "patrimonio",
+        "it": "patrimonio",
+        "pt": "patrimônio",
+        "pl": "dziedzictwo",
+        "ru": "наследие",
+        "zh": "遗产",
+        "ja": "遺産"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "sculpture",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Culture",
+      "ipa": "/ˈskʌlptʃɚ/",
+      "definition": "A piece of art made from stone, wood or metal.",
+      "examples": [
+        "There is a bronze sculpture in the park."
+      ],
+      "translations": {
+        "uk": "скульптура",
+        "de": "Skulptur",
+        "fr": "sculpture",
+        "es": "escultura",
+        "it": "scultura",
+        "pt": "escultura",
+        "pl": "rzeźba",
+        "ru": "скульптура",
+        "zh": "雕塑",
+        "ja": "彫刻"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "viral",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Media",
+      "ipa": "/ˈvaɪrəl/",
+      "definition": "Spreading quickly online.",
+      "examples": [
+        "The video went viral overnight."
+      ],
+      "translations": {
+        "uk": "вірусний",
+        "de": "viral",
+        "fr": "viral",
+        "es": "viral",
+        "it": "virale",
+        "pt": "viral",
+        "pl": "viralowy",
+        "ru": "вирусный",
+        "zh": "爆红的",
+        "ja": "バズった"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "subscribe",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Media",
+      "ipa": "/səbˈskraɪb/",
+      "definition": "To pay or sign up to get something regularly.",
+      "examples": [
+        "Subscribe to our channel!"
+      ],
+      "translations": {
+        "uk": "підписуватися",
+        "de": "abonnieren",
+        "fr": "s'abonner",
+        "es": "suscribirse",
+        "it": "abbonarsi",
+        "pt": "inscrever-se",
+        "pl": "subskrybować",
+        "ru": "подписываться",
+        "zh": "订阅",
+        "ja": "購読する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "masterpiece",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/ˈmæstɚpiːs/",
+      "definition": "A work of art of the highest quality.",
+      "examples": [
+        "The Mona Lisa is a masterpiece."
+      ],
+      "translations": {
+        "uk": "шедевр",
+        "de": "Meisterwerk",
+        "fr": "chef-d'œuvre",
+        "es": "obra maestra",
+        "it": "capolavoro",
+        "pt": "obra-prima",
+        "pl": "arcydzieło",
+        "ru": "шедевр",
+        "zh": "杰作",
+        "ja": "傑作"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "censorship",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Media",
+      "ipa": "/ˈsensɚʃɪp/",
+      "definition": "Stopping people from seeing or hearing some information.",
+      "examples": [
+        "The government was accused of censorship."
+      ],
+      "translations": {
+        "uk": "цензура",
+        "de": "Zensur",
+        "fr": "censure",
+        "es": "censura",
+        "it": "censura",
+        "pt": "censura",
+        "pl": "cenzura",
+        "ru": "цензура",
+        "zh": "审查制度",
+        "ja": "検閲"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    }
+  ]
+}

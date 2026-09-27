@@ -1,0 +1,377 @@
+{
+  "package": "phrasal-verbs-b2",
+  "kind": "words",
+  "words": [
+    {
+      "word": "carry out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˈkæri aʊt/",
+      "definition": "To do a task or plan.",
+      "examples": [
+        "Scientists carried out an experiment."
+      ],
+      "translations": {
+        "uk": "проводити, виконувати",
+        "de": "durchführen",
+        "fr": "effectuer",
+        "es": "llevar a cabo",
+        "it": "condurre",
+        "pt": "realizar",
+        "pl": "przeprowadzać",
+        "ru": "проводить, выполнять",
+        "zh": "进行",
+        "ja": "実施する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "bring about",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/brɪŋ əˈbaʊt/",
+      "definition": "To cause something to happen.",
+      "examples": [
+        "Technology can bring about big changes."
+      ],
+      "translations": {
+        "uk": "спричиняти",
+        "de": "herbeiführen",
+        "fr": "provoquer",
+        "es": "provocar",
+        "it": "provocare",
+        "pt": "provocar",
+        "pl": "spowodować",
+        "ru": "вызывать",
+        "zh": "引起",
+        "ja": "もたらす"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "turn out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/tɝːn aʊt/",
+      "definition": "To happen in a particular way.",
+      "examples": [
+        "The party turned out to be fun."
+      ],
+      "translations": {
+        "uk": "виявитися",
+        "de": "sich herausstellen",
+        "fr": "s'avérer",
+        "es": "resultar",
+        "it": "rivelarsi",
+        "pt": "acabar sendo",
+        "pl": "okazać się",
+        "ru": "оказаться",
+        "zh": "结果是",
+        "ja": "〜だとわかる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "give in",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/ɡɪv ɪn/",
+      "definition": "To finally agree to something after refusing.",
+      "examples": [
+        "Don't give in to pressure."
+      ],
+      "translations": {
+        "uk": "поступитися",
+        "de": "nachgeben",
+        "fr": "céder",
+        "es": "ceder",
+        "it": "cedere",
+        "pt": "ceder",
+        "pl": "ustąpić",
+        "ru": "уступить",
+        "zh": "让步",
+        "ja": "折れる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "take over",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/teɪk ˈoʊvɚ/",
+      "definition": "To take control of something.",
+      "examples": [
+        "She will take over as manager next month."
+      ],
+      "translations": {
+        "uk": "перебирати (керування)",
+        "de": "übernehmen",
+        "fr": "reprendre",
+        "es": "hacerse cargo de",
+        "it": "subentrare",
+        "pt": "assumir",
+        "pl": "przejąć",
+        "ru": "взять на себя",
+        "zh": "接管",
+        "ja": "引き継ぐ"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "back up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Technology",
+      "ipa": "/bæk ʌp/",
+      "definition": "To make a copy of computer files.",
+      "examples": [
+        "Always back up your files."
+      ],
+      "translations": {
+        "uk": "створювати резервну копію",
+        "de": "sichern",
+        "fr": "sauvegarder",
+        "es": "hacer una copia de seguridad",
+        "it": "fare il backup",
+        "pt": "fazer backup",
+        "pl": "zrobić kopię zapasową",
+        "ru": "делать резервную копию",
+        "zh": "备份",
+        "ja": "バックアップする"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "support",
+          "part_of_speech": "phrasal verb",
+          "cefr": "B2",
+          "definition": "To support someone or say that they are right.",
+          "examples": [
+            "My friends backed me up."
+          ],
+          "translations": {
+            "uk": "підтримати",
+            "de": "unterstützen",
+            "fr": "soutenir",
+            "es": "respaldar",
+            "it": "sostenere",
+            "pt": "apoiar",
+            "pl": "poprzeć",
+            "ru": "поддержать",
+            "zh": "支持",
+            "ja": "支持する"
+          }
+        }
+      ]
+    },
+    {
+      "word": "break down",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Transport",
+      "ipa": "/breɪk daʊn/",
+      "definition": "To stop working (about a machine).",
+      "examples": [
+        "Old cars often break down."
+      ],
+      "translations": {
+        "uk": "зламатися",
+        "de": "kaputtgehen",
+        "fr": "tomber en panne",
+        "es": "averiarse",
+        "it": "guastarsi",
+        "pt": "quebrar",
+        "pl": "zepsuć się",
+        "ru": "сломаться",
+        "zh": "出故障",
+        "ja": "故障する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "get rid of",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/ɡet ˈrɪd əv/",
+      "definition": "To throw away or remove something you don't want.",
+      "examples": [
+        "I need to get rid of these old clothes."
+      ],
+      "translations": {
+        "uk": "позбутися",
+        "de": "loswerden",
+        "fr": "se débarrasser de",
+        "es": "deshacerse de",
+        "it": "sbarazzarsi di",
+        "pt": "livrar-se de",
+        "pl": "pozbyć się",
+        "ru": "избавиться от",
+        "zh": "摆脱",
+        "ja": "処分する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "make up",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/meɪk ʌp/",
+      "definition": "To invent a story or excuse.",
+      "examples": [
+        "Don't make up stories."
+      ],
+      "translations": {
+        "uk": "вигадувати",
+        "de": "erfinden",
+        "fr": "inventer",
+        "es": "inventar",
+        "it": "inventare",
+        "pt": "inventar",
+        "pl": "zmyślać",
+        "ru": "выдумывать",
+        "zh": "编造",
+        "ja": "でっち上げる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null,
+      "meanings": [
+        {
+          "key": "reconcile",
+          "part_of_speech": "phrasal verb",
+          "cefr": "B2",
+          "definition": "To become friends again after an argument.",
+          "examples": [
+            "They argued but made up the next day."
+          ],
+          "translations": {
+            "uk": "помиритися",
+            "de": "sich versöhnen",
+            "fr": "se réconcilier",
+            "es": "reconciliarse",
+            "it": "fare pace",
+            "pt": "fazer as pazes",
+            "pl": "pogodzić się",
+            "ru": "помириться",
+            "zh": "和好",
+            "ja": "仲直りする"
+          }
+        }
+      ]
+    },
+    {
+      "word": "fall apart",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/fɔːl əˈpɑːrt/",
+      "definition": "To break into pieces; to stop working well.",
+      "examples": [
+        "My old shoes are falling apart."
+      ],
+      "translations": {
+        "uk": "розвалюватися",
+        "de": "auseinanderfallen",
+        "fr": "tomber en morceaux",
+        "es": "caerse a pedazos",
+        "it": "cadere a pezzi",
+        "pt": "desmoronar",
+        "pl": "rozpadać się",
+        "ru": "разваливаться",
+        "zh": "散架",
+        "ja": "ばらばらになる"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "look down on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Relationships",
+      "ipa": "/lʊk ˈdaʊn ɑːn/",
+      "definition": "To think you are better than someone.",
+      "examples": [
+        "Don't look down on people with less money."
+      ],
+      "translations": {
+        "uk": "дивитися зверхньо на",
+        "de": "herabsehen auf",
+        "fr": "mépriser",
+        "es": "menospreciar",
+        "it": "guardare dall'alto in basso",
+        "pt": "menosprezar",
+        "pl": "patrzeć z góry na",
+        "ru": "смотреть свысока на",
+        "zh": "看不起",
+        "ja": "見下す"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "live up to",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/lɪv ˈʌp tuː/",
+      "definition": "To be as good as expected.",
+      "examples": [
+        "The movie didn't live up to my expectations."
+      ],
+      "translations": {
+        "uk": "виправдовувати (очікування)",
+        "de": "gerecht werden",
+        "fr": "être à la hauteur de",
+        "es": "estar a la altura de",
+        "it": "essere all'altezza di",
+        "pt": "corresponder a",
+        "pl": "sprostać",
+        "ru": "оправдывать (ожидания)",
+        "zh": "达到",
+        "ja": "（期待に）応える"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "stand out",
+      "part_of_speech": "phrasal verb",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/stænd aʊt/",
+      "definition": "To be very easy to notice.",
+      "examples": [
+        "Bright colors stand out."
+      ],
+      "translations": {
+        "uk": "вирізнятися",
+        "de": "herausstechen",
+        "fr": "se démarquer",
+        "es": "destacar",
+        "it": "spiccare",
+        "pt": "destacar-se",
+        "pl": "wyróżniać się",
+        "ru": "выделяться",
+        "zh": "突出",
+        "ja": "目立つ"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    }
+  ]
+}

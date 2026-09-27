@@ -1,0 +1,356 @@
+{
+  "package": "advanced-c1-adjectives",
+  "kind": "words",
+  "words": [
+    {
+      "word": "fragile",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈfrædʒəl/",
+      "definition": "Easily broken.",
+      "examples": [
+        "Be careful, the glass is fragile."
+      ],
+      "translations": {
+        "uk": "крихкий",
+        "de": "zerbrechlich",
+        "fr": "fragile",
+        "es": "frágil",
+        "it": "fragile",
+        "pt": "frágil",
+        "pl": "kruchy",
+        "ru": "хрупкий",
+        "zh": "易碎的",
+        "ja": "壊れやすい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "abundant",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈbʌndənt/",
+      "definition": "Existing in large amounts.",
+      "examples": [
+        "The region has abundant water."
+      ],
+      "translations": {
+        "uk": "рясний",
+        "de": "reichlich",
+        "fr": "abondant",
+        "es": "abundante",
+        "it": "abbondante",
+        "pt": "abundante",
+        "pl": "obfity",
+        "ru": "обильный",
+        "zh": "丰富的",
+        "ja": "豊富な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "accumulate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈkjuːmjəleɪt/",
+      "definition": "To collect a lot of something over time.",
+      "examples": [
+        "Dust accumulates quickly under the bed."
+      ],
+      "translations": {
+        "uk": "накопичувати(ся)",
+        "de": "sich ansammeln",
+        "fr": "s'accumuler",
+        "es": "acumularse",
+        "it": "accumularsi",
+        "pt": "acumular",
+        "pl": "gromadzić się",
+        "ru": "накапливать(ся)",
+        "zh": "积累",
+        "ja": "蓄積する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "coincidence",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/koʊˈɪnsɪdəns/",
+      "definition": "When two things happen at the same time by chance.",
+      "examples": [
+        "What a coincidence! I'm going there too."
+      ],
+      "translations": {
+        "uk": "збіг",
+        "de": "Zufall",
+        "fr": "coïncidence",
+        "es": "coincidencia",
+        "it": "coincidenza",
+        "pt": "coincidência",
+        "pl": "zbieg okoliczności",
+        "ru": "совпадение",
+        "zh": "巧合",
+        "ja": "偶然の一致"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "elaborate",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈlæbərət/",
+      "definition": "Having many details.",
+      "examples": [
+        "They made elaborate plans for the wedding."
+      ],
+      "translations": {
+        "uk": "ретельно продуманий",
+        "de": "ausgefeilt",
+        "fr": "élaboré",
+        "es": "elaborado",
+        "it": "elaborato",
+        "pt": "elaborado",
+        "pl": "wymyślny",
+        "ru": "тщательно продуманный",
+        "zh": "精心制作的",
+        "ja": "手の込んだ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "excessive",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪkˈsesɪv/",
+      "definition": "Too much.",
+      "examples": [
+        "Excessive screen time is bad for kids."
+      ],
+      "translations": {
+        "uk": "надмірний",
+        "de": "übermäßig",
+        "fr": "excessif",
+        "es": "excesivo",
+        "it": "eccessivo",
+        "pt": "excessivo",
+        "pl": "nadmierny",
+        "ru": "чрезмерный",
+        "zh": "过度的",
+        "ja": "過度の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hostile",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈhɑːstəl/",
+      "definition": "Unfriendly and aggressive.",
+      "examples": [
+        "The crowd was hostile."
+      ],
+      "translations": {
+        "uk": "ворожий",
+        "de": "feindselig",
+        "fr": "hostile",
+        "es": "hostil",
+        "it": "ostile",
+        "pt": "hostil",
+        "pl": "wrogi",
+        "ru": "враждебный",
+        "zh": "敌对的",
+        "ja": "敵対的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "immense",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈmens/",
+      "definition": "Extremely large.",
+      "examples": [
+        "The project was an immense success."
+      ],
+      "translations": {
+        "uk": "величезний",
+        "de": "immens",
+        "fr": "immense",
+        "es": "inmenso",
+        "it": "immenso",
+        "pt": "imenso",
+        "pl": "ogromny",
+        "ru": "огромный",
+        "zh": "巨大的",
+        "ja": "莫大な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "plausible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈplɔːzəbəl/",
+      "definition": "Seeming likely to be true.",
+      "examples": [
+        "That's a plausible explanation."
+      ],
+      "translations": {
+        "uk": "правдоподібний",
+        "de": "plausibel",
+        "fr": "plausible",
+        "es": "verosímil",
+        "it": "plausibile",
+        "pt": "plausível",
+        "pl": "wiarygodny",
+        "ru": "правдоподобный",
+        "zh": "似乎合理的",
+        "ja": "もっともらしい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spontaneous",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/spɑːnˈteɪniəs/",
+      "definition": "Done without planning.",
+      "examples": [
+        "We took a spontaneous trip to the beach."
+      ],
+      "translations": {
+        "uk": "спонтанний",
+        "de": "spontan",
+        "fr": "spontané",
+        "es": "espontáneo",
+        "it": "spontaneo",
+        "pt": "espontâneo",
+        "pl": "spontaniczny",
+        "ru": "спонтанный",
+        "zh": "自发的",
+        "ja": "自発的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "subtle",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈsʌtəl/",
+      "definition": "Not obvious; small and hard to notice.",
+      "examples": [
+        "There is a subtle difference between the two words."
+      ],
+      "translations": {
+        "uk": "ледь помітний",
+        "de": "subtil",
+        "fr": "subtil",
+        "es": "sutil",
+        "it": "sottile",
+        "pt": "sutil",
+        "pl": "subtelny",
+        "ru": "едва заметный",
+        "zh": "微妙的",
+        "ja": "微妙な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "versatile",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈvɝːsətəl/",
+      "definition": "Able to do many different things.",
+      "examples": [
+        "She is a versatile actress."
+      ],
+      "translations": {
+        "uk": "різнобічний",
+        "de": "vielseitig",
+        "fr": "polyvalent",
+        "es": "versátil",
+        "it": "versatile",
+        "pt": "versátil",
+        "pl": "wszechstronny",
+        "ru": "разносторонний",
+        "zh": "多才的",
+        "ja": "多才な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wary",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈweri/",
+      "definition": "Careful because something might be dangerous.",
+      "examples": [
+        "Be wary of strangers online."
+      ],
+      "translations": {
+        "uk": "обережний",
+        "de": "vorsichtig",
+        "fr": "méfiant",
+        "es": "cauteloso",
+        "it": "diffidente",
+        "pt": "cauteloso",
+        "pl": "ostrożny",
+        "ru": "настороженный",
+        "zh": "谨慎的",
+        "ja": "用心深い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "obsolete",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɑːbsəˈliːt/",
+      "definition": "No longer used because something newer exists.",
+      "examples": [
+        "Fax machines are almost obsolete."
+      ],
+      "translations": {
+        "uk": "застарілий",
+        "de": "veraltet",
+        "fr": "obsolète",
+        "es": "obsoleto",
+        "it": "obsoleto",
+        "pt": "obsoleto",
+        "pl": "przestarzały",
+        "ru": "устаревший",
+        "zh": "过时的",
+        "ja": "時代遅れの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
