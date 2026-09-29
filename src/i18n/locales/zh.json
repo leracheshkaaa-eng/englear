@@ -457,7 +457,8 @@
     "unpublish": "取消发布",
     "practiceCheckbox": "练习材料（带问题的文章或录音）",
     "materialText": "文章。段落之间空一行。",
-    "materialScript": "脚本，每行一句台词：\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "脚本，每行一句台词：\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "语法主题"
   },
   "partsOfSpeech": {
     "noun": "名词",
@@ -577,7 +578,8 @@
     "chooseSkill": "技能",
     "chooseFocus": "学习内容",
     "focusAll": "全部",
-    "practiceEmpty": "本级别的文章和播客正在准备中——即将上线！"
+    "practiceEmpty": "本级别的文章和播客正在准备中——即将上线！",
+    "allGrammar": "全部语法主题"
   },
   "teacherSets": {
     "newSet": "新建卡片组",

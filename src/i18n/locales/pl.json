@@ -487,7 +487,8 @@
     "unpublish": "Wycofaj publikację",
     "practiceCheckbox": "Materiał do „Praktyki” (tekst lub nagranie z pytaniami)",
     "materialText": "Tekst. Akapity oddzielaj pustą linią.",
-    "materialScript": "Scenariusz, jedna kwestia w linii:\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "Scenariusz, jedna kwestia w linii:\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Temat gramatyczny"
   },
   "partsOfSpeech": {
     "noun": "rzeczownik",
@@ -607,7 +608,8 @@
     "chooseSkill": "Umiejętność",
     "chooseFocus": "Czego się uczyć",
     "focusAll": "Wszystko",
-    "practiceEmpty": "Teksty i podcasty na ten poziom są w przygotowaniu — pojawią się wkrótce!"
+    "practiceEmpty": "Teksty i podcasty na ten poziom są w przygotowaniu — pojawią się wkrótce!",
+    "allGrammar": "Wszystkie tematy gramatyczne"
   },
   "teacherSets": {
     "newSet": "Nowy zestaw fiszek",

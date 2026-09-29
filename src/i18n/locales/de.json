@@ -467,7 +467,8 @@
     "unpublish": "Zurückziehen",
     "practiceCheckbox": "Übungsmaterial (Text oder Aufnahme mit Fragen)",
     "materialText": "Der Text. Absätze durch eine Leerzeile trennen.",
-    "materialScript": "Das Skript, eine Äußerung pro Zeile:\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "Das Skript, eine Äußerung pro Zeile:\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Grammatikthema"
   },
   "partsOfSpeech": {
     "noun": "Substantiv",
@@ -587,7 +588,8 @@
     "chooseSkill": "Fertigkeit",
     "chooseFocus": "Was lernen",
     "focusAll": "Alles",
-    "practiceEmpty": "Texte und Podcasts für dieses Niveau werden vorbereitet — bald geht es los!"
+    "practiceEmpty": "Texte und Podcasts für dieses Niveau werden vorbereitet — bald geht es los!",
+    "allGrammar": "Alle Grammatikthemen"
   },
   "teacherSets": {
     "newSet": "Neues Kartenset",

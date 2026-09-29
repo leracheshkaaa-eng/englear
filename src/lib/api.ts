@@ -210,6 +210,26 @@ export async function getLesson(id: string, opts: { withSolutions?: boolean } = 
   return { ...l, exercises: rows.map((e) => rowToExercise({ ...e, answer: e.answer ?? '' })) } as Lesson
 }
 
+/** A grammar topic of the library (A1–C2); titles in every interface language. */
+export type GrammarTopic = { id: string; code: string; cefr: string | null; titles: Record<string, string>; position: number }
+
+let grammarCache: Promise<GrammarTopic[]> | null = null
+/** All grammar topics in course order (loaded once). */
+export function grammarTopics(): Promise<GrammarTopic[]> {
+  grammarCache ??= (async () => {
+    const { data, error } = await supabase.from('grammar_topics').select('id, code, cefr, titles, position').order('position')
+    if (error) throw error
+    return (data ?? []) as GrammarTopic[]
+  })().catch((e) => {
+    grammarCache = null
+    throw e
+  })
+  return grammarCache
+}
+
+/** The title in the interface language (English if missing). */
+export const grammarTitle = (g: Pick<GrammarTopic, 'titles' | 'code'>, lang: string) => g.titles[lang] ?? g.titles.en ?? g.code
+
 /** The text / script of a practice lesson (null for ordinary lessons). */
 export async function getMaterial(lessonId: string): Promise<Material | null> {
   const { data, error } = await supabase.from('lesson_materials').select('*').eq('lesson_id', lessonId).maybeSingle()
@@ -251,6 +271,7 @@ export type NewLesson = {
   exercises: Exercise[]
   /** default 'lesson' */
   kind?: LessonKind
+  grammar_topic_id?: string | null
 }
 
 const lessonRow = (input: Partial<NewLesson>) => {

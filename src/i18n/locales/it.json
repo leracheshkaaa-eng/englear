@@ -467,7 +467,8 @@
     "unpublish": "Ritira",
     "practiceCheckbox": "Materiale di pratica (testo o registrazione con domande)",
     "materialText": "Il testo. Separa i paragrafi con una riga vuota.",
-    "materialScript": "Il copione, una battuta per riga:\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "Il copione, una battuta per riga:\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Argomento di grammatica"
   },
   "partsOfSpeech": {
     "noun": "sostantivo",
@@ -587,7 +588,8 @@
     "chooseSkill": "Abilità",
     "chooseFocus": "Cosa imparare",
     "focusAll": "Tutto",
-    "practiceEmpty": "I testi e i podcast di questo livello sono in preparazione: arriveranno presto!"
+    "practiceEmpty": "I testi e i podcast di questo livello sono in preparazione: arriveranno presto!",
+    "allGrammar": "Tutti gli argomenti di grammatica"
   },
   "teacherSets": {
     "newSet": "Nuovo set di carte",

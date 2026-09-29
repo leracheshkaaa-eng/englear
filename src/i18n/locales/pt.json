@@ -467,7 +467,8 @@
     "unpublish": "Despublicar",
     "practiceCheckbox": "Material de prática (texto ou gravação com perguntas)",
     "materialText": "O texto. Separe os parágrafos com uma linha vazia.",
-    "materialScript": "O roteiro, uma fala por linha:\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "O roteiro, uma fala por linha:\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Tema de gramática"
   },
   "partsOfSpeech": {
     "noun": "substantivo",
@@ -587,7 +588,8 @@
     "chooseSkill": "Habilidade",
     "chooseFocus": "O que aprender",
     "focusAll": "Tudo",
-    "practiceEmpty": "Os textos e podcasts deste nível estão sendo preparados — em breve estarão aqui!"
+    "practiceEmpty": "Os textos e podcasts deste nível estão sendo preparados — em breve estarão aqui!",
+    "allGrammar": "Todos os temas de gramática"
   },
   "teacherSets": {
     "newSet": "Novo conjunto de cartões",

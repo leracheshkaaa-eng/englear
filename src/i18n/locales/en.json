@@ -467,7 +467,8 @@
     "unpublish": "Unpublish",
     "practiceCheckbox": "Practice material (a text or recording with questions)",
     "materialText": "The text. Separate paragraphs with an empty line.",
-    "materialScript": "The script, one line per line of speech:\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "The script, one line per line of speech:\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Grammar topic"
   },
   "partsOfSpeech": {
     "noun": "noun",
@@ -587,7 +588,8 @@
     "chooseSkill": "Skill",
     "chooseFocus": "What to learn",
     "focusAll": "Everything",
-    "practiceEmpty": "Texts and podcasts for this level are being prepared — they are coming soon!"
+    "practiceEmpty": "Texts and podcasts for this level are being prepared — they are coming soon!",
+    "allGrammar": "All grammar topics"
   },
   "teacherSets": {
     "newSet": "New card set",

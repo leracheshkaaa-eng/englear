@@ -457,7 +457,8 @@
     "unpublish": "非公開にする",
     "practiceCheckbox": "練習用の教材（質問付きの本文または音声）",
     "materialText": "本文。段落の間は空行で区切ってください。",
-    "materialScript": "スクリプト（1 行に 1 つのせりふ）：\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "スクリプト（1 行に 1 つのせりふ）：\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "文法トピック"
   },
   "partsOfSpeech": {
     "noun": "名詞",
@@ -577,7 +578,8 @@
     "chooseSkill": "スキル",
     "chooseFocus": "学ぶ内容",
     "focusAll": "すべて",
-    "practiceEmpty": "このレベルの記事とポッドキャストは準備中です。もうすぐ公開されます！"
+    "practiceEmpty": "このレベルの記事とポッドキャストは準備中です。もうすぐ公開されます！",
+    "allGrammar": "すべての文法トピック"
   },
   "teacherSets": {
     "newSet": "新しいカードセット",

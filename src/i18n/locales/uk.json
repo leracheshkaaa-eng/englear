@@ -487,7 +487,8 @@
     "unpublish": "Зняти з публікації",
     "practiceCheckbox": "Матеріал для «Практики» (текст або запис із запитаннями)",
     "materialText": "Текст. Абзаци розділяйте порожнім рядком.",
-    "materialScript": "Сценарій, по репліці на рядок:\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "Сценарій, по репліці на рядок:\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Тема граматики"
   },
   "partsOfSpeech": {
     "noun": "іменник",
@@ -607,7 +608,8 @@
     "chooseSkill": "Навичка",
     "chooseFocus": "Що вивчати",
     "focusAll": "Усе",
-    "practiceEmpty": "Тексти й подкасти для цього рівня готуються — скоро з’являться!"
+    "practiceEmpty": "Тексти й подкасти для цього рівня готуються — скоро з’являться!",
+    "allGrammar": "Усі теми граматики"
   },
   "teacherSets": {
     "newSet": "Новий набір карток",

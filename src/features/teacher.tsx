@@ -190,7 +190,7 @@ const chipCls = (on: boolean) =>
   }`
 
 function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onClose: () => void; onSaved: () => void }) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const { userId, role } = useAuth()
   const isAdmin = role === 'admin'
   const [title, setTitle] = useState(lesson?.title ?? '')
@@ -198,6 +198,11 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
   const [cefr, setCefr] = useState<string>(lesson?.cefr ?? 'A1')
   const [skill, setSkill] = useState<api.LessonSkill>(lesson?.skill ?? 'mixed')
   const [topic, setTopic] = useState(lesson?.topic ?? '')
+  const [grammarTopic, setGrammarTopic] = useState(lesson?.grammar_topic_id ?? '')
+  const [grammarList, setGrammarList] = useState<api.GrammarTopic[]>([])
+  useEffect(() => {
+    api.grammarTopics().then(setGrammarList).catch(() => setGrammarList([]))
+  }, [])
   const [library, setLibrary] = useState(lesson ? lesson.scope === 'library' : false)
   const [sequence, setSequence] = useState(lesson?.sequence ?? 0)
   const [published, setPublished] = useState(lesson ? lesson.status === 'published' : false)
@@ -280,6 +285,7 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
           return (ex.type === 'order' || ex.type === 'match') && !ex.prompt && old?.type === ex.type ? { ...ex, prompt: old.prompt } : ex
         }),
         kind: practice ? 'practice' : 'lesson',
+        grammar_topic_id: skill === 'grammar' && grammarTopic ? grammarTopic : null,
       }
       let id = lesson?.id
       if (lesson) {
@@ -341,6 +347,20 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
               </select>
             </label>
           </div>
+
+          {skill === 'grammar' && (
+            <label className="block text-sm font-semibold text-mute">
+              {t('teacher.grammarTopic')}
+              <select value={grammarTopic} onChange={(e) => setGrammarTopic(e.target.value)} className={`${inputCls} mt-1 w-full font-normal text-ink`}>
+                <option value="">{t('teacher.noTopic')}</option>
+                {grammarList.map((g) => (
+                  <option key={g.id} value={g.id}>
+                    {g.cefr} · {api.grammarTitle(g, i18n.language)}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
 
           <div className="flex flex-wrap items-center gap-4">
             {isAdmin && (

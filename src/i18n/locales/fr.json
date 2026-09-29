@@ -467,7 +467,8 @@
     "unpublish": "Dépublier",
     "practiceCheckbox": "Support de pratique (texte ou enregistrement avec questions)",
     "materialText": "Le texte. Séparez les paragraphes par une ligne vide.",
-    "materialScript": "Le script, une réplique par ligne :\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "Le script, une réplique par ligne :\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Point de grammaire"
   },
   "partsOfSpeech": {
     "noun": "nom",
@@ -587,7 +588,8 @@
     "chooseSkill": "Compétence",
     "chooseFocus": "Quoi apprendre",
     "focusAll": "Tout",
-    "practiceEmpty": "Les textes et podcasts de ce niveau sont en préparation — ils arrivent bientôt !"
+    "practiceEmpty": "Les textes et podcasts de ce niveau sont en préparation — ils arrivent bientôt !",
+    "allGrammar": "Tous les points de grammaire"
   },
   "teacherSets": {
     "newSet": "Nouveau jeu de cartes",

@@ -487,7 +487,8 @@
     "unpublish": "Снять с публикации",
     "practiceCheckbox": "Материал для «Практики» (текст или запись с вопросами)",
     "materialText": "Текст. Абзацы разделяйте пустой строкой.",
-    "materialScript": "Сценарий, по реплике на строку:\nAnna: Hi, Ben!\nBen: Hello!"
+    "materialScript": "Сценарий, по реплике на строку:\nAnna: Hi, Ben!\nBen: Hello!",
+    "grammarTopic": "Тема грамматики"
   },
   "partsOfSpeech": {
     "noun": "существительное",
@@ -607,7 +608,8 @@
     "chooseSkill": "Навык",
     "chooseFocus": "Что изучать",
     "focusAll": "Всё",
-    "practiceEmpty": "Тексты и подкасты для этого уровня готовятся — скоро появятся!"
+    "practiceEmpty": "Тексты и подкасты для этого уровня готовятся — скоро появятся!",
+    "allGrammar": "Все темы грамматики"
   },
   "teacherSets": {
     "newSet": "Новый набор карточек",

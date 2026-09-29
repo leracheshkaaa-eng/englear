@@ -959,6 +959,12 @@ export function LessonsCatalog({
   const [level, setLevel] = useState(userId && (CEFR_LEVELS as readonly string[]).includes(settings.english_level) ? settings.english_level : '')
   const [focus, setFocus] = useState<Focus>('all')
   const [skill, setSkill] = useState<string>('reading')
+  const [grammar, setGrammar] = useState('') // grammar topic id
+  const [grammarList, setGrammarList] = useState<api.GrammarTopic[]>([])
+  useEffect(() => {
+    api.grammarTopics().then(setGrammarList).catch(() => setGrammarList([]))
+  }, [])
+  const grammarById = new Map(grammarList.map((g) => [g.id, g]))
   const [topic, setTopic] = useState('')
   const [q, setQ] = useState('')
   const [lessons, setLessons] = useState<api.CatalogLesson[]>([])
@@ -985,6 +991,7 @@ export function LessonsCatalog({
     kind,
     cefr: level ? [level] : undefined,
     skills: practice ? [skill] : FOCUS_SKILLS[focus],
+    grammarTopicId: !practice && focus === 'grammar' ? grammar : undefined,
     topic,
     q,
   })
@@ -1024,9 +1031,9 @@ export function LessonsCatalog({
     const timer = setTimeout(load, q ? 250 : 0) // debounce typing
     return () => clearTimeout(timer)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [kind, scope, level, focus, skill, topic, q, userId, i18n.language])
+  }, [kind, scope, level, focus, skill, grammar, topic, q, userId, i18n.language])
 
-  const filtered = !!(topic || q.trim())
+  const filtered = !!(topic || q.trim() || (focus === 'grammar' && grammar))
   const teacherTabLabel = role === 'student' ? t('library.fromTeacher') : t('teacher.tabs.lessons')
   const pill = (on: boolean) => `rounded-full px-4 py-1.5 transition-colors ${on ? 'bg-plum text-paper' : 'text-mute hover:text-ink'}`
   const chip = (on: boolean) =>
@@ -1077,6 +1084,18 @@ export function LessonsCatalog({
       </div>
 
       <div className="mb-6 flex flex-wrap gap-2">
+        {!practice && focus === 'grammar' && (
+          <select value={grammar} onChange={(e) => setGrammar(e.target.value)} className={`${inputCls} min-w-0 max-w-full`}>
+            <option value="">{t('library.allGrammar')}</option>
+            {grammarList
+              .filter((g) => !level || g.cefr === level)
+              .map((g) => (
+                <option key={g.id} value={g.id}>
+                  {g.cefr} · {api.grammarTitle(g, i18n.language)}
+                </option>
+              ))}
+          </select>
+        )}
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('library.search')} className={`${inputCls} min-w-0 flex-1`} />
         <select value={topic} onChange={(e) => setTopic(e.target.value)} className={inputCls}>
           <option value="">{t('dictionary.allTopics')}</option>
@@ -1099,7 +1118,7 @@ export function LessonsCatalog({
           <p className="mb-3 text-sm text-mute">{t('library.count', { count: total })}</p>
           <div className="grid gap-4">
             {lessons.map((l) => (
-              <LessonCard key={l.id} lesson={l} progress={progress[l.id]} pass={passes?.[l.id]} onOpen={() => onOpen(l.id)} />
+              <LessonCard key={l.id} lesson={l} grammar={l.grammar_topic_id ? grammarById.get(l.grammar_topic_id) : undefined} progress={progress[l.id]} pass={passes?.[l.id]} onOpen={() => onOpen(l.id)} />
             ))}
           </div>
           {lessons.length < total && (
@@ -1117,16 +1136,18 @@ export function LessonsCatalog({
 
 function LessonCard({
   lesson: l,
+  grammar,
   progress: pr,
   pass: s,
   onOpen,
 }: {
   lesson: api.CatalogLesson
+  grammar?: api.GrammarTopic
   progress?: api.LessonProgress
   pass?: PassSummary
   onOpen: () => void
 }) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const done = pr?.status === 'completed' || !!s?.last
   // last result as N/M; lessons finished before passes existed only have a percent
   const lastResult = s?.last ? `${s.last.correct_count ?? 0}/${s.last.total_count ?? 0}` : pr?.status === 'completed' ? `${pr.score}%` : null
@@ -1153,7 +1174,9 @@ function LessonCard({
           )}
         </div>
         {l.description && <p className="mt-1 text-mute">{l.description}</p>}
-        {(l.topic || length) && <p className="mt-1 text-xs text-mute">{[l.topic && topicLabel(l.topic), length].filter(Boolean).join(' · ')}</p>}
+        {(grammar || l.topic || length) && (
+          <p className="mt-1 text-xs text-mute">{[grammar && api.grammarTitle(grammar, i18n.language), l.topic && topicLabel(l.topic), length].filter(Boolean).join(' · ')}</p>
+        )}
         {done && lastResult && <p className="mt-1 text-sm font-semibold text-[var(--color-good)]">{t('lessons.lastResult', { result: lastResult })}</p>}
         {open ? (
           <p className="mt-1 text-sm text-plum">
