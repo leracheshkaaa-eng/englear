@@ -464,7 +464,10 @@
     "syntaxOrder": "scritto nell’ordine giusto — lo studente lo vede mescolato",
     "syntaxMatch": "coppie; lo studente vede la colonna destra mescolata",
     "publish": "Pubblica",
-    "unpublish": "Ritira"
+    "unpublish": "Ritira",
+    "practiceCheckbox": "Materiale di pratica (testo o registrazione con domande)",
+    "materialText": "Il testo. Separa i paragrafi con una riga vuota.",
+    "materialScript": "Il copione, una battuta per riga:\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "sostantivo",

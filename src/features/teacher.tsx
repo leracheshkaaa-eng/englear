@@ -9,6 +9,7 @@ import { CEFR_LEVELS, TOPICS, lessonLevelCode, lessonSkillLabel, topicLabel } fr
 import { errorMessage } from '../i18n/errors'
 import { lessonWords } from './lessons'
 import { TeacherSets } from './teacherSets'
+import { materialTypeLabel } from './practice'
 
 const LEGACY_CEFR = { beginner: 'A1', intermediate: 'B1', advanced: 'C1' } as const
 
@@ -204,6 +205,24 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
   const [saving, setSaving] = useState(false)
   const [err, setErr] = useState('')
 
+  // Practice (admin): the lesson is a reading text / listening script with questions
+  const [kind, setKind] = useState<api.LessonKind>(lesson?.kind ?? 'lesson')
+  const [materialType, setMaterialType] = useState<api.MaterialType>('article')
+  const [materialText, setMaterialText] = useState('') // reading: paragraphs; listening: "Speaker: line" per line
+  const practiceSkill = skill === 'reading' || skill === 'listening'
+  const practice = kind === 'practice' && practiceSkill
+  useEffect(() => {
+    if (lesson?.kind !== 'practice') return
+    api
+      .getMaterial(lesson.id)
+      .then((m) => {
+        if (!m) return
+        setMaterialType(m.material_type)
+        setMaterialText(m.segments.length ? m.segments.map((x) => (x.speaker ? `${x.speaker}: ${x.text}` : x.text)).join('\n') : m.body)
+      })
+      .catch(() => {})
+  }, [lesson])
+
   // dictionary words linked to the lesson
   const [words, setWords] = useState<api.Word[]>([])
   const [picked, setPicked] = useState<Set<string>>(new Set())
@@ -255,7 +274,12 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
         scope: isAdmin && library ? 'library' : 'teacher',
         status: published ? 'published' : lesson?.status === 'review' ? 'review' : 'draft',
         sequence: isAdmin ? sequence : (lesson?.sequence ?? 0),
-        exercises: preview,
+        // the editor syntax has no titles for order / match tasks: keep the ones the lesson had
+        exercises: preview.map((ex, i) => {
+          const old = lesson?.exercises[i]
+          return (ex.type === 'order' || ex.type === 'match') && !ex.prompt && old?.type === ex.type ? { ...ex, prompt: old.prompt } : ex
+        }),
+        kind: practice ? 'practice' : 'lesson',
       }
       let id = lesson?.id
       if (lesson) {
@@ -270,6 +294,7 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
         id = await api.createLesson(userId, payload)
       }
       if (id) await api.setLessonWords(id, [...picked])
+      if (id && practice) await api.saveMaterial(id, materialFromText(materialType, skill, materialText))
       onSaved()
     } catch (e) {
       setErr(errorMessage(e))
@@ -335,6 +360,33 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
               {t('teacher.publishedCheckbox')}
             </label>
           </div>
+
+          {isAdmin && practiceSkill && (
+            <div className="space-y-3 rounded-2xl border border-line bg-paper p-4">
+              <label className="flex items-center gap-2 text-sm font-semibold">
+                <input type="checkbox" checked={kind === 'practice'} onChange={(e) => setKind(e.target.checked ? 'practice' : 'lesson')} />
+                {t('teacher.practiceCheckbox')}
+              </label>
+              {practice && (
+                <>
+                  <select value={materialType} onChange={(e) => setMaterialType(e.target.value as api.MaterialType)} className={inputCls}>
+                    {(skill === 'listening' ? LISTENING_TYPES : READING_TYPES).map((mt) => (
+                      <option key={mt} value={mt}>
+                        {materialTypeLabel(mt)}
+                      </option>
+                    ))}
+                  </select>
+                  <textarea
+                    value={materialText}
+                    onChange={(e) => setMaterialText(e.target.value)}
+                    rows={10}
+                    placeholder={skill === 'listening' ? t('teacher.materialScript') : t('teacher.materialText')}
+                    className={`${inputCls} w-full text-sm leading-relaxed`}
+                  />
+                </>
+              )}
+            </div>
+          )}
 
           <textarea
             value={raw}
@@ -442,6 +494,24 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
       </div>
     </div>
   )
+}
+
+const READING_TYPES: api.MaterialType[] = ['article', 'story', 'blog', 'email', 'letter', 'notice', 'advert', 'review', 'interview_text']
+const LISTENING_TYPES: api.MaterialType[] = ['podcast', 'dialogue', 'interview', 'announcement', 'monologue', 'radio']
+
+/** Reading: the text as it is. Listening: one "Speaker: line" per line (the speaker is optional). */
+function materialFromText(type: api.MaterialType, skill: string, text: string): Omit<api.Material, 'lesson_id'> {
+  const words = (text.match(/[A-Za-z0-9][A-Za-z0-9'’-]*/g) ?? []).length
+  if (skill !== 'listening') return { material_type: type, body: text.trim(), segments: [], audio_url: '', word_count: words, duration_sec: 0 }
+  const segments = text
+    .split('\n')
+    .map((l) => l.trim())
+    .filter(Boolean)
+    .map((l) => {
+      const m = l.match(/^([^:]{1,30}):\s*(.+)$/)
+      return m ? { speaker: m[1].trim(), text: m[2].trim() } : { speaker: '', text: l }
+    })
+  return { material_type: type, body: '', segments, audio_url: '', word_count: words, duration_sec: Math.round((words / 130) * 60) }
 }
 
 function serialize(exs: Exercise[]): string {

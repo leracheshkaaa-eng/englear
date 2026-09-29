@@ -385,6 +385,7 @@ export function LessonPlayer({
   const [answers, setAnswers] = useState<Record<string, Ans>>({})
   // correct answers as text, known after a check (and for the whole lesson once it is completed)
   const [solutions, setSolutions] = useState<Record<string, string>>({})
+  const [reviewExs, setReviewExs] = useState<Exercise[] | null>(null)
   const [outcome, setOutcome] = useState<Outcome | null>(null)
   const [reviewFilter, setReviewFilter] = useState<'all' | 'mistakes'>('all')
   const [error, setError] = useState('')
@@ -415,9 +416,15 @@ export function LessonPlayer({
 
   async function showOutcome(s: PassSummary, alive: () => boolean) {
     const last = s.last!
-    const [saved, sol] = await Promise.all([api.passAnswers([last.id]), api.lessonSolutions(lesson.id).catch(() => ({}))])
+    const [saved, sol, solved] = await Promise.all([
+      api.passAnswers([last.id]),
+      api.lessonSolutions(lesson.id).catch(() => ({})),
+      // the exercises with their answers, for the review of a completed lesson
+      api.getLesson(lesson.id, { withSolutions: true }).then((l) => l?.exercises ?? null).catch(() => null),
+    ])
     if (!alive()) return
     setSolutions(sol)
+    setReviewExs(solved)
     setOutcome({
       correct: last.correct_count ?? 0,
       total: last.total_count ?? 0,
@@ -652,7 +659,7 @@ export function LessonPlayer({
         {!outcome ? (
           <p className="mt-6 text-sm text-warn">{error}</p>
         ) : phase === 'review' ? (
-          <AnswersReview exs={exs} answers={outcome.answers ?? {}} solutions={solutions} initialFilter={reviewFilter} onBack={() => setPhase('result')} />
+          <AnswersReview exs={reviewExs?.length === exs.length ? reviewExs : exs} answers={outcome.answers ?? {}} solutions={solutions} initialFilter={reviewFilter} onBack={() => setPhase('result')} />
         ) : (
           <LessonResult
             outcome={outcome}
@@ -880,9 +887,10 @@ function AnswersReview({
           <p className="mt-2 font-body">{promptText(ex)}</p>
           {ex.type === 'dialogue' ? (
             ex.lines.map((l, li) => {
-              if (!l.answer) return null
+              if (l.answer === undefined) return null
               const given = (a?.response.blanks ?? {})[li]?.trim() ?? ''
-              const blankOk = given !== '' && norm(given) === norm(l.answer)
+              // the answer of a gap is known after completion; a guest only sees the whole verdict
+              const blankOk = given !== '' && (l.answer ? norm(given) === norm(l.answer) : ok)
               return (
                 <p key={li} className="mt-2 text-sm">
                   {t('review.blankInLine', { speaker: l.speaker })}{' '}

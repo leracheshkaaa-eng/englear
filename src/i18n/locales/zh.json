@@ -454,7 +454,10 @@
     "syntaxOrder": "按正确顺序书写——学生看到的是打乱的顺序",
     "syntaxMatch": "配对；学生看到的右栏是打乱的",
     "publish": "发布",
-    "unpublish": "取消发布"
+    "unpublish": "取消发布",
+    "practiceCheckbox": "练习材料（带问题的文章或录音）",
+    "materialText": "文章。段落之间空一行。",
+    "materialScript": "脚本，每行一句台词：\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "名词",

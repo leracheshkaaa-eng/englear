@@ -464,7 +464,10 @@
     "syntaxOrder": "escrito en el orden correcto — el alumno lo ve desordenado",
     "syntaxMatch": "parejas; el alumno ve la columna derecha desordenada",
     "publish": "Publicar",
-    "unpublish": "Despublicar"
+    "unpublish": "Despublicar",
+    "practiceCheckbox": "Material de práctica (texto o grabación con preguntas)",
+    "materialText": "El texto. Separa los párrafos con una línea vacía.",
+    "materialScript": "El guion, una intervención por línea:\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "sustantivo",

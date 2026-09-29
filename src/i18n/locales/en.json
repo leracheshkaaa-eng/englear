@@ -464,7 +464,10 @@
     "syntaxOrder": "written in the right order — students see it mixed up",
     "syntaxMatch": "pairs; students see the right column mixed up",
     "publish": "Publish",
-    "unpublish": "Unpublish"
+    "unpublish": "Unpublish",
+    "practiceCheckbox": "Practice material (a text or recording with questions)",
+    "materialText": "The text. Separate paragraphs with an empty line.",
+    "materialScript": "The script, one line per line of speech:\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "noun",

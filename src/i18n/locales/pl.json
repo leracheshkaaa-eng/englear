@@ -484,7 +484,10 @@
     "syntaxOrder": "zapisane we właściwej kolejności — uczeń widzi je pomieszane",
     "syntaxMatch": "pary; uczeń widzi prawą kolumnę pomieszaną",
     "publish": "Opublikuj",
-    "unpublish": "Wycofaj publikację"
+    "unpublish": "Wycofaj publikację",
+    "practiceCheckbox": "Materiał do „Praktyki” (tekst lub nagranie z pytaniami)",
+    "materialText": "Tekst. Akapity oddzielaj pustą linią.",
+    "materialScript": "Scenariusz, jedna kwestia w linii:\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "rzeczownik",

@@ -464,7 +464,10 @@
     "syntaxOrder": "in der richtigen Reihenfolge schreiben — Schüler sehen sie gemischt",
     "syntaxMatch": "Paare; die rechte Spalte sehen Schüler gemischt",
     "publish": "Veröffentlichen",
-    "unpublish": "Zurückziehen"
+    "unpublish": "Zurückziehen",
+    "practiceCheckbox": "Übungsmaterial (Text oder Aufnahme mit Fragen)",
+    "materialText": "Der Text. Absätze durch eine Leerzeile trennen.",
+    "materialScript": "Das Skript, eine Äußerung pro Zeile:\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "Substantiv",

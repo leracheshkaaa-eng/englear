@@ -464,7 +464,10 @@
     "syntaxOrder": "écrit dans le bon ordre — les élèves le voient mélangé",
     "syntaxMatch": "paires ; les élèves voient la colonne de droite mélangée",
     "publish": "Publier",
-    "unpublish": "Dépublier"
+    "unpublish": "Dépublier",
+    "practiceCheckbox": "Support de pratique (texte ou enregistrement avec questions)",
+    "materialText": "Le texte. Séparez les paragraphes par une ligne vide.",
+    "materialScript": "Le script, une réplique par ligne :\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "nom",

@@ -464,7 +464,10 @@
     "syntaxOrder": "escrito na ordem certa — o aluno vê embaralhado",
     "syntaxMatch": "pares; o aluno vê a coluna da direita embaralhada",
     "publish": "Publicar",
-    "unpublish": "Despublicar"
+    "unpublish": "Despublicar",
+    "practiceCheckbox": "Material de prática (texto ou gravação com perguntas)",
+    "materialText": "O texto. Separe os parágrafos com uma linha vazia.",
+    "materialScript": "O roteiro, uma fala por linha:\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "substantivo",

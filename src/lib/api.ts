@@ -187,7 +187,8 @@ export async function lessonSummaries(ids: string[]): Promise<LessonSummary[]> {
 
 /** Exercise columns a player needs. The answers (answer, solution) are not read here:
  *  the server checks answers, and editors get them through lesson_solutions(). */
-const EXERCISE_PUBLIC = 'id, lesson_id, type, position, prompt, options, explanation, dialogue, data'
+// dialogue_public: the dialogue with the answers of its gaps blanked out
+const EXERCISE_PUBLIC = 'id, lesson_id, type, position, prompt, options, explanation, dialogue:dialogue_public, data'
 
 /** A lesson with its exercises. `withSolutions`: for the editor (its author / an admin). */
 export async function getLesson(id: string, opts: { withSolutions?: boolean } = {}): Promise<Lesson | null> {
@@ -198,10 +199,12 @@ export async function getLesson(id: string, opts: { withSolutions?: boolean } = 
   if (opts.withSolutions) {
     const { data: sol, error } = await supabase.rpc('lesson_solutions', { p_lesson_id: id })
     if (error) throw error
-    const byId = new Map(((sol ?? []) as { exercise_id: string; answer: string; solution: Record<string, unknown> }[]).map((s) => [s.exercise_id, s]))
+    const byId = new Map(
+      ((sol ?? []) as { exercise_id: string; answer: string; solution: Record<string, unknown>; dialogue: ExerciseRow['dialogue'] }[]).map((s) => [s.exercise_id, s]),
+    )
     for (const r of rows) {
       const s = r.id ? byId.get(r.id) : undefined
-      if (s) Object.assign(r, { answer: s.answer, solution: s.solution })
+      if (s) Object.assign(r, { answer: s.answer, solution: s.solution, dialogue: s.dialogue })
     }
   }
   return { ...l, exercises: rows.map((e) => rowToExercise({ ...e, answer: e.answer ?? '' })) } as Lesson

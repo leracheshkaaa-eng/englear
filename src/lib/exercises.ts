@@ -102,7 +102,8 @@ export function evaluate(ex: Exercise, r: Response): Evaluation {
   }
   const blanks = r.blanks ?? {}
   return {
-    answered: ex.lines.every((l, i) => !l.answer || (blanks[i] || '').trim()),
+    // a gap is a line with an `answer` key (in lessons its value is hidden: "")
+    answered: ex.lines.every((l, i) => l.answer === undefined || (blanks[i] || '').trim()),
     correct: ex.lines.every((l, i) => !l.answer || norm(blanks[i] || '') === norm(l.answer)),
     given: Object.values(blanks).join(', '),
   }

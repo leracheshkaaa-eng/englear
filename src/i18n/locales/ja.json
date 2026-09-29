@@ -454,7 +454,10 @@
     "syntaxOrder": "正しい順番で書く——生徒にはシャッフルされて表示されます",
     "syntaxMatch": "ペア。右の列は生徒にシャッフルされて表示されます",
     "publish": "公開する",
-    "unpublish": "非公開にする"
+    "unpublish": "非公開にする",
+    "practiceCheckbox": "練習用の教材（質問付きの本文または音声）",
+    "materialText": "本文。段落の間は空行で区切ってください。",
+    "materialScript": "スクリプト（1 行に 1 つのせりふ）：\nAnna: Hi, Ben!\nBen: Hello!"
   },
   "partsOfSpeech": {
     "noun": "名詞",
