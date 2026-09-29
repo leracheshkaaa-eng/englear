@@ -1,0 +1,300 @@
+{
+  "package": "starter",
+  "description": "First library content: reading and listening practice A1–B1 and two lessons. Imported as drafts.",
+  "lessons": [
+    {
+      "kind": "practice", "skill": "reading", "cefr": "A1", "sequence": 1, "topic": "Home",
+      "title": "A note from Mum", "description": "Read a note on the fridge and find out what Sam has to do today.",
+      "material": { "type": "letter", "body": "Hi Sam,\n\nI'm at work until six o'clock today. There is pizza in the fridge for lunch. Please feed the cat at four — her food is on the table in the kitchen.\n\nYour grandma is coming for dinner at seven. Can you clean your room before she comes?\n\nLove,\nMum" },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "fridge": "a cold box for food", "kitchen": "the room where you cook", "lunch": "the meal in the middle of the day", "dinner": "the meal in the evening" } },
+        { "type": "truefalse", "prompt": "Mum is at home now.", "answer": "false", "explanation": "“I'm at work until six o'clock today.”" },
+        { "type": "choice", "prompt": "What can Sam eat for lunch?", "options": ["soup", "pizza", "a sandwich"], "answer": "pizza", "explanation": "“There is pizza in the fridge for lunch.”" },
+        { "type": "choice", "prompt": "When does Sam need to feed the cat?", "options": ["at two", "at four", "at six"], "answer": "at four", "explanation": "“Please feed the cat at four.”" },
+        { "type": "truefalse", "prompt": "The cat's food is in the fridge.", "answer": "false", "explanation": "“Her food is on the table in the kitchen.”" },
+        { "type": "fill", "prompt": "Grandma is coming for dinner at ___ o'clock.", "answer": "seven", "accept": ["7"], "explanation": "“Your grandma is coming for dinner at seven.”" },
+        { "type": "choice", "prompt": "What does Mum want Sam to do before seven?", "options": ["cook dinner", "clean his room", "go to work"], "answer": "clean his room", "explanation": "“Can you clean your room before she comes?”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "A1", "sequence": 2, "topic": "Home",
+      "title": "My new flat", "description": "Lucy writes about her small flat in the city centre.",
+      "material": { "type": "blog", "body": "My name is Lucy and I am 24. I live in a small flat in the city centre. My flat has one bedroom, a kitchen and a bathroom. It is on the third floor, and there is no lift, so I walk up the stairs every day!\n\nI love my flat because it is near my work. I walk to the office in ten minutes. There is a big park next to my building. On Sundays, I go running there with my friend Anna.\n\nThe flat is small, but it has a big window. From the window, I can see the river." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "floor": "a level of a building", "lift": "a machine that takes you up and down in a building", "stairs": "you walk up and down them", "window": "you can see outside through it" } },
+        { "type": "truefalse", "prompt": "Lucy's flat has two bedrooms.", "answer": "false", "explanation": "“My flat has one bedroom.”" },
+        { "type": "fill", "prompt": "Lucy's flat is on the ___ floor.", "answer": "third", "accept": ["3rd"], "explanation": "“It is on the third floor.”" },
+        { "type": "truefalse", "prompt": "Lucy's flat is near her work.", "answer": "true", "explanation": "“I love my flat because it is near my work.”" },
+        { "type": "choice", "prompt": "How does Lucy go to work?", "options": ["She goes by bus.", "She walks.", "She drives."], "answer": "She walks.", "explanation": "“I walk to the office in ten minutes.”" },
+        { "type": "choice", "prompt": "Where does Lucy go running?", "options": ["in the park", "in the city centre", "by the river"], "answer": "in the park", "explanation": "“There is a big park next to my building. On Sundays, I go running there.”" },
+        { "type": "choice", "prompt": "What can Lucy see from her window?", "options": ["the park", "her office", "the river"], "answer": "the river", "explanation": "“From the window, I can see the river.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "A1", "sequence": 3, "topic": "Health",
+      "title": "At the sports centre", "description": "Read the notice at a sports centre: opening times, tennis and yoga.",
+      "material": { "type": "notice", "body": "GREEN PARK SPORTS CENTRE\n\nOpening times: Monday to Friday 7 am – 10 pm. Saturday and Sunday 9 am – 6 pm.\n\nSwimming pool: Children under 8 must swim with an adult.\n\nTennis: Book a court at reception. One hour costs £10.\n\nNew! Yoga classes every Tuesday and Thursday at 7 pm. The first class is free.\n\nPlease bring your own towel." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "court": "a place where you play tennis", "reception": "the desk where you ask for help", "towel": "you dry your body with it", "adult": "a person who is not a child" } },
+        { "type": "truefalse", "prompt": "The sports centre opens at 7 am on Saturday.", "answer": "false", "explanation": "“Saturday and Sunday 9 am – 6 pm.”" },
+        { "type": "choice", "prompt": "A six-year-old child can go in the swimming pool…", "options": ["alone", "with an adult", "only on Sundays"], "answer": "with an adult", "explanation": "“Children under 8 must swim with an adult.”" },
+        { "type": "choice", "prompt": "How much is one hour of tennis?", "options": ["£7", "£10", "It is free."], "answer": "£10", "explanation": "“One hour costs £10.”" },
+        { "type": "fill", "prompt": "Yoga classes are on Tuesday and ___.", "answer": "Thursday", "explanation": "“Yoga classes every Tuesday and Thursday.”" },
+        { "type": "truefalse", "prompt": "You pay for your first yoga class.", "answer": "false", "explanation": "“The first class is free.”" },
+        { "type": "choice", "prompt": "What must you bring?", "options": ["a tennis racket", "a ticket", "a towel"], "answer": "a towel", "explanation": "“Please bring your own towel.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "A2", "sequence": 1, "topic": "Shopping",
+      "title": "Saturday at the market", "description": "Tom goes to the market with his grandfather every week, but last Saturday was different.",
+      "material": { "type": "story", "body": "Every Saturday morning, Tom goes to the market with his grandfather. They leave home at eight o'clock and take the number 12 bus into town.\n\nFirst, they buy fruit and vegetables. Tom's grandfather always talks to the man at the fruit stall — they have been friends for thirty years. Then they buy fresh bread from a small bakery near the church.\n\nLast Saturday was different. It was raining, so there were not many people at the market. The fruit stall was closed because the owner was ill. Tom and his grandfather bought apples from a different stall, but his grandfather said they weren't as good.\n\nBefore going home, they always have hot chocolate at a café. Last Saturday, Tom paid for the drinks with his own money for the first time. His grandfather was very happy." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "stall": "a table where people sell things at a market", "bakery": "a shop that sells bread", "owner": "the person who a business belongs to", "ill": "not well" } },
+        { "type": "choice", "prompt": "How do Tom and his grandfather get to town?", "options": ["They walk.", "They go by bus.", "They go by car."], "answer": "They go by bus.", "explanation": "“They … take the number 12 bus into town.”" },
+        { "type": "choice", "prompt": "Who is the man at the fruit stall?", "options": ["Tom's uncle", "an old friend of Tom's grandfather", "a new seller"], "answer": "an old friend of Tom's grandfather", "explanation": "“They have been friends for thirty years.”" },
+        { "type": "truefalse", "prompt": "They buy bread from a bakery near the church.", "answer": "true", "explanation": "“They buy fresh bread from a small bakery near the church.”" },
+        { "type": "choice", "prompt": "Why was the fruit stall closed last Saturday?", "options": ["It was raining.", "The owner was ill.", "It was too early."], "answer": "The owner was ill.", "explanation": "“The fruit stall was closed because the owner was ill.”" },
+        { "type": "choice", "prompt": "What did the grandfather think of the other stall's apples?", "options": ["They were cheaper.", "They were bigger.", "They weren't as good."], "answer": "They weren't as good.", "explanation": "“His grandfather said they weren't as good.”" },
+        { "type": "truefalse", "prompt": "Last Saturday, the grandfather paid for the drinks.", "answer": "false", "explanation": "“Tom paid for the drinks with his own money.”" },
+        { "type": "order", "prompt": "What happened last Saturday? Put the events in order.", "order": ["Tom and his grandfather took the bus into town.", "They bought apples from a different stall.", "They had hot chocolate at a café.", "They went home."] }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "A2", "sequence": 2, "topic": "Travel",
+      "title": "A weekend in Edinburgh", "description": "Jess writes an email to her friend about a weekend trip with her sister.",
+      "material": { "type": "email", "body": "Hi Maria,\n\nThanks for your email! I'm writing from Edinburgh — I'm here for the weekend with my sister Kate.\n\nWe arrived on Friday evening by train. The journey from London took four and a half hours, but it went quickly because we played cards all the way.\n\nYesterday we visited the castle. It's on a hill in the middle of the city, so the views are amazing. It was very windy, and Kate lost her hat! In the afternoon, we went to a museum because it started to rain.\n\nToday the weather is better. We're going to walk up Arthur's Seat — it's an old volcano near the city. Then we're having dinner at a Scottish restaurant. I want to try haggis, but Kate says she'll just have fish!\n\nWe're going back to London tomorrow morning. Let's meet next week and I'll show you my photos.\n\nLove,\nJess" },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "journey": "travelling from one place to another", "castle": "a big old building with strong walls", "windy": "with a lot of wind", "volcano": "a mountain that can send out fire and hot rock" } },
+        { "type": "choice", "prompt": "How did Jess and Kate travel to Edinburgh?", "options": ["by plane", "by train", "by car"], "answer": "by train", "explanation": "“We arrived on Friday evening by train.”" },
+        { "type": "choice", "prompt": "Why did the journey feel short?", "options": ["They slept.", "They played cards.", "They read books."], "answer": "They played cards.", "explanation": "“It went quickly because we played cards all the way.”" },
+        { "type": "truefalse", "prompt": "The castle is in the middle of the city.", "answer": "true", "explanation": "“It's on a hill in the middle of the city.”" },
+        { "type": "choice", "prompt": "Why did they go to a museum?", "options": ["Kate lost her hat.", "It started to rain.", "The castle was closed."], "answer": "It started to rain.", "explanation": "“We went to a museum because it started to rain.”" },
+        { "type": "truefalse", "prompt": "Kate wants to eat haggis.", "answer": "false", "explanation": "“Kate says she'll just have fish!”" },
+        { "type": "choice", "prompt": "When are Jess and Kate going back to London?", "options": ["tonight", "tomorrow morning", "next week"], "answer": "tomorrow morning", "explanation": "“We're going back to London tomorrow morning.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "A2", "sequence": 3, "topic": "Culture",
+      "title": "My new hobby", "description": "A man who was bored in the evenings writes about learning pottery.",
+      "material": { "type": "blog", "body": "Last year I decided to learn something new. I was 40, I worked in an office, and I was bored in the evenings. My wife suggested pottery — making bowls and cups from clay.\n\nMy first class was a disaster. My bowl fell off the wheel twice, and I had clay in my hair! But the teacher, Rosa, was very patient. She told me that everybody finds it difficult at the beginning.\n\nNow I go to class every Wednesday evening. The class has eight students, and we are all different ages — the youngest is 19 and the oldest is 72. We often go for a pizza together after class.\n\nLast month I made a set of six cups. They aren't perfect, but we use them every day at home. My next project is a big plate for my mother's birthday." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "clay": "soft earth that you use to make cups and bowls", "bowl": "a round dish for soup or cereal", "patient": "calm and not angry when something takes a long time", "perfect": "with no mistakes" } },
+        { "type": "choice", "prompt": "Whose idea was pottery?", "options": ["his teacher's", "his boss's", "his wife's"], "answer": "his wife's", "explanation": "“My wife suggested pottery.”" },
+        { "type": "truefalse", "prompt": "His first class went very well.", "answer": "false", "explanation": "“My first class was a disaster.”" },
+        { "type": "choice", "prompt": "What did Rosa tell him?", "options": ["He should practise at home.", "Everybody finds it difficult at the beginning.", "He was her best student."], "answer": "Everybody finds it difficult at the beginning.", "explanation": "“She told me that everybody finds it difficult at the beginning.”" },
+        { "type": "fill", "prompt": "The oldest student in the class is ___ years old.", "answer": "72", "accept": ["seventy-two", "seventy two"], "explanation": "“The youngest is 19 and the oldest is 72.”" },
+        { "type": "truefalse", "prompt": "The students often eat together after class.", "answer": "true", "explanation": "“We often go for a pizza together after class.”" },
+        { "type": "choice", "prompt": "What is his next project?", "options": ["a set of cups", "a plate for his mother", "a bowl for his wife"], "answer": "a plate for his mother", "explanation": "“My next project is a big plate for my mother's birthday.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "B1", "sequence": 1, "topic": "Health",
+      "title": "Why a short nap is good for you", "description": "An article about afternoon naps: how long to sleep and when.",
+      "material": { "type": "article", "body": "In many countries, an afternoon nap is a normal part of the day. But in places like the UK and the USA, sleeping during the day is often seen as lazy. Scientists now say that this attitude may be wrong.\n\nResearch shows that a short nap of 10 to 20 minutes can improve concentration and memory. After a nap, people make fewer mistakes and react more quickly. Some companies, including Google, have even created special rooms where employees can rest during their lunch break.\n\nHowever, the length of the nap is important. If you sleep for more than 30 minutes, your body goes into deep sleep. When you wake up, you may feel tired and confused for up to an hour — scientists call this “sleep inertia”. Long naps late in the afternoon can also make it harder to fall asleep at night.\n\nSo what is the best way to nap? Experts suggest napping in the early afternoon, between 1 pm and 3 pm, when most people naturally feel sleepy. Find a quiet, dark place, set an alarm, and don't worry if you don't actually fall asleep — even resting with your eyes closed can help." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "attitude": "what you think and feel about something", "concentration": "the ability to think carefully about one thing", "employee": "a person who works for a company", "confused": "not able to think clearly" } },
+        { "type": "truefalse", "prompt": "In the UK, napping during the day is often seen as lazy.", "answer": "true", "explanation": "“In places like the UK and the USA, sleeping during the day is often seen as lazy.”" },
+        { "type": "truefalse", "prompt": "A 15-minute nap can help your memory.", "answer": "true", "explanation": "“A short nap of 10 to 20 minutes can improve concentration and memory.”" },
+        { "type": "truefalse", "prompt": "Google's rest rooms are open all day.", "answer": "not_given", "explanation": "The text only says employees can rest there during their lunch break." },
+        { "type": "choice", "prompt": "What can happen if you nap for more than 30 minutes?", "options": ["You feel more awake.", "You may feel tired and confused after waking up.", "You make fewer mistakes."], "answer": "You may feel tired and confused after waking up.", "explanation": "“You may feel tired and confused for up to an hour.”" },
+        { "type": "fill", "prompt": "Scientists call the tired feeling after a long nap “sleep ___”.", "answer": "inertia", "explanation": "“Scientists call this ‘sleep inertia’.”" },
+        { "type": "truefalse", "prompt": "Most people feel sleepy between 1 pm and 3 pm.", "answer": "true", "explanation": "“Between 1 pm and 3 pm, when most people naturally feel sleepy.”" },
+        { "type": "choice", "prompt": "What should you do if you can't fall asleep during a nap?", "options": ["Get up and go back to work.", "Just rest with your eyes closed.", "Drink a cup of coffee."], "answer": "Just rest with your eyes closed.", "explanation": "“Even resting with your eyes closed can help.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "B1", "sequence": 2, "topic": "Food",
+      "title": "Review: The Blue Door café", "description": "A restaurant review: good food, fair prices — and one problem.",
+      "material": { "type": "review", "body": "I've walked past The Blue Door on Mill Street hundreds of times, but last Friday I finally went in — and I'm glad I did.\n\nThe café is tiny, with only six tables, so it's a good idea to book, especially at weekends. The decoration is simple: white walls, wooden furniture and, of course, a bright blue door. The owner, a former teacher called Dev, greeted us as if we were old friends.\n\nThe menu is short but interesting. I had the lentil soup, which was thick and full of flavour, and my partner chose the vegetable curry. Both came with warm homemade bread. For dessert, we shared a slice of chocolate cake. It was delicious, although a little too sweet for me.\n\nMy only complaint is the service, which was rather slow. We waited almost 40 minutes for our main courses, and there was only one waiter for the whole café. On the other hand, the prices are very reasonable: our meal for two cost £32, including drinks.\n\nOverall, The Blue Door is a lovely place for a relaxed lunch — just don't go if you're in a hurry." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "book": "to arrange to have a table at a certain time", "former": "in the past, but not now", "complaint": "saying that you are not happy with something", "reasonable": "not too expensive" } },
+        { "type": "choice", "prompt": "Why does the writer suggest booking a table?", "options": ["The café is very famous.", "The café is very small.", "The owner asks you to."], "answer": "The café is very small.", "explanation": "“The café is tiny, with only six tables, so it's a good idea to book.”" },
+        { "type": "truefalse", "prompt": "Dev used to work as a teacher.", "answer": "true", "explanation": "“The owner, a former teacher called Dev.”" },
+        { "type": "truefalse", "prompt": "The writer ordered the vegetable curry.", "answer": "false", "explanation": "The writer had the lentil soup; the partner chose the curry." },
+        { "type": "truefalse", "prompt": "The bread is made in the café.", "answer": "true", "explanation": "“Warm homemade bread.”" },
+        { "type": "choice", "prompt": "What did the writer think of the chocolate cake?", "options": ["It was too dry.", "It was tasty but a little too sweet.", "It was too expensive."], "answer": "It was tasty but a little too sweet.", "explanation": "“It was delicious, although a little too sweet for me.”" },
+        { "type": "choice", "prompt": "What was the writer's only complaint?", "options": ["the prices", "the slow service", "the size of the portions"], "answer": "the slow service", "explanation": "“My only complaint is the service, which was rather slow.”" },
+        { "type": "truefalse", "prompt": "The café is open every day of the week.", "answer": "not_given", "explanation": "The review does not say when the café is open." }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "B1", "sequence": 3, "topic": "Animals",
+      "title": "The dog at the supermarket", "description": "A short story: Mia finds a lost dog and tries to find its owner.",
+      "material": { "type": "story", "body": "When Mia found the dog, it was sitting outside the supermarket in the rain, shaking. It had a red collar but no name tag. Mia waited for twenty minutes, hoping that the owner would come back, but nobody did.\n\nShe took the dog home, dried it with an old towel and gave it some chicken. Her mother wasn't very pleased. “We can't keep it,” she said. “Someone must be looking for it.”\n\nThe next morning, Mia made posters with a photo of the dog and her phone number. She put them up at the supermarket, the bus stop and the vet's. She also posted the photo on a local website. For two days, nothing happened, and Mia secretly started to hope that she could keep the dog.\n\nThen, on the third evening, her phone rang. It was an elderly man called Mr Hughes. He explained that his dog, Biscuit, had run away when a car alarm frightened her. He had been in hospital for a short operation, and his neighbour had been looking after Biscuit.\n\nWhen Mr Hughes arrived, Biscuit ran straight to him. Mia felt sad, but also proud. A week later, a card arrived. Inside was a photo of Biscuit and a note: “Please come and visit us whenever you like.”" },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "collar": "a band around an animal's neck", "shaking": "moving quickly because you are cold or afraid", "elderly": "old", "proud": "pleased about something good that you did" } },
+        { "type": "truefalse", "prompt": "The dog had a name tag on its collar.", "answer": "false", "explanation": "“It had a red collar but no name tag.”" },
+        { "type": "choice", "prompt": "How did Mia's mother feel about the dog?", "options": ["She wanted to keep it.", "She wasn't happy about it.", "She was afraid of it."], "answer": "She wasn't happy about it.", "explanation": "“Her mother wasn't very pleased.”" },
+        { "type": "truefalse", "prompt": "Mia secretly hoped that she could keep the dog.", "answer": "true", "explanation": "“Mia secretly started to hope that she could keep the dog.”" },
+        { "type": "choice", "prompt": "Why did Biscuit run away?", "options": ["The neighbour left the door open.", "A car alarm frightened her.", "She was hungry."], "answer": "A car alarm frightened her.", "explanation": "“His dog, Biscuit, had run away when a car alarm frightened her.”" },
+        { "type": "truefalse", "prompt": "Mr Hughes lives next to the supermarket.", "answer": "not_given", "explanation": "The story does not say where Mr Hughes lives." },
+        { "type": "choice", "prompt": "How did Mia feel when Biscuit went home?", "options": ["only sad", "sad but also proud", "angry"], "answer": "sad but also proud", "explanation": "“Mia felt sad, but also proud.”" },
+        { "type": "order", "prompt": "Put the events of the story in order.", "order": ["Mia found a dog outside the supermarket.", "Mia put up posters with her phone number.", "Mr Hughes phoned Mia.", "Mia received a card with a photo of Biscuit."] }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "A1", "sequence": 1, "topic": "Food",
+      "title": "At the café", "description": "Listen to a customer ordering a drink and a sandwich.",
+      "material": { "type": "dialogue", "segments": [
+        { "speaker": "Waiter", "text": "Good morning! What can I get you?" },
+        { "speaker": "Customer", "text": "Hello. Can I have a cup of tea, please?" },
+        { "speaker": "Waiter", "text": "Of course. Milk and sugar?" },
+        { "speaker": "Customer", "text": "Just milk, please. And a cheese sandwich." },
+        { "speaker": "Waiter", "text": "Sorry, we don't have cheese sandwiches today. We have chicken or egg." },
+        { "speaker": "Customer", "text": "OK, an egg sandwich, then." },
+        { "speaker": "Waiter", "text": "Anything else?" },
+        { "speaker": "Customer", "text": "No, thank you. How much is that?" },
+        { "speaker": "Waiter", "text": "That's five pounds fifty, please." },
+        { "speaker": "Customer", "text": "Here you are." }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "What drink does the customer order?", "options": ["coffee", "tea", "orange juice"], "answer": "tea", "explanation": "“Can I have a cup of tea, please?”" },
+        { "type": "truefalse", "prompt": "The customer wants sugar in the drink.", "answer": "false", "explanation": "“Just milk, please.”" },
+        { "type": "choice", "prompt": "Why can't the customer have a cheese sandwich?", "options": ["It is too expensive.", "The café doesn't have any today.", "It is too early."], "answer": "The café doesn't have any today.", "explanation": "“We don't have cheese sandwiches today.”" },
+        { "type": "choice", "prompt": "What sandwich does the customer have?", "options": ["cheese", "chicken", "egg"], "answer": "egg", "explanation": "“OK, an egg sandwich, then.”" },
+        { "type": "fill", "prompt": "The customer pays five pounds ___.", "answer": "fifty", "accept": ["50"], "explanation": "“That's five pounds fifty, please.”" },
+        { "type": "listen", "text": "an egg sandwich", "explanation": "“OK, an egg sandwich, then.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "A1", "sequence": 2, "topic": "Family",
+      "title": "Meet my family", "description": "Daniel, 12, talks about his family and his dog.",
+      "material": { "type": "monologue", "segments": [
+        { "speaker": "Daniel", "text": "Hi, I'm Daniel. I'm twelve years old and I live in Manchester with my family." },
+        { "speaker": "Daniel", "text": "My mum is a doctor and my dad is a teacher." },
+        { "speaker": "Daniel", "text": "I have one sister, Emma. She's fifteen, and she loves music. She plays the guitar every day. I don't play an instrument — I like football." },
+        { "speaker": "Daniel", "text": "We also have a dog called Max. He's black and white, and he's very friendly." },
+        { "speaker": "Daniel", "text": "On Sundays, we visit my grandparents. They live in a small village near the sea." }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "How old is Daniel?", "options": ["ten", "twelve", "fifteen"], "answer": "twelve", "explanation": "“I'm twelve years old.”" },
+        { "type": "choice", "prompt": "What is Daniel's mum's job?", "options": ["She is a teacher.", "She is a doctor.", "She is a musician."], "answer": "She is a doctor.", "explanation": "“My mum is a doctor.”" },
+        { "type": "truefalse", "prompt": "Daniel plays the guitar.", "answer": "false", "explanation": "His sister Emma plays the guitar; Daniel likes football." },
+        { "type": "choice", "prompt": "What colour is Max?", "options": ["black", "brown", "black and white"], "answer": "black and white", "explanation": "“He's black and white.”" },
+        { "type": "fill", "prompt": "On Sundays, they visit Daniel's ___.", "answer": "grandparents", "explanation": "“On Sundays, we visit my grandparents.”" },
+        { "type": "truefalse", "prompt": "Daniel's grandparents live near the sea.", "answer": "true", "explanation": "“They live in a small village near the sea.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "A2", "sequence": 1, "topic": "Transport",
+      "title": "At the train station", "description": "Listen to an announcement about trains to Bristol and Oxford.",
+      "material": { "type": "announcement", "segments": [
+        { "speaker": "Announcer", "text": "Good afternoon. This is an announcement for passengers travelling to Bristol." },
+        { "speaker": "Announcer", "text": "The fourteen fifteen train to Bristol is delayed by twenty minutes. It will now leave at fourteen thirty-five from platform six, not platform four. We apologise for the delay." },
+        { "speaker": "Announcer", "text": "Passengers for Oxford, please note: the fourteen thirty train to Oxford is on time and will leave from platform two." },
+        { "speaker": "Announcer", "text": "The café on platform one is closed today. Hot and cold drinks are available from the machines near the main entrance. Thank you." }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "How late is the train to Bristol?", "options": ["ten minutes", "twenty minutes", "thirty minutes"], "answer": "twenty minutes", "explanation": "“Delayed by twenty minutes.”" },
+        { "type": "choice", "prompt": "What time will the Bristol train leave now?", "options": ["14:15", "14:30", "14:35"], "answer": "14:35", "explanation": "“It will now leave at fourteen thirty-five.”" },
+        { "type": "choice", "prompt": "Which platform does the Bristol train leave from?", "options": ["platform 2", "platform 4", "platform 6"], "answer": "platform 6", "explanation": "“From platform six, not platform four.”" },
+        { "type": "truefalse", "prompt": "The train to Oxford is late.", "answer": "false", "explanation": "“The fourteen thirty train to Oxford is on time.”" },
+        { "type": "choice", "prompt": "Where can passengers get a drink today?", "options": ["at the café on platform 1", "from machines near the main entrance", "on the train"], "answer": "from machines near the main entrance", "explanation": "“Drinks are available from the machines near the main entrance.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "A2", "sequence": 2, "topic": "Culture",
+      "title": "Plans for Saturday", "description": "Anna and Ben plan a visit to a museum.",
+      "material": { "type": "dialogue", "segments": [
+        { "speaker": "Anna", "text": "Ben, are you free on Saturday?" },
+        { "speaker": "Ben", "text": "In the morning I have football practice, but I'm free after lunch. Why?" },
+        { "speaker": "Anna", "text": "There's a new exhibition at the science museum. Do you want to go?" },
+        { "speaker": "Ben", "text": "Sounds great. How much are the tickets?" },
+        { "speaker": "Anna", "text": "They're eight pounds, but students pay half price." },
+        { "speaker": "Ben", "text": "Perfect, I've got my student card. What time shall we meet?" },
+        { "speaker": "Anna", "text": "How about two o'clock outside the museum?" },
+        { "speaker": "Ben", "text": "Could we make it half past two? My practice finishes at one, and I need to go home first." },
+        { "speaker": "Anna", "text": "No problem. Half past two, then. And after the museum, we could get something to eat." },
+        { "speaker": "Ben", "text": "Good idea. I know a nice Italian place near there." }
+      ] },
+      "exercises": [
+        { "type": "truefalse", "prompt": "Ben is free on Saturday morning.", "answer": "false", "explanation": "“In the morning I have football practice.”" },
+        { "type": "choice", "prompt": "Where do they plan to go?", "options": ["to the cinema", "to the science museum", "to a football match"], "answer": "to the science museum", "explanation": "“There's a new exhibition at the science museum.”" },
+        { "type": "choice", "prompt": "How much will Ben pay for his ticket?", "options": ["four pounds", "eight pounds", "nothing"], "answer": "four pounds", "explanation": "Tickets are eight pounds, students pay half price, and Ben has a student card." },
+        { "type": "choice", "prompt": "What time will they meet?", "options": ["at one o'clock", "at two o'clock", "at half past two"], "answer": "at half past two", "explanation": "“Half past two, then.”" },
+        { "type": "choice", "prompt": "Why can't Ben meet at two o'clock?", "options": ["He needs to go home after football practice.", "He has a lesson.", "He has to buy a ticket first."], "answer": "He needs to go home after football practice.", "explanation": "“My practice finishes at one, and I need to go home first.”" },
+        { "type": "truefalse", "prompt": "After the museum, they want to eat at an Italian restaurant.", "answer": "true", "explanation": "“I know a nice Italian place near there.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "B1", "sequence": 1, "topic": "Transport",
+      "title": "Podcast: life without a car", "description": "Sara sold her car two years ago. How does she get around now?",
+      "material": { "type": "podcast", "segments": [
+        { "speaker": "Host", "text": "Welcome back to City Life. My guest today is Sara, who sold her car two years ago. Sara, why did you decide to do that?" },
+        { "speaker": "Sara", "text": "Honestly, it started with money. I worked out that my car was costing me about three hundred pounds a month — insurance, fuel, parking, repairs. And I was only using it at weekends." },
+        { "speaker": "Host", "text": "So how do you get around now?" },
+        { "speaker": "Sara", "text": "Mostly by bike. My office is five kilometres away, so it takes me about twenty minutes. When it rains heavily, I take the tram." },
+        { "speaker": "Host", "text": "Isn't it difficult with shopping?" },
+        { "speaker": "Sara", "text": "At first, yes. Now I do a big online order once a week and it's delivered. For small things, I just use my bike." },
+        { "speaker": "Host", "text": "What about longer trips?" },
+        { "speaker": "Sara", "text": "For holidays, I go by train, or I rent a car for a few days. It's much cheaper than owning one." },
+        { "speaker": "Host", "text": "Is there anything you miss?" },
+        { "speaker": "Sara", "text": "Sometimes, yes. Visiting my parents is harder — they live in a village with only two buses a day. But overall, I feel healthier and I've saved a lot of money." }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "Why did Sara first decide to sell her car?", "options": ["It cost her too much money.", "It often broke down.", "She moved to the city centre."], "answer": "It cost her too much money.", "explanation": "“Honestly, it started with money.”" },
+        { "type": "truefalse", "prompt": "Sara used her car every day.", "answer": "false", "explanation": "“I was only using it at weekends.”" },
+        { "type": "choice", "prompt": "How does Sara usually get to work?", "options": ["by tram", "by bike", "on foot"], "answer": "by bike", "explanation": "“Mostly by bike … When it rains heavily, I take the tram.”" },
+        { "type": "truefalse", "prompt": "There is a tram stop next to Sara's office.", "answer": "not_given", "explanation": "Sara only says that she takes the tram when it rains heavily." },
+        { "type": "choice", "prompt": "How does Sara do most of her shopping?", "options": ["She carries everything on her bike.", "Her parents help her.", "She orders online once a week."], "answer": "She orders online once a week.", "explanation": "“I do a big online order once a week and it's delivered.”" },
+        { "type": "truefalse", "prompt": "Sara sometimes rents a car.", "answer": "true", "explanation": "“I rent a car for a few days.”" },
+        { "type": "choice", "prompt": "What is difficult for Sara now?", "options": ["going on holiday", "visiting her parents", "getting to work in the rain"], "answer": "visiting her parents", "explanation": "“Visiting my parents is harder.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "B1", "sequence": 2, "topic": "Work",
+      "title": "Interview: a day at the zoo", "description": "Zookeeper Tom Reed talks about his job.",
+      "material": { "type": "interview", "segments": [
+        { "speaker": "Interviewer", "text": "Today I'm talking to Tom Reed, who works as a zookeeper. Tom, what does a typical day look like?" },
+        { "speaker": "Tom", "text": "My day starts at seven. First, I check that all the animals are healthy. Then I prepare their food — that takes about two hours, because every animal has a special diet." },
+        { "speaker": "Interviewer", "text": "Which animals do you look after?" },
+        { "speaker": "Tom", "text": "Mainly the giraffes and the zebras. I've worked with the giraffes for six years now, so I know each of them very well." },
+        { "speaker": "Interviewer", "text": "What's the hardest part of the job?" },
+        { "speaker": "Tom", "text": "Definitely the weather. We work outside all year, even in the snow. And the job is very physical — carrying food, cleaning the areas." },
+        { "speaker": "Interviewer", "text": "And the best part?" },
+        { "speaker": "Tom", "text": "Talking to visitors, especially children. Many of them have never seen a giraffe before. When they see how tall they are, their faces are amazing." },
+        { "speaker": "Interviewer", "text": "What would you say to young people who want to do your job?" },
+        { "speaker": "Tom", "text": "Study biology, and try to get some experience — for example, volunteering at a farm or an animal shelter." }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "What does Tom do first every day?", "options": ["He prepares the food.", "He checks that the animals are healthy.", "He talks to visitors."], "answer": "He checks that the animals are healthy.", "explanation": "“First, I check that all the animals are healthy.”" },
+        { "type": "choice", "prompt": "Why does preparing the food take so long?", "options": ["There are many visitors.", "Every animal has a special diet.", "The food arrives late."], "answer": "Every animal has a special diet.", "explanation": "“That takes about two hours, because every animal has a special diet.”" },
+        { "type": "truefalse", "prompt": "Tom has worked with the giraffes for six years.", "answer": "true", "explanation": "“I've worked with the giraffes for six years now.”" },
+        { "type": "truefalse", "prompt": "Tom likes the giraffes more than the zebras.", "answer": "not_given", "explanation": "Tom does not say which animals he likes more." },
+        { "type": "choice", "prompt": "What is the hardest part of the job for Tom?", "options": ["the visitors", "the weather", "starting early"], "answer": "the weather", "explanation": "“Definitely the weather.”" },
+        { "type": "truefalse", "prompt": "Tom enjoys seeing children's reactions to the giraffes.", "answer": "true", "explanation": "“When they see how tall they are, their faces are amazing.”" },
+        { "type": "fill", "prompt": "Tom says that young people should study ___.", "answer": "biology", "explanation": "“Study biology, and try to get some experience.”" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 1, "topic": "Daily Life",
+      "title": "Present Simple: he, she, it", "description": "With he, she and it, the verb gets -s: she works, he goes, it closes.",
+      "exercises": [
+        { "type": "match", "prompt": "Match: I … → he …", "pairs": { "I work": "he works", "I go": "he goes", "I have": "he has", "I study": "he studies" }, "explanation": "he / she / it: + s (works), + es after o, sh, ch, s, x (goes, watches), y → ies (studies); have → has." },
+        { "type": "fill", "prompt": "She ___ (work) in a bank.", "answer": "works", "explanation": "she + work → works" },
+        { "type": "fill", "prompt": "My brother ___ (play) football on Sundays.", "answer": "plays", "explanation": "vowel + y → just + s: plays" },
+        { "type": "fill", "prompt": "Tom ___ (watch) TV every evening.", "answer": "watches", "explanation": "-ch → + es: watches" },
+        { "type": "fill", "prompt": "The shop ___ (close) at six.", "answer": "closes", "explanation": "it (the shop) + close → closes" },
+        { "type": "choice", "prompt": "My mum ___ coffee every morning.", "options": ["drink", "drinks", "drinking"], "answer": "drinks", "explanation": "she (my mum) → drinks" },
+        { "type": "choice", "prompt": "He ___ to school by bus.", "options": ["goes", "go", "gos"], "answer": "goes", "explanation": "go → goes (+ es after o)" },
+        { "type": "choice", "prompt": "My parents ___ in a small village.", "options": ["lives", "live", "living"], "answer": "live", "explanation": "they (my parents) → live, without -s" },
+        { "type": "order", "prompt": "", "order": ["My", "sister", "likes", "chocolate"], "explanation": "Subject + verb + object: My sister likes chocolate." },
+        { "type": "order", "prompt": "", "order": ["Emma", "plays", "the", "guitar"], "explanation": "Emma plays the guitar." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "vocabulary", "cefr": "A2", "sequence": 1, "topic": "Food",
+      "title": "At the restaurant", "description": "Words and phrases for ordering a meal and paying.",
+      "exercises": [
+        { "type": "match", "prompt": "Match the words with their meanings.", "pairs": { "menu": "a list of the food in a restaurant", "bill": "the paper that shows how much you must pay", "waiter": "a person who brings food to your table", "starter": "a small dish before the main course", "dessert": "sweet food at the end of a meal" } },
+        { "type": "choice", "prompt": "Can I see the ___, please? I want to choose my food.", "options": ["bill", "menu", "dessert"], "answer": "menu", "explanation": "You choose food from the menu." },
+        { "type": "choice", "prompt": "We've finished our meal. Can we have the ___, please?", "options": ["menu", "bill", "starter"], "answer": "bill", "explanation": "At the end, you ask for the bill and pay." },
+        { "type": "choice", "prompt": "For ___, I'd like chocolate ice cream.", "options": ["dessert", "starter", "breakfast"], "answer": "dessert", "explanation": "Ice cream at the end of a meal is dessert." },
+        { "type": "fill", "prompt": "Waiter: Are you ready to ___? — Yes, I'd like the fish, please.", "answer": "order", "explanation": "“Are you ready to order?” = do you know what you want to eat?" },
+        { "type": "fill", "prompt": "I'd like a ___ of water, please.", "answer": "glass", "accept": ["bottle", "jug"], "explanation": "a glass / a bottle / a jug of water" },
+        { "type": "order", "prompt": "Put the dialogue in order.", "order": ["Good evening. A table for two?", "Yes, please. By the window, if possible.", "Of course. Here are your menus."] },
+        { "type": "order", "prompt": "", "order": ["Could", "I", "have", "the", "bill"], "explanation": "Could I have the bill? — a polite request." }
+      ]
+    }
+  ]
+}
