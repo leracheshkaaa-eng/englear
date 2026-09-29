@@ -23,7 +23,8 @@
     "progress": "Progreso",
     "teacher": "Profesor",
     "admin": "Admin",
-    "settings": "Ajustes"
+    "settings": "Ajustes",
+    "practice": "Práctica"
   },
   "home": {
     "tagline": "inglés para toda la familia",
@@ -80,7 +81,10 @@
     "fill": "Gramática",
     "choice": "Elección",
     "listen": "Comprensión auditiva",
-    "dialogue": "Diálogo"
+    "dialogue": "Diálogo",
+    "truefalse": "Verdadero / Falso",
+    "order": "Ordenar",
+    "match": "Relacionar"
   },
   "lessons": {
     "unavailableTitle": "Lección no disponible",
@@ -118,7 +122,18 @@
       "saveCheck": "No se pudo guardar la comprobación. Revisa tu internet y pulsa «Comprobar» otra vez.",
       "finish": "No se pudo terminar la lección. Revisa tu internet y pulsa «Terminar» otra vez.",
       "restart": "No se pudo reiniciar la lección. Vuelve a intentarlo."
-    }
+    },
+    "tf": {
+      "true": "Verdadero",
+      "false": "Falso",
+      "not_given": "No se menciona"
+    },
+    "tfInstruction": "¿La afirmación es verdadera o falsa según el texto?",
+    "orderWords": "Ordena las palabras correctamente.",
+    "orderSentences": "Ordena las oraciones correctamente.",
+    "orderHint": "Toca las partes en el orden correcto.",
+    "matchInstruction": "Relaciona cada elemento con su pareja.",
+    "matchChoose": "Elige…"
   },
   "result": {
     "completed": "Lección completada",
@@ -253,7 +268,43 @@
   "practice": {
     "chooseTranslation": "Elige la traducción: {{word}}",
     "whichEnglishWord": "«{{translation}}» en inglés es…",
-    "whichWordFits": "¿Qué palabra encaja?: «{{definition}}»"
+    "whichWordFits": "¿Qué palabra encaja?: «{{definition}}»",
+    "types": {
+      "article": "Artículo",
+      "story": "Relato",
+      "blog": "Entrada de blog",
+      "email": "Correo electrónico",
+      "letter": "Carta",
+      "notice": "Aviso",
+      "advert": "Anuncio",
+      "review": "Reseña",
+      "interview_text": "Entrevista",
+      "podcast": "Pódcast",
+      "dialogue": "Diálogo",
+      "interview": "Entrevista",
+      "announcement": "Anuncio",
+      "monologue": "Charla",
+      "radio": "Radio"
+    },
+    "minutes_one": "≈ {{count}} min",
+    "minutes_other": "≈ {{count}} min",
+    "words_one": "{{count}} palabra",
+    "words_other": "{{count}} palabras",
+    "questions_one": "{{count}} pregunta",
+    "questions_other": "{{count}} preguntas",
+    "toQuestions_one": "A la pregunta",
+    "toQuestions_other": "A las {{count}} preguntas",
+    "hideScript": "Ocultar la transcripción",
+    "showScript": "Mostrar la transcripción",
+    "showText": "Mostrar el texto",
+    "hideText": "Ocultar el texto",
+    "listen": "Escuchar",
+    "stop": "Parar",
+    "listenHint": "Puedes escuchar tantas veces como quieras.",
+    "playing": "Sonando: parte {{n}} de {{total}}",
+    "introListening": "Primero escucha la grabación. Podrás volver a escucharla mientras respondes.",
+    "introReading": "Primero lee el texto. Seguirá disponible mientras respondes.",
+    "back": "Toda la práctica"
   },
   "dictionary": {
     "title": "Diccionario",
@@ -337,7 +388,8 @@
     "tabs": {
       "lessons": "Mis lecciones",
       "students": "Mis estudiantes",
-      "progress": "Progreso"
+      "progress": "Progreso",
+      "cards": "Tarjetas"
     },
     "importResult": "Importadas: {{imported}}, omitidas (duplicadas): {{skipped}}. La copia local se conserva como respaldo.",
     "newLesson": "+ Nueva lección",
@@ -390,7 +442,9 @@
       "choiceNoAnswer": "Ejercicio {{n}} (choice): marca la opción correcta con «*».",
       "dialogueNoBlank": "Ejercicio {{n}} (dialogue): falta el hueco ___ en la segunda línea.",
       "dialogueBlankOnlyB": "Ejercicio {{n}} (dialogue): el hueco ___ solo se permite en la segunda línea (B).",
-      "dialogueBlankNoAnswer": "Ejercicio {{n}} (dialogue): el hueco no tiene respuesta entre paréntesis (…)."
+      "dialogueBlankNoAnswer": "Ejercicio {{n}} (dialogue): el hueco no tiene respuesta entre paréntesis (…).",
+      "tfNoAnswer": "Ejercicio {{n}} (tf): escribe «= true», «= false» o «= not given».",
+      "duplicateItems": "Ejercicio {{n}}: dos elementos son iguales — todos deben ser distintos."
     },
     "cefr": "Nivel",
     "skill": "Habilidad",
@@ -403,7 +457,12 @@
     "noWordsFound": "No se encontraron palabras del diccionario en esta lección.",
     "libraryBadge": "Biblioteca",
     "teacherBadge": "Mis alumnos",
-    "wordsSelected": "Seleccionadas: {{count}}"
+    "wordsSelected": "Seleccionadas: {{count}}",
+    "syntaxAccept": "varias respuestas correctas separadas por |",
+    "syntaxTf": "verdadero / falso",
+    "syntaxTfng": "verdadero / falso / no se menciona (desde B1)",
+    "syntaxOrder": "escrito en el orden correcto — el alumno lo ve desordenado",
+    "syntaxMatch": "parejas; el alumno ve la columna derecha desordenada"
   },
   "partsOfSpeech": {
     "noun": "sustantivo",
@@ -516,6 +575,31 @@
     "search": "Buscar lecciones…",
     "empty": "La biblioteca de lecciones se está preparando: ¡pronto habrá nuevas lecciones!",
     "noResults": "No hay lecciones con estos filtros.",
-    "count": "Lecciones: {{count}}"
+    "count": "Lecciones: {{count}}",
+    "practiceIntro": "Primero lee o escucha, luego responde a las preguntas. Elige tu nivel y una habilidad.",
+    "lessonsIntro": "Lecciones sobre un tema: gramática, vocabulario o ambos. Elige tu nivel y qué quieres aprender.",
+    "chooseLevel": "Nivel",
+    "chooseSkill": "Habilidad",
+    "chooseFocus": "Qué aprender",
+    "focusAll": "Todo",
+    "practiceEmpty": "Los textos y pódcasts de este nivel se están preparando: ¡pronto estarán aquí!"
+  },
+  "teacherSets": {
+    "newSet": "Nuevo conjunto de tarjetas",
+    "intro": "Crea un conjunto a partir del diccionario, corrige las tarjetas y asígnalo a tus alumnos. Lo encontrarán en «{{section}}» → «{{group}}».",
+    "none": "Todavía no tienes conjuntos de tarjetas para alumnos.",
+    "cardCount": "Tarjetas: {{count}}",
+    "assignedTo": "Asignado a: {{names}}",
+    "notAssigned": "Aún sin asignar",
+    "confirmDelete": "¿Eliminar el conjunto «{{title}}»? Tus alumnos dejarán de verlo.",
+    "addWords": "Añadir palabras",
+    "chooseTopic": "Tema…",
+    "addFromTopic": "Añadir palabras del tema",
+    "added": "Añadidas: {{count}}",
+    "noNewWords": "No hay palabras nuevas en este tema para estos niveles.",
+    "correctHint": "Revisa y corrige las tarjetas antes de asignarlas: los alumnos verán la traducción y el ejemplo tal como están escritos aquí.",
+    "emptyCards": "Aún no hay tarjetas: añade palabras de un tema, busca una palabra o añade una tarjeta a mano.",
+    "assignTo": "Asignar a alumnos",
+    "save": "Guardar conjunto"
   }
 }

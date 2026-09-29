@@ -76,6 +76,13 @@ export function speak(text: string, onEnd?: () => void) {
   })
 }
 
+/** Stop whatever is being spoken (its onEnd fires). */
+export function stopSpeaking() {
+  if (typeof window === 'undefined') return
+  playSeq++
+  stopSpeech()
+}
+
 function stopSpeech() {
   currentAudio?.pause()
   currentAudio = null

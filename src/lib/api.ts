@@ -34,7 +34,31 @@ export type LessonSummary = {
   status: LessonStatus
   author_id: string | null
   exercise_count: number
+  /** 'lesson': grammar / vocabulary; 'practice': a reading or listening material with questions */
+  kind: LessonKind
   position: number
+}
+
+export type LessonKind = 'lesson' | 'practice'
+/** Skills of the Practice section (writing / speaking later). */
+export const PRACTICE_SKILLS = ['reading', 'listening'] as const
+
+export type MaterialType =
+  | 'article' | 'story' | 'blog' | 'email' | 'letter' | 'notice' | 'advert' | 'review' | 'interview_text'
+  | 'podcast' | 'dialogue' | 'interview' | 'announcement' | 'monologue' | 'radio'
+
+/** Catalog rows also carry the material's type and length (practice). */
+export type CatalogLesson = LessonSummary & { material_type: MaterialType | null; word_count: number; duration_sec: number }
+
+/** The text (reading) or script (listening) of a practice lesson. */
+export type Material = {
+  lesson_id: string
+  material_type: MaterialType
+  body: string
+  segments: { speaker: string; text: string }[]
+  audio_url: string
+  word_count: number
+  duration_sec: number
 }
 
 export type Lesson = LessonSummary & {
@@ -45,7 +69,7 @@ export type Lesson = LessonSummary & {
 }
 
 const LESSON_SUMMARY =
-  'id, title, description, level, cefr, scope, skill, topic, grammar_topic_id, sequence, status, author_id, exercise_count, position'
+  'id, title, description, level, cefr, scope, skill, topic, grammar_topic_id, sequence, status, author_id, exercise_count, position, kind'
 
 /** Legacy level for the old `level` column, derived from the CEFR level. */
 const legacyLevel = (cefr: string | null | undefined) =>
@@ -117,12 +141,16 @@ export type LessonFilters = {
   topic?: string
   grammarTopicId?: string
   q?: string
+  /** 'lesson' (default) or 'practice' */
+  kind?: LessonKind
+  /** any of these skills (e.g. grammar + vocabulary + mixed) */
+  skills?: string[]
 }
 
 /** One page of the lesson catalog (no exercises) and the total number of matches.
  *  RLS decides what is visible: published library lessons for everyone;
  *  teacher lessons for their author, assigned students and admins. */
-export async function lessonCatalog(f: LessonFilters, from: number, pageSize: number): Promise<{ lessons: LessonSummary[]; total: number }> {
+export async function lessonCatalog(f: LessonFilters, from: number, pageSize: number): Promise<{ lessons: CatalogLesson[]; total: number }> {
   const { data, error } = await supabase.rpc('lesson_catalog', {
     p_scope: f.scope,
     p_cefr: f.cefr?.length ? f.cefr : null,
@@ -132,9 +160,11 @@ export async function lessonCatalog(f: LessonFilters, from: number, pageSize: nu
     p_q: f.q ?? '',
     p_limit: pageSize,
     p_offset: from,
+    p_kind: f.kind ?? 'lesson',
+    p_skills: f.skills?.length ? f.skills : null,
   })
   if (error) throw error
-  const rows = (data ?? []) as (LessonSummary & { total: number })[]
+  const rows = (data ?? []) as (CatalogLesson & { total: number })[]
   return { lessons: rows.map(({ total: _total, ...l }) => l), total: rows[0]?.total ?? 0 }
 }
 
@@ -155,11 +185,54 @@ export async function lessonSummaries(ids: string[]): Promise<LessonSummary[]> {
   return (data ?? []) as LessonSummary[]
 }
 
-export async function getLesson(id: string): Promise<Lesson | null> {
+/** Exercise columns a player needs. The answers (answer, solution) are not read here:
+ *  the server checks answers, and editors get them through lesson_solutions(). */
+const EXERCISE_PUBLIC = 'id, lesson_id, type, position, prompt, options, explanation, dialogue, data'
+
+/** A lesson with its exercises. `withSolutions`: for the editor (its author / an admin). */
+export async function getLesson(id: string, opts: { withSolutions?: boolean } = {}): Promise<Lesson | null> {
   const { data: l } = await supabase.from('lessons').select('*').eq('id', id).maybeSingle()
   if (!l) return null
-  const { data: exs } = await supabase.from('exercises').select('*').eq('lesson_id', id).order('position')
-  return { ...l, exercises: (exs ?? []).map((e) => rowToExercise(e as ExerciseRow)) } as Lesson
+  const { data: exs } = await supabase.from('exercises').select(EXERCISE_PUBLIC).eq('lesson_id', id).order('position')
+  const rows = (exs ?? []) as unknown as ExerciseRow[]
+  if (opts.withSolutions) {
+    const { data: sol, error } = await supabase.rpc('lesson_solutions', { p_lesson_id: id })
+    if (error) throw error
+    const byId = new Map(((sol ?? []) as { exercise_id: string; answer: string; solution: Record<string, unknown> }[]).map((s) => [s.exercise_id, s]))
+    for (const r of rows) {
+      const s = r.id ? byId.get(r.id) : undefined
+      if (s) Object.assign(r, { answer: s.answer, solution: s.solution })
+    }
+  }
+  return { ...l, exercises: rows.map((e) => rowToExercise({ ...e, answer: e.answer ?? '' })) } as Lesson
+}
+
+/** The text / script of a practice lesson (null for ordinary lessons). */
+export async function getMaterial(lessonId: string): Promise<Material | null> {
+  const { data, error } = await supabase.from('lesson_materials').select('*').eq('lesson_id', lessonId).maybeSingle()
+  if (error) throw error
+  return (data as Material | null) ?? null
+}
+
+/** Correct answers (as text) of a lesson: for its editors, and for a student after completing it. */
+export async function lessonSolutions(lessonId: string): Promise<Record<string, string>> {
+  const { data, error } = await supabase.rpc('lesson_solutions', { p_lesson_id: lessonId })
+  if (error) throw error
+  return Object.fromEntries(((data ?? []) as { exercise_id: string; correct_answer: string }[]).map((s) => [s.exercise_id, s.correct_answer ?? '']))
+}
+
+export type Verdict = { correct: boolean; correctAnswer: string }
+
+/** Grade without saving (guests, and a guest's unchecked answers at the end). */
+export async function gradeAnswers(items: { exerciseId: string; response: Response }[]): Promise<Record<string, Verdict>> {
+  if (!items.length) return {}
+  const { data, error } = await supabase.rpc('grade_answers', {
+    p_items: items.map((i) => ({ exercise_id: i.exerciseId, response: i.response })),
+  })
+  if (error) throw error
+  return Object.fromEntries(
+    ((data ?? []) as { exercise_id: string; correct: boolean; correct_answer: string }[]).map((r) => [r.exercise_id, { correct: r.correct, correctAnswer: r.correct_answer ?? '' }]),
+  )
 }
 
 export type NewLesson = {
@@ -173,6 +246,8 @@ export type NewLesson = {
   status: LessonStatus
   sequence: number
   exercises: Exercise[]
+  /** default 'lesson' */
+  kind?: LessonKind
 }
 
 const lessonRow = (input: Partial<NewLesson>) => {
@@ -198,6 +273,12 @@ export async function updateLesson(id: string, patch: Partial<NewLesson>) {
     if (error) throw error
   }
   if (patch.exercises) await saveLessonExercises(id, patch.exercises)
+}
+
+/** Create or replace the text / script of a practice lesson. */
+export async function saveMaterial(lessonId: string, m: Omit<Material, 'lesson_id'>) {
+  const { error } = await supabase.from('lesson_materials').upsert({ lesson_id: lessonId, ...m }, { onConflict: 'lesson_id' })
+  if (error) throw error
 }
 
 /** Dictionary words linked to a lesson. */
@@ -628,6 +709,88 @@ export async function addCard(setId: string, c: Partial<Flashcard> & { front: st
 export async function deleteCard(id: string) {
   await supabase.from('flashcards').delete().eq('id', id)
 }
+
+/* ---------- teacher sets: build, correct, assign ---------- */
+
+export type TeacherSet = FlashcardSet & { card_count: number; student_ids: string[] }
+
+/** A teacher's own (non-personal) sets with card counts and who they are assigned to. */
+export async function teacherSets(ownerId: string): Promise<TeacherSet[]> {
+  const { data: sets, error } = await supabase
+    .from('flashcard_sets')
+    .select('*')
+    .eq('owner_id', ownerId)
+    .eq('is_personal', false)
+    .order('created_at', { ascending: false })
+  if (error) throw error
+  const ids = (sets ?? []).map((s) => s.id as string)
+  if (!ids.length) return []
+  const [cards, assigned] = await Promise.all([
+    fetchAllPages<{ set_id: string }>((from, to) => supabase.from('flashcards').select('set_id').in('set_id', ids).range(from, to)),
+    fetchAllPages<{ flashcard_set_id: string; student_id: string }>((from, to) =>
+      supabase.from('flashcard_set_assignments').select('flashcard_set_id, student_id').in('flashcard_set_id', ids).range(from, to),
+    ),
+  ])
+  return (sets as FlashcardSet[]).map((s) => ({
+    ...s,
+    card_count: cards.filter((c) => c.set_id === s.id).length,
+    student_ids: assigned.filter((a) => a.flashcard_set_id === s.id).map((a) => a.student_id),
+  }))
+}
+
+export type CardDraft = { id?: string; word_id: string | null; meaning_key: string | null; front: string; back: string; example: string }
+
+/** Save a teacher set: title, cards (kept / changed / added / removed, in this order) and
+ *  its students (assigned / unassigned). Returns the set id. */
+export async function saveTeacherSet(
+  ownerId: string,
+  setId: string | null,
+  title: string,
+  cards: CardDraft[],
+  studentIds: string[],
+): Promise<string> {
+  let id = setId
+  if (id) {
+    const { error } = await supabase.from('flashcard_sets').update({ title }).eq('id', id)
+    if (error) throw error
+  } else {
+    id = await createSet(ownerId, { title, is_personal: false })
+  }
+
+  const current = await listCards(id)
+  const keep = new Set(cards.map((c) => c.id).filter(Boolean))
+  const removed = current.filter((c) => !keep.has(c.id)).map((c) => c.id)
+  if (removed.length) {
+    const { error } = await supabase.from('flashcards').delete().in('id', removed)
+    if (error) throw error
+  }
+  const byId = new Map(current.map((c) => [c.id, c]))
+  for (let i = 0; i < cards.length; i++) {
+    const c = cards[i]
+    const row = { front: c.front.trim(), back: c.back.trim(), example: c.example.trim(), position: i }
+    const old = c.id ? byId.get(c.id) : undefined
+    if (old) {
+      if (old.front !== row.front || old.back !== row.back || old.example !== row.example || old.position !== i) {
+        const { error } = await supabase.from('flashcards').update(row).eq('id', old.id)
+        if (error) throw error
+      }
+    } else {
+      const { error } = await supabase.from('flashcards').insert({ ...row, set_id: id, word_id: c.word_id, meaning_key: c.meaning_key })
+      if (error) throw error
+    }
+  }
+
+  const { data: assigned } = await supabase.from('flashcard_set_assignments').select('student_id').eq('flashcard_set_id', id)
+  const had = new Set((assigned ?? []).map((a) => a.student_id as string))
+  const want = new Set(studentIds)
+  for (const sid of want) if (!had.has(sid)) await assignSet(ownerId, sid, id)
+  const drop = [...had].filter((sid) => !want.has(sid))
+  if (drop.length) {
+    const { error } = await supabase.from('flashcard_set_assignments').delete().eq('flashcard_set_id', id).in('student_id', drop)
+    if (error) throw error
+  }
+  return id
+}
 export async function deleteSet(id: string) {
   await supabase.from('flashcard_sets').delete().eq('id', id)
 }
@@ -720,8 +883,9 @@ export async function startPass(lessonId: string): Promise<LessonPass> {
   return data as LessonPass
 }
 
-/** Autosave the current answer (does not count as a check). */
-export async function saveAnswer(pass: LessonPass, exerciseId: string, response: Response, given: string, isCorrect: boolean) {
+/** Autosave the current answer (does not count as a check). is_correct is set by the server. */
+export async function saveAnswer(pass: LessonPass, exerciseId: string, response: Response, given: string) {
+  const isCorrect = false
   const { error } = await supabase.from('exercise_answers').upsert(
     {
       pass_id: pass.id,
@@ -738,16 +902,17 @@ export async function saveAnswer(pass: LessonPass, exerciseId: string, response:
 }
 
 /** "Check": save the answer and log one attempt (a repeated identical check is ignored). */
-export async function recordCheck(passId: string, exerciseId: string, response: Response, given: string, isCorrect: boolean) {
-  const { data, error } = await supabase.rpc('record_exercise_check', {
+/** "Check": the server saves, grades and logs the attempt, and returns the correct answer. */
+export async function checkExercise(passId: string, exerciseId: string, response: Response, given: string): Promise<{ answer: SavedAnswer } & Verdict> {
+  const { data, error } = await supabase.rpc('check_exercise', {
     p_pass_id: passId,
     p_exercise_id: exerciseId,
     p_response: response,
     p_given: given,
-    p_is_correct: isCorrect,
   })
   if (error) throw error
-  return data as SavedAnswer
+  const r = data as { answer: SavedAnswer; correct: boolean; correct_answer: string }
+  return { answer: r.answer, correct: r.correct, correctAnswer: r.correct_answer ?? '' }
 }
 
 export async function savePassPosition(passId: string, index: number) {

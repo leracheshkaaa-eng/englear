@@ -23,7 +23,8 @@
     "progress": "進捗",
     "teacher": "先生",
     "admin": "管理",
-    "settings": "設定"
+    "settings": "設定",
+    "practice": "練習"
   },
   "home": {
     "tagline": "家族みんなで英語を",
@@ -80,7 +81,10 @@
     "fill": "文法",
     "choice": "選択",
     "listen": "リスニング",
-    "dialogue": "会話"
+    "dialogue": "会話",
+    "truefalse": "正誤",
+    "order": "並べ替え",
+    "match": "マッチング"
   },
   "lessons": {
     "unavailableTitle": "このレッスンは利用できません",
@@ -117,7 +121,18 @@
       "saveCheck": "答え合わせの結果を保存できませんでした。インターネットを確認して、もう一度「答え合わせ」を押してください。",
       "finish": "レッスンを終了できませんでした。インターネットを確認して、もう一度「終了」を押してください。",
       "restart": "レッスンをやり直せませんでした。もう一度お試しください。"
-    }
+    },
+    "tf": {
+      "true": "正しい",
+      "false": "誤り",
+      "not_given": "本文に記述なし"
+    },
+    "tfInstruction": "本文によると、この文は正しいですか、誤りですか？",
+    "orderWords": "単語を正しい順番に並べましょう。",
+    "orderSentences": "文を正しい順番に並べましょう。",
+    "orderHint": "正しい順番でパーツをタップしましょう。",
+    "matchInstruction": "それぞれの項目をペアと組み合わせましょう。",
+    "matchChoose": "選択…"
   },
   "result": {
     "completed": "レッスン完了",
@@ -249,7 +264,39 @@
   "practice": {
     "chooseTranslation": "正しい訳を選んでください：{{word}}",
     "whichEnglishWord": "「{{translation}}」は英語で…",
-    "whichWordFits": "当てはまる単語はどれ：「{{definition}}」"
+    "whichWordFits": "当てはまる単語はどれ：「{{definition}}」",
+    "types": {
+      "article": "記事",
+      "story": "物語",
+      "blog": "ブログ",
+      "email": "メール",
+      "letter": "手紙",
+      "notice": "お知らせ",
+      "advert": "広告",
+      "review": "レビュー",
+      "interview_text": "インタビュー",
+      "podcast": "ポッドキャスト",
+      "dialogue": "会話",
+      "interview": "インタビュー",
+      "announcement": "アナウンス",
+      "monologue": "スピーチ",
+      "radio": "ラジオ"
+    },
+    "minutes_other": "約 {{count}} 分",
+    "words_other": "{{count}} 語",
+    "questions_other": "{{count}} 問",
+    "toQuestions_other": "{{count}} 問の質問へ",
+    "hideScript": "スクリプトを隠す",
+    "showScript": "スクリプトを表示",
+    "showText": "本文を表示",
+    "hideText": "本文を隠す",
+    "listen": "聞く",
+    "stop": "停止",
+    "listenHint": "何度でも聞けます。",
+    "playing": "再生中：{{total}} 部中 {{n}} 部目",
+    "introListening": "まず音声を聞きましょう。答えながらもう一度聞けます。",
+    "introReading": "まず本文を読みましょう。答えている間も見られます。",
+    "back": "すべての練習"
   },
   "dictionary": {
     "title": "辞書",
@@ -332,7 +379,8 @@
     "tabs": {
       "lessons": "マイレッスン",
       "students": "マイ生徒",
-      "progress": "進捗"
+      "progress": "進捗",
+      "cards": "カード"
     },
     "importResult": "インポート：{{imported}}、スキップ（重複）：{{skipped}}。ローカルのコピーはバックアップとして残してあります。",
     "newLesson": "+ 新しいレッスン",
@@ -384,7 +432,9 @@
       "choiceNoAnswer": "問題 {{n}}（choice）：正しい選択肢に「*」を付けてください。",
       "dialogueNoBlank": "問題 {{n}}（dialogue）：2番目のセリフに空欄 ___ がありません。",
       "dialogueBlankOnlyB": "問題 {{n}}（dialogue）：空欄 ___ は2番目のセリフ（B）にしか入れられません。",
-      "dialogueBlankNoAnswer": "問題 {{n}}（dialogue）：空欄の答えがかっこ（…）に書かれていません。"
+      "dialogueBlankNoAnswer": "問題 {{n}}（dialogue）：空欄の答えがかっこ（…）に書かれていません。",
+      "tfNoAnswer": "問題 {{n}}（tf）：「= true」「= false」「= not given」のいずれかを書いてください。",
+      "duplicateItems": "問題 {{n}}：同じ項目が 2 つあります。すべて異なる必要があります。"
     },
     "cefr": "レベル",
     "skill": "スキル",
@@ -397,7 +447,12 @@
     "noWordsFound": "このレッスンには辞書の単語が見つかりませんでした。",
     "libraryBadge": "ライブラリー",
     "teacherBadge": "自分の生徒",
-    "wordsSelected": "選択済み：{{count}}"
+    "wordsSelected": "選択済み：{{count}}",
+    "syntaxAccept": "正解が複数ある場合は | で区切る",
+    "syntaxTf": "正しい / 誤り",
+    "syntaxTfng": "正しい / 誤り / 本文に記述なし（B1 以上）",
+    "syntaxOrder": "正しい順番で書く——生徒にはシャッフルされて表示されます",
+    "syntaxMatch": "ペア。右の列は生徒にシャッフルされて表示されます"
   },
   "partsOfSpeech": {
     "noun": "名詞",
@@ -510,6 +565,31 @@
     "search": "レッスンを検索…",
     "empty": "レッスンライブラリーを準備中です。新しいレッスンはもうすぐ公開されます！",
     "noResults": "この条件に合うレッスンはありません。",
-    "count": "レッスン数：{{count}}"
+    "count": "レッスン数：{{count}}",
+    "practiceIntro": "まず読むか聞いて、それから質問に答えましょう。レベルとスキルを選んでください。",
+    "lessonsIntro": "1 つのテーマのレッスン：文法、語彙、またはその両方。レベルと学びたい内容を選んでください。",
+    "chooseLevel": "レベル",
+    "chooseSkill": "スキル",
+    "chooseFocus": "学ぶ内容",
+    "focusAll": "すべて",
+    "practiceEmpty": "このレベルの記事とポッドキャストは準備中です。もうすぐ公開されます！"
+  },
+  "teacherSets": {
+    "newSet": "新しいカードセット",
+    "intro": "辞書からセットを作り、カードを修正して生徒に割り当てましょう。生徒は「{{section}}」→「{{group}}」で見つけられます。",
+    "none": "生徒向けのカードセットはまだありません。",
+    "cardCount": "カード：{{count}}",
+    "assignedTo": "割り当て先：{{names}}",
+    "notAssigned": "まだ割り当てられていません",
+    "confirmDelete": "セット「{{title}}」を削除しますか？生徒には表示されなくなります。",
+    "addWords": "単語を追加",
+    "chooseTopic": "トピック…",
+    "addFromTopic": "トピックから単語を追加",
+    "added": "追加しました：{{count}}",
+    "noNewWords": "このトピックには、選んだレベルの新しい単語がありません。",
+    "correctHint": "割り当てる前にカードを確認・修正してください。生徒にはここに書かれたとおりの訳と例文が表示されます。",
+    "emptyCards": "まだカードがありません。トピックから単語を追加するか、単語を検索するか、手動でカードを追加してください。",
+    "assignTo": "生徒に割り当てる",
+    "save": "セットを保存"
   }
 }

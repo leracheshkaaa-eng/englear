@@ -8,7 +8,7 @@ import type { Flashcard, FlashcardSet, SetProgress, SetRef, Word, WordType } fro
 import { CEFR_LEVELS, IELTS_CATEGORIES, SET_SIZES, TOPICS, ieltsLabel, topicLabel } from '../lib/config'
 import i18n, { translationLanguage } from '../i18n'
 import { evaluate, sameResponse, type Exercise, type Response } from '../lib/exercises'
-import { generatePractice, type StudyItem } from '../lib/practice'
+import { generatePractice, isOutdatedPractice, type StudyItem } from '../lib/practice'
 import { ExerciseView } from './lessons'
 
 type Tab = 'library' | 'mine'
@@ -470,7 +470,7 @@ function StudyPlayer({
   async function startPractice() {
     if (!p) return
     // a retake after completion gets fresh exercises
-    const practice = p.practice?.length && p.status !== 'completed' ? p.practice : generatePractice(items)
+    const practice = p.practice?.length && p.status !== 'completed' && !isOutdatedPractice(p.practice) ? p.practice : generatePractice(items)
     try {
       if (practice !== p.practice) await save({ practice })
       setMode('practice')

@@ -23,7 +23,8 @@
     "progress": "Postępy",
     "teacher": "Nauczyciel",
     "admin": "Admin",
-    "settings": "Ustawienia"
+    "settings": "Ustawienia",
+    "practice": "Praktyka"
   },
   "home": {
     "tagline": "angielski dla całej rodziny",
@@ -80,7 +81,10 @@
     "fill": "Gramatyka",
     "choice": "Wybór",
     "listen": "Słuchanie",
-    "dialogue": "Dialog"
+    "dialogue": "Dialog",
+    "truefalse": "Prawda / fałsz",
+    "order": "Kolejność",
+    "match": "Dopasuj"
   },
   "lessons": {
     "unavailableTitle": "Lekcja niedostępna",
@@ -120,7 +124,18 @@
       "saveCheck": "Nie udało się zapisać sprawdzenia. Sprawdź internet i ponownie kliknij „Sprawdź”.",
       "finish": "Nie udało się zakończyć lekcji. Sprawdź internet i ponownie kliknij „Zakończ”.",
       "restart": "Nie udało się rozpocząć lekcji od nowa. Spróbuj ponownie."
-    }
+    },
+    "tf": {
+      "true": "Prawda",
+      "false": "Fałsz",
+      "not_given": "Brak informacji"
+    },
+    "tfInstruction": "Czy zdanie jest prawdziwe według tekstu?",
+    "orderWords": "Ułóż słowa we właściwej kolejności.",
+    "orderSentences": "Ułóż zdania we właściwej kolejności.",
+    "orderHint": "Stukaj w części we właściwej kolejności.",
+    "matchInstruction": "Dopasuj każdy element do jego pary.",
+    "matchChoose": "Wybierz…"
   },
   "result": {
     "completed": "Lekcja ukończona",
@@ -261,7 +276,51 @@
   "practice": {
     "chooseTranslation": "Wybierz tłumaczenie: {{word}}",
     "whichEnglishWord": "„{{translation}}” po angielsku to…",
-    "whichWordFits": "Które słowo pasuje: „{{definition}}”"
+    "whichWordFits": "Które słowo pasuje: „{{definition}}”",
+    "types": {
+      "article": "Artykuł",
+      "story": "Opowiadanie",
+      "blog": "Wpis na blogu",
+      "email": "E-mail",
+      "letter": "List",
+      "notice": "Ogłoszenie",
+      "advert": "Reklama",
+      "review": "Recenzja",
+      "interview_text": "Wywiad",
+      "podcast": "Podcast",
+      "dialogue": "Dialog",
+      "interview": "Wywiad",
+      "announcement": "Komunikat",
+      "monologue": "Wystąpienie",
+      "radio": "Radio"
+    },
+    "minutes_one": "≈ {{count}} min",
+    "minutes_few": "≈ {{count}} min",
+    "minutes_many": "≈ {{count}} min",
+    "minutes_other": "≈ {{count}} min",
+    "words_one": "{{count}} słowo",
+    "words_few": "{{count}} słowa",
+    "words_many": "{{count}} słów",
+    "words_other": "{{count}} słowa",
+    "questions_one": "{{count}} pytanie",
+    "questions_few": "{{count}} pytania",
+    "questions_many": "{{count}} pytań",
+    "questions_other": "{{count}} pytania",
+    "toQuestions_one": "Do pytania",
+    "toQuestions_few": "Do {{count}} pytań",
+    "toQuestions_many": "Do {{count}} pytań",
+    "toQuestions_other": "Do {{count}} pytań",
+    "hideScript": "Ukryj transkrypcję",
+    "showScript": "Pokaż transkrypcję",
+    "showText": "Pokaż tekst",
+    "hideText": "Ukryj tekst",
+    "listen": "Słuchaj",
+    "stop": "Stop",
+    "listenHint": "Możesz słuchać, ile razy chcesz.",
+    "playing": "Odtwarzanie: część {{n}} z {{total}}",
+    "introListening": "Najpierw posłuchaj nagrania. Podczas odpowiedzi możesz słuchać go ponownie.",
+    "introReading": "Najpierw przeczytaj tekst. Będzie dostępny podczas odpowiedzi.",
+    "back": "Cała praktyka"
   },
   "dictionary": {
     "title": "Słownik",
@@ -347,7 +406,8 @@
     "tabs": {
       "lessons": "Moje lekcje",
       "students": "Moi uczniowie",
-      "progress": "Postępy"
+      "progress": "Postępy",
+      "cards": "Fiszki"
     },
     "importResult": "Zaimportowano: {{imported}}, pominięto (duplikaty): {{skipped}}. Lokalna kopia zostaje jako zapas.",
     "newLesson": "+ Nowa lekcja",
@@ -402,7 +462,9 @@
       "choiceNoAnswer": "Zadanie {{n}} (choice): zaznacz poprawną opcję znakiem „*”.",
       "dialogueNoBlank": "Zadanie {{n}} (dialogue): brak luki ___ w drugiej kwestii.",
       "dialogueBlankOnlyB": "Zadanie {{n}} (dialogue): luka ___ jest dozwolona tylko w drugiej kwestii (B).",
-      "dialogueBlankNoAnswer": "Zadanie {{n}} (dialogue): luka nie ma odpowiedzi w nawiasach (…)."
+      "dialogueBlankNoAnswer": "Zadanie {{n}} (dialogue): luka nie ma odpowiedzi w nawiasach (…).",
+      "tfNoAnswer": "Zadanie {{n}} (tf): wpisz „= true”, „= false” lub „= not given”.",
+      "duplicateItems": "Zadanie {{n}}: dwa elementy są takie same — wszystkie muszą być różne."
     },
     "cefr": "Poziom",
     "skill": "Umiejętność",
@@ -415,7 +477,12 @@
     "noWordsFound": "W tej lekcji nie znaleziono słów ze słownika.",
     "libraryBadge": "Biblioteka",
     "teacherBadge": "Moi uczniowie",
-    "wordsSelected": "Wybrano: {{count}}"
+    "wordsSelected": "Wybrano: {{count}}",
+    "syntaxAccept": "kilka poprawnych odpowiedzi oddzielonych |",
+    "syntaxTf": "prawda / fałsz",
+    "syntaxTfng": "prawda / fałsz / brak informacji (od B1)",
+    "syntaxOrder": "zapisane we właściwej kolejności — uczeń widzi je pomieszane",
+    "syntaxMatch": "pary; uczeń widzi prawą kolumnę pomieszaną"
   },
   "partsOfSpeech": {
     "noun": "rzeczownik",
@@ -528,6 +595,31 @@
     "search": "Szukaj lekcji…",
     "empty": "Biblioteka lekcji jest w przygotowaniu — nowe lekcje pojawią się wkrótce!",
     "noResults": "Brak lekcji dla tych filtrów.",
-    "count": "Lekcje: {{count}}"
+    "count": "Lekcje: {{count}}",
+    "practiceIntro": "Najpierw przeczytaj lub posłuchaj, potem odpowiedz na pytania. Wybierz poziom i umiejętność.",
+    "lessonsIntro": "Lekcje na jeden temat: gramatyka, słownictwo albo jedno i drugie. Wybierz poziom i czego chcesz się uczyć.",
+    "chooseLevel": "Poziom",
+    "chooseSkill": "Umiejętność",
+    "chooseFocus": "Czego się uczyć",
+    "focusAll": "Wszystko",
+    "practiceEmpty": "Teksty i podcasty na ten poziom są w przygotowaniu — pojawią się wkrótce!"
+  },
+  "teacherSets": {
+    "newSet": "Nowy zestaw fiszek",
+    "intro": "Zbuduj zestaw ze słownika, popraw fiszki i przypisz go uczniom. Znajdą go w sekcji „{{section}}” → „{{group}}”.",
+    "none": "Nie masz jeszcze zestawów fiszek dla uczniów.",
+    "cardCount": "Fiszki: {{count}}",
+    "assignedTo": "Przypisano: {{names}}",
+    "notAssigned": "Jeszcze nieprzypisany",
+    "confirmDelete": "Usunąć zestaw „{{title}}”? Uczniowie przestaną go widzieć.",
+    "addWords": "Dodaj słowa",
+    "chooseTopic": "Temat…",
+    "addFromTopic": "Dodaj słowa z tematu",
+    "added": "Dodano: {{count}}",
+    "noNewWords": "Brak nowych słów w tym temacie dla tych poziomów.",
+    "correctHint": "Sprawdź i popraw fiszki przed przypisaniem: uczniowie zobaczą tłumaczenie i przykład dokładnie tak, jak są tu zapisane.",
+    "emptyCards": "Brak fiszek — dodaj słowa z tematu, znajdź słowo albo dodaj fiszkę ręcznie.",
+    "assignTo": "Przypisz uczniom",
+    "save": "Zapisz zestaw"
   }
 }

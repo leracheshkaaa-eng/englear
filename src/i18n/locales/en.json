@@ -23,7 +23,8 @@
     "progress": "Progress",
     "teacher": "Teacher",
     "admin": "Admin",
-    "settings": "Settings"
+    "settings": "Settings",
+    "practice": "Practice"
   },
   "home": {
     "tagline": "English for the whole family",
@@ -80,7 +81,10 @@
     "fill": "Grammar",
     "choice": "Choice",
     "listen": "Listening",
-    "dialogue": "Dialogue"
+    "dialogue": "Dialogue",
+    "truefalse": "True / False",
+    "order": "Put in order",
+    "match": "Match"
   },
   "lessons": {
     "unavailableTitle": "Lesson unavailable",
@@ -118,7 +122,18 @@
       "saveCheck": "Couldn't save the check. Check your internet and press “Check” again.",
       "finish": "Couldn't finish the lesson. Check your internet and press “Finish” again.",
       "restart": "Couldn't restart the lesson. Please try again."
-    }
+    },
+    "tf": {
+      "true": "True",
+      "false": "False",
+      "not_given": "Not given"
+    },
+    "tfInstruction": "Is the statement true or false according to the text?",
+    "orderWords": "Put the words in the right order.",
+    "orderSentences": "Put the sentences in the right order.",
+    "orderHint": "Tap the pieces in the right order.",
+    "matchInstruction": "Match each item with its pair.",
+    "matchChoose": "Choose…"
   },
   "result": {
     "completed": "Lesson completed",
@@ -253,7 +268,43 @@
   "practice": {
     "chooseTranslation": "Choose the translation: {{word}}",
     "whichEnglishWord": "“{{translation}}” in English is…",
-    "whichWordFits": "Which word fits: “{{definition}}”"
+    "whichWordFits": "Which word fits: “{{definition}}”",
+    "types": {
+      "article": "Article",
+      "story": "Story",
+      "blog": "Blog post",
+      "email": "Email",
+      "letter": "Letter",
+      "notice": "Notice",
+      "advert": "Advert",
+      "review": "Review",
+      "interview_text": "Interview",
+      "podcast": "Podcast",
+      "dialogue": "Dialogue",
+      "interview": "Interview",
+      "announcement": "Announcement",
+      "monologue": "Talk",
+      "radio": "Radio"
+    },
+    "minutes_one": "≈ {{count}} min",
+    "minutes_other": "≈ {{count}} min",
+    "words_one": "{{count}} word",
+    "words_other": "{{count}} words",
+    "questions_one": "{{count}} question",
+    "questions_other": "{{count}} questions",
+    "toQuestions_one": "To the question",
+    "toQuestions_other": "To the {{count}} questions",
+    "hideScript": "Hide the transcript",
+    "showScript": "Show the transcript",
+    "showText": "Show the text",
+    "hideText": "Hide the text",
+    "listen": "Listen",
+    "stop": "Stop",
+    "listenHint": "You can listen as many times as you like.",
+    "playing": "Playing: part {{n}} of {{total}}",
+    "introListening": "Listen to the recording first. You can listen again while answering.",
+    "introReading": "Read the text first. It stays available while you answer.",
+    "back": "All practice"
   },
   "dictionary": {
     "title": "Dictionary",
@@ -337,7 +388,8 @@
     "tabs": {
       "lessons": "My lessons",
       "students": "My students",
-      "progress": "Progress"
+      "progress": "Progress",
+      "cards": "Cards"
     },
     "importResult": "Imported: {{imported}}, skipped (duplicates): {{skipped}}. The local copy is kept as a backup.",
     "newLesson": "+ New lesson",
@@ -390,7 +442,9 @@
       "choiceNoAnswer": "Exercise {{n}} (choice): mark the correct option with “*”.",
       "dialogueNoBlank": "Exercise {{n}} (dialogue): there is no gap ___ in the second line.",
       "dialogueBlankOnlyB": "Exercise {{n}} (dialogue): the gap ___ is allowed only in the second line (B).",
-      "dialogueBlankNoAnswer": "Exercise {{n}} (dialogue): the gap has no answer in brackets (…)."
+      "dialogueBlankNoAnswer": "Exercise {{n}} (dialogue): the gap has no answer in brackets (…).",
+      "tfNoAnswer": "Exercise {{n}} (tf): write “= true”, “= false” or “= not given”.",
+      "duplicateItems": "Exercise {{n}}: two items are the same — each must be different."
     },
     "cefr": "Level",
     "skill": "Skill",
@@ -403,7 +457,12 @@
     "noWordsFound": "No dictionary words found in this lesson.",
     "libraryBadge": "Library",
     "teacherBadge": "My students",
-    "wordsSelected": "Selected: {{count}}"
+    "wordsSelected": "Selected: {{count}}",
+    "syntaxAccept": "several correct answers separated by |",
+    "syntaxTf": "true / false",
+    "syntaxTfng": "true / false / not given (from B1)",
+    "syntaxOrder": "written in the right order — students see it mixed up",
+    "syntaxMatch": "pairs; students see the right column mixed up"
   },
   "partsOfSpeech": {
     "noun": "noun",
@@ -516,6 +575,31 @@
     "search": "Search lessons…",
     "empty": "The lesson library is being prepared — new lessons are coming soon!",
     "noResults": "No lessons match these filters.",
-    "count": "Lessons: {{count}}"
+    "count": "Lessons: {{count}}",
+    "practiceIntro": "Read or listen first, then answer questions about it. Choose your level and a skill.",
+    "lessonsIntro": "Lessons on one topic: grammar, vocabulary or both. Choose your level and what you want to learn.",
+    "chooseLevel": "Level",
+    "chooseSkill": "Skill",
+    "chooseFocus": "What to learn",
+    "focusAll": "Everything",
+    "practiceEmpty": "Texts and podcasts for this level are being prepared — they are coming soon!"
+  },
+  "teacherSets": {
+    "newSet": "New card set",
+    "intro": "Build a set from the dictionary, correct the cards and assign it to your students. They will find it under {{section}} → {{group}}.",
+    "none": "You have no card sets for students yet.",
+    "cardCount": "Cards: {{count}}",
+    "assignedTo": "Assigned to: {{names}}",
+    "notAssigned": "Not assigned yet",
+    "confirmDelete": "Delete the set “{{title}}”? Your students will no longer see it.",
+    "addWords": "Add words",
+    "chooseTopic": "Topic…",
+    "addFromTopic": "Add words from the topic",
+    "added": "Added: {{count}}",
+    "noNewWords": "No new words in this topic for these levels.",
+    "correctHint": "Check and correct the cards before assigning: students see the translation and the example exactly as written here.",
+    "emptyCards": "No cards yet — add words from a topic, find a word or add a card by hand.",
+    "assignTo": "Assign to students",
+    "save": "Save set"
   }
 }

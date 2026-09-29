@@ -23,7 +23,8 @@
     "progress": "进度",
     "teacher": "教师",
     "admin": "管理",
-    "settings": "设置"
+    "settings": "设置",
+    "practice": "练习"
   },
   "home": {
     "tagline": "全家一起学英语",
@@ -80,7 +81,10 @@
     "fill": "语法",
     "choice": "选择",
     "listen": "听力",
-    "dialogue": "对话"
+    "dialogue": "对话",
+    "truefalse": "判断正误",
+    "order": "排序",
+    "match": "配对"
   },
   "lessons": {
     "unavailableTitle": "课程不可用",
@@ -117,7 +121,18 @@
       "saveCheck": "无法保存检查结果。请检查网络后再次点击“检查”。",
       "finish": "无法完成课程。请检查网络后再次点击“完成”。",
       "restart": "无法重新开始课程，请重试。"
-    }
+    },
+    "tf": {
+      "true": "正确",
+      "false": "错误",
+      "not_given": "文中未提及"
+    },
+    "tfInstruction": "根据文章，这句话是对还是错？",
+    "orderWords": "把单词按正确顺序排列。",
+    "orderSentences": "把句子按正确顺序排列。",
+    "orderHint": "按正确顺序点击各部分。",
+    "matchInstruction": "为每一项找到对应的一项。",
+    "matchChoose": "请选择…"
   },
   "result": {
     "completed": "课程已完成",
@@ -249,7 +264,39 @@
   "practice": {
     "chooseTranslation": "选择正确的翻译：{{word}}",
     "whichEnglishWord": "“{{translation}}”用英语怎么说？",
-    "whichWordFits": "哪个单词符合：“{{definition}}”"
+    "whichWordFits": "哪个单词符合：“{{definition}}”",
+    "types": {
+      "article": "文章",
+      "story": "故事",
+      "blog": "博客",
+      "email": "电子邮件",
+      "letter": "信件",
+      "notice": "告示",
+      "advert": "广告",
+      "review": "评论",
+      "interview_text": "访谈",
+      "podcast": "播客",
+      "dialogue": "对话",
+      "interview": "采访",
+      "announcement": "广播通知",
+      "monologue": "演讲",
+      "radio": "电台"
+    },
+    "minutes_other": "约 {{count}} 分钟",
+    "words_other": "{{count}} 个词",
+    "questions_other": "{{count}} 道题",
+    "toQuestions_other": "去做 {{count}} 道题",
+    "hideScript": "隐藏录音文本",
+    "showScript": "显示录音文本",
+    "showText": "显示文章",
+    "hideText": "隐藏文章",
+    "listen": "收听",
+    "stop": "停止",
+    "listenHint": "可以反复收听。",
+    "playing": "正在播放：第 {{n}} / {{total}} 部分",
+    "introListening": "先听录音。答题时可以再听。",
+    "introReading": "先读文章。答题时可以随时查看。",
+    "back": "全部练习"
   },
   "dictionary": {
     "title": "词典",
@@ -332,7 +379,8 @@
     "tabs": {
       "lessons": "我的课程",
       "students": "我的学生",
-      "progress": "进度"
+      "progress": "进度",
+      "cards": "卡片"
     },
     "importResult": "已导入：{{imported}}，已跳过（重复）：{{skipped}}。本地副本已保留作为备份。",
     "newLesson": "+ 新课程",
@@ -384,7 +432,9 @@
       "choiceNoAnswer": "第 {{n}} 题（choice）：请用“*”标出正确选项。",
       "dialogueNoBlank": "第 {{n}} 题（dialogue）：第二句中没有空格 ___。",
       "dialogueBlankOnlyB": "第 {{n}} 题（dialogue）：空格 ___ 只能出现在第二句（B）。",
-      "dialogueBlankNoAnswer": "第 {{n}} 题（dialogue）：空格没有写在括号中的答案（…）。"
+      "dialogueBlankNoAnswer": "第 {{n}} 题（dialogue）：空格没有写在括号中的答案（…）。",
+      "tfNoAnswer": "第 {{n}} 题（tf）：请写“= true”“= false”或“= not given”。",
+      "duplicateItems": "第 {{n}} 题：有两项相同——每一项都必须不同。"
     },
     "cefr": "级别",
     "skill": "技能",
@@ -397,7 +447,12 @@
     "noWordsFound": "本课中未找到词典单词。",
     "libraryBadge": "课程库",
     "teacherBadge": "我的学生",
-    "wordsSelected": "已选择：{{count}}"
+    "wordsSelected": "已选择：{{count}}",
+    "syntaxAccept": "多个正确答案用 | 分隔",
+    "syntaxTf": "正确 / 错误",
+    "syntaxTfng": "正确 / 错误 / 文中未提及（B1 起）",
+    "syntaxOrder": "按正确顺序书写——学生看到的是打乱的顺序",
+    "syntaxMatch": "配对；学生看到的右栏是打乱的"
   },
   "partsOfSpeech": {
     "noun": "名词",
@@ -510,6 +565,31 @@
     "search": "搜索课程…",
     "empty": "课程库正在准备中——新课程即将上线！",
     "noResults": "没有符合这些筛选条件的课程。",
-    "count": "课程：{{count}}"
+    "count": "课程：{{count}}",
+    "practiceIntro": "先读或先听，然后回答问题。选择你的级别和技能。",
+    "lessonsIntro": "围绕一个主题的课程：语法、词汇或两者兼有。选择你的级别和想学的内容。",
+    "chooseLevel": "级别",
+    "chooseSkill": "技能",
+    "chooseFocus": "学习内容",
+    "focusAll": "全部",
+    "practiceEmpty": "本级别的文章和播客正在准备中——即将上线！"
+  },
+  "teacherSets": {
+    "newSet": "新建卡片组",
+    "intro": "从词典中组建卡片组，修改卡片后布置给学生。学生可以在“{{section}}”→“{{group}}”中找到它。",
+    "none": "你还没有给学生的卡片组。",
+    "cardCount": "卡片：{{count}}",
+    "assignedTo": "已布置给：{{names}}",
+    "notAssigned": "尚未布置",
+    "confirmDelete": "删除卡片组“{{title}}”？学生将无法再看到它。",
+    "addWords": "添加单词",
+    "chooseTopic": "主题…",
+    "addFromTopic": "从主题添加单词",
+    "added": "已添加：{{count}}",
+    "noNewWords": "该主题在所选级别中没有新单词。",
+    "correctHint": "布置前请检查并修改卡片：学生看到的译文和例句与这里写的完全一致。",
+    "emptyCards": "还没有卡片——从主题添加单词、查找单词或手动添加卡片。",
+    "assignTo": "布置给学生",
+    "save": "保存卡片组"
   }
 }

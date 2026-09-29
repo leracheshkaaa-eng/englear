@@ -12,7 +12,7 @@ import { Login, StudentProgress } from './features/account'
 import { Avatar } from './lib/avatars'
 import { useTranslation } from 'react-i18next'
 
-type View = 'home' | 'lessons' | 'practice' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
+type View = 'home' | 'lessons' | 'practice' | 'player' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
 
 function Shell() {
   const { loading, userId, role, profile, signOut, settings } = useAuth()
@@ -22,6 +22,7 @@ function Shell() {
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [active, setActive] = useState<Lesson | null>(null)
+  const [backTo, setBackTo] = useState<'lessons' | 'practice'>('lessons') // where the player returns
   const [flashTarget, setFlashTarget] = useState<api.SetProgress | null>(null) // set opened from Progress
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
 
@@ -104,6 +105,7 @@ function Shell() {
   const nav: [View, string][] = [
     ['home', t('nav.home')],
     ['lessons', t('nav.lessons')],
+    ['practice', t('nav.practice')],
   ]
   if (userId) nav.push(['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
   if (isTeacher) nav.push(['teacher', t('nav.teacher')])
@@ -147,20 +149,23 @@ function Shell() {
 
       <main>
         {view === 'home' && <Home role={role} onStart={() => go('lessons')} onLogin={() => go('login')} count={lessonCount} />}
-        {view === 'lessons' && (
+        {(view === 'lessons' || view === 'practice') && (
           <LessonsCatalog
+            key={view}
+            kind={view === 'practice' ? 'practice' : 'lesson'}
             progress={progress}
             passes={passes}
             onOpen={async (id) => {
               const lesson = await api.getLesson(id).catch(() => null)
               if (!lesson) return
               setActive(lesson)
-              setView('practice')
+              setBackTo(view)
+              setView('player')
             }}
           />
         )}
-        {view === 'practice' && active && (
-          <LessonPlayer lesson={active} onDone={() => { reload(); setView('lessons') }} />
+        {view === 'player' && active && (
+          <LessonPlayer lesson={active} onDone={() => { reload(); setView(backTo) }} />
         )}
         {view === 'teacher' && isTeacher && <TeacherMode reload={reload} />}
         {view === 'flashcards' && userId && (

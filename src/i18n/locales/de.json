@@ -23,7 +23,8 @@
     "progress": "Fortschritt",
     "teacher": "Lehrkraft",
     "admin": "Admin",
-    "settings": "Einstellungen"
+    "settings": "Einstellungen",
+    "practice": "Übung"
   },
   "home": {
     "tagline": "Englisch für die ganze Familie",
@@ -80,7 +81,10 @@
     "fill": "Grammatik",
     "choice": "Auswahl",
     "listen": "Hörverstehen",
-    "dialogue": "Dialog"
+    "dialogue": "Dialog",
+    "truefalse": "Richtig / Falsch",
+    "order": "Reihenfolge",
+    "match": "Zuordnen"
   },
   "lessons": {
     "unavailableTitle": "Lektion nicht verfügbar",
@@ -118,7 +122,18 @@
       "saveCheck": "Die Prüfung konnte nicht gespeichert werden. Prüfe dein Internet und drücke erneut „Prüfen“.",
       "finish": "Die Lektion konnte nicht beendet werden. Prüfe dein Internet und drücke erneut „Beenden“.",
       "restart": "Die Lektion konnte nicht neu gestartet werden. Bitte versuche es erneut."
-    }
+    },
+    "tf": {
+      "true": "Richtig",
+      "false": "Falsch",
+      "not_given": "Steht nicht im Text"
+    },
+    "tfInstruction": "Ist die Aussage laut Text richtig oder falsch?",
+    "orderWords": "Bring die Wörter in die richtige Reihenfolge.",
+    "orderSentences": "Bring die Sätze in die richtige Reihenfolge.",
+    "orderHint": "Tippe die Teile in der richtigen Reihenfolge an.",
+    "matchInstruction": "Ordne jedem Element sein Paar zu.",
+    "matchChoose": "Auswählen…"
   },
   "result": {
     "completed": "Lektion abgeschlossen",
@@ -253,7 +268,43 @@
   "practice": {
     "chooseTranslation": "Wähle die Übersetzung: {{word}}",
     "whichEnglishWord": "„{{translation}}“ auf Englisch ist…",
-    "whichWordFits": "Welches Wort passt: „{{definition}}“"
+    "whichWordFits": "Welches Wort passt: „{{definition}}“",
+    "types": {
+      "article": "Artikel",
+      "story": "Geschichte",
+      "blog": "Blogbeitrag",
+      "email": "E-Mail",
+      "letter": "Brief",
+      "notice": "Aushang",
+      "advert": "Anzeige",
+      "review": "Bewertung",
+      "interview_text": "Interview",
+      "podcast": "Podcast",
+      "dialogue": "Dialog",
+      "interview": "Interview",
+      "announcement": "Durchsage",
+      "monologue": "Vortrag",
+      "radio": "Radio"
+    },
+    "minutes_one": "≈ {{count}} Min.",
+    "minutes_other": "≈ {{count}} Min.",
+    "words_one": "{{count}} Wort",
+    "words_other": "{{count}} Wörter",
+    "questions_one": "{{count}} Frage",
+    "questions_other": "{{count}} Fragen",
+    "toQuestions_one": "Zur Frage",
+    "toQuestions_other": "Zu den {{count}} Fragen",
+    "hideScript": "Transkript ausblenden",
+    "showScript": "Transkript anzeigen",
+    "showText": "Text anzeigen",
+    "hideText": "Text ausblenden",
+    "listen": "Anhören",
+    "stop": "Stopp",
+    "listenHint": "Du kannst so oft zuhören, wie du möchtest.",
+    "playing": "Läuft: Teil {{n}} von {{total}}",
+    "introListening": "Hör dir zuerst die Aufnahme an. Beim Antworten kannst du sie erneut hören.",
+    "introReading": "Lies zuerst den Text. Beim Antworten bleibt er verfügbar.",
+    "back": "Alle Übungen"
   },
   "dictionary": {
     "title": "Wörterbuch",
@@ -337,7 +388,8 @@
     "tabs": {
       "lessons": "Meine Lektionen",
       "students": "Meine Lernenden",
-      "progress": "Fortschritt"
+      "progress": "Fortschritt",
+      "cards": "Karten"
     },
     "importResult": "Importiert: {{imported}}, übersprungen (Duplikate): {{skipped}}. Die lokale Kopie bleibt als Sicherung erhalten.",
     "newLesson": "+ Neue Lektion",
@@ -390,7 +442,9 @@
       "choiceNoAnswer": "Aufgabe {{n}} (choice): markiere die richtige Option mit „*“.",
       "dialogueNoBlank": "Aufgabe {{n}} (dialogue): in der zweiten Zeile fehlt die Lücke ___.",
       "dialogueBlankOnlyB": "Aufgabe {{n}} (dialogue): die Lücke ___ ist nur in der zweiten Zeile (B) erlaubt.",
-      "dialogueBlankNoAnswer": "Aufgabe {{n}} (dialogue): die Lücke hat keine Antwort in Klammern (…)."
+      "dialogueBlankNoAnswer": "Aufgabe {{n}} (dialogue): die Lücke hat keine Antwort in Klammern (…).",
+      "tfNoAnswer": "Übung {{n}} (tf): schreiben Sie „= true“, „= false“ oder „= not given“.",
+      "duplicateItems": "Übung {{n}}: zwei Elemente sind gleich — alle müssen verschieden sein."
     },
     "cefr": "Niveau",
     "skill": "Fertigkeit",
@@ -403,7 +457,12 @@
     "noWordsFound": "In dieser Lektion wurden keine Wörterbuchwörter gefunden.",
     "libraryBadge": "Bibliothek",
     "teacherBadge": "Meine Schüler",
-    "wordsSelected": "Ausgewählt: {{count}}"
+    "wordsSelected": "Ausgewählt: {{count}}",
+    "syntaxAccept": "mehrere richtige Antworten mit | getrennt",
+    "syntaxTf": "richtig / falsch",
+    "syntaxTfng": "richtig / falsch / steht nicht im Text (ab B1)",
+    "syntaxOrder": "in der richtigen Reihenfolge schreiben — Schüler sehen sie gemischt",
+    "syntaxMatch": "Paare; die rechte Spalte sehen Schüler gemischt"
   },
   "partsOfSpeech": {
     "noun": "Substantiv",
@@ -516,6 +575,31 @@
     "search": "Lektionen suchen…",
     "empty": "Die Lektionsbibliothek wird vorbereitet — neue Lektionen kommen bald!",
     "noResults": "Keine Lektionen für diese Filter.",
-    "count": "Lektionen: {{count}}"
+    "count": "Lektionen: {{count}}",
+    "practiceIntro": "Erst lesen oder hören, dann Fragen dazu beantworten. Wähle dein Niveau und eine Fertigkeit.",
+    "lessonsIntro": "Lektionen zu einem Thema: Grammatik, Wortschatz oder beides. Wähle dein Niveau und was du lernen möchtest.",
+    "chooseLevel": "Niveau",
+    "chooseSkill": "Fertigkeit",
+    "chooseFocus": "Was lernen",
+    "focusAll": "Alles",
+    "practiceEmpty": "Texte und Podcasts für dieses Niveau werden vorbereitet — bald geht es los!"
+  },
+  "teacherSets": {
+    "newSet": "Neues Kartenset",
+    "intro": "Stellen Sie ein Set aus dem Wörterbuch zusammen, korrigieren Sie die Karten und weisen Sie es Ihren Schülern zu. Sie finden es unter „{{section}}“ → „{{group}}“.",
+    "none": "Sie haben noch keine Kartensets für Schüler.",
+    "cardCount": "Karten: {{count}}",
+    "assignedTo": "Zugewiesen an: {{names}}",
+    "notAssigned": "Noch nicht zugewiesen",
+    "confirmDelete": "Das Set „{{title}}“ löschen? Ihre Schüler sehen es dann nicht mehr.",
+    "addWords": "Wörter hinzufügen",
+    "chooseTopic": "Thema…",
+    "addFromTopic": "Wörter aus dem Thema hinzufügen",
+    "added": "Hinzugefügt: {{count}}",
+    "noNewWords": "Keine neuen Wörter in diesem Thema für diese Niveaus.",
+    "correctHint": "Prüfen und korrigieren Sie die Karten vor dem Zuweisen: Schüler sehen Übersetzung und Beispiel genau so, wie sie hier stehen.",
+    "emptyCards": "Noch keine Karten — fügen Sie Wörter aus einem Thema hinzu, suchen Sie ein Wort oder legen Sie eine Karte von Hand an.",
+    "assignTo": "Schülern zuweisen",
+    "save": "Set speichern"
   }
 }

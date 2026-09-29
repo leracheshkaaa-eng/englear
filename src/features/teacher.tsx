@@ -1,13 +1,14 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Badge, Button, inputCls } from '../lib/ui'
-import { parseExercises, promptText, skillLabel, validateRaw, type Exercise } from '../lib/exercises'
+import { correctAnswerText, parseExercises, promptText, skillLabel, validateRaw, type Exercise } from '../lib/exercises'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { Lesson, LessonSummary, Profile } from '../lib/api'
 import { CEFR_LEVELS, TOPICS, lessonLevelCode, lessonSkillLabel, topicLabel } from '../lib/config'
 import { errorMessage } from '../i18n/errors'
 import { lessonWords } from './lessons'
+import { TeacherSets } from './teacherSets'
 
 const LEGACY_CEFR = { beginner: 'A1', intermediate: 'B1', advanced: 'C1' } as const
 
@@ -44,7 +45,7 @@ function readLocalLessons(): api.NewLesson[] {
 export function TeacherMode({ reload }: { reload: () => void }) {
   const { t } = useTranslation()
   const { userId, role } = useAuth()
-  const [tab, setTab] = useState<'lessons' | 'students' | 'progress'>('lessons')
+  const [tab, setTab] = useState<'lessons' | 'cards' | 'students' | 'progress'>('lessons')
   const [lessons, setLessons] = useState<LessonSummary[]>([])
 
   // own lessons (an admin: all lessons, library + teacher)
@@ -60,7 +61,7 @@ export function TeacherMode({ reload }: { reload: () => void }) {
     <section className="mx-auto max-w-5xl px-6 pb-24">
       <h2 className="font-display text-4xl font-semibold">{t('teacher.title')}</h2>
       <div className="mt-5 mb-8 flex flex-wrap gap-2">
-        {(['lessons', 'students', 'progress'] as const).map((tb) => (
+        {(['lessons', 'cards', 'students', 'progress'] as const).map((tb) => (
           <button
             key={tb}
             onClick={() => setTab(tb)}
@@ -74,6 +75,7 @@ export function TeacherMode({ reload }: { reload: () => void }) {
       </div>
 
       {tab === 'lessons' && <LessonManager lessons={lessons} reload={() => { refresh(); reload() }} />}
+      {tab === 'cards' && <TeacherSets />}
       {tab === 'students' && <StudentManager />}
       {tab === 'progress' && <ProgressBoard lessons={lessons} />}
     </section>
@@ -100,7 +102,7 @@ function LessonManager({ lessons, reload }: { lessons: LessonSummary[]; reload: 
   async function edit(id: string) {
     setOpening(id)
     try {
-      const full = await api.getLesson(id)
+      const full = await api.getLesson(id, { withSolutions: true })
       if (full) setEditing(full)
     } finally {
       setOpening(null)
@@ -388,6 +390,11 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
               <p>choice: She ___ here. * is / are / am # {t('teacher.syntaxExplanation')}</p>
               <p>listen: door # {t('teacher.syntaxListen')}</p>
               <p>dialogue: A: How are you? &gt;&gt; B: I ___ fine. (am) # {t('teacher.syntaxExplanation')}</p>
+              <p>fill: I ___ to school. = go | walk # {t('teacher.syntaxAccept')}</p>
+              <p>tf: Tom lives in a big city. = false # {t('teacher.syntaxTf')}</p>
+              <p>tfng: Tom has a sister. = not given # {t('teacher.syntaxTfng')}</p>
+              <p>order: Tom | goes | to | school # {t('teacher.syntaxOrder')}</p>
+              <p>match: cat = кошка | dog = собака # {t('teacher.syntaxMatch')}</p>
             </div>
             <p className="mt-3">{t('teacher.syntaxDialogueRule')}</p>
           </details>
@@ -414,9 +421,8 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
                 <div key={idx} className="flex items-start gap-2 rounded-xl border border-line bg-paper p-3 text-sm">
                   <Badge>{skillLabel(ex.type)}</Badge>
                   <span className="text-ink/80">
-                    {ex.type === 'dialogue'
-                      ? ex.lines.map((l) => `${l.speaker}: ${l.text}`).join(' · ')
-                      : (ex as any).prompt || (ex as any).text}
+                    {ex.type === 'listen' ? ex.text : promptText(ex)}
+                    <span className="block text-xs text-[var(--color-good)]">✓ {correctAnswerText(ex)}</span>
                   </span>
                 </div>
               ))}
@@ -432,10 +438,13 @@ function serialize(exs: Exercise[]): string {
   return exs
     .map((ex) => {
       const tail = ex.explanation ? ` # ${ex.explanation}` : ''
-      if (ex.type === 'fill') return `fill: ${ex.prompt} = ${ex.answer}${tail}`
+      if (ex.type === 'fill') return `fill: ${ex.prompt} = ${[ex.answer, ...(ex.accept ?? [])].join(' | ')}${tail}`
       if (ex.type === 'listen') return `listen: ${ex.text}${tail}`
       if (ex.type === 'choice')
         return `choice: ${ex.prompt} ${ex.options.map((o) => (o === ex.answer ? `* ${o}` : o)).join(' / ')}${tail}`
+      if (ex.type === 'truefalse') return `${ex.options.includes('not_given') ? 'tfng' : 'tf'}: ${ex.prompt} = ${ex.answer.replace('_', ' ')}${tail}`
+      if (ex.type === 'order') return `order: ${(ex.order ?? ex.items).join(' | ')}${tail}`
+      if (ex.type === 'match') return `match: ${Object.entries(ex.pairs ?? {}).map(([l, r]) => `${l} = ${r}`).join(' | ')}${tail}`
       return `dialogue: ${ex.lines
         .map((l) => `${l.speaker}: ${l.answer ? l.text.replace('___', `___ (${l.answer})`) : l.text}`)
         .join(' >> ')}${tail}`

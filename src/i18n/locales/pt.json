@@ -23,7 +23,8 @@
     "progress": "Progresso",
     "teacher": "Professor",
     "admin": "Admin",
-    "settings": "Configurações"
+    "settings": "Configurações",
+    "practice": "Prática"
   },
   "home": {
     "tagline": "inglês para toda a família",
@@ -80,7 +81,10 @@
     "fill": "Gramática",
     "choice": "Escolha",
     "listen": "Compreensão oral",
-    "dialogue": "Diálogo"
+    "dialogue": "Diálogo",
+    "truefalse": "Verdadeiro / Falso",
+    "order": "Ordenar",
+    "match": "Relacionar"
   },
   "lessons": {
     "unavailableTitle": "Lição indisponível",
@@ -118,7 +122,18 @@
       "saveCheck": "Não foi possível salvar a verificação. Verifique sua internet e toque em «Verificar» de novo.",
       "finish": "Não foi possível concluir a lição. Verifique sua internet e toque em «Concluir» de novo.",
       "restart": "Não foi possível recomeçar a lição. Tente de novo."
-    }
+    },
+    "tf": {
+      "true": "Verdadeiro",
+      "false": "Falso",
+      "not_given": "Não mencionado"
+    },
+    "tfInstruction": "A afirmação é verdadeira ou falsa de acordo com o texto?",
+    "orderWords": "Coloque as palavras na ordem certa.",
+    "orderSentences": "Coloque as frases na ordem certa.",
+    "orderHint": "Toque nas partes na ordem certa.",
+    "matchInstruction": "Relacione cada item com o seu par.",
+    "matchChoose": "Escolha…"
   },
   "result": {
     "completed": "Lição concluída",
@@ -253,7 +268,43 @@
   "practice": {
     "chooseTranslation": "Escolha a tradução: {{word}}",
     "whichEnglishWord": "«{{translation}}» em inglês é…",
-    "whichWordFits": "Qual palavra combina: «{{definition}}»"
+    "whichWordFits": "Qual palavra combina: «{{definition}}»",
+    "types": {
+      "article": "Artigo",
+      "story": "História",
+      "blog": "Post de blog",
+      "email": "E-mail",
+      "letter": "Carta",
+      "notice": "Aviso",
+      "advert": "Anúncio",
+      "review": "Avaliação",
+      "interview_text": "Entrevista",
+      "podcast": "Podcast",
+      "dialogue": "Diálogo",
+      "interview": "Entrevista",
+      "announcement": "Comunicado",
+      "monologue": "Palestra",
+      "radio": "Rádio"
+    },
+    "minutes_one": "≈ {{count}} min",
+    "minutes_other": "≈ {{count}} min",
+    "words_one": "{{count}} palavra",
+    "words_other": "{{count}} palavras",
+    "questions_one": "{{count}} pergunta",
+    "questions_other": "{{count}} perguntas",
+    "toQuestions_one": "Para a pergunta",
+    "toQuestions_other": "Para as {{count}} perguntas",
+    "hideScript": "Ocultar a transcrição",
+    "showScript": "Mostrar a transcrição",
+    "showText": "Mostrar o texto",
+    "hideText": "Ocultar o texto",
+    "listen": "Ouvir",
+    "stop": "Parar",
+    "listenHint": "Você pode ouvir quantas vezes quiser.",
+    "playing": "Tocando: parte {{n}} de {{total}}",
+    "introListening": "Primeiro ouça a gravação. Você pode ouvi-la de novo enquanto responde.",
+    "introReading": "Primeiro leia o texto. Ele continua disponível enquanto você responde.",
+    "back": "Toda a prática"
   },
   "dictionary": {
     "title": "Dicionário",
@@ -337,7 +388,8 @@
     "tabs": {
       "lessons": "Minhas lições",
       "students": "Meus alunos",
-      "progress": "Progresso"
+      "progress": "Progresso",
+      "cards": "Cartões"
     },
     "importResult": "Importadas: {{imported}}, ignoradas (duplicadas): {{skipped}}. A cópia local fica guardada como backup.",
     "newLesson": "+ Nova lição",
@@ -390,7 +442,9 @@
       "choiceNoAnswer": "Exercício {{n}} (choice): marque a opção correta com «*».",
       "dialogueNoBlank": "Exercício {{n}} (dialogue): falta a lacuna ___ na segunda fala.",
       "dialogueBlankOnlyB": "Exercício {{n}} (dialogue): a lacuna ___ só é permitida na segunda fala (B).",
-      "dialogueBlankNoAnswer": "Exercício {{n}} (dialogue): a lacuna não tem resposta entre parênteses (…)."
+      "dialogueBlankNoAnswer": "Exercício {{n}} (dialogue): a lacuna não tem resposta entre parênteses (…).",
+      "tfNoAnswer": "Exercício {{n}} (tf): escreva “= true”, “= false” ou “= not given”.",
+      "duplicateItems": "Exercício {{n}}: dois itens são iguais — todos devem ser diferentes."
     },
     "cefr": "Nível",
     "skill": "Habilidade",
@@ -403,7 +457,12 @@
     "noWordsFound": "Nenhuma palavra do dicionário encontrada nesta aula.",
     "libraryBadge": "Biblioteca",
     "teacherBadge": "Meus alunos",
-    "wordsSelected": "Selecionadas: {{count}}"
+    "wordsSelected": "Selecionadas: {{count}}",
+    "syntaxAccept": "várias respostas corretas separadas por |",
+    "syntaxTf": "verdadeiro / falso",
+    "syntaxTfng": "verdadeiro / falso / não mencionado (a partir de B1)",
+    "syntaxOrder": "escrito na ordem certa — o aluno vê embaralhado",
+    "syntaxMatch": "pares; o aluno vê a coluna da direita embaralhada"
   },
   "partsOfSpeech": {
     "noun": "substantivo",
@@ -516,6 +575,31 @@
     "search": "Pesquisar aulas…",
     "empty": "A biblioteca de aulas está sendo preparada — novas aulas chegam em breve!",
     "noResults": "Nenhuma aula corresponde a esses filtros.",
-    "count": "Aulas: {{count}}"
+    "count": "Aulas: {{count}}",
+    "practiceIntro": "Primeiro leia ou ouça, depois responda às perguntas. Escolha seu nível e uma habilidade.",
+    "lessonsIntro": "Aulas sobre um tema: gramática, vocabulário ou ambos. Escolha seu nível e o que quer aprender.",
+    "chooseLevel": "Nível",
+    "chooseSkill": "Habilidade",
+    "chooseFocus": "O que aprender",
+    "focusAll": "Tudo",
+    "practiceEmpty": "Os textos e podcasts deste nível estão sendo preparados — em breve estarão aqui!"
+  },
+  "teacherSets": {
+    "newSet": "Novo conjunto de cartões",
+    "intro": "Monte um conjunto a partir do dicionário, corrija os cartões e atribua-o aos seus alunos. Eles o encontrarão em “{{section}}” → “{{group}}”.",
+    "none": "Você ainda não tem conjuntos de cartões para alunos.",
+    "cardCount": "Cartões: {{count}}",
+    "assignedTo": "Atribuído a: {{names}}",
+    "notAssigned": "Ainda não atribuído",
+    "confirmDelete": "Excluir o conjunto “{{title}}”? Seus alunos não o verão mais.",
+    "addWords": "Adicionar palavras",
+    "chooseTopic": "Tema…",
+    "addFromTopic": "Adicionar palavras do tema",
+    "added": "Adicionadas: {{count}}",
+    "noNewWords": "Não há palavras novas neste tema para estes níveis.",
+    "correctHint": "Verifique e corrija os cartões antes de atribuir: os alunos verão a tradução e o exemplo exatamente como estão escritos aqui.",
+    "emptyCards": "Ainda não há cartões — adicione palavras de um tema, procure uma palavra ou adicione um cartão manualmente.",
+    "assignTo": "Atribuir aos alunos",
+    "save": "Salvar conjunto"
   }
 }

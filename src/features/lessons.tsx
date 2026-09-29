@@ -4,16 +4,21 @@ import { Badge, Button, TranslatableText, inputCls } from '../lib/ui'
 import { speak } from '../lib/supabase'
 import {
   correctAnswerText,
+  displayAnswer,
   evaluate,
   norm,
   promptText,
   sameResponse,
   skillLabel,
+  tfLabel,
   type Evaluation,
   type Exercise,
+  type Match,
+  type Order,
   type Response,
 } from '../lib/exercises'
 import { useAuth } from '../lib/auth'
+import { MaterialView, materialLength, materialTypeLabel } from './practice'
 import * as api from '../lib/api'
 import type { Lesson, LessonPass, PassSummary, SavedAnswer, WordHint } from '../lib/api'
 import { CEFR_LEVELS, TOPICS, lessonLevelLabel, lessonSkillLabel, topicLabel } from '../lib/config'
@@ -46,51 +51,74 @@ function Verdict({ correct, explanation, answer }: { correct: boolean; explanati
   )
 }
 
-/** One exercise. Behaviour, checking, explanations and TTS preserved.
- *  `initial` restores a saved answer; `onChange` fires on every edit (autosave). */
+/** One exercise. `initial` restores a saved answer; `onChange` fires on every edit (autosave).
+ *  `grade` checks on the server (lessons); without it the answer is checked here
+ *  (flashcard practice, where the exercises are built in the app). */
 export function ExerciseView({
   ex,
   dict,
   translations,
   initial,
   onChange,
+  grade,
   onCheck,
 }: {
   ex: Exercise
   dict: Map<string, WordHint>
   translations: boolean
-  initial?: { response: Response; checked: boolean; correct: boolean }
+  initial?: { response: Response; checked: boolean; correct: boolean; correctAnswer?: string }
   onChange?: (r: Response) => void
+  grade?: (r: Response, given: string) => Promise<api.Verdict>
   onCheck?: (r: Response, result: Evaluation) => void
 }) {
   const { t } = useTranslation()
   const [checked, setChecked] = useState(initial?.checked ?? false)
   const [correct, setCorrect] = useState(initial?.correct ?? false)
+  const [answerText, setAnswerText] = useState(initial?.correctAnswer ?? '')
   const [response, setResponse] = useState<Response>(initial?.response ?? {})
+  const [checking, setChecking] = useState(false)
+  const [error, setError] = useState('')
   const text = response.text ?? ''
   const picked = response.picked ?? null
   const blanks = response.blanks ?? {}
 
-  const T = (t: string) => <TranslatableText text={t} dict={dict} enabled={translations} />
+  const T = (s: string) => <TranslatableText text={s} dict={dict} enabled={translations} />
 
   // Any edit after a check hides the old verdict, so the new answer can be checked.
   function update(next: Response) {
     setResponse(next)
     setChecked(false)
+    setError('')
     onChange?.(next)
   }
   const setText = (v: string) => update({ text: v })
   const setPicked = (v: string) => update({ picked: v })
   const setBlanks = (f: (b: Record<number, string>) => Record<number, string>) => update({ blanks: f(blanks) })
 
-  function check() {
-    const result = evaluate(ex, response)
-    setCorrect(result.correct)
-    setChecked(true)
-    onCheck?.(response, result)
+  const local = evaluate(ex, response)
+  const canCheck = local.answered && !checking
+
+  async function check() {
+    if (!canCheck) return
+    setChecking(true)
+    setError('')
+    try {
+      const v = grade ? await grade(response, local.given) : { correct: local.correct, correctAnswer: correctAnswerText(ex) }
+      setCorrect(v.correct)
+      setAnswerText(displayAnswer(ex, v.correctAnswer))
+      setChecked(true)
+      onCheck?.(response, { ...local, correct: v.correct })
+    } catch {
+      setError(t('player.errors.saveCheck'))
+    } finally {
+      setChecking(false)
+    }
   }
 
-  const canCheck = evaluate(ex, response).answered
+  const optionCls = (active: boolean) =>
+    `rounded-xl border px-4 py-2 font-body font-semibold transition-colors ${
+      active ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-ink hover:border-lavender'
+    }`
 
   return (
     <div className="rounded-3xl border border-line bg-paper p-6 shadow-[0_10px_30px_-18px_rgba(60,42,112,0.5)] sm:p-8">
@@ -99,37 +127,42 @@ export function ExerciseView({
       {ex.type === 'fill' && (
         <div className="mt-5">
           <p className="font-display text-2xl leading-snug">{T(ex.prompt.replace('___', '_____'))}</p>
+          {ex.bank && ex.bank.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {ex.bank.map((w) => (
+                <button key={w} onClick={() => !checked && setText(w)} className={optionCls(norm(text) === norm(w))}>
+                  {w}
+                </button>
+              ))}
+            </div>
+          )}
           <input
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder={t('player.typeWord')}
             className={`${inputCls} mt-4 w-full sm:w-72`}
-            onKeyDown={(e) => e.key === 'Enter' && canCheck && !checked && check()}
+            onKeyDown={(e) => e.key === 'Enter' && !checked && check()}
           />
         </div>
       )}
 
-      {ex.type === 'choice' && (
+      {(ex.type === 'choice' || ex.type === 'truefalse') && (
         <div className="mt-5">
-          <p className="font-display text-2xl leading-snug">{T(ex.prompt.replace('___', '_____'))}</p>
+          {ex.type === 'truefalse' && <p className="text-sm text-mute">{t('player.tfInstruction')}</p>}
+          <p className="mt-1 font-display text-2xl leading-snug">{T(ex.prompt.replace('___', '_____'))}</p>
           <div className="mt-4 flex flex-wrap gap-2">
-            {ex.options.map((o) => {
-              const active = picked === o
-              return (
-                <button
-                  key={o}
-                  onClick={() => !checked && setPicked(o)}
-                  className={`rounded-xl border px-4 py-2 font-body font-semibold transition-colors ${
-                    active ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-ink hover:border-lavender'
-                  }`}
-                >
-                  {o}
-                </button>
-              )
-            })}
+            {ex.options.map((o) => (
+              <button key={o} onClick={() => !checked && setPicked(o)} className={optionCls(picked === o)}>
+                {ex.type === 'truefalse' ? tfLabel(o) : o}
+              </button>
+            ))}
           </div>
         </div>
       )}
+
+      {ex.type === 'order' && <OrderTask ex={ex} value={response.order ?? []} locked={checked} onChange={(order) => update({ order })} />}
+
+      {ex.type === 'match' && <MatchTask ex={ex} value={response.pairs ?? {}} locked={checked} onChange={(pairs) => update({ pairs })} />}
 
       {ex.type === 'listen' && (
         <div className="mt-5">
@@ -146,7 +179,7 @@ export function ExerciseView({
             onChange={(e) => setText(e.target.value)}
             placeholder={t('player.typeWhatYouHeard')}
             className={`${inputCls} mt-4 block w-full`}
-            onKeyDown={(e) => e.key === 'Enter' && canCheck && !checked && check()}
+            onKeyDown={(e) => e.key === 'Enter' && !checked && check()}
           />
         </div>
       )}
@@ -186,7 +219,7 @@ export function ExerciseView({
 
       <div className="mt-6 flex items-center gap-3">
         <Button onClick={check} disabled={!canCheck || checked}>
-          {t('player.check')}
+          {checking ? t('common.loading') : t('player.check')}
         </Button>
         {checked && !correct && (
           <Button variant="ghost" onClick={() => update({})}>
@@ -194,22 +227,81 @@ export function ExerciseView({
           </Button>
         )}
       </div>
+      {error && <p className="mt-3 text-sm text-warn">{error}</p>}
 
-      {checked && (
-        <Verdict
-          correct={correct}
-          explanation={ex.explanation}
-          answer={
-            ex.type === 'fill'
-              ? ex.answer
-              : ex.type === 'choice'
-                ? ex.answer
-                : ex.type === 'listen'
-                  ? ex.text
-                  : undefined
-          }
-        />
-      )}
+      {checked && <Verdict correct={correct} explanation={ex.explanation} answer={ex.type === 'dialogue' ? undefined : answerText || undefined} />}
+    </div>
+  )
+}
+
+/** Put the pieces in order: tap a piece to add it to the answer, tap it there to take it back. */
+function OrderTask({ ex, value, locked, onChange }: { ex: Order; value: string[]; locked: boolean; onChange: (v: string[]) => void }) {
+  const { t } = useTranslation()
+  // items may repeat ("the … the"), so they are tracked by index
+  const used = new Set<number>()
+  const chosen = value.map((v) => {
+    const i = ex.items.findIndex((x, k) => x === v && !used.has(k))
+    used.add(i)
+    return i
+  })
+  const pool = ex.items.map((x, i) => ({ x, i })).filter(({ i }) => !used.has(i))
+  const sentence = ex.unit === 'sentence'
+  const chip = 'rounded-xl border border-line bg-paper px-3 py-1.5 text-left font-body font-semibold hover:border-lavender disabled:opacity-60'
+  return (
+    <div className="mt-5">
+      <p className="text-mute">{promptText(ex)}</p>
+      <div className={`mt-4 min-h-14 rounded-2xl border-2 border-dashed border-line p-3 ${sentence ? 'space-y-2' : 'flex flex-wrap gap-2'}`}>
+        {chosen.length === 0 && <span className="text-sm text-mute">{t('player.orderHint')}</span>}
+        {chosen.map((i, k) => (
+          <button key={`${i}-${k}`} disabled={locked} onClick={() => onChange(value.filter((_, j) => j !== k))} className={`${chip} border-plum bg-lilac ${sentence ? 'block w-full' : ''}`}>
+            {sentence && <span className="mr-2 text-plum">{k + 1}.</span>}
+            {ex.items[i]}
+          </button>
+        ))}
+      </div>
+      <div className={`mt-3 ${sentence ? 'space-y-2' : 'flex flex-wrap gap-2'}`}>
+        {pool.map(({ x, i }) => (
+          <button key={i} disabled={locked} onClick={() => onChange([...value, x])} className={`${chip} ${sentence ? 'block w-full' : ''}`}>
+            {x}
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+/** Match each item on the left with one on the right (a list to choose from per row). */
+function MatchTask({ ex, value, locked, onChange }: { ex: Match; value: Record<string, string>; locked: boolean; onChange: (v: Record<string, string>) => void }) {
+  const { t } = useTranslation()
+  const taken = new Set(Object.values(value))
+  return (
+    <div className="mt-5">
+      <p className="text-mute">{promptText(ex)}</p>
+      <div className="mt-4 space-y-2">
+        {ex.left.map((l) => (
+          <div key={l} className="grid items-center gap-2 rounded-2xl bg-sand/70 p-3 sm:grid-cols-[1fr_1fr]">
+            <span className="font-body text-lg font-semibold">{l}</span>
+            <select
+              value={value[l] ?? ''}
+              disabled={locked}
+              onChange={(e) => {
+                const next = { ...value }
+                if (e.target.value) next[l] = e.target.value
+                else delete next[l]
+                onChange(next)
+              }}
+              className={`${inputCls} w-full`}
+            >
+              <option value="">{t('player.matchChoose')}</option>
+              {ex.right.map((r) => (
+                <option key={r} value={r} disabled={taken.has(r) && value[l] !== r}>
+                  {r}
+                </option>
+              ))}
+            </select>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
@@ -254,11 +346,11 @@ export function lessonWords(value: unknown, out = new Set<string>()): Set<string
 }
 
 /** Inline translation hints for the words of this lesson only (not the whole dictionary). */
-function useLessonHints(lesson: Lesson, exercises: Exercise[]): Map<string, WordHint> {
+function useLessonHints(lesson: Lesson, exercises: Exercise[], material?: api.Material | null): Map<string, WordHint> {
   const { i18n } = useTranslation()
   const { settings } = useAuth()
   const [hints, setHints] = useState<Map<string, WordHint>>(new Map())
-  const words = [...lessonWords([lesson.title, lesson.description, exercises])].sort().join(' ')
+  const words = [...lessonWords([lesson.title, lesson.description, exercises, material?.body ?? '', material?.segments ?? []])].sort().join(' ')
   useEffect(() => {
     let cancelled = false
     api
@@ -284,10 +376,15 @@ export function LessonPlayer({
   const signedIn = !!userId // guests just practice; nothing saved
   const [phase, setPhase] = useState<'loading' | 'play' | 'result' | 'review'>('loading')
   const [exs, setExs] = useState<Exercise[]>(lesson.exercises)
-  const dict = useLessonHints(lesson, exs)
+  const [material, setMaterial] = useState<api.Material | null>(null)
+  // practice: the text / recording comes first, the questions after it
+  const [showIntro, setShowIntro] = useState(true)
+  const dict = useLessonHints(lesson, exs, material)
   const [i, setI] = useState(0)
   const [pass, setPass] = useState<LessonPass | null>(null)
   const [answers, setAnswers] = useState<Record<string, Ans>>({})
+  // correct answers as text, known after a check (and for the whole lesson once it is completed)
+  const [solutions, setSolutions] = useState<Record<string, string>>({})
   const [outcome, setOutcome] = useState<Outcome | null>(null)
   const [reviewFilter, setReviewFilter] = useState<'all' | 'mistakes'>('all')
   const [error, setError] = useState('')
@@ -318,8 +415,9 @@ export function LessonPlayer({
 
   async function showOutcome(s: PassSummary, alive: () => boolean) {
     const last = s.last!
-    const saved = await api.passAnswers([last.id])
+    const [saved, sol] = await Promise.all([api.passAnswers([last.id]), api.lessonSolutions(lesson.id).catch(() => ({}))])
     if (!alive()) return
+    setSolutions(sol)
     setOutcome({
       correct: last.correct_count ?? 0,
       total: last.total_count ?? 0,
@@ -341,6 +439,11 @@ export function LessonPlayer({
       if (!alive) return
       exsRef.current = list
       setExs(list)
+      if ((fresh ?? lesson).kind === 'practice') {
+        const m = await api.getMaterial(lesson.id).catch(() => null)
+        if (!alive) return
+        setMaterial(m)
+      }
       if (!userId) return openPass(null, {}, 0)
 
       const s = api.summarizePasses(await api.studentPasses(userId, lesson.id))[lesson.id]
@@ -379,8 +482,7 @@ export function LessonPlayer({
         items.map(([id, r]) => {
           const ex = exsRef.current.find((e) => e.id === id)
           if (!ex) return
-          const e = evaluate(ex, r)
-          return api.saveAnswer(p, id, r, e.given, e.correct)
+          return api.saveAnswer(p, id, r, evaluate(ex, r).given)
         }),
       )
       return true
@@ -416,28 +518,28 @@ export function LessonPlayer({
     }
   }
 
-  async function handleCheck(ex: Exercise, idx: number, r: Response, e: Evaluation) {
+  /** "Check" on the server: a student's check is saved and logged; a guest's is only graded. */
+  async function grade(ex: Exercise, idx: number, r: Response, given: string): Promise<api.Verdict> {
     const key = exKey(ex, idx)
     const p = passRef.current
-    if (signedIn && p && ex.id) {
+    if (!ex.id) return { correct: evaluate(ex, r).correct, correctAnswer: correctAnswerText(ex) }
+    if (signedIn && p) {
       delete pending.current[ex.id]
-      try {
-        const saved = await api.recordCheck(p.id, ex.id, r, e.given, e.correct)
-        // if the student already edited again, keep the newer input
-        setAnswers((prev) => {
-          const cur = prev[key]
-          return {
-            ...prev,
-            [key]: cur && !sameResponse(cur.response, r)
-              ? { ...saved, response: cur.response, given_answer: cur.given_answer, is_correct: cur.is_correct }
-              : saved,
-          }
-        })
-      } catch {
-        setError(t('player.errors.saveCheck'))
-      }
-      return
+      const res = await api.checkExercise(p.id, ex.id, r, given)
+      // if the student already edited again, keep the newer input
+      setAnswers((prev) => {
+        const cur = prev[key]
+        return {
+          ...prev,
+          [key]: cur && !sameResponse(cur.response, r)
+            ? { ...res.answer, response: cur.response, given_answer: cur.given_answer, is_correct: cur.is_correct }
+            : res.answer,
+        }
+      })
+      setSolutions((s) => ({ ...s, [key]: res.correctAnswer }))
+      return res
     }
+    const v = (await api.gradeAnswers([{ exerciseId: ex.id, response: r }]))[ex.id] ?? { correct: false, correctAnswer: '' }
     setAnswers((prev) => {
       const a = prev[key] ?? blankAns()
       if (a.checked && sameResponse(a.last_checked_response, r)) return prev
@@ -446,15 +548,17 @@ export function LessonPlayer({
         [key]: {
           ...a,
           response: r,
-          given_answer: e.given,
-          is_correct: e.correct,
+          given_answer: given,
+          is_correct: v.correct,
           checked: true,
-          first_check_correct: a.first_check_correct ?? e.correct,
+          first_check_correct: a.first_check_correct ?? v.correct,
           attempts_count: a.attempts_count + 1,
           last_checked_response: r,
         },
       }
     })
+    setSolutions((s) => ({ ...s, [key]: v.correctAnswer }))
+    return v
   }
 
   function goTo(n: number) {
@@ -483,8 +587,21 @@ export function LessonPlayer({
         setPass(null)
         await showOutcome(s, () => true)
       } else {
-        const correct = exs.filter((ex, idx) => api.countsAsCorrect(answers[exKey(ex, idx)])).length
-        setOutcome({ correct, total: exs.length, best: null, completed: 1, answers })
+        // a guest: grade the answers that were never checked, and get every correct answer for the review
+        const verdicts = await api.gradeAnswers(
+          exs.filter((ex) => ex.id).map((ex, idx) => ({ exerciseId: ex.id!, response: answers[exKey(ex, idx)]?.response ?? {} })),
+        )
+        const graded = Object.fromEntries(
+          exs.map((ex, idx) => {
+            const key = exKey(ex, idx)
+            const a = answers[key]
+            const v = ex.id ? verdicts[ex.id] : undefined
+            return [key, a && !a.checked && v ? { ...a, is_correct: v.correct } : a]
+          }).filter(([, a]) => a),
+        ) as Record<string, Ans>
+        setSolutions((s) => ({ ...s, ...Object.fromEntries(Object.entries(verdicts).map(([id, v]) => [id, v.correctAnswer])) }))
+        const correct = exs.filter((ex, idx) => api.countsAsCorrect(graded[exKey(ex, idx)])).length
+        setOutcome({ correct, total: exs.length, best: null, completed: 1, answers: graded })
         setPhase('result')
       }
     } catch {
@@ -510,7 +627,7 @@ export function LessonPlayer({
   const header = (
     <>
       <button onClick={leave} className="mb-4 font-body text-sm text-mute hover:text-ink">
-        ← {t('lessons.allLessons')}
+        ← {lesson.kind === 'practice' ? t('practice.back') : t('lessons.allLessons')}
       </button>
       <div className="flex items-center gap-2">
         <h2 className="font-display text-3xl font-semibold">{lesson.title}</h2>
@@ -535,7 +652,7 @@ export function LessonPlayer({
         {!outcome ? (
           <p className="mt-6 text-sm text-warn">{error}</p>
         ) : phase === 'review' ? (
-          <AnswersReview exs={exs} answers={outcome.answers ?? {}} initialFilter={reviewFilter} onBack={() => setPhase('result')} />
+          <AnswersReview exs={exs} answers={outcome.answers ?? {}} solutions={solutions} initialFilter={reviewFilter} onBack={() => setPhase('result')} />
         ) : (
           <LessonResult
             outcome={outcome}
@@ -562,6 +679,21 @@ export function LessonPlayer({
     )
   }
 
+  const translationsOn = settings.translations_enabled && role !== 'guest'
+  const started = Object.values(answers).some((a) => a && (a.checked || Object.keys(a.response ?? {}).length > 0))
+  if (material && showIntro && !started) {
+    return (
+      <section className="mx-auto max-w-2xl px-6 pb-24">
+        {header}
+        <p className="mt-3 mb-5 text-mute">{lesson.skill === 'listening' ? t('practice.introListening') : t('practice.introReading')}</p>
+        <MaterialView material={material} skill={lesson.skill} dict={dict} translations={translationsOn} />
+        <div className="mt-6 flex justify-end">
+          <Button onClick={() => setShowIntro(false)}>{t('practice.toQuestions', { count: exs.length })} →</Button>
+        </div>
+      </section>
+    )
+  }
+
   const ex = exs[i]
   const saved = answers[exKey(ex, i)]
   const progress = ((i + 1) / exs.length) * 100
@@ -576,6 +708,12 @@ export function LessonPlayer({
         <div className="h-full bg-plum transition-all duration-300" style={{ width: `${progress}%` }} />
       </div>
 
+      {material && (
+        <div className="mb-4">
+          <MaterialView material={material} skill={lesson.skill} dict={dict} translations={translationsOn} compact />
+        </div>
+      )}
+
       <ExerciseView
         key={`${pass?.id ?? 'guest'}-${i}`}
         ex={ex}
@@ -587,10 +725,11 @@ export function LessonPlayer({
             // show the verdict only if the answer on screen is the one that was checked
             checked: saved.checked && sameResponse(saved.last_checked_response, saved.response),
             correct: saved.is_correct,
+            correctAnswer: solutions[exKey(ex, i)] ? displayAnswer(ex, solutions[exKey(ex, i)]) : undefined,
           }
         }
         onChange={(r) => handleChange(ex, i, r)}
-        onCheck={(r, e) => handleCheck(ex, i, r, e)}
+        grade={(r, given) => grade(ex, i, r, given)}
       />
 
       <div className="mt-6 flex items-center justify-between">
@@ -687,11 +826,13 @@ function LessonResult({
 function AnswersReview({
   exs,
   answers,
+  solutions,
   initialFilter,
   onBack,
 }: {
   exs: Exercise[]
   answers: Record<string, Ans>
+  solutions: Record<string, string>
   initialFilter: 'all' | 'mistakes'
   onBack: () => void
 }) {
@@ -767,7 +908,7 @@ function AnswersReview({
           {!ok && (
             <>
               <p className="mt-1 text-sm">
-                {t('player.correctAnswer')} <b className="text-[var(--color-good)]">{correctAnswerText(ex)}</b>
+                {t('player.correctAnswer')} <b className="text-[var(--color-good)]">{solutions[exKey(ex, idx)] ? displayAnswer(ex, solutions[exKey(ex, idx)]) : correctAnswerText(ex)}</b>
               </p>
               {a?.checked && a.first_check_correct === false && a.is_correct && (
                 <p className="mt-1 text-xs text-mute">{t('review.fixedAfterCheck')}</p>
@@ -781,28 +922,38 @@ function AnswersReview({
   )
 }
 
-/** Lesson catalog: the site's library (for everyone) and, separately, the lessons
- *  a teacher assigned to this student (or a teacher's own lessons). Loaded page by page. */
+/** Catalog of the Lessons section (kind 'lesson': pick a level and grammar / vocabulary / both)
+ *  or of the Practice section (kind 'practice': pick a level and reading / listening).
+ *  Lessons also have a separate tab for lessons from the student's teacher (or a teacher's own).
+ *  Loaded page by page. */
 const CATALOG_PAGE = 30
 
+type Focus = 'all' | 'grammar' | 'vocabulary'
+const FOCUS_SKILLS: Record<Focus, string[] | undefined> = { all: undefined, grammar: ['grammar'], vocabulary: ['vocabulary'] }
+
 export function LessonsCatalog({
+  kind = 'lesson',
   progress,
   passes,
   onOpen,
 }: {
+  kind?: api.LessonKind
   progress: Record<string, api.LessonProgress>
   passes?: Record<string, PassSummary>
   onOpen: (id: string) => void
 }) {
   const { t, i18n } = useTranslation()
-  const { userId, role } = useAuth()
+  const { userId, role, settings } = useAuth()
+  const practice = kind === 'practice'
   const [scope, setScope] = useState<api.LessonScope>('library')
   const [hasTeacherLessons, setHasTeacherLessons] = useState(false)
-  const [level, setLevel] = useState('')
-  const [skill, setSkill] = useState('')
+  // start at the student's own level (Settings); "All levels" is one tap away
+  const [level, setLevel] = useState(userId && (CEFR_LEVELS as readonly string[]).includes(settings.english_level) ? settings.english_level : '')
+  const [focus, setFocus] = useState<Focus>('all')
+  const [skill, setSkill] = useState<string>('reading')
   const [topic, setTopic] = useState('')
   const [q, setQ] = useState('')
-  const [lessons, setLessons] = useState<api.LessonSummary[]>([])
+  const [lessons, setLessons] = useState<api.CatalogLesson[]>([])
   const [total, setTotal] = useState(0)
   const [loading, setLoading] = useState(true)
   const [loadingMore, setLoadingMore] = useState(false)
@@ -810,7 +961,7 @@ export function LessonsCatalog({
 
   // show the "from my teacher" / "my lessons" tab only when there is something in it
   useEffect(() => {
-    if (!userId) {
+    if (!userId || practice) {
       setHasTeacherLessons(false)
       setScope('library')
       return
@@ -819,9 +970,16 @@ export function LessonsCatalog({
       .lessonCatalog({ scope: 'teacher' }, 0, 1)
       .then((r) => setHasTeacherLessons(r.total > 0))
       .catch(() => setHasTeacherLessons(false))
-  }, [userId])
+  }, [userId, practice])
 
-  const filters = (): api.LessonFilters => ({ scope, cefr: level ? [level] : undefined, skill, topic, q })
+  const filters = (): api.LessonFilters => ({
+    scope,
+    kind,
+    cefr: level ? [level] : undefined,
+    skills: practice ? [skill] : FOCUS_SKILLS[focus],
+    topic,
+    q,
+  })
 
   async function load() {
     const id = ++request.current
@@ -832,7 +990,10 @@ export function LessonsCatalog({
       setLessons(page.lessons)
       setTotal(page.total)
     } catch {
-      if (id === request.current) { setLessons([]); setTotal(0) }
+      if (id === request.current) {
+        setLessons([])
+        setTotal(0)
+      }
     } finally {
       if (id === request.current) setLoading(false)
     }
@@ -855,42 +1016,67 @@ export function LessonsCatalog({
     const timer = setTimeout(load, q ? 250 : 0) // debounce typing
     return () => clearTimeout(timer)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scope, level, skill, topic, q, userId, i18n.language])
+  }, [kind, scope, level, focus, skill, topic, q, userId, i18n.language])
 
-  const filtered = !!(level || skill || topic || q.trim())
+  const filtered = !!(topic || q.trim())
   const teacherTabLabel = role === 'student' ? t('library.fromTeacher') : t('teacher.tabs.lessons')
+  const pill = (on: boolean) => `rounded-full px-4 py-1.5 transition-colors ${on ? 'bg-plum text-paper' : 'text-mute hover:text-ink'}`
+  const chip = (on: boolean) =>
+    `rounded-full border px-4 py-1.5 font-body text-sm font-semibold transition-colors ${on ? 'border-plum bg-plum text-paper' : 'border-line bg-paper text-mute hover:border-lavender'}`
 
   return (
     <section className="mx-auto max-w-4xl px-6 pb-24">
-      <h2 className="mb-6 font-display text-4xl font-semibold">{t('nav.lessons')}</h2>
+      <h2 className="font-display text-4xl font-semibold">{practice ? t('nav.practice') : t('nav.lessons')}</h2>
+      <p className="mt-2 mb-6 text-mute">{practice ? t('library.practiceIntro') : t('library.lessonsIntro')}</p>
 
       {hasTeacherLessons && (
         <div className="mb-5 inline-flex rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold">
           {(['library', 'teacher'] as const).map((s) => (
-            <button
-              key={s}
-              onClick={() => setScope(s)}
-              className={`rounded-full px-4 py-1.5 transition-colors ${scope === s ? 'bg-plum text-paper' : 'text-mute hover:text-ink'}`}
-            >
+            <button key={s} onClick={() => setScope(s)} className={pill(scope === s)}>
               {s === 'library' ? t('library.libraryTab') : teacherTabLabel}
             </button>
           ))}
         </div>
       )}
 
+      {/* 1. level */}
+      <p className="mb-2 text-sm font-semibold">{t('library.chooseLevel')}</p>
+      <div className="mb-5 flex flex-wrap gap-2">
+        <button onClick={() => setLevel('')} className={chip(level === '')}>
+          {t('dictionary.allLevels')}
+        </button>
+        {CEFR_LEVELS.map((l) => (
+          <button key={l} onClick={() => setLevel(l)} className={chip(level === l)}>
+            {l}
+          </button>
+        ))}
+      </div>
+
+      {/* 2. what to learn / which skill */}
+      <p className="mb-2 text-sm font-semibold">{practice ? t('library.chooseSkill') : t('library.chooseFocus')}</p>
+      <div className="mb-5 inline-flex flex-wrap rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold">
+        {practice
+          ? api.PRACTICE_SKILLS.map((s) => (
+              <button key={s} onClick={() => setSkill(s)} className={pill(skill === s)}>
+                {lessonSkillLabel(s)}
+              </button>
+            ))
+          : (['all', 'grammar', 'vocabulary'] as const).map((f) => (
+              <button key={f} onClick={() => setFocus(f)} className={pill(focus === f)}>
+                {f === 'all' ? t('library.focusAll') : lessonSkillLabel(f)}
+              </button>
+            ))}
+      </div>
+
       <div className="mb-6 flex flex-wrap gap-2">
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('library.search')} className={`${inputCls} min-w-0 flex-1`} />
-        <select value={level} onChange={(e) => setLevel(e.target.value)} className={inputCls}>
-          <option value="">{t('dictionary.allLevels')}</option>
-          {CEFR_LEVELS.map((l) => <option key={l} value={l}>{l}</option>)}
-        </select>
-        <select value={skill} onChange={(e) => setSkill(e.target.value)} className={inputCls}>
-          <option value="">{t('library.allSkills')}</option>
-          {api.LESSON_SKILLS.map((s) => <option key={s} value={s}>{lessonSkillLabel(s)}</option>)}
-        </select>
         <select value={topic} onChange={(e) => setTopic(e.target.value)} className={inputCls}>
           <option value="">{t('dictionary.allTopics')}</option>
-          {TOPICS.map((tp) => <option key={tp} value={tp}>{topicLabel(tp)}</option>)}
+          {TOPICS.map((tp) => (
+            <option key={tp} value={tp}>
+              {topicLabel(tp)}
+            </option>
+          ))}
         </select>
       </div>
 
@@ -898,7 +1084,7 @@ export function LessonsCatalog({
         <p className="text-mute">{t('common.loading')}</p>
       ) : lessons.length === 0 ? (
         <p className="rounded-3xl border border-dashed border-line bg-paper/60 p-8 text-center text-mute">
-          {filtered ? t('library.noResults') : scope === 'library' ? t('library.empty') : t('lessons.none')}
+          {filtered ? t('library.noResults') : scope === 'teacher' ? t('lessons.none') : practice ? t('library.practiceEmpty') : t('library.empty')}
         </p>
       ) : (
         <>
@@ -927,7 +1113,7 @@ function LessonCard({
   pass: s,
   onOpen,
 }: {
-  lesson: api.LessonSummary
+  lesson: api.CatalogLesson
   progress?: api.LessonProgress
   pass?: PassSummary
   onOpen: () => void
@@ -937,6 +1123,8 @@ function LessonCard({
   // last result as N/M; lessons finished before passes existed only have a percent
   const lastResult = s?.last ? `${s.last.correct_count ?? 0}/${s.last.total_count ?? 0}` : pr?.status === 'completed' ? `${pr.score}%` : null
   const open = s?.open
+  const practice = l.kind === 'practice'
+  const length = practice ? materialLength(l) : ''
   return (
     <button
       onClick={onOpen}
@@ -948,7 +1136,7 @@ function LessonCard({
         <div className="flex flex-wrap items-center gap-2">
           <h3 className={`font-display text-2xl font-semibold ${done ? 'text-ink/75' : ''}`}>{l.title}</h3>
           {l.cefr && <Badge>{l.cefr}</Badge>}
-          <Badge>{lessonSkillLabel(l.skill)}</Badge>
+          <Badge>{practice && l.material_type ? materialTypeLabel(l.material_type) : lessonSkillLabel(l.skill)}</Badge>
           {l.status !== 'published' && <span className="text-xs text-mute">{t('teacher.draft')}</span>}
           {done && (
             <span className="rounded-full bg-[rgba(63,143,107,.12)] px-2.5 py-0.5 text-xs font-semibold text-[var(--color-good)]">
@@ -957,7 +1145,7 @@ function LessonCard({
           )}
         </div>
         {l.description && <p className="mt-1 text-mute">{l.description}</p>}
-        {l.topic && <p className="mt-1 text-xs text-mute">{topicLabel(l.topic)}</p>}
+        {(l.topic || length) && <p className="mt-1 text-xs text-mute">{[l.topic && topicLabel(l.topic), length].filter(Boolean).join(' · ')}</p>}
         {done && lastResult && <p className="mt-1 text-sm font-semibold text-[var(--color-good)]">{t('lessons.lastResult', { result: lastResult })}</p>}
         {open ? (
           <p className="mt-1 text-sm text-plum">
@@ -968,7 +1156,9 @@ function LessonCard({
           !done && pr?.status === 'in_progress' && <p className="mt-1 text-sm text-plum">{t('progress.inProgress')}</p>
         )}
       </div>
-      <span className="shrink-0 font-body font-semibold text-plum">{t('lessons.exerciseCount', { count: l.exercise_count })} →</span>
+      <span className="shrink-0 font-body font-semibold text-plum">
+        {practice ? t('practice.questions', { count: l.exercise_count }) : t('lessons.exerciseCount', { count: l.exercise_count })} →
+      </span>
     </button>
   )
 }
