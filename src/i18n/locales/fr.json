@@ -462,7 +462,9 @@
     "syntaxTf": "vrai / faux",
     "syntaxTfng": "vrai / faux / non mentionné (à partir de B1)",
     "syntaxOrder": "écrit dans le bon ordre — les élèves le voient mélangé",
-    "syntaxMatch": "paires ; les élèves voient la colonne de droite mélangée"
+    "syntaxMatch": "paires ; les élèves voient la colonne de droite mélangée",
+    "publish": "Publier",
+    "unpublish": "Dépublier"
   },
   "partsOfSpeech": {
     "noun": "nom",

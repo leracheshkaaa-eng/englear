@@ -482,7 +482,9 @@
     "syntaxTf": "prawda / fałsz",
     "syntaxTfng": "prawda / fałsz / brak informacji (od B1)",
     "syntaxOrder": "zapisane we właściwej kolejności — uczeń widzi je pomieszane",
-    "syntaxMatch": "pary; uczeń widzi prawą kolumnę pomieszaną"
+    "syntaxMatch": "pary; uczeń widzi prawą kolumnę pomieszaną",
+    "publish": "Opublikuj",
+    "unpublish": "Wycofaj publikację"
   },
   "partsOfSpeech": {
     "noun": "rzeczownik",

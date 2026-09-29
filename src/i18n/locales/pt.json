@@ -462,7 +462,9 @@
     "syntaxTf": "verdadeiro / falso",
     "syntaxTfng": "verdadeiro / falso / não mencionado (a partir de B1)",
     "syntaxOrder": "escrito na ordem certa — o aluno vê embaralhado",
-    "syntaxMatch": "pares; o aluno vê a coluna da direita embaralhada"
+    "syntaxMatch": "pares; o aluno vê a coluna da direita embaralhada",
+    "publish": "Publicar",
+    "unpublish": "Despublicar"
   },
   "partsOfSpeech": {
     "noun": "substantivo",

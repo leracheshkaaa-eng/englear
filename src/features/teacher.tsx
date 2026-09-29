@@ -140,6 +140,16 @@ function LessonManager({ lessons, reload }: { lessons: LessonSummary[]; reload: 
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
+                <Button
+                  variant={l.status === 'published' ? 'ghost' : 'solid'}
+                  onClick={async () => {
+                    // only the status changes — the lesson and its exercises stay as they are
+                    await api.updateLesson(l.id, { status: l.status === 'published' ? 'draft' : 'published' })
+                    reload()
+                  }}
+                >
+                  {l.status === 'published' ? t('teacher.unpublish') : t('teacher.publish')}
+                </Button>
                 <Button variant="soft" onClick={() => edit(l.id)} disabled={opening === l.id}>
                   {opening === l.id ? t('common.loading') : t('common.edit')}
                 </Button>

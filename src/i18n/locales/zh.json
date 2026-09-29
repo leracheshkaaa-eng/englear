@@ -452,7 +452,9 @@
     "syntaxTf": "正确 / 错误",
     "syntaxTfng": "正确 / 错误 / 文中未提及（B1 起）",
     "syntaxOrder": "按正确顺序书写——学生看到的是打乱的顺序",
-    "syntaxMatch": "配对；学生看到的右栏是打乱的"
+    "syntaxMatch": "配对；学生看到的右栏是打乱的",
+    "publish": "发布",
+    "unpublish": "取消发布"
   },
   "partsOfSpeech": {
     "noun": "名词",

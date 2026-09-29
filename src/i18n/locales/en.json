@@ -462,7 +462,9 @@
     "syntaxTf": "true / false",
     "syntaxTfng": "true / false / not given (from B1)",
     "syntaxOrder": "written in the right order — students see it mixed up",
-    "syntaxMatch": "pairs; students see the right column mixed up"
+    "syntaxMatch": "pairs; students see the right column mixed up",
+    "publish": "Publish",
+    "unpublish": "Unpublish"
   },
   "partsOfSpeech": {
     "noun": "noun",

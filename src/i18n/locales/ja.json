@@ -452,7 +452,9 @@
     "syntaxTf": "正しい / 誤り",
     "syntaxTfng": "正しい / 誤り / 本文に記述なし（B1 以上）",
     "syntaxOrder": "正しい順番で書く——生徒にはシャッフルされて表示されます",
-    "syntaxMatch": "ペア。右の列は生徒にシャッフルされて表示されます"
+    "syntaxMatch": "ペア。右の列は生徒にシャッフルされて表示されます",
+    "publish": "公開する",
+    "unpublish": "非公開にする"
   },
   "partsOfSpeech": {
     "noun": "名詞",

@@ -462,7 +462,9 @@
     "syntaxTf": "verdadero / falso",
     "syntaxTfng": "verdadero / falso / no se menciona (desde B1)",
     "syntaxOrder": "escrito en el orden correcto — el alumno lo ve desordenado",
-    "syntaxMatch": "parejas; el alumno ve la columna derecha desordenada"
+    "syntaxMatch": "parejas; el alumno ve la columna derecha desordenada",
+    "publish": "Publicar",
+    "unpublish": "Despublicar"
   },
   "partsOfSpeech": {
     "noun": "sustantivo",

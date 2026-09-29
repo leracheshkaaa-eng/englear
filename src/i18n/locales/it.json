@@ -462,7 +462,9 @@
     "syntaxTf": "vero / falso",
     "syntaxTfng": "vero / falso / non indicato (da B1)",
     "syntaxOrder": "scritto nell’ordine giusto — lo studente lo vede mescolato",
-    "syntaxMatch": "coppie; lo studente vede la colonna destra mescolata"
+    "syntaxMatch": "coppie; lo studente vede la colonna destra mescolata",
+    "publish": "Pubblica",
+    "unpublish": "Ritira"
   },
   "partsOfSpeech": {
     "noun": "sostantivo",

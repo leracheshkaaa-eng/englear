@@ -462,7 +462,9 @@
     "syntaxTf": "richtig / falsch",
     "syntaxTfng": "richtig / falsch / steht nicht im Text (ab B1)",
     "syntaxOrder": "in der richtigen Reihenfolge schreiben — Schüler sehen sie gemischt",
-    "syntaxMatch": "Paare; die rechte Spalte sehen Schüler gemischt"
+    "syntaxMatch": "Paare; die rechte Spalte sehen Schüler gemischt",
+    "publish": "Veröffentlichen",
+    "unpublish": "Zurückziehen"
   },
   "partsOfSpeech": {
     "noun": "Substantiv",
