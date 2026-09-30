@@ -1,0 +1,431 @@
+{
+  "package": "b2-society-environment",
+  "kind": "words",
+  "words": [
+    {
+      "word": "bureaucracy",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/bjʊˈrɑkrəsi/",
+      "definition": "complicated official rules and processes",
+      "examples": [
+        "There is too much bureaucracy in the system."
+      ],
+      "translations": {
+        "uk": "бюрократія",
+        "de": "Bürokratie",
+        "fr": "bureaucratie",
+        "es": "burocracia",
+        "it": "burocrazia",
+        "pt": "burocracia",
+        "pl": "biurokracja",
+        "ru": "бюрократия",
+        "zh": "官僚作风",
+        "ja": "官僚主義"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "campaign",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/kæmˈpeɪn/",
+      "definition": "a series of planned activities to achieve something",
+      "examples": [
+        "They started a campaign to save the park."
+      ],
+      "translations": {
+        "uk": "кампанія",
+        "de": "Kampagne",
+        "fr": "campagne",
+        "es": "campaña",
+        "it": "campagna",
+        "pt": "campanha",
+        "pl": "kampania",
+        "ru": "кампания",
+        "zh": "运动，宣传活动",
+        "ja": "キャンペーン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "candidate",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈkændɪdeɪt/",
+      "definition": "a person who applies for a job or wants to be elected",
+      "examples": [
+        "There are three candidates for the job."
+      ],
+      "translations": {
+        "uk": "кандидат",
+        "de": "Kandidat",
+        "fr": "candidat",
+        "es": "candidato",
+        "it": "candidato",
+        "pt": "candidato",
+        "pl": "kandydat",
+        "ru": "кандидат",
+        "zh": "候选人",
+        "ja": "候補者"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dispute",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/dɪˈspjut/",
+      "definition": "a serious disagreement",
+      "examples": [
+        "The two countries are in a dispute over land."
+      ],
+      "translations": {
+        "uk": "суперечка",
+        "de": "Streit",
+        "fr": "litige",
+        "es": "disputa",
+        "it": "controversia",
+        "pt": "disputa",
+        "pl": "spór",
+        "ru": "спор",
+        "zh": "争端",
+        "ja": "紛争"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fraud",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/frɔd/",
+      "definition": "the crime of getting money by lying",
+      "examples": [
+        "He was arrested for credit card fraud."
+      ],
+      "translations": {
+        "uk": "шахрайство",
+        "de": "Betrug",
+        "fr": "fraude",
+        "es": "fraude",
+        "it": "frode",
+        "pt": "fraude",
+        "pl": "oszustwo",
+        "ru": "мошенничество",
+        "zh": "欺诈",
+        "ja": "詐欺"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "inclusive",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ɪnˈklusɪv/",
+      "definition": "including all kinds of people",
+      "examples": [
+        "We want our school to be inclusive."
+      ],
+      "translations": {
+        "uk": "інклюзивний",
+        "de": "inklusiv",
+        "fr": "inclusif",
+        "es": "inclusivo",
+        "it": "inclusivo",
+        "pt": "inclusivo",
+        "pl": "włączający",
+        "ru": "инклюзивный",
+        "zh": "包容的",
+        "ja": "包括的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prejudice",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈprɛdʒədɪs/",
+      "definition": "an unfair opinion formed without knowing the facts",
+      "examples": [
+        "We must fight racial prejudice."
+      ],
+      "translations": {
+        "uk": "упередження",
+        "de": "Vorurteil",
+        "fr": "préjugé",
+        "es": "prejuicio",
+        "it": "pregiudizio",
+        "pt": "preconceito",
+        "pl": "uprzedzenie",
+        "ru": "предрассудок",
+        "zh": "偏见",
+        "ja": "偏見"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stereotype",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈstɛriəˌtaɪp/",
+      "definition": "a fixed but often wrong idea about a type of person",
+      "examples": [
+        "It is a stereotype that all teenagers are lazy."
+      ],
+      "translations": {
+        "uk": "стереотип",
+        "de": "Stereotyp",
+        "fr": "stéréotype",
+        "es": "estereotipo",
+        "it": "stereotipo",
+        "pt": "estereótipo",
+        "pl": "stereotyp",
+        "ru": "стереотип",
+        "zh": "刻板印象",
+        "ja": "固定観念"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "subsidy",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈsʌbsɪdi/",
+      "definition": "money the government pays to help a business or reduce a price",
+      "examples": [
+        "Farmers receive a government subsidy."
+      ],
+      "translations": {
+        "uk": "субсидія",
+        "de": "Subvention",
+        "fr": "subvention",
+        "es": "subsidio",
+        "it": "sussidio",
+        "pt": "subsídio",
+        "pl": "dotacja",
+        "ru": "субсидия",
+        "zh": "补贴",
+        "ja": "補助金"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "surveillance",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/sɚˈveɪləns/",
+      "definition": "the careful watching of people, often by the police",
+      "examples": [
+        "The street is under video surveillance."
+      ],
+      "translations": {
+        "uk": "стеження, нагляд",
+        "de": "Überwachung",
+        "fr": "surveillance",
+        "es": "vigilancia",
+        "it": "sorveglianza",
+        "pt": "vigilância",
+        "pl": "nadzór",
+        "ru": "наблюдение, слежка",
+        "zh": "监视",
+        "ja": "監視"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "voluntary",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈvɑlənˌtɛri/",
+      "definition": "done because you want to, not because you must",
+      "examples": [
+        "Taking part in the survey is voluntary."
+      ],
+      "translations": {
+        "uk": "добровільний",
+        "de": "freiwillig",
+        "fr": "volontaire",
+        "es": "voluntario",
+        "it": "volontario",
+        "pt": "voluntário",
+        "pl": "dobrowolny",
+        "ru": "добровольный",
+        "zh": "自愿的",
+        "ja": "自発的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "witness",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈwɪtnəs/",
+      "definition": "a person who sees a crime or accident",
+      "examples": [
+        "The police are looking for witnesses."
+      ],
+      "translations": {
+        "uk": "свідок",
+        "de": "Zeuge",
+        "fr": "témoin",
+        "es": "testigo",
+        "it": "testimone",
+        "pt": "testemunha",
+        "pl": "świadek",
+        "ru": "свидетель",
+        "zh": "目击者",
+        "ja": "目撃者"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "obligation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˌɑblɪˈɡeɪʃən/",
+      "definition": "something you must do because of a rule or promise",
+      "examples": [
+        "Parents have an obligation to send their children to school."
+      ],
+      "translations": {
+        "uk": "обов’язок",
+        "de": "Verpflichtung",
+        "fr": "obligation",
+        "es": "obligación",
+        "it": "obbligo",
+        "pt": "obrigação",
+        "pl": "obowiązek",
+        "ru": "обязательство",
+        "zh": "义务",
+        "ja": "義務"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hazardous",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈhæzɚdəs/",
+      "definition": "dangerous, especially to health or safety",
+      "examples": [
+        "Hazardous waste must be disposed of safely."
+      ],
+      "translations": {
+        "uk": "небезпечний",
+        "de": "gefährlich",
+        "fr": "dangereux",
+        "es": "peligroso",
+        "it": "pericoloso",
+        "pt": "perigoso",
+        "pl": "niebezpieczny",
+        "ru": "опасный",
+        "zh": "有害的，危险的",
+        "ja": "危険な"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "scarce",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/skɛrs/",
+      "definition": "not enough for what people need",
+      "examples": [
+        "Water is scarce in the desert."
+      ],
+      "translations": {
+        "uk": "дефіцитний, рідкісний",
+        "de": "knapp",
+        "fr": "rare",
+        "es": "escaso",
+        "it": "scarso",
+        "pt": "escasso",
+        "pl": "niedostateczny",
+        "ru": "дефицитный, скудный",
+        "zh": "稀少的",
+        "ja": "乏しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "restore",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/rɪˈstɔr/",
+      "definition": "to bring something back to a good condition",
+      "examples": [
+        "They want to restore the old castle."
+      ],
+      "translations": {
+        "uk": "відновлювати",
+        "de": "restaurieren",
+        "fr": "restaurer",
+        "es": "restaurar",
+        "it": "restaurare",
+        "pt": "restaurar",
+        "pl": "odnowić",
+        "ru": "восстанавливать",
+        "zh": "恢复，修复",
+        "ja": "修復する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "flourish",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Nature",
+      "ipa": "/ˈflɝɪʃ/",
+      "definition": "to grow or develop well",
+      "examples": [
+        "These plants flourish in warm weather."
+      ],
+      "translations": {
+        "uk": "процвітати",
+        "de": "gedeihen",
+        "fr": "s’épanouir",
+        "es": "florecer",
+        "it": "prosperare",
+        "pt": "florescer",
+        "pl": "kwitnąć",
+        "ru": "процветать",
+        "zh": "茂盛，繁荣",
+        "ja": "繁栄する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "package": "b2-work-money",
+  "kind": "words",
+  "words": [
+    {
+      "word": "apprentice",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/əˈprɛntɪs/",
+      "definition": "a young person who learns a job by working for a skilled person",
+      "examples": [
+        "He started as an apprentice in a car workshop."
+      ],
+      "translations": {
+        "uk": "учень, практикант",
+        "de": "Auszubildender",
+        "fr": "apprenti",
+        "es": "aprendiz",
+        "it": "apprendista",
+        "pt": "aprendiz",
+        "pl": "praktykant",
+        "ru": "ученик, подмастерье",
+        "zh": "学徒",
+        "ja": "見習い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bankrupt",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Money",
+      "ipa": "/ˈbæŋkrʌpt/",
+      "definition": "without enough money to pay what you owe",
+      "examples": [
+        "The company went bankrupt last year."
+      ],
+      "translations": {
+        "uk": "банкрут",
+        "de": "bankrott",
+        "fr": "en faillite",
+        "es": "en bancarrota",
+        "it": "in bancarotta",
+        "pt": "falido",
+        "pl": "zbankrutowany",
+        "ru": "обанкротившийся",
+        "zh": "破产的",
+        "ja": "破産した"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "compensation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˌkɑmpənˈseɪʃən/",
+      "definition": "money paid to someone because of loss, injury or work done",
+      "examples": [
+        "She received compensation for the accident."
+      ],
+      "translations": {
+        "uk": "компенсація",
+        "de": "Entschädigung",
+        "fr": "indemnisation",
+        "es": "indemnización",
+        "it": "risarcimento",
+        "pt": "indenização",
+        "pl": "odszkodowanie",
+        "ru": "компенсация",
+        "zh": "赔偿",
+        "ja": "補償"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "confidential",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˌkɑnfəˈdɛnʃəl/",
+      "definition": "meant to be kept secret",
+      "examples": [
+        "This information is strictly confidential."
+      ],
+      "translations": {
+        "uk": "конфіденційний",
+        "de": "vertraulich",
+        "fr": "confidentiel",
+        "es": "confidencial",
+        "it": "riservato",
+        "pt": "confidencial",
+        "pl": "poufny",
+        "ru": "конфиденциальный",
+        "zh": "机密的",
+        "ja": "機密の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "corporate",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Business",
+      "ipa": "/ˈkɔrpərət/",
+      "definition": "relating to a large company",
+      "examples": [
+        "She works in the corporate sector."
+      ],
+      "translations": {
+        "uk": "корпоративний",
+        "de": "Unternehmens-",
+        "fr": "d’entreprise",
+        "es": "corporativo",
+        "it": "aziendale",
+        "pt": "corporativo",
+        "pl": "korporacyjny",
+        "ru": "корпоративный",
+        "zh": "公司的",
+        "ja": "企業の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "expertise",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˌɛkspɚˈtiz/",
+      "definition": "special skill or knowledge in a particular area",
+      "examples": [
+        "We need someone with expertise in marketing."
+      ],
+      "translations": {
+        "uk": "експертиза, досвід",
+        "de": "Fachwissen",
+        "fr": "expertise",
+        "es": "experiencia",
+        "it": "competenza",
+        "pt": "especialização",
+        "pl": "wiedza fachowa",
+        "ru": "знания и опыт, компетенция",
+        "zh": "专业知识",
+        "ja": "専門知識"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lecturer",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "University",
+      "ipa": "/ˈlɛktʃərɚ/",
+      "definition": "a person who teaches at a university",
+      "examples": [
+        "My sister is a history lecturer."
+      ],
+      "translations": {
+        "uk": "викладач (вишу)",
+        "de": "Dozent",
+        "fr": "maître de conférences",
+        "es": "profesor universitario",
+        "it": "docente universitario",
+        "pt": "professor universitário",
+        "pl": "wykładowca",
+        "ru": "преподаватель вуза",
+        "zh": "讲师",
+        "ja": "講師"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mortgage",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Money",
+      "ipa": "/ˈmɔrɡɪdʒ/",
+      "definition": "a loan from a bank to buy a house",
+      "examples": [
+        "They took out a mortgage to buy their flat."
+      ],
+      "translations": {
+        "uk": "іпотека",
+        "de": "Hypothek",
+        "fr": "prêt immobilier",
+        "es": "hipoteca",
+        "it": "mutuo",
+        "pt": "hipoteca",
+        "pl": "kredyt hipoteczny",
+        "ru": "ипотека",
+        "zh": "按揭贷款",
+        "ja": "住宅ローン"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "occupation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˌɑkjəˈpeɪʃən/",
+      "definition": "a person's job",
+      "examples": [
+        "Please write your name and occupation."
+      ],
+      "translations": {
+        "uk": "професія, рід занять",
+        "de": "Beruf",
+        "fr": "profession",
+        "es": "ocupación",
+        "it": "occupazione",
+        "pt": "ocupação",
+        "pl": "zawód",
+        "ru": "род занятий, профессия",
+        "zh": "职业",
+        "ja": "職業"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pension",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Money",
+      "ipa": "/ˈpɛnʃən/",
+      "definition": "money paid regularly to someone who has retired",
+      "examples": [
+        "My grandfather lives on his pension."
+      ],
+      "translations": {
+        "uk": "пенсія",
+        "de": "Rente",
+        "fr": "retraite",
+        "es": "pensión",
+        "it": "pensione",
+        "pt": "aposentadoria",
+        "pl": "emerytura",
+        "ru": "пенсия",
+        "zh": "养老金",
+        "ja": "年金"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "recruit",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/rɪˈkrut/",
+      "definition": "to find new people to work for a company",
+      "examples": [
+        "The company plans to recruit fifty new staff."
+      ],
+      "translations": {
+        "uk": "наймати, набирати",
+        "de": "einstellen",
+        "fr": "recruter",
+        "es": "contratar",
+        "it": "assumere",
+        "pt": "recrutar",
+        "pl": "rekrutować",
+        "ru": "набирать (персонал)",
+        "zh": "招聘",
+        "ja": "採用する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "supervisor",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˈsupɚvaɪzɚ/",
+      "definition": "a person who is in charge of a group of workers",
+      "examples": [
+        "Ask your supervisor if you can leave early."
+      ],
+      "translations": {
+        "uk": "керівник, наглядач",
+        "de": "Vorgesetzter",
+        "fr": "superviseur",
+        "es": "supervisor",
+        "it": "supervisore",
+        "pt": "supervisor",
+        "pl": "kierownik",
+        "ru": "руководитель, начальник",
+        "zh": "主管",
+        "ja": "上司"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wage",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Money",
+      "ipa": "/weɪdʒ/",
+      "definition": "money paid, usually every week, for work",
+      "examples": [
+        "The minimum wage went up this year."
+      ],
+      "translations": {
+        "uk": "заробітна плата",
+        "de": "Lohn",
+        "fr": "salaire",
+        "es": "salario",
+        "it": "salario",
+        "pt": "salário",
+        "pl": "płaca",
+        "ru": "заработная плата",
+        "zh": "工资",
+        "ja": "賃金"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "tenant",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Home",
+      "ipa": "/ˈtɛnənt/",
+      "definition": "a person who pays rent to live in a place",
+      "examples": [
+        "The new tenants move in on Monday."
+      ],
+      "translations": {
+        "uk": "орендар",
+        "de": "Mieter",
+        "fr": "locataire",
+        "es": "inquilino",
+        "it": "inquilino",
+        "pt": "inquilino",
+        "pl": "najemca",
+        "ru": "арендатор, жилец",
+        "zh": "租户",
+        "ja": "借家人"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "affordable",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Money",
+      "ipa": "/əˈfɔrdəbəl/",
+      "definition": "cheap enough for most people to buy",
+      "examples": [
+        "The city needs more affordable housing."
+      ],
+      "translations": {
+        "uk": "доступний (за ціною)",
+        "de": "erschwinglich",
+        "fr": "abordable",
+        "es": "asequible",
+        "it": "accessibile",
+        "pt": "acessível",
+        "pl": "przystępny cenowo",
+        "ru": "доступный по цене",
+        "zh": "负担得起的",
+        "ja": "手頃な価格の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deposit",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Money",
+      "ipa": "/dɪˈpɑzɪt/",
+      "definition": "money you pay first, before you pay the rest",
+      "examples": [
+        "We paid a deposit on the flat."
+      ],
+      "translations": {
+        "uk": "завдаток, депозит",
+        "de": "Anzahlung",
+        "fr": "acompte",
+        "es": "depósito",
+        "it": "caparra",
+        "pt": "depósito",
+        "pl": "kaucja",
+        "ru": "залог, задаток",
+        "zh": "押金，定金",
+        "ja": "頭金"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

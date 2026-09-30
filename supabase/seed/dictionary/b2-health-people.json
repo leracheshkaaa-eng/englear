@@ -1,0 +1,581 @@
+{
+  "package": "b2-health-people",
+  "kind": "words",
+  "words": [
+    {
+      "word": "allergic",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/əˈlɝdʒɪk/",
+      "definition": "becoming ill when you eat, touch or breathe something",
+      "examples": [
+        "I'm allergic to cats."
+      ],
+      "translations": {
+        "uk": "алергічний",
+        "de": "allergisch",
+        "fr": "allergique",
+        "es": "alérgico",
+        "it": "allergico",
+        "pt": "alérgico",
+        "pl": "uczulony",
+        "ru": "аллергический, с аллергией",
+        "zh": "过敏的",
+        "ja": "アレルギーの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chronic",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/ˈkrɑnɪk/",
+      "definition": "lasting for a long time",
+      "examples": [
+        "She suffers from chronic back pain."
+      ],
+      "translations": {
+        "uk": "хронічний",
+        "de": "chronisch",
+        "fr": "chronique",
+        "es": "crónico",
+        "it": "cronico",
+        "pt": "crônico",
+        "pl": "przewlekły",
+        "ru": "хронический",
+        "zh": "慢性的",
+        "ja": "慢性の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fatigue",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/fəˈtiɡ/",
+      "definition": "a feeling of being extremely tired",
+      "examples": [
+        "Fatigue is a common symptom of the flu."
+      ],
+      "translations": {
+        "uk": "втома",
+        "de": "Erschöpfung",
+        "fr": "fatigue",
+        "es": "fatiga",
+        "it": "stanchezza",
+        "pt": "fadiga",
+        "pl": "zmęczenie",
+        "ru": "усталость",
+        "zh": "疲劳",
+        "ja": "疲労"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nutritious",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/nuˈtrɪʃəs/",
+      "definition": "containing a lot of things that are good for your body",
+      "examples": [
+        "Children need nutritious meals."
+      ],
+      "translations": {
+        "uk": "поживний",
+        "de": "nahrhaft",
+        "fr": "nutritif",
+        "es": "nutritivo",
+        "it": "nutriente",
+        "pt": "nutritivo",
+        "pl": "pożywny",
+        "ru": "питательный",
+        "zh": "有营养的",
+        "ja": "栄養のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "outbreak",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/ˈaʊtbreɪk/",
+      "definition": "the sudden start of a disease or of violence",
+      "examples": [
+        "There has been an outbreak of flu at the school."
+      ],
+      "translations": {
+        "uk": "спалах",
+        "de": "Ausbruch",
+        "fr": "épidémie",
+        "es": "brote",
+        "it": "focolaio",
+        "pt": "surto",
+        "pl": "wybuch (epidemii)",
+        "ru": "вспышка (болезни)",
+        "zh": "爆发",
+        "ja": "発生"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "psychological",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/ˌsaɪkəˈlɑdʒɪkəl/",
+      "definition": "relating to the mind and feelings",
+      "examples": [
+        "Stress can cause psychological problems."
+      ],
+      "translations": {
+        "uk": "психологічний",
+        "de": "psychologisch",
+        "fr": "psychologique",
+        "es": "psicológico",
+        "it": "psicologico",
+        "pt": "psicológico",
+        "pl": "psychologiczny",
+        "ru": "психологический",
+        "zh": "心理的",
+        "ja": "心理的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "precaution",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/prɪˈkɔʃən/",
+      "definition": "something you do to prevent a problem",
+      "examples": [
+        "Take an umbrella as a precaution."
+      ],
+      "translations": {
+        "uk": "запобіжний захід",
+        "de": "Vorsichtsmaßnahme",
+        "fr": "précaution",
+        "es": "precaución",
+        "it": "precauzione",
+        "pt": "precaução",
+        "pl": "środek ostrożności",
+        "ru": "мера предосторожности",
+        "zh": "预防措施",
+        "ja": "予防措置"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "adolescent",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˌædəˈlɛsənt/",
+      "definition": "a young person who is developing into an adult",
+      "examples": [
+        "Many adolescents spend hours online."
+      ],
+      "translations": {
+        "uk": "підліток",
+        "de": "Jugendlicher",
+        "fr": "adolescent",
+        "es": "adolescente",
+        "it": "adolescente",
+        "pt": "adolescente",
+        "pl": "nastolatek",
+        "ru": "подросток",
+        "zh": "青少年",
+        "ja": "青年"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sibling",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Family",
+      "ipa": "/ˈsɪblɪŋ/",
+      "definition": "a brother or sister",
+      "examples": [
+        "I have two siblings."
+      ],
+      "translations": {
+        "uk": "брат або сестра",
+        "de": "Geschwister",
+        "fr": "frère ou sœur",
+        "es": "hermano o hermana",
+        "it": "fratello o sorella",
+        "pt": "irmão ou irmã",
+        "pl": "rodzeństwo",
+        "ru": "брат или сестра",
+        "zh": "兄弟姐妹",
+        "ja": "きょうだい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spouse",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Family",
+      "ipa": "/spaʊs/",
+      "definition": "a husband or wife",
+      "examples": [
+        "Employees and their spouses are invited to the party."
+      ],
+      "translations": {
+        "uk": "чоловік або дружина",
+        "de": "Ehepartner",
+        "fr": "conjoint",
+        "es": "cónyuge",
+        "it": "coniuge",
+        "pt": "cônjuge",
+        "pl": "małżonek",
+        "ru": "супруг, супруга",
+        "zh": "配偶",
+        "ja": "配偶者"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "arrogant",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˈærəɡənt/",
+      "definition": "thinking that you are better than other people",
+      "examples": [
+        "He is clever but arrogant."
+      ],
+      "translations": {
+        "uk": "зарозумілий",
+        "de": "arrogant",
+        "fr": "arrogant",
+        "es": "arrogante",
+        "it": "arrogante",
+        "pt": "arrogante",
+        "pl": "arogancki",
+        "ru": "высокомерный",
+        "zh": "傲慢的",
+        "ja": "傲慢な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "considerate",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/kənˈsɪdərət/",
+      "definition": "thinking about other people's feelings",
+      "examples": [
+        "It was very considerate of you to call."
+      ],
+      "translations": {
+        "uk": "уважний, дбайливий",
+        "de": "rücksichtsvoll",
+        "fr": "attentionné",
+        "es": "considerado",
+        "it": "premuroso",
+        "pt": "atencioso",
+        "pl": "taktowny",
+        "ru": "внимательный, заботливый",
+        "zh": "体贴的",
+        "ja": "思いやりのある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "depressed",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/dɪˈprɛst/",
+      "definition": "very unhappy for a long time",
+      "examples": [
+        "He felt depressed after losing his job."
+      ],
+      "translations": {
+        "uk": "пригнічений",
+        "de": "niedergeschlagen",
+        "fr": "déprimé",
+        "es": "deprimido",
+        "it": "depresso",
+        "pt": "deprimido",
+        "pl": "przygnębiony",
+        "ru": "подавленный",
+        "zh": "沮丧的",
+        "ja": "落ち込んだ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "desperate",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ˈdɛspərət/",
+      "definition": "feeling that you will do anything because the situation is so bad",
+      "examples": [
+        "They were desperate for news."
+      ],
+      "translations": {
+        "uk": "відчайдушний",
+        "de": "verzweifelt",
+        "fr": "désespéré",
+        "es": "desesperado",
+        "it": "disperato",
+        "pt": "desesperado",
+        "pl": "zdesperowany",
+        "ru": "отчаянный",
+        "zh": "绝望的，极度渴望的",
+        "ja": "必死の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exhausted",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ɪɡˈzɔstɪd/",
+      "definition": "extremely tired",
+      "examples": [
+        "I was exhausted after the long flight."
+      ],
+      "translations": {
+        "uk": "виснажений",
+        "de": "erschöpft",
+        "fr": "épuisé",
+        "es": "agotado",
+        "it": "esausto",
+        "pt": "exausto",
+        "pl": "wyczerpany",
+        "ru": "измотанный",
+        "zh": "筋疲力尽的",
+        "ja": "疲れ果てた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "humble",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˈhʌmbəl/",
+      "definition": "not thinking that you are better than other people",
+      "examples": [
+        "Despite her success, she is very humble."
+      ],
+      "translations": {
+        "uk": "скромний",
+        "de": "bescheiden",
+        "fr": "humble",
+        "es": "humilde",
+        "it": "umile",
+        "pt": "humilde",
+        "pl": "skromny",
+        "ru": "скромный",
+        "zh": "谦虚的",
+        "ja": "謙虚な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "insecure",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ˌɪnsɪˈkjʊr/",
+      "definition": "not confident about yourself",
+      "examples": [
+        "She feels insecure about her English."
+      ],
+      "translations": {
+        "uk": "невпевнений",
+        "de": "unsicher",
+        "fr": "pas sûr de soi",
+        "es": "inseguro",
+        "it": "insicuro",
+        "pt": "inseguro",
+        "pl": "niepewny siebie",
+        "ru": "неуверенный в себе",
+        "zh": "缺乏自信的",
+        "ja": "自信のない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "irritate",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ˈɪrɪteɪt/",
+      "definition": "to make someone annoyed",
+      "examples": [
+        "His constant jokes irritate me."
+      ],
+      "translations": {
+        "uk": "дратувати",
+        "de": "ärgern",
+        "fr": "agacer",
+        "es": "irritar",
+        "it": "irritare",
+        "pt": "irritar",
+        "pl": "irytować",
+        "ru": "раздражать",
+        "zh": "使恼怒",
+        "ja": "いらいらさせる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "resent",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/rɪˈzɛnt/",
+      "definition": "to feel angry because you think something is unfair",
+      "examples": [
+        "She resented being treated like a child."
+      ],
+      "translations": {
+        "uk": "обурюватися, ображатися",
+        "de": "übel nehmen",
+        "fr": "en vouloir",
+        "es": "resentirse",
+        "it": "risentirsi",
+        "pt": "ressentir-se",
+        "pl": "mieć za złe",
+        "ru": "возмущаться, обижаться",
+        "zh": "怨恨",
+        "ja": "憤慨する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "skeptical",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˈskɛptɪkəl/",
+      "definition": "having doubts that something is true or useful",
+      "examples": [
+        "I'm skeptical about his promises."
+      ],
+      "translations": {
+        "uk": "скептичний",
+        "de": "skeptisch",
+        "fr": "sceptique",
+        "es": "escéptico",
+        "it": "scettico",
+        "pt": "cético",
+        "pl": "sceptyczny",
+        "ru": "скептический",
+        "zh": "怀疑的",
+        "ja": "懐疑的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mature",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/məˈtʃʊr/",
+      "definition": "behaving in a sensible way, like an adult",
+      "examples": [
+        "She is very mature for her age."
+      ],
+      "translations": {
+        "uk": "зрілий",
+        "de": "reif",
+        "fr": "mûr",
+        "es": "maduro",
+        "it": "maturo",
+        "pt": "maduro",
+        "pl": "dojrzały",
+        "ru": "зрелый",
+        "zh": "成熟的",
+        "ja": "大人びた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dedicated",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˈdɛdɪkeɪtɪd/",
+      "definition": "working hard because you care about something",
+      "examples": [
+        "She is a dedicated teacher."
+      ],
+      "translations": {
+        "uk": "відданий",
+        "de": "engagiert",
+        "fr": "dévoué",
+        "es": "dedicado",
+        "it": "dedito",
+        "pt": "dedicado",
+        "pl": "oddany",
+        "ru": "преданный делу",
+        "zh": "敬业的",
+        "ja": "献身的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "decent",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "People",
+      "ipa": "/ˈdisənt/",
+      "definition": "good enough, or honest and kind",
+      "examples": [
+        "He earns a decent salary."
+      ],
+      "translations": {
+        "uk": "пристойний, порядний",
+        "de": "anständig",
+        "fr": "correct",
+        "es": "decente",
+        "it": "decente",
+        "pt": "decente",
+        "pl": "przyzwoity",
+        "ru": "приличный, порядочный",
+        "zh": "体面的，像样的",
+        "ja": "まともな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
