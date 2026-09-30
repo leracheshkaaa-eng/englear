@@ -1,0 +1,1131 @@
+{
+  "package": "advanced-c1-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "abolish",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/əˈbɑlɪʃ/",
+      "definition": "to officially end a law, system or custom",
+      "examples": [
+        "Many countries have abolished the death penalty."
+      ],
+      "translations": {
+        "uk": "скасувати",
+        "de": "abschaffen",
+        "fr": "abolir",
+        "es": "abolir",
+        "it": "abolire",
+        "pt": "abolir",
+        "pl": "znieść",
+        "ru": "отменить, упразднить",
+        "zh": "废除",
+        "ja": "廃止する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "accessible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əkˈsɛsəbəl/",
+      "definition": "easy to reach, enter, use or understand",
+      "examples": [
+        "The museum is fully accessible to wheelchair users."
+      ],
+      "translations": {
+        "uk": "доступний",
+        "de": "zugänglich",
+        "fr": "accessible",
+        "es": "accesible",
+        "it": "accessibile",
+        "pt": "acessível",
+        "pl": "dostępny",
+        "ru": "доступный",
+        "zh": "可到达的，易使用的",
+        "ja": "利用しやすい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "adjacent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈdʒeɪsənt/",
+      "definition": "next to or very near something",
+      "examples": [
+        "The hotel is adjacent to the railway station."
+      ],
+      "translations": {
+        "uk": "суміжний, сусідній",
+        "de": "angrenzend",
+        "fr": "adjacent",
+        "es": "adyacente",
+        "it": "adiacente",
+        "pt": "adjacente",
+        "pl": "przyległy",
+        "ru": "соседний, смежный",
+        "zh": "邻近的",
+        "ja": "隣接した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "affluent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Money",
+      "ipa": "/ˈæfluənt/",
+      "definition": "having a lot of money and a high standard of living",
+      "examples": [
+        "They live in an affluent part of the city."
+      ],
+      "translations": {
+        "uk": "заможний",
+        "de": "wohlhabend",
+        "fr": "aisé",
+        "es": "acomodado",
+        "it": "benestante",
+        "pt": "abastado",
+        "pl": "zamożny",
+        "ru": "состоятельный",
+        "zh": "富裕的",
+        "ja": "裕福な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "aggravate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈæɡrəveɪt/",
+      "definition": "to make a bad situation or an illness worse",
+      "examples": [
+        "Scratching will only aggravate the rash."
+      ],
+      "translations": {
+        "uk": "погіршувати",
+        "de": "verschlimmern",
+        "fr": "aggraver",
+        "es": "agravar",
+        "it": "aggravare",
+        "pt": "agravar",
+        "pl": "pogarszać",
+        "ru": "усугублять",
+        "zh": "使恶化",
+        "ja": "悪化させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ambivalent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Emotions",
+      "ipa": "/æmˈbɪvələnt/",
+      "definition": "having mixed feelings about something",
+      "examples": [
+        "She felt ambivalent about moving abroad."
+      ],
+      "translations": {
+        "uk": "амбівалентний, суперечливий",
+        "de": "zwiespältig",
+        "fr": "ambivalent",
+        "es": "ambivalente",
+        "it": "ambivalente",
+        "pt": "ambivalente",
+        "pl": "ambiwalentny",
+        "ru": "двойственный, противоречивый",
+        "zh": "矛盾的，举棋不定的",
+        "ja": "相反する感情を持つ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "appraisal",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Work",
+      "ipa": "/əˈpreɪzəl/",
+      "definition": "a judgement of how good someone or something is",
+      "examples": [
+        "I have my annual appraisal with my manager next week."
+      ],
+      "translations": {
+        "uk": "оцінювання",
+        "de": "Beurteilung",
+        "fr": "évaluation",
+        "es": "evaluación",
+        "it": "valutazione",
+        "pt": "avaliação",
+        "pl": "ocena",
+        "ru": "оценка, аттестация",
+        "zh": "评估",
+        "ja": "評価、査定"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "assertive",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "People",
+      "ipa": "/əˈsɝtɪv/",
+      "definition": "confident and direct in saying what you want or think",
+      "examples": [
+        "You need to be more assertive in meetings."
+      ],
+      "translations": {
+        "uk": "напористий, впевнений",
+        "de": "durchsetzungsfähig",
+        "fr": "affirmé",
+        "es": "asertivo",
+        "it": "assertivo",
+        "pt": "assertivo",
+        "pl": "asertywny",
+        "ru": "уверенный в себе, напористый",
+        "zh": "果断自信的",
+        "ja": "自己主張のできる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "attain",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈteɪn/",
+      "definition": "to reach or achieve something, usually after a lot of effort",
+      "examples": [
+        "She attained the highest grade in her class."
+      ],
+      "translations": {
+        "uk": "досягати",
+        "de": "erreichen",
+        "fr": "atteindre",
+        "es": "alcanzar",
+        "it": "raggiungere",
+        "pt": "alcançar",
+        "pl": "osiągnąć",
+        "ru": "достигать",
+        "zh": "达到，获得",
+        "ja": "達成する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "benevolent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "People",
+      "ipa": "/bəˈnɛvələnt/",
+      "definition": "kind and wanting to help other people",
+      "examples": [
+        "A benevolent donor paid for the new library."
+      ],
+      "translations": {
+        "uk": "доброзичливий",
+        "de": "wohlwollend",
+        "fr": "bienveillant",
+        "es": "benévolo",
+        "it": "benevolo",
+        "pt": "benevolente",
+        "pl": "życzliwy",
+        "ru": "доброжелательный",
+        "zh": "仁慈的",
+        "ja": "慈悲深い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "coerce",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/koʊˈɝs/",
+      "definition": "to force someone to do something they do not want to do",
+      "examples": [
+        "He was coerced into signing the contract."
+      ],
+      "translations": {
+        "uk": "змушувати, примушувати",
+        "de": "zwingen",
+        "fr": "contraindre",
+        "es": "coaccionar",
+        "it": "costringere",
+        "pt": "coagir",
+        "pl": "zmuszać",
+        "ru": "принуждать",
+        "zh": "强迫",
+        "ja": "強要する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "complacent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "People",
+      "ipa": "/kəmˈpleɪsənt/",
+      "definition": "too satisfied with yourself, so you stop trying hard",
+      "examples": [
+        "We can't afford to become complacent after one win."
+      ],
+      "translations": {
+        "uk": "самовдоволений",
+        "de": "selbstzufrieden",
+        "fr": "suffisant",
+        "es": "complaciente",
+        "it": "compiaciuto",
+        "pt": "complacente",
+        "pl": "zadowolony z siebie",
+        "ru": "самоуспокоенный",
+        "zh": "自满的",
+        "ja": "現状に満足しきった"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "conducive",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈdusɪv/",
+      "definition": "making it easy or likely for something to happen",
+      "examples": [
+        "A quiet room is conducive to studying."
+      ],
+      "translations": {
+        "uk": "сприятливий",
+        "de": "förderlich",
+        "fr": "propice",
+        "es": "propicio",
+        "it": "favorevole",
+        "pt": "propício",
+        "pl": "sprzyjający",
+        "ru": "благоприятный, способствующий",
+        "zh": "有助于的",
+        "ja": "助けになる"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "connotation",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌkɑnəˈteɪʃən/",
+      "definition": "an extra feeling or idea that a word suggests",
+      "examples": [
+        "The word \"cheap\" often has negative connotations."
+      ],
+      "translations": {
+        "uk": "конотація, відтінок значення",
+        "de": "Konnotation",
+        "fr": "connotation",
+        "es": "connotación",
+        "it": "connotazione",
+        "pt": "conotação",
+        "pl": "konotacja",
+        "ru": "коннотация, оттенок значения",
+        "zh": "言外之意，内涵",
+        "ja": "含意"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "constraint",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈstreɪnt/",
+      "definition": "something that limits what you can do",
+      "examples": [
+        "Budget constraints forced us to cancel the trip."
+      ],
+      "translations": {
+        "uk": "обмеження",
+        "de": "Einschränkung",
+        "fr": "contrainte",
+        "es": "restricción",
+        "it": "vincolo",
+        "pt": "restrição",
+        "pl": "ograniczenie",
+        "ru": "ограничение",
+        "zh": "限制",
+        "ja": "制約"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "contemplate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑntəmpleɪt/",
+      "definition": "to think about something carefully for a long time",
+      "examples": [
+        "She is contemplating a career change."
+      ],
+      "translations": {
+        "uk": "обмірковувати",
+        "de": "erwägen",
+        "fr": "envisager",
+        "es": "contemplar",
+        "it": "contemplare",
+        "pt": "contemplar",
+        "pl": "rozważać",
+        "ru": "обдумывать",
+        "zh": "考虑，沉思",
+        "ja": "熟考する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "credible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkrɛdəbəl/",
+      "definition": "able to be believed or trusted",
+      "examples": [
+        "The witness gave a credible account of events."
+      ],
+      "translations": {
+        "uk": "достовірний, правдоподібний",
+        "de": "glaubwürdig",
+        "fr": "crédible",
+        "es": "creíble",
+        "it": "credibile",
+        "pt": "credível",
+        "pl": "wiarygodny",
+        "ru": "правдоподобный, заслуживающий доверия",
+        "zh": "可信的",
+        "ja": "信頼できる"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "deplete",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Environment",
+      "ipa": "/dɪˈplit/",
+      "definition": "to reduce the amount of something so that little is left",
+      "examples": [
+        "Overfishing has depleted fish stocks."
+      ],
+      "translations": {
+        "uk": "виснажувати",
+        "de": "erschöpfen",
+        "fr": "épuiser",
+        "es": "agotar",
+        "it": "esaurire",
+        "pt": "esgotar",
+        "pl": "wyczerpywać",
+        "ru": "истощать",
+        "zh": "耗尽",
+        "ja": "枯渇させる"
+      },
+      "word_type": "word",
+      "ielts_category": "Environment"
+    },
+    {
+      "word": "deter",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈtɝ/",
+      "definition": "to make someone decide not to do something",
+      "examples": [
+        "High prices deter many tourists from visiting."
+      ],
+      "translations": {
+        "uk": "стримувати, відлякувати",
+        "de": "abschrecken",
+        "fr": "dissuader",
+        "es": "disuadir",
+        "it": "dissuadere",
+        "pt": "dissuadir",
+        "pl": "odstraszać",
+        "ru": "удерживать, отпугивать",
+        "zh": "阻止，威慑",
+        "ja": "思いとどまらせる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "discourse",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/ˈdɪskɔrs/",
+      "definition": "serious discussion or writing about a subject",
+      "examples": [
+        "Social media has changed political discourse."
+      ],
+      "translations": {
+        "uk": "дискурс",
+        "de": "Diskurs",
+        "fr": "discours",
+        "es": "discurso",
+        "it": "discorso",
+        "pt": "discurso",
+        "pl": "dyskurs",
+        "ru": "дискурс, обсуждение",
+        "zh": "话语，论述",
+        "ja": "言説"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "disposition",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "People",
+      "ipa": "/ˌdɪspəˈzɪʃən/",
+      "definition": "a person's natural character or mood",
+      "examples": [
+        "He has a cheerful disposition."
+      ],
+      "translations": {
+        "uk": "вдача, характер",
+        "de": "Wesensart",
+        "fr": "tempérament",
+        "es": "carácter",
+        "it": "indole",
+        "pt": "temperamento",
+        "pl": "usposobienie",
+        "ru": "нрав, характер",
+        "zh": "性情",
+        "ja": "気質"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "disrupt",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪsˈrʌpt/",
+      "definition": "to stop something from continuing in the normal way",
+      "examples": [
+        "The strike disrupted train services."
+      ],
+      "translations": {
+        "uk": "порушувати, зривати",
+        "de": "stören",
+        "fr": "perturber",
+        "es": "interrumpir",
+        "it": "interrompere",
+        "pt": "perturbar",
+        "pl": "zakłócać",
+        "ru": "нарушать, срывать",
+        "zh": "扰乱",
+        "ja": "混乱させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eligible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɛlɪdʒəbəl/",
+      "definition": "allowed by rules to do or receive something",
+      "examples": [
+        "You are eligible for a student discount."
+      ],
+      "translations": {
+        "uk": "що має право",
+        "de": "berechtigt",
+        "fr": "admissible",
+        "es": "elegible",
+        "it": "idoneo",
+        "pt": "elegível",
+        "pl": "uprawniony",
+        "ru": "имеющий право",
+        "zh": "有资格的",
+        "ja": "資格のある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "embody",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪmˈbɑdi/",
+      "definition": "to be a perfect example of an idea or quality",
+      "examples": [
+        "She embodies the spirit of the team."
+      ],
+      "translations": {
+        "uk": "втілювати",
+        "de": "verkörpern",
+        "fr": "incarner",
+        "es": "encarnar",
+        "it": "incarnare",
+        "pt": "encarnar",
+        "pl": "uosabiać",
+        "ru": "воплощать",
+        "zh": "体现",
+        "ja": "体現する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "empirical",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Science",
+      "ipa": "/ɪmˈpɪrɪkəl/",
+      "definition": "based on observation or experiment, not theory",
+      "examples": [
+        "There is little empirical evidence for the claim."
+      ],
+      "translations": {
+        "uk": "емпіричний",
+        "de": "empirisch",
+        "fr": "empirique",
+        "es": "empírico",
+        "it": "empirico",
+        "pt": "empírico",
+        "pl": "empiryczny",
+        "ru": "эмпирический",
+        "zh": "经验主义的，实证的",
+        "ja": "実証的な"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "endeavor",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈdɛvɚ/",
+      "definition": "a serious attempt to do something difficult",
+      "examples": [
+        "Starting a business is a risky endeavor."
+      ],
+      "translations": {
+        "uk": "спроба, починання",
+        "de": "Unterfangen",
+        "fr": "entreprise",
+        "es": "empeño",
+        "it": "impresa",
+        "pt": "empreendimento",
+        "pl": "przedsięwzięcie",
+        "ru": "начинание, попытка",
+        "zh": "努力，尝试",
+        "ja": "試み"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "erode",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈroʊd/",
+      "definition": "to slowly destroy or weaken something",
+      "examples": [
+        "The scandal eroded public trust in the government."
+      ],
+      "translations": {
+        "uk": "підривати, руйнувати",
+        "de": "untergraben",
+        "fr": "éroder",
+        "es": "erosionar",
+        "it": "erodere",
+        "pt": "corroer",
+        "pl": "podkopywać",
+        "ru": "подрывать, разрушать",
+        "zh": "侵蚀，削弱",
+        "ja": "むしばむ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "evoke",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈvoʊk/",
+      "definition": "to bring a feeling or memory into your mind",
+      "examples": [
+        "The song evokes memories of my childhood."
+      ],
+      "translations": {
+        "uk": "викликати (почуття, спогади)",
+        "de": "hervorrufen",
+        "fr": "évoquer",
+        "es": "evocar",
+        "it": "evocare",
+        "pt": "evocar",
+        "pl": "przywoływać",
+        "ru": "вызывать (чувства, воспоминания)",
+        "zh": "唤起",
+        "ja": "呼び起こす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exemplify",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪɡˈzɛmplɪfaɪ/",
+      "definition": "to be a typical example of something",
+      "examples": [
+        "This building exemplifies modern design."
+      ],
+      "translations": {
+        "uk": "є прикладом, ілюструвати",
+        "de": "veranschaulichen",
+        "fr": "illustrer",
+        "es": "ejemplificar",
+        "it": "esemplificare",
+        "pt": "exemplificar",
+        "pl": "stanowić przykład",
+        "ru": "служить примером",
+        "zh": "是…的典型",
+        "ja": "典型的な例となる"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "expedite",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Work",
+      "ipa": "/ˈɛkspədaɪt/",
+      "definition": "to make a process happen more quickly",
+      "examples": [
+        "We paid extra to expedite the delivery."
+      ],
+      "translations": {
+        "uk": "прискорювати",
+        "de": "beschleunigen",
+        "fr": "accélérer",
+        "es": "agilizar",
+        "it": "accelerare",
+        "pt": "agilizar",
+        "pl": "przyspieszać",
+        "ru": "ускорять",
+        "zh": "加快",
+        "ja": "促進する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fluctuation",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Money",
+      "ipa": "/ˌflʌktʃuˈeɪʃən/",
+      "definition": "a change up and down in amount or level",
+      "examples": [
+        "There are big fluctuations in food prices."
+      ],
+      "translations": {
+        "uk": "коливання",
+        "de": "Schwankung",
+        "fr": "fluctuation",
+        "es": "fluctuación",
+        "it": "fluttuazione",
+        "pt": "flutuação",
+        "pl": "wahanie",
+        "ru": "колебание",
+        "zh": "波动",
+        "ja": "変動"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "incompatible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Technology",
+      "ipa": "/ˌɪnkəmˈpætəbəl/",
+      "definition": "not able to work or exist together",
+      "examples": [
+        "The software is incompatible with older computers."
+      ],
+      "translations": {
+        "uk": "несумісний",
+        "de": "inkompatibel",
+        "fr": "incompatible",
+        "es": "incompatible",
+        "it": "incompatibile",
+        "pt": "incompatível",
+        "pl": "niezgodny",
+        "ru": "несовместимый",
+        "zh": "不兼容的",
+        "ja": "互換性のない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "indispensable",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɪndɪˈspɛnsəbəl/",
+      "definition": "so important that you cannot manage without it",
+      "examples": [
+        "A good dictionary is indispensable for learners."
+      ],
+      "translations": {
+        "uk": "незамінний",
+        "de": "unverzichtbar",
+        "fr": "indispensable",
+        "es": "indispensable",
+        "it": "indispensabile",
+        "pt": "indispensável",
+        "pl": "niezbędny",
+        "ru": "незаменимый",
+        "zh": "不可或缺的",
+        "ja": "不可欠な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "intricate",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɪntrɪkət/",
+      "definition": "having many small parts or details",
+      "examples": [
+        "The carpet has an intricate pattern."
+      ],
+      "translations": {
+        "uk": "складний, заплутаний",
+        "de": "kompliziert",
+        "fr": "complexe",
+        "es": "intrincado",
+        "it": "intricato",
+        "pt": "intrincado",
+        "pl": "zawiły",
+        "ru": "замысловатый",
+        "zh": "错综复杂的",
+        "ja": "入り組んだ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lucrative",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Money",
+      "ipa": "/ˈlukrətɪv/",
+      "definition": "producing a lot of money",
+      "examples": [
+        "He left teaching for a more lucrative job."
+      ],
+      "translations": {
+        "uk": "прибутковий",
+        "de": "lukrativ",
+        "fr": "lucratif",
+        "es": "lucrativo",
+        "it": "redditizio",
+        "pt": "lucrativo",
+        "pl": "lukratywny",
+        "ru": "прибыльный",
+        "zh": "赚钱的",
+        "ja": "もうかる"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "negligible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈnɛɡlɪdʒəbəl/",
+      "definition": "so small that it is not important",
+      "examples": [
+        "The difference in price is negligible."
+      ],
+      "translations": {
+        "uk": "незначний",
+        "de": "vernachlässigbar",
+        "fr": "négligeable",
+        "es": "insignificante",
+        "it": "trascurabile",
+        "pt": "insignificante",
+        "pl": "znikomy",
+        "ru": "незначительный",
+        "zh": "微不足道的",
+        "ja": "ごくわずかな"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "overwhelm",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Emotions",
+      "ipa": "/ˌoʊvɚˈwɛlm/",
+      "definition": "to affect someone so strongly that they cannot think or act normally",
+      "examples": [
+        "She was overwhelmed by all the messages of support."
+      ],
+      "translations": {
+        "uk": "переповнювати, приголомшувати",
+        "de": "überwältigen",
+        "fr": "submerger",
+        "es": "abrumar",
+        "it": "sopraffare",
+        "pt": "sobrecarregar",
+        "pl": "przytłaczać",
+        "ru": "переполнять, ошеломлять",
+        "zh": "使不知所措",
+        "ja": "圧倒する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "precede",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Time",
+      "ipa": "/prɪˈsid/",
+      "definition": "to happen or come before something",
+      "examples": [
+        "A short speech preceded the dinner."
+      ],
+      "translations": {
+        "uk": "передувати",
+        "de": "vorausgehen",
+        "fr": "précéder",
+        "es": "preceder",
+        "it": "precedere",
+        "pt": "preceder",
+        "pl": "poprzedzać",
+        "ru": "предшествовать",
+        "zh": "在…之前",
+        "ja": "先行する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "proficient",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/prəˈfɪʃənt/",
+      "definition": "skilled and experienced at doing something",
+      "examples": [
+        "He is proficient in three languages."
+      ],
+      "translations": {
+        "uk": "вправний, що добре володіє",
+        "de": "kompetent",
+        "fr": "compétent",
+        "es": "competente",
+        "it": "competente",
+        "pt": "proficiente",
+        "pl": "biegły",
+        "ru": "владеющий, умелый",
+        "zh": "熟练的",
+        "ja": "熟達した"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reciprocal",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Relationships",
+      "ipa": "/rɪˈsɪprəkəl/",
+      "definition": "given or done by both sides equally",
+      "examples": [
+        "They have a reciprocal agreement to share information."
+      ],
+      "translations": {
+        "uk": "взаємний",
+        "de": "gegenseitig",
+        "fr": "réciproque",
+        "es": "recíproco",
+        "it": "reciproco",
+        "pt": "recíproco",
+        "pl": "wzajemny",
+        "ru": "взаимный",
+        "zh": "互惠的，相互的",
+        "ja": "相互の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rectify",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈrɛktɪfaɪ/",
+      "definition": "to correct something that is wrong",
+      "examples": [
+        "We will rectify the mistake immediately."
+      ],
+      "translations": {
+        "uk": "виправляти",
+        "de": "berichtigen",
+        "fr": "rectifier",
+        "es": "rectificar",
+        "it": "rettificare",
+        "pt": "retificar",
+        "pl": "naprawić",
+        "ru": "исправлять",
+        "zh": "纠正",
+        "ja": "是正する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "relentless",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rɪˈlɛntləs/",
+      "definition": "never stopping or becoming less strong",
+      "examples": [
+        "The relentless rain lasted all week."
+      ],
+      "translations": {
+        "uk": "невпинний",
+        "de": "unerbittlich",
+        "fr": "incessant",
+        "es": "implacable",
+        "it": "incessante",
+        "pt": "implacável",
+        "pl": "nieustanny",
+        "ru": "неослабевающий",
+        "zh": "持续不断的",
+        "ja": "容赦のない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "retain",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Work",
+      "ipa": "/rɪˈteɪn/",
+      "definition": "to keep or continue to have something",
+      "examples": [
+        "The company wants to retain its best staff."
+      ],
+      "translations": {
+        "uk": "зберігати, утримувати",
+        "de": "behalten",
+        "fr": "conserver",
+        "es": "retener",
+        "it": "mantenere",
+        "pt": "reter",
+        "pl": "zatrzymać",
+        "ru": "сохранять, удерживать",
+        "zh": "保留，留住",
+        "ja": "保持する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stagnant",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Money",
+      "ipa": "/ˈstæɡnənt/",
+      "definition": "not moving, growing or developing",
+      "examples": [
+        "The economy has been stagnant for years."
+      ],
+      "translations": {
+        "uk": "застійний",
+        "de": "stagnierend",
+        "fr": "stagnant",
+        "es": "estancado",
+        "it": "stagnante",
+        "pt": "estagnado",
+        "pl": "stagnacyjny",
+        "ru": "застойный",
+        "zh": "停滞的",
+        "ja": "停滞した"
+      },
+      "word_type": "word",
+      "ielts_category": "Economy"
+    },
+    {
+      "word": "unanimous",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/juˈnænəməs/",
+      "definition": "agreed by everyone in a group",
+      "examples": [
+        "The decision was unanimous."
+      ],
+      "translations": {
+        "uk": "одностайний",
+        "de": "einstimmig",
+        "fr": "unanime",
+        "es": "unánime",
+        "it": "unanime",
+        "pt": "unânime",
+        "pl": "jednogłośny",
+        "ru": "единогласный",
+        "zh": "一致同意的",
+        "ja": "満場一致の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

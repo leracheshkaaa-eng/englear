@@ -1,0 +1,1006 @@
+{
+  "package": "advanced-c2-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "acquiesce",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌækwiˈɛs/",
+      "definition": "to accept something without arguing, often unwillingly",
+      "examples": [
+        "She finally acquiesced to her parents' wishes."
+      ],
+      "translations": {
+        "uk": "неохоче погоджуватися",
+        "de": "einwilligen",
+        "fr": "acquiescer",
+        "es": "consentir",
+        "it": "acconsentire",
+        "pt": "aquiescer",
+        "pl": "przystać",
+        "ru": "неохотно соглашаться",
+        "zh": "默许",
+        "ja": "黙認する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "alacrity",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈlækrəti/",
+      "definition": "speed and eagerness",
+      "examples": [
+        "He accepted the offer with alacrity."
+      ],
+      "translations": {
+        "uk": "жвавість, готовність",
+        "de": "Bereitwilligkeit",
+        "fr": "empressement",
+        "es": "presteza",
+        "it": "alacrità",
+        "pt": "prontidão",
+        "pl": "skwapliwość",
+        "ru": "живость, готовность",
+        "zh": "欣然，敏捷",
+        "ja": "敏速さ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ameliorate",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Society",
+      "ipa": "/əˈmiljəreɪt/",
+      "definition": "to make a bad or difficult situation better",
+      "examples": [
+        "The new law aims to ameliorate living conditions."
+      ],
+      "translations": {
+        "uk": "поліпшувати",
+        "de": "verbessern",
+        "fr": "améliorer",
+        "es": "mejorar",
+        "it": "migliorare",
+        "pt": "melhorar",
+        "pl": "polepszać",
+        "ru": "улучшать",
+        "zh": "改善",
+        "ja": "改善する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "anachronism",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Culture",
+      "ipa": "/əˈnækrəˌnɪzəm/",
+      "definition": "something that belongs to a different period of time",
+      "examples": [
+        "A mobile phone in a film set in 1900 is an anachronism."
+      ],
+      "translations": {
+        "uk": "анахронізм",
+        "de": "Anachronismus",
+        "fr": "anachronisme",
+        "es": "anacronismo",
+        "it": "anacronismo",
+        "pt": "anacronismo",
+        "pl": "anachronizm",
+        "ru": "анахронизм",
+        "zh": "时代错误",
+        "ja": "時代錯誤"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "antithesis",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ænˈtɪθəsɪs/",
+      "definition": "the exact opposite of something",
+      "examples": [
+        "Her calm manner is the antithesis of his temper."
+      ],
+      "translations": {
+        "uk": "протилежність, антитеза",
+        "de": "Gegenteil",
+        "fr": "antithèse",
+        "es": "antítesis",
+        "it": "antitesi",
+        "pt": "antítese",
+        "pl": "przeciwieństwo",
+        "ru": "полная противоположность",
+        "zh": "对立面",
+        "ja": "正反対"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "apathy",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Society",
+      "ipa": "/ˈæpəθi/",
+      "definition": "a lack of interest or enthusiasm",
+      "examples": [
+        "Voter apathy led to a low turnout."
+      ],
+      "translations": {
+        "uk": "апатія, байдужість",
+        "de": "Gleichgültigkeit",
+        "fr": "apathie",
+        "es": "apatía",
+        "it": "apatia",
+        "pt": "apatia",
+        "pl": "apatia",
+        "ru": "апатия, безразличие",
+        "zh": "冷漠",
+        "ja": "無関心"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "assiduous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/əˈsɪdʒuəs/",
+      "definition": "working very carefully and thoroughly",
+      "examples": [
+        "She was assiduous in checking every detail."
+      ],
+      "translations": {
+        "uk": "старанний, ретельний",
+        "de": "gewissenhaft",
+        "fr": "assidu",
+        "es": "diligente",
+        "it": "assiduo",
+        "pt": "assíduo",
+        "pl": "skrupulatny",
+        "ru": "усердный, прилежный",
+        "zh": "勤勉的",
+        "ja": "勤勉な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "capricious",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/kəˈprɪʃəs/",
+      "definition": "changing mood or behaviour suddenly and without reason",
+      "examples": [
+        "The weather in the mountains is capricious."
+      ],
+      "translations": {
+        "uk": "примхливий",
+        "de": "launisch",
+        "fr": "capricieux",
+        "es": "caprichoso",
+        "it": "capriccioso",
+        "pt": "caprichoso",
+        "pl": "kapryśny",
+        "ru": "капризный, изменчивый",
+        "zh": "反复无常的",
+        "ja": "気まぐれな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cogent",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkoʊdʒənt/",
+      "definition": "clear, logical and convincing",
+      "examples": [
+        "She made a cogent argument for the reform."
+      ],
+      "translations": {
+        "uk": "переконливий",
+        "de": "überzeugend",
+        "fr": "convaincant",
+        "es": "convincente",
+        "it": "convincente",
+        "pt": "convincente",
+        "pl": "przekonujący",
+        "ru": "убедительный",
+        "zh": "有说服力的",
+        "ja": "説得力のある"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "conundrum",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/kəˈnʌndrəm/",
+      "definition": "a confusing and difficult problem",
+      "examples": [
+        "Finding affordable housing is a real conundrum."
+      ],
+      "translations": {
+        "uk": "загадка, складна проблема",
+        "de": "Rätsel",
+        "fr": "casse-tête",
+        "es": "enigma",
+        "it": "rompicapo",
+        "pt": "enigma",
+        "pl": "łamigłówka",
+        "ru": "головоломка, сложная проблема",
+        "zh": "难题",
+        "ja": "難問"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "corroborate",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/kəˈrɑbəreɪt/",
+      "definition": "to give evidence that supports a statement or idea",
+      "examples": [
+        "The video corroborated his story."
+      ],
+      "translations": {
+        "uk": "підтверджувати",
+        "de": "bestätigen",
+        "fr": "corroborer",
+        "es": "corroborar",
+        "it": "corroborare",
+        "pt": "corroborar",
+        "pl": "potwierdzać",
+        "ru": "подтверждать",
+        "zh": "证实",
+        "ja": "裏付ける"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Verbs"
+    },
+    {
+      "word": "debilitating",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Health",
+      "ipa": "/dɪˈbɪlɪteɪtɪŋ/",
+      "definition": "making someone very weak",
+      "examples": [
+        "She suffers from debilitating headaches."
+      ],
+      "translations": {
+        "uk": "виснажливий",
+        "de": "schwächend",
+        "fr": "débilitant",
+        "es": "debilitante",
+        "it": "debilitante",
+        "pt": "debilitante",
+        "pl": "wyniszczający",
+        "ru": "изнурительный",
+        "zh": "使虚弱的",
+        "ja": "衰弱させる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deleterious",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Health",
+      "ipa": "/ˌdɛləˈtɪriəs/",
+      "definition": "causing harm or damage",
+      "examples": [
+        "Smoking has deleterious effects on health."
+      ],
+      "translations": {
+        "uk": "шкідливий",
+        "de": "schädlich",
+        "fr": "délétère",
+        "es": "perjudicial",
+        "it": "deleterio",
+        "pt": "deletério",
+        "pl": "szkodliwy",
+        "ru": "вредный, пагубный",
+        "zh": "有害的",
+        "ja": "有害な"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "disparity",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Society",
+      "ipa": "/dɪˈspɛrəti/",
+      "definition": "a large difference, often an unfair one",
+      "examples": [
+        "There is a huge disparity between rich and poor."
+      ],
+      "translations": {
+        "uk": "нерівність, розбіжність",
+        "de": "Ungleichheit",
+        "fr": "disparité",
+        "es": "disparidad",
+        "it": "disparità",
+        "pt": "disparidade",
+        "pl": "dysproporcja",
+        "ru": "неравенство, несоответствие",
+        "zh": "差距",
+        "ja": "格差"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "esoteric",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɛsəˈtɛrɪk/",
+      "definition": "understood or enjoyed by only a few people",
+      "examples": [
+        "The lecture was too esoteric for most students."
+      ],
+      "translations": {
+        "uk": "езотеричний, малозрозумілий",
+        "de": "esoterisch",
+        "fr": "ésotérique",
+        "es": "esotérico",
+        "it": "esoterico",
+        "pt": "esotérico",
+        "pl": "ezoteryczny",
+        "ru": "доступный немногим, эзотерический",
+        "zh": "深奥的",
+        "ja": "難解な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exonerate",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Society",
+      "ipa": "/ɪɡˈzɑnəreɪt/",
+      "definition": "to show officially that someone is not guilty",
+      "examples": [
+        "New evidence exonerated the suspect."
+      ],
+      "translations": {
+        "uk": "виправдовувати",
+        "de": "entlasten",
+        "fr": "disculper",
+        "es": "exonerar",
+        "it": "scagionare",
+        "pt": "exonerar",
+        "pl": "uniewinnić",
+        "ru": "оправдывать, снимать обвинение",
+        "zh": "证明无罪",
+        "ja": "無罪を証明する"
+      },
+      "word_type": "word",
+      "ielts_category": "Crime"
+    },
+    {
+      "word": "fastidious",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/fæˈstɪdiəs/",
+      "definition": "paying great attention to detail, cleanliness and order",
+      "examples": [
+        "He is fastidious about his appearance."
+      ],
+      "translations": {
+        "uk": "педантичний, прискіпливий",
+        "de": "penibel",
+        "fr": "méticuleux",
+        "es": "quisquilloso",
+        "it": "pignolo",
+        "pt": "meticuloso",
+        "pl": "drobiazgowy",
+        "ru": "привередливый, щепетильный",
+        "zh": "挑剔的",
+        "ja": "きちょうめんな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "gregarious",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/ɡrɪˈɡɛriəs/",
+      "definition": "enjoying being with other people",
+      "examples": [
+        "She is gregarious and loves parties."
+      ],
+      "translations": {
+        "uk": "товариський",
+        "de": "gesellig",
+        "fr": "sociable",
+        "es": "sociable",
+        "it": "socievole",
+        "pt": "sociável",
+        "pl": "towarzyski",
+        "ru": "общительный",
+        "zh": "爱交际的",
+        "ja": "社交的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "idiosyncratic",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/ˌɪdiəsɪŋˈkrætɪk/",
+      "definition": "unusual and typical of one particular person",
+      "examples": [
+        "He has an idiosyncratic style of writing."
+      ],
+      "translations": {
+        "uk": "своєрідний",
+        "de": "eigenwillig",
+        "fr": "singulier",
+        "es": "idiosincrático",
+        "it": "peculiare",
+        "pt": "idiossincrático",
+        "pl": "specyficzny",
+        "ru": "своеобразный",
+        "zh": "独特的",
+        "ja": "独特の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "impetus",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɪmpətəs/",
+      "definition": "something that encourages a process to happen or continue",
+      "examples": [
+        "The award gave new impetus to her career."
+      ],
+      "translations": {
+        "uk": "поштовх, стимул",
+        "de": "Anstoß",
+        "fr": "élan",
+        "es": "impulso",
+        "it": "impulso",
+        "pt": "impulso",
+        "pl": "bodziec",
+        "ru": "импульс, толчок",
+        "zh": "推动力",
+        "ja": "推進力"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "incongruous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈkɑŋɡruəs/",
+      "definition": "strange because it does not fit the situation",
+      "examples": [
+        "The modern sculpture looked incongruous in the old church."
+      ],
+      "translations": {
+        "uk": "недоречний",
+        "de": "unpassend",
+        "fr": "incongru",
+        "es": "incongruente",
+        "it": "incongruo",
+        "pt": "incongruente",
+        "pl": "niestosowny",
+        "ru": "неуместный",
+        "zh": "不协调的",
+        "ja": "不釣り合いな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "inexorable",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈɛksərəbəl/",
+      "definition": "impossible to stop or prevent",
+      "examples": [
+        "We watched the inexorable rise of online shopping."
+      ],
+      "translations": {
+        "uk": "невблаганний, неминучий",
+        "de": "unaufhaltsam",
+        "fr": "inexorable",
+        "es": "inexorable",
+        "it": "inesorabile",
+        "pt": "inexorável",
+        "pl": "nieubłagany",
+        "ru": "неумолимый, неотвратимый",
+        "zh": "不可阻挡的",
+        "ja": "止めようのない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "innocuous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈnɑkjuəs/",
+      "definition": "not harmful or offensive",
+      "examples": [
+        "It was an innocuous question, but she looked upset."
+      ],
+      "translations": {
+        "uk": "нешкідливий, безневинний",
+        "de": "harmlos",
+        "fr": "inoffensif",
+        "es": "inocuo",
+        "it": "innocuo",
+        "pt": "inócuo",
+        "pl": "nieszkodliwy",
+        "ru": "безобидный",
+        "zh": "无害的",
+        "ja": "無害な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "intransigent",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/ɪnˈtrænzɪdʒənt/",
+      "definition": "refusing to change your opinions or behaviour",
+      "examples": [
+        "Both sides remained intransigent during the talks."
+      ],
+      "translations": {
+        "uk": "непоступливий",
+        "de": "unnachgiebig",
+        "fr": "intransigeant",
+        "es": "intransigente",
+        "it": "intransigente",
+        "pt": "intransigente",
+        "pl": "nieprzejednany",
+        "ru": "непримиримый",
+        "zh": "不妥协的",
+        "ja": "妥協しない"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "juxtapose",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Culture",
+      "ipa": "/ˈdʒʌkstəpoʊz/",
+      "definition": "to put things side by side to compare or contrast them",
+      "examples": [
+        "The exhibition juxtaposes old and new photographs."
+      ],
+      "translations": {
+        "uk": "зіставляти",
+        "de": "gegenüberstellen",
+        "fr": "juxtaposer",
+        "es": "yuxtaponer",
+        "it": "giustapporre",
+        "pt": "justapor",
+        "pl": "zestawiać",
+        "ru": "сопоставлять",
+        "zh": "并列，并置",
+        "ja": "並置する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "lethargic",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Health",
+      "ipa": "/ləˈθɑrdʒɪk/",
+      "definition": "having very little energy",
+      "examples": [
+        "The heat made everyone lethargic."
+      ],
+      "translations": {
+        "uk": "млявий, апатичний",
+        "de": "lethargisch",
+        "fr": "léthargique",
+        "es": "letárgico",
+        "it": "letargico",
+        "pt": "letárgico",
+        "pl": "ospały",
+        "ru": "вялый, апатичный",
+        "zh": "无精打采的",
+        "ja": "無気力な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "magnanimous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/mæɡˈnænəməs/",
+      "definition": "generous and kind, especially towards a rival",
+      "examples": [
+        "She was magnanimous in victory."
+      ],
+      "translations": {
+        "uk": "великодушний",
+        "de": "großmütig",
+        "fr": "magnanime",
+        "es": "magnánimo",
+        "it": "magnanimo",
+        "pt": "magnânimo",
+        "pl": "wielkoduszny",
+        "ru": "великодушный",
+        "zh": "宽宏大量的",
+        "ja": "寛大な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "obfuscate",
+      "part_of_speech": "verb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɑbfəskeɪt/",
+      "definition": "to make something deliberately unclear or confusing",
+      "examples": [
+        "The report obfuscates the real cost of the project."
+      ],
+      "translations": {
+        "uk": "затемнювати, заплутувати",
+        "de": "verschleiern",
+        "fr": "obscurcir",
+        "es": "ofuscar",
+        "it": "offuscare",
+        "pt": "ofuscar",
+        "pl": "zaciemniać",
+        "ru": "запутывать, затемнять",
+        "zh": "使模糊",
+        "ja": "わかりにくくする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ostensibly",
+      "part_of_speech": "adverb",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ɑˈstɛnsəbli/",
+      "definition": "apparently, although this may not be true",
+      "examples": [
+        "He came, ostensibly to help, but mostly to eat."
+      ],
+      "translations": {
+        "uk": "нібито",
+        "de": "angeblich",
+        "fr": "soi-disant",
+        "es": "aparentemente",
+        "it": "apparentemente",
+        "pt": "aparentemente",
+        "pl": "rzekomo",
+        "ru": "якобы",
+        "zh": "表面上",
+        "ja": "表向きは"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "paucity",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈpɔsəti/",
+      "definition": "a very small amount of something",
+      "examples": [
+        "There is a paucity of reliable data."
+      ],
+      "translations": {
+        "uk": "брак, нестача",
+        "de": "Mangel",
+        "fr": "pénurie",
+        "es": "escasez",
+        "it": "scarsità",
+        "pt": "escassez",
+        "pl": "niedostatek",
+        "ru": "нехватка, скудость",
+        "zh": "缺乏",
+        "ja": "不足"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "precarious",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Money",
+      "ipa": "/prɪˈkɛriəs/",
+      "definition": "not safe or stable and likely to get worse",
+      "examples": [
+        "Many freelancers are in a precarious financial position."
+      ],
+      "translations": {
+        "uk": "хиткий, ненадійний",
+        "de": "prekär",
+        "fr": "précaire",
+        "es": "precario",
+        "it": "precario",
+        "pt": "precário",
+        "pl": "niepewny",
+        "ru": "шаткий, ненадёжный",
+        "zh": "不稳定的",
+        "ja": "不安定な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "proliferation",
+      "part_of_speech": "noun",
+      "cefr": "C2",
+      "topic": "Media",
+      "ipa": "/prəˌlɪfəˈreɪʃən/",
+      "definition": "a rapid increase in the number or amount of something",
+      "examples": [
+        "We have seen a proliferation of fake news online."
+      ],
+      "translations": {
+        "uk": "стрімке поширення",
+        "de": "Verbreitung",
+        "fr": "prolifération",
+        "es": "proliferación",
+        "it": "proliferazione",
+        "pt": "proliferação",
+        "pl": "mnożenie się",
+        "ru": "быстрое распространение",
+        "zh": "激增",
+        "ja": "急増"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "quintessential",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Culture",
+      "ipa": "/ˌkwɪntɪˈsɛnʃəl/",
+      "definition": "being the most typical example of something",
+      "examples": [
+        "It is the quintessential English village."
+      ],
+      "translations": {
+        "uk": "типовий, взірцевий",
+        "de": "typisch",
+        "fr": "par excellence",
+        "es": "por excelencia",
+        "it": "per eccellenza",
+        "pt": "por excelência",
+        "pl": "typowy",
+        "ru": "типичный, образцовый",
+        "zh": "典型的",
+        "ja": "典型的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "recalcitrant",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "People",
+      "ipa": "/rɪˈkælsɪtrənt/",
+      "definition": "refusing to obey or cooperate",
+      "examples": [
+        "The teacher dealt calmly with the recalcitrant pupil."
+      ],
+      "translations": {
+        "uk": "непокірний",
+        "de": "widerspenstig",
+        "fr": "récalcitrant",
+        "es": "recalcitrante",
+        "it": "recalcitrante",
+        "pt": "recalcitrante",
+        "pl": "krnąbrny",
+        "ru": "непокорный",
+        "zh": "桀骜不驯的",
+        "ja": "反抗的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sanguine",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Emotions",
+      "ipa": "/ˈsæŋɡwɪn/",
+      "definition": "hopeful and positive, especially in a difficult situation",
+      "examples": [
+        "She is sanguine about the company's future."
+      ],
+      "translations": {
+        "uk": "оптимістичний",
+        "de": "zuversichtlich",
+        "fr": "optimiste",
+        "es": "optimista",
+        "it": "ottimista",
+        "pt": "otimista",
+        "pl": "optymistyczny",
+        "ru": "оптимистичный",
+        "zh": "乐观的",
+        "ja": "楽観的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "superfluous",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/suˈpɝfluəs/",
+      "definition": "more than is needed",
+      "examples": [
+        "Remove any superfluous words from your essay."
+      ],
+      "translations": {
+        "uk": "зайвий",
+        "de": "überflüssig",
+        "fr": "superflu",
+        "es": "superfluo",
+        "it": "superfluo",
+        "pt": "supérfluo",
+        "pl": "zbędny",
+        "ru": "излишний",
+        "zh": "多余的",
+        "ja": "余分な"
+      },
+      "word_type": "word",
+      "ielts_category": "Essay Vocabulary"
+    },
+    {
+      "word": "surreptitious",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌsɝəpˈtɪʃəs/",
+      "definition": "done secretly so that others do not notice",
+      "examples": [
+        "He took a surreptitious look at his phone."
+      ],
+      "translations": {
+        "uk": "таємний, крадькома",
+        "de": "heimlich",
+        "fr": "furtif",
+        "es": "furtivo",
+        "it": "furtivo",
+        "pt": "furtivo",
+        "pl": "ukradkowy",
+        "ru": "тайный, украдкой",
+        "zh": "偷偷摸摸的",
+        "ja": "こっそりした"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "transient",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Time",
+      "ipa": "/ˈtrænziənt/",
+      "definition": "lasting only for a short time",
+      "examples": [
+        "For many celebrities, fame is transient."
+      ],
+      "translations": {
+        "uk": "скороминущий",
+        "de": "vergänglich",
+        "fr": "passager",
+        "es": "pasajero",
+        "it": "transitorio",
+        "pt": "transitório",
+        "pl": "przemijający",
+        "ru": "преходящий",
+        "zh": "短暂的",
+        "ja": "一時的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "unequivocal",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌʌnɪˈkwɪvəkəl/",
+      "definition": "completely clear, with no doubt",
+      "examples": [
+        "The answer was an unequivocal no."
+      ],
+      "translations": {
+        "uk": "однозначний",
+        "de": "eindeutig",
+        "fr": "sans équivoque",
+        "es": "inequívoco",
+        "it": "inequivocabile",
+        "pt": "inequívoco",
+        "pl": "jednoznaczny",
+        "ru": "недвусмысленный",
+        "zh": "明确的",
+        "ja": "明白な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "venerable",
+      "part_of_speech": "adjective",
+      "cefr": "C2",
+      "topic": "Education",
+      "ipa": "/ˈvɛnərəbəl/",
+      "definition": "respected because of age, wisdom or experience",
+      "examples": [
+        "The university is a venerable institution founded in 1450."
+      ],
+      "translations": {
+        "uk": "шанований, поважний",
+        "de": "ehrwürdig",
+        "fr": "vénérable",
+        "es": "venerable",
+        "it": "venerabile",
+        "pt": "venerável",
+        "pl": "czcigodny",
+        "ru": "почтенный",
+        "zh": "德高望重的，古老的",
+        "ja": "由緒ある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
