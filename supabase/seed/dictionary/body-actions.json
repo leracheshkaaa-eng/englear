@@ -1,0 +1,606 @@
+{
+  "package": "body-actions",
+  "kind": "words",
+  "words": [
+    {
+      "word": "blink",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/blɪŋk/",
+      "definition": "to close and open your eyes quickly",
+      "examples": [
+        "He didn't even blink."
+      ],
+      "translations": {
+        "uk": "кліпати",
+        "de": "blinzeln",
+        "fr": "cligner des yeux",
+        "es": "parpadear",
+        "it": "sbattere le palpebre",
+        "pt": "piscar",
+        "pl": "mrugać",
+        "ru": "моргать",
+        "zh": "眨眼",
+        "ja": "まばたきする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nod",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/nɑd/",
+      "definition": "to move your head up and down to say yes",
+      "examples": [
+        "She nodded in agreement."
+      ],
+      "translations": {
+        "uk": "кивати",
+        "de": "nicken",
+        "fr": "hocher la tête",
+        "es": "asentir con la cabeza",
+        "it": "annuire",
+        "pt": "acenar com a cabeça",
+        "pl": "kiwać głową",
+        "ru": "кивать",
+        "zh": "点头",
+        "ja": "うなずく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "frown",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/fraʊn/",
+      "definition": "to move your eyebrows together because you are angry or worried",
+      "examples": [
+        "The teacher frowned at me."
+      ],
+      "translations": {
+        "uk": "хмуритися",
+        "de": "die Stirn runzeln",
+        "fr": "froncer les sourcils",
+        "es": "fruncir el ceño",
+        "it": "aggrottare le sopracciglia",
+        "pt": "franzir a testa",
+        "pl": "marszczyć brwi",
+        "ru": "хмуриться",
+        "zh": "皱眉",
+        "ja": "顔をしかめる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sigh",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/saɪ/",
+      "definition": "to breathe out loudly because you are tired, sad or relieved",
+      "examples": [
+        "She sighed and closed the book."
+      ],
+      "translations": {
+        "uk": "зітхати",
+        "de": "seufzen",
+        "fr": "soupirer",
+        "es": "suspirar",
+        "it": "sospirare",
+        "pt": "suspirar",
+        "pl": "westchnąć",
+        "ru": "вздыхать",
+        "zh": "叹气",
+        "ja": "ため息をつく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "whisper",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/ˈwɪspɚ/",
+      "definition": "to speak very quietly",
+      "examples": [
+        "She whispered the answer to her friend."
+      ],
+      "translations": {
+        "uk": "шепотіти",
+        "de": "flüstern",
+        "fr": "chuchoter",
+        "es": "susurrar",
+        "it": "sussurrare",
+        "pt": "sussurrar",
+        "pl": "szeptać",
+        "ru": "шептать",
+        "zh": "低语",
+        "ja": "ささやく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "giggle",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Emotions",
+      "ipa": "/ˈɡɪɡəl/",
+      "definition": "to laugh in a quiet, silly way",
+      "examples": [
+        "The children giggled at the funny picture."
+      ],
+      "translations": {
+        "uk": "хихикати",
+        "de": "kichern",
+        "fr": "glousser",
+        "es": "reírse tontamente",
+        "it": "ridacchiare",
+        "pt": "dar risadinhas",
+        "pl": "chichotać",
+        "ru": "хихикать",
+        "zh": "咯咯笑",
+        "ja": "くすくす笑う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yawn",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/jɔn/",
+      "definition": "to open your mouth wide because you are tired",
+      "examples": [
+        "He yawned during the long film."
+      ],
+      "translations": {
+        "uk": "позіхати",
+        "de": "gähnen",
+        "fr": "bâiller",
+        "es": "bostezar",
+        "it": "sbadigliare",
+        "pt": "bocejar",
+        "pl": "ziewać",
+        "ru": "зевать",
+        "zh": "打哈欠",
+        "ja": "あくびをする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shiver",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈʃɪvɚ/",
+      "definition": "to shake because you are cold or afraid",
+      "examples": [
+        "We were shivering at the bus stop."
+      ],
+      "translations": {
+        "uk": "тремтіти (від холоду)",
+        "de": "zittern",
+        "fr": "frissonner",
+        "es": "tiritar",
+        "it": "rabbrividire",
+        "pt": "tremer de frio",
+        "pl": "drżeć",
+        "ru": "дрожать (от холода)",
+        "zh": "发抖",
+        "ja": "震える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tremble",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ˈtrɛmbəl/",
+      "definition": "to shake slightly because you are nervous or afraid",
+      "examples": [
+        "Her hands were trembling before the exam."
+      ],
+      "translations": {
+        "uk": "тремтіти",
+        "de": "zittern",
+        "fr": "trembler",
+        "es": "temblar",
+        "it": "tremare",
+        "pt": "tremer",
+        "pl": "drżeć",
+        "ru": "дрожать",
+        "zh": "颤抖",
+        "ja": "震える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stare",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/stɛr/",
+      "definition": "to look at someone or something for a long time",
+      "examples": [
+        "It's rude to stare at people."
+      ],
+      "translations": {
+        "uk": "витріщатися",
+        "de": "starren",
+        "fr": "fixer du regard",
+        "es": "mirar fijamente",
+        "it": "fissare",
+        "pt": "encarar",
+        "pl": "gapić się",
+        "ru": "пристально смотреть",
+        "zh": "盯着看",
+        "ja": "じっと見る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "glance",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Body",
+      "ipa": "/ɡlæns/",
+      "definition": "to look at something quickly",
+      "examples": [
+        "She glanced at her watch."
+      ],
+      "translations": {
+        "uk": "кинути погляд",
+        "de": "einen Blick werfen",
+        "fr": "jeter un coup d’œil",
+        "es": "echar un vistazo",
+        "it": "dare un’occhiata",
+        "pt": "dar uma olhada",
+        "pl": "zerknąć",
+        "ru": "взглянуть мельком",
+        "zh": "瞥一眼",
+        "ja": "ちらっと見る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "grab",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ɡræb/",
+      "definition": "to take hold of something quickly",
+      "examples": [
+        "He grabbed his coat and ran out."
+      ],
+      "translations": {
+        "uk": "схопити",
+        "de": "greifen",
+        "fr": "attraper",
+        "es": "agarrar",
+        "it": "afferrare",
+        "pt": "agarrar",
+        "pl": "chwycić",
+        "ru": "хватать",
+        "zh": "抓住",
+        "ja": "つかむ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "squeeze",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/skwiz/",
+      "definition": "to press something firmly from both sides",
+      "examples": [
+        "Squeeze the lemon into the tea."
+      ],
+      "translations": {
+        "uk": "стискати, вичавлювати",
+        "de": "drücken, auspressen",
+        "fr": "presser",
+        "es": "exprimir",
+        "it": "spremere",
+        "pt": "espremer",
+        "pl": "ścisnąć, wycisnąć",
+        "ru": "сжимать, выжимать",
+        "zh": "挤，捏",
+        "ja": "絞る、握る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "pinch",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Body",
+      "ipa": "/pɪntʃ/",
+      "definition": "to press someone's skin tightly between your finger and thumb",
+      "examples": [
+        "My little brother pinched my arm."
+      ],
+      "translations": {
+        "uk": "щипати",
+        "de": "kneifen",
+        "fr": "pincer",
+        "es": "pellizcar",
+        "it": "pizzicare",
+        "pt": "beliscar",
+        "pl": "szczypać",
+        "ru": "щипать",
+        "zh": "捏，掐",
+        "ja": "つねる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scratch",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/skrætʃ/",
+      "definition": "to rub your skin with your nails, or to damage a surface with something sharp",
+      "examples": [
+        "Try not to scratch the mosquito bite."
+      ],
+      "translations": {
+        "uk": "чесати, дряпати",
+        "de": "kratzen",
+        "fr": "gratter",
+        "es": "rascar",
+        "it": "grattare",
+        "pt": "coçar",
+        "pl": "drapać",
+        "ru": "чесать, царапать",
+        "zh": "抓，挠",
+        "ja": "かく、引っかく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tickle",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈtɪkəl/",
+      "definition": "to touch someone lightly to make them laugh",
+      "examples": [
+        "Dad tickled the baby."
+      ],
+      "translations": {
+        "uk": "лоскотати",
+        "de": "kitzeln",
+        "fr": "chatouiller",
+        "es": "hacer cosquillas",
+        "it": "fare il solletico",
+        "pt": "fazer cócegas",
+        "pl": "łaskotać",
+        "ru": "щекотать",
+        "zh": "挠痒痒",
+        "ja": "くすぐる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "kneel",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Body",
+      "ipa": "/nil/",
+      "definition": "to go down on your knees",
+      "examples": [
+        "Kneel down and look under the bed."
+      ],
+      "translations": {
+        "uk": "ставати на коліна",
+        "de": "knien",
+        "fr": "s’agenouiller",
+        "es": "arrodillarse",
+        "it": "inginocchiarsi",
+        "pt": "ajoelhar-se",
+        "pl": "klęknąć",
+        "ru": "вставать на колени",
+        "zh": "跪下",
+        "ja": "ひざまずく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "crawl",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/krɔl/",
+      "definition": "to move on your hands and knees",
+      "examples": [
+        "The baby is learning to crawl."
+      ],
+      "translations": {
+        "uk": "повзати",
+        "de": "krabbeln",
+        "fr": "ramper",
+        "es": "gatear",
+        "it": "gattonare",
+        "pt": "engatinhar",
+        "pl": "raczkować",
+        "ru": "ползать",
+        "zh": "爬",
+        "ja": "はう"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chase",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/tʃeɪs/",
+      "definition": "to run after someone or something to catch them",
+      "examples": [
+        "The dog chased the cat."
+      ],
+      "translations": {
+        "uk": "гнатися",
+        "de": "jagen",
+        "fr": "poursuivre",
+        "es": "perseguir",
+        "it": "inseguire",
+        "pt": "perseguir",
+        "pl": "gonić",
+        "ru": "гнаться, преследовать",
+        "zh": "追赶",
+        "ja": "追いかける"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sneak",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Body",
+      "ipa": "/snik/",
+      "definition": "to go somewhere quietly so nobody sees you",
+      "examples": [
+        "He sneaked into the kitchen for a biscuit."
+      ],
+      "translations": {
+        "uk": "прокрадатися",
+        "de": "sich schleichen",
+        "fr": "se faufiler",
+        "es": "colarse",
+        "it": "sgattaiolare",
+        "pt": "esgueirar-se",
+        "pl": "zakraść się",
+        "ru": "красться, пробираться",
+        "zh": "偷偷溜",
+        "ja": "こっそり行く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dive",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/daɪv/",
+      "definition": "to jump into water head first",
+      "examples": [
+        "She dived into the pool."
+      ],
+      "translations": {
+        "uk": "пірнати",
+        "de": "tauchen, springen",
+        "fr": "plonger",
+        "es": "zambullirse",
+        "it": "tuffarsi",
+        "pt": "mergulhar",
+        "pl": "nurkować",
+        "ru": "нырять",
+        "zh": "跳水，潜水",
+        "ja": "飛び込む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "float",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/floʊt/",
+      "definition": "to stay on the surface of water",
+      "examples": [
+        "Wood floats on water."
+      ],
+      "translations": {
+        "uk": "плавати на поверхні",
+        "de": "schwimmen, treiben",
+        "fr": "flotter",
+        "es": "flotar",
+        "it": "galleggiare",
+        "pt": "flutuar",
+        "pl": "unosić się",
+        "ru": "плавать, держаться на воде",
+        "zh": "漂浮",
+        "ja": "浮かぶ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "drown",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Nature",
+      "ipa": "/draʊn/",
+      "definition": "to die under water because you cannot breathe",
+      "examples": [
+        "He almost drowned in the sea."
+      ],
+      "translations": {
+        "uk": "тонути",
+        "de": "ertrinken",
+        "fr": "se noyer",
+        "es": "ahogarse",
+        "it": "annegare",
+        "pt": "afogar-se",
+        "pl": "utonąć",
+        "ru": "тонуть",
+        "zh": "淹死",
+        "ja": "おぼれる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "clap",
+      "part_of_speech": "verb",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/klæp/",
+      "definition": "to hit your hands together to show you like something",
+      "examples": [
+        "The audience clapped loudly."
+      ],
+      "translations": {
+        "uk": "плескати в долоні",
+        "de": "klatschen",
+        "fr": "applaudir",
+        "es": "aplaudir",
+        "it": "applaudire",
+        "pt": "aplaudir",
+        "pl": "klaskać",
+        "ru": "хлопать в ладоши",
+        "zh": "鼓掌",
+        "ja": "拍手する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

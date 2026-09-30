@@ -1,0 +1,306 @@
+{
+  "package": "health-injuries",
+  "kind": "words",
+  "words": [
+    {
+      "word": "bruise",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/bruz/",
+      "definition": "a dark mark on the skin after you are hit",
+      "examples": [
+        "He had a big bruise on his leg."
+      ],
+      "translations": {
+        "uk": "синець",
+        "de": "blauer Fleck",
+        "fr": "bleu",
+        "es": "moratón",
+        "it": "livido",
+        "pt": "hematoma",
+        "pl": "siniak",
+        "ru": "синяк",
+        "zh": "瘀青",
+        "ja": "あざ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "blister",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈblɪstɚ/",
+      "definition": "a small bubble on the skin, often from rubbing",
+      "examples": [
+        "New shoes gave me blisters."
+      ],
+      "translations": {
+        "uk": "пухир, мозоль",
+        "de": "Blase",
+        "fr": "ampoule",
+        "es": "ampolla",
+        "it": "vescica",
+        "pt": "bolha",
+        "pl": "pęcherz",
+        "ru": "волдырь, мозоль",
+        "zh": "水泡",
+        "ja": "水ぶくれ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rash",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ræʃ/",
+      "definition": "red spots on the skin, caused by an illness or allergy",
+      "examples": [
+        "The baby has a rash on his face."
+      ],
+      "translations": {
+        "uk": "висип",
+        "de": "Ausschlag",
+        "fr": "éruption cutanée",
+        "es": "sarpullido",
+        "it": "eruzione cutanea",
+        "pt": "erupção cutânea",
+        "pl": "wysypka",
+        "ru": "сыпь",
+        "zh": "皮疹",
+        "ja": "発疹"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "scar",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/skɑr/",
+      "definition": "a mark left on the skin after a wound heals",
+      "examples": [
+        "He has a scar on his forehead."
+      ],
+      "translations": {
+        "uk": "шрам",
+        "de": "Narbe",
+        "fr": "cicatrice",
+        "es": "cicatriz",
+        "it": "cicatrice",
+        "pt": "cicatriz",
+        "pl": "blizna",
+        "ru": "шрам",
+        "zh": "伤疤",
+        "ja": "傷跡"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sprain",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/spreɪn/",
+      "definition": "to hurt a joint by twisting it suddenly",
+      "examples": [
+        "She sprained her wrist when she fell."
+      ],
+      "translations": {
+        "uk": "розтягнути (зв’язки)",
+        "de": "verstauchen",
+        "fr": "se fouler",
+        "es": "torcerse",
+        "it": "slogarsi",
+        "pt": "torcer",
+        "pl": "skręcić",
+        "ru": "растянуть (связки)",
+        "zh": "扭伤",
+        "ja": "捻挫する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "itchy",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈɪtʃi/",
+      "definition": "making you want to scratch your skin",
+      "examples": [
+        "This sweater makes my skin itchy."
+      ],
+      "translations": {
+        "uk": "свербіжний",
+        "de": "juckend",
+        "fr": "qui démange",
+        "es": "que pica",
+        "it": "che prude",
+        "pt": "que coça",
+        "pl": "swędzący",
+        "ru": "зудящий",
+        "zh": "发痒的",
+        "ja": "かゆい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sore",
+      "part_of_speech": "adjective",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/sɔr/",
+      "definition": "painful, especially because of an injury or illness",
+      "examples": [
+        "I have a sore throat."
+      ],
+      "translations": {
+        "uk": "хворий, болючий",
+        "de": "wund, schmerzend",
+        "fr": "douloureux",
+        "es": "dolorido",
+        "it": "dolorante",
+        "pt": "dolorido",
+        "pl": "obolały",
+        "ru": "больной, воспалённый",
+        "zh": "疼痛的",
+        "ja": "痛い"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sweat",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/swɛt/",
+      "definition": "to produce liquid through your skin when you are hot",
+      "examples": [
+        "I sweat a lot when I run."
+      ],
+      "translations": {
+        "uk": "пітніти",
+        "de": "schwitzen",
+        "fr": "transpirer",
+        "es": "sudar",
+        "it": "sudare",
+        "pt": "suar",
+        "pl": "pocić się",
+        "ru": "потеть",
+        "zh": "出汗",
+        "ja": "汗をかく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cure",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/kjʊr/",
+      "definition": "a medicine or treatment that makes an illness go away",
+      "examples": [
+        "There is no cure for the common cold."
+      ],
+      "translations": {
+        "uk": "ліки, засіб від хвороби",
+        "de": "Heilmittel",
+        "fr": "remède",
+        "es": "cura",
+        "it": "cura",
+        "pt": "cura",
+        "pl": "lekarstwo",
+        "ru": "лекарство, излечение",
+        "zh": "治疗方法",
+        "ja": "治療法"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ointment",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/ˈɔɪntmənt/",
+      "definition": "a soft cream that you put on skin to heal it",
+      "examples": [
+        "Put some ointment on the cut."
+      ],
+      "translations": {
+        "uk": "мазь",
+        "de": "Salbe",
+        "fr": "pommade",
+        "es": "pomada",
+        "it": "pomata",
+        "pt": "pomada",
+        "pl": "maść",
+        "ru": "мазь",
+        "zh": "药膏",
+        "ja": "軟膏"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "crutch",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Health",
+      "ipa": "/krʌtʃ/",
+      "definition": "a stick you put under your arm to help you walk",
+      "examples": [
+        "He was on crutches for six weeks."
+      ],
+      "translations": {
+        "uk": "милиця",
+        "de": "Krücke",
+        "fr": "béquille",
+        "es": "muleta",
+        "it": "stampella",
+        "pt": "muleta",
+        "pl": "kula",
+        "ru": "костыль",
+        "zh": "拐杖",
+        "ja": "松葉杖"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wheelchair",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Health",
+      "ipa": "/ˈwilˌtʃɛr/",
+      "definition": "a chair with wheels for people who cannot walk",
+      "examples": [
+        "The building has wheelchair access."
+      ],
+      "translations": {
+        "uk": "інвалідний візок",
+        "de": "Rollstuhl",
+        "fr": "fauteuil roulant",
+        "es": "silla de ruedas",
+        "it": "sedia a rotelle",
+        "pt": "cadeira de rodas",
+        "pl": "wózek inwalidzki",
+        "ru": "инвалидная коляска",
+        "zh": "轮椅",
+        "ja": "車椅子"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "package": "home-objects-chores",
+  "kind": "words",
+  "words": [
+    {
+      "word": "attic",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈætɪk/",
+      "definition": "a room at the top of a house under the roof",
+      "examples": [
+        "We keep old toys in the attic."
+      ],
+      "translations": {
+        "uk": "горище",
+        "de": "Dachboden",
+        "fr": "grenier",
+        "es": "desván",
+        "it": "soffitta",
+        "pt": "sótão",
+        "pl": "strych",
+        "ru": "чердак",
+        "zh": "阁楼",
+        "ja": "屋根裏"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "balcony",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈbælkəni/",
+      "definition": "a small area outside an upstairs window where you can sit",
+      "examples": [
+        "We have breakfast on the balcony."
+      ],
+      "translations": {
+        "uk": "балкон",
+        "de": "Balkon",
+        "fr": "balcon",
+        "es": "balcón",
+        "it": "balcone",
+        "pt": "varanda",
+        "pl": "balkon",
+        "ru": "балкон",
+        "zh": "阳台",
+        "ja": "バルコニー"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cupboard",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈkʌbɚd/",
+      "definition": "a piece of furniture with doors and shelves for storing things",
+      "examples": [
+        "The plates are in the cupboard."
+      ],
+      "translations": {
+        "uk": "шафа, буфет",
+        "de": "Schrank",
+        "fr": "placard",
+        "es": "armario",
+        "it": "armadio",
+        "pt": "armário",
+        "pl": "szafka",
+        "ru": "шкаф, буфет",
+        "zh": "橱柜",
+        "ja": "戸棚"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cushion",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈkʊʃən/",
+      "definition": "a soft bag filled with material, used to make a seat comfortable",
+      "examples": [
+        "There are three cushions on the sofa."
+      ],
+      "translations": {
+        "uk": "диванна подушка",
+        "de": "Kissen",
+        "fr": "coussin",
+        "es": "cojín",
+        "it": "cuscino",
+        "pt": "almofada",
+        "pl": "poduszka",
+        "ru": "диванная подушка",
+        "zh": "靠垫",
+        "ja": "クッション"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bucket",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈbʌkɪt/",
+      "definition": "an open container with a handle for carrying water",
+      "examples": [
+        "Fill the bucket with water."
+      ],
+      "translations": {
+        "uk": "відро",
+        "de": "Eimer",
+        "fr": "seau",
+        "es": "cubo",
+        "it": "secchio",
+        "pt": "balde",
+        "pl": "wiadro",
+        "ru": "ведро",
+        "zh": "桶",
+        "ja": "バケツ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sponge",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/spʌndʒ/",
+      "definition": "a soft object with holes, used for washing",
+      "examples": [
+        "Wash the dishes with a sponge."
+      ],
+      "translations": {
+        "uk": "губка",
+        "de": "Schwamm",
+        "fr": "éponge",
+        "es": "esponja",
+        "it": "spugna",
+        "pt": "esponja",
+        "pl": "gąbka",
+        "ru": "губка",
+        "zh": "海绵",
+        "ja": "スポンジ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "envelope",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈɛnvəˌloʊp/",
+      "definition": "a paper cover for a letter",
+      "examples": [
+        "Put the letter in an envelope."
+      ],
+      "translations": {
+        "uk": "конверт",
+        "de": "Umschlag",
+        "fr": "enveloppe",
+        "es": "sobre",
+        "it": "busta",
+        "pt": "envelope",
+        "pl": "koperta",
+        "ru": "конверт",
+        "zh": "信封",
+        "ja": "封筒"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ladder",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈlædɚ/",
+      "definition": "a piece of equipment with steps for climbing up",
+      "examples": [
+        "He climbed the ladder to fix the roof."
+      ],
+      "translations": {
+        "uk": "драбина",
+        "de": "Leiter",
+        "fr": "échelle",
+        "es": "escalera de mano",
+        "it": "scala",
+        "pt": "escada de mão",
+        "pl": "drabina",
+        "ru": "лестница (стремянка)",
+        "zh": "梯子",
+        "ja": "はしご"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "candle",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈkændəl/",
+      "definition": "a stick of wax that gives light when it burns",
+      "examples": [
+        "She lit a candle on the table."
+      ],
+      "translations": {
+        "uk": "свічка",
+        "de": "Kerze",
+        "fr": "bougie",
+        "es": "vela",
+        "it": "candela",
+        "pt": "vela",
+        "pl": "świeca",
+        "ru": "свеча",
+        "zh": "蜡烛",
+        "ja": "ろうそく"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rope",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/roʊp/",
+      "definition": "a thick, strong string",
+      "examples": [
+        "They tied the boat with a rope."
+      ],
+      "translations": {
+        "uk": "мотузка, канат",
+        "de": "Seil",
+        "fr": "corde",
+        "es": "cuerda",
+        "it": "corda",
+        "pt": "corda",
+        "pl": "lina",
+        "ru": "верёвка, канат",
+        "zh": "绳子",
+        "ja": "ロープ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tray",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/treɪ/",
+      "definition": "a flat object for carrying plates and cups",
+      "examples": [
+        "She brought the tea on a tray."
+      ],
+      "translations": {
+        "uk": "таця",
+        "de": "Tablett",
+        "fr": "plateau",
+        "es": "bandeja",
+        "it": "vassoio",
+        "pt": "bandeja",
+        "pl": "taca",
+        "ru": "поднос",
+        "zh": "托盘",
+        "ja": "お盆"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "torch",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/tɔrtʃ/",
+      "definition": "a small electric light you hold in your hand (UK)",
+      "examples": [
+        "We used a torch in the dark tunnel."
+      ],
+      "translations": {
+        "uk": "ліхтарик",
+        "de": "Taschenlampe",
+        "fr": "lampe de poche",
+        "es": "linterna",
+        "it": "torcia",
+        "pt": "lanterna",
+        "pl": "latarka",
+        "ru": "фонарик",
+        "zh": "手电筒",
+        "ja": "懐中電灯"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fence",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/fɛns/",
+      "definition": "a wall made of wood or wire around a garden or field",
+      "examples": [
+        "The dog jumped over the fence."
+      ],
+      "translations": {
+        "uk": "паркан",
+        "de": "Zaun",
+        "fr": "clôture",
+        "es": "valla",
+        "it": "recinto",
+        "pt": "cerca",
+        "pl": "płot",
+        "ru": "забор",
+        "zh": "篱笆，栅栏",
+        "ja": "フェンス"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stir",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Food",
+      "ipa": "/stɝ/",
+      "definition": "to mix a liquid by moving a spoon round and round",
+      "examples": [
+        "Stir the soup slowly."
+      ],
+      "translations": {
+        "uk": "помішувати",
+        "de": "umrühren",
+        "fr": "remuer",
+        "es": "remover",
+        "it": "mescolare",
+        "pt": "mexer",
+        "pl": "mieszać",
+        "ru": "помешивать",
+        "zh": "搅拌",
+        "ja": "かき混ぜる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sew",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/soʊ/",
+      "definition": "to join cloth with a needle and thread",
+      "examples": [
+        "My grandma taught me to sew."
+      ],
+      "translations": {
+        "uk": "шити",
+        "de": "nähen",
+        "fr": "coudre",
+        "es": "coser",
+        "it": "cucire",
+        "pt": "costurar",
+        "pl": "szyć",
+        "ru": "шить",
+        "zh": "缝",
+        "ja": "縫う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sweep",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/swip/",
+      "definition": "to clean the floor with a brush",
+      "examples": [
+        "Can you sweep the kitchen floor?"
+      ],
+      "translations": {
+        "uk": "підмітати",
+        "de": "fegen",
+        "fr": "balayer",
+        "es": "barrer",
+        "it": "spazzare",
+        "pt": "varrer",
+        "pl": "zamiatać",
+        "ru": "подметать",
+        "zh": "扫",
+        "ja": "掃く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wipe",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/waɪp/",
+      "definition": "to clean a surface by rubbing it with a cloth",
+      "examples": [
+        "Please wipe the table after dinner."
+      ],
+      "translations": {
+        "uk": "витирати",
+        "de": "abwischen",
+        "fr": "essuyer",
+        "es": "limpiar",
+        "it": "pulire",
+        "pt": "limpar",
+        "pl": "wycierać",
+        "ru": "вытирать",
+        "zh": "擦",
+        "ja": "拭く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fold",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/foʊld/",
+      "definition": "to bend paper or cloth so one part lies on another",
+      "examples": [
+        "Fold the clothes and put them away."
+      ],
+      "translations": {
+        "uk": "складати",
+        "de": "falten",
+        "fr": "plier",
+        "es": "doblar",
+        "it": "piegare",
+        "pt": "dobrar",
+        "pl": "składać",
+        "ru": "складывать",
+        "zh": "折叠",
+        "ja": "たたむ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "polish",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/ˈpɑlɪʃ/",
+      "definition": "to rub something to make it shine",
+      "examples": [
+        "He polished his shoes before the interview."
+      ],
+      "translations": {
+        "uk": "полірувати, начищати",
+        "de": "polieren",
+        "fr": "cirer, polir",
+        "es": "pulir",
+        "it": "lucidare",
+        "pt": "polir",
+        "pl": "polerować",
+        "ru": "полировать, начищать",
+        "zh": "擦亮",
+        "ja": "磨く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "soak",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Home",
+      "ipa": "/soʊk/",
+      "definition": "to leave something in liquid for a long time",
+      "examples": [
+        "Soak the beans overnight."
+      ],
+      "translations": {
+        "uk": "замочувати",
+        "de": "einweichen",
+        "fr": "faire tremper",
+        "es": "remojar",
+        "it": "mettere in ammollo",
+        "pt": "deixar de molho",
+        "pl": "moczyć",
+        "ru": "замачивать",
+        "zh": "浸泡",
+        "ja": "浸す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spill",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/spɪl/",
+      "definition": "to make a liquid fall out of its container by accident",
+      "examples": [
+        "I spilled coffee on my shirt."
+      ],
+      "translations": {
+        "uk": "розливати",
+        "de": "verschütten",
+        "fr": "renverser",
+        "es": "derramar",
+        "it": "rovesciare",
+        "pt": "derramar",
+        "pl": "rozlać",
+        "ru": "проливать",
+        "zh": "洒出",
+        "ja": "こぼす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stain",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/steɪn/",
+      "definition": "a dirty mark that is difficult to remove",
+      "examples": [
+        "There's a coffee stain on your shirt."
+      ],
+      "translations": {
+        "uk": "пляма",
+        "de": "Fleck",
+        "fr": "tache",
+        "es": "mancha",
+        "it": "macchia",
+        "pt": "mancha",
+        "pl": "plama",
+        "ru": "пятно",
+        "zh": "污渍",
+        "ja": "しみ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tidy",
+      "part_of_speech": "adjective",
+      "cefr": "A2",
+      "topic": "Home",
+      "ipa": "/ˈtaɪdi/",
+      "definition": "neat, with everything in its place",
+      "examples": [
+        "Keep your room tidy."
+      ],
+      "translations": {
+        "uk": "охайний, прибраний",
+        "de": "ordentlich",
+        "fr": "rangé",
+        "es": "ordenado",
+        "it": "ordinato",
+        "pt": "arrumado",
+        "pl": "schludny",
+        "ru": "аккуратный, прибранный",
+        "zh": "整洁的",
+        "ja": "きちんとした"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "dust",
+      "part_of_speech": "verb",
+      "cefr": "B1",
+      "topic": "Home",
+      "ipa": "/dʌst/",
+      "definition": "to clean dust from furniture with a cloth",
+      "examples": [
+        "I dust the shelves every Saturday."
+      ],
+      "translations": {
+        "uk": "витирати пил",
+        "de": "abstauben",
+        "fr": "épousseter",
+        "es": "quitar el polvo",
+        "it": "spolverare",
+        "pt": "tirar o pó",
+        "pl": "ścierać kurze",
+        "ru": "вытирать пыль",
+        "zh": "掸灰尘",
+        "ja": "ほこりを払う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

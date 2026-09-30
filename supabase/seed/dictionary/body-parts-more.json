@@ -1,0 +1,481 @@
+{
+  "package": "body-parts-more",
+  "kind": "words",
+  "words": [
+    {
+      "word": "ankle",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/ˈæŋkəl/",
+      "definition": "the joint between your foot and your leg",
+      "examples": [
+        "I twisted my ankle playing football."
+      ],
+      "translations": {
+        "uk": "щиколотка",
+        "de": "Knöchel",
+        "fr": "cheville",
+        "es": "tobillo",
+        "it": "caviglia",
+        "pt": "tornozelo",
+        "pl": "kostka",
+        "ru": "лодыжка",
+        "zh": "脚踝",
+        "ja": "足首"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "beard",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/bɪrd/",
+      "definition": "hair that grows on a man's chin and cheeks",
+      "examples": [
+        "My grandfather has a long white beard."
+      ],
+      "translations": {
+        "uk": "борода",
+        "de": "Bart",
+        "fr": "barbe",
+        "es": "barba",
+        "it": "barba",
+        "pt": "barba",
+        "pl": "broda",
+        "ru": "борода",
+        "zh": "胡子",
+        "ja": "あごひげ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cheek",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/tʃik/",
+      "definition": "the soft part of your face below each eye",
+      "examples": [
+        "She kissed him on the cheek."
+      ],
+      "translations": {
+        "uk": "щока",
+        "de": "Wange",
+        "fr": "joue",
+        "es": "mejilla",
+        "it": "guancia",
+        "pt": "bochecha",
+        "pl": "policzek",
+        "ru": "щека",
+        "zh": "脸颊",
+        "ja": "頬"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chin",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/tʃɪn/",
+      "definition": "the part of your face below your mouth",
+      "examples": [
+        "He rested his chin on his hand."
+      ],
+      "translations": {
+        "uk": "підборіддя",
+        "de": "Kinn",
+        "fr": "menton",
+        "es": "barbilla",
+        "it": "mento",
+        "pt": "queixo",
+        "pl": "podbródek",
+        "ru": "подбородок",
+        "zh": "下巴",
+        "ja": "あご"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "elbow",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/ˈɛlboʊ/",
+      "definition": "the joint in the middle of your arm",
+      "examples": [
+        "Don't put your elbows on the table."
+      ],
+      "translations": {
+        "uk": "лікоть",
+        "de": "Ellbogen",
+        "fr": "coude",
+        "es": "codo",
+        "it": "gomito",
+        "pt": "cotovelo",
+        "pl": "łokieć",
+        "ru": "локоть",
+        "zh": "肘",
+        "ja": "ひじ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eyebrow",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/ˈaɪˌbraʊ/",
+      "definition": "the line of hair above each eye",
+      "examples": [
+        "She raised her eyebrows in surprise."
+      ],
+      "translations": {
+        "uk": "брова",
+        "de": "Augenbraue",
+        "fr": "sourcil",
+        "es": "ceja",
+        "it": "sopracciglio",
+        "pt": "sobrancelha",
+        "pl": "brew",
+        "ru": "бровь",
+        "zh": "眉毛",
+        "ja": "眉"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "eyelash",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈaɪˌlæʃ/",
+      "definition": "one of the small hairs on the edge of your eyelid",
+      "examples": [
+        "She has very long eyelashes."
+      ],
+      "translations": {
+        "uk": "вія",
+        "de": "Wimper",
+        "fr": "cil",
+        "es": "pestaña",
+        "it": "ciglio",
+        "pt": "cílio",
+        "pl": "rzęsa",
+        "ru": "ресница",
+        "zh": "睫毛",
+        "ja": "まつげ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "forehead",
+      "part_of_speech": "noun",
+      "cefr": "A2",
+      "topic": "Body",
+      "ipa": "/ˈfɔrhɛd/",
+      "definition": "the part of your face above your eyes",
+      "examples": [
+        "He wiped the sweat from his forehead."
+      ],
+      "translations": {
+        "uk": "лоб",
+        "de": "Stirn",
+        "fr": "front",
+        "es": "frente",
+        "it": "fronte",
+        "pt": "testa",
+        "pl": "czoło",
+        "ru": "лоб",
+        "zh": "额头",
+        "ja": "額"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "heel",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/hil/",
+      "definition": "the back part of your foot, or the raised part under the back of a shoe",
+      "examples": [
+        "My new shoes hurt my heels."
+      ],
+      "translations": {
+        "uk": "п’ята, підбор",
+        "de": "Ferse, Absatz",
+        "fr": "talon",
+        "es": "talón",
+        "it": "tallone, tacco",
+        "pt": "calcanhar, salto",
+        "pl": "pięta, obcas",
+        "ru": "пятка, каблук",
+        "zh": "脚后跟，鞋跟",
+        "ja": "かかと"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hip",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/hɪp/",
+      "definition": "the part on each side of your body between your waist and your legs",
+      "examples": [
+        "She stood with her hands on her hips."
+      ],
+      "translations": {
+        "uk": "стегно",
+        "de": "Hüfte",
+        "fr": "hanche",
+        "es": "cadera",
+        "it": "fianco",
+        "pt": "quadril",
+        "pl": "biodro",
+        "ru": "бедро",
+        "zh": "臀部，髋部",
+        "ja": "腰、ヒップ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "jaw",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/dʒɔ/",
+      "definition": "the lower part of your face that moves when you talk or eat",
+      "examples": [
+        "He broke his jaw in the accident."
+      ],
+      "translations": {
+        "uk": "щелепа",
+        "de": "Kiefer",
+        "fr": "mâchoire",
+        "es": "mandíbula",
+        "it": "mascella",
+        "pt": "mandíbula",
+        "pl": "szczęka",
+        "ru": "челюсть",
+        "zh": "下颌",
+        "ja": "あご"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "waist",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/weɪst/",
+      "definition": "the middle part of your body above your hips",
+      "examples": [
+        "These trousers are too big around the waist."
+      ],
+      "translations": {
+        "uk": "талія",
+        "de": "Taille",
+        "fr": "taille",
+        "es": "cintura",
+        "it": "vita",
+        "pt": "cintura",
+        "pl": "talia",
+        "ru": "талия",
+        "zh": "腰",
+        "ja": "ウエスト"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "spine",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Body",
+      "ipa": "/spaɪn/",
+      "definition": "the row of bones down the middle of your back",
+      "examples": [
+        "Sitting badly can hurt your spine."
+      ],
+      "translations": {
+        "uk": "хребет",
+        "de": "Wirbelsäule",
+        "fr": "colonne vertébrale",
+        "es": "columna vertebral",
+        "it": "colonna vertebrale",
+        "pt": "coluna vertebral",
+        "pl": "kręgosłup",
+        "ru": "позвоночник",
+        "zh": "脊柱",
+        "ja": "背骨"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "skull",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Body",
+      "ipa": "/skʌl/",
+      "definition": "the bones of the head",
+      "examples": [
+        "The skull protects the brain."
+      ],
+      "translations": {
+        "uk": "череп",
+        "de": "Schädel",
+        "fr": "crâne",
+        "es": "cráneo",
+        "it": "cranio",
+        "pt": "crânio",
+        "pl": "czaszka",
+        "ru": "череп",
+        "zh": "头骨",
+        "ja": "頭蓋骨"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "kidney",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈkɪdni/",
+      "definition": "one of two organs that clean your blood and make urine",
+      "examples": [
+        "Drinking water is good for your kidneys."
+      ],
+      "translations": {
+        "uk": "нирка",
+        "de": "Niere",
+        "fr": "rein",
+        "es": "riñón",
+        "it": "rene",
+        "pt": "rim",
+        "pl": "nerka",
+        "ru": "почка",
+        "zh": "肾",
+        "ja": "腎臓"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "liver",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈlɪvɚ/",
+      "definition": "a large organ that cleans your blood",
+      "examples": [
+        "Too much alcohol damages the liver."
+      ],
+      "translations": {
+        "uk": "печінка",
+        "de": "Leber",
+        "fr": "foie",
+        "es": "hígado",
+        "it": "fegato",
+        "pt": "fígado",
+        "pl": "wątroba",
+        "ru": "печень",
+        "zh": "肝",
+        "ja": "肝臓"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vein",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Body",
+      "ipa": "/veɪn/",
+      "definition": "a tube that carries blood back to the heart",
+      "examples": [
+        "The nurse took blood from a vein in my arm."
+      ],
+      "translations": {
+        "uk": "вена",
+        "de": "Vene",
+        "fr": "veine",
+        "es": "vena",
+        "it": "vena",
+        "pt": "veia",
+        "pl": "żyła",
+        "ru": "вена",
+        "zh": "静脉",
+        "ja": "静脈"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "freckle",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈfrɛkəl/",
+      "definition": "a small brown spot on the skin",
+      "examples": [
+        "She has freckles on her nose."
+      ],
+      "translations": {
+        "uk": "веснянка",
+        "de": "Sommersprosse",
+        "fr": "tache de rousseur",
+        "es": "peca",
+        "it": "lentiggine",
+        "pt": "sarda",
+        "pl": "pieg",
+        "ru": "веснушка",
+        "zh": "雀斑",
+        "ja": "そばかす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wrinkle",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Body",
+      "ipa": "/ˈrɪŋkəl/",
+      "definition": "a line on the skin, often because of age",
+      "examples": [
+        "My grandmother has lots of wrinkles."
+      ],
+      "translations": {
+        "uk": "зморшка",
+        "de": "Falte",
+        "fr": "ride",
+        "es": "arruga",
+        "it": "ruga",
+        "pt": "ruga",
+        "pl": "zmarszczka",
+        "ru": "морщина",
+        "zh": "皱纹",
+        "ja": "しわ"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
