@@ -1,0 +1,581 @@
+{
+  "package": "b2-everyday-verbs",
+  "kind": "words",
+  "words": [
+    {
+      "word": "abandon",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈbændən/",
+      "definition": "to leave someone or something and not come back",
+      "examples": [
+        "They had to abandon the car in the snow."
+      ],
+      "translations": {
+        "uk": "покидати, кидати",
+        "de": "verlassen",
+        "fr": "abandonner",
+        "es": "abandonar",
+        "it": "abbandonare",
+        "pt": "abandonar",
+        "pl": "porzucić",
+        "ru": "бросать, покидать",
+        "zh": "放弃，抛弃",
+        "ja": "見捨てる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "accuse",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/əˈkjuz/",
+      "definition": "to say that someone has done something wrong",
+      "examples": [
+        "She accused him of lying."
+      ],
+      "translations": {
+        "uk": "звинувачувати",
+        "de": "beschuldigen",
+        "fr": "accuser",
+        "es": "acusar",
+        "it": "accusare",
+        "pt": "acusar",
+        "pl": "oskarżać",
+        "ru": "обвинять",
+        "zh": "指责，控告",
+        "ja": "非難する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "adjust",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈdʒʌst/",
+      "definition": "to change something a little to make it better",
+      "examples": [
+        "You can adjust the height of the chair."
+      ],
+      "translations": {
+        "uk": "регулювати, пристосовувати",
+        "de": "anpassen",
+        "fr": "ajuster",
+        "es": "ajustar",
+        "it": "regolare",
+        "pt": "ajustar",
+        "pl": "dostosować",
+        "ru": "регулировать, приспосабливать",
+        "zh": "调整",
+        "ja": "調整する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "adopt",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Family",
+      "ipa": "/əˈdɑpt/",
+      "definition": "to legally take another person's child into your family",
+      "examples": [
+        "They adopted a baby girl."
+      ],
+      "translations": {
+        "uk": "усиновлювати",
+        "de": "adoptieren",
+        "fr": "adopter",
+        "es": "adoptar",
+        "it": "adottare",
+        "pt": "adotar",
+        "pl": "adoptować",
+        "ru": "усыновлять, удочерять",
+        "zh": "收养",
+        "ja": "養子にする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "alter",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɔltɚ/",
+      "definition": "to change something",
+      "examples": [
+        "We had to alter our plans."
+      ],
+      "translations": {
+        "uk": "змінювати",
+        "de": "ändern",
+        "fr": "modifier",
+        "es": "alterar",
+        "it": "modificare",
+        "pt": "alterar",
+        "pl": "zmieniać",
+        "ru": "изменять",
+        "zh": "改变",
+        "ja": "変える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "arise",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈraɪz/",
+      "definition": "to begin to happen or exist",
+      "examples": [
+        "Problems may arise if we don't plan carefully."
+      ],
+      "translations": {
+        "uk": "виникати",
+        "de": "entstehen",
+        "fr": "survenir",
+        "es": "surgir",
+        "it": "sorgere",
+        "pt": "surgir",
+        "pl": "pojawiać się",
+        "ru": "возникать",
+        "zh": "出现，产生",
+        "ja": "生じる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "assist",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈsɪst/",
+      "definition": "to help someone",
+      "examples": [
+        "The nurse assisted the doctor."
+      ],
+      "translations": {
+        "uk": "допомагати",
+        "de": "unterstützen",
+        "fr": "assister",
+        "es": "ayudar",
+        "it": "assistere",
+        "pt": "auxiliar",
+        "pl": "pomagać",
+        "ru": "помогать, содействовать",
+        "zh": "协助",
+        "ja": "手伝う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "attach",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈtætʃ/",
+      "definition": "to fix or join one thing to another",
+      "examples": [
+        "I attached the photo to the email."
+      ],
+      "translations": {
+        "uk": "прикріплювати",
+        "de": "anhängen",
+        "fr": "joindre",
+        "es": "adjuntar",
+        "it": "allegare",
+        "pt": "anexar",
+        "pl": "załączać",
+        "ru": "прикреплять",
+        "zh": "附上，贴上",
+        "ja": "添付する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "attempt",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈtɛmpt/",
+      "definition": "to try to do something difficult",
+      "examples": [
+        "He attempted to climb the mountain alone."
+      ],
+      "translations": {
+        "uk": "намагатися",
+        "de": "versuchen",
+        "fr": "tenter",
+        "es": "intentar",
+        "it": "tentare",
+        "pt": "tentar",
+        "pl": "próbować",
+        "ru": "пытаться",
+        "zh": "尝试",
+        "ja": "試みる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bother",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Emotions",
+      "ipa": "/ˈbɑðɚ/",
+      "definition": "to annoy or worry someone",
+      "examples": [
+        "Does the noise bother you?"
+      ],
+      "translations": {
+        "uk": "турбувати",
+        "de": "stören",
+        "fr": "déranger",
+        "es": "molestar",
+        "it": "disturbare",
+        "pt": "incomodar",
+        "pl": "przeszkadzać",
+        "ru": "беспокоить, мешать",
+        "zh": "打扰",
+        "ja": "悩ませる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "collapse",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/kəˈlæps/",
+      "definition": "to fall down suddenly",
+      "examples": [
+        "The old bridge collapsed in the storm."
+      ],
+      "translations": {
+        "uk": "обвалюватися",
+        "de": "einstürzen",
+        "fr": "s’effondrer",
+        "es": "derrumbarse",
+        "it": "crollare",
+        "pt": "desabar",
+        "pl": "zawalić się",
+        "ru": "рушиться, обваливаться",
+        "zh": "倒塌",
+        "ja": "崩壊する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "consult",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈsʌlt/",
+      "definition": "to ask someone for advice or information",
+      "examples": [
+        "You should consult a doctor."
+      ],
+      "translations": {
+        "uk": "консультуватися",
+        "de": "konsultieren",
+        "fr": "consulter",
+        "es": "consultar",
+        "it": "consultare",
+        "pt": "consultar",
+        "pl": "konsultować się",
+        "ru": "консультироваться",
+        "zh": "咨询",
+        "ja": "相談する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "enable",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈneɪbəl/",
+      "definition": "to make it possible for someone to do something",
+      "examples": [
+        "The app enables you to learn anywhere."
+      ],
+      "translations": {
+        "uk": "давати змогу",
+        "de": "ermöglichen",
+        "fr": "permettre",
+        "es": "permitir",
+        "it": "consentire",
+        "pt": "permitir",
+        "pl": "umożliwiać",
+        "ru": "позволять, давать возможность",
+        "zh": "使能够",
+        "ja": "可能にする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "ensure",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈʃʊr/",
+      "definition": "to make certain that something happens",
+      "examples": [
+        "Please ensure that the door is locked."
+      ],
+      "translations": {
+        "uk": "забезпечувати",
+        "de": "sicherstellen",
+        "fr": "s’assurer",
+        "es": "asegurar",
+        "it": "assicurare",
+        "pt": "garantir",
+        "pl": "zapewnić",
+        "ru": "обеспечивать",
+        "zh": "确保",
+        "ja": "確実にする"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exceed",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ɪkˈsid/",
+      "definition": "to be more than a limit or amount",
+      "examples": [
+        "Do not exceed the speed limit."
+      ],
+      "translations": {
+        "uk": "перевищувати",
+        "de": "überschreiten",
+        "fr": "dépasser",
+        "es": "superar",
+        "it": "superare",
+        "pt": "exceder",
+        "pl": "przekraczać",
+        "ru": "превышать",
+        "zh": "超过",
+        "ja": "超える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "obey",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/oʊˈbeɪ/",
+      "definition": "to do what a person, rule or law tells you to do",
+      "examples": [
+        "Drivers must obey traffic rules."
+      ],
+      "translations": {
+        "uk": "слухатися, коритися",
+        "de": "gehorchen",
+        "fr": "obéir",
+        "es": "obedecer",
+        "it": "obbedire",
+        "pt": "obedecer",
+        "pl": "słuchać",
+        "ru": "подчиняться, слушаться",
+        "zh": "服从",
+        "ja": "従う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "oppose",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈpoʊz/",
+      "definition": "to disagree with a plan and try to stop it",
+      "examples": [
+        "Many residents oppose the new airport."
+      ],
+      "translations": {
+        "uk": "виступати проти",
+        "de": "ablehnen",
+        "fr": "s’opposer à",
+        "es": "oponerse a",
+        "it": "opporsi a",
+        "pt": "opor-se a",
+        "pl": "sprzeciwiać się",
+        "ru": "выступать против",
+        "zh": "反对",
+        "ja": "反対する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "postpone",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/poʊstˈpoʊn/",
+      "definition": "to move an event to a later time",
+      "examples": [
+        "The match was postponed because of rain."
+      ],
+      "translations": {
+        "uk": "відкладати",
+        "de": "verschieben",
+        "fr": "reporter",
+        "es": "aplazar",
+        "it": "rimandare",
+        "pt": "adiar",
+        "pl": "przełożyć",
+        "ru": "откладывать, переносить",
+        "zh": "推迟",
+        "ja": "延期する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reverse",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/rɪˈvɝs/",
+      "definition": "to change something to the opposite",
+      "examples": [
+        "The court reversed its decision."
+      ],
+      "translations": {
+        "uk": "змінювати на протилежне",
+        "de": "umkehren",
+        "fr": "inverser",
+        "es": "revertir",
+        "it": "invertire",
+        "pt": "reverter",
+        "pl": "odwrócić",
+        "ru": "отменять, менять на противоположное",
+        "zh": "逆转，撤销",
+        "ja": "覆す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stretch",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/strɛtʃ/",
+      "definition": "to make something longer or wider by pulling it, or to extend your arms and legs",
+      "examples": [
+        "Stretch your legs before you run."
+      ],
+      "translations": {
+        "uk": "розтягувати",
+        "de": "dehnen",
+        "fr": "étirer",
+        "es": "estirar",
+        "it": "allungare",
+        "pt": "esticar",
+        "pl": "rozciągać",
+        "ru": "растягивать",
+        "zh": "伸展",
+        "ja": "伸ばす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "swap",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/swɑp/",
+      "definition": "to give something and get something else in return",
+      "examples": [
+        "Can we swap seats?"
+      ],
+      "translations": {
+        "uk": "мінятися",
+        "de": "tauschen",
+        "fr": "échanger",
+        "es": "intercambiar",
+        "it": "scambiare",
+        "pt": "trocar",
+        "pl": "zamienić się",
+        "ru": "меняться",
+        "zh": "交换",
+        "ja": "交換する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "vanish",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈvænɪʃ/",
+      "definition": "to disappear suddenly",
+      "examples": [
+        "The cat vanished into the night."
+      ],
+      "translations": {
+        "uk": "зникати",
+        "de": "verschwinden",
+        "fr": "disparaître",
+        "es": "desvanecerse",
+        "it": "svanire",
+        "pt": "desaparecer",
+        "pl": "znikać",
+        "ru": "исчезать",
+        "zh": "消失",
+        "ja": "消える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "wreck",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/rɛk/",
+      "definition": "to destroy or badly damage something",
+      "examples": [
+        "The storm wrecked several boats."
+      ],
+      "translations": {
+        "uk": "руйнувати",
+        "de": "zerstören",
+        "fr": "détruire",
+        "es": "destrozar",
+        "it": "distruggere",
+        "pt": "destruir",
+        "pl": "zniszczyć",
+        "ru": "разрушать",
+        "zh": "毁坏",
+        "ja": "壊す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

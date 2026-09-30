@@ -1,0 +1,1931 @@
+{
+  "package": "c1-academic-3",
+  "kind": "words",
+  "words": [
+    {
+      "word": "adhere",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ædˈhɪr/",
+      "definition": "to follow a rule or agreement exactly",
+      "examples": [
+        "All members must adhere to the rules."
+      ],
+      "translations": {
+        "uk": "дотримуватися",
+        "de": "sich halten an",
+        "fr": "respecter",
+        "es": "cumplir",
+        "it": "attenersi",
+        "pt": "aderir a",
+        "pl": "przestrzegać",
+        "ru": "придерживаться",
+        "zh": "遵守",
+        "ja": "従う、固守する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "aftermath",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈæftɚˌmæθ/",
+      "definition": "the period after a bad event and its effects",
+      "examples": [
+        "Many people lost their homes in the aftermath of the flood."
+      ],
+      "translations": {
+        "uk": "наслідки",
+        "de": "Nachwirkungen",
+        "fr": "lendemain, suites",
+        "es": "secuelas",
+        "it": "conseguenze",
+        "pt": "rescaldo",
+        "pl": "następstwa",
+        "ru": "последствия",
+        "zh": "后果",
+        "ja": "余波"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "allegation",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌæləˈɡeɪʃən/",
+      "definition": "a statement that someone has done something wrong, without proof",
+      "examples": [
+        "He denied all the allegations."
+      ],
+      "translations": {
+        "uk": "звинувачення (без доказів)",
+        "de": "Vorwurf",
+        "fr": "allégation",
+        "es": "acusación",
+        "it": "accusa",
+        "pt": "alegação",
+        "pl": "zarzut",
+        "ru": "обвинение, утверждение",
+        "zh": "指控",
+        "ja": "申し立て"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "analogy",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈnælədʒi/",
+      "definition": "a comparison that shows how two things are similar",
+      "examples": [
+        "The teacher used an analogy to explain the idea."
+      ],
+      "translations": {
+        "uk": "аналогія",
+        "de": "Analogie",
+        "fr": "analogie",
+        "es": "analogía",
+        "it": "analogia",
+        "pt": "analogia",
+        "pl": "analogia",
+        "ru": "аналогия",
+        "zh": "类比",
+        "ja": "類推、たとえ"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "aspiration",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌæspəˈreɪʃən/",
+      "definition": "a strong hope or wish to achieve something",
+      "examples": [
+        "She has aspirations to become a doctor."
+      ],
+      "translations": {
+        "uk": "прагнення",
+        "de": "Bestrebung",
+        "fr": "aspiration",
+        "es": "aspiración",
+        "it": "aspirazione",
+        "pt": "aspiração",
+        "pl": "aspiracja",
+        "ru": "стремление",
+        "zh": "抱负",
+        "ja": "大志、願望"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "assert",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/əˈsɝt/",
+      "definition": "to say something firmly",
+      "examples": [
+        "He asserted that he was innocent."
+      ],
+      "translations": {
+        "uk": "стверджувати",
+        "de": "behaupten",
+        "fr": "affirmer",
+        "es": "afirmar",
+        "it": "affermare",
+        "pt": "afirmar",
+        "pl": "twierdzić",
+        "ru": "утверждать",
+        "zh": "断言",
+        "ja": "断言する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "autonomy",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɔˈtɑnəmi/",
+      "definition": "the freedom to make your own decisions",
+      "examples": [
+        "Teachers want more autonomy in the classroom."
+      ],
+      "translations": {
+        "uk": "автономія",
+        "de": "Autonomie",
+        "fr": "autonomie",
+        "es": "autonomía",
+        "it": "autonomia",
+        "pt": "autonomia",
+        "pl": "autonomia",
+        "ru": "автономия",
+        "zh": "自主权",
+        "ja": "自主性"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "backlash",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈbækˌlæʃ/",
+      "definition": "a strong negative reaction by many people",
+      "examples": [
+        "The new tax caused a public backlash."
+      ],
+      "translations": {
+        "uk": "різка негативна реакція",
+        "de": "Gegenreaktion",
+        "fr": "contrecoup, levée de boucliers",
+        "es": "reacción negativa",
+        "it": "reazione negativa",
+        "pt": "reação negativa",
+        "pl": "sprzeciw",
+        "ru": "негативная реакция",
+        "zh": "强烈反对",
+        "ja": "反発"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bleak",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/blik/",
+      "definition": "without hope, or cold and unpleasant",
+      "examples": [
+        "The future looks bleak for the company."
+      ],
+      "translations": {
+        "uk": "похмурий, безнадійний",
+        "de": "düster",
+        "fr": "sombre",
+        "es": "sombrío",
+        "it": "cupo",
+        "pt": "sombrio",
+        "pl": "ponury",
+        "ru": "мрачный, безрадостный",
+        "zh": "暗淡的",
+        "ja": "暗い、厳しい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bolster",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈboʊlstɚ/",
+      "definition": "to make something stronger or more successful",
+      "examples": [
+        "The win bolstered the team's confidence."
+      ],
+      "translations": {
+        "uk": "зміцнювати",
+        "de": "stärken",
+        "fr": "renforcer",
+        "es": "reforzar",
+        "it": "rafforzare",
+        "pt": "reforçar",
+        "pl": "wzmacniać",
+        "ru": "укреплять",
+        "zh": "加强",
+        "ja": "強化する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "cease",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/sis/",
+      "definition": "to stop",
+      "examples": [
+        "The factory ceased production last year."
+      ],
+      "translations": {
+        "uk": "припиняти",
+        "de": "einstellen",
+        "fr": "cesser",
+        "es": "cesar",
+        "it": "cessare",
+        "pt": "cessar",
+        "pl": "zaprzestać",
+        "ru": "прекращать",
+        "zh": "停止",
+        "ja": "やめる、終わる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "coincide",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌkoʊɪnˈsaɪd/",
+      "definition": "to happen at the same time",
+      "examples": [
+        "My birthday coincides with a public holiday."
+      ],
+      "translations": {
+        "uk": "збігатися",
+        "de": "zusammenfallen",
+        "fr": "coïncider",
+        "es": "coincidir",
+        "it": "coincidere",
+        "pt": "coincidir",
+        "pl": "zbiegać się",
+        "ru": "совпадать",
+        "zh": "同时发生",
+        "ja": "同時に起こる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "collaborate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kəˈlæbəˌreɪt/",
+      "definition": "to work with someone to produce something",
+      "examples": [
+        "The two universities collaborated on the research."
+      ],
+      "translations": {
+        "uk": "співпрацювати",
+        "de": "zusammenarbeiten",
+        "fr": "collaborer",
+        "es": "colaborar",
+        "it": "collaborare",
+        "pt": "colaborar",
+        "pl": "współpracować",
+        "ru": "сотрудничать",
+        "zh": "合作",
+        "ja": "協力する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "commence",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kəˈmɛns/",
+      "definition": "to begin (formal)",
+      "examples": [
+        "The ceremony will commence at noon."
+      ],
+      "translations": {
+        "uk": "розпочинати",
+        "de": "beginnen",
+        "fr": "commencer",
+        "es": "comenzar",
+        "it": "iniziare",
+        "pt": "começar",
+        "pl": "rozpoczynać",
+        "ru": "начинать(ся)",
+        "zh": "开始",
+        "ja": "始まる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "compile",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kəmˈpaɪl/",
+      "definition": "to collect information and put it together",
+      "examples": [
+        "We compiled a list of useful websites."
+      ],
+      "translations": {
+        "uk": "укладати, складати",
+        "de": "zusammenstellen",
+        "fr": "compiler",
+        "es": "recopilar",
+        "it": "compilare",
+        "pt": "compilar",
+        "pl": "zestawiać",
+        "ru": "составлять",
+        "zh": "汇编",
+        "ja": "まとめる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "complement",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑmpləˌmɛnt/",
+      "definition": "to make something better by adding something that suits it",
+      "examples": [
+        "The wine complements the fish perfectly."
+      ],
+      "translations": {
+        "uk": "доповнювати",
+        "de": "ergänzen",
+        "fr": "compléter",
+        "es": "complementar",
+        "it": "completare",
+        "pt": "complementar",
+        "pl": "uzupełniać",
+        "ru": "дополнять",
+        "zh": "补充",
+        "ja": "引き立てる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "comprise",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kəmˈpraɪz/",
+      "definition": "to consist of particular parts",
+      "examples": [
+        "The course comprises five modules."
+      ],
+      "translations": {
+        "uk": "складатися з",
+        "de": "bestehen aus",
+        "fr": "comprendre",
+        "es": "comprender",
+        "it": "comprendere",
+        "pt": "compreender",
+        "pl": "składać się z",
+        "ru": "состоять из",
+        "zh": "包含",
+        "ja": "構成される"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "concede",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈsid/",
+      "definition": "to admit that something is true, often unwillingly",
+      "examples": [
+        "He conceded that he had made a mistake."
+      ],
+      "translations": {
+        "uk": "визнавати",
+        "de": "einräumen",
+        "fr": "concéder",
+        "es": "admitir",
+        "it": "ammettere",
+        "pt": "admitir",
+        "pl": "przyznawać",
+        "ru": "признавать",
+        "zh": "承认",
+        "ja": "認める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "constitute",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑnstəˌtut/",
+      "definition": "to form or be something",
+      "examples": [
+        "Women constitute half of the workforce."
+      ],
+      "translations": {
+        "uk": "становити",
+        "de": "ausmachen",
+        "fr": "constituer",
+        "es": "constituir",
+        "it": "costituire",
+        "pt": "constituir",
+        "pl": "stanowić",
+        "ru": "составлять",
+        "zh": "构成",
+        "ja": "構成する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "contradict",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌkɑntrəˈdɪkt/",
+      "definition": "to say the opposite of what someone has said",
+      "examples": [
+        "His story contradicts what the witness said."
+      ],
+      "translations": {
+        "uk": "суперечити",
+        "de": "widersprechen",
+        "fr": "contredire",
+        "es": "contradecir",
+        "it": "contraddire",
+        "pt": "contradizer",
+        "pl": "zaprzeczać",
+        "ru": "противоречить",
+        "zh": "与……矛盾",
+        "ja": "矛盾する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "conversely",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kənˈvɝsli/",
+      "definition": "in an opposite way",
+      "examples": [
+        "Some people love the city; conversely, others prefer the countryside."
+      ],
+      "translations": {
+        "uk": "навпаки",
+        "de": "umgekehrt",
+        "fr": "inversement",
+        "es": "a la inversa",
+        "it": "viceversa",
+        "pt": "inversamente",
+        "pl": "odwrotnie",
+        "ru": "наоборот",
+        "zh": "相反地",
+        "ja": "逆に"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "correlation",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌkɔrəˈleɪʃən/",
+      "definition": "a connection between two things",
+      "examples": [
+        "There is a strong correlation between sleep and health."
+      ],
+      "translations": {
+        "uk": "кореляція, взаємозв’язок",
+        "de": "Zusammenhang",
+        "fr": "corrélation",
+        "es": "correlación",
+        "it": "correlazione",
+        "pt": "correlação",
+        "pl": "korelacja",
+        "ru": "корреляция, взаимосвязь",
+        "zh": "相关性",
+        "ja": "相関関係"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "curb",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/kɝb/",
+      "definition": "to control or limit something bad",
+      "examples": [
+        "The government wants to curb inflation."
+      ],
+      "translations": {
+        "uk": "стримувати",
+        "de": "eindämmen",
+        "fr": "freiner",
+        "es": "frenar",
+        "it": "frenare",
+        "pt": "conter",
+        "pl": "ograniczać",
+        "ru": "сдерживать, обуздывать",
+        "zh": "抑制",
+        "ja": "抑制する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deem",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dim/",
+      "definition": "to consider something in a particular way (formal)",
+      "examples": [
+        "The plan was deemed too expensive."
+      ],
+      "translations": {
+        "uk": "вважати",
+        "de": "erachten",
+        "fr": "juger",
+        "es": "considerar",
+        "it": "ritenere",
+        "pt": "considerar",
+        "pl": "uznawać",
+        "ru": "считать, признавать",
+        "zh": "认为",
+        "ja": "みなす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "deprive",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈpraɪv/",
+      "definition": "to take something important away from someone",
+      "examples": [
+        "Lack of sleep deprives the brain of rest."
+      ],
+      "translations": {
+        "uk": "позбавляти",
+        "de": "berauben",
+        "fr": "priver",
+        "es": "privar",
+        "it": "privare",
+        "pt": "privar",
+        "pl": "pozbawiać",
+        "ru": "лишать",
+        "zh": "剥夺",
+        "ja": "奪う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "derive",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈraɪv/",
+      "definition": "to get something from something else",
+      "examples": [
+        "Many English words derive from Latin."
+      ],
+      "translations": {
+        "uk": "походити, отримувати",
+        "de": "ableiten",
+        "fr": "dériver",
+        "es": "derivar",
+        "it": "derivare",
+        "pt": "derivar",
+        "pl": "pochodzić",
+        "ru": "происходить, получать",
+        "zh": "源自，获得",
+        "ja": "由来する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "devise",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈvaɪz/",
+      "definition": "to invent a plan or method",
+      "examples": [
+        "They devised a new way to save energy."
+      ],
+      "translations": {
+        "uk": "розробляти, вигадувати",
+        "de": "entwickeln",
+        "fr": "concevoir",
+        "es": "idear",
+        "it": "ideare",
+        "pt": "conceber",
+        "pl": "opracować",
+        "ru": "разрабатывать, придумывать",
+        "zh": "设计，想出",
+        "ja": "考案する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "disclose",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪsˈkloʊz/",
+      "definition": "to make information known publicly",
+      "examples": [
+        "The company did not disclose the price."
+      ],
+      "translations": {
+        "uk": "розкривати",
+        "de": "offenlegen",
+        "fr": "divulguer",
+        "es": "revelar",
+        "it": "divulgare",
+        "pt": "divulgar",
+        "pl": "ujawniać",
+        "ru": "раскрывать, разглашать",
+        "zh": "透露",
+        "ja": "開示する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "distort",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/dɪˈstɔrt/",
+      "definition": "to change facts or shapes so they are no longer true or correct",
+      "examples": [
+        "The newspaper distorted what he said."
+      ],
+      "translations": {
+        "uk": "спотворювати",
+        "de": "verzerren",
+        "fr": "déformer",
+        "es": "distorsionar",
+        "it": "distorcere",
+        "pt": "distorcer",
+        "pl": "zniekształcać",
+        "ru": "искажать",
+        "zh": "歪曲",
+        "ja": "歪める"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "embark on",
+      "part_of_speech": "phrasal verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪmˈbɑrk ɑn/",
+      "definition": "to start something new and important",
+      "examples": [
+        "She embarked on a new career."
+      ],
+      "translations": {
+        "uk": "розпочинати",
+        "de": "beginnen",
+        "fr": "se lancer dans",
+        "es": "emprender",
+        "it": "intraprendere",
+        "pt": "embarcar em",
+        "pl": "rozpocząć",
+        "ru": "начинать, браться за",
+        "zh": "着手",
+        "ja": "乗り出す"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "encompass",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈkʌmpəs/",
+      "definition": "to include a range of things",
+      "examples": [
+        "The course encompasses history and politics."
+      ],
+      "translations": {
+        "uk": "охоплювати",
+        "de": "umfassen",
+        "fr": "englober",
+        "es": "abarcar",
+        "it": "comprendere",
+        "pt": "abranger",
+        "pl": "obejmować",
+        "ru": "охватывать",
+        "zh": "包含",
+        "ja": "網羅する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "enforce",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈfɔrs/",
+      "definition": "to make people obey a law or rule",
+      "examples": [
+        "The police enforce the speed limit."
+      ],
+      "translations": {
+        "uk": "забезпечувати виконання",
+        "de": "durchsetzen",
+        "fr": "faire respecter",
+        "es": "hacer cumplir",
+        "it": "far rispettare",
+        "pt": "fazer cumprir",
+        "pl": "egzekwować",
+        "ru": "обеспечивать соблюдение",
+        "zh": "执行",
+        "ja": "施行する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "entail",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈteɪl/",
+      "definition": "to involve something as a necessary part",
+      "examples": [
+        "The job entails a lot of travel."
+      ],
+      "translations": {
+        "uk": "передбачати, тягти за собою",
+        "de": "mit sich bringen",
+        "fr": "impliquer",
+        "es": "conllevar",
+        "it": "comportare",
+        "pt": "implicar",
+        "pl": "pociągać za sobą",
+        "ru": "влечь за собой",
+        "zh": "需要，牵涉",
+        "ja": "伴う"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "escalate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɛskəˌleɪt/",
+      "definition": "to become more serious or bigger",
+      "examples": [
+        "The argument quickly escalated."
+      ],
+      "translations": {
+        "uk": "загострюватися",
+        "de": "eskalieren",
+        "fr": "dégénérer",
+        "es": "intensificarse",
+        "it": "degenerare",
+        "pt": "escalar",
+        "pl": "eskalować",
+        "ru": "обостряться",
+        "zh": "升级",
+        "ja": "激化する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "exert",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪɡˈzɝt/",
+      "definition": "to use power or influence",
+      "examples": [
+        "Parents exert a strong influence on children."
+      ],
+      "translations": {
+        "uk": "чинити (вплив, тиск)",
+        "de": "ausüben",
+        "fr": "exercer",
+        "es": "ejercer",
+        "it": "esercitare",
+        "pt": "exercer",
+        "pl": "wywierać",
+        "ru": "оказывать (влияние)",
+        "zh": "施加",
+        "ja": "及ぼす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hierarchy",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈhaɪəˌrɑrki/",
+      "definition": "a system in which people are organized by rank",
+      "examples": [
+        "She rose quickly through the company hierarchy."
+      ],
+      "translations": {
+        "uk": "ієрархія",
+        "de": "Hierarchie",
+        "fr": "hiérarchie",
+        "es": "jerarquía",
+        "it": "gerarchia",
+        "pt": "hierarquia",
+        "pl": "hierarchia",
+        "ru": "иерархия",
+        "zh": "等级制度",
+        "ja": "階層"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "hypothetical",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌhaɪpəˈθɛtɪkəl/",
+      "definition": "imagined as possible, not real",
+      "examples": [
+        "Let's consider a hypothetical situation."
+      ],
+      "translations": {
+        "uk": "гіпотетичний",
+        "de": "hypothetisch",
+        "fr": "hypothétique",
+        "es": "hipotético",
+        "it": "ipotetico",
+        "pt": "hipotético",
+        "pl": "hipotetyczny",
+        "ru": "гипотетический",
+        "zh": "假设的",
+        "ja": "仮定の"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "impose",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪmˈpoʊz/",
+      "definition": "to force a rule, tax or punishment on someone",
+      "examples": [
+        "The government imposed a new tax on sugar."
+      ],
+      "translations": {
+        "uk": "запроваджувати, нав’язувати",
+        "de": "auferlegen",
+        "fr": "imposer",
+        "es": "imponer",
+        "it": "imporre",
+        "pt": "impor",
+        "pl": "nakładać",
+        "ru": "вводить, навязывать",
+        "zh": "强加，征收",
+        "ja": "課す"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "infer",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈfɝ/",
+      "definition": "to form an opinion from the information you have",
+      "examples": [
+        "What can you infer from the text?"
+      ],
+      "translations": {
+        "uk": "робити висновок",
+        "de": "schließen",
+        "fr": "déduire",
+        "es": "inferir",
+        "it": "dedurre",
+        "pt": "inferir",
+        "pl": "wnioskować",
+        "ru": "делать вывод",
+        "zh": "推断",
+        "ja": "推論する"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "innate",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪˈneɪt/",
+      "definition": "existing from birth",
+      "examples": [
+        "Children have an innate ability to learn languages."
+      ],
+      "translations": {
+        "uk": "вроджений",
+        "de": "angeboren",
+        "fr": "inné",
+        "es": "innato",
+        "it": "innato",
+        "pt": "inato",
+        "pl": "wrodzony",
+        "ru": "врождённый",
+        "zh": "天生的",
+        "ja": "生まれつきの"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "intervene",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɪntɚˈvin/",
+      "definition": "to become involved in a situation to change it",
+      "examples": [
+        "The teacher intervened to stop the fight."
+      ],
+      "translations": {
+        "uk": "втручатися",
+        "de": "eingreifen",
+        "fr": "intervenir",
+        "es": "intervenir",
+        "it": "intervenire",
+        "pt": "intervir",
+        "pl": "interweniować",
+        "ru": "вмешиваться",
+        "zh": "干预",
+        "ja": "介入する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "intrinsic",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɪnˈtrɪnsɪk/",
+      "definition": "being a natural part of something",
+      "examples": [
+        "Curiosity is intrinsic to learning."
+      ],
+      "translations": {
+        "uk": "внутрішній, притаманний",
+        "de": "wesentlich",
+        "fr": "intrinsèque",
+        "es": "intrínseco",
+        "it": "intrinseco",
+        "pt": "intrínseco",
+        "pl": "wewnętrzny",
+        "ru": "внутренний, присущий",
+        "zh": "内在的",
+        "ja": "本質的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "legitimate",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/lɪˈdʒɪtəmət/",
+      "definition": "allowed by law, or fair and reasonable",
+      "examples": [
+        "That's a legitimate question."
+      ],
+      "translations": {
+        "uk": "законний, обґрунтований",
+        "de": "legitim",
+        "fr": "légitime",
+        "es": "legítimo",
+        "it": "legittimo",
+        "pt": "legítimo",
+        "pl": "uzasadniony",
+        "ru": "законный, обоснованный",
+        "zh": "合法的，正当的",
+        "ja": "正当な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "manifest",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈmænəˌfɛst/",
+      "definition": "to show something clearly",
+      "examples": [
+        "The illness manifests itself as a rash."
+      ],
+      "translations": {
+        "uk": "проявляти(ся)",
+        "de": "zeigen",
+        "fr": "manifester",
+        "es": "manifestar",
+        "it": "manifestare",
+        "pt": "manifestar",
+        "pl": "przejawiać",
+        "ru": "проявлять(ся)",
+        "zh": "显示",
+        "ja": "現れる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "manipulate",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/məˈnɪpjəˌleɪt/",
+      "definition": "to control someone or something in a clever, often unfair way",
+      "examples": [
+        "Advertisers try to manipulate our choices."
+      ],
+      "translations": {
+        "uk": "маніпулювати",
+        "de": "manipulieren",
+        "fr": "manipuler",
+        "es": "manipular",
+        "it": "manipolare",
+        "pt": "manipular",
+        "pl": "manipulować",
+        "ru": "манипулировать",
+        "zh": "操纵",
+        "ja": "操る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "mundane",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/mʌnˈdeɪn/",
+      "definition": "ordinary and boring",
+      "examples": [
+        "I spent the day doing mundane tasks."
+      ],
+      "translations": {
+        "uk": "буденний",
+        "de": "alltäglich",
+        "fr": "banal",
+        "es": "mundano",
+        "it": "banale",
+        "pt": "mundano",
+        "pl": "przyziemny",
+        "ru": "обыденный",
+        "zh": "平凡的",
+        "ja": "ありふれた"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "notion",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈnoʊʃən/",
+      "definition": "an idea or belief",
+      "examples": [
+        "I reject the notion that money buys happiness."
+      ],
+      "translations": {
+        "uk": "уявлення, поняття",
+        "de": "Vorstellung",
+        "fr": "notion",
+        "es": "noción",
+        "it": "nozione",
+        "pt": "noção",
+        "pl": "pojęcie",
+        "ru": "представление, понятие",
+        "zh": "观念",
+        "ja": "考え"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "novice",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈnɑvɪs/",
+      "definition": "a person who is new to an activity",
+      "examples": [
+        "This course is for complete novices."
+      ],
+      "translations": {
+        "uk": "новачок",
+        "de": "Anfänger",
+        "fr": "novice",
+        "es": "novato",
+        "it": "principiante",
+        "pt": "novato",
+        "pl": "nowicjusz",
+        "ru": "новичок",
+        "zh": "新手",
+        "ja": "初心者"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "nurture",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈnɝtʃɚ/",
+      "definition": "to help someone or something develop",
+      "examples": [
+        "Good teachers nurture their students' talents."
+      ],
+      "translations": {
+        "uk": "плекати, виховувати",
+        "de": "fördern",
+        "fr": "nourrir, cultiver",
+        "es": "fomentar",
+        "it": "coltivare",
+        "pt": "nutrir",
+        "pl": "pielęgnować",
+        "ru": "взращивать, воспитывать",
+        "zh": "培养",
+        "ja": "育む"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "offset",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌɔfˈsɛt/",
+      "definition": "to balance one effect with an opposite one",
+      "examples": [
+        "Higher prices were offset by higher wages."
+      ],
+      "translations": {
+        "uk": "компенсувати",
+        "de": "ausgleichen",
+        "fr": "compenser",
+        "es": "compensar",
+        "it": "compensare",
+        "pt": "compensar",
+        "pl": "równoważyć",
+        "ru": "компенсировать",
+        "zh": "抵消",
+        "ja": "相殺する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "onset",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɑnˌsɛt/",
+      "definition": "the beginning of something, especially something bad",
+      "examples": [
+        "The onset of winter brought heavy snow."
+      ],
+      "translations": {
+        "uk": "початок",
+        "de": "Beginn",
+        "fr": "début",
+        "es": "inicio",
+        "it": "inizio",
+        "pt": "início",
+        "pl": "początek",
+        "ru": "начало",
+        "zh": "开始",
+        "ja": "始まり"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "outweigh",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌaʊtˈweɪ/",
+      "definition": "to be greater or more important than something else",
+      "examples": [
+        "The benefits outweigh the risks."
+      ],
+      "translations": {
+        "uk": "переважати",
+        "de": "überwiegen",
+        "fr": "l’emporter sur",
+        "es": "superar",
+        "it": "superare",
+        "pt": "superar",
+        "pl": "przeważać",
+        "ru": "перевешивать",
+        "zh": "超过，比……重要",
+        "ja": "上回る"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "paramount",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈpærəˌmaʊnt/",
+      "definition": "more important than anything else",
+      "examples": [
+        "Safety is paramount."
+      ],
+      "translations": {
+        "uk": "першочерговий",
+        "de": "vorrangig",
+        "fr": "primordial",
+        "es": "primordial",
+        "it": "fondamentale",
+        "pt": "primordial",
+        "pl": "nadrzędny",
+        "ru": "первостепенный",
+        "zh": "至关重要的",
+        "ja": "最重要の"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "persist",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/pɚˈsɪst/",
+      "definition": "to continue to exist or to keep doing something",
+      "examples": [
+        "If the pain persists, see a doctor."
+      ],
+      "translations": {
+        "uk": "тривати, наполягати",
+        "de": "anhalten",
+        "fr": "persister",
+        "es": "persistir",
+        "it": "persistere",
+        "pt": "persistir",
+        "pl": "utrzymywać się",
+        "ru": "сохраняться, упорствовать",
+        "zh": "持续",
+        "ja": "続く"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prevalent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈprɛvələnt/",
+      "definition": "common in a particular place or time",
+      "examples": [
+        "The disease is prevalent in hot countries."
+      ],
+      "translations": {
+        "uk": "поширений",
+        "de": "verbreitet",
+        "fr": "répandu",
+        "es": "frecuente",
+        "it": "diffuso",
+        "pt": "predominante",
+        "pl": "powszechny",
+        "ru": "распространённый",
+        "zh": "普遍的",
+        "ja": "広く見られる"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "prone",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/proʊn/",
+      "definition": "likely to suffer from or do something",
+      "examples": [
+        "He is prone to headaches."
+      ],
+      "translations": {
+        "uk": "схильний",
+        "de": "anfällig",
+        "fr": "sujet à",
+        "es": "propenso",
+        "it": "propenso",
+        "pt": "propenso",
+        "pl": "podatny",
+        "ru": "склонный, подверженный",
+        "zh": "易于……的",
+        "ja": "〜しがちな"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "provoke",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/prəˈvoʊk/",
+      "definition": "to cause a reaction, especially anger",
+      "examples": [
+        "His comments provoked an angry response."
+      ],
+      "translations": {
+        "uk": "провокувати, викликати",
+        "de": "provozieren",
+        "fr": "provoquer",
+        "es": "provocar",
+        "it": "provocare",
+        "pt": "provocar",
+        "pl": "prowokować",
+        "ru": "провоцировать, вызывать",
+        "zh": "激起，挑衅",
+        "ja": "引き起こす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rational",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈræʃənəl/",
+      "definition": "based on reason, not emotion",
+      "examples": [
+        "There must be a rational explanation."
+      ],
+      "translations": {
+        "uk": "раціональний",
+        "de": "rational",
+        "fr": "rationnel",
+        "es": "racional",
+        "it": "razionale",
+        "pt": "racional",
+        "pl": "racjonalny",
+        "ru": "рациональный",
+        "zh": "理性的",
+        "ja": "合理的な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "realm",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rɛlm/",
+      "definition": "an area of activity or interest",
+      "examples": [
+        "That is beyond the realm of possibility."
+      ],
+      "translations": {
+        "uk": "сфера, царина",
+        "de": "Bereich",
+        "fr": "domaine",
+        "es": "ámbito",
+        "it": "ambito",
+        "pt": "domínio",
+        "pl": "dziedzina",
+        "ru": "сфера, область",
+        "zh": "领域",
+        "ja": "領域"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "redundant",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rɪˈdʌndənt/",
+      "definition": "not needed, or having lost your job because it is no longer needed",
+      "examples": [
+        "Remove any redundant words from your essay."
+      ],
+      "translations": {
+        "uk": "зайвий; скорочений (з роботи)",
+        "de": "überflüssig",
+        "fr": "superflu",
+        "es": "redundante",
+        "it": "superfluo",
+        "pt": "redundante",
+        "pl": "zbędny",
+        "ru": "излишний; уволенный по сокращению",
+        "zh": "多余的；被裁员的",
+        "ja": "余分な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "refine",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rɪˈfaɪn/",
+      "definition": "to improve something by making small changes",
+      "examples": [
+        "We need to refine our plan."
+      ],
+      "translations": {
+        "uk": "удосконалювати",
+        "de": "verfeinern",
+        "fr": "affiner",
+        "es": "perfeccionar",
+        "it": "perfezionare",
+        "pt": "aperfeiçoar",
+        "pl": "udoskonalać",
+        "ru": "совершенствовать",
+        "zh": "改进",
+        "ja": "洗練する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "rigorous",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈrɪɡərəs/",
+      "definition": "very careful and thorough",
+      "examples": [
+        "The drug went through rigorous testing."
+      ],
+      "translations": {
+        "uk": "суворий, ретельний",
+        "de": "streng",
+        "fr": "rigoureux",
+        "es": "riguroso",
+        "it": "rigoroso",
+        "pt": "rigoroso",
+        "pl": "rygorystyczny",
+        "ru": "строгий, тщательный",
+        "zh": "严格的",
+        "ja": "厳密な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "robust",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/roʊˈbʌst/",
+      "definition": "strong and unlikely to break or fail",
+      "examples": [
+        "We need a robust system."
+      ],
+      "translations": {
+        "uk": "надійний, міцний",
+        "de": "robust",
+        "fr": "robuste",
+        "es": "robusto",
+        "it": "robusto",
+        "pt": "robusto",
+        "pl": "solidny",
+        "ru": "надёжный, прочный",
+        "zh": "坚固的，稳健的",
+        "ja": "頑丈な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "simultaneously",
+      "part_of_speech": "adverb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌsaɪməlˈteɪniəsli/",
+      "definition": "at the same time",
+      "examples": [
+        "Two events happened simultaneously."
+      ],
+      "translations": {
+        "uk": "одночасно",
+        "de": "gleichzeitig",
+        "fr": "simultanément",
+        "es": "simultáneamente",
+        "it": "simultaneamente",
+        "pt": "simultaneamente",
+        "pl": "jednocześnie",
+        "ru": "одновременно",
+        "zh": "同时",
+        "ja": "同時に"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stance",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/stæns/",
+      "definition": "an opinion that is stated publicly",
+      "examples": [
+        "What is your stance on this issue?"
+      ],
+      "translations": {
+        "uk": "позиція",
+        "de": "Haltung",
+        "fr": "position",
+        "es": "postura",
+        "it": "posizione",
+        "pt": "posição",
+        "pl": "stanowisko",
+        "ru": "позиция",
+        "zh": "立场",
+        "ja": "立場"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "stem from",
+      "part_of_speech": "phrasal verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/stɛm frʌm/",
+      "definition": "to be caused by something",
+      "examples": [
+        "Her fear stems from a childhood experience."
+      ],
+      "translations": {
+        "uk": "походити від, бути спричиненим",
+        "de": "herrühren von",
+        "fr": "provenir de",
+        "es": "derivarse de",
+        "it": "derivare da",
+        "pt": "resultar de",
+        "pl": "wynikać z",
+        "ru": "проистекать из",
+        "zh": "源于",
+        "ja": "〜に由来する"
+      },
+      "word_type": "phrasal_verb",
+      "ielts_category": null
+    },
+    {
+      "word": "subsequent",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈsʌbsəkwənt/",
+      "definition": "happening after something else",
+      "examples": [
+        "Subsequent research confirmed the results."
+      ],
+      "translations": {
+        "uk": "наступний",
+        "de": "nachfolgend",
+        "fr": "ultérieur",
+        "es": "posterior",
+        "it": "successivo",
+        "pt": "subsequente",
+        "pl": "późniejszy",
+        "ru": "последующий",
+        "zh": "随后的",
+        "ja": "その後の"
+      },
+      "word_type": "word",
+      "ielts_category": "Academic Vocabulary"
+    },
+    {
+      "word": "suppress",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/səˈprɛs/",
+      "definition": "to stop something from being seen, expressed or growing",
+      "examples": [
+        "She tried to suppress a smile."
+      ],
+      "translations": {
+        "uk": "придушувати, стримувати",
+        "de": "unterdrücken",
+        "fr": "réprimer",
+        "es": "reprimir",
+        "it": "reprimere",
+        "pt": "reprimir",
+        "pl": "tłumić",
+        "ru": "подавлять, сдерживать",
+        "zh": "抑制，压制",
+        "ja": "抑える"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "surpass",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/sɚˈpæs/",
+      "definition": "to be better or greater than something",
+      "examples": [
+        "The results surpassed our expectations."
+      ],
+      "translations": {
+        "uk": "перевершувати",
+        "de": "übertreffen",
+        "fr": "surpasser",
+        "es": "superar",
+        "it": "superare",
+        "pt": "superar",
+        "pl": "przewyższać",
+        "ru": "превосходить",
+        "zh": "超越",
+        "ja": "上回る"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "susceptible",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/səˈsɛptəbəl/",
+      "definition": "easily affected or influenced by something",
+      "examples": [
+        "Children are more susceptible to infections."
+      ],
+      "translations": {
+        "uk": "вразливий, схильний",
+        "de": "anfällig",
+        "fr": "sensible",
+        "es": "susceptible",
+        "it": "suscettibile",
+        "pt": "suscetível",
+        "pl": "podatny",
+        "ru": "восприимчивый, подверженный",
+        "zh": "易受影响的",
+        "ja": "影響を受けやすい"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tedious",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈtidiəs/",
+      "definition": "long and boring",
+      "examples": [
+        "Filling in forms is tedious."
+      ],
+      "translations": {
+        "uk": "нудний",
+        "de": "mühsam",
+        "fr": "fastidieux",
+        "es": "tedioso",
+        "it": "noioso",
+        "pt": "tedioso",
+        "pl": "żmudny",
+        "ru": "утомительный, нудный",
+        "zh": "冗长乏味的",
+        "ja": "退屈な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "transition",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/trænˈzɪʃən/",
+      "definition": "a change from one state to another",
+      "examples": [
+        "The transition to online classes was difficult."
+      ],
+      "translations": {
+        "uk": "перехід",
+        "de": "Übergang",
+        "fr": "transition",
+        "es": "transición",
+        "it": "transizione",
+        "pt": "transição",
+        "pl": "przejście",
+        "ru": "переход",
+        "zh": "过渡",
+        "ja": "移行"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "underlying",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˌʌndɚˈlaɪɪŋ/",
+      "definition": "real but not immediately obvious",
+      "examples": [
+        "We need to find the underlying cause."
+      ],
+      "translations": {
+        "uk": "прихований, основний",
+        "de": "zugrunde liegend",
+        "fr": "sous-jacent",
+        "es": "subyacente",
+        "it": "sottostante",
+        "pt": "subjacente",
+        "pl": "leżący u podstaw",
+        "ru": "лежащий в основе",
+        "zh": "潜在的，根本的",
+        "ja": "根底にある"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "uphold",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ʌpˈhoʊld/",
+      "definition": "to support a law, decision or principle",
+      "examples": [
+        "Judges must uphold the law."
+      ],
+      "translations": {
+        "uk": "підтримувати, відстоювати",
+        "de": "aufrechterhalten",
+        "fr": "maintenir",
+        "es": "mantener",
+        "it": "confermare",
+        "pt": "manter",
+        "pl": "podtrzymać",
+        "ru": "поддерживать, отстаивать",
+        "zh": "维护",
+        "ja": "支持する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "utilize",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈjutəˌlaɪz/",
+      "definition": "to use something (formal)",
+      "examples": [
+        "We must utilize all available resources."
+      ],
+      "translations": {
+        "uk": "використовувати",
+        "de": "nutzen",
+        "fr": "utiliser",
+        "es": "utilizar",
+        "it": "utilizzare",
+        "pt": "utilizar",
+        "pl": "wykorzystywać",
+        "ru": "использовать",
+        "zh": "利用",
+        "ja": "活用する"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "viable",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ˈvaɪəbəl/",
+      "definition": "able to work successfully",
+      "examples": [
+        "Solar power is a viable alternative."
+      ],
+      "translations": {
+        "uk": "життєздатний",
+        "de": "realisierbar",
+        "fr": "viable",
+        "es": "viable",
+        "it": "praticabile",
+        "pt": "viável",
+        "pl": "realny",
+        "ru": "жизнеспособный, осуществимый",
+        "zh": "可行的",
+        "ja": "実行可能な"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "yield",
+      "part_of_speech": "verb",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/jild/",
+      "definition": "to produce a result or crop",
+      "examples": [
+        "The experiment yielded interesting results."
+      ],
+      "translations": {
+        "uk": "давати (результат, врожай)",
+        "de": "hervorbringen",
+        "fr": "produire",
+        "es": "producir",
+        "it": "produrre",
+        "pt": "produzir",
+        "pl": "przynosić",
+        "ru": "давать, приносить",
+        "zh": "产生",
+        "ja": "もたらす"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}

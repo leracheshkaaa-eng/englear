@@ -1,0 +1,506 @@
+{
+  "package": "b2-nouns-everyday",
+  "kind": "words",
+  "words": [
+    {
+      "word": "authority",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/əˈθɔrəti/",
+      "definition": "the power to give orders, or an official organization",
+      "examples": [
+        "The local authority is building a new school."
+      ],
+      "translations": {
+        "uk": "влада, повноваження",
+        "de": "Behörde",
+        "fr": "autorité",
+        "es": "autoridad",
+        "it": "autorità",
+        "pt": "autoridade",
+        "pl": "władza",
+        "ru": "власть, орган власти",
+        "zh": "权力，当局",
+        "ja": "当局、権限"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "awareness",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/əˈwɛrnəs/",
+      "definition": "knowledge or understanding of something",
+      "examples": [
+        "Public awareness of the problem is growing."
+      ],
+      "translations": {
+        "uk": "обізнаність",
+        "de": "Bewusstsein",
+        "fr": "sensibilisation",
+        "es": "concienciación",
+        "it": "consapevolezza",
+        "pt": "consciência",
+        "pl": "świadomość",
+        "ru": "осведомлённость",
+        "zh": "意识",
+        "ja": "意識"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "bacteria",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/bækˈtɪriə/",
+      "definition": "very small living things that can cause disease",
+      "examples": [
+        "Wash your hands to remove bacteria."
+      ],
+      "translations": {
+        "uk": "бактерії",
+        "de": "Bakterien",
+        "fr": "bactéries",
+        "es": "bacterias",
+        "it": "batteri",
+        "pt": "bactérias",
+        "pl": "bakterie",
+        "ru": "бактерии",
+        "zh": "细菌",
+        "ja": "細菌"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "barrier",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈbæriɚ/",
+      "definition": "something that stops people from moving or doing something",
+      "examples": [
+        "Language can be a barrier to communication."
+      ],
+      "translations": {
+        "uk": "бар’єр",
+        "de": "Barriere",
+        "fr": "barrière",
+        "es": "barrera",
+        "it": "barriera",
+        "pt": "barreira",
+        "pl": "bariera",
+        "ru": "барьер",
+        "zh": "障碍",
+        "ja": "障壁"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "capacity",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/kəˈpæsəti/",
+      "definition": "the amount that something can hold, or an ability",
+      "examples": [
+        "The stadium has a capacity of 50,000."
+      ],
+      "translations": {
+        "uk": "місткість, здатність",
+        "de": "Kapazität",
+        "fr": "capacité",
+        "es": "capacidad",
+        "it": "capacità",
+        "pt": "capacidade",
+        "pl": "pojemność",
+        "ru": "вместимость, способность",
+        "zh": "容量，能力",
+        "ja": "収容能力"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "chaos",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkeɪɑs/",
+      "definition": "a state of complete confusion",
+      "examples": [
+        "The strike caused chaos at the airport."
+      ],
+      "translations": {
+        "uk": "хаос",
+        "de": "Chaos",
+        "fr": "chaos",
+        "es": "caos",
+        "it": "caos",
+        "pt": "caos",
+        "pl": "chaos",
+        "ru": "хаос",
+        "zh": "混乱",
+        "ja": "混乱"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "conflict",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈkɑnflɪkt/",
+      "definition": "a serious disagreement or fight",
+      "examples": [
+        "The conflict between the two groups lasted years."
+      ],
+      "translations": {
+        "uk": "конфлікт",
+        "de": "Konflikt",
+        "fr": "conflit",
+        "es": "conflicto",
+        "it": "conflitto",
+        "pt": "conflito",
+        "pl": "konflikt",
+        "ru": "конфликт",
+        "zh": "冲突",
+        "ja": "対立、紛争"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "consent",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/kənˈsɛnt/",
+      "definition": "permission to do something",
+      "examples": [
+        "You need your parents' consent to go on the trip."
+      ],
+      "translations": {
+        "uk": "згода",
+        "de": "Zustimmung",
+        "fr": "consentement",
+        "es": "consentimiento",
+        "it": "consenso",
+        "pt": "consentimento",
+        "pl": "zgoda",
+        "ru": "согласие",
+        "zh": "同意",
+        "ja": "同意"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "contrast",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈkɑntræst/",
+      "definition": "a clear difference between things",
+      "examples": [
+        "There is a sharp contrast between the two cities."
+      ],
+      "translations": {
+        "uk": "контраст",
+        "de": "Kontrast",
+        "fr": "contraste",
+        "es": "contraste",
+        "it": "contrasto",
+        "pt": "contraste",
+        "pl": "kontrast",
+        "ru": "контраст",
+        "zh": "对比",
+        "ja": "対照"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "crew",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/kru/",
+      "definition": "a group of people who work together, especially on a ship or plane",
+      "examples": [
+        "The crew welcomed us on board."
+      ],
+      "translations": {
+        "uk": "екіпаж, бригада",
+        "de": "Besatzung",
+        "fr": "équipage",
+        "es": "tripulación",
+        "it": "equipaggio",
+        "pt": "tripulação",
+        "pl": "załoga",
+        "ru": "экипаж, бригада",
+        "zh": "全体船员，机组人员",
+        "ja": "乗組員"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "fortune",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈfɔrtʃən/",
+      "definition": "a very large amount of money, or luck",
+      "examples": [
+        "He made a fortune selling software."
+      ],
+      "translations": {
+        "uk": "статок, удача",
+        "de": "Vermögen",
+        "fr": "fortune",
+        "es": "fortuna",
+        "it": "fortuna",
+        "pt": "fortuna",
+        "pl": "fortuna",
+        "ru": "состояние, удача",
+        "zh": "财富，运气",
+        "ja": "財産、運"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "instinct",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɪnstɪŋkt/",
+      "definition": "a natural feeling that makes you act without thinking",
+      "examples": [
+        "Trust your instincts."
+      ],
+      "translations": {
+        "uk": "інстинкт, чуття",
+        "de": "Instinkt",
+        "fr": "instinct",
+        "es": "instinto",
+        "it": "istinto",
+        "pt": "instinto",
+        "pl": "instynkt",
+        "ru": "инстинкт, чутьё",
+        "zh": "本能，直觉",
+        "ja": "本能、直感"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "obstacle",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈɑbstəkəl/",
+      "definition": "something that makes it difficult to do something",
+      "examples": [
+        "Lack of money is the main obstacle."
+      ],
+      "translations": {
+        "uk": "перешкода",
+        "de": "Hindernis",
+        "fr": "obstacle",
+        "es": "obstáculo",
+        "it": "ostacolo",
+        "pt": "obstáculo",
+        "pl": "przeszkoda",
+        "ru": "препятствие",
+        "zh": "障碍",
+        "ja": "障害"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "possession",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/pəˈzɛʃən/",
+      "definition": "something that you own",
+      "examples": [
+        "He lost all his possessions in the fire."
+      ],
+      "translations": {
+        "uk": "власність, майно",
+        "de": "Besitz",
+        "fr": "bien",
+        "es": "posesión",
+        "it": "possedimento",
+        "pt": "pertence",
+        "pl": "dobytek",
+        "ru": "имущество, собственность",
+        "zh": "财产",
+        "ja": "所有物"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "reputation",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˌrɛpjəˈteɪʃən/",
+      "definition": "the opinion people have about someone or something",
+      "examples": [
+        "The restaurant has a good reputation."
+      ],
+      "translations": {
+        "uk": "репутація",
+        "de": "Ruf",
+        "fr": "réputation",
+        "es": "reputación",
+        "it": "reputazione",
+        "pt": "reputação",
+        "pl": "reputacja",
+        "ru": "репутация",
+        "zh": "名声",
+        "ja": "評判"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "sequence",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈsikwəns/",
+      "definition": "a series of things that follow in a particular order",
+      "examples": [
+        "Put the pictures in the right sequence."
+      ],
+      "translations": {
+        "uk": "послідовність",
+        "de": "Reihenfolge",
+        "fr": "séquence",
+        "es": "secuencia",
+        "it": "sequenza",
+        "pt": "sequência",
+        "pl": "kolejność",
+        "ru": "последовательность",
+        "zh": "顺序",
+        "ja": "順序"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "shelter",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈʃɛltɚ/",
+      "definition": "a place that protects you from bad weather or danger",
+      "examples": [
+        "They found shelter from the rain under a tree."
+      ],
+      "translations": {
+        "uk": "притулок, укриття",
+        "de": "Unterschlupf",
+        "fr": "abri",
+        "es": "refugio",
+        "it": "riparo",
+        "pt": "abrigo",
+        "pl": "schronienie",
+        "ru": "укрытие, приют",
+        "zh": "避难所",
+        "ja": "避難所"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "summary",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈsʌməri/",
+      "definition": "a short description of the main facts",
+      "examples": [
+        "Write a summary of the article."
+      ],
+      "translations": {
+        "uk": "стислий виклад",
+        "de": "Zusammenfassung",
+        "fr": "résumé",
+        "es": "resumen",
+        "it": "riassunto",
+        "pt": "resumo",
+        "pl": "streszczenie",
+        "ru": "краткое изложение",
+        "zh": "摘要",
+        "ja": "要約"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "tension",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ˈtɛnʃən/",
+      "definition": "a feeling of worry or of unfriendliness between people",
+      "examples": [
+        "There was tension in the room."
+      ],
+      "translations": {
+        "uk": "напруга",
+        "de": "Spannung",
+        "fr": "tension",
+        "es": "tensión",
+        "it": "tensione",
+        "pt": "tensão",
+        "pl": "napięcie",
+        "ru": "напряжение",
+        "zh": "紧张",
+        "ja": "緊張"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    },
+    {
+      "word": "volume",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Environment",
+      "ipa": "/ˈvɑljum/",
+      "definition": "the amount of space or sound, or how loud something is",
+      "examples": [
+        "Can you turn the volume down?"
+      ],
+      "translations": {
+        "uk": "гучність, обсяг",
+        "de": "Lautstärke",
+        "fr": "volume",
+        "es": "volumen",
+        "it": "volume",
+        "pt": "volume",
+        "pl": "głośność",
+        "ru": "громкость, объём",
+        "zh": "音量，体积",
+        "ja": "音量"
+      },
+      "word_type": "word",
+      "ielts_category": null
+    }
+  ]
+}
