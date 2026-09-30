@@ -267,7 +267,7 @@
       ]
     },
     {
-      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 1, "topic": "Daily Life",
+      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 1, "topic": "Daily Life", "grammar": "present-simple",
       "title": "Present Simple: he, she, it", "description": "With he, she and it, the verb gets -s: she works, he goes, it closes.",
       "exercises": [
         { "type": "match", "prompt": "Match: I … → he …", "pairs": { "I work": "he works", "I go": "he goes", "I have": "he has", "I study": "he studies" }, "explanation": "he / she / it: + s (works), + es after o, sh, ch, s, x (goes, watches), y → ies (studies); have → has." },

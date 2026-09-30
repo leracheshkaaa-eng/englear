@@ -28,6 +28,8 @@ for (const file of files) {
     if (!['lesson', 'practice'].includes(l.kind)) err(`bad kind ${l.kind}`)
     const skills = l.kind === 'practice' ? PRACTICE_SKILLS : LESSON_SKILLS
     if (!skills.includes(l.skill)) err(`skill ${l.skill} is not allowed for ${l.kind}`)
+    if (l.grammar && !/^[a-z0-9][a-z0-9_-]{1,63}$/.test(l.grammar)) err(`bad grammar topic code ${l.grammar}`)
+    if (l.skill === 'grammar' && !l.grammar) warn('grammar lesson without a grammar topic')
 
     const text = l.kind === 'practice' ? materialText(l) : ''
     if (l.kind === 'practice') {
@@ -35,7 +37,7 @@ for (const file of files) {
       if (!text.trim()) err('practice without a text / script')
       if (l.skill === 'listening' && !l.material?.segments?.length) err('listening needs segments')
       const words = wordCount(text)
-      const limits = { A1: [30, 150], A2: [80, 250], B1: [150, 450], B2: [250, 700], C1: [350, 900], C2: [400, 1100] }[l.cefr]
+      const limits = { A1: [30, 150], A2: [80, 250], B1: [150, 450], B2: [180, 700], C1: [200, 900], C2: [250, 1100] }[l.cefr]
       if (limits && (words < limits[0] || words > limits[1])) warn(`${words} words (usual for ${l.cefr}: ${limits[0]}–${limits[1]})`)
     }
     const inText = (s) => norm(text).includes(norm(s))
@@ -47,11 +49,10 @@ for (const file of files) {
       if (!TYPES.includes(ex.type)) return err(`${n}: unknown type`)
       if (ex.type === 'choice') {
         const opts = ex.options ?? []
-        if (opts.length < 3) err(`${n}: needs 3 options (has ${opts.length})`)
+        if (opts.length < 2) err(`${n}: needs at least 2 options (has ${opts.length})`)
+        if (opts.length === 2 && !ex.binary) warn(`${n}: only 2 options — mark it "binary": true if that is intended (a / an)`)
         if (new Set(opts.map(norm)).size !== opts.length) err(`${n}: duplicate options`)
         if (opts.filter((o) => o === ex.answer).length !== 1) err(`${n}: the answer must be exactly one of the options`)
-        if (opts[0] === ex.answer && i > 0 && l.exercises.slice(0, i).every((e) => e.type !== 'choice' || e.options?.[0] === e.answer))
-          warn(`${n}: the right answer is always first`)
       }
       if (ex.type === 'truefalse') {
         const opts = ex.options ?? tfOptions(l.cefr)

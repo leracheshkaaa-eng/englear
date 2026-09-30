@@ -1,0 +1,298 @@
+{
+  "package": "batch2",
+  "description": "Grammar lessons A1–B1 on the main grammar topics; reading and listening practice B2–C1. Imported as drafts.",
+  "lessons": [
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 2, "topic": "Daily Life", "grammar": "to-be",
+      "title": "Verb “to be”: am, is, are", "description": "I am, you are, he / she / it is — in statements, negatives and questions.",
+      "exercises": [
+        { "type": "match", "prompt": "Match the words with the right form of “to be”.", "pairs": { "I": "am", "she": "is", "they": "are" }, "explanation": "I → am; he, she, it → is; you, we, they → are." },
+        { "type": "fill", "prompt": "I ___ a student.", "answer": "am", "explanation": "I → am" },
+        { "type": "fill", "prompt": "My brother ___ ten years old.", "answer": "is", "explanation": "my brother = he → is" },
+        { "type": "fill", "prompt": "We ___ from Spain.", "answer": "are", "explanation": "we → are" },
+        { "type": "fill", "prompt": "The cats ___ in the garden.", "answer": "are", "explanation": "the cats = they → are" },
+        { "type": "choice", "prompt": "___ you happy?", "options": ["Are", "Is", "Am"], "answer": "Are", "explanation": "Questions: the verb comes first. you → are" },
+        { "type": "choice", "prompt": "She ___ not at home.", "options": ["is", "are", "am"], "answer": "is", "explanation": "she → is; negative: is not (isn’t)" },
+        { "type": "fill", "prompt": "They ___ not my friends.", "answer": "are", "explanation": "they → are; negative: are not (aren’t)" },
+        { "type": "choice", "prompt": "It ___ cold today.", "options": ["am", "is", "are"], "answer": "is", "explanation": "it → is" },
+        { "type": "order", "prompt": "", "order": ["I", "am", "from", "Italy"], "explanation": "I am from Italy." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 3, "topic": "Basic Words", "grammar": "articles-a-an",
+      "title": "Articles: a or an", "description": "“a” before a consonant sound, “an” before a vowel sound.",
+      "exercises": [
+        { "type": "choice", "prompt": "I eat ___ apple every day.", "options": ["a", "an"], "answer": "an", "binary": true, "explanation": "apple starts with a vowel sound → an" },
+        { "type": "choice", "prompt": "She has ___ dog.", "options": ["a", "an"], "answer": "a", "binary": true, "explanation": "dog starts with a consonant sound → a" },
+        { "type": "choice", "prompt": "Take ___ umbrella — it’s raining.", "options": ["a", "an"], "answer": "an", "binary": true, "explanation": "umbrella starts with a vowel sound → an" },
+        { "type": "choice", "prompt": "My sister is ___ teacher.", "options": ["a", "an"], "answer": "a", "binary": true, "explanation": "teacher → a" },
+        { "type": "choice", "prompt": "Wait ___ hour, please.", "options": ["a", "an"], "answer": "an", "binary": true, "explanation": "In “hour” the h is silent: it starts with a vowel sound → an" },
+        { "type": "choice", "prompt": "He studies at ___ university.", "options": ["a", "an"], "answer": "a", "binary": true, "explanation": "“university” starts with the sound /j/ (you) → a" },
+        { "type": "choice", "prompt": "There is ___ egg in the fridge.", "options": ["a", "an"], "answer": "an", "binary": true, "explanation": "egg → an" },
+        { "type": "choice", "prompt": "It is ___ big egg.", "options": ["a", "an"], "answer": "a", "binary": true, "explanation": "The next word is “big” (a consonant sound) → a" },
+        { "type": "fill", "prompt": "I have ___ orange and a banana.", "answer": "an", "explanation": "orange → an" },
+        { "type": "fill", "prompt": "My dad is ___ engineer.", "answer": "an", "explanation": "engineer → an" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 4, "topic": "Basic Words", "grammar": "plural-nouns",
+      "title": "Plural nouns", "description": "cats, boxes, babies — and irregular plurals: men, children, teeth.",
+      "exercises": [
+        { "type": "fill", "prompt": "one cat — two ___", "answer": "cats", "explanation": "Most nouns: + s" },
+        { "type": "fill", "prompt": "one box — two ___", "answer": "boxes", "explanation": "After s, x, ch, sh: + es" },
+        { "type": "fill", "prompt": "one bus — two ___", "answer": "buses", "explanation": "After s: + es" },
+        { "type": "fill", "prompt": "one baby — two ___", "answer": "babies", "explanation": "consonant + y → ies" },
+        { "type": "fill", "prompt": "one knife — two ___", "answer": "knives", "explanation": "-fe / -f → ves: knife → knives" },
+        { "type": "fill", "prompt": "one child — two ___", "answer": "children", "explanation": "Irregular: child → children" },
+        { "type": "fill", "prompt": "one man — two ___", "answer": "men", "explanation": "Irregular: man → men" },
+        { "type": "fill", "prompt": "one tooth — two ___", "answer": "teeth", "explanation": "Irregular: tooth → teeth" },
+        { "type": "choice", "prompt": "There are two ___ in the kitchen.", "options": ["mouses", "mice", "mouse"], "answer": "mice", "explanation": "Irregular: mouse → mice" },
+        { "type": "match", "prompt": "Match the singular with the plural.", "pairs": { "foot": "feet", "woman": "women", "person": "people" }, "explanation": "Irregular plurals: foot → feet, woman → women, person → people." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 5, "topic": "Home", "grammar": "there-is-are",
+      "title": "There is / there are", "description": "There is + one thing (or something you can’t count), there are + many things.",
+      "exercises": [
+        { "type": "fill", "prompt": "There ___ a book on the table.", "answer": "is", "explanation": "one book → there is" },
+        { "type": "fill", "prompt": "There ___ two chairs in the room.", "answer": "are", "explanation": "two chairs → there are" },
+        { "type": "fill", "prompt": "There ___ some milk in the fridge.", "answer": "is", "explanation": "milk is uncountable → there is" },
+        { "type": "choice", "prompt": "___ there a bank near here?", "options": ["Is", "Are", "Am"], "answer": "Is", "explanation": "Question: Is there + one thing?" },
+        { "type": "choice", "prompt": "There ___ three windows in my bedroom.", "options": ["is", "are", "am"], "answer": "are", "explanation": "three windows → there are" },
+        { "type": "fill", "prompt": "There ___ not any eggs in the box.", "answer": "are", "explanation": "eggs (plural) → there are not (aren’t) any" },
+        { "type": "choice", "prompt": "___ there any shops in your street?", "options": ["Is", "Are", "Do"], "answer": "Are", "explanation": "Question with a plural: Are there any…?" },
+        { "type": "choice", "prompt": "There ___ an apple in my bag.", "options": ["is", "are", "have"], "answer": "is", "explanation": "one apple → there is" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A1", "sequence": 6, "topic": "Daily Life", "grammar": "can-ability",
+      "title": "Can / can’t", "description": "What you can and can’t do: can + verb (without “to”).",
+      "exercises": [
+        { "type": "choice", "prompt": "She ___ swim very well.", "options": ["can", "cans", "can to"], "answer": "can", "explanation": "can is the same for all persons; no “to” after it" },
+        { "type": "choice", "prompt": "___ you play the piano?", "options": ["Can", "Do", "Are"], "answer": "Can", "explanation": "Question: Can + you + verb?" },
+        { "type": "choice", "prompt": "He can ___ very fast.", "options": ["runs", "run", "running"], "answer": "run", "explanation": "can + verb without -s: can run" },
+        { "type": "fill", "prompt": "I can ___ three languages. (speak)", "answer": "speak", "explanation": "can + speak" },
+        { "type": "fill", "prompt": "Birds can fly, but penguins ___.", "answer": "can't", "accept": ["cannot", "can not", "can’t"], "explanation": "negative: can’t (cannot)" },
+        { "type": "choice", "prompt": "Sorry, I ___ come to your party. I’m ill.", "options": ["can", "can't", "can to"], "answer": "can't", "explanation": "I’m ill → I can’t come" },
+        { "type": "choice", "prompt": "My little brother ___ read yet. He is only three.", "options": ["can't", "can", "cans"], "answer": "can't", "explanation": "He is only three → he can’t read yet" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 2, "topic": "Daily Life", "grammar": "present-continuous",
+      "title": "Present Continuous", "description": "What is happening now: am / is / are + verb-ing.",
+      "exercises": [
+        { "type": "match", "prompt": "Match the verb with its -ing form.", "pairs": { "swim": "swimming", "make": "making", "play": "playing" }, "explanation": "swim → swimming (double m), make → making (no e), play → playing." },
+        { "type": "fill", "prompt": "She ___ a book now. (read)", "answer": "is reading", "explanation": "she + is + reading" },
+        { "type": "fill", "prompt": "They ___ football at the moment. (play)", "answer": "are playing", "explanation": "they + are + playing" },
+        { "type": "fill", "prompt": "I ___ an email right now. (write)", "answer": "am writing", "explanation": "I + am + writing (write → writing)" },
+        { "type": "choice", "prompt": "Look! It ___.", "options": ["rains", "is raining", "rain"], "answer": "is raining", "explanation": "“Look!” → it is happening now" },
+        { "type": "choice", "prompt": "What ___ you doing?", "options": ["are", "is", "do"], "answer": "are", "explanation": "What are you doing?" },
+        { "type": "fill", "prompt": "He ___ TV now. (not / watch)", "answer": "is not watching", "accept": ["isn't watching", "isn’t watching"], "explanation": "negative: is not (isn’t) watching" },
+        { "type": "choice", "prompt": "Listen! The baby ___.", "options": ["cries", "is crying", "cry"], "answer": "is crying", "explanation": "“Listen!” → it is happening now" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 3, "topic": "Daily Life", "grammar": "past-simple",
+      "title": "Past Simple: regular and irregular verbs", "description": "visited, watched — and went, bought, saw.",
+      "exercises": [
+        { "type": "match", "prompt": "Match the verb with its past form.", "pairs": { "go": "went", "see": "saw", "eat": "ate", "take": "took" }, "explanation": "Irregular verbs have their own past forms." },
+        { "type": "fill", "prompt": "Yesterday I ___ my grandma. (visit)", "answer": "visited", "explanation": "regular verb: + ed" },
+        { "type": "fill", "prompt": "We ___ to the cinema last night. (go)", "answer": "went", "explanation": "go → went" },
+        { "type": "fill", "prompt": "She ___ a new dress on Saturday. (buy)", "answer": "bought", "explanation": "buy → bought" },
+        { "type": "fill", "prompt": "They ___ a film yesterday. (watch)", "answer": "watched", "explanation": "regular verb: + ed" },
+        { "type": "choice", "prompt": "Did you ___ my message?", "options": ["saw", "see", "seen"], "answer": "see", "explanation": "did + verb without the past form: did you see" },
+        { "type": "choice", "prompt": "I ___ him last week.", "options": ["meet", "met", "meeted"], "answer": "met", "explanation": "meet → met" },
+        { "type": "fill", "prompt": "He ___ me yesterday. (not / call)", "answer": "did not call", "accept": ["didn't call", "didn’t call"], "explanation": "negative: did not (didn’t) + verb" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 4, "topic": "Daily Life", "grammar": "comparatives",
+      "title": "Comparatives", "description": "taller, bigger, more interesting — and better, worse.",
+      "exercises": [
+        { "type": "match", "prompt": "Match the adjective with its comparative.", "pairs": { "big": "bigger", "happy": "happier", "good": "better", "bad": "worse" }, "explanation": "big → bigger (double g), happy → happier (y → i), good → better, bad → worse." },
+        { "type": "fill", "prompt": "My brother is ___ than me. (tall)", "answer": "taller", "explanation": "short adjective: + er" },
+        { "type": "fill", "prompt": "This book is ___ than that one. (interesting)", "answer": "more interesting", "explanation": "long adjective: more + adjective" },
+        { "type": "fill", "prompt": "Today is ___ than yesterday. (hot)", "answer": "hotter", "explanation": "hot → hotter (double t)" },
+        { "type": "choice", "prompt": "A plane is ___ than a car.", "options": ["faster", "more fast", "fastest"], "answer": "faster", "explanation": "fast → faster" },
+        { "type": "choice", "prompt": "This exercise is ___ than the last one.", "options": ["easyer", "easier", "more easy"], "answer": "easier", "explanation": "easy → easier (y → i)" },
+        { "type": "fill", "prompt": "My test result was ___ than yours. (bad)", "answer": "worse", "explanation": "bad → worse" },
+        { "type": "choice", "prompt": "Is London ___ than Paris?", "options": ["big", "bigger", "more big"], "answer": "bigger", "explanation": "big → bigger" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 5, "topic": "Daily Life", "grammar": "going-to",
+      "title": "Be going to", "description": "Plans and predictions: am / is / are going to + verb.",
+      "exercises": [
+        { "type": "fill", "prompt": "I ___ my aunt tomorrow. (be going to / visit)", "answer": "am going to visit", "accept": ["’m going to visit", "'m going to visit"], "explanation": "I + am + going to + visit" },
+        { "type": "choice", "prompt": "Look at those black clouds! It ___ rain.", "options": ["is going to", "going to", "is go to"], "answer": "is going to", "explanation": "a prediction from what we can see → is going to" },
+        { "type": "fill", "prompt": "They ___ a new car. (be going to / buy)", "answer": "are going to buy", "explanation": "they + are + going to + buy" },
+        { "type": "choice", "prompt": "What ___ you going to do this weekend?", "options": ["are", "is", "do"], "answer": "are", "explanation": "What are you going to do?" },
+        { "type": "fill", "prompt": "She ___ tonight — she’s too tired. (not / be going to / study)", "answer": "is not going to study", "accept": ["isn't going to study", "isn’t going to study"], "explanation": "negative: is not (isn’t) going to" },
+        { "type": "choice", "prompt": "We’re going to ___ a cake for Mum’s birthday.", "options": ["make", "making", "makes"], "answer": "make", "explanation": "going to + verb (without -s / -ing)" },
+        { "type": "choice", "prompt": "___ he going to come to the party?", "options": ["Is", "Are", "Does"], "answer": "Is", "explanation": "Question: Is he going to…?" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "B1", "sequence": 1, "topic": "Daily Life", "grammar": "present-perfect",
+      "title": "Present Perfect", "description": "have / has + past participle: experience, “for” and “since”, “just”.",
+      "exercises": [
+        { "type": "match", "prompt": "Match the verb with its past participle.", "pairs": { "go": "gone", "write": "written", "take": "taken", "do": "done" }, "explanation": "Present Perfect uses the past participle (the 3rd form)." },
+        { "type": "fill", "prompt": "I ___ this film twice. (see)", "answer": "have seen", "explanation": "I + have + seen" },
+        { "type": "fill", "prompt": "She ___ to Japan. (never / be)", "answer": "has never been", "explanation": "she + has + never + been" },
+        { "type": "choice", "prompt": "Have you ever ___ sushi?", "options": ["ate", "eaten", "eat"], "answer": "eaten", "explanation": "have + past participle: eaten" },
+        { "type": "choice", "prompt": "We ___ here since 2020.", "options": ["live", "have lived", "are living"], "answer": "have lived", "explanation": "since + a point in time → Present Perfect" },
+        { "type": "choice", "prompt": "He has worked here ___ five years.", "options": ["since", "for", "ago"], "answer": "for", "explanation": "for + a period of time" },
+        { "type": "choice", "prompt": "I’ve known her ___ 2015.", "options": ["for", "since", "ago"], "answer": "since", "explanation": "since + a point in time" },
+        { "type": "fill", "prompt": "They ___ dinner — the plates are still on the table. (just / finish)", "answer": "have just finished", "explanation": "have + just + finished" },
+        { "type": "choice", "prompt": "___ she ever been to London?", "options": ["Has", "Have", "Did"], "answer": "Has", "explanation": "she → has; Has she ever been…?" }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "B1", "sequence": 2, "topic": "Daily Life", "grammar": "first-conditional",
+      "title": "First conditional", "description": "Real possibilities: If + present, will + verb.",
+      "exercises": [
+        { "type": "fill", "prompt": "If it ___ tomorrow, we will stay at home. (rain)", "answer": "rains", "explanation": "if + present simple: if it rains" },
+        { "type": "fill", "prompt": "If you study, you ___ the exam. (pass)", "answer": "will pass", "explanation": "result: will + verb" },
+        { "type": "choice", "prompt": "If I see him, I ___ tell him.", "options": ["will", "would", "am"], "answer": "will", "explanation": "first conditional: will + verb" },
+        { "type": "choice", "prompt": "We’ll miss the bus if we ___ hurry.", "options": ["don't", "won't", "didn't"], "answer": "don't", "explanation": "no “will” after if: if we don’t hurry" },
+        { "type": "fill", "prompt": "If she ___, I will call her. (not / come)", "answer": "does not come", "accept": ["doesn't come", "doesn’t come"], "explanation": "if + present simple negative: does not (doesn’t) come" },
+        { "type": "choice", "prompt": "What will you do if you ___ the lottery?", "options": ["win", "will win", "won"], "answer": "win", "explanation": "if + present simple: if you win" },
+        { "type": "choice", "prompt": "If you heat ice, it ___.", "options": ["melts", "melted", "would melt"], "answer": "melts", "explanation": "a fact that is always true (zero conditional): if + present, present" },
+        { "type": "fill", "prompt": "I ___ you if I need help. (call)", "answer": "will call", "explanation": "result: will + verb" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "B2", "sequence": 1, "topic": "Work",
+      "title": "Is the four-day week the future?", "description": "An article about a trial in which employees worked four days a week for the same pay.",
+      "material": { "type": "article", "body": "Imagine working four days a week for the same salary. For a growing number of companies, this is no longer a dream. Last year, sixty companies in one European country took part in a six-month trial in which employees worked 80% of their usual hours for 100% of their pay, on the condition that they kept the same level of productivity.\n\nThe results surprised many people. Most of the companies reported that productivity stayed the same or even improved, and the majority decided to continue with the shorter week after the trial ended. Employees said they felt less stressed and slept better, and fewer of them took sick days.\n\nHowever, the four-day week is not suitable for every business. Hospitals, schools and shops need staff to be available every day, so they cannot simply close on Fridays. Some managers also worry that squeezing five days of work into four could make the working day longer and more tiring. In a few of the companies taking part, staff admitted that they had to cut down on meetings and take shorter lunch breaks to get everything done.\n\nSupporters argue that the key is to work smarter, not longer. They point out that many hours in a typical office are lost to unnecessary meetings, emails and interruptions. If these are reduced, they say, employees can achieve just as much in less time.\n\nWhether the idea will spread is still uncertain, but one thing is clear: the traditional five-day week is being questioned as never before." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "salary": "the money you earn for your job", "productivity": "how much work is done in a certain time", "trial": "a test to see if something works", "interruption": "something that stops you while you are doing something" } },
+        { "type": "truefalse", "prompt": "Employees in the trial were paid less than usual.", "answer": "false", "explanation": "They worked 80% of their hours “for 100% of their pay”." },
+        { "type": "choice", "prompt": "What was the condition of the trial?", "options": ["Employees had to work longer days.", "Employees had to keep the same level of productivity.", "Companies had to hire more staff."], "answer": "Employees had to keep the same level of productivity.", "explanation": "“on the condition that they kept the same level of productivity”" },
+        { "type": "truefalse", "prompt": "Most of the companies wanted to keep the shorter week after the trial.", "answer": "true", "explanation": "“the majority decided to continue with the shorter week”" },
+        { "type": "choice", "prompt": "Why is a four-day week difficult for hospitals and schools?", "options": ["They need staff to be available every day.", "Their staff do not want it.", "It is too expensive for them."], "answer": "They need staff to be available every day.", "explanation": "“Hospitals, schools and shops need staff to be available every day”" },
+        { "type": "truefalse", "prompt": "In some companies, staff had fewer meetings during the trial.", "answer": "true", "explanation": "“they had to cut down on meetings”" },
+        { "type": "truefalse", "prompt": "The trial made the companies more money.", "answer": "not_given", "explanation": "The article talks about productivity, not about the companies’ income." },
+        { "type": "fill", "prompt": "Supporters say the key is to work ___, not longer.", "answer": "smarter", "explanation": "“the key is to work smarter, not longer”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "B2", "sequence": 2, "topic": "Shopping",
+      "title": "A letter of complaint", "description": "A customer writes to a shop about a late and damaged delivery.",
+      "material": { "type": "letter", "body": "Dear Customer Service Team,\n\nI am writing to complain about a coffee machine that I ordered from your website on 3 March (order number 58214).\n\nThe machine was supposed to arrive within five working days, but it was only delivered on 17 March, almost two weeks later. Nobody contacted me to explain the delay, and when I called your helpline, I was kept waiting for over forty minutes before the line went dead.\n\nUnfortunately, the delay was not the only problem. When I finally opened the box, I discovered that the water tank was cracked. I have not used the machine at all, as I am worried that it might leak and damage my kitchen worktop.\n\nI have been a loyal customer of your company for several years and I have always been satisfied with your products and service, which is why this experience has been so disappointing.\n\nI would therefore like you to either replace the machine with a new one or give me a full refund. I would also appreciate it if you could arrange for the damaged machine to be collected from my home, as it is too heavy for me to take to the post office.\n\nI look forward to hearing from you within the next seven days.\n\nYours faithfully,\nHelen Carter" },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "delay": "a time when something happens later than planned", "cracked": "broken, with a thin line on the surface", "loyal": "always choosing the same company or person", "refund": "money that is given back to you" } },
+        { "type": "choice", "prompt": "Why is Helen writing?", "options": ["to order a new coffee machine", "to complain about a product and its delivery", "to thank the company for its service"], "answer": "to complain about a product and its delivery", "explanation": "“I am writing to complain about a coffee machine”" },
+        { "type": "fill", "prompt": "The machine arrived on ___ March.", "answer": "17", "accept": ["17th", "the 17th", "seventeenth"], "explanation": "“it was only delivered on 17 March”" },
+        { "type": "truefalse", "prompt": "Helen spoke to someone at the helpline about the delay.", "answer": "false", "explanation": "She waited over forty minutes and then “the line went dead”." },
+        { "type": "choice", "prompt": "What was wrong with the machine?", "options": ["It did not work.", "The water tank was cracked.", "Some parts were missing."], "answer": "The water tank was cracked.", "explanation": "“I discovered that the water tank was cracked”" },
+        { "type": "truefalse", "prompt": "Helen has already used the machine a few times.", "answer": "false", "explanation": "“I have not used the machine at all”" },
+        { "type": "truefalse", "prompt": "Helen has bought from this company before.", "answer": "true", "explanation": "“I have been a loyal customer of your company for several years”" },
+        { "type": "choice", "prompt": "What does Helen want the company to do?", "options": ["give her a discount on her next order", "repair the machine at her home", "replace the machine or give her money back"], "answer": "replace the machine or give her money back", "explanation": "“either replace the machine with a new one or give me a full refund”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "C1", "sequence": 1, "topic": "Science",
+      "title": "Why bad news sticks", "description": "An article about the negativity bias: why negative experiences stay with us longer.",
+      "material": { "type": "article", "body": "Think back over the past week. Chances are that a single critical comment from a colleague is easier to recall than the several compliments you received. Psychologists have a name for this tendency: the negativity bias. Put simply, negative experiences tend to have a greater impact on our thoughts, feelings and memories than positive ones of equal intensity.\n\nThe most widely accepted explanation is evolutionary. For our distant ancestors, overlooking a threat, such as a predator hiding in the grass, could be fatal, whereas missing an opportunity, like a tree full of fruit, was rarely a matter of life and death. Individuals who paid close attention to danger were therefore more likely to survive and pass on their genes, and the tendency has stayed with us.\n\nIn the modern world, however, the bias can work against us. It helps to explain why news outlets focus on disasters and conflicts: stories that trigger anxiety attract more attention and are shared more widely. At a personal level, it can distort how we judge ourselves and others. One unpleasant argument may colour our view of a relationship that is, on the whole, a happy one.\n\nThe good news is that the effect can be counterbalanced. Some researchers suggest that for a relationship to feel healthy, positive interactions need to outnumber negative ones by a considerable margin. Simple habits may also help: deliberately noting three things that went well each day, for instance, trains attention to register the positive as well as the negative.\n\nNone of this means ignoring problems. The aim is not to replace realism with forced optimism, but to see the whole picture rather than only its darkest corners." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "overlook": "to fail to notice something", "fatal": "causing death", "distort": "to change something so that it is no longer accurate", "counterbalance": "to reduce an effect by having the opposite effect" } },
+        { "type": "choice", "prompt": "According to the first paragraph, what is the negativity bias?", "options": ["People receive more criticism than compliments.", "Negative experiences affect us more than positive ones of the same strength.", "People quickly forget every compliment they hear."], "answer": "Negative experiences affect us more than positive ones of the same strength.", "explanation": "“negative experiences tend to have a greater impact … than positive ones of equal intensity”" },
+        { "type": "truefalse", "prompt": "For our ancestors, missing an opportunity was usually more dangerous than missing a threat.", "answer": "false", "explanation": "Overlooking a threat “could be fatal”; missing an opportunity “was rarely a matter of life and death”." },
+        { "type": "choice", "prompt": "Why, according to the text, do news outlets focus on disasters?", "options": ["Such stories attract more attention and are shared more.", "Journalists prefer serious topics.", "There are more disasters today than in the past."], "answer": "Such stories attract more attention and are shared more.", "explanation": "“stories that trigger anxiety attract more attention and are shared more widely”" },
+        { "type": "truefalse", "prompt": "One argument can make a basically happy relationship seem worse than it is.", "answer": "true", "explanation": "“One unpleasant argument may colour our view of a relationship that is, on the whole, a happy one.”" },
+        { "type": "truefalse", "prompt": "Writing down three good things each day is one of the habits the writer mentions.", "answer": "true", "explanation": "“deliberately noting three things that went well each day”" },
+        { "type": "truefalse", "prompt": "The writer thinks that negative news stories should be banned.", "answer": "not_given", "explanation": "The writer explains why the news focuses on disasters but says nothing about banning such stories." },
+        { "type": "fill", "prompt": "The aim is not to replace realism with forced ___.", "answer": "optimism", "explanation": "“The aim is not to replace realism with forced optimism”" },
+        { "type": "choice", "prompt": "What is the writer’s main conclusion?", "options": ["We should ignore our problems.", "We should see the whole picture, not only the negative parts.", "We should stop reading the news."], "answer": "We should see the whole picture, not only the negative parts.", "explanation": "“to see the whole picture rather than only its darkest corners”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "reading", "cefr": "C1", "sequence": 2, "topic": "Culture",
+      "title": "Review: The Glass Orchard", "description": "A review of a (fictional) novel about a family and their apple farm in Norway.",
+      "material": { "type": "review", "body": "The Glass Orchard, the second novel by Mara Lindqvist, follows three generations of a family who run a struggling apple farm on the west coast of Norway. When the youngest daughter, Ingrid, returns from Oslo after her grandfather’s death, she discovers that the farm is deep in debt and that her mother has been hiding letters from a buyer who wants the land.\n\nLindqvist’s greatest strength is her ability to capture the landscape. Her descriptions of the fjord in winter, the orchard in blossom and the long summer evenings are so vivid that you can almost smell the apples. Her characters are equally well drawn, particularly Ingrid’s mother, Solveig, whose silence hides both pride and fear.\n\nThe novel is not without its flaws. The middle section drags, with several chapters in which very little happens, and a subplot involving Ingrid’s former boyfriend feels unnecessary. Some readers may also find the ending too neat: after so much conflict, every problem is resolved in the space of a few pages.\n\nNevertheless, these weaknesses do not spoil what is, overall, a moving and beautifully written book about family, loyalty and the difficulty of letting go. Readers who enjoyed Lindqvist’s debut will not be disappointed, and newcomers could hardly find a better place to start." },
+      "exercises": [
+        { "type": "match", "prompt": "Before you read: match the words with their meanings.", "pairs": { "vivid": "very clear and full of detail", "flaw": "a mistake or weakness", "drag": "to seem to go on for too long", "debut": "someone’s first book, film or show" } },
+        { "type": "choice", "prompt": "What is the novel mainly about?", "options": ["a love story in Oslo", "a family and their apple farm", "a journey across Norway"], "answer": "a family and their apple farm", "explanation": "“follows three generations of a family who run a struggling apple farm”" },
+        { "type": "choice", "prompt": "What does Ingrid discover when she comes home?", "options": ["Her grandfather has sold the farm.", "The farm is in debt and her mother has hidden letters from a buyer.", "Her mother wants to move to Oslo."], "answer": "The farm is in debt and her mother has hidden letters from a buyer.", "explanation": "“the farm is deep in debt and … her mother has been hiding letters from a buyer”" },
+        { "type": "truefalse", "prompt": "This is the first novel Lindqvist has written.", "answer": "false", "explanation": "It is her “second novel”; the reviewer also mentions her debut." },
+        { "type": "choice", "prompt": "What does the reviewer praise most?", "options": ["the descriptions of the landscape", "the fast-moving plot", "the happy ending"], "answer": "the descriptions of the landscape", "explanation": "“Lindqvist’s greatest strength is her ability to capture the landscape.”" },
+        { "type": "truefalse", "prompt": "The reviewer thinks the middle of the book is too slow.", "answer": "true", "explanation": "“The middle section drags, with several chapters in which very little happens”" },
+        { "type": "truefalse", "prompt": "The book has won a literary prize.", "answer": "not_given", "explanation": "The review does not mention any prizes." },
+        { "type": "choice", "prompt": "Who does the reviewer recommend the book to?", "options": ["only readers of her first book", "only people who know Norway", "readers of her first book and new readers"], "answer": "readers of her first book and new readers", "explanation": "“Readers who enjoyed Lindqvist’s debut will not be disappointed, and newcomers could hardly find a better place to start.”" }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "B2", "sequence": 1, "topic": "Work",
+      "title": "Podcast: working from home", "description": "Mark and Priya talk about the good and bad sides of working from home.",
+      "material": { "type": "podcast", "segments": [
+        { "speaker": "Host", "text": "Today we're talking about working from home. Mark, you've worked from home for three years now. How has it changed your life?" },
+        { "speaker": "Mark", "text": "Honestly, mostly for the better. I used to spend almost two hours a day commuting. Now I use that time to exercise in the morning, and I have dinner with my kids every evening." },
+        { "speaker": "Host", "text": "Priya, you went back to the office last spring. Why?" },
+        { "speaker": "Priya", "text": "I just felt isolated. I live alone, and some days I didn't speak to a single person. I also found it hard to switch off. My laptop was always on the kitchen table, so I kept checking emails late at night." },
+        { "speaker": "Mark", "text": "That's a fair point. I had the same problem at first, so I turned the spare bedroom into an office. When I close the door at six, the working day is over." },
+        { "speaker": "Host", "text": "What about your careers? Some people say that people who work from home get promoted less often." },
+        { "speaker": "Priya", "text": "I think there's some truth in that. When you're in the office, your manager sees what you're doing, and you hear about new projects over coffee." },
+        { "speaker": "Mark", "text": "My company tries to avoid that. We have a team day in the office every Wednesday, and all the important meetings happen then." },
+        { "speaker": "Host", "text": "So is there a perfect solution?" },
+        { "speaker": "Priya", "text": "For me, maybe two or three days in the office. I need people around me, but I wouldn't say no to working in my pyjamas on a Friday!" }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "How does Mark use the time he used to spend travelling to work?", "options": ["He works longer hours.", "He exercises and has dinner with his children.", "He sleeps longer."], "answer": "He exercises and has dinner with his children.", "explanation": "“I use that time to exercise in the morning, and I have dinner with my kids every evening.”" },
+        { "type": "truefalse", "prompt": "Priya went back to the office because she felt lonely at home.", "answer": "true", "explanation": "“I just felt isolated … some days I didn't speak to a single person.”" },
+        { "type": "choice", "prompt": "What problem did both Priya and Mark have at first?", "options": ["Their internet was too slow.", "They found it hard to stop working in the evening.", "Their managers called them too often."], "answer": "They found it hard to stop working in the evening.", "explanation": "Priya kept checking emails late at night; Mark: “I had the same problem at first.”" },
+        { "type": "choice", "prompt": "How did Mark solve this problem?", "options": ["He turned his spare bedroom into an office.", "He started working in a café.", "He stopped using his laptop."], "answer": "He turned his spare bedroom into an office.", "explanation": "“I turned the spare bedroom into an office.”" },
+        { "type": "truefalse", "prompt": "Priya believes people in the office may have better chances of promotion.", "answer": "true", "explanation": "“I think there's some truth in that.”" },
+        { "type": "fill", "prompt": "Mark's team meets in the office every ___.", "answer": "Wednesday", "explanation": "“We have a team day in the office every Wednesday.”" },
+        { "type": "truefalse", "prompt": "Priya would like to work from home every day.", "answer": "false", "explanation": "She would like two or three days in the office." }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "B2", "sequence": 2, "topic": "Food",
+      "title": "Interview: a young chef", "description": "Leo opened his own restaurant at 24. How did he do it?",
+      "material": { "type": "interview", "segments": [
+        { "speaker": "Interviewer", "text": "Leo, you opened your own restaurant at just twenty-four. How did it all start?" },
+        { "speaker": "Leo", "text": "I've loved cooking since I was a child. My grandmother taught me to make bread when I was six. After school I went to catering college, and then I worked in restaurants in London and Lyon for five years." },
+        { "speaker": "Interviewer", "text": "Why did you decide to open your own place?" },
+        { "speaker": "Leo", "text": "I wanted to cook the food I believe in: simple dishes made with ingredients from local farms. In most big restaurants, the menu is decided by someone else." },
+        { "speaker": "Interviewer", "text": "Was it difficult to find the money?" },
+        { "speaker": "Leo", "text": "Very. The banks weren't interested, so in the end I borrowed from my family and ran an online campaign. About four hundred people gave small amounts, and in return they got a free meal when we opened." },
+        { "speaker": "Interviewer", "text": "What has been the hardest thing so far?" },
+        { "speaker": "Leo", "text": "Definitely the hours. I start at eight in the morning and often finish after midnight. And in the first months I had to learn things nobody teaches you at college, like dealing with suppliers and paying staff." },
+        { "speaker": "Interviewer", "text": "Any advice for young people who want to become chefs?" },
+        { "speaker": "Leo", "text": "Work in as many kitchens as you can before you open your own. Every chef I worked for taught me something, even the ones who shouted a lot!" }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "Who taught Leo to make bread?", "options": ["his mother", "his grandmother", "a teacher at college"], "answer": "his grandmother", "explanation": "“My grandmother taught me to make bread when I was six.”" },
+        { "type": "fill", "prompt": "Leo worked in restaurants in London and ___ for five years.", "answer": "Lyon", "explanation": "“I worked in restaurants in London and Lyon for five years.”" },
+        { "type": "choice", "prompt": "Why did Leo open his own restaurant?", "options": ["to earn more money", "to cook simple food with local ingredients", "to work fewer hours"], "answer": "to cook simple food with local ingredients", "explanation": "“simple dishes made with ingredients from local farms”" },
+        { "type": "truefalse", "prompt": "A bank lent Leo most of the money.", "answer": "false", "explanation": "“The banks weren't interested”." },
+        { "type": "choice", "prompt": "What did people who supported the online campaign get?", "options": ["a free meal", "a cookbook", "a discount card"], "answer": "a free meal", "explanation": "“in return they got a free meal when we opened”" },
+        { "type": "choice", "prompt": "What does Leo find hardest?", "options": ["the long working hours", "finding customers", "cooking for many people"], "answer": "the long working hours", "explanation": "“Definitely the hours.”" },
+        { "type": "truefalse", "prompt": "Leo learned how to pay staff at catering college.", "answer": "false", "explanation": "He had to learn “things nobody teaches you at college, like … paying staff”." },
+        { "type": "truefalse", "prompt": "Leo plans to open a second restaurant.", "answer": "not_given", "explanation": "Leo does not talk about any future plans." }
+      ]
+    },
+    {
+      "kind": "practice", "skill": "listening", "cefr": "C1", "sequence": 1, "topic": "Science",
+      "title": "Radio talk: why habits are hard to break", "description": "How habits form, and two ways to change the ones you don't want.",
+      "material": { "type": "radio", "segments": [
+        { "speaker": "Presenter", "text": "Every morning, millions of people reach for their phones before they are fully awake. Few of them decided to do this; it simply happened, one small repetition at a time. That, in a nutshell, is how habits form." },
+        { "speaker": "Presenter", "text": "Researchers often describe a habit as a loop with three parts: a cue, a routine and a reward. The cue might be a place, a time of day or a feeling, such as boredom. The routine is the behaviour itself, and the reward is whatever makes the brain want to repeat it: a moment of pleasure, relief or distraction." },
+        { "speaker": "Presenter", "text": "What makes habits so powerful is that, once they are established, they require very little conscious thought. This is useful. Imagine having to think carefully about every step of brushing your teeth. But it also means that unwanted habits carry on running in the background, even when we have decided to stop." },
+        { "speaker": "Presenter", "text": "This is why willpower alone is often not enough. A more effective strategy is to change the environment so that the cue appears less often. If you want to spend less time on your phone in the evening, for example, charging it in another room will do more than simply promising yourself to use it less." },
+        { "speaker": "Presenter", "text": "Another approach is to keep the cue and the reward, but swap the routine. Someone who snacks out of boredom at four o'clock might replace the biscuits with a short walk, which provides a similar break. It sounds simple, and it is. But, like any new habit, it takes time and patience before it becomes automatic." }
+      ] },
+      "exercises": [
+        { "type": "choice", "prompt": "According to the speaker, how do habits form?", "options": ["through one clear decision", "through small repetitions over time", "through advice from other people"], "answer": "through small repetitions over time", "explanation": "“it simply happened, one small repetition at a time”" },
+        { "type": "match", "prompt": "Match the parts of the habit loop with their meanings.", "pairs": { "cue": "what starts the habit", "routine": "the behaviour itself", "reward": "what makes the brain want to repeat it" } },
+        { "type": "truefalse", "prompt": "The speaker says it would be useful to think carefully about every step of brushing your teeth.", "answer": "false", "explanation": "The speaker means the opposite: it is useful that habits need very little conscious thought." },
+        { "type": "truefalse", "prompt": "Unwanted habits can continue even after we decide to stop.", "answer": "true", "explanation": "“unwanted habits carry on running in the background, even when we have decided to stop”" },
+        { "type": "choice", "prompt": "What does the speaker recommend instead of relying on willpower?", "options": ["making a promise to yourself", "changing the environment so the cue appears less often", "asking a friend to check on you"], "answer": "changing the environment so the cue appears less often", "explanation": "“A more effective strategy is to change the environment so that the cue appears less often.”" },
+        { "type": "fill", "prompt": "To use the phone less in the evening, the speaker suggests charging it in another ___.", "answer": "room", "explanation": "“charging it in another room”" },
+        { "type": "choice", "prompt": "What is the speaker's example of swapping the routine?", "options": ["going for a short walk instead of eating biscuits", "eating biscuits at a different time", "working instead of taking a break"], "answer": "going for a short walk instead of eating biscuits", "explanation": "“replace the biscuits with a short walk”" },
+        { "type": "truefalse", "prompt": "The speaker says a new habit becomes automatic within one week.", "answer": "not_given", "explanation": "The speaker only says it takes time and patience; no length of time is given." }
+      ]
+    }
+  ]
+}
