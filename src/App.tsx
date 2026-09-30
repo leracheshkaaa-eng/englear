@@ -10,9 +10,10 @@ import { Flashcards } from './features/flashcards'
 import { AdminDashboard } from './features/admin'
 import { Login, StudentProgress } from './features/account'
 import { Avatar } from './lib/avatars'
+import { Shop, WalletChip } from './features/shop'
 import { useTranslation } from 'react-i18next'
 
-type View = 'home' | 'lessons' | 'practice' | 'player' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
+type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
 
 function Shell() {
   const { loading, userId, role, profile, signOut, settings } = useAuth()
@@ -22,6 +23,7 @@ function Shell() {
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [active, setActive] = useState<Lesson | null>(null)
+  const [wallet, setWallet] = useState<api.Wallet>(api.EMPTY_WALLET)
   const [backTo, setBackTo] = useState<'lessons' | 'practice'>('lessons') // where the player returns
   const [flashTarget, setFlashTarget] = useState<api.SetProgress | null>(null) // set opened from Progress
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
@@ -46,6 +48,12 @@ function Shell() {
   useEffect(() => {
     if (!loading) reload()
   }, [loading, reload])
+
+  // coins and streak: refreshed on every page change (one small query)
+  useEffect(() => {
+    if (!userId) return setWallet(api.EMPTY_WALLET)
+    api.myWallet(userId).then(setWallet).catch(() => {})
+  }, [userId, view])
 
   // Deep link /lesson/<id> — works for guests (public lessons) and is RLS-protected.
   useEffect(() => {
@@ -132,8 +140,9 @@ function Shell() {
         <div>
           {userId ? (
             <div className="flex items-center gap-2">
+              <WalletChip wallet={wallet} onClick={() => go('shop')} />
               <button onClick={() => go('settings')} title={profile?.full_name ?? t('nav.settings')} className="rounded-full transition-transform hover:scale-105">
-                <Avatar id={profile?.avatar} size={36} />
+                <Avatar id={profile?.avatar} size={36} frame={profile?.frame} />
               </button>
               <Button variant="ghost" onClick={() => signOut()}>
                 {t('common.signOut')}
@@ -187,6 +196,7 @@ function Shell() {
           />
         )}
         {view === 'settings' && userId && <Settings />}
+        {view === 'shop' && userId && <Shop wallet={wallet} onWallet={setWallet} />}
         {view === 'admin' && role === 'admin' && <AdminDashboard />}
         {view === 'login' && <Login onClose={() => { reload(); setView('home') }} />}
       </main>

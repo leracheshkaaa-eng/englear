@@ -208,12 +208,83 @@ export const AVATARS: AvatarDef[] = [
   },
 ]
 
-export const DEFAULT_AVATAR = 'cat'
-const byId = new Map(AVATARS.map((a) => [a.id, a]))
+/** Avatars from the shop (item code "avatar_<id>"); worn only by their owners (checked by the database). */
+export const PREMIUM_AVATARS: AvatarDef[] = [
+  {
+    id: 'unicorn', bg: '#f3e1ff',
+    draw: () => (
+      <>
+        <path d="M50 8 L56 32 L44 32 Z" fill="#ffd166" stroke="#e0a800" strokeWidth="1.5" />
+        <path d="M46 16 L55 19 M45 23 L56 26" stroke="#e0a800" strokeWidth="1.5" />
+        <path d="M24 34 Q18 60 28 76 Q24 56 34 44 Z" fill="#ff8fc8" />
+        <path d="M30 30 Q24 48 30 60 Q30 46 40 38 Z" fill="#9be7ff" />
+        <path d="M30 32 L36 46 L24 44 Z" fill="#fff" />
+        <circle cx="52" cy="56" r="25" fill="#ffffff" stroke="#eadcf5" strokeWidth="2" />
+        {eyes}{blush}
+        {smile}
+      </>
+    ),
+  },
+  {
+    id: 'dragon', bg: '#d7f5d2',
+    draw: () => (
+      <>
+        <path d="M30 30 L36 44 L24 42 Z" fill="#ffd166" />
+        <path d="M70 30 L64 44 L76 42 Z" fill="#ffd166" />
+        <path d="M50 22 l5 10 h-10 z M40 26 l4 8 h-8 z M60 26 l4 8 h-8 z" fill="#2e9e5b" />
+        <circle cx="50" cy="56" r="26" fill="#6fcf7f" />
+        <ellipse cx="50" cy="66" rx="13" ry="8" fill="#a6e8b0" />
+        <circle cx="45" cy="64" r="1.8" fill="#2c6b3f" />
+        <circle cx="55" cy="64" r="1.8" fill="#2c6b3f" />
+        {eyes}
+        <path d="M42 70 Q50 75 58 70" fill="none" stroke="#2c6b3f" strokeWidth="2.5" strokeLinecap="round" />
+      </>
+    ),
+  },
+  {
+    id: 'tiger', bg: '#ffe2b8',
+    draw: () => (
+      <>
+        <circle cx="30" cy="34" r="9" fill="#f08a24" />
+        <circle cx="70" cy="34" r="9" fill="#f08a24" />
+        <circle cx="30" cy="34" r="4" fill="#ffd9b3" />
+        <circle cx="70" cy="34" r="4" fill="#ffd9b3" />
+        <circle cx="50" cy="56" r="26" fill="#f7a23b" />
+        <path d="M50 30 v8 M42 32 l2 7 M58 32 l-2 7 M25 52 h8 M26 60 h7 M75 52 h-8 M74 60 h-7" stroke="#3a2b4d" strokeWidth="3" strokeLinecap="round" />
+        <ellipse cx="50" cy="66" rx="11" ry="8" fill="#fff4e6" />
+        {eyes}
+        <path d="M50 61 l-3 3 h6 z" fill="#3a2b4d" />
+        {smile}
+      </>
+    ),
+  },
+  {
+    id: 'whale', bg: '#d4ecfb',
+    draw: () => (
+      <>
+        <path d="M50 26 Q44 14 38 18 M50 26 Q56 14 62 18 M50 26 v-10" stroke="#5fb2e6" strokeWidth="3" fill="none" strokeLinecap="round" />
+        <ellipse cx="50" cy="58" rx="30" ry="24" fill="#5b9bd5" />
+        <ellipse cx="50" cy="68" rx="20" ry="12" fill="#d9ecfb" />
+        {eyes}{blush}
+        {smile}
+      </>
+    ),
+  },
+]
 
-export function Avatar({ id, size = 44, ring = false }: { id?: string | null; size?: number; ring?: boolean }) {
+export const DEFAULT_AVATAR = 'cat'
+const byId = new Map([...AVATARS, ...PREMIUM_AVATARS].map((a) => [a.id, a]))
+
+/** Frames from the shop (item codes), drawn around the avatar. */
+export const FRAMES: Record<string, { background: string; badge?: string }> = {
+  frame_gold: { background: 'linear-gradient(135deg, #f9e27d, #d4a017 45%, #fff3b0 70%, #c08a00)' },
+  frame_rainbow: { background: 'conic-gradient(#ff6b6b, #ffd93d, #6bcb77, #4d96ff, #b06bff, #ff6b6b)' },
+  frame_stars: { background: 'linear-gradient(135deg, #6b4fbb, #b89cf2)', badge: '★' },
+}
+
+export function Avatar({ id, size = 44, ring = false, frame }: { id?: string | null; size?: number; ring?: boolean; frame?: string | null }) {
   const a = byId.get(id ?? '') ?? AVATARS[0]
-  return (
+  const face = (
     <span
       className={`inline-grid place-items-center overflow-hidden rounded-full ${ring ? 'ring-2 ring-plum ring-offset-2 ring-offset-paper' : ''}`}
       style={{ width: size, height: size, background: a.bg }}
@@ -223,12 +294,29 @@ export function Avatar({ id, size = 44, ring = false }: { id?: string | null; si
       </svg>
     </span>
   )
+  const f = frame ? FRAMES[frame] : undefined
+  if (!f) return face
+  const pad = Math.max(2, Math.round(size / 14))
+  return (
+    <span className="relative inline-grid place-items-center rounded-full" style={{ padding: pad, background: f.background }}>
+      {face}
+      {f.badge && (
+        <span
+          className="absolute -top-1 -right-1 grid place-items-center rounded-full bg-paper text-plum"
+          style={{ width: size / 2.6, height: size / 2.6, fontSize: size / 4 }}
+        >
+          {f.badge}
+        </span>
+      )}
+    </span>
+  )
 }
 
-export function AvatarPicker({ value, onChange }: { value: string; onChange: (id: string) => void }) {
+export function AvatarPicker({ value, onChange, owned = [] }: { value: string; onChange: (id: string) => void; owned?: string[] }) {
+  const mine = PREMIUM_AVATARS.filter((a) => owned.includes(`avatar_${a.id}`))
   return (
     <div className="grid grid-cols-6 gap-2">
-      {AVATARS.map((a) => (
+      {[...AVATARS, ...mine].map((a) => (
         <button
           key={a.id}
           type="button"

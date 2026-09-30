@@ -553,7 +553,11 @@
     "frog": "小青蛙",
     "penguin": "企鹅",
     "owl": "小猫头鹰",
-    "hamster": "仓鼠"
+    "hamster": "仓鼠",
+    "unicorn": "独角兽",
+    "dragon": "龙",
+    "tiger": "老虎",
+    "whale": "鲸鱼"
   },
   "lessonSkills": {
     "vocabulary": "词汇",
@@ -598,5 +602,86 @@
     "emptyCards": "还没有卡片——从主题添加单词、查找单词或手动添加卡片。",
     "assignTo": "布置给学生",
     "save": "保存卡片组"
+  },
+  "shop": {
+    "title": "金币与商店",
+    "balance": "余额",
+    "coins": "{{n}} 金币",
+    "streak": "连续学习天数",
+    "streakDays": "连续：{{n}} 天",
+    "streakDone": "今天已完成 ✓",
+    "streakTodo": "今天学一点，保持连续",
+    "best": "最高：{{n}}",
+    "earnedToday": "今日已获得：{{n}} / {{limit}}",
+    "earned": "本课获得",
+    "howToEarn": "如何获得金币",
+    "rules": {
+      "lesson": "课程库的课，首次完成：10，80% 以上 +5，100% 再 +5",
+      "teacher": "老师布置的课：80% 以上得 5",
+      "cards": "完成一组卡片及练习：5",
+      "streak": "每个学习日 +2，每第 7 天 +10"
+    },
+    "forCoins": "用金币购买",
+    "freeze": "连续保护卡",
+    "freezeHint": "漏学一天时保住连续记录。你有 {{n}} / 2 张。",
+    "bought": "完成！现在归你了。",
+    "buy": "购买",
+    "wear": "使用",
+    "worn": "使用中",
+    "takeOff": "取下",
+    "frames": "头像框",
+    "frameNames": {
+      "frame_gold": "金色",
+      "frame_rainbow": "彩虹",
+      "frame_stars": "星星"
+    },
+    "buyCoins": "购买金币",
+    "paymentsSoon": "正在接入支付，很快就可以购买。",
+    "soon": "即将推出",
+    "plans": "订阅",
+    "planNames": {
+      "plus": "Plus",
+      "family": "家庭版"
+    },
+    "planFeatures": {
+      "plus": [
+        "AI 老师，每天最多 100 条消息",
+        "每月 30 次写作批改",
+        "每月 60 分钟口语练习",
+        "每月 +300 金币",
+        "含连续保护卡"
+      ],
+      "family": [
+        "包含 Plus 的全部功能",
+        "最多 5 位家庭成员",
+        "每月 +300 金币"
+      ]
+    },
+    "month": "月",
+    "year": "年",
+    "adultsOnly": "购买须由成年人完成（儿童由家长购买）。",
+    "history": "金币记录",
+    "noHistory": "还没有金币——完成一节课来获得第一批金币吧。",
+    "capped": "已达每日上限",
+    "kinds": {
+      "lesson": "完成课程",
+      "lesson_bonus": "成绩奖励",
+      "teacher_lesson": "老师布置的课",
+      "flashcards": "卡片组",
+      "streak_day": "学习日",
+      "streak_week": "连续 7 天",
+      "purchase": "购买金币",
+      "subscription": "订阅奖励",
+      "refund": "退款",
+      "spend": "商店购买",
+      "admin": "赠送"
+    },
+    "errors": {
+      "not_enough_coins": "金币还不够。",
+      "max_freezes": "你已经有 2 张保护卡了。",
+      "owned": "这已经是你的了。",
+      "generic": "购买失败，请重试。"
+    },
+    "avatarsTitle": "头像"
   }
 }

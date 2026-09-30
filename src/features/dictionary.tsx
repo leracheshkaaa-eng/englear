@@ -424,6 +424,10 @@ function AdminAddWord({ onAdded }: { onAdded: () => void }) {
 export function Settings() {
   const { t } = useTranslation()
   const { settings, updateSettings, userId, email, role, profile, refresh } = useAuth()
+  const [ownedItems, setOwnedItems] = useState<string[]>([])
+  useEffect(() => {
+    if (userId) api.myItems(userId).then(setOwnedItems).catch(() => {})
+  }, [userId])
   const [nickname, setNickname] = useState(profile?.full_name ?? '')
   const [avatar, setAvatar] = useState(profile?.avatar ?? 'cat')
   const [savedMsg, setSavedMsg] = useState('')
@@ -463,7 +467,7 @@ export function Settings() {
           </div>
         </div>
         <input value={nickname} onChange={(e) => setNickname(e.target.value)} placeholder={t('settings.nickname')} className={`${inputCls} w-full`} />
-        <AvatarPicker value={avatar} onChange={setAvatar} />
+        <AvatarPicker value={avatar} onChange={setAvatar} owned={ownedItems} />
         <div className="flex items-center gap-3">
           <Button onClick={saveProfile} disabled={!nickname.trim()}>{t('settings.saveProfile')}</Button>
           {savedMsg && <span className="text-sm text-[var(--color-good)]">{savedMsg}</span>}

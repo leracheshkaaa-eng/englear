@@ -553,7 +553,11 @@
     "frog": "かえる",
     "penguin": "ペンギン",
     "owl": "子ふくろう",
-    "hamster": "ハムスター"
+    "hamster": "ハムスター",
+    "unicorn": "ユニコーン",
+    "dragon": "ドラゴン",
+    "tiger": "トラ",
+    "whale": "クジラ"
   },
   "lessonSkills": {
     "vocabulary": "語彙",
@@ -598,5 +602,86 @@
     "emptyCards": "まだカードがありません。トピックから単語を追加するか、単語を検索するか、手動でカードを追加してください。",
     "assignTo": "生徒に割り当てる",
     "save": "セットを保存"
+  },
+  "shop": {
+    "title": "コインとショップ",
+    "balance": "残高",
+    "coins": "{{n}} コイン",
+    "streak": "連続学習日数",
+    "streakDays": "連続：{{n}} 日",
+    "streakDone": "今日は達成 ✓",
+    "streakTodo": "今日も少し学んで記録をつなごう",
+    "best": "最高：{{n}}",
+    "earnedToday": "今日の獲得：{{n}} / {{limit}}",
+    "earned": "このレッスンで獲得",
+    "howToEarn": "コインのもらい方",
+    "rules": {
+      "lesson": "ライブラリーのレッスン初回：10、80% 以上で +5、100% でさらに +5",
+      "teacher": "先生のレッスン：80% 以上で 5",
+      "cards": "練習付きの単語カードセット：5",
+      "streak": "学習した日ごとに +2、7 日目ごとに +10"
+    },
+    "forCoins": "コインで購入",
+    "freeze": "連続記録フリーズ",
+    "freezeHint": "1 日休んでも連続記録を守ります。所持：{{n}} / 2。",
+    "bought": "完了！あなたのものになりました。",
+    "buy": "購入",
+    "wear": "使う",
+    "worn": "使用中",
+    "takeOff": "外す",
+    "frames": "アバターフレーム",
+    "frameNames": {
+      "frame_gold": "ゴールド",
+      "frame_rainbow": "レインボー",
+      "frame_stars": "スター"
+    },
+    "buyCoins": "コインを購入",
+    "paymentsSoon": "決済を準備中です。まもなく購入できるようになります。",
+    "soon": "近日公開",
+    "plans": "サブスクリプション",
+    "planNames": {
+      "plus": "Plus",
+      "family": "ファミリー"
+    },
+    "planFeatures": {
+      "plus": [
+        "AI 講師、1 日 100 メッセージまで",
+        "月 30 回のライティング添削",
+        "月 60 分のスピーキング練習",
+        "毎月 +300 コイン",
+        "連続記録フリーズ付き"
+      ],
+      "family": [
+        "Plus のすべて",
+        "家族 5 人まで",
+        "毎月 +300 コイン"
+      ]
+    },
+    "month": "月",
+    "year": "年",
+    "adultsOnly": "購入は大人が行います（お子さまの場合は保護者）。",
+    "history": "コイン履歴",
+    "noHistory": "まだコインがありません。レッスンを終えて最初のコインをもらいましょう。",
+    "capped": "1 日の上限に達しました",
+    "kinds": {
+      "lesson": "レッスン完了",
+      "lesson_bonus": "成績ボーナス",
+      "teacher_lesson": "先生のレッスン",
+      "flashcards": "単語カードセット",
+      "streak_day": "学習日",
+      "streak_week": "7 日連続",
+      "purchase": "コイン購入",
+      "subscription": "サブスクボーナス",
+      "refund": "返金",
+      "spend": "ショップで購入",
+      "admin": "プレゼント"
+    },
+    "errors": {
+      "not_enough_coins": "コインがまだ足りません。",
+      "max_freezes": "フリーズはすでに 2 つあります。",
+      "owned": "すでに持っています。",
+      "generic": "購入できませんでした。もう一度お試しください。"
+    },
+    "avatarsTitle": "アバター"
   }
 }

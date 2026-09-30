@@ -563,7 +563,11 @@
     "frog": "Ranita",
     "penguin": "Pingüino",
     "owl": "Buhito",
-    "hamster": "Hámster"
+    "hamster": "Hámster",
+    "unicorn": "Unicornio",
+    "dragon": "Dragón",
+    "tiger": "Tigre",
+    "whale": "Ballena"
   },
   "lessonSkills": {
     "vocabulary": "Vocabulario",
@@ -608,5 +612,86 @@
     "emptyCards": "Aún no hay tarjetas: añade palabras de un tema, busca una palabra o añade una tarjeta a mano.",
     "assignTo": "Asignar a alumnos",
     "save": "Guardar conjunto"
+  },
+  "shop": {
+    "title": "Monedas y tienda",
+    "balance": "Saldo",
+    "coins": "{{n}} monedas",
+    "streak": "Racha de días",
+    "streakDays": "Racha: {{n}} días",
+    "streakDone": "hoy ya está ✓",
+    "streakTodo": "estudia algo hoy para no perderla",
+    "best": "récord: {{n}}",
+    "earnedToday": "Ganadas hoy: {{n}} de {{limit}}",
+    "earned": "por esta lección",
+    "howToEarn": "Cómo ganar monedas",
+    "rules": {
+      "lesson": "Lección de la biblioteca, la primera vez: 10, +5 desde 80 %, +5 por 100 %",
+      "teacher": "Lección de tu profesor: 5 desde 80 %",
+      "cards": "Conjunto de tarjetas con su práctica: 5",
+      "streak": "Cada día de estudio: +2, cada 7.º día: +10"
+    },
+    "forCoins": "Por monedas",
+    "freeze": "Protector de racha",
+    "freezeHint": "Salva tu racha si faltas un día. Tienes {{n}} de 2.",
+    "bought": "¡Listo! Ya es tuyo.",
+    "buy": "Comprar",
+    "wear": "Poner",
+    "worn": "Puesto",
+    "takeOff": "Quitar",
+    "frames": "Marcos de avatar",
+    "frameNames": {
+      "frame_gold": "Oro",
+      "frame_rainbow": "Arcoíris",
+      "frame_stars": "Estrellas"
+    },
+    "buyCoins": "Comprar monedas",
+    "paymentsSoon": "Estamos conectando los pagos: pronto podrás comprar.",
+    "soon": "Pronto",
+    "plans": "Suscripciones",
+    "planNames": {
+      "plus": "Plus",
+      "family": "Familiar"
+    },
+    "planFeatures": {
+      "plus": [
+        "Tutor de IA, hasta 100 mensajes al día",
+        "30 correcciones de escritura al mes",
+        "60 minutos de práctica oral al mes",
+        "+300 monedas cada mes",
+        "Protector de racha incluido"
+      ],
+      "family": [
+        "Todo lo de Plus",
+        "Hasta 5 miembros de la familia",
+        "+300 monedas cada mes"
+      ]
+    },
+    "month": "mes",
+    "year": "año",
+    "adultsOnly": "Las compras las hace un adulto (un padre o madre en el caso de los niños).",
+    "history": "Historial de monedas",
+    "noHistory": "Aún no tienes monedas: termina una lección para ganar las primeras.",
+    "capped": "límite diario alcanzado",
+    "kinds": {
+      "lesson": "Lección completada",
+      "lesson_bonus": "Bonus por el resultado",
+      "teacher_lesson": "Lección de tu profesor",
+      "flashcards": "Conjunto de tarjetas",
+      "streak_day": "Día de estudio",
+      "streak_week": "7 días seguidos",
+      "purchase": "Monedas compradas",
+      "subscription": "Bonus de suscripción",
+      "refund": "Reembolso",
+      "spend": "Compra en la tienda",
+      "admin": "Regalo"
+    },
+    "errors": {
+      "not_enough_coins": "Aún no tienes suficientes monedas.",
+      "max_freezes": "Ya tienes 2 protectores.",
+      "owned": "Ya es tuyo.",
+      "generic": "No se pudo comprar. Inténtalo de nuevo."
+    },
+    "avatarsTitle": "Avatares"
   }
 }

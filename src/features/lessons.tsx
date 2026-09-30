@@ -19,6 +19,7 @@ import {
 } from '../lib/exercises'
 import { useAuth } from '../lib/auth'
 import { MaterialView, materialLength, materialTypeLabel } from './practice'
+import { EarnedBadge } from './shop'
 import * as api from '../lib/api'
 import type { Lesson, LessonPass, PassSummary, SavedAnswer, WordHint } from '../lib/api'
 import { CEFR_LEVELS, TOPICS, lessonLevelLabel, lessonSkillLabel, topicLabel } from '../lib/config'
@@ -386,6 +387,7 @@ export function LessonPlayer({
   // correct answers as text, known after a check (and for the whole lesson once it is completed)
   const [solutions, setSolutions] = useState<Record<string, string>>({})
   const [reviewExs, setReviewExs] = useState<Exercise[] | null>(null)
+  const [earned, setEarned] = useState(0) // coins for the pass just finished
   const [outcome, setOutcome] = useState<Outcome | null>(null)
   const [reviewFilter, setReviewFilter] = useState<'all' | 'mistakes'>('all')
   const [error, setError] = useState('')
@@ -588,7 +590,10 @@ export function LessonPlayer({
       if (!(await flush())) return
       const p = passRef.current
       if (signedIn && p) {
+        const before = await api.myWallet(userId!).catch(() => null)
         await api.completePass(p.id, Math.round((Date.now() - startedAt.current) / 1000))
+        const after = await api.myWallet(userId!).catch(() => null)
+        setEarned(before && after ? after.balance - before.balance : 0)
         const s = api.summarizePasses(await api.studentPasses(userId!, lesson.id))[lesson.id]
         passRef.current = null
         setPass(null)
@@ -619,6 +624,7 @@ export function LessonPlayer({
   }
 
   async function tryAgain() {
+    setEarned(0)
     if (!signedIn) return openPass(null, {}, 0)
     setBusy(true)
     setError('')
@@ -663,6 +669,7 @@ export function LessonPlayer({
         ) : (
           <LessonResult
             outcome={outcome}
+            earned={earned}
             busy={busy}
             error={error}
             onReview={(f) => {
@@ -762,6 +769,7 @@ export function LessonPlayer({
 /** Shown after finishing a lesson and when opening an already completed one. */
 function LessonResult({
   outcome,
+  earned = 0,
   busy,
   error,
   onReview,
@@ -769,6 +777,7 @@ function LessonResult({
   onDone,
 }: {
   outcome: Outcome
+  earned?: number
   busy: boolean
   error: string
   onReview: (filter: 'all' | 'mistakes') => void
@@ -786,6 +795,11 @@ function LessonResult({
       <span className="rounded-full bg-[rgba(63,143,107,.12)] px-3 py-1 text-sm font-semibold text-[var(--color-good)]">
         ✓ {t('result.completed')}
       </span>
+      {earned > 0 && (
+        <div className="mt-3">
+          <EarnedBadge coins={earned} />
+        </div>
+      )}
       {legacy ? (
         <p className="mt-5 font-display text-6xl font-semibold text-plum">{pct}%</p>
       ) : (

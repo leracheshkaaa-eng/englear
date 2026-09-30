@@ -9,6 +9,8 @@ export type Profile = {
   full_name: string
   role: Role
   avatar: string
+  /** a frame bought in the shop (item code) */
+  frame?: string | null
   teacher_request: TeacherRequest
   created_at?: string
 }
@@ -83,7 +85,7 @@ export async function getProfile(id: string): Promise<Profile | null> {
 }
 
 /** Update own nickname / avatar. (role is protected by a DB trigger.) */
-export async function updateProfile(id: string, patch: { full_name?: string; avatar?: string }) {
+export async function updateProfile(id: string, patch: { full_name?: string; avatar?: string; frame?: string | null }) {
   const { error } = await supabase.from('profiles').update(patch).eq('id', id)
   if (error) throw error
 }
@@ -1215,4 +1217,75 @@ export async function adminSetRole(userId: string, role: Role) {
 /** Approve a pending teacher request. */
 export async function adminApproveTeacher(userId: string) {
   return adminSetRole(userId, 'teacher')
+}
+
+/* ---------- coins, streak, shop ---------- */
+
+export type Wallet = {
+  balance: number
+  earned_today: number
+  earned_day: string | null
+  streak: number
+  best_streak: number
+  last_active_day: string | null
+  freezes: number
+}
+export const EMPTY_WALLET: Wallet = { balance: 0, earned_today: 0, earned_day: null, streak: 0, best_streak: 0, last_active_day: null, freezes: 0 }
+/** Coins earned by learning per day (the same limit as in the database). */
+export const DAILY_EARN_LIMIT = 60
+
+/** The signed-in user's wallet (an empty one until the first coins). */
+export async function myWallet(userId: string): Promise<Wallet> {
+  const { data, error } = await supabase.from('wallets').select('balance, earned_today, earned_day, streak, best_streak, last_active_day, freezes').eq('user_id', userId).maybeSingle()
+  if (error) throw error
+  return (data as Wallet | null) ?? EMPTY_WALLET
+}
+
+/** The streak as it stands today: a streak whose last day is older than yesterday is already over
+ *  (unless freezes cover the gap — the server applies them on the next learning day). */
+export function liveStreak(w: Wallet): number {
+  if (!w.last_active_day || !w.streak) return 0
+  const today = new Date().toISOString().slice(0, 10)
+  const days = Math.round((Date.parse(today) - Date.parse(w.last_active_day)) / 86400000)
+  return days - 1 <= w.freezes ? w.streak : 0
+}
+/** Did the user already learn today (UTC, like the server)? */
+export const learnedToday = (w: Wallet) => w.last_active_day === new Date().toISOString().slice(0, 10)
+
+export type CoinEntry = { id: number; amount: number; kind: string; source: string; ref_id: string | null; meta: Record<string, unknown>; created_at: string }
+export async function coinHistory(userId: string, limit = 50): Promise<CoinEntry[]> {
+  const { data, error } = await supabase
+    .from('coin_ledger')
+    .select('id, amount, kind, source, ref_id, meta, created_at')
+    .eq('user_id', userId)
+    .order('id', { ascending: false })
+    .limit(limit)
+  if (error) throw error
+  return (data ?? []) as CoinEntry[]
+}
+
+export type ShopItem = { code: string; kind: 'streak_freeze' | 'avatar' | 'frame'; price: number; position: number }
+export async function shopItems(): Promise<ShopItem[]> {
+  const { data, error } = await supabase.from('shop_items').select('code, kind, price, position').eq('active', true).order('position')
+  if (error) throw error
+  return (data ?? []) as ShopItem[]
+}
+export async function myItems(userId: string): Promise<string[]> {
+  const { data, error } = await supabase.from('user_items').select('item_code').eq('user_id', userId)
+  if (error) throw error
+  return (data ?? []).map((r) => r.item_code as string)
+}
+/** Buy an item for coins; returns the new wallet. Errors carry a hint: not_enough_coins | max_freezes | owned. */
+export async function buyItem(code: string): Promise<Wallet> {
+  const { data, error } = await supabase.rpc('buy_item', { p_code: code })
+  if (error) throw error
+  return data as Wallet
+}
+
+export type StoreProduct = { code: string; kind: 'coins' | 'subscription'; coins: number; price_cents: number; currency: string; interval: 'month' | 'year' | null; data: Record<string, unknown> }
+/** Coin packs and subscriptions for real money (payments are connected separately). */
+export async function storeProducts(): Promise<StoreProduct[]> {
+  const { data, error } = await supabase.from('store_products').select('code, kind, coins, price_cents, currency, interval, data').eq('active', true).order('position')
+  if (error) throw error
+  return (data ?? []) as StoreProduct[]
 }

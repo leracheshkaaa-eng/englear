@@ -563,7 +563,11 @@
     "frog": "Frosch",
     "penguin": "Pinguin",
     "owl": "Eulchen",
-    "hamster": "Hamster"
+    "hamster": "Hamster",
+    "unicorn": "Einhorn",
+    "dragon": "Drache",
+    "tiger": "Tiger",
+    "whale": "Wal"
   },
   "lessonSkills": {
     "vocabulary": "Wortschatz",
@@ -608,5 +612,86 @@
     "emptyCards": "Noch keine Karten — fügen Sie Wörter aus einem Thema hinzu, suchen Sie ein Wort oder legen Sie eine Karte von Hand an.",
     "assignTo": "Schülern zuweisen",
     "save": "Set speichern"
+  },
+  "shop": {
+    "title": "Münzen und Shop",
+    "balance": "Kontostand",
+    "coins": "{{n}} Münzen",
+    "streak": "Tagesserie",
+    "streakDays": "Serie: {{n}} Tage",
+    "streakDone": "heute erledigt ✓",
+    "streakTodo": "lerne heute etwas, um sie zu halten",
+    "best": "Rekord: {{n}}",
+    "earnedToday": "Heute verdient: {{n}} von {{limit}}",
+    "earned": "für diese Lektion",
+    "howToEarn": "So verdienst du Münzen",
+    "rules": {
+      "lesson": "Bibliothekslektion, erstes Mal: 10, +5 ab 80 %, +5 für 100 %",
+      "teacher": "Lektion deiner Lehrkraft: 5 ab 80 %",
+      "cards": "Karteikartenset mit Übung: 5",
+      "streak": "Jeder Lerntag: +2, jeder 7. Tag: +10"
+    },
+    "forCoins": "Für Münzen",
+    "freeze": "Serienschutz",
+    "freezeHint": "Rettet deine Serie, wenn du einen Tag verpasst. Du hast {{n}} von 2.",
+    "bought": "Fertig! Es gehört dir.",
+    "buy": "Kaufen",
+    "wear": "Tragen",
+    "worn": "Wird getragen",
+    "takeOff": "Ablegen",
+    "frames": "Avatar-Rahmen",
+    "frameNames": {
+      "frame_gold": "Gold",
+      "frame_rainbow": "Regenbogen",
+      "frame_stars": "Sterne"
+    },
+    "buyCoins": "Münzen kaufen",
+    "paymentsSoon": "Die Zahlung wird gerade eingerichtet — Kaufen ist bald möglich.",
+    "soon": "Bald",
+    "plans": "Abos",
+    "planNames": {
+      "plus": "Plus",
+      "family": "Familie"
+    },
+    "planFeatures": {
+      "plus": [
+        "KI-Tutor, bis zu 100 Nachrichten pro Tag",
+        "30 Schreibkorrekturen pro Monat",
+        "60 Minuten Sprechübung pro Monat",
+        "+300 Münzen jeden Monat",
+        "Serienschutz inklusive"
+      ],
+      "family": [
+        "Alles aus Plus",
+        "Für bis zu 5 Familienmitglieder",
+        "+300 Münzen jeden Monat"
+      ]
+    },
+    "month": "Monat",
+    "year": "Jahr",
+    "adultsOnly": "Käufe tätigt ein Erwachsener (bei Kindern ein Elternteil).",
+    "history": "Münzverlauf",
+    "noHistory": "Noch keine Münzen — schließe eine Lektion ab, um die ersten zu verdienen.",
+    "capped": "Tageslimit erreicht",
+    "kinds": {
+      "lesson": "Lektion abgeschlossen",
+      "lesson_bonus": "Bonus für das Ergebnis",
+      "teacher_lesson": "Lektion deiner Lehrkraft",
+      "flashcards": "Karteikartenset",
+      "streak_day": "Lerntag",
+      "streak_week": "7 Tage in Folge",
+      "purchase": "Münzen gekauft",
+      "subscription": "Abo-Bonus",
+      "refund": "Erstattung",
+      "spend": "Kauf im Shop",
+      "admin": "Geschenk"
+    },
+    "errors": {
+      "not_enough_coins": "Noch nicht genug Münzen.",
+      "max_freezes": "Du hast schon 2 Serienschutze.",
+      "owned": "Das gehört dir schon.",
+      "generic": "Kauf nicht möglich. Bitte versuche es noch einmal."
+    },
+    "avatarsTitle": "Avatare"
   }
 }

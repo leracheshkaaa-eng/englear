@@ -583,7 +583,11 @@
     "frog": "Żabka",
     "penguin": "Pingwin",
     "owl": "Sówka",
-    "hamster": "Chomik"
+    "hamster": "Chomik",
+    "unicorn": "Jednorożec",
+    "dragon": "Smok",
+    "tiger": "Tygrys",
+    "whale": "Wieloryb"
   },
   "lessonSkills": {
     "vocabulary": "Słownictwo",
@@ -628,5 +632,86 @@
     "emptyCards": "Brak fiszek — dodaj słowa z tematu, znajdź słowo albo dodaj fiszkę ręcznie.",
     "assignTo": "Przypisz uczniom",
     "save": "Zapisz zestaw"
+  },
+  "shop": {
+    "title": "Monety i sklep",
+    "balance": "Saldo",
+    "coins": "Monety: {{n}}",
+    "streak": "Seria dni",
+    "streakDays": "Seria: {{n}}",
+    "streakDone": "dziś zaliczone ✓",
+    "streakTodo": "poucz się dziś, żeby jej nie przerwać",
+    "best": "rekord: {{n}}",
+    "earnedToday": "Zarobione dziś: {{n}} z {{limit}}",
+    "earned": "za tę lekcję",
+    "howToEarn": "Jak zarabiać monety",
+    "rules": {
+      "lesson": "Lekcja z biblioteki, pierwszy raz: 10, +5 od 80%, +5 za 100%",
+      "teacher": "Lekcja od nauczyciela: 5 od 80%",
+      "cards": "Zestaw fiszek z ćwiczeniem: 5",
+      "streak": "Każdy dzień nauki: +2, co 7. dzień: +10"
+    },
+    "forCoins": "Za monety",
+    "freeze": "Zamrożenie serii",
+    "freezeHint": "Uratuje serię, jeśli opuścisz dzień. Masz {{n}} z 2.",
+    "bought": "Gotowe! Teraz to twoje.",
+    "buy": "Kup",
+    "wear": "Załóż",
+    "worn": "Założony",
+    "takeOff": "Zdejmij",
+    "frames": "Ramki awatara",
+    "frameNames": {
+      "frame_gold": "Złota",
+      "frame_rainbow": "Tęczowa",
+      "frame_stars": "Gwiezdna"
+    },
+    "buyCoins": "Kup monety",
+    "paymentsSoon": "Podłączamy płatności — zakup będzie dostępny już wkrótce.",
+    "soon": "Wkrótce",
+    "plans": "Subskrypcje",
+    "planNames": {
+      "plus": "Plus",
+      "family": "Rodzinna"
+    },
+    "planFeatures": {
+      "plus": [
+        "Nauczyciel AI, do 100 wiadomości dziennie",
+        "30 sprawdzeń tekstów miesięcznie",
+        "60 minut ćwiczeń mówienia miesięcznie",
+        "+300 monet co miesiąc",
+        "Zamrożenie serii w cenie"
+      ],
+      "family": [
+        "Wszystko z Plus",
+        "Do 5 członków rodziny",
+        "+300 monet co miesiąc"
+      ]
+    },
+    "month": "miesiąc",
+    "year": "rok",
+    "adultsOnly": "Zakupów dokonuje osoba dorosła (w przypadku dzieci — rodzic).",
+    "history": "Historia monet",
+    "noHistory": "Nie masz jeszcze monet — ukończ lekcję, żeby zarobić pierwsze.",
+    "capped": "osiągnięto dzienny limit",
+    "kinds": {
+      "lesson": "Lekcja ukończona",
+      "lesson_bonus": "Bonus za wynik",
+      "teacher_lesson": "Lekcja od nauczyciela",
+      "flashcards": "Zestaw fiszek",
+      "streak_day": "Dzień nauki",
+      "streak_week": "7 dni z rzędu",
+      "purchase": "Zakup monet",
+      "subscription": "Bonus subskrypcji",
+      "refund": "Zwrot",
+      "spend": "Zakup w sklepie",
+      "admin": "Prezent"
+    },
+    "errors": {
+      "not_enough_coins": "Jeszcze za mało monet.",
+      "max_freezes": "Masz już 2 zamrożenia.",
+      "owned": "To już jest twoje.",
+      "generic": "Nie udało się kupić. Spróbuj ponownie."
+    },
+    "avatarsTitle": "Awatary"
   }
 }

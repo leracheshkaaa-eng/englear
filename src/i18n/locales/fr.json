@@ -563,7 +563,11 @@
     "frog": "Grenouille",
     "penguin": "Pingouin",
     "owl": "Chouette",
-    "hamster": "Hamster"
+    "hamster": "Hamster",
+    "unicorn": "Licorne",
+    "dragon": "Dragon",
+    "tiger": "Tigre",
+    "whale": "Baleine"
   },
   "lessonSkills": {
     "vocabulary": "Vocabulaire",
@@ -608,5 +612,86 @@
     "emptyCards": "Pas encore de cartes — ajoutez des mots d’un thème, cherchez un mot ou ajoutez une carte à la main.",
     "assignTo": "Attribuer aux élèves",
     "save": "Enregistrer le jeu"
+  },
+  "shop": {
+    "title": "Pièces et boutique",
+    "balance": "Solde",
+    "coins": "{{n}} pièces",
+    "streak": "Série de jours",
+    "streakDays": "Série : {{n}} jours",
+    "streakDone": "fait aujourd’hui ✓",
+    "streakTodo": "apprends quelque chose aujourd’hui pour la garder",
+    "best": "record : {{n}}",
+    "earnedToday": "Gagnées aujourd’hui : {{n}} sur {{limit}}",
+    "earned": "pour cette leçon",
+    "howToEarn": "Comment gagner des pièces",
+    "rules": {
+      "lesson": "Leçon de la bibliothèque, la première fois : 10, +5 dès 80 %, +5 pour 100 %",
+      "teacher": "Leçon de ton professeur : 5 dès 80 %",
+      "cards": "Jeu de cartes avec sa pratique : 5",
+      "streak": "Chaque jour d’apprentissage : +2, chaque 7e jour : +10"
+    },
+    "forCoins": "Contre des pièces",
+    "freeze": "Gel de série",
+    "freezeHint": "Protège ta série si tu manques un jour. Tu en as {{n}} sur 2.",
+    "bought": "C’est fait ! C’est à toi.",
+    "buy": "Acheter",
+    "wear": "Mettre",
+    "worn": "Porté",
+    "takeOff": "Retirer",
+    "frames": "Cadres d’avatar",
+    "frameNames": {
+      "frame_gold": "Or",
+      "frame_rainbow": "Arc-en-ciel",
+      "frame_stars": "Étoiles"
+    },
+    "buyCoins": "Acheter des pièces",
+    "paymentsSoon": "Le paiement est en cours de mise en place — l’achat sera bientôt disponible.",
+    "soon": "Bientôt",
+    "plans": "Abonnements",
+    "planNames": {
+      "plus": "Plus",
+      "family": "Famille"
+    },
+    "planFeatures": {
+      "plus": [
+        "Tuteur IA, jusqu’à 100 messages par jour",
+        "30 corrections d’écrits par mois",
+        "60 minutes de pratique orale par mois",
+        "+300 pièces chaque mois",
+        "Gel de série inclus"
+      ],
+      "family": [
+        "Tout Plus",
+        "Jusqu’à 5 membres de la famille",
+        "+300 pièces chaque mois"
+      ]
+    },
+    "month": "mois",
+    "year": "an",
+    "adultsOnly": "Les achats sont faits par un adulte (un parent pour les enfants).",
+    "history": "Historique des pièces",
+    "noHistory": "Pas encore de pièces — termine une leçon pour gagner les premières.",
+    "capped": "limite du jour atteinte",
+    "kinds": {
+      "lesson": "Leçon terminée",
+      "lesson_bonus": "Bonus pour le résultat",
+      "teacher_lesson": "Leçon de ton professeur",
+      "flashcards": "Jeu de cartes",
+      "streak_day": "Jour d’apprentissage",
+      "streak_week": "7 jours d’affilée",
+      "purchase": "Pièces achetées",
+      "subscription": "Bonus d’abonnement",
+      "refund": "Remboursement",
+      "spend": "Achat en boutique",
+      "admin": "Cadeau"
+    },
+    "errors": {
+      "not_enough_coins": "Pas encore assez de pièces.",
+      "max_freezes": "Tu as déjà 2 gels.",
+      "owned": "C’est déjà à toi.",
+      "generic": "Achat impossible. Réessaie."
+    },
+    "avatarsTitle": "Avatars"
   }
 }

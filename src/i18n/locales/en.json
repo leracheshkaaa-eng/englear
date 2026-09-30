@@ -563,7 +563,11 @@
     "frog": "Frog",
     "penguin": "Penguin",
     "owl": "Owlet",
-    "hamster": "Hamster"
+    "hamster": "Hamster",
+    "unicorn": "Unicorn",
+    "dragon": "Dragon",
+    "tiger": "Tiger",
+    "whale": "Whale"
   },
   "lessonSkills": {
     "vocabulary": "Vocabulary",
@@ -608,5 +612,86 @@
     "emptyCards": "No cards yet — add words from a topic, find a word or add a card by hand.",
     "assignTo": "Assign to students",
     "save": "Save set"
+  },
+  "shop": {
+    "title": "Coins and shop",
+    "balance": "Balance",
+    "coins": "{{n}} coins",
+    "streak": "Day streak",
+    "streakDays": "Streak: {{n}} days",
+    "streakDone": "today is done ✓",
+    "streakTodo": "learn something today to keep it",
+    "best": "best: {{n}}",
+    "earnedToday": "Earned today: {{n}} of {{limit}}",
+    "earned": "for this lesson",
+    "howToEarn": "How to earn coins",
+    "rules": {
+      "lesson": "Library lesson, first time: 10, +5 from 80%, +5 for 100%",
+      "teacher": "Lesson from your teacher: 5 from 80%",
+      "cards": "Flashcard set with its practice: 5",
+      "streak": "Every learning day: +2, every 7th day: +10"
+    },
+    "forCoins": "For coins",
+    "freeze": "Streak freeze",
+    "freezeHint": "Saves your streak if you miss a day. You have {{n}} of 2.",
+    "bought": "Done! It is yours.",
+    "buy": "Buy",
+    "wear": "Wear",
+    "worn": "Wearing",
+    "takeOff": "Take off",
+    "frames": "Avatar frames",
+    "frameNames": {
+      "frame_gold": "Gold",
+      "frame_rainbow": "Rainbow",
+      "frame_stars": "Stars"
+    },
+    "buyCoins": "Buy coins",
+    "paymentsSoon": "Payments are being connected — buying will be available soon.",
+    "soon": "Soon",
+    "plans": "Subscriptions",
+    "planNames": {
+      "plus": "Plus",
+      "family": "Family"
+    },
+    "planFeatures": {
+      "plus": [
+        "AI tutor, up to 100 messages a day",
+        "30 writing checks a month",
+        "60 minutes of speaking practice a month",
+        "+300 coins every month",
+        "Streak freeze included"
+      ],
+      "family": [
+        "Everything in Plus",
+        "For up to 5 family members",
+        "+300 coins every month"
+      ]
+    },
+    "month": "month",
+    "year": "year",
+    "adultsOnly": "Purchases are made by an adult (a parent for children).",
+    "history": "Coin history",
+    "noHistory": "No coins yet — finish a lesson to earn your first ones.",
+    "capped": "daily limit reached",
+    "kinds": {
+      "lesson": "Lesson completed",
+      "lesson_bonus": "Bonus for the result",
+      "teacher_lesson": "Lesson from your teacher",
+      "flashcards": "Flashcard set",
+      "streak_day": "Learning day",
+      "streak_week": "7 days in a row",
+      "purchase": "Coins bought",
+      "subscription": "Subscription bonus",
+      "refund": "Refund",
+      "spend": "Purchase in the shop",
+      "admin": "Gift"
+    },
+    "errors": {
+      "not_enough_coins": "Not enough coins yet.",
+      "max_freezes": "You already have 2 freezes.",
+      "owned": "It is already yours.",
+      "generic": "Could not buy it. Please try again."
+    },
+    "avatarsTitle": "Avatars"
   }
 }
