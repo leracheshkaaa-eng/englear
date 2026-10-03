@@ -409,7 +409,7 @@
     "title": "Mode enseignant",
     "tabs": {
       "lessons": "Mes leçons",
-      "students": "Mes élèves",
+      "students": "Élèves et classes",
       "progress": "Progrès",
       "cards": "Cartes"
     },
@@ -810,6 +810,65 @@
       "corrected": "Texte corrigé",
       "strengths": "Ce qui est bien",
       "nextSteps": "À travailler"
+    }
+  },
+  "classes": {
+    "copied": "Copié ✓",
+    "copyLink": "Copier le lien",
+    "copyCode": "Copier le code",
+    "regenerate": "Nouveau code",
+    "regenerateConfirm": "Créer un nouveau code ? L’ancien lien et l’ancien code ne fonctionneront plus.",
+    "inviteTitle": "Inviter des élèves",
+    "inviteHint": "Envoie ce lien (ou le code) à un élève. Une fois connecté, il devient ton élève. Pour l’ajouter directement à une classe, utilise le lien de la classe ci-dessous.",
+    "title": "Classes",
+    "showActive": "Classes actives",
+    "showArchived": "Archives",
+    "namePlaceholder": "Nouvelle classe, par ex. « 5e A » ou « Mardi 18 h »",
+    "create": "Créer la classe",
+    "noArchived": "Aucune classe archivée.",
+    "none": "Pas encore de classe. Crée la première — une classe d’école ou un groupe privé.",
+    "allStudents": "Tous les élèves ({{n}})",
+    "noStudents": "Pas encore d’élèves — envoie-leur ton lien d’invitation.",
+    "removeStudentConfirm": "Retirer {{name}} de tes élèves ? Ses résultats sont conservés.",
+    "restore": "Restaurer",
+    "archive": "Archiver",
+    "classInviteHint": "Lien pour rejoindre cette classe :",
+    "members": "Élèves ({{n}})",
+    "removeFromClass": "Retirer de la classe",
+    "emptyClass": "Personne pour l’instant.",
+    "addExisting": "Ajouter un de mes élèves…",
+    "homework": "Devoirs",
+    "noHomework": "Rien de donné — utilise « Attribuer » sur une leçon.",
+    "due": "pour le {{date}}",
+    "noDue": "sans date limite",
+    "unassignConfirm": "Retirer ce devoir pour toute la classe ?",
+    "byId": "Ajouter un élève par ID (ancienne méthode)",
+    "dueLabel": "Date limite (facultatif)",
+    "students": "Élèves",
+    "errors": {
+      "bad_code": "Ce code ne fonctionne pas. Demande un nouveau lien à ton professeur.",
+      "own_code": "C’est ton propre code d’invitation.",
+      "not_student": "Seuls les comptes élèves peuvent rejoindre une classe."
+    },
+    "join": {
+      "badTitle": "L’invitation ne fonctionne pas",
+      "badText": "Le lien est peut-être ancien. Demande-en un nouveau à ton professeur.",
+      "titleClass": "{{teacher}} t’invite dans la classe « {{class}} »",
+      "title": "{{teacher}} t’invite à apprendre ensemble",
+      "done": "C’est fait ! Tes devoirs sont maintenant dans la section Leçons.",
+      "toHomework": "Voir mes devoirs",
+      "text": "Ton professeur pourra te donner des leçons et des jeux de cartes et voir tes progrès.",
+      "button": "Rejoindre",
+      "signInFirst": "Connecte-toi ou crée un compte pour rejoindre."
+    },
+    "hw": {
+      "title": "Devoirs",
+      "hideDone": "Masquer les faits",
+      "showDone": "Afficher les faits ({{n}})",
+      "allDone": "Tout est fait — bravo !",
+      "from": "de {{name}}",
+      "done": "fait",
+      "late": "en retard"
     }
   }
 }

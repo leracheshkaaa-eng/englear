@@ -400,7 +400,7 @@
     "title": "先生モード",
     "tabs": {
       "lessons": "マイレッスン",
-      "students": "マイ生徒",
+      "students": "生徒とクラス",
       "progress": "進捗",
       "cards": "カード"
     },
@@ -800,6 +800,65 @@
       "corrected": "修正した作文",
       "strengths": "よかった点",
       "nextSteps": "次に取り組むこと"
+    }
+  },
+  "classes": {
+    "copied": "コピーしました ✓",
+    "copyLink": "リンクをコピー",
+    "copyCode": "コードをコピー",
+    "regenerate": "新しいコード",
+    "regenerateConfirm": "新しいコードを作りますか？古いリンクとコードは使えなくなります。",
+    "inviteTitle": "生徒を招待",
+    "inviteHint": "このリンク（またはコード）を生徒に送ってください。ログインするとあなたの生徒になります。クラスに直接追加するには、下のクラスのリンクを使ってください。",
+    "title": "クラス",
+    "showActive": "現在のクラス",
+    "showArchived": "アーカイブ",
+    "namePlaceholder": "新しいクラス（例：「5年A組」「火曜 18:00」）",
+    "create": "クラスを作成",
+    "noArchived": "アーカイブしたクラスはありません。",
+    "none": "まだクラスがありません。学校のクラスや個人グループを作ってみましょう。",
+    "allStudents": "すべての生徒（{{n}}）",
+    "noStudents": "まだ生徒がいません——招待リンクを送りましょう。",
+    "removeStudentConfirm": "{{name}} を生徒から外しますか？成績は残ります。",
+    "restore": "元に戻す",
+    "archive": "アーカイブ",
+    "classInviteHint": "このクラスに参加するリンク：",
+    "members": "生徒（{{n}}）",
+    "removeFromClass": "クラスから外す",
+    "emptyClass": "まだ誰もいません。",
+    "addExisting": "自分の生徒を追加…",
+    "homework": "宿題",
+    "noHomework": "まだ宿題はありません——レッスンの「割り当て」を使ってください。",
+    "due": "{{date}} まで",
+    "noDue": "期限なし",
+    "unassignConfirm": "この宿題をクラス全体から取り消しますか？",
+    "byId": "ID で生徒を追加（旧方式）",
+    "dueLabel": "提出期限（任意）",
+    "students": "生徒",
+    "errors": {
+      "bad_code": "このコードは使えません。先生に新しいリンクをもらってください。",
+      "own_code": "これはあなた自身の招待コードです。",
+      "not_student": "クラスに参加できるのは生徒アカウントだけです。"
+    },
+    "join": {
+      "badTitle": "招待が無効です",
+      "badText": "リンクが古い可能性があります。先生に新しいリンクをもらってください。",
+      "titleClass": "{{teacher}} があなたをクラス「{{class}}」に招待しています",
+      "title": "{{teacher}} が一緒に学ぼうと招待しています",
+      "done": "完了！宿題は「レッスン」にあります。",
+      "toHomework": "宿題を見る",
+      "text": "先生はあなたにレッスンやカードセットを出し、進捗を見ることができます。",
+      "button": "参加する",
+      "signInFirst": "参加するにはログインするか、アカウントを作成してください。"
+    },
+    "hw": {
+      "title": "宿題",
+      "hideDone": "完了したものを隠す",
+      "showDone": "完了したものを表示（{{n}}）",
+      "allDone": "ぜんぶ完了——すばらしい！",
+      "from": "{{name}} より",
+      "done": "完了",
+      "late": "期限切れ"
     }
   }
 }

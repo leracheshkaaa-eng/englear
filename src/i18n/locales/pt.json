@@ -409,7 +409,7 @@
     "title": "Modo professor",
     "tabs": {
       "lessons": "Minhas lições",
-      "students": "Meus alunos",
+      "students": "Alunos e turmas",
       "progress": "Progresso",
       "cards": "Cartões"
     },
@@ -810,6 +810,65 @@
       "corrected": "Texto corrigido",
       "strengths": "O que está bom",
       "nextSteps": "No que trabalhar"
+    }
+  },
+  "classes": {
+    "copied": "Copiado ✓",
+    "copyLink": "Copiar link",
+    "copyCode": "Copiar código",
+    "regenerate": "Novo código",
+    "regenerateConfirm": "Criar um novo código? O link e o código antigos vão parar de funcionar.",
+    "inviteTitle": "Convidar alunos",
+    "inviteHint": "Envie este link (ou o código) a um aluno. Depois de entrar, ele vira seu aluno. Para adicioná-lo direto a uma turma, use o link da turma abaixo.",
+    "title": "Turmas",
+    "showActive": "Turmas ativas",
+    "showArchived": "Arquivo",
+    "namePlaceholder": "Nova turma, ex.: «5º A» ou «Terça 18h»",
+    "create": "Criar turma",
+    "noArchived": "Nenhuma turma arquivada.",
+    "none": "Ainda não há turmas. Crie a primeira — uma turma da escola ou um grupo particular.",
+    "allStudents": "Todos os alunos ({{n}})",
+    "noStudents": "Ainda não há alunos — envie a eles seu link de convite.",
+    "removeStudentConfirm": "Remover {{name}} dos seus alunos? Os resultados são mantidos.",
+    "restore": "Restaurar",
+    "archive": "Arquivar",
+    "classInviteHint": "Link para entrar nesta turma:",
+    "members": "Alunos ({{n}})",
+    "removeFromClass": "Remover da turma",
+    "emptyClass": "Ninguém ainda.",
+    "addExisting": "Adicionar um aluno meu…",
+    "homework": "Lição de casa",
+    "noHomework": "Nada atribuído ainda — use «Atribuir» em uma aula.",
+    "due": "até {{date}}",
+    "noDue": "sem prazo",
+    "unassignConfirm": "Cancelar esta tarefa para a turma toda?",
+    "byId": "Adicionar aluno por ID (forma antiga)",
+    "dueLabel": "Prazo (opcional)",
+    "students": "Alunos",
+    "errors": {
+      "bad_code": "Este código não funciona. Peça um novo link ao seu professor.",
+      "own_code": "Este é o seu próprio código de convite.",
+      "not_student": "Só contas de aluno podem entrar em uma turma."
+    },
+    "join": {
+      "badTitle": "O convite não funciona",
+      "badText": "O link pode ser antigo. Peça um novo ao seu professor.",
+      "titleClass": "{{teacher}} convida você para a turma «{{class}}»",
+      "title": "{{teacher}} convida você para estudar junto",
+      "done": "Pronto! Sua lição de casa agora está na seção Aulas.",
+      "toHomework": "Ver minha lição de casa",
+      "text": "Seu professor poderá passar aulas e conjuntos de cartões e ver seu progresso.",
+      "button": "Entrar",
+      "signInFirst": "Entre ou crie uma conta para participar."
+    },
+    "hw": {
+      "title": "Lição de casa",
+      "hideDone": "Ocultar feitas",
+      "showDone": "Mostrar feitas ({{n}})",
+      "allDone": "Tudo feito — muito bem!",
+      "from": "de {{name}}",
+      "done": "feito",
+      "late": "atrasado"
     }
   }
 }

@@ -409,7 +409,7 @@
     "title": "Lehrkraft-Modus",
     "tabs": {
       "lessons": "Meine Lektionen",
-      "students": "Meine Lernenden",
+      "students": "Schüler & Klassen",
       "progress": "Fortschritt",
       "cards": "Karten"
     },
@@ -810,6 +810,65 @@
       "corrected": "Korrigierter Text",
       "strengths": "Was gut ist",
       "nextSteps": "Woran du arbeiten kannst"
+    }
+  },
+  "classes": {
+    "copied": "Kopiert ✓",
+    "copyLink": "Link kopieren",
+    "copyCode": "Code kopieren",
+    "regenerate": "Neuer Code",
+    "regenerateConfirm": "Neuen Code erstellen? Der alte Link und Code funktionieren dann nicht mehr.",
+    "inviteTitle": "Schüler einladen",
+    "inviteHint": "Schick diesen Link (oder den Code) an einen Schüler. Nach der Anmeldung wird er dein Schüler. Um ihn direkt in eine Klasse aufzunehmen, nutze den Klassenlink unten.",
+    "title": "Klassen",
+    "showActive": "Aktive Klassen",
+    "showArchived": "Archiv",
+    "namePlaceholder": "Neue Klasse, z. B. „5a“ oder „Dienstag 18 Uhr“",
+    "create": "Klasse erstellen",
+    "noArchived": "Keine archivierten Klassen.",
+    "none": "Noch keine Klassen. Erstelle die erste — z. B. eine Schulklasse oder eine Privatgruppe.",
+    "allStudents": "Alle Schüler ({{n}})",
+    "noStudents": "Noch keine Schüler — schick ihnen deinen Einladungslink.",
+    "removeStudentConfirm": "{{name}} aus deinen Schülern entfernen? Die Ergebnisse bleiben erhalten.",
+    "restore": "Wiederherstellen",
+    "archive": "Archivieren",
+    "classInviteHint": "Link zum Beitritt in diese Klasse:",
+    "members": "Schüler ({{n}})",
+    "removeFromClass": "Aus der Klasse entfernen",
+    "emptyClass": "Noch niemand.",
+    "addExisting": "Einen meiner Schüler hinzufügen…",
+    "homework": "Hausaufgaben",
+    "noHomework": "Noch nichts aufgegeben — nutze „Zuweisen“ bei einer Lektion.",
+    "due": "bis {{date}}",
+    "noDue": "ohne Frist",
+    "unassignConfirm": "Diese Hausaufgabe für die ganze Klasse zurücknehmen?",
+    "byId": "Schüler per ID hinzufügen (alter Weg)",
+    "dueLabel": "Abgabetermin (optional)",
+    "students": "Schüler",
+    "errors": {
+      "bad_code": "Dieser Code funktioniert nicht. Bitte deine Lehrkraft um einen neuen Link.",
+      "own_code": "Das ist dein eigener Einladungscode.",
+      "not_student": "Nur Schülerkonten können einer Klasse beitreten."
+    },
+    "join": {
+      "badTitle": "Die Einladung funktioniert nicht",
+      "badText": "Der Link ist vielleicht veraltet. Bitte deine Lehrkraft um einen neuen.",
+      "titleClass": "{{teacher}} lädt dich in die Klasse „{{class}}“ ein",
+      "title": "{{teacher}} lädt dich zum gemeinsamen Lernen ein",
+      "done": "Fertig! Deine Hausaufgaben findest du jetzt unter „Lektionen“.",
+      "toHomework": "Zu meinen Hausaufgaben",
+      "text": "Deine Lehrkraft kann dir Lektionen und Kartensets geben und deinen Fortschritt sehen.",
+      "button": "Beitreten",
+      "signInFirst": "Melde dich an oder erstelle ein Konto, um beizutreten."
+    },
+    "hw": {
+      "title": "Hausaufgaben",
+      "hideDone": "Erledigtes ausblenden",
+      "showDone": "Erledigtes zeigen ({{n}})",
+      "allDone": "Alles erledigt — super!",
+      "from": "von {{name}}",
+      "done": "erledigt",
+      "late": "überfällig"
     }
   }
 }

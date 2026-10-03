@@ -400,7 +400,7 @@
     "title": "教师模式",
     "tabs": {
       "lessons": "我的课程",
-      "students": "我的学生",
+      "students": "学生和班级",
       "progress": "进度",
       "cards": "卡片"
     },
@@ -800,6 +800,65 @@
       "corrected": "修改后的文章",
       "strengths": "优点",
       "nextSteps": "需要加强"
+    }
+  },
+  "classes": {
+    "copied": "已复制 ✓",
+    "copyLink": "复制链接",
+    "copyCode": "复制邀请码",
+    "regenerate": "新邀请码",
+    "regenerateConfirm": "要生成新的邀请码吗？旧链接和旧邀请码将失效。",
+    "inviteTitle": "邀请学生",
+    "inviteHint": "把这个链接（或邀请码）发给学生。登录后他就会成为你的学生。若要直接加入某个班级，请使用下方的班级链接。",
+    "title": "班级",
+    "showActive": "进行中的班级",
+    "showArchived": "归档",
+    "namePlaceholder": "新班级，例如“五年级 A 班”或“周二 18:00”",
+    "create": "创建班级",
+    "noArchived": "没有已归档的班级。",
+    "none": "还没有班级。创建第一个吧——学校的班级或私人小组都可以。",
+    "allStudents": "全部学生（{{n}}）",
+    "noStudents": "还没有学生——把邀请链接发给他们吧。",
+    "removeStudentConfirm": "将 {{name}} 从你的学生中移除？成绩会保留。",
+    "restore": "恢复",
+    "archive": "归档",
+    "classInviteHint": "加入这个班级的链接：",
+    "members": "学生（{{n}}）",
+    "removeFromClass": "移出班级",
+    "emptyClass": "还没有人。",
+    "addExisting": "添加我的学生…",
+    "homework": "作业",
+    "noHomework": "还没有布置作业——在课程上点“布置”。",
+    "due": "截止 {{date}}",
+    "noDue": "无截止日期",
+    "unassignConfirm": "要为整个班级撤回这项作业吗？",
+    "byId": "通过 ID 添加学生（旧方式）",
+    "dueLabel": "截止日期（可选）",
+    "students": "学生",
+    "errors": {
+      "bad_code": "这个邀请码无效。请向老师要一个新链接。",
+      "own_code": "这是你自己的邀请码。",
+      "not_student": "只有学生账户可以加入班级。"
+    },
+    "join": {
+      "badTitle": "邀请无效",
+      "badText": "链接可能已过期。请向老师要一个新的。",
+      "titleClass": "{{teacher}} 邀请你加入班级“{{class}}”",
+      "title": "{{teacher}} 邀请你一起学习",
+      "done": "完成！你的作业现在在“课程”栏目里。",
+      "toHomework": "查看我的作业",
+      "text": "老师可以给你布置课程和卡组，并查看你的进度。",
+      "button": "加入",
+      "signInFirst": "请登录或注册账户后加入。"
+    },
+    "hw": {
+      "title": "作业",
+      "hideDone": "隐藏已完成",
+      "showDone": "显示已完成（{{n}}）",
+      "allDone": "全部完成——真棒！",
+      "from": "来自 {{name}}",
+      "done": "已完成",
+      "late": "已逾期"
     }
   }
 }

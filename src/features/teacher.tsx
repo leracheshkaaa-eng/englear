@@ -10,6 +10,7 @@ import { errorMessage } from '../i18n/errors'
 import { lessonWords } from './lessons'
 import { TeacherSets } from './teacherSets'
 import { materialTypeLabel } from './practice'
+import { AssignMenu, ClassesManager } from './classes'
 
 const LEGACY_CEFR = { beginner: 'A1', intermediate: 'B1', advanced: 'C1' } as const
 
@@ -77,7 +78,7 @@ export function TeacherMode({ reload }: { reload: () => void }) {
 
       {tab === 'lessons' && <LessonManager lessons={lessons} reload={() => { refresh(); reload() }} />}
       {tab === 'cards' && <TeacherSets />}
-      {tab === 'students' && <StudentManager />}
+      {tab === 'students' && <ClassesManager />}
       {tab === 'progress' && <ProgressBoard lessons={lessons} />}
     </section>
   )
@@ -553,113 +554,6 @@ function serialize(exs: Exercise[]): string {
 }
 
 /* ---------- assign menu ---------- */
-
-function AssignMenu({ lesson }: { lesson: { id: string } }) {
-  const { t } = useTranslation()
-  const { userId } = useAuth()
-  const [open, setOpen] = useState(false)
-  const [students, setStudents] = useState<Profile[]>([])
-  const [assigned, setAssigned] = useState<string[]>([])
-
-  useEffect(() => {
-    if (!open || !userId) return
-    api.myStudents(userId).then(setStudents)
-    api.lessonAssignees(lesson.id).then(setAssigned)
-  }, [open, userId, lesson.id])
-
-  async function toggle(sid: string) {
-    if (!userId) return
-    if (assigned.includes(sid)) {
-      await api.unassignLesson(lesson.id, sid)
-      setAssigned((a) => a.filter((x) => x !== sid))
-    } else {
-      await api.assignLesson(userId, sid, lesson.id)
-      setAssigned((a) => [...a, sid])
-    }
-  }
-
-  return (
-    <div className="relative">
-      <Button variant="soft" onClick={() => setOpen((o) => !o)}>
-        {t('teacher.assign')}
-      </Button>
-      {open && (
-        <div className="absolute right-0 z-20 mt-2 w-56 rounded-2xl border border-line bg-paper p-2 shadow-[0_16px_40px_-24px_rgba(60,42,112,0.6)]">
-          {students.length === 0 && <p className="p-2 text-sm text-mute">{t('teacher.noStudentsToAssign')}</p>}
-          {students.map((s) => (
-            <label key={s.id} className="flex cursor-pointer items-center gap-2 rounded-lg p-2 text-sm hover:bg-lilac/50">
-              <input type="checkbox" checked={assigned.includes(s.id)} onChange={() => toggle(s.id)} />
-              {s.full_name || s.id.slice(0, 8)}
-            </label>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
-/* ---------- students ---------- */
-
-function StudentManager() {
-  const { t } = useTranslation()
-  const { userId } = useAuth()
-  const [students, setStudents] = useState<Profile[]>([])
-  const [newId, setNewId] = useState('')
-  const [msg, setMsg] = useState('')
-
-  async function load() {
-    if (userId) setStudents(await api.myStudents(userId))
-  }
-  useEffect(() => {
-    load()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [userId])
-
-  async function add() {
-    if (!userId || !newId.trim()) return
-    try {
-      await api.linkStudent(userId, newId.trim())
-      setNewId('')
-      setMsg(t('teacher.studentAdded'))
-      load()
-    } catch (e) {
-      setMsg(`${t('teacher.studentAddFailed')} ${errorMessage(e)}`)
-    }
-  }
-
-  return (
-    <div className="space-y-4">
-      <p className="text-mute">{t('teacher.addStudentHint')}</p>
-      <div className="flex flex-wrap gap-2">
-        <input value={newId} onChange={(e) => setNewId(e.target.value)} placeholder={t('teacher.studentIdPlaceholder')} className={`${inputCls} w-80`} />
-        <Button onClick={add}>{t('common.add')}</Button>
-      </div>
-      {msg && <p className="text-sm text-mute">{msg}</p>}
-      <div className="space-y-2">
-        {students.map((s) => (
-          <div key={s.id} className="flex items-center justify-between rounded-2xl border border-line bg-paper p-4">
-            <div>
-              <p className="font-body font-semibold">{s.full_name || t('common.noName')}</p>
-              <p className="text-xs text-mute">{s.id}</p>
-            </div>
-            <Button
-              variant="danger"
-              onClick={async () => {
-                if (userId) {
-                  await api.unlinkStudent(userId, s.id)
-                  load()
-                }
-              }}
-            >
-              {t('common.remove')}
-            </Button>
-          </div>
-        ))}
-        {students.length === 0 && <p className="text-mute">{t('teacher.noStudents')}</p>}
-      </div>
-    </div>
-  )
-}
 
 /* ---------- progress board ---------- */
 

@@ -409,7 +409,7 @@
     "title": "Modalità insegnante",
     "tabs": {
       "lessons": "Le mie lezioni",
-      "students": "I miei studenti",
+      "students": "Studenti e classi",
       "progress": "Progressi",
       "cards": "Carte"
     },
@@ -810,6 +810,65 @@
       "corrected": "Testo corretto",
       "strengths": "Cosa va bene",
       "nextSteps": "Su cosa lavorare"
+    }
+  },
+  "classes": {
+    "copied": "Copiato ✓",
+    "copyLink": "Copia il link",
+    "copyCode": "Copia il codice",
+    "regenerate": "Nuovo codice",
+    "regenerateConfirm": "Creare un nuovo codice? Il vecchio link e il vecchio codice smetteranno di funzionare.",
+    "inviteTitle": "Invita studenti",
+    "inviteHint": "Invia questo link (o il codice) a uno studente. Dopo l’accesso diventerà tuo studente. Per aggiungerlo subito a una classe, usa il link della classe qui sotto.",
+    "title": "Classi",
+    "showActive": "Classi attive",
+    "showArchived": "Archivio",
+    "namePlaceholder": "Nuova classe, ad es. «5A» o «Martedì 18:00»",
+    "create": "Crea classe",
+    "noArchived": "Nessuna classe archiviata.",
+    "none": "Ancora nessuna classe. Crea la prima: una classe scolastica o un gruppo privato.",
+    "allStudents": "Tutti gli studenti ({{n}})",
+    "noStudents": "Ancora nessuno studente: invia loro il tuo link di invito.",
+    "removeStudentConfirm": "Togliere {{name}} dai tuoi studenti? I risultati restano.",
+    "restore": "Ripristina",
+    "archive": "Archivia",
+    "classInviteHint": "Link per entrare in questa classe:",
+    "members": "Studenti ({{n}})",
+    "removeFromClass": "Togli dalla classe",
+    "emptyClass": "Ancora nessuno.",
+    "addExisting": "Aggiungi un mio studente…",
+    "homework": "Compiti",
+    "noHomework": "Ancora niente: usa «Assegna» su una lezione.",
+    "due": "entro il {{date}}",
+    "noDue": "senza scadenza",
+    "unassignConfirm": "Ritirare questo compito per tutta la classe?",
+    "byId": "Aggiungi studente tramite ID (vecchio metodo)",
+    "dueLabel": "Scadenza (facoltativa)",
+    "students": "Studenti",
+    "errors": {
+      "bad_code": "Questo codice non funziona. Chiedi un nuovo link al tuo insegnante.",
+      "own_code": "Questo è il tuo codice di invito.",
+      "not_student": "Solo gli account studente possono entrare in una classe."
+    },
+    "join": {
+      "badTitle": "L’invito non funziona",
+      "badText": "Il link potrebbe essere vecchio. Chiedine uno nuovo al tuo insegnante.",
+      "titleClass": "{{teacher}} ti invita nella classe «{{class}}»",
+      "title": "{{teacher}} ti invita a studiare insieme",
+      "done": "Fatto! I compiti ora sono nella sezione Lezioni.",
+      "toHomework": "Vai ai miei compiti",
+      "text": "L’insegnante potrà darti lezioni e set di carte e vedere i tuoi progressi.",
+      "button": "Unisciti",
+      "signInFirst": "Accedi o crea un account per unirti."
+    },
+    "hw": {
+      "title": "Compiti",
+      "hideDone": "Nascondi quelli fatti",
+      "showDone": "Mostra quelli fatti ({{n}})",
+      "allDone": "Tutto fatto — bravo!",
+      "from": "da {{name}}",
+      "done": "fatto",
+      "late": "in ritardo"
     }
   }
 }

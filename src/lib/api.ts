@@ -640,7 +640,7 @@ export async function importWords(words: ImportWord[], dryRun = true): Promise<I
 export async function myStudents(teacherId: string): Promise<Profile[]> {
   const { data } = await supabase
     .from('teacher_students')
-    .select('student:profiles!teacher_students_student_id_fkey(id, full_name, role, created_at)')
+    .select('student:profiles!teacher_students_student_id_fkey(id, full_name, role, avatar, created_at)')
     .eq('teacher_id', teacherId)
   return (data ?? []).map((r: any) => r.student).filter(Boolean)
 }
@@ -1397,4 +1397,135 @@ export async function adminSubscriptions(): Promise<Record<string, Subscription>
 export async function adminSetSubscription(userId: string, plan: 'plus' | 'family', days: number) {
   const { error } = await supabase.rpc('admin_set_subscription', { p_user: userId, p_plan: plan, p_days: days })
   if (error) throw error
+}
+
+/* ============================================================
+   Classes (groups), invite codes and homework with due dates.
+   Joining and class-wide assignments go through server functions (migration 0023).
+   ============================================================ */
+export type ClassRow = { id: string; name: string; join_code: string; archived: boolean; created_at: string }
+export type ClassAssignment = {
+  id: string
+  class_id: string
+  lesson_id: string | null
+  flashcard_set_id: string | null
+  due_at: string | null
+  created_at: string
+  title: string
+}
+export type JoinPreview = { teacher: string; teacher_avatar: string | null; class: string | null }
+
+export const joinLink = (code: string) => `${location.origin}/join/${code}`
+
+export async function myInviteCode(): Promise<string> {
+  const { data, error } = await supabase.rpc('my_invite_code')
+  if (error) throw error
+  return data as string
+}
+/** New code for a class, or for the personal invite (class = null). The old code stops working. */
+export async function regenerateCode(classId: string | null): Promise<string> {
+  const { data, error } = await supabase.rpc('regenerate_code', { p_class: classId })
+  if (error) throw error
+  return data as string
+}
+export async function myClasses(): Promise<ClassRow[]> {
+  const { data, error } = await supabase.from('classes').select('id, name, join_code, archived, created_at').order('created_at')
+  if (error) throw error
+  return (data ?? []) as ClassRow[]
+}
+export async function createClass(name: string): Promise<ClassRow> {
+  const { data, error } = await supabase.rpc('create_class', { p_name: name })
+  if (error) throw error
+  return data as ClassRow
+}
+export async function updateClass(id: string, patch: { name?: string; archived?: boolean }) {
+  const { error } = await supabase.from('classes').update(patch).eq('id', id)
+  if (error) throw error
+}
+/** class id -> member student ids */
+export async function classMembers(): Promise<Record<string, string[]>> {
+  const { data, error } = await supabase.from('class_members').select('class_id, student_id')
+  if (error) throw error
+  const out: Record<string, string[]> = {}
+  for (const r of data ?? []) (out[r.class_id] ??= []).push(r.student_id)
+  return out
+}
+export async function addToClass(classId: string, studentId: string) {
+  const { error } = await supabase.rpc('add_to_class', { p_class: classId, p_student: studentId })
+  if (error) throw error
+}
+export async function removeFromClass(classId: string, studentId: string) {
+  const { error } = await supabase.rpc('remove_from_class', { p_class: classId, p_student: studentId })
+  if (error) throw error
+}
+export async function classAssignments(): Promise<ClassAssignment[]> {
+  const { data, error } = await supabase
+    .from('class_assignments')
+    .select('id, class_id, lesson_id, flashcard_set_id, due_at, created_at, lesson:lessons(title), set:flashcard_sets(title)')
+    .order('created_at', { ascending: false })
+  if (error) throw error
+  return (data ?? []).map((r: any) => ({ ...r, title: r.lesson?.title ?? r.set?.title ?? '' }))
+}
+/** Assign a lesson or a set to a whole class (again = change the due date). */
+export async function assignToClass(classId: string, item: { lessonId?: string; setId?: string }, due: string | null) {
+  const { error } = await supabase.rpc('assign_to_class', { p_class: classId, p_lesson: item.lessonId ?? null, p_set: item.setId ?? null, p_due: due })
+  if (error) throw error
+}
+export async function unassignFromClass(classAssignmentId: string) {
+  const { error } = await supabase.from('class_assignments').delete().eq('id', classAssignmentId)
+  if (error) throw error
+}
+/** Individual assignment with an optional due date. */
+export async function assignLessonDue(teacherId: string, studentId: string, lessonId: string, due: string | null) {
+  await assignLesson(teacherId, studentId, lessonId)
+  if (due) {
+    const { error } = await supabase.from('lesson_assignments').update({ due_at: due }).eq('lesson_id', lessonId).eq('student_id', studentId)
+    if (error) throw error
+  }
+}
+export async function joinPreview(code: string): Promise<JoinPreview | null> {
+  const { data, error } = await supabase.rpc('join_preview', { p_code: code })
+  if (error) throw error
+  return data as JoinPreview | null
+}
+/** Errors carry a hint: bad_code | own_code | not_student */
+export async function joinByCode(code: string): Promise<JoinPreview> {
+  const { data, error } = await supabase.rpc('join_by_code', { p_code: code })
+  if (error) throw error
+  return data as JoinPreview
+}
+
+export type HomeworkItem = {
+  kind: 'lesson' | 'set'
+  id: string // lesson id or set id
+  title: string
+  due_at: string | null
+  assigned_at: string
+  teacher: string
+  done: boolean
+}
+/** The signed-in student's homework: assigned lessons and card sets with due dates and status. */
+export async function myHomework(studentId: string): Promise<HomeworkItem[]> {
+  const [la, sa, prog, setProg] = await Promise.all([
+    supabase
+      .from('lesson_assignments')
+      .select('lesson_id, due_at, assigned_at, lesson:lessons(title), teacher:profiles!lesson_assignments_teacher_id_fkey(full_name)')
+      .eq('student_id', studentId),
+    supabase
+      .from('flashcard_set_assignments')
+      .select('flashcard_set_id, due_at, assigned_at, set:flashcard_sets(title), teacher:profiles!flashcard_set_assignments_teacher_id_fkey(full_name)')
+      .eq('student_id', studentId),
+    supabase.from('lesson_progress').select('lesson_id, status').eq('student_id', studentId),
+    supabase.from('flashcard_set_progress').select('set_id, status').eq('student_id', studentId),
+  ])
+  if (la.error) throw la.error
+  if (sa.error) throw sa.error
+  const doneLessons = new Set((prog.data ?? []).filter((p) => p.status === 'completed').map((p) => p.lesson_id))
+  const doneSets = new Set((setProg.data ?? []).filter((p) => p.status === 'completed').map((p) => p.set_id))
+  const items: HomeworkItem[] = [
+    ...(la.data ?? []).map((r: any) => ({ kind: 'lesson' as const, id: r.lesson_id, title: r.lesson?.title ?? '', due_at: r.due_at, assigned_at: r.assigned_at, teacher: r.teacher?.full_name ?? '', done: doneLessons.has(r.lesson_id) })),
+    ...(sa.data ?? []).map((r: any) => ({ kind: 'set' as const, id: r.flashcard_set_id, title: r.set?.title ?? '', due_at: r.due_at, assigned_at: r.assigned_at, teacher: r.teacher?.full_name ?? '', done: doneSets.has(r.flashcard_set_id) })),
+  ]
+  // open work first (nearest due date first), then done
+  return items.sort((a, b) => Number(a.done) - Number(b.done) || (a.due_at ?? '9999').localeCompare(b.due_at ?? '9999') || b.assigned_at.localeCompare(a.assigned_at))
 }

@@ -409,7 +409,7 @@
     "title": "Teacher Mode",
     "tabs": {
       "lessons": "My lessons",
-      "students": "My students",
+      "students": "Students & classes",
       "progress": "Progress",
       "cards": "Cards"
     },
@@ -810,6 +810,65 @@
       "corrected": "Corrected text",
       "strengths": "What is good",
       "nextSteps": "What to work on"
+    }
+  },
+  "classes": {
+    "copied": "Copied ✓",
+    "copyLink": "Copy link",
+    "copyCode": "Copy code",
+    "regenerate": "New code",
+    "regenerateConfirm": "Create a new code? The old link and code will stop working.",
+    "inviteTitle": "Invite students",
+    "inviteHint": "Send this link (or the code) to a student. After signing in they become your student. To add them straight to a class, use the class link below.",
+    "title": "Classes",
+    "showActive": "Active classes",
+    "showArchived": "Archive",
+    "namePlaceholder": "New class, e.g. “5-A” or “Tuesday 6 pm”",
+    "create": "Create class",
+    "noArchived": "No archived classes.",
+    "none": "No classes yet. Create the first one — e.g. a school class or a private group.",
+    "allStudents": "All students ({{n}})",
+    "noStudents": "No students yet — send them your invite link.",
+    "removeStudentConfirm": "Remove {{name}} from your students? Their results are kept.",
+    "restore": "Restore",
+    "archive": "Archive",
+    "classInviteHint": "Link to join this class:",
+    "members": "Students ({{n}})",
+    "removeFromClass": "Remove from class",
+    "emptyClass": "Nobody yet.",
+    "addExisting": "Add one of my students…",
+    "homework": "Homework",
+    "noHomework": "Nothing assigned yet — use “Assign” on a lesson.",
+    "due": "due {{date}}",
+    "noDue": "no due date",
+    "unassignConfirm": "Take this homework back from the whole class?",
+    "byId": "Add a student by ID (old way)",
+    "dueLabel": "Due date (optional)",
+    "students": "Students",
+    "errors": {
+      "bad_code": "This code does not work. Ask your teacher for a new link.",
+      "own_code": "This is your own invite code.",
+      "not_student": "Only student accounts can join a class."
+    },
+    "join": {
+      "badTitle": "The invite does not work",
+      "badText": "The link may be old. Ask your teacher for a new one.",
+      "titleClass": "{{teacher}} invites you to the class “{{class}}”",
+      "title": "{{teacher}} invites you to study together",
+      "done": "Done! Your homework is now in the Lessons section.",
+      "toHomework": "Go to my homework",
+      "text": "Your teacher will be able to give you lessons and card sets and see your progress.",
+      "button": "Join",
+      "signInFirst": "Sign in or create an account to join."
+    },
+    "hw": {
+      "title": "Homework",
+      "hideDone": "Hide done",
+      "showDone": "Show done ({{n}})",
+      "allDone": "All done — well done!",
+      "from": "from {{name}}",
+      "done": "done",
+      "late": "late"
     }
   }
 }

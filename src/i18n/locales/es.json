@@ -409,7 +409,7 @@
     "title": "Modo profesor",
     "tabs": {
       "lessons": "Mis lecciones",
-      "students": "Mis estudiantes",
+      "students": "Alumnos y grupos",
       "progress": "Progreso",
       "cards": "Tarjetas"
     },
@@ -810,6 +810,65 @@
       "corrected": "Texto corregido",
       "strengths": "Lo que está bien",
       "nextSteps": "En qué trabajar"
+    }
+  },
+  "classes": {
+    "copied": "Copiado ✓",
+    "copyLink": "Copiar enlace",
+    "copyCode": "Copiar código",
+    "regenerate": "Nuevo código",
+    "regenerateConfirm": "¿Crear un código nuevo? El enlace y el código antiguos dejarán de funcionar.",
+    "inviteTitle": "Invitar alumnos",
+    "inviteHint": "Envía este enlace (o el código) a un alumno. Al iniciar sesión pasará a ser tu alumno. Para añadirlo directamente a un grupo, usa el enlace del grupo más abajo.",
+    "title": "Grupos",
+    "showActive": "Grupos activos",
+    "showArchived": "Archivo",
+    "namePlaceholder": "Nuevo grupo, p. ej. «5.º A» o «Martes 18:00»",
+    "create": "Crear grupo",
+    "noArchived": "No hay grupos archivados.",
+    "none": "Aún no hay grupos. Crea el primero: una clase del colegio o un grupo particular.",
+    "allStudents": "Todos los alumnos ({{n}})",
+    "noStudents": "Aún no hay alumnos: envíales tu enlace de invitación.",
+    "removeStudentConfirm": "¿Quitar a {{name}} de tus alumnos? Sus resultados se conservan.",
+    "restore": "Restaurar",
+    "archive": "Archivar",
+    "classInviteHint": "Enlace para unirse a este grupo:",
+    "members": "Alumnos ({{n}})",
+    "removeFromClass": "Quitar del grupo",
+    "emptyClass": "Todavía nadie.",
+    "addExisting": "Añadir a uno de mis alumnos…",
+    "homework": "Deberes",
+    "noHomework": "Nada asignado todavía: usa «Asignar» en una lección.",
+    "due": "hasta el {{date}}",
+    "noDue": "sin fecha límite",
+    "unassignConfirm": "¿Retirar estos deberes a todo el grupo?",
+    "byId": "Añadir alumno por ID (forma antigua)",
+    "dueLabel": "Fecha de entrega (opcional)",
+    "students": "Alumnos",
+    "errors": {
+      "bad_code": "Este código no funciona. Pide a tu profesor un enlace nuevo.",
+      "own_code": "Este es tu propio código de invitación.",
+      "not_student": "Solo las cuentas de alumno pueden unirse a un grupo."
+    },
+    "join": {
+      "badTitle": "La invitación no funciona",
+      "badText": "Puede que el enlace sea antiguo. Pide uno nuevo a tu profesor.",
+      "titleClass": "{{teacher}} te invita al grupo «{{class}}»",
+      "title": "{{teacher}} te invita a estudiar juntos",
+      "done": "¡Listo! Tus deberes ahora están en la sección Lecciones.",
+      "toHomework": "Ir a mis deberes",
+      "text": "Tu profesor podrá darte lecciones y juegos de tarjetas y ver tu progreso.",
+      "button": "Unirme",
+      "signInFirst": "Inicia sesión o crea una cuenta para unirte."
+    },
+    "hw": {
+      "title": "Deberes",
+      "hideDone": "Ocultar hechos",
+      "showDone": "Mostrar hechos ({{n}})",
+      "allDone": "¡Todo hecho, muy bien!",
+      "from": "de {{name}}",
+      "done": "hecho",
+      "late": "atrasado"
     }
   }
 }

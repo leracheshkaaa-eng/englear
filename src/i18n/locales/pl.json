@@ -427,7 +427,7 @@
     "title": "Tryb nauczyciela",
     "tabs": {
       "lessons": "Moje lekcje",
-      "students": "Moi uczniowie",
+      "students": "Uczniowie i grupy",
       "progress": "Postępy",
       "cards": "Fiszki"
     },
@@ -830,6 +830,65 @@
       "corrected": "Poprawiony tekst",
       "strengths": "Co jest dobrze",
       "nextSteps": "Nad czym popracować"
+    }
+  },
+  "classes": {
+    "copied": "Skopiowano ✓",
+    "copyLink": "Kopiuj link",
+    "copyCode": "Kopiuj kod",
+    "regenerate": "Nowy kod",
+    "regenerateConfirm": "Utworzyć nowy kod? Stary link i kod przestaną działać.",
+    "inviteTitle": "Zaproś uczniów",
+    "inviteHint": "Wyślij ten link (lub kod) uczniowi. Po zalogowaniu zostanie twoim uczniem. Aby od razu dodać go do grupy, użyj linku grupy poniżej.",
+    "title": "Grupy",
+    "showActive": "Aktywne grupy",
+    "showArchived": "Archiwum",
+    "namePlaceholder": "Nowa grupa, np. „5A” lub „Wtorek 18:00”",
+    "create": "Utwórz grupę",
+    "noArchived": "Brak zarchiwizowanych grup.",
+    "none": "Nie ma jeszcze grup. Utwórz pierwszą — klasę szkolną albo grupę prywatną.",
+    "allStudents": "Wszyscy uczniowie ({{n}})",
+    "noStudents": "Nie ma jeszcze uczniów — wyślij im link z zaproszeniem.",
+    "removeStudentConfirm": "Usunąć {{name}} z twoich uczniów? Wyniki zostaną zachowane.",
+    "restore": "Przywróć",
+    "archive": "Archiwizuj",
+    "classInviteHint": "Link do dołączenia do tej grupy:",
+    "members": "Uczniowie ({{n}})",
+    "removeFromClass": "Usuń z grupy",
+    "emptyClass": "Jeszcze nikogo.",
+    "addExisting": "Dodaj mojego ucznia…",
+    "homework": "Praca domowa",
+    "noHomework": "Nic jeszcze nie zadano — użyj „Przydziel” przy lekcji.",
+    "due": "do {{date}}",
+    "noDue": "bez terminu",
+    "unassignConfirm": "Cofnąć tę pracę domową dla całej grupy?",
+    "byId": "Dodaj ucznia po ID (stary sposób)",
+    "dueLabel": "Termin (opcjonalnie)",
+    "students": "Uczniowie",
+    "errors": {
+      "bad_code": "Ten kod nie działa. Poproś nauczyciela o nowy link.",
+      "own_code": "To twój własny kod zaproszenia.",
+      "not_student": "Do grupy mogą dołączyć tylko konta uczniów."
+    },
+    "join": {
+      "badTitle": "Zaproszenie nie działa",
+      "badText": "Link może być nieaktualny. Poproś nauczyciela o nowy.",
+      "titleClass": "{{teacher}} zaprasza cię do grupy „{{class}}”",
+      "title": "{{teacher}} zaprasza cię do wspólnej nauki",
+      "done": "Gotowe! Prace domowe są teraz w sekcji Lekcje.",
+      "toHomework": "Do moich zadań",
+      "text": "Nauczyciel będzie mógł dawać ci lekcje i zestawy fiszek oraz widzieć twoje postępy.",
+      "button": "Dołącz",
+      "signInFirst": "Zaloguj się lub utwórz konto, aby dołączyć."
+    },
+    "hw": {
+      "title": "Praca domowa",
+      "hideDone": "Ukryj zrobione",
+      "showDone": "Pokaż zrobione ({{n}})",
+      "allDone": "Wszystko zrobione — brawo!",
+      "from": "od {{name}}",
+      "done": "zrobione",
+      "late": "po terminie"
     }
   }
 }

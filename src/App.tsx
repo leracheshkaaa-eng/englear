@@ -8,6 +8,7 @@ import { Login, NewPassword, StudentProgress } from './features/account'
 import { Avatar } from './lib/avatars'
 import { Shop, WalletChip } from './features/shop'
 import { useTranslation } from 'react-i18next'
+import { Homework, JoinPage } from './features/classes'
 import { Footer, Pricing, Privacy, Refund, Terms, pageFromPath, type PublicPage } from './features/legal'
 
 // sections most visitors never open load on demand
@@ -32,6 +33,7 @@ function Shell() {
   const [backTo, setBackTo] = useState<'lessons' | 'practice'>('lessons') // where the player returns
   const [flashTarget, setFlashTarget] = useState<api.SetProgress | null>(null) // set opened from Progress
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
+  const [joinCode, setJoinCode] = useState<string | null>(null) // /join/<CODE> from a teacher's invite
 
   const reload = useCallback(async () => {
     // only totals here: the catalog loads its own pages
@@ -63,6 +65,8 @@ function Shell() {
   // Deep link /lesson/<id> — works for guests (public lessons) and is RLS-protected.
   useEffect(() => {
     async function resolvePath() {
+      const j = location.pathname.match(/^\/join\/([A-Za-z0-9]{4,12})\/?$/)
+      setJoinCode(j ? j[1].toUpperCase() : null)
       const m = location.pathname.match(/^\/lesson\/([0-9a-f-]{10,})/i)
       if (m) {
         const lesson = await api.getLesson(m[1]).catch(() => null)
@@ -96,6 +100,23 @@ function Shell() {
     return (
       <Page>
         <NewPassword onDone={() => go('home')} />
+      </Page>
+    )
+  }
+
+  // ---- invite link from a teacher ----
+  if (joinCode) {
+    return (
+      <Page>
+        <JoinPage
+          code={joinCode}
+          onDone={() => {
+            history.pushState({}, '', '/')
+            setJoinCode(null)
+            setView('lessons')
+            reload()
+          }}
+        />
       </Page>
     )
   }
@@ -179,6 +200,18 @@ function Shell() {
       <main>
         <Suspense fallback={<p className="py-24 text-center text-mute">{t('common.loading')}</p>}>
         {view === 'home' && <Home role={role} onStart={() => go('lessons')} onLogin={() => go('login')} count={lessonCount} />}
+        {view === 'lessons' && userId && (
+          <Homework
+            onOpenLesson={async (id) => {
+              const lesson = await api.getLesson(id).catch(() => null)
+              if (!lesson) return
+              setActive(lesson)
+              setBackTo('lessons')
+              setView('player')
+            }}
+            onOpenSets={() => go('flashcards')}
+          />
+        )}
         {(view === 'lessons' || view === 'practice') && (
           <LessonsCatalog
             key={view}
