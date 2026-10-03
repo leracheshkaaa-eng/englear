@@ -24,7 +24,8 @@
     "teacher": "教师",
     "admin": "管理",
     "settings": "设置",
-    "practice": "练习"
+    "practice": "练习",
+    "pricing": "价格"
   },
   "home": {
     "tagline": "全家一起学英语",
@@ -49,7 +50,9 @@
     "noAccountHint": "还没有账户？请选择“注册”。",
     "teacherLaterHint": "以后经管理员批准即可成为教师。",
     "nicknameRequired": "请起一个昵称。",
-    "confirmEmail": "账户已创建！请通过邮件中的链接确认邮箱，然后在这里登录。"
+    "confirmEmail": "账户已创建！请通过邮件中的链接确认邮箱，然后在这里登录。",
+    "agree": "创建账户即表示你同意<terms>服务条款</terms>和<privacy>隐私政策</privacy>。",
+    "parentConsent": "未满 {{age}} 岁？还需要父母或监护人同意。"
   },
   "errors": {
     "invalidCredentials": "邮箱或密码错误。",
@@ -683,5 +686,38 @@
       "generic": "购买失败，请重试。"
     },
     "avatarsTitle": "头像"
+  },
+  "footer": {
+    "pricing": "价格",
+    "terms": "条款",
+    "refund": "退款",
+    "privacy": "隐私",
+    "contact": "联系"
+  },
+  "pricing": {
+    "title": "价格",
+    "subtitle": "在 Englear 学习是免费的。金币和订阅可解锁额外功能，并支持本项目。",
+    "freeTitle": "免费",
+    "freeFeatures": [
+      "A1–C2 各级别的语法和词汇课程",
+      "带问题的阅读和听力练习",
+      "提供 10 种语言翻译的词典",
+      "带练习的单词卡",
+      "学习进度和连续学习天数",
+      "教师工具：课程、卡组、作业"
+    ],
+    "coinsTitle": "金币",
+    "coinsText": "金币是应用内点数。你可以通过学习获得（每天最多 60 枚），也可以按包购买。金币可用于：",
+    "coinUses": [
+      "AI 辅导 — 每条消息 10 金币（即将推出）",
+      "AI 写作批改 — 40 金币（即将推出）",
+      "AI 口语练习 — 50 金币（即将推出）",
+      "商店中的头像、头像框和连续天数保护"
+    ],
+    "vat": "价格以欧元计；如适用，结账时会加上增值税或销售税。",
+    "processor": "付款由我们的官方经销商（Merchant of Record）{{name}} 处理。"
+  },
+  "legal": {
+    "englishOnly": "本文件提供英文版本，以英文版本为准。"
   }
 }

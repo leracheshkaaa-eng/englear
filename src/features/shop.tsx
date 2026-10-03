@@ -101,8 +101,6 @@ export function Shop({ wallet, onWallet }: { wallet: Wallet; onWallet: (w: Walle
   const freeze = items.find((i) => i.kind === 'streak_freeze')
   const avatars = items.filter((i) => i.kind === 'avatar')
   const frames = items.filter((i) => i.kind === 'frame')
-  const packs = products.filter((p) => p.kind === 'coins')
-  const plans = products.filter((p) => p.kind === 'subscription')
   const price = (p: number) => (
     <span className="font-body font-semibold">
       {p} 🪙
@@ -219,7 +217,45 @@ export function Shop({ wallet, onWallet }: { wallet: Wallet; onWallet: (w: Walle
         })}
       </div>
 
-      {/* for money (payments are connected later) */}
+      <PriceList products={products} />
+
+      {/* history */}
+      <h3 className="mt-10 mb-3 font-display text-2xl font-semibold">{t('shop.history')}</h3>
+      {history.length === 0 ? (
+        <p className="text-mute">{t('shop.noHistory')}</p>
+      ) : (
+        <div className="divide-y divide-line rounded-2xl border border-line bg-paper">
+          {history.map((h) => (
+            <div key={h.id} className="flex items-center justify-between gap-3 px-4 py-2 text-sm">
+              <span>
+                {t(`shop.kinds.${h.kind}`, { defaultValue: h.kind })}
+                {typeof h.meta.capped_from === 'number' && <span className="text-mute"> · {t('shop.capped')}</span>}
+              </span>
+              <span className="flex items-center gap-3">
+                <span className="text-xs text-mute">{new Date(h.created_at).toLocaleDateString(i18n.language)}</span>
+                <b className={h.amount > 0 ? 'text-[var(--color-good)]' : 'text-warn'}>
+                  {h.amount > 0 ? '+' : ''}
+                  {h.amount}
+                </b>
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
+  )
+}
+
+/** Coin packs and subscriptions with prices (shop and the public pricing page). */
+export function PriceList({ products }: { products: StoreProduct[] }) {
+  const { t, i18n } = useTranslation()
+  const packs = products.filter((p) => p.kind === 'coins')
+  const plans = products.filter((p) => p.kind === 'subscription')
+  const card = 'rounded-2xl border border-line bg-paper p-4'
+  // keys built at runtime (plan names / feature lists)
+  const tt = t as unknown as (key: string, options?: Record<string, unknown>) => unknown
+  return (
+    <>
       <h3 className="mt-10 mb-1 font-display text-2xl font-semibold">{t('shop.buyCoins')}</h3>
       <p className="mb-3 text-sm text-mute">{t('shop.paymentsSoon')}</p>
       <div className="grid gap-3 sm:grid-cols-3">
@@ -256,30 +292,6 @@ export function Shop({ wallet, onWallet }: { wallet: Wallet; onWallet: (w: Walle
         })}
       </div>
       <p className="mt-3 text-xs text-mute">{t('shop.adultsOnly')}</p>
-
-      {/* history */}
-      <h3 className="mt-10 mb-3 font-display text-2xl font-semibold">{t('shop.history')}</h3>
-      {history.length === 0 ? (
-        <p className="text-mute">{t('shop.noHistory')}</p>
-      ) : (
-        <div className="divide-y divide-line rounded-2xl border border-line bg-paper">
-          {history.map((h) => (
-            <div key={h.id} className="flex items-center justify-between gap-3 px-4 py-2 text-sm">
-              <span>
-                {t(`shop.kinds.${h.kind}`, { defaultValue: h.kind })}
-                {typeof h.meta.capped_from === 'number' && <span className="text-mute"> · {t('shop.capped')}</span>}
-              </span>
-              <span className="flex items-center gap-3">
-                <span className="text-xs text-mute">{new Date(h.created_at).toLocaleDateString(i18n.language)}</span>
-                <b className={h.amount > 0 ? 'text-[var(--color-good)]' : 'text-warn'}>
-                  {h.amount > 0 ? '+' : ''}
-                  {h.amount}
-                </b>
-              </span>
-            </div>
-          ))}
-        </div>
-      )}
-    </section>
+    </>
   )
 }

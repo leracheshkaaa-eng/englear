@@ -24,7 +24,8 @@
     "teacher": "Nauczyciel",
     "admin": "Admin",
     "settings": "Ustawienia",
-    "practice": "Praktyka"
+    "practice": "Praktyka",
+    "pricing": "Cennik"
   },
   "home": {
     "tagline": "angielski dla całej rodziny",
@@ -49,7 +50,9 @@
     "noAccountHint": "Nie masz konta? Wybierz „Rejestracja”.",
     "teacherLaterHint": "Nauczycielem możesz zostać później — za zgodą administratora.",
     "nicknameRequired": "Wymyśl nick.",
-    "confirmEmail": "Konto utworzone! Potwierdź e-mail, klikając link, który wysłaliśmy, a potem zaloguj się tutaj."
+    "confirmEmail": "Konto utworzone! Potwierdź e-mail, klikając link, który wysłaliśmy, a potem zaloguj się tutaj.",
+    "agree": "Tworząc konto, akceptujesz <terms>Regulamin</terms> i <privacy>Politykę prywatności</privacy>.",
+    "parentConsent": "Masz mniej niż {{age}} lat? Potrzebna jest też zgoda rodzica lub opiekuna."
   },
   "errors": {
     "invalidCredentials": "Nieprawidłowy e-mail lub hasło.",
@@ -713,5 +716,38 @@
       "generic": "Nie udało się kupić. Spróbuj ponownie."
     },
     "avatarsTitle": "Awatary"
+  },
+  "footer": {
+    "pricing": "Cennik",
+    "terms": "Regulamin",
+    "refund": "Zwroty",
+    "privacy": "Prywatność",
+    "contact": "Kontakt"
+  },
+  "pricing": {
+    "title": "Cennik",
+    "subtitle": "Nauka w Englear jest bezpłatna. Monety i subskrypcje odblokowują dodatkowe funkcje i wspierają projekt.",
+    "freeTitle": "Za darmo",
+    "freeFeatures": [
+      "Lekcje gramatyki i słownictwa na wszystkich poziomach, A1–C2",
+      "Ćwiczenia z czytania i słuchania z pytaniami",
+      "Słownik z tłumaczeniami na 10 języków",
+      "Fiszki z ćwiczeniami",
+      "Postępy i serie dni",
+      "Narzędzia dla nauczycieli: lekcje, zestawy fiszek, zadania"
+    ],
+    "coinsTitle": "Monety",
+    "coinsText": "Monety to kredyty w aplikacji. Zdobywasz je, ucząc się (do 60 dziennie), albo kupujesz w pakietach. Możesz je wydać na:",
+    "coinUses": [
+      "Korepetytor AI — 10 monet za wiadomość (wkrótce)",
+      "Sprawdzanie pisania przez AI — 40 monet (wkrótce)",
+      "Ćwiczenie mówienia z AI — 50 monet (wkrótce)",
+      "Awatary, ramki i ochronę serii w sklepie"
+    ],
+    "vat": "Ceny w EUR; VAT lub podatek od sprzedaży jest doliczany przy płatności, jeśli obowiązuje.",
+    "processor": "Płatności obsługuje {{name}}, nasz oficjalny sprzedawca (Merchant of Record)."
+  },
+  "legal": {
+    "englishOnly": "Ten dokument jest dostępny po angielsku. Wiążąca jest wersja angielska."
   }
 }

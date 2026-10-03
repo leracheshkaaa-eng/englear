@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import { Badge, Button, inputCls } from '../lib/ui'
 import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
@@ -9,8 +9,10 @@ import { LanguageSelect } from '../i18n/LanguageSelect'
 import { currentLanguage } from '../i18n'
 import { errorMessage } from '../i18n/errors'
 import { libraryTitle } from './flashcards'
+import { LEGAL } from '../lib/legal'
+import type { PublicPage } from './legal'
 
-export function Login({ onClose }: { onClose?: () => void }) {
+export function Login({ onClose, onOpenPage }: { onClose?: () => void; onOpenPage?: (p: PublicPage) => void }) {
   const { t } = useTranslation()
   const { signIn, signUp } = useAuth()
   const [mode, setMode] = useState<'in' | 'up'>('in')
@@ -94,9 +96,37 @@ export function Login({ onClose }: { onClose?: () => void }) {
         <Button onClick={submit} disabled={busy || !email || !password} className="w-full">
           {busy ? '…' : mode === 'in' ? t('auth.signInButton') : t('auth.signUpButton')}
         </Button>
+        {mode === 'up' && (
+          <p className="text-center text-xs text-mute">
+            <Trans
+              i18nKey="auth.agree"
+              components={{
+                terms: <PageLink page="terms" onOpen={onOpenPage} />,
+                privacy: <PageLink page="privacy" onOpen={onOpenPage} />,
+              }}
+            />{' '}
+            {t('auth.parentConsent', { age: LEGAL.consentAge })}
+          </p>
+        )}
       </div>
       <p className="mt-4 text-center text-xs text-mute">{mode === 'in' ? t('auth.noAccountHint') : t('auth.teacherLaterHint')}</p>
     </section>
+  )
+}
+
+function PageLink({ page, onOpen, children }: { page: PublicPage; onOpen?: (p: PublicPage) => void; children?: React.ReactNode }) {
+  return (
+    <a
+      href={`/${page}`}
+      className="text-plum underline"
+      onClick={(e) => {
+        if (!onOpen) return
+        e.preventDefault()
+        onOpen(page)
+      }}
+    >
+      {children}
+    </a>
   )
 }
 

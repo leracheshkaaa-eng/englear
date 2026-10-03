@@ -1,16 +1,10 @@
-# Legal pages — DRAFTS
+# Legal pages
 
-These are working drafts, not legal advice. Before publishing:
+The Terms, Refund and Privacy pages live in the app: `src/features/legal.tsx`
+(served at /terms, /refund, /privacy; pricing at /pricing).
 
-1. Replace every `[[PLACEHOLDER]]` (legal name, address, contact email, country, dates).
-2. Align the texts with the payment provider you choose (Paddle / Lemon Squeezy act as
-   Merchant of Record and have their own buyer terms and refund rules — our pages must not contradict them).
-3. Have them checked by a lawyer familiar with EU consumer law and GDPR, especially the parts about children.
+Seller details (name, country, address, support email, date, consent age, payment processor)
+are set in one place: `src/lib/legal.ts`. Values in [brackets] are placeholders and are
+highlighted on the pages until they are filled in.
 
-Files:
-- `terms.md` — Terms of Service
-- `refund.md` — Refund & Cancellation Policy
-- `privacy.md` — Privacy Policy
-
-Prices referenced: coin packs 1000 = €4.99, 2500 = €9.99, 6000 = €19.99;
-EngLear Plus €6.99/month or €49.99/year; Family €11.99/month.
+These texts are not legal advice; have them checked before relying on them.

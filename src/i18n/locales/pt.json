@@ -24,7 +24,8 @@
     "teacher": "Professor",
     "admin": "Admin",
     "settings": "Configurações",
-    "practice": "Prática"
+    "practice": "Prática",
+    "pricing": "Preços"
   },
   "home": {
     "tagline": "inglês para toda a família",
@@ -49,7 +50,9 @@
     "noAccountHint": "Ainda não tem conta? Escolha «Cadastro».",
     "teacherLaterHint": "Você pode se tornar professor mais tarde, com a aprovação do administrador.",
     "nicknameRequired": "Escolha um apelido.",
-    "confirmEmail": "Conta criada! Confirme seu e-mail pelo link que enviamos e depois entre aqui."
+    "confirmEmail": "Conta criada! Confirme seu e-mail pelo link que enviamos e depois entre aqui.",
+    "agree": "Ao criar uma conta, você aceita os <terms>Termos de Serviço</terms> e a <privacy>Política de Privacidade</privacy>.",
+    "parentConsent": "Tem menos de {{age}} anos? Um responsável também precisa concordar."
   },
   "errors": {
     "invalidCredentials": "E-mail ou senha incorretos.",
@@ -693,5 +696,38 @@
       "generic": "Não foi possível comprar. Tente de novo."
     },
     "avatarsTitle": "Avatares"
+  },
+  "footer": {
+    "pricing": "Preços",
+    "terms": "Termos",
+    "refund": "Reembolsos",
+    "privacy": "Privacidade",
+    "contact": "Contato"
+  },
+  "pricing": {
+    "title": "Preços",
+    "subtitle": "Aprender no Englear é grátis. Moedas e assinaturas liberam recursos extras e apoiam o projeto.",
+    "freeTitle": "Grátis",
+    "freeFeatures": [
+      "Aulas de gramática e vocabulário para todos os níveis, A1–C2",
+      "Prática de leitura e compreensão oral com perguntas",
+      "Dicionário com traduções em 10 idiomas",
+      "Flashcards com prática",
+      "Progresso e sequências de dias",
+      "Ferramentas para professores: aulas, conjuntos de cartões, tarefas"
+    ],
+    "coinsTitle": "Moedas",
+    "coinsText": "Moedas são créditos dentro do app. Você as ganha estudando (até 60 por dia) ou compra em pacotes. Você pode usá-las em:",
+    "coinUses": [
+      "Tutor com IA — 10 moedas por mensagem (em breve)",
+      "Correção de escrita com IA — 40 moedas (em breve)",
+      "Prática de fala com IA — 50 moedas (em breve)",
+      "Avatares, molduras e proteções de sequência na loja"
+    ],
+    "vat": "Preços em EUR; IVA ou imposto sobre vendas é adicionado no pagamento quando aplicável.",
+    "processor": "Os pagamentos são processados pela {{name}}, nossa revendedora oficial (Merchant of Record)."
+  },
+  "legal": {
+    "englishOnly": "Este documento está disponível em inglês. A versão em inglês é a vinculante."
   }
 }

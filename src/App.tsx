@@ -12,13 +12,14 @@ import { Login, StudentProgress } from './features/account'
 import { Avatar } from './lib/avatars'
 import { Shop, WalletChip } from './features/shop'
 import { useTranslation } from 'react-i18next'
+import { Footer, Pricing, Privacy, Refund, Terms, pageFromPath, type PublicPage } from './features/legal'
 
-type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login'
+type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | PublicPage
 
 function Shell() {
   const { loading, userId, role, profile, signOut, settings } = useAuth()
   const { t, i18n } = useTranslation()
-  const [view, setView] = useState<View>('home')
+  const [view, setView] = useState<View>(() => pageFromPath(location.pathname) ?? 'home')
   const [lessonCount, setLessonCount] = useState(0) // library + teacher lessons this viewer can open
   const [progress, setProgress] = useState<Record<string, api.LessonProgress>>({})
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
@@ -64,6 +65,9 @@ function Shell() {
         setDeepLink({ id: m[1], lesson, denied: !lesson })
       } else {
         setDeepLink(null)
+        const page = pageFromPath(location.pathname)
+        if (page) setView(page)
+        else if (location.pathname === '/') setView((v) => (pageFromPath('/' + v) ? 'home' : v))
       }
     }
     resolvePath()
@@ -75,7 +79,9 @@ function Shell() {
   function go(v: View) {
     setView(v)
     setFlashTarget(null)
-    if (location.pathname !== '/') history.pushState({}, '', '/')
+    const path = pageFromPath('/' + v) ? '/' + v : '/'
+    if (location.pathname !== path) history.pushState({}, '', path)
+    window.scrollTo(0, 0)
     setDeepLink(null)
   }
 
@@ -115,6 +121,7 @@ function Shell() {
     ['lessons', t('nav.lessons')],
     ['practice', t('nav.practice')],
   ]
+  if (!userId) nav.push(['pricing', t('nav.pricing')])
   if (userId) nav.push(['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
   if (isTeacher) nav.push(['teacher', t('nav.teacher')])
   if (role === 'admin') nav.push(['admin', t('nav.admin')])
@@ -198,8 +205,13 @@ function Shell() {
         {view === 'settings' && userId && <Settings />}
         {view === 'shop' && userId && <Shop wallet={wallet} onWallet={setWallet} />}
         {view === 'admin' && role === 'admin' && <AdminDashboard />}
-        {view === 'login' && <Login onClose={() => { reload(); setView('home') }} />}
+        {view === 'login' && <Login onClose={() => { reload(); setView('home') }} onOpenPage={go} />}
+        {view === 'pricing' && <Pricing onStart={() => go('lessons')} />}
+        {view === 'terms' && <Terms />}
+        {view === 'refund' && <Refund />}
+        {view === 'privacy' && <Privacy />}
       </main>
+      <Footer onOpen={go} />
     </Page>
   )
 }

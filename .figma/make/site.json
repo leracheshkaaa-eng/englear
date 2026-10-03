@@ -1,7 +1,9 @@
 {
-  "description": "This user-friendly platform enables families to practice English together, featuring easy access to lessons and a teacher mode for lesson management.",
+  "title": "Englear — learn English step by step",
+  "description": "Learn English for free: grammar and vocabulary lessons A1–C2, reading and listening practice, a dictionary with translations into 10 languages, flashcards and tools for teachers.",
+  "language": "en",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

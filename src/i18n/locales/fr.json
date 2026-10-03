@@ -24,7 +24,8 @@
     "teacher": "Enseignant",
     "admin": "Admin",
     "settings": "Paramètres",
-    "practice": "Pratique"
+    "practice": "Pratique",
+    "pricing": "Tarifs"
   },
   "home": {
     "tagline": "l'anglais pour toute la famille",
@@ -49,7 +50,9 @@
     "noAccountHint": "Pas encore de compte ? Choisis « Inscription ».",
     "teacherLaterHint": "Tu pourras devenir enseignant plus tard, avec l'accord de l'administrateur.",
     "nicknameRequired": "Choisis un pseudo.",
-    "confirmEmail": "Compte créé ! Confirme ton e-mail grâce au lien que nous t'avons envoyé, puis connecte-toi ici."
+    "confirmEmail": "Compte créé ! Confirme ton e-mail grâce au lien que nous t'avons envoyé, puis connecte-toi ici.",
+    "agree": "En créant un compte, tu acceptes les <terms>Conditions d’utilisation</terms> et la <privacy>Politique de confidentialité</privacy>.",
+    "parentConsent": "Moins de {{age}} ans ? Un parent ou tuteur doit aussi donner son accord."
   },
   "errors": {
     "invalidCredentials": "E-mail ou mot de passe incorrect.",
@@ -693,5 +696,38 @@
       "generic": "Achat impossible. Réessaie."
     },
     "avatarsTitle": "Avatars"
+  },
+  "footer": {
+    "pricing": "Tarifs",
+    "terms": "Conditions",
+    "refund": "Remboursements",
+    "privacy": "Confidentialité",
+    "contact": "Contact"
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Apprendre sur Englear est gratuit. Les pièces et les abonnements débloquent des fonctions en plus et soutiennent le projet.",
+    "freeTitle": "Gratuit",
+    "freeFeatures": [
+      "Leçons de grammaire et de vocabulaire pour tous les niveaux, A1–C2",
+      "Compréhension écrite et orale avec questions",
+      "Dictionnaire traduit en 10 langues",
+      "Cartes mémoire avec exercices",
+      "Progression et séries de jours",
+      "Outils pour enseignants : leçons, jeux de cartes, devoirs"
+    ],
+    "coinsTitle": "Pièces",
+    "coinsText": "Les pièces sont des crédits dans l’application. Tu les gagnes en apprenant (jusqu’à 60 par jour) ou tu les achètes en packs. Tu peux les utiliser pour :",
+    "coinUses": [
+      "Tuteur IA — 10 pièces par message (bientôt)",
+      "Correction de l’écrit par IA — 40 pièces (bientôt)",
+      "Pratique de l’oral avec l’IA — 50 pièces (bientôt)",
+      "Avatars, cadres et protections de série dans la boutique"
+    ],
+    "vat": "Prix en EUR ; la TVA ou la taxe de vente est ajoutée au paiement si elle s’applique.",
+    "processor": "Les paiements sont traités par {{name}}, notre revendeur officiel (Merchant of Record)."
+  },
+  "legal": {
+    "englishOnly": "Ce document est disponible en anglais. La version anglaise fait foi."
   }
 }

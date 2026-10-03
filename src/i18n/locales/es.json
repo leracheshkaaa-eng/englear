@@ -24,7 +24,8 @@
     "teacher": "Profesor",
     "admin": "Admin",
     "settings": "Ajustes",
-    "practice": "Práctica"
+    "practice": "Práctica",
+    "pricing": "Precios"
   },
   "home": {
     "tagline": "inglés para toda la familia",
@@ -49,7 +50,9 @@
     "noAccountHint": "¿Aún no tienes cuenta? Elige «Registrarse».",
     "teacherLaterHint": "Puedes convertirte en profesor más adelante, con la aprobación del administrador.",
     "nicknameRequired": "Elige un apodo.",
-    "confirmEmail": "¡Cuenta creada! Confirma tu correo con el enlace que te enviamos y luego inicia sesión aquí."
+    "confirmEmail": "¡Cuenta creada! Confirma tu correo con el enlace que te enviamos y luego inicia sesión aquí.",
+    "agree": "Al crear una cuenta aceptas los <terms>Términos del servicio</terms> y la <privacy>Política de privacidad</privacy>.",
+    "parentConsent": "¿Menos de {{age}} años? Un padre, madre o tutor también debe aceptar."
   },
   "errors": {
     "invalidCredentials": "Correo o contraseña incorrectos.",
@@ -693,5 +696,38 @@
       "generic": "No se pudo comprar. Inténtalo de nuevo."
     },
     "avatarsTitle": "Avatares"
+  },
+  "footer": {
+    "pricing": "Precios",
+    "terms": "Términos",
+    "refund": "Reembolsos",
+    "privacy": "Privacidad",
+    "contact": "Contacto"
+  },
+  "pricing": {
+    "title": "Precios",
+    "subtitle": "Aprender en Englear es gratis. Las monedas y suscripciones desbloquean funciones extra y apoyan el proyecto.",
+    "freeTitle": "Gratis",
+    "freeFeatures": [
+      "Lecciones de gramática y vocabulario para todos los niveles, A1–C2",
+      "Práctica de lectura y comprensión auditiva con preguntas",
+      "Diccionario con traducciones a 10 idiomas",
+      "Tarjetas con práctica",
+      "Progreso y rachas de días",
+      "Herramientas para profesores: lecciones, juegos de tarjetas, tareas"
+    ],
+    "coinsTitle": "Monedas",
+    "coinsText": "Las monedas son créditos dentro de la app. Las ganas aprendiendo (hasta 60 al día) o las compras en paquetes. Puedes usarlas para:",
+    "coinUses": [
+      "Tutor con IA — 10 monedas por mensaje (pronto)",
+      "Corrección de escritura con IA — 40 monedas (pronto)",
+      "Práctica oral con IA — 50 monedas (pronto)",
+      "Avatares, marcos y protectores de racha en la tienda"
+    ],
+    "vat": "Precios en EUR; el IVA o impuesto sobre ventas se añade al pagar cuando corresponda.",
+    "processor": "Los pagos los procesa {{name}}, nuestro revendedor oficial (Merchant of Record)."
+  },
+  "legal": {
+    "englishOnly": "Este documento está disponible en inglés. La versión en inglés es la vinculante."
   }
 }

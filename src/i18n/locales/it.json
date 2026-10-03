@@ -24,7 +24,8 @@
     "teacher": "Insegnante",
     "admin": "Admin",
     "settings": "Impostazioni",
-    "practice": "Pratica"
+    "practice": "Pratica",
+    "pricing": "Prezzi"
   },
   "home": {
     "tagline": "l'inglese per tutta la famiglia",
@@ -49,7 +50,9 @@
     "noAccountHint": "Non hai un account? Scegli «Registrazione».",
     "teacherLaterHint": "Potrai diventare insegnante più avanti, con l'approvazione dell'amministratore.",
     "nicknameRequired": "Scegli un nickname.",
-    "confirmEmail": "Account creato! Conferma la tua e-mail con il link che ti abbiamo inviato, poi accedi qui."
+    "confirmEmail": "Account creato! Conferma la tua e-mail con il link che ti abbiamo inviato, poi accedi qui.",
+    "agree": "Creando un account accetti i <terms>Termini di servizio</terms> e l’<privacy>Informativa sulla privacy</privacy>.",
+    "parentConsent": "Hai meno di {{age}} anni? Serve anche il consenso di un genitore o tutore."
   },
   "errors": {
     "invalidCredentials": "E-mail o password errate.",
@@ -693,5 +696,38 @@
       "generic": "Acquisto non riuscito. Riprova."
     },
     "avatarsTitle": "Avatar"
+  },
+  "footer": {
+    "pricing": "Prezzi",
+    "terms": "Termini",
+    "refund": "Rimborsi",
+    "privacy": "Privacy",
+    "contact": "Contatti"
+  },
+  "pricing": {
+    "title": "Prezzi",
+    "subtitle": "Imparare su Englear è gratis. Monete e abbonamenti sbloccano funzioni extra e sostengono il progetto.",
+    "freeTitle": "Gratis",
+    "freeFeatures": [
+      "Lezioni di grammatica e lessico per tutti i livelli, A1–C2",
+      "Esercizi di lettura e ascolto con domande",
+      "Dizionario con traduzioni in 10 lingue",
+      "Flashcard con esercizi",
+      "Progressi e serie di giorni",
+      "Strumenti per insegnanti: lezioni, set di carte, compiti"
+    ],
+    "coinsTitle": "Monete",
+    "coinsText": "Le monete sono crediti nell’app. Le guadagni studiando (fino a 60 al giorno) o le compri a pacchetti. Puoi usarle per:",
+    "coinUses": [
+      "Tutor IA — 10 monete a messaggio (presto)",
+      "Correzione della scrittura con IA — 40 monete (presto)",
+      "Pratica orale con IA — 50 monete (presto)",
+      "Avatar, cornici e protezioni della serie nel negozio"
+    ],
+    "vat": "Prezzi in EUR; l’IVA o l’imposta sulle vendite si aggiunge al pagamento dove prevista.",
+    "processor": "I pagamenti sono gestiti da {{name}}, il nostro rivenditore ufficiale (Merchant of Record)."
+  },
+  "legal": {
+    "englishOnly": "Questo documento è disponibile in inglese. Fa fede la versione inglese."
   }
 }

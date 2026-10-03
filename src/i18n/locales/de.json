@@ -24,7 +24,8 @@
     "teacher": "Lehrkraft",
     "admin": "Admin",
     "settings": "Einstellungen",
-    "practice": "Übung"
+    "practice": "Übung",
+    "pricing": "Preise"
   },
   "home": {
     "tagline": "Englisch für die ganze Familie",
@@ -49,7 +50,9 @@
     "noAccountHint": "Noch kein Konto? Wähle „Registrieren“.",
     "teacherLaterHint": "Lehrkraft kannst du später werden — mit Zustimmung des Administrators.",
     "nicknameRequired": "Bitte wähle einen Spitznamen.",
-    "confirmEmail": "Konto erstellt! Bestätige deine E-Mail über den Link, den wir dir geschickt haben, und melde dich dann hier an."
+    "confirmEmail": "Konto erstellt! Bestätige deine E-Mail über den Link, den wir dir geschickt haben, und melde dich dann hier an.",
+    "agree": "Mit dem Erstellen eines Kontos akzeptierst du die <terms>Nutzungsbedingungen</terms> und die <privacy>Datenschutzerklärung</privacy>.",
+    "parentConsent": "Unter {{age}}? Ein Elternteil oder Vormund muss ebenfalls zustimmen."
   },
   "errors": {
     "invalidCredentials": "Falsche E-Mail oder falsches Passwort.",
@@ -693,5 +696,38 @@
       "generic": "Kauf nicht möglich. Bitte versuche es noch einmal."
     },
     "avatarsTitle": "Avatare"
+  },
+  "footer": {
+    "pricing": "Preise",
+    "terms": "AGB",
+    "refund": "Erstattungen",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt"
+  },
+  "pricing": {
+    "title": "Preise",
+    "subtitle": "Lernen auf Englear ist kostenlos. Münzen und Abos schalten Extras frei und unterstützen das Projekt.",
+    "freeTitle": "Kostenlos",
+    "freeFeatures": [
+      "Grammatik- und Wortschatzlektionen für alle Niveaus, A1–C2",
+      "Lese- und Hörübungen mit Fragen",
+      "Wörterbuch mit Übersetzungen in 10 Sprachen",
+      "Karteikarten mit Übungen",
+      "Fortschritt und Lernserien",
+      "Werkzeuge für Lehrkräfte: Lektionen, Kartensets, Aufgaben"
+    ],
+    "coinsTitle": "Münzen",
+    "coinsText": "Münzen sind In-App-Guthaben. Du verdienst sie beim Lernen (bis zu 60 am Tag) oder kaufst sie in Paketen. Du kannst sie ausgeben für:",
+    "coinUses": [
+      "KI-Tutor — 10 Münzen pro Nachricht (bald)",
+      "KI-Schreibkorrektur — 40 Münzen (bald)",
+      "KI-Sprechübung — 50 Münzen (bald)",
+      "Avatare, Rahmen und Serien-Schutz im Shop"
+    ],
+    "vat": "Preise in EUR; Mehrwert- oder Umsatzsteuer wird an der Kasse hinzugefügt, wo sie anfällt.",
+    "processor": "Zahlungen werden von {{name}} abgewickelt, unserem Merchant of Record."
+  },
+  "legal": {
+    "englishOnly": "Dieses Dokument ist auf Englisch verfügbar. Verbindlich ist die englische Fassung."
   }
 }

@@ -24,7 +24,8 @@
     "teacher": "Teacher",
     "admin": "Admin",
     "settings": "Settings",
-    "practice": "Practice"
+    "practice": "Practice",
+    "pricing": "Pricing"
   },
   "home": {
     "tagline": "English for the whole family",
@@ -49,7 +50,9 @@
     "noAccountHint": "No account yet? Choose “Sign up”.",
     "teacherLaterHint": "You can become a teacher later, with the administrator's approval.",
     "nicknameRequired": "Please choose a nickname.",
-    "confirmEmail": "Account created! Confirm your email using the link we sent, then sign in here."
+    "confirmEmail": "Account created! Confirm your email using the link we sent, then sign in here.",
+    "agree": "By creating an account you agree to the <terms>Terms of Service</terms> and the <privacy>Privacy Policy</privacy>.",
+    "parentConsent": "Under {{age}}? A parent or guardian must agree too."
   },
   "errors": {
     "invalidCredentials": "Wrong email or password.",
@@ -693,5 +696,38 @@
       "generic": "Could not buy it. Please try again."
     },
     "avatarsTitle": "Avatars"
+  },
+  "footer": {
+    "pricing": "Pricing",
+    "terms": "Terms",
+    "refund": "Refunds",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Learning on Englear is free. Coins and subscriptions unlock extra features and support the project.",
+    "freeTitle": "Free",
+    "freeFeatures": [
+      "Grammar and vocabulary lessons for every level, A1–C2",
+      "Reading and listening practice with questions",
+      "Dictionary with translations into 10 languages",
+      "Flashcards with practice",
+      "Progress tracking and day streaks",
+      "Tools for teachers: lessons, card sets, assignments"
+    ],
+    "coinsTitle": "Coins",
+    "coinsText": "Coins are in-app credits. You earn them by learning (up to 60 a day) or buy them in packs. You can spend them on:",
+    "coinUses": [
+      "AI tutor — 10 coins a message (coming soon)",
+      "AI writing check — 40 coins (coming soon)",
+      "AI speaking practice — 50 coins (coming soon)",
+      "Avatars, frames and streak freezes in the shop"
+    ],
+    "vat": "Prices are in EUR; VAT or sales tax is added at checkout where it applies.",
+    "processor": "Payments are processed by {{name}}, our Merchant of Record."
+  },
+  "legal": {
+    "englishOnly": "This document is available in English. The English version is binding."
   }
 }
