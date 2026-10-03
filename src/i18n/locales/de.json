@@ -52,7 +52,17 @@
     "nicknameRequired": "Bitte wähle einen Spitznamen.",
     "confirmEmail": "Konto erstellt! Bestätige deine E-Mail über den Link, den wir dir geschickt haben, und melde dich dann hier an.",
     "agree": "Mit dem Erstellen eines Kontos akzeptierst du die <terms>Nutzungsbedingungen</terms> und die <privacy>Datenschutzerklärung</privacy>.",
-    "parentConsent": "Unter {{age}}? Ein Elternteil oder Vormund muss ebenfalls zustimmen."
+    "parentConsent": "Unter {{age}}? Ein Elternteil oder Vormund muss ebenfalls zustimmen.",
+    "forgot": "Passwort vergessen?",
+    "backToSignIn": "← Zurück zur Anmeldung",
+    "resetHint": "Gib die E-Mail deines Kontos ein — wir schicken dir einen Link für ein neues Passwort.",
+    "resetButton": "Link senden",
+    "resetSent": "Falls ein Konto mit dieser E-Mail existiert, haben wir einen Link geschickt. Sieh in dein Postfach (und in den Spam).",
+    "newPasswordTitle": "Neues Passwort",
+    "newPassword": "neues Passwort",
+    "repeatPassword": "Passwort wiederholen",
+    "savePassword": "Passwort speichern",
+    "passwordsDiffer": "Die Passwörter stimmen nicht überein."
   },
   "errors": {
     "invalidCredentials": "Falsche E-Mail oder falsches Passwort.",
@@ -370,7 +380,12 @@
     "yourId": "Deine ID (für deine Lehrkraft):",
     "translationLanguage": "Übersetzungssprache",
     "translationLanguageHint": "Die Sprache, in der Wortübersetzungen angezeigt werden — im Wörterbuch, auf Karteikarten und in Lektionen. Sie kann sich von der Sprache der Oberfläche unterscheiden.",
-    "noTranslationOption": "English — nur Definitionen"
+    "noTranslationOption": "English — nur Definitionen",
+    "deleteTitle": "Konto löschen",
+    "deleteHint": "Profil, Fortschritt, Karten, Münzen und Käufe in der App werden endgültig gelöscht. Das lässt sich nicht rückgängig machen.",
+    "deleteButton": "Mein Konto löschen…",
+    "deleteConfirm": "Zur Bestätigung gib deine E-Mail ein: {{email}}",
+    "deleteForever": "Endgültig löschen"
   },
   "admin": {
     "title": "Admin",

@@ -52,7 +52,17 @@
     "nicknameRequired": "Scegli un nickname.",
     "confirmEmail": "Account creato! Conferma la tua e-mail con il link che ti abbiamo inviato, poi accedi qui.",
     "agree": "Creando un account accetti i <terms>Termini di servizio</terms> e l’<privacy>Informativa sulla privacy</privacy>.",
-    "parentConsent": "Hai meno di {{age}} anni? Serve anche il consenso di un genitore o tutore."
+    "parentConsent": "Hai meno di {{age}} anni? Serve anche il consenso di un genitore o tutore.",
+    "forgot": "Password dimenticata?",
+    "backToSignIn": "← Torna all’accesso",
+    "resetHint": "Inserisci l’email del tuo account: ti invieremo un link per impostare una nuova password.",
+    "resetButton": "Invia il link",
+    "resetSent": "Se esiste un account con questa email, abbiamo inviato un link. Controlla la posta (anche lo spam).",
+    "newPasswordTitle": "Nuova password",
+    "newPassword": "nuova password",
+    "repeatPassword": "ripeti la password",
+    "savePassword": "Salva la password",
+    "passwordsDiffer": "Le password non coincidono."
   },
   "errors": {
     "invalidCredentials": "E-mail o password errate.",
@@ -370,7 +380,12 @@
     "yourId": "Il tuo ID (per il tuo insegnante):",
     "translationLanguage": "Lingua della traduzione",
     "translationLanguageHint": "La lingua in cui vengono mostrate le traduzioni delle parole — nel dizionario, nelle flashcard e nelle lezioni. Può essere diversa dalla lingua dell’interfaccia.",
-    "noTranslationOption": "English — solo definizioni"
+    "noTranslationOption": "English — solo definizioni",
+    "deleteTitle": "Elimina account",
+    "deleteHint": "Profilo, progressi, carte, monete e acquisti nell’app verranno eliminati per sempre. Non si può annullare.",
+    "deleteButton": "Elimina il mio account…",
+    "deleteConfirm": "Per confermare, scrivi la tua email: {{email}}",
+    "deleteForever": "Elimina per sempre"
   },
   "admin": {
     "title": "Admin",

@@ -52,7 +52,17 @@
     "nicknameRequired": "ニックネームを入力してください。",
     "confirmEmail": "アカウントを作成しました！送信したメールのリンクでメールアドレスを確認してから、ここでログインしてください。",
     "agree": "アカウントを作成すると、<terms>利用規約</terms>と<privacy>プライバシーポリシー</privacy>に同意したことになります。",
-    "parentConsent": "{{age}}歳未満の方は、保護者の同意も必要です。"
+    "parentConsent": "{{age}}歳未満の方は、保護者の同意も必要です。",
+    "forgot": "パスワードをお忘れですか？",
+    "backToSignIn": "← ログインに戻る",
+    "resetHint": "アカウントのメールアドレスを入力してください。新しいパスワードを設定するリンクを送ります。",
+    "resetButton": "リンクを送る",
+    "resetSent": "このメールアドレスのアカウントがあれば、リンクを送信しました。受信トレイ（と迷惑メール）を確認してください。",
+    "newPasswordTitle": "新しいパスワード",
+    "newPassword": "新しいパスワード",
+    "repeatPassword": "パスワードをもう一度",
+    "savePassword": "パスワードを保存",
+    "passwordsDiffer": "パスワードが一致しません。"
   },
   "errors": {
     "invalidCredentials": "メールアドレスまたはパスワードが正しくありません。",
@@ -361,7 +371,12 @@
     "yourId": "あなたの ID（先生に伝える用）：",
     "translationLanguage": "訳の言語",
     "translationLanguageHint": "単語の訳を表示する言語です（辞書・単語カード・レッスン）。表示言語と違っていてもかまいません。",
-    "noTranslationOption": "English — 定義のみ"
+    "noTranslationOption": "English — 定義のみ",
+    "deleteTitle": "アカウントの削除",
+    "deleteHint": "プロフィール、進捗、カード、コイン、アプリ内の購入は完全に削除されます。元に戻すことはできません。",
+    "deleteButton": "アカウントを削除…",
+    "deleteConfirm": "確認のため、メールアドレスを入力してください：{{email}}",
+    "deleteForever": "完全に削除"
   },
   "admin": {
     "title": "管理",

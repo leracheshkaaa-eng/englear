@@ -52,7 +52,17 @@
     "nicknameRequired": "Choisis un pseudo.",
     "confirmEmail": "Compte créé ! Confirme ton e-mail grâce au lien que nous t'avons envoyé, puis connecte-toi ici.",
     "agree": "En créant un compte, tu acceptes les <terms>Conditions d’utilisation</terms> et la <privacy>Politique de confidentialité</privacy>.",
-    "parentConsent": "Moins de {{age}} ans ? Un parent ou tuteur doit aussi donner son accord."
+    "parentConsent": "Moins de {{age}} ans ? Un parent ou tuteur doit aussi donner son accord.",
+    "forgot": "Mot de passe oublié ?",
+    "backToSignIn": "← Retour à la connexion",
+    "resetHint": "Saisis l’e-mail de ton compte — nous t’enverrons un lien pour choisir un nouveau mot de passe.",
+    "resetButton": "Envoyer le lien",
+    "resetSent": "Si un compte existe avec cet e-mail, nous avons envoyé un lien. Vérifie ta boîte de réception (et les spams).",
+    "newPasswordTitle": "Nouveau mot de passe",
+    "newPassword": "nouveau mot de passe",
+    "repeatPassword": "répète le mot de passe",
+    "savePassword": "Enregistrer le mot de passe",
+    "passwordsDiffer": "Les mots de passe ne correspondent pas."
   },
   "errors": {
     "invalidCredentials": "E-mail ou mot de passe incorrect.",
@@ -370,7 +380,12 @@
     "yourId": "Ton identifiant (pour ton enseignant) :",
     "translationLanguage": "Langue de traduction",
     "translationLanguageHint": "La langue dans laquelle s’affichent les traductions des mots — dans le dictionnaire, les cartes et les leçons. Elle peut être différente de la langue de l’interface.",
-    "noTranslationOption": "English — définitions uniquement"
+    "noTranslationOption": "English — définitions uniquement",
+    "deleteTitle": "Supprimer le compte",
+    "deleteHint": "Ton profil, ta progression, tes cartes, tes pièces et tes achats dans l’application seront supprimés définitivement. C’est irréversible.",
+    "deleteButton": "Supprimer mon compte…",
+    "deleteConfirm": "Pour confirmer, saisis ton e-mail : {{email}}",
+    "deleteForever": "Supprimer définitivement"
   },
   "admin": {
     "title": "Admin",

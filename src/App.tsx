@@ -1,23 +1,26 @@
-import { useCallback, useEffect, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useState } from 'react'
 import { AuthProvider, useAuth } from './lib/auth'
 import * as api from './lib/api'
 import type { Lesson } from './lib/api'
 import { Button } from './lib/ui'
 import { LessonsCatalog, LessonPlayer } from './features/lessons'
-import { TeacherMode } from './features/teacher'
-import { Dictionary, Settings } from './features/dictionary'
-import { Flashcards } from './features/flashcards'
-import { AdminDashboard } from './features/admin'
-import { Login, StudentProgress } from './features/account'
+import { Login, NewPassword, StudentProgress } from './features/account'
 import { Avatar } from './lib/avatars'
 import { Shop, WalletChip } from './features/shop'
 import { useTranslation } from 'react-i18next'
 import { Footer, Pricing, Privacy, Refund, Terms, pageFromPath, type PublicPage } from './features/legal'
 
+// sections most visitors never open load on demand
+const TeacherMode = lazy(() => import('./features/teacher').then((m) => ({ default: m.TeacherMode })))
+const Dictionary = lazy(() => import('./features/dictionary').then((m) => ({ default: m.Dictionary })))
+const Settings = lazy(() => import('./features/dictionary').then((m) => ({ default: m.Settings })))
+const Flashcards = lazy(() => import('./features/flashcards').then((m) => ({ default: m.Flashcards })))
+const AdminDashboard = lazy(() => import('./features/admin').then((m) => ({ default: m.AdminDashboard })))
+
 type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | PublicPage
 
 function Shell() {
-  const { loading, userId, role, profile, signOut, settings } = useAuth()
+  const { loading, userId, role, profile, signOut, settings, recovering } = useAuth()
   const { t, i18n } = useTranslation()
   const [view, setView] = useState<View>(() => pageFromPath(location.pathname) ?? 'home')
   const [lessonCount, setLessonCount] = useState(0) // library + teacher lessons this viewer can open
@@ -86,6 +89,15 @@ function Shell() {
   }
 
   if (loading) return <div className="grid min-h-screen place-items-center text-mute">{t('common.loading')}</div>
+
+  // ---- the user came from a password-reset email ----
+  if (recovering) {
+    return (
+      <Page>
+        <NewPassword onDone={() => go('home')} />
+      </Page>
+    )
+  }
 
   // ---- deep-linked lesson takes over the whole screen ----
   if (deepLink) {
@@ -164,6 +176,7 @@ function Shell() {
       </header>
 
       <main>
+        <Suspense fallback={<p className="py-24 text-center text-mute">{t('common.loading')}</p>}>
         {view === 'home' && <Home role={role} onStart={() => go('lessons')} onLogin={() => go('login')} count={lessonCount} />}
         {(view === 'lessons' || view === 'practice') && (
           <LessonsCatalog
@@ -210,6 +223,7 @@ function Shell() {
         {view === 'terms' && <Terms />}
         {view === 'refund' && <Refund />}
         {view === 'privacy' && <Privacy />}
+        </Suspense>
       </main>
       <Footer onOpen={go} />
     </Page>

@@ -91,6 +91,12 @@ export async function updateProfile(id: string, patch: { full_name?: string; ava
 }
 
 /** A student asks to become a teacher; the admin approves it later. */
+/** Deletes the signed-in account and all of its data (server-side, irreversible). */
+export async function deleteMyAccount() {
+  const { error } = await supabase.rpc('delete_my_account')
+  if (error) throw error
+}
+
 export async function requestTeacher(id: string) {
   const { error } = await supabase.from('profiles').update({ teacher_request: 'pending' }).eq('id', id)
   if (error) throw error

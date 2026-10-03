@@ -52,7 +52,17 @@
     "nicknameRequired": "Escolha um apelido.",
     "confirmEmail": "Conta criada! Confirme seu e-mail pelo link que enviamos e depois entre aqui.",
     "agree": "Ao criar uma conta, você aceita os <terms>Termos de Serviço</terms> e a <privacy>Política de Privacidade</privacy>.",
-    "parentConsent": "Tem menos de {{age}} anos? Um responsável também precisa concordar."
+    "parentConsent": "Tem menos de {{age}} anos? Um responsável também precisa concordar.",
+    "forgot": "Esqueceu a senha?",
+    "backToSignIn": "← Voltar para o login",
+    "resetHint": "Digite o email da sua conta — enviaremos um link para criar uma nova senha.",
+    "resetButton": "Enviar o link",
+    "resetSent": "Se existir uma conta com este email, enviamos um link. Verifique sua caixa de entrada (e o spam).",
+    "newPasswordTitle": "Nova senha",
+    "newPassword": "nova senha",
+    "repeatPassword": "repita a senha",
+    "savePassword": "Salvar a senha",
+    "passwordsDiffer": "As senhas não coincidem."
   },
   "errors": {
     "invalidCredentials": "E-mail ou senha incorretos.",
@@ -370,7 +380,12 @@
     "yourId": "Seu ID (para o seu professor):",
     "translationLanguage": "Idioma da tradução",
     "translationLanguageHint": "O idioma em que as traduções das palavras aparecem — no dicionário, nos cartões e nas lições. Pode ser diferente do idioma da interface.",
-    "noTranslationOption": "English — só definições"
+    "noTranslationOption": "English — só definições",
+    "deleteTitle": "Excluir conta",
+    "deleteHint": "Seu perfil, progresso, cartões, moedas e compras no app serão excluídos para sempre. Não é possível desfazer.",
+    "deleteButton": "Excluir minha conta…",
+    "deleteConfirm": "Para confirmar, digite seu email: {{email}}",
+    "deleteForever": "Excluir para sempre"
   },
   "admin": {
     "title": "Admin",

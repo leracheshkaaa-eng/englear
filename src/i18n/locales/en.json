@@ -52,7 +52,17 @@
     "nicknameRequired": "Please choose a nickname.",
     "confirmEmail": "Account created! Confirm your email using the link we sent, then sign in here.",
     "agree": "By creating an account you agree to the <terms>Terms of Service</terms> and the <privacy>Privacy Policy</privacy>.",
-    "parentConsent": "Under {{age}}? A parent or guardian must agree too."
+    "parentConsent": "Under {{age}}? A parent or guardian must agree too.",
+    "forgot": "Forgot your password?",
+    "backToSignIn": "← Back to sign in",
+    "resetHint": "Enter the email of your account — we will send a link to set a new password.",
+    "resetButton": "Send the link",
+    "resetSent": "If an account with this email exists, we have sent a link. Check your inbox (and spam).",
+    "newPasswordTitle": "New password",
+    "newPassword": "new password",
+    "repeatPassword": "repeat the password",
+    "savePassword": "Save the password",
+    "passwordsDiffer": "The passwords do not match."
   },
   "errors": {
     "invalidCredentials": "Wrong email or password.",
@@ -370,7 +380,12 @@
     "yourId": "Your ID (for your teacher):",
     "translationLanguage": "Translation language",
     "translationLanguageHint": "The language word translations are shown in — in the dictionary, flashcards and lessons. It can differ from the interface language.",
-    "noTranslationOption": "English — definitions only"
+    "noTranslationOption": "English — definitions only",
+    "deleteTitle": "Delete account",
+    "deleteHint": "Your profile, progress, cards, coins and purchases in the app will be deleted for good. This cannot be undone.",
+    "deleteButton": "Delete my account…",
+    "deleteConfirm": "To confirm, type your email: {{email}}",
+    "deleteForever": "Delete forever"
   },
   "admin": {
     "title": "Admin",

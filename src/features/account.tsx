@@ -14,8 +14,8 @@ import type { PublicPage } from './legal'
 
 export function Login({ onClose, onOpenPage }: { onClose?: () => void; onOpenPage?: (p: PublicPage) => void }) {
   const { t } = useTranslation()
-  const { signIn, signUp } = useAuth()
-  const [mode, setMode] = useState<'in' | 'up'>('in')
+  const { signIn, signUp, sendPasswordReset } = useAuth()
+  const [mode, setMode] = useState<'in' | 'up' | 'reset'>('in')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [nickname, setNickname] = useState('')
@@ -29,6 +29,11 @@ export function Login({ onClose, onOpenPage }: { onClose?: () => void; onOpenPag
     setErr('')
     setInfo('')
     try {
+      if (mode === 'reset') {
+        await sendPasswordReset(email.trim())
+        setInfo(t('auth.resetSent'))
+        return
+      }
       if (mode === 'in') {
         await signIn(email, password)
         onClose?.()
@@ -90,12 +95,24 @@ export function Login({ onClose, onOpenPage }: { onClose?: () => void; onOpenPag
           </>
         )}
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t('auth.email')} className={`${inputCls} w-full`} />
-        <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder={t('auth.password')} className={`${inputCls} w-full`} onKeyDown={(e) => e.key === 'Enter' && submit()} />
+        {mode === 'reset' ? (
+          <p className="text-sm text-mute">{t('auth.resetHint')}</p>
+        ) : (
+          <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder={t('auth.password')} className={`${inputCls} w-full`} onKeyDown={(e) => e.key === 'Enter' && submit()} />
+        )}
         {err && <p className="text-sm text-warn">{err}</p>}
         {info && <p className="rounded-xl bg-lilac/70 p-3 text-sm text-plum-deep">{info}</p>}
-        <Button onClick={submit} disabled={busy || !email || !password} className="w-full">
-          {busy ? '…' : mode === 'in' ? t('auth.signInButton') : t('auth.signUpButton')}
+        <Button onClick={submit} disabled={busy || !email || (mode !== 'reset' && !password)} className="w-full">
+          {busy ? '…' : mode === 'reset' ? t('auth.resetButton') : mode === 'in' ? t('auth.signInButton') : t('auth.signUpButton')}
         </Button>
+        {mode !== 'up' && (
+          <button
+            onClick={() => { setMode(mode === 'in' ? 'reset' : 'in'); setErr(''); setInfo('') }}
+            className="block w-full text-center text-sm text-plum hover:underline"
+          >
+            {mode === 'in' ? t('auth.forgot') : t('auth.backToSignIn')}
+          </button>
+        )}
         {mode === 'up' && (
           <p className="text-center text-xs text-mute">
             <Trans
@@ -109,7 +126,95 @@ export function Login({ onClose, onOpenPage }: { onClose?: () => void; onOpenPag
           </p>
         )}
       </div>
-      <p className="mt-4 text-center text-xs text-mute">{mode === 'in' ? t('auth.noAccountHint') : t('auth.teacherLaterHint')}</p>
+      <p className="mt-4 text-center text-xs text-mute">{mode === 'in' ? t('auth.noAccountHint') : mode === 'up' ? t('auth.teacherLaterHint') : ''}</p>
+    </section>
+  )
+}
+
+/** Settings → delete the account. The user types their email to confirm. */
+export function DeleteAccount() {
+  const { t } = useTranslation()
+  const { email, role, signOut } = useAuth()
+  const [open, setOpen] = useState(false)
+  const [typed, setTyped] = useState('')
+  const [err, setErr] = useState('')
+  const [busy, setBusy] = useState(false)
+
+  async function remove() {
+    setBusy(true)
+    setErr('')
+    try {
+      await api.deleteMyAccount()
+      await signOut().catch(() => {})
+      location.assign('/')
+    } catch (e) {
+      setErr(errorMessage(e))
+      setBusy(false)
+    }
+  }
+
+  if (role === 'admin') return null
+  return (
+    <div className="mt-6 rounded-2xl border border-line bg-paper p-5 text-sm">
+      <p className="font-body font-semibold">{t('settings.deleteTitle')}</p>
+      <p className="mt-1 text-mute">{t('settings.deleteHint')}</p>
+      {!open ? (
+        <Button variant="ghost" onClick={() => setOpen(true)} className="mt-3 text-warn">
+          {t('settings.deleteButton')}
+        </Button>
+      ) : (
+        <div className="mt-3 space-y-2">
+          <p>{t('settings.deleteConfirm', { email })}</p>
+          <input value={typed} onChange={(e) => setTyped(e.target.value)} placeholder={email ?? ''} className={`${inputCls} w-full`} />
+          {err && <p className="text-warn">{err}</p>}
+          <div className="flex flex-wrap gap-2">
+            <Button onClick={remove} disabled={busy || !email || typed.trim().toLowerCase() !== (email ?? '').toLowerCase()} className="bg-warn">
+              {busy ? '…' : t('settings.deleteForever')}
+            </Button>
+            <Button variant="ghost" onClick={() => { setOpen(false); setTyped('') }}>
+              {t('common.cancel')}
+            </Button>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+/** Shown after the user opens a password-reset link from the email. */
+export function NewPassword({ onDone }: { onDone: () => void }) {
+  const { t } = useTranslation()
+  const { updatePassword } = useAuth()
+  const [pw, setPw] = useState('')
+  const [pw2, setPw2] = useState('')
+  const [err, setErr] = useState('')
+  const [busy, setBusy] = useState(false)
+
+  async function save() {
+    setErr('')
+    if (pw !== pw2) return setErr(t('auth.passwordsDiffer'))
+    setBusy(true)
+    try {
+      await updatePassword(pw)
+      onDone()
+    } catch (e) {
+      setErr(errorMessage(e))
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <section className="mx-auto max-w-sm px-6 pt-16 pb-24">
+      <h2 className="font-display text-3xl font-semibold">{t('auth.newPasswordTitle')}</h2>
+      <div className="mt-6 space-y-3">
+        <input value={pw} onChange={(e) => setPw(e.target.value)} type="password" autoComplete="new-password" placeholder={t('auth.newPassword')} className={`${inputCls} w-full`} />
+        <input value={pw2} onChange={(e) => setPw2(e.target.value)} type="password" autoComplete="new-password" placeholder={t('auth.repeatPassword')} className={`${inputCls} w-full`} onKeyDown={(e) => e.key === 'Enter' && save()} />
+        {err && <p className="text-sm text-warn">{err}</p>}
+        <Button onClick={save} disabled={busy || !pw || !pw2} className="w-full">
+          {busy ? '…' : t('auth.savePassword')}
+        </Button>
+      </div>
     </section>
   )
 }

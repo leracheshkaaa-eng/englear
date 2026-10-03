@@ -10,6 +10,7 @@ import { LanguageSelect } from '../i18n/LanguageSelect'
 import { errorMessage } from '../i18n/errors'
 import { LANGUAGES, setNativeLanguage, translationLanguage } from '../i18n'
 import { MeaningTabs } from './meanings'
+import { DeleteAccount } from './account'
 
 const PARTS = ['noun', 'verb', 'adjective', 'adverb', 'preposition', 'pronoun', 'conjunction', 'number', 'article', 'idiom', 'phrasal verb', 'collocation']
 const PAGE_SIZE = 300
@@ -562,6 +563,7 @@ export function Settings() {
           {t('settings.yourId')} <code className="rounded bg-lilac px-1">{userId}</code>
         </p>
       </div>
+      <DeleteAccount />
     </section>
   )
 }

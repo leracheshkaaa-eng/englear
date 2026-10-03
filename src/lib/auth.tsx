@@ -20,6 +20,10 @@ type AuthState = {
     interfaceLanguage: string
   }) => Promise<{ needsConfirmation: boolean }>
   signOut: () => Promise<void>
+  /** true after the user opened a password-reset link: the app asks for a new password */
+  recovering: boolean
+  sendPasswordReset: (email: string) => Promise<void>
+  updatePassword: (password: string) => Promise<void>
   refresh: () => Promise<void>
   updateSettings: (s: Partial<Settings>) => Promise<void>
 }
@@ -32,6 +36,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [email, setEmail] = useState<string | null>(null)
   const [profile, setProfile] = useState<Profile | null>(null)
   const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS)
+  const [recovering, setRecovering] = useState(false)
 
   async function loadFor(uid: string | null, mail: string | null) {
     setUserId(uid)
@@ -76,7 +81,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       await loadFor(data.session?.user.id ?? null, data.session?.user.email ?? null)
       setLoading(false)
     })
-    const { data: sub } = supabase.auth.onAuthStateChange((_e, session) => {
+    const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'PASSWORD_RECOVERY') setRecovering(true)
       loadFor(session?.user.id ?? null, session?.user.email ?? null)
     })
     return () => sub.subscription.unsubscribe()
@@ -124,6 +130,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     },
     async signOut() {
       await supabase.auth.signOut()
+    },
+    recovering,
+    async sendPasswordReset(mail) {
+      // the link brings the user back here; Supabase signs them in and fires PASSWORD_RECOVERY
+      const { error } = await supabase.auth.resetPasswordForEmail(mail, { redirectTo: location.origin + '/' })
+      if (error) throw error
+    },
+    async updatePassword(password) {
+      const { error } = await supabase.auth.updateUser({ password })
+      if (error) throw error
+      setRecovering(false)
     },
     async refresh() {
       if (userId) await loadFor(userId, email)

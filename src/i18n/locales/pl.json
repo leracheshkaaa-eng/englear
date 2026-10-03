@@ -52,7 +52,17 @@
     "nicknameRequired": "Wymyśl nick.",
     "confirmEmail": "Konto utworzone! Potwierdź e-mail, klikając link, który wysłaliśmy, a potem zaloguj się tutaj.",
     "agree": "Tworząc konto, akceptujesz <terms>Regulamin</terms> i <privacy>Politykę prywatności</privacy>.",
-    "parentConsent": "Masz mniej niż {{age}} lat? Potrzebna jest też zgoda rodzica lub opiekuna."
+    "parentConsent": "Masz mniej niż {{age}} lat? Potrzebna jest też zgoda rodzica lub opiekuna.",
+    "forgot": "Nie pamiętasz hasła?",
+    "backToSignIn": "← Wróć do logowania",
+    "resetHint": "Wpisz email swojego konta — wyślemy link do ustawienia nowego hasła.",
+    "resetButton": "Wyślij link",
+    "resetSent": "Jeśli istnieje konto z tym adresem, wysłaliśmy link. Sprawdź skrzynkę (i spam).",
+    "newPasswordTitle": "Nowe hasło",
+    "newPassword": "nowe hasło",
+    "repeatPassword": "powtórz hasło",
+    "savePassword": "Zapisz hasło",
+    "passwordsDiffer": "Hasła nie są takie same."
   },
   "errors": {
     "invalidCredentials": "Nieprawidłowy e-mail lub hasło.",
@@ -388,7 +398,12 @@
     "yourId": "Twój ID (dla nauczyciela):",
     "translationLanguage": "Język tłumaczeń",
     "translationLanguageHint": "Język, w którym pokazywane są tłumaczenia słów — w słowniku, fiszkach i lekcjach. Może się różnić od języka interfejsu.",
-    "noTranslationOption": "English — tylko definicje"
+    "noTranslationOption": "English — tylko definicje",
+    "deleteTitle": "Usuń konto",
+    "deleteHint": "Profil, postępy, fiszki, monety i zakupy w aplikacji zostaną usunięte na zawsze. Nie można tego cofnąć.",
+    "deleteButton": "Usuń moje konto…",
+    "deleteConfirm": "Aby potwierdzić, wpisz swój email: {{email}}",
+    "deleteForever": "Usuń na zawsze"
   },
   "admin": {
     "title": "Admin",
