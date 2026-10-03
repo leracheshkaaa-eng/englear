@@ -25,7 +25,8 @@
     "admin": "Admin",
     "settings": "Settings",
     "practice": "Practice",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "ai": "AI tutor"
   },
   "home": {
     "tagline": "English for the whole family",
@@ -399,7 +400,10 @@
     "prewarmButton": "Generate audio for the dictionary",
     "prewarmProgress": "Generating… {{done}} / {{total}}",
     "prewarmDone": "Ready: {{ready}} of {{total}} (failed: {{failed}}).",
-    "prewarmNotConfigured": "The cloud voice is not configured yet (Google API key). The browser voice is used meanwhile."
+    "prewarmNotConfigured": "The cloud voice is not configured yet (Google API key). The browser voice is used meanwhile.",
+    "givePlus": "+ Plus 30 days",
+    "giveFamily": "+ Family 30 days",
+    "endSub": "end"
   },
   "teacher": {
     "title": "Teacher Mode",
@@ -744,5 +748,68 @@
   },
   "legal": {
     "englishOnly": "This document is available in English. The English version is binding."
+  },
+  "ai": {
+    "title": "AI tutor",
+    "subtitle": "Chat in English and get your writing checked — at your level.",
+    "until": "until {{date}}",
+    "tabs": {
+      "chat": "Chat",
+      "writing": "Writing check"
+    },
+    "cost": {
+      "plus_tutor": "Plus: {{n}} messages left today",
+      "plus_writing": "Plus: {{n}} checks left this month",
+      "free_day": "Free today: {{n}} left · then {{price}} 🪙",
+      "free_week": "Free this week: {{n}} left · then {{price}} 🪙",
+      "free_month": "Free this month: {{n}} left · then {{price}} 🪙",
+      "coins": "Costs {{price}} 🪙"
+    },
+    "errors": {
+      "not_enough_coins": "Not enough coins.",
+      "ai_busy": "The tutor is very busy right now — please try again in a minute. Coins were not charged.",
+      "ai_failed": "Something went wrong. Coins were not charged — please try again.",
+      "ai_not_configured": "The AI tutor is not available yet.",
+      "bad_text": "The text should be from 20 to 4000 characters.",
+      "bad_message": "The message is too long (up to 1000 characters)."
+    },
+    "toShop": "Get coins or Plus →",
+    "newChat": "New chat",
+    "untitled": "Chat",
+    "hello": "Hi{{name}}! I am your English tutor.",
+    "helloHint": "Write anything in English — or pick a topic to start:",
+    "thinking": "The tutor is typing…",
+    "placeholder": "Write a message… (Enter — send, Shift+Enter — new line)",
+    "send": "Send",
+    "writing": {
+      "task": "Task",
+      "free": "Free writing — no task",
+      "placeholder": "Write your text in English here…",
+      "words": "Words: {{n}}",
+      "check": "Check my text",
+      "checking": "Checking… (about 20 seconds)",
+      "history": "My checks",
+      "again": "Rewrite this text",
+      "result": "Result",
+      "scores": {
+        "grammar": "Grammar",
+        "vocabulary": "Vocabulary",
+        "organization": "Structure",
+        "task": "Task"
+      },
+      "yourText": "Your text",
+      "mistakes": "Mistakes: {{n}}",
+      "types": {
+        "grammar": "grammar",
+        "vocabulary": "vocabulary",
+        "spelling": "spelling",
+        "punctuation": "punctuation",
+        "word_order": "word order",
+        "style": "style"
+      },
+      "corrected": "Corrected text",
+      "strengths": "What is good",
+      "nextSteps": "What to work on"
+    }
   }
 }

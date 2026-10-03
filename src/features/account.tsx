@@ -159,7 +159,7 @@ export function DeleteAccount() {
       <p className="font-body font-semibold">{t('settings.deleteTitle')}</p>
       <p className="mt-1 text-mute">{t('settings.deleteHint')}</p>
       {!open ? (
-        <Button variant="ghost" onClick={() => setOpen(true)} className="mt-3 text-warn">
+        <Button variant="danger" onClick={() => setOpen(true)} className="mt-3">
           {t('settings.deleteButton')}
         </Button>
       ) : (
@@ -168,7 +168,7 @@ export function DeleteAccount() {
           <input value={typed} onChange={(e) => setTyped(e.target.value)} placeholder={email ?? ''} className={`${inputCls} w-full`} />
           {err && <p className="text-warn">{err}</p>}
           <div className="flex flex-wrap gap-2">
-            <Button onClick={remove} disabled={busy || !email || typed.trim().toLowerCase() !== (email ?? '').toLowerCase()} className="bg-warn">
+            <Button onClick={remove} disabled={busy || !email || typed.trim().toLowerCase() !== (email ?? '').toLowerCase()} variant="danger">
               {busy ? '…' : t('settings.deleteForever')}
             </Button>
             <Button variant="ghost" onClick={() => { setOpen(false); setTyped('') }}>

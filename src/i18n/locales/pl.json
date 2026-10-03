@@ -25,7 +25,8 @@
     "admin": "Admin",
     "settings": "Ustawienia",
     "practice": "Praktyka",
-    "pricing": "Cennik"
+    "pricing": "Cennik",
+    "ai": "Korepetytor AI"
   },
   "home": {
     "tagline": "angielski dla całej rodziny",
@@ -417,7 +418,10 @@
     "prewarmButton": "Wygeneruj audio dla słownika",
     "prewarmProgress": "Generowanie… {{done}} / {{total}}",
     "prewarmDone": "Gotowe: {{ready}} z {{total}} (błędy: {{failed}}).",
-    "prewarmNotConfigured": "Głos w chmurze nie jest jeszcze skonfigurowany (klucz Google API). Na razie używany jest głos przeglądarki."
+    "prewarmNotConfigured": "Głos w chmurze nie jest jeszcze skonfigurowany (klucz Google API). Na razie używany jest głos przeglądarki.",
+    "givePlus": "+ Plus 30 dni",
+    "giveFamily": "+ Rodzinny 30 dni",
+    "endSub": "zakończ"
   },
   "teacher": {
     "title": "Tryb nauczyciela",
@@ -764,5 +768,68 @@
   },
   "legal": {
     "englishOnly": "Ten dokument jest dostępny po angielsku. Wiążąca jest wersja angielska."
+  },
+  "ai": {
+    "title": "Korepetytor AI",
+    "subtitle": "Rozmawiaj po angielsku i sprawdzaj swoje teksty — na swoim poziomie.",
+    "until": "do {{date}}",
+    "tabs": {
+      "chat": "Czat",
+      "writing": "Sprawdzanie tekstu"
+    },
+    "cost": {
+      "plus_tutor": "Plus: dziś zostało {{n}} wiadomości",
+      "plus_writing": "Plus: w tym miesiącu zostało {{n}} sprawdzeń",
+      "free_day": "Za darmo dziś: zostało {{n}} · potem {{price}} 🪙",
+      "free_week": "Za darmo w tym tygodniu: zostało {{n}} · potem {{price}} 🪙",
+      "free_month": "Za darmo w tym miesiącu: zostało {{n}} · potem {{price}} 🪙",
+      "coins": "Koszt: {{price}} 🪙"
+    },
+    "errors": {
+      "not_enough_coins": "Za mało monet.",
+      "ai_busy": "Korepetytor jest teraz bardzo zajęty — spróbuj za minutę. Monety nie zostały pobrane.",
+      "ai_failed": "Coś poszło nie tak. Monety nie zostały pobrane — spróbuj ponownie.",
+      "ai_not_configured": "Korepetytor AI nie jest jeszcze dostępny.",
+      "bad_text": "Tekst musi mieć od 20 do 4000 znaków.",
+      "bad_message": "Wiadomość jest za długa (do 1000 znaków)."
+    },
+    "toShop": "Zdobądź monety lub Plus →",
+    "newChat": "Nowy czat",
+    "untitled": "Czat",
+    "hello": "Cześć{{name}}! Jestem twoim korepetytorem angielskiego.",
+    "helloHint": "Napisz cokolwiek po angielsku — albo wybierz temat na początek:",
+    "thinking": "Korepetytor pisze…",
+    "placeholder": "Napisz wiadomość… (Enter — wyślij, Shift+Enter — nowa linia)",
+    "send": "Wyślij",
+    "writing": {
+      "task": "Zadanie",
+      "free": "Swobodne pisanie — bez zadania",
+      "placeholder": "Napisz tutaj swój tekst po angielsku…",
+      "words": "Słowa: {{n}}",
+      "check": "Sprawdź tekst",
+      "checking": "Sprawdzam… (około 20 sekund)",
+      "history": "Moje sprawdzenia",
+      "again": "Przepisz ten tekst",
+      "result": "Wynik",
+      "scores": {
+        "grammar": "Gramatyka",
+        "vocabulary": "Słownictwo",
+        "organization": "Struktura",
+        "task": "Zadanie"
+      },
+      "yourText": "Twój tekst",
+      "mistakes": "Błędy: {{n}}",
+      "types": {
+        "grammar": "gramatyka",
+        "vocabulary": "słownictwo",
+        "spelling": "pisownia",
+        "punctuation": "interpunkcja",
+        "word_order": "szyk zdania",
+        "style": "styl"
+      },
+      "corrected": "Poprawiony tekst",
+      "strengths": "Co jest dobrze",
+      "nextSteps": "Nad czym popracować"
+    }
   }
 }

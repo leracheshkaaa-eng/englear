@@ -25,7 +25,8 @@
     "admin": "管理",
     "settings": "设置",
     "practice": "练习",
-    "pricing": "价格"
+    "pricing": "价格",
+    "ai": "AI 老师"
   },
   "home": {
     "tagline": "全家一起学英语",
@@ -390,7 +391,10 @@
     "prewarmButton": "为词典生成音频",
     "prewarmProgress": "正在生成… {{done}} / {{total}}",
     "prewarmDone": "已完成：{{ready}} / {{total}}（失败：{{failed}}）。",
-    "prewarmNotConfigured": "云端语音尚未配置（Google API 密钥）。在此之前使用浏览器语音。"
+    "prewarmNotConfigured": "云端语音尚未配置（Google API 密钥）。在此之前使用浏览器语音。",
+    "givePlus": "+ Plus 30 天",
+    "giveFamily": "+ 家庭版 30 天",
+    "endSub": "结束"
   },
   "teacher": {
     "title": "教师模式",
@@ -734,5 +738,68 @@
   },
   "legal": {
     "englishOnly": "本文件提供英文版本，以英文版本为准。"
+  },
+  "ai": {
+    "title": "AI 老师",
+    "subtitle": "用英语聊天并批改你的写作——按你的水平。",
+    "until": "至 {{date}}",
+    "tabs": {
+      "chat": "聊天",
+      "writing": "写作批改"
+    },
+    "cost": {
+      "plus_tutor": "Plus：今天还剩 {{n}} 条消息",
+      "plus_writing": "Plus：本月还剩 {{n}} 次批改",
+      "free_day": "今天免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
+      "free_week": "本周免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
+      "free_month": "本月免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
+      "coins": "费用：{{price}} 🪙"
+    },
+    "errors": {
+      "not_enough_coins": "金币不足。",
+      "ai_busy": "老师现在很忙——请一分钟后再试。未扣除金币。",
+      "ai_failed": "出了点问题。未扣除金币——请再试一次。",
+      "ai_not_configured": "AI 老师暂不可用。",
+      "bad_text": "文本长度应为 20 到 4000 个字符。",
+      "bad_message": "消息太长（最多 1000 个字符）。"
+    },
+    "toShop": "获取金币或 Plus →",
+    "newChat": "新聊天",
+    "untitled": "聊天",
+    "hello": "你好{{name}}！我是你的英语老师。",
+    "helloHint": "用英语随便写点什么——或选一个话题开始：",
+    "thinking": "老师正在输入…",
+    "placeholder": "输入消息…（Enter 发送，Shift+Enter 换行）",
+    "send": "发送",
+    "writing": {
+      "task": "题目",
+      "free": "自由写作——无题目",
+      "placeholder": "在这里用英语写你的文章…",
+      "words": "词数：{{n}}",
+      "check": "批改我的文章",
+      "checking": "正在批改…（约 20 秒）",
+      "history": "我的批改",
+      "again": "重写这篇文章",
+      "result": "结果",
+      "scores": {
+        "grammar": "语法",
+        "vocabulary": "词汇",
+        "organization": "结构",
+        "task": "题目"
+      },
+      "yourText": "你的文章",
+      "mistakes": "错误：{{n}}",
+      "types": {
+        "grammar": "语法",
+        "vocabulary": "词汇",
+        "spelling": "拼写",
+        "punctuation": "标点",
+        "word_order": "语序",
+        "style": "文体"
+      },
+      "corrected": "修改后的文章",
+      "strengths": "优点",
+      "nextSteps": "需要加强"
+    }
   }
 }

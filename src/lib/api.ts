@@ -1295,3 +1295,106 @@ export async function storeProducts(): Promise<StoreProduct[]> {
   if (error) throw error
   return (data ?? []) as StoreProduct[]
 }
+
+/* ============================================================
+   AI tutor and writing check. Calls go to the `ai` edge function, which
+   charges the request on the server (plan allowance, free taste or coins).
+   ============================================================ */
+export type AiKindStatus = { price: number; free_left: number; free_window: 'day' | 'week' | 'month'; plus_left: number | null }
+export type AiStatus = {
+  plus: boolean
+  plan: 'plus' | 'family' | null
+  period_end: string | null
+  canceled: boolean
+  balance: number
+  tutor: AiKindStatus
+  writing: AiKindStatus
+}
+/** What the signed-in user can do right now (allowances left, prices, balance). */
+export async function aiStatus(): Promise<AiStatus | null> {
+  const { data, error } = await supabase.rpc('ai_status')
+  if (error) throw error
+  return data as AiStatus | null
+}
+
+/** Error from the AI function; `code` is one of: not_enough_coins | ai_busy | ai_failed | ai_not_configured | bad_text | bad_message | sign_in_required … */
+export class AiError extends Error {
+  constructor(public code: string) {
+    super(code)
+  }
+}
+async function callAi<T>(body: Record<string, unknown>): Promise<T> {
+  const { data, error } = await supabase.functions.invoke('ai', { body })
+  if (error) {
+    let code = 'ai_failed'
+    try {
+      const res = (error as { context?: globalThis.Response }).context
+      if (res) code = ((await res.json()) as { error?: string }).error ?? code
+    } catch {
+      // network error or not JSON — keep the generic code
+    }
+    throw new AiError(code)
+  }
+  return data as T
+}
+
+export type AiPayment = { mode: 'free' | 'plus' | 'coins'; coins: number }
+export type AiConversation = { id: string; title: string; updated_at: string }
+export type AiMessage = { id: number; role: 'user' | 'assistant'; content: string; created_at: string }
+
+export async function aiConversations(): Promise<AiConversation[]> {
+  const { data, error } = await supabase.from('ai_conversations').select('id, title, updated_at').order('updated_at', { ascending: false }).limit(50)
+  if (error) throw error
+  return (data ?? []) as AiConversation[]
+}
+export async function aiMessages(conversationId: string): Promise<AiMessage[]> {
+  const { data, error } = await supabase.from('ai_messages').select('id, role, content, created_at').eq('conversation_id', conversationId).order('id')
+  if (error) throw error
+  return (data ?? []) as AiMessage[]
+}
+export async function deleteConversation(id: string) {
+  const { error } = await supabase.from('ai_conversations').delete().eq('id', id)
+  if (error) throw error
+}
+/** One tutor turn; starts a new conversation when `conversationId` is null. */
+export function aiTutor(conversationId: string | null, message: string) {
+  return callAi<{ conversation_id: string; reply: string } & AiPayment>({ action: 'tutor', conversation_id: conversationId, message })
+}
+
+export type WritingMistake = { original: string; correction: string; type: 'grammar' | 'vocabulary' | 'spelling' | 'punctuation' | 'word_order' | 'style'; explanation: string }
+export type WritingResult = {
+  estimated_level: string
+  scores: { grammar: number; vocabulary: number; organization: number; task: number }
+  summary: string
+  strengths: string[]
+  mistakes: WritingMistake[]
+  corrected_text: string
+  next_steps: string[]
+}
+export type WritingCheck = { id: string; task: string; text: string; level: string | null; result: WritingResult; created_at: string }
+
+export async function aiWriting(task: string, text: string) {
+  return callAi<{ id: string; created_at: string; result: WritingResult } & AiPayment>({ action: 'writing', task, text })
+}
+export async function writingChecks(limit = 20): Promise<WritingCheck[]> {
+  const { data, error } = await supabase.from('writing_checks').select('id, task, text, level, result, created_at').order('created_at', { ascending: false }).limit(limit)
+  if (error) throw error
+  return (data ?? []) as WritingCheck[]
+}
+export async function deleteWritingCheck(id: string) {
+  const { error } = await supabase.from('writing_checks').delete().eq('id', id)
+  if (error) throw error
+}
+
+export type Subscription = { user_id: string; plan: 'plus' | 'family'; status: string; current_period_end: string; source: 'manual' | 'paddle' }
+/** Admin: everyone's subscriptions, by user id. */
+export async function adminSubscriptions(): Promise<Record<string, Subscription>> {
+  const { data, error } = await supabase.from('subscriptions').select('user_id, plan, status, current_period_end, source')
+  if (error) throw error
+  return Object.fromEntries((data ?? []).map((s) => [s.user_id, s as Subscription]))
+}
+/** Admin: give Plus/Family for N days (0 ends a manual subscription). */
+export async function adminSetSubscription(userId: string, plan: 'plus' | 'family', days: number) {
+  const { error } = await supabase.rpc('admin_set_subscription', { p_user: userId, p_plan: plan, p_days: days })
+  if (error) throw error
+}

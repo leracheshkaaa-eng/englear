@@ -10,11 +10,13 @@ import { prewarmSpeech } from '../lib/supabase'
 export function AdminDashboard() {
   const { t } = useTranslation()
   const [users, setUsers] = useState<Profile[]>([])
+  const [subs, setSubs] = useState<Record<string, api.Subscription>>({})
   const [err, setErr] = useState('')
 
   async function load() {
     try {
       setUsers(await api.adminListUsers())
+      setSubs(await api.adminSubscriptions().catch(() => ({})))
     } catch (e) {
       setErr(errorMessage(e))
     }
@@ -31,6 +33,20 @@ export function AdminDashboard() {
     } catch (e) {
       setErr(errorMessage(e))
     }
+  }
+
+  async function setSub(id: string, plan: 'plus' | 'family', days: number) {
+    setErr('')
+    try {
+      await api.adminSetSubscription(id, plan, days)
+      setSubs(await api.adminSubscriptions())
+    } catch (e) {
+      setErr(errorMessage(e))
+    }
+  }
+  const activeSub = (id: string) => {
+    const s = subs[id]
+    return s && s.status !== 'expired' && new Date(s.current_period_end) > new Date() ? s : null
   }
 
   const pending = users.filter((u) => u.teacher_request === 'pending' && u.role !== 'teacher')
@@ -77,7 +93,31 @@ export function AdminDashboard() {
                 )}
               </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              {(() => {
+                const s = activeSub(u.id)
+                return s ? (
+                  <>
+                    <Badge>
+                      {t(`shop.planNames.${s.plan}` as 'shop.planNames.plus')} · {t('ai.until', { date: new Date(s.current_period_end).toLocaleDateString() })}
+                    </Badge>
+                    {s.source === 'manual' && (
+                      <button onClick={() => setSub(u.id, s.plan, 0)} className="text-xs text-mute hover:text-warn">
+                        {t('admin.endSub')}
+                      </button>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <button onClick={() => setSub(u.id, 'plus', 30)} className="rounded-full border border-line px-3 py-1 text-xs font-semibold text-mute hover:border-lavender">
+                      {t('admin.givePlus')}
+                    </button>
+                    <button onClick={() => setSub(u.id, 'family', 30)} className="rounded-full border border-line px-3 py-1 text-xs font-semibold text-mute hover:border-lavender">
+                      {t('admin.giveFamily')}
+                    </button>
+                  </>
+                )
+              })()}
               {u.role === 'admin' && <Badge>{t('roles.admin')}</Badge>}
               {u.role !== 'admin' &&
                 (['student', 'teacher'] as Role[]).map((r) => (

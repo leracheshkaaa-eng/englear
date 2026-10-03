@@ -25,7 +25,8 @@
     "admin": "Admin",
     "settings": "Einstellungen",
     "practice": "Übung",
-    "pricing": "Preise"
+    "pricing": "Preise",
+    "ai": "KI-Tutor"
   },
   "home": {
     "tagline": "Englisch für die ganze Familie",
@@ -399,7 +400,10 @@
     "prewarmButton": "Audio für das Wörterbuch erzeugen",
     "prewarmProgress": "Wird erzeugt… {{done}} / {{total}}",
     "prewarmDone": "Fertig: {{ready}} von {{total}} (fehlgeschlagen: {{failed}}).",
-    "prewarmNotConfigured": "Die Cloud-Stimme ist noch nicht eingerichtet (Google-API-Schlüssel). Bis dahin wird die Browserstimme verwendet."
+    "prewarmNotConfigured": "Die Cloud-Stimme ist noch nicht eingerichtet (Google-API-Schlüssel). Bis dahin wird die Browserstimme verwendet.",
+    "givePlus": "+ Plus 30 Tage",
+    "giveFamily": "+ Family 30 Tage",
+    "endSub": "beenden"
   },
   "teacher": {
     "title": "Lehrkraft-Modus",
@@ -744,5 +748,68 @@
   },
   "legal": {
     "englishOnly": "Dieses Dokument ist auf Englisch verfügbar. Verbindlich ist die englische Fassung."
+  },
+  "ai": {
+    "title": "KI-Tutor",
+    "subtitle": "Chatte auf Englisch und lass deine Texte prüfen — auf deinem Niveau.",
+    "until": "bis {{date}}",
+    "tabs": {
+      "chat": "Chat",
+      "writing": "Textprüfung"
+    },
+    "cost": {
+      "plus_tutor": "Plus: heute noch {{n}} Nachrichten",
+      "plus_writing": "Plus: diesen Monat noch {{n}} Prüfungen",
+      "free_day": "Heute gratis: noch {{n}} · danach {{price}} 🪙",
+      "free_week": "Diese Woche gratis: noch {{n}} · danach {{price}} 🪙",
+      "free_month": "Diesen Monat gratis: noch {{n}} · danach {{price}} 🪙",
+      "coins": "Kostet {{price}} 🪙"
+    },
+    "errors": {
+      "not_enough_coins": "Nicht genug Münzen.",
+      "ai_busy": "Der Tutor ist gerade sehr beschäftigt — versuch es in einer Minute noch einmal. Es wurden keine Münzen abgebucht.",
+      "ai_failed": "Etwas ist schiefgelaufen. Es wurden keine Münzen abgebucht — versuch es noch einmal.",
+      "ai_not_configured": "Der KI-Tutor ist noch nicht verfügbar.",
+      "bad_text": "Der Text muss 20 bis 4000 Zeichen lang sein.",
+      "bad_message": "Die Nachricht ist zu lang (bis 1000 Zeichen)."
+    },
+    "toShop": "Münzen oder Plus holen →",
+    "newChat": "Neuer Chat",
+    "untitled": "Chat",
+    "hello": "Hallo{{name}}! Ich bin dein Englisch-Tutor.",
+    "helloHint": "Schreib etwas auf Englisch — oder wähle ein Thema für den Anfang:",
+    "thinking": "Der Tutor schreibt…",
+    "placeholder": "Schreib eine Nachricht… (Enter — senden, Shift+Enter — neue Zeile)",
+    "send": "Senden",
+    "writing": {
+      "task": "Aufgabe",
+      "free": "Freies Schreiben — ohne Aufgabe",
+      "placeholder": "Schreib hier deinen Text auf Englisch…",
+      "words": "Wörter: {{n}}",
+      "check": "Text prüfen",
+      "checking": "Wird geprüft… (etwa 20 Sekunden)",
+      "history": "Meine Prüfungen",
+      "again": "Diesen Text überarbeiten",
+      "result": "Ergebnis",
+      "scores": {
+        "grammar": "Grammatik",
+        "vocabulary": "Wortschatz",
+        "organization": "Aufbau",
+        "task": "Aufgabe"
+      },
+      "yourText": "Dein Text",
+      "mistakes": "Fehler: {{n}}",
+      "types": {
+        "grammar": "Grammatik",
+        "vocabulary": "Wortschatz",
+        "spelling": "Rechtschreibung",
+        "punctuation": "Zeichensetzung",
+        "word_order": "Wortstellung",
+        "style": "Stil"
+      },
+      "corrected": "Korrigierter Text",
+      "strengths": "Was gut ist",
+      "nextSteps": "Woran du arbeiten kannst"
+    }
   }
 }

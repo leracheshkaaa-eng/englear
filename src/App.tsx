@@ -15,9 +15,10 @@ const TeacherMode = lazy(() => import('./features/teacher').then((m) => ({ defau
 const Dictionary = lazy(() => import('./features/dictionary').then((m) => ({ default: m.Dictionary })))
 const Settings = lazy(() => import('./features/dictionary').then((m) => ({ default: m.Settings })))
 const Flashcards = lazy(() => import('./features/flashcards').then((m) => ({ default: m.Flashcards })))
+const AiTutor = lazy(() => import('./features/ai').then((m) => ({ default: m.AiTutor })))
 const AdminDashboard = lazy(() => import('./features/admin').then((m) => ({ default: m.AdminDashboard })))
 
-type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | PublicPage
+type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | 'ai' | PublicPage
 
 function Shell() {
   const { loading, userId, role, profile, signOut, settings, recovering } = useAuth()
@@ -134,7 +135,7 @@ function Shell() {
     ['practice', t('nav.practice')],
   ]
   if (!userId) nav.push(['pricing', t('nav.pricing')])
-  if (userId) nav.push(['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
+  if (userId) nav.push(['ai', t('nav.ai')], ['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
   if (isTeacher) nav.push(['teacher', t('nav.teacher')])
   if (role === 'admin') nav.push(['admin', t('nav.admin')])
 
@@ -206,6 +207,7 @@ function Shell() {
             }}
           />
         )}
+        {view === 'ai' && userId && <AiTutor onSpent={() => api.myWallet(userId).then(setWallet).catch(() => {})} onShop={() => go('shop')} />}
         {view === 'dictionary' && userId && <Dictionary />}
         {view === 'progress' && userId && (
           <StudentProgress

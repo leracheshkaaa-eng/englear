@@ -25,7 +25,8 @@
     "admin": "管理",
     "settings": "設定",
     "practice": "練習",
-    "pricing": "料金"
+    "pricing": "料金",
+    "ai": "AI 先生"
   },
   "home": {
     "tagline": "家族みんなで英語を",
@@ -390,7 +391,10 @@
     "prewarmButton": "辞書の音声を生成",
     "prewarmProgress": "生成中… {{done}} / {{total}}",
     "prewarmDone": "完了：{{total}} 件中 {{ready}} 件（失敗：{{failed}}）。",
-    "prewarmNotConfigured": "クラウド音声はまだ設定されていません（Google API キー）。それまではブラウザーの音声を使います。"
+    "prewarmNotConfigured": "クラウド音声はまだ設定されていません（Google API キー）。それまではブラウザーの音声を使います。",
+    "givePlus": "+ Plus 30日",
+    "giveFamily": "+ ファミリー 30日",
+    "endSub": "終了"
   },
   "teacher": {
     "title": "先生モード",
@@ -734,5 +738,68 @@
   },
   "legal": {
     "englishOnly": "この文書は英語で提供されています。英語版が正式なものです。"
+  },
+  "ai": {
+    "title": "AI 先生",
+    "subtitle": "英語でチャットして、作文を添削してもらおう——あなたのレベルで。",
+    "until": "{{date}} まで",
+    "tabs": {
+      "chat": "チャット",
+      "writing": "作文チェック"
+    },
+    "cost": {
+      "plus_tutor": "Plus：今日の残り {{n}} メッセージ",
+      "plus_writing": "Plus：今月の残り {{n}} 回",
+      "free_day": "今日の無料分：残り {{n}} · その後 {{price}} 🪙",
+      "free_week": "今週の無料分：残り {{n}} · その後 {{price}} 🪙",
+      "free_month": "今月の無料分：残り {{n}} · その後 {{price}} 🪙",
+      "coins": "{{price}} 🪙"
+    },
+    "errors": {
+      "not_enough_coins": "コインが足りません。",
+      "ai_busy": "先生はいま混み合っています——1分後にもう一度お試しください。コインは引かれていません。",
+      "ai_failed": "うまくいきませんでした。コインは引かれていません——もう一度お試しください。",
+      "ai_not_configured": "AI 先生はまだ利用できません。",
+      "bad_text": "テキストは 20〜4000 文字にしてください。",
+      "bad_message": "メッセージが長すぎます（1000 文字まで）。"
+    },
+    "toShop": "コインか Plus を手に入れる →",
+    "newChat": "新しいチャット",
+    "untitled": "チャット",
+    "hello": "こんにちは{{name}}！あなたの英語の先生です。",
+    "helloHint": "英語で何でも書いてみてね——または話題を選んで始めよう：",
+    "thinking": "先生が入力中…",
+    "placeholder": "メッセージを入力…（Enter で送信、Shift+Enter で改行）",
+    "send": "送信",
+    "writing": {
+      "task": "テーマ",
+      "free": "自由作文——テーマなし",
+      "placeholder": "ここに英語で作文を書いてね…",
+      "words": "単語数：{{n}}",
+      "check": "作文をチェック",
+      "checking": "チェック中…（約20秒）",
+      "history": "チェック履歴",
+      "again": "この作文を書き直す",
+      "result": "結果",
+      "scores": {
+        "grammar": "文法",
+        "vocabulary": "語彙",
+        "organization": "構成",
+        "task": "テーマ"
+      },
+      "yourText": "あなたの作文",
+      "mistakes": "ミス：{{n}}",
+      "types": {
+        "grammar": "文法",
+        "vocabulary": "語彙",
+        "spelling": "スペル",
+        "punctuation": "句読点",
+        "word_order": "語順",
+        "style": "文体"
+      },
+      "corrected": "修正した作文",
+      "strengths": "よかった点",
+      "nextSteps": "次に取り組むこと"
+    }
   }
 }

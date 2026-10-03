@@ -25,7 +25,8 @@
     "admin": "Admin",
     "settings": "Configurações",
     "practice": "Prática",
-    "pricing": "Preços"
+    "pricing": "Preços",
+    "ai": "Tutor IA"
   },
   "home": {
     "tagline": "inglês para toda a família",
@@ -399,7 +400,10 @@
     "prewarmButton": "Gerar áudio do dicionário",
     "prewarmProgress": "Gerando… {{done}} / {{total}}",
     "prewarmDone": "Prontos: {{ready}} de {{total}} (falhas: {{failed}}).",
-    "prewarmNotConfigured": "A voz na nuvem ainda não está configurada (chave de API do Google). Enquanto isso, é usada a voz do navegador."
+    "prewarmNotConfigured": "A voz na nuvem ainda não está configurada (chave de API do Google). Enquanto isso, é usada a voz do navegador.",
+    "givePlus": "+ Plus 30 dias",
+    "giveFamily": "+ Família 30 dias",
+    "endSub": "encerrar"
   },
   "teacher": {
     "title": "Modo professor",
@@ -744,5 +748,68 @@
   },
   "legal": {
     "englishOnly": "Este documento está disponível em inglês. A versão em inglês é a vinculante."
+  },
+  "ai": {
+    "title": "Tutor IA",
+    "subtitle": "Converse em inglês e corrija seus textos — no seu nível.",
+    "until": "até {{date}}",
+    "tabs": {
+      "chat": "Chat",
+      "writing": "Correção de texto"
+    },
+    "cost": {
+      "plus_tutor": "Plus: restam {{n}} mensagens hoje",
+      "plus_writing": "Plus: restam {{n}} correções este mês",
+      "free_day": "Grátis hoje: restam {{n}} · depois {{price}} 🪙",
+      "free_week": "Grátis nesta semana: restam {{n}} · depois {{price}} 🪙",
+      "free_month": "Grátis neste mês: restam {{n}} · depois {{price}} 🪙",
+      "coins": "Custa {{price}} 🪙"
+    },
+    "errors": {
+      "not_enough_coins": "Moedas insuficientes.",
+      "ai_busy": "O tutor está muito ocupado — tente de novo em um minuto. Nenhuma moeda foi cobrada.",
+      "ai_failed": "Algo deu errado. Nenhuma moeda foi cobrada — tente de novo.",
+      "ai_not_configured": "O tutor IA ainda não está disponível.",
+      "bad_text": "O texto deve ter de 20 a 4000 caracteres.",
+      "bad_message": "A mensagem é longa demais (até 1000 caracteres)."
+    },
+    "toShop": "Obter moedas ou Plus →",
+    "newChat": "Novo chat",
+    "untitled": "Chat",
+    "hello": "Oi{{name}}! Eu sou seu tutor de inglês.",
+    "helloHint": "Escreva qualquer coisa em inglês — ou escolha um tema para começar:",
+    "thinking": "O tutor está digitando…",
+    "placeholder": "Escreva uma mensagem… (Enter — enviar, Shift+Enter — nova linha)",
+    "send": "Enviar",
+    "writing": {
+      "task": "Tarefa",
+      "free": "Escrita livre — sem tarefa",
+      "placeholder": "Escreva aqui seu texto em inglês…",
+      "words": "Palavras: {{n}}",
+      "check": "Corrigir meu texto",
+      "checking": "Corrigindo… (uns 20 segundos)",
+      "history": "Minhas correções",
+      "again": "Reescrever este texto",
+      "result": "Resultado",
+      "scores": {
+        "grammar": "Gramática",
+        "vocabulary": "Vocabulário",
+        "organization": "Estrutura",
+        "task": "Tarefa"
+      },
+      "yourText": "Seu texto",
+      "mistakes": "Erros: {{n}}",
+      "types": {
+        "grammar": "gramática",
+        "vocabulary": "vocabulário",
+        "spelling": "ortografia",
+        "punctuation": "pontuação",
+        "word_order": "ordem das palavras",
+        "style": "estilo"
+      },
+      "corrected": "Texto corrigido",
+      "strengths": "O que está bom",
+      "nextSteps": "No que trabalhar"
+    }
   }
 }
