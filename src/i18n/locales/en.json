@@ -26,7 +26,8 @@
     "settings": "Settings",
     "practice": "Practice",
     "pricing": "Pricing",
-    "ai": "AI tutor"
+    "ai": "AI tutor",
+    "boards": "Boards"
   },
   "home": {
     "tagline": "English for the whole family",
@@ -901,5 +902,62 @@
     "failed": "The lesson could not be created. No coins were charged — try again or change the settings.",
     "reviewBanner": "Created by AI — read every exercise before saving. You can edit anything.",
     "dropped": "{{n}} exercises were removed by the checks (ambiguous or broken)"
+  },
+  "boards": {
+    "title": "Boards",
+    "subtitle": "Your notebook: rules, words, notes — draw and write freely.",
+    "subtitleTeacher": "Prepare lesson boards, share them with classes, keep notes.",
+    "new": "New board",
+    "tabs": {
+      "mine": "My boards",
+      "shared": "Shared with me"
+    },
+    "allFolders": "All folders",
+    "untitled": "Untitled board",
+    "kinds": {
+      "notes": "Notes",
+      "lesson": "Lesson board"
+    },
+    "share": "Share",
+    "deleteConfirm": "Delete the board “{{title}}”? This cannot be undone.",
+    "noneMine": "No boards yet — create the first one.",
+    "noneShared": "Nobody has shared a board with you yet.",
+    "titlePlaceholder": "Board title, e.g. “Past Simple — rules”",
+    "template": "Start from",
+    "tpl": {
+      "empty": "Empty",
+      "tenses": "Tense table",
+      "cards": "Word cards",
+      "plan": "Lesson plan",
+      "tensesTitle": "English tenses",
+      "cardsTitle": "New words",
+      "planTitle": "Lesson plan"
+    },
+    "folder": "Folder",
+    "folderPlaceholder": "e.g. Grammar",
+    "lesson": "Attach to a lesson",
+    "noLesson": "No lesson",
+    "create": "Create",
+    "shareTitle": "Share “{{title}}”",
+    "shareHint": "Choose who can see this board. “Can draw” lets them edit it too.",
+    "shareHintLesson": "Students who have the attached lesson assigned see this board anyway. Here you can share it with more people.",
+    "canView": "can view",
+    "canEdit": "can draw",
+    "done": "Done",
+    "notFound": "This board does not exist or is not shared with you.",
+    "status": {
+      "saved": "Saved ✓",
+      "saving": "Saving…",
+      "unsaved": "Changes…",
+      "conflict": "Someone else changed this board — reload to see the latest version.",
+      "error": "Could not save."
+    },
+    "insertWord": "Insert a word",
+    "readOnly": "View only",
+    "reload": "Reload",
+    "retry": "Try again",
+    "wordSearch": "Find a word in the dictionary…",
+    "noWords": "Nothing found.",
+    "lessonBoard": "Lesson board"
   }
 }

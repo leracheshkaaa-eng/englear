@@ -26,7 +26,8 @@
     "settings": "Paramètres",
     "practice": "Pratique",
     "pricing": "Tarifs",
-    "ai": "Tuteur IA"
+    "ai": "Tuteur IA",
+    "boards": "Tableaux"
   },
   "home": {
     "tagline": "l'anglais pour toute la famille",
@@ -901,5 +902,62 @@
     "failed": "Impossible de créer la leçon. Aucune pièce n’a été débitée — réessaie ou change les réglages.",
     "reviewBanner": "Créé par l’IA — lis chaque exercice avant d’enregistrer. Tout peut être modifié.",
     "dropped": "Exercices retirés par les vérifications : {{n}} (ambigus ou erronés)"
+  },
+  "boards": {
+    "title": "Tableaux",
+    "subtitle": "Ton cahier : règles, mots, notes — dessine et écris librement.",
+    "subtitleTeacher": "Prépare des tableaux pour tes leçons, partage-les avec tes classes, prends des notes.",
+    "new": "Nouveau tableau",
+    "tabs": {
+      "mine": "Mes tableaux",
+      "shared": "Partagés avec moi"
+    },
+    "allFolders": "Tous les dossiers",
+    "untitled": "Tableau sans titre",
+    "kinds": {
+      "notes": "Notes",
+      "lesson": "Tableau de leçon"
+    },
+    "share": "Partager",
+    "deleteConfirm": "Supprimer le tableau « {{title}} » ? C’est irréversible.",
+    "noneMine": "Aucun tableau — crée le premier.",
+    "noneShared": "Personne n’a encore partagé de tableau avec toi.",
+    "titlePlaceholder": "Titre, par ex. « Past Simple — règles »",
+    "template": "Commencer avec",
+    "tpl": {
+      "empty": "Vide",
+      "tenses": "Tableau des temps",
+      "cards": "Cartes de mots",
+      "plan": "Plan de cours",
+      "tensesTitle": "Les temps en anglais",
+      "cardsTitle": "Nouveaux mots",
+      "planTitle": "Plan de cours"
+    },
+    "folder": "Dossier",
+    "folderPlaceholder": "par ex. Grammaire",
+    "lesson": "Lier à une leçon",
+    "noLesson": "Aucune leçon",
+    "create": "Créer",
+    "shareTitle": "Partager « {{title}} »",
+    "shareHint": "Choisis qui peut voir ce tableau. « Peut dessiner » permet aussi de le modifier.",
+    "shareHintLesson": "Les élèves à qui la leçon liée est attribuée voient déjà ce tableau. Ici, tu peux le partager avec d’autres.",
+    "canView": "lecture seule",
+    "canEdit": "peut dessiner",
+    "done": "Terminé",
+    "notFound": "Ce tableau n’existe pas ou n’est pas partagé avec toi.",
+    "status": {
+      "saved": "Enregistré ✓",
+      "saving": "Enregistrement…",
+      "unsaved": "Modifications…",
+      "conflict": "Quelqu’un d’autre a modifié ce tableau — recharge pour voir la dernière version.",
+      "error": "Échec de l’enregistrement."
+    },
+    "insertWord": "Insérer un mot",
+    "readOnly": "Lecture seule",
+    "reload": "Recharger",
+    "retry": "Réessayer",
+    "wordSearch": "Chercher un mot dans le dictionnaire…",
+    "noWords": "Rien trouvé.",
+    "lessonBoard": "Tableau de la leçon"
   }
 }

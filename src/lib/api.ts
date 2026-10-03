@@ -1554,3 +1554,103 @@ export type AiLessonDraft = {
 export function aiLesson(req: AiLessonRequest) {
   return callAi<AiLessonDraft>({ action: 'lesson', ...req })
 }
+
+/* ============================================================
+   Whiteboards (migration 0025). The scene is saved with a version check (save_board);
+   pictures live in the private bucket "board-files" at <board_id>/<file_id>.
+   ============================================================ */
+export type BoardKind = 'notes' | 'lesson'
+export type BoardScene = {
+  elements: unknown[]
+  appState: { viewBackgroundColor?: string; gridSize?: number | null }
+  /** pictures used by the scene: file id -> mime type */
+  files?: Record<string, { mimeType: string; created: number }>
+}
+export type BoardSummary = {
+  id: string
+  owner_id: string
+  title: string
+  kind: BoardKind
+  folder: string
+  lesson_id: string | null
+  version: number
+  updated_at: string
+}
+export type Board = BoardSummary & { scene: BoardScene }
+export type BoardShare = { id: string; board_id: string; class_id: string | null; student_id: string | null; can_edit: boolean }
+
+const BOARD_SUMMARY = 'id, owner_id, title, kind, folder, lesson_id, version, updated_at'
+
+/** Boards I own plus boards shared with me (RLS decides). */
+export async function listBoards(): Promise<BoardSummary[]> {
+  const { data, error } = await supabase.from('boards').select(BOARD_SUMMARY).order('updated_at', { ascending: false }).limit(300)
+  if (error) throw error
+  return (data ?? []) as BoardSummary[]
+}
+export async function getBoard(id: string): Promise<Board | null> {
+  const { data, error } = await supabase.from('boards').select(`${BOARD_SUMMARY}, scene`).eq('id', id).maybeSingle()
+  if (error) throw error
+  return data as Board | null
+}
+/** The board attached to a lesson, if this user can see one. */
+export async function lessonBoard(lessonId: string): Promise<BoardSummary | null> {
+  const { data } = await supabase.from('boards').select(BOARD_SUMMARY).eq('lesson_id', lessonId).eq('kind', 'lesson').order('updated_at', { ascending: false }).limit(1)
+  return ((data ?? [])[0] as BoardSummary) ?? null
+}
+export async function createBoard(ownerId: string, b: { title: string; kind: BoardKind; folder?: string; lesson_id?: string | null }): Promise<BoardSummary> {
+  const { data, error } = await supabase
+    .from('boards')
+    .insert({ owner_id: ownerId, title: b.title, kind: b.kind, folder: b.folder ?? '', lesson_id: b.lesson_id ?? null })
+    .select(BOARD_SUMMARY)
+    .single()
+  if (error) throw error
+  return data as BoardSummary
+}
+export async function updateBoard(id: string, patch: { title?: string; folder?: string; kind?: BoardKind; lesson_id?: string | null }) {
+  const { error } = await supabase.from('boards').update(patch).eq('id', id)
+  if (error) throw error
+}
+export async function deleteBoard(id: string) {
+  const { data: files } = await supabase.storage.from('board-files').list(id, { limit: 1000 })
+  if (files?.length) await supabase.storage.from('board-files').remove(files.map((f) => `${id}/${f.name}`))
+  const { error } = await supabase.from('boards').delete().eq('id', id)
+  if (error) throw error
+}
+/** Save with a version check. Errors with hint 'conflict' when someone saved in between. */
+export async function saveBoard(id: string, scene: BoardScene, version: number): Promise<number> {
+  const { data, error } = await supabase.rpc('save_board', { p_board: id, p_scene: scene, p_version: version })
+  if (error) throw error
+  return data as number
+}
+export async function uploadBoardFile(boardId: string, fileId: string, blob: Blob) {
+  const { error } = await supabase.storage.from('board-files').upload(`${boardId}/${fileId}`, blob, { contentType: blob.type, upsert: false })
+  if (error && !/exists|duplicate/i.test(error.message)) throw error
+}
+export async function downloadBoardFile(boardId: string, fileId: string): Promise<Blob | null> {
+  const { data } = await supabase.storage.from('board-files').download(`${boardId}/${fileId}`)
+  return data ?? null
+}
+export async function boardShares(boardId: string): Promise<BoardShare[]> {
+  const { data, error } = await supabase.from('board_shares').select('id, board_id, class_id, student_id, can_edit').eq('board_id', boardId)
+  if (error) throw error
+  return (data ?? []) as BoardShare[]
+}
+export async function shareBoard(boardId: string, target: { classId?: string; studentId?: string }, canEdit: boolean) {
+  const { error } = await supabase
+    .from('board_shares')
+    .insert({ board_id: boardId, class_id: target.classId ?? null, student_id: target.studentId ?? null, can_edit: canEdit })
+  if (error) throw error
+}
+export async function setShareEdit(shareId: string, canEdit: boolean) {
+  const { error } = await supabase.from('board_shares').update({ can_edit: canEdit }).eq('id', shareId)
+  if (error) throw error
+}
+export async function unshareBoard(shareId: string) {
+  const { error } = await supabase.from('board_shares').delete().eq('id', shareId)
+  if (error) throw error
+}
+/** Can the signed-in user draw on this board? */
+export async function canEditBoard(id: string): Promise<boolean> {
+  const { data } = await supabase.rpc('can_edit_board', { p_board: id })
+  return !!data
+}

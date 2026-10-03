@@ -11,6 +11,7 @@
     "check:locales": "node scripts/check-locales.mjs"
   },
   "dependencies": {
+    "@excalidraw/excalidraw": "0.18.1",
     "@supabase/supabase-js": "^2.116.0",
     "i18next": "^26.4.2",
     "react": "^19.0.0",

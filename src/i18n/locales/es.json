@@ -26,7 +26,8 @@
     "settings": "Ajustes",
     "practice": "Práctica",
     "pricing": "Precios",
-    "ai": "Tutor IA"
+    "ai": "Tutor IA",
+    "boards": "Pizarras"
   },
   "home": {
     "tagline": "inglés para toda la familia",
@@ -901,5 +902,62 @@
     "failed": "No se pudo crear la lección. No se cobraron monedas: inténtalo de nuevo o cambia los ajustes.",
     "reviewBanner": "Creado por IA: lee cada ejercicio antes de guardar. Puedes editarlo todo.",
     "dropped": "Ejercicios quitados por las comprobaciones: {{n}} (ambiguos o con errores)"
+  },
+  "boards": {
+    "title": "Pizarras",
+    "subtitle": "Tu cuaderno: reglas, palabras, apuntes — dibuja y escribe libremente.",
+    "subtitleTeacher": "Prepara pizarras para tus lecciones, compártelas con tus grupos, toma apuntes.",
+    "new": "Nueva pizarra",
+    "tabs": {
+      "mine": "Mis pizarras",
+      "shared": "Compartidas conmigo"
+    },
+    "allFolders": "Todas las carpetas",
+    "untitled": "Pizarra sin título",
+    "kinds": {
+      "notes": "Apuntes",
+      "lesson": "Pizarra de lección"
+    },
+    "share": "Compartir",
+    "deleteConfirm": "¿Eliminar la pizarra «{{title}}»? No se puede deshacer.",
+    "noneMine": "Aún no hay pizarras: crea la primera.",
+    "noneShared": "Nadie ha compartido una pizarra contigo todavía.",
+    "titlePlaceholder": "Título, p. ej. «Past Simple — reglas»",
+    "template": "Empezar con",
+    "tpl": {
+      "empty": "Vacía",
+      "tenses": "Tabla de tiempos",
+      "cards": "Tarjetas de palabras",
+      "plan": "Plan de clase",
+      "tensesTitle": "Tiempos en inglés",
+      "cardsTitle": "Palabras nuevas",
+      "planTitle": "Plan de clase"
+    },
+    "folder": "Carpeta",
+    "folderPlaceholder": "p. ej. Gramática",
+    "lesson": "Vincular a una lección",
+    "noLesson": "Sin lección",
+    "create": "Crear",
+    "shareTitle": "Compartir «{{title}}»",
+    "shareHint": "Elige quién puede ver esta pizarra. «Puede dibujar» permite también editarla.",
+    "shareHintLesson": "Los alumnos que tienen asignada la lección vinculada ya ven esta pizarra. Aquí puedes compartirla con más personas.",
+    "canView": "solo ver",
+    "canEdit": "puede dibujar",
+    "done": "Listo",
+    "notFound": "Esta pizarra no existe o no está compartida contigo.",
+    "status": {
+      "saved": "Guardado ✓",
+      "saving": "Guardando…",
+      "unsaved": "Cambios…",
+      "conflict": "Otra persona cambió esta pizarra: recarga para ver la última versión.",
+      "error": "No se pudo guardar."
+    },
+    "insertWord": "Insertar palabra",
+    "readOnly": "Solo ver",
+    "reload": "Recargar",
+    "retry": "Reintentar",
+    "wordSearch": "Busca una palabra en el diccionario…",
+    "noWords": "No se encontró nada.",
+    "lessonBoard": "Pizarra de la lección"
   }
 }

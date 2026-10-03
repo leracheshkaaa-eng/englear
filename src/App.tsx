@@ -17,9 +17,10 @@ const Dictionary = lazy(() => import('./features/dictionary').then((m) => ({ def
 const Settings = lazy(() => import('./features/dictionary').then((m) => ({ default: m.Settings })))
 const Flashcards = lazy(() => import('./features/flashcards').then((m) => ({ default: m.Flashcards })))
 const AiTutor = lazy(() => import('./features/ai').then((m) => ({ default: m.AiTutor })))
+const Boards = lazy(() => import('./features/boards').then((m) => ({ default: m.Boards })))
 const AdminDashboard = lazy(() => import('./features/admin').then((m) => ({ default: m.AdminDashboard })))
 
-type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | 'ai' | PublicPage
+type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | 'ai' | 'boards' | PublicPage
 
 function Shell() {
   const { loading, userId, role, profile, signOut, settings, recovering } = useAuth()
@@ -34,6 +35,8 @@ function Shell() {
   const [flashTarget, setFlashTarget] = useState<api.SetProgress | null>(null) // set opened from Progress
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
   const [joinCode, setJoinCode] = useState<string | null>(null) // /join/<CODE> from a teacher's invite
+  const [boardId, setBoardId] = useState<string | null>(null) // open whiteboard
+  const [lessonBoardId, setLessonBoardId] = useState<string | null>(null) // board attached to the open lesson
 
   const reload = useCallback(async () => {
     // only totals here: the catalog loads its own pages
@@ -55,6 +58,13 @@ function Shell() {
   useEffect(() => {
     if (!loading) reload()
   }, [loading, reload])
+
+  // a whiteboard attached to the lesson being played (visible if shared / assigned)
+  useEffect(() => {
+    setLessonBoardId(null)
+    if (view !== 'player' || !active || !userId) return
+    api.lessonBoard(active.id).then((b) => setLessonBoardId(b?.id ?? null)).catch(() => {})
+  }, [view, active, userId])
 
   // coins and streak: refreshed on every page change (one small query)
   useEffect(() => {
@@ -87,6 +97,7 @@ function Shell() {
   function go(v: View) {
     setView(v)
     setFlashTarget(null)
+    setBoardId(null)
     const path = pageFromPath('/' + v) ? '/' + v : '/'
     if (location.pathname !== path) history.pushState({}, '', path)
     window.scrollTo(0, 0)
@@ -156,7 +167,7 @@ function Shell() {
     ['practice', t('nav.practice')],
   ]
   if (!userId) nav.push(['pricing', t('nav.pricing')])
-  if (userId) nav.push(['ai', t('nav.ai')], ['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
+  if (userId) nav.push(['ai', t('nav.ai')], ['boards', t('nav.boards')], ['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
   if (isTeacher) nav.push(['teacher', t('nav.teacher')])
   if (role === 'admin') nav.push(['admin', t('nav.admin')])
 
@@ -227,6 +238,13 @@ function Shell() {
             }}
           />
         )}
+        {view === 'player' && active && lessonBoardId && (
+          <div className="mx-auto max-w-3xl px-6 pb-2 text-right">
+            <Button variant="soft" onClick={() => { setView('boards'); setBoardId(lessonBoardId) }}>
+              📋 {t('boards.lessonBoard')}
+            </Button>
+          </div>
+        )}
         {view === 'player' && active && (
           <LessonPlayer lesson={active} onDone={() => { reload(); setView(backTo) }} />
         )}
@@ -241,6 +259,7 @@ function Shell() {
           />
         )}
         {view === 'ai' && userId && <AiTutor onSpent={() => api.myWallet(userId).then(setWallet).catch(() => {})} onShop={() => go('shop')} />}
+        {view === 'boards' && userId && <Boards openId={boardId} onOpen={setBoardId} />}
         {view === 'dictionary' && userId && <Dictionary />}
         {view === 'progress' && userId && (
           <StudentProgress

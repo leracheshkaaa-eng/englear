@@ -26,7 +26,8 @@
     "settings": "Einstellungen",
     "practice": "Übung",
     "pricing": "Preise",
-    "ai": "KI-Tutor"
+    "ai": "KI-Tutor",
+    "boards": "Tafeln"
   },
   "home": {
     "tagline": "Englisch für die ganze Familie",
@@ -901,5 +902,62 @@
     "failed": "Die Lektion konnte nicht erstellt werden. Es wurden keine Münzen abgebucht — versuch es noch einmal oder ändere die Einstellungen.",
     "reviewBanner": "Von der KI erstellt — lies jede Übung vor dem Speichern. Alles lässt sich ändern.",
     "dropped": "Von den Prüfungen entfernte Übungen: {{n}} (mehrdeutig oder fehlerhaft)"
+  },
+  "boards": {
+    "title": "Tafeln",
+    "subtitle": "Dein Heft: Regeln, Wörter, Notizen — zeichne und schreib frei.",
+    "subtitleTeacher": "Bereite Tafeln für Lektionen vor, teile sie mit Klassen, mach Notizen.",
+    "new": "Neue Tafel",
+    "tabs": {
+      "mine": "Meine Tafeln",
+      "shared": "Mit mir geteilt"
+    },
+    "allFolders": "Alle Ordner",
+    "untitled": "Tafel ohne Titel",
+    "kinds": {
+      "notes": "Notizen",
+      "lesson": "Lektionstafel"
+    },
+    "share": "Teilen",
+    "deleteConfirm": "Tafel „{{title}}“ löschen? Das kann nicht rückgängig gemacht werden.",
+    "noneMine": "Noch keine Tafeln — erstelle die erste.",
+    "noneShared": "Noch hat niemand eine Tafel mit dir geteilt.",
+    "titlePlaceholder": "Titel, z. B. „Past Simple — Regeln“",
+    "template": "Beginnen mit",
+    "tpl": {
+      "empty": "Leer",
+      "tenses": "Zeitentabelle",
+      "cards": "Wortkarten",
+      "plan": "Stundenplan",
+      "tensesTitle": "Englische Zeiten",
+      "cardsTitle": "Neue Wörter",
+      "planTitle": "Ablauf der Stunde"
+    },
+    "folder": "Ordner",
+    "folderPlaceholder": "z. B. Grammatik",
+    "lesson": "Mit einer Lektion verknüpfen",
+    "noLesson": "Keine Lektion",
+    "create": "Erstellen",
+    "shareTitle": "„{{title}}“ teilen",
+    "shareHint": "Wähle, wer die Tafel sehen darf. „Darf zeichnen“ erlaubt auch Bearbeiten.",
+    "shareHintLesson": "Schüler, denen die verknüpfte Lektion zugewiesen ist, sehen die Tafel ohnehin. Hier kannst du sie mit weiteren teilen.",
+    "canView": "nur ansehen",
+    "canEdit": "darf zeichnen",
+    "done": "Fertig",
+    "notFound": "Diese Tafel gibt es nicht oder sie ist nicht mit dir geteilt.",
+    "status": {
+      "saved": "Gespeichert ✓",
+      "saving": "Speichere…",
+      "unsaved": "Änderungen…",
+      "conflict": "Jemand anderes hat die Tafel geändert — neu laden, um die aktuelle Version zu sehen.",
+      "error": "Speichern fehlgeschlagen."
+    },
+    "insertWord": "Wort einfügen",
+    "readOnly": "Nur ansehen",
+    "reload": "Neu laden",
+    "retry": "Erneut versuchen",
+    "wordSearch": "Wort im Wörterbuch suchen…",
+    "noWords": "Nichts gefunden.",
+    "lessonBoard": "Lektionstafel"
   }
 }

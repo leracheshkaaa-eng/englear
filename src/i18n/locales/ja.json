@@ -26,7 +26,8 @@
     "settings": "設定",
     "practice": "練習",
     "pricing": "料金",
-    "ai": "AI 先生"
+    "ai": "AI 先生",
+    "boards": "ボード"
   },
   "home": {
     "tagline": "家族みんなで英語を",
@@ -891,5 +892,62 @@
     "failed": "レッスンを作成できませんでした。コインは引かれていません——もう一度試すか設定を変えてください。",
     "reviewBanner": "AI が作成しました——保存前にすべての問題を確認してください。すべて編集できます。",
     "dropped": "チェックで削除された問題：{{n}}（あいまい、または誤り）"
+  },
+  "boards": {
+    "title": "ボード",
+    "subtitle": "あなたのノート：ルール、単語、メモ——自由に描いて書こう。",
+    "subtitleTeacher": "レッスン用のボードを準備し、クラスと共有し、ノートを取りましょう。",
+    "new": "新しいボード",
+    "tabs": {
+      "mine": "自分のボード",
+      "shared": "共有されたボード"
+    },
+    "allFolders": "すべてのフォルダー",
+    "untitled": "無題のボード",
+    "kinds": {
+      "notes": "ノート",
+      "lesson": "レッスンボード"
+    },
+    "share": "共有",
+    "deleteConfirm": "ボード「{{title}}」を削除しますか？元に戻せません。",
+    "noneMine": "まだボードがありません——最初の一枚を作りましょう。",
+    "noneShared": "まだ誰もボードを共有していません。",
+    "titlePlaceholder": "タイトル（例：「Past Simple — ルール」）",
+    "template": "テンプレート",
+    "tpl": {
+      "empty": "空白",
+      "tenses": "時制の表",
+      "cards": "単語カード",
+      "plan": "授業計画",
+      "tensesTitle": "英語の時制",
+      "cardsTitle": "新しい単語",
+      "planTitle": "授業計画"
+    },
+    "folder": "フォルダー",
+    "folderPlaceholder": "例：文法",
+    "lesson": "レッスンに紐づける",
+    "noLesson": "レッスンなし",
+    "create": "作成",
+    "shareTitle": "「{{title}}」を共有",
+    "shareHint": "このボードを見られる人を選んでください。「描ける」にすると編集もできます。",
+    "shareHintLesson": "紐づいたレッスンを割り当てられた生徒は、すでにこのボードを見られます。ここでさらに共有できます。",
+    "canView": "閲覧のみ",
+    "canEdit": "描ける",
+    "done": "完了",
+    "notFound": "このボードは存在しないか、共有されていません。",
+    "status": {
+      "saved": "保存しました ✓",
+      "saving": "保存中…",
+      "unsaved": "変更あり…",
+      "conflict": "他の人がこのボードを変更しました——再読み込みして最新版を表示してください。",
+      "error": "保存できませんでした。"
+    },
+    "insertWord": "単語を挿入",
+    "readOnly": "閲覧のみ",
+    "reload": "再読み込み",
+    "retry": "もう一度",
+    "wordSearch": "辞書で単語を探す…",
+    "noWords": "見つかりませんでした。",
+    "lessonBoard": "レッスンボード"
   }
 }

@@ -26,7 +26,8 @@
     "settings": "Configurações",
     "practice": "Prática",
     "pricing": "Preços",
-    "ai": "Tutor IA"
+    "ai": "Tutor IA",
+    "boards": "Quadros"
   },
   "home": {
     "tagline": "inglês para toda a família",
@@ -901,5 +902,62 @@
     "failed": "Não foi possível criar a aula. Nenhuma moeda foi cobrada — tente de novo ou mude as opções.",
     "reviewBanner": "Criado por IA — leia cada exercício antes de salvar. Você pode editar tudo.",
     "dropped": "Exercícios removidos pelas verificações: {{n}} (ambíguos ou com erro)"
+  },
+  "boards": {
+    "title": "Quadros",
+    "subtitle": "Seu caderno: regras, palavras, anotações — desenhe e escreva à vontade.",
+    "subtitleTeacher": "Prepare quadros para as aulas, compartilhe com as turmas, faça anotações.",
+    "new": "Novo quadro",
+    "tabs": {
+      "mine": "Meus quadros",
+      "shared": "Compartilhados comigo"
+    },
+    "allFolders": "Todas as pastas",
+    "untitled": "Quadro sem título",
+    "kinds": {
+      "notes": "Anotações",
+      "lesson": "Quadro da aula"
+    },
+    "share": "Compartilhar",
+    "deleteConfirm": "Excluir o quadro «{{title}}»? Não é possível desfazer.",
+    "noneMine": "Ainda não há quadros — crie o primeiro.",
+    "noneShared": "Ninguém compartilhou um quadro com você ainda.",
+    "titlePlaceholder": "Título, ex.: «Past Simple — regras»",
+    "template": "Começar com",
+    "tpl": {
+      "empty": "Vazio",
+      "tenses": "Tabela de tempos",
+      "cards": "Cartões de palavras",
+      "plan": "Plano de aula",
+      "tensesTitle": "Tempos em inglês",
+      "cardsTitle": "Palavras novas",
+      "planTitle": "Plano de aula"
+    },
+    "folder": "Pasta",
+    "folderPlaceholder": "ex.: Gramática",
+    "lesson": "Vincular a uma aula",
+    "noLesson": "Sem aula",
+    "create": "Criar",
+    "shareTitle": "Compartilhar «{{title}}»",
+    "shareHint": "Escolha quem pode ver este quadro. «Pode desenhar» também permite editar.",
+    "shareHintLesson": "Os alunos que têm a aula vinculada atribuída já veem este quadro. Aqui você pode compartilhar com mais pessoas.",
+    "canView": "só ver",
+    "canEdit": "pode desenhar",
+    "done": "Pronto",
+    "notFound": "Este quadro não existe ou não foi compartilhado com você.",
+    "status": {
+      "saved": "Salvo ✓",
+      "saving": "Salvando…",
+      "unsaved": "Alterações…",
+      "conflict": "Outra pessoa alterou este quadro — recarregue para ver a versão mais recente.",
+      "error": "Não foi possível salvar."
+    },
+    "insertWord": "Inserir palavra",
+    "readOnly": "Só ver",
+    "reload": "Recarregar",
+    "retry": "Tentar de novo",
+    "wordSearch": "Procure uma palavra no dicionário…",
+    "noWords": "Nada encontrado.",
+    "lessonBoard": "Quadro da aula"
   }
 }

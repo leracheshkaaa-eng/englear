@@ -26,7 +26,8 @@
     "settings": "设置",
     "practice": "练习",
     "pricing": "价格",
-    "ai": "AI 老师"
+    "ai": "AI 老师",
+    "boards": "白板"
   },
   "home": {
     "tagline": "全家一起学英语",
@@ -891,5 +892,62 @@
     "failed": "无法创建课程。未扣除金币——请重试或更改设置。",
     "reviewBanner": "由 AI 创建——保存前请逐题检查。所有内容都可以修改。",
     "dropped": "检查删除的题目：{{n}} 道（有歧义或有错误）"
+  },
+  "boards": {
+    "title": "白板",
+    "subtitle": "你的笔记本：规则、单词、笔记——自由书写和绘画。",
+    "subtitleTeacher": "为课程准备白板，与班级共享，记笔记。",
+    "new": "新建白板",
+    "tabs": {
+      "mine": "我的白板",
+      "shared": "共享给我的"
+    },
+    "allFolders": "全部文件夹",
+    "untitled": "未命名白板",
+    "kinds": {
+      "notes": "笔记",
+      "lesson": "课程白板"
+    },
+    "share": "共享",
+    "deleteConfirm": "删除白板“{{title}}”？此操作无法撤销。",
+    "noneMine": "还没有白板——创建第一个吧。",
+    "noneShared": "还没有人和你共享白板。",
+    "titlePlaceholder": "名称，例如“一般过去时——规则”",
+    "template": "模板",
+    "tpl": {
+      "empty": "空白",
+      "tenses": "时态表",
+      "cards": "单词卡",
+      "plan": "课程计划",
+      "tensesTitle": "英语时态",
+      "cardsTitle": "新单词",
+      "planTitle": "课程计划"
+    },
+    "folder": "文件夹",
+    "folderPlaceholder": "例如：语法",
+    "lesson": "关联课程",
+    "noLesson": "不关联",
+    "create": "创建",
+    "shareTitle": "共享“{{title}}”",
+    "shareHint": "选择谁可以看到这个白板。“可以绘画”也允许编辑。",
+    "shareHintLesson": "已布置关联课程的学生本来就能看到这个白板。这里可以再共享给其他人。",
+    "canView": "仅查看",
+    "canEdit": "可以绘画",
+    "done": "完成",
+    "notFound": "白板不存在或未与你共享。",
+    "status": {
+      "saved": "已保存 ✓",
+      "saving": "正在保存…",
+      "unsaved": "有更改…",
+      "conflict": "别人修改了这个白板——请刷新查看最新版本。",
+      "error": "保存失败。"
+    },
+    "insertWord": "插入单词",
+    "readOnly": "仅查看",
+    "reload": "刷新",
+    "retry": "重试",
+    "wordSearch": "在词典中查找单词…",
+    "noWords": "没有找到。",
+    "lessonBoard": "课程白板"
   }
 }

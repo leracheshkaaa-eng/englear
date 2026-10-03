@@ -26,7 +26,8 @@
     "settings": "Ustawienia",
     "practice": "Praktyka",
     "pricing": "Cennik",
-    "ai": "Korepetytor AI"
+    "ai": "Korepetytor AI",
+    "boards": "Tablice"
   },
   "home": {
     "tagline": "angielski dla całej rodziny",
@@ -921,5 +922,62 @@
     "failed": "Nie udało się utworzyć lekcji. Monety nie zostały pobrane — spróbuj ponownie lub zmień ustawienia.",
     "reviewBanner": "Utworzone przez AI — przeczytaj każde ćwiczenie przed zapisaniem. Wszystko można zmienić.",
     "dropped": "Ćwiczenia usunięte przez kontrolę: {{n}} (niejednoznaczne lub błędne)"
+  },
+  "boards": {
+    "title": "Tablice",
+    "subtitle": "Twój zeszyt: zasady, słowa, notatki — rysuj i pisz swobodnie.",
+    "subtitleTeacher": "Przygotowuj tablice do lekcji, udostępniaj je grupom, rób notatki.",
+    "new": "Nowa tablica",
+    "tabs": {
+      "mine": "Moje tablice",
+      "shared": "Udostępnione mi"
+    },
+    "allFolders": "Wszystkie foldery",
+    "untitled": "Tablica bez nazwy",
+    "kinds": {
+      "notes": "Notatki",
+      "lesson": "Tablica lekcji"
+    },
+    "share": "Udostępnij",
+    "deleteConfirm": "Usunąć tablicę „{{title}}”? Nie można tego cofnąć.",
+    "noneMine": "Nie ma jeszcze tablic — utwórz pierwszą.",
+    "noneShared": "Nikt jeszcze nie udostępnił ci tablicy.",
+    "titlePlaceholder": "Nazwa, np. „Past Simple — zasady”",
+    "template": "Zacznij od",
+    "tpl": {
+      "empty": "Pusta",
+      "tenses": "Tabela czasów",
+      "cards": "Karty słówek",
+      "plan": "Plan lekcji",
+      "tensesTitle": "Czasy w angielskim",
+      "cardsTitle": "Nowe słowa",
+      "planTitle": "Plan lekcji"
+    },
+    "folder": "Folder",
+    "folderPlaceholder": "np. Gramatyka",
+    "lesson": "Powiąż z lekcją",
+    "noLesson": "Bez lekcji",
+    "create": "Utwórz",
+    "shareTitle": "Udostępnij „{{title}}”",
+    "shareHint": "Wybierz, kto zobaczy tablicę. „Może rysować” pozwala też edytować.",
+    "shareHintLesson": "Uczniowie, którym przydzielono powiązaną lekcję, i tak widzą tablicę. Tutaj możesz udostępnić ją innym.",
+    "canView": "tylko podgląd",
+    "canEdit": "może rysować",
+    "done": "Gotowe",
+    "notFound": "Ta tablica nie istnieje lub nie jest ci udostępniona.",
+    "status": {
+      "saved": "Zapisano ✓",
+      "saving": "Zapisuję…",
+      "unsaved": "Zmiany…",
+      "conflict": "Ktoś inny zmienił tablicę — odśwież, aby zobaczyć najnowszą wersję.",
+      "error": "Nie udało się zapisać."
+    },
+    "insertWord": "Wstaw słowo",
+    "readOnly": "Tylko podgląd",
+    "reload": "Odśwież",
+    "retry": "Spróbuj ponownie",
+    "wordSearch": "Znajdź słowo w słowniku…",
+    "noWords": "Nic nie znaleziono.",
+    "lessonBoard": "Tablica lekcji"
   }
 }

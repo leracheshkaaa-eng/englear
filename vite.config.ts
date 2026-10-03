@@ -2,6 +2,7 @@ import { defineConfig, type HtmlTagDescriptor, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
+import fs from 'node:fs'
 
 import siteConfiguration from './.figma/make/site.json'
 
@@ -21,6 +22,7 @@ export default defineConfig(({ mode }) => {
 react(),
       tailwindcss(),
       figmaSiteConfiguration(siteConfiguration),
+      excalidrawFonts(),
       figmaErrorOverlayReplay(),
       figmaReactRefreshBoundaryFallback(),
       figmaMakeKitPlugin({ storiesGlob: '/src/**/*.stories.{ts,tsx,js,jsx}' }),
@@ -46,6 +48,39 @@ react(),
     },
   }
 })
+
+/**
+ * Serves the whiteboard (Excalidraw) fonts from our own site instead of a public CDN:
+ * in dev from node_modules, in the build as assets under /excalidraw/fonts/.
+ * The app sets window.EXCALIDRAW_ASSET_PATH = '/excalidraw/' (src/main.tsx).
+ */
+function excalidrawFonts(): Plugin {
+  const dir = path.resolve(__dirname, 'node_modules/@excalidraw/excalidraw/dist/prod/fonts')
+  const prefix = '/excalidraw/fonts/'
+  const walk = (d: string): string[] =>
+    fs.existsSync(d)
+      ? fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]))
+      : []
+  return {
+    name: 'excalidraw-fonts',
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const url = req.url?.split('?')[0] ?? ''
+        if (!url.startsWith(prefix)) return next()
+        const file = path.join(dir, decodeURIComponent(url.slice(prefix.length)))
+        if (!file.startsWith(dir) || !fs.existsSync(file)) return next()
+        res.setHeader('Content-Type', 'font/woff2')
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+        fs.createReadStream(file).pipe(res)
+      })
+    },
+    generateBundle() {
+      for (const f of walk(dir)) {
+        this.emitFile({ type: 'asset', fileName: 'excalidraw/fonts/' + path.relative(dir, f).split(path.sep).join('/'), source: fs.readFileSync(f) })
+      }
+    },
+  }
+}
 
 type FigmaSiteConfiguration = {
   title?: string

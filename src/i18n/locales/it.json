@@ -26,7 +26,8 @@
     "settings": "Impostazioni",
     "practice": "Pratica",
     "pricing": "Prezzi",
-    "ai": "Tutor IA"
+    "ai": "Tutor IA",
+    "boards": "Lavagne"
   },
   "home": {
     "tagline": "l'inglese per tutta la famiglia",
@@ -901,5 +902,62 @@
     "failed": "Non è stato possibile creare la lezione. Nessuna moneta addebitata: riprova o cambia le impostazioni.",
     "reviewBanner": "Creato dall’IA: leggi ogni esercizio prima di salvare. Puoi modificare tutto.",
     "dropped": "Esercizi rimossi dai controlli: {{n}} (ambigui o errati)"
+  },
+  "boards": {
+    "title": "Lavagne",
+    "subtitle": "Il tuo quaderno: regole, parole, appunti — disegna e scrivi liberamente.",
+    "subtitleTeacher": "Prepara lavagne per le lezioni, condividile con le classi, prendi appunti.",
+    "new": "Nuova lavagna",
+    "tabs": {
+      "mine": "Le mie lavagne",
+      "shared": "Condivise con me"
+    },
+    "allFolders": "Tutte le cartelle",
+    "untitled": "Lavagna senza titolo",
+    "kinds": {
+      "notes": "Appunti",
+      "lesson": "Lavagna della lezione"
+    },
+    "share": "Condividi",
+    "deleteConfirm": "Eliminare la lavagna «{{title}}»? Non si può annullare.",
+    "noneMine": "Ancora nessuna lavagna: crea la prima.",
+    "noneShared": "Nessuno ha ancora condiviso una lavagna con te.",
+    "titlePlaceholder": "Titolo, ad es. «Past Simple — regole»",
+    "template": "Inizia con",
+    "tpl": {
+      "empty": "Vuota",
+      "tenses": "Tabella dei tempi",
+      "cards": "Carte delle parole",
+      "plan": "Piano della lezione",
+      "tensesTitle": "I tempi in inglese",
+      "cardsTitle": "Parole nuove",
+      "planTitle": "Piano della lezione"
+    },
+    "folder": "Cartella",
+    "folderPlaceholder": "ad es. Grammatica",
+    "lesson": "Collega a una lezione",
+    "noLesson": "Nessuna lezione",
+    "create": "Crea",
+    "shareTitle": "Condividi «{{title}}»",
+    "shareHint": "Scegli chi può vedere la lavagna. «Può disegnare» permette anche di modificarla.",
+    "shareHintLesson": "Gli studenti a cui è assegnata la lezione collegata vedono già la lavagna. Qui puoi condividerla con altri.",
+    "canView": "solo visione",
+    "canEdit": "può disegnare",
+    "done": "Fatto",
+    "notFound": "Questa lavagna non esiste o non è condivisa con te.",
+    "status": {
+      "saved": "Salvato ✓",
+      "saving": "Salvataggio…",
+      "unsaved": "Modifiche…",
+      "conflict": "Qualcun altro ha modificato la lavagna: ricarica per vedere la versione più recente.",
+      "error": "Impossibile salvare."
+    },
+    "insertWord": "Inserisci una parola",
+    "readOnly": "Solo visione",
+    "reload": "Ricarica",
+    "retry": "Riprova",
+    "wordSearch": "Cerca una parola nel dizionario…",
+    "noWords": "Nessun risultato.",
+    "lessonBoard": "Lavagna della lezione"
   }
 }
