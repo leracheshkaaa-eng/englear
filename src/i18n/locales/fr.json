@@ -870,5 +870,36 @@
       "done": "fait",
       "late": "en retard"
     }
+  },
+  "aiLesson": {
+    "open": "Leçon avec l’IA",
+    "title": "Créer une leçon avec l’IA",
+    "hint": "L’IA écrit les exercices, vérifie que chacun a une seule bonne réponse et ouvre le brouillon dans l’éditeur. Relis-le et enregistre.",
+    "focus": "Ce qu’on travaille",
+    "anyGrammar": "N’importe quelle grammaire de ce niveau",
+    "topic": "Thème",
+    "topicPlaceholder": "par ex. Voyages, ma famille, un anniversaire…",
+    "types": "Types d’exercices",
+    "typeNames": {
+      "choice": "Choix",
+      "fill": "Texte à trous",
+      "truefalse": "Vrai / faux",
+      "order": "Ordre des mots",
+      "match": "Associer",
+      "dialogue": "Dialogue",
+      "listen": "Dictée"
+    },
+    "count": "Exercices : {{n}}",
+    "explainLang": "Langue des explications",
+    "wishes": "Souhaits (facultatif)",
+    "wishesPlaceholder": "par ex. plus de questions, prénoms Tom et Anna, pour des enfants de 10 ans…",
+    "generate": "Créer la leçon",
+    "generating": "L’IA écrit et vérifie… (30–60 s)",
+    "costPlus": "Plus : encore {{n}} leçons ce mois-ci",
+    "costFree": "Gratuit ce mois-ci : encore {{n}} · ensuite {{price}} 🪙",
+    "teachersOnly": "Seuls les enseignants peuvent créer des leçons avec l’IA.",
+    "failed": "Impossible de créer la leçon. Aucune pièce n’a été débitée — réessaie ou change les réglages.",
+    "reviewBanner": "Créé par l’IA — lis chaque exercice avant d’enregistrer. Tout peut être modifié.",
+    "dropped": "Exercices retirés par les vérifications : {{n}} (ambigus ou erronés)"
   }
 }

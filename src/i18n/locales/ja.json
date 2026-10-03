@@ -860,5 +860,36 @@
       "done": "完了",
       "late": "期限切れ"
     }
+  },
+  "aiLesson": {
+    "open": "AI でレッスン",
+    "title": "AI でレッスンを作成",
+    "hint": "AI が問題を作り、どの問題も正解が一つだけかを確認してから、エディターで下書きを開きます。確認して保存してください。",
+    "focus": "練習する内容",
+    "anyGrammar": "このレベルの任意の文法",
+    "topic": "テーマ",
+    "topicPlaceholder": "例：旅行、家族、誕生日パーティー…",
+    "types": "問題の種類",
+    "typeNames": {
+      "choice": "選択",
+      "fill": "穴埋め",
+      "truefalse": "正誤",
+      "order": "並べ替え",
+      "match": "マッチング",
+      "dialogue": "会話",
+      "listen": "ディクテーション"
+    },
+    "count": "問題数：{{n}}",
+    "explainLang": "解説の言語",
+    "wishes": "要望（任意）",
+    "wishesPlaceholder": "例：疑問文を多めに、名前は Tom と Anna、10 歳向け…",
+    "generate": "レッスンを作成",
+    "generating": "AI が作成・確認中…（30〜60 秒）",
+    "costPlus": "Plus：今月の残り {{n}} レッスン",
+    "costFree": "今月の無料分：残り {{n}} · その後 {{price}} 🪙",
+    "teachersOnly": "AI でレッスンを作れるのは先生だけです。",
+    "failed": "レッスンを作成できませんでした。コインは引かれていません——もう一度試すか設定を変えてください。",
+    "reviewBanner": "AI が作成しました——保存前にすべての問題を確認してください。すべて編集できます。",
+    "dropped": "チェックで削除された問題：{{n}}（あいまい、または誤り）"
   }
 }

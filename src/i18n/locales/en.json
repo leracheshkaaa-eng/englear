@@ -870,5 +870,36 @@
       "done": "done",
       "late": "late"
     }
+  },
+  "aiLesson": {
+    "open": "Lesson with AI",
+    "title": "Create a lesson with AI",
+    "hint": "AI writes the exercises, checks each one has exactly one correct answer, and opens the draft in the editor. Review it and save.",
+    "focus": "What to practise",
+    "anyGrammar": "Any grammar of this level",
+    "topic": "Theme",
+    "topicPlaceholder": "e.g. Travel, my family, a birthday party…",
+    "types": "Exercise types",
+    "typeNames": {
+      "choice": "Choice",
+      "fill": "Gap fill",
+      "truefalse": "True / false",
+      "order": "Word order",
+      "match": "Matching",
+      "dialogue": "Dialogue",
+      "listen": "Dictation"
+    },
+    "count": "Exercises: {{n}}",
+    "explainLang": "Language of explanations",
+    "wishes": "Wishes (optional)",
+    "wishesPlaceholder": "e.g. more questions, use the names Tom and Anna, for 10-year-olds…",
+    "generate": "Create the lesson",
+    "generating": "AI is writing and checking… (30–60 s)",
+    "costPlus": "Plus: {{n}} lessons left this month",
+    "costFree": "Free this month: {{n}} left · then {{price}} 🪙",
+    "teachersOnly": "Only teachers can create lessons with AI.",
+    "failed": "The lesson could not be created. No coins were charged — try again or change the settings.",
+    "reviewBanner": "Created by AI — read every exercise before saving. You can edit anything.",
+    "dropped": "{{n}} exercises were removed by the checks (ambiguous or broken)"
   }
 }

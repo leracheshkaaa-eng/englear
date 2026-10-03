@@ -1,4 +1,4 @@
-// Englear AI: the tutor chat and the writing check.
+// Englear AI: the tutor chat, the writing check and the lesson generator for teachers.
 //
 // Every request is charged on the server BEFORE the model call (ai_charge decides: plan allowance,
 // free taste or coins) and refunded if the call fails. The client never decides what something costs.
@@ -10,10 +10,13 @@
 import 'jsr:@supabase/functions-js/edge-runtime.d.ts'
 import Anthropic from 'npm:@anthropic-ai/sdk'
 import { createClient } from 'npm:@supabase/supabase-js@2'
-import { LEVELS, WRITING_SCHEMA, feedbackLanguage, tutorSystem, writingSystem } from './prompts.ts'
+import { LANGUAGE_NAMES, LEVELS, WRITING_SCHEMA, feedbackLanguage, tutorSystem, writingSystem } from './prompts.ts'
+import { GEN_TYPES, LESSON_SCHEMA, SOLVE_SCHEMA, agrees, lessonSystem, lessonUser, ruleProblem, solverPrompt, toEditorLine, type GenExercise, type GenRequest } from './lesson.ts'
 
 const TUTOR_MODEL = 'claude-haiku-4-5' // fast and cheap: short conversational turns
 const WRITING_MODEL = 'claude-sonnet-5-5' // careful feedback on a whole text
+const LESSON_MODEL = 'claude-sonnet-5-5' // writes lessons for teachers
+const SOLVER_MODEL = 'claude-haiku-4-5' // independently solves the generated exercises
 const MAX_MESSAGE = 1000 // characters per tutor message
 const HISTORY = 20 // previous messages sent with each tutor turn
 const MIN_TEXT = 20
@@ -54,7 +57,7 @@ Deno.serve(async (req) => {
 
   const body = await req.json().catch(() => ({}))
   const action = body?.action
-  if (action !== 'tutor' && action !== 'writing') return json({ error: 'unknown_action' }, 400)
+  if (action !== 'tutor' && action !== 'writing' && action !== 'lesson') return json({ error: 'unknown_action' }, 400)
 
   // validate input before charging anything
   const message = String(body.message ?? '').trim()
@@ -64,11 +67,32 @@ Deno.serve(async (req) => {
   if (action === 'writing' && (text.length < MIN_TEXT || text.length > MAX_TEXT)) return json({ error: 'bad_text' }, 400)
 
   const [{ data: profile }, { data: settings }] = await Promise.all([
-    admin.from('profiles').select('full_name').eq('id', user.id).maybeSingle(),
+    admin.from('profiles').select('full_name, role').eq('id', user.id).maybeSingle(),
     admin.from('user_settings').select('english_level, native_language, interface_language').eq('user_id', user.id).maybeSingle(),
   ])
   const level = LEVELS.includes(settings?.english_level) ? settings!.english_level : 'A1'
   const lang = feedbackLanguage(settings)
+
+  // lesson generator: teachers only; the request is checked before charging
+  let gen: GenRequest | null = null
+  if (action === 'lesson') {
+    if (profile?.role !== 'teacher' && profile?.role !== 'admin') return json({ error: 'teachers_only' }, 403)
+    const types = (Array.isArray(body.types) ? body.types : []).filter((x: string) => (GEN_TYPES as readonly string[]).includes(x))
+    const count = Math.round(Number(body.count) || 0)
+    const genLevel = String(body.level ?? '')
+    if (!LEVELS.includes(genLevel) || !types.length || count < 4 || count > 15) return json({ error: 'bad_request' }, 400)
+    const explainCode = String(body.explain_lang ?? '')
+    gen = {
+      level: genLevel,
+      focus: body.focus === 'grammar' || body.focus === 'vocabulary' ? body.focus : 'mixed',
+      grammar: String(body.grammar ?? '').trim().slice(0, 120),
+      topic: String(body.topic ?? '').trim().slice(0, 120),
+      count,
+      types,
+      wishes: String(body.wishes ?? '').trim().slice(0, 400),
+      explainLang: LANGUAGE_NAMES[explainCode] ?? lang,
+    }
+  }
 
   // conversation must belong to this user (checked before charging)
   let conversationId: string | null = null
@@ -125,6 +149,62 @@ Deno.serve(async (req) => {
       await admin.from('ai_conversations').update({ updated_at: new Date().toISOString() }).eq('id', conversationId)
       await admin.rpc('ai_finish', { p_usage: usageId, p_model: res.model, p_in: res.usage.input_tokens, p_out: res.usage.output_tokens })
       return json({ conversation_id: conversationId, reply, mode: charge.mode, coins: charge.coins })
+    }
+
+    if (action === 'lesson' && gen) {
+      const client = anthropic()
+      const res = await client.messages.create({
+        model: LESSON_MODEL,
+        max_tokens: 12000,
+        output_config: { effort: 'medium', format: { type: 'json_schema', schema: LESSON_SCHEMA } },
+        system: lessonSystem(gen),
+        messages: [{ role: 'user', content: lessonUser(gen) }],
+      } as Anthropic.MessageCreateParamsNonStreaming)
+      if (res.stop_reason === 'refusal') throw new Error('refused')
+      const draft = JSON.parse(textOf(res)) as { title: string; description: string; exercises: GenExercise[] }
+
+      // 1) rules
+      const dropped: { n: number; reason: string }[] = []
+      const ok: { n: number; ex: GenExercise }[] = []
+      draft.exercises.forEach((ex, i) => {
+        const problem = ruleProblem(ex, gen!.level)
+        if (problem) dropped.push({ n: i + 1, reason: problem })
+        else ok.push({ n: i + 1, ex })
+      })
+      // 2) an independent solver must reach the same answers
+      let inTok = res.usage.input_tokens
+      let outTok = res.usage.output_tokens
+      const toSolve = ok.filter((x) => x.ex.type !== 'listen')
+      let kept = ok
+      if (toSolve.length) {
+        const sol = await client.messages.create({
+          model: SOLVER_MODEL,
+          max_tokens: 2000,
+          output_config: { format: { type: 'json_schema', schema: SOLVE_SCHEMA } },
+          messages: [{ role: 'user', content: solverPrompt(toSolve, gen.level) }],
+        } as Anthropic.MessageCreateParamsNonStreaming)
+        inTok += sol.usage.input_tokens
+        outTok += sol.usage.output_tokens
+        const answers = new Map((JSON.parse(textOf(sol)).answers as { n: number; answer: string }[]).map((a) => [a.n, a.answer]))
+        kept = ok.filter(({ n, ex }) => {
+          if (ex.type === 'listen') return true
+          const given = answers.get(n)
+          if (given !== undefined && agrees(ex, given)) return true
+          dropped.push({ n, reason: 'ambiguous: an independent check answered differently' })
+          return false
+        })
+      }
+      if (!kept.length) throw new Error('nothing_left')
+      await admin.rpc('ai_finish', { p_usage: usageId, p_model: res.model, p_in: inTok, p_out: outTok })
+      return json({
+        title: String(draft.title ?? '').slice(0, 120),
+        description: String(draft.description ?? '').slice(0, 300),
+        raw: kept.map(({ ex }) => toEditorLine(ex, gen!.level)).join('\n'),
+        kept: kept.length,
+        dropped: dropped.sort((a, b) => a.n - b.n),
+        mode: charge.mode,
+        coins: charge.coins,
+      })
     }
 
     // writing check

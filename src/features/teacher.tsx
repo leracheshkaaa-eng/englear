@@ -11,6 +11,7 @@ import { lessonWords } from './lessons'
 import { TeacherSets } from './teacherSets'
 import { materialTypeLabel } from './practice'
 import { AssignMenu, ClassesManager } from './classes'
+import { AiLessonForm, type LessonDraft } from './aiLesson'
 
 const LEGACY_CEFR = { beginner: 'A1', intermediate: 'B1', advanced: 'C1' } as const
 
@@ -90,6 +91,8 @@ function LessonManager({ lessons, reload }: { lessons: LessonSummary[]; reload: 
   const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [editing, setEditing] = useState<Lesson | 'new' | null>(null)
+  const [aiOpen, setAiOpen] = useState(false)
+  const [draft, setDraft] = useState<LessonDraft | null>(null)
   const [opening, setOpening] = useState<string | null>(null)
   const [importMsg, setImportMsg] = useState('')
   const local = useMemo(readLocalLessons, [])
@@ -111,18 +114,24 @@ function LessonManager({ lessons, reload }: { lessons: LessonSummary[]; reload: 
     }
   }
 
+  if (draft)
+    return <LessonEditor lesson={null} draft={draft} onClose={() => setDraft(null)} onSaved={() => { setDraft(null); setAiOpen(false); reload() }} />
   if (editing) return <LessonEditor lesson={editing === 'new' ? null : editing} onClose={() => setEditing(null)} onSaved={() => { setEditing(null); reload() }} />
 
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center gap-3">
         <Button onClick={() => setEditing('new')}>{t('teacher.newLesson')}</Button>
+        <Button variant="soft" onClick={() => setAiOpen((v) => !v)}>
+          ✨ {t('aiLesson.open')}
+        </Button>
         {local.length > 0 && (
           <Button variant="soft" onClick={doImport}>
             {t('teacher.importLocal', { count: local.length })}
           </Button>
         )}
       </div>
+      {aiOpen && <AiLessonForm onDraft={setDraft} onCancel={() => setAiOpen(false)} />}
       {importMsg && <p className="rounded-xl border border-line bg-paper p-3 text-sm text-mute">{importMsg}</p>}
 
       <div className="space-y-3">
@@ -190,16 +199,16 @@ const chipCls = (on: boolean) =>
     on ? 'border-plum bg-lilac text-plum-deep' : 'border-line bg-paper text-mute hover:border-lavender'
   }`
 
-function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onClose: () => void; onSaved: () => void }) {
+function LessonEditor({ lesson, draft, onClose, onSaved }: { lesson: Lesson | null; draft?: LessonDraft; onClose: () => void; onSaved: () => void }) {
   const { t, i18n } = useTranslation()
   const { userId, role } = useAuth()
   const isAdmin = role === 'admin'
-  const [title, setTitle] = useState(lesson?.title ?? '')
-  const [description, setDescription] = useState(lesson?.description ?? '')
-  const [cefr, setCefr] = useState<string>(lesson?.cefr ?? 'A1')
-  const [skill, setSkill] = useState<api.LessonSkill>(lesson?.skill ?? 'mixed')
-  const [topic, setTopic] = useState(lesson?.topic ?? '')
-  const [grammarTopic, setGrammarTopic] = useState(lesson?.grammar_topic_id ?? '')
+  const [title, setTitle] = useState(lesson?.title ?? draft?.title ?? '')
+  const [description, setDescription] = useState(lesson?.description ?? draft?.description ?? '')
+  const [cefr, setCefr] = useState<string>(lesson?.cefr ?? draft?.cefr ?? 'A1')
+  const [skill, setSkill] = useState<api.LessonSkill>(lesson?.skill ?? draft?.skill ?? 'mixed')
+  const [topic, setTopic] = useState(lesson?.topic ?? draft?.topic ?? '')
+  const [grammarTopic, setGrammarTopic] = useState(lesson?.grammar_topic_id ?? draft?.grammar_topic_id ?? '')
   const [grammarList, setGrammarList] = useState<api.GrammarTopic[]>([])
   useEffect(() => {
     api.grammarTopics().then(setGrammarList).catch(() => setGrammarList([]))
@@ -207,7 +216,7 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
   const [library, setLibrary] = useState(lesson ? lesson.scope === 'library' : false)
   const [sequence, setSequence] = useState(lesson?.sequence ?? 0)
   const [published, setPublished] = useState(lesson ? lesson.status === 'published' : false)
-  const [raw, setRaw] = useState(lesson ? serialize(lesson.exercises) : '')
+  const [raw, setRaw] = useState(lesson ? serialize(lesson.exercises) : (draft?.raw ?? ''))
   const [saving, setSaving] = useState(false)
   const [err, setErr] = useState('')
 
@@ -315,6 +324,23 @@ function LessonEditor({ lesson, onClose, onSaved }: { lesson: Lesson | null; onC
       <button onClick={onClose} className="font-body text-sm text-mute hover:text-ink">
         ← {t('teacher.backToLessons')}
       </button>
+      {draft && (
+        <div className="rounded-2xl border border-plum/30 bg-lilac/40 p-4 text-sm">
+          <p className="font-semibold">✨ {t('aiLesson.reviewBanner')}</p>
+          {draft.dropped.length > 0 && (
+            <details className="mt-1 text-mute">
+              <summary className="cursor-pointer">{t('aiLesson.dropped', { n: draft.dropped.length })}</summary>
+              <ul className="mt-1 ml-5 list-disc">
+                {draft.dropped.map((d) => (
+                  <li key={d.n}>
+                    #{d.n}: {d.reason}
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </div>
+      )}
       <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
         <div className="space-y-4">
           <div className="grid gap-3 sm:grid-cols-2">

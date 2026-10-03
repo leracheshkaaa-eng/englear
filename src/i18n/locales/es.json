@@ -870,5 +870,36 @@
       "done": "hecho",
       "late": "atrasado"
     }
+  },
+  "aiLesson": {
+    "open": "Lección con IA",
+    "title": "Crear una lección con IA",
+    "hint": "La IA escribe los ejercicios, comprueba que cada uno tenga una sola respuesta correcta y abre el borrador en el editor. Revísalo y guárdalo.",
+    "focus": "Qué practicar",
+    "anyGrammar": "Cualquier gramática de este nivel",
+    "topic": "Tema",
+    "topicPlaceholder": "p. ej. Viajes, mi familia, una fiesta de cumpleaños…",
+    "types": "Tipos de ejercicio",
+    "typeNames": {
+      "choice": "Opción múltiple",
+      "fill": "Huecos",
+      "truefalse": "Verdadero / falso",
+      "order": "Orden de palabras",
+      "match": "Emparejar",
+      "dialogue": "Diálogo",
+      "listen": "Dictado"
+    },
+    "count": "Ejercicios: {{n}}",
+    "explainLang": "Idioma de las explicaciones",
+    "wishes": "Deseos (opcional)",
+    "wishesPlaceholder": "p. ej. más preguntas, nombres Tom y Anna, para niños de 10 años…",
+    "generate": "Crear la lección",
+    "generating": "La IA escribe y comprueba… (30–60 s)",
+    "costPlus": "Plus: quedan {{n}} lecciones este mes",
+    "costFree": "Gratis este mes: quedan {{n}} · luego {{price}} 🪙",
+    "teachersOnly": "Solo los profesores pueden crear lecciones con IA.",
+    "failed": "No se pudo crear la lección. No se cobraron monedas: inténtalo de nuevo o cambia los ajustes.",
+    "reviewBanner": "Creado por IA: lee cada ejercicio antes de guardar. Puedes editarlo todo.",
+    "dropped": "Ejercicios quitados por las comprobaciones: {{n}} (ambiguos o con errores)"
   }
 }

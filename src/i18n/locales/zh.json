@@ -860,5 +860,36 @@
       "done": "已完成",
       "late": "已逾期"
     }
+  },
+  "aiLesson": {
+    "open": "AI 生成课程",
+    "title": "用 AI 创建课程",
+    "hint": "AI 会编写练习，检查每道题只有一个正确答案，并在编辑器中打开草稿。检查后保存。",
+    "focus": "练习内容",
+    "anyGrammar": "该级别的任意语法",
+    "topic": "主题",
+    "topicPlaceholder": "例如：旅行、我的家庭、生日派对…",
+    "types": "题型",
+    "typeNames": {
+      "choice": "选择题",
+      "fill": "填空",
+      "truefalse": "判断题",
+      "order": "连词成句",
+      "match": "配对",
+      "dialogue": "对话",
+      "listen": "听写"
+    },
+    "count": "题数：{{n}}",
+    "explainLang": "讲解语言",
+    "wishes": "要求（可选）",
+    "wishesPlaceholder": "例如：多出问句、用 Tom 和 Anna 作名字、适合 10 岁孩子…",
+    "generate": "创建课程",
+    "generating": "AI 正在编写并检查…（30–60 秒）",
+    "costPlus": "Plus：本月还剩 {{n}} 节课",
+    "costFree": "本月免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
+    "teachersOnly": "只有教师可以用 AI 创建课程。",
+    "failed": "无法创建课程。未扣除金币——请重试或更改设置。",
+    "reviewBanner": "由 AI 创建——保存前请逐题检查。所有内容都可以修改。",
+    "dropped": "检查删除的题目：{{n}} 道（有歧义或有错误）"
   }
 }

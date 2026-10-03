@@ -870,5 +870,36 @@
       "done": "erledigt",
       "late": "überfällig"
     }
+  },
+  "aiLesson": {
+    "open": "Lektion mit KI",
+    "title": "Lektion mit KI erstellen",
+    "hint": "Die KI schreibt die Übungen, prüft, dass jede genau eine richtige Antwort hat, und öffnet den Entwurf im Editor. Prüfe ihn und speichere.",
+    "focus": "Was geübt wird",
+    "anyGrammar": "Beliebige Grammatik dieses Niveaus",
+    "topic": "Thema",
+    "topicPlaceholder": "z. B. Reisen, meine Familie, eine Geburtstagsfeier…",
+    "types": "Übungstypen",
+    "typeNames": {
+      "choice": "Auswahl",
+      "fill": "Lückentext",
+      "truefalse": "Richtig / falsch",
+      "order": "Wortstellung",
+      "match": "Zuordnen",
+      "dialogue": "Dialog",
+      "listen": "Diktat"
+    },
+    "count": "Übungen: {{n}}",
+    "explainLang": "Sprache der Erklärungen",
+    "wishes": "Wünsche (optional)",
+    "wishesPlaceholder": "z. B. mehr Fragen, Namen Tom und Anna, für 10-Jährige…",
+    "generate": "Lektion erstellen",
+    "generating": "Die KI schreibt und prüft… (30–60 s)",
+    "costPlus": "Plus: diesen Monat noch {{n}} Lektionen",
+    "costFree": "Diesen Monat gratis: noch {{n}} · danach {{price}} 🪙",
+    "teachersOnly": "Nur Lehrkräfte können Lektionen mit KI erstellen.",
+    "failed": "Die Lektion konnte nicht erstellt werden. Es wurden keine Münzen abgebucht — versuch es noch einmal oder ändere die Einstellungen.",
+    "reviewBanner": "Von der KI erstellt — lies jede Übung vor dem Speichern. Alles lässt sich ändern.",
+    "dropped": "Von den Prüfungen entfernte Übungen: {{n}} (mehrdeutig oder fehlerhaft)"
   }
 }

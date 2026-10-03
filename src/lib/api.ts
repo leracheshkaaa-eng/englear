@@ -1309,6 +1309,7 @@ export type AiStatus = {
   balance: number
   tutor: AiKindStatus
   writing: AiKindStatus
+  lesson: AiKindStatus
 }
 /** What the signed-in user can do right now (allowances left, prices, balance). */
 export async function aiStatus(): Promise<AiStatus | null> {
@@ -1528,4 +1529,28 @@ export async function myHomework(studentId: string): Promise<HomeworkItem[]> {
   ]
   // open work first (nearest due date first), then done
   return items.sort((a, b) => Number(a.done) - Number(b.done) || (a.due_at ?? '9999').localeCompare(b.due_at ?? '9999') || b.assigned_at.localeCompare(a.assigned_at))
+}
+
+export type AiLessonRequest = {
+  level: string
+  focus: 'grammar' | 'vocabulary' | 'mixed'
+  grammar: string
+  topic: string
+  count: number
+  types: string[]
+  wishes: string
+  explain_lang: string
+}
+export type AiLessonDraft = {
+  title: string
+  description: string
+  /** exercises in the editor syntax */
+  raw: string
+  kept: number
+  /** exercises removed by the checks (1-based position in the model's list) */
+  dropped: { n: number; reason: string }[]
+} & AiPayment
+/** Teachers: generate a lesson draft (it is opened in the editor, nothing is saved yet). */
+export function aiLesson(req: AiLessonRequest) {
+  return callAi<AiLessonDraft>({ action: 'lesson', ...req })
 }

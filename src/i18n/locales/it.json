@@ -870,5 +870,36 @@
       "done": "fatto",
       "late": "in ritardo"
     }
+  },
+  "aiLesson": {
+    "open": "Lezione con IA",
+    "title": "Crea una lezione con l’IA",
+    "hint": "L’IA scrive gli esercizi, controlla che ognuno abbia una sola risposta giusta e apre la bozza nell’editor. Controllala e salva.",
+    "focus": "Cosa allenare",
+    "anyGrammar": "Qualsiasi grammatica di questo livello",
+    "topic": "Tema",
+    "topicPlaceholder": "ad es. Viaggi, la mia famiglia, una festa di compleanno…",
+    "types": "Tipi di esercizio",
+    "typeNames": {
+      "choice": "Scelta",
+      "fill": "Completamento",
+      "truefalse": "Vero / falso",
+      "order": "Ordine delle parole",
+      "match": "Abbinamento",
+      "dialogue": "Dialogo",
+      "listen": "Dettato"
+    },
+    "count": "Esercizi: {{n}}",
+    "explainLang": "Lingua delle spiegazioni",
+    "wishes": "Richieste (facoltative)",
+    "wishesPlaceholder": "ad es. più domande, nomi Tom e Anna, per bambini di 10 anni…",
+    "generate": "Crea la lezione",
+    "generating": "L’IA scrive e controlla… (30–60 s)",
+    "costPlus": "Plus: questo mese restano {{n}} lezioni",
+    "costFree": "Gratis questo mese: ne restano {{n}} · poi {{price}} 🪙",
+    "teachersOnly": "Solo gli insegnanti possono creare lezioni con l’IA.",
+    "failed": "Non è stato possibile creare la lezione. Nessuna moneta addebitata: riprova o cambia le impostazioni.",
+    "reviewBanner": "Creato dall’IA: leggi ogni esercizio prima di salvare. Puoi modificare tutto.",
+    "dropped": "Esercizi rimossi dai controlli: {{n}} (ambigui o errati)"
   }
 }

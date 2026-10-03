@@ -890,5 +890,36 @@
       "done": "zrobione",
       "late": "po terminie"
     }
+  },
+  "aiLesson": {
+    "open": "Lekcja z AI",
+    "title": "Utwórz lekcję z AI",
+    "hint": "AI napisze ćwiczenia, sprawdzi, że każde ma dokładnie jedną poprawną odpowiedź, i otworzy szkic w edytorze. Przejrzyj go i zapisz.",
+    "focus": "Co ćwiczymy",
+    "anyGrammar": "Dowolna gramatyka z tego poziomu",
+    "topic": "Temat",
+    "topicPlaceholder": "np. Podróże, moja rodzina, przyjęcie urodzinowe…",
+    "types": "Rodzaje ćwiczeń",
+    "typeNames": {
+      "choice": "Wybór",
+      "fill": "Luki",
+      "truefalse": "Prawda / fałsz",
+      "order": "Szyk zdania",
+      "match": "Dopasowanie",
+      "dialogue": "Dialog",
+      "listen": "Dyktando"
+    },
+    "count": "Ćwiczenia: {{n}}",
+    "explainLang": "Język objaśnień",
+    "wishes": "Życzenia (opcjonalnie)",
+    "wishesPlaceholder": "np. więcej pytań, imiona Tom i Anna, dla 10-latków…",
+    "generate": "Utwórz lekcję",
+    "generating": "AI pisze i sprawdza… (30–60 s)",
+    "costPlus": "Plus: w tym miesiącu zostało {{n}} lekcji",
+    "costFree": "Za darmo w tym miesiącu: zostało {{n}} · potem {{price}} 🪙",
+    "teachersOnly": "Tylko nauczyciele mogą tworzyć lekcje z AI.",
+    "failed": "Nie udało się utworzyć lekcji. Monety nie zostały pobrane — spróbuj ponownie lub zmień ustawienia.",
+    "reviewBanner": "Utworzone przez AI — przeczytaj każde ćwiczenie przed zapisaniem. Wszystko można zmienić.",
+    "dropped": "Ćwiczenia usunięte przez kontrolę: {{n}} (niejednoznaczne lub błędne)"
   }
 }

@@ -870,5 +870,36 @@
       "done": "feito",
       "late": "atrasado"
     }
+  },
+  "aiLesson": {
+    "open": "Aula com IA",
+    "title": "Criar uma aula com IA",
+    "hint": "A IA escreve os exercícios, verifica se cada um tem só uma resposta certa e abre o rascunho no editor. Revise e salve.",
+    "focus": "O que praticar",
+    "anyGrammar": "Qualquer gramática deste nível",
+    "topic": "Tema",
+    "topicPlaceholder": "ex.: Viagens, minha família, uma festa de aniversário…",
+    "types": "Tipos de exercício",
+    "typeNames": {
+      "choice": "Múltipla escolha",
+      "fill": "Lacunas",
+      "truefalse": "Verdadeiro / falso",
+      "order": "Ordem das palavras",
+      "match": "Associação",
+      "dialogue": "Diálogo",
+      "listen": "Ditado"
+    },
+    "count": "Exercícios: {{n}}",
+    "explainLang": "Idioma das explicações",
+    "wishes": "Pedidos (opcional)",
+    "wishesPlaceholder": "ex.: mais perguntas, nomes Tom e Anna, para crianças de 10 anos…",
+    "generate": "Criar a aula",
+    "generating": "A IA está escrevendo e verificando… (30–60 s)",
+    "costPlus": "Plus: restam {{n}} aulas este mês",
+    "costFree": "Grátis neste mês: restam {{n}} · depois {{price}} 🪙",
+    "teachersOnly": "Só professores podem criar aulas com IA.",
+    "failed": "Não foi possível criar a aula. Nenhuma moeda foi cobrada — tente de novo ou mude as opções.",
+    "reviewBanner": "Criado por IA — leia cada exercício antes de salvar. Você pode editar tudo.",
+    "dropped": "Exercícios removidos pelas verificações: {{n}} (ambíguos ou com erro)"
   }
 }
