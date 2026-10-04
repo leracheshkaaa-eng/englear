@@ -83,6 +83,41 @@ export function LeanSays({
   )
 }
 
+/** Lean's ears: graphite outside, blush inside. */
+function Ears({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 100 60" aria-hidden="true" className={className}>
+      <path d="M12 60 C6 42 1 20 4 2 C19 9 37 29 47 57 Z" fill="#2f2a33" />
+      <path d="M17 52 C13 38 10 25 11 13 C21 20 32 33 39 50 Z" fill="#f3cfc9" />
+      <path d="M88 60 C94 42 99 20 96 2 C81 9 63 29 53 57 Z" fill="#2f2a33" />
+      <path d="M83 52 C87 38 90 25 89 13 C79 20 68 33 61 50 Z" fill="#f3cfc9" />
+    </svg>
+  )
+}
+
+/** The Englear wordmark: Lean's ears peek out over "ea" (Englear hides "Lea(n)"). Scales with font-size. */
+export function LeanLogo({ className = '' }: { className?: string }) {
+  return (
+    <span className={`inline-flex items-baseline font-display font-semibold leading-none tracking-tight text-graphite ${className}`} aria-label="Englear">
+      <span aria-hidden="true">Engl</span>
+      <span aria-hidden="true" className="relative isolate inline-block text-plum">
+        <Ears className="pointer-events-none absolute bottom-[0.5em] left-1/2 -z-10 w-[1.3em] -translate-x-1/2" />
+        ea
+      </span>
+      <span aria-hidden="true">r</span>
+    </span>
+  )
+}
+
+/** The square app mark: Lean's face on cream (the same as the site icon). */
+export function LeanMark({ size = 36, className = '' }: { size?: number; className?: string }) {
+  return (
+    <span className={`inline-grid shrink-0 place-items-center overflow-hidden rounded-[28%] bg-cream ring-1 ring-line ${className}`} style={{ width: size, height: size }}>
+      <img src={neutral} alt="" draggable={false} style={{ height: size * 0.86, width: 'auto' }} className="pointer-events-none select-none" />
+    </span>
+  )
+}
+
 /** A page-wide loading state: Lean napping. */
 export function LeanLoading({ text }: { text?: string }) {
   return (

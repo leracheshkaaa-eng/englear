@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import type { Wallet } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { Avatar } from '../lib/avatars'
-import { Lean } from '../lib/lean'
+import { LeanLogo } from '../lib/lean'
 import { Button } from '../lib/ui'
 import { WalletChip } from './shop'
 
@@ -61,9 +61,8 @@ export function Header({
     <>
       <header className="sticky top-0 z-30 border-b border-line/60 bg-sand/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-          <button onClick={() => pick('home')} className="flex items-center gap-2 font-display text-2xl font-semibold text-graphite">
-            <Lean pose="neutral" size={38} />
-            Englear
+          <button onClick={() => pick('home')} className="pt-3 transition-transform hover:-rotate-2" aria-label="Englear">
+            <LeanLogo className="text-[32px] sm:text-[34px]" />
           </button>
 
           {/* desktop navigation */}
