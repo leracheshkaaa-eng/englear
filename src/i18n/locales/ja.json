@@ -948,6 +948,53 @@
     "retry": "もう一度",
     "wordSearch": "辞書で単語を探す…",
     "noWords": "見つかりませんでした。",
-    "lessonBoard": "レッスンボード"
+    "lessonBoard": "レッスンボード",
+    "background": "背景",
+    "backgrounds": {
+      "plain": "無地",
+      "dots": "ドット",
+      "grid": "方眼",
+      "lines": "罫線"
+    },
+    "full": "全画面",
+    "exitFull": "全画面を終了",
+    "insert": {
+      "title": "挿入",
+      "sections": {
+        "templates": "テンプレート",
+        "table": "表",
+        "shapes": "図形とステッカー",
+        "symbols": "記号と絵文字",
+        "media": "動画と音声",
+        "lesson": "レッスン"
+      },
+      "badLink": "YouTube のリンクではありません。",
+      "recording": "録音",
+      "noMic": "マイクにアクセスできません。",
+      "rowsCols": "行 × 列",
+      "headerRow": "見出し行",
+      "addTable": "表を追加",
+      "tableHint": "セルをダブルクリックすると書き込めます。",
+      "labels": "ラベル",
+      "notes": "付箋",
+      "stickers": "ステッカー",
+      "library": "もっと図形を：ライブラリを開く",
+      "audio": "音声",
+      "uploadAudio": "ファイルをアップロード",
+      "record": "録音",
+      "stop": "停止",
+      "pickLesson": "レッスンを選ぶ…",
+      "addLesson": "レッスンをボードに配置",
+      "lessonHint": "問題がカードになり、横に授業計画と「答え」の枠が別に並びます。",
+      "exercisesFrame": "問題",
+      "answersFrame": "答え"
+    },
+    "plan": {
+      "warmup": "短いウォームアップ会話：「{{topic}}」。簡単な質問を 2〜3 個。",
+      "presentation": "新しいルールや単語を例文とともにボードで説明する。",
+      "practice": "一緒に問題を解く：{{n}} 問。",
+      "production": "生徒が新しい表現を使う：自分について 3 文、またはペアで短い会話。",
+      "homework": "家でレッスンを復習し、新しい単語を覚える。"
+    }
   }
 }

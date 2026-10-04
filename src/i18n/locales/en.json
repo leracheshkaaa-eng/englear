@@ -958,6 +958,53 @@
     "retry": "Try again",
     "wordSearch": "Find a word in the dictionary…",
     "noWords": "Nothing found.",
-    "lessonBoard": "Lesson board"
+    "lessonBoard": "Lesson board",
+    "background": "Background",
+    "backgrounds": {
+      "plain": "Plain",
+      "dots": "Dots",
+      "grid": "Squares",
+      "lines": "Lines"
+    },
+    "full": "Full screen",
+    "exitFull": "Exit full screen",
+    "insert": {
+      "title": "Insert",
+      "sections": {
+        "templates": "Templates",
+        "table": "Table",
+        "shapes": "Shapes and stickers",
+        "symbols": "Symbols and emoji",
+        "media": "Video and audio",
+        "lesson": "A lesson"
+      },
+      "badLink": "This is not a YouTube link.",
+      "recording": "Recording",
+      "noMic": "No access to the microphone.",
+      "rowsCols": "rows × columns",
+      "headerRow": "Header row",
+      "addTable": "Add the table",
+      "tableHint": "Double-click a cell to write in it.",
+      "labels": "Labels",
+      "notes": "Sticky notes",
+      "stickers": "Stickers",
+      "library": "More shapes: open the library",
+      "audio": "Audio",
+      "uploadAudio": "Upload a file",
+      "record": "Record",
+      "stop": "Stop",
+      "pickLesson": "Choose a lesson…",
+      "addLesson": "Put the lesson on the board",
+      "lessonHint": "Exercises become cards, with a lesson plan and a separate “Answers” frame.",
+      "exercisesFrame": "Exercises",
+      "answersFrame": "Answers"
+    },
+    "plan": {
+      "warmup": "Short chat to warm up: “{{topic}}”. Ask 2–3 easy questions.",
+      "presentation": "Explain the new rule or words with examples on the board.",
+      "practice": "Do the exercises together: {{n}} tasks.",
+      "production": "Students use the new language: 3 sentences about themselves, or a short dialogue in pairs.",
+      "homework": "Repeat the lesson at home and learn the new words."
+    }
   }
 }

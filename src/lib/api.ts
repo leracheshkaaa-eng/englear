@@ -1562,7 +1562,7 @@ export function aiLesson(req: AiLessonRequest) {
 export type BoardKind = 'notes' | 'lesson'
 export type BoardScene = {
   elements: unknown[]
-  appState: { viewBackgroundColor?: string; gridSize?: number | null }
+  appState: { viewBackgroundColor?: string; gridSize?: number | null; background?: string }
   /** pictures used by the scene: file id -> mime type */
   files?: Record<string, { mimeType: string; created: number }>
 }

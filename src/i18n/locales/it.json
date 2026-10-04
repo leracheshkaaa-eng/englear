@@ -958,6 +958,53 @@
     "retry": "Riprova",
     "wordSearch": "Cerca una parola nel dizionario…",
     "noWords": "Nessun risultato.",
-    "lessonBoard": "Lavagna della lezione"
+    "lessonBoard": "Lavagna della lezione",
+    "background": "Sfondo",
+    "backgrounds": {
+      "plain": "Bianco",
+      "dots": "Puntini",
+      "grid": "Quadretti",
+      "lines": "Righe"
+    },
+    "full": "Schermo intero",
+    "exitFull": "Esci da schermo intero",
+    "insert": {
+      "title": "Inserisci",
+      "sections": {
+        "templates": "Modelli",
+        "table": "Tabella",
+        "shapes": "Forme e adesivi",
+        "symbols": "Simboli ed emoji",
+        "media": "Video e audio",
+        "lesson": "Una lezione"
+      },
+      "badLink": "Non è un link di YouTube.",
+      "recording": "Registrazione",
+      "noMic": "Nessun accesso al microfono.",
+      "rowsCols": "righe × colonne",
+      "headerRow": "Riga di intestazione",
+      "addTable": "Aggiungi la tabella",
+      "tableHint": "Fai doppio clic su una cella per scriverci.",
+      "labels": "Etichette",
+      "notes": "Post-it",
+      "stickers": "Adesivi",
+      "library": "Più forme: apri la libreria",
+      "audio": "Audio",
+      "uploadAudio": "Carica un file",
+      "record": "Registra",
+      "stop": "Stop",
+      "pickLesson": "Scegli una lezione…",
+      "addLesson": "Metti la lezione sulla lavagna",
+      "lessonHint": "Gli esercizi diventano schede, con un piano della lezione e una cornice «Soluzioni» a parte.",
+      "exercisesFrame": "Esercizi",
+      "answersFrame": "Soluzioni"
+    },
+    "plan": {
+      "warmup": "Breve conversazione di riscaldamento: «{{topic}}». Fai 2–3 domande facili.",
+      "presentation": "Spiega la nuova regola o le nuove parole con esempi alla lavagna.",
+      "practice": "Facciamo gli esercizi insieme: {{n}} compiti.",
+      "production": "Gli studenti usano il nuovo: 3 frasi su di sé o un breve dialogo a coppie.",
+      "homework": "Ripassare la lezione a casa e imparare le parole nuove."
+    }
   }
 }

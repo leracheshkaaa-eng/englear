@@ -978,6 +978,53 @@
     "retry": "Spróbuj ponownie",
     "wordSearch": "Znajdź słowo w słowniku…",
     "noWords": "Nic nie znaleziono.",
-    "lessonBoard": "Tablica lekcji"
+    "lessonBoard": "Tablica lekcji",
+    "background": "Tło",
+    "backgrounds": {
+      "plain": "Gładkie",
+      "dots": "W kropki",
+      "grid": "W kratkę",
+      "lines": "W linie"
+    },
+    "full": "Pełny ekran",
+    "exitFull": "Zamknij pełny ekran",
+    "insert": {
+      "title": "Wstaw",
+      "sections": {
+        "templates": "Szablony",
+        "table": "Tabela",
+        "shapes": "Kształty i naklejki",
+        "symbols": "Symbole i emoji",
+        "media": "Wideo i audio",
+        "lesson": "Lekcja"
+      },
+      "badLink": "To nie jest link do YouTube.",
+      "recording": "Nagranie",
+      "noMic": "Brak dostępu do mikrofonu.",
+      "rowsCols": "wierszy × kolumn",
+      "headerRow": "Wiersz nagłówka",
+      "addTable": "Dodaj tabelę",
+      "tableHint": "Kliknij dwukrotnie komórkę, aby w niej pisać.",
+      "labels": "Etykiety",
+      "notes": "Karteczki",
+      "stickers": "Naklejki",
+      "library": "Więcej kształtów: otwórz bibliotekę",
+      "audio": "Audio",
+      "uploadAudio": "Wgraj plik",
+      "record": "Nagraj",
+      "stop": "Stop",
+      "pickLesson": "Wybierz lekcję…",
+      "addLesson": "Rozłóż lekcję na tablicy",
+      "lessonHint": "Ćwiczenia staną się kartami, obok plan lekcji i osobna ramka „Odpowiedzi”.",
+      "exercisesFrame": "Ćwiczenia",
+      "answersFrame": "Odpowiedzi"
+    },
+    "plan": {
+      "warmup": "Krótka rozgrzewka-rozmowa: „{{topic}}”. Zadaj 2–3 proste pytania.",
+      "presentation": "Wyjaśnij nową zasadę lub słowa z przykładami na tablicy.",
+      "practice": "Robimy ćwiczenia razem: {{n}} zadań.",
+      "production": "Uczniowie używają nowego: 3 zdania o sobie albo krótki dialog w parach.",
+      "homework": "Powtórzyć lekcję w domu i nauczyć się nowych słów."
+    }
   }
 }

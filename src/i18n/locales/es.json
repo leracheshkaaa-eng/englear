@@ -958,6 +958,53 @@
     "retry": "Reintentar",
     "wordSearch": "Busca una palabra en el diccionario…",
     "noWords": "No se encontró nada.",
-    "lessonBoard": "Pizarra de la lección"
+    "lessonBoard": "Pizarra de la lección",
+    "background": "Fondo",
+    "backgrounds": {
+      "plain": "Liso",
+      "dots": "Puntos",
+      "grid": "Cuadrícula",
+      "lines": "Rayas"
+    },
+    "full": "Pantalla completa",
+    "exitFull": "Salir de pantalla completa",
+    "insert": {
+      "title": "Insertar",
+      "sections": {
+        "templates": "Plantillas",
+        "table": "Tabla",
+        "shapes": "Formas y pegatinas",
+        "symbols": "Símbolos y emojis",
+        "media": "Vídeo y audio",
+        "lesson": "Una lección"
+      },
+      "badLink": "No es un enlace de YouTube.",
+      "recording": "Grabación",
+      "noMic": "Sin acceso al micrófono.",
+      "rowsCols": "filas × columnas",
+      "headerRow": "Fila de encabezado",
+      "addTable": "Añadir la tabla",
+      "tableHint": "Haz doble clic en una celda para escribir en ella.",
+      "labels": "Etiquetas",
+      "notes": "Notas adhesivas",
+      "stickers": "Pegatinas",
+      "library": "Más formas: abrir la biblioteca",
+      "audio": "Audio",
+      "uploadAudio": "Subir un archivo",
+      "record": "Grabar",
+      "stop": "Parar",
+      "pickLesson": "Elige una lección…",
+      "addLesson": "Poner la lección en la pizarra",
+      "lessonHint": "Los ejercicios se convierten en tarjetas, con un plan de clase y un marco «Respuestas» aparte.",
+      "exercisesFrame": "Ejercicios",
+      "answersFrame": "Respuestas"
+    },
+    "plan": {
+      "warmup": "Charla breve para calentar: «{{topic}}». Haz 2–3 preguntas fáciles.",
+      "presentation": "Explica la regla o las palabras nuevas con ejemplos en la pizarra.",
+      "practice": "Hacemos los ejercicios juntos: {{n}} tareas.",
+      "production": "Los alumnos usan lo nuevo: 3 frases sobre sí mismos o un diálogo corto en parejas.",
+      "homework": "Repasar la lección en casa y aprender las palabras nuevas."
+    }
   }
 }

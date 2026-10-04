@@ -5,7 +5,6 @@ import type { BoardKind, BoardShare, BoardSummary, ClassRow, LessonSummary, Prof
 import { useAuth } from '../lib/auth'
 import { Badge, Button, inputCls } from '../lib/ui'
 import { errorMessage } from '../i18n/errors'
-import { TEMPLATES, type Template } from './boardTemplates'
 
 /* ============================================================
    Whiteboards: my boards (lesson boards and notes), boards shared with me,
@@ -24,7 +23,6 @@ export function Boards({ openId, onOpen }: { openId: string | null; onOpen: (id:
   const [folder, setFolder] = useState('')
   const [creating, setCreating] = useState(false)
   const [sharing, setSharing] = useState<BoardSummary | null>(null)
-  const [template, setTemplate] = useState<Template | undefined>(undefined)
   const [err, setErr] = useState('')
 
   const load = () => api.listBoards().then(setBoards).catch((e) => setErr(errorMessage(e)))
@@ -35,14 +33,7 @@ export function Boards({ openId, onOpen }: { openId: string | null; onOpen: (id:
   if (openId)
     return (
       <Suspense fallback={<p className="py-24 text-center text-mute">{t('common.loading')}</p>}>
-        <BoardEditor
-          boardId={openId}
-          template={template}
-          onBack={() => {
-            setTemplate(undefined)
-            onOpen(null)
-          }}
-        />
+        <BoardEditor boardId={openId} onBack={() => onOpen(null)} />
       </Suspense>
     )
 
@@ -67,9 +58,8 @@ export function Boards({ openId, onOpen }: { openId: string | null; onOpen: (id:
           isTeacher={isTeacher}
           folders={folders}
           onCancel={() => setCreating(false)}
-          onCreated={(b, tpl) => {
+          onCreated={(b) => {
             setCreating(false)
-            setTemplate(tpl)
             onOpen(b.id)
           }}
         />
@@ -149,14 +139,12 @@ function NewBoard({
   isTeacher: boolean
   folders: string[]
   onCancel: () => void
-  onCreated: (b: BoardSummary, tpl: Template) => void
+  onCreated: (b: BoardSummary) => void
 }) {
   const { t } = useTranslation()
   const { userId, role } = useAuth()
   const [title, setTitle] = useState('')
-  const [kind, setKind] = useState<BoardKind>(isTeacher ? 'lesson' : 'notes')
   const [folder, setFolder] = useState('')
-  const [tpl, setTpl] = useState<Template>('empty')
   const [lessons, setLessons] = useState<LessonSummary[]>([])
   const [lessonId, setLessonId] = useState('')
   const [busy, setBusy] = useState(false)
@@ -171,37 +159,17 @@ function NewBoard({
     setBusy(true)
     setErr('')
     try {
-      const b = await api.createBoard(userId, { title: title.trim() || t('boards.untitled'), kind, folder: folder.trim(), lesson_id: kind === 'lesson' && lessonId ? lessonId : null })
-      onCreated(b, tpl)
+      const b = await api.createBoard(userId, { title: title.trim() || t('boards.untitled'), kind: lessonId ? 'lesson' : 'notes', folder: folder.trim(), lesson_id: lessonId || null })
+      onCreated(b)
     } catch (e) {
       setErr(errorMessage(e))
       setBusy(false)
     }
   }
 
-  const chip = (on: boolean) => `rounded-full border px-3 py-1 text-sm font-semibold ${on ? 'border-plum bg-lilac text-plum-deep' : 'border-line text-mute hover:border-lavender'}`
   return (
     <div className="mt-4 space-y-3 rounded-2xl border border-plum/30 bg-paper p-5">
       <input autoFocus value={title} onChange={(e) => setTitle(e.target.value.slice(0, 120))} placeholder={t('boards.titlePlaceholder')} className={`${inputCls} w-full`} />
-      {isTeacher && (
-        <div className="flex flex-wrap gap-1.5">
-          {(['lesson', 'notes'] as const).map((k) => (
-            <button key={k} onClick={() => setKind(k)} className={chip(kind === k)}>
-              {t(`boards.kinds.${k}`)}
-            </button>
-          ))}
-        </div>
-      )}
-      <div>
-        <p className="mb-1 text-sm font-semibold">{t('boards.template')}</p>
-        <div className="flex flex-wrap gap-1.5">
-          {TEMPLATES.map((x) => (
-            <button key={x} onClick={() => setTpl(x)} className={chip(tpl === x)}>
-              {t(`boards.tpl.${x}`)}
-            </button>
-          ))}
-        </div>
-      </div>
       <div className="grid gap-3 sm:grid-cols-2">
         <label className="text-sm">
           <span className="font-semibold">{t('boards.folder')}</span>
@@ -212,7 +180,7 @@ function NewBoard({
             ))}
           </datalist>
         </label>
-        {isTeacher && kind === 'lesson' && (
+        {isTeacher && (
           <label className="text-sm">
             <span className="font-semibold">{t('boards.lesson')}</span>
             <select value={lessonId} onChange={(e) => setLessonId(e.target.value)} className={`${inputCls} mt-1 w-full`}>

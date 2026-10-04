@@ -948,6 +948,53 @@
     "retry": "重试",
     "wordSearch": "在词典中查找单词…",
     "noWords": "没有找到。",
-    "lessonBoard": "课程白板"
+    "lessonBoard": "课程白板",
+    "background": "背景",
+    "backgrounds": {
+      "plain": "空白",
+      "dots": "点阵",
+      "grid": "方格",
+      "lines": "横线"
+    },
+    "full": "全屏",
+    "exitFull": "退出全屏",
+    "insert": {
+      "title": "插入",
+      "sections": {
+        "templates": "模板",
+        "table": "表格",
+        "shapes": "形状和贴纸",
+        "symbols": "符号和表情",
+        "media": "视频和音频",
+        "lesson": "课程"
+      },
+      "badLink": "这不是 YouTube 链接。",
+      "recording": "录音",
+      "noMic": "无法使用麦克风。",
+      "rowsCols": "行 × 列",
+      "headerRow": "表头行",
+      "addTable": "添加表格",
+      "tableHint": "双击单元格即可输入。",
+      "labels": "标签",
+      "notes": "便利贴",
+      "stickers": "贴纸",
+      "library": "更多形状：打开素材库",
+      "audio": "音频",
+      "uploadAudio": "上传文件",
+      "record": "录音",
+      "stop": "停止",
+      "pickLesson": "选择课程…",
+      "addLesson": "把课程放到白板上",
+      "lessonHint": "练习会变成卡片，旁边有课程计划和单独的“答案”框。",
+      "exercisesFrame": "练习",
+      "answersFrame": "答案"
+    },
+    "plan": {
+      "warmup": "简短热身聊天：“{{topic}}”。问 2–3 个简单问题。",
+      "presentation": "在白板上用例子讲解新规则或新单词。",
+      "practice": "一起做练习：共 {{n}} 题。",
+      "production": "学生运用新内容：写 3 句关于自己的话，或两人一组做简短对话。",
+      "homework": "在家复习本课并记住新单词。"
+    }
   }
 }

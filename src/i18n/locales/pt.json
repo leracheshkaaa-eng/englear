@@ -958,6 +958,53 @@
     "retry": "Tentar de novo",
     "wordSearch": "Procure uma palavra no dicionário…",
     "noWords": "Nada encontrado.",
-    "lessonBoard": "Quadro da aula"
+    "lessonBoard": "Quadro da aula",
+    "background": "Fundo",
+    "backgrounds": {
+      "plain": "Liso",
+      "dots": "Pontilhado",
+      "grid": "Quadriculado",
+      "lines": "Pautado"
+    },
+    "full": "Tela cheia",
+    "exitFull": "Sair da tela cheia",
+    "insert": {
+      "title": "Inserir",
+      "sections": {
+        "templates": "Modelos",
+        "table": "Tabela",
+        "shapes": "Formas e adesivos",
+        "symbols": "Símbolos e emojis",
+        "media": "Vídeo e áudio",
+        "lesson": "Uma aula"
+      },
+      "badLink": "Isto não é um link do YouTube.",
+      "recording": "Gravação",
+      "noMic": "Sem acesso ao microfone.",
+      "rowsCols": "linhas × colunas",
+      "headerRow": "Linha de cabeçalho",
+      "addTable": "Adicionar a tabela",
+      "tableHint": "Clique duas vezes numa célula para escrever.",
+      "labels": "Etiquetas",
+      "notes": "Notas adesivas",
+      "stickers": "Adesivos",
+      "library": "Mais formas: abrir a biblioteca",
+      "audio": "Áudio",
+      "uploadAudio": "Enviar um arquivo",
+      "record": "Gravar",
+      "stop": "Parar",
+      "pickLesson": "Escolha uma aula…",
+      "addLesson": "Colocar a aula no quadro",
+      "lessonHint": "Os exercícios viram cartões, com um plano de aula e um quadro «Respostas» separado.",
+      "exercisesFrame": "Exercícios",
+      "answersFrame": "Respostas"
+    },
+    "plan": {
+      "warmup": "Conversa rápida de aquecimento: «{{topic}}». Faça 2–3 perguntas fáceis.",
+      "presentation": "Explique a nova regra ou as palavras novas com exemplos no quadro.",
+      "practice": "Fazemos os exercícios juntos: {{n}} tarefas.",
+      "production": "Os alunos usam o novo: 3 frases sobre si ou um diálogo curto em duplas.",
+      "homework": "Revisar a aula em casa e aprender as palavras novas."
+    }
   }
 }

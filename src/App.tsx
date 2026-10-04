@@ -84,8 +84,12 @@ function Shell() {
       } else {
         setDeepLink(null)
         const page = pageFromPath(location.pathname)
+        const board = location.pathname.match(/^\/boards(?:\/([0-9a-f-]{36}))?\/?$/)
         if (page) setView(page)
-        else if (location.pathname === '/') setView((v) => (pageFromPath('/' + v) ? 'home' : v))
+        else if (board) {
+          setView('boards')
+          setBoardId(board[1] ?? null)
+        } else if (location.pathname === '/') setView((v) => (pageFromPath('/' + v) || v === 'boards' ? 'home' : v))
       }
     }
     resolvePath()
@@ -94,11 +98,19 @@ function Shell() {
     return () => window.removeEventListener('popstate', onPop)
   }, [loading, userId])
 
+  // whiteboards have their own address (/boards/<id>): links and the shape-library browser come back to the board
+  function openBoard(id: string | null) {
+    setView('boards')
+    setBoardId(id)
+    const path = id ? `/boards/${id}` : '/boards'
+    if (location.pathname !== path) history.pushState({}, '', path)
+  }
+
   function go(v: View) {
     setView(v)
     setFlashTarget(null)
     setBoardId(null)
-    const path = pageFromPath('/' + v) ? '/' + v : '/'
+    const path = v === 'boards' ? '/boards' : pageFromPath('/' + v) ? '/' + v : '/'
     if (location.pathname !== path) history.pushState({}, '', path)
     window.scrollTo(0, 0)
     setDeepLink(null)
@@ -240,7 +252,7 @@ function Shell() {
         )}
         {view === 'player' && active && lessonBoardId && (
           <div className="mx-auto max-w-3xl px-6 pb-2 text-right">
-            <Button variant="soft" onClick={() => { setView('boards'); setBoardId(lessonBoardId) }}>
+            <Button variant="soft" onClick={() => openBoard(lessonBoardId)}>
               📋 {t('boards.lessonBoard')}
             </Button>
           </div>
@@ -259,7 +271,7 @@ function Shell() {
           />
         )}
         {view === 'ai' && userId && <AiTutor onSpent={() => api.myWallet(userId).then(setWallet).catch(() => {})} onShop={() => go('shop')} />}
-        {view === 'boards' && userId && <Boards openId={boardId} onOpen={setBoardId} />}
+        {view === 'boards' && userId && <Boards openId={boardId} onOpen={openBoard} />}
         {view === 'dictionary' && userId && <Dictionary />}
         {view === 'progress' && userId && (
           <StudentProgress
@@ -316,7 +328,16 @@ function Home({ role, onStart, onLogin, count }: { role: string; onStart: () => 
   )
 }
 
+const AudioEmbed = lazy(() => import('./features/board/audioEmbed'))
+
 export default function App() {
+  // the audio player embedded in whiteboards: a bare page without the app around it
+  if (location.pathname.startsWith('/embed/audio'))
+    return (
+      <Suspense fallback={null}>
+        <AudioEmbed />
+      </Suspense>
+    )
   return (
     <AuthProvider>
       <Shell />

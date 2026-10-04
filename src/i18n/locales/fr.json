@@ -958,6 +958,53 @@
     "retry": "Réessayer",
     "wordSearch": "Chercher un mot dans le dictionnaire…",
     "noWords": "Rien trouvé.",
-    "lessonBoard": "Tableau de la leçon"
+    "lessonBoard": "Tableau de la leçon",
+    "background": "Fond",
+    "backgrounds": {
+      "plain": "Uni",
+      "dots": "Points",
+      "grid": "Quadrillé",
+      "lines": "Lignes"
+    },
+    "full": "Plein écran",
+    "exitFull": "Quitter le plein écran",
+    "insert": {
+      "title": "Insérer",
+      "sections": {
+        "templates": "Modèles",
+        "table": "Tableau",
+        "shapes": "Formes et autocollants",
+        "symbols": "Symboles et emoji",
+        "media": "Vidéo et audio",
+        "lesson": "Une leçon"
+      },
+      "badLink": "Ce n’est pas un lien YouTube.",
+      "recording": "Enregistrement",
+      "noMic": "Pas d’accès au micro.",
+      "rowsCols": "lignes × colonnes",
+      "headerRow": "Ligne d’en-tête",
+      "addTable": "Ajouter le tableau",
+      "tableHint": "Double-clique sur une case pour écrire dedans.",
+      "labels": "Étiquettes",
+      "notes": "Post-it",
+      "stickers": "Autocollants",
+      "library": "Plus de formes : ouvrir la bibliothèque",
+      "audio": "Audio",
+      "uploadAudio": "Importer un fichier",
+      "record": "Enregistrer",
+      "stop": "Stop",
+      "pickLesson": "Choisis une leçon…",
+      "addLesson": "Mettre la leçon au tableau",
+      "lessonHint": "Les exercices deviennent des cartes, avec un plan de cours et un cadre « Réponses » à part.",
+      "exercisesFrame": "Exercices",
+      "answersFrame": "Réponses"
+    },
+    "plan": {
+      "warmup": "Petit échange pour s’échauffer : « {{topic}} ». Pose 2–3 questions faciles.",
+      "presentation": "Explique la nouvelle règle ou les nouveaux mots avec des exemples au tableau.",
+      "practice": "Faites les exercices ensemble : {{n}} tâches.",
+      "production": "Les élèves utilisent le nouveau : 3 phrases sur eux ou un court dialogue à deux.",
+      "homework": "Revoir la leçon à la maison et apprendre les nouveaux mots."
+    }
   }
 }
