@@ -11,6 +11,8 @@ import { errorMessage } from '../i18n/errors'
 import { BACKGROUNDS, backgroundStyle, type Background } from './board/background'
 import { InsertPanel } from './board/insertPanel'
 import type { Skeleton } from './board/elements'
+import { studySkeleton, takePendingInsert } from './board/content'
+import { isOurEmbed, ourEmbed } from './board/taskEmbed'
 
 /* ============================================================
    The whiteboard itself (Excalidraw). Loaded on demand — it is a large library.
@@ -313,6 +315,22 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
                 apiRef.current = a
                 setXapi(a)
                 loadFiles(a, board).catch(() => {})
+                // "Teach on a board": the lesson is laid out on the new, empty board
+                const studyId = takePendingInsert(board.id)
+                if (studyId && (board.scene.elements ?? []).length === 0) {
+                  const tt = t as unknown as (k: string, o?: Record<string, unknown>) => string
+                  document.fonts
+                    .load('20px Excalifont')
+                    .catch(() => [])
+                    .then(() => studySkeleton(studyId, () => ({ x: 0, y: 0 }), 'interactive', tt, true))
+                    .then((sk) => {
+                      const els = convertToExcalidrawElements(sk)
+                      a.updateScene({ elements: els })
+                      a.scrollToContent(els, { fitToContent: true })
+                      scheduleSave()
+                    })
+                    .catch(() => {})
+                }
               }}
               onChange={onChange}
               onScrollChange={(x, y, zoom) => setView({ x, y, zoom: zoom.value })}
@@ -321,6 +339,14 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
               name={title}
               libraryReturnUrl={location.href}
               validateEmbeddable={validateEmbeddable}
+              renderEmbeddable={(el) => ourEmbed(el.link)}
+              // our exercises answer on the first click (Excalidraw would first select the element)
+              onPointerDown={(_tool, pd) => {
+                const el = pd.hit.element
+                if (el?.type === 'embeddable' && isOurEmbed(el.link)) {
+                  setTimeout(() => apiRef.current?.updateScene({ appState: { activeEmbeddable: { element: el, state: 'active' } } as never }), 0)
+                }
+              }}
               UIOptions={{ canvasActions: { loadScene: false, saveToActiveFile: false, toggleTheme: false } }}
             />
           </div>

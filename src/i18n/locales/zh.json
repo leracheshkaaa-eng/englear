@@ -27,7 +27,8 @@
     "practice": "练习",
     "pricing": "价格",
     "ai": "AI 老师",
-    "boards": "白板"
+    "boards": "白板",
+    "tasks": "练习"
   },
   "home": {
     "tagline": "全家一起学英语",
@@ -400,13 +401,13 @@
   "teacher": {
     "title": "教师模式",
     "tabs": {
-      "lessons": "我的课程",
+      "lessons": "我的练习",
       "students": "学生和班级",
       "progress": "进度",
       "cards": "卡片"
     },
     "importResult": "已导入：{{imported}}，已跳过（重复）：{{skipped}}。本地副本已保留作为备份。",
-    "newLesson": "+ 新课程",
+    "newLesson": "+ 新练习",
     "importLocal": "导入本地课程（{{count}}）",
     "published": "已发布",
     "draft": "草稿",
@@ -600,7 +601,7 @@
     "noResults": "没有符合这些筛选条件的课程。",
     "count": "课程：{{count}}",
     "practiceIntro": "先读或先听，然后回答问题。选择你的级别和技能。",
-    "lessonsIntro": "围绕一个主题的课程：语法、词汇或两者兼有。选择你的级别和想学的内容。",
+    "lessonsIntro": "围绕一个主题的简短练习组：语法、词汇或两者兼有。选择级别和练习内容。",
     "chooseLevel": "级别",
     "chooseSkill": "技能",
     "chooseFocus": "学习内容",
@@ -863,8 +864,8 @@
     }
   },
   "aiLesson": {
-    "open": "AI 生成课程",
-    "title": "用 AI 创建课程",
+    "open": "AI 生成练习",
+    "title": "用 AI 创建练习",
     "hint": "AI 会编写练习，检查每道题只有一个正确答案，并在编辑器中打开草稿。检查后保存。",
     "focus": "练习内容",
     "anyGrammar": "该级别的任意语法",
@@ -961,12 +962,14 @@
     "insert": {
       "title": "插入",
       "sections": {
+        "study": "课程",
+        "tasks": "练习",
+        "practice": "实践",
         "templates": "模板",
         "table": "表格",
         "shapes": "形状和贴纸",
         "symbols": "符号和表情",
-        "media": "视频和音频",
-        "lesson": "课程"
+        "media": "视频和音频"
       },
       "badLink": "这不是 YouTube 链接。",
       "recording": "录音",
@@ -987,7 +990,25 @@
       "addLesson": "把课程放到白板上",
       "lessonHint": "练习会变成卡片，旁边有课程计划和单独的“答案”框。",
       "exercisesFrame": "练习",
-      "answersFrame": "答案"
+      "answersFrame": "答案",
+      "textFrame": "文本",
+      "scriptFrame": "听力原文",
+      "questionsFrame": "问题",
+      "pick": {
+        "study": "选择课程…",
+        "tasks": "选择练习…",
+        "practice": "选择实践…"
+      },
+      "modes": {
+        "interactive": "互动",
+        "cards": "卡片"
+      },
+      "put": "放到白板上",
+      "hint": {
+        "study": "按阶段放上整节课，包含教师备注、练习和实践。",
+        "tasks": "互动：学生直接在白板上作答并检查。卡片：便于标注和绘画。",
+        "practice": "文本（或音频及原文）和问题。"
+      }
     },
     "plan": {
       "warmup": "简短热身聊天：“{{topic}}”。问 2–3 个简单问题。",
@@ -995,6 +1016,30 @@
       "practice": "一起做练习：共 {{n}} 题。",
       "production": "学生运用新内容：写 3 句关于自己的话，或两人一组做简短对话。",
       "homework": "在家复习本课并记住新单词。"
-    }
+    },
+    "embedMissing": "这个练习不可用。"
+  },
+  "course": {
+    "intro": "40–60 分钟的完整课程：热身、带例子的讲解、练习、实践、口语和作业——跟着步骤走就好。",
+    "allLevels": "全部级别",
+    "none": "这个级别还没有课程——很快就来！",
+    "minutes": "{{n}} 分钟",
+    "notFound": "这节课不可用。",
+    "hideNotes": "隐藏教师备注",
+    "showNotes": "显示教师备注",
+    "onBoard": "在白板上授课",
+    "teacherNotes": "教师备注",
+    "stages": {
+      "warmup": "热身",
+      "presentation": "讲解",
+      "tasks": "练习",
+      "practice": "实践",
+      "production": "口语",
+      "homework": "作业"
+    },
+    "startTasks": "开始练习",
+    "startPractice": "开始实践",
+    "next": "下一步",
+    "finish": "完成课程"
   }
 }

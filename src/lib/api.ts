@@ -1654,3 +1654,38 @@ export async function canEditBoard(id: string): Promise<boolean> {
   const { data } = await supabase.rpc('can_edit_board', { p_board: id })
   return !!data
 }
+
+/* ============================================================
+   Full lessons ("Lessons", migration 0028): stages from warm-up to homework.
+   Stages of kind tasks / practice point to a lessons row (task set or practice).
+   ============================================================ */
+export const STAGE_KINDS = ['warmup', 'presentation', 'tasks', 'practice', 'production', 'homework'] as const
+export type StageKind = (typeof STAGE_KINDS)[number]
+export type StudyStage = { kind: StageKind; title: string; minutes: number; teacher: string; body: string; examples: string[]; task_id: string | null }
+export type StudyLessonSummary = {
+  id: string
+  title: string
+  description: string
+  cefr: string
+  topic: string | null
+  duration_min: number
+  scope: 'library' | 'teacher'
+  status: 'draft' | 'published'
+  source: 'manual' | 'ai'
+  author_id: string | null
+}
+export type StudyLesson = StudyLessonSummary & { content: { stages: StudyStage[] } }
+
+const STUDY_SUMMARY = 'id, title, description, cefr, topic, duration_min, scope, status, source, author_id'
+export async function listStudyLessons(f: { cefr?: string | null } = {}): Promise<StudyLessonSummary[]> {
+  let q = supabase.from('study_lessons').select(STUDY_SUMMARY).order('cefr').order('title')
+  if (f.cefr) q = q.eq('cefr', f.cefr)
+  const { data, error } = await q
+  if (error) throw error
+  return (data ?? []) as StudyLessonSummary[]
+}
+export async function getStudyLesson(id: string): Promise<StudyLesson | null> {
+  const { data, error } = await supabase.from('study_lessons').select(`${STUDY_SUMMARY}, content`).eq('id', id).maybeSingle()
+  if (error) throw error
+  return data as StudyLesson | null
+}

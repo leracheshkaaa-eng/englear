@@ -27,7 +27,8 @@
     "practice": "Praktyka",
     "pricing": "Cennik",
     "ai": "Korepetytor AI",
-    "boards": "Tablice"
+    "boards": "Tablice",
+    "tasks": "Zadania"
   },
   "home": {
     "tagline": "angielski dla całej rodziny",
@@ -427,13 +428,13 @@
   "teacher": {
     "title": "Tryb nauczyciela",
     "tabs": {
-      "lessons": "Moje lekcje",
+      "lessons": "Moje zadania",
       "students": "Uczniowie i grupy",
       "progress": "Postępy",
       "cards": "Fiszki"
     },
     "importResult": "Zaimportowano: {{imported}}, pominięto (duplikaty): {{skipped}}. Lokalna kopia zostaje jako zapas.",
-    "newLesson": "+ Nowa lekcja",
+    "newLesson": "+ Nowe zadania",
     "importLocal": "Zaimportuj lokalne lekcje ({{count}})",
     "published": "opublikowana",
     "draft": "szkic",
@@ -630,7 +631,7 @@
     "noResults": "Brak lekcji dla tych filtrów.",
     "count": "Lekcje: {{count}}",
     "practiceIntro": "Najpierw przeczytaj lub posłuchaj, potem odpowiedz na pytania. Wybierz poziom i umiejętność.",
-    "lessonsIntro": "Lekcje na jeden temat: gramatyka, słownictwo albo jedno i drugie. Wybierz poziom i czego chcesz się uczyć.",
+    "lessonsIntro": "Krótkie zestawy ćwiczeń na jeden temat: gramatyka, słownictwo albo oba. Wybierz poziom i co ćwiczyć.",
     "chooseLevel": "Poziom",
     "chooseSkill": "Umiejętność",
     "chooseFocus": "Czego się uczyć",
@@ -893,8 +894,8 @@
     }
   },
   "aiLesson": {
-    "open": "Lekcja z AI",
-    "title": "Utwórz lekcję z AI",
+    "open": "Zadania z AI",
+    "title": "Utwórz zadania z AI",
     "hint": "AI napisze ćwiczenia, sprawdzi, że każde ma dokładnie jedną poprawną odpowiedź, i otworzy szkic w edytorze. Przejrzyj go i zapisz.",
     "focus": "Co ćwiczymy",
     "anyGrammar": "Dowolna gramatyka z tego poziomu",
@@ -991,12 +992,14 @@
     "insert": {
       "title": "Wstaw",
       "sections": {
+        "study": "Lekcje",
+        "tasks": "Zadania",
+        "practice": "Praktyka",
         "templates": "Szablony",
         "table": "Tabela",
         "shapes": "Kształty i naklejki",
         "symbols": "Symbole i emoji",
-        "media": "Wideo i audio",
-        "lesson": "Lekcja"
+        "media": "Wideo i audio"
       },
       "badLink": "To nie jest link do YouTube.",
       "recording": "Nagranie",
@@ -1017,7 +1020,25 @@
       "addLesson": "Rozłóż lekcję na tablicy",
       "lessonHint": "Ćwiczenia staną się kartami, obok plan lekcji i osobna ramka „Odpowiedzi”.",
       "exercisesFrame": "Ćwiczenia",
-      "answersFrame": "Odpowiedzi"
+      "answersFrame": "Odpowiedzi",
+      "textFrame": "Tekst",
+      "scriptFrame": "Transkrypcja",
+      "questionsFrame": "Pytania",
+      "pick": {
+        "study": "Wybierz lekcję…",
+        "tasks": "Wybierz zadania…",
+        "practice": "Wybierz praktykę…"
+      },
+      "modes": {
+        "interactive": "Interaktywnie",
+        "cards": "Karty"
+      },
+      "put": "Rozłóż na tablicy",
+      "hint": {
+        "study": "Cała lekcja etapami, z notatkami dla nauczyciela, zadaniami i praktyką.",
+        "tasks": "Interaktywnie: uczniowie odpowiadają i sprawdzają na tablicy. Karty: do zaznaczania i rysowania.",
+        "practice": "Tekst (albo nagranie z transkrypcją) i pytania."
+      }
     },
     "plan": {
       "warmup": "Krótka rozgrzewka-rozmowa: „{{topic}}”. Zadaj 2–3 proste pytania.",
@@ -1025,6 +1046,30 @@
       "practice": "Robimy ćwiczenia razem: {{n}} zadań.",
       "production": "Uczniowie używają nowego: 3 zdania o sobie albo krótki dialog w parach.",
       "homework": "Powtórzyć lekcję w domu i nauczyć się nowych słów."
-    }
+    },
+    "embedMissing": "To zadanie jest niedostępne."
+  },
+  "course": {
+    "intro": "Pełne lekcje na 40–60 minut: rozgrzewka, objaśnienie z przykładami, zadania, praktyka, mówienie i praca domowa — po prostu idź krok po kroku.",
+    "allLevels": "Wszystkie poziomy",
+    "none": "Nie ma jeszcze lekcji na tym poziomie — wkrótce będą!",
+    "minutes": "{{n}} min",
+    "notFound": "Ta lekcja jest niedostępna.",
+    "hideNotes": "Ukryj notatki dla nauczyciela",
+    "showNotes": "Pokaż notatki dla nauczyciela",
+    "onBoard": "Poprowadź na tablicy",
+    "teacherNotes": "Dla nauczyciela",
+    "stages": {
+      "warmup": "Rozgrzewka",
+      "presentation": "Objaśnienie",
+      "tasks": "Zadania",
+      "practice": "Praktyka",
+      "production": "Mówienie",
+      "homework": "Praca domowa"
+    },
+    "startTasks": "Zacznij zadania",
+    "startPractice": "Zacznij praktykę",
+    "next": "Dalej",
+    "finish": "Zakończ lekcję"
   }
 }

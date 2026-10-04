@@ -135,12 +135,12 @@ function exerciseBody(ex: Exercise): { head: string; chips: string[]; columns?: 
 }
 
 /** Title, every exercise as a card (options as chips), a lesson plan and a separate "Answers" frame. */
-export function lessonLayout(o: Pt, lesson: Lesson, labels: { exercises: string; answers: string; plan: string }, plan: PlanStep[]): Skeleton {
+export function lessonLayout(o: Pt, lesson: Lesson, labels: { exercises: string; answers: string; plan: string }, plan: PlanStep[] | null, withTitle = true): Skeleton {
   const out: Skeleton = []
   const W = 640
-  out.push(box(o.x, o.y, W + 80 + 760, 90, lesson.title, C.lilac, {}, 36))
-  let y = o.y + 120
-  if (lesson.description) {
+  if (withTitle) out.push(box(o.x, o.y, plan ? W + 80 + 760 : W, 90, lesson.title, C.lilac, {}, 36))
+  let y = withTitle ? o.y + 120 : o.y
+  if (withTitle && lesson.description) {
     out.push(text(o.x, y, wrap(lesson.description, 110), 20))
     y += 30 * Math.ceil(lesson.description.length / 110) + 20
   }
@@ -184,10 +184,9 @@ export function lessonLayout(o: Pt, lesson: Lesson, labels: { exercises: string;
   })
   out.push({ type: 'frame', id: uid('f'), x: o.x, y: exTop, width: W, height: cy - exTop + 10, name: labels.exercises, children: exIds } as El)
 
-  // plan on the right
+  // plan on the right (full lessons only)
   const px = o.x + W + 80
-  const planEls = lessonPlan({ x: px, y: exTop }, labels.plan, plan)
-  out.push(...planEls)
+  if (plan) out.push(...lessonPlan({ x: px, y: exTop }, labels.plan, plan))
 
   // answers frame under the plan
   const answers = lesson.exercises
@@ -197,7 +196,7 @@ export function lessonLayout(o: Pt, lesson: Lesson, labels: { exercises: string;
     })
     .filter(Boolean)
   if (answers.length) {
-    const planBottom = exTop + 60 + plan.reduce((s, p) => s + Math.max(110, 60 + wrap(p.text, 52).split('\n').length * 28) + 16, 0)
+    const planBottom = !plan ? exTop - 40 : exTop + 60 + plan.reduce((s, p) => s + Math.max(110, 60 + wrap(p.text, 52).split('\n').length * 28) + 16, 0)
     const ay = planBottom + 40
     const body = wrap(answers.join('\n'), 60)
     const t$ = text(px + 20, ay + 40, body, 20)
@@ -231,4 +230,179 @@ export function embed(o: Pt, link: string, w = 560, h = 315) {
 export function youtubeId(url: string): string | null {
   const m = url.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([\w-]{11})/)
   return m ? m[1] : null
+}
+
+/* ---------------- interactive pieces (embedded exercises and material) ---------------- */
+
+/** About how tall an exercise widget is, by type and size. */
+export function exerciseHeight(ex: Exercise): number {
+  switch (ex.type) {
+    case 'match':
+      return 240 + Math.max(ex.left.length, ex.right.length) * 70
+    case 'order':
+      return 300 + Math.ceil(ex.items.length / 4) * 50
+    case 'dialogue':
+      return 300
+    case 'choice':
+      return 250 + Math.ceil(ex.options.length / 3) * 50
+    default:
+      return 260
+  }
+}
+const taskLink = (lessonId: string, i: number) => `${location.origin}/embed/task?l=${lessonId}&i=${i}`
+const materialLink = (lessonId: string) => `${location.origin}/embed/material?l=${lessonId}`
+
+/** Every exercise as an interactive widget, in one column. Returns the pieces and the height used. */
+function interactiveColumn(o: Pt, lesson: Lesson, width = 560): { els: Skeleton; ids: string[]; height: number } {
+  const els: Skeleton = []
+  const ids: string[] = []
+  let y = o.y
+  lesson.exercises.forEach((ex, i) => {
+    const h = exerciseHeight(ex)
+    const e = embed({ x: o.x, y }, taskLink(lesson.id, i), width, h)
+    els.push(e as unknown as El)
+    ids.push(e.id)
+    y += h + 24
+  })
+  return { els, ids, height: y - o.y }
+}
+
+export type BoardMode = 'interactive' | 'cards'
+export type BoardLabels = { exercises: string; answers: string; plan: string; text: string; script: string; questions: string }
+
+/** A task set on the board (no plan): a title, then interactive widgets or cards. */
+export function tasksBoard(o: Pt, lesson: Lesson, mode: BoardMode, labels: BoardLabels): Skeleton {
+  if (mode === 'cards') return lessonLayout(o, lesson, labels, null)
+  const out: Skeleton = [box(o.x, o.y, 560, 80, lesson.title, C.lilac, {}, 30)]
+  const col = interactiveColumn({ x: o.x, y: o.y + 140 }, lesson)
+  out.push(...col.els)
+  out.push({ type: 'frame', id: uid('f'), x: o.x - 20, y: o.y + 110, width: 600, height: col.height + 30, name: labels.exercises, children: col.ids } as El)
+  return out
+}
+
+export type MaterialLike = { material_type: string; body: string; segments: { speaker?: string | null; text: string }[] }
+
+const scriptOf = (m: MaterialLike) => (m.segments.length ? m.segments.map((x) => (x.speaker ? `${x.speaker}: ${x.text}` : x.text)).join('\n') : m.body)
+
+/** A practice on the board: the text (as text you can mark up) or the audio player with its script, and the questions. */
+export function practiceBoard(o: Pt, lesson: Lesson, material: MaterialLike | null, mode: BoardMode, labels: BoardLabels): Skeleton {
+  const out: Skeleton = [box(o.x, o.y, 1260, 80, lesson.title, C.lilac, {}, 30)]
+  const top = o.y + 140
+  const scriptText = material ? scriptOf(material) : ''
+  if (lesson.skill === 'listening') {
+    const player = embed({ x: o.x, y: top }, materialLink(lesson.id), 600, 230)
+    out.push(player as unknown as El)
+    if (scriptText) {
+      const sy = top + 260
+      const body = wrap(scriptText, 62)
+      const t$ = text(o.x + 20, sy + 40, body, 18)
+      out.push(t$)
+      out.push({ type: 'frame', id: uid('f'), x: o.x, y: sy, width: 600, height: body.split('\n').length * 25 + 70, name: labels.script, children: [t$.id as string] } as El)
+    }
+  } else if (scriptText) {
+    const body = wrap(scriptText, 58)
+    const t$ = text(o.x + 24, top + 30, body, 20)
+    out.push(t$)
+    out.push({ type: 'frame', id: uid('f'), x: o.x, y: top, width: 600, height: body.split('\n').length * 28 + 60, name: labels.text, children: [t$.id as string] } as El)
+  }
+  const qx = o.x + 660
+  if (mode === 'cards') out.push(...lessonLayout({ x: qx, y: top - 40 }, lesson, labels, null, false))
+  else {
+    const col = interactiveColumn({ x: qx + 20, y: top + 20 }, lesson)
+    out.push(...col.els)
+    out.push({ type: 'frame', id: uid('f'), x: qx, y: top, width: 600, height: col.height + 30, name: labels.questions, children: col.ids } as El)
+  }
+  return out
+}
+
+/* ---------------- a full lesson: stages left to right ---------------- */
+
+export type StageLike = { kind: string; title: string; minutes: number; teacher: string; body: string; examples: string[]; task_id: string | null }
+const plain = (s: string) => s.replace(/\*\*/g, '')
+
+/** Each stage is a frame (name with minutes); inside: the teacher's note, the text, examples and the stage's tasks/practice. */
+export function studyBoard(
+  o: Pt,
+  lesson: { title: string; description: string; cefr: string; duration_min: number; stages: StageLike[] },
+  linked: Record<string, { lesson: Lesson; material: MaterialLike | null }>,
+  mode: BoardMode,
+  labels: BoardLabels & { stageNames: Record<string, string>; teacher: string },
+): Skeleton {
+  const COL = 680
+  const GAP = 90
+  const out: Skeleton = []
+  const width = lesson.stages.length * (COL + GAP) - GAP
+  out.push(box(o.x, o.y, Math.max(width, 900), 100, `${lesson.title} · ${lesson.cefr} · ${lesson.duration_min}′`, C.lilac, {}, 40))
+  if (lesson.description) out.push(text(o.x, o.y + 120, wrap(lesson.description, 140), 22))
+  const top = o.y + 220
+  const colors = [C.sun, C.lilac, C.mint, C.sky, C.rose, C.cream]
+  lesson.stages.forEach((st, i) => {
+    const x = o.x + i * (COL + GAP)
+    const ids: string[] = []
+    let y = top + 30
+    const head = box(x + 20, y, COL - 40, 70, st.title, colors[i % colors.length], {}, 26)
+    ids.push(head.id as string)
+    out.push(head)
+    y += 90
+    if (st.teacher) {
+      const note = wrap(`${labels.teacher}: ${st.teacher}`, 64)
+      const h = note.split('\n').length * 22 + 30
+      const n$ = box(x + 20, y, COL - 40, h, '', '#fff4cc', { strokeColor: 'transparent' } as Partial<El>)
+      const nt = text(x + 36, y + 14, note, 16)
+      ids.push(n$.id as string, nt.id as string)
+      out.push(n$, nt)
+      y += h + 20
+    }
+    if (st.body) {
+      const b = wrap(plain(st.body), 52)
+      const bt = text(x + 24, y, b, 22)
+      ids.push(bt.id as string)
+      out.push(bt)
+      y += b.split('\n').length * 31 + 16
+    }
+    st.examples.forEach((ex) => {
+      const e = box(x + 24, y, COL - 48, 52, ex, '#ffffff', { strokeColor: C.line } as Partial<El>, 20)
+      ids.push(e.id as string)
+      out.push(e)
+      y += 64
+    })
+    const link = st.task_id ? linked[st.task_id] : null
+    if (link) {
+      y += 10
+      if (link.lesson.kind === 'practice' && link.material) {
+        if (link.lesson.skill === 'listening') {
+          const p = embed({ x: x + 20, y }, materialLink(link.lesson.id), COL - 40, 230)
+          out.push(p as unknown as El)
+          ids.push(p.id)
+          y += 250
+        } else {
+          const b = wrap(scriptOf(link.material), 56)
+          const r = box(x + 20, y, COL - 40, b.split('\n').length * 26 + 40, '', '#ffffff', { strokeColor: C.line } as Partial<El>)
+          const tx = text(x + 40, y + 20, b, 18)
+          ids.push(r.id as string, tx.id as string)
+          out.push(r, tx)
+          y += b.split('\n').length * 26 + 60
+        }
+      }
+      if (mode === 'interactive') {
+        const col = interactiveColumn({ x: x + 20, y }, link.lesson, COL - 40)
+        out.push(...col.els)
+        ids.push(...col.ids)
+        y += col.height
+      } else {
+        link.lesson.exercises.forEach((ex, k) => {
+          const body = exerciseBody(ex)
+          const head$ = wrap(`${k + 1}. ${body.head}${body.chips.length ? '\n   ' + body.chips.join('  ·  ') : ''}`, 50)
+          const h = head$.split('\n').length * 28 + 30
+          const c = box(x + 20, y, COL - 40, h, '', C.cream, { strokeColor: C.line } as Partial<El>)
+          const ct = text(x + 36, y + 14, head$, 20)
+          ids.push(c.id as string, ct.id as string)
+          out.push(c, ct)
+          y += h + 14
+        })
+      }
+    }
+    out.push({ type: 'frame', id: uid('f'), x, y: top, width: COL, height: y - top + 30, name: `${i + 1}. ${labels.stageNames[st.kind] ?? st.kind} · ${st.minutes}′`, children: ids } as El)
+  })
+  return out
 }

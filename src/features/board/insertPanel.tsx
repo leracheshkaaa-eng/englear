@@ -3,21 +3,24 @@ import { useTranslation } from 'react-i18next'
 import { convertToExcalidrawElements, getCommonBounds, viewportCoordsToSceneCoords } from '@excalidraw/excalidraw'
 import type { BinaryFileData, ExcalidrawImperativeAPI } from '@excalidraw/excalidraw/types'
 import * as api from '../../lib/api'
-import type { LessonSummary } from '../../lib/api'
+import type { StudyLessonSummary } from '../../lib/api'
 import { useAuth } from '../../lib/auth'
 import { Button, inputCls } from '../../lib/ui'
 import { errorMessage } from '../../i18n/errors'
 import { LABELS, NOTE_COLORS, STICKERS, SYMBOLS, svgDataURL } from './stickers'
-import { defaultPlan, embed, labelBlock, lessonLayout, lessonPlan, stickyNote, symbol, table, tensesTable, wordCards, youtubeId, type Pt, type Skeleton } from './elements'
+import { embed, labelBlock, lessonPlan, stickyNote, symbol, table, tensesTable, wordCards, youtubeId, type BoardMode, type Pt, type Skeleton } from './elements'
+import { lessonSkeleton, studySkeleton } from './content'
 import { audioEmbedLink } from './audioEmbed'
 
 /* ============================================================
    "Insert" panel of the whiteboard (like Miro's side panel): templates, tables,
-   shapes and stickers, symbols, YouTube, audio (file or microphone), a whole lesson.
+   shapes and stickers, symbols, YouTube, audio (file or microphone), and our content:
+   full lessons (with their plan), tasks and practice — interactive widgets or cards.
    ============================================================ */
 
-type Section = 'templates' | 'table' | 'shapes' | 'symbols' | 'media' | 'lesson'
-const SECTIONS: Section[] = ['templates', 'table', 'shapes', 'symbols', 'media', 'lesson']
+type Section = 'study' | 'tasks' | 'practice' | 'templates' | 'table' | 'shapes' | 'symbols' | 'media'
+const SECTIONS: Section[] = ['study', 'tasks', 'practice', 'templates', 'table', 'shapes', 'symbols', 'media']
+type Item = { id: string; title: string; cefr: string | null }
 
 const newFileId = () => (crypto.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`).replace(/[^a-z0-9-]/gi, '')
 
@@ -25,13 +28,14 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
   const { t } = useTranslation()
   const { userId, role } = useAuth()
   const isTeacher = role === 'teacher' || role === 'admin'
-  const [open, setOpen] = useState<Section>('templates')
+  const [open, setOpen] = useState<Section>('study')
   const [rows, setRows] = useState(4)
   const [cols, setCols] = useState(3)
   const [header, setHeader] = useState(true)
   const [yt, setYt] = useState('')
-  const [lessons, setLessons] = useState<LessonSummary[]>([])
-  const [lessonId, setLessonId] = useState('')
+  const [lists, setLists] = useState<Partial<Record<'study' | 'tasks' | 'practice', Item[]>>>({})
+  const [picked, setPicked] = useState<Partial<Record<string, string>>>({})
+  const [mode, setMode] = useState<BoardMode>('interactive')
   const [busy, setBusy] = useState('')
   const [err, setErr] = useState('')
   const [recording, setRecording] = useState(false)
@@ -39,9 +43,23 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
   const chunks = useRef<Blob[]>([])
   const fileInput = useRef<HTMLInputElement>(null)
 
+  // lists of lessons / tasks / practice: the library plus my own
   useEffect(() => {
-    if (open === 'lesson' && userId && !lessons.length) api.teacherLessons(userId, role === 'admin').then(setLessons).catch(() => {})
-  }, [open, userId, role, lessons.length])
+    if ((open !== 'study' && open !== 'tasks' && open !== 'practice') || lists[open]) return
+    ;(async () => {
+      if (open === 'study') {
+        const s: StudyLessonSummary[] = await api.listStudyLessons().catch(() => [])
+        return setLists((l) => ({ ...l, study: s.map((x) => ({ id: x.id, title: x.title, cefr: x.cefr })) }))
+      }
+      const kind = open === 'tasks' ? 'lesson' : 'practice'
+      const lib = await api.lessonCatalog({ scope: 'library', kind }, 0, 300).then((r) => r.lessons).catch(() => [])
+      const mine = userId && isTeacher ? (await api.teacherLessons(userId, role === 'admin').catch(() => [])).filter((x) => (x.kind ?? 'lesson') === kind) : []
+      const seen = new Set<string>()
+      const items = [...mine, ...lib].filter((x) => !seen.has(x.id) && seen.add(x.id)).map((x) => ({ id: x.id, title: x.title, cefr: (x as { cefr?: string | null }).cefr ?? null }))
+      setLists((l) => ({ ...l, [open]: items }))
+    })()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, userId, role])
 
   /** top-left point near the middle of what is visible now */
   const spot = (dx = 260, dy = 160): Pt => {
@@ -119,15 +137,15 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
     }
   }
 
-  async function addLesson() {
-    if (!lessonId) return
-    setBusy('lesson')
+  async function addContent(section: 'study' | 'tasks' | 'practice') {
+    const id = picked[section]
+    if (!id) return
+    setBusy(section)
     setErr('')
     try {
-      const lesson = await api.getLesson(lessonId, { withSolutions: true })
-      if (!lesson) throw new Error('not found')
       const tt = t as unknown as (k: string, o?: Record<string, unknown>) => string
-      await place(() => lessonLayout(free(), lesson, { exercises: t('boards.insert.exercisesFrame'), answers: t('boards.insert.answersFrame'), plan: t('boards.tpl.planTitle') }, defaultPlan(lesson, tt)))
+      const sk = section === 'study' ? await studySkeleton(id, free, mode, tt, isTeacher) : await lessonSkeleton(id, free, mode, tt, isTeacher)
+      await place(sk)
     } catch (e) {
       setErr(errorMessage(e))
     } finally {
@@ -147,7 +165,7 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
         </button>
       </div>
       <div className="flex-1 space-y-2 overflow-y-auto p-3">
-        {SECTIONS.filter((s) => s !== 'lesson' || isTeacher).map((s) => (
+        {SECTIONS.map((s) => (
           <div key={s} className="rounded-xl border border-line bg-paper">
             <button onClick={() => setOpen(s)} className={`flex w-full items-center justify-between px-3 py-2 text-left text-sm font-semibold ${open === s ? 'text-plum-deep' : ''}`}>
               {t(`boards.insert.sections.${s}`)}
@@ -274,20 +292,28 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
                   </>
                 )}
 
-                {s === 'lesson' && (
+                {(s === 'study' || s === 'tasks' || s === 'practice') && (
                   <>
-                    <select value={lessonId} onChange={(e) => setLessonId(e.target.value)} className={`${inputCls} w-full`}>
-                      <option value="">{t('boards.insert.pickLesson')}</option>
-                      {lessons.map((l) => (
+                    <select value={picked[s] ?? ''} onChange={(e) => setPicked((p) => ({ ...p, [s]: e.target.value }))} className={`${inputCls} w-full`}>
+                      <option value="">{lists[s] ? t(`boards.insert.pick.${s}`) : t('common.loading')}</option>
+                      {(lists[s] ?? []).map((l) => (
                         <option key={l.id} value={l.id}>
+                          {l.cefr ? `${l.cefr} · ` : ''}
                           {l.title}
                         </option>
                       ))}
                     </select>
-                    <Button variant="soft" onClick={addLesson} disabled={!lessonId || busy === 'lesson'}>
-                      {busy === 'lesson' ? '…' : t('boards.insert.addLesson')}
+                    <div className="flex rounded-full border border-line p-0.5 text-xs font-semibold">
+                      {(['interactive', 'cards'] as const).map((m) => (
+                        <button key={m} onClick={() => setMode(m)} className={`flex-1 rounded-full px-2 py-1 ${mode === m ? 'bg-plum text-paper' : 'text-mute'}`}>
+                          {t(`boards.insert.modes.${m}`)}
+                        </button>
+                      ))}
+                    </div>
+                    <Button variant="soft" onClick={() => addContent(s)} disabled={!picked[s] || busy === s}>
+                      {busy === s ? '…' : t('boards.insert.put')}
                     </Button>
-                    <p className="text-xs text-mute">{t('boards.insert.lessonHint')}</p>
+                    <p className="text-xs text-mute">{t(`boards.insert.hint.${s}`)}</p>
                   </>
                 )}
               </div>

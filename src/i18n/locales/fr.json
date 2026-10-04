@@ -27,7 +27,8 @@
     "practice": "Pratique",
     "pricing": "Tarifs",
     "ai": "Tuteur IA",
-    "boards": "Tableaux"
+    "boards": "Tableaux",
+    "tasks": "Exercices"
   },
   "home": {
     "tagline": "l'anglais pour toute la famille",
@@ -409,13 +410,13 @@
   "teacher": {
     "title": "Mode enseignant",
     "tabs": {
-      "lessons": "Mes leçons",
+      "lessons": "Mes exercices",
       "students": "Élèves et classes",
       "progress": "Progrès",
       "cards": "Cartes"
     },
     "importResult": "Importées : {{imported}}, ignorées (doublons) : {{skipped}}. La copie locale est conservée en sauvegarde.",
-    "newLesson": "+ Nouvelle leçon",
+    "newLesson": "+ Nouveaux exercices",
     "importLocal": "Importer les leçons locales ({{count}})",
     "published": "publiée",
     "draft": "brouillon",
@@ -610,7 +611,7 @@
     "noResults": "Aucune leçon ne correspond à ces filtres.",
     "count": "Leçons : {{count}}",
     "practiceIntro": "Lis ou écoute d’abord, puis réponds aux questions. Choisis ton niveau et une compétence.",
-    "lessonsIntro": "Des leçons sur un thème : grammaire, vocabulaire ou les deux. Choisis ton niveau et ce que tu veux apprendre.",
+    "lessonsIntro": "De courtes séries d’exercices sur un thème : grammaire, vocabulaire ou les deux. Choisis un niveau et ce que tu veux travailler.",
     "chooseLevel": "Niveau",
     "chooseSkill": "Compétence",
     "chooseFocus": "Quoi apprendre",
@@ -873,8 +874,8 @@
     }
   },
   "aiLesson": {
-    "open": "Leçon avec l’IA",
-    "title": "Créer une leçon avec l’IA",
+    "open": "Exercices avec l’IA",
+    "title": "Créer des exercices avec l’IA",
     "hint": "L’IA écrit les exercices, vérifie que chacun a une seule bonne réponse et ouvre le brouillon dans l’éditeur. Relis-le et enregistre.",
     "focus": "Ce qu’on travaille",
     "anyGrammar": "N’importe quelle grammaire de ce niveau",
@@ -971,12 +972,14 @@
     "insert": {
       "title": "Insérer",
       "sections": {
+        "study": "Leçons",
+        "tasks": "Exercices",
+        "practice": "Pratique",
         "templates": "Modèles",
         "table": "Tableau",
         "shapes": "Formes et autocollants",
         "symbols": "Symboles et emoji",
-        "media": "Vidéo et audio",
-        "lesson": "Une leçon"
+        "media": "Vidéo et audio"
       },
       "badLink": "Ce n’est pas un lien YouTube.",
       "recording": "Enregistrement",
@@ -997,7 +1000,25 @@
       "addLesson": "Mettre la leçon au tableau",
       "lessonHint": "Les exercices deviennent des cartes, avec un plan de cours et un cadre « Réponses » à part.",
       "exercisesFrame": "Exercices",
-      "answersFrame": "Réponses"
+      "answersFrame": "Réponses",
+      "textFrame": "Texte",
+      "scriptFrame": "Transcription",
+      "questionsFrame": "Questions",
+      "pick": {
+        "study": "Choisis une leçon…",
+        "tasks": "Choisis des exercices…",
+        "practice": "Choisis une pratique…"
+      },
+      "modes": {
+        "interactive": "Interactif",
+        "cards": "Cartes"
+      },
+      "put": "Mettre au tableau",
+      "hint": {
+        "study": "Toute la leçon étape par étape, avec les notes pour l’enseignant, les exercices et la pratique.",
+        "tasks": "Interactif : les élèves répondent et vérifient directement au tableau. Cartes : pour annoter et dessiner.",
+        "practice": "Le texte (ou l’audio avec la transcription) et les questions."
+      }
     },
     "plan": {
       "warmup": "Petit échange pour s’échauffer : « {{topic}} ». Pose 2–3 questions faciles.",
@@ -1005,6 +1026,30 @@
       "practice": "Faites les exercices ensemble : {{n}} tâches.",
       "production": "Les élèves utilisent le nouveau : 3 phrases sur eux ou un court dialogue à deux.",
       "homework": "Revoir la leçon à la maison et apprendre les nouveaux mots."
-    }
+    },
+    "embedMissing": "Cet exercice n’est pas disponible."
+  },
+  "course": {
+    "intro": "De vraies leçons de 40 à 60 minutes : échauffement, explication avec exemples, exercices, pratique, oral et devoirs — suis simplement les étapes.",
+    "allLevels": "Tous les niveaux",
+    "none": "Pas encore de leçons pour ce niveau — elles arrivent !",
+    "minutes": "{{n}} min",
+    "notFound": "Cette leçon n’est pas disponible.",
+    "hideNotes": "Masquer les notes pour l’enseignant",
+    "showNotes": "Afficher les notes pour l’enseignant",
+    "onBoard": "Faire cours au tableau",
+    "teacherNotes": "Pour l’enseignant",
+    "stages": {
+      "warmup": "Échauffement",
+      "presentation": "Explication",
+      "tasks": "Exercices",
+      "practice": "Pratique",
+      "production": "Oral",
+      "homework": "Devoirs"
+    },
+    "startTasks": "Commencer les exercices",
+    "startPractice": "Commencer la pratique",
+    "next": "Suivant",
+    "finish": "Terminer la leçon"
   }
 }

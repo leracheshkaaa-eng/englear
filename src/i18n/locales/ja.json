@@ -27,7 +27,8 @@
     "practice": "練習",
     "pricing": "料金",
     "ai": "AI 先生",
-    "boards": "ボード"
+    "boards": "ボード",
+    "tasks": "練習問題"
   },
   "home": {
     "tagline": "家族みんなで英語を",
@@ -400,13 +401,13 @@
   "teacher": {
     "title": "先生モード",
     "tabs": {
-      "lessons": "マイレッスン",
+      "lessons": "自分の練習問題",
       "students": "生徒とクラス",
       "progress": "進捗",
       "cards": "カード"
     },
     "importResult": "インポート：{{imported}}、スキップ（重複）：{{skipped}}。ローカルのコピーはバックアップとして残してあります。",
-    "newLesson": "+ 新しいレッスン",
+    "newLesson": "+ 新しい練習問題",
     "importLocal": "ローカルのレッスンをインポート（{{count}}）",
     "published": "公開済み",
     "draft": "下書き",
@@ -600,7 +601,7 @@
     "noResults": "この条件に合うレッスンはありません。",
     "count": "レッスン数：{{count}}",
     "practiceIntro": "まず読むか聞いて、それから質問に答えましょう。レベルとスキルを選んでください。",
-    "lessonsIntro": "1 つのテーマのレッスン：文法、語彙、またはその両方。レベルと学びたい内容を選んでください。",
+    "lessonsIntro": "一つのテーマの短い練習セット：文法、語彙、またはその両方。レベルと練習内容を選んでください。",
     "chooseLevel": "レベル",
     "chooseSkill": "スキル",
     "chooseFocus": "学ぶ内容",
@@ -863,8 +864,8 @@
     }
   },
   "aiLesson": {
-    "open": "AI でレッスン",
-    "title": "AI でレッスンを作成",
+    "open": "AI で練習問題",
+    "title": "AI で練習問題を作成",
     "hint": "AI が問題を作り、どの問題も正解が一つだけかを確認してから、エディターで下書きを開きます。確認して保存してください。",
     "focus": "練習する内容",
     "anyGrammar": "このレベルの任意の文法",
@@ -961,12 +962,14 @@
     "insert": {
       "title": "挿入",
       "sections": {
+        "study": "レッスン",
+        "tasks": "練習問題",
+        "practice": "実践",
         "templates": "テンプレート",
         "table": "表",
         "shapes": "図形とステッカー",
         "symbols": "記号と絵文字",
-        "media": "動画と音声",
-        "lesson": "レッスン"
+        "media": "動画と音声"
       },
       "badLink": "YouTube のリンクではありません。",
       "recording": "録音",
@@ -987,7 +990,25 @@
       "addLesson": "レッスンをボードに配置",
       "lessonHint": "問題がカードになり、横に授業計画と「答え」の枠が別に並びます。",
       "exercisesFrame": "問題",
-      "answersFrame": "答え"
+      "answersFrame": "答え",
+      "textFrame": "本文",
+      "scriptFrame": "スクリプト",
+      "questionsFrame": "問題",
+      "pick": {
+        "study": "レッスンを選ぶ…",
+        "tasks": "練習問題を選ぶ…",
+        "practice": "実践を選ぶ…"
+      },
+      "modes": {
+        "interactive": "インタラクティブ",
+        "cards": "カード"
+      },
+      "put": "ボードに配置",
+      "hint": {
+        "study": "レッスン全体を段階ごとに：先生用メモ、練習問題、実践つき。",
+        "tasks": "インタラクティブ：生徒がボード上で答えて確認できます。カード：書き込みや描画用。",
+        "practice": "本文（または音声とスクリプト）と問題。"
+      }
     },
     "plan": {
       "warmup": "短いウォームアップ会話：「{{topic}}」。簡単な質問を 2〜3 個。",
@@ -995,6 +1016,30 @@
       "practice": "一緒に問題を解く：{{n}} 問。",
       "production": "生徒が新しい表現を使う：自分について 3 文、またはペアで短い会話。",
       "homework": "家でレッスンを復習し、新しい単語を覚える。"
-    }
+    },
+    "embedMissing": "この問題は利用できません。"
+  },
+  "course": {
+    "intro": "40〜60 分の本格的なレッスン：ウォームアップ、例文付きの説明、練習問題、実践、スピーキング、宿題——ステップに沿って進めるだけ。",
+    "allLevels": "すべてのレベル",
+    "none": "このレベルのレッスンはまだありません——もうすぐ登場します！",
+    "minutes": "{{n}} 分",
+    "notFound": "このレッスンは利用できません。",
+    "hideNotes": "先生用メモを隠す",
+    "showNotes": "先生用メモを表示",
+    "onBoard": "ボードで授業する",
+    "teacherNotes": "先生へ",
+    "stages": {
+      "warmup": "ウォームアップ",
+      "presentation": "説明",
+      "tasks": "練習問題",
+      "practice": "実践",
+      "production": "スピーキング",
+      "homework": "宿題"
+    },
+    "startTasks": "練習問題を始める",
+    "startPractice": "実践を始める",
+    "next": "次へ",
+    "finish": "レッスンを終える"
   }
 }

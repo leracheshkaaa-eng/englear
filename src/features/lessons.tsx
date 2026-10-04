@@ -1055,7 +1055,7 @@ export function LessonsCatalog({
 
   return (
     <section className="mx-auto max-w-4xl px-6 pb-24">
-      <h2 className="font-display text-4xl font-semibold">{practice ? t('nav.practice') : t('nav.lessons')}</h2>
+      <h2 className="font-display text-4xl font-semibold">{practice ? t('nav.practice') : t('nav.tasks')}</h2>
       <p className="mt-2 mb-6 text-mute">{practice ? t('library.practiceIntro') : t('library.lessonsIntro')}</p>
 
       {hasTeacherLessons && (

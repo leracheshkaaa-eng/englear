@@ -9,6 +9,8 @@ import { Avatar } from './lib/avatars'
 import { Shop, WalletChip } from './features/shop'
 import { useTranslation } from 'react-i18next'
 import { Homework, JoinPage } from './features/classes'
+import { StudyCatalog, StudyPlayer } from './features/study'
+import { setPendingInsert } from './features/board/content'
 import { Footer, Pricing, Privacy, Refund, Terms, pageFromPath, type PublicPage } from './features/legal'
 
 // sections most visitors never open load on demand
@@ -20,7 +22,7 @@ const AiTutor = lazy(() => import('./features/ai').then((m) => ({ default: m.AiT
 const Boards = lazy(() => import('./features/boards').then((m) => ({ default: m.Boards })))
 const AdminDashboard = lazy(() => import('./features/admin').then((m) => ({ default: m.AdminDashboard })))
 
-type View = 'home' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | 'ai' | 'boards' | PublicPage
+type View = 'home' | 'study' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | 'ai' | 'boards' | PublicPage
 
 function Shell() {
   const { loading, userId, role, profile, signOut, settings, recovering } = useAuth()
@@ -36,6 +38,7 @@ function Shell() {
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
   const [joinCode, setJoinCode] = useState<string | null>(null) // /join/<CODE> from a teacher's invite
   const [boardId, setBoardId] = useState<string | null>(null) // open whiteboard
+  const [studyId, setStudyId] = useState<string | null>(null) // open full lesson
   const [lessonBoardId, setLessonBoardId] = useState<string | null>(null) // board attached to the open lesson
 
   const reload = useCallback(async () => {
@@ -110,6 +113,7 @@ function Shell() {
     setView(v)
     setFlashTarget(null)
     setBoardId(null)
+    setStudyId(null)
     const path = v === 'boards' ? '/boards' : pageFromPath('/' + v) ? '/' + v : '/'
     if (location.pathname !== path) history.pushState({}, '', path)
     window.scrollTo(0, 0)
@@ -175,7 +179,8 @@ function Shell() {
   const isTeacher = role === 'teacher' || role === 'admin'
   const nav: [View, string][] = [
     ['home', t('nav.home')],
-    ['lessons', t('nav.lessons')],
+    ['study', t('nav.lessons')],
+    ['lessons', t('nav.tasks')],
     ['practice', t('nav.practice')],
   ]
   if (!userId) nav.push(['pricing', t('nav.pricing')])
@@ -222,7 +227,23 @@ function Shell() {
 
       <main>
         <Suspense fallback={<p className="py-24 text-center text-mute">{t('common.loading')}</p>}>
-        {view === 'home' && <Home role={role} onStart={() => go('lessons')} onLogin={() => go('login')} count={lessonCount} />}
+        {view === 'study' &&
+          (studyId ? (
+            <StudyPlayer
+              lessonId={studyId}
+              onBack={() => setStudyId(null)}
+              onOpenOnBoard={async (l) => {
+                if (!userId) return
+                const b = await api.createBoard(userId, { title: l.title, kind: 'notes' }).catch(() => null)
+                if (!b) return
+                setPendingInsert(b.id, l.id)
+                openBoard(b.id)
+              }}
+            />
+          ) : (
+            <StudyCatalog onOpen={(id) => { setStudyId(id); window.scrollTo(0, 0) }} />
+          ))}
+        {view === 'home' && <Home role={role} onStart={() => go('study')} onLogin={() => go('login')} count={lessonCount} />}
         {view === 'lessons' && userId && (
           <Homework
             onOpenLesson={async (id) => {
@@ -329,6 +350,8 @@ function Home({ role, onStart, onLogin, count }: { role: string; onStart: () => 
 }
 
 const AudioEmbed = lazy(() => import('./features/board/audioEmbed'))
+const TaskEmbed = lazy(() => import('./features/board/taskEmbed').then((m) => ({ default: m.TaskEmbed })))
+const MaterialEmbed = lazy(() => import('./features/board/taskEmbed').then((m) => ({ default: m.MaterialEmbed })))
 
 export default function App() {
   // the audio player embedded in whiteboards: a bare page without the app around it
@@ -337,6 +360,13 @@ export default function App() {
       <Suspense fallback={null}>
         <AudioEmbed />
       </Suspense>
+    )
+  // interactive exercises and practice material embedded in whiteboards
+  if (location.pathname.startsWith('/embed/task') || location.pathname.startsWith('/embed/material'))
+    return (
+      <AuthProvider>
+        <Suspense fallback={null}>{location.pathname.startsWith('/embed/task') ? <TaskEmbed /> : <MaterialEmbed />}</Suspense>
+      </AuthProvider>
     )
   return (
     <AuthProvider>

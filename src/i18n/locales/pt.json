@@ -27,7 +27,8 @@
     "practice": "Prática",
     "pricing": "Preços",
     "ai": "Tutor IA",
-    "boards": "Quadros"
+    "boards": "Quadros",
+    "tasks": "Exercícios"
   },
   "home": {
     "tagline": "inglês para toda a família",
@@ -409,13 +410,13 @@
   "teacher": {
     "title": "Modo professor",
     "tabs": {
-      "lessons": "Minhas lições",
+      "lessons": "Meus exercícios",
       "students": "Alunos e turmas",
       "progress": "Progresso",
       "cards": "Cartões"
     },
     "importResult": "Importadas: {{imported}}, ignoradas (duplicadas): {{skipped}}. A cópia local fica guardada como backup.",
-    "newLesson": "+ Nova lição",
+    "newLesson": "+ Novos exercícios",
     "importLocal": "Importar lições locais ({{count}})",
     "published": "publicada",
     "draft": "rascunho",
@@ -610,7 +611,7 @@
     "noResults": "Nenhuma aula corresponde a esses filtros.",
     "count": "Aulas: {{count}}",
     "practiceIntro": "Primeiro leia ou ouça, depois responda às perguntas. Escolha seu nível e uma habilidade.",
-    "lessonsIntro": "Aulas sobre um tema: gramática, vocabulário ou ambos. Escolha seu nível e o que quer aprender.",
+    "lessonsIntro": "Conjuntos curtos de exercícios sobre um tema: gramática, vocabulário ou os dois. Escolha um nível e o que praticar.",
     "chooseLevel": "Nível",
     "chooseSkill": "Habilidade",
     "chooseFocus": "O que aprender",
@@ -873,8 +874,8 @@
     }
   },
   "aiLesson": {
-    "open": "Aula com IA",
-    "title": "Criar uma aula com IA",
+    "open": "Exercícios com IA",
+    "title": "Criar exercícios com IA",
     "hint": "A IA escreve os exercícios, verifica se cada um tem só uma resposta certa e abre o rascunho no editor. Revise e salve.",
     "focus": "O que praticar",
     "anyGrammar": "Qualquer gramática deste nível",
@@ -971,12 +972,14 @@
     "insert": {
       "title": "Inserir",
       "sections": {
+        "study": "Aulas",
+        "tasks": "Exercícios",
+        "practice": "Prática",
         "templates": "Modelos",
         "table": "Tabela",
         "shapes": "Formas e adesivos",
         "symbols": "Símbolos e emojis",
-        "media": "Vídeo e áudio",
-        "lesson": "Uma aula"
+        "media": "Vídeo e áudio"
       },
       "badLink": "Isto não é um link do YouTube.",
       "recording": "Gravação",
@@ -997,7 +1000,25 @@
       "addLesson": "Colocar a aula no quadro",
       "lessonHint": "Os exercícios viram cartões, com um plano de aula e um quadro «Respostas» separado.",
       "exercisesFrame": "Exercícios",
-      "answersFrame": "Respostas"
+      "answersFrame": "Respostas",
+      "textFrame": "Texto",
+      "scriptFrame": "Transcrição",
+      "questionsFrame": "Perguntas",
+      "pick": {
+        "study": "Escolha uma aula…",
+        "tasks": "Escolha exercícios…",
+        "practice": "Escolha uma prática…"
+      },
+      "modes": {
+        "interactive": "Interativo",
+        "cards": "Cartões"
+      },
+      "put": "Colocar no quadro",
+      "hint": {
+        "study": "A aula inteira por etapas, com notas para o professor, exercícios e prática.",
+        "tasks": "Interativo: os alunos respondem e conferem no quadro. Cartões: para marcar e desenhar por cima.",
+        "practice": "O texto (ou o áudio com a transcrição) e as perguntas."
+      }
     },
     "plan": {
       "warmup": "Conversa rápida de aquecimento: «{{topic}}». Faça 2–3 perguntas fáceis.",
@@ -1005,6 +1026,30 @@
       "practice": "Fazemos os exercícios juntos: {{n}} tarefas.",
       "production": "Os alunos usam o novo: 3 frases sobre si ou um diálogo curto em duplas.",
       "homework": "Revisar a aula em casa e aprender as palavras novas."
-    }
+    },
+    "embedMissing": "Este exercício não está disponível."
+  },
+  "course": {
+    "intro": "Aulas completas de 40–60 minutos: aquecimento, explicação com exemplos, exercícios, prática, conversação e lição de casa — é só seguir os passos.",
+    "allLevels": "Todos os níveis",
+    "none": "Ainda não há aulas deste nível — logo chegam!",
+    "minutes": "{{n}} min",
+    "notFound": "Esta aula não está disponível.",
+    "hideNotes": "Ocultar notas para o professor",
+    "showNotes": "Mostrar notas para o professor",
+    "onBoard": "Dar a aula no quadro",
+    "teacherNotes": "Para o professor",
+    "stages": {
+      "warmup": "Aquecimento",
+      "presentation": "Explicação",
+      "tasks": "Exercícios",
+      "practice": "Prática",
+      "production": "Conversação",
+      "homework": "Lição de casa"
+    },
+    "startTasks": "Começar os exercícios",
+    "startPractice": "Começar a prática",
+    "next": "Próximo",
+    "finish": "Terminar a aula"
   }
 }

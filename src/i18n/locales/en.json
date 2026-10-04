@@ -27,7 +27,8 @@
     "practice": "Practice",
     "pricing": "Pricing",
     "ai": "AI tutor",
-    "boards": "Boards"
+    "boards": "Boards",
+    "tasks": "Tasks"
   },
   "home": {
     "tagline": "English for the whole family",
@@ -409,13 +410,13 @@
   "teacher": {
     "title": "Teacher Mode",
     "tabs": {
-      "lessons": "My lessons",
+      "lessons": "My tasks",
       "students": "Students & classes",
       "progress": "Progress",
       "cards": "Cards"
     },
     "importResult": "Imported: {{imported}}, skipped (duplicates): {{skipped}}. The local copy is kept as a backup.",
-    "newLesson": "+ New lesson",
+    "newLesson": "+ New tasks",
     "importLocal": "Import local lessons ({{count}})",
     "published": "published",
     "draft": "draft",
@@ -610,7 +611,7 @@
     "noResults": "No lessons match these filters.",
     "count": "Lessons: {{count}}",
     "practiceIntro": "Read or listen first, then answer questions about it. Choose your level and a skill.",
-    "lessonsIntro": "Lessons on one topic: grammar, vocabulary or both. Choose your level and what you want to learn.",
+    "lessonsIntro": "Short sets of exercises on one topic: grammar, vocabulary or both. Choose a level and what to practise.",
     "chooseLevel": "Level",
     "chooseSkill": "Skill",
     "chooseFocus": "What to learn",
@@ -873,8 +874,8 @@
     }
   },
   "aiLesson": {
-    "open": "Lesson with AI",
-    "title": "Create a lesson with AI",
+    "open": "Tasks with AI",
+    "title": "Create tasks with AI",
     "hint": "AI writes the exercises, checks each one has exactly one correct answer, and opens the draft in the editor. Review it and save.",
     "focus": "What to practise",
     "anyGrammar": "Any grammar of this level",
@@ -971,12 +972,14 @@
     "insert": {
       "title": "Insert",
       "sections": {
+        "study": "Lessons",
+        "tasks": "Tasks",
+        "practice": "Practice",
         "templates": "Templates",
         "table": "Table",
         "shapes": "Shapes and stickers",
         "symbols": "Symbols and emoji",
-        "media": "Video and audio",
-        "lesson": "A lesson"
+        "media": "Video and audio"
       },
       "badLink": "This is not a YouTube link.",
       "recording": "Recording",
@@ -997,7 +1000,25 @@
       "addLesson": "Put the lesson on the board",
       "lessonHint": "Exercises become cards, with a lesson plan and a separate “Answers” frame.",
       "exercisesFrame": "Exercises",
-      "answersFrame": "Answers"
+      "answersFrame": "Answers",
+      "textFrame": "Text",
+      "scriptFrame": "Script",
+      "questionsFrame": "Questions",
+      "pick": {
+        "study": "Choose a lesson…",
+        "tasks": "Choose tasks…",
+        "practice": "Choose a practice…"
+      },
+      "modes": {
+        "interactive": "Interactive",
+        "cards": "Cards"
+      },
+      "put": "Put on the board",
+      "hint": {
+        "study": "The whole lesson stage by stage, with notes for the teacher and its tasks and practice.",
+        "tasks": "Interactive: pupils answer and check right on the board. Cards: to mark up and draw on.",
+        "practice": "The text (or the audio with its script) and the questions."
+      }
     },
     "plan": {
       "warmup": "Short chat to warm up: “{{topic}}”. Ask 2–3 easy questions.",
@@ -1005,6 +1026,30 @@
       "practice": "Do the exercises together: {{n}} tasks.",
       "production": "Students use the new language: 3 sentences about themselves, or a short dialogue in pairs.",
       "homework": "Repeat the lesson at home and learn the new words."
-    }
+    },
+    "embedMissing": "This exercise is not available."
+  },
+  "course": {
+    "intro": "Full lessons of 40–60 minutes: warm-up, explanation with examples, tasks, practice, speaking and homework — just follow the steps.",
+    "allLevels": "All levels",
+    "none": "No lessons for this level yet — they are on the way!",
+    "minutes": "{{n}} min",
+    "notFound": "This lesson is not available.",
+    "hideNotes": "Hide teacher notes",
+    "showNotes": "Show teacher notes",
+    "onBoard": "Teach on a board",
+    "teacherNotes": "For the teacher",
+    "stages": {
+      "warmup": "Warm-up",
+      "presentation": "Explanation",
+      "tasks": "Tasks",
+      "practice": "Practice",
+      "production": "Speaking",
+      "homework": "Homework"
+    },
+    "startTasks": "Start the tasks",
+    "startPractice": "Start the practice",
+    "next": "Next",
+    "finish": "Finish the lesson"
   }
 }

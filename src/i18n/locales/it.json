@@ -27,7 +27,8 @@
     "practice": "Pratica",
     "pricing": "Prezzi",
     "ai": "Tutor IA",
-    "boards": "Lavagne"
+    "boards": "Lavagne",
+    "tasks": "Esercizi"
   },
   "home": {
     "tagline": "l'inglese per tutta la famiglia",
@@ -409,13 +410,13 @@
   "teacher": {
     "title": "Modalità insegnante",
     "tabs": {
-      "lessons": "Le mie lezioni",
+      "lessons": "I miei esercizi",
       "students": "Studenti e classi",
       "progress": "Progressi",
       "cards": "Carte"
     },
     "importResult": "Importate: {{imported}}, saltate (duplicati): {{skipped}}. La copia locale resta come backup.",
-    "newLesson": "+ Nuova lezione",
+    "newLesson": "+ Nuovi esercizi",
     "importLocal": "Importa le lezioni locali ({{count}})",
     "published": "pubblicata",
     "draft": "bozza",
@@ -610,7 +611,7 @@
     "noResults": "Nessuna lezione corrisponde a questi filtri.",
     "count": "Lezioni: {{count}}",
     "practiceIntro": "Prima leggi o ascolta, poi rispondi alle domande. Scegli il tuo livello e un’abilità.",
-    "lessonsIntro": "Lezioni su un argomento: grammatica, lessico o entrambi. Scegli il tuo livello e cosa vuoi imparare.",
+    "lessonsIntro": "Brevi serie di esercizi su un tema: grammatica, lessico o entrambi. Scegli un livello e cosa allenare.",
     "chooseLevel": "Livello",
     "chooseSkill": "Abilità",
     "chooseFocus": "Cosa imparare",
@@ -873,8 +874,8 @@
     }
   },
   "aiLesson": {
-    "open": "Lezione con IA",
-    "title": "Crea una lezione con l’IA",
+    "open": "Esercizi con IA",
+    "title": "Crea esercizi con l’IA",
     "hint": "L’IA scrive gli esercizi, controlla che ognuno abbia una sola risposta giusta e apre la bozza nell’editor. Controllala e salva.",
     "focus": "Cosa allenare",
     "anyGrammar": "Qualsiasi grammatica di questo livello",
@@ -971,12 +972,14 @@
     "insert": {
       "title": "Inserisci",
       "sections": {
+        "study": "Lezioni",
+        "tasks": "Esercizi",
+        "practice": "Pratica",
         "templates": "Modelli",
         "table": "Tabella",
         "shapes": "Forme e adesivi",
         "symbols": "Simboli ed emoji",
-        "media": "Video e audio",
-        "lesson": "Una lezione"
+        "media": "Video e audio"
       },
       "badLink": "Non è un link di YouTube.",
       "recording": "Registrazione",
@@ -997,7 +1000,25 @@
       "addLesson": "Metti la lezione sulla lavagna",
       "lessonHint": "Gli esercizi diventano schede, con un piano della lezione e una cornice «Soluzioni» a parte.",
       "exercisesFrame": "Esercizi",
-      "answersFrame": "Soluzioni"
+      "answersFrame": "Soluzioni",
+      "textFrame": "Testo",
+      "scriptFrame": "Trascrizione",
+      "questionsFrame": "Domande",
+      "pick": {
+        "study": "Scegli una lezione…",
+        "tasks": "Scegli esercizi…",
+        "practice": "Scegli una pratica…"
+      },
+      "modes": {
+        "interactive": "Interattivo",
+        "cards": "Schede"
+      },
+      "put": "Metti sulla lavagna",
+      "hint": {
+        "study": "Tutta la lezione per fasi, con note per l’insegnante, esercizi e pratica.",
+        "tasks": "Interattivo: gli studenti rispondono e controllano sulla lavagna. Schede: per segnare e disegnare sopra.",
+        "practice": "Il testo (o l’audio con la trascrizione) e le domande."
+      }
     },
     "plan": {
       "warmup": "Breve conversazione di riscaldamento: «{{topic}}». Fai 2–3 domande facili.",
@@ -1005,6 +1026,30 @@
       "practice": "Facciamo gli esercizi insieme: {{n}} compiti.",
       "production": "Gli studenti usano il nuovo: 3 frasi su di sé o un breve dialogo a coppie.",
       "homework": "Ripassare la lezione a casa e imparare le parole nuove."
-    }
+    },
+    "embedMissing": "Questo esercizio non è disponibile."
+  },
+  "course": {
+    "intro": "Lezioni complete di 40–60 minuti: riscaldamento, spiegazione con esempi, esercizi, pratica, conversazione e compiti — segui i passaggi.",
+    "allLevels": "Tutti i livelli",
+    "none": "Ancora nessuna lezione per questo livello — arriveranno presto!",
+    "minutes": "{{n}} min",
+    "notFound": "Questa lezione non è disponibile.",
+    "hideNotes": "Nascondi note per l’insegnante",
+    "showNotes": "Mostra note per l’insegnante",
+    "onBoard": "Fai lezione alla lavagna",
+    "teacherNotes": "Per l’insegnante",
+    "stages": {
+      "warmup": "Riscaldamento",
+      "presentation": "Spiegazione",
+      "tasks": "Esercizi",
+      "practice": "Pratica",
+      "production": "Conversazione",
+      "homework": "Compiti"
+    },
+    "startTasks": "Inizia gli esercizi",
+    "startPractice": "Inizia la pratica",
+    "next": "Avanti",
+    "finish": "Termina la lezione"
   }
 }

@@ -27,7 +27,8 @@
     "practice": "Übung",
     "pricing": "Preise",
     "ai": "KI-Tutor",
-    "boards": "Tafeln"
+    "boards": "Tafeln",
+    "tasks": "Aufgaben"
   },
   "home": {
     "tagline": "Englisch für die ganze Familie",
@@ -409,13 +410,13 @@
   "teacher": {
     "title": "Lehrkraft-Modus",
     "tabs": {
-      "lessons": "Meine Lektionen",
+      "lessons": "Meine Aufgaben",
       "students": "Schüler & Klassen",
       "progress": "Fortschritt",
       "cards": "Karten"
     },
     "importResult": "Importiert: {{imported}}, übersprungen (Duplikate): {{skipped}}. Die lokale Kopie bleibt als Sicherung erhalten.",
-    "newLesson": "+ Neue Lektion",
+    "newLesson": "+ Neue Aufgaben",
     "importLocal": "Lokale Lektionen importieren ({{count}})",
     "published": "veröffentlicht",
     "draft": "Entwurf",
@@ -610,7 +611,7 @@
     "noResults": "Keine Lektionen für diese Filter.",
     "count": "Lektionen: {{count}}",
     "practiceIntro": "Erst lesen oder hören, dann Fragen dazu beantworten. Wähle dein Niveau und eine Fertigkeit.",
-    "lessonsIntro": "Lektionen zu einem Thema: Grammatik, Wortschatz oder beides. Wähle dein Niveau und was du lernen möchtest.",
+    "lessonsIntro": "Kurze Übungssets zu einem Thema: Grammatik, Wortschatz oder beides. Wähle ein Niveau und was du üben willst.",
     "chooseLevel": "Niveau",
     "chooseSkill": "Fertigkeit",
     "chooseFocus": "Was lernen",
@@ -873,8 +874,8 @@
     }
   },
   "aiLesson": {
-    "open": "Lektion mit KI",
-    "title": "Lektion mit KI erstellen",
+    "open": "Aufgaben mit KI",
+    "title": "Aufgaben mit KI erstellen",
     "hint": "Die KI schreibt die Übungen, prüft, dass jede genau eine richtige Antwort hat, und öffnet den Entwurf im Editor. Prüfe ihn und speichere.",
     "focus": "Was geübt wird",
     "anyGrammar": "Beliebige Grammatik dieses Niveaus",
@@ -971,12 +972,14 @@
     "insert": {
       "title": "Einfügen",
       "sections": {
+        "study": "Stunden",
+        "tasks": "Aufgaben",
+        "practice": "Übung",
         "templates": "Vorlagen",
         "table": "Tabelle",
         "shapes": "Formen und Sticker",
         "symbols": "Symbole und Emojis",
-        "media": "Video und Audio",
-        "lesson": "Eine Lektion"
+        "media": "Video und Audio"
       },
       "badLink": "Das ist kein YouTube-Link.",
       "recording": "Aufnahme",
@@ -997,7 +1000,25 @@
       "addLesson": "Lektion auf die Tafel legen",
       "lessonHint": "Übungen werden zu Karten, daneben ein Stundenablauf und ein eigener Rahmen „Lösungen“.",
       "exercisesFrame": "Übungen",
-      "answersFrame": "Lösungen"
+      "answersFrame": "Lösungen",
+      "textFrame": "Text",
+      "scriptFrame": "Transkript",
+      "questionsFrame": "Fragen",
+      "pick": {
+        "study": "Stunde wählen…",
+        "tasks": "Aufgaben wählen…",
+        "practice": "Übung wählen…"
+      },
+      "modes": {
+        "interactive": "Interaktiv",
+        "cards": "Karten"
+      },
+      "put": "Auf die Tafel legen",
+      "hint": {
+        "study": "Die ganze Stunde Schritt für Schritt, mit Notizen für die Lehrkraft, Aufgaben und Übung.",
+        "tasks": "Interaktiv: Schüler antworten und prüfen direkt auf der Tafel. Karten: zum Markieren und Zeichnen.",
+        "practice": "Der Text (oder das Audio mit Transkript) und die Fragen."
+      }
     },
     "plan": {
       "warmup": "Kurzes Aufwärmgespräch: „{{topic}}“. Stell 2–3 einfache Fragen.",
@@ -1005,6 +1026,30 @@
       "practice": "Gemeinsam die Übungen machen: {{n}} Aufgaben.",
       "production": "Die Schüler wenden Neues an: 3 Sätze über sich oder ein kurzer Dialog zu zweit.",
       "homework": "Die Lektion zu Hause wiederholen und die neuen Wörter lernen."
-    }
+    },
+    "embedMissing": "Diese Übung ist nicht verfügbar."
+  },
+  "course": {
+    "intro": "Vollständige Stunden von 40–60 Minuten: Aufwärmen, Erklärung mit Beispielen, Aufgaben, Übung, Sprechen und Hausaufgabe — folge einfach den Schritten.",
+    "allLevels": "Alle Niveaus",
+    "none": "Für dieses Niveau gibt es noch keine Stunden — sie kommen bald!",
+    "minutes": "{{n}} Min.",
+    "notFound": "Diese Stunde ist nicht verfügbar.",
+    "hideNotes": "Notizen für Lehrkräfte ausblenden",
+    "showNotes": "Notizen für Lehrkräfte zeigen",
+    "onBoard": "An der Tafel unterrichten",
+    "teacherNotes": "Für die Lehrkraft",
+    "stages": {
+      "warmup": "Aufwärmen",
+      "presentation": "Erklärung",
+      "tasks": "Aufgaben",
+      "practice": "Übung",
+      "production": "Sprechen",
+      "homework": "Hausaufgabe"
+    },
+    "startTasks": "Aufgaben starten",
+    "startPractice": "Übung starten",
+    "next": "Weiter",
+    "finish": "Stunde beenden"
   }
 }
