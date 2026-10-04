@@ -144,3 +144,8 @@
 *.stl                filter=lfs diff=lfs merge=lfs -text
 *.nc                 filter=lfs diff=lfs merge=lfs -text
 *.mat                filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------------------------------------------
+# Small images used by the app itself stay regular files (Vercel builds do not fetch LFS)
+# ---------------------------------------------------------------------------
+src/assets/** !filter !diff !merge binary
