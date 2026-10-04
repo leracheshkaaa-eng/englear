@@ -61,7 +61,7 @@ export function Header({
     <>
       <header className="sticky top-0 z-30 border-b border-line/60 bg-sand/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-          <button onClick={() => pick('home')} className="pt-3 transition-transform hover:-rotate-2" aria-label="Englear">
+          <button onClick={() => pick('home')} className="pt-1 transition-transform hover:-rotate-2" aria-label="EngLean">
             <LeanLogo className="text-[32px] sm:text-[34px]" />
           </button>
 

@@ -4,7 +4,7 @@
    Values in [brackets] are placeholders and are highlighted on the pages.
    ============================================================ */
 export const LEGAL = {
-  product: 'Englear',
+  product: 'EngLean',
   seller: '[Seller full legal name]',
   country: '[Country]',
   address: '[City, Country]',

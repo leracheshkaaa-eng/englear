@@ -1,4 +1,4 @@
-// Englear AI: the tutor chat, the writing check and the lesson generator for teachers.
+// EngLean AI: the tutor chat, the writing check and the lesson generator for teachers.
 //
 // Every request is charged on the server BEFORE the model call (ai_charge decides: plan allowance,
 // free taste or coins) and refunded if the call fails. The client never decides what something costs.

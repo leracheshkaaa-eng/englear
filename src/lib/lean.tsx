@@ -83,28 +83,40 @@ export function LeanSays({
   )
 }
 
-/** Lean's ears: graphite outside, blush inside. */
+/** Lean's ears as drawn on the reference sheet: tall and dark, tufted tips, dusty-pink inside,
+ *  cream fur at the base. The same paths are used for the logo images (design/brand). */
+export const EARS_SVG = {
+  viewBox: '0 0 140 92',
+  ear: 'M10 92 C7 68 9 42 15 22 L10 15 L18 17 L16 6 L24 12 L26 0 C40 21 57 50 67 88 Z',
+  inner: 'M16 86 C15 66 17 46 22 30 C32 46 40 64 45 84 Z',
+  fur: 'M19 92 L16 76 L22 80 L21 67 L27 75 L30 62 L33 75 L39 68 L38 80 L46 76 L43 92 Z',
+}
+
 function Ears({ className = '' }: { className?: string }) {
+  const half = (
+    <>
+      <path d={EARS_SVG.ear} fill="#3a3237" stroke="#2f2a33" strokeWidth="2" strokeLinejoin="round" />
+      <path d={EARS_SVG.inner} fill="#cdb1b3" stroke="#2f2a33" strokeOpacity=".35" strokeWidth="1.2" />
+      <path d={EARS_SVG.fur} fill="#f6efe6" stroke="#2f2a33" strokeOpacity=".45" strokeWidth="1.2" strokeLinejoin="round" />
+    </>
+  )
   return (
-    <svg viewBox="0 0 100 60" aria-hidden="true" className={className}>
-      <path d="M12 60 C6 42 1 20 4 2 C19 9 37 29 47 57 Z" fill="#2f2a33" />
-      <path d="M17 52 C13 38 10 25 11 13 C21 20 32 33 39 50 Z" fill="#f3cfc9" />
-      <path d="M88 60 C94 42 99 20 96 2 C81 9 63 29 53 57 Z" fill="#2f2a33" />
-      <path d="M83 52 C87 38 90 25 89 13 C79 20 68 33 61 50 Z" fill="#f3cfc9" />
+    <svg viewBox={EARS_SVG.viewBox} aria-hidden="true" className={className}>
+      {half}
+      <g transform="translate(140 0) scale(-1 1)">{half}</g>
     </svg>
   )
 }
 
-/** The Englear wordmark: Lean's ears peek out over "ea" (Englear hides "Lea(n)"). Scales with font-size. */
+/** The EngLean wordmark: Lean's ears stand over "Lean". Scales with font-size. */
 export function LeanLogo({ className = '' }: { className?: string }) {
   return (
-    <span className={`inline-flex items-baseline font-display font-semibold leading-none tracking-tight text-graphite ${className}`} aria-label="Englear">
-      <span aria-hidden="true">Engl</span>
-      <span aria-hidden="true" className="relative isolate inline-block text-plum">
-        <Ears className="pointer-events-none absolute bottom-[0.5em] left-1/2 -z-10 w-[1.3em] -translate-x-1/2" />
-        ea
+    <span className={`inline-flex items-end font-display font-semibold leading-none tracking-tight text-graphite ${className}`} aria-label="EngLean">
+      <span aria-hidden="true">Eng</span>
+      <span aria-hidden="true" className="inline-flex flex-col items-center text-plum">
+        <Ears className="pointer-events-none mb-[-0.24em] w-[1.5em]" />
+        Lean
       </span>
-      <span aria-hidden="true">r</span>
     </span>
   )
 }

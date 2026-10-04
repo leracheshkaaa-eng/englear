@@ -1,4 +1,4 @@
-// EngLear TTS: turns a short English text into an MP3 with the Google Cloud
+// EngLean TTS: turns a short English text into an MP3 with the Google Cloud
 // voice of the chosen accent and caches it in the public "tts-audio" bucket,
 // so every text is synthesized once per voice and then served as a plain file.
 //

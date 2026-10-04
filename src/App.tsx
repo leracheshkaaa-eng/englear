@@ -306,8 +306,16 @@ function Page({ children }: { children: React.ReactNode }) {
 const AudioEmbed = lazy(() => import('./features/board/audioEmbed'))
 const TaskEmbed = lazy(() => import('./features/board/taskEmbed').then((m) => ({ default: m.TaskEmbed })))
 const MaterialEmbed = lazy(() => import('./features/board/taskEmbed').then((m) => ({ default: m.MaterialEmbed })))
+const BrandPage = lazy(() => import('./features/brand').then((m) => ({ default: m.BrandPage })))
 
 export default function App() {
+  // logo files to download (not linked from the menu)
+  if (location.pathname === '/brand' || location.pathname === '/brand/')
+    return (
+      <Suspense fallback={null}>
+        <BrandPage />
+      </Suspense>
+    )
   // the audio player embedded in whiteboards: a bare page without the app around it
   if (location.pathname.startsWith('/embed/audio'))
     return (

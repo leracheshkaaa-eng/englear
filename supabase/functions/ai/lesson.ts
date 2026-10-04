@@ -72,7 +72,7 @@ export type GenExercise = {
 
 export function lessonSystem(r: GenRequest) {
   const tfng = !['A1', 'A2'].includes(r.level)
-  return `You are an expert ELT materials writer creating an English lesson for the Englear platform.
+  return `You are an expert ELT materials writer creating an English lesson for the EngLean platform.
 Level: ${r.level} (CEFR). Every word, sentence and situation must fit this level.
 The learners include children, so all content must be suitable for a child.
 

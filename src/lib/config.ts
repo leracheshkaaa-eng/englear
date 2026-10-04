@@ -1,4 +1,4 @@
-// ---- EngLear configuration ----
+// ---- EngLean configuration ----
 // The one and only bootstrap admin. Registering (or logging in) with this email
 // auto-promotes the account to admin via the server-side claim_admin() RPC.
 // NOTE: this must match public.admin_email() in the SQL migrations. To change the

@@ -1,6 +1,6 @@
 /* ============================================================
    Exercise model + parser.
-   Preserves the existing EngLear syntax EXACTLY:
+   Preserves the existing EngLean syntax EXACTLY:
      ___        blank
      =          answer (fill)
      *          correct option (choice)
