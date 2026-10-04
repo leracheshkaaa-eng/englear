@@ -31,6 +31,7 @@ export function Header({
   const [sheet, setSheet] = useState(false)
 
   const main: NavItem[] = [
+    { view: 'home', label: t('nav.home'), icon: '🏠' },
     { view: 'study', label: t('nav.lessons'), icon: '📚' },
     { view: 'lessons', label: t('nav.tasks'), icon: '✏️' },
     { view: 'practice', label: t('nav.practice'), icon: '📖' },
@@ -133,7 +134,7 @@ export function Header({
       {/* phones: bottom bar + a sheet with everything */}
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-paper/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden">
         <div className="mx-auto grid max-w-md grid-cols-5">
-          {[{ view: 'home', label: t('nav.home'), icon: '🏠' }, ...main, { view: userId ? 'ai' : 'pricing', label: userId ? t('nav.aiShort') : t('nav.pricing'), icon: userId ? '🦊' : '💶' }].map((m) => (
+          {[...main, { view: userId ? 'ai' : 'pricing', label: userId ? t('nav.aiShort') : t('nav.pricing'), icon: userId ? '🦊' : '💶' }].map((m) => (
             <button key={m.view} onClick={() => pick(m.view)} className={`flex flex-col items-center gap-0.5 py-2 text-[11px] font-semibold ${view === m.view ? 'text-plum' : 'text-mute'}`}>
               <span className="text-lg leading-none">{m.icon}</span>
               {m.label}
