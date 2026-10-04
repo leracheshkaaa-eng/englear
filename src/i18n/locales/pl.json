@@ -28,7 +28,9 @@
     "pricing": "Cennik",
     "ai": "Korepetytor AI",
     "boards": "Tablice",
-    "tasks": "Zadania"
+    "tasks": "Zadania",
+    "more": "Więcej",
+    "aiShort": "Lean"
   },
   "home": {
     "tagline": "angielski dla całej rodziny",
@@ -1071,5 +1073,78 @@
     "startPractice": "Zacznij praktykę",
     "next": "Dalej",
     "finish": "Zakończ lekcję"
+  },
+  "landing": {
+    "startFree": "Zacznij za darmo",
+    "look": "Najpierw się rozejrzyj",
+    "hi": "Cześć! Jestem Lean 👋",
+    "insideTitle": "Co jest w środku",
+    "f": {
+      "lessons": {
+        "title": "Lekcje",
+        "text": "Pełne lekcje na 40–60 minut: rozgrzewka, objaśnienie, zadania, mówienie i praca domowa."
+      },
+      "tasks": {
+        "title": "Zadania",
+        "text": "Krótkie interaktywne ćwiczenia z gramatyki i słownictwa, sprawdzane od razu."
+      },
+      "practice": {
+        "title": "Praktyka",
+        "text": "Czytanie i słuchanie z pytaniami — na twoim poziomie."
+      },
+      "ai": {
+        "title": "Nauczyciel AI Lean",
+        "text": "Pytaj o wszystko, rozmawiaj po angielsku, sprawdzaj swoje teksty."
+      },
+      "boards": {
+        "title": "Tablice dla nauczycieli",
+        "text": "Prowadź lekcje na tablicy online: lekcje, zadania, audio i wideo w jednym miejscu."
+      },
+      "family": {
+        "title": "Dla całej rodziny",
+        "text": "Każdy ma swój profil, postępy, serie i monety. Rodzice widzą, jak idzie."
+      }
+    },
+    "leanTitle": "Jestem Lean, twój nauczyciel fenek",
+    "leanText": "Tłumaczę prosto, wyłapuję błędy (delikatnie, obiecuję) i ułożę plan nauki specjalnie dla ciebie. Duże uszy — słyszę każde słowo.",
+    "seePricing": "Zobacz plany",
+    "faqTitle": "Pytania",
+    "faq": {
+      "free": {
+        "q": "Czy to jest darmowe?",
+        "a": "Tak: lekcje, zadania i praktyka są darmowe. Nauczyciel AI i dodatki działają za monety albo w planie Plus."
+      },
+      "age": {
+        "q": "Dla kogo to jest?",
+        "a": "Dla dzieci, nastolatków i dorosłych — od pierwszych słów do pewnego angielskiego."
+      },
+      "teacher": {
+        "q": "Jestem nauczycielem. Co z tego mam?",
+        "a": "Klasy, zadania z terminami, własne lekcje i tablice online do lekcji na żywo."
+      },
+      "level": {
+        "q": "Jak poznać swój poziom?",
+        "a": "Wybierz poziom w lekcjach i zadaniach — albo zapytaj mnie, pomogę."
+      }
+    },
+    "finalCall": "Gotowy? Ruszamy — jestem tuż obok 🦊"
+  },
+  "dash": {
+    "hello": {
+      "morning": "Dzień dobry, {{name}}!",
+      "day": "Cześć, {{name}}!",
+      "evening": "Dobry wieczór, {{name}}!",
+      "night": "Jeszcze nie śpisz, {{name}}? 🌙"
+    },
+    "keepStreak": "{{n}} dni z rzędu — tak trzymaj!",
+    "startStreak": "Jedna lekcja dziś — i mamy serię.",
+    "streak": "dni z rzędu",
+    "coins": "monet",
+    "continue": "Następna lekcja"
+  },
+  "notFound": {
+    "title": "Lean się zgubił",
+    "text": "Nie ma takiej strony. Wracajmy do domu.",
+    "home": "Na stronę główną"
   }
 }

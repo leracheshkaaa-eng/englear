@@ -28,7 +28,9 @@
     "pricing": "Pricing",
     "ai": "AI tutor",
     "boards": "Boards",
-    "tasks": "Tasks"
+    "tasks": "Tasks",
+    "more": "More",
+    "aiShort": "Lean"
   },
   "home": {
     "tagline": "English for the whole family",
@@ -1051,5 +1053,78 @@
     "startPractice": "Start the practice",
     "next": "Next",
     "finish": "Finish the lesson"
+  },
+  "landing": {
+    "startFree": "Start for free",
+    "look": "Take a look first",
+    "hi": "Hi! I'm Lean 👋",
+    "insideTitle": "What's inside",
+    "f": {
+      "lessons": {
+        "title": "Lessons",
+        "text": "Full 40–60 minute lessons: warm-up, explanation, tasks, speaking and homework."
+      },
+      "tasks": {
+        "title": "Tasks",
+        "text": "Short interactive exercises on grammar and vocabulary, checked instantly."
+      },
+      "practice": {
+        "title": "Practice",
+        "text": "Reading and listening with questions — at your level."
+      },
+      "ai": {
+        "title": "AI tutor Lean",
+        "text": "Ask me anything, chat in English, get your writing checked."
+      },
+      "boards": {
+        "title": "Boards for teachers",
+        "text": "Teach on an online whiteboard: lessons, tasks, audio and video in one place."
+      },
+      "family": {
+        "title": "For the whole family",
+        "text": "Each person has a profile, progress, streaks and coins. Parents see how it goes."
+      }
+    },
+    "leanTitle": "I'm Lean, your fennec tutor",
+    "leanText": "I explain things simply, I'll catch your mistakes (gently, promise) and I'll build a study plan just for you. Big ears — I hear every word.",
+    "seePricing": "See plans",
+    "faqTitle": "Questions",
+    "faq": {
+      "free": {
+        "q": "Is it free?",
+        "a": "Yes: lessons, tasks and practice are free. The AI tutor and extras work with coins or the Plus plan."
+      },
+      "age": {
+        "q": "Who is it for?",
+        "a": "Kids, teens and adults — from the very first words to confident English."
+      },
+      "teacher": {
+        "q": "I am a teacher. What do I get?",
+        "a": "Classes, assignments with deadlines, your own lessons and online boards for live lessons."
+      },
+      "level": {
+        "q": "How do I find my level?",
+        "a": "Pick a level in lessons and tasks — or ask me, and I will help you choose."
+      }
+    },
+    "finalCall": "Ready? Let's go — I'll be right here 🦊"
+  },
+  "dash": {
+    "hello": {
+      "morning": "Good morning, {{name}}!",
+      "day": "Hi, {{name}}!",
+      "evening": "Good evening, {{name}}!",
+      "night": "Still up, {{name}}? 🌙"
+    },
+    "keepStreak": "{{n}} days in a row — keep it going!",
+    "startStreak": "One lesson today — and we've got a streak.",
+    "streak": "days in a row",
+    "coins": "coins",
+    "continue": "Next lesson"
+  },
+  "notFound": {
+    "title": "Lean got lost",
+    "text": "There's no such page. Let's head back home.",
+    "home": "To the home page"
   }
 }

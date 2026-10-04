@@ -28,7 +28,9 @@
     "pricing": "Precios",
     "ai": "Tutor IA",
     "boards": "Pizarras",
-    "tasks": "Ejercicios"
+    "tasks": "Ejercicios",
+    "more": "Más",
+    "aiShort": "Lean"
   },
   "home": {
     "tagline": "inglés para toda la familia",
@@ -1051,5 +1053,78 @@
     "startPractice": "Empezar la práctica",
     "next": "Siguiente",
     "finish": "Terminar la clase"
+  },
+  "landing": {
+    "startFree": "Empezar gratis",
+    "look": "Echar un vistazo",
+    "hi": "¡Hola! Soy Lean 👋",
+    "insideTitle": "Qué hay dentro",
+    "f": {
+      "lessons": {
+        "title": "Clases",
+        "text": "Clases completas de 40–60 minutos: calentamiento, explicación, ejercicios, conversación y deberes."
+      },
+      "tasks": {
+        "title": "Ejercicios",
+        "text": "Ejercicios interactivos cortos de gramática y vocabulario, corregidos al instante."
+      },
+      "practice": {
+        "title": "Práctica",
+        "text": "Lectura y comprensión auditiva con preguntas — a tu nivel."
+      },
+      "ai": {
+        "title": "Lean, el profe IA",
+        "text": "Pregúntame lo que quieras, charla en inglés y revisa tus textos."
+      },
+      "boards": {
+        "title": "Pizarras para profes",
+        "text": "Da clase en una pizarra online: clases, ejercicios, audio y vídeo en un solo lugar."
+      },
+      "family": {
+        "title": "Para toda la familia",
+        "text": "Cada uno tiene su perfil, progreso, rachas y monedas. Los padres ven cómo va."
+      }
+    },
+    "leanTitle": "Soy Lean, tu profe fénec",
+    "leanText": "Explico fácil, pillo tus errores (con cariño, lo prometo) y te armo un plan de estudio solo para ti. Orejas grandes — oigo cada palabra.",
+    "seePricing": "Ver planes",
+    "faqTitle": "Preguntas",
+    "faq": {
+      "free": {
+        "q": "¿Es gratis?",
+        "a": "Sí: clases, ejercicios y práctica son gratis. El profe IA y los extras funcionan con monedas o con el plan Plus."
+      },
+      "age": {
+        "q": "¿Para quién es?",
+        "a": "Para niños, adolescentes y adultos — desde las primeras palabras hasta un inglés seguro."
+      },
+      "teacher": {
+        "q": "Soy profe. ¿Qué gano?",
+        "a": "Grupos, tareas con fecha límite, tus propias clases y pizarras online para clases en vivo."
+      },
+      "level": {
+        "q": "¿Cómo sé mi nivel?",
+        "a": "Elige un nivel en clases y ejercicios — o pregúntame, te ayudo."
+      }
+    },
+    "finalCall": "¿Listo? Vamos — estoy aquí mismo 🦊"
+  },
+  "dash": {
+    "hello": {
+      "morning": "¡Buenos días, {{name}}!",
+      "day": "¡Hola, {{name}}!",
+      "evening": "¡Buenas noches, {{name}}!",
+      "night": "¿Aún despierto, {{name}}? 🌙"
+    },
+    "keepStreak": "{{n}} días seguidos — ¡sigue así!",
+    "startStreak": "Una clase hoy — y empieza la racha.",
+    "streak": "días seguidos",
+    "coins": "monedas",
+    "continue": "Siguiente clase"
+  },
+  "notFound": {
+    "title": "Lean se perdió",
+    "text": "Esta página no existe. Volvamos a casa.",
+    "home": "Al inicio"
   }
 }

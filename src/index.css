@@ -59,3 +59,25 @@ body {
 *:hover::-webkit-scrollbar-thumb {
   background: rgba(91, 63, 160, 0.3);
 }
+
+/* Lean, the mascot: a gentle breathing for idle poses, a small hop for joy */
+@keyframes lean-breathe {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2px) scale(1.015); }
+}
+@keyframes lean-hop {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+  55% { transform: translateY(0); }
+  70% { transform: translateY(-4px); }
+}
+@keyframes lean-pop {
+  from { opacity: 0; transform: translateY(6px) scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+.lean-breathe { animation: lean-breathe 3.2s ease-in-out infinite; transform-origin: 50% 100%; }
+.lean-hop { animation: lean-hop 0.9s ease-out 1; }
+.lean-pop { animation: lean-pop 0.35s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .lean-breathe, .lean-hop, .lean-pop { animation: none; }
+}

@@ -5,8 +5,10 @@ import type { Lesson } from './lib/api'
 import { Button } from './lib/ui'
 import { LessonsCatalog, LessonPlayer } from './features/lessons'
 import { Login, NewPassword, StudentProgress } from './features/account'
-import { Avatar } from './lib/avatars'
-import { Shop, WalletChip } from './features/shop'
+import { Shop } from './features/shop'
+import { Header } from './features/header'
+import { Dashboard, Landing, NotFound } from './features/home'
+import { LeanLoading } from './lib/lean'
 import { useTranslation } from 'react-i18next'
 import { Homework, JoinPage } from './features/classes'
 import { StudyCatalog, StudyPlayer } from './features/study'
@@ -22,10 +24,10 @@ const AiTutor = lazy(() => import('./features/ai').then((m) => ({ default: m.AiT
 const Boards = lazy(() => import('./features/boards').then((m) => ({ default: m.Boards })))
 const AdminDashboard = lazy(() => import('./features/admin').then((m) => ({ default: m.AdminDashboard })))
 
-type View = 'home' | 'study' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | 'ai' | 'boards' | PublicPage
+type View = 'home' | 'study' | 'lessons' | 'practice' | 'player' | 'shop' | 'teacher' | 'flashcards' | 'dictionary' | 'settings' | 'admin' | 'progress' | 'login' | 'ai' | 'boards' | 'notfound' | PublicPage
 
 function Shell() {
-  const { loading, userId, role, profile, signOut, settings, recovering } = useAuth()
+  const { loading, userId, role, recovering } = useAuth()
   const { t, i18n } = useTranslation()
   const [view, setView] = useState<View>(() => pageFromPath(location.pathname) ?? 'home')
   const [lessonCount, setLessonCount] = useState(0) // library + teacher lessons this viewer can open
@@ -92,7 +94,8 @@ function Shell() {
         else if (board) {
           setView('boards')
           setBoardId(board[1] ?? null)
-        } else if (location.pathname === '/') setView((v) => (pageFromPath('/' + v) || v === 'boards' ? 'home' : v))
+        } else if (location.pathname === '/') setView((v) => (pageFromPath('/' + v) || v === 'boards' || v === 'notfound' ? 'home' : v))
+        else setView('notfound')
       }
     }
     resolvePath()
@@ -120,7 +123,7 @@ function Shell() {
     setDeepLink(null)
   }
 
-  if (loading) return <div className="grid min-h-screen place-items-center text-mute">{t('common.loading')}</div>
+  if (loading) return <div className="grid min-h-screen place-items-center"><LeanLoading text={t('common.loading')} /></div>
 
   // ---- the user came from a password-reset email ----
   if (recovering) {
@@ -177,56 +180,13 @@ function Shell() {
   }
 
   const isTeacher = role === 'teacher' || role === 'admin'
-  const nav: [View, string][] = [
-    ['home', t('nav.home')],
-    ['study', t('nav.lessons')],
-    ['lessons', t('nav.tasks')],
-    ['practice', t('nav.practice')],
-  ]
-  if (!userId) nav.push(['pricing', t('nav.pricing')])
-  if (userId) nav.push(['ai', t('nav.ai')], ['boards', t('nav.boards')], ['flashcards', t('nav.flashcards')], ['dictionary', t('nav.dictionary')], ['progress', t('nav.progress')])
-  if (isTeacher) nav.push(['teacher', t('nav.teacher')])
-  if (role === 'admin') nav.push(['admin', t('nav.admin')])
 
   return (
     <Page>
-      <header className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-6 py-6">
-        <button onClick={() => go('home')} className="flex items-center gap-2 font-display text-2xl font-semibold">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-plum text-paper">E</span>
-          Englear
-        </button>
-        <nav className="flex flex-wrap items-center gap-1 rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold">
-          {nav.map(([v, label]) => (
-            <button
-              key={v}
-              onClick={() => go(v)}
-              className={`rounded-full px-3.5 py-1.5 transition-colors ${view === v ? 'bg-plum text-paper' : 'text-mute hover:text-ink'}`}
-            >
-              {label}
-            </button>
-          ))}
-        </nav>
-        <div>
-          {userId ? (
-            <div className="flex items-center gap-2">
-              <WalletChip wallet={wallet} onClick={() => go('shop')} />
-              <button onClick={() => go('settings')} title={profile?.full_name ?? t('nav.settings')} className="rounded-full transition-transform hover:scale-105">
-                <Avatar id={profile?.avatar} size={36} frame={profile?.frame} />
-              </button>
-              <Button variant="ghost" onClick={() => signOut()}>
-                {t('common.signOut')}
-              </Button>
-            </div>
-          ) : (
-            <Button variant="soft" onClick={() => go('login')}>
-              {t('common.signIn')}
-            </Button>
-          )}
-        </div>
-      </header>
+      <Header view={view} go={(v) => go(v as View)} wallet={wallet} />
 
-      <main>
-        <Suspense fallback={<p className="py-24 text-center text-mute">{t('common.loading')}</p>}>
+      <main className="pb-16 md:pb-0">
+        <Suspense fallback={<LeanLoading />}>
         {view === 'study' &&
           (studyId ? (
             <StudyPlayer
@@ -243,7 +203,29 @@ function Shell() {
           ) : (
             <StudyCatalog onOpen={(id) => { setStudyId(id); window.scrollTo(0, 0) }} />
           ))}
-        {view === 'home' && <Home role={role} onStart={() => go('study')} onLogin={() => go('login')} count={lessonCount} />}
+        {view === 'home' &&
+          (userId ? (
+            <Dashboard
+              go={(v) => go(v as View)}
+              wallet={wallet}
+              onOpenStudy={(id) => { go('study'); setStudyId(id) }}
+              homework={
+                <Homework
+                  onOpenLesson={async (id) => {
+                    const lesson = await api.getLesson(id).catch(() => null)
+                    if (!lesson) return
+                    setActive(lesson)
+                    setBackTo('lessons')
+                    setView('player')
+                  }}
+                  onOpenSets={() => go('flashcards')}
+                />
+              }
+            />
+          ) : (
+            <Landing go={(v) => go(v as View)} count={lessonCount} />
+          ))}
+        {view === 'notfound' && <NotFound onHome={() => go('home')} />}
         {view === 'lessons' && userId && (
           <Homework
             onOpenLesson={async (id) => {
@@ -319,34 +301,6 @@ function Shell() {
 
 function Page({ children }: { children: React.ReactNode }) {
   return <div className="min-h-screen">{children}</div>
-}
-
-function Home({ role, onStart, onLogin, count }: { role: string; onStart: () => void; onLogin: () => void; count: number }) {
-  const { t } = useTranslation()
-  return (
-    <section className="mx-auto max-w-3xl px-6 pt-20 pb-24 text-center">
-      <span className="inline-block rounded-full border border-line bg-paper px-4 py-1 font-body text-sm text-mute">
-        {t('home.tagline')}
-      </span>
-      <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.02] sm:text-7xl">
-        {t('home.titleLine1')}
-        <br />
-        <span className="italic text-plum">{t('home.titleLine2')}</span>
-      </h1>
-      <p className="mx-auto mt-6 max-w-xl text-lg text-mute">{t('home.subtitle')}</p>
-      <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-        <Button onClick={onStart} className="px-8 py-4 text-lg">
-          {t('home.start')}
-        </Button>
-        {role === 'guest' && (
-          <Button variant="ghost" onClick={onLogin}>
-            {t('home.signIn')}
-          </Button>
-        )}
-      </div>
-      <p className="mt-6 font-body text-sm text-mute/80">{t('home.available', { count })}</p>
-    </section>
-  )
 }
 
 const AudioEmbed = lazy(() => import('./features/board/audioEmbed'))

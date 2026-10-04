@@ -28,7 +28,9 @@
     "pricing": "Preise",
     "ai": "KI-Tutor",
     "boards": "Tafeln",
-    "tasks": "Aufgaben"
+    "tasks": "Aufgaben",
+    "more": "Mehr",
+    "aiShort": "Lean"
   },
   "home": {
     "tagline": "Englisch für die ganze Familie",
@@ -1051,5 +1053,78 @@
     "startPractice": "Übung starten",
     "next": "Weiter",
     "finish": "Stunde beenden"
+  },
+  "landing": {
+    "startFree": "Kostenlos starten",
+    "look": "Erst mal umschauen",
+    "hi": "Hi! Ich bin Lean 👋",
+    "insideTitle": "Was drin ist",
+    "f": {
+      "lessons": {
+        "title": "Stunden",
+        "text": "Vollständige Stunden von 40–60 Minuten: Aufwärmen, Erklärung, Aufgaben, Sprechen und Hausaufgabe."
+      },
+      "tasks": {
+        "title": "Aufgaben",
+        "text": "Kurze interaktive Übungen zu Grammatik und Wortschatz, sofort geprüft."
+      },
+      "practice": {
+        "title": "Übung",
+        "text": "Lesen und Hören mit Fragen — passend zu deinem Niveau."
+      },
+      "ai": {
+        "title": "KI-Lehrer Lean",
+        "text": "Frag mich alles, plaudere auf Englisch, lass deine Texte prüfen."
+      },
+      "boards": {
+        "title": "Tafeln für Lehrkräfte",
+        "text": "Unterrichte an einer Online-Tafel: Stunden, Aufgaben, Audio und Video an einem Ort."
+      },
+      "family": {
+        "title": "Für die ganze Familie",
+        "text": "Jeder hat ein eigenes Profil, Fortschritt, Serien und Münzen. Eltern sehen, wie es läuft."
+      }
+    },
+    "leanTitle": "Ich bin Lean, dein Wüstenfuchs-Lehrer",
+    "leanText": "Ich erkläre einfach, finde deine Fehler (sanft, versprochen) und mache einen Lernplan nur für dich. Große Ohren — ich höre jedes Wort.",
+    "seePricing": "Tarife ansehen",
+    "faqTitle": "Fragen",
+    "faq": {
+      "free": {
+        "q": "Ist es kostenlos?",
+        "a": "Ja: Stunden, Aufgaben und Übungen sind kostenlos. Der KI-Lehrer und Extras laufen mit Münzen oder dem Plus-Tarif."
+      },
+      "age": {
+        "q": "Für wen ist das?",
+        "a": "Für Kinder, Jugendliche und Erwachsene — von den ersten Wörtern bis zu sicherem Englisch."
+      },
+      "teacher": {
+        "q": "Ich bin Lehrkraft. Was habe ich davon?",
+        "a": "Klassen, Aufgaben mit Fristen, eigene Stunden und Online-Tafeln für Live-Unterricht."
+      },
+      "level": {
+        "q": "Wie finde ich mein Niveau?",
+        "a": "Wähle ein Niveau bei Stunden und Aufgaben — oder frag mich, ich helfe dir."
+      }
+    },
+    "finalCall": "Bereit? Los geht’s — ich bin gleich hier 🦊"
+  },
+  "dash": {
+    "hello": {
+      "morning": "Guten Morgen, {{name}}!",
+      "day": "Hi, {{name}}!",
+      "evening": "Guten Abend, {{name}}!",
+      "night": "Noch wach, {{name}}? 🌙"
+    },
+    "keepStreak": "{{n}} Tage am Stück — weiter so!",
+    "startStreak": "Eine Stunde heute — und die Serie läuft.",
+    "streak": "Tage am Stück",
+    "coins": "Münzen",
+    "continue": "Nächste Stunde"
+  },
+  "notFound": {
+    "title": "Lean hat sich verlaufen",
+    "text": "Diese Seite gibt es nicht. Gehen wir zurück nach Hause.",
+    "home": "Zur Startseite"
   }
 }

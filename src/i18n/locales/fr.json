@@ -28,7 +28,9 @@
     "pricing": "Tarifs",
     "ai": "Tuteur IA",
     "boards": "Tableaux",
-    "tasks": "Exercices"
+    "tasks": "Exercices",
+    "more": "Plus",
+    "aiShort": "Lean"
   },
   "home": {
     "tagline": "l'anglais pour toute la famille",
@@ -1051,5 +1053,78 @@
     "startPractice": "Commencer la pratique",
     "next": "Suivant",
     "finish": "Terminer la leçon"
+  },
+  "landing": {
+    "startFree": "Commencer gratuitement",
+    "look": "Jeter un œil d’abord",
+    "hi": "Salut ! Moi, c’est Lean 👋",
+    "insideTitle": "Ce qu’il y a dedans",
+    "f": {
+      "lessons": {
+        "title": "Leçons",
+        "text": "De vraies leçons de 40 à 60 minutes : échauffement, explication, exercices, oral et devoirs."
+      },
+      "tasks": {
+        "title": "Exercices",
+        "text": "De courts exercices interactifs de grammaire et de vocabulaire, corrigés tout de suite."
+      },
+      "practice": {
+        "title": "Pratique",
+        "text": "Lecture et écoute avec des questions — à ton niveau."
+      },
+      "ai": {
+        "title": "Lean, le prof IA",
+        "text": "Pose-moi tes questions, discute en anglais, fais corriger tes textes."
+      },
+      "boards": {
+        "title": "Tableaux pour les profs",
+        "text": "Fais cours sur un tableau en ligne : leçons, exercices, audio et vidéo au même endroit."
+      },
+      "family": {
+        "title": "Pour toute la famille",
+        "text": "Chacun a son profil, ses progrès, ses séries et ses pièces. Les parents suivent tout."
+      }
+    },
+    "leanTitle": "Moi, c’est Lean, ton prof fennec",
+    "leanText": "J’explique simplement, je repère tes erreurs (en douceur, promis) et je te prépare un plan d’étude rien que pour toi. Grandes oreilles — j’entends chaque mot.",
+    "seePricing": "Voir les formules",
+    "faqTitle": "Questions",
+    "faq": {
+      "free": {
+        "q": "C’est gratuit ?",
+        "a": "Oui : leçons, exercices et pratique sont gratuits. Le prof IA et les extras fonctionnent avec des pièces ou la formule Plus."
+      },
+      "age": {
+        "q": "C’est pour qui ?",
+        "a": "Pour les enfants, les ados et les adultes — des premiers mots à un anglais assuré."
+      },
+      "teacher": {
+        "q": "Je suis prof. Qu’est-ce que j’y gagne ?",
+        "a": "Des classes, des devoirs avec échéances, tes propres leçons et des tableaux en ligne pour les cours en direct."
+      },
+      "level": {
+        "q": "Comment connaître mon niveau ?",
+        "a": "Choisis un niveau dans les leçons et les exercices — ou demande-moi, je t’aide."
+      }
+    },
+    "finalCall": "Prêt ? C’est parti — je suis juste là 🦊"
+  },
+  "dash": {
+    "hello": {
+      "morning": "Bonjour, {{name}} !",
+      "day": "Salut, {{name}} !",
+      "evening": "Bonsoir, {{name}} !",
+      "night": "Pas encore couché, {{name}} ? 🌙"
+    },
+    "keepStreak": "{{n}} jours d’affilée — continue !",
+    "startStreak": "Une leçon aujourd’hui — et la série commence.",
+    "streak": "jours d’affilée",
+    "coins": "pièces",
+    "continue": "Leçon suivante"
+  },
+  "notFound": {
+    "title": "Lean s’est perdu",
+    "text": "Cette page n’existe pas. Rentrons à la maison.",
+    "home": "Vers l’accueil"
   }
 }
