@@ -161,7 +161,12 @@
     "legacyNoAnswers": "Les réponses de cette tentative n'ont pas été enregistrées.",
     "allAnswers": "Toutes les réponses",
     "viewMistakes": "Voir les erreurs",
-    "tryAgain": "Recommencer"
+    "tryAgain": "Recommencer",
+    "lean": {
+      "great": "Waouh, bravo ! Mes oreilles frémissent de joie 🎉",
+      "ok": "Pas mal du tout ! Encore un peu de pratique et ce sera parfait.",
+      "oops": "Oups ! Pas grave — regardons les erreurs ensemble."
+    }
   },
   "review": {
     "backToResult": "Retour au résultat",
@@ -771,7 +776,7 @@
     },
     "errors": {
       "not_enough_coins": "Pas assez de pièces.",
-      "ai_busy": "Le tuteur est très occupé — réessaie dans une minute. Aucune pièce n’a été débitée.",
+      "ai_busy": "Lean est très occupé en ce moment — réessaie dans une minute. Aucune pièce n’a été débitée.",
       "ai_failed": "Un problème est survenu. Aucune pièce n’a été débitée — réessaie.",
       "ai_not_configured": "Le tuteur IA n’est pas encore disponible.",
       "bad_text": "Le texte doit faire entre 20 et 4000 caractères.",
@@ -780,9 +785,9 @@
     "toShop": "Obtenir des pièces ou Plus →",
     "newChat": "Nouveau chat",
     "untitled": "Chat",
-    "hello": "Salut{{name}} ! Je suis ton tuteur d’anglais.",
+    "hello": "Salut{{name}} ! Moi, c’est Lean, ton prof d’anglais 🦊",
     "helloHint": "Écris ce que tu veux en anglais — ou choisis un sujet pour commencer :",
-    "thinking": "Le tuteur écrit…",
+    "thinking": "Lean écrit…",
     "placeholder": "Écris un message… (Entrée — envoyer, Maj+Entrée — nouvelle ligne)",
     "send": "Envoyer",
     "writing": {

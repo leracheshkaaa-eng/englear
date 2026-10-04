@@ -5,6 +5,7 @@ import { useAuth } from '../lib/auth'
 import * as api from '../lib/api'
 import type { CoinEntry, ShopItem, StoreProduct, Wallet } from '../lib/api'
 import { Avatar, FRAMES, PREMIUM_AVATARS, avatarLabel } from '../lib/avatars'
+import { Lean } from '../lib/lean'
 
 /* ============================================================
    Coins: balance and streak in the header, the shop, the history.
@@ -112,7 +113,10 @@ export function Shop({ wallet, onWallet }: { wallet: Wallet; onWallet: (w: Walle
 
   return (
     <section className="mx-auto max-w-4xl px-6 pb-24">
-      <h2 className="font-display text-4xl font-semibold">{t('shop.title')}</h2>
+      <div className="flex items-center gap-3">
+        <Lean pose="sly" size={72} motion="breathe" />
+        <h2 className="font-display text-4xl font-semibold">{t('shop.title')}</h2>
+      </div>
 
       {/* balance + streak */}
       <div className="mt-6 grid gap-3 sm:grid-cols-3">

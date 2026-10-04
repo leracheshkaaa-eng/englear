@@ -149,3 +149,4 @@
 # Small images used by the app itself stay regular files (Vercel builds do not fetch LFS)
 # ---------------------------------------------------------------------------
 src/assets/** !filter !diff !merge binary
+public/** !filter !diff !merge binary

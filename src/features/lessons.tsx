@@ -23,6 +23,7 @@ import { EarnedBadge } from './shop'
 import * as api from '../lib/api'
 import type { Lesson, LessonPass, PassSummary, SavedAnswer, WordHint } from '../lib/api'
 import { CEFR_LEVELS, TOPICS, lessonLevelLabel, lessonSkillLabel, topicLabel } from '../lib/config'
+import { LeanEmpty, LeanLoading, LeanSays } from '../lib/lean'
 
 function Verdict({ correct, explanation, answer }: { correct: boolean; explanation: string; answer?: string }) {
   const { t } = useTranslation()
@@ -789,9 +790,15 @@ function LessonResult({
   const legacy = outcome.legacyScore !== undefined
   const pct = legacy ? outcome.legacyScore! : total ? Math.round((correct / total) * 100) : 0
   const mistakes = total - correct
+  const mood = pct >= 80 ? 'great' : pct >= 50 ? 'ok' : 'oops'
 
   return (
     <div className="mt-6 rounded-3xl border border-line bg-paper p-8 text-center shadow-[0_10px_30px_-18px_rgba(60,42,112,0.5)]">
+      <div className="mb-5 flex justify-center">
+        <LeanSays pose={mood === 'great' ? 'happy' : mood === 'ok' ? 'neutral' : 'surprised'} motion={mood === 'great' ? 'hop' : 'pop'} size={96}>
+          {t(`result.lean.${mood}` as 'result.lean.great')}
+        </LeanSays>
+      </div>
       <span className="rounded-full bg-[rgba(63,143,107,.12)] px-3 py-1 text-sm font-semibold text-[var(--color-good)]">
         ✓ {t('result.completed')}
       </span>
@@ -1122,11 +1129,11 @@ export function LessonsCatalog({
       </div>
 
       {loading ? (
-        <p className="text-mute">{t('common.loading')}</p>
+        <LeanLoading />
       ) : lessons.length === 0 ? (
-        <p className="rounded-3xl border border-dashed border-line bg-paper/60 p-8 text-center text-mute">
-          {filtered ? t('library.noResults') : scope === 'teacher' ? t('lessons.none') : practice ? t('library.practiceEmpty') : t('library.empty')}
-        </p>
+        <div className="rounded-3xl border border-dashed border-line bg-paper/60">
+          <LeanEmpty>{filtered ? t('library.noResults') : scope === 'teacher' ? t('lessons.none') : practice ? t('library.practiceEmpty') : t('library.empty')}</LeanEmpty>
+        </div>
       ) : (
         <>
           <p className="mb-3 text-sm text-mute">{t('library.count', { count: total })}</p>

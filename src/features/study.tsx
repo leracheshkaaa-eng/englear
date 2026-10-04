@@ -6,6 +6,7 @@ import { useAuth } from '../lib/auth'
 import { CEFR_LEVELS } from '../lib/config'
 import { Badge, Button, SpeakerButton } from '../lib/ui'
 import { LessonPlayer } from './lessons'
+import { LeanEmpty } from '../lib/lean'
 
 /* ============================================================
    Lessons: full 40–60 minute lessons made of stages
@@ -58,7 +59,7 @@ export function StudyCatalog({ onOpen }: { onOpen: (id: string) => void }) {
         ))}
       </div>
       {items === null && <p className="text-mute">{t('common.loading')}</p>}
-      {items?.length === 0 && <p className="text-mute">{t('course.none')}</p>}
+      {items?.length === 0 && <LeanEmpty>{t('course.none')}</LeanEmpty>}
       <div className="grid gap-4 sm:grid-cols-2">
         {items?.map((l) => (
           <button key={l.id} onClick={() => onOpen(l.id)} className="rounded-3xl border border-line bg-paper p-5 text-left transition-shadow hover:shadow-[0_12px_30px_-18px_rgba(60,42,112,0.6)]">

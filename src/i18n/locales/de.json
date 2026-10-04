@@ -161,7 +161,12 @@
     "legacyNoAnswers": "Die Antworten dieses Durchgangs wurden nicht gespeichert.",
     "allAnswers": "Alle Antworten",
     "viewMistakes": "Fehler ansehen",
-    "tryAgain": "Nochmal machen"
+    "tryAgain": "Nochmal machen",
+    "lean": {
+      "great": "Wow, super gemacht! Meine Ohren zucken vor Freude 🎉",
+      "ok": "Gar nicht schlecht! Ein bisschen mehr Übung, dann sitzt es perfekt.",
+      "oops": "Hoppla! Kein Problem — schauen wir uns die Fehler zusammen an."
+    }
   },
   "review": {
     "backToResult": "Zurück zum Ergebnis",
@@ -771,7 +776,7 @@
     },
     "errors": {
       "not_enough_coins": "Nicht genug Münzen.",
-      "ai_busy": "Der Tutor ist gerade sehr beschäftigt — versuch es in einer Minute noch einmal. Es wurden keine Münzen abgebucht.",
+      "ai_busy": "Lean ist gerade sehr beschäftigt — versuch es in einer Minute noch mal. Es wurden keine Münzen abgezogen.",
       "ai_failed": "Etwas ist schiefgelaufen. Es wurden keine Münzen abgebucht — versuch es noch einmal.",
       "ai_not_configured": "Der KI-Tutor ist noch nicht verfügbar.",
       "bad_text": "Der Text muss 20 bis 4000 Zeichen lang sein.",
@@ -780,9 +785,9 @@
     "toShop": "Münzen oder Plus holen →",
     "newChat": "Neuer Chat",
     "untitled": "Chat",
-    "hello": "Hallo{{name}}! Ich bin dein Englisch-Tutor.",
+    "hello": "Hi{{name}}! Ich bin Lean, dein Englischlehrer 🦊",
     "helloHint": "Schreib etwas auf Englisch — oder wähle ein Thema für den Anfang:",
-    "thinking": "Der Tutor schreibt…",
+    "thinking": "Lean schreibt…",
     "placeholder": "Schreib eine Nachricht… (Enter — senden, Shift+Enter — neue Zeile)",
     "send": "Senden",
     "writing": {

@@ -161,7 +161,12 @@
     "legacyNoAnswers": "As respostas desta tentativa não foram salvas.",
     "allAnswers": "Todas as respostas",
     "viewMistakes": "Ver erros",
-    "tryAgain": "Refazer"
+    "tryAgain": "Refazer",
+    "lean": {
+      "great": "Uau, mandou bem! Minhas orelhas até tremeram de alegria 🎉",
+      "ok": "Nada mal! Mais um pouco de prática e fica perfeito.",
+      "oops": "Ops! Tudo bem — vamos ver os erros juntos."
+    }
   },
   "review": {
     "backToResult": "Voltar ao resultado",
@@ -771,7 +776,7 @@
     },
     "errors": {
       "not_enough_coins": "Moedas insuficientes.",
-      "ai_busy": "O tutor está muito ocupado — tente de novo em um minuto. Nenhuma moeda foi cobrada.",
+      "ai_busy": "O Lean está muito ocupado agora — tente de novo em um minuto. Nenhuma moeda foi cobrada.",
       "ai_failed": "Algo deu errado. Nenhuma moeda foi cobrada — tente de novo.",
       "ai_not_configured": "O tutor IA ainda não está disponível.",
       "bad_text": "O texto deve ter de 20 a 4000 caracteres.",
@@ -780,9 +785,9 @@
     "toShop": "Obter moedas ou Plus →",
     "newChat": "Novo chat",
     "untitled": "Chat",
-    "hello": "Oi{{name}}! Eu sou seu tutor de inglês.",
+    "hello": "Oi{{name}}! Eu sou o Lean, seu professor de inglês 🦊",
     "helloHint": "Escreva qualquer coisa em inglês — ou escolha um tema para começar:",
-    "thinking": "O tutor está digitando…",
+    "thinking": "Lean está digitando…",
     "placeholder": "Escreva uma mensagem… (Enter — enviar, Shift+Enter — nova linha)",
     "send": "Enviar",
     "writing": {

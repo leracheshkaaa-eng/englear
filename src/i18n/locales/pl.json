@@ -163,7 +163,12 @@
     "legacyNoAnswers": "Odpowiedzi z tego podejścia nie zostały zapisane.",
     "allAnswers": "Wszystkie odpowiedzi",
     "viewMistakes": "Zobacz błędy",
-    "tryAgain": "Przerób ponownie"
+    "tryAgain": "Przerób ponownie",
+    "lean": {
+      "great": "Wow, świetnie! Aż mi uszy drżą z radości 🎉",
+      "ok": "Całkiem nieźle! Jeszcze trochę praktyki i będzie idealnie.",
+      "oops": "Ups! Nic się nie stało — przejrzyjmy błędy razem."
+    }
   },
   "review": {
     "backToResult": "Wróć do wyniku",
@@ -791,7 +796,7 @@
     },
     "errors": {
       "not_enough_coins": "Za mało monet.",
-      "ai_busy": "Korepetytor jest teraz bardzo zajęty — spróbuj za minutę. Monety nie zostały pobrane.",
+      "ai_busy": "Lean jest teraz bardzo zajęty — spróbuj za minutę. Monety nie zostały pobrane.",
       "ai_failed": "Coś poszło nie tak. Monety nie zostały pobrane — spróbuj ponownie.",
       "ai_not_configured": "Korepetytor AI nie jest jeszcze dostępny.",
       "bad_text": "Tekst musi mieć od 20 do 4000 znaków.",
@@ -800,9 +805,9 @@
     "toShop": "Zdobądź monety lub Plus →",
     "newChat": "Nowy czat",
     "untitled": "Czat",
-    "hello": "Cześć{{name}}! Jestem twoim korepetytorem angielskiego.",
+    "hello": "Cześć{{name}}! Jestem Lean, twój nauczyciel angielskiego 🦊",
     "helloHint": "Napisz cokolwiek po angielsku — albo wybierz temat na początek:",
-    "thinking": "Korepetytor pisze…",
+    "thinking": "Lean pisze…",
     "placeholder": "Napisz wiadomość… (Enter — wyślij, Shift+Enter — nowa linia)",
     "send": "Wyślij",
     "writing": {

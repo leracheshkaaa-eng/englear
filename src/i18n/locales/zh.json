@@ -160,7 +160,12 @@
     "legacyNoAnswers": "这次学习的答案没有被保存。",
     "allAnswers": "全部答案",
     "viewMistakes": "查看错题",
-    "tryAgain": "重新学习"
+    "tryAgain": "重新学习",
+    "lean": {
+      "great": "哇，太棒了！我的耳朵都高兴得抖起来了 🎉",
+      "ok": "很不错！再多练一点就完美了。",
+      "oops": "哎呀！没关系——我们一起看看错在哪里。"
+    }
   },
   "review": {
     "backToResult": "返回成绩",
@@ -761,7 +766,7 @@
     },
     "errors": {
       "not_enough_coins": "金币不足。",
-      "ai_busy": "老师现在很忙——请一分钟后再试。未扣除金币。",
+      "ai_busy": "Lean 现在很忙——请一分钟后再试。没有扣除金币。",
       "ai_failed": "出了点问题。未扣除金币——请再试一次。",
       "ai_not_configured": "AI 老师暂不可用。",
       "bad_text": "文本长度应为 20 到 4000 个字符。",
@@ -770,9 +775,9 @@
     "toShop": "获取金币或 Plus →",
     "newChat": "新聊天",
     "untitled": "聊天",
-    "hello": "你好{{name}}！我是你的英语老师。",
+    "hello": "你好{{name}}！我是 Lean，你的英语老师 🦊",
     "helloHint": "用英语随便写点什么——或选一个话题开始：",
-    "thinking": "老师正在输入…",
+    "thinking": "Lean 正在输入…",
     "placeholder": "输入消息…（Enter 发送，Shift+Enter 换行）",
     "send": "发送",
     "writing": {

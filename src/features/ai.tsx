@@ -4,6 +4,7 @@ import * as api from '../lib/api'
 import type { AiConversation, AiKindStatus, AiMessage, AiStatus, WritingCheck, WritingResult } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { Badge, Button, inputCls } from '../lib/ui'
+import { Lean, LeanSays } from '../lib/lean'
 
 /* ============================================================
    AI tutor: a chat with the tutor and a writing check.
@@ -196,9 +197,11 @@ function Chat({ status, plus, onSpent, onShop }: { status: AiKindStatus | null; 
       <div className="flex min-h-[50vh] flex-col rounded-2xl border border-line bg-paper">
         <div className="flex-1 space-y-3 overflow-y-auto p-4 md:max-h-[60vh]">
           {msgs.length === 0 && (
-            <div className="py-6 text-center">
-              <p className="font-display text-2xl font-semibold">{t('ai.hello', { name: profile?.full_name ? ', ' + profile.full_name : '' })}</p>
-              <p className="mt-1 text-sm text-mute">{t('ai.helloHint')}</p>
+            <div className="flex flex-col items-center py-6 text-center">
+              <LeanSays pose="happy" size={96}>
+                <span className="font-display text-xl font-semibold">{t('ai.hello', { name: profile?.full_name ? ', ' + profile.full_name : '' })}</span>
+              </LeanSays>
+              <p className="mt-3 text-sm text-mute">{t('ai.helloHint')}</p>
               <div className="mt-4 flex flex-wrap justify-center gap-2">
                 {STARTERS.map((s) => (
                   <button key={s} onClick={() => send(s)} disabled={busy} className="rounded-full border border-line px-3 py-1.5 text-sm hover:border-lavender">
@@ -209,13 +212,19 @@ function Chat({ status, plus, onSpent, onShop }: { status: AiKindStatus | null; 
             </div>
           )}
           {msgs.map((m) => (
-            <div key={m.id} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+            <div key={m.id} className={`flex items-end gap-2 ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+              {m.role === 'assistant' && <Lean pose="neutral" size={34} className="shrink-0" />}
               <div className={`max-w-[85%] rounded-2xl px-4 py-2 text-[15px] leading-relaxed ${m.role === 'user' ? 'bg-plum text-paper' : 'bg-lilac/60 text-ink'}`}>
                 {m.role === 'assistant' ? <Md text={m.content} /> : <p className="whitespace-pre-wrap">{m.content}</p>}
               </div>
             </div>
           ))}
-          {busy && <p className="text-sm text-mute">{t('ai.thinking')}</p>}
+          {busy && (
+            <div className="flex items-end gap-2 text-sm text-mute">
+              <Lean pose="curious" size={44} motion="breathe" className="shrink-0" />
+              <span className="rounded-2xl bg-lilac/40 px-3 py-2">{t('ai.thinking')}</span>
+            </div>
+          )}
           <div ref={bottom} />
         </div>
         <div className="space-y-2 border-t border-line p-3">
@@ -316,6 +325,14 @@ function Writing({ status, plus, onSpent, onShop }: { status: AiKindStatus | nul
             {busy ? t('ai.writing.checking') : t('ai.writing.check')}
           </Button>
         </div>
+        {busy && (
+          <div className="mt-3 flex items-center gap-3 text-sm text-mute">
+            <Lean pose="curious" size={56} motion="breathe" />
+            {t('ai.writing.checking')}
+          </div>
+        )}
+        <div>
+        </div>
         <div className="mt-2 space-y-1">
           {err && <ErrorLine code={err} onShop={onShop} />}
           <CostLine s={status} plus={plus} kind="writing" />
@@ -389,6 +406,8 @@ function WritingReport({ check, onBack, onAgain }: { check: WritingCheck; onBack
   const { t } = useTranslation()
   const r = check.result
   const card = 'rounded-2xl border border-line bg-paper p-5'
+  const avg = (r.scores.grammar + r.scores.vocabulary + r.scores.organization + r.scores.task) / 4
+  const pose = avg >= 4 ? 'happy' : avg < 2.5 ? 'surprised' : 'neutral'
   return (
     <div className="mt-5 space-y-4">
       <div className="flex flex-wrap gap-2">
@@ -402,7 +421,10 @@ function WritingReport({ check, onBack, onAgain }: { check: WritingCheck; onBack
 
       <div className={card}>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h3 className="font-display text-2xl font-semibold">{t('ai.writing.result')}</h3>
+          <div className="flex items-center gap-3">
+            <Lean pose={pose} size={64} motion="pop" />
+            <h3 className="font-display text-2xl font-semibold">{t('ai.writing.result')}</h3>
+          </div>
           <span className="rounded-full bg-plum px-3 py-1 font-display text-lg font-semibold text-paper">{r.estimated_level}</span>
         </div>
         <div className="mt-4 grid gap-3 sm:grid-cols-4">

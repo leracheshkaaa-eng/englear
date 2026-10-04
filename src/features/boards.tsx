@@ -5,6 +5,7 @@ import type { BoardKind, BoardShare, BoardSummary, ClassRow, LessonSummary, Prof
 import { useAuth } from '../lib/auth'
 import { Badge, Button, inputCls } from '../lib/ui'
 import { errorMessage } from '../i18n/errors'
+import { LeanEmpty } from '../lib/lean'
 
 /* ============================================================
    Whiteboards: my boards (lesson boards and notes), boards shared with me,
@@ -122,7 +123,7 @@ export function Boards({ openId, onOpen }: { openId: string | null; onOpen: (id:
             )}
           </div>
         ))}
-        {list.length === 0 && <p className="text-mute">{tab === 'mine' ? t('boards.noneMine') : t('boards.noneShared')}</p>}
+        {list.length === 0 && <LeanEmpty>{tab === 'mine' ? t('boards.noneMine') : t('boards.noneShared')}</LeanEmpty>}
       </div>
 
       {sharing && <ShareDialog board={sharing} onClose={() => setSharing(null)} />}
