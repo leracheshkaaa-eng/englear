@@ -162,9 +162,9 @@
     "viewMistakes": "查看错题",
     "tryAgain": "重新学习",
     "lean": {
-      "great": "哇，太棒了！我的耳朵都高兴得抖起来了 🎉",
+      "great": "好得可疑。我很骄傲。一点点 😏",
       "ok": "很不错！再多练一点就完美了。",
-      "oops": "哎呀！没关系——我们一起看看错在哪里。"
+      "oops": "这个主题还在顽抗。我们会拿下它——来看看错误吧。"
     }
   },
   "review": {
@@ -765,7 +765,7 @@
       "coins": "费用：{{price}} 🪙"
     },
     "errors": {
-      "not_enough_coins": "金币不足。",
+      "not_enough_coins": "金币不够。我想借你一些，可我是只耳廓狐。",
       "ai_busy": "Lean 现在很忙——请一分钟后再试。没有扣除金币。",
       "ai_failed": "出了点问题。未扣除金币——请再试一次。",
       "ai_not_configured": "AI 老师暂不可用。",
@@ -777,7 +777,7 @@
     "untitled": "聊天",
     "hello": "你好{{name}}！我是 Lean，你的英语老师 🦊",
     "helloHint": "用英语随便写点什么——或选一个话题开始：",
-    "thinking": "Lean 正在输入…",
+    "thinking": "Lean 正在输入……（还在嚼椰枣）",
     "placeholder": "输入消息…（Enter 发送，Shift+Enter 换行）",
     "send": "发送",
     "writing": {
@@ -1106,20 +1106,21 @@
   },
   "dash": {
     "hello": {
-      "morning": "早上好，{{name}}！",
+      "morning": "早上好，{{name}}。你负责咖啡，我负责英语。",
       "day": "你好，{{name}}！",
       "evening": "晚上好，{{name}}！",
-      "night": "还没睡吗，{{name}}？🌙"
+      "night": "{{name}}，我们为什么还不睡？🌙"
     },
     "keepStreak": "已连续 {{n}} 天——继续加油！",
     "startStreak": "今天上一节课，连续记录就开始了。",
     "streak": "连续天数",
     "coins": "金币",
-    "continue": "下一节课"
+    "continue": "下一节课",
+    "keepStreakLong": "连续 {{n}} 天了。我开始尊敬你了。"
   },
   "notFound": {
     "title": "Lean 迷路了",
-    "text": "没有这个页面。我们回家吧。",
+    "text": "我迷路了。顺便说一句，我可是沙漠里听力最好的。",
     "home": "回到首页"
   },
   "interests": {

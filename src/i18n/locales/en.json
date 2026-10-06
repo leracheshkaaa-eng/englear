@@ -163,9 +163,9 @@
     "viewMistakes": "View mistakes",
     "tryAgain": "Try again",
     "lean": {
-      "great": "Wow, great job! My ears are twitching with joy 🎉",
+      "great": "Suspiciously good. I'm proud. A little 😏",
       "ok": "Not bad at all! A bit more practice and it will be perfect.",
-      "oops": "Oops! No worries — let’s look at the mistakes together."
+      "oops": "This topic is putting up a fight. We'll win — let's look at the mistakes."
     }
   },
   "review": {
@@ -775,7 +775,7 @@
       "coins": "Costs {{price}} 🪙"
     },
     "errors": {
-      "not_enough_coins": "Not enough coins.",
+      "not_enough_coins": "Not enough coins. I'd lend you some, but I'm a fennec.",
       "ai_busy": "Lean is very busy right now — try again in a minute. No coins were taken.",
       "ai_failed": "Something went wrong. Coins were not charged — please try again.",
       "ai_not_configured": "The AI tutor is not available yet.",
@@ -787,7 +787,7 @@
     "untitled": "Chat",
     "hello": "Hi{{name}}! I'm Lean, your English tutor 🦊",
     "helloHint": "Write anything in English — or pick a topic to start:",
-    "thinking": "Lean is typing…",
+    "thinking": "Lean is typing… (and chewing a date)",
     "placeholder": "Write a message… (Enter — send, Shift+Enter — new line)",
     "send": "Send",
     "writing": {
@@ -1116,20 +1116,21 @@
   },
   "dash": {
     "hello": {
-      "morning": "Good morning, {{name}}!",
+      "morning": "Good morning, {{name}}. You bring the coffee, I bring the English.",
       "day": "Hi, {{name}}!",
       "evening": "Good evening, {{name}}!",
-      "night": "Still up, {{name}}? 🌙"
+      "night": "Why are we not sleeping, {{name}}? 🌙"
     },
     "keepStreak": "{{n}} days in a row — keep it going!",
     "startStreak": "One lesson today — and we've got a streak.",
     "streak": "days in a row",
     "coins": "coins",
-    "continue": "Next lesson"
+    "continue": "Next lesson",
+    "keepStreakLong": "{{n}} days in a row. I'm starting to respect you."
   },
   "notFound": {
     "title": "Lean got lost",
-    "text": "There's no such page. Let's head back home.",
+    "text": "I got lost. And I have, for the record, the best hearing in the desert.",
     "home": "To the home page"
   },
   "interests": {

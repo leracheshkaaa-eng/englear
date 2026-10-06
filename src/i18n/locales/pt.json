@@ -163,9 +163,9 @@
     "viewMistakes": "Ver erros",
     "tryAgain": "Refazer",
     "lean": {
-      "great": "Uau, mandou bem! Minhas orelhas até tremeram de alegria 🎉",
+      "great": "Suspeitamente bom. Estou orgulhoso. Um pouco 😏",
       "ok": "Nada mal! Mais um pouco de prática e fica perfeito.",
-      "oops": "Ops! Tudo bem — vamos ver os erros juntos."
+      "oops": "Esse tema ainda está resistindo. A gente vence — vamos ver os erros."
     }
   },
   "review": {
@@ -775,7 +775,7 @@
       "coins": "Custa {{price}} 🪙"
     },
     "errors": {
-      "not_enough_coins": "Moedas insuficientes.",
+      "not_enough_coins": "Moedas insuficientes. Eu emprestaria, mas sou um feneco.",
       "ai_busy": "O Lean está muito ocupado agora — tente de novo em um minuto. Nenhuma moeda foi cobrada.",
       "ai_failed": "Algo deu errado. Nenhuma moeda foi cobrada — tente de novo.",
       "ai_not_configured": "O tutor IA ainda não está disponível.",
@@ -787,7 +787,7 @@
     "untitled": "Chat",
     "hello": "Oi{{name}}! Eu sou o Lean, seu professor de inglês 🦊",
     "helloHint": "Escreva qualquer coisa em inglês — ou escolha um tema para começar:",
-    "thinking": "Lean está digitando…",
+    "thinking": "Lean está digitando… (e mastigando uma tâmara)",
     "placeholder": "Escreva uma mensagem… (Enter — enviar, Shift+Enter — nova linha)",
     "send": "Enviar",
     "writing": {
@@ -1116,20 +1116,21 @@
   },
   "dash": {
     "hello": {
-      "morning": "Bom dia, {{name}}!",
+      "morning": "Bom dia, {{name}}. Você traz o café, eu trago o inglês.",
       "day": "Oi, {{name}}!",
       "evening": "Boa noite, {{name}}!",
-      "night": "Ainda acordado, {{name}}? 🌙"
+      "night": "Por que a gente não está dormindo, {{name}}? 🌙"
     },
     "keepStreak": "{{n}} dias seguidos — continue!",
     "startStreak": "Uma aula hoje — e a sequência começa.",
     "streak": "dias seguidos",
     "coins": "moedas",
-    "continue": "Próxima aula"
+    "continue": "Próxima aula",
+    "keepStreakLong": "{{n}} dias seguidos. Estou começando a te respeitar."
   },
   "notFound": {
     "title": "O Lean se perdeu",
-    "text": "Essa página não existe. Vamos voltar pra casa.",
+    "text": "Eu me perdi. E olha que eu tenho a melhor audição do deserto.",
     "home": "Para o início"
   },
   "interests": {

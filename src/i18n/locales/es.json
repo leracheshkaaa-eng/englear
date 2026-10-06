@@ -163,9 +163,9 @@
     "viewMistakes": "Ver errores",
     "tryAgain": "Repetir",
     "lean": {
-      "great": "¡Guau, genial! Se me mueven las orejas de alegría 🎉",
+      "great": "Sospechosamente bien. Estoy orgulloso. Un poco 😏",
       "ok": "¡Nada mal! Un poco más de práctica y quedará perfecto.",
-      "oops": "¡Uy! No pasa nada — veamos juntos los errores."
+      "oops": "Este tema todavía se resiste. Lo vamos a vencer: veamos los errores."
     }
   },
   "review": {
@@ -775,7 +775,7 @@
       "coins": "Cuesta {{price}} 🪙"
     },
     "errors": {
-      "not_enough_coins": "No tienes suficientes monedas.",
+      "not_enough_coins": "No hay suficientes monedas. Te prestaría, pero soy un fénec.",
       "ai_busy": "Lean está muy ocupado ahora — inténtalo en un minuto. No se han cobrado monedas.",
       "ai_failed": "Algo salió mal. No se cobraron monedas — inténtalo de nuevo.",
       "ai_not_configured": "El tutor IA aún no está disponible.",
@@ -787,7 +787,7 @@
     "untitled": "Chat",
     "hello": "¡Hola{{name}}! Soy Lean, tu profe de inglés 🦊",
     "helloHint": "Escribe lo que quieras en inglés — o elige un tema para empezar:",
-    "thinking": "Lean está escribiendo…",
+    "thinking": "Lean está escribiendo… (y masticando un dátil)",
     "placeholder": "Escribe un mensaje… (Enter — enviar, Shift+Enter — nueva línea)",
     "send": "Enviar",
     "writing": {
@@ -1116,20 +1116,21 @@
   },
   "dash": {
     "hello": {
-      "morning": "¡Buenos días, {{name}}!",
+      "morning": "Buenos días, {{name}}. Tú pones el café, yo el inglés.",
       "day": "¡Hola, {{name}}!",
       "evening": "¡Buenas noches, {{name}}!",
-      "night": "¿Aún despierto, {{name}}? 🌙"
+      "night": "¿Por qué no estamos durmiendo, {{name}}? 🌙"
     },
     "keepStreak": "{{n}} días seguidos — ¡sigue así!",
     "startStreak": "Una clase hoy — y empieza la racha.",
     "streak": "días seguidos",
     "coins": "monedas",
-    "continue": "Siguiente clase"
+    "continue": "Siguiente clase",
+    "keepStreakLong": "{{n}} días seguidos. Empiezo a respetarte."
   },
   "notFound": {
     "title": "Lean se perdió",
-    "text": "Esta página no existe. Volvamos a casa.",
+    "text": "Me perdí. Y eso que tengo, para que conste, el mejor oído del desierto.",
     "home": "Al inicio"
   },
   "interests": {

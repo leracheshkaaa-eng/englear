@@ -1359,7 +1359,7 @@ export async function deleteConversation(id: string) {
 }
 /** One tutor turn; starts a new conversation when `conversationId` is null. */
 export function aiTutor(conversationId: string | null, message: string) {
-  return callAi<{ conversation_id: string; reply: string } & AiPayment>({ action: 'tutor', conversation_id: conversationId, message })
+  return callAi<{ conversation_id: string; reply: string } & AiPayment>({ action: 'tutor', conversation_id: conversationId, message, hour: new Date().getHours() })
 }
 
 export type WritingMistake = { original: string; correction: string; type: 'grammar' | 'vocabulary' | 'spelling' | 'punctuation' | 'word_order' | 'style'; explanation: string }

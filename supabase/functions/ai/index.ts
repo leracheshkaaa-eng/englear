@@ -13,7 +13,8 @@ import { createClient } from 'npm:@supabase/supabase-js@2'
 import { LANGUAGE_NAMES, LEVELS, WRITING_SCHEMA, feedbackLanguage, tutorSystem, writingSystem } from './prompts.ts'
 import { GEN_TYPES, LESSON_SCHEMA, SOLVE_SCHEMA, agrees, lessonSystem, lessonUser, ruleProblem, solverPrompt, toEditorLine, type GenExercise, type GenRequest } from './lesson.ts'
 
-const TUTOR_MODEL = 'claude-haiku-4-5' // fast and cheap: short conversational turns
+// fast and cheap by default; set the TUTOR_MODEL secret (e.g. claude-sonnet-5-5) to try a wittier Lean
+const TUTOR_MODEL = Deno.env.get('TUTOR_MODEL') || 'claude-haiku-4-5'
 const WRITING_MODEL = 'claude-sonnet-5-5' // careful feedback on a whole text
 const LESSON_MODEL = 'claude-sonnet-5-5' // writes lessons for teachers
 const SOLVER_MODEL = 'claude-haiku-4-5' // independently solves the generated exercises
@@ -66,10 +67,14 @@ Deno.serve(async (req) => {
   if (action === 'tutor' && (!message || message.length > MAX_MESSAGE)) return json({ error: 'bad_message' }, 400)
   if (action === 'writing' && (text.length < MIN_TEXT || text.length > MAX_TEXT)) return json({ error: 'bad_text' }, 400)
 
-  const [{ data: profile }, { data: settings }] = await Promise.all([
+  const [{ data: profile }, { data: settings }, { data: likes }] = await Promise.all([
     admin.from('profiles').select('full_name, role').eq('id', user.id).maybeSingle(),
     admin.from('user_settings').select('english_level, native_language, interface_language').eq('user_id', user.id).maybeSingle(),
+    admin.from('user_interests').select('interests').eq('user_id', user.id).maybeSingle(),
   ])
+  // the learner's own answers are short free text: keep only letters, digits, spaces and a few signs
+  const interests = ((likes?.interests ?? []) as string[]).slice(0, 30).map((i) => i.replace(/[^\p{L}\p{N} _:'&.-]/gu, '').slice(0, 48)).filter(Boolean)
+  const hour = Number.isInteger(body.hour) && body.hour >= 0 && body.hour < 24 ? (body.hour as number) : null
   const level = LEVELS.includes(settings?.english_level) ? settings!.english_level : 'A1'
   const lang = feedbackLanguage(settings)
 
@@ -126,7 +131,7 @@ Deno.serve(async (req) => {
       const res = await anthropic().messages.create({
         model: TUTOR_MODEL,
         max_tokens: 700,
-        system: tutorSystem(level, lang, profile?.full_name ?? ''),
+        system: tutorSystem({ level, lang, name: profile?.full_name ?? '', interests, hour }),
         messages: [...history, { role: 'user', content: message }],
       })
       const reply = textOf(res)

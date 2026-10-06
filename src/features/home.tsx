@@ -137,7 +137,7 @@ export function Dashboard({
         <LeanSays pose={pose} size={110}>
           <span className="font-display text-xl font-semibold">{t(`dash.hello.${part}` as 'dash.hello.morning', { name })}</span>
           <br />
-          <span className="text-mute">{streak > 0 ? t('dash.keepStreak', { n: streak }) : t('dash.startStreak')}</span>
+          <span className="text-mute">{streak >= 7 ? t('dash.keepStreakLong', { n: streak }) : streak > 0 ? t('dash.keepStreak', { n: streak }) : t('dash.startStreak')}</span>
         </LeanSays>
         <div className="flex gap-3 self-center">
           <Stat icon="🔥" value={streak} label={t('dash.streak')} />

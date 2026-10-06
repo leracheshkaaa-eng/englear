@@ -165,9 +165,9 @@
     "viewMistakes": "Zobacz błędy",
     "tryAgain": "Przerób ponownie",
     "lean": {
-      "great": "Wow, świetnie! Aż mi uszy drżą z radości 🎉",
+      "great": "Podejrzanie dobrze. Jestem dumny. Troszkę 😏",
       "ok": "Całkiem nieźle! Jeszcze trochę praktyki i będzie idealnie.",
-      "oops": "Ups! Nic się nie stało — przejrzyjmy błędy razem."
+      "oops": "Ten temat jeszcze się broni. Pokonamy go — przejrzyjmy błędy."
     }
   },
   "review": {
@@ -795,7 +795,7 @@
       "coins": "Koszt: {{price}} 🪙"
     },
     "errors": {
-      "not_enough_coins": "Za mało monet.",
+      "not_enough_coins": "Za mało monet. Pożyczyłbym ci, ale jestem fenkiem.",
       "ai_busy": "Lean jest teraz bardzo zajęty — spróbuj za minutę. Monety nie zostały pobrane.",
       "ai_failed": "Coś poszło nie tak. Monety nie zostały pobrane — spróbuj ponownie.",
       "ai_not_configured": "Korepetytor AI nie jest jeszcze dostępny.",
@@ -807,7 +807,7 @@
     "untitled": "Czat",
     "hello": "Cześć{{name}}! Jestem Lean, twój nauczyciel angielskiego 🦊",
     "helloHint": "Napisz cokolwiek po angielsku — albo wybierz temat na początek:",
-    "thinking": "Lean pisze…",
+    "thinking": "Lean pisze… (i żuje daktyla)",
     "placeholder": "Napisz wiadomość… (Enter — wyślij, Shift+Enter — nowa linia)",
     "send": "Wyślij",
     "writing": {
@@ -1136,20 +1136,21 @@
   },
   "dash": {
     "hello": {
-      "morning": "Dzień dobry, {{name}}!",
+      "morning": "Dzień dobry, {{name}}. Ty przynosisz kawę, ja angielski.",
       "day": "Cześć, {{name}}!",
       "evening": "Dobry wieczór, {{name}}!",
-      "night": "Jeszcze nie śpisz, {{name}}? 🌙"
+      "night": "Czemu nie śpimy, {{name}}? 🌙"
     },
     "keepStreak": "{{n}} dni z rzędu — tak trzymaj!",
     "startStreak": "Jedna lekcja dziś — i mamy serię.",
     "streak": "dni z rzędu",
     "coins": "monet",
-    "continue": "Następna lekcja"
+    "continue": "Następna lekcja",
+    "keepStreakLong": "{{n}} dni z rzędu. Zaczynam cię szanować."
   },
   "notFound": {
     "title": "Lean się zgubił",
-    "text": "Nie ma takiej strony. Wracajmy do domu.",
+    "text": "Zgubiłem się. A mam, tak dla jasności, najlepszy słuch na pustyni.",
     "home": "Na stronę główną"
   },
   "interests": {

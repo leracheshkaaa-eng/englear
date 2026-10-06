@@ -163,9 +163,9 @@
     "viewMistakes": "Voir les erreurs",
     "tryAgain": "Recommencer",
     "lean": {
-      "great": "Waouh, bravo ! Mes oreilles frémissent de joie 🎉",
+      "great": "Étrangement bien. Je suis fier. Un peu 😏",
       "ok": "Pas mal du tout ! Encore un peu de pratique et ce sera parfait.",
-      "oops": "Oups ! Pas grave — regardons les erreurs ensemble."
+      "oops": "Ce thème résiste encore. On va l’avoir — regardons les erreurs."
     }
   },
   "review": {
@@ -775,7 +775,7 @@
       "coins": "Coût : {{price}} 🪙"
     },
     "errors": {
-      "not_enough_coins": "Pas assez de pièces.",
+      "not_enough_coins": "Pas assez de pièces. Je t’en prêterais bien, mais je suis un fennec.",
       "ai_busy": "Lean est très occupé en ce moment — réessaie dans une minute. Aucune pièce n’a été débitée.",
       "ai_failed": "Un problème est survenu. Aucune pièce n’a été débitée — réessaie.",
       "ai_not_configured": "Le tuteur IA n’est pas encore disponible.",
@@ -787,7 +787,7 @@
     "untitled": "Chat",
     "hello": "Salut{{name}} ! Moi, c’est Lean, ton prof d’anglais 🦊",
     "helloHint": "Écris ce que tu veux en anglais — ou choisis un sujet pour commencer :",
-    "thinking": "Lean écrit…",
+    "thinking": "Lean écrit… (et mâche une datte)",
     "placeholder": "Écris un message… (Entrée — envoyer, Maj+Entrée — nouvelle ligne)",
     "send": "Envoyer",
     "writing": {
@@ -1116,20 +1116,21 @@
   },
   "dash": {
     "hello": {
-      "morning": "Bonjour, {{name}} !",
+      "morning": "Bonjour, {{name}}. Toi, le café ; moi, l’anglais.",
       "day": "Salut, {{name}} !",
       "evening": "Bonsoir, {{name}} !",
-      "night": "Pas encore couché, {{name}} ? 🌙"
+      "night": "Pourquoi on ne dort pas, {{name}} ? 🌙"
     },
     "keepStreak": "{{n}} jours d’affilée — continue !",
     "startStreak": "Une leçon aujourd’hui — et la série commence.",
     "streak": "jours d’affilée",
     "coins": "pièces",
-    "continue": "Leçon suivante"
+    "continue": "Leçon suivante",
+    "keepStreakLong": "{{n}} jours d’affilée. Je commence à te respecter."
   },
   "notFound": {
     "title": "Lean s’est perdu",
-    "text": "Cette page n’existe pas. Rentrons à la maison.",
+    "text": "Je me suis perdu. Et j’ai, pour info, la meilleure ouïe du désert.",
     "home": "Vers l’accueil"
   },
   "interests": {

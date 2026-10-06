@@ -163,9 +163,9 @@
     "viewMistakes": "Fehler ansehen",
     "tryAgain": "Nochmal machen",
     "lean": {
-      "great": "Wow, super gemacht! Meine Ohren zucken vor Freude 🎉",
+      "great": "Verdächtig gut. Ich bin stolz. Ein bisschen 😏",
       "ok": "Gar nicht schlecht! Ein bisschen mehr Übung, dann sitzt es perfekt.",
-      "oops": "Hoppla! Kein Problem — schauen wir uns die Fehler zusammen an."
+      "oops": "Dieses Thema wehrt sich noch. Wir kriegen es — schauen wir uns die Fehler an."
     }
   },
   "review": {
@@ -775,7 +775,7 @@
       "coins": "Kostet {{price}} 🪙"
     },
     "errors": {
-      "not_enough_coins": "Nicht genug Münzen.",
+      "not_enough_coins": "Nicht genug Münzen. Ich würde dir welche leihen, aber ich bin ein Wüstenfuchs.",
       "ai_busy": "Lean ist gerade sehr beschäftigt — versuch es in einer Minute noch mal. Es wurden keine Münzen abgezogen.",
       "ai_failed": "Etwas ist schiefgelaufen. Es wurden keine Münzen abgebucht — versuch es noch einmal.",
       "ai_not_configured": "Der KI-Tutor ist noch nicht verfügbar.",
@@ -787,7 +787,7 @@
     "untitled": "Chat",
     "hello": "Hi{{name}}! Ich bin Lean, dein Englischlehrer 🦊",
     "helloHint": "Schreib etwas auf Englisch — oder wähle ein Thema für den Anfang:",
-    "thinking": "Lean schreibt…",
+    "thinking": "Lean schreibt… (und kaut eine Dattel)",
     "placeholder": "Schreib eine Nachricht… (Enter — senden, Shift+Enter — neue Zeile)",
     "send": "Senden",
     "writing": {
@@ -1116,20 +1116,21 @@
   },
   "dash": {
     "hello": {
-      "morning": "Guten Morgen, {{name}}!",
+      "morning": "Guten Morgen, {{name}}. Du bringst den Kaffee, ich das Englisch.",
       "day": "Hi, {{name}}!",
       "evening": "Guten Abend, {{name}}!",
-      "night": "Noch wach, {{name}}? 🌙"
+      "night": "Warum schlafen wir nicht, {{name}}? 🌙"
     },
     "keepStreak": "{{n}} Tage am Stück — weiter so!",
     "startStreak": "Eine Stunde heute — und die Serie läuft.",
     "streak": "Tage am Stück",
     "coins": "Münzen",
-    "continue": "Nächste Stunde"
+    "continue": "Nächste Stunde",
+    "keepStreakLong": "{{n}} Tage am Stück. Ich fange an, dich zu respektieren."
   },
   "notFound": {
     "title": "Lean hat sich verlaufen",
-    "text": "Diese Seite gibt es nicht. Gehen wir zurück nach Hause.",
+    "text": "Ich habe mich verlaufen. Und ich habe, nur nebenbei, das beste Gehör der Wüste.",
     "home": "Zur Startseite"
   },
   "interests": {
