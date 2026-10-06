@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /embed/
+Disallow: /brand
+
+Sitemap: https://englean.app/sitemap.xml
