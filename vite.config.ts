@@ -17,6 +17,9 @@ export default defineConfig(({ mode }) => {
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
+      // Files live under /static/ (not /assets/): browsers cached a bad permanent redirect for the old
+      // /assets/* URLs on www.englean.app (2026-10-06), so new URLs are needed for them to load again.
+      assetsDir: 'static',
     },
     plugins: [
 react(),
