@@ -764,7 +764,8 @@
     "until": "until {{date}}",
     "tabs": {
       "chat": "Chat",
-      "writing": "Writing check"
+      "writing": "Writing check",
+      "speaking": "Speaking"
     },
     "cost": {
       "plus_tutor": "Plus: {{n}} messages left today",
@@ -772,7 +773,8 @@
       "free_day": "Free today: {{n}} left · then {{price}} 🪙",
       "free_week": "Free this week: {{n}} left · then {{price}} 🪙",
       "free_month": "Free this month: {{n}} left · then {{price}} 🪙",
-      "coins": "Costs {{price}} 🪙"
+      "coins": "Costs {{price}} 🪙",
+      "plus_speaking": "Plus: {{n}} conversations left today"
     },
     "errors": {
       "not_enough_coins": "Not enough coins. I'd lend you some, but I'm a fennec.",
@@ -819,6 +821,66 @@
       "corrected": "Corrected text",
       "strengths": "What is good",
       "nextSteps": "What to work on"
+    },
+    "speaking": {
+      "intro": "Let's talk. Out loud. Pick a scene, press the mic and speak English — my ears are ready 😏",
+      "start": "Start talking",
+      "starting": "Lean is getting ready…",
+      "noMic": "Your browser can't recognise speech. Open the site in Chrome, Edge or Safari — or just type.",
+      "noReport": "Nothing to review yet — you didn't say anything 🙃",
+      "again": "Another conversation",
+      "replay": "Listen again",
+      "over": "That's the end of this scene. Get your review!",
+      "typePlaceholder": "Type your answer in English…",
+      "mic": "Microphone",
+      "tapToTalk": "Tap and speak",
+      "tapToSend": "Tap when you finish",
+      "useMic": "Use the microphone",
+      "typeInstead": "Type instead",
+      "finish": "Finish and get a review",
+      "reporting": "Lean is writing your review…",
+      "turnsLeft": "{{n}} lines left",
+      "strengths": "What went well",
+      "fixes": "Say it better",
+      "phrases": "Useful phrases",
+      "phase": {
+        "idle": "Your turn",
+        "listening": "Listening…",
+        "thinking": "Thinking…",
+        "speaking": "Lean is talking"
+      },
+      "scenarios": {
+        "free": {
+          "title": "Just chat",
+          "desc": "Talk about anything: your day, plans, what you like"
+        },
+        "cafe": {
+          "title": "Coffee shop",
+          "desc": "Order from a tired, slightly judgemental barista"
+        },
+        "friend": {
+          "title": "Weekend plans",
+          "desc": "Make plans with a friend: where, when, what"
+        },
+        "interview": {
+          "title": "Job interview",
+          "desc": "A summer job interview with a picky manager"
+        },
+        "airport": {
+          "title": "Airport",
+          "desc": "Check in, luggage, seat — and one small problem"
+        },
+        "fandom": {
+          "title": "Fandom debate",
+          "desc": "Defend your favourite series, film or game"
+        }
+      },
+      "errors": {
+        "not_heard": "I didn't catch that. Try again, a bit louder?",
+        "mic_denied": "No access to the microphone. Allow it in your browser settings.",
+        "mic_failed": "The microphone didn't work. Try again or type instead.",
+        "session_over": "This conversation is over. Start a new one!"
+      }
     }
   },
   "classes": {

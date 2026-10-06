@@ -754,7 +754,8 @@
     "until": "{{date}} まで",
     "tabs": {
       "chat": "チャット",
-      "writing": "作文チェック"
+      "writing": "作文チェック",
+      "speaking": "スピーキング"
     },
     "cost": {
       "plus_tutor": "Plus：今日の残り {{n}} メッセージ",
@@ -762,7 +763,8 @@
       "free_day": "今日の無料分：残り {{n}} · その後 {{price}} 🪙",
       "free_week": "今週の無料分：残り {{n}} · その後 {{price}} 🪙",
       "free_month": "今月の無料分：残り {{n}} · その後 {{price}} 🪙",
-      "coins": "{{price}} 🪙"
+      "coins": "{{price}} 🪙",
+      "plus_speaking": "Plus：今日はあと {{n}} 回話せます"
     },
     "errors": {
       "not_enough_coins": "コインが足りないよ。貸してあげたいけど、ぼくはフェネックだから。",
@@ -809,6 +811,66 @@
       "corrected": "修正した作文",
       "strengths": "よかった点",
       "nextSteps": "次に取り組むこと"
+    },
+    "speaking": {
+      "intro": "話そうよ。声に出してね。シーンを選んでマイクを押して、英語で話して——ぼくの耳は準備OK 😏",
+      "start": "話しはじめる",
+      "starting": "Lean が準備中…",
+      "noMic": "このブラウザは音声認識に対応していません。Chrome、Edge、Safari で開くか、文字で入力してね。",
+      "noReport": "まだ振り返ることがないよ——何も話してないから 🙃",
+      "again": "もう一度話す",
+      "replay": "もう一度聞く",
+      "over": "このシーンはおしまい。振り返りを見てね！",
+      "typePlaceholder": "英語で答えを入力…",
+      "mic": "マイク",
+      "tapToTalk": "タップして話す",
+      "tapToSend": "話し終わったらタップ",
+      "useMic": "マイクを使う",
+      "typeInstead": "文字で入力",
+      "finish": "終わって振り返りを見る",
+      "reporting": "Lean が振り返りを書いています…",
+      "turnsLeft": "あと {{n}} 回",
+      "strengths": "よかったところ",
+      "fixes": "もっと自然に",
+      "phrases": "役立つフレーズ",
+      "phase": {
+        "idle": "きみの番",
+        "listening": "聞いてるよ…",
+        "thinking": "考え中…",
+        "speaking": "Lean が話しています"
+      },
+      "scenarios": {
+        "free": {
+          "title": "ただおしゃべり",
+          "desc": "なんでも：今日のこと、予定、好きなもの"
+        },
+        "cafe": {
+          "title": "カフェ",
+          "desc": "疲れていてちょっと皮肉なバリスタに注文しよう"
+        },
+        "friend": {
+          "title": "週末の予定",
+          "desc": "友だちと決めよう：どこへ、いつ、何をする"
+        },
+        "interview": {
+          "title": "アルバイトの面接",
+          "desc": "夏のバイトと細かいマネージャー"
+        },
+        "airport": {
+          "title": "空港",
+          "desc": "チェックイン、荷物、座席——そして小さなトラブル"
+        },
+        "fandom": {
+          "title": "推し論争",
+          "desc": "好きなドラマ・映画・ゲームを熱く語ろう"
+        }
+      },
+      "errors": {
+        "not_heard": "聞き取れなかった。もう少し大きな声でもう一度？",
+        "mic_denied": "マイクにアクセスできません。ブラウザの設定で許可してね。",
+        "mic_failed": "マイクがうまく動きませんでした。もう一度試すか、文字で入力してね。",
+        "session_over": "この会話は終わりました。新しく始めよう！"
+      }
     }
   },
   "classes": {

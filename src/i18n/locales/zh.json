@@ -754,7 +754,8 @@
     "until": "至 {{date}}",
     "tabs": {
       "chat": "聊天",
-      "writing": "写作批改"
+      "writing": "写作批改",
+      "speaking": "口语"
     },
     "cost": {
       "plus_tutor": "Plus：今天还剩 {{n}} 条消息",
@@ -762,7 +763,8 @@
       "free_day": "今天免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
       "free_week": "本周免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
       "free_month": "本月免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
-      "coins": "费用：{{price}} 🪙"
+      "coins": "费用：{{price}} 🪙",
+      "plus_speaking": "Plus：今天还剩 {{n}} 次对话"
     },
     "errors": {
       "not_enough_coins": "金币不够。我想借你一些，可我是只耳廓狐。",
@@ -809,6 +811,66 @@
       "corrected": "修改后的文章",
       "strengths": "优点",
       "nextSteps": "需要加强"
+    },
+    "speaking": {
+      "intro": "来聊聊吧，大声说出来。选一个场景，按下麦克风说英语——我的耳朵已经准备好了 😏",
+      "start": "开始对话",
+      "starting": "Lean 正在准备……",
+      "noMic": "你的浏览器无法识别语音。请用 Chrome、Edge 或 Safari 打开网站——或者直接打字。",
+      "noReport": "还没有可点评的内容——你什么都没说 🙃",
+      "again": "再来一次对话",
+      "replay": "再听一遍",
+      "over": "这个场景结束了，来看点评吧！",
+      "typePlaceholder": "用英语输入你的回答……",
+      "mic": "麦克风",
+      "tapToTalk": "点一下开始说",
+      "tapToSend": "说完再点一下",
+      "useMic": "使用麦克风",
+      "typeInstead": "改为打字",
+      "finish": "结束并查看点评",
+      "reporting": "Lean 正在写点评……",
+      "turnsLeft": "还剩 {{n}} 句",
+      "strengths": "做得好的地方",
+      "fixes": "更好的说法",
+      "phrases": "实用表达",
+      "phase": {
+        "idle": "轮到你了",
+        "listening": "正在听……",
+        "thinking": "正在思考……",
+        "speaking": "Lean 在说话"
+      },
+      "scenarios": {
+        "free": {
+          "title": "随便聊聊",
+          "desc": "聊什么都行：你的一天、计划、喜欢的东西"
+        },
+        "cafe": {
+          "title": "咖啡店",
+          "desc": "向一位疲惫又有点毒舌的咖啡师点单"
+        },
+        "friend": {
+          "title": "周末计划",
+          "desc": "和朋友约好：去哪儿、什么时候、做什么"
+        },
+        "interview": {
+          "title": "求职面试",
+          "desc": "暑期工作和一位挑剔的经理"
+        },
+        "airport": {
+          "title": "机场",
+          "desc": "值机、行李、座位——还有一个小问题"
+        },
+        "fandom": {
+          "title": "粉圈辩论",
+          "desc": "为你最爱的剧、电影或游戏辩护"
+        }
+      },
+      "errors": {
+        "not_heard": "没听清，再大声一点试试？",
+        "mic_denied": "无法使用麦克风。请在浏览器设置中允许访问。",
+        "mic_failed": "麦克风没有工作。请再试一次或改为打字。",
+        "session_over": "这次对话已经结束，开始新的吧！"
+      }
     }
   },
   "classes": {

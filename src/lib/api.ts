@@ -1310,6 +1310,7 @@ export type AiStatus = {
   tutor: AiKindStatus
   writing: AiKindStatus
   lesson: AiKindStatus
+  speaking: AiKindStatus
 }
 /** What the signed-in user can do right now (allowances left, prices, balance). */
 export async function aiStatus(): Promise<AiStatus | null> {
@@ -1357,6 +1358,21 @@ export async function deleteConversation(id: string) {
   const { error } = await supabase.from('ai_conversations').delete().eq('id', id)
   if (error) throw error
 }
+/* speaking practice: a session is paid for when it starts; turns and the report are included */
+export const SPEAKING_SCENARIOS = ['free', 'cafe', 'friend', 'interview', 'airport', 'fandom'] as const
+export type SpeakingScenario = (typeof SPEAKING_SCENARIOS)[number]
+export type SpeakingFix = { said: string; better: string; why: string }
+export type SpeakingFeedback = { summary: string; strengths: string[]; fixes: SpeakingFix[]; phrases: { phrase: string; meaning: string }[]; next: string }
+export function aiSpeakingStart(scenario: SpeakingScenario) {
+  return callAi<{ session_id: string; reply: string; turns_left: number } & AiPayment>({ action: 'speaking_start', scenario })
+}
+export function aiSpeakingTurn(sessionId: string, text: string) {
+  return callAi<{ reply: string; fix: SpeakingFix | null; turns_left: number }>({ action: 'speaking_turn', session_id: sessionId, text })
+}
+export function aiSpeakingEnd(sessionId: string) {
+  return callAi<{ feedback: SpeakingFeedback | null }>({ action: 'speaking_end', session_id: sessionId })
+}
+
 /** One tutor turn; starts a new conversation when `conversationId` is null. */
 export function aiTutor(conversationId: string | null, message: string) {
   return callAi<{ conversation_id: string; reply: string } & AiPayment>({ action: 'tutor', conversation_id: conversationId, message, hour: new Date().getHours() })

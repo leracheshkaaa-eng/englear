@@ -764,7 +764,8 @@
     "until": "fino al {{date}}",
     "tabs": {
       "chat": "Chat",
-      "writing": "Correzione testi"
+      "writing": "Correzione testi",
+      "speaking": "Parlare"
     },
     "cost": {
       "plus_tutor": "Plus: oggi restano {{n}} messaggi",
@@ -772,7 +773,8 @@
       "free_day": "Gratis oggi: ne restano {{n}} · poi {{price}} 🪙",
       "free_week": "Gratis questa settimana: ne restano {{n}} · poi {{price}} 🪙",
       "free_month": "Gratis questo mese: ne restano {{n}} · poi {{price}} 🪙",
-      "coins": "Costa {{price}} 🪙"
+      "coins": "Costa {{price}} 🪙",
+      "plus_speaking": "Plus: oggi restano {{n}} conversazioni"
     },
     "errors": {
       "not_enough_coins": "Monete insufficienti. Te ne presterei, ma sono un fennec.",
@@ -819,6 +821,66 @@
       "corrected": "Testo corretto",
       "strengths": "Cosa va bene",
       "nextSteps": "Su cosa lavorare"
+    },
+    "speaking": {
+      "intro": "Parliamo. Ad alta voce. Scegli una scena, premi il microfono e parla in inglese: le mie orecchie sono pronte 😏",
+      "start": "Inizia a parlare",
+      "starting": "Lean si sta preparando…",
+      "noMic": "Il tuo browser non riconosce la voce. Apri il sito in Chrome, Edge o Safari, oppure scrivi.",
+      "noReport": "Niente da rivedere: non hai detto nulla 🙃",
+      "again": "Un’altra conversazione",
+      "replay": "Riascolta",
+      "over": "La scena è finita. Prendi il tuo resoconto!",
+      "typePlaceholder": "Scrivi la tua risposta in inglese…",
+      "mic": "Microfono",
+      "tapToTalk": "Tocca e parla",
+      "tapToSend": "Tocca quando hai finito",
+      "useMic": "Usa il microfono",
+      "typeInstead": "Scrivi invece",
+      "finish": "Termina e ricevi il resoconto",
+      "reporting": "Lean sta scrivendo il resoconto…",
+      "turnsLeft": "restano {{n}} battute",
+      "strengths": "Cosa è andato bene",
+      "fixes": "Dillo meglio",
+      "phrases": "Frasi utili",
+      "phase": {
+        "idle": "Tocca a te",
+        "listening": "Ascolto…",
+        "thinking": "Ci penso…",
+        "speaking": "Lean sta parlando"
+      },
+      "scenarios": {
+        "free": {
+          "title": "Due chiacchiere",
+          "desc": "Di tutto: la tua giornata, i piani, cosa ti piace"
+        },
+        "cafe": {
+          "title": "Bar",
+          "desc": "Ordina da un barista stanco e un po’ ironico"
+        },
+        "friend": {
+          "title": "Piani per il weekend",
+          "desc": "Organizzati con un amico: dove, quando, cosa"
+        },
+        "interview": {
+          "title": "Colloquio di lavoro",
+          "desc": "Un lavoro estivo e un manager pignolo"
+        },
+        "airport": {
+          "title": "Aeroporto",
+          "desc": "Check-in, bagaglio, posto… e un piccolo problema"
+        },
+        "fandom": {
+          "title": "Dibattito fandom",
+          "desc": "Difendi la tua serie, il tuo film o gioco preferito"
+        }
+      },
+      "errors": {
+        "not_heard": "Non ho capito. Riprova, un po’ più forte?",
+        "mic_denied": "Nessun accesso al microfono. Consentilo nelle impostazioni del browser.",
+        "mic_failed": "Il microfono non ha funzionato. Riprova o scrivi.",
+        "session_over": "Questa conversazione è finita. Iniziane una nuova!"
+      }
     }
   },
   "classes": {

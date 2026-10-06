@@ -11,10 +11,16 @@ import 'jsr:@supabase/functions-js/edge-runtime.d.ts'
 import Anthropic from 'npm:@anthropic-ai/sdk'
 import { createClient } from 'npm:@supabase/supabase-js@2'
 import { LANGUAGE_NAMES, LEVELS, WRITING_SCHEMA, feedbackLanguage, tutorSystem, writingSystem } from './prompts.ts'
+import { FEEDBACK_SCHEMA, MAX_TURNS, SCENARIOS, SESSION_MINUTES, SPEAK_SCHEMA, feedbackSystem, speakingSystem, toMessages, transcriptText, type Line } from './speaking.ts'
 import { GEN_TYPES, LESSON_SCHEMA, SOLVE_SCHEMA, agrees, lessonSystem, lessonUser, ruleProblem, solverPrompt, toEditorLine, type GenExercise, type GenRequest } from './lesson.ts'
 
-// fast and cheap by default; set the TUTOR_MODEL secret (e.g. claude-sonnet-5-5) to try a wittier Lean
-const TUTOR_MODEL = Deno.env.get('TUTOR_MODEL') || 'claude-haiku-4-5'
+// Lean's chat and voice: the free taste runs on the fast, cheap model; paid requests (Plus or coins)
+// on the wittier one. The TUTOR_MODEL secret can override the paid model.
+const FREE_MODEL = 'claude-haiku-4-5'
+const PAID_MODEL = Deno.env.get('TUTOR_MODEL') || 'claude-sonnet-5-5'
+const chatModel = (mode: string) => (mode === 'free' ? FREE_MODEL : PAID_MODEL)
+// Sonnet thinks by default; short conversational turns need little of it
+const lowEffort = (model: string) => (model.includes('sonnet') ? { effort: 'low' as const } : {})
 const WRITING_MODEL = 'claude-sonnet-5-5' // careful feedback on a whole text
 const LESSON_MODEL = 'claude-sonnet-5-5' // writes lessons for teachers
 const SOLVER_MODEL = 'claude-haiku-4-5' // independently solves the generated exercises
@@ -42,6 +48,9 @@ function anthropic() {
 const textOf = (msg: Anthropic.Message) =>
   msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('').trim()
 
+const isBusy = (e: unknown) => e instanceof Anthropic.RateLimitError || (e instanceof Anthropic.APIError && (e.status === 529 || e.status === 503))
+const ACTIONS = ['tutor', 'writing', 'lesson', 'speaking_start', 'speaking_turn', 'speaking_end']
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: cors })
   if (req.method !== 'POST') return json({ error: 'method_not_allowed' }, 405)
@@ -58,7 +67,7 @@ Deno.serve(async (req) => {
 
   const body = await req.json().catch(() => ({}))
   const action = body?.action
-  if (action !== 'tutor' && action !== 'writing' && action !== 'lesson') return json({ error: 'unknown_action' }, 400)
+  if (!ACTIONS.includes(action)) return json({ error: 'unknown_action' }, 400)
 
   // validate input before charging anything
   const message = String(body.message ?? '').trim()
@@ -66,6 +75,8 @@ Deno.serve(async (req) => {
   const task = String(body.task ?? '').trim().slice(0, 500)
   if (action === 'tutor' && (!message || message.length > MAX_MESSAGE)) return json({ error: 'bad_message' }, 400)
   if (action === 'writing' && (text.length < MIN_TEXT || text.length > MAX_TEXT)) return json({ error: 'bad_text' }, 400)
+  const scenario = String(body.scenario ?? '')
+  if (action === 'speaking_start' && !SCENARIOS[scenario]) return json({ error: 'bad_request' }, 400)
 
   const [{ data: profile }, { data: settings }, { data: likes }] = await Promise.all([
     admin.from('profiles').select('full_name, role').eq('id', user.id).maybeSingle(),
@@ -77,6 +88,62 @@ Deno.serve(async (req) => {
   const hour = Number.isInteger(body.hour) && body.hour >= 0 && body.hour < 24 ? (body.hour as number) : null
   const level = LEVELS.includes(settings?.english_level) ? settings!.english_level : 'A1'
   const lang = feedbackLanguage(settings)
+
+  if (action === 'speaking_turn' || action === 'speaking_end') {
+    const { data: ses } = await admin.from('speaking_sessions').select('*').eq('id', String(body.session_id ?? '')).eq('user_id', user.id).maybeSingle()
+    if (!ses) return json({ error: 'session_not_found' }, 404)
+    const lines = (ses.transcript ?? []) as Line[]
+    const model = chatModel(ses.mode)
+    // the session's token use is added to its usage row
+    const addTokens = async (res: Anthropic.Message) => {
+      if (!ses.usage_id) return
+      const { data: u } = await admin.from('ai_usage').select('input_tokens, output_tokens').eq('id', ses.usage_id).maybeSingle()
+      await admin.rpc('ai_finish', { p_usage: ses.usage_id, p_model: res.model, p_in: (u?.input_tokens ?? 0) + res.usage.input_tokens, p_out: (u?.output_tokens ?? 0) + res.usage.output_tokens })
+    }
+    try {
+      if (action === 'speaking_end') {
+        if (ses.feedback) return json({ feedback: ses.feedback })
+        if (!lines.some((l) => l.role === 'learner')) {
+          await admin.from('speaking_sessions').update({ ended_at: new Date().toISOString() }).eq('id', ses.id)
+          return json({ feedback: null })
+        }
+        const res = await anthropic().messages.create({
+          model,
+          max_tokens: 3000,
+          output_config: { ...lowEffort(model), format: { type: 'json_schema', schema: FEEDBACK_SCHEMA } },
+          system: feedbackSystem(ses.level, lang),
+          messages: [{ role: 'user', content: `Scene: ${SCENARIOS[ses.scenario] ?? ''}\n\nTranscript:\n${transcriptText(lines)}` }],
+        } as Anthropic.MessageCreateParamsNonStreaming)
+        const feedback = JSON.parse(textOf(res))
+        await admin.from('speaking_sessions').update({ feedback, ended_at: new Date().toISOString() }).eq('id', ses.id)
+        await addTokens(res)
+        return json({ feedback })
+      }
+
+      const said = String(body.text ?? '').trim().slice(0, 400)
+      if (!said) return json({ error: 'bad_message' }, 400)
+      if (ses.ended_at || ses.turns >= MAX_TURNS || Date.now() - Date.parse(ses.created_at) > SESSION_MINUTES * 60_000) return json({ error: 'session_over' }, 409)
+      const next: Line[] = [...lines, { role: 'learner', text: said }]
+      const res = await anthropic().messages.create({
+        model,
+        max_tokens: 800,
+        output_config: { ...lowEffort(model), format: { type: 'json_schema', schema: SPEAK_SCHEMA } },
+        system: speakingSystem({ level: ses.level, lang, name: profile?.full_name ?? '', interests, scenario: ses.scenario }),
+        messages: toMessages(next),
+      } as Anthropic.MessageCreateParamsNonStreaming)
+      if (res.stop_reason === 'refusal') throw new Error('refused')
+      const out = JSON.parse(textOf(res)) as { reply: string; said: string; better: string; why: string }
+      const fix = out.said && out.better ? { said: out.said.slice(0, 200), better: out.better.slice(0, 200), why: out.why.slice(0, 300) } : null
+      if (fix) next[next.length - 1] = { ...next[next.length - 1], ...fix }
+      next.push({ role: 'lean', text: out.reply.slice(0, 600) })
+      await admin.from('speaking_sessions').update({ transcript: next, turns: ses.turns + 1 }).eq('id', ses.id)
+      await addTokens(res)
+      return json({ reply: out.reply.slice(0, 600), fix, turns_left: MAX_TURNS - ses.turns - 1 })
+    } catch (e) {
+      console.error('speaking failed', action, e instanceof Anthropic.APIError ? `${e.status} ${e.message}` : e)
+      return json({ error: isBusy(e) ? 'ai_busy' : 'ai_failed' }, isBusy(e) ? 503 : 502)
+    }
+  }
 
   // lesson generator: teachers only; the request is checked before charging
   let gen: GenRequest | null = null
@@ -107,7 +174,8 @@ Deno.serve(async (req) => {
     conversationId = conv.id
   }
 
-  const { data: charge, error: chargeErr } = await admin.rpc('ai_charge', { p_user: user.id, p_kind: action, p_key: crypto.randomUUID() })
+  const kind = action === 'speaking_start' ? 'speaking' : action
+  const { data: charge, error: chargeErr } = await admin.rpc('ai_charge', { p_user: user.id, p_kind: kind, p_key: crypto.randomUUID() })
   if (chargeErr) {
     if (chargeErr.hint === 'not_enough_coins') return json({ error: 'not_enough_coins' }, 402)
     console.error('ai_charge', chargeErr)
@@ -128,12 +196,14 @@ Deno.serve(async (req) => {
         history = (data ?? []).reverse()
         while (history.length && history[0].role !== 'user') history.shift() // must start with the user
       }
+      const model = chatModel(charge.mode)
       const res = await anthropic().messages.create({
-        model: TUTOR_MODEL,
-        max_tokens: 700,
+        model,
+        max_tokens: 1200,
+        ...(model.includes('sonnet') ? { output_config: lowEffort(model) } : {}),
         system: tutorSystem({ level, lang, name: profile?.full_name ?? '', interests, hour }),
         messages: [...history, { role: 'user', content: message }],
-      })
+      } as Anthropic.MessageCreateParamsNonStreaming)
       const reply = textOf(res)
       if (res.stop_reason === 'refusal' || !reply) throw new Error('empty_or_refused')
 
@@ -154,6 +224,28 @@ Deno.serve(async (req) => {
       await admin.from('ai_conversations').update({ updated_at: new Date().toISOString() }).eq('id', conversationId)
       await admin.rpc('ai_finish', { p_usage: usageId, p_model: res.model, p_in: res.usage.input_tokens, p_out: res.usage.output_tokens })
       return json({ conversation_id: conversationId, reply, mode: charge.mode, coins: charge.coins })
+    }
+
+    if (action === 'speaking_start') {
+      const model = chatModel(charge.mode)
+      const res = await anthropic().messages.create({
+        model,
+        max_tokens: 600,
+        output_config: { ...lowEffort(model), format: { type: 'json_schema', schema: SPEAK_SCHEMA } },
+        system: speakingSystem({ level, lang, name: profile?.full_name ?? '', interests, scenario }),
+        messages: toMessages([]),
+      } as Anthropic.MessageCreateParamsNonStreaming)
+      if (res.stop_reason === 'refusal') throw new Error('refused')
+      const reply = String(JSON.parse(textOf(res)).reply ?? '').slice(0, 600)
+      if (!reply) throw new Error('empty')
+      const { data: ses, error } = await admin
+        .from('speaking_sessions')
+        .insert({ user_id: user.id, scenario, level, usage_id: usageId, mode: charge.mode, transcript: [{ role: 'lean', text: reply }] })
+        .select('id')
+        .single()
+      if (error) throw error
+      await admin.rpc('ai_finish', { p_usage: usageId, p_model: res.model, p_in: res.usage.input_tokens, p_out: res.usage.output_tokens })
+      return json({ session_id: ses.id, reply, turns_left: MAX_TURNS, mode: charge.mode, coins: charge.coins })
     }
 
     if (action === 'lesson' && gen) {
@@ -242,7 +334,6 @@ Deno.serve(async (req) => {
   } catch (e) {
     console.error('ai failed', action, e instanceof Anthropic.APIError ? `${e.status} ${e.message}` : e)
     await admin.rpc('ai_refund', { p_usage: usageId })
-    const busy = e instanceof Anthropic.RateLimitError || (e instanceof Anthropic.APIError && (e.status === 529 || e.status === 503))
-    return json({ error: busy ? 'ai_busy' : 'ai_failed' }, busy ? 503 : 502)
+    return json({ error: isBusy(e) ? 'ai_busy' : 'ai_failed' }, isBusy(e) ? 503 : 502)
   }
 })

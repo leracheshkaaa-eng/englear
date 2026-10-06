@@ -5,13 +5,14 @@ import type { AiConversation, AiKindStatus, AiMessage, AiStatus, WritingCheck, W
 import { useAuth } from '../lib/auth'
 import { Badge, Button, inputCls } from '../lib/ui'
 import { Lean, LeanSays } from '../lib/lean'
+import { Speaking } from './speaking'
 
 /* ============================================================
    AI tutor: a chat with the tutor and a writing check.
    Prices and allowances come from the server (ai_status); the server also charges.
    ============================================================ */
 
-type Tab = 'chat' | 'writing'
+type Tab = 'chat' | 'speaking' | 'writing'
 
 export function AiTutor({ onSpent, onShop }: { onSpent: () => void; onShop: () => void }) {
   const { t } = useTranslation()
@@ -42,7 +43,7 @@ export function AiTutor({ onSpent, onShop }: { onSpent: () => void; onShop: () =
       </div>
 
       <div className="mt-5 flex rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold sm:w-fit">
-        {(['chat', 'writing'] as Tab[]).map((x) => (
+        {(['chat', 'speaking', 'writing'] as Tab[]).map((x) => (
           <button
             key={x}
             onClick={() => setTab(x)}
@@ -55,6 +56,8 @@ export function AiTutor({ onSpent, onShop }: { onSpent: () => void; onShop: () =
 
       {tab === 'chat' ? (
         <Chat status={status?.tutor ?? null} plus={!!status?.plus} onSpent={spent} onShop={onShop} />
+      ) : tab === 'speaking' ? (
+        <Speaking status={status?.speaking ?? null} plus={!!status?.plus} onSpent={spent} onShop={onShop} />
       ) : (
         <Writing status={status?.writing ?? null} plus={!!status?.plus} onSpent={spent} onShop={onShop} />
       )}
@@ -63,7 +66,7 @@ export function AiTutor({ onSpent, onShop }: { onSpent: () => void; onShop: () =
 }
 
 /** "2 free messages left today · then 10 🪙" */
-function CostLine({ s, plus, kind }: { s: AiKindStatus | null; plus: boolean; kind: 'tutor' | 'writing' }) {
+export function CostLine({ s, plus, kind }: { s: AiKindStatus | null; plus: boolean; kind: 'tutor' | 'writing' | 'speaking' }) {
   const { t } = useTranslation()
   if (!s) return null
   let text: string
@@ -73,7 +76,7 @@ function CostLine({ s, plus, kind }: { s: AiKindStatus | null; plus: boolean; ki
   return <p className="text-xs text-mute">{text}</p>
 }
 
-function ErrorLine({ code, onShop }: { code: string; onShop: () => void }) {
+export function ErrorLine({ code, onShop }: { code: string; onShop: () => void }) {
   const { t } = useTranslation()
   const known = ['not_enough_coins', 'ai_busy', 'ai_not_configured', 'bad_text', 'bad_message']
   return (
