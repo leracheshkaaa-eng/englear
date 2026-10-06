@@ -17,6 +17,13 @@
   --color-line: #e4dccc;
   --color-good: #3f8f6b;
   --color-warn: #b4552f;
+
+  /* Lean palette (accents) */
+  --color-graphite: #2f2a33;
+  --color-cream: #f6efe6;
+  --color-mist: #ddd5e6;
+  --color-blush: #f3cfc9;
+  --color-honey: #ffd77a;
 }
 
 :root {

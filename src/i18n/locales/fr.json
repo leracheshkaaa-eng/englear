@@ -1275,5 +1275,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "Oups, quelque chose a cassé",
+    "text": "Mes oreilles ont entendu un bruit. Recharge la page — ça aide en général.",
+    "reload": "Recharger",
+    "details": "Détails de l’erreur (pour le support)"
   }
 }

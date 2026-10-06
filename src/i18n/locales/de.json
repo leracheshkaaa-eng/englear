@@ -1275,5 +1275,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "Hoppla, da ist etwas kaputtgegangen",
+    "text": "Meine Ohren haben einen Knall gehört. Lade die Seite neu — das hilft meistens.",
+    "reload": "Neu laden",
+    "details": "Fehlerdetails (für den Support)"
   }
 }

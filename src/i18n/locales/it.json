@@ -1275,5 +1275,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "Ops, qualcosa si è rotto",
+    "text": "Le mie orecchie hanno sentito un botto. Ricarica la pagina: di solito aiuta.",
+    "reload": "Ricarica",
+    "details": "Dettagli dell’errore (per l’assistenza)"
   }
 }

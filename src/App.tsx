@@ -9,6 +9,7 @@ import { Shop } from './features/shop'
 import { Header } from './features/header'
 import { Dashboard, Landing, NotFound } from './features/home'
 import { LeanLoading } from './lib/lean'
+import { ErrorBoundary } from './lib/errorBoundary'
 import { useTranslation } from 'react-i18next'
 import { Homework, JoinPage } from './features/classes'
 import { StudyCatalog, StudyPlayer } from './features/study'
@@ -330,8 +331,10 @@ export default function App() {
       </AuthProvider>
     )
   return (
-    <AuthProvider>
-      <Shell />
-    </AuthProvider>
+    <ErrorBoundary>
+      <AuthProvider>
+        <Shell />
+      </AuthProvider>
+    </ErrorBoundary>
   )
 }

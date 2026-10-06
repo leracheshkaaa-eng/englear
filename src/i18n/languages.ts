@@ -20,8 +20,10 @@ export const LANGUAGES = [
 
 export type LanguageCode = (typeof LANGUAGES)[number]['code']
 
-/** Used when the browser language is not supported, and for missing strings. */
+/** Used for strings missing in a translation. */
 export const FALLBACK_LANGUAGE: LanguageCode = 'en'
+/** The interface language when the browser's languages are not supported (content is made for the CIS first). */
+export const DEFAULT_LANGUAGE: LanguageCode = 'ru'
 
 export function isLanguageCode(code: unknown): code is LanguageCode {
   return typeof code === 'string' && LANGUAGES.some((l) => l.code === code)
@@ -33,13 +35,13 @@ export function matchLanguage(tag: string | null | undefined): LanguageCode | nu
   return isLanguageCode(base) ? base : null
 }
 
-/** First supported language from the browser/system preferences, else English. */
+/** First supported language from the browser/system preferences, else Russian. */
 export function detectBrowserLanguage(): LanguageCode {
-  if (typeof navigator === 'undefined') return FALLBACK_LANGUAGE
+  if (typeof navigator === 'undefined') return DEFAULT_LANGUAGE
   const tags = navigator.languages?.length ? navigator.languages : [navigator.language]
   for (const tag of tags) {
     const code = matchLanguage(tag)
     if (code) return code
   }
-  return FALLBACK_LANGUAGE
+  return DEFAULT_LANGUAGE
 }

@@ -1265,5 +1265,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "おっと、何かが壊れちゃった",
+    "text": "ぼくの耳がガシャンという音を聞いたよ。ページを再読み込みすると、たいてい直るよ。",
+    "reload": "再読み込み",
+    "details": "エラーの詳細（サポート用）"
   }
 }

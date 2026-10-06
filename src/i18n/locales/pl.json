@@ -1295,5 +1295,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "Ups, coś się zepsuło",
+    "text": "Moje uszy usłyszały huk. Odśwież stronę — zwykle to pomaga.",
+    "reload": "Odśwież",
+    "details": "Szczegóły błędu (dla wsparcia)"
   }
 }

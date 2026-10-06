@@ -1265,5 +1265,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "哎呀，出了点问题",
+    "text": "我的耳朵听到了一声巨响。刷新页面通常就好了。",
+    "reload": "刷新",
+    "details": "错误详情（供客服查看）"
   }
 }

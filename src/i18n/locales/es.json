@@ -1275,5 +1275,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "Uy, algo se rompió",
+    "text": "Mis orejas oyeron un golpe. Recarga la página: suele ayudar.",
+    "reload": "Recargar",
+    "details": "Detalles del error (para soporte)"
   }
 }

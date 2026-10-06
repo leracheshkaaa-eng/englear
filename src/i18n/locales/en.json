@@ -1275,5 +1275,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "Oops, something broke",
+    "text": "My ears heard a crash. Reload the page — it usually helps.",
+    "reload": "Reload",
+    "details": "Error details (for support)"
   }
 }

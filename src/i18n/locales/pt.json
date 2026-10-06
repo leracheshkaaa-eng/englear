@@ -1275,5 +1275,11 @@
       "sourceName": "Source name",
       "preview": "Preview"
     }
+  },
+  "crash": {
+    "title": "Ops, algo quebrou",
+    "text": "Minhas orelhas ouviram um estrondo. Recarregue a página — normalmente ajuda.",
+    "reload": "Recarregar",
+    "details": "Detalhes do erro (para o suporte)"
   }
 }
