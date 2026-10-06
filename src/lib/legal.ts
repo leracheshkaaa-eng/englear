@@ -8,7 +8,7 @@ export const LEGAL = {
   seller: '[Seller full legal name]',
   country: '[Country]',
   address: '[City, Country]',
-  email: '[support email]',
+  email: 'hello@englean.app',
   updated: '[date]',
   /** Age from which a person may use the Service without a parent's consent. */
   consentAge: 16,
