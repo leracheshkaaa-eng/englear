@@ -1,7 +1,4 @@
 {
-  "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.englean.app" }], "destination": "https://englean.app/:path*", "permanent": true }
-  ],
   "rewrites": [{ "source": "/((?!excalidraw/).*)", "destination": "/index.html" }],
   "headers": [{ "source": "/excalidraw/fonts/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }]
 }
