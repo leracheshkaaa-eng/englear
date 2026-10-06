@@ -33,7 +33,10 @@ export function Speaking({ status, plus, onSpent, onShop }: { status: AiKindStat
   const stopRef = useRef<(() => void) | null>(null)
   const bottom = useRef<HTMLDivElement>(null)
 
-  useEffect(() => bottom.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), [lines, phase])
+  // braces matter: newer browsers return a promise from scrollIntoView, and React must not get it back
+  useEffect(() => {
+    bottom.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+  }, [lines, phase])
   useEffect(() => () => (stopRef.current?.(), stopSpeaking()), [])
 
   const say = (text: string) => {
