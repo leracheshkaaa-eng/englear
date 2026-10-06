@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { Lean, LeanSays, type LeanPose } from '../lib/lean'
 import { Button } from '../lib/ui'
+import { LeanAsks, LeanDaily } from './daily'
 
 /* ============================================================
    The home page: a landing for guests, a small dashboard for signed-in learners.
@@ -109,22 +109,14 @@ export function Landing({ go, count }: { go: (v: string) => void; count: number 
 export function Dashboard({
   go,
   wallet,
-  onOpenStudy,
   homework,
 }: {
   go: (v: string) => void
   wallet: api.Wallet
-  onOpenStudy: (id: string) => void
   homework: React.ReactNode
 }) {
   const { t } = useTranslation()
   const { profile } = useAuth()
-  const [next, setNext] = useState<api.StudyLessonSummary | null>(null)
-
-  useEffect(() => {
-    api.listStudyLessons().then((l) => setNext(l[0] ?? null)).catch(() => {})
-  }, [])
-
   const h = new Date().getHours()
   const part = h < 5 ? 'night' : h < 12 ? 'morning' : h < 18 ? 'day' : h < 23 ? 'evening' : 'night'
   const streak = api.liveStreak(wallet)
@@ -132,6 +124,7 @@ export function Dashboard({
   const name = profile?.full_name ?? ''
 
   const tiles: { icon: string; view: string; label: string }[] = [
+    { icon: '📚', view: 'study', label: t('nav.lessons') },
     { icon: '✏️', view: 'lessons', label: t('nav.tasks') },
     { icon: '📖', view: 'practice', label: t('nav.practice') },
     { icon: '🃏', view: 'flashcards', label: t('nav.flashcards') },
@@ -152,23 +145,14 @@ export function Dashboard({
         </div>
       </div>
 
-      {next && (
-        <button onClick={() => onOpenStudy(next.id)} className="mt-6 flex w-full items-center gap-5 rounded-3xl bg-plum p-6 text-left text-paper transition hover:bg-plum-deep">
-          <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-paper/15 text-3xl">📚</span>
-          <span className="min-w-0 flex-1">
-            <span className="block text-sm font-semibold text-paper/70">{t('dash.continue')}</span>
-            <span className="block truncate font-display text-2xl font-semibold">{next.title}</span>
-            <span className="text-sm text-paper/70">
-              {next.cefr} · {t('course.minutes', { n: next.duration_min })}
-            </span>
-          </span>
-          <span className="text-2xl">→</span>
-        </button>
-      )}
+      <div className="mt-6 space-y-6">
+        <LeanAsks />
+        <LeanDaily />
+      </div>
 
       <div className="mt-6">{homework}</div>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {tiles.map((x) => (
           <button key={x.view} onClick={() => go(x.view)} className="rounded-2xl border border-line bg-paper p-4 text-left font-semibold transition hover:border-plum/40">
             <span className="block text-2xl">{x.icon}</span>

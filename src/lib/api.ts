@@ -1689,3 +1689,85 @@ export async function getStudyLesson(id: string): Promise<StudyLesson | null> {
   if (error) throw error
   return data as StudyLesson | null
 }
+
+/* ---------------- interests (Lean's short questions) ---------------- */
+
+export type UserInterests = { interests: string[]; asked: Record<string, string> }
+export async function myInterests(userId: string): Promise<UserInterests> {
+  const { data, error } = await supabase.from('user_interests').select('interests, asked').eq('user_id', userId).maybeSingle()
+  if (error) throw error
+  return (data as UserInterests | null) ?? { interests: [], asked: {} }
+}
+export async function saveInterests(userId: string, v: UserInterests) {
+  const { error } = await supabase.from('user_interests').upsert({ user_id: userId, interests: v.interests, asked: v.asked })
+  if (error) throw error
+}
+
+/* ---------------- "Lean of the day" ---------------- */
+
+export const DAILY_KINDS = ['meme', 'word', 'poll', 'news'] as const
+export type DailyKind = (typeof DAILY_KINDS)[number]
+export type DailyMeme = { pose: string; top: string; bottom: string; note: string }
+export type DailyWord = { word: string; meaning: string; example: string; slang: boolean }
+export type DailyPoll = { question: string; options: string[] }
+export type DailyNews = { title: string; easy: string; medium: string; hard: string; words: { word: string; meaning: string }[]; question: string; source_name: string }
+export type DailyPost = {
+  id: string
+  day: string
+  kind: DailyKind
+  status: 'draft' | 'approved' | 'rejected'
+  content: Record<string, unknown>
+  source_url: string | null
+  origin: 'manual' | 'ai'
+  approved_at: string | null
+  created_at: string
+}
+const DAILY_COLS = 'id, day, kind, status, content, source_url, origin, approved_at, created_at'
+
+/** The newest approved post of each kind (today's, or the latest before it). */
+export async function dailyFeed(): Promise<Partial<Record<DailyKind, DailyPost>>> {
+  const { data, error } = await supabase.from('daily_posts').select(DAILY_COLS).eq('status', 'approved').order('day', { ascending: false }).limit(20)
+  if (error) throw error
+  const out: Partial<Record<DailyKind, DailyPost>> = {}
+  for (const p of (data ?? []) as DailyPost[]) if (!out[p.kind]) out[p.kind] = p
+  return out
+}
+export async function myPollVote(postId: string, userId: string): Promise<number | null> {
+  const { data, error } = await supabase.from('daily_poll_votes').select('choice').eq('post_id', postId).eq('user_id', userId).maybeSingle()
+  if (error) throw error
+  return data ? (data.choice as number) : null
+}
+export async function votePoll(postId: string, userId: string, choice: number) {
+  const { error } = await supabase.from('daily_poll_votes').insert({ post_id: postId, user_id: userId, choice })
+  if (error) throw error
+}
+export async function pollResults(postId: string): Promise<number[]> {
+  const { data, error } = await supabase.rpc('daily_poll_results', { p_post: postId })
+  if (error) throw error
+  const out = [0, 0, 0, 0]
+  for (const r of (data ?? []) as { choice: number; votes: number }[]) out[r.choice] = Number(r.votes)
+  return out
+}
+
+/** Admin: every post from `fromDay` on (drafts, approved and rejected). */
+export async function adminDailyPosts(fromDay: string): Promise<DailyPost[]> {
+  const { data, error } = await supabase.from('daily_posts').select(DAILY_COLS).gte('day', fromDay).order('day').order('kind')
+  if (error) throw error
+  return (data ?? []) as DailyPost[]
+}
+export async function adminSaveDaily(p: { id?: string; day: string; kind: DailyKind; content: Record<string, unknown>; source_url: string | null }) {
+  const row = { day: p.day, kind: p.kind, content: p.content, source_url: p.source_url || null }
+  const { error } = p.id ? await supabase.from('daily_posts').update(row).eq('id', p.id) : await supabase.from('daily_posts').insert(row)
+  if (error) throw error
+}
+export async function adminSetDailyStatus(id: string, status: 'draft' | 'approved' | 'rejected', userId: string) {
+  const { error } = await supabase
+    .from('daily_posts')
+    .update({ status, approved_by: status === 'approved' ? userId : null, approved_at: status === 'approved' ? new Date().toISOString() : null })
+    .eq('id', id)
+  if (error) throw error
+}
+export async function adminDeleteDaily(id: string) {
+  const { error } = await supabase.from('daily_posts').delete().eq('id', id)
+  if (error) throw error
+}

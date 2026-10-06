@@ -1121,5 +1121,86 @@
     "title": "Lean が迷子になった",
     "text": "そのページはないみたい。おうちに帰ろう。",
     "home": "ホームへ"
+  },
+  "interests": {
+    "q": {
+      "watch": "ねえ、いま何を見てるの？誰にも言わないよ 👀",
+      "music": "イヤホンで何を聴いてる？正直にね、批判しないから。たぶん。",
+      "play": "何のゲームをしてる？それともどのアニメ？……研究のためにね。",
+      "read": "宿題をしていないとき、何を読んでる？📚",
+      "life": "ほかに好きなものは？趣味、ねこ、スポーツ——全部ありだよ。"
+    },
+    "own": "その他…",
+    "done": "できた",
+    "skip": "あとで",
+    "thanks": "メモした！きみのことが少しわかったよ 😏",
+    "items": {
+      "rap": "ラップ",
+      "rock": "ロック",
+      "indie": "インディー",
+      "anime": "アニメ",
+      "fantasy": "ファンタジー",
+      "romance": "恋愛",
+      "horror": "ホラー",
+      "detectives": "ミステリー",
+      "manga": "マンガ",
+      "comics": "アメコミ",
+      "self_dev": "自己成長",
+      "fashion": "ファッション",
+      "makeup": "メイク",
+      "sport": "スポーツ",
+      "football": "サッカー",
+      "gym": "ジム",
+      "travel": "旅行",
+      "cooking": "料理",
+      "cats": "ねこ",
+      "dogs": "いぬ",
+      "tech": "テクノロジー",
+      "memes": "ミーム",
+      "art": "アート",
+      "photo": "写真",
+      "cars": "車",
+      "space": "宇宙"
+    }
+  },
+  "daily": {
+    "title": "今日の Lean",
+    "empty": "Lean は今日のフィードをまだ準備中。あとでまた来てね 🦊",
+    "explain": "どこが面白いの？",
+    "slang": "スラング",
+    "votes": "投票数：{{n}}",
+    "source": "出典",
+    "kinds": {
+      "meme": "今日のミーム",
+      "word": "今日の単語",
+      "poll": "今日の投票",
+      "news": "今日のニュース"
+    },
+    "levels": {
+      "easy": "やさしい",
+      "medium": "ふつう",
+      "hard": "むずかしい"
+    },
+    "admin": {
+      "hint": "Drafts waiting for approval: {{n}}. The feed shows the latest approved post of each kind.",
+      "add": "Add",
+      "none": "Nothing here yet. Soon the AI will prepare drafts.",
+      "approve": "Approve",
+      "unpublish": "Unpublish",
+      "reject": "Reject",
+      "confirmDelete": "Delete this post?",
+      "top": "Top text",
+      "bottom": "Bottom text",
+      "note": "What the joke or slang means",
+      "word": "Word or phrase",
+      "meaning": "Meaning (in simple English)",
+      "example": "Example",
+      "question": "Question",
+      "option": "Option",
+      "headline": "Headline",
+      "words": "Words (one per line: word = meaning)",
+      "sourceName": "Source name",
+      "preview": "Preview"
+    }
   }
 }

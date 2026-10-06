@@ -1131,5 +1131,86 @@
     "title": "Lean si è perso",
     "text": "Questa pagina non esiste. Torniamo a casa.",
     "home": "Alla home"
+  },
+  "interests": {
+    "q": {
+      "watch": "Senti, cosa stai guardando adesso? Non lo dico a nessuno 👀",
+      "music": "Cosa c’è nelle tue cuffie? Sii sincero, non giudico. Quasi.",
+      "play": "A cosa giochi, o che anime guardi? Chiedo per… la scienza.",
+      "read": "Cosa leggi quando non fai i compiti? 📚",
+      "life": "Cos’altro ti piace? Hobby, gatti, sport: conta tutto."
+    },
+    "own": "altro…",
+    "done": "Fatto",
+    "skip": "Non ora",
+    "thanks": "Segnato! Ora ti conosco un po’ meglio 😏",
+    "items": {
+      "rap": "Rap",
+      "rock": "Rock",
+      "indie": "Indie",
+      "anime": "Anime",
+      "fantasy": "Fantasy",
+      "romance": "Romance",
+      "horror": "Horror",
+      "detectives": "Gialli",
+      "manga": "Manga",
+      "comics": "Fumetti",
+      "self_dev": "Crescita personale",
+      "fashion": "Moda",
+      "makeup": "Trucco",
+      "sport": "Sport",
+      "football": "Calcio",
+      "gym": "Palestra",
+      "travel": "Viaggi",
+      "cooking": "Cucina",
+      "cats": "Gatti",
+      "dogs": "Cani",
+      "tech": "Tecnologia",
+      "memes": "Meme",
+      "art": "Arte",
+      "photo": "Fotografia",
+      "cars": "Auto",
+      "space": "Spazio"
+    }
+  },
+  "daily": {
+    "title": "Il Lean del giorno",
+    "empty": "Lean sta ancora preparando il feed di oggi. Torna più tardi 🦊",
+    "explain": "Cosa c’è di divertente?",
+    "slang": "slang",
+    "votes": "Voti: {{n}}",
+    "source": "Fonte",
+    "kinds": {
+      "meme": "Meme del giorno",
+      "word": "Parola del giorno",
+      "poll": "Sondaggio del giorno",
+      "news": "Notizia del giorno"
+    },
+    "levels": {
+      "easy": "Più facile",
+      "medium": "Medio",
+      "hard": "Più difficile"
+    },
+    "admin": {
+      "hint": "Drafts waiting for approval: {{n}}. The feed shows the latest approved post of each kind.",
+      "add": "Add",
+      "none": "Nothing here yet. Soon the AI will prepare drafts.",
+      "approve": "Approve",
+      "unpublish": "Unpublish",
+      "reject": "Reject",
+      "confirmDelete": "Delete this post?",
+      "top": "Top text",
+      "bottom": "Bottom text",
+      "note": "What the joke or slang means",
+      "word": "Word or phrase",
+      "meaning": "Meaning (in simple English)",
+      "example": "Example",
+      "question": "Question",
+      "option": "Option",
+      "headline": "Headline",
+      "words": "Words (one per line: word = meaning)",
+      "sourceName": "Source name",
+      "preview": "Preview"
+    }
   }
 }

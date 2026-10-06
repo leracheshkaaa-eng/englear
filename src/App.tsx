@@ -208,7 +208,6 @@ function Shell() {
             <Dashboard
               go={(v) => go(v as View)}
               wallet={wallet}
-              onOpenStudy={(id) => { go('study'); setStudyId(id) }}
               homework={
                 <Homework
                   onOpenLesson={async (id) => {

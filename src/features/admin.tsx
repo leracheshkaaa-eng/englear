@@ -6,6 +6,7 @@ import type { Profile, Role } from '../lib/api'
 import { Avatar } from '../lib/avatars'
 import { errorMessage } from '../i18n/errors'
 import { prewarmSpeech } from '../lib/supabase'
+import { AdminDaily } from './daily'
 
 export function AdminDashboard() {
   const { t } = useTranslation()
@@ -77,6 +78,8 @@ export function AdminDashboard() {
           </div>
         </div>
       )}
+
+      <AdminDaily />
 
       <AudioPrewarm />
 
