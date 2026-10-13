@@ -1,0 +1,740 @@
+{
+  "package": "grammar-sets-4",
+  "description": "B2 practice sets for the grammar topics that had none, written by hand (2026-10-13). Imported and published.",
+  "lessons": [
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B2",
+      "sequence": 130,
+      "grammar": "past-perfect",
+      "title": "It Had Already Started: Past Perfect",
+      "description": "Practise the Past Perfect to show which past action happened first.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "When we arrived at the cinema, the film ___.",
+          "options": [
+            "had already started",
+            "has already started",
+            "already starts"
+          ],
+          "answer": "had already started",
+          "explanation": "The film started before we arrived: Past Perfect for the earlier action."
+        },
+        {
+          "type": "choice",
+          "prompt": "She was nervous because she ___ on a plane before.",
+          "options": [
+            "had never been",
+            "has never been",
+            "never is"
+          ],
+          "answer": "had never been",
+          "explanation": "Experience up to a moment in the past: had never been."
+        },
+        {
+          "type": "fill",
+          "prompt": "By the time I got home, my brother ___ (eat) all the pizza.",
+          "answer": "had eaten",
+          "explanation": "By the time + Past Simple, then Past Perfect for the earlier action."
+        },
+        {
+          "type": "choice",
+          "prompt": "I couldn't log in because I ___ my password.",
+          "options": [
+            "had forgotten",
+            "have forgotten",
+            "forget"
+          ],
+          "answer": "had forgotten",
+          "explanation": "Forgetting happened before trying to log in: Past Perfect."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“After she had went home, she called me” is a correct sentence.",
+          "answer": "false",
+          "explanation": "had + past participle: had gone, not had went."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“They had just left when we got there” is a correct sentence.",
+          "answer": "true",
+          "explanation": "had just + past participle shows the action happened shortly before."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "Had",
+            "you",
+            "met",
+            "him",
+            "before",
+            "the",
+            "party"
+          ],
+          "explanation": "Question: Had + subject + past participle."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the beginnings and endings.",
+          "pairs": {
+            "The shop had closed": "so we couldn't buy any snacks.",
+            "He was tired because": "he hadn't slept well.",
+            "I realised that": "I had left my bag on the bus."
+          },
+          "explanation": "Past Perfect explains what happened earlier in a past story."
+        },
+        {
+          "type": "choice",
+          "prompt": "The teacher asked if we ___ our homework.",
+          "options": [
+            "had done",
+            "have done",
+            "do"
+          ],
+          "answer": "had done",
+          "explanation": "Something completed before the moment of asking in the past: had done."
+        },
+        {
+          "type": "fill",
+          "prompt": "It was my first time in Rome. I ___ (never / visit) Italy before.",
+          "answer": "had never visited",
+          "explanation": "Experience before a past moment: had never visited."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B2",
+      "sequence": 131,
+      "grammar": "third-conditional",
+      "title": "If I Had Known…: Third Conditional",
+      "description": "Practise the third conditional to talk about past situations that did not happen.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "If I had known about the party, I ___ .",
+          "options": [
+            "would have come",
+            "would come",
+            "will come"
+          ],
+          "answer": "would have come",
+          "explanation": "Third conditional: If + had + V3, would have + V3."
+        },
+        {
+          "type": "choice",
+          "prompt": "If she ___ harder, she would have passed the exam.",
+          "options": [
+            "had studied",
+            "studied",
+            "would have studied"
+          ],
+          "answer": "had studied",
+          "explanation": "The if part uses had + past participle."
+        },
+        {
+          "type": "fill",
+          "prompt": "We would have caught the bus if we ___ (leave) earlier.",
+          "answer": "had left",
+          "explanation": "if + Past Perfect: had left."
+        },
+        {
+          "type": "fill",
+          "prompt": "If you had asked me, I ___ (help) you.",
+          "answer": "would have helped",
+          "explanation": "Result: would have + past participle."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“If I would have seen you, I would have said hello” is a correct sentence.",
+          "answer": "false",
+          "explanation": "No would in the if part: If I had seen you…"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“If it hadn't rained, we would have played outside” is a correct sentence.",
+          "answer": "true",
+          "explanation": "Negative if part: hadn't + past participle."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "He",
+            "wouldn't",
+            "have",
+            "missed",
+            "the",
+            "flight",
+            "if",
+            "his",
+            "alarm",
+            "had",
+            "worked"
+          ],
+          "explanation": "Result first, then if + had + past participle."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the halves.",
+          "pairs": {
+            "If I had checked the weather,": "I would have taken an umbrella.",
+            "If they had played better,": "they would have won the match.",
+            "If she hadn't charged her phone,": "she couldn't have called us."
+          },
+          "explanation": "Each imaginary past condition matches its logical result."
+        },
+        {
+          "type": "choice",
+          "prompt": "What would you have done if you ___ the lottery last year?",
+          "options": [
+            "had won",
+            "won",
+            "would win"
+          ],
+          "answer": "had won",
+          "explanation": "Imagined past situation: if + had won."
+        },
+        {
+          "type": "fill",
+          "prompt": "I ___ (not / be) late if the train hadn't stopped.",
+          "answer": "wouldn't have been",
+          "accept": [
+            "would not have been"
+          ],
+          "explanation": "Negative result: wouldn't have been."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B2",
+      "sequence": 132,
+      "grammar": "reported-speech",
+      "title": "She Said That…: Reported Speech",
+      "description": "Practise reporting statements and questions: tense changes, said vs told.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "“I am tired.” → She said that she ___ tired.",
+          "options": [
+            "was",
+            "is",
+            "has been"
+          ],
+          "answer": "was",
+          "explanation": "Present Simple becomes Past Simple after said."
+        },
+        {
+          "type": "choice",
+          "prompt": "“I will call you.” → He said he ___ call me.",
+          "options": [
+            "would",
+            "will",
+            "shall"
+          ],
+          "answer": "would",
+          "explanation": "will becomes would in reported speech."
+        },
+        {
+          "type": "choice",
+          "prompt": "He ___ me that he was busy.",
+          "options": [
+            "told",
+            "said",
+            "asked"
+          ],
+          "answer": "told",
+          "explanation": "tell + person (told me); say without a person (said that)."
+        },
+        {
+          "type": "fill",
+          "prompt": "“I have finished.” → She said she ___ finished.",
+          "answer": "had",
+          "explanation": "Present Perfect becomes Past Perfect: had finished."
+        },
+        {
+          "type": "fill",
+          "prompt": "“Where do you live?” → He asked me where I ___ .",
+          "answer": "lived",
+          "explanation": "Reported questions use statement word order; the verb usually moves back a tense: where I lived (live is also possible if it is still true).",
+          "accept": [
+            "live"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“She asked me where did I go” is a correct reported question.",
+          "answer": "false",
+          "explanation": "No question word order: She asked me where I went."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“He said that he was going to the gym” is a correct sentence.",
+          "answer": "true",
+          "explanation": "Present Continuous (I am going) becomes Past Continuous (was going)."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "She",
+            "asked",
+            "if",
+            "I",
+            "liked",
+            "the",
+            "film"
+          ],
+          "explanation": "Yes/no questions are reported with if: asked if I liked."
+        },
+        {
+          "type": "match",
+          "prompt": "Match direct speech with reported speech.",
+          "pairs": {
+            "“I can swim.”": "He said he could swim.",
+            "“I'm watching TV.”": "He said he was watching TV.",
+            "“I saw it.”": "He said he had seen it."
+          },
+          "explanation": "can → could, am watching → was watching, saw → had seen."
+        },
+        {
+          "type": "choice",
+          "prompt": "“Don't be late!” → Mum told me ___ late.",
+          "options": [
+            "not to be",
+            "don't be",
+            "to not being"
+          ],
+          "answer": "not to be",
+          "explanation": "Reported orders: tell someone (not) to + verb."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B2",
+      "sequence": 133,
+      "grammar": "modals-deduction",
+      "title": "It Must Be, It Can't Be: Modals of Deduction",
+      "description": "Practise must, might, could and can't to say how sure you are.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "She's been working all day. She ___ be exhausted.",
+          "options": [
+            "must",
+            "can't",
+            "might not"
+          ],
+          "answer": "must",
+          "explanation": "We are almost sure it is true: must."
+        },
+        {
+          "type": "choice",
+          "prompt": "That ___ be Tom. He's in Australia right now!",
+          "options": [
+            "can't",
+            "must",
+            "might"
+          ],
+          "answer": "can't",
+          "explanation": "We are sure it is impossible: can't."
+        },
+        {
+          "type": "choice",
+          "prompt": "I'm not sure where Anna is. She ___ be at the library.",
+          "options": [
+            "might",
+            "must",
+            "can't"
+          ],
+          "answer": "might",
+          "explanation": "It's possible, but we're not sure: might."
+        },
+        {
+          "type": "fill",
+          "prompt": "He didn't answer his phone. He ___ have been asleep. (must / can't)",
+          "answer": "must",
+          "explanation": "Past deduction, almost sure: must have + past participle."
+        },
+        {
+          "type": "fill",
+          "prompt": "She ___ have seen the message — her phone was off. (must / can't)",
+          "answer": "can't",
+          "explanation": "Impossible in the past: can't have seen."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“He must to be at home” is a correct sentence.",
+          "answer": "false",
+          "explanation": "No to after must: He must be at home."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“They might have missed the bus” is a correct sentence.",
+          "answer": "true",
+          "explanation": "might have + past participle: a possible past explanation."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the modal with how sure the speaker is.",
+          "pairs": {
+            "must be": "about 95% sure it's true",
+            "might be": "about 50%, possible",
+            "can't be": "sure it's impossible"
+          },
+          "explanation": "must → nearly certain; might → possible; can't → impossible."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "You",
+            "must",
+            "have",
+            "worked",
+            "really",
+            "hard"
+          ],
+          "explanation": "must have + past participle for a confident guess about the past."
+        },
+        {
+          "type": "choice",
+          "prompt": "The lights are off. They ___ have gone out.",
+          "options": [
+            "must",
+            "can't",
+            "mustn't"
+          ],
+          "answer": "must",
+          "explanation": "The lights off is good evidence: must have gone out."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B2",
+      "sequence": 134,
+      "grammar": "future-continuous-perfect",
+      "title": "This Time Tomorrow: Future Continuous and Future Perfect",
+      "description": "Practise will be doing and will have done for plans and completed future actions.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "This time tomorrow I ___ on the beach.",
+          "options": [
+            "will be lying",
+            "will have lain",
+            "lie"
+          ],
+          "answer": "will be lying",
+          "explanation": "An action in progress at a future moment: Future Continuous."
+        },
+        {
+          "type": "choice",
+          "prompt": "By 2030 scientists ___ a cure for this disease.",
+          "options": [
+            "will have found",
+            "will be finding",
+            "find"
+          ],
+          "answer": "will have found",
+          "explanation": "Completed before a future time (by 2030): Future Perfect."
+        },
+        {
+          "type": "fill",
+          "prompt": "Don't call at 8 — we ___ (have) dinner then.",
+          "answer": "will be having",
+          "accept": [
+            "'ll be having"
+          ],
+          "explanation": "In progress at 8: will be having."
+        },
+        {
+          "type": "fill",
+          "prompt": "By the end of the month, I ___ (read) ten books.",
+          "answer": "will have read",
+          "accept": [
+            "'ll have read"
+          ],
+          "explanation": "By + future time, completed: will have read."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“By Friday she will have finished the project” is a correct sentence.",
+          "answer": "true",
+          "explanation": "will have + past participle with by + time."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“At midnight I will have sleeping” is a correct sentence.",
+          "answer": "false",
+          "explanation": "In progress: I will be sleeping."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "Will",
+            "you",
+            "be",
+            "using",
+            "the",
+            "laptop",
+            "tonight"
+          ],
+          "explanation": "Polite question about plans: Will you be + -ing?"
+        },
+        {
+          "type": "match",
+          "prompt": "Match the sentence with its meaning.",
+          "pairs": {
+            "I will be working at 9.": "in progress at 9",
+            "I will have finished by 9.": "done before 9",
+            "I will work at 9.": "starts at 9"
+          },
+          "explanation": "will be -ing = in progress; will have + V3 = completed; will + verb = simple future."
+        },
+        {
+          "type": "choice",
+          "prompt": "In two years I ___ from university.",
+          "options": [
+            "will have graduated",
+            "will be graduated",
+            "graduate"
+          ],
+          "answer": "will have graduated",
+          "explanation": "Completed by a future point: will have graduated."
+        },
+        {
+          "type": "fill",
+          "prompt": "Next week at this time, they ___ (fly) to New York.",
+          "answer": "will be flying",
+          "accept": [
+            "'ll be flying"
+          ],
+          "explanation": "In progress at a future time: will be flying."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B2",
+      "sequence": 135,
+      "grammar": "passive-advanced",
+      "title": "It Is Being Built: The Passive in All Tenses",
+      "description": "Practise the passive with continuous, perfect and modal forms.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "A new stadium ___ in our city right now.",
+          "options": [
+            "is being built",
+            "is built",
+            "has built"
+          ],
+          "answer": "is being built",
+          "explanation": "In progress now: is being + past participle."
+        },
+        {
+          "type": "choice",
+          "prompt": "The results ___ yet.",
+          "options": [
+            "haven't been announced",
+            "haven't announced",
+            "aren't announcing"
+          ],
+          "answer": "haven't been announced",
+          "explanation": "Present Perfect passive: have been + past participle."
+        },
+        {
+          "type": "choice",
+          "prompt": "The homework must ___ by Monday.",
+          "options": [
+            "be finished",
+            "finished",
+            "be finishing"
+          ],
+          "answer": "be finished",
+          "explanation": "Modal passive: must be + past participle."
+        },
+        {
+          "type": "fill",
+          "prompt": "The room ___ (clean) when we arrived, so we waited outside.",
+          "answer": "was being cleaned",
+          "explanation": "In progress in the past: was being cleaned."
+        },
+        {
+          "type": "fill",
+          "prompt": "The tickets ___ (sell) out before we got there.",
+          "answer": "had been sold",
+          "explanation": "Past Perfect passive: had been sold."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“The video has been watched a million times” is a correct sentence.",
+          "answer": "true",
+          "explanation": "Present Perfect passive: has been + past participle."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“The letter will be send tomorrow” is a correct sentence.",
+          "answer": "false",
+          "explanation": "Future passive needs the past participle: will be sent."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "The",
+            "app",
+            "is",
+            "going",
+            "to",
+            "be",
+            "updated",
+            "next",
+            "week"
+          ],
+          "explanation": "going to be + past participle for a planned passive action."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the tense with the passive form.",
+          "pairs": {
+            "Present Continuous": "is being made",
+            "Present Perfect": "has been made",
+            "Future": "will be made",
+            "Past Perfect": "had been made"
+          },
+          "explanation": "Each tense keeps its auxiliary and adds be + past participle."
+        },
+        {
+          "type": "choice",
+          "prompt": "This problem ___ solved easily.",
+          "options": [
+            "can be",
+            "can",
+            "can being"
+          ],
+          "answer": "can be",
+          "explanation": "Modal passive: can be + past participle."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B2",
+      "sequence": 136,
+      "grammar": "wish",
+      "title": "I Wish I Could…: Wish and If Only",
+      "description": "Practise wish and if only for present regrets, past regrets and annoying habits.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "I wish I ___ taller.",
+          "options": [
+            "were",
+            "am",
+            "will be"
+          ],
+          "answer": "were",
+          "explanation": "A wish about the present: wish + past (were)."
+        },
+        {
+          "type": "choice",
+          "prompt": "I wish I ___ to the concert last night. Everyone says it was amazing!",
+          "options": [
+            "had gone",
+            "went",
+            "would go"
+          ],
+          "answer": "had gone",
+          "explanation": "A regret about the past: wish + Past Perfect."
+        },
+        {
+          "type": "choice",
+          "prompt": "I wish my neighbours ___ so much noise. It's so annoying!",
+          "options": [
+            "wouldn't make",
+            "don't make",
+            "hadn't made"
+          ],
+          "answer": "wouldn't make",
+          "explanation": "Annoying behaviour we want to change: wish + would(n't)."
+        },
+        {
+          "type": "fill",
+          "prompt": "If only I ___ (have) more free time now!",
+          "answer": "had",
+          "explanation": "Present wish: if only + Past Simple."
+        },
+        {
+          "type": "fill",
+          "prompt": "She wishes she ___ (not / say) that yesterday.",
+          "answer": "hadn't said",
+          "accept": [
+            "had not said"
+          ],
+          "explanation": "Past regret: wish + hadn't + past participle."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“I wish I can speak Korean” is a correct sentence.",
+          "answer": "false",
+          "explanation": "Present wish uses could: I wish I could speak Korean."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“If only I had listened to you!” is a correct sentence.",
+          "answer": "true",
+          "explanation": "If only + Past Perfect for a strong past regret."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "I",
+            "wish",
+            "it",
+            "would",
+            "stop",
+            "raining"
+          ],
+          "explanation": "wish + would for something we want to change."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the wish with what it is about.",
+          "pairs": {
+            "I wish I lived by the sea.": "the present",
+            "I wish I had studied more.": "the past",
+            "I wish you would stop talking.": "an annoying habit"
+          },
+          "explanation": "past → present wish; Past Perfect → past regret; would → annoying behaviour."
+        },
+        {
+          "type": "choice",
+          "prompt": "I wish I ___ swim. I'd love to go surfing.",
+          "options": [
+            "could",
+            "can",
+            "will"
+          ],
+          "answer": "could",
+          "explanation": "Ability we don't have now: wish + could."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "package": "grammar-sets-5",
+  "description": "C1–C2 practice sets for the grammar topics that had none, written by hand (2026-10-13); inversion from an earlier checked generation. Imported and published.",
+  "lessons": [
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "C1",
+      "sequence": 140,
+      "grammar": "mixed-conditionals",
+      "title": "If I Had Taken That Job, I Would Be…: Mixed Conditionals",
+      "description": "Practise conditionals that mix past and present time.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "If I had studied medicine, I ___ a doctor now.",
+          "options": [
+            "would be",
+            "would have been",
+            "will be"
+          ],
+          "answer": "would be",
+          "explanation": "Past condition, present result: If + had + V3, would + base verb (now)."
+        },
+        {
+          "type": "choice",
+          "prompt": "If she ___ so shy, she would have spoken to him at the party.",
+          "options": [
+            "weren't",
+            "isn't",
+            "won't be"
+          ],
+          "answer": "weren't",
+          "explanation": "Present (general) condition, past result: If + past, would have + V3."
+        },
+        {
+          "type": "fill",
+          "prompt": "If we ___ (not / miss) the flight, we would be in Rome right now.",
+          "answer": "hadn't missed",
+          "accept": [
+            "had not missed"
+          ],
+          "explanation": "Past condition with a present result: hadn't missed … would be."
+        },
+        {
+          "type": "fill",
+          "prompt": "If I spoke French, I ___ (apply) for that job in Paris last year.",
+          "answer": "would have applied",
+          "explanation": "Present condition (I don't speak French), past result: would have applied."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“If I had saved money, I would have a car now” is a correct sentence.",
+          "answer": "true",
+          "explanation": "Past cause (didn't save) → present result (no car now)."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“If he would be more careful, he wouldn't have lost his wallet” is a correct sentence.",
+          "answer": "false",
+          "explanation": "No would in the if part: If he were more careful…"
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "If",
+            "you",
+            "had",
+            "listened",
+            "to",
+            "me",
+            "we",
+            "wouldn't",
+            "be",
+            "lost"
+          ],
+          "explanation": "Past condition → present result: wouldn't be lost (now)."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the halves.",
+          "pairs": {
+            "If I hadn't stayed up so late,": "I wouldn't be so tired now.",
+            "If she were more organised,": "she wouldn't have missed the deadline.",
+            "If they had booked earlier,": "they would be on holiday now."
+          },
+          "explanation": "Each sentence links a past or present cause to a result at the other time."
+        },
+        {
+          "type": "choice",
+          "prompt": "If I ___ afraid of heights, I would have gone skydiving with you.",
+          "options": [
+            "weren't",
+            "hadn't",
+            "wouldn't be"
+          ],
+          "answer": "weren't",
+          "explanation": "A permanent fact (afraid of heights) uses the past: If I weren't afraid…"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "C1",
+      "sequence": 141,
+      "grammar": "cleft-sentences",
+      "title": "What I Need Is…: Cleft Sentences",
+      "description": "Practise it-clefts and what-clefts to focus on the most important information.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "___ I need is a long holiday.",
+          "options": [
+            "What",
+            "It",
+            "That"
+          ],
+          "answer": "What",
+          "explanation": "What-cleft: What + clause + is + focus."
+        },
+        {
+          "type": "choice",
+          "prompt": "It was my sister ___ broke the vase, not me!",
+          "options": [
+            "who",
+            "what",
+            "which"
+          ],
+          "answer": "who",
+          "explanation": "It-cleft about a person: It was … who."
+        },
+        {
+          "type": "fill",
+          "prompt": "It ___ in 2019 that we first met.",
+          "answer": "was",
+          "explanation": "It-cleft about a past time: It was … that."
+        },
+        {
+          "type": "fill",
+          "prompt": "What annoys me ___ people who talk during films.",
+          "answer": "is",
+          "explanation": "What-cleft + is + focus."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“What I love about summer is the long evenings” is a correct sentence.",
+          "answer": "true",
+          "explanation": "What + clause + is + the focused part."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“It is the noise what bothers me” is a correct sentence.",
+          "answer": "false",
+          "explanation": "It-clefts use that or who: It is the noise that bothers me."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "It",
+            "was",
+            "the",
+            "ending",
+            "that",
+            "surprised",
+            "everyone"
+          ],
+          "explanation": "It was + focus + that + rest of the sentence."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the neutral sentence with its cleft version.",
+          "pairs": {
+            "I want some peace.": "What I want is some peace.",
+            "Tom called you.": "It was Tom who called you.",
+            "We left on Friday.": "It was on Friday that we left."
+          },
+          "explanation": "Cleft sentences move the important part into focus."
+        },
+        {
+          "type": "choice",
+          "prompt": "All I did ___ ask a simple question!",
+          "options": [
+            "was",
+            "is it",
+            "that"
+          ],
+          "answer": "was",
+          "explanation": "All + clause + was + focus: All I did was ask…"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "C1",
+      "sequence": 145,
+      "grammar": "inversion",
+      "title": "Never Have I Seen It: Inversion",
+      "description": "You will practise using inversion after negative and limiting adverbials such as never, rarely, hardly and not only.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "After Never at the start, the auxiliary verb comes before the subject: have I seen.",
+          "prompt": "Never ___ such a funny video before.",
+          "options": [
+            "have I seen",
+            "I have seen",
+            "I seen",
+            "seen have I"
+          ],
+          "answer": "have I seen"
+        },
+        {
+          "type": "choice",
+          "explanation": "The subject is my phone battery, a singular noun, and the verb last needs does.",
+          "prompt": "Rarely ___ my phone battery last a whole day.",
+          "options": [
+            "does",
+            "do",
+            "is",
+            "has been"
+          ],
+          "answer": "does"
+        },
+        {
+          "type": "fill",
+          "explanation": "She is singular, so the auxiliary is has, and it comes before the subject.",
+          "prompt": "Never ___ she been so nervous before an exam. (have/has)",
+          "answer": "has"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "After Never at the start we need inversion: Never have I felt.",
+          "prompt": "“Never I have felt so happy” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "fill",
+          "explanation": "Hardly is followed by had and the subject, then the past simple, for an event just before another.",
+          "prompt": "Hardly ___ I got home when my friend called. (have/had)",
+          "answer": "had"
+        },
+        {
+          "type": "choice",
+          "explanation": "Not only at the start needs inversion with did before he, and then the base verb.",
+          "prompt": "Not only ___ the game late, but he also forgot his headphones.",
+          "options": [
+            "did he download",
+            "he downloaded",
+            "he did download",
+            "downloaded he"
+          ],
+          "answer": "did he download"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "Little at the start has a negative meaning, so did comes before she.",
+          "prompt": "“Little did she know about the surprise party” is a correct sentence.",
+          "answer": "true"
+        },
+        {
+          "type": "order",
+          "explanation": "After Not until midnight, the auxiliary did comes before the subject he.",
+          "prompt": "",
+          "order": [
+            "Not",
+            "until",
+            "midnight",
+            "did",
+            "he",
+            "finish",
+            "his",
+            "homework"
+          ]
+        },
+        {
+          "type": "match",
+          "explanation": "Each beginning uses inversion and needs the verb form that follows it.",
+          "prompt": "Match the beginning with the correct ending.",
+          "pairs": {
+            "Never have I": "felt so tired.",
+            "Rarely does she": "post photos online.",
+            "Only then did we": "understand the problem.",
+            "No sooner had they sat down than": "the film started."
+          }
+        },
+        {
+          "type": "fill",
+          "explanation": "No sooner is always followed by than.",
+          "prompt": "No sooner had we left the café ___ it started to rain. (than/when)",
+          "answer": "than"
+        },
+        {
+          "type": "choice",
+          "explanation": "Under no circumstances is a negative expression, so should comes before you.",
+          "prompt": "Under no circumstances ___ your password with anyone online.",
+          "options": [
+            "should you share",
+            "you should share",
+            "you share",
+            "share you"
+          ],
+          "answer": "should you share"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "C1",
+      "sequence": 142,
+      "grammar": "participle-clauses",
+      "title": "Feeling Tired, She Went Home: Participle Clauses",
+      "description": "Practise -ing, -ed and having done clauses to make sentences shorter and more fluent.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "___ the door, she saw a huge spider.",
+          "options": [
+            "Opening",
+            "Opened",
+            "To open"
+          ],
+          "answer": "Opening",
+          "explanation": "Two actions at the same time with the same subject: -ing clause."
+        },
+        {
+          "type": "choice",
+          "prompt": "___ in 1889, the Eiffel Tower is now a symbol of Paris.",
+          "options": [
+            "Built",
+            "Building",
+            "Having built"
+          ],
+          "answer": "Built",
+          "explanation": "Passive meaning (the tower was built): past participle."
+        },
+        {
+          "type": "choice",
+          "prompt": "___ her homework, she went out with friends.",
+          "options": [
+            "Having finished",
+            "Finished",
+            "Having finishing"
+          ],
+          "answer": "Having finished",
+          "explanation": "One action completed before the other: Having + past participle."
+        },
+        {
+          "type": "fill",
+          "prompt": "___ (not / know) what to say, he stayed silent.",
+          "answer": "Not knowing",
+          "explanation": "Negative -ing clause: Not + -ing, giving the reason."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“Walking home, the rain started” is a correct sentence.",
+          "answer": "false",
+          "explanation": "The subject must be the same: the rain wasn't walking. Correct: Walking home, I got caught in the rain."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“Shocked by the news, he called his mum” is a correct sentence.",
+          "answer": "true",
+          "explanation": "Past participle clause with the same subject (he was shocked)."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "Having",
+            "lost",
+            "my",
+            "keys",
+            "I",
+            "had",
+            "to",
+            "wait",
+            "outside"
+          ],
+          "explanation": "Having + V3 shows the earlier action and the reason."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the full sentence with the participle clause.",
+          "pairs": {
+            "Because I felt tired, I went to bed.": "Feeling tired, I went to bed.",
+            "The film, which was directed by her, won a prize.": "Directed by her, the film won a prize.",
+            "After she had read the email, she replied.": "Having read the email, she replied."
+          },
+          "explanation": "-ing = active/same time; -ed = passive; having done = earlier action."
+        },
+        {
+          "type": "choice",
+          "prompt": "The girl ___ next to Sam is my cousin.",
+          "options": [
+            "sitting",
+            "sits",
+            "having sat"
+          ],
+          "answer": "sitting",
+          "explanation": "Reduced relative clause: the girl (who is) sitting."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "C2",
+      "sequence": 143,
+      "grammar": "subjunctive",
+      "title": "I Suggest That He Be…: The Subjunctive",
+      "description": "Practise the subjunctive after suggest, insist, demand and in fixed expressions.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "The doctor recommended that he ___ more water.",
+          "options": [
+            "drink",
+            "drinks",
+            "drank"
+          ],
+          "answer": "drink",
+          "explanation": "After recommend that: subjunctive = base form for every subject."
+        },
+        {
+          "type": "choice",
+          "prompt": "It is essential that every student ___ on time.",
+          "options": [
+            "be",
+            "is",
+            "will be"
+          ],
+          "answer": "be",
+          "explanation": "It is essential that + subjunctive: be."
+        },
+        {
+          "type": "fill",
+          "prompt": "She insisted that he ___ (leave) immediately.",
+          "answer": "leave",
+          "explanation": "insist that + base form, even with he."
+        },
+        {
+          "type": "fill",
+          "prompt": "We demand that the company ___ (not / raise) prices again.",
+          "answer": "not raise",
+          "explanation": "Negative subjunctive: not + base form (no do)."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“I suggest that she applies for the scholarship” is formal subjunctive.",
+          "answer": "false",
+          "explanation": "The subjunctive form is apply (no -s): I suggest that she apply."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“If I were you, I'd say yes” uses a subjunctive form.",
+          "answer": "true",
+          "explanation": "were with I is a past subjunctive."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "It",
+            "is",
+            "vital",
+            "that",
+            "she",
+            "be",
+            "informed"
+          ],
+          "explanation": "It is vital that + subject + be + past participle (passive subjunctive)."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the fixed expression with its meaning.",
+          "pairs": {
+            "God save the Queen": "a wish for the monarch",
+            "Be that as it may": "even if that is true",
+            "Come what may": "whatever happens"
+          },
+          "explanation": "These old fixed phrases keep the subjunctive form."
+        },
+        {
+          "type": "choice",
+          "prompt": "The teacher asked that we ___ our phones off.",
+          "options": [
+            "turn",
+            "turned",
+            "turns"
+          ],
+          "answer": "turn",
+          "explanation": "ask that + base form: we turn."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "C2",
+      "sequence": 144,
+      "grammar": "hedging",
+      "title": "It Would Seem That…: Hedging and Softening",
+      "description": "Practise ways to sound careful and polite: it seems, tend to, might, somewhat.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "___ that the results are not as good as we expected.",
+          "options": [
+            "It would seem",
+            "It seems to be that",
+            "It would seeming"
+          ],
+          "answer": "It would seem",
+          "explanation": "It would seem that… is a careful, polite way to state a conclusion."
+        },
+        {
+          "type": "choice",
+          "prompt": "Teenagers ___ to spend more time online than adults.",
+          "options": [
+            "tend",
+            "are tend",
+            "tending"
+          ],
+          "answer": "tend",
+          "explanation": "tend to + verb makes a general claim less absolute."
+        },
+        {
+          "type": "fill",
+          "prompt": "Your essay is ___ too long. Could you cut a few paragraphs? (somewhat / extremely)",
+          "answer": "somewhat",
+          "explanation": "somewhat softens criticism; extremely makes it stronger."
+        },
+        {
+          "type": "fill",
+          "prompt": "There ___ to be a problem with your booking. (seems / is)",
+          "answer": "seems",
+          "explanation": "There seems to be… is softer than There is…"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“This may suggest that the theory is wrong” sounds more cautious than “This proves the theory is wrong”.",
+          "answer": "true",
+          "explanation": "may suggest is a hedge; proves is a strong claim."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“Arguably” makes a claim sound more certain.",
+          "answer": "false",
+          "explanation": "arguably means it can be argued — it softens the claim."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "It",
+            "could",
+            "be",
+            "argued",
+            "that",
+            "homework",
+            "is",
+            "unnecessary"
+          ],
+          "explanation": "It could be argued that… presents an opinion cautiously."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the direct sentence with the softened one.",
+          "pairs": {
+            "You are wrong.": "I'm not sure that's quite right.",
+            "This is bad.": "This isn't ideal.",
+            "The plan will fail.": "The plan might run into difficulties."
+          },
+          "explanation": "Hedging uses negatives of positive words, modals and softer verbs."
+        },
+        {
+          "type": "choice",
+          "prompt": "The data appear to ___ a link between sleep and memory.",
+          "options": [
+            "indicate",
+            "indicating",
+            "be indicate"
+          ],
+          "answer": "indicate",
+          "explanation": "appear to + base verb: a careful academic hedge."
+        }
+      ]
+    }
+  ]
+}

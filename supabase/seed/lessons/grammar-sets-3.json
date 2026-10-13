@@ -1,0 +1,847 @@
+{
+  "package": "grammar-sets-3",
+  "description": "B1 practice sets for the grammar topics that had none, written by hand (2026-10-13). Imported and published.",
+  "lessons": [
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 120,
+      "grammar": "present-perfect-vs-past-simple",
+      "title": "Have You Ever… or Did You…? Present Perfect vs Past Simple",
+      "description": "Practise choosing between the Present Perfect and the Past Simple.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "I ___ that series last weekend.",
+          "options": [
+            "watched",
+            "have watched",
+            "have watch"
+          ],
+          "answer": "watched",
+          "explanation": "A finished time (last weekend) needs the Past Simple."
+        },
+        {
+          "type": "choice",
+          "prompt": "___ you ever ___ sushi?",
+          "options": [
+            "Have / tried",
+            "Did / tried",
+            "Have / try"
+          ],
+          "answer": "Have / tried",
+          "explanation": "Experience at any time in your life: Have you ever + past participle."
+        },
+        {
+          "type": "choice",
+          "prompt": "She ___ in London since 2020.",
+          "options": [
+            "has lived",
+            "lived",
+            "lives"
+          ],
+          "answer": "has lived",
+          "explanation": "since + a starting point and the action continues now: Present Perfect."
+        },
+        {
+          "type": "fill",
+          "prompt": "We ___ (meet) at a concert two years ago.",
+          "answer": "met",
+          "explanation": "ago shows a finished time, so the Past Simple: met."
+        },
+        {
+          "type": "fill",
+          "prompt": "I ___ (not finish) my homework yet.",
+          "answer": "haven't finished",
+          "accept": [
+            "have not finished"
+          ],
+          "explanation": "yet in negatives goes with the Present Perfect."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“I have seen him yesterday” is a correct sentence.",
+          "answer": "false",
+          "explanation": "yesterday is a finished time, so: I saw him yesterday."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“She has just posted a new video” is a correct sentence.",
+          "answer": "true",
+          "explanation": "just + Present Perfect for something that happened a moment ago."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the beginnings and endings.",
+          "pairs": {
+            "I have already": "done my homework.",
+            "We went to Spain": "last summer.",
+            "Have you ever": "seen a ghost?",
+            "She has lived here": "since 2020."
+          },
+          "explanation": "already, ever, since go with the Present Perfect; last summer (a finished time) with the Past Simple."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "Have",
+            "you",
+            "ever",
+            "been",
+            "to",
+            "Italy"
+          ],
+          "explanation": "Have + you + ever + been: a question about experience."
+        },
+        {
+          "type": "choice",
+          "prompt": "When ___ you start learning English?",
+          "options": [
+            "did",
+            "have",
+            "has"
+          ],
+          "answer": "did",
+          "explanation": "Questions with When ask about a finished time: Past Simple."
+        },
+        {
+          "type": "choice",
+          "prompt": "I ___ to Paris three times. I love it there!",
+          "options": [
+            "have been",
+            "was being",
+            "am"
+          ],
+          "answer": "have been",
+          "explanation": "Experience up to now (how many times): Present Perfect."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 121,
+      "grammar": "past-continuous",
+      "title": "I Was Doing… When: Past Continuous",
+      "description": "Practise the Past Continuous for actions in progress and its use with the Past Simple.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "At 8 pm yesterday I ___ dinner.",
+          "options": [
+            "was cooking",
+            "cooked",
+            "am cooking"
+          ],
+          "answer": "was cooking",
+          "explanation": "An action in progress at a moment in the past: was cooking."
+        },
+        {
+          "type": "choice",
+          "prompt": "They ___ football when it started to rain.",
+          "options": [
+            "were playing",
+            "was playing",
+            "played"
+          ],
+          "answer": "were playing",
+          "explanation": "they + were + -ing for the longer action."
+        },
+        {
+          "type": "fill",
+          "prompt": "I ___ (watch) TV when my phone rang.",
+          "answer": "was watching",
+          "explanation": "The longer action in progress: Past Continuous."
+        },
+        {
+          "type": "fill",
+          "prompt": "While she was walking home, she ___ (see) an old friend.",
+          "answer": "saw",
+          "explanation": "The short action that interrupts: Past Simple."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“We was talking when the teacher came in” is a correct sentence.",
+          "answer": "false",
+          "explanation": "With we we use were: We were talking."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“What were you doing at midnight?” is a correct question.",
+          "answer": "true",
+          "explanation": "Question: was/were + subject + -ing."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "She",
+            "was",
+            "sleeping",
+            "when",
+            "the",
+            "alarm",
+            "went",
+            "off"
+          ],
+          "explanation": "Long action (was sleeping) + when + short action (went off)."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the beginnings and endings.",
+          "pairs": {
+            "I was reading": "when the lights went out.",
+            "While we were waiting for the bus,": "it started to snow.",
+            "He wasn't listening": "because he was tired."
+          },
+          "explanation": "Past Continuous gives the background; Past Simple gives the event."
+        },
+        {
+          "type": "choice",
+          "prompt": "What ___ you doing when I called you?",
+          "options": [
+            "were",
+            "was",
+            "did"
+          ],
+          "answer": "were",
+          "explanation": "you + were in the Past Continuous."
+        },
+        {
+          "type": "fill",
+          "prompt": "The sun ___ (shine) and the birds were singing. It was a perfect morning.",
+          "answer": "was shining",
+          "explanation": "Describing the scene in a story: Past Continuous."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 122,
+      "grammar": "used-to",
+      "title": "I Used To…: Past Habits",
+      "description": "Practise used to for past habits and states that are not true now.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "I ___ play the piano when I was a child.",
+          "options": [
+            "used to",
+            "use to",
+            "was used to"
+          ],
+          "answer": "used to",
+          "explanation": "Positive past habit: used to + base verb."
+        },
+        {
+          "type": "choice",
+          "prompt": "She ___ like vegetables, but now she loves them.",
+          "options": [
+            "didn't use to",
+            "didn't used to",
+            "not used to"
+          ],
+          "answer": "didn't use to",
+          "explanation": "After didn't we write use to (without d)."
+        },
+        {
+          "type": "choice",
+          "prompt": "___ you use to watch cartoons every morning?",
+          "options": [
+            "Did",
+            "Were",
+            "Have"
+          ],
+          "answer": "Did",
+          "explanation": "Question: Did + subject + use to."
+        },
+        {
+          "type": "fill",
+          "prompt": "My dad ___ to have long hair. Now he is bald!",
+          "answer": "used",
+          "explanation": "A past state that is not true now: used to."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“I used to go to the gym tomorrow” is a correct sentence.",
+          "answer": "false",
+          "explanation": "used to is only about the past, not the future."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“We used to live in a small village” is a correct sentence.",
+          "answer": "true",
+          "explanation": "A past state: used to live."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "There",
+            "used",
+            "to",
+            "be",
+            "a",
+            "cinema",
+            "here"
+          ],
+          "explanation": "There used to be = there was in the past but not now."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the past and the present.",
+          "pairs": {
+            "I used to be shy,": "but now I love talking to people.",
+            "He used to hate maths,": "but now it's his favourite subject.",
+            "We used to live in a flat,": "but now we have a house."
+          },
+          "explanation": "used to describes something that was true before and isn't now."
+        },
+        {
+          "type": "fill",
+          "prompt": "Did they ___ to go camping every summer?",
+          "answer": "use",
+          "explanation": "In questions with did: use to (no d)."
+        },
+        {
+          "type": "choice",
+          "prompt": "When I was ten, I ___ to bed at 9 pm every night.",
+          "options": [
+            "used to go",
+            "use to go",
+            "was going"
+          ],
+          "answer": "used to go",
+          "explanation": "A repeated action in the past: used to go."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 123,
+      "grammar": "second-conditional",
+      "title": "If I Were You…: Second Conditional",
+      "description": "Practise the second conditional for imaginary situations and advice.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "If I ___ a million dollars, I would travel the world.",
+          "options": [
+            "had",
+            "have",
+            "would have"
+          ],
+          "answer": "had",
+          "explanation": "Second conditional: If + Past Simple, would + base verb."
+        },
+        {
+          "type": "choice",
+          "prompt": "If she lived closer, she ___ visit us more often.",
+          "options": [
+            "would",
+            "will",
+            "is"
+          ],
+          "answer": "would",
+          "explanation": "The result part uses would + base verb."
+        },
+        {
+          "type": "choice",
+          "prompt": "If I ___ you, I would talk to her.",
+          "options": [
+            "were",
+            "am",
+            "would be"
+          ],
+          "answer": "were",
+          "explanation": "For advice we say If I were you."
+        },
+        {
+          "type": "fill",
+          "prompt": "If we ___ (know) the answer, we would tell you.",
+          "answer": "knew",
+          "explanation": "If + Past Simple: knew."
+        },
+        {
+          "type": "fill",
+          "prompt": "What would you do if you ___ (meet) your favourite singer?",
+          "answer": "met",
+          "explanation": "Imaginary situation: if + Past Simple."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“If I would have more time, I would learn Japanese” is a correct sentence.",
+          "answer": "false",
+          "explanation": "No would after if: If I had more time…"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“I wouldn't do that if I were you” is a correct sentence.",
+          "answer": "true",
+          "explanation": "The if part can come second: no comma needed then."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "My",
+            "sister",
+            "would",
+            "be",
+            "happier",
+            "if",
+            "she",
+            "had",
+            "more",
+            "free",
+            "time"
+          ],
+          "explanation": "Result (would + verb) first, then if + Past Simple — no comma needed."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the halves.",
+          "pairs": {
+            "If it weren't raining,": "we would go to the beach.",
+            "If I had a dog,": "I would walk it every day.",
+            "If he studied more,": "he would pass the exam."
+          },
+          "explanation": "Each imaginary condition matches its logical result."
+        },
+        {
+          "type": "choice",
+          "prompt": "What ___ you do if you lost your phone?",
+          "options": [
+            "would",
+            "will",
+            "do"
+          ],
+          "answer": "would",
+          "explanation": "Imaginary question: What would you do if…"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 124,
+      "grammar": "passive-basic",
+      "title": "It Was Made In…: The Passive",
+      "description": "Practise the passive in the present and past: is made, was built.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "English ___ in many countries.",
+          "options": [
+            "is spoken",
+            "speaks",
+            "is speaking"
+          ],
+          "answer": "is spoken",
+          "explanation": "Present passive: is + past participle."
+        },
+        {
+          "type": "choice",
+          "prompt": "This bridge ___ in 1890.",
+          "options": [
+            "was built",
+            "built",
+            "is built"
+          ],
+          "answer": "was built",
+          "explanation": "Past passive with a finished time: was + past participle."
+        },
+        {
+          "type": "fill",
+          "prompt": "These phones ___ (make) in China.",
+          "answer": "are made",
+          "explanation": "Plural subject, present passive: are made."
+        },
+        {
+          "type": "fill",
+          "prompt": "The window ___ (break) by a football yesterday.",
+          "answer": "was broken",
+          "explanation": "Past passive: was + broken."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“The cake was ate by my brother” is a correct sentence.",
+          "answer": "false",
+          "explanation": "We need the past participle: was eaten."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“The song was written by a 16-year-old girl” is a correct sentence.",
+          "answer": "true",
+          "explanation": "was + written (past participle) + by + who did it."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "The",
+            "photos",
+            "were",
+            "taken",
+            "by",
+            "my",
+            "sister"
+          ],
+          "explanation": "Subject + were + past participle + by + agent."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the active sentence with the passive one.",
+          "pairs": {
+            "They clean the room every day.": "The room is cleaned every day.",
+            "Someone stole my bike.": "My bike was stolen.",
+            "People grow rice here.": "Rice is grown here."
+          },
+          "explanation": "The object of the active sentence becomes the subject of the passive."
+        },
+        {
+          "type": "choice",
+          "prompt": "When ___ the first iPhone released?",
+          "options": [
+            "was",
+            "did",
+            "is"
+          ],
+          "answer": "was",
+          "explanation": "Past passive question: When was … released?"
+        },
+        {
+          "type": "fill",
+          "prompt": "The emails ___ (not send) yesterday because the internet was down.",
+          "answer": "weren't sent",
+          "accept": [
+            "were not sent"
+          ],
+          "explanation": "Negative past passive, plural: weren't sent."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 125,
+      "grammar": "relative-clauses",
+      "title": "Who, Which, That: Relative Clauses",
+      "description": "Practise who, which, that and where to add information about people, things and places.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "She is the girl ___ won the competition.",
+          "options": [
+            "who",
+            "which",
+            "where"
+          ],
+          "answer": "who",
+          "explanation": "For people we use who (or that)."
+        },
+        {
+          "type": "choice",
+          "prompt": "This is the phone ___ I bought last week.",
+          "options": [
+            "which",
+            "who",
+            "where"
+          ],
+          "answer": "which",
+          "explanation": "For things we use which (or that)."
+        },
+        {
+          "type": "choice",
+          "prompt": "That's the café ___ we first met.",
+          "options": [
+            "where",
+            "which",
+            "who"
+          ],
+          "answer": "where",
+          "explanation": "For places, where = in which."
+        },
+        {
+          "type": "fill",
+          "prompt": "I have a friend ___ speaks four languages. (who / which)",
+          "answer": "who",
+          "accept": [
+            "that"
+          ],
+          "explanation": "A person, so who (that is also possible)."
+        },
+        {
+          "type": "fill",
+          "prompt": "The film ___ we watched yesterday was scary. (who / which)",
+          "answer": "which",
+          "accept": [
+            "that"
+          ],
+          "explanation": "A thing, so which (that is also possible)."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“The boy which lives next door is my best friend” is a correct sentence.",
+          "answer": "false",
+          "explanation": "For people we use who or that, not which."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“The book that you gave me is amazing” is a correct sentence.",
+          "answer": "true",
+          "explanation": "that can be used for things."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "He",
+            "is",
+            "the",
+            "teacher",
+            "who",
+            "helped",
+            "me"
+          ],
+          "explanation": "noun + who + verb."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the beginnings and endings.",
+          "pairs": {
+            "A chef is a person": "who cooks in a restaurant.",
+            "A fridge is a thing": "which keeps food cold.",
+            "A gym is a place": "where people exercise."
+          },
+          "explanation": "who → people, which → things, where → places."
+        },
+        {
+          "type": "choice",
+          "prompt": "Do you know the man ___ car is parked outside?",
+          "options": [
+            "whose",
+            "who",
+            "which"
+          ],
+          "answer": "whose",
+          "explanation": "whose shows possession: the man's car."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 126,
+      "grammar": "gerund-infinitive",
+      "title": "Doing or To Do? Gerund and Infinitive",
+      "description": "Practise verbs followed by the -ing form or by to + verb.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "I enjoy ___ to music while I study.",
+          "options": [
+            "listening",
+            "to listen",
+            "listen"
+          ],
+          "answer": "listening",
+          "explanation": "enjoy + -ing."
+        },
+        {
+          "type": "choice",
+          "prompt": "She decided ___ a new language.",
+          "options": [
+            "to learn",
+            "learning",
+            "learn"
+          ],
+          "answer": "to learn",
+          "explanation": "decide + to + verb."
+        },
+        {
+          "type": "choice",
+          "prompt": "We want ___ a film tonight.",
+          "options": [
+            "to watch",
+            "watching",
+            "watch"
+          ],
+          "answer": "to watch",
+          "explanation": "want + to + verb."
+        },
+        {
+          "type": "fill",
+          "prompt": "He finished ___ (write) his essay at midnight.",
+          "answer": "writing",
+          "explanation": "finish + -ing."
+        },
+        {
+          "type": "fill",
+          "prompt": "They hope ___ (visit) Japan next year.",
+          "answer": "to visit",
+          "explanation": "hope + to + verb."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“I avoid to eat sugar” is a correct sentence.",
+          "answer": "false",
+          "explanation": "avoid + -ing: I avoid eating sugar."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“Swimming is good for your health” is a correct sentence.",
+          "answer": "true",
+          "explanation": "The -ing form can be the subject of a sentence."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the beginnings and endings.",
+          "pairs": {
+            "I enjoy": "playing chess.",
+            "She promised": "to call me.",
+            "Do you mind": "waiting a minute?",
+            "We are planning": "to move house."
+          },
+          "explanation": "enjoy and mind + -ing; promise and plan + to + verb."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "She",
+            "is",
+            "good",
+            "at",
+            "drawing",
+            "comics"
+          ],
+          "explanation": "After a preposition (at) we use -ing."
+        },
+        {
+          "type": "choice",
+          "prompt": "Would you mind ___ the window?",
+          "options": [
+            "opening",
+            "to open",
+            "open"
+          ],
+          "answer": "opening",
+          "explanation": "mind + -ing."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "B1",
+      "sequence": 127,
+      "grammar": "should-advice",
+      "title": "You Should…: Giving Advice",
+      "description": "Practise should, shouldn't and ought to for advice and opinions.",
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "You look tired. You ___ go to bed earlier.",
+          "options": [
+            "should",
+            "shouldn't",
+            "should to"
+          ],
+          "answer": "should",
+          "explanation": "Advice: should + base verb."
+        },
+        {
+          "type": "choice",
+          "prompt": "You ___ eat so much junk food. It's bad for you.",
+          "options": [
+            "shouldn't",
+            "should",
+            "ought"
+          ],
+          "answer": "shouldn't",
+          "explanation": "Negative advice: shouldn't."
+        },
+        {
+          "type": "choice",
+          "prompt": "We ___ to leave now, or we'll miss the train.",
+          "options": [
+            "ought",
+            "should",
+            "must"
+          ],
+          "answer": "ought",
+          "explanation": "ought to = should."
+        },
+        {
+          "type": "fill",
+          "prompt": "___ I tell her the truth? What do you think? (Should / Ought)",
+          "answer": "Should",
+          "explanation": "Questions asking for advice: Should I…?"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“He should to study more” is a correct sentence.",
+          "answer": "false",
+          "explanation": "No to after should: He should study more."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "“You ought to apologise” is a correct sentence.",
+          "answer": "true",
+          "explanation": "ought to + base verb."
+        },
+        {
+          "type": "order",
+          "prompt": "",
+          "order": [
+            "You",
+            "shouldn't",
+            "post",
+            "your",
+            "address",
+            "online"
+          ],
+          "explanation": "shouldn't + base verb."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the problem with the advice.",
+          "pairs": {
+            "I've got a headache.": "You should drink some water and rest.",
+            "I always forget my homework.": "You should write it in your planner.",
+            "I'm bored.": "You should try a new hobby."
+          },
+          "explanation": "should + verb gives a suggestion that fits the problem."
+        },
+        {
+          "type": "fill",
+          "prompt": "It's very cold. You ___ wear a coat. (should / shouldn't)",
+          "answer": "should",
+          "explanation": "Good advice in cold weather: should."
+        },
+        {
+          "type": "choice",
+          "prompt": "What do you think I ___ do?",
+          "options": [
+            "should",
+            "ought",
+            "should to"
+          ],
+          "answer": "should",
+          "explanation": "What do you think I should do? — asking for advice."
+        }
+      ]
+    }
+  ]
+}

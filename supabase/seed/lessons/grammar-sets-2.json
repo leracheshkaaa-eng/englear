@@ -1,0 +1,116 @@
+{
+  "package": "grammar-sets-2",
+  "description": "Practice sets for the grammar topics that had none, written by hand (2026-10-13). Imported and published.",
+  "lessons": [
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 110, "grammar": "countable-uncountable",
+      "title": "Some or Any? Countable and Uncountable Nouns",
+      "description": "Practise countable and uncountable nouns with some, any, a and an.",
+      "exercises": [
+        { "type": "choice", "prompt": "There is ___ milk in the fridge.", "options": ["some", "a", "many"], "answer": "some", "explanation": "Milk is uncountable, and in a positive sentence we use some." },
+        { "type": "choice", "prompt": "Have we got ___ bread for sandwiches?", "options": ["any", "a", "many"], "answer": "any", "explanation": "Bread is uncountable, and in questions we usually use any." },
+        { "type": "choice", "prompt": "I'd like ___ apple, please.", "options": ["an", "some", "any"], "answer": "an", "explanation": "Apple is countable and singular, and it starts with a vowel sound, so we say an apple." },
+        { "type": "fill", "prompt": "We haven't got ___ eggs. Let's buy some. (some / any)", "answer": "any", "explanation": "In negative sentences we use any." },
+        { "type": "fill", "prompt": "Can I have ___ water, please? (some / any)", "answer": "some", "explanation": "When we ask for something politely, we use some even in a question." },
+        { "type": "truefalse", "prompt": "“I need an advice” is a correct sentence.", "answer": "false", "explanation": "Advice is uncountable: we say some advice or a piece of advice." },
+        { "type": "truefalse", "prompt": "“There are some bananas on the table” is a correct sentence.", "answer": "true", "explanation": "Bananas is a plural countable noun, so are some is correct." },
+        { "type": "choice", "prompt": "There ___ some cheese on the pizza.", "options": ["is", "are", "be"], "answer": "is", "explanation": "Cheese is uncountable, so it takes a singular verb: is." },
+        { "type": "match", "prompt": "Match each noun with the correct phrase.", "pairs": { "music": "some music", "song": "a song", "information": "some information", "umbrella": "an umbrella" }, "explanation": "Uncountable nouns (music, information) take some; singular countable nouns take a or an." },
+        { "type": "order", "prompt": "", "order": ["Are", "there", "any", "cookies", "left"], "explanation": "In questions with there are we use any: Are there any cookies left?" },
+        { "type": "fill", "prompt": "There isn't ___ rice in the cupboard. (some / any)", "answer": "any", "explanation": "Negative sentence, so we use any." },
+        { "type": "choice", "prompt": "She has ___ good news for us!", "options": ["some", "a", "many"], "answer": "some", "explanation": "News is uncountable, even though it ends in -s, so we say some news." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 111, "grammar": "much-many",
+      "title": "Much, Many, A Lot Of",
+      "description": "Practise much, many and a lot of with countable and uncountable nouns.",
+      "exercises": [
+        { "type": "choice", "prompt": "How ___ friends do you have on this app?", "options": ["many", "much", "a lot"], "answer": "many", "explanation": "Friends is countable, so we ask How many." },
+        { "type": "choice", "prompt": "How ___ time do we have before the film starts?", "options": ["much", "many", "a lot"], "answer": "much", "explanation": "Time is uncountable, so we ask How much." },
+        { "type": "choice", "prompt": "I don't drink ___ coffee.", "options": ["much", "many", "a few"], "answer": "much", "explanation": "Coffee is uncountable; in negatives we use much." },
+        { "type": "fill", "prompt": "There aren't ___ people at the party yet. (much / many)", "answer": "many", "explanation": "People is countable plural, so we use many." },
+        { "type": "fill", "prompt": "She has got a ___ of games on her phone.", "answer": "lot", "explanation": "A lot of works with countable and uncountable nouns in positive sentences." },
+        { "type": "truefalse", "prompt": "“How much books have you got?” is a correct question.", "answer": "false", "explanation": "Books is countable, so we say How many books." },
+        { "type": "truefalse", "prompt": "“We haven't got much money” is a correct sentence.", "answer": "true", "explanation": "Money is uncountable, so much is correct in a negative sentence." },
+        { "type": "match", "prompt": "Match the beginning with the right ending.", "pairs": { "How many photos": "did you take?", "How much sugar": "do you want in your tea?", "There are a lot of": "people here." }, "explanation": "many + countable plural; much + uncountable; a lot of + both in positive sentences." },
+        { "type": "order", "prompt": "", "order": ["How", "many", "songs", "are", "on", "your", "playlist"], "explanation": "How many + plural noun + are: How many songs are on your playlist?" },
+        { "type": "choice", "prompt": "I've got ___ homework tonight. I can't go out.", "options": ["a lot of", "many", "a few"], "answer": "a lot of", "explanation": "Homework is uncountable; in a positive sentence we use a lot of." },
+        { "type": "fill", "prompt": "There isn't ___ milk left. (much / many)", "answer": "much", "explanation": "Milk is uncountable, so much." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 112, "grammar": "superlatives",
+      "title": "The Best, the Biggest: Superlatives",
+      "description": "Practise superlative adjectives: the tallest, the most interesting, the best.",
+      "exercises": [
+        { "type": "choice", "prompt": "Mount Everest is ___ mountain in the world.", "options": ["the highest", "the higher", "highest than"], "answer": "the highest", "explanation": "Short adjective + -est, with the: the highest." },
+        { "type": "choice", "prompt": "This is ___ game I have ever played!", "options": ["the best", "the goodest", "the better"], "answer": "the best", "explanation": "Good is irregular: good – better – the best." },
+        { "type": "fill", "prompt": "Maths is the ___ subject for me. (difficult)", "answer": "most difficult", "explanation": "Long adjectives use the most: the most difficult." },
+        { "type": "fill", "prompt": "Today is the ___ day of the year. (hot)", "answer": "hottest", "explanation": "Hot has one vowel + one consonant, so we double the t: hottest." },
+        { "type": "fill", "prompt": "That was the ___ film ever. It was so boring! (bad)", "answer": "worst", "explanation": "Bad is irregular: bad – worse – the worst." },
+        { "type": "truefalse", "prompt": "“She is the most tall girl in our class” is a correct sentence.", "answer": "false", "explanation": "Tall is short, so we say the tallest, not the most tall." },
+        { "type": "truefalse", "prompt": "“This is the most beautiful beach in Spain” is a correct sentence.", "answer": "true", "explanation": "Beautiful is long, so the most beautiful is correct." },
+        { "type": "choice", "prompt": "My little brother is ___ person in our family.", "options": ["the funniest", "the funnyest", "the most funny"], "answer": "the funniest", "explanation": "Adjectives ending in -y change to -iest: funny – the funniest." },
+        { "type": "match", "prompt": "Match the adjective with its superlative.", "pairs": { "big": "the biggest", "easy": "the easiest", "famous": "the most famous", "far": "the furthest" }, "explanation": "Short: -est (double the last letter after a short vowel); -y: -iest; long: the most; far is irregular." },
+        { "type": "order", "prompt": "", "order": ["It", "is", "the", "most", "popular", "app", "in", "my", "school"], "explanation": "the most + long adjective + noun." },
+        { "type": "fill", "prompt": "Who is the ___ singer in the world right now? (famous)", "answer": "most famous", "explanation": "Famous has two syllables and doesn't end in -y, so the most famous." },
+        { "type": "choice", "prompt": "This is ___ coffee in town.", "options": ["the cheapest", "the most cheap", "the cheaper"], "answer": "the cheapest", "explanation": "Cheap is a short adjective: the cheapest." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 113, "grammar": "adverbs-frequency",
+      "title": "Always, Often, Never: Adverbs of Frequency",
+      "description": "Practise always, usually, often, sometimes and never and where to put them.",
+      "exercises": [
+        { "type": "choice", "prompt": "I ___ check my phone in the morning. Every single day!", "options": ["always", "never", "sometimes"], "answer": "always", "explanation": "Every single day = always (100%)." },
+        { "type": "choice", "prompt": "She ___ eats meat. She is a vegetarian.", "options": ["never", "always", "usually"], "answer": "never", "explanation": "A vegetarian doesn't eat meat at all, so never (0%)." },
+        { "type": "order", "prompt": "", "order": ["We", "usually", "play", "games", "on", "Friday"], "explanation": "The adverb goes before the main verb: We usually play." },
+        { "type": "order", "prompt": "", "order": ["He", "is", "often", "late", "for", "class"], "explanation": "With the verb be, the adverb goes after it: is often late." },
+        { "type": "truefalse", "prompt": "“I go always to the gym” is a correct sentence.", "answer": "false", "explanation": "The adverb goes before the main verb: I always go to the gym." },
+        { "type": "truefalse", "prompt": "“They are never at home on Sundays” is a correct sentence.", "answer": "true", "explanation": "With be, the adverb comes after it: are never." },
+        { "type": "match", "prompt": "Match the adverb with how often it means.", "pairs": { "always": "100%", "usually": "about 80%", "sometimes": "about 50%", "never": "0%" }, "explanation": "always > usually > sometimes > never." },
+        { "type": "choice", "prompt": "How often do you ___ to music?", "options": ["listen", "listens", "listening"], "answer": "listen", "explanation": "After do you we use the base form: listen." },
+        { "type": "fill", "prompt": "My cat ___ sleeps on my bed, but not every night. (sometimes / never)", "answer": "sometimes", "explanation": "Not every night but sometimes: about 50%." },
+        { "type": "choice", "prompt": "Which sentence is correct?", "options": ["I am usually tired after school.", "I usually am tired after school.", "Usually I tired am after school."], "answer": "I am usually tired after school.", "explanation": "With be, the adverb goes after the verb: am usually." },
+        { "type": "fill", "prompt": "Tom is a great student. He ___ forgets his homework. (always / never)", "answer": "never", "explanation": "A great student doesn't forget homework: never." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 114, "grammar": "will-future",
+      "title": "Future with Will",
+      "description": "Practise will for predictions, promises and quick decisions, and won't for the negative.",
+      "exercises": [
+        { "type": "choice", "prompt": "Don't worry, I ___ help you with your homework.", "options": ["will", "am", "do"], "answer": "will", "explanation": "A promise about the future: I will help you." },
+        { "type": "choice", "prompt": "It's cold. I think it ___ snow tonight.", "options": ["will", "is", "does"], "answer": "will", "explanation": "A prediction with I think: it will snow." },
+        { "type": "fill", "prompt": "I'm sorry, I ___ be late again. I promise! (negative)", "answer": "won't", "explanation": "The negative of will is will not / won't.", "accept": ["will not"] },
+        { "type": "truefalse", "prompt": "“She will goes to the party” is a correct sentence.", "answer": "false", "explanation": "After will we use the base form: She will go." },
+        { "type": "truefalse", "prompt": "“Will you come to my birthday?” is a correct question.", "answer": "true", "explanation": "Questions: Will + subject + base verb." },
+        { "type": "order", "prompt": "", "order": ["I", "will", "call", "you", "tomorrow"], "explanation": "Subject + will + base verb." },
+        { "type": "order", "prompt": "", "order": ["Will", "it", "rain", "this", "weekend"], "explanation": "Question: Will + subject + verb." },
+        { "type": "choice", "prompt": "“The phone is ringing.” “I ___ answer it!”", "options": ["'ll", "am", "do"], "answer": "'ll", "explanation": "A quick decision at the moment of speaking: I'll answer it." },
+        { "type": "match", "prompt": "Match the situation with the use of will.", "pairs": { "I think robots will clean our homes.": "prediction", "I'll never tell your secret.": "promise", "It's hot. I'll open the window.": "quick decision" }, "explanation": "will is used for predictions, promises and decisions made right now." },
+        { "type": "fill", "prompt": "Maybe they ___ win the match. (will / are)", "answer": "will", "explanation": "Maybe + will for a prediction we are not sure about." },
+        { "type": "choice", "prompt": "I'm hungry. I think I ___ make a sandwich.", "options": ["'ll", "will to", "making"], "answer": "'ll", "explanation": "A decision right now: I'll make a sandwich." }
+      ]
+    },
+    {
+      "kind": "lesson", "skill": "grammar", "cefr": "A2", "sequence": 115, "grammar": "must-have-to",
+      "title": "Must or Have To?",
+      "description": "Practise must, have to, mustn't and don't have to for rules and obligations.",
+      "exercises": [
+        { "type": "choice", "prompt": "You ___ wear a seatbelt in the car. It's the law.", "options": ["have to", "don't have to", "has to"], "answer": "have to", "explanation": "A rule from outside (the law): you have to." },
+        { "type": "choice", "prompt": "She ___ get up early tomorrow. Her train is at 6.", "options": ["has to", "have to", "must to"], "answer": "has to", "explanation": "With she we use has to." },
+        { "type": "choice", "prompt": "You ___ use your phone during the exam. It's not allowed!", "options": ["mustn't", "don't have to", "must"], "answer": "mustn't", "explanation": "mustn't = it is not allowed." },
+        { "type": "choice", "prompt": "It's Saturday! We ___ go to school today.", "options": ["don't have to", "mustn't", "must"], "answer": "don't have to", "explanation": "don't have to = it isn't necessary (but it's allowed)." },
+        { "type": "truefalse", "prompt": "“You mustn't pay. It's free” means it is not allowed to pay.", "answer": "false", "explanation": "For something free we say you don't have to pay — it isn't necessary." },
+        { "type": "truefalse", "prompt": "“He musts go home now” is a correct sentence.", "answer": "false", "explanation": "must never changes: He must go home now." },
+        { "type": "fill", "prompt": "Does he ___ to wear a uniform at his school? (have / has)", "answer": "have", "explanation": "After does we use the base form: Does he have to…?" },
+        { "type": "match", "prompt": "Match the sentence with its meaning.", "pairs": { "You mustn't touch it.": "It is not allowed.", "You don't have to touch it.": "It is not necessary.", "You must touch it.": "It is necessary." }, "explanation": "mustn't = not allowed; don't have to = not necessary; must = necessary." },
+        { "type": "order", "prompt": "", "order": ["We", "have", "to", "finish", "the", "project", "by", "Friday"], "explanation": "Subject + have to + base verb." },
+        { "type": "fill", "prompt": "You ___ shout in the library. It's a quiet place. (mustn't / don't have to)", "answer": "mustn't", "explanation": "Shouting is not allowed in the library: mustn't." },
+        { "type": "choice", "prompt": "I ___ to walk the dog every evening.", "options": ["have", "must", "has"], "answer": "have", "explanation": "have to: I have to walk the dog. (must is never followed by to.)" }
+      ]
+    }
+  ]
+}
