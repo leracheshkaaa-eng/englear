@@ -324,10 +324,15 @@
     "listen": "Listen",
     "stop": "Stop",
     "listenHint": "You can listen as many times as you like.",
-    "playing": "Playing: part {{n}} of {{total}}",
+    "playing": "Line {{n}} of {{total}}",
     "introListening": "Listen to the recording first. You can listen again while answering.",
     "introReading": "Read the text first. It stays available while you answer.",
-    "back": "All practice"
+    "back": "All practice",
+    "pause": "Pause",
+    "prevLine": "Previous line",
+    "nextLine": "Next line",
+    "seek": "Seek",
+    "speed": "Speed"
   },
   "dictionary": {
     "title": "Dictionary",

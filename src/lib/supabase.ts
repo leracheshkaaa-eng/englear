@@ -55,8 +55,11 @@ let currentAudio: HTMLAudioElement | null = null
 let currentEnd: (() => void) | null = null // "finished" callback of what is playing now
 let playSeq = 0 // only the latest click may start playing
 
-/** Speak English text. `onEnd` fires once when playback ends, fails or is replaced. */
-export function speak(text: string, onEnd?: () => void) {
+let speed = 1 // listening player: 0.75× / 1× / 1.25×, on top of TTS_RATE
+
+/** Speak English text. `onEnd` fires once when playback ends, fails or is replaced. `rate` = speed, 1 is normal. */
+export function speak(text: string, onEnd?: () => void, rate = 1) {
+  speed = rate
   if (typeof window === 'undefined') return onEnd?.()
   const clean = text.trim().replace(/\s+/g, ' ')
   if (!clean) return onEnd?.()
@@ -112,6 +115,7 @@ async function playCloud(text: string, seq: number, onEnd: () => void) {
 async function playUrl(url: string, seq: number, onEnd: () => void) {
   if (seq !== playSeq) return onEnd()
   const audio = new Audio(url)
+  audio.playbackRate = speed
   currentAudio = audio
   await audio.play() // rejects if the file does not exist
   audio.onended = onEnd
@@ -160,7 +164,7 @@ function speakWithBrowser(text: string, onEnd: () => void) {
   if (!browserVoice) browserVoice = pickBrowserVoice()
   const u = new SpeechSynthesisUtterance(text)
   u.lang = accent.browserLang
-  u.rate = TTS_RATE
+  u.rate = TTS_RATE * speed
   if (browserVoice) u.voice = browserVoice
   u.onend = onEnd
   u.onerror = onEnd

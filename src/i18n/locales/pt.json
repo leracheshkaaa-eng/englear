@@ -324,10 +324,15 @@
     "listen": "Ouvir",
     "stop": "Parar",
     "listenHint": "Você pode ouvir quantas vezes quiser.",
-    "playing": "Tocando: parte {{n}} de {{total}}",
+    "playing": "Fala {{n}} de {{total}}",
     "introListening": "Primeiro ouça a gravação. Você pode ouvi-la de novo enquanto responde.",
     "introReading": "Primeiro leia o texto. Ele continua disponível enquanto você responde.",
-    "back": "Toda a prática"
+    "back": "Toda a prática",
+    "pause": "Pausa",
+    "prevLine": "Fala anterior",
+    "nextLine": "Próxima fala",
+    "seek": "Avançar ou recuar",
+    "speed": "Velocidade"
   },
   "dictionary": {
     "title": "Dicionário",

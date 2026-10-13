@@ -324,10 +324,15 @@
     "listen": "Anhören",
     "stop": "Stopp",
     "listenHint": "Du kannst so oft zuhören, wie du möchtest.",
-    "playing": "Läuft: Teil {{n}} von {{total}}",
+    "playing": "Zeile {{n}} von {{total}}",
     "introListening": "Hör dir zuerst die Aufnahme an. Beim Antworten kannst du sie erneut hören.",
     "introReading": "Lies zuerst den Text. Beim Antworten bleibt er verfügbar.",
-    "back": "Alle Übungen"
+    "back": "Alle Übungen",
+    "pause": "Pause",
+    "prevLine": "Vorherige Zeile",
+    "nextLine": "Nächste Zeile",
+    "seek": "Spulen",
+    "speed": "Tempo"
   },
   "dictionary": {
     "title": "Wörterbuch",

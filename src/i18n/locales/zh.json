@@ -316,10 +316,15 @@
     "listen": "收听",
     "stop": "停止",
     "listenHint": "可以反复收听。",
-    "playing": "正在播放：第 {{n}} / {{total}} 部分",
+    "playing": "第 {{n}} 句，共 {{total}} 句",
     "introListening": "先听录音。答题时可以再听。",
     "introReading": "先读文章。答题时可以随时查看。",
-    "back": "全部练习"
+    "back": "全部练习",
+    "pause": "暂停",
+    "prevLine": "上一句",
+    "nextLine": "下一句",
+    "seek": "跳转",
+    "speed": "速度"
   },
   "dictionary": {
     "title": "词典",

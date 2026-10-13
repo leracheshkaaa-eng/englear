@@ -316,10 +316,15 @@
     "listen": "聞く",
     "stop": "停止",
     "listenHint": "何度でも聞けます。",
-    "playing": "再生中：{{total}} 部中 {{n}} 部目",
+    "playing": "{{total}} 中 {{n}} 番目のセリフ",
     "introListening": "まず音声を聞きましょう。答えながらもう一度聞けます。",
     "introReading": "まず本文を読みましょう。答えている間も見られます。",
-    "back": "すべての練習"
+    "back": "すべての練習",
+    "pause": "一時停止",
+    "prevLine": "前のセリフ",
+    "nextLine": "次のセリフ",
+    "seek": "シーク",
+    "speed": "速度"
   },
   "dictionary": {
     "title": "辞書",

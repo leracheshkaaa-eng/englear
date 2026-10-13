@@ -340,10 +340,15 @@
     "listen": "Słuchaj",
     "stop": "Stop",
     "listenHint": "Możesz słuchać, ile razy chcesz.",
-    "playing": "Odtwarzanie: część {{n}} z {{total}}",
+    "playing": "Kwestia {{n}} z {{total}}",
     "introListening": "Najpierw posłuchaj nagrania. Podczas odpowiedzi możesz słuchać go ponownie.",
     "introReading": "Najpierw przeczytaj tekst. Będzie dostępny podczas odpowiedzi.",
-    "back": "Cała praktyka"
+    "back": "Cała praktyka",
+    "pause": "Pauza",
+    "prevLine": "Poprzednia kwestia",
+    "nextLine": "Następna kwestia",
+    "seek": "Przewijanie",
+    "speed": "Prędkość"
   },
   "dictionary": {
     "title": "Słownik",
