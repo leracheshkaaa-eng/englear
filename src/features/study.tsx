@@ -6,7 +6,7 @@ import { useAuth } from '../lib/auth'
 import { CEFR_LEVELS } from '../lib/config'
 import { Badge, Button, SpeakerButton } from '../lib/ui'
 import { LessonPlayer } from './lessons'
-import { LeanEmpty } from '../lib/lean'
+import { LeanEmpty, LeanSays } from '../lib/lean'
 import { GrammarCatalog, GrammarTopicPage } from './grammar'
 
 /* ============================================================
@@ -42,10 +42,14 @@ export function LessonsHub({
   onOpenLesson,
   onOpenTask,
   onPracticeGrammar,
+  onUpgrade,
+  onLogin,
 }: {
   onOpenLesson: (id: string) => void
   onOpenTask: (id: string) => void
   onPracticeGrammar: (level: string, grammarId: string | null) => void
+  onUpgrade: () => void
+  onLogin: () => void
 }) {
   const { t } = useTranslation()
   const { userId } = useAuth()
@@ -85,59 +89,147 @@ export function LessonsHub({
           <GrammarCatalog onOpen={openTopic} />
         )
       ) : (
-        <StudyCatalog onOpen={onOpenLesson} />
+        <StudyCatalog onOpen={onOpenLesson} onUpgrade={onUpgrade} onLogin={onLogin} />
       )}
     </section>
   )
 }
 
-export function StudyCatalog({ onOpen }: { onOpen: (id: string) => void }) {
+/** "My lessons": the plan of full lessons for a level. Plus opens everything; without Plus a learner can
+ *  open any one lesson as a trial (a teacher: three); the rest are locked. */
+export function StudyCatalog({ onOpen, onUpgrade, onLogin }: { onOpen: (id: string) => void; onUpgrade: () => void; onLogin: () => void }) {
   const { t } = useTranslation()
-  const { settings } = useAuth()
-  const [level, setLevel] = useState<string | null>(settings.english_level ?? null)
+  const { userId, role, settings } = useAuth()
+  const [level, setLevel] = useState<string>(CEFR_LEVELS.includes(settings.english_level as never) ? settings.english_level : 'A1')
   const [items, setItems] = useState<StudyLessonSummary[] | null>(null)
+  const [access, setAccess] = useState<api.StudyAccess | null>(null)
+  const [done, setDone] = useState<Set<string>>(new Set())
+  const [err, setErr] = useState('')
 
   useEffect(() => {
     setItems(null)
     api.listStudyLessons({ cefr: level }).then(setItems).catch(() => setItems([]))
   }, [level])
+  useEffect(() => {
+    api.studyAccess().then(setAccess).catch(() => setAccess({ signed_in: !!userId, plus: false, used: 0, limit: 0, unlocked: [] }))
+    if (userId) api.studyDone(userId).then(setDone).catch(() => {})
+  }, [userId])
 
+  const canOpen = (l: StudyLessonSummary) => !!access && (access.plus || access.unlocked.includes(l.id) || (!!userId && l.author_id === userId))
+  const left = access ? Math.max(0, access.limit - access.used) : 0
+  const teacher = role === 'teacher' || role === 'admin'
+
+  async function open(l: StudyLessonSummary) {
+    setErr('')
+    if (canOpen(l)) return onOpen(l.id)
+    if (!access?.signed_in) return onLogin()
+    if (left <= 0) return onUpgrade()
+    const ask = teacher ? t('course.confirmUnlockTeacher', { title: l.title, n: left }) : t('course.confirmUnlock', { title: l.title })
+    if (!confirm(ask)) return
+    try {
+      await api.unlockStudyLesson(l.id)
+      onOpen(l.id)
+    } catch (e) {
+      setErr(String((e as Error).message) === 'no_unlocks_left' ? t('course.noTrial') : t('course.unlockFailed'))
+    }
+  }
+
+  const list = items ?? []
+  const next = access?.plus ? list.find((l) => !done.has(l.id)) : undefined
+  const doneHere = list.filter((l) => done.has(l.id)).length
   const chip = (on: boolean) => `rounded-full border px-3 py-1 text-sm font-semibold ${on ? 'border-plum bg-lilac text-plum-deep' : 'border-line text-mute hover:border-lavender'}`
+
   return (
     <div>
-      <p className="mb-6 text-mute">{t('course.intro')}</p>
-      <div className="mb-6 flex flex-wrap gap-1.5">
-        <button onClick={() => setLevel(null)} className={chip(level === null)}>
-          {t('course.allLevels')}
-        </button>
+      <p className="mb-4 text-mute">{t('course.intro')}</p>
+      <div className="mb-5 flex flex-wrap gap-1.5">
         {CEFR_LEVELS.map((l) => (
           <button key={l} onClick={() => setLevel(l)} className={chip(level === l)}>
             {l}
           </button>
         ))}
       </div>
+
+      {access && (
+        <div className="mb-5 rounded-3xl border border-line bg-gradient-to-br from-cream via-paper to-mist/50 p-5">
+          {access.plus ? (
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="font-display text-2xl font-semibold">{t('course.planTitle', { level })}</p>
+                <p className="text-sm text-mute">{t('course.planProgress', { done: doneHere, total: list.length })}</p>
+              </div>
+              <div className="h-2 w-full overflow-hidden rounded-full bg-line sm:w-56">
+                <div className="h-full rounded-full bg-plum transition-all" style={{ width: `${list.length ? (doneHere / list.length) * 100 : 0}%` }} />
+              </div>
+            </div>
+          ) : (
+            <LeanSays pose="sly" size={64}>
+              <span className="block">
+                {!access.signed_in ? t('course.guestIntro') : left > 0 ? (teacher ? t('course.teacherIntro', { n: left }) : t('course.trialIntro')) : t('course.noTrial')}
+              </span>
+              <span className="mt-2 flex flex-wrap gap-2">
+                {!access.signed_in ? (
+                  <Button onClick={onLogin}>{t('common.signIn')}</Button>
+                ) : (
+                  <Button variant={left > 0 ? 'soft' : 'solid'} onClick={onUpgrade}>
+                    ✨ {t('course.getPlus')}
+                  </Button>
+                )}
+              </span>
+            </LeanSays>
+          )}
+        </div>
+      )}
+      {err && <p className="mb-3 text-sm text-warn">{err}</p>}
+
       {items === null && <p className="text-mute">{t('common.loading')}</p>}
       {items?.length === 0 && <LeanEmpty>{t('course.none')}</LeanEmpty>}
-      <div className="grid gap-4 sm:grid-cols-2">
-        {items?.map((l) => (
-          <button key={l.id} onClick={() => onOpen(l.id)} className="rounded-3xl border border-line bg-paper p-5 text-left transition-shadow hover:shadow-[0_12px_30px_-18px_rgba(60,42,112,0.6)]">
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge>{l.cefr}</Badge>
-              <span className="text-xs text-mute">⏱ {t('course.minutes', { n: l.duration_min })}</span>
-              {l.status === 'draft' && <span className="text-xs text-mute">· {t('teacher.draft')}</span>}
-            </div>
-            <p className="mt-2 font-display text-2xl font-semibold">{l.title}</p>
-            <p className="mt-1 text-sm text-mute">{l.description}</p>
-          </button>
-        ))}
+      <div className="space-y-3">
+        {list.map((l, i) => {
+          const isOpen = canOpen(l)
+          const finished = done.has(l.id)
+          const isNext = next?.id === l.id
+          return (
+            <button
+              key={l.id}
+              onClick={() => open(l)}
+              className={`flex w-full items-center gap-4 rounded-3xl border bg-paper p-4 text-left transition-shadow hover:shadow-[0_12px_30px_-18px_rgba(60,42,112,0.6)] ${isNext ? 'border-plum ring-2 ring-plum/20' : 'border-line'}`}
+            >
+              <span className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl font-display text-xl font-semibold ${finished ? 'bg-[rgba(63,143,107,.15)] text-[var(--color-good)]' : isNext ? 'bg-plum text-paper' : 'bg-cream text-plum'}`}>
+                {finished ? '✓' : i + 1}
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs text-mute">⏱ {t('course.minutes', { n: l.duration_min })}</span>
+                  {isNext && <span className="rounded-full bg-lilac px-2 py-0.5 text-xs font-semibold text-plum-deep">{t('course.upNext')}</span>}
+                  {l.status === 'draft' && <span className="text-xs text-mute">· {t('teacher.draft')}</span>}
+                </span>
+                <span className="mt-0.5 block font-display text-xl font-semibold">{l.title}</span>
+                <span className="block truncate text-sm text-mute">{l.description}</span>
+              </span>
+              {!isOpen && <span className="shrink-0 rounded-full bg-honey/50 px-3 py-1 text-xs font-semibold">🔒 Plus</span>}
+            </button>
+          )
+        })}
       </div>
     </div>
   )
 }
 
-export function StudyPlayer({ lessonId, onBack, onOpenOnBoard }: { lessonId: string; onBack: () => void; onOpenOnBoard?: (lesson: StudyLesson) => void }) {
+export function StudyPlayer({
+  lessonId,
+  onBack,
+  onOpenOnBoard,
+  onUpgrade,
+}: {
+  lessonId: string
+  onBack: () => void
+  onOpenOnBoard?: (lesson: StudyLesson) => void
+  onUpgrade?: () => void
+}) {
   const { t } = useTranslation()
-  const { role } = useAuth()
+  const { role, userId } = useAuth()
+  const [locked, setLocked] = useState(false)
   const isTeacher = role === 'teacher' || role === 'admin'
   const [lesson, setLesson] = useState<StudyLesson | null | undefined>(undefined)
   const [step, setStep] = useState(0)
@@ -146,10 +238,32 @@ export function StudyPlayer({ lessonId, onBack, onOpenOnBoard }: { lessonId: str
   const [showNotes, setShowNotes] = useState(isTeacher)
 
   useEffect(() => {
-    api.getStudyLesson(lessonId).then(setLesson).catch(() => setLesson(null))
+    setLocked(false)
+    api
+      .getStudyLesson(lessonId)
+      .then(setLesson)
+      .catch((e) => {
+        if (e instanceof api.StudyLockedError) setLocked(true)
+        setLesson(null)
+      })
   }, [lessonId])
 
   if (lesson === undefined) return <p className="py-24 text-center text-mute">{t('common.loading')}</p>
+  if (lesson === null && locked)
+    return (
+      <section className="mx-auto max-w-md px-6 pt-16 text-center">
+        <LeanSays pose="sly" size={90}>
+          <b className="block font-display text-xl">{t('course.lockedTitle')}</b>
+          {t('course.lockedText')}
+        </LeanSays>
+        <div className="mt-5 flex justify-center gap-2">
+          <Button variant="ghost" onClick={onBack}>
+            ← {t('nav.lessons')}
+          </Button>
+          {onUpgrade && <Button onClick={onUpgrade}>✨ {t('course.getPlus')}</Button>}
+        </div>
+      </section>
+    )
   if (lesson === null)
     return (
       <section className="mx-auto max-w-md px-6 pt-16 text-center">
@@ -263,6 +377,7 @@ export function StudyPlayer({ lessonId, onBack, onOpenOnBoard }: { lessonId: str
               variant="soft"
               onClick={() => {
                 next()
+                if (userId) api.markStudyDone(userId, lesson.id).catch(() => {})
                 onBack()
               }}
             >

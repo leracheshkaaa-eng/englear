@@ -1109,7 +1109,20 @@
     "startTasks": "开始练习",
     "startPractice": "开始实践",
     "next": "下一步",
-    "finish": "完成课程"
+    "finish": "完成课程",
+    "planTitle": "你的 {{level}} 学习计划",
+    "planProgress": "已完成 {{done}}/{{total}} 节",
+    "upNext": "下一节",
+    "guestIntro": "登录后可免费试一节完整课程。",
+    "trialIntro": "你可以免费打开任意一节课——随便选。其余课程需要 Plus 😏",
+    "teacherIntro": "作为老师，你可以免费打开 {{n}} 节自选课程。其余课程需要 Plus。",
+    "noTrial": "免费课程已经用过了。所有课程都需要 Plus 😏",
+    "getPlus": "开通 Plus",
+    "confirmUnlock": "免费打开《{{title}}》？这是你唯一的试听课。",
+    "confirmUnlockTeacher": "免费打开《{{title}}》？剩余免费课程：{{n}}。",
+    "unlockFailed": "无法打开这节课，请再试一次。",
+    "lockedTitle": "这节课属于 Plus",
+    "lockedText": "按你的级别制定计划的完整课程属于 Plus。我的耳朵已经在那里等你了。"
   },
   "landing": {
     "startFree": "免费开始",

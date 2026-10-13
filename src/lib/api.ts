@@ -1694,16 +1694,47 @@ export type StudyLesson = StudyLessonSummary & { content: { stages: StudyStage[]
 
 const STUDY_SUMMARY = 'id, title, description, cefr, topic, duration_min, scope, status, source, author_id'
 export async function listStudyLessons(f: { cefr?: string | null } = {}): Promise<StudyLessonSummary[]> {
-  let q = supabase.from('study_lessons').select(STUDY_SUMMARY).order('cefr').order('title')
+  let q = supabase.from('study_lessons').select(STUDY_SUMMARY).order('cefr').order('position').order('title')
   if (f.cefr) q = q.eq('cefr', f.cefr)
   const { data, error } = await q
   if (error) throw error
   return (data ?? []) as StudyLessonSummary[]
 }
+/** Thrown when a full lesson is a Plus lesson the user has not unlocked. */
+export class StudyLockedError extends Error {}
+
+/** A full lesson with its content. The server returns it only to those who may open it
+ *  (Plus, admin, author, or a free unlock); otherwise StudyLockedError. */
 export async function getStudyLesson(id: string): Promise<StudyLesson | null> {
-  const { data, error } = await supabase.from('study_lessons').select(`${STUDY_SUMMARY}, content`).eq('id', id).maybeSingle()
+  const { data, error } = await supabase.rpc('get_study_lesson', { p_lesson: id })
+  if (error) {
+    if (error.hint === 'locked' || /locked/.test(error.message)) throw new StudyLockedError('locked')
+    throw error
+  }
+  return (data as StudyLesson | null) ?? null
+}
+
+export type StudyAccess = { signed_in: boolean; plus: boolean; used: number; limit: number; unlocked: string[] }
+/** What the user can open in "My lessons": Plus opens everything; otherwise free unlocks (1 learner, 3 teacher). */
+export async function studyAccess(): Promise<StudyAccess> {
+  const { data, error } = await supabase.rpc('study_access')
   if (error) throw error
-  return data as StudyLesson | null
+  return data as StudyAccess
+}
+/** Use a free unlock on this lesson (no-op if it is already open). */
+export async function unlockStudyLesson(id: string) {
+  const { error } = await supabase.rpc('unlock_study_lesson', { p_lesson: id })
+  if (error) throw new Error(error.hint || error.message)
+}
+/** Full lessons this user finished. */
+export async function studyDone(userId: string): Promise<Set<string>> {
+  const { data, error } = await supabase.from('study_progress').select('lesson_id').eq('user_id', userId)
+  if (error) throw error
+  return new Set((data ?? []).map((r) => r.lesson_id as string))
+}
+export async function markStudyDone(userId: string, lessonId: string) {
+  const { error } = await supabase.from('study_progress').upsert({ user_id: userId, lesson_id: lessonId }, { onConflict: 'user_id,lesson_id', ignoreDuplicates: true })
+  if (error) throw error
 }
 
 /* ---------------- interests (Lean's short questions) ---------------- */

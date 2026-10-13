@@ -1119,7 +1119,20 @@
     "startTasks": "Commencer les exercices",
     "startPractice": "Commencer la pratique",
     "next": "Suivant",
-    "finish": "Terminer la leçon"
+    "finish": "Terminer la leçon",
+    "planTitle": "Ton parcours {{level}}",
+    "planProgress": "{{done}} leçons sur {{total}} terminées",
+    "upNext": "Ensuite",
+    "guestIntro": "Connecte-toi pour essayer une leçon complète gratuitement.",
+    "trialIntro": "Tu peux ouvrir une leçon de ton choix gratuitement. Les autres sont avec Plus 😏",
+    "teacherIntro": "En tant qu’enseignant, tu peux ouvrir {{n}} leçons de ton choix gratuitement. Les autres sont avec Plus.",
+    "noTrial": "Ta leçon gratuite est déjà utilisée. Toutes les leçons sont avec Plus 😏",
+    "getPlus": "Passer à Plus",
+    "confirmUnlock": "Ouvrir « {{title}} » gratuitement ? C’est ta seule leçon d’essai.",
+    "confirmUnlockTeacher": "Ouvrir « {{title}} » gratuitement ? Leçons gratuites restantes : {{n}}.",
+    "unlockFailed": "Impossible d’ouvrir la leçon. Réessaie.",
+    "lockedTitle": "Cette leçon fait partie de Plus",
+    "lockedText": "Les leçons complètes avec un parcours adapté à ton niveau font partie de Plus. Mes oreilles t’y attendent."
   },
   "landing": {
     "startFree": "Commencer gratuitement",

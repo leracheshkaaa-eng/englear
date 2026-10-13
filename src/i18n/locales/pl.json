@@ -1139,7 +1139,20 @@
     "startTasks": "Zacznij zadania",
     "startPractice": "Zacznij praktykę",
     "next": "Dalej",
-    "finish": "Zakończ lekcję"
+    "finish": "Zakończ lekcję",
+    "planTitle": "Twój plan {{level}}",
+    "planProgress": "Ukończono {{done}} z {{total}}",
+    "upNext": "Następna",
+    "guestIntro": "Zaloguj się i wypróbuj jedną pełną lekcję za darmo.",
+    "trialIntro": "Jedną dowolną lekcję możesz otworzyć za darmo — wybierz. Reszta jest w Plus 😏",
+    "teacherIntro": "Jako nauczyciel możesz za darmo otworzyć {{n}} wybrane lekcje. Reszta jest w Plus.",
+    "noTrial": "Darmowa lekcja została już wykorzystana. Wszystkie lekcje są w Plus 😏",
+    "getPlus": "Weź Plus",
+    "confirmUnlock": "Otworzyć „{{title}}” za darmo? To twoja jedyna lekcja próbna.",
+    "confirmUnlockTeacher": "Otworzyć „{{title}}” za darmo? Pozostało darmowych lekcji: {{n}}.",
+    "unlockFailed": "Nie udało się otworzyć lekcji. Spróbuj ponownie.",
+    "lockedTitle": "Ta lekcja jest w Plus",
+    "lockedText": "Pełne lekcje z planem pod twój poziom są częścią Plus. Moje uszy już tam czekają."
   },
   "landing": {
     "startFree": "Zacznij za darmo",

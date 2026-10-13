@@ -1119,7 +1119,20 @@
     "startTasks": "Começar os exercícios",
     "startPractice": "Começar a prática",
     "next": "Próximo",
-    "finish": "Terminar a aula"
+    "finish": "Terminar a aula",
+    "planTitle": "Seu plano {{level}}",
+    "planProgress": "{{done}} de {{total}} aulas concluídas",
+    "upNext": "Próxima",
+    "guestIntro": "Entre e experimente uma aula completa de graça.",
+    "trialIntro": "Você pode abrir uma aula qualquer de graça — escolha. As outras vêm com o Plus 😏",
+    "teacherIntro": "Como professor, você pode abrir {{n}} aulas à sua escolha de graça. As outras vêm com o Plus.",
+    "noTrial": "Sua aula grátis já foi usada. Todas as aulas vêm com o Plus 😏",
+    "getPlus": "Assinar Plus",
+    "confirmUnlock": "Abrir “{{title}}” de graça? É a sua única aula de teste.",
+    "confirmUnlockTeacher": "Abrir “{{title}}” de graça? Aulas grátis restantes: {{n}}.",
+    "unlockFailed": "Não foi possível abrir a aula. Tente de novo.",
+    "lockedTitle": "Esta aula vem com o Plus",
+    "lockedText": "Aulas completas com um plano para o seu nível fazem parte do Plus. Minhas orelhas já estão te esperando lá."
   },
   "landing": {
     "startFree": "Começar grátis",

@@ -195,6 +195,7 @@ function Shell() {
             <StudyPlayer
               lessonId={studyId}
               onBack={() => setStudyId(null)}
+              onUpgrade={() => go('pricing')}
               onOpenOnBoard={async (l) => {
                 if (!userId) return
                 const b = await api.createBoard(userId, { title: l.title, kind: 'notes' }).catch(() => null)
@@ -213,6 +214,8 @@ function Shell() {
                 setBackTo('study')
                 setView('player')
               }}
+              onUpgrade={() => go('pricing')}
+              onLogin={() => go('login')}
               onPracticeGrammar={(level, grammarId) => {
                 go('lessons')
                 setTasksPreset({ level, grammarId })

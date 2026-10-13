@@ -1119,7 +1119,20 @@
     "startTasks": "Start the tasks",
     "startPractice": "Start the practice",
     "next": "Next",
-    "finish": "Finish the lesson"
+    "finish": "Finish the lesson",
+    "planTitle": "Your {{level}} plan",
+    "planProgress": "{{done}} of {{total}} lessons done",
+    "upNext": "Up next",
+    "guestIntro": "Sign in and try one full lesson for free.",
+    "trialIntro": "You can open any one lesson for free — pick the one you like. The rest come with Plus 😏",
+    "teacherIntro": "As a teacher you can open {{n}} lessons of your choice for free. The rest come with Plus.",
+    "noTrial": "Your free lesson is used. All lessons come with Plus 😏",
+    "getPlus": "Get Plus",
+    "confirmUnlock": "Open “{{title}}” for free? It is your one trial lesson.",
+    "confirmUnlockTeacher": "Open “{{title}}” for free? Free lessons left: {{n}}.",
+    "unlockFailed": "Could not open the lesson. Try again.",
+    "lockedTitle": "This lesson comes with Plus",
+    "lockedText": "Full lessons with a plan for your level are part of Plus. My ears are already waiting there."
   },
   "landing": {
     "startFree": "Start for free",

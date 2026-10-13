@@ -1109,7 +1109,20 @@
     "startTasks": "練習問題を始める",
     "startPractice": "実践を始める",
     "next": "次へ",
-    "finish": "レッスンを終える"
+    "finish": "レッスンを終える",
+    "planTitle": "あなたの {{level}} プラン",
+    "planProgress": "{{total}} レッスン中 {{done}} 完了",
+    "upNext": "次はこれ",
+    "guestIntro": "ログインすると、完全なレッスンを 1 つ無料で試せます。",
+    "trialIntro": "好きなレッスンを 1 つ無料で開けるよ——選んでね。ほかは Plus で 😏",
+    "teacherIntro": "先生は好きなレッスンを {{n}} つ無料で開けます。ほかは Plus です。",
+    "noTrial": "無料レッスンはもう使ったよ。すべてのレッスンは Plus で 😏",
+    "getPlus": "Plus にする",
+    "confirmUnlock": "「{{title}}」を無料で開きますか？これがあなたの唯一の体験レッスンです。",
+    "confirmUnlockTeacher": "「{{title}}」を無料で開きますか？残りの無料レッスン：{{n}}。",
+    "unlockFailed": "レッスンを開けませんでした。もう一度試してね。",
+    "lockedTitle": "このレッスンは Plus です",
+    "lockedText": "レベルに合わせたプランつきの完全なレッスンは Plus に含まれます。ぼくの耳がそこで待ってるよ。"
   },
   "landing": {
     "startFree": "無料ではじめる",

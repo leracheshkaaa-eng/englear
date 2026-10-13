@@ -1119,7 +1119,20 @@
     "startTasks": "Aufgaben starten",
     "startPractice": "Übung starten",
     "next": "Weiter",
-    "finish": "Stunde beenden"
+    "finish": "Stunde beenden",
+    "planTitle": "Dein Plan für {{level}}",
+    "planProgress": "{{done}} von {{total}} Stunden geschafft",
+    "upNext": "Als Nächstes",
+    "guestIntro": "Melde dich an und probiere eine ganze Stunde kostenlos aus.",
+    "trialIntro": "Eine beliebige Stunde kannst du kostenlos öffnen — such dir eine aus. Der Rest gehört zu Plus 😏",
+    "teacherIntro": "Als Lehrkraft kannst du {{n}} Stunden deiner Wahl kostenlos öffnen. Der Rest gehört zu Plus.",
+    "noTrial": "Deine kostenlose Stunde ist schon benutzt. Alle Stunden gibt es mit Plus 😏",
+    "getPlus": "Plus holen",
+    "confirmUnlock": "„{{title}}“ kostenlos öffnen? Das ist deine einzige Probestunde.",
+    "confirmUnlockTeacher": "„{{title}}“ kostenlos öffnen? Noch {{n}} kostenlose Stunden.",
+    "unlockFailed": "Die Stunde ließ sich nicht öffnen. Versuch es noch mal.",
+    "lockedTitle": "Diese Stunde gehört zu Plus",
+    "lockedText": "Ganze Stunden mit einem Plan für dein Niveau sind Teil von Plus. Meine Ohren warten dort schon."
   },
   "landing": {
     "startFree": "Kostenlos starten",
