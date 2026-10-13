@@ -5,7 +5,7 @@
 export const GRAMMAR_SCHEMA = {
   type: 'object',
   additionalProperties: false,
-  required: ['title', 'summary', 'sections', 'table', 'mistakes', 'tip', 'check'],
+  required: ['title', 'summary', 'sections', 'usage', 'table', 'mistakes', 'tip', 'check'],
   properties: {
     title: { type: 'string' },
     summary: { type: 'string' },
@@ -23,6 +23,29 @@ export const GRAMMAR_SCHEMA = {
             items: { type: 'object', additionalProperties: false, required: ['en', 'tr'], properties: { en: { type: 'string' }, tr: { type: 'string' } } },
           },
         },
+      },
+    },
+    usage: {
+      type: 'object',
+      additionalProperties: false,
+      required: ['why', 'situations', 'compare', 'register'],
+      properties: {
+        why: { type: 'string' },
+        situations: {
+          type: 'array',
+          items: {
+            type: 'object',
+            additionalProperties: false,
+            required: ['title', 'text', 'example'],
+            properties: {
+              title: { type: 'string' },
+              text: { type: 'string' },
+              example: { type: 'object', additionalProperties: false, required: ['en', 'tr'], properties: { en: { type: 'string' }, tr: { type: 'string' } } },
+            },
+          },
+        },
+        compare: { type: 'string' },
+        register: { type: 'string' },
       },
     },
     table: {
@@ -75,6 +98,11 @@ STRUCTURE
 - "title": the topic name for this learner (in the explanation language, with the English name if helpful).
 - "summary": 1–2 sentences: what it is and when we use it.
 - "sections": 2–4 short sections that build up step by step (form → use → special cases). Each "text" is 1–4 short sentences; use **bold** for forms and key words (no other Markdown). Each section has 2–4 examples.
+- "usage": WHEN and WHY we use it — this matters as much as the form, so make it rich and concrete (same language rule as the rest):
+  - "why": 2–4 sentences: what this grammar adds to the meaning (a nuance, emphasis, politeness, distance, certainty, the order of events…) and why a speaker chooses it. Not a repeat of the form.
+  - "situations": 3–5 real-life situations where it is natural (e.g. "telling a story about your weekend", "a formal complaint", "a dramatic speech"): "title" (short), "text" (1–2 sentences: why it fits here) and one "example" ({en, tr} as in the sections).
+  - "compare": 2–3 sentences: how it differs from the similar or simpler option (with a mini contrast like "**I have never seen** vs **Never have I seen**") and when NOT to use it.
+  - "register": 1–2 sentences: where it sounds natural — everyday speech, chats, school essays, formal writing, books, speeches — and how common it is.
 - "table": a table of forms if it helps (e.g. affirmative / negative / question, or pronoun → form); otherwise empty "headers" and "rows". At most 5 columns and 8 rows; cells are short.
 - "mistakes": 3–5 typical mistakes, especially ones that ${lang === 'English' ? 'learners' : `${lang} speakers`} make: "wrong", "right", "why" (one short sentence).
 - "tip": one short line in Lean's voice — a memory trick with a light joke (friendly, never mean), in the explanation language. Lean's name is written «Лин» in Russian, «Лін» in Ukrainian, and "Lean" in other languages; never call him a fox in the text, just Lean.

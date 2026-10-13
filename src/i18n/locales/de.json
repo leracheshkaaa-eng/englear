@@ -1298,6 +1298,11 @@
     "practice": "Dieses Thema üben",
     "noTasks": "Aufgaben zu diesem Thema kommen bald.",
     "check": "Teste dich",
-    "score": "{{n}} von {{total}} richtig. Meine Ohren sind zufrieden 😏"
+    "score": "{{n}} von {{total}} richtig. Meine Ohren sind zufrieden 😏",
+    "usage": "Wann und warum",
+    "compare": "Der Unterschied",
+    "register": "Wo es natürlich klingt",
+    "moreTasks": "Mehr Grammatikaufgaben",
+    "levelTasks": "Grammatikaufgaben {{level}}"
   }
 }

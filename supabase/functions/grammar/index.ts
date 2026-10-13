@@ -42,7 +42,7 @@ Deno.serve(async (req) => {
     const client = new Anthropic({ apiKey: Deno.env.get('ANTHROPIC_API_KEY'), defaultHeaders: workspace ? { 'anthropic-workspace-id': workspace } : undefined })
     const res = await client.messages.create({
       model: MODEL,
-      max_tokens: 8000,
+      max_tokens: 12000,
       output_config: { effort: 'low', format: { type: 'json_schema', schema: GRAMMAR_SCHEMA } },
       system: grammarSystem(topic.cefr, langName),
       messages: [{ role: 'user', content: grammarUser(topic.titles?.en ?? topic.code, topic.code, topic.cefr) }],

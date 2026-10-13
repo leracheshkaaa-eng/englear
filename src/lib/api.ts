@@ -1794,6 +1794,8 @@ export type GrammarExplanation = {
   title: string
   summary: string
   sections: { heading: string; text: string; examples: { en: string; tr: string }[] }[]
+  /** when and why it is used (missing in explanations written before 2026-10-13) */
+  usage?: { why: string; situations: { title: string; text: string; example: { en: string; tr: string } }[]; compare: string; register: string }
   table: { headers: string[]; rows: string[][] }
   mistakes: { wrong: string; right: string; why: string }[]
   tip: string

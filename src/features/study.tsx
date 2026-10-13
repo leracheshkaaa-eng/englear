@@ -38,7 +38,15 @@ let openGrammar: string | null = null
 let openTab: 'lessons' | 'grammar' | null = null
 
 /** The Lessons section: full lessons (the learner's plan, Plus) and grammar explanations (free). */
-export function LessonsHub({ onOpenLesson, onOpenTask }: { onOpenLesson: (id: string) => void; onOpenTask: (id: string) => void }) {
+export function LessonsHub({
+  onOpenLesson,
+  onOpenTask,
+  onPracticeGrammar,
+}: {
+  onOpenLesson: (id: string) => void
+  onOpenTask: (id: string) => void
+  onPracticeGrammar: (level: string, grammarId: string | null) => void
+}) {
   const { t } = useTranslation()
   const { userId } = useAuth()
   const [plus, setPlus] = useState<boolean | null>(userId ? null : false)
@@ -72,7 +80,7 @@ export function LessonsHub({ onOpenLesson, onOpenTask }: { onOpenLesson: (id: st
       </div>
       {plus === null && tab === null ? null : current === 'grammar' ? (
         grammarId ? (
-          <GrammarTopicPage topicId={grammarId} onBack={() => openTopic(null)} onOpen={openTopic} onOpenTask={onOpenTask} />
+          <GrammarTopicPage topicId={grammarId} onBack={() => openTopic(null)} onOpen={openTopic} onOpenTask={onOpenTask} onPractice={onPracticeGrammar} />
         ) : (
           <GrammarCatalog onOpen={openTopic} />
         )

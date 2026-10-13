@@ -1288,6 +1288,11 @@
     "practice": "练习这个主题",
     "noTasks": "这个主题的练习即将上线。",
     "check": "自我检测",
-    "score": "答对 {{n}}/{{total}}。我的耳朵很满意 😏"
+    "score": "答对 {{n}}/{{total}}。我的耳朵很满意 😏",
+    "usage": "何时用、为什么用",
+    "compare": "有什么不同",
+    "register": "在哪里听起来自然",
+    "moreTasks": "更多语法练习",
+    "levelTasks": "{{level}} 语法练习"
   }
 }

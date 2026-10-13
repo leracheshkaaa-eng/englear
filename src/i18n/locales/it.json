@@ -1298,6 +1298,11 @@
     "practice": "Esercitati su questo argomento",
     "noTasks": "Gli esercizi su questo argomento arriveranno presto.",
     "check": "Mettiti alla prova",
-    "score": "{{n}} su {{total}} giuste. Le mie orecchie approvano 😏"
+    "score": "{{n}} su {{total}} giuste. Le mie orecchie approvano 😏",
+    "usage": "Quando e perché",
+    "compare": "In cosa è diverso",
+    "register": "Dove suona naturale",
+    "moreTasks": "Altri esercizi di grammatica",
+    "levelTasks": "Esercizi di grammatica {{level}}"
   }
 }

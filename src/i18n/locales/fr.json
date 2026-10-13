@@ -1298,6 +1298,11 @@
     "practice": "S’entraîner sur ce thème",
     "noTasks": "Les exercices sur ce thème arrivent bientôt.",
     "check": "Teste-toi",
-    "score": "{{n}} sur {{total}} justes. Mes oreilles approuvent 😏"
+    "score": "{{n}} sur {{total}} justes. Mes oreilles approuvent 😏",
+    "usage": "Quand et pourquoi",
+    "compare": "La différence",
+    "register": "Où ça sonne naturel",
+    "moreTasks": "Plus d’exercices de grammaire",
+    "levelTasks": "Exercices de grammaire {{level}}"
   }
 }

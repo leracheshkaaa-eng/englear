@@ -965,11 +965,14 @@ export function LessonsCatalog({
   progress,
   passes,
   onOpen,
+  preset,
 }: {
   kind?: api.LessonKind
   progress: Record<string, api.LessonProgress>
   passes?: Record<string, PassSummary>
   onOpen: (id: string) => void
+  /** open with these filters (e.g. from a grammar topic: its level, grammar focus and the topic) */
+  preset?: { level: string; grammarId: string | null } | null
 }) {
   const { t, i18n } = useTranslation()
   const { userId, role, settings } = useAuth()
@@ -977,10 +980,10 @@ export function LessonsCatalog({
   const [scope, setScope] = useState<api.LessonScope>('library')
   const [hasTeacherLessons, setHasTeacherLessons] = useState(false)
   // start at the student's own level (Settings); "All levels" is one tap away
-  const [level, setLevel] = useState(userId && (CEFR_LEVELS as readonly string[]).includes(settings.english_level) ? settings.english_level : '')
-  const [focus, setFocus] = useState<Focus>('all')
+  const [level, setLevel] = useState(preset?.level ?? (userId && (CEFR_LEVELS as readonly string[]).includes(settings.english_level) ? settings.english_level : ''))
+  const [focus, setFocus] = useState<Focus>(preset ? 'grammar' : 'all')
   const [skill, setSkill] = useState<string>('reading')
-  const [grammar, setGrammar] = useState('') // grammar topic id
+  const [grammar, setGrammar] = useState(preset?.grammarId ?? '') // grammar topic id
   const [grammarList, setGrammarList] = useState<api.GrammarTopic[]>([])
   useEffect(() => {
     api.grammarTopics().then(setGrammarList).catch(() => setGrammarList([]))

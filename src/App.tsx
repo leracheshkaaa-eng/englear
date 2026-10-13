@@ -43,6 +43,7 @@ function Shell() {
   const [boardId, setBoardId] = useState<string | null>(null) // open whiteboard
   const [studyId, setStudyId] = useState<string | null>(null) // open full lesson
   const [lessonBoardId, setLessonBoardId] = useState<string | null>(null) // board attached to the open lesson
+  const [tasksPreset, setTasksPreset] = useState<{ level: string; grammarId: string | null } | null>(null) // Tasks opened from a grammar topic
 
   const reload = useCallback(async () => {
     // only totals here: the catalog loads its own pages
@@ -118,6 +119,7 @@ function Shell() {
     setFlashTarget(null)
     setBoardId(null)
     setStudyId(null)
+    setTasksPreset(null)
     const path = v === 'boards' ? '/boards' : pageFromPath('/' + v) ? '/' + v : '/'
     if (location.pathname !== path) history.pushState({}, '', path)
     window.scrollTo(0, 0)
@@ -211,6 +213,10 @@ function Shell() {
                 setBackTo('study')
                 setView('player')
               }}
+              onPracticeGrammar={(level, grammarId) => {
+                go('lessons')
+                setTasksPreset({ level, grammarId })
+              }}
             />
           ))}
         {view === 'home' &&
@@ -249,7 +255,8 @@ function Shell() {
         )}
         {(view === 'lessons' || view === 'practice') && (
           <LessonsCatalog
-            key={view}
+            key={view + (tasksPreset ? `:${tasksPreset.level}:${tasksPreset.grammarId}` : '')}
+            preset={view === 'lessons' ? tasksPreset : null}
             kind={view === 'practice' ? 'practice' : 'lesson'}
             progress={progress}
             passes={passes}

@@ -1298,6 +1298,11 @@
     "practice": "Practise this topic",
     "noTasks": "Tasks on this topic are coming soon.",
     "check": "Check yourself",
-    "score": "{{n}} of {{total}} right. My ears approve 😏"
+    "score": "{{n}} of {{total}} right. My ears approve 😏",
+    "usage": "When and why",
+    "compare": "How it differs",
+    "register": "Where it sounds natural",
+    "moreTasks": "More grammar tasks",
+    "levelTasks": "Grammar tasks for {{level}}"
   }
 }

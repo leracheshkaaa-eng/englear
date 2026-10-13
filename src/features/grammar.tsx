@@ -69,7 +69,20 @@ export function GrammarCatalog({ onOpen }: { onOpen: (id: string) => void }) {
   )
 }
 
-export function GrammarTopicPage({ topicId, onBack, onOpen, onOpenTask }: { topicId: string; onBack: () => void; onOpen: (id: string) => void; onOpenTask: (id: string) => void }) {
+export function GrammarTopicPage({
+  topicId,
+  onBack,
+  onOpen,
+  onOpenTask,
+  onPractice,
+}: {
+  topicId: string
+  onBack: () => void
+  onOpen: (id: string) => void
+  onOpenTask: (id: string) => void
+  /** open the Tasks section filtered to grammar of this level (and this topic, when it has tasks) */
+  onPractice: (level: string, grammarId: string | null) => void
+}) {
   const { t, i18n } = useTranslation()
   const [topics, setTopics] = useState<GrammarTopic[]>([])
   const [ex, setEx] = useState<GrammarExplanation | null>(null)
@@ -189,6 +202,8 @@ export function GrammarTopicPage({ topicId, onBack, onOpen, onOpenTask }: { topi
             </section>
           )}
 
+          {ex.usage && <Usage u={ex.usage} />}
+
           {ex.mistakes.length > 0 && (
             <section className={card}>
               <h3 className="mb-3 font-display text-2xl font-semibold">🚫 {t('grammar.mistakes')}</h3>
@@ -231,6 +246,11 @@ export function GrammarTopicPage({ topicId, onBack, onOpen, onOpenTask }: { topi
                 </button>
               ))}
             </div>
+            {topic && (
+              <Button variant="soft" className="mt-4" onClick={() => onPractice(topic.cefr ?? 'A1', tasks?.length ? topicId : null)}>
+                {tasks?.length ? t('grammar.moreTasks') : t('grammar.levelTasks', { level: topic.cefr })} →
+              </Button>
+            )}
           </section>
         </>
       )}
@@ -246,6 +266,50 @@ export function GrammarTopicPage({ topicId, onBack, onOpen, onOpenTask }: { topi
         {next && <Button onClick={() => onOpen(next.id)}>{api.grammarTitle(next, lang)} →</Button>}
       </nav>
     </div>
+  )
+}
+
+/** When and why: what the grammar adds, real situations, the contrast with the simpler option, where it sounds natural. */
+function Usage({ u }: { u: NonNullable<GrammarExplanation['usage']> }) {
+  const { t } = useTranslation()
+  return (
+    <section className="rounded-3xl border border-plum/30 bg-lilac/30 p-5">
+      <h3 className="font-display text-2xl font-semibold">🎯 {t('grammar.usage')}</h3>
+      <p className="mt-2 leading-relaxed">
+        <Rich text={u.why} />
+      </p>
+      <div className="mt-4 grid gap-3 sm:grid-cols-2">
+        {u.situations.map((s, i) => (
+          <div key={i} className="rounded-2xl bg-paper p-4">
+            <p className="font-semibold">{s.title}</p>
+            <p className="mt-1 text-sm text-mute">
+              <Rich text={s.text} />
+            </p>
+            <p className="mt-2 flex items-start gap-2 text-sm">
+              <button onClick={() => speak(plain(s.example.en))} className="shrink-0 opacity-60 hover:opacity-100" title={t('grammar.listen')}>
+                🔊
+              </button>
+              <span>
+                <span className="font-semibold">
+                  <Rich text={s.example.en} />
+                </span>
+                {s.example.tr && <span className="block text-mute">{plain(s.example.tr)}</span>}
+              </span>
+            </p>
+          </div>
+        ))}
+      </div>
+      {u.compare && (
+        <p className="mt-4 rounded-2xl bg-paper p-4 leading-relaxed">
+          <b>⚖️ {t('grammar.compare')}:</b> <Rich text={u.compare} />
+        </p>
+      )}
+      {u.register && (
+        <p className="mt-3 text-sm text-mute">
+          🗣️ <b>{t('grammar.register')}:</b> <Rich text={u.register} />
+        </p>
+      )}
+    </section>
   )
 }
 

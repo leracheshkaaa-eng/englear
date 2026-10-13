@@ -1318,6 +1318,11 @@
     "practice": "Poćwicz ten temat",
     "noTasks": "Zadania z tego tematu pojawią się wkrótce.",
     "check": "Sprawdź się",
-    "score": "{{n}} z {{total}} dobrze. Moje uszy są zadowolone 😏"
+    "score": "{{n}} z {{total}} dobrze. Moje uszy są zadowolone 😏",
+    "usage": "Kiedy i po co",
+    "compare": "Czym się różni",
+    "register": "Gdzie tak się mówi",
+    "moreTasks": "Więcej zadań z gramatyki",
+    "levelTasks": "Zadania z gramatyki {{level}}"
   }
 }
