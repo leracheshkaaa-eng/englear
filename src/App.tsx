@@ -12,7 +12,7 @@ import { LeanLoading } from './lib/lean'
 import { ErrorBoundary } from './lib/errorBoundary'
 import { useTranslation } from 'react-i18next'
 import { Homework, JoinPage } from './features/classes'
-import { StudyCatalog, StudyPlayer } from './features/study'
+import { LessonsHub, StudyPlayer } from './features/study'
 import { setPendingInsert } from './features/board/content'
 import { Footer, Pricing, Privacy, Refund, Terms, pageFromPath, type PublicPage } from './features/legal'
 
@@ -36,7 +36,7 @@ function Shell() {
   const [passes, setPasses] = useState<Record<string, api.PassSummary>>({})
   const [active, setActive] = useState<Lesson | null>(null)
   const [wallet, setWallet] = useState<api.Wallet>(api.EMPTY_WALLET)
-  const [backTo, setBackTo] = useState<'lessons' | 'practice'>('lessons') // where the player returns
+  const [backTo, setBackTo] = useState<'lessons' | 'practice' | 'study'>('lessons') // where the player returns
   const [flashTarget, setFlashTarget] = useState<api.SetProgress | null>(null) // set opened from Progress
   const [deepLink, setDeepLink] = useState<{ id: string; lesson: Lesson | null; denied: boolean } | null>(null)
   const [joinCode, setJoinCode] = useState<string | null>(null) // /join/<CODE> from a teacher's invite
@@ -202,7 +202,16 @@ function Shell() {
               }}
             />
           ) : (
-            <StudyCatalog onOpen={(id) => { setStudyId(id); window.scrollTo(0, 0) }} />
+            <LessonsHub
+              onOpenLesson={(id) => { setStudyId(id); window.scrollTo(0, 0) }}
+              onOpenTask={async (id) => {
+                const lesson = await api.getLesson(id).catch(() => null)
+                if (!lesson) return
+                setActive(lesson)
+                setBackTo('study')
+                setView('player')
+              }}
+            />
           ))}
         {view === 'home' &&
           (userId ? (

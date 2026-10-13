@@ -1281,5 +1281,23 @@
     "text": "Mis orejas oyeron un golpe. Recarga la página: suele ayudar.",
     "reload": "Recargar",
     "details": "Detalles del error (para soporte)"
+  },
+  "grammar": {
+    "tabs": {
+      "lessons": "Mis clases",
+      "grammar": "Gramática"
+    },
+    "intro": "Toda la gramática explicada de forma sencilla, con ejemplos, errores típicos y una mini prueba. Elige tu nivel.",
+    "none": "Aún no hay temas en este nivel.",
+    "allTopics": "Todos los temas",
+    "failed": "Lean no pudo escribir la explicación ahora. Inténtalo en un minuto.",
+    "retry": "Intentar de nuevo",
+    "writing": "Lean está escribiendo la explicación… la primera vez tarda unos 20 segundos.",
+    "listen": "Escuchar",
+    "mistakes": "Errores típicos",
+    "practice": "Practicar este tema",
+    "noTasks": "Los ejercicios de este tema llegarán pronto.",
+    "check": "Ponte a prueba",
+    "score": "{{n}} de {{total}} correctas. Mis orejas aprueban 😏"
   }
 }

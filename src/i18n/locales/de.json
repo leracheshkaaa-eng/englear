@@ -1281,5 +1281,23 @@
     "text": "Meine Ohren haben einen Knall gehört. Lade die Seite neu — das hilft meistens.",
     "reload": "Neu laden",
     "details": "Fehlerdetails (für den Support)"
+  },
+  "grammar": {
+    "tabs": {
+      "lessons": "Meine Stunden",
+      "grammar": "Grammatik"
+    },
+    "intro": "Die ganze Grammatik einfach erklärt — mit Beispielen, typischen Fehlern und einem kurzen Selbsttest. Wähle dein Niveau.",
+    "none": "Auf diesem Niveau gibt es noch keine Themen.",
+    "allTopics": "Alle Themen",
+    "failed": "Lean konnte die Erklärung gerade nicht schreiben. Versuch es in einer Minute noch mal.",
+    "retry": "Nochmal versuchen",
+    "writing": "Lean schreibt die Erklärung… beim ersten Mal dauert das etwa 20 Sekunden.",
+    "listen": "Anhören",
+    "mistakes": "Typische Fehler",
+    "practice": "Dieses Thema üben",
+    "noTasks": "Aufgaben zu diesem Thema kommen bald.",
+    "check": "Teste dich",
+    "score": "{{n}} von {{total}} richtig. Meine Ohren sind zufrieden 😏"
   }
 }

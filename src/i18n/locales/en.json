@@ -1281,5 +1281,23 @@
     "text": "My ears heard a crash. Reload the page — it usually helps.",
     "reload": "Reload",
     "details": "Error details (for support)"
+  },
+  "grammar": {
+    "tabs": {
+      "lessons": "My lessons",
+      "grammar": "Grammar"
+    },
+    "intro": "Every grammar topic explained simply — with examples, typical mistakes and a quick self-check. Pick your level.",
+    "none": "No topics at this level yet.",
+    "allTopics": "All topics",
+    "failed": "Lean couldn't write this explanation right now. Try again in a minute.",
+    "retry": "Try again",
+    "writing": "Lean is writing the explanation… the first time takes about 20 seconds.",
+    "listen": "Listen",
+    "mistakes": "Typical mistakes",
+    "practice": "Practise this topic",
+    "noTasks": "Tasks on this topic are coming soon.",
+    "check": "Check yourself",
+    "score": "{{n}} of {{total}} right. My ears approve 😏"
   }
 }

@@ -1301,5 +1301,23 @@
     "text": "Moje uszy usłyszały huk. Odśwież stronę — zwykle to pomaga.",
     "reload": "Odśwież",
     "details": "Szczegóły błędu (dla wsparcia)"
+  },
+  "grammar": {
+    "tabs": {
+      "lessons": "Moje lekcje",
+      "grammar": "Gramatyka"
+    },
+    "intro": "Cała gramatyka wyjaśniona prosto — z przykładami, typowymi błędami i mini testem. Wybierz swój poziom.",
+    "none": "Na tym poziomie nie ma jeszcze tematów.",
+    "allTopics": "Wszystkie tematy",
+    "failed": "Lean nie mógł teraz napisać wyjaśnienia. Spróbuj za minutę.",
+    "retry": "Spróbuj ponownie",
+    "writing": "Lean pisze wyjaśnienie… za pierwszym razem trwa to około 20 sekund.",
+    "listen": "Posłuchaj",
+    "mistakes": "Typowe błędy",
+    "practice": "Poćwicz ten temat",
+    "noTasks": "Zadania z tego tematu pojawią się wkrótce.",
+    "check": "Sprawdź się",
+    "score": "{{n}} z {{total}} dobrze. Moje uszy są zadowolone 😏"
   }
 }

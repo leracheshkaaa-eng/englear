@@ -1787,3 +1787,25 @@ export async function adminDeleteDaily(id: string) {
   const { error } = await supabase.from('daily_posts').delete().eq('id', id)
   if (error) throw error
 }
+
+/* ---------------- grammar explanations (free for everyone) ---------------- */
+
+export type GrammarExplanation = {
+  title: string
+  summary: string
+  sections: { heading: string; text: string; examples: { en: string; tr: string }[] }[]
+  table: { headers: string[]; rows: string[][] }
+  mistakes: { wrong: string; right: string; why: string }[]
+  tip: string
+  check: { question: string; options: string[]; answer: number; why: string }[]
+}
+
+/** The explanation of a grammar topic in this language: stored ones come straight from the table;
+ *  the first time a topic is opened in a language, the `grammar` function writes it (takes ~20 s). */
+export async function grammarExplanation(topicId: string, lang: string): Promise<GrammarExplanation> {
+  const { data } = await supabase.from('grammar_explanations').select('content').eq('topic_id', topicId).eq('lang', lang).maybeSingle()
+  if (data) return data.content as GrammarExplanation
+  const { data: res, error } = await supabase.functions.invoke('grammar', { body: { topic_id: topicId, lang } })
+  if (error || !res?.content) throw error ?? new Error('grammar_failed')
+  return res.content as GrammarExplanation
+}

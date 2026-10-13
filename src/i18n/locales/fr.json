@@ -1281,5 +1281,23 @@
     "text": "Mes oreilles ont entendu un bruit. Recharge la page — ça aide en général.",
     "reload": "Recharger",
     "details": "Détails de l’erreur (pour le support)"
+  },
+  "grammar": {
+    "tabs": {
+      "lessons": "Mes leçons",
+      "grammar": "Grammaire"
+    },
+    "intro": "Toute la grammaire expliquée simplement — avec des exemples, les erreurs typiques et un petit test. Choisis ton niveau.",
+    "none": "Pas encore de thèmes à ce niveau.",
+    "allTopics": "Tous les thèmes",
+    "failed": "Lean n’a pas pu écrire l’explication pour le moment. Réessaie dans une minute.",
+    "retry": "Réessayer",
+    "writing": "Lean écrit l’explication… la première fois, ça prend environ 20 secondes.",
+    "listen": "Écouter",
+    "mistakes": "Erreurs typiques",
+    "practice": "S’entraîner sur ce thème",
+    "noTasks": "Les exercices sur ce thème arrivent bientôt.",
+    "check": "Teste-toi",
+    "score": "{{n}} sur {{total}} justes. Mes oreilles approuvent 😏"
   }
 }

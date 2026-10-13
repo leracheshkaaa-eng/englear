@@ -7,6 +7,7 @@ import { CEFR_LEVELS } from '../lib/config'
 import { Badge, Button, SpeakerButton } from '../lib/ui'
 import { LessonPlayer } from './lessons'
 import { LeanEmpty } from '../lib/lean'
+import { GrammarCatalog, GrammarTopicPage } from './grammar'
 
 /* ============================================================
    Lessons: full 40–60 minute lessons made of stages
@@ -32,6 +33,56 @@ export function RichText({ text, className = '' }: { text: string; className?: s
   )
 }
 
+// the grammar topic open in the Lessons section (kept while the learner runs a task and comes back)
+let openGrammar: string | null = null
+let openTab: 'lessons' | 'grammar' | null = null
+
+/** The Lessons section: full lessons (the learner's plan, Plus) and grammar explanations (free). */
+export function LessonsHub({ onOpenLesson, onOpenTask }: { onOpenLesson: (id: string) => void; onOpenTask: (id: string) => void }) {
+  const { t } = useTranslation()
+  const { userId } = useAuth()
+  const [plus, setPlus] = useState<boolean | null>(userId ? null : false)
+  const [tab, setTab] = useState<'lessons' | 'grammar' | null>(openTab)
+  const [grammarId, setGrammarId] = useState<string | null>(openGrammar)
+
+  useEffect(() => {
+    if (!userId) return setPlus(false)
+    api.aiStatus().then((s) => setPlus(!!s?.plus)).catch(() => setPlus(false))
+  }, [userId])
+
+  const current = tab ?? (plus ? 'lessons' : 'grammar')
+  const pick = (x: 'lessons' | 'grammar') => {
+    openTab = x
+    setTab(x)
+  }
+  const openTopic = (id: string | null) => {
+    openGrammar = id
+    setGrammarId(id)
+  }
+
+  return (
+    <section className="mx-auto max-w-4xl px-6 pb-24">
+      <h2 className="font-display text-4xl font-semibold">{t('nav.lessons')}</h2>
+      <div className="mt-4 mb-6 flex rounded-full border border-line bg-paper p-1 font-body text-sm font-semibold sm:w-fit">
+        {(['lessons', 'grammar'] as const).map((x) => (
+          <button key={x} onClick={() => pick(x)} className={`flex-1 rounded-full px-5 py-2 transition-colors sm:flex-none ${current === x ? 'bg-plum text-paper' : 'text-mute hover:text-ink'}`}>
+            {t(`grammar.tabs.${x}`)}
+          </button>
+        ))}
+      </div>
+      {plus === null && tab === null ? null : current === 'grammar' ? (
+        grammarId ? (
+          <GrammarTopicPage topicId={grammarId} onBack={() => openTopic(null)} onOpen={openTopic} onOpenTask={onOpenTask} />
+        ) : (
+          <GrammarCatalog onOpen={openTopic} />
+        )
+      ) : (
+        <StudyCatalog onOpen={onOpenLesson} />
+      )}
+    </section>
+  )
+}
+
 export function StudyCatalog({ onOpen }: { onOpen: (id: string) => void }) {
   const { t } = useTranslation()
   const { settings } = useAuth()
@@ -45,9 +96,8 @@ export function StudyCatalog({ onOpen }: { onOpen: (id: string) => void }) {
 
   const chip = (on: boolean) => `rounded-full border px-3 py-1 text-sm font-semibold ${on ? 'border-plum bg-lilac text-plum-deep' : 'border-line text-mute hover:border-lavender'}`
   return (
-    <section className="mx-auto max-w-4xl px-6 pb-24">
-      <h2 className="font-display text-4xl font-semibold">{t('nav.lessons')}</h2>
-      <p className="mt-2 mb-6 text-mute">{t('course.intro')}</p>
+    <div>
+      <p className="mb-6 text-mute">{t('course.intro')}</p>
       <div className="mb-6 flex flex-wrap gap-1.5">
         <button onClick={() => setLevel(null)} className={chip(level === null)}>
           {t('course.allLevels')}
@@ -73,7 +123,7 @@ export function StudyCatalog({ onOpen }: { onOpen: (id: string) => void }) {
           </button>
         ))}
       </div>
-    </section>
+    </div>
   )
 }
 

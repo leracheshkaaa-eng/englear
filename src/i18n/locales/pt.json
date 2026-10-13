@@ -1281,5 +1281,23 @@
     "text": "Minhas orelhas ouviram um estrondo. Recarregue a página — normalmente ajuda.",
     "reload": "Recarregar",
     "details": "Detalhes do erro (para o suporte)"
+  },
+  "grammar": {
+    "tabs": {
+      "lessons": "Minhas aulas",
+      "grammar": "Gramática"
+    },
+    "intro": "Toda a gramática explicada de forma simples — com exemplos, erros típicos e um mini teste. Escolha o seu nível.",
+    "none": "Ainda não há temas neste nível.",
+    "allTopics": "Todos os temas",
+    "failed": "O Lean não conseguiu escrever a explicação agora. Tente de novo em um minuto.",
+    "retry": "Tentar de novo",
+    "writing": "O Lean está escrevendo a explicação… na primeira vez leva uns 20 segundos.",
+    "listen": "Ouvir",
+    "mistakes": "Erros típicos",
+    "practice": "Praticar este tema",
+    "noTasks": "Os exercícios deste tema chegam em breve.",
+    "check": "Teste-se",
+    "score": "{{n}} de {{total}} certas. Minhas orelhas aprovam 😏"
   }
 }

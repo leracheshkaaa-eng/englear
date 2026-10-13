@@ -1281,5 +1281,23 @@
     "text": "Le mie orecchie hanno sentito un botto. Ricarica la pagina: di solito aiuta.",
     "reload": "Ricarica",
     "details": "Dettagli dell’errore (per l’assistenza)"
+  },
+  "grammar": {
+    "tabs": {
+      "lessons": "Le mie lezioni",
+      "grammar": "Grammatica"
+    },
+    "intro": "Tutta la grammatica spiegata in modo semplice, con esempi, errori tipici e un mini test. Scegli il tuo livello.",
+    "none": "Ancora nessun argomento a questo livello.",
+    "allTopics": "Tutti gli argomenti",
+    "failed": "Lean non è riuscito a scrivere la spiegazione adesso. Riprova tra un minuto.",
+    "retry": "Riprova",
+    "writing": "Lean sta scrivendo la spiegazione… la prima volta ci vogliono circa 20 secondi.",
+    "listen": "Ascolta",
+    "mistakes": "Errori tipici",
+    "practice": "Esercitati su questo argomento",
+    "noTasks": "Gli esercizi su questo argomento arriveranno presto.",
+    "check": "Mettiti alla prova",
+    "score": "{{n}} su {{total}} giuste. Le mie orecchie approvano 😏"
   }
 }
