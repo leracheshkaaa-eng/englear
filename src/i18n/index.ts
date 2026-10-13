@@ -2,7 +2,7 @@
    Interface language (i18next).
    - English is bundled and is the fallback for missing strings.
    - Other languages are loaded on demand (one small chunk each).
-   - Priority: manual choice (profile or this browser) > browser language > English.
+   - Priority: manual choice (profile or this browser) > browser language (not English) > Russian.
    ============================================================ */
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'

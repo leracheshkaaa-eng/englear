@@ -35,13 +35,16 @@ export function matchLanguage(tag: string | null | undefined): LanguageCode | nu
   return isLanguageCode(base) ? base : null
 }
 
-/** First supported language from the browser/system preferences, else Russian. */
+/** First supported language from the browser/system preferences, else Russian.
+    English is skipped: it is the browser default for most people, and an English-speaking
+    browser says little about the learner — the content is made for the CIS first.
+    English stays one click away in the language selector (the choice is remembered). */
 export function detectBrowserLanguage(): LanguageCode {
   if (typeof navigator === 'undefined') return DEFAULT_LANGUAGE
   const tags = navigator.languages?.length ? navigator.languages : [navigator.language]
   for (const tag of tags) {
     const code = matchLanguage(tag)
-    if (code) return code
+    if (code && code !== 'en') return code
   }
   return DEFAULT_LANGUAGE
 }
