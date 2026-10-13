@@ -1,0 +1,1131 @@
+{
+  "package": "grammar-sets",
+  "description": "One AI-generated practice set per grammar topic that had none (2026-10-13). Rules + an independent solver check; published right after import.",
+  "lessons": [
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A1",
+      "sequence": 100,
+      "grammar": "personal-pronouns",
+      "title": "Personal Pronouns: I, you, he, she, it, we, they",
+      "description": "You will practise choosing and using the pronouns I, you, he, she, it, we and they in short everyday sentences.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "Sam is talking about himself, so he uses I with am.",
+          "prompt": "My name is Sam. ___ am 16 years old.",
+          "options": [
+            "I",
+            "He",
+            "They",
+            "It"
+          ],
+          "answer": "I"
+        },
+        {
+          "type": "choice",
+          "explanation": "Anna is a girl, so we use she.",
+          "prompt": "Anna is my friend. ___ is very funny.",
+          "options": [
+            "She",
+            "He",
+            "They",
+            "I"
+          ],
+          "answer": "She"
+        },
+        {
+          "type": "choice",
+          "explanation": "Tom is a boy, so we use he.",
+          "prompt": "Tom plays football. ___ is fast.",
+          "options": [
+            "He",
+            "She",
+            "We",
+            "It"
+          ],
+          "answer": "He"
+        },
+        {
+          "type": "fill",
+          "explanation": "A phone is a thing, so we use it.",
+          "prompt": "This is my phone. ___ is new. (he, she or it)",
+          "answer": "It",
+          "accept": [
+            "it"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "Maria is a girl, so we must say She, not He.",
+          "prompt": "“Maria is my sister. He is 14.” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "fill",
+          "explanation": "Ben and I includes the speaker, so we use we.",
+          "prompt": "Ben and I are in the same class. ___ are friends. (I, we or they)",
+          "answer": "We",
+          "accept": [
+            "we"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "Lisa and Kate are two other people, so we use they.",
+          "prompt": "Lisa and Kate love music. ___ sing every day.",
+          "options": [
+            "They",
+            "We",
+            "She",
+            "It"
+          ],
+          "answer": "They"
+        },
+        {
+          "type": "match",
+          "explanation": "We use he for a boy, she for a girl, it for an animal, we with me, and they for other people.",
+          "prompt": "Match the names with the correct pronoun.",
+          "pairs": {
+            "My brother": "he",
+            "My mum": "she",
+            "My dog": "it",
+            "My friends and I": "we",
+            "Jack and Emma": "they"
+          }
+        },
+        {
+          "type": "order",
+          "explanation": "The sentence starts with the pronoun They, then are, then the place.",
+          "prompt": "",
+          "order": [
+            "They",
+            "are",
+            "at",
+            "the",
+            "cinema"
+          ]
+        },
+        {
+          "type": "fill",
+          "explanation": "The speaker asks Mia, so we use you.",
+          "prompt": "Hi Mia, how are ___ today? (I or you)",
+          "answer": "you",
+          "accept": [
+            "You"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "We goes with are, so the correct sentence is We are at home.",
+          "prompt": "“We is at home.” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "order",
+          "explanation": "A normal sentence starts with She and I, then are, then best friends.",
+          "prompt": "",
+          "order": [
+            "She",
+            "and",
+            "I",
+            "are",
+            "best",
+            "friends"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A1",
+      "sequence": 101,
+      "grammar": "possessive-adjectives",
+      "title": "My, Your, His, Her: Possessive Adjectives",
+      "description": "Practise using my, your, his, her, its, our and their to show who owns something.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "I goes with my.",
+          "prompt": "I love music. ___ phone is full of songs.",
+          "options": [
+            "My",
+            "Your",
+            "His",
+            "Their"
+          ],
+          "answer": "My"
+        },
+        {
+          "type": "choice",
+          "explanation": "You goes with your.",
+          "prompt": "You have a new bag. ___ bag is cool.",
+          "options": [
+            "My",
+            "Your",
+            "Her",
+            "Our"
+          ],
+          "answer": "Your"
+        },
+        {
+          "type": "fill",
+          "explanation": "Tom is a boy, so we use his.",
+          "prompt": "Tom is my friend. ___ phone is red. (Tom)",
+          "answer": "His",
+          "accept": [
+            "his"
+          ]
+        },
+        {
+          "type": "fill",
+          "explanation": "Anna is a girl, so we use her.",
+          "prompt": "Anna is my sister. ___ hair is long. (Anna)",
+          "answer": "Her",
+          "accept": [
+            "her"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "For a boy we say his, not her.",
+          "prompt": "“He likes her new game” is correct when the game belongs to a boy named Sam.",
+          "answer": "false"
+        },
+        {
+          "type": "choice",
+          "explanation": "We goes with our.",
+          "prompt": "My friends and I love pizza. ___ favourite food is pizza.",
+          "options": [
+            "Our",
+            "Their",
+            "Your",
+            "His"
+          ],
+          "answer": "Our"
+        },
+        {
+          "type": "order",
+          "explanation": "The possessive adjective Their comes before the noun teacher.",
+          "prompt": "",
+          "order": [
+            "Their",
+            "teacher",
+            "is",
+            "very",
+            "funny"
+          ]
+        },
+        {
+          "type": "fill",
+          "explanation": "Max and Leo are they, so we use their.",
+          "prompt": "Max and Leo play football. ___ team is great. (Max and Leo)",
+          "answer": "Their",
+          "accept": [
+            "their"
+          ]
+        },
+        {
+          "type": "match",
+          "explanation": "Each person word has its own possessive adjective.",
+          "prompt": "Match the person with the correct word.",
+          "pairs": {
+            "I": "my",
+            "you": "your",
+            "he": "his",
+            "she": "her",
+            "we": "our",
+            "they": "their"
+          }
+        },
+        {
+          "type": "truefalse",
+          "explanation": "We goes with our.",
+          "prompt": "“We love our school” is a correct sentence.",
+          "answer": "true"
+        },
+        {
+          "type": "fill",
+          "explanation": "For an animal or thing we use its.",
+          "prompt": "The dog is happy. ___ ball is under the bed. (the dog)",
+          "answer": "Its",
+          "accept": [
+            "its"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "Mia and I is we, so we use our.",
+          "prompt": "Mia and I are in a band. ___ band is called Blue Sky.",
+          "options": [
+            "Our",
+            "Their",
+            "Her",
+            "My"
+          ],
+          "answer": "Our"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A1",
+      "sequence": 102,
+      "grammar": "this-that",
+      "title": "This, That, These, Those",
+      "description": "You will practise using this, that, these and those for things near you and far from you, one and more than one.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "One thing near you is this.",
+          "prompt": "I have a phone in my hand. ___ is my phone.",
+          "options": [
+            "This",
+            "These",
+            "Those"
+          ],
+          "answer": "This"
+        },
+        {
+          "type": "choice",
+          "explanation": "One thing far from you is that.",
+          "prompt": "Look at the bus over there. ___ is my bus.",
+          "options": [
+            "That",
+            "These",
+            "This"
+          ],
+          "answer": "That"
+        },
+        {
+          "type": "choice",
+          "explanation": "Two things near you are these.",
+          "prompt": "I have two new shoes here. ___ are my new shoes.",
+          "options": [
+            "This",
+            "These",
+            "That"
+          ],
+          "answer": "These"
+        },
+        {
+          "type": "choice",
+          "explanation": "More than one thing far from you is those.",
+          "prompt": "Look at the two boys over there. ___ are my friends.",
+          "options": [
+            "Those",
+            "That",
+            "This"
+          ],
+          "answer": "Those"
+        },
+        {
+          "type": "fill",
+          "explanation": "One thing near you is this.",
+          "prompt": "I am holding a cup of coffee. ___ is my coffee.",
+          "answer": "This",
+          "accept": [
+            "this"
+          ]
+        },
+        {
+          "type": "fill",
+          "explanation": "Many things far from you are those.",
+          "prompt": "Look at the three cars over there. ___ are very fast.",
+          "answer": "Those",
+          "accept": [
+            "those"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "These is for more than one thing, so we say these are or this is.",
+          "prompt": "“These is my bag” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "Those goes with are for more than one thing.",
+          "prompt": "“Those are my headphones” is a correct sentence.",
+          "answer": "true"
+        },
+        {
+          "type": "order",
+          "explanation": "We say That is and then the thing.",
+          "prompt": "",
+          "order": [
+            "That",
+            "is",
+            "my",
+            "new",
+            "school"
+          ]
+        },
+        {
+          "type": "order",
+          "explanation": "These goes with are and a plural noun.",
+          "prompt": "",
+          "order": [
+            "These",
+            "are",
+            "my",
+            "favourite",
+            "songs"
+          ]
+        },
+        {
+          "type": "match",
+          "explanation": "This and these are near; that and those are far; this and that are for one thing.",
+          "prompt": "Match the sentence start with the correct ending.",
+          "pairs": {
+            "This is": "my phone here",
+            "That is": "a bike over there",
+            "These are": "my keys here",
+            "Those are": "birds over there"
+          }
+        },
+        {
+          "type": "fill",
+          "explanation": "Dogs is more than one and they are far, so we use those.",
+          "prompt": "Look at the two dogs over there. ___ dogs are big.",
+          "answer": "Those",
+          "accept": [
+            "those"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A1",
+      "sequence": 103,
+      "grammar": "have-got",
+      "title": "Have Got: Things We Own",
+      "description": "You will practise have got and has got in positive sentences, negatives and questions.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "We use have got with I.",
+          "prompt": "I ___ got a new phone.",
+          "options": [
+            "have",
+            "has",
+            "am",
+            "do"
+          ],
+          "answer": "have"
+        },
+        {
+          "type": "choice",
+          "explanation": "We use has got with she.",
+          "prompt": "She ___ got a big family.",
+          "options": [
+            "have",
+            "has",
+            "is",
+            "does"
+          ],
+          "answer": "has"
+        },
+        {
+          "type": "fill",
+          "explanation": "We use have got with we.",
+          "prompt": "We ___ got a cool teacher. (have or has)",
+          "answer": "have"
+        },
+        {
+          "type": "fill",
+          "explanation": "My brother means he, so we use has got.",
+          "prompt": "My brother ___ got a red bike. (have or has)",
+          "answer": "has"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "With he we say has got, not have got.",
+          "prompt": "“He have got a dog” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "choice",
+          "explanation": "The negative with they is haven't got.",
+          "prompt": "They ___ got a car.",
+          "options": [
+            "hasn't",
+            "haven't",
+            "isn't",
+            "don't"
+          ],
+          "answer": "haven't"
+        },
+        {
+          "type": "fill",
+          "explanation": "The negative with Tom (he) is hasn't got.",
+          "prompt": "Tom ___ got a laptop. He uses his phone. (negative: has or have)",
+          "answer": "hasn't",
+          "accept": [
+            "has not"
+          ]
+        },
+        {
+          "type": "order",
+          "explanation": "The order is subject, have got, then the thing.",
+          "prompt": "",
+          "order": [
+            "I",
+            "have",
+            "got",
+            "two",
+            "sisters"
+          ]
+        },
+        {
+          "type": "order",
+          "explanation": "In a question, Have comes first, then the subject, then got.",
+          "prompt": "",
+          "order": [
+            "Have",
+            "you",
+            "got",
+            "a",
+            "pen",
+            "?"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "The question with she begins with Has.",
+          "prompt": "___ she got a headphones case? No, she hasn't.",
+          "options": [
+            "Have",
+            "Has",
+            "Is",
+            "Does"
+          ],
+          "answer": "Has"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "Your friend means he or she, so Has is correct.",
+          "prompt": "“Has your friend got a skateboard?” is a correct question.",
+          "answer": "true"
+        },
+        {
+          "type": "match",
+          "explanation": "The short answer uses the same have or has as the question.",
+          "prompt": "Match the questions with the short answers.",
+          "pairs": {
+            "Have you got a phone?": "Yes, I have.",
+            "Has he got a bike?": "No, he hasn't.",
+            "Have they got a dog?": "Yes, they have.",
+            "Has she got a brother?": "No, she hasn't."
+          }
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A1",
+      "sequence": 104,
+      "grammar": "imperatives",
+      "title": "Imperatives: Giving Instructions",
+      "description": "You will practise using imperatives to give instructions, make requests and say what not to do.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "An imperative uses the base form of the verb.",
+          "prompt": "___ the door, please.",
+          "options": [
+            "Close",
+            "Closing",
+            "Closes",
+            "To close"
+          ],
+          "answer": "Close"
+        },
+        {
+          "type": "choice",
+          "explanation": "We use the base form, Turn off, to give an instruction.",
+          "prompt": "___ your phone in class, please.",
+          "options": [
+            "Turn off",
+            "Turns off",
+            "Turning off",
+            "You turn off"
+          ],
+          "answer": "Turn off"
+        },
+        {
+          "type": "fill",
+          "explanation": "The imperative is the base form of the verb: Sit.",
+          "prompt": "___ (sit) down, please.",
+          "answer": "Sit",
+          "accept": [
+            "sit"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "The imperative has no -s: Open your book.",
+          "prompt": "“Opens your book” is a correct imperative.",
+          "answer": "false"
+        },
+        {
+          "type": "choice",
+          "explanation": "After Don't we use the base form: be.",
+          "prompt": "Don't ___ late for the party!",
+          "options": [
+            "be",
+            "are",
+            "being",
+            "is"
+          ],
+          "answer": "be"
+        },
+        {
+          "type": "fill",
+          "explanation": "A negative imperative is Don't plus the base verb.",
+          "prompt": "___ (not, run) in the school, please. Use: Don't ...",
+          "answer": "Don't run",
+          "accept": [
+            "Do not run",
+            "don't run",
+            "do not run"
+          ]
+        },
+        {
+          "type": "order",
+          "explanation": "An imperative starts with the verb: Listen to this song.",
+          "prompt": "",
+          "order": [
+            "Listen",
+            "to",
+            "this",
+            "song"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "After Don't we use the base form: Don't talk.",
+          "prompt": "“Don't talks in the library” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "order",
+          "explanation": "The order is Please, Don't, verb, then the object.",
+          "prompt": "",
+          "order": [
+            "Please",
+            "don't",
+            "post",
+            "this",
+            "photo"
+          ]
+        },
+        {
+          "type": "match",
+          "explanation": "Each instruction fits only one place.",
+          "prompt": "Match the instruction with the place.",
+          "pairs": {
+            "Don't use your phone.": "in an exam",
+            "Turn left here.": "on the street",
+            "Wash your hands.": "in the bathroom",
+            "Open your books.": "in class"
+          }
+        },
+        {
+          "type": "fill",
+          "explanation": "We say Don't plus the base verb to tell someone not to do something.",
+          "prompt": "Ben is tired. ___ (not, wake) him up, please. Use: Don't ...",
+          "answer": "Don't wake",
+          "accept": [
+            "Do not wake",
+            "don't wake",
+            "do not wake"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "Loud means we want less sound, so we say Turn down with the base form.",
+          "prompt": "The video is too loud. ___ the volume, please.",
+          "options": [
+            "Turn down",
+            "Turns down",
+            "Don't turn down",
+            "Turning down"
+          ],
+          "answer": "Turn down"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A1",
+      "sequence": 105,
+      "grammar": "prepositions-time-place",
+      "title": "In, On, At: Time and Place",
+      "description": "You will practise using in, on and at to talk about time and place.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "We use at with clock times.",
+          "prompt": "My class starts ___ 9 o'clock.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": "at"
+        },
+        {
+          "type": "choice",
+          "explanation": "We use on with days.",
+          "prompt": "I have a party ___ Saturday.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": "on"
+        },
+        {
+          "type": "choice",
+          "explanation": "We use in with months.",
+          "prompt": "My birthday is ___ July.",
+          "options": [
+            "on",
+            "at",
+            "in"
+          ],
+          "answer": "in"
+        },
+        {
+          "type": "fill",
+          "explanation": "We use at with clock times.",
+          "prompt": "I get up ___ 7 o'clock.",
+          "answer": "at"
+        },
+        {
+          "type": "fill",
+          "explanation": "We use on with days.",
+          "prompt": "We play games ___ Friday.",
+          "answer": "on"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "We say on Monday, not in Monday.",
+          "prompt": "\"I go to school in Monday\" is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "choice",
+          "explanation": "The phone is on top of the table, so we use on.",
+          "prompt": "My phone is ___ the table.",
+          "options": [
+            "on",
+            "at",
+            "in"
+          ],
+          "answer": "on"
+        },
+        {
+          "type": "fill",
+          "explanation": "The keys are inside the bag, so we use in.",
+          "prompt": "My keys are ___ my bag.",
+          "answer": "in"
+        },
+        {
+          "type": "order",
+          "explanation": "We use in with parts of the day like the evening.",
+          "prompt": "",
+          "order": [
+            "I",
+            "study",
+            "in",
+            "the",
+            "evening"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "We use at with school as a place.",
+          "prompt": "\"We are at school now\" is a correct sentence.",
+          "answer": "true"
+        },
+        {
+          "type": "order",
+          "explanation": "The place with at comes first, then the day with on.",
+          "prompt": "",
+          "order": [
+            "She",
+            "is",
+            "at",
+            "the",
+            "cinema",
+            "on",
+            "Saturday"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A1",
+      "sequence": 106,
+      "grammar": "question-words",
+      "title": "Question Words: What, Where, When, Who, Why, How",
+      "description": "You will practise asking questions with what, where, when, who, why, how, whose and how many.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "London is a place, so we ask Where.",
+          "prompt": "___ do you live? I live in London.",
+          "options": [
+            "Where",
+            "Why",
+            "Who",
+            "What"
+          ],
+          "answer": "Where"
+        },
+        {
+          "type": "fill",
+          "explanation": "May is a time, so we ask When.",
+          "prompt": "___ is your birthday? It is in May. (what, when or where)",
+          "answer": "When",
+          "accept": [
+            "when"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "We use Who to ask about a person.",
+          "prompt": "___ is that boy? He is my brother.",
+          "options": [
+            "Who",
+            "Where",
+            "When",
+            "How many"
+          ],
+          "answer": "Who"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "Where asks about places.",
+          "prompt": "We use Where to ask about a place.",
+          "answer": "true"
+        },
+        {
+          "type": "fill",
+          "explanation": "The answer gives a reason with Because, so we ask Why.",
+          "prompt": "___ are you sad? Because I lost my phone. (what, why or who)",
+          "answer": "Why",
+          "accept": [
+            "why"
+          ]
+        },
+        {
+          "type": "match",
+          "explanation": "Each question word asks for a different kind of answer: place, time, person, reason.",
+          "prompt": "Match each question with its answer.",
+          "pairs": {
+            "Where is the party?": "At Sam's house.",
+            "When is the party?": "On Saturday.",
+            "Who is at the party?": "My friends.",
+            "Why is there a party?": "Because it is Sam's birthday."
+          }
+        },
+        {
+          "type": "order",
+          "explanation": "The order is question word, do, subject, verb.",
+          "prompt": "",
+          "order": [
+            "Where",
+            "do",
+            "you",
+            "study",
+            "English",
+            "?"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "By bus tells us the way, so we ask How.",
+          "prompt": "___ do you go to school? I go by bus.",
+          "options": [
+            "How",
+            "Who",
+            "When is",
+            "Why is"
+          ],
+          "answer": "How"
+        },
+        {
+          "type": "fill",
+          "explanation": "Five is a number of books, so we ask How many.",
+          "prompt": "___ books do you have? I have five. (how many or how much)",
+          "answer": "How many",
+          "accept": [
+            "how many"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "We need do: When do you like music? or better, What music do you like?",
+          "prompt": "“When you like music?” is a correct question.",
+          "answer": "false"
+        },
+        {
+          "type": "order",
+          "explanation": "We say What time, then does, then the subject and the verb.",
+          "prompt": "",
+          "order": [
+            "What",
+            "time",
+            "does",
+            "the",
+            "film",
+            "start",
+            "?"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A2",
+      "sequence": 107,
+      "grammar": "object-pronouns",
+      "title": "Object Pronouns: me, you, him, her, it, us, them",
+      "description": "You will practise using object pronouns like me, him, us and them after verbs and prepositions.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "After the verb give we use the object pronoun me.",
+          "prompt": "My friend is calling. Please give ___ my phone.",
+          "options": [
+            "I",
+            "me",
+            "my",
+            "mine"
+          ],
+          "answer": "me"
+        },
+        {
+          "type": "choice",
+          "explanation": "Sara is a girl, and her is the object pronoun after the verb text.",
+          "prompt": "Sara is my best friend. I text ___ every day.",
+          "options": [
+            "she",
+            "her",
+            "hers",
+            "they"
+          ],
+          "answer": "her"
+        },
+        {
+          "type": "fill",
+          "explanation": "The object form of he is him.",
+          "prompt": "Tom is funny. I really like ___ (he).",
+          "answer": "him"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "After the verb call we need me, not I.",
+          "prompt": "“Call I tonight” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "match",
+          "explanation": "Each subject pronoun has its own object pronoun.",
+          "prompt": "Match the subject pronoun with the object pronoun.",
+          "pairs": {
+            "I": "me",
+            "he": "him",
+            "she": "her",
+            "we": "us",
+            "they": "them"
+          }
+        },
+        {
+          "type": "fill",
+          "explanation": "The object form of they is them.",
+          "prompt": "My parents are at home. I will call ___ (they) after school.",
+          "answer": "them"
+        },
+        {
+          "type": "order",
+          "explanation": "The object pronoun me comes after the verb send.",
+          "prompt": "",
+          "order": [
+            "Please",
+            "send",
+            "me",
+            "the",
+            "photo"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "After the preposition with we use us.",
+          "prompt": "Come to the cinema with ___. We have two tickets.",
+          "options": [
+            "we",
+            "our",
+            "us",
+            "they"
+          ],
+          "answer": "us"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "It comes after the verb play, so it is the object.",
+          "prompt": "“This game is great. I play it every day.” In this sentence, “it” is an object pronoun.",
+          "answer": "true"
+        },
+        {
+          "type": "fill",
+          "explanation": "The object form of we is us.",
+          "prompt": "Anna and I are new here. Can you help ___ (we), please?",
+          "answer": "us"
+        },
+        {
+          "type": "order",
+          "explanation": "The pronoun us comes right after the verb gave.",
+          "prompt": "",
+          "order": [
+            "Our",
+            "teacher",
+            "gave",
+            "us",
+            "a",
+            "video"
+          ]
+        },
+        {
+          "type": "choice",
+          "explanation": "Mia and Leo are two people, and after next to we use them.",
+          "prompt": "Mia and Leo are waiting. Let's sit next to ___.",
+          "options": [
+            "they",
+            "them",
+            "their",
+            "he"
+          ],
+          "answer": "them"
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "skill": "grammar",
+      "cefr": "A2",
+      "sequence": 108,
+      "grammar": "past-simple-be",
+      "title": "Was or Were? Talking About the Past",
+      "description": "You will practise using was and were to talk about people, places and feelings in the past.",
+      "exercises": [
+        {
+          "type": "choice",
+          "explanation": "We use was with I in the past.",
+          "prompt": "Yesterday I ___ at home.",
+          "options": [
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "type": "choice",
+          "explanation": "We use were with they in the past.",
+          "prompt": "They ___ at the cinema last night.",
+          "options": [
+            "was",
+            "were",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "type": "fill",
+          "explanation": "We use was with she in the past.",
+          "prompt": "She ___ happy after the party last Friday.",
+          "answer": "was"
+        },
+        {
+          "type": "fill",
+          "explanation": "We use were with we in the past.",
+          "prompt": "We ___ tired after the football game yesterday.",
+          "answer": "were"
+        },
+        {
+          "type": "truefalse",
+          "explanation": "The correct form is “You were late”, because we use were with you.",
+          "prompt": "“You was late for class” is a correct sentence.",
+          "answer": "false"
+        },
+        {
+          "type": "choice",
+          "explanation": "Phone is one thing, so we use was.",
+          "prompt": "My phone ___ on the table ten minutes ago.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "be"
+          ],
+          "answer": "was"
+        },
+        {
+          "type": "order",
+          "explanation": "The subject comes first, then were, then the place.",
+          "prompt": "",
+          "order": [
+            "My",
+            "friends",
+            "were",
+            "at",
+            "the",
+            "concert"
+          ]
+        },
+        {
+          "type": "order",
+          "explanation": "In a question, were comes before the subject.",
+          "prompt": "",
+          "order": [
+            "Were",
+            "you",
+            "at",
+            "the",
+            "party",
+            "yesterday"
+          ]
+        },
+        {
+          "type": "fill",
+          "explanation": "Pizzas is plural, so the negative is weren't or were not.",
+          "prompt": "The pizzas ___ not very good, so we didn't eat them. (negative, short form)",
+          "answer": "weren't",
+          "accept": [
+            "were not"
+          ]
+        },
+        {
+          "type": "truefalse",
+          "explanation": "Brothers is plural, so the correct question is “Were your brothers at the game?”",
+          "prompt": "“Was your brothers at the game?” is a correct question.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}
