@@ -1,0 +1,472 @@
+{
+  "articles-a-an": {
+    "why": "We use **a** or **an** when we talk about one thing for the first time, or about any one thing of a kind. It tells the listener: this is new information, not a specific thing they already know. The choice between **a** and **an** depends on the first sound of the next word, which makes speech smoother.",
+    "compare": "Use **a/an** for something new or general and **the** for something both people know: **I saw a dog. The dog was huge.** Do not use **a/an** with plural or uncountable nouns: **a water**, **a friends** are wrong.",
+    "register": "Used everywhere — in speech, chats, school and writing. You will hear it in almost every English sentence.",
+    "situations": [
+      { "title": "Saying what something is", "text": "When we name a thing or a job, we use a/an.", "example": { "en": "She is a doctor and he is an artist.", "tr": "" } },
+      { "title": "Mentioning something for the first time", "text": "The listener doesn't know this thing yet.", "example": { "en": "I've got a new phone!", "tr": "" } },
+      { "title": "Asking for one thing", "text": "In shops and cafés we ask for one of something.", "example": { "en": "Can I have an orange juice, please?", "tr": "" } }
+    ]
+  },
+  "can-ability": {
+    "why": "**Can** shows that someone is able to do something, or that something is possible or allowed. It is short and the verb after it never changes, so it is one of the easiest ways to talk about skills.",
+    "compare": "**can** = ability now, **could** = ability in the past: **I can swim now. I could swim when I was five.** Don't add **to** or **-s**: **She can to dance** and **She cans dance** are wrong.",
+    "register": "Neutral and very common in speech and writing. For polite requests, **Could you…?** sounds softer than **Can you…?**",
+    "situations": [
+      { "title": "Talking about skills", "text": "Say what you are good at — or not.", "example": { "en": "I can play the guitar, but I can't sing.", "tr": "" } },
+      { "title": "Asking for permission", "text": "In everyday talk, Can I…? asks if something is OK.", "example": { "en": "Can I sit here?", "tr": "" } },
+      { "title": "Asking for help", "text": "A simple request to a friend or classmate.", "example": { "en": "Can you help me with this task?", "tr": "" } }
+    ]
+  },
+  "have-got": {
+    "why": "**Have got** means the same as **have** for possessions, family, appearance and illnesses. It is a very natural way to say what belongs to you, especially in British English.",
+    "compare": "**I have got a cat = I have a cat.** In questions: **Have you got a cat?** or **Do you have a cat?** Never mix them: **Do you have got…?** is wrong. Don't use **have got** for actions: **I have got breakfast at 8** → **I have breakfast at 8.**",
+    "register": "**Have got** is common in British speech and informal writing; Americans more often say **have**. In formal writing, **have** is safer.",
+    "situations": [
+      { "title": "Talking about things you own", "text": "Phones, pets, bikes — what's yours.", "example": { "en": "I've got two cats and a hamster.", "tr": "" } },
+      { "title": "Describing people", "text": "Hair, eyes and family members.", "example": { "en": "My sister has got long curly hair.", "tr": "" } },
+      { "title": "Saying you feel ill", "text": "Health problems often go with have got.", "example": { "en": "I've got a headache.", "tr": "" } }
+    ]
+  },
+  "imperatives": {
+    "why": "The imperative tells someone what to do or not to do. It is the base verb with no subject, so it is short and direct — perfect for instructions, advice and warnings.",
+    "compare": "Positive: **Open the door.** Negative: **Don't open the door.** Add **please** or use **Could you…?** to sound polite: **Please close the window** / **Could you close the window?** A bare imperative to a stranger can sound rude.",
+    "register": "Normal in instructions, recipes, signs and between friends. With teachers or strangers, soften it with **please** or a question.",
+    "situations": [
+      { "title": "Instructions and recipes", "text": "Step-by-step directions use the imperative.", "example": { "en": "Mix the eggs and add some sugar.", "tr": "" } },
+      { "title": "Warnings", "text": "Short and clear when something is dangerous.", "example": { "en": "Don't touch that — it's hot!", "tr": "" } },
+      { "title": "Giving directions", "text": "Telling someone how to get somewhere.", "example": { "en": "Turn left and go straight on.", "tr": "" } }
+    ]
+  },
+  "personal-pronouns": {
+    "why": "Pronouns replace names so we don't repeat them all the time. English always needs a subject, so **I, you, he, she, it, we, they** appear in almost every sentence.",
+    "compare": "Subject pronouns come before the verb: **She likes music.** Object pronouns come after it: **I like her.** Don't drop the subject: **Is raining** → **It is raining.** Use **they** for a person whose gender you don't know or who prefers it.",
+    "register": "Used in all styles of English, from texting to formal letters.",
+    "situations": [
+      { "title": "Talking about people", "text": "After you say a name once, switch to a pronoun.", "example": { "en": "This is Alex. He is my best friend.", "tr": "" } },
+      { "title": "Talking about things and weather", "text": "It is used for things, animals and weather.", "example": { "en": "It's cold today.", "tr": "" } },
+      { "title": "Talking about a group", "text": "We includes you; they doesn't.", "example": { "en": "We are in class 8B, and they are in 8A.", "tr": "" } }
+    ]
+  },
+  "plural-nouns": {
+    "why": "English marks more than one thing on the noun itself, usually with **-s**. Without it, the listener thinks you mean only one.",
+    "compare": "Most nouns add **-s** (cats), some add **-es** (boxes, buses), and some are irregular: **child → children, man → men, mouse → mice.** Don't add **-s** to uncountable nouns: **informations, advices** are wrong.",
+    "register": "Needed everywhere, in speech and writing.",
+    "situations": [
+      { "title": "Counting things", "text": "After two, three, many we need a plural.", "example": { "en": "I have three brothers.", "tr": "" } },
+      { "title": "Talking in general", "text": "Plural nouns can talk about all things of a type.", "example": { "en": "Dogs are smarter than people think.", "tr": "" } },
+      { "title": "Shopping lists", "text": "Lists are usually full of plurals.", "example": { "en": "We need tomatoes, potatoes and two boxes of eggs.", "tr": "" } }
+    ]
+  },
+  "possessive-adjectives": {
+    "why": "**My, your, his, her, its, our, their** show who something belongs to. They always come before a noun.",
+    "compare": "**his** = a man's, **her** = a woman's, **their** = a group's or one person's when we use they. Don't confuse **its** (belonging to it) with **it's** (it is). Don't use **the** together with them: **the my phone** is wrong.",
+    "register": "Used in all kinds of English.",
+    "situations": [
+      { "title": "Introducing family and friends", "text": "Tell people who's who.", "example": { "en": "This is my mum and her name is Olga.", "tr": "" } },
+      { "title": "Talking about things", "text": "Say whose thing it is.", "example": { "en": "Is this your charger?", "tr": "" } },
+      { "title": "Talking about animals and objects", "text": "Use its for animals or things.", "example": { "en": "The cat is eating its dinner.", "tr": "" } }
+    ]
+  },
+  "prepositions-time-place": {
+    "why": "**In, on, at** tell us exactly when or where something happens. They go from big to small: **in** for big areas and long periods, **on** for days and surfaces, **at** for exact points.",
+    "compare": "Time: **in July, on Monday, at 7 o'clock.** Place: **in London, on the table, at the bus stop.** No preposition before **next, last, this, every**: **on next Monday** → **next Monday.**",
+    "register": "Needed in every kind of English. Some phrases are fixed: **at night, at the weekend (UK), on the weekend (US).**",
+    "situations": [
+      { "title": "Making plans", "text": "Say when you meet.", "example": { "en": "Let's meet at 5 on Saturday.", "tr": "" } },
+      { "title": "Saying where you are", "text": "Tell someone your location.", "example": { "en": "I'm at school, in the library.", "tr": "" } },
+      { "title": "Talking about birthdays and seasons", "text": "Days with on, months and seasons with in.", "example": { "en": "My birthday is on 5 May, in spring.", "tr": "" } }
+    ]
+  },
+  "present-simple": {
+    "why": "The Present Simple shows that an action is part of life: a habit, a routine or a permanent fact. We are not describing what is happening right now, but how things usually are. That is why it is the most common tense in conversation.",
+    "compare": "Present Simple = habit, Present Continuous = right now: **I play games every day** vs **I am playing a game now.** Remember **-s** with he/she/it: **She plays**, and **does** in questions: **Does she play?**",
+    "register": "Used everywhere — speech, chats, school and writing. It is the first tense you need.",
+    "situations": [
+      { "title": "Talking about routines", "text": "Especially with always, usually, never.", "example": { "en": "I usually wake up at seven.", "tr": "" } },
+      { "title": "Introducing yourself", "text": "Where you live, what you like, what you do.", "example": { "en": "I live in Warsaw and I love football.", "tr": "" } },
+      { "title": "Facts and timetables", "text": "Things that are always true or happen on schedule.", "example": { "en": "The film starts at eight.", "tr": "" } }
+    ]
+  },
+  "question-words": {
+    "why": "Question words ask for specific information instead of a yes or no. Each one asks about something different: **what** (thing), **where** (place), **when** (time), **who** (person), **why** (reason), **how** (way).",
+    "compare": "A question word + auxiliary + subject + verb: **Where do you live?** not **Where you live?** When **who** or **what** is the subject, no **do**: **Who called you?** Don't confuse **who** (person) and **whose** (belonging).",
+    "register": "Used in every kind of English. In chats people often shorten questions: **Where u at?** — but not in school writing.",
+    "situations": [
+      { "title": "Getting to know someone", "text": "Ask about their life.", "example": { "en": "Where are you from? How old are you?", "tr": "" } },
+      { "title": "Making plans", "text": "Find out time and place.", "example": { "en": "When and where are we meeting?", "tr": "" } },
+      { "title": "Asking for reasons", "text": "Why asks for an explanation.", "example": { "en": "Why are you so happy today?", "tr": "" } }
+    ]
+  },
+  "there-is-are": {
+    "why": "**There is / there are** tells someone that something exists or is in a place. We use it to introduce new information, usually before saying more about it.",
+    "compare": "**There is** + one thing or uncountable (**There is a park, there is some milk**); **there are** + plural (**There are two parks**). Don't say **It has a park in my town** → **There is a park in my town.**",
+    "register": "Common in speech and writing. In speech people often say **there's** even before plurals, but in writing use **there are**.",
+    "situations": [
+      { "title": "Describing a place", "text": "Your room, your town, your school.", "example": { "en": "There's a big window and there are posters on the wall.", "tr": "" } },
+      { "title": "Asking what's available", "text": "In shops, cafés or at home.", "example": { "en": "Is there any pizza left?", "tr": "" } },
+      { "title": "Giving news", "text": "Tell people about something new.", "example": { "en": "There's a new student in our class.", "tr": "" } }
+    ]
+  },
+  "this-that": {
+    "why": "**This/these** point to things near you, **that/those** to things farther away. They help the listener know exactly which thing you mean — in space and also in time.",
+    "compare": "Singular: **this, that**; plural: **these, those**. **This** can also mean now (**this week**), and **that** a past moment (**that day**). Don't say **this books** → **these books.**",
+    "register": "Used in all English. On the phone: **This is Anna** (not **I am Anna**).",
+    "situations": [
+      { "title": "Shopping", "text": "Point to what you want.", "example": { "en": "Can I try these shoes, not those?", "tr": "" } },
+      { "title": "Introducing people", "text": "Present a friend.", "example": { "en": "This is my friend Max.", "tr": "" } },
+      { "title": "Reacting", "text": "That often refers to what someone just said.", "example": { "en": "That's so cool!", "tr": "" } }
+    ]
+  },
+  "adverbs-frequency": {
+    "why": "Adverbs of frequency say how often something happens, from **always** (100%) to **never** (0%). They make descriptions of habits more exact and more honest.",
+    "compare": "They go before the main verb (**I often play**) but after **be** (**I am often late**). **Never** already is negative: **I don't never…** is wrong. **Sometimes** can also start a sentence: **Sometimes I cook.**",
+    "register": "Common in all English. In speech, **hardly ever** sounds more natural than **rarely**.",
+    "situations": [
+      { "title": "Talking about routines", "text": "Say how often you do things.", "example": { "en": "I always have breakfast, but I rarely eat lunch.", "tr": "" } },
+      { "title": "Talking about free time", "text": "Hobbies and habits.", "example": { "en": "We sometimes go to the cinema on Fridays.", "tr": "" } },
+      { "title": "Complaining", "text": "Always can show annoyance.", "example": { "en": "My brother is always late!", "tr": "" } }
+    ]
+  },
+  "comparatives": {
+    "why": "Comparatives compare two things: who or what has more of a quality. They help you describe differences and make choices.",
+    "compare": "Short words add **-er** (**cheaper**), long words use **more** (**more expensive**), and some are irregular (**good → better, bad → worse**). Use **than** after them. Don't double: **more cheaper** is wrong.",
+    "register": "Common everywhere. In speech you'll hear **way better**, **much bigger** to make the difference stronger.",
+    "situations": [
+      { "title": "Choosing between things", "text": "Phones, games, places.", "example": { "en": "This phone is cheaper but that one is faster.", "tr": "" } },
+      { "title": "Talking about people", "text": "Compare yourself with friends or family.", "example": { "en": "My brother is taller than me.", "tr": "" } },
+      { "title": "Talking about changes", "text": "Things getting better or worse.", "example": { "en": "My English is getting better and better.", "tr": "" } }
+    ]
+  },
+  "countable-uncountable": {
+    "why": "English divides nouns into things we can count (**an apple, two apples**) and things we can't (**water, music, advice**). This decides which words go with them: **a/an, many, much, a few, a little.**",
+    "compare": "Countable: **a book, books, many books.** Uncountable: **some bread, much bread** — no **a** and no plural. To count them, use a unit: **a piece of advice, a glass of water.**",
+    "register": "Needed in all English. Some words are uncountable in English but countable in other languages: **information, homework, furniture, news.**",
+    "situations": [
+      { "title": "Cooking and shopping", "text": "Food is full of both types.", "example": { "en": "We need some rice and three onions.", "tr": "" } },
+      { "title": "Asking for advice", "text": "Advice is uncountable.", "example": { "en": "Can you give me some advice?", "tr": "" } },
+      { "title": "Talking about homework", "text": "Homework is uncountable too.", "example": { "en": "I have a lot of homework today.", "tr": "" } }
+    ]
+  },
+  "going-to": {
+    "why": "**Be going to** shows a plan you already decided on, or a prediction based on what you can see now. It connects the present to the future.",
+    "compare": "**going to** = a plan made before: **I'm going to visit my gran.** **will** = a decision at the moment: **I'll help you!** For predictions with evidence, use **going to**: **Look at the clouds — it's going to rain.**",
+    "register": "Very common in speech. In fast casual speech it often sounds like **gonna** — fine in chats, but write **going to** in school texts.",
+    "situations": [
+      { "title": "Talking about plans", "text": "Things you've already decided.", "example": { "en": "I'm going to learn to code this summer.", "tr": "" } },
+      { "title": "Predicting from evidence", "text": "You can see it coming.", "example": { "en": "Careful! You're going to drop it!", "tr": "" } },
+      { "title": "Asking about plans", "text": "Find out what others plan.", "example": { "en": "What are you going to do at the weekend?", "tr": "" } }
+    ]
+  },
+  "much-many": {
+    "why": "**Much** and **many** ask or talk about quantity. **Many** goes with things you can count, **much** with things you can't.",
+    "compare": "**many friends, many games** / **much time, much money.** In positive sentences, **a lot of** sounds more natural: **I have a lot of time** rather than **I have much time.** **How many / how much** ask about amount.",
+    "register": "**Much** in positive sentences sounds formal; in everyday speech people prefer **a lot of** or **lots of**.",
+    "situations": [
+      { "title": "Shopping", "text": "Ask about price and amount.", "example": { "en": "How much is this hoodie?", "tr": "" } },
+      { "title": "Talking about free time", "text": "Say you're busy.", "example": { "en": "I don't have much time today.", "tr": "" } },
+      { "title": "Counting people or things", "text": "How many asks for a number.", "example": { "en": "How many followers do you have?", "tr": "" } }
+    ]
+  },
+  "must-have-to": {
+    "why": "Both show that something is necessary. **Must** often shows the speaker's own feeling or a written rule; **have to** shows an obligation from outside — rules, schedules, other people.",
+    "compare": "**I must call Mum** (I feel it's important) vs **I have to wear a uniform** (school rule). In the negative they are very different: **mustn't** = it's not allowed, **don't have to** = it's not necessary.",
+    "register": "**Have to** is more common in speech. **Must** appears on signs, rules and formal instructions.",
+    "situations": [
+      { "title": "School rules", "text": "Talking about what's required.", "example": { "en": "We have to be at school by 8:30.", "tr": "" } },
+      { "title": "Strong personal feeling", "text": "Something you really think you should do.", "example": { "en": "You must watch this series — it's amazing!", "tr": "" } },
+      { "title": "Prohibition vs no obligation", "text": "Mustn't vs don't have to.", "example": { "en": "You mustn't use phones in the exam, but you don't have to stay till the end.", "tr": "" } }
+    ]
+  },
+  "object-pronouns": {
+    "why": "Object pronouns (**me, you, him, her, it, us, them**) replace a noun after a verb or preposition. They stop us repeating names.",
+    "compare": "Subject before the verb, object after it: **She likes him. He likes her.** After prepositions always use objects: **with me, for them.** In speech, **It's me** is normal; **It is I** sounds very old-fashioned.",
+    "register": "Used in all kinds of English.",
+    "situations": [
+      { "title": "Talking about people you know", "text": "After the verb, use object pronouns.", "example": { "en": "I met Sam yesterday and invited him to the party.", "tr": "" } },
+      { "title": "Asking for things", "text": "Give me, tell me, show me.", "example": { "en": "Can you send me the photo?", "tr": "" } },
+      { "title": "After prepositions", "text": "With, for, to + object.", "example": { "en": "Do you want to come with us?", "tr": "" } }
+    ]
+  },
+  "past-simple": {
+    "why": "The Past Simple tells about finished actions at a finished time in the past. It is the main tense for telling stories and saying what happened.",
+    "compare": "Regular verbs add **-ed** (**played**), irregular verbs change (**go → went**). In questions and negatives use **did** + base verb: **Did you go?**, **I didn't go** — not **didn't went**.",
+    "register": "Used everywhere, in speech and writing. Stories, messages and news are full of it.",
+    "situations": [
+      { "title": "Telling what you did", "text": "Yesterday, last week, two days ago.", "example": { "en": "I watched a film and went to bed late.", "tr": "" } },
+      { "title": "Telling a story", "text": "One event after another.", "example": { "en": "He opened the door, saw a cat and laughed.", "tr": "" } },
+      { "title": "Asking about the past", "text": "Questions with did.", "example": { "en": "What did you do at the weekend?", "tr": "" } }
+    ]
+  },
+  "past-simple-be": {
+    "why": "**Was** and **were** are the past of **be**. We use them to describe how things or people were: feelings, places, weather, age.",
+    "compare": "**I/he/she/it was**, **you/we/they were.** Questions: **Were you…? Was it…?** — no **did**: **Did you be tired?** is wrong. Negative: **wasn't, weren't.**",
+    "register": "Very common in all English.",
+    "situations": [
+      { "title": "Describing feelings", "text": "How you felt.", "example": { "en": "I was so tired after the trip.", "tr": "" } },
+      { "title": "Describing an event", "text": "How it was.", "example": { "en": "The concert was amazing and the tickets weren't expensive.", "tr": "" } },
+      { "title": "Asking where someone was", "text": "Questions start with was/were.", "example": { "en": "Where were you yesterday?", "tr": "" } }
+    ]
+  },
+  "present-continuous": {
+    "why": "The Present Continuous shows that an action is in progress now or around now, or that it is temporary. It is also used for fixed future plans.",
+    "compare": "**I'm playing now** (in progress) vs **I play every day** (habit). Verbs of state like **know, like, want** usually don't take **-ing**: **I am knowing** → **I know.**",
+    "register": "Used everywhere. In chats it's typical: **What are you doing?** — **I'm just chilling.**",
+    "situations": [
+      { "title": "What's happening now", "text": "Describe the moment.", "example": { "en": "I'm doing my homework right now.", "tr": "" } },
+      { "title": "Temporary situations", "text": "Not forever, just these days.", "example": { "en": "I'm reading a really good book this week.", "tr": "" } },
+      { "title": "Fixed future plans", "text": "Arranged plans with a time.", "example": { "en": "We're meeting at the cinema at six.", "tr": "" } }
+    ]
+  },
+  "superlatives": {
+    "why": "Superlatives show that something is number one in a group: the most, the best, the worst. We use them to express extremes and strong opinions.",
+    "compare": "Short words: **the + -est** (**the tallest**); long words: **the most** (**the most interesting**); irregular: **the best, the worst.** Always use **the**. Comparative = two things, superlative = three or more.",
+    "register": "Common everywhere. In speech, people often exaggerate: **This is the best day ever!**",
+    "situations": [
+      { "title": "Giving opinions", "text": "Your favourite things.", "example": { "en": "It's the funniest video I've ever seen.", "tr": "" } },
+      { "title": "Talking about records", "text": "Facts about the world.", "example": { "en": "Everest is the highest mountain in the world.", "tr": "" } },
+      { "title": "Comparing in a group", "text": "In your class or family.", "example": { "en": "Who is the oldest in your family?", "tr": "" } }
+    ]
+  },
+  "will-future": {
+    "why": "**Will** is used for decisions made at the moment of speaking, promises, offers and predictions based on opinion. It is quick and simple: **will** + base verb.",
+    "compare": "**will** = decided now (**I'll take the bus**); **going to** = planned before (**I'm going to take the bus — I bought a ticket**). Don't use **will** after **if / when** about the future: **If it will rain** → **If it rains.**",
+    "register": "Common everywhere. In speech it shortens to **'ll**: **I'll, you'll, it'll.**",
+    "situations": [
+      { "title": "Offers and promises", "text": "Offer help or promise something.", "example": { "en": "Don't worry, I'll help you.", "tr": "" } },
+      { "title": "Quick decisions", "text": "Decide right now.", "example": { "en": "I'm hungry. I think I'll make a sandwich.", "tr": "" } },
+      { "title": "Predictions", "text": "What you think will happen.", "example": { "en": "I think you'll love this game.", "tr": "" } }
+    ]
+  },
+  "first-conditional": {
+    "why": "The first conditional talks about a real possibility in the future and its result. We use it for plans, warnings, promises and threats that depend on a condition.",
+    "compare": "**If + Present Simple, will + verb**: **If it rains, we'll stay home.** No **will** in the if part. Compare with the second conditional, which is imaginary: **If I had wings, I would fly.** Use **unless** = if not: **Unless you hurry, you'll be late.**",
+    "register": "Very common in everyday speech and writing.",
+    "situations": [
+      { "title": "Making plans", "text": "Plans that depend on something.", "example": { "en": "If I finish early, I'll call you.", "tr": "" } },
+      { "title": "Warnings", "text": "Tell someone about a likely result.", "example": { "en": "If you don't charge your phone, it'll die.", "tr": "" } },
+      { "title": "Promises and deals", "text": "Agree on something.", "example": { "en": "If you help me, I'll buy you a coffee.", "tr": "" } }
+    ]
+  },
+  "gerund-infinitive": {
+    "why": "When one verb follows another, English needs either **-ing** or **to + verb**. It depends on the first verb. Choosing correctly makes your English sound natural.",
+    "compare": "**-ing** after enjoy, finish, avoid, mind, keep and after prepositions (**good at drawing**). **to + verb** after want, decide, hope, plan, promise. Some verbs change meaning: **I stopped to eat** (to have food) vs **I stopped eating** (no more food).",
+    "register": "Used in all English. The **-ing** form as a subject (**Swimming is fun**) is common in both speech and writing.",
+    "situations": [
+      { "title": "Talking about likes", "text": "What you enjoy doing.", "example": { "en": "I enjoy drawing and I want to try painting.", "tr": "" } },
+      { "title": "Talking about plans", "text": "Decide, plan, hope + to.", "example": { "en": "We decided to start a podcast.", "tr": "" } },
+      { "title": "Polite requests", "text": "Would you mind + -ing.", "example": { "en": "Would you mind turning the music down?", "tr": "" } }
+    ]
+  },
+  "passive-basic": {
+    "why": "The passive puts the focus on the action or the thing affected, not on who did it. We use it when the doer is unknown, unimportant or obvious.",
+    "compare": "Active: **Someone stole my bike.** Passive: **My bike was stolen.** Form: **be + past participle.** Add **by** only if the doer matters: **The song was written by a teenager.**",
+    "register": "Very common in news, science, instructions and formal writing. In conversation, the active is more usual.",
+    "situations": [
+      { "title": "Facts about products", "text": "Where or how things are made.", "example": { "en": "These sneakers are made in Vietnam.", "tr": "" } },
+      { "title": "History", "text": "When things were built or invented.", "example": { "en": "The first iPhone was released in 2007.", "tr": "" } },
+      { "title": "When the doer is unknown", "text": "We don't know who did it.", "example": { "en": "My phone was stolen on the bus.", "tr": "" } }
+    ]
+  },
+  "past-continuous": {
+    "why": "The Past Continuous shows an action in progress at a moment in the past. In stories it creates the background scene, while the Past Simple shows the events.",
+    "compare": "**I was watching TV** (background, in progress) **when the phone rang** (short event). Use **while** with the longer action: **While I was walking, I saw…** State verbs don't usually take it: **I was knowing** → **I knew.**",
+    "register": "Common in speech and storytelling, and in writing for descriptions.",
+    "situations": [
+      { "title": "Setting the scene in a story", "text": "Describe what was going on.", "example": { "en": "It was raining and everyone was rushing home.", "tr": "" } },
+      { "title": "Interrupted actions", "text": "Something happened in the middle.", "example": { "en": "I was having a shower when the doorbell rang.", "tr": "" } },
+      { "title": "Answering 'what were you doing?'", "text": "At a time in the past.", "example": { "en": "At ten last night I was playing with my friends online.", "tr": "" } }
+    ]
+  },
+  "present-perfect": {
+    "why": "The Present Perfect connects the past with now. We use it for experiences, recent news and situations that started in the past and continue. The exact time is not important — the result now is.",
+    "compare": "**I have lost my keys** (I don't have them now) vs **I lost my keys yesterday** (a finished time). With **since/for** it shows duration up to now: **I've lived here for two years.** Don't use it with **yesterday, ago, last week.**",
+    "register": "Very common in British English. Americans sometimes use the Past Simple instead (**Did you eat yet?**), but the Present Perfect is correct in both.",
+    "situations": [
+      { "title": "Life experience", "text": "Ever, never, how many times.", "example": { "en": "Have you ever been to a K-pop concert?", "tr": "" } },
+      { "title": "Recent news", "text": "Just, already, yet.", "example": { "en": "I've just finished the last episode!", "tr": "" } },
+      { "title": "Duration up to now", "text": "Since and for.", "example": { "en": "We've known each other since primary school.", "tr": "" } }
+    ]
+  },
+  "present-perfect-vs-past-simple": {
+    "why": "Both talk about the past, but the Present Perfect looks at the result or experience now, and the Past Simple looks at a finished moment. Choosing correctly tells the listener whether the time matters.",
+    "compare": "Unfinished or unknown time → Present Perfect: **I've seen that film.** Finished time → Past Simple: **I saw it last Friday.** A typical conversation starts with the Present Perfect and moves to the Past Simple for details: **Have you been to Spain? — Yes, I went last year.**",
+    "register": "This difference matters in British English and in exams. In American speech the Past Simple is often used with **just, already, yet**.",
+    "situations": [
+      { "title": "Starting a conversation about experience", "text": "Present Perfect first, then details in Past Simple.", "example": { "en": "Have you ever tried sushi? — Yes, I tried it in Tokyo.", "tr": "" } },
+      { "title": "Reporting news", "text": "News first, details after.", "example": { "en": "I've passed my exam! I got the results this morning.", "tr": "" } },
+      { "title": "Talking about a finished period", "text": "When the time is over, use Past Simple.", "example": { "en": "I read three books last month.", "tr": "" } }
+    ]
+  },
+  "relative-clauses": {
+    "why": "Relative clauses add information about a noun without starting a new sentence. They help you say exactly which person, thing or place you mean.",
+    "compare": "**who** for people, **which** for things, **that** for both, **where** for places, **whose** for possession. In defining clauses you can drop **who/which/that** when it's the object: **The film (that) we watched was scary.** Don't add an extra pronoun: **the book which I read it** is wrong.",
+    "register": "Common everywhere. **That** is more informal; **which** with commas is typical in writing: **My phone, which is new, broke.**",
+    "situations": [
+      { "title": "Describing people", "text": "Say which person you mean.", "example": { "en": "She's the girl who sings in our band.", "tr": "" } },
+      { "title": "Recommending things", "text": "Describe a thing you like.", "example": { "en": "This is the app that I use to learn words.", "tr": "" } },
+      { "title": "Talking about places", "text": "Where = in which.", "example": { "en": "That's the café where we first met.", "tr": "" } }
+    ]
+  },
+  "second-conditional": {
+    "why": "The second conditional talks about imaginary or unlikely situations in the present or future and their results. We use it to dream, to give advice and to imagine alternatives.",
+    "compare": "**If + Past Simple, would + verb**: **If I had a million dollars, I'd travel.** First conditional is real: **If I win, I'll buy a car** (it's possible). Second is imaginary: **If I won, I'd buy a car** (unlikely). No **would** in the if part.",
+    "register": "Common in speech and writing. **If I were you** is the standard way to give advice; **If I was** is common in casual speech.",
+    "situations": [
+      { "title": "Dreaming", "text": "Imagine a different life.", "example": { "en": "If I could live anywhere, I'd live in Japan.", "tr": "" } },
+      { "title": "Giving advice", "text": "If I were you…", "example": { "en": "If I were you, I'd talk to the teacher.", "tr": "" } },
+      { "title": "Hypothetical questions", "text": "Fun 'what if' questions.", "example": { "en": "What would you do if you were invisible for a day?", "tr": "" } }
+    ]
+  },
+  "should-advice": {
+    "why": "**Should** gives advice or says what is a good idea. It is softer than **must** — it's a recommendation, not a rule.",
+    "compare": "**should** = advice, **must / have to** = obligation: **You should sleep more** vs **You must wear a seatbelt.** **Ought to** means the same as **should** but is less common. No **to** after **should**: **should to go** is wrong.",
+    "register": "Very common in speech. To sound softer: **Maybe you should…** or **I think you should…**",
+    "situations": [
+      { "title": "Helping a friend", "text": "Suggest a solution.", "example": { "en": "You should tell her how you feel.", "tr": "" } },
+      { "title": "Asking for advice", "text": "Should I…?", "example": { "en": "Should I buy this jacket or the other one?", "tr": "" } },
+      { "title": "Talking about what's right", "text": "Opinions about behaviour.", "example": { "en": "People shouldn't drop litter.", "tr": "" } }
+    ]
+  },
+  "used-to": {
+    "why": "**Used to** describes habits and states in the past that are not true now. It shows a contrast between then and now.",
+    "compare": "**I used to play the piano** (not now) vs **I played the piano yesterday** (one time). In questions and negatives: **Did you use to…? I didn't use to…** (no -d). Don't confuse with **be used to** = be accustomed: **I'm used to getting up early.**",
+    "register": "Very common in speech. In writing about the past, **would** can also be used for repeated actions: **Every summer we would go to the sea.**",
+    "situations": [
+      { "title": "Talking about childhood", "text": "What you did as a kid.", "example": { "en": "I used to watch cartoons every morning.", "tr": "" } },
+      { "title": "Talking about changes", "text": "Then vs now.", "example": { "en": "I used to hate broccoli, but now I love it.", "tr": "" } },
+      { "title": "Describing places in the past", "text": "There used to be…", "example": { "en": "There used to be a cinema in our street.", "tr": "" } }
+    ]
+  },
+  "future-continuous-perfect": {
+    "why": "These tenses look at the future from a specific point. The Future Continuous (**will be doing**) shows an action in progress at that moment; the Future Perfect (**will have done**) shows an action already completed by then.",
+    "compare": "**At 8 I'll be studying** (in progress) vs **By 8 I'll have finished** (done before 8). **Will you be using the laptop?** is a polite way to ask about plans without sounding like a request.",
+    "register": "Used in speech and writing, especially for plans, deadlines and polite questions. Common in work and study contexts.",
+    "situations": [
+      { "title": "Imagining a moment in the future", "text": "What you'll be doing then.", "example": { "en": "This time next week I'll be lying on a beach.", "tr": "" } },
+      { "title": "Deadlines", "text": "Something finished by a time.", "example": { "en": "I'll have sent the project by Friday.", "tr": "" } },
+      { "title": "Polite questions about plans", "text": "Asking without pushing.", "example": { "en": "Will you be going to the shop later?", "tr": "" } }
+    ]
+  },
+  "modals-deduction": {
+    "why": "Modals of deduction show how sure we are about something based on evidence. They let us guess logically instead of stating facts.",
+    "compare": "**must** = almost sure it's true, **might/could/may** = possible, **can't** = sure it's not true. For the past: **must have / might have / can't have + past participle.** The opposite of **must be** is **can't be**, not **mustn't be**.",
+    "register": "Common in conversation and in writing. In speech, **must've, might've** are typical contractions.",
+    "situations": [
+      { "title": "Guessing from evidence", "text": "You see a clue.", "example": { "en": "The lights are on. They must be at home.", "tr": "" } },
+      { "title": "Explaining something strange", "text": "Possible reasons.", "example": { "en": "She hasn't replied. She might be busy.", "tr": "" } },
+      { "title": "Guessing about the past", "text": "What probably happened.", "example": { "en": "You can't have seen him — he was in another city.", "tr": "" } }
+    ]
+  },
+  "passive-advanced": {
+    "why": "The passive works in all tenses and with modals. It keeps the focus on the action or result when the doer is unknown or less important, and helps structure formal texts.",
+    "compare": "Each tense keeps its auxiliary and adds **be + past participle**: **is being made, has been made, had been made, will be made, must be made.** Also **It is said that… / He is thought to…** for reporting opinions.",
+    "register": "Typical of news, reports, academic and business writing. In casual speech people prefer the active or **get**-passive: **My phone got stolen.**",
+    "situations": [
+      { "title": "Talking about progress", "text": "Things happening now.", "example": { "en": "A new skatepark is being built near our school.", "tr": "" } },
+      { "title": "Rules and instructions", "text": "Modal passive.", "example": { "en": "Phones must be switched off during the exam.", "tr": "" } },
+      { "title": "News and rumours", "text": "Reporting without naming the source.", "example": { "en": "The band is said to be working on a new album.", "tr": "" } }
+    ]
+  },
+  "past-perfect": {
+    "why": "The Past Perfect shows that one past action happened before another past action. It helps the listener understand the order of events in a story.",
+    "compare": "**When I arrived, the film had started** (it started before I arrived) vs **When I arrived, the film started** (it started at that moment). If the order is clear with **before/after**, the Past Simple is often enough.",
+    "register": "Common in storytelling and writing, and in reported speech. In casual speech people often use the Past Simple instead.",
+    "situations": [
+      { "title": "Telling stories", "text": "Going back to an earlier moment.", "example": { "en": "I realised I had left my phone on the bus.", "tr": "" } },
+      { "title": "Explaining reasons", "text": "Why something happened.", "example": { "en": "She was nervous because she had never flown before.", "tr": "" } },
+      { "title": "Talking about regrets", "text": "With wish or if only.", "example": { "en": "I wish I had studied more.", "tr": "" } }
+    ]
+  },
+  "reported-speech": {
+    "why": "Reported speech lets us tell others what someone said without quoting the exact words. Tenses usually move one step back, and pronouns and time words change.",
+    "compare": "**\"I'm tired\" → She said she was tired.** **say** without a person, **tell** + person: **She said that…** / **She told me that…** Questions use statement word order: **He asked where I lived** (not **where did I live**).",
+    "register": "Common in speech and writing. In casual speech, if something is still true, people often keep the original tense: **She said she likes pizza.**",
+    "situations": [
+      { "title": "Passing on a message", "text": "Tell someone what was said.", "example": { "en": "Mum said she would be late.", "tr": "" } },
+      { "title": "Telling gossip or news", "text": "What a friend told you.", "example": { "en": "Sam told me he had a new girlfriend.", "tr": "" } },
+      { "title": "Reporting questions", "text": "Asked if / asked where.", "example": { "en": "The teacher asked if we had finished.", "tr": "" } }
+    ]
+  },
+  "third-conditional": {
+    "why": "The third conditional imagines a different past and its result. It is about things that did not happen, so we use it for regrets, criticism and relief.",
+    "compare": "**If + had + past participle, would have + past participle**: **If I had known, I would have come.** Don't put **would** in the if part. For a present result of a past change, use a mixed conditional: **If I had slept, I wouldn't be tired now.**",
+    "register": "Common in speech and writing. In speech: **If I'd known, I'd have come** — and you'll hear **would've** / **wouldn't've**.",
+    "situations": [
+      { "title": "Regrets", "text": "Wishing you had done something differently.", "example": { "en": "If I had left earlier, I wouldn't have missed the bus.", "tr": "" } },
+      { "title": "Relief", "text": "Something bad didn't happen.", "example": { "en": "If you hadn't called, I would have overslept.", "tr": "" } },
+      { "title": "Criticism", "text": "Pointing out a mistake.", "example": { "en": "If you had checked the map, we wouldn't have got lost.", "tr": "" } }
+    ]
+  },
+  "wish": {
+    "why": "**Wish** and **if only** express that we want reality to be different. The tense after them moves back: past for present wishes, past perfect for past regrets, **would** for annoying behaviour.",
+    "compare": "**I wish I had more time** (now) vs **I wish I had gone** (past) vs **I wish you would stop** (annoying habit). For abilities: **I wish I could…** Don't use **will** or **can** after wish. For future hopes use **hope**: **I hope you win.**",
+    "register": "Common in speech and writing. **If only** sounds stronger and more emotional.",
+    "situations": [
+      { "title": "Present wishes", "text": "Wanting something different now.", "example": { "en": "I wish I lived closer to my friends.", "tr": "" } },
+      { "title": "Past regrets", "text": "Things you didn't do.", "example": { "en": "If only I had bought the tickets earlier!", "tr": "" } },
+      { "title": "Complaining about habits", "text": "Wish + would.", "example": { "en": "I wish my brother would stop using my charger.", "tr": "" } }
+    ]
+  },
+  "cleft-sentences": {
+    "why": "Cleft sentences split a sentence in two to put focus on the most important part. They help you correct, emphasise or contrast information.",
+    "compare": "Neutral: **Tom broke the window.** It-cleft: **It was Tom who broke the window** (not someone else). What-cleft: **What I need is sleep.** **All I did was…** shows something small. Use **that/who** in it-clefts, never **what**.",
+    "register": "Very common in speech for emphasis and contrast, and in persuasive and academic writing to highlight key points.",
+    "situations": [
+      { "title": "Correcting someone", "text": "Focus on the right information.", "example": { "en": "It wasn't me who posted that — it was my brother.", "tr": "" } },
+      { "title": "Saying what really matters", "text": "Put the key idea last.", "example": { "en": "What I love about this game is the soundtrack.", "tr": "" } },
+      { "title": "Defending yourself", "text": "All I did was…", "example": { "en": "All I did was ask a question!", "tr": "" } }
+    ]
+  },
+  "inversion": {
+    "why": "Inversion puts an auxiliary verb before the subject after a negative or limiting phrase at the start of a sentence. It adds drama, emphasis or a formal tone.",
+    "compare": "Normal: **I have never seen such a mess.** Inverted: **Never have I seen such a mess.** Common starters: **never, rarely, hardly… when, no sooner… than, not only… but also, under no circumstances, little did I know.** Without the negative phrase at the start, no inversion.",
+    "register": "Mostly formal writing, speeches and storytelling. In everyday speech it sounds dramatic or humorous — use it for effect.",
+    "situations": [
+      { "title": "Dramatic storytelling", "text": "Create suspense.", "example": { "en": "Little did we know that the party was a surprise for us.", "tr": "" } },
+      { "title": "Strong emphasis", "text": "Show how extreme something is.", "example": { "en": "Never have I laughed so much.", "tr": "" } },
+      { "title": "Formal rules", "text": "Strict instructions.", "example": { "en": "Under no circumstances should you share your password.", "tr": "" } }
+    ]
+  },
+  "mixed-conditionals": {
+    "why": "Mixed conditionals connect different times: a past condition with a present result, or a present fact with a past result. They show how one time affects another.",
+    "compare": "Past → present: **If I had taken that job, I would be rich now.** Present → past: **If I were braver, I would have said something.** Compare with the third conditional, where both parts are past: **If I had studied, I would have passed.**",
+    "register": "Used in speech and writing to talk about life choices, regrets and character. Common in essays and exams.",
+    "situations": [
+      { "title": "Life choices", "text": "A past decision and your life now.", "example": { "en": "If I hadn't moved here, I wouldn't know you.", "tr": "" } },
+      { "title": "Personality and the past", "text": "Who you are explains what happened.", "example": { "en": "If I weren't so shy, I would have joined the drama club.", "tr": "" } },
+      { "title": "Present consequences", "text": "What you feel now because of the past.", "example": { "en": "If I had gone to bed earlier, I wouldn't be so tired now.", "tr": "" } }
+    ]
+  },
+  "participle-clauses": {
+    "why": "Participle clauses make sentences shorter and smoother by replacing a full clause with an **-ing**, **-ed** or **having done** form. They show time, reason or result in a compact way.",
+    "compare": "**-ing** = active, same time (**Walking home, I saw…**); **-ed** = passive (**Built in 1889, the tower…**); **having + past participle** = earlier action (**Having finished, she left**). The subject of both parts must be the same: **Walking home, the rain started** is wrong.",
+    "register": "Typical of writing — stories, articles, essays. In speech people usually use full clauses with **when, because, after.**",
+    "situations": [
+      { "title": "Storytelling", "text": "Two actions at once.", "example": { "en": "Grabbing my bag, I ran to the bus.", "tr": "" } },
+      { "title": "Giving reasons", "text": "Why someone did something.", "example": { "en": "Not knowing the answer, he stayed silent.", "tr": "" } },
+      { "title": "Describing things in writing", "text": "Compact descriptions.", "example": { "en": "Released in 2020, the album became a huge hit.", "tr": "" } }
+    ]
+  },
+  "subjunctive": {
+    "why": "The subjunctive uses the base form of the verb after words of demand, suggestion and importance, and **were** in hypothetical situations. It sounds formal and shows that something is required or imagined, not real.",
+    "compare": "**I suggest that he apply** (subjunctive, formal) vs **I suggest that he applies** or **I suggest he should apply** (common British alternatives). Negative: **that he not be late** — no **do**. It survives in fixed phrases: **Be that as it may, Come what may, If I were you.**",
+    "register": "Formal: official letters, rules, academic and legal texts, and American English. In everyday British speech, **should** or the normal tense is more common.",
+    "situations": [
+      { "title": "Formal recommendations", "text": "Doctors, teachers, officials.", "example": { "en": "The coach insisted that every player be on time.", "tr": "" } },
+      { "title": "Importance", "text": "It is essential / vital that…", "example": { "en": "It is vital that she be informed immediately.", "tr": "" } },
+      { "title": "Fixed expressions", "text": "Old phrases still in use.", "example": { "en": "Come what may, I'll finish this project.", "tr": "" } }
+    ]
+  },
+  "hedging": {
+    "why": "Hedging shows how sure you are and protects you from sounding arrogant or being proven wrong. It also adds politeness, because a softened opinion or criticism feels less like an attack.",
+    "compare": "A direct sentence is a flat claim: **You're wrong** vs **I'm not sure that's quite right.** Don't hedge when you need clarity, such as in instructions or emergencies. Too much hedging sounds evasive: **It might perhaps seem somewhat possible…**",
+    "register": "Very common in academic writing, business English and polite conversation. In casual chat people use lighter hedges like **kind of, sort of, I guess.**",
+    "situations": [
+      { "title": "Academic essay", "text": "Avoid absolute claims when evidence is limited.", "example": { "en": "The results would seem to suggest that sleep affects memory.", "tr": "" } },
+      { "title": "Giving feedback to a friend", "text": "Softening makes criticism easier to accept.", "example": { "en": "Your cover art is a bit busy, but the idea is great.", "tr": "" } },
+      { "title": "Talking about uncertain news", "text": "When you only heard something.", "example": { "en": "Apparently, the exam may have been moved to Friday.", "tr": "" } }
+    ]
+  }
+}
