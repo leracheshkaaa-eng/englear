@@ -1121,7 +1121,15 @@
       "production": "Uczniowie używają nowego: 3 zdania o sobie albo krótki dialog w parach.",
       "homework": "Powtórzyć lekcję w domu i nauczyć się nowych słów."
     },
-    "embedMissing": "To zadanie jest niedostępne."
+    "embedMissing": "To zadanie jest niedostępne.",
+    "strokeWidth": "Grubość linii",
+    "panelHide": "Ukryj panel",
+    "panelShow": "Panel kolorów",
+    "card": {
+      "task": "Zadanie",
+      "material": "Tekst",
+      "audio": "Audio"
+    }
   },
   "course": {
     "intro": "Pełne lekcje na 40–60 minut: rozgrzewka, objaśnienie z przykładami, zadania, praktyka, mówienie i praca domowa — po prostu idź krok po kroku.",

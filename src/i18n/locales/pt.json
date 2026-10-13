@@ -1101,7 +1101,15 @@
       "production": "Os alunos usam o novo: 3 frases sobre si ou um diálogo curto em duplas.",
       "homework": "Revisar a aula em casa e aprender as palavras novas."
     },
-    "embedMissing": "Este exercício não está disponível."
+    "embedMissing": "Este exercício não está disponível.",
+    "strokeWidth": "Espessura do traço",
+    "panelHide": "Ocultar painel",
+    "panelShow": "Painel de cores",
+    "card": {
+      "task": "Exercício",
+      "material": "Texto",
+      "audio": "Áudio"
+    }
   },
   "course": {
     "intro": "Aulas completas de 40–60 minutos: aquecimento, explicação com exemplos, exercícios, prática, conversação e lição de casa — é só seguir os passos.",

@@ -1101,7 +1101,15 @@
       "production": "Die Schüler wenden Neues an: 3 Sätze über sich oder ein kurzer Dialog zu zweit.",
       "homework": "Die Lektion zu Hause wiederholen und die neuen Wörter lernen."
     },
-    "embedMissing": "Diese Übung ist nicht verfügbar."
+    "embedMissing": "Diese Übung ist nicht verfügbar.",
+    "strokeWidth": "Strichstärke",
+    "panelHide": "Leiste ausblenden",
+    "panelShow": "Farbleiste",
+    "card": {
+      "task": "Aufgabe",
+      "material": "Text",
+      "audio": "Audio"
+    }
   },
   "course": {
     "intro": "Vollständige Stunden von 40–60 Minuten: Aufwärmen, Erklärung mit Beispielen, Aufgaben, Übung, Sprechen und Hausaufgabe — folge einfach den Schritten.",

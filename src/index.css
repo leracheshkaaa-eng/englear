@@ -88,3 +88,8 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .lean-breathe, .lean-hop, .lean-pop { animation: none; }
 }
+
+/* Whiteboard: the colour / stroke panel can be folded away (button in the board's top bar) */
+.englear-hide-props .excalidraw .selected-shape-actions { display: none; }
+/* Our cards on the board are always interactive: no "click to interact" hint over them */
+.excalidraw__embeddable-container__inner:has(.englear-embed) .excalidraw__embeddable-hint { display: none; }

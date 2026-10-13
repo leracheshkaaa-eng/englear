@@ -1101,7 +1101,15 @@
       "production": "Students use the new language: 3 sentences about themselves, or a short dialogue in pairs.",
       "homework": "Repeat the lesson at home and learn the new words."
     },
-    "embedMissing": "This exercise is not available."
+    "embedMissing": "This exercise is not available.",
+    "strokeWidth": "Stroke width",
+    "panelHide": "Hide panel",
+    "panelShow": "Colour panel",
+    "card": {
+      "task": "Task",
+      "material": "Text",
+      "audio": "Audio"
+    }
   },
   "course": {
     "intro": "Full lessons of 40–60 minutes: warm-up, explanation with examples, tasks, practice, speaking and homework — just follow the steps.",

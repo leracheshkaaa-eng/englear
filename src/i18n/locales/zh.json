@@ -1091,7 +1091,15 @@
       "production": "学生运用新内容：写 3 句关于自己的话，或两人一组做简短对话。",
       "homework": "在家复习本课并记住新单词。"
     },
-    "embedMissing": "这个练习不可用。"
+    "embedMissing": "这个练习不可用。",
+    "strokeWidth": "线条粗细",
+    "panelHide": "隐藏面板",
+    "panelShow": "颜色面板",
+    "card": {
+      "task": "练习",
+      "material": "文本",
+      "audio": "音频"
+    }
   },
   "course": {
     "intro": "40–60 分钟的完整课程：热身、带例子的讲解、练习、实践、口语和作业——跟着步骤走就好。",

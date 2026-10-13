@@ -222,7 +222,9 @@ export function defaultPlan(lesson: Lesson, t: (k: string, o?: Record<string, un
 
 /** An embedded web player (YouTube, Vimeo… or our audio player), built from a rectangle. */
 export function embed(o: Pt, link: string, w = 560, h = 315) {
-  const [r] = convertToExcalidrawElements([box(o.x, o.y, w, h, '', 'transparent')])
+  // our cards draw their own border; the board's frame line is only for YouTube & co
+  const ours = link.startsWith(`${location.origin}/embed/`)
+  const [r] = convertToExcalidrawElements([box(o.x, o.y, w, h, '', 'transparent', ours ? ({ strokeColor: 'transparent' } as Partial<El>) : {})])
   return { ...r, type: 'embeddable' as const, link, roundness: null }
 }
 

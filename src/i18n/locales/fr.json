@@ -1101,7 +1101,15 @@
       "production": "Les élèves utilisent le nouveau : 3 phrases sur eux ou un court dialogue à deux.",
       "homework": "Revoir la leçon à la maison et apprendre les nouveaux mots."
     },
-    "embedMissing": "Cet exercice n’est pas disponible."
+    "embedMissing": "Cet exercice n’est pas disponible.",
+    "strokeWidth": "Épaisseur du trait",
+    "panelHide": "Masquer le panneau",
+    "panelShow": "Panneau couleurs",
+    "card": {
+      "task": "Exercice",
+      "material": "Texte",
+      "audio": "Audio"
+    }
   },
   "course": {
     "intro": "De vraies leçons de 40 à 60 minutes : échauffement, explication avec exemples, exercices, pratique, oral et devoirs — suis simplement les étapes.",

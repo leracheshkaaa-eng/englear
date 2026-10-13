@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Excalidraw, convertToExcalidrawElements, useHandleLibrary, viewportCoordsToSceneCoords } from '@excalidraw/excalidraw'
+import { CaptureUpdateAction, Excalidraw, convertToExcalidrawElements, newElementWith, useHandleLibrary, viewportCoordsToSceneCoords } from '@excalidraw/excalidraw'
 import '@excalidraw/excalidraw/index.css'
 import type { BinaryFileData, BinaryFiles, ExcalidrawImperativeAPI } from '@excalidraw/excalidraw/types'
 import * as api from '../lib/api'
@@ -12,7 +12,7 @@ import { BACKGROUNDS, backgroundStyle, type Background } from './board/backgroun
 import { InsertPanel } from './board/insertPanel'
 import type { Skeleton } from './board/elements'
 import { studySkeleton, takePendingInsert } from './board/content'
-import { isOurEmbed, ourEmbed } from './board/taskEmbed'
+import { ourEmbed, setEmbedSizeHandler } from './board/taskEmbed'
 
 /* ============================================================
    The whiteboard itself (Excalidraw). Loaded on demand — it is a large library.
@@ -57,6 +57,23 @@ const libraryAdapter = {
   },
 }
 
+/* Stroke width slider: 0..100 → 0.25..16 px on a log scale, so the thin end has room
+   (Excalidraw's own buttons are 1, 2 and 4). */
+const MIN_STROKE = 0.25
+const MAX_STROKE = 16
+const sliderToStroke = (s: number) => Math.round(MIN_STROKE * Math.pow(MAX_STROKE / MIN_STROKE, s / 100) * 100) / 100
+const strokeToSlider = (w: number) => Math.round((100 * Math.log(Math.min(MAX_STROKE, Math.max(MIN_STROKE, w)) / MIN_STROKE)) / Math.log(MAX_STROKE / MIN_STROKE))
+
+/** The panel with colours and stroke width can be folded away; remembered on this device. */
+const PROPS_KEY = 'englear.boardPropsHidden'
+const readPropsHidden = () => {
+  try {
+    return localStorage.getItem(PROPS_KEY) === '1'
+  } catch {
+    return false
+  }
+}
+
 /** Our own embeds (audio player) are allowed; anything else uses Excalidraw's list (YouTube, Vimeo…). */
 const validateEmbeddable = (link: string) => (link.startsWith(`${location.origin}/embed/`) ? true : undefined)
 
@@ -73,6 +90,8 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
   const [full, setFull] = useState(false)
   const [bg, setBg] = useState<Background>('plain')
   const [view, setView] = useState({ x: 0, y: 0, zoom: 1 })
+  const [stroke, setStroke] = useState(1)
+  const [propsHidden, setPropsHidden] = useState(readPropsHidden)
   const [xapi, setXapi] = useState<ExcalidrawImperativeAPI | null>(null)
   const apiRef = useRef<ExcalidrawImperativeAPI | null>(null)
   const frame = useRef<HTMLElement>(null)
@@ -200,12 +219,60 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
     timer.current = window.setTimeout(save, 1500)
   }
 
-  function onChange() {
+  function onChange(_els?: unknown, appState?: { currentItemStrokeWidth?: number }) {
+    // Excalidraw's own width buttons move the slider too
+    const w = appState?.currentItemStrokeWidth
+    if (w && w !== stroke) setStroke(w)
     const a = apiRef.current
     if (!a || !canEdit) return
     if (fingerprint(a.getSceneElements()) === lastPrint.current) return
     scheduleSave()
   }
+
+  /** New width for what is drawn next and for the selected elements. */
+  function changeStroke(w: number) {
+    setStroke(w)
+    const a = apiRef.current
+    if (!a) return
+    const selected = a.getAppState().selectedElementIds
+    const elements = a.getSceneElements().map((el) => (selected[el.id] && 'strokeWidth' in el ? newElementWith(el, { strokeWidth: w }) : el))
+    a.updateScene({ elements, appState: { currentItemStrokeWidth: w }, captureUpdate: CaptureUpdateAction.IMMEDIATELY })
+  }
+
+  function togglePropsPanel() {
+    setPropsHidden((v) => {
+      try {
+        localStorage.setItem(PROPS_KEY, v ? '0' : '1')
+      } catch {
+        // not remembered: fine
+      }
+      return !v
+    })
+  }
+
+  // our cards (tasks, texts, audio) take the height of their content; what lies below
+  // them in the same frame moves down or up with them, and the frame grows or shrinks
+  useEffect(() => {
+    setEmbedSizeHandler((link, h) => {
+      const a = apiRef.current
+      if (!a) return
+      let els = a.getSceneElements()
+      const targets = els.filter((e) => e.type === 'embeddable' && e.link === link && Math.abs(e.height - h) >= 4)
+      if (!targets.length) return
+      for (const target of targets) {
+        const d = h - target.height
+        const bottom = target.y + target.height
+        els = els.map((o) => {
+          if (o.id === target.id) return newElementWith(o, { height: h })
+          if (o.type === 'frame' && o.id === target.frameId) return newElementWith(o, { height: o.height + d })
+          const below = o.frameId === target.frameId && o.y >= bottom - 1 && o.x < target.x + target.width && o.x + o.width > target.x
+          return below ? newElementWith(o, { y: o.y + d }) : o
+        })
+      }
+      a.updateScene({ elements: els, captureUpdate: CaptureUpdateAction.NEVER })
+    })
+    return () => setEmbedSizeHandler(null)
+  }, [])
 
   // under a paper pattern the canvas itself is transparent
   useEffect(() => {
@@ -282,6 +349,26 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
                 </option>
               ))}
             </select>
+            <label className="flex items-center gap-2 rounded-full border border-line px-3 py-1 text-sm" title={t('boards.strokeWidth')}>
+              <span aria-hidden>✏️</span>
+              <input
+                type="range"
+                min={0}
+                max={100}
+                value={strokeToSlider(stroke)}
+                onChange={(e) => changeStroke(sliderToStroke(Number(e.target.value)))}
+                className="w-28 accent-plum"
+                aria-label={t('boards.strokeWidth')}
+              />
+              <span className="w-9 text-right tabular-nums text-mute">{stroke}</span>
+            </label>
+            <button
+              onClick={togglePropsPanel}
+              className={`rounded-full border px-3 py-1.5 text-sm ${propsHidden ? 'border-line text-mute' : 'border-lavender bg-lilac/50 text-plum'} hover:border-lavender`}
+              title={propsHidden ? t('boards.panelShow') : t('boards.panelHide')}
+            >
+              🎨 {propsHidden ? t('boards.panelShow') : t('boards.panelHide')}
+            </button>
             <Button variant="soft" onClick={() => setWordOpen(true)}>
               📖 {t('boards.insertWord')}
             </Button>
@@ -307,7 +394,7 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
       </div>
       <div className="relative min-h-0 flex-1 overflow-hidden rounded-2xl border border-line" style={backgroundStyle(bg, view.x, view.y, view.zoom)}>
         {board && initialData ? (
-          <div className={`h-full w-full ${bg !== 'plain' ? 'englear-board-paper' : ''}`}>
+          <div className={`h-full w-full ${bg !== 'plain' ? 'englear-board-paper' : ''} ${propsHidden ? 'englear-hide-props' : ''}`}>
             <Excalidraw
               initialData={initialData}
               excalidrawAPI={(a) => {
@@ -339,14 +426,8 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
               name={title}
               libraryReturnUrl={location.href}
               validateEmbeddable={validateEmbeddable}
+              // our cards take clicks in their body at once; the header drags them (see taskEmbed.tsx)
               renderEmbeddable={(el) => ourEmbed(el.link)}
-              // our exercises answer on the first click (Excalidraw would first select the element)
-              onPointerDown={(_tool, pd) => {
-                const el = pd.hit.element
-                if (el?.type === 'embeddable' && isOurEmbed(el.link)) {
-                  setTimeout(() => apiRef.current?.updateScene({ appState: { activeEmbeddable: { element: el, state: 'active' } } as never }), 0)
-                }
-              }}
               UIOptions={{ canvasActions: { loadScene: false, saveToActiveFile: false, toggleTheme: false } }}
             />
           </div>

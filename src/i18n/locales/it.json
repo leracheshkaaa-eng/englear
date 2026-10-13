@@ -1101,7 +1101,15 @@
       "production": "Gli studenti usano il nuovo: 3 frasi su di sé o un breve dialogo a coppie.",
       "homework": "Ripassare la lezione a casa e imparare le parole nuove."
     },
-    "embedMissing": "Questo esercizio non è disponibile."
+    "embedMissing": "Questo esercizio non è disponibile.",
+    "strokeWidth": "Spessore del tratto",
+    "panelHide": "Nascondi pannello",
+    "panelShow": "Pannello colori",
+    "card": {
+      "task": "Esercizio",
+      "material": "Testo",
+      "audio": "Audio"
+    }
   },
   "course": {
     "intro": "Lezioni complete di 40–60 minuti: riscaldamento, spiegazione con esempi, esercizi, pratica, conversazione e compiti — segui i passaggi.",
