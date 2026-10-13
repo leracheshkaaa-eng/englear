@@ -498,12 +498,22 @@ export async function listWords(lang: string = translationLanguage()): Promise<W
 }
 
 /** What an inline lesson hint needs: the word and its main translation. */
-export type WordHint = { id: string; word: string; translation: string | null; definition: string; example: string | null }
+export type WordHint = {
+  id: string
+  word: string
+  translation: string | null
+  definition: string
+  example: string | null
+  /** the word's CEFR level */
+  cefr?: string | null
+  /** false = below the learner's level: still clickable, but not underlined */
+  marked?: boolean
+}
 
 /** Hints only for the given words (the words of one lesson), in the translation language. */
 export async function lessonHints(words: string[], lang: string = translationLanguage()): Promise<WordHint[]> {
   if (!words.length) return []
-  const { data, error } = await supabase.rpc('lesson_hints', { p_words: words.slice(0, 3000), p_lang: lang })
+  const { data, error } = await supabase.rpc('lesson_hints_v2', { p_words: words.slice(0, 3000), p_lang: lang })
   if (error) throw error
   return (data ?? []) as WordHint[]
 }

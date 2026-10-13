@@ -347,22 +347,32 @@ export function lessonWords(value: unknown, out = new Set<string>()): Set<string
   return out
 }
 
-/** Inline translation hints for the words of this lesson only (not the whole dictionary). */
+/** Inline translation hints for the words of this lesson only (not the whole dictionary).
+ *  Only words at the learner's level and above are underlined (a guest: the lesson's level);
+ *  easier words still show their translation on click. */
 function useLessonHints(lesson: Lesson, exercises: Exercise[], material?: api.Material | null): Map<string, WordHint> {
   const { i18n } = useTranslation()
-  const { settings } = useAuth()
+  const { userId, settings } = useAuth()
   const [hints, setHints] = useState<Map<string, WordHint>>(new Map())
   const words = [...lessonWords([lesson.title, lesson.description, exercises, material?.body ?? '', material?.segments ?? []])].sort().join(' ')
+  const level = userId && CEFR_ORDER[settings.english_level] !== undefined ? settings.english_level : (lesson.cefr ?? 'A1')
   useEffect(() => {
     let cancelled = false
+    const min = CEFR_ORDER[level] ?? 0
     api
       .lessonHints(words ? words.split(' ') : [])
-      .then((ws) => { if (!cancelled) setHints(new Map(ws.map((w) => [w.word.toLowerCase(), w]))) })
+      .then((ws) => {
+        if (cancelled) return
+        // a word without a level is treated as easy (function words and the like)
+        setHints(new Map(ws.map((w) => [w.word.toLowerCase(), { ...w, marked: (CEFR_ORDER[w.cefr ?? ''] ?? 0) >= min }])))
+      })
       .catch(() => {})
     return () => { cancelled = true }
-  }, [words, i18n.language, settings.native_language])
+  }, [words, i18n.language, settings.native_language, level])
   return hints
 }
+
+const CEFR_ORDER: Record<string, number> = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4, C2: 5 }
 
 /** Lesson player. For signed-in students every answer is saved (checked or not),
  *  an unfinished pass is resumed, and a finished lesson opens on its last result. */

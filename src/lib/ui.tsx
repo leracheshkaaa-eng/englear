@@ -157,7 +157,13 @@ export function TranslatableText({
               e.stopPropagation()
               show(e)
             }}
-            className="cursor-help rounded-sm underline decoration-dotted decoration-lavender underline-offset-4 hover:bg-lilac/60"
+            // words at the learner's level: a quiet dotted line, clearer on hover;
+            // easier words are not marked at all but still open on click
+            className={
+              word.marked === false
+                ? 'cursor-help rounded-sm hover:bg-lilac/40'
+                : 'cursor-help rounded-sm underline decoration-lavender/50 decoration-dotted decoration-1 underline-offset-[5px] transition-colors hover:bg-lilac/50 hover:decoration-plum'
+            }
           >
             {tok}
           </span>
