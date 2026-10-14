@@ -73,10 +73,36 @@ export function speak(text: string, onEnd?: () => void, rate = 1) {
   }
   currentEnd = end
   const seq = ++playSeq
-  playCloud(clean, seq, end).catch(() => {
-    if (seq === playSeq) speakWithBrowser(clean, end)
-    else end()
-  })
+  playRecorded(clean, seq, end)
+    .catch(() => (seq === playSeq ? playCloud(clean, seq, end) : end()))
+    .catch(() => {
+      if (seq === playSeq) speakWithBrowser(clean, end)
+      else end()
+    })
+}
+
+/* Recorded audio: listening scripts voiced once with an open-source voice (Piper, LJSpeech —
+   public domain), the speed matched to the lesson's level. Stored as tts-audio/rec/<sha256(text)>.mp3;
+   rec/index.json lists what exists, so other texts never wait for a missing file. */
+const REC_URL = `${TTS_FILES_URL}rec/`
+let recorded: Promise<Set<string>> | null = null
+function recordedTexts(): Promise<Set<string>> {
+  if (!recorded) {
+    recorded = fetch(`${REC_URL}index.json`)
+      .then((r) => (r.ok ? r.json() : { hashes: [] }))
+      .then((j: { hashes?: string[] }) => new Set(j.hashes ?? []))
+      .catch(() => new Set<string>())
+  }
+  return recorded
+}
+async function sha256(text: string) {
+  const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text))
+  return Array.from(new Uint8Array(hash), (b) => b.toString(16).padStart(2, '0')).join('')
+}
+async function playRecorded(text: string, seq: number, onEnd: () => void) {
+  const h = await sha256(text)
+  if (!(await recordedTexts()).has(h)) throw new Error('not recorded')
+  await playUrl(`${REC_URL}${h}.mp3`, seq, onEnd)
 }
 
 /** Stop whatever is being spoken (its onEnd fires). */
