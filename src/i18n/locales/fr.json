@@ -163,7 +163,7 @@
     "viewMistakes": "Voir les erreurs",
     "tryAgain": "Recommencer",
     "lean": {
-      "great": "Étrangement bien. Je suis fier. Un peu 😏",
+      "great": "Étrangement bien. Je suis fier. Un peu",
       "ok": "Pas mal du tout ! Encore un peu de pratique et ce sera parfait.",
       "oops": "Ce thème résiste encore. On va l’avoir — regardons les erreurs."
     }
@@ -775,10 +775,10 @@
     "cost": {
       "plus_tutor": "Plus : encore {{n}} messages aujourd’hui",
       "plus_writing": "Plus : encore {{n}} corrections ce mois-ci",
-      "free_day": "Gratuit aujourd’hui : encore {{n}} · ensuite {{price}} 🪙",
-      "free_week": "Gratuit cette semaine : encore {{n}} · ensuite {{price}} 🪙",
-      "free_month": "Gratuit ce mois-ci : encore {{n}} · ensuite {{price}} 🪙",
-      "coins": "Coût : {{price}} 🪙",
+      "free_day": "Gratuit aujourd’hui : encore {{n}} · ensuite {{price}}",
+      "free_week": "Gratuit cette semaine : encore {{n}} · ensuite {{price}}",
+      "free_month": "Gratuit ce mois-ci : encore {{n}} · ensuite {{price}}",
+      "coins": "Coût : {{price}}",
       "plus_speaking": "Plus : encore {{n}} conversations aujourd’hui"
     },
     "errors": {
@@ -792,7 +792,7 @@
     "toShop": "Obtenir des pièces ou Plus →",
     "newChat": "Nouveau chat",
     "untitled": "Chat",
-    "hello": "Salut{{name}} ! Moi, c’est Lean, ton prof d’anglais 🦊",
+    "hello": "Salut{{name}} ! Moi, c’est Lean, ton prof d’anglais",
     "helloHint": "Écris ce que tu veux en anglais — ou choisis un sujet pour commencer :",
     "thinking": "Lean écrit… (et mâche une datte)",
     "placeholder": "Écris un message… (Entrée — envoyer, Maj+Entrée — nouvelle ligne)",
@@ -828,11 +828,11 @@
       "nextSteps": "À travailler"
     },
     "speaking": {
-      "intro": "On discute ? À voix haute. Choisis une scène, appuie sur le micro et parle anglais — mes oreilles sont prêtes 😏",
+      "intro": "On discute ? À voix haute. Choisis une scène, appuie sur le micro et parle anglais — mes oreilles sont prêtes",
       "start": "Commencer à parler",
       "starting": "Lean se prépare…",
       "noMic": "Ton navigateur ne reconnaît pas la voix. Ouvre le site dans Chrome, Edge ou Safari — ou écris.",
-      "noReport": "Rien à analyser — tu n’as rien dit 🙃",
+      "noReport": "Rien à analyser — tu n’as rien dit",
       "again": "Une autre conversation",
       "replay": "Réécouter",
       "over": "La scène est terminée. Récupère ton bilan !",
@@ -972,7 +972,7 @@
     "generate": "Créer la leçon",
     "generating": "L’IA écrit et vérifie… (30–60 s)",
     "costPlus": "Plus : encore {{n}} leçons ce mois-ci",
-    "costFree": "Gratuit ce mois-ci : encore {{n}} · ensuite {{price}} 🪙",
+    "costFree": "Gratuit ce mois-ci : encore {{n}} · ensuite {{price}}",
     "teachersOnly": "Seuls les enseignants peuvent créer des leçons avec l’IA.",
     "failed": "Impossible de créer la leçon. Aucune pièce n’a été débitée — réessaie ou change les réglages.",
     "reviewBanner": "Créé par l’IA — lis chaque exercice avant d’enregistrer. Tout peut être modifié.",
@@ -1137,9 +1137,9 @@
     "planProgress": "{{done}} leçons sur {{total}} terminées",
     "upNext": "Ensuite",
     "guestIntro": "Connecte-toi pour essayer une leçon complète gratuitement.",
-    "trialIntro": "Tu peux ouvrir une leçon de ton choix gratuitement. Les autres sont avec Plus 😏",
+    "trialIntro": "Tu peux ouvrir une leçon de ton choix gratuitement. Les autres sont avec Plus",
     "teacherIntro": "En tant qu’enseignant, tu peux ouvrir {{n}} leçons de ton choix gratuitement. Les autres sont avec Plus.",
-    "noTrial": "Ta leçon gratuite est déjà utilisée. Toutes les leçons sont avec Plus 😏",
+    "noTrial": "Ta leçon gratuite est déjà utilisée. Toutes les leçons sont avec Plus",
     "getPlus": "Passer à Plus",
     "confirmUnlock": "Ouvrir « {{title}} » gratuitement ? C’est ta seule leçon d’essai.",
     "confirmUnlockTeacher": "Ouvrir « {{title}} » gratuitement ? Leçons gratuites restantes : {{n}}.",
@@ -1150,7 +1150,7 @@
   "landing": {
     "startFree": "Commencer gratuitement",
     "look": "Jeter un œil d’abord",
-    "hi": "Salut ! Moi, c’est Lean 👋",
+    "hi": "Salut ! Moi, c’est Lean",
     "insideTitle": "Ce qu’il y a dedans",
     "f": {
       "lessons": {
@@ -1200,14 +1200,14 @@
         "a": "Choisis un niveau dans les leçons et les exercices — ou demande-moi, je t’aide."
       }
     },
-    "finalCall": "Prêt ? C’est parti — je suis juste là 🦊"
+    "finalCall": "Prêt ? C’est parti — je suis juste là"
   },
   "dash": {
     "hello": {
       "morning": "Bonjour, {{name}}. Toi, le café ; moi, l’anglais.",
       "day": "Salut, {{name}} !",
       "evening": "Bonsoir, {{name}} !",
-      "night": "Pourquoi on ne dort pas, {{name}} ? 🌙"
+      "night": "Pourquoi on ne dort pas, {{name}} ?"
     },
     "keepStreak": "{{n}} jours d’affilée — continue !",
     "startStreak": "Une leçon aujourd’hui — et la série commence.",
@@ -1223,16 +1223,16 @@
   },
   "interests": {
     "q": {
-      "watch": "Dis-moi, tu regardes quoi en ce moment ? Je ne dirai rien 👀",
+      "watch": "Dis-moi, tu regardes quoi en ce moment ? Je ne dirai rien",
       "music": "Qu’est-ce qu’il y a dans tes écouteurs ? Sois honnête, je ne juge pas. Presque.",
       "play": "Tu joues à quoi — ou tu regardes quel anime ? C’est pour… la science.",
-      "read": "Tu lis quoi quand tu ne fais pas tes devoirs ? 📚",
+      "read": "Tu lis quoi quand tu ne fais pas tes devoirs ?",
       "life": "Et tu aimes quoi d’autre ? Loisirs, chats, sport — tout compte."
     },
     "own": "autre chose…",
     "done": "Fini",
     "skip": "Pas maintenant",
-    "thanks": "Noté ! Je te connais un peu mieux maintenant 😏",
+    "thanks": "Noté ! Je te connais un peu mieux maintenant",
     "items": {
       "rap": "Rap",
       "rock": "Rock",
@@ -1264,7 +1264,7 @@
   },
   "daily": {
     "title": "Le Lean du jour",
-    "empty": "Lean prépare encore le fil du jour. Repasse plus tard 🦊",
+    "empty": "Lean prépare encore le fil du jour. Repasse plus tard",
     "explain": "Qu’est-ce qui est drôle ?",
     "slang": "argot",
     "votes": "Votes : {{n}}",
@@ -1324,7 +1324,7 @@
     "practice": "S’entraîner sur ce thème",
     "noTasks": "Les exercices sur ce thème arrivent bientôt.",
     "check": "Teste-toi",
-    "score": "{{n}} sur {{total}} justes. Mes oreilles approuvent 😏",
+    "score": "{{n}} sur {{total}} justes. Mes oreilles approuvent",
     "usage": "Quand et pourquoi",
     "compare": "La différence",
     "register": "Où ça sonne naturel",

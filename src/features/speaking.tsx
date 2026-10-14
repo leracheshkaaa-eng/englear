@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
@@ -13,7 +14,11 @@ import { CostLine, ErrorLine } from './ai'
    The learner talks (browser speech recognition) or types; Lean answers aloud.
    ============================================================ */
 
-const EMOJI: Record<SpeakingScenario, string> = { free: '💬', cafe: '☕', friend: '🎉', interview: '💼', airport: '✈️', fandom: '🍿' }
+const SCENARIO_ICONS: Record<SpeakingScenario, I.Icon> = { free: I.IconChat, cafe: I.IconCafe, friend: I.IconParty, interview: I.IconWork, airport: I.IconTravel, fandom: I.IconFandom }
+function ScenarioIcon({ s, className }: { s: SpeakingScenario; className?: string }) {
+  const C = SCENARIO_ICONS[s]
+  return <C className={className} />
+}
 type Line = { role: 'lean' | 'learner'; text: string; fix?: SpeakingFix | null }
 type Phase = 'idle' | 'listening' | 'thinking' | 'speaking'
 
@@ -151,7 +156,7 @@ export function Speaking({ status, plus, onSpent, onShop }: { status: AiKindStat
               onClick={() => setScenario(s)}
               className={`rounded-2xl border p-4 text-left transition ${scenario === s ? 'border-plum bg-lilac/50' : 'border-line bg-paper hover:border-lavender'}`}
             >
-              <span className="text-2xl">{EMOJI[s]}</span>
+              <span className="text-2xl text-plum"><ScenarioIcon s={s} /></span>
               <span className="mt-1 block font-display text-lg font-semibold">{t(`ai.speaking.scenarios.${s}.title`)}</span>
               <span className="text-sm text-mute">{t(`ai.speaking.scenarios.${s}.desc`)}</span>
             </button>
@@ -159,7 +164,7 @@ export function Speaking({ status, plus, onSpent, onShop }: { status: AiKindStat
         </div>
         <div className="flex flex-wrap items-center gap-3">
           <Button onClick={start} disabled={busy} className="px-6 py-3">
-            {busy ? t('ai.speaking.starting') : `🎙️ ${t('ai.speaking.start')}`}
+            {busy ? t('ai.speaking.starting') : <><I.IconMic /> {t('ai.speaking.start')}</>}
           </Button>
           <CostLine s={status} plus={plus} kind="speaking" />
         </div>
@@ -186,7 +191,7 @@ export function Speaking({ status, plus, onSpent, onShop }: { status: AiKindStat
         <div className="text-sm md:text-center">
           <p className="font-semibold">{t(`ai.speaking.phase.${phase}`)}</p>
           <p className="text-mute">
-            {EMOJI[scenario]} {t(`ai.speaking.scenarios.${scenario}.title`)} · {t('ai.speaking.turnsLeft', { n: left })}
+            <ScenarioIcon s={scenario} className="text-plum" /> {t(`ai.speaking.scenarios.${scenario}.title`)} · {t('ai.speaking.turnsLeft', { n: left })}
           </p>
         </div>
       </aside>
@@ -198,14 +203,14 @@ export function Speaking({ status, plus, onSpent, onShop }: { status: AiKindStat
               <div className={`flex max-w-[85%] items-start gap-2 rounded-2xl px-4 py-2 text-[15px] leading-relaxed ${l.role === 'learner' ? 'bg-plum text-paper' : 'bg-lilac/60 text-ink'}`}>
                 <span>{l.text}</span>
                 {l.role === 'lean' && (
-                  <button onClick={() => say(l.text)} title={t('ai.speaking.replay')} className="shrink-0 opacity-60 hover:opacity-100">
-                    🔊
+                  <button onClick={() => say(l.text)} title={t('ai.speaking.replay')} className="shrink-0 text-plum opacity-60 hover:opacity-100">
+                    <I.IconSound />
                   </button>
                 )}
               </div>
               {l.fix && (
                 <p className="mt-1 max-w-[85%] rounded-xl bg-honey/30 px-3 py-1.5 text-sm">
-                  ✏️ <b>{l.fix.better}</b> <span className="text-mute">— {l.fix.why}</span>
+                  <I.IconTasks className="text-plum" /> <b>{l.fix.better}</b> <span className="text-mute">— {l.fix.why}</span>
                 </p>
               )}
             </div>
@@ -240,7 +245,7 @@ export function Speaking({ status, plus, onSpent, onShop }: { status: AiKindStat
                 className={`grid h-16 w-16 place-items-center rounded-full text-2xl text-paper shadow-lg transition ${phase === 'listening' ? 'animate-pulse bg-warn' : 'bg-plum hover:scale-105'} disabled:opacity-50`}
                 aria-label={t('ai.speaking.mic')}
               >
-                {phase === 'listening' ? '■' : '🎙️'}
+                {phase === 'listening' ? <I.IconStop /> : <I.IconMic />}
               </button>
               <p className="text-xs text-mute">{phase === 'listening' ? t('ai.speaking.tapToSend') : t('ai.speaking.tapToTalk')}</p>
             </div>
@@ -248,7 +253,7 @@ export function Speaking({ status, plus, onSpent, onShop }: { status: AiKindStat
           <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
             {canListen() && (
               <button onClick={() => setTyping((v) => !v)} className="text-mute hover:text-ink">
-                {typing ? `🎙️ ${t('ai.speaking.useMic')}` : `⌨️ ${t('ai.speaking.typeInstead')}`}
+                {typing ? <><I.IconMic /> {t('ai.speaking.useMic')}</> : <><I.IconKeyboard /> {t('ai.speaking.typeInstead')}</>}
               </button>
             )}
             <Button variant="soft" onClick={finish} disabled={busy || phase === 'thinking'}>
@@ -280,7 +285,7 @@ function Report({ f }: { f: SpeakingFeedback }) {
       </div>
       {f.strengths.length > 0 && (
         <div className={card}>
-          <h3 className="mb-2 font-display text-xl font-semibold">💪 {t('ai.speaking.strengths')}</h3>
+          <h3 className="mb-2 font-display text-xl font-semibold"><I.IconStrength className="text-plum" /> {t('ai.speaking.strengths')}</h3>
           <ul className="list-disc space-y-1 pl-5">
             {f.strengths.map((s, i) => (
               <li key={i}>{s}</li>
@@ -290,15 +295,15 @@ function Report({ f }: { f: SpeakingFeedback }) {
       )}
       {f.fixes.length > 0 && (
         <div className={card}>
-          <h3 className="mb-2 font-display text-xl font-semibold">✏️ {t('ai.speaking.fixes')}</h3>
+          <h3 className="mb-2 font-display text-xl font-semibold"><I.IconTasks className="text-plum" /> {t('ai.speaking.fixes')}</h3>
           <div className="space-y-3">
             {f.fixes.map((x, i) => (
               <div key={i}>
                 <p className="text-sm text-mute line-through">{x.said}</p>
                 <p className="font-semibold">
                   {x.better}{' '}
-                  <button onClick={() => speak(x.better)} className="text-sm opacity-60 hover:opacity-100">
-                    🔊
+                  <button onClick={() => speak(x.better)} className="text-sm text-plum opacity-60 hover:opacity-100">
+                    <I.IconSound />
                   </button>
                 </p>
                 <p className="text-sm text-mute">{x.why}</p>
@@ -309,7 +314,7 @@ function Report({ f }: { f: SpeakingFeedback }) {
       )}
       {f.phrases.length > 0 && (
         <div className={card}>
-          <h3 className="mb-2 font-display text-xl font-semibold">🗣️ {t('ai.speaking.phrases')}</h3>
+          <h3 className="mb-2 font-display text-xl font-semibold"><I.IconSpeak className="text-plum" /> {t('ai.speaking.phrases')}</h3>
           <div className="space-y-2">
             {f.phrases.map((p, i) => (
               <button key={i} onClick={() => speak(p.phrase)} className="block w-full rounded-xl bg-lilac/40 px-3 py-2 text-left hover:bg-lilac/70">
@@ -319,7 +324,7 @@ function Report({ f }: { f: SpeakingFeedback }) {
           </div>
         </div>
       )}
-      {f.next && <p className="rounded-2xl bg-cream px-4 py-3">🎯 {f.next}</p>}
+      {f.next && <p className="rounded-2xl bg-cream px-4 py-3"><I.IconTarget className="text-plum" /> {f.next}</p>}
     </>
   )
 }

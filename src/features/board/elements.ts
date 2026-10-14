@@ -130,7 +130,7 @@ function exerciseBody(ex: Exercise): { head: string; chips: string[]; columns?: 
     case 'dialogue':
       return { head: ex.lines.map((l) => `${l.speaker}: ${gapped(l.text)}`).join('\n'), chips: [] }
     case 'listen':
-      return { head: '🎧 Listen and write:\n______________________________', chips: [] }
+      return { head: 'Listen and write:\n______________________________', chips: [] }
   }
 }
 

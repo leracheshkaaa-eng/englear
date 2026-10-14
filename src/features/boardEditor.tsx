@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { CaptureUpdateAction, Excalidraw, convertToExcalidrawElements, newElementWith, useHandleLibrary, viewportCoordsToSceneCoords } from '@excalidraw/excalidraw'
@@ -350,7 +351,7 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
               ))}
             </select>
             <label className="flex items-center gap-2 rounded-full border border-line px-3 py-1 text-sm" title={t('boards.strokeWidth')}>
-              <span aria-hidden>✏️</span>
+              <I.IconTasks className="text-plum" />
               <input
                 type="range"
                 min={0}
@@ -367,12 +368,12 @@ export default function BoardEditor({ boardId, onBack }: { boardId: string; onBa
               className={`rounded-full border px-3 py-1.5 text-sm ${propsHidden ? 'border-line text-mute' : 'border-lavender bg-lilac/50 text-plum'} hover:border-lavender`}
               title={propsHidden ? t('boards.panelShow') : t('boards.panelHide')}
             >
-              🎨 {propsHidden ? t('boards.panelShow') : t('boards.panelHide')}
+              <I.IconPalette /> {propsHidden ? t('boards.panelShow') : t('boards.panelHide')}
             </button>
             <Button variant="soft" onClick={() => setWordOpen(true)}>
-              📖 {t('boards.insertWord')}
+              <I.IconDictionary /> {t('boards.insertWord')}
             </Button>
-            <Button onClick={() => setInsertOpen((v) => !v)}>➕ {t('boards.insert.title')}</Button>
+            <Button onClick={() => setInsertOpen((v) => !v)}><I.IconPlus /> {t('boards.insert.title')}</Button>
           </>
         )}
         <span className={`text-xs ${status === 'conflict' || status === 'error' ? 'text-warn' : 'text-mute'}`}>

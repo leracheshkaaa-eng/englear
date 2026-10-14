@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
@@ -91,8 +92,9 @@ export function AiLessonForm({ onDraft, onCancel, onShop }: { onDraft: (d: Lesso
   const costLine = () => {
     if (!status) return null
     if (plus && (status.plus_left ?? 0) > 0) return t('aiLesson.costPlus', { n: status.plus_left ?? 0 })
-    if (status.free_left > 0) return t('aiLesson.costFree', { n: status.free_left, price: status.price })
-    return t('ai.cost.coins', { price: status.price })
+    // the strings end with the price; the coin icon follows
+    if (status.free_left > 0) return <>{t('aiLesson.costFree', { n: status.free_left, price: status.price })} <I.IconCoin /></>
+    return <>{t('ai.cost.coins', { price: status.price })} <I.IconCoin /></>
   }
   const errText = (code: string) =>
     ['not_enough_coins', 'ai_busy', 'ai_not_configured'].includes(code) ? t(`ai.errors.${code}` as 'ai.errors.ai_busy') : code === 'teachers_only' ? t('aiLesson.teachersOnly') : t('aiLesson.failed')
@@ -101,7 +103,7 @@ export function AiLessonForm({ onDraft, onCancel, onShop }: { onDraft: (d: Lesso
   return (
     <div className="rounded-2xl border border-plum/30 bg-paper p-5">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h3 className="font-display text-2xl font-semibold">✨ {t('aiLesson.title')}</h3>
+        <h3 className="font-display text-2xl font-semibold"><I.IconSparkle className="text-plum" /> {t('aiLesson.title')}</h3>
         <Button variant="ghost" onClick={onCancel}>
           {t('common.cancel')}
         </Button>

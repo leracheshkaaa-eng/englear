@@ -162,7 +162,7 @@
     "viewMistakes": "查看错题",
     "tryAgain": "重新学习",
     "lean": {
-      "great": "好得可疑。我很骄傲。一点点 😏",
+      "great": "好得可疑。我很骄傲。一点点",
       "ok": "很不错！再多练一点就完美了。",
       "oops": "这个主题还在顽抗。我们会拿下它——来看看错误吧。"
     }
@@ -765,10 +765,10 @@
     "cost": {
       "plus_tutor": "Plus：今天还剩 {{n}} 条消息",
       "plus_writing": "Plus：本月还剩 {{n}} 次批改",
-      "free_day": "今天免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
-      "free_week": "本周免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
-      "free_month": "本月免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
-      "coins": "费用：{{price}} 🪙",
+      "free_day": "今天免费：还剩 {{n}} 次 · 之后 {{price}}",
+      "free_week": "本周免费：还剩 {{n}} 次 · 之后 {{price}}",
+      "free_month": "本月免费：还剩 {{n}} 次 · 之后 {{price}}",
+      "coins": "费用：{{price}}",
       "plus_speaking": "Plus：今天还剩 {{n}} 次对话"
     },
     "errors": {
@@ -782,7 +782,7 @@
     "toShop": "获取金币或 Plus →",
     "newChat": "新聊天",
     "untitled": "聊天",
-    "hello": "你好{{name}}！我是 Lean，你的英语老师 🦊",
+    "hello": "你好{{name}}！我是 Lean，你的英语老师",
     "helloHint": "用英语随便写点什么——或选一个话题开始：",
     "thinking": "Lean 正在输入……（还在嚼椰枣）",
     "placeholder": "输入消息…（Enter 发送，Shift+Enter 换行）",
@@ -818,11 +818,11 @@
       "nextSteps": "需要加强"
     },
     "speaking": {
-      "intro": "来聊聊吧，大声说出来。选一个场景，按下麦克风说英语——我的耳朵已经准备好了 😏",
+      "intro": "来聊聊吧，大声说出来。选一个场景，按下麦克风说英语——我的耳朵已经准备好了",
       "start": "开始对话",
       "starting": "Lean 正在准备……",
       "noMic": "你的浏览器无法识别语音。请用 Chrome、Edge 或 Safari 打开网站——或者直接打字。",
-      "noReport": "还没有可点评的内容——你什么都没说 🙃",
+      "noReport": "还没有可点评的内容——你什么都没说",
       "again": "再来一次对话",
       "replay": "再听一遍",
       "over": "这个场景结束了，来看点评吧！",
@@ -962,7 +962,7 @@
     "generate": "创建课程",
     "generating": "AI 正在编写并检查…（30–60 秒）",
     "costPlus": "Plus：本月还剩 {{n}} 节课",
-    "costFree": "本月免费：还剩 {{n}} 次 · 之后 {{price}} 🪙",
+    "costFree": "本月免费：还剩 {{n}} 次 · 之后 {{price}}",
     "teachersOnly": "只有教师可以用 AI 创建课程。",
     "failed": "无法创建课程。未扣除金币——请重试或更改设置。",
     "reviewBanner": "由 AI 创建——保存前请逐题检查。所有内容都可以修改。",
@@ -1127,9 +1127,9 @@
     "planProgress": "已完成 {{done}}/{{total}} 节",
     "upNext": "下一节",
     "guestIntro": "登录后可免费试一节完整课程。",
-    "trialIntro": "你可以免费打开任意一节课——随便选。其余课程需要 Plus 😏",
+    "trialIntro": "你可以免费打开任意一节课——随便选。其余课程需要 Plus",
     "teacherIntro": "作为老师，你可以免费打开 {{n}} 节自选课程。其余课程需要 Plus。",
-    "noTrial": "免费课程已经用过了。所有课程都需要 Plus 😏",
+    "noTrial": "免费课程已经用过了。所有课程都需要 Plus",
     "getPlus": "开通 Plus",
     "confirmUnlock": "免费打开《{{title}}》？这是你唯一的试听课。",
     "confirmUnlockTeacher": "免费打开《{{title}}》？剩余免费课程：{{n}}。",
@@ -1140,7 +1140,7 @@
   "landing": {
     "startFree": "免费开始",
     "look": "先看看",
-    "hi": "嗨！我是 Lean 👋",
+    "hi": "嗨！我是 Lean",
     "insideTitle": "这里有什么",
     "f": {
       "lessons": {
@@ -1190,14 +1190,14 @@
         "a": "在课程和练习中选择级别——或者问我，我来帮你。"
       }
     },
-    "finalCall": "准备好了吗？出发——我就在这儿 🦊"
+    "finalCall": "准备好了吗？出发——我就在这儿"
   },
   "dash": {
     "hello": {
       "morning": "早上好，{{name}}。你负责咖啡，我负责英语。",
       "day": "你好，{{name}}！",
       "evening": "晚上好，{{name}}！",
-      "night": "{{name}}，我们为什么还不睡？🌙"
+      "night": "{{name}}，我们为什么还不睡？"
     },
     "keepStreak": "已连续 {{n}} 天——继续加油！",
     "startStreak": "今天上一节课，连续记录就开始了。",
@@ -1213,16 +1213,16 @@
   },
   "interests": {
     "q": {
-      "watch": "说说看，你最近在看什么？我不会告诉别人 👀",
+      "watch": "说说看，你最近在看什么？我不会告诉别人",
       "music": "你耳机里在放什么？说实话，我不评判。大概。",
       "play": "你在玩什么游戏，或者在看什么动漫？纯属……科研需要。",
-      "read": "不写作业的时候你读什么？📚",
+      "read": "不写作业的时候你读什么？",
       "life": "你还喜欢什么？爱好、猫、运动——都算。"
     },
     "own": "其他……",
     "done": "完成",
     "skip": "以后再说",
-    "thanks": "记下了！现在我更了解你一点了 😏",
+    "thanks": "记下了！现在我更了解你一点了",
     "items": {
       "rap": "说唱",
       "rock": "摇滚",
@@ -1254,7 +1254,7 @@
   },
   "daily": {
     "title": "今日 Lean",
-    "empty": "Lean 还在准备今天的内容，晚点再来看看 🦊",
+    "empty": "Lean 还在准备今天的内容，晚点再来看看",
     "explain": "笑点在哪？",
     "slang": "俚语",
     "votes": "投票数：{{n}}",
@@ -1314,7 +1314,7 @@
     "practice": "练习这个主题",
     "noTasks": "这个主题的练习即将上线。",
     "check": "自我检测",
-    "score": "答对 {{n}}/{{total}}。我的耳朵很满意 😏",
+    "score": "答对 {{n}}/{{total}}。我的耳朵很满意",
     "usage": "何时用、为什么用",
     "compare": "有什么不同",
     "register": "在哪里听起来自然",

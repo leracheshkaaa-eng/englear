@@ -163,7 +163,7 @@
     "viewMistakes": "Ver errores",
     "tryAgain": "Repetir",
     "lean": {
-      "great": "Sospechosamente bien. Estoy orgulloso. Un poco 😏",
+      "great": "Sospechosamente bien. Estoy orgulloso. Un poco",
       "ok": "¡Nada mal! Un poco más de práctica y quedará perfecto.",
       "oops": "Este tema todavía se resiste. Lo vamos a vencer: veamos los errores."
     }
@@ -775,10 +775,10 @@
     "cost": {
       "plus_tutor": "Plus: quedan {{n}} mensajes hoy",
       "plus_writing": "Plus: quedan {{n}} revisiones este mes",
-      "free_day": "Gratis hoy: quedan {{n}} · luego {{price}} 🪙",
-      "free_week": "Gratis esta semana: quedan {{n}} · luego {{price}} 🪙",
-      "free_month": "Gratis este mes: quedan {{n}} · luego {{price}} 🪙",
-      "coins": "Cuesta {{price}} 🪙",
+      "free_day": "Gratis hoy: quedan {{n}} · luego {{price}}",
+      "free_week": "Gratis esta semana: quedan {{n}} · luego {{price}}",
+      "free_month": "Gratis este mes: quedan {{n}} · luego {{price}}",
+      "coins": "Cuesta {{price}}",
       "plus_speaking": "Plus: te quedan {{n}} conversaciones hoy"
     },
     "errors": {
@@ -792,7 +792,7 @@
     "toShop": "Conseguir monedas o Plus →",
     "newChat": "Nuevo chat",
     "untitled": "Chat",
-    "hello": "¡Hola{{name}}! Soy Lean, tu profe de inglés 🦊",
+    "hello": "¡Hola{{name}}! Soy Lean, tu profe de inglés",
     "helloHint": "Escribe lo que quieras en inglés — o elige un tema para empezar:",
     "thinking": "Lean está escribiendo… (y masticando un dátil)",
     "placeholder": "Escribe un mensaje… (Enter — enviar, Shift+Enter — nueva línea)",
@@ -828,11 +828,11 @@
       "nextSteps": "En qué trabajar"
     },
     "speaking": {
-      "intro": "Hablemos. En voz alta. Elige una escena, pulsa el micro y habla en inglés: mis orejas están listas 😏",
+      "intro": "Hablemos. En voz alta. Elige una escena, pulsa el micro y habla en inglés: mis orejas están listas",
       "start": "Empezar a hablar",
       "starting": "Lean se está preparando…",
       "noMic": "Tu navegador no reconoce la voz. Abre la web en Chrome, Edge o Safari, o simplemente escribe.",
-      "noReport": "Aún no hay nada que revisar: no dijiste nada 🙃",
+      "noReport": "Aún no hay nada que revisar: no dijiste nada",
       "again": "Otra conversación",
       "replay": "Escuchar otra vez",
       "over": "La escena terminó. ¡Recoge tu revisión!",
@@ -972,7 +972,7 @@
     "generate": "Crear la lección",
     "generating": "La IA escribe y comprueba… (30–60 s)",
     "costPlus": "Plus: quedan {{n}} lecciones este mes",
-    "costFree": "Gratis este mes: quedan {{n}} · luego {{price}} 🪙",
+    "costFree": "Gratis este mes: quedan {{n}} · luego {{price}}",
     "teachersOnly": "Solo los profesores pueden crear lecciones con IA.",
     "failed": "No se pudo crear la lección. No se cobraron monedas: inténtalo de nuevo o cambia los ajustes.",
     "reviewBanner": "Creado por IA: lee cada ejercicio antes de guardar. Puedes editarlo todo.",
@@ -1137,9 +1137,9 @@
     "planProgress": "{{done}} de {{total}} clases hechas",
     "upNext": "Siguiente",
     "guestIntro": "Inicia sesión y prueba una clase completa gratis.",
-    "trialIntro": "Puedes abrir una clase cualquiera gratis: elige la que quieras. El resto viene con Plus 😏",
+    "trialIntro": "Puedes abrir una clase cualquiera gratis: elige la que quieras. El resto viene con Plus",
     "teacherIntro": "Como profe puedes abrir gratis {{n}} clases a tu elección. El resto viene con Plus.",
-    "noTrial": "Tu clase gratis ya está usada. Todas las clases vienen con Plus 😏",
+    "noTrial": "Tu clase gratis ya está usada. Todas las clases vienen con Plus",
     "getPlus": "Conseguir Plus",
     "confirmUnlock": "¿Abrir «{{title}}» gratis? Es tu única clase de prueba.",
     "confirmUnlockTeacher": "¿Abrir «{{title}}» gratis? Te quedan {{n}} clases gratis.",
@@ -1150,7 +1150,7 @@
   "landing": {
     "startFree": "Empezar gratis",
     "look": "Echar un vistazo",
-    "hi": "¡Hola! Soy Lean 👋",
+    "hi": "¡Hola! Soy Lean",
     "insideTitle": "Qué hay dentro",
     "f": {
       "lessons": {
@@ -1200,14 +1200,14 @@
         "a": "Elige un nivel en clases y ejercicios — o pregúntame, te ayudo."
       }
     },
-    "finalCall": "¿Listo? Vamos — estoy aquí mismo 🦊"
+    "finalCall": "¿Listo? Vamos — estoy aquí mismo"
   },
   "dash": {
     "hello": {
       "morning": "Buenos días, {{name}}. Tú pones el café, yo el inglés.",
       "day": "¡Hola, {{name}}!",
       "evening": "¡Buenas noches, {{name}}!",
-      "night": "¿Por qué no estamos durmiendo, {{name}}? 🌙"
+      "night": "¿Por qué no estamos durmiendo, {{name}}?"
     },
     "keepStreak": "{{n}} días seguidos — ¡sigue así!",
     "startStreak": "Una clase hoy — y empieza la racha.",
@@ -1223,16 +1223,16 @@
   },
   "interests": {
     "q": {
-      "watch": "Oye, ¿qué estás viendo ahora? No se lo diré a nadie 👀",
+      "watch": "Oye, ¿qué estás viendo ahora? No se lo diré a nadie",
       "music": "¿Qué suena en tus auriculares? Sé sincero, no juzgo. Casi.",
       "play": "¿A qué juegas o qué anime ves? Pregunto por… la ciencia.",
-      "read": "¿Qué lees cuando no haces los deberes? 📚",
+      "read": "¿Qué lees cuando no haces los deberes?",
       "life": "¿Qué más te gusta? Hobbies, gatos, deporte: todo cuenta."
     },
     "own": "otra cosa…",
     "done": "Listo",
     "skip": "Ahora no",
-    "thanks": "¡Apuntado! Ahora te conozco un poco mejor 😏",
+    "thanks": "¡Apuntado! Ahora te conozco un poco mejor",
     "items": {
       "rap": "Rap",
       "rock": "Rock",
@@ -1264,7 +1264,7 @@
   },
   "daily": {
     "title": "Lean del día",
-    "empty": "Lean todavía está preparando el feed de hoy. Vuelve más tarde 🦊",
+    "empty": "Lean todavía está preparando el feed de hoy. Vuelve más tarde",
     "explain": "¿Qué tiene de gracioso?",
     "slang": "jerga",
     "votes": "Votos: {{n}}",
@@ -1324,7 +1324,7 @@
     "practice": "Practicar este tema",
     "noTasks": "Los ejercicios de este tema llegarán pronto.",
     "check": "Ponte a prueba",
-    "score": "{{n}} de {{total}} correctas. Mis orejas aprueban 😏",
+    "score": "{{n}} de {{total}} correctas. Mis orejas aprueban",
     "usage": "Cuándo y por qué",
     "compare": "En qué se diferencia",
     "register": "Dónde suena natural",

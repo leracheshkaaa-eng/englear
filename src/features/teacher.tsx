@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Badge, Button, inputCls } from '../lib/ui'
@@ -123,7 +124,7 @@ function LessonManager({ lessons, reload }: { lessons: LessonSummary[]; reload: 
       <div className="flex flex-wrap items-center gap-3">
         <Button onClick={() => setEditing('new')}>{t('teacher.newLesson')}</Button>
         <Button variant="soft" onClick={() => setAiOpen((v) => !v)}>
-          ✨ {t('aiLesson.open')}
+          <I.IconSparkle /> {t('aiLesson.open')}
         </Button>
         {local.length > 0 && (
           <Button variant="soft" onClick={doImport}>
@@ -171,7 +172,7 @@ function LessonManager({ lessons, reload }: { lessons: LessonSummary[]; reload: 
                     navigator.clipboard?.writeText(`${location.origin}/lesson/${l.id}`)
                   }}
                 >
-                  🔗 {t('teacher.link')}
+                  <I.IconLink /> {t('teacher.link')}
                 </Button>
                 <Button
                   variant="danger"
@@ -326,7 +327,7 @@ function LessonEditor({ lesson, draft, onClose, onSaved }: { lesson: Lesson | nu
       </button>
       {draft && (
         <div className="rounded-2xl border border-plum/30 bg-lilac/40 p-4 text-sm">
-          <p className="font-semibold">✨ {t('aiLesson.reviewBanner')}</p>
+          <p className="font-semibold"><I.IconSparkle className="text-plum" /> {t('aiLesson.reviewBanner')}</p>
           {draft.dropped.length > 0 && (
             <details className="mt-1 text-mute">
               <summary className="cursor-pointer">{t('aiLesson.dropped', { n: draft.dropped.length })}</summary>
@@ -516,7 +517,7 @@ function LessonEditor({ lesson, draft, onClose, onSaved }: { lesson: Lesson | nu
           {issues.length > 0 && (
             <div className="rounded-xl border border-warn/40 bg-warn/10 p-3 text-sm text-warn">
               {issues.map((x, i) => (
-                <p key={i}>⚠ {x}</p>
+                <p key={i}><I.IconWarn /> {x}</p>
               ))}
             </div>
           )}

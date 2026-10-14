@@ -1,3 +1,4 @@
+import * as I from '../../lib/icons'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { convertToExcalidrawElements, getCommonBounds, viewportCoordsToSceneCoords } from '@excalidraw/excalidraw'
@@ -176,10 +177,10 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
                 {s === 'templates' && (
                   <div className="grid grid-cols-1 gap-2">
                     <button className={tile} onClick={() => place(() => tensesTable(free(), t('boards.tpl.tensesTitle')))}>
-                      📊 {t('boards.tpl.tenses')}
+                      <I.IconTable className="text-plum" /> {t('boards.tpl.tenses')}
                     </button>
                     <button className={tile} onClick={() => place(() => wordCards(free(), t('boards.tpl.cardsTitle')))}>
-                      🗂️ {t('boards.tpl.cards')}
+                      <I.IconGrid className="text-plum" /> {t('boards.tpl.cards')}
                     </button>
                     <button
                       className={tile}
@@ -195,7 +196,7 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
                         )
                       }
                     >
-                      🗒️ {t('boards.tpl.plan')}
+                      <I.IconList className="text-plum" /> {t('boards.tpl.plan')}
                     </button>
                   </div>
                 )}
@@ -244,7 +245,7 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
                       ))}
                     </div>
                     <button onClick={() => xapi.toggleSidebar({ name: 'default', tab: 'library', force: true })} className="pt-1 text-left text-sm text-plum hover:underline">
-                      📚 {t('boards.insert.library')}
+                      <I.IconLessons /> {t('boards.insert.library')}
                     </button>
                   </>
                 )}
@@ -282,10 +283,10 @@ export function InsertPanel({ xapi, boardId, onInserted, onClose }: { xapi: Exca
                     />
                     <div className="flex flex-wrap gap-2">
                       <Button variant="soft" onClick={() => fileInput.current?.click()} disabled={busy === 'audio'}>
-                        📁 {t('boards.insert.uploadAudio')}
+                        <I.IconUpload /> {t('boards.insert.uploadAudio')}
                       </Button>
                       <Button variant={recording ? 'danger' : 'soft'} onClick={toggleRecord} disabled={busy === 'audio' && !recording}>
-                        {recording ? `⏹ ${t('boards.insert.stop')}` : `🎙️ ${t('boards.insert.record')}`}
+                        {recording ? <><I.IconStop /> {t('boards.insert.stop')}</> : <><I.IconMic /> {t('boards.insert.record')}</>}
                       </Button>
                     </div>
                     {busy === 'audio' && <p className="text-xs text-mute">{t('boards.status.saving')}</p>}

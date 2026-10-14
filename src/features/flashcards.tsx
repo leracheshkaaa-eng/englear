@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Badge, Button, SpeakerButton, inputCls } from '../lib/ui'
@@ -263,7 +264,7 @@ function TopicSetup({ selection, onBack }: { selection: Selection; onBack: () =>
                   {status === 'done' && <Badge>✓ {t('flashcards.done')}</Badge>}
                   {status === 'current' && <span className="text-sm font-semibold text-plum">{t('progress.inProgress')} →</span>}
                   {status === 'open' && <span className="text-sm text-mute">{t('flashcards.start')} →</span>}
-                  {status === 'locked' && <span className="text-sm text-mute">🔒 {t('flashcards.locked')}</span>}
+                  {status === 'locked' && <span className="text-sm text-mute"><I.IconLock /> {t('flashcards.locked')}</span>}
                 </button>
               )
             })}
@@ -555,7 +556,7 @@ function StudyPlayer({
     return (
       <div className="mx-auto max-w-md pb-24 text-center">
         {header}
-        <h3 className="font-display text-3xl font-semibold">{justFinished ? `${t('study.setPassed')} 🎉` : t('study.setPassed')}</h3>
+        <h3 className="font-display text-3xl font-semibold">{t('study.setPassed')} {justFinished && <I.IconDone className="text-plum" />}</h3>
         <p className="mt-2 text-mute">{t('study.allKnown', { count: p.total_count })}</p>
 
         {p.status === 'practice_available' && (

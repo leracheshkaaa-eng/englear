@@ -7,6 +7,7 @@ import { CEFR_LEVELS } from '../lib/config'
 import { Badge, Button, SpeakerButton } from '../lib/ui'
 import { LessonPlayer } from './lessons'
 import { LeanEmpty, LeanSays } from '../lib/lean'
+import * as I from '../lib/icons'
 import { GrammarCatalog, GrammarTopicPage } from './grammar'
 
 /* ============================================================
@@ -16,7 +17,11 @@ import { GrammarCatalog, GrammarTopicPage } from './grammar'
    Teachers also see the notes for the teacher and can open the lesson on a board.
    ============================================================ */
 
-export const STAGE_ICONS: Record<string, string> = { warmup: '☀️', presentation: '💡', tasks: '✏️', practice: '📖', production: '🗣️', homework: '🏠' }
+export const STAGE_ICONS: Record<string, I.Icon> = { warmup: I.IconSun, presentation: I.IconIdea, tasks: I.IconTasks, practice: I.IconPractice, production: I.IconSpeak, homework: I.IconHomework }
+function StageIcon({ kind }: { kind: string }) {
+  const C = STAGE_ICONS[kind] ?? I.IconTasks
+  return <C />
+}
 
 /** **bold** and line breaks — the stage texts are written this way. */
 export function RichText({ text, className = '' }: { text: string; className?: string }) {
@@ -172,7 +177,7 @@ export function StudyCatalog({ onOpen, onUpgrade, onLogin }: { onOpen: (id: stri
                   <Button onClick={onLogin}>{t('common.signIn')}</Button>
                 ) : (
                   <Button variant={left > 0 ? 'soft' : 'solid'} onClick={onUpgrade}>
-                    ✨ {t('course.getPlus')}
+                    <I.IconSparkle /> {t('course.getPlus')}
                   </Button>
                 )}
               </span>
@@ -200,14 +205,14 @@ export function StudyCatalog({ onOpen, onUpgrade, onLogin }: { onOpen: (id: stri
               </span>
               <span className="min-w-0 flex-1">
                 <span className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs text-mute">⏱ {t('course.minutes', { n: l.duration_min })}</span>
+                  <span className="text-xs text-mute"><I.IconTime /> {t('course.minutes', { n: l.duration_min })}</span>
                   {isNext && <span className="rounded-full bg-lilac px-2 py-0.5 text-xs font-semibold text-plum-deep">{t('course.upNext')}</span>}
                   {l.status === 'draft' && <span className="text-xs text-mute">· {t('teacher.draft')}</span>}
                 </span>
                 <span className="mt-0.5 block font-display text-xl font-semibold">{l.title}</span>
                 <span className="block truncate text-sm text-mute">{l.description}</span>
               </span>
-              {!isOpen && <span className="shrink-0 rounded-full bg-honey/50 px-3 py-1 text-xs font-semibold">🔒 Plus</span>}
+              {!isOpen && <span className="shrink-0 rounded-full bg-honey/50 px-3 py-1 text-xs font-semibold"><I.IconLock /> Plus</span>}
             </button>
           )
         })}
@@ -260,7 +265,7 @@ export function StudyPlayer({
           <Button variant="ghost" onClick={onBack}>
             ← {t('nav.lessons')}
           </Button>
-          {onUpgrade && <Button onClick={onUpgrade}>✨ {t('course.getPlus')}</Button>}
+          {onUpgrade && <Button onClick={onUpgrade}><I.IconSparkle /> {t('course.getPlus')}</Button>}
         </div>
       </section>
     )
@@ -312,7 +317,7 @@ export function StudyPlayer({
           )}
           {isTeacher && onOpenOnBoard && (
             <Button variant="soft" onClick={() => onOpenOnBoard(lesson)}>
-              📋 {t('course.onBoard')}
+              <I.IconBoardPlan /> {t('course.onBoard')}
             </Button>
           )}
         </div>
@@ -320,7 +325,7 @@ export function StudyPlayer({
 
       <div className="mt-2 flex flex-wrap items-center gap-2">
         <Badge>{lesson.cefr}</Badge>
-        <span className="text-sm text-mute">⏱ {t('course.minutes', { n: lesson.duration_min })}</span>
+        <span className="text-sm text-mute"><I.IconTime /> {t('course.minutes', { n: lesson.duration_min })}</span>
       </div>
       <h2 className="mt-1 font-display text-4xl font-semibold">{lesson.title}</h2>
       <p className="mt-1 text-mute">{lesson.description}</p>
@@ -335,7 +340,7 @@ export function StudyPlayer({
               i === step ? 'border-plum bg-plum text-paper' : done.has(i) ? 'border-plum/40 bg-lilac text-plum-deep' : 'border-line text-mute hover:border-lavender'
             }`}
           >
-            <span>{done.has(i) && i !== step ? '✓' : STAGE_ICONS[s.kind]}</span>
+            <span>{done.has(i) && i !== step ? '✓' : <StageIcon kind={s.kind} />}</span>
             {t(`course.stages.${s.kind}`)}
           </button>
         ))}
@@ -344,7 +349,7 @@ export function StudyPlayer({
       <div className="mt-4 rounded-3xl border border-line bg-paper p-6 sm:p-8">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h3 className="font-display text-2xl font-semibold">
-            {STAGE_ICONS[stage.kind]} {stage.title}
+            <span className="text-plum"><StageIcon kind={stage.kind} /></span> {stage.title}
           </h3>
           <span className="text-sm text-mute">{t('course.minutes', { n: stage.minutes })}</span>
         </div>
@@ -381,7 +386,7 @@ export function StudyPlayer({
                 onBack()
               }}
             >
-              {t('course.finish')} 🎉
+              {t('course.finish')} <I.IconDone />
             </Button>
           )}
         </div>

@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useRef, useState } from 'react'
 import i18n, { tKey } from '../i18n'
 import { useTranslation } from 'react-i18next'
@@ -183,7 +184,7 @@ function AudioPlayer({ segments }: { segments: { speaker: string; text: string }
     <div className="space-y-3">
       <div className="flex items-center gap-2">
         <button className={round} onClick={() => go(idx - 1)} disabled={idx === 0} title={t('practice.prevLine')} aria-label={t('practice.prevLine')}>
-          ⏮
+          <I.IconPrev />
         </button>
         <button
           className="grid h-12 w-12 place-items-center rounded-full bg-plum text-xl text-white shadow-sm hover:opacity-90"
@@ -191,10 +192,10 @@ function AudioPlayer({ segments }: { segments: { speaker: string; text: string }
           title={playing ? t('practice.pause') : t('practice.listen')}
           aria-label={playing ? t('practice.pause') : t('practice.listen')}
         >
-          {playing ? '❚❚' : '▶'}
+          {playing ? <I.IconPause /> : <I.IconPlay />}
         </button>
         <button className={round} onClick={() => go(idx + 1)} disabled={idx >= segments.length - 1} title={t('practice.nextLine')} aria-label={t('practice.nextLine')}>
-          ⏭
+          <I.IconNext />
         </button>
         <input
           type="range"

@@ -1,3 +1,4 @@
+import * as I from './lib/icons'
 import { Suspense, lazy, useCallback, useEffect, useState } from 'react'
 import { AuthProvider, useAuth } from './lib/auth'
 import * as api from './lib/api'
@@ -275,7 +276,7 @@ function Shell() {
         {view === 'player' && active && lessonBoardId && (
           <div className="mx-auto max-w-3xl px-6 pb-2 text-right">
             <Button variant="soft" onClick={() => openBoard(lessonBoardId)}>
-              📋 {t('boards.lessonBoard')}
+              <I.IconBoardPlan /> {t('boards.lessonBoard')}
             </Button>
           </div>
         )}

@@ -163,7 +163,7 @@
     "viewMistakes": "Fehler ansehen",
     "tryAgain": "Nochmal machen",
     "lean": {
-      "great": "Verdächtig gut. Ich bin stolz. Ein bisschen 😏",
+      "great": "Verdächtig gut. Ich bin stolz. Ein bisschen",
       "ok": "Gar nicht schlecht! Ein bisschen mehr Übung, dann sitzt es perfekt.",
       "oops": "Dieses Thema wehrt sich noch. Wir kriegen es — schauen wir uns die Fehler an."
     }
@@ -775,10 +775,10 @@
     "cost": {
       "plus_tutor": "Plus: heute noch {{n}} Nachrichten",
       "plus_writing": "Plus: diesen Monat noch {{n}} Prüfungen",
-      "free_day": "Heute gratis: noch {{n}} · danach {{price}} 🪙",
-      "free_week": "Diese Woche gratis: noch {{n}} · danach {{price}} 🪙",
-      "free_month": "Diesen Monat gratis: noch {{n}} · danach {{price}} 🪙",
-      "coins": "Kostet {{price}} 🪙",
+      "free_day": "Heute gratis: noch {{n}} · danach {{price}}",
+      "free_week": "Diese Woche gratis: noch {{n}} · danach {{price}}",
+      "free_month": "Diesen Monat gratis: noch {{n}} · danach {{price}}",
+      "coins": "Kostet {{price}}",
       "plus_speaking": "Plus: heute noch {{n}} Gespräche"
     },
     "errors": {
@@ -792,7 +792,7 @@
     "toShop": "Münzen oder Plus holen →",
     "newChat": "Neuer Chat",
     "untitled": "Chat",
-    "hello": "Hi{{name}}! Ich bin Lean, dein Englischlehrer 🦊",
+    "hello": "Hi{{name}}! Ich bin Lean, dein Englischlehrer",
     "helloHint": "Schreib etwas auf Englisch — oder wähle ein Thema für den Anfang:",
     "thinking": "Lean schreibt… (und kaut eine Dattel)",
     "placeholder": "Schreib eine Nachricht… (Enter — senden, Shift+Enter — neue Zeile)",
@@ -828,11 +828,11 @@
       "nextSteps": "Woran du arbeiten kannst"
     },
     "speaking": {
-      "intro": "Lass uns reden. Laut. Wähl eine Szene, drück aufs Mikro und sprich Englisch — meine Ohren sind bereit 😏",
+      "intro": "Lass uns reden. Laut. Wähl eine Szene, drück aufs Mikro und sprich Englisch — meine Ohren sind bereit",
       "start": "Gespräch starten",
       "starting": "Lean macht sich bereit…",
       "noMic": "Dein Browser kann keine Sprache erkennen. Öffne die Seite in Chrome, Edge oder Safari — oder schreib einfach.",
-      "noReport": "Noch nichts zu besprechen — du hast nichts gesagt 🙃",
+      "noReport": "Noch nichts zu besprechen — du hast nichts gesagt",
       "again": "Noch ein Gespräch",
       "replay": "Nochmal anhören",
       "over": "Die Szene ist vorbei. Hol dir deine Auswertung!",
@@ -972,7 +972,7 @@
     "generate": "Lektion erstellen",
     "generating": "Die KI schreibt und prüft… (30–60 s)",
     "costPlus": "Plus: diesen Monat noch {{n}} Lektionen",
-    "costFree": "Diesen Monat gratis: noch {{n}} · danach {{price}} 🪙",
+    "costFree": "Diesen Monat gratis: noch {{n}} · danach {{price}}",
     "teachersOnly": "Nur Lehrkräfte können Lektionen mit KI erstellen.",
     "failed": "Die Lektion konnte nicht erstellt werden. Es wurden keine Münzen abgebucht — versuch es noch einmal oder ändere die Einstellungen.",
     "reviewBanner": "Von der KI erstellt — lies jede Übung vor dem Speichern. Alles lässt sich ändern.",
@@ -1137,9 +1137,9 @@
     "planProgress": "{{done}} von {{total}} Stunden geschafft",
     "upNext": "Als Nächstes",
     "guestIntro": "Melde dich an und probiere eine ganze Stunde kostenlos aus.",
-    "trialIntro": "Eine beliebige Stunde kannst du kostenlos öffnen — such dir eine aus. Der Rest gehört zu Plus 😏",
+    "trialIntro": "Eine beliebige Stunde kannst du kostenlos öffnen — such dir eine aus. Der Rest gehört zu Plus",
     "teacherIntro": "Als Lehrkraft kannst du {{n}} Stunden deiner Wahl kostenlos öffnen. Der Rest gehört zu Plus.",
-    "noTrial": "Deine kostenlose Stunde ist schon benutzt. Alle Stunden gibt es mit Plus 😏",
+    "noTrial": "Deine kostenlose Stunde ist schon benutzt. Alle Stunden gibt es mit Plus",
     "getPlus": "Plus holen",
     "confirmUnlock": "„{{title}}“ kostenlos öffnen? Das ist deine einzige Probestunde.",
     "confirmUnlockTeacher": "„{{title}}“ kostenlos öffnen? Noch {{n}} kostenlose Stunden.",
@@ -1150,7 +1150,7 @@
   "landing": {
     "startFree": "Kostenlos starten",
     "look": "Erst mal umschauen",
-    "hi": "Hi! Ich bin Lean 👋",
+    "hi": "Hi! Ich bin Lean",
     "insideTitle": "Was drin ist",
     "f": {
       "lessons": {
@@ -1200,14 +1200,14 @@
         "a": "Wähle ein Niveau bei Stunden und Aufgaben — oder frag mich, ich helfe dir."
       }
     },
-    "finalCall": "Bereit? Los geht’s — ich bin gleich hier 🦊"
+    "finalCall": "Bereit? Los geht’s — ich bin gleich hier"
   },
   "dash": {
     "hello": {
       "morning": "Guten Morgen, {{name}}. Du bringst den Kaffee, ich das Englisch.",
       "day": "Hi, {{name}}!",
       "evening": "Guten Abend, {{name}}!",
-      "night": "Warum schlafen wir nicht, {{name}}? 🌙"
+      "night": "Warum schlafen wir nicht, {{name}}?"
     },
     "keepStreak": "{{n}} Tage am Stück — weiter so!",
     "startStreak": "Eine Stunde heute — und die Serie läuft.",
@@ -1223,16 +1223,16 @@
   },
   "interests": {
     "q": {
-      "watch": "Sag mal, was schaust du gerade? Ich verrate es niemandem 👀",
+      "watch": "Sag mal, was schaust du gerade? Ich verrate es niemandem",
       "music": "Was läuft in deinen Kopfhörern? Ehrlich, ich urteile nicht. Kaum.",
       "play": "Was spielst du – oder welchen Anime schaust du? Frage für… die Wissenschaft.",
-      "read": "Was liest du, wenn du keine Hausaufgaben machst? 📚",
+      "read": "Was liest du, wenn du keine Hausaufgaben machst?",
       "life": "Was magst du noch? Hobbys, Katzen, Sport – alles zählt."
     },
     "own": "etwas anderes…",
     "done": "Fertig",
     "skip": "Nicht jetzt",
-    "thanks": "Notiert! Jetzt kenne ich dich ein bisschen besser 😏",
+    "thanks": "Notiert! Jetzt kenne ich dich ein bisschen besser",
     "items": {
       "rap": "Rap",
       "rock": "Rock",
@@ -1264,7 +1264,7 @@
   },
   "daily": {
     "title": "Lean des Tages",
-    "empty": "Lean bereitet den heutigen Feed noch vor. Schau später vorbei 🦊",
+    "empty": "Lean bereitet den heutigen Feed noch vor. Schau später vorbei",
     "explain": "Was ist daran lustig?",
     "slang": "Slang",
     "votes": "Stimmen: {{n}}",
@@ -1324,7 +1324,7 @@
     "practice": "Dieses Thema üben",
     "noTasks": "Aufgaben zu diesem Thema kommen bald.",
     "check": "Teste dich",
-    "score": "{{n}} von {{total}} richtig. Meine Ohren sind zufrieden 😏",
+    "score": "{{n}} von {{total}} richtig. Meine Ohren sind zufrieden",
     "usage": "Wann und warum",
     "compare": "Der Unterschied",
     "register": "Wo es natürlich klingt",

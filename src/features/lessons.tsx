@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Badge, Button, TranslatableText, inputCls } from '../lib/ui'
@@ -46,7 +47,7 @@ function Verdict({ correct, explanation, answer }: { correct: boolean; explanati
               {t('player.correctAnswer')} <b>{answer}</b>
             </p>
           )}
-          {explanation && <p className="mt-1 text-ink/70">💬 {explanation}</p>}
+          {explanation && <p className="mt-1 text-ink/70"><I.IconComment className="text-plum" /> {explanation}</p>}
         </>
       )}
     </div>
@@ -173,7 +174,7 @@ export function ExerciseView({
             onClick={() => speak(ex.text)}
             className="mt-4 inline-flex items-center gap-3 rounded-2xl border border-line bg-lilac px-5 py-4 font-body font-semibold text-plum-deep transition-colors hover:bg-lavender/40"
           >
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-plum text-paper">▶</span>
+            <span className="grid h-10 w-10 place-items-center rounded-full bg-plum text-paper"><I.IconPlay /></span>
             {t('player.listen')}
           </button>
           <input
@@ -211,7 +212,7 @@ export function ExerciseView({
                   aria-label={t('player.listenLine')}
                   className="mt-0.5 shrink-0 self-start rounded-full bg-lilac px-3 py-1 text-plum-deep hover:bg-lavender/40"
                 >
-                  ▶
+                  <I.IconPlay />
                 </button>
               </div>
             )
@@ -952,7 +953,7 @@ function AnswersReview({
               {a?.checked && a.first_check_correct === false && a.is_correct && (
                 <p className="mt-1 text-xs text-mute">{t('review.fixedAfterCheck')}</p>
               )}
-              {ex.explanation && <p className="mt-1 text-sm text-ink/70">💬 {ex.explanation}</p>}
+              {ex.explanation && <p className="mt-1 text-sm text-ink/70"><I.IconComment className="text-plum" /> {ex.explanation}</p>}
             </>
           )}
         </div>

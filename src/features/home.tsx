@@ -3,6 +3,7 @@ import * as api from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { Lean, LeanSays, type LeanPose } from '../lib/lean'
 import { Button } from '../lib/ui'
+import * as I from '../lib/icons'
 import { LeanAsks, LeanDaily } from './daily'
 
 /* ============================================================
@@ -12,13 +13,13 @@ import { LeanAsks, LeanDaily } from './daily'
 
 export function Landing({ go, count }: { go: (v: string) => void; count: number }) {
   const { t } = useTranslation()
-  const features: { icon: string; key: string; view: string }[] = [
-    { icon: '📚', key: 'lessons', view: 'study' },
-    { icon: '✏️', key: 'tasks', view: 'lessons' },
-    { icon: '📖', key: 'practice', view: 'practice' },
-    { icon: '🦊', key: 'ai', view: 'login' },
-    { icon: '🖍️', key: 'boards', view: 'login' },
-    { icon: '👨‍👩‍👧', key: 'family', view: 'login' },
+  const features: { icon: I.Icon; key: string; view: string }[] = [
+    { icon: I.IconLessons, key: 'lessons', view: 'study' },
+    { icon: I.IconTasks, key: 'tasks', view: 'lessons' },
+    { icon: I.IconPractice, key: 'practice', view: 'practice' },
+    { icon: I.IconLean, key: 'ai', view: 'login' },
+    { icon: I.IconBoards, key: 'boards', view: 'login' },
+    { icon: I.IconFamily, key: 'family', view: 'login' },
   ]
   const faq = ['free', 'age', 'teacher', 'level'] as const
   return (
@@ -58,7 +59,7 @@ export function Landing({ go, count }: { go: (v: string) => void; count: number 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (
             <button key={f.key} onClick={() => go(f.view)} className="group rounded-3xl border border-line bg-paper p-6 text-left transition hover:-translate-y-0.5 hover:border-plum/40 hover:shadow-[0_16px_40px_-28px_rgba(47,42,51,0.6)]">
-              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-cream text-2xl">{f.icon}</span>
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-cream text-2xl text-plum"><f.icon /></span>
               <h3 className="mt-4 font-display text-xl font-semibold">{t(`landing.f.${f.key}.title` as 'landing.f.lessons.title')}</h3>
               <p className="mt-1.5 text-mute">{t(`landing.f.${f.key}.text` as 'landing.f.lessons.text')}</p>
             </button>
@@ -123,12 +124,12 @@ export function Dashboard({
   const pose: LeanPose = streak >= 3 ? 'happy' : part === 'night' ? 'sly' : 'neutral'
   const name = profile?.full_name ?? ''
 
-  const tiles: { icon: string; view: string; label: string }[] = [
-    { icon: '📚', view: 'study', label: t('nav.lessons') },
-    { icon: '✏️', view: 'lessons', label: t('nav.tasks') },
-    { icon: '📖', view: 'practice', label: t('nav.practice') },
-    { icon: '🃏', view: 'flashcards', label: t('nav.flashcards') },
-    { icon: '🦊', view: 'ai', label: t('nav.ai') },
+  const tiles: { icon: I.Icon; view: string; label: string }[] = [
+    { icon: I.IconLessons, view: 'study', label: t('nav.lessons') },
+    { icon: I.IconTasks, view: 'lessons', label: t('nav.tasks') },
+    { icon: I.IconPractice, view: 'practice', label: t('nav.practice') },
+    { icon: I.IconCards, view: 'flashcards', label: t('nav.flashcards') },
+    { icon: I.IconLean, view: 'ai', label: t('nav.ai') },
   ]
 
   return (
@@ -140,8 +141,8 @@ export function Dashboard({
           <span className="text-mute">{streak >= 7 ? t('dash.keepStreakLong', { n: streak }) : streak > 0 ? t('dash.keepStreak', { n: streak }) : t('dash.startStreak')}</span>
         </LeanSays>
         <div className="flex gap-3 self-center">
-          <Stat icon="🔥" value={streak} label={t('dash.streak')} />
-          <Stat icon="🪙" value={wallet.balance} label={t('dash.coins')} onClick={() => go('shop')} />
+          <Stat icon={<I.IconStreak className="text-warn" />} value={streak} label={t('dash.streak')} />
+          <Stat icon={<I.IconCoin />} value={wallet.balance} label={t('dash.coins')} onClick={() => go('shop')} />
         </div>
       </div>
 
@@ -155,7 +156,7 @@ export function Dashboard({
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {tiles.map((x) => (
           <button key={x.view} onClick={() => go(x.view)} className="rounded-2xl border border-line bg-paper p-4 text-left font-semibold transition hover:border-plum/40">
-            <span className="block text-2xl">{x.icon}</span>
+            <span className="block text-2xl text-plum"><x.icon /></span>
             <span className="mt-2 block">{x.label}</span>
           </button>
         ))}
@@ -164,7 +165,7 @@ export function Dashboard({
   )
 }
 
-function Stat({ icon, value, label, onClick }: { icon: string; value: number; label: string; onClick?: () => void }) {
+function Stat({ icon, value, label, onClick }: { icon: React.ReactNode; value: number; label: string; onClick?: () => void }) {
   return (
     <button onClick={onClick} disabled={!onClick} className="min-w-24 rounded-2xl border border-line bg-paper px-4 py-3 text-center">
       <span className="block font-display text-2xl font-semibold">

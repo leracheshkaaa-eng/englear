@@ -6,6 +6,7 @@ import * as api from '../lib/api'
 import type { CoinEntry, ShopItem, StoreProduct, Wallet } from '../lib/api'
 import { Avatar, FRAMES, PREMIUM_AVATARS, avatarLabel } from '../lib/avatars'
 import { Lean } from '../lib/lean'
+import * as I from '../lib/icons'
 
 /* ============================================================
    Coins: balance and streak in the header, the shop, the history.
@@ -22,20 +23,20 @@ export function WalletChip({ wallet, onClick }: { wallet: Wallet; onClick: () =>
       className="flex items-center gap-2 rounded-full border border-line bg-paper px-3 py-1.5 font-body text-sm font-semibold transition-colors hover:border-lavender"
     >
       <span className={streak && api.learnedToday(wallet) ? '' : 'opacity-50'} aria-label={t('shop.streakDays', { n: streak })}>
-        🔥 {streak}
+        <I.IconStreak className="text-warn" /> {streak}
       </span>
-      <span aria-label={t('shop.coins', { n: wallet.balance })}>🪙 {wallet.balance}</span>
+      <span aria-label={t('shop.coins', { n: wallet.balance })}><I.IconCoin /> {wallet.balance}</span>
     </button>
   )
 }
 
-/** "+15 🪙" after a lesson. */
+/** "+15 coins" after a lesson. */
 export function EarnedBadge({ coins }: { coins: number }) {
   const { t } = useTranslation()
   if (coins <= 0) return null
   return (
     <span className="inline-flex items-center gap-1 rounded-full bg-[rgba(214,160,23,.15)] px-3 py-1 text-sm font-semibold text-[#9a6b00]">
-      +{coins} 🪙 <span className="font-normal">{t('shop.earned')}</span>
+      +{coins} <I.IconCoin /> <span className="font-normal">{t('shop.earned')}</span>
     </span>
   )
 }
@@ -104,7 +105,7 @@ export function Shop({ wallet, onWallet }: { wallet: Wallet; onWallet: (w: Walle
   const frames = items.filter((i) => i.kind === 'frame')
   const price = (p: number) => (
     <span className="font-body font-semibold">
-      {p} 🪙
+      {p} <I.IconCoin />
     </span>
   )
   const card = 'rounded-2xl border border-line bg-paper p-4'
@@ -122,12 +123,12 @@ export function Shop({ wallet, onWallet }: { wallet: Wallet; onWallet: (w: Walle
       <div className="mt-6 grid gap-3 sm:grid-cols-3">
         <div className={card}>
           <p className="text-sm text-mute">{t('shop.balance')}</p>
-          <p className="font-display text-4xl font-semibold text-plum">🪙 {wallet.balance}</p>
+          <p className="font-display text-4xl font-semibold text-plum"><I.IconCoin /> {wallet.balance}</p>
           <p className="mt-1 text-xs text-mute">{t('shop.earnedToday', { n: wallet.earned_day === new Date().toISOString().slice(0, 10) ? wallet.earned_today : 0, limit: api.DAILY_EARN_LIMIT })}</p>
         </div>
         <div className={card}>
           <p className="text-sm text-mute">{t('shop.streak')}</p>
-          <p className="font-display text-4xl font-semibold text-plum">🔥 {streak}</p>
+          <p className="font-display text-4xl font-semibold text-plum"><I.IconStreak className="text-warn" /> {streak}</p>
           <p className="mt-1 text-xs text-mute">
             {api.learnedToday(wallet) ? t('shop.streakDone') : t('shop.streakTodo')} · {t('shop.best', { n: wallet.best_streak })}
           </p>
@@ -150,7 +151,7 @@ export function Shop({ wallet, onWallet }: { wallet: Wallet; onWallet: (w: Walle
       {freeze && (
         <div className={`${card} flex flex-wrap items-center justify-between gap-3`}>
           <div>
-            <p className="font-semibold">🧊 {t('shop.freeze')}</p>
+            <p className="font-semibold"><I.IconFreeze className="text-[#4a8fc2]" /> {t('shop.freeze')}</p>
             <p className="text-sm text-mute">{t('shop.freezeHint', { n: wallet.freezes })}</p>
           </div>
           <div className="flex items-center gap-3">
@@ -265,7 +266,7 @@ export function PriceList({ products }: { products: StoreProduct[] }) {
       <div className="grid gap-3 sm:grid-cols-3">
         {packs.map((p) => (
           <div key={p.code} className={`${card} flex flex-col items-center gap-2 text-center`}>
-            <p className="font-display text-3xl font-semibold text-plum">🪙 {p.coins}</p>
+            <p className="font-display text-3xl font-semibold text-plum"><I.IconCoin /> {p.coins}</p>
             {typeof p.data.bonus_pct === 'number' && <Badge>+{p.data.bonus_pct as number}%</Badge>}
             <p className="font-semibold">{eur(p.price_cents, i18n.language)}</p>
             <Button disabled>{t('shop.soon')}</Button>

@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { Fragment, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
@@ -159,8 +160,8 @@ export function GrammarTopicPage({
                 <ul className="mt-3 space-y-2">
                   {s.examples.map((e, j) => (
                     <li key={j} className="flex items-start gap-2 rounded-2xl bg-lilac/40 px-4 py-2">
-                      <button onClick={() => speak(plain(e.en))} className="mt-0.5 shrink-0 opacity-60 hover:opacity-100" title={t('grammar.listen')}>
-                        🔊
+                      <button onClick={() => speak(plain(e.en))} className="mt-0.5 shrink-0 text-plum opacity-60 hover:opacity-100" title={t('grammar.listen')}>
+                        <I.IconSound />
                       </button>
                       <span>
                         <span className="font-semibold">
@@ -206,12 +207,12 @@ export function GrammarTopicPage({
 
           {ex.mistakes.length > 0 && (
             <section className={card}>
-              <h3 className="mb-3 font-display text-2xl font-semibold">🚫 {t('grammar.mistakes')}</h3>
+              <h3 className="mb-3 font-display text-2xl font-semibold"><I.IconNo className="text-warn" /> {t('grammar.mistakes')}</h3>
               <div className="space-y-3">
                 {ex.mistakes.map((m, i) => (
                   <div key={i} className="rounded-2xl border border-line p-3">
-                    <p className="text-warn line-through decoration-2">❌ {plain(m.wrong)}</p>
-                    <p className="font-semibold text-[var(--color-good)]">✅ {plain(m.right)}</p>
+                    <p className="text-warn line-through decoration-2"><I.IconWrong /> {plain(m.wrong)}</p>
+                    <p className="font-semibold text-[var(--color-good)]"><I.IconRight /> {plain(m.right)}</p>
                     <p className="mt-1 text-sm text-mute">{plain(m.why)}</p>
                   </div>
                 ))}
@@ -233,7 +234,7 @@ export function GrammarTopicPage({
           {ex.check.length > 0 && <Check key={topicId} items={ex.check} />}
 
           <section className={card}>
-            <h3 className="mb-3 font-display text-2xl font-semibold">✏️ {t('grammar.practice')}</h3>
+            <h3 className="mb-3 font-display text-2xl font-semibold"><I.IconTasks className="text-plum" /> {t('grammar.practice')}</h3>
             {tasks === null && <p className="text-mute">{t('common.loading')}</p>}
             {tasks?.length === 0 && <p className="text-mute">{t('grammar.noTasks')}</p>}
             <div className="grid gap-2 sm:grid-cols-2">
@@ -274,7 +275,7 @@ function Usage({ u }: { u: NonNullable<GrammarExplanation['usage']> }) {
   const { t } = useTranslation()
   return (
     <section className="rounded-3xl border border-plum/30 bg-lilac/30 p-5">
-      <h3 className="font-display text-2xl font-semibold">🎯 {t('grammar.usage')}</h3>
+      <h3 className="font-display text-2xl font-semibold"><I.IconTarget className="text-plum" /> {t('grammar.usage')}</h3>
       <p className="mt-2 leading-relaxed">
         <Rich text={u.why} />
       </p>
@@ -286,8 +287,8 @@ function Usage({ u }: { u: NonNullable<GrammarExplanation['usage']> }) {
               <Rich text={s.text} />
             </p>
             <p className="mt-2 flex items-start gap-2 text-sm">
-              <button onClick={() => speak(plain(s.example.en))} className="shrink-0 opacity-60 hover:opacity-100" title={t('grammar.listen')}>
-                🔊
+              <button onClick={() => speak(plain(s.example.en))} className="shrink-0 text-plum opacity-60 hover:opacity-100" title={t('grammar.listen')}>
+                <I.IconSound />
               </button>
               <span>
                 <span className="font-semibold">
@@ -301,12 +302,12 @@ function Usage({ u }: { u: NonNullable<GrammarExplanation['usage']> }) {
       </div>
       {u.compare && (
         <p className="mt-4 rounded-2xl bg-paper p-4 leading-relaxed">
-          <b>⚖️ {t('grammar.compare')}:</b> <Rich text={u.compare} />
+          <b><I.IconCompare className="text-plum" /> {t('grammar.compare')}:</b> <Rich text={u.compare} />
         </p>
       )}
       {u.register && (
         <p className="mt-3 text-sm text-mute">
-          🗣️ <b>{t('grammar.register')}:</b> <Rich text={u.register} />
+          <I.IconSpeak /> <b>{t('grammar.register')}:</b> <Rich text={u.register} />
         </p>
       )}
     </section>
@@ -324,7 +325,7 @@ function Check({ items }: { items: GrammarExplanation['check'] }) {
 
   return (
     <section className="rounded-3xl border border-line bg-paper p-5">
-      <h3 className="mb-3 font-display text-2xl font-semibold">🧠 {t('grammar.check')}</h3>
+      <h3 className="mb-3 font-display text-2xl font-semibold"><I.IconBrain className="text-plum" /> {t('grammar.check')}</h3>
       <div className="space-y-4">
         {items.map((q, i) => {
           const chosen = picked[i]

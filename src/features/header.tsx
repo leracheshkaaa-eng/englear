@@ -5,6 +5,7 @@ import { useAuth } from '../lib/auth'
 import { Avatar } from '../lib/avatars'
 import { LeanLogo } from '../lib/lean'
 import { Button } from '../lib/ui'
+import * as I from '../lib/icons'
 import { WalletChip } from './shop'
 
 /* ============================================================
@@ -12,7 +13,7 @@ import { WalletChip } from './shop'
    on phones a bottom bar with the main places and a sheet with everything else.
    ============================================================ */
 
-export type NavItem = { view: string; label: string; icon: string }
+export type NavItem = { view: string; label: string; icon: I.Icon }
 
 export function Header({
   view,
@@ -31,22 +32,22 @@ export function Header({
   const [sheet, setSheet] = useState(false)
 
   const main: NavItem[] = [
-    { view: 'home', label: t('nav.home'), icon: '🏠' },
-    { view: 'study', label: t('nav.lessons'), icon: '📚' },
-    { view: 'lessons', label: t('nav.tasks'), icon: '✏️' },
-    { view: 'practice', label: t('nav.practice'), icon: '📖' },
+    { view: 'home', label: t('nav.home'), icon: I.IconHome },
+    { view: 'study', label: t('nav.lessons'), icon: I.IconLessons },
+    { view: 'lessons', label: t('nav.tasks'), icon: I.IconTasks },
+    { view: 'practice', label: t('nav.practice'), icon: I.IconPractice },
   ]
   const more: NavItem[] = userId
     ? [
-        { view: 'ai', label: t('nav.ai'), icon: '🦊' },
-        { view: 'boards', label: t('nav.boards'), icon: '🖍️' },
-        { view: 'flashcards', label: t('nav.flashcards'), icon: '🃏' },
-        { view: 'dictionary', label: t('nav.dictionary'), icon: '📕' },
-        { view: 'progress', label: t('nav.progress'), icon: '📈' },
-        ...(isTeacher ? [{ view: 'teacher', label: t('nav.teacher'), icon: '🧑‍🏫' }] : []),
-        ...(role === 'admin' ? [{ view: 'admin', label: t('nav.admin'), icon: '⚙️' }] : []),
+        { view: 'ai', label: t('nav.ai'), icon: I.IconLean },
+        { view: 'boards', label: t('nav.boards'), icon: I.IconBoards },
+        { view: 'flashcards', label: t('nav.flashcards'), icon: I.IconCards },
+        { view: 'dictionary', label: t('nav.dictionary'), icon: I.IconDictionary },
+        { view: 'progress', label: t('nav.progress'), icon: I.IconProgress },
+        ...(isTeacher ? [{ view: 'teacher', label: t('nav.teacher'), icon: I.IconTeacher }] : []),
+        ...(role === 'admin' ? [{ view: 'admin', label: t('nav.admin'), icon: I.IconSettings }] : []),
       ]
-    : [{ view: 'pricing', label: t('nav.pricing'), icon: '💶' }]
+    : [{ view: 'pricing', label: t('nav.pricing'), icon: I.IconPrice }]
 
   const pick = (v: string) => {
     setMoreOpen(false)
@@ -80,7 +81,7 @@ export function Header({
               >
                 {more.map((m) => (
                   <MenuItem key={m.view} active={view === m.view} onClick={() => pick(m.view)}>
-                    <span className="w-6 text-center">{m.icon}</span> {m.label}
+                    <span className="grid w-6 place-items-center text-plum"><m.icon /></span> {m.label}
                   </MenuItem>
                 ))}
               </Dropdown>
@@ -108,16 +109,16 @@ export function Header({
                   }
                 >
                   <p className="px-3 pt-1 pb-2 text-sm font-semibold">{profile?.full_name}</p>
-                  <MenuItem onClick={() => pick('settings')}>⚙️ {t('nav.settings')}</MenuItem>
-                  <MenuItem onClick={() => pick('shop')}>🪙 {t('shop.title')}</MenuItem>
-                  <MenuItem onClick={() => pick('progress')}>📈 {t('nav.progress')}</MenuItem>
+                  <MenuItem onClick={() => pick('settings')}><I.IconSettings className="text-plum" /> {t('nav.settings')}</MenuItem>
+                  <MenuItem onClick={() => pick('shop')}><I.IconCoin /> {t('shop.title')}</MenuItem>
+                  <MenuItem onClick={() => pick('progress')}><I.IconProgress className="text-plum" /> {t('nav.progress')}</MenuItem>
                   <MenuItem
                     onClick={() => {
                       setAccountOpen(false)
                       signOut()
                     }}
                   >
-                    🚪 {t('common.signOut')}
+                    <I.IconSignOut className="text-plum" /> {t('common.signOut')}
                   </MenuItem>
                 </Dropdown>
               </>
@@ -133,9 +134,9 @@ export function Header({
       {/* phones: bottom bar + a sheet with everything */}
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-paper/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden">
         <div className="mx-auto grid max-w-md grid-cols-5">
-          {[...main, { view: userId ? 'ai' : 'pricing', label: userId ? t('nav.aiShort') : t('nav.pricing'), icon: userId ? '🦊' : '💶' }].map((m) => (
+          {[...main, { view: userId ? 'ai' : 'pricing', label: userId ? t('nav.aiShort') : t('nav.pricing'), icon: userId ? I.IconLean : I.IconPrice }].map((m) => (
             <button key={m.view} onClick={() => pick(m.view)} className={`flex flex-col items-center gap-0.5 py-2 text-[11px] font-semibold ${view === m.view ? 'text-plum' : 'text-mute'}`}>
-              <span className="text-lg leading-none">{m.icon}</span>
+              <span className="text-xl leading-none"><m.icon /></span>
               {m.label}
             </button>
           ))}
@@ -153,7 +154,7 @@ export function Header({
             <div className="grid grid-cols-3 gap-2">
               {more.map((m) => (
                 <button key={m.view} onClick={() => pick(m.view)} className={`flex flex-col items-center gap-1 rounded-2xl border p-3 text-sm font-semibold ${view === m.view ? 'border-plum bg-lilac text-plum-deep' : 'border-line'}`}>
-                  <span className="text-2xl">{m.icon}</span>
+                  <span className="text-2xl text-plum"><m.icon /></span>
                   {m.label}
                 </button>
               ))}

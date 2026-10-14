@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
@@ -262,7 +263,7 @@ function ClassCard({
           {work.map((w) => (
             <div key={w.id} className="flex flex-wrap items-center justify-between gap-2 px-3 py-2 text-sm">
               <span>
-                {w.lesson_id ? '📘' : '🃏'} {w.title}
+                {w.lesson_id ? <I.IconTasks className="text-plum" /> : <I.IconCards className="text-plum" />} {w.title}
               </span>
               <span className="flex items-center gap-3">
                 <span className="text-xs text-mute">{w.due_at ? t('classes.due', { date: new Date(w.due_at).toLocaleDateString() }) : t('classes.noDue')}</span>
@@ -496,7 +497,7 @@ export function Homework({ onOpenLesson, onOpenSets }: { onOpenLesson: (id: stri
       <div className="rounded-2xl border border-plum/30 bg-lilac/40 p-5">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h3 className="font-display text-xl font-semibold">
-            📝 {t('classes.hw.title')} {open.length > 0 && <span className="text-plum">· {open.length}</span>}
+            <I.IconHomework className="text-plum" /> {t('classes.hw.title')} {open.length > 0 && <span className="text-plum">· {open.length}</span>}
           </h3>
           {items.length > open.length && (
             <button onClick={() => setShowDone((v) => !v)} className="text-sm text-mute hover:text-ink">
@@ -515,7 +516,7 @@ export function Homework({ onOpenLesson, onOpenSets }: { onOpenLesson: (id: stri
                 className="flex w-full flex-wrap items-center justify-between gap-2 rounded-xl bg-paper px-4 py-2.5 text-left hover:ring-2 hover:ring-lavender"
               >
                 <span className={i.done ? 'text-mute line-through' : ''}>
-                  {i.kind === 'lesson' ? '📘' : '🃏'} {i.title}
+                  {i.kind === 'lesson' ? <I.IconTasks className="text-plum" /> : <I.IconCards className="text-plum" />} {i.title}
                   {i.teacher && <span className="ml-2 text-xs text-mute">{t('classes.hw.from', { name: i.teacher })}</span>}
                 </span>
                 <span className={`text-xs ${late ? 'font-semibold text-warn' : 'text-mute'}`}>

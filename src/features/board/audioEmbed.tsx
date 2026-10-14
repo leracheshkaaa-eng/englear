@@ -1,3 +1,4 @@
+import * as I from '../../lib/icons'
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 
@@ -25,7 +26,7 @@ export function AudioPlayerCard({ boardId, fileId, name }: { boardId: string; fi
   return (
     <div className="flex h-full items-center p-2">
       <div className="flex w-full items-center gap-3 rounded-2xl border border-line bg-paper px-4 py-3">
-        <span className="text-2xl">🎧</span>
+        <span className="text-2xl text-plum"><I.IconAudio /></span>
         <div className="min-w-0 flex-1">
           <p className="truncate font-body text-sm font-semibold text-ink">{name}</p>
           {src ? <audio controls src={src} className="mt-1 h-9 w-full" /> : <p className="text-xs text-mute">{failed ? '—' : '…'}</p>}

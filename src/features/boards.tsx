@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { Suspense, lazy, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
@@ -84,7 +85,7 @@ export function Boards({ openId, onOpen }: { openId: string | null; onOpen: (id:
             <option value="">{t('boards.allFolders')}</option>
             {folders.map((f) => (
               <option key={f} value={f}>
-                📁 {f}
+                <I.IconFolder /> {f}
               </option>
             ))}
           </select>
@@ -98,7 +99,7 @@ export function Boards({ openId, onOpen }: { openId: string | null; onOpen: (id:
               <p className="font-display text-lg font-semibold">{b.title || t('boards.untitled')}</p>
               <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-mute">
                 <Badge>{t(`boards.kinds.${b.kind}`)}</Badge>
-                {b.folder && <span>📁 {b.folder}</span>}
+                {b.folder && <span><I.IconFolder /> {b.folder}</span>}
                 <span>{new Date(b.updated_at).toLocaleDateString()}</span>
               </div>
             </button>

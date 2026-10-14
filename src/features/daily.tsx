@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
@@ -66,7 +67,7 @@ export function LeanAsks() {
               onClick={() => setPicked((p) => (on ? p.filter((x) => x !== it.key) : [...p, it.key]))}
               className={`rounded-full border px-3 py-1.5 text-sm font-semibold transition ${on ? 'border-plum bg-plum text-paper' : 'border-line bg-paper hover:border-lavender'}`}
             >
-              {it.emoji} {it.name ?? t(`interests.items.${it.key}` as 'interests.items.anime')}
+              {it.name ?? t(`interests.items.${it.key}` as 'interests.items.anime')}
             </button>
           )
         })}
@@ -135,7 +136,7 @@ export function MemeCard({ m }: { m: DailyMeme }) {
   const caption = 'font-display text-[22px] font-bold uppercase leading-tight tracking-wide text-paper [text-shadow:0_2px_0_#2f2a33,0_-2px_0_#2f2a33,2px_0_0_#2f2a33,-2px_0_0_#2f2a33]'
   return (
     <div className={`${card} flex flex-col`}>
-      <p className="mb-3 text-sm font-semibold text-mute">😂 {t('daily.kinds.meme')}</p>
+      <p className="mb-3 text-sm font-semibold text-mute"><I.IconLaugh /> {t('daily.kinds.meme')}</p>
       <div className="relative flex min-h-64 flex-1 flex-col items-center justify-between overflow-hidden rounded-2xl bg-gradient-to-b from-mist via-cream to-blush px-4 py-4 text-center">
         <p className={caption}>{m.top}</p>
         <Lean pose={pose} size={150} className="my-2" />
@@ -143,7 +144,7 @@ export function MemeCard({ m }: { m: DailyMeme }) {
       </div>
       {m.note && (
         <button onClick={() => setOpen((v) => !v)} className="mt-3 text-left text-sm text-plum hover:underline">
-          {open ? m.note : `💡 ${t('daily.explain')}`}
+          {open ? m.note : <><I.IconIdea /> {t('daily.explain')}</>}
         </button>
       )}
     </div>
@@ -155,7 +156,7 @@ export function WordCard({ w }: { w: DailyWord }) {
   return (
     <div className={card}>
       <p className="mb-2 flex items-center gap-2 text-sm font-semibold text-mute">
-        ✨ {t('daily.kinds.word')}
+        <I.IconSparkle /> {t('daily.kinds.word')}
         {w.slang && <span className="rounded-full bg-honey/50 px-2 py-0.5 text-xs text-ink">{t('daily.slang')}</span>}
       </p>
       <p className="font-display text-3xl font-semibold text-plum">{w.word}</p>
@@ -190,7 +191,7 @@ export function PollCard({ post, preview }: { post: DailyPost; preview?: boolean
 
   return (
     <div className={card}>
-      <p className="mb-2 text-sm font-semibold text-mute">📊 {t('daily.kinds.poll')}</p>
+      <p className="mb-2 text-sm font-semibold text-mute"><I.IconPoll /> {t('daily.kinds.poll')}</p>
       <p className="font-display text-xl font-semibold">{p.question}</p>
       <div className="mt-3 space-y-2">
         {p.options.map((o, i) => {
@@ -218,7 +219,7 @@ export function NewsCard({ n, url }: { n: DailyNews; url: string | null }) {
   return (
     <div className={card}>
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-        <p className="text-sm font-semibold text-mute">📰 {t('daily.kinds.news')}</p>
+        <p className="text-sm font-semibold text-mute"><I.IconNews /> {t('daily.kinds.news')}</p>
         <div className="flex gap-1 rounded-full border border-line p-0.5 text-xs font-semibold">
           {(['easy', 'medium', 'hard'] as const).map((l) => (
             <button key={l} onClick={() => setLevel(l)} className={`rounded-full px-3 py-1 ${level === l ? 'bg-plum text-paper' : 'text-mute'}`}>
@@ -239,7 +240,7 @@ export function NewsCard({ n, url }: { n: DailyNews; url: string | null }) {
           ))}
         </div>
       )}
-      {n.question && <p className="mt-3 rounded-2xl bg-cream px-4 py-2 text-sm">🦊 {n.question}</p>}
+      {n.question && <p className="mt-3 rounded-2xl bg-cream px-4 py-2 text-sm"><I.IconLean className="text-graphite" /> {n.question}</p>}
       {url && (
         <a href={url} target="_blank" rel="noreferrer noopener" className="mt-3 inline-block text-xs text-mute underline">
           {t('daily.source')}: {n.source_name || new URL(url).hostname}

@@ -1,3 +1,4 @@
+import * as I from '../lib/icons'
 import { Fragment, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as api from '../lib/api'
@@ -65,15 +66,22 @@ export function AiTutor({ onSpent, onShop }: { onSpent: () => void; onShop: () =
   )
 }
 
-/** "2 free messages left today · then 10 🪙" */
+/** "2 free messages left today · then 10 (coin)" — the strings end with the price, the coin icon follows */
 export function CostLine({ s, plus, kind }: { s: AiKindStatus | null; plus: boolean; kind: 'tutor' | 'writing' | 'speaking' }) {
   const { t } = useTranslation()
   if (!s) return null
   let text: string
-  if (plus && (s.plus_left ?? 0) > 0) text = t(`ai.cost.plus_${kind}`, { n: s.plus_left ?? 0 })
-  else if (s.free_left > 0) text = t(`ai.cost.free_${s.free_window}`, { n: s.free_left, price: s.price })
+  let coin = true
+  if (plus && (s.plus_left ?? 0) > 0) {
+    text = t(`ai.cost.plus_${kind}`, { n: s.plus_left ?? 0 })
+    coin = false
+  } else if (s.free_left > 0) text = t(`ai.cost.free_${s.free_window}`, { n: s.free_left, price: s.price })
   else text = t('ai.cost.coins', { price: s.price })
-  return <p className="text-xs text-mute">{text}</p>
+  return (
+    <p className="text-xs text-mute">
+      {text} {coin && <I.IconCoin />}
+    </p>
+  )
 }
 
 export function ErrorLine({ code, onShop }: { code: string; onShop: () => void }) {

@@ -1,3 +1,4 @@
+import * as I from './icons'
 import i18n from '../i18n'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { speak } from './supabase'
@@ -74,7 +75,7 @@ export function SpeakerButton({ text, className = '' }: { text: string; classNam
         playing ? 'bg-plum text-paper ring-4 ring-plum/20' : 'bg-lilac text-plum-deep hover:bg-lavender/40'
       } ${className}`}
     >
-      <span className={playing ? 'animate-pulse' : ''}>🔊</span>
+      <span className={playing ? 'animate-pulse' : ''}><I.IconSound /></span>
     </button>
   )
 }
