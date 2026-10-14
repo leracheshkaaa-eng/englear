@@ -320,7 +320,8 @@ export function practiceBoard(o: Pt, lesson: Lesson, material: MaterialLike | nu
 /* ---------------- a full lesson: stages left to right ---------------- */
 
 export type StageLike = { kind: string; title: string; minutes: number; teacher: string; body: string; examples: string[]; task_id: string | null }
-const plain = (s: string) => s.replace(/\*\*/g, '')
+// board text has no formatting: **bold** loses its stars, a ~~wrong form~~ becomes "(not: …)"
+const plain = (s: string) => s.replace(/\*\*/g, '').replace(/~~([^~]+)~~/g, '(not: $1)')
 
 /** Each stage is a frame (name with minutes); inside: the teacher's note, the text, examples and the stage's tasks/practice. */
 export function studyBoard(

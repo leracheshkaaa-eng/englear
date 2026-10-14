@@ -23,14 +23,22 @@ function StageIcon({ kind }: { kind: string }) {
   return <C />
 }
 
-/** **bold** and line breaks — the stage texts are written this way. */
+/** **bold**, ~~wrong form~~ (struck through) and line breaks — the stage texts are written this way. */
 export function RichText({ text, className = '' }: { text: string; className?: string }) {
   return (
     <div className={className}>
       {text.split('\n').map((line, i) => (
         <p key={i} className={line.trim() ? 'my-1' : 'h-2'}>
-          {line.split(/(\*\*[^*]+\*\*)/g).map((part, j) =>
-            part.startsWith('**') && part.endsWith('**') ? <b key={j}>{part.slice(2, -2)}</b> : <Fragment key={j}>{part}</Fragment>,
+          {line.split(/(\*\*[^*]+\*\*|~~[^~]+~~)/g).map((part, j) =>
+            part.startsWith('**') && part.endsWith('**') ? (
+              <b key={j}>{part.slice(2, -2)}</b>
+            ) : part.startsWith('~~') && part.endsWith('~~') ? (
+              <s key={j} className="text-warn decoration-2">
+                {part.slice(2, -2)}
+              </s>
+            ) : (
+              <Fragment key={j}>{part}</Fragment>
+            ),
           )}
         </p>
       ))}
