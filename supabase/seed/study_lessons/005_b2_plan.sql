@@ -1,0 +1,187 @@
+-- B2 plan: 7 lessons (library, published). Written by hand; each lesson uses library tasks and practice.
+-- Idempotent by title; position = order in the B2 plan.
+insert into public.study_lessons (author_id, scope, status, title, description, cefr, topic, duration_min, source, position, content)
+select (select id from public.profiles where role = 'admin' order by created_at limit 1), 'library', 'published', v.title, v.description, 'B2', v.topic, v.duration, 'manual', v.pos, v.content::jsonb
+from (values
+(
+  'It had already happened', 'Tell stories in the right order with the Past Perfect: what had happened before the main events.', 'Shopping', 55, 0,
+  $json${"stages": [
+    {"kind": "warmup", "title": "The worst day", "minutes": 6,
+     "teacher": "Tell a short “worst day” story with a twist: “When I got to the station, the train had already left.” Ask students for their own small disasters (missed buses, forgotten passwords, lost keys).",
+     "body": "Think of a day when everything went wrong. What had happened before you noticed?",
+     "examples": ["When I got to the cinema, the film had already started.", "I couldn’t log in because I had forgotten my password."], "task_id": null},
+    {"kind": "presentation", "title": "Past Perfect", "minutes": 12,
+     "teacher": "Draw a timeline with two past points. The Past Perfect marks the earlier one. Show that it is needed when the order is not clear from the words; with before / after the Past Simple is often enough.",
+     "body": "**Past Perfect** = had + past participle — the **earlier** of two past actions:\nWhen we arrived, the film **had** already **started**. (It started first.)\nCompare: When we arrived, the film **started**. (At that moment.)\n**Common words:** already, just, never… before, by the time, after, because.\n**Negative:** hadn’t + past participle. **Question:** **Had** you ever **been** there before?\nWith **before / after** the order is clear, so the Past Simple is fine too: After she **(had) finished**, she left.\nIt also appears after **wish** and in the **third conditional**: I wish I **had studied**.",
+     "examples": ["By the time I got home, my brother had eaten all the pizza.", "She was nervous because she had never flown before.", "I realised I had left my bag on the bus.", "Had you met him before the party?"], "task_id": null},
+    {"kind": "tasks", "title": "Practice: Past Perfect", "minutes": 12,
+     "teacher": "Students do the exercises. For each one ask: which action happened first?",
+     "body": "Choose or write the Past Perfect or the Past Simple.", "examples": [], "task_id": "c1894341-eef8-40d1-8575-cc3bb7ac5422"},
+    {"kind": "practice", "title": "Reading: A letter of complaint", "minutes": 12,
+     "teacher": "Read the letter. Students put the events in order on a timeline and find the verbs that show what had happened before the customer wrote.",
+     "body": "Read the letter and answer the questions.", "examples": [], "task_id": "522ae346-7986-46d0-ae8b-ca8b68350632"},
+    {"kind": "production", "title": "Story in reverse", "minutes": 10,
+     "teacher": "Give each pair the end of a story (“…and that’s why I was standing in the rain without shoes”). Pairs explain what had happened before, using the Past Perfect. The class votes for the most creative explanation.",
+     "body": "Read the ending of a story and explain what had happened before. Use the Past Perfect.",
+     "examples": ["I had lent my shoes to a friend who had fallen into a river…", "By then the last bus had already gone."], "task_id": null},
+    {"kind": "homework", "title": "Homework", "minutes": 3,
+     "teacher": "Explain the homework. The letter from the lesson is the model.",
+     "body": "Write a complaint email (120–150 words) about a delivery, a hotel or a concert that went wrong. Explain what had happened.",
+     "examples": [], "task_id": null}
+  ]}$json$
+),
+(
+  'If only I had known', 'Imagine a different past with the third conditional: regrets, relief and “what if” stories.', 'Culture', 55, 1,
+  $json${"stages": [
+    {"kind": "warmup", "title": "Sliding doors", "minutes": 6,
+     "teacher": "Ask: think of a small decision that changed something (choosing a school, a club, a city). What would have happened if you had chosen differently? Let students answer freely first.",
+     "body": "Think of one small decision that changed your life. What would have been different?",
+     "examples": ["If I hadn’t joined the drama club, I wouldn’t have met my best friend."], "task_id": null},
+    {"kind": "presentation", "title": "Third conditional", "minutes": 12,
+     "teacher": "Show that both parts are about the past and both did NOT happen. Practise the contractions in speech: I’d have, wouldn’t have. Briefly show a mixed conditional for a present result.",
+     "body": "**If + had + past participle, would have + past participle** — an imaginary past:\nIf I **had known** about the party, I **would have come**. (I didn’t know, I didn’t come.)\n**Negative:** If it **hadn’t rained**, we **would have played** outside.\n**Other modals:** could have, might have — If you’d asked, I **could have helped**.\n**Speech:** If I**’d** known, I**’d have** come. (I’d = I had in the first part, I would in the second.)\n**No would in the if part:** If I ~~would have~~ **had** seen you…\n**Present result (mixed):** If I had slept, I **wouldn’t be** tired now.",
+     "examples": ["If I had checked the weather, I would have taken an umbrella.", "If you hadn’t called, I would have overslept.", "We might have won if we had trained more.", "What would you have done if you had missed the flight?"], "task_id": null},
+    {"kind": "tasks", "title": "Practice: third conditional", "minutes": 12,
+     "teacher": "Students do the exercises. For each one ask: what really happened?",
+     "body": "Choose or write the third conditional.", "examples": [], "task_id": "5d68902f-5c38-4f25-8727-965d6ee6ddec"},
+    {"kind": "practice", "title": "Listening: A young chef", "minutes": 10,
+     "teacher": "Play the interview twice. Then ask students to make 3 third-conditional sentences about Leo’s life (e.g. If his grandmother hadn’t taught him…).",
+     "body": "Listen to the interview and answer the questions. Then imagine Leo’s life if things had been different.", "examples": [], "task_id": "064abf38-3959-4c4f-81bb-a6d5795343ca"},
+    {"kind": "production", "title": "Butterfly effect", "minutes": 12,
+     "teacher": "Groups build a chain from one small change in a famous story, film or real event: “If the Titanic had left one hour later, it wouldn’t have hit the iceberg. If it hadn’t hit the iceberg…”. Each group presents its chain.",
+     "body": "Change one small thing in a famous story or event and build a chain of consequences with the third conditional.",
+     "examples": ["If the alarm had gone off, she wouldn’t have missed the bus. If she hadn’t missed the bus, she wouldn’t have met…"], "task_id": null},
+    {"kind": "homework", "title": "Homework", "minutes": 3,
+     "teacher": "Explain the homework.",
+     "body": "Write about a turning point in your life (100–120 words): what happened, and what would have happened if it had gone differently.",
+     "examples": [], "task_id": null}
+  ]}$json$
+),
+(
+  'She said that…', 'Report what people said and asked: tense changes, say vs tell, reported questions and requests.', 'Daily Life', 55, 2,
+  $json${"stages": [
+    {"kind": "warmup", "title": "Broken telephone", "minutes": 6,
+     "teacher": "Play broken telephone with a sentence like “I’m going to Paris next week with my cousin.” The last student reports it: “She said she was going to Paris…”. Compare with the original.",
+     "body": "Play broken telephone. The last person reports the message: “He said that…”.",
+     "examples": ["She said she was going to Paris the next week."], "task_id": null},
+    {"kind": "presentation", "title": "Reported speech", "minutes": 12,
+     "teacher": "Show the backshift table, say vs tell, reported questions (statement word order, if for yes/no) and requests (tell / ask + to). Mention that when something is still true, speakers often keep the tense.",
+     "body": "**Tenses move one step back:**\nam / is → was · do → did · am doing → was doing · did / have done → had done · will → would · can → could\n“I**’m** tired.” → She said she **was** tired.\n**say** / **tell**: She **said** (that)… / She **told me** (that)… — tell needs a person.\n**Questions:** statement word order, no do: He asked **where I lived**. For yes / no: He asked **if** I liked the film.\n**Requests and orders:** She **told me to wait**. Mum **told me not to be** late.\n**Words change:** today → that day, tomorrow → the next day, here → there.\n**Still true?** People often keep the tense: She said she **likes** pizza.",
+     "examples": ["He said he would call me later.", "She told me she had already seen the film.", "The teacher asked if we had finished.", "My friend asked me to keep it a secret."], "task_id": null},
+    {"kind": "tasks", "title": "Practice: reported speech", "minutes": 12,
+     "teacher": "Students do the exercises. Ask them to say the original direct sentence for each answer.",
+     "body": "Report the sentences and questions.", "examples": [], "task_id": "bbe4ba57-4116-4826-823d-ae13796d9541"},
+    {"kind": "practice", "title": "Listening: Working from home", "minutes": 12,
+     "teacher": "Play the podcast twice. Students note two opinions of each guest and then report them: “Mark said that…”, “Priya told the host that…”.",
+     "body": "Listen to the podcast and answer the questions. Then report what each guest said.", "examples": [], "task_id": "daa3d23a-d819-49c9-9456-e75d73a75836"},
+    {"kind": "production", "title": "Street interview", "minutes": 10,
+     "teacher": "Pairs interview each other with 4 questions on a topic (school uniforms, the best age to get a phone, social media). Then each student reports to a new partner what they were asked and what their partner said.",
+     "body": "Interview your partner (4 questions). Then tell someone else what you asked and what your partner said.",
+     "examples": ["I asked Ira if she had a phone at ten. She told me she had got one at twelve."], "task_id": null},
+    {"kind": "homework", "title": "Homework", "minutes": 3,
+     "teacher": "Explain the homework.",
+     "body": "Write a short news report (120 words) about an interview with a person you admire — real or imagined — using reported speech.",
+     "examples": [], "task_id": null}
+  ]}$json$
+),
+(
+  'It must be true', 'Make logical guesses about the present and the past: must, might, could, can’t (have).', 'Culture', 50, 3,
+  $json${"stages": [
+    {"kind": "warmup", "title": "Whose bag is it?", "minutes": 6,
+     "teacher": "Describe the contents of a “mystery bag” (a train ticket to Lviv, a guitar pick, a cat-hair-covered hoodie, a receipt for two coffees). Students guess who the owner is.",
+     "body": "A bag has: a train ticket, a guitar pick, a hoodie with cat hair and a receipt for two coffees. Who is the owner?",
+     "examples": ["The owner must play the guitar.", "They might have a cat."], "task_id": null},
+    {"kind": "presentation", "title": "Modals of deduction", "minutes": 12,
+     "teacher": "Draw a line from 0% to 100%: can’t — might / could / may — must. Then show the past forms with have + past participle. Remind them: the opposite of must be is can’t be (not mustn’t).",
+     "body": "**Present:**\n**must** (≈ 95% sure it’s true): She’s been working all day. She **must** be tired.\n**might / could / may** (possible): He **might** be at the library.\n**can’t** (sure it’s NOT true): That **can’t** be Tom — he’s in Australia.\n**Past:** modal + **have** + past participle\nThey **must have** left — the lights are off.\nShe **might have** missed the bus.\nYou **can’t have** seen him — he was at home.\nOpposite of must be: **can’t be** (mustn’t = not allowed).",
+     "examples": ["You must be joking!", "The shop could be closed — it’s Sunday.", "He didn’t answer. He must have been asleep.", "She can’t have finished already — she only started ten minutes ago."], "task_id": null},
+    {"kind": "tasks", "title": "Practice: must, might, can’t", "minutes": 12,
+     "teacher": "Students do the exercises. Ask: how sure is the speaker?",
+     "body": "Choose the right modal of deduction.", "examples": [], "task_id": "dc1f81a2-d90f-4ff3-8d36-b844be67cca5"},
+    {"kind": "production", "title": "Mystery case", "minutes": 17,
+     "teacher": "Give groups a short, kind mystery (a famous painting disappeared from a school wall overnight; the clues: a wet umbrella, a ladder, a note “Back soon”). Groups discuss what must / might / can’t have happened and present their theory. Reveal a funny solution (it was taken to be cleaned).",
+     "body": "Solve the mystery in groups. Use must have, might have, can’t have to explain what happened.",
+     "examples": ["Someone must have used the ladder.", "It can’t have been a thief — they left a note!", "The cleaner might have taken it."], "task_id": null},
+    {"kind": "homework", "title": "Homework", "minutes": 3,
+     "teacher": "Explain the homework.",
+     "body": "Find a strange photo online (no people you know) and write 6 guesses about it with must, might, could and can’t (have).",
+     "examples": [], "task_id": null}
+  ]}$json$
+),
+(
+  'This time next year', 'Talk about the future from a point in time: will be doing (in progress) and will have done (completed).', 'Daily Life', 55, 4,
+  $json${"stages": [
+    {"kind": "warmup", "title": "Tomorrow at 9", "minutes": 6,
+     "teacher": "Ask: What will you be doing tomorrow at 9 am? At 9 pm? On Saturday at noon? Then: What will you have done by the end of today?",
+     "body": "What will you be doing tomorrow at 9 am? What will you have done by tonight?",
+     "examples": ["At 9 am I’ll be sitting in a maths lesson.", "By tonight I’ll have finished my essay… I hope."], "task_id": null},
+    {"kind": "presentation", "title": "Future Continuous and Future Perfect", "minutes": 12,
+     "teacher": "Draw a timeline with a future point. Future Continuous: an action in progress around that point. Future Perfect: completed before that point (with by). Show the polite question “Will you be using…?”.",
+     "body": "**Future Continuous** — will be + -ing: an action **in progress** at a future moment:\nThis time tomorrow I**’ll be lying** on the beach.\nPolite questions about plans: **Will** you **be using** the laptop tonight?\n\n**Future Perfect** — will have + past participle: **completed before** a future moment:\nBy 2030 scientists **will have found** a cure.\nBy the end of the month I**’ll have read** ten books.\n**Key words:** by (+ time), by the time, this time next…, in two years.\n**Compare:** At 9 I’ll be working (in progress) / By 9 I’ll have finished (done) / I’ll start at 9 (simple future).",
+     "examples": ["Don’t call at eight — we’ll be having dinner.", "In two years I’ll have graduated.", "Will you be going past the shop later?", "By the time you arrive, the film will have started."], "task_id": null},
+    {"kind": "tasks", "title": "Practice: will be doing / will have done", "minutes": 12,
+     "teacher": "Students do the exercises. Ask: in progress or completed?",
+     "body": "Choose the Future Continuous or the Future Perfect.", "examples": [], "task_id": "a1ffdba6-92d5-4c4e-9cb1-45f86f803bbf"},
+    {"kind": "practice", "title": "Reading: Is the four-day week the future?", "minutes": 12,
+     "teacher": "Read the article. Then ask students to predict: By 2035, how many companies will have moved to a four-day week? What will people be doing on their free day?",
+     "body": "Read the article and answer the questions. Then make two predictions about work in 2035.", "examples": [], "task_id": "4801e114-8d82-4a19-ab95-41ed3563eb9c"},
+    {"kind": "production", "title": "My life in 10 years", "minutes": 10,
+     "teacher": "Students write a timeline of their imagined future and present it: what they will have done by 20, 25, 30 and what they will be doing on a normal Monday in 10 years.",
+     "body": "Present your imagined future: what you will have done by 20, 25 and 30 — and what you will be doing on a Monday morning in 10 years.",
+     "examples": ["By 25 I’ll have lived in three countries.", "In ten years I’ll be working from a café in Lisbon."], "task_id": null},
+    {"kind": "homework", "title": "Homework", "minutes": 3,
+     "teacher": "Explain the homework.",
+     "body": "Write a letter to yourself to open in five years (120 words): what you hope you will have done and what you think you will be doing.",
+     "examples": [], "task_id": null}
+  ]}$json$
+),
+(
+  'It is being done', 'Use the passive in all tenses and with modals — for news, processes and formal writing.', 'Culture', 50, 5,
+  $json${"stages": [
+    {"kind": "warmup", "title": "Headlines", "minutes": 6,
+     "teacher": "Write invented, light headlines on the board: “New skatepark being built in city centre”, “Concert tickets sold out in 3 minutes”, “Rare bird spotted in school garden”. Ask: who did these things? Why don’t the headlines say?",
+     "body": "Read the headlines. Who did these things? Why doesn’t the headline say who?",
+     "examples": ["New skatepark being built in city centre", "Tickets sold out in three minutes"], "task_id": null},
+    {"kind": "presentation", "title": "The passive in all tenses", "minutes": 12,
+     "teacher": "Build a table: each tense keeps its auxiliary and adds be + past participle. Then show modal passives and “It is said that…”. Mention the informal get-passive.",
+     "body": "**Each tense keeps its auxiliary + be + past participle:**\nPresent Continuous: A new stadium **is being built**.\nPresent Perfect: The results **haven’t been announced** yet.\nPast Continuous: The room **was being cleaned** when we arrived.\nPast Perfect: The tickets **had been sold** before we got there.\nFuture: The winners **will be announced** tomorrow.\nbe going to: The app **is going to be updated**.\n**Modals:** must / can / should **be done**: Phones **must be switched off**.\n**Reporting:** It **is said** that… / He **is thought** to be…\n**Informal:** My phone **got stolen**.",
+     "examples": ["The video has been watched a million times.", "The bridge was being repaired, so we took the long way.", "This problem can be solved easily.", "The band is said to be working on a new album."], "task_id": null},
+    {"kind": "tasks", "title": "Practice: the passive in all tenses", "minutes": 14,
+     "teacher": "Students do the exercises. For each one ask: which tense, and what is the auxiliary?",
+     "body": "Choose or write the right passive form.", "examples": [], "task_id": "9c8460b8-d5f4-44cc-b593-78cce3779de7"},
+    {"kind": "production", "title": "Our school news", "minutes": 15,
+     "teacher": "Groups write a short, fun news bulletin about their school, town or class (4–5 news items) using at least five different passive forms. They read it like TV presenters.",
+     "body": "Write a short news bulletin (4–5 items) about your school or town. Use at least five different passive forms and read it like a TV presenter.",
+     "examples": ["The canteen is being renovated and will be reopened next month.", "A new club has been started by students from 10B."], "task_id": null},
+    {"kind": "homework", "title": "Homework", "minutes": 3,
+     "teacher": "Explain the homework.",
+     "body": "Describe how something is made or done step by step (a phone, a song, a video, chocolate) in 100–120 words, using the passive.",
+     "examples": [], "task_id": null}
+  ]}$json$
+),
+(
+  'I wish I could', 'Express wishes and regrets with wish and if only: about now, about the past and about annoying habits.', 'Daily Life', 50, 6,
+  $json${"stages": [
+    {"kind": "warmup", "title": "Magic lamp", "minutes": 6,
+     "teacher": "Ask: a genie gives you three wishes, but they must be small and realistic. What do you wish? Accept any form first, then note good examples for the next stage.",
+     "body": "A genie gives you three small, realistic wishes. What are they?",
+     "examples": ["I wish I had more free time.", "I wish I could sleep until noon on Mondays."], "task_id": null},
+    {"kind": "presentation", "title": "Wish and if only", "minutes": 12,
+     "teacher": "Show the three patterns and how the tense moves back. Contrast wish with hope (real future possibilities).",
+     "body": "**About now** — wish + past: I wish I **lived** by the sea. I wish I **were** taller.\n**Abilities:** I wish I **could** speak Korean.\n**About the past (regret)** — wish + past perfect: I wish I **had gone** to the concert.\n**Annoying habits** — wish + would: I wish my neighbours **would stop** making noise.\n**If only** = a stronger wish: **If only** I had listened to you!\nNot will / can after wish: I wish I ~~can~~ **could**…\n**hope** for real future possibilities: I **hope** you win! (not I wish you win)",
+     "examples": ["I wish I knew the answer.", "She wishes she hadn’t said that.", "I wish it would stop raining.", "If only we had booked the tickets earlier!"], "task_id": null},
+    {"kind": "tasks", "title": "Practice: wish and if only", "minutes": 12,
+     "teacher": "Students do the exercises. Ask: is the wish about now, the past or a habit?",
+     "body": "Choose or write the right form after wish / if only.", "examples": [], "task_id": "0f06eda8-82de-4e32-8ddd-521c565f2264"},
+    {"kind": "production", "title": "Wishes, regrets, complaints", "minutes": 17,
+     "teacher": "Students write three anonymous notes: one wish about now, one regret about the past, one complaint about a habit (keep it kind — no real names). Mix the notes; each student reads one aloud, and the class gives advice or a reaction.",
+     "body": "Write three anonymous notes: a wish about now, a regret about the past and a complaint about an annoying habit. Then react to a classmate’s note.",
+     "examples": ["I wish I were more organised.", "I wish I hadn’t sold my old guitar.", "I wish people wouldn’t send voice messages that are five minutes long!"], "task_id": null},
+    {"kind": "homework", "title": "Homework", "minutes": 3,
+     "teacher": "Explain the homework.",
+     "body": "Write a song verse or a short poem (8–10 lines) that starts every line with “I wish…” or “If only…”. Use all three patterns.",
+     "examples": [], "task_id": null}
+  ]}$json$
+)
+) as v(title, description, topic, duration, pos, content)
+where not exists (select 1 from public.study_lessons s where s.title = v.title and s.scope = 'library');
