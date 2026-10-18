@@ -635,7 +635,7 @@ function StudyPlayer({
 }
 
 /** A flashcard: tap flips it, swiping answers it. Buttons inside (🔊) never flip or swipe it. */
-function StudyCard({
+export function StudyCard({
   item,
   flipped,
   onFlip,
@@ -648,16 +648,20 @@ function StudyCard({
 }) {
   const { t } = useTranslation()
   const [dragX, setDragX] = useState(0)
+  const [dragging, setDragging] = useState(false)
   const startX = useRef<number | null>(null)
   const dragged = useRef(false) // the pointer moved: the following click is not a tap
   const fromButton = (e: React.SyntheticEvent) => !!(e.target as HTMLElement).closest('button')
+  // a swipe counts from a third of the card's width (at most 100 px), so it works on small phones too
+  const threshold = useRef(100)
 
   function end() {
     if (startX.current === null) return
     startX.current = null
+    setDragging(false)
     const dx = dragX
     setDragX(0)
-    if (Math.abs(dx) > 100) onSwipe(dx > 0)
+    if (Math.abs(dx) > threshold.current) onSwipe(dx > 0)
   }
 
   return (
@@ -666,6 +670,10 @@ function StudyCard({
         if (fromButton(e)) return
         startX.current = e.clientX
         dragged.current = false
+        threshold.current = Math.min(100, e.currentTarget.offsetWidth / 3)
+        setDragging(true)
+        // keep getting the finger's moves even when it leaves the card
+        e.currentTarget.setPointerCapture?.(e.pointerId)
       }}
       onPointerMove={(e) => {
         if (startX.current === null) return
@@ -674,9 +682,9 @@ function StudyCard({
         setDragX(dx)
       }}
       onPointerUp={end}
-      onPointerLeave={end}
       onPointerCancel={() => {
         startX.current = null
+        setDragging(false)
         setDragX(0)
       }}
       onClick={(e) => {
@@ -686,8 +694,9 @@ function StudyCard({
         }
         onFlip()
       }}
-      style={{ transform: `translateX(${dragX}px) rotate(${dragX / 30}deg)` }}
-      className="mx-auto flex min-h-[20rem] cursor-pointer select-none flex-col items-center justify-center rounded-3xl border border-line bg-paper p-8 text-center shadow-[0_16px_40px_-24px_rgba(60,42,112,0.5)] transition-transform"
+      // pan-y: on phones the browser keeps vertical scrolling, horizontal moves are our swipe
+      style={{ transform: `translateX(${dragX}px) rotate(${dragX / 30}deg)`, touchAction: 'pan-y' }}
+      className={`mx-auto flex min-h-[20rem] cursor-pointer select-none flex-col items-center justify-center rounded-3xl border border-line bg-paper p-8 text-center shadow-[0_16px_40px_-24px_rgba(60,42,112,0.5)] ${dragging ? '' : 'transition-transform'}`}
     >
       {!flipped ? (
         <>

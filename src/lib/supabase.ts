@@ -57,10 +57,50 @@ let playSeq = 0 // only the latest click may start playing
 
 let speed = 1 // listening player: 0.75× / 1× / 1.25×, on top of TTS_RATE
 
+/* Phones (iOS Safari above all) allow sound only from a tap. Finding the right file takes a
+   moment, so the tap would be "used up" before play(). The fix: one shared <audio> element and
+   the browser voice are unlocked during the first tap anywhere (and during every speak()),
+   after which they may play later too. */
+const SILENT_WAV = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA='
+let sharedAudio: HTMLAudioElement | null = null
+let unlocked = false
+function audioElement(): HTMLAudioElement {
+  if (!sharedAudio) sharedAudio = new Audio()
+  return sharedAudio
+}
+function unlockAudio() {
+  if (unlocked || typeof window === 'undefined') return
+  unlocked = true
+  try {
+    const a = audioElement()
+    a.src = SILENT_WAV
+    a.play().catch(() => (unlocked = false)) // still blocked: try again on the next tap
+  } catch {
+    unlocked = false
+  }
+  if ('speechSynthesis' in window) {
+    try {
+      const u = new SpeechSynthesisUtterance(' ')
+      u.volume = 0
+      speechSynthesis.speak(u)
+    } catch {
+      // no browser voice: nothing to unlock
+    }
+  }
+}
+if (typeof window !== 'undefined') {
+  const onFirstTap = () => {
+    unlockAudio()
+    if (unlocked) for (const ev of ['pointerdown', 'touchend', 'keydown']) window.removeEventListener(ev, onFirstTap, true)
+  }
+  for (const ev of ['pointerdown', 'touchend', 'keydown']) window.addEventListener(ev, onFirstTap, true)
+}
+
 /** Speak English text. `onEnd` fires once when playback ends, fails or is replaced. `rate` = speed, 1 is normal. */
 export function speak(text: string, onEnd?: () => void, rate = 1) {
   speed = rate
   if (typeof window === 'undefined') return onEnd?.()
+  unlockAudio() // we are inside the tap here
   const clean = text.trim().replace(/\s+/g, ' ')
   if (!clean) return onEnd?.()
   stopSpeech()
@@ -113,7 +153,10 @@ export function stopSpeaking() {
 }
 
 function stopSpeech() {
-  currentAudio?.pause()
+  if (currentAudio) {
+    currentAudio.onended = null
+    currentAudio.pause()
+  }
   currentAudio = null
   if ('speechSynthesis' in window && (speechSynthesis.speaking || speechSynthesis.pending)) speechSynthesis.cancel()
   currentEnd?.()
@@ -140,10 +183,15 @@ async function playCloud(text: string, seq: number, onEnd: () => void) {
 
 async function playUrl(url: string, seq: number, onEnd: () => void) {
   if (seq !== playSeq) return onEnd()
-  const audio = new Audio(url)
+  // always the same (unlocked) element: a new Audio() would need a fresh tap on phones
+  const audio = audioElement()
+  audio.onended = null
+  audio.pause()
+  audio.src = url
   audio.playbackRate = speed
   currentAudio = audio
   await audio.play() // rejects if the file does not exist
+  audio.playbackRate = speed // some browsers reset it when a new source loads
   audio.onended = onEnd
   if (seq !== playSeq) {
     audio.pause() // a newer click won while this was loading
