@@ -1,0 +1,1082 @@
+{
+  "package": "ielts-phrases",
+  "kind": "words",
+  "description": "IELTS: phrases for Speaking and academic collocations for Writing (hand-written).",
+  "words": [
+    {
+      "word": "to some extent",
+      "part_of_speech": "phrase",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/tə sʌm ɪkˈstent/",
+      "definition": "Partly, but not completely.",
+      "examples": [
+        "I agree with that idea to some extent."
+      ],
+      "translations": {
+        "uk": "певною мірою",
+        "de": "bis zu einem gewissen Grad",
+        "fr": "dans une certaine mesure",
+        "es": "hasta cierto punto",
+        "it": "in una certa misura",
+        "pt": "até certo ponto",
+        "pl": "do pewnego stopnia",
+        "ru": "в некоторой степени",
+        "zh": "在某种程度上",
+        "ja": "ある程度は"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "generally speaking",
+      "part_of_speech": "phrase",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/ˈdʒenrəli ˈspiːkɪŋ/",
+      "definition": "Used when you describe what is usually true.",
+      "examples": [
+        "Generally speaking, people in my city are very friendly."
+      ],
+      "translations": {
+        "uk": "загалом",
+        "de": "im Allgemeinen",
+        "fr": "en général",
+        "es": "en términos generales",
+        "it": "in generale",
+        "pt": "de modo geral",
+        "pl": "ogólnie rzecz biorąc",
+        "ru": "вообще говоря",
+        "zh": "一般来说",
+        "ja": "一般的に言えば"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "when it comes to",
+      "part_of_speech": "phrase",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/wen ɪt kʌmz tuː/",
+      "definition": "Used to introduce the topic you are going to talk about.",
+      "examples": [
+        "When it comes to music, I listen to almost everything."
+      ],
+      "translations": {
+        "uk": "коли йдеться про",
+        "de": "wenn es um … geht",
+        "fr": "quand il s'agit de",
+        "es": "en lo que se refiere a",
+        "it": "quando si tratta di",
+        "pt": "quando se trata de",
+        "pl": "jeśli chodzi o",
+        "ru": "когда речь идёт о",
+        "zh": "说到",
+        "ja": "〜のことになると"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "I'm a big fan of",
+      "part_of_speech": "phrase",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/aɪm ə bɪɡ fæn əv/",
+      "definition": "Used to say that you like something very much.",
+      "examples": [
+        "I'm a big fan of Japanese food."
+      ],
+      "translations": {
+        "uk": "я великий шанувальник",
+        "de": "ich bin ein großer Fan von",
+        "fr": "je suis un grand fan de",
+        "es": "soy muy fan de",
+        "it": "sono un grande fan di",
+        "pt": "sou muito fã de",
+        "pl": "jestem wielkim fanem",
+        "ru": "я большой поклонник",
+        "zh": "我是…的超级粉丝",
+        "ja": "〜の大ファンです"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "not my cup of tea",
+      "part_of_speech": "idiom",
+      "cefr": "B2",
+      "topic": "Idioms",
+      "ipa": "/nɑːt maɪ kʌp əv tiː/",
+      "definition": "Something you do not like or are not interested in.",
+      "examples": [
+        "Horror films are not my cup of tea."
+      ],
+      "translations": {
+        "uk": "не моє",
+        "de": "nicht mein Ding",
+        "fr": "ce n'est pas ma tasse de thé",
+        "es": "no es lo mío",
+        "it": "non fa per me",
+        "pt": "não é a minha praia",
+        "pl": "nie moja bajka",
+        "ru": "не моё",
+        "zh": "不是我喜欢的",
+        "ja": "私の好みではない"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "I'm not really into",
+      "part_of_speech": "phrase",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/aɪm nɑːt ˈrɪli ˈɪntuː/",
+      "definition": "Used to say that you are not very interested in something.",
+      "examples": [
+        "I'm not really into sport, but I like hiking."
+      ],
+      "translations": {
+        "uk": "мене не дуже захоплює",
+        "de": "ich stehe nicht wirklich auf",
+        "fr": "je ne suis pas trop fan de",
+        "es": "no me va mucho",
+        "it": "non mi interessa molto",
+        "pt": "não curto muito",
+        "pl": "nie bardzo mnie interesuje",
+        "ru": "я не особо увлекаюсь",
+        "zh": "我不太喜欢",
+        "ja": "〜にはあまり興味がない"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "in my experience",
+      "part_of_speech": "phrase",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/ɪn maɪ ɪkˈspɪriəns/",
+      "definition": "Used to say that your opinion comes from what has happened to you.",
+      "examples": [
+        "In my experience, learning a language takes patience."
+      ],
+      "translations": {
+        "uk": "з мого досвіду",
+        "de": "meiner Erfahrung nach",
+        "fr": "d'après mon expérience",
+        "es": "según mi experiencia",
+        "it": "secondo la mia esperienza",
+        "pt": "pela minha experiência",
+        "pl": "z mojego doświadczenia",
+        "ru": "по моему опыту",
+        "zh": "根据我的经验",
+        "ja": "私の経験では"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "as I see it",
+      "part_of_speech": "phrase",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/æz aɪ siː ɪt/",
+      "definition": "In my opinion.",
+      "examples": [
+        "As I see it, public transport should be free for students."
+      ],
+      "translations": {
+        "uk": "на мою думку",
+        "de": "meiner Ansicht nach",
+        "fr": "à mon avis",
+        "es": "tal como yo lo veo",
+        "it": "per come la vedo io",
+        "pt": "a meu ver",
+        "pl": "moim zdaniem",
+        "ru": "как я это вижу",
+        "zh": "在我看来",
+        "ja": "私の見方では"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "that's a tricky question",
+      "part_of_speech": "phrase",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/ðæts ə ˈtrɪki ˈkwestʃən/",
+      "definition": "Used to get time to think when a question is difficult.",
+      "examples": [
+        "That's a tricky question, but I think I'd choose the beach."
+      ],
+      "translations": {
+        "uk": "це складне питання",
+        "de": "das ist eine knifflige Frage",
+        "fr": "c'est une question délicate",
+        "es": "es una pregunta difícil",
+        "it": "è una domanda difficile",
+        "pt": "essa é uma pergunta difícil",
+        "pl": "to trudne pytanie",
+        "ru": "это непростой вопрос",
+        "zh": "这是个难题",
+        "ja": "難しい質問ですね"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "let me think",
+      "part_of_speech": "phrase",
+      "cefr": "A2",
+      "topic": "Daily Life",
+      "ipa": "/let mi θɪŋk/",
+      "definition": "Used when you need a moment to find an answer.",
+      "examples": [
+        "Let me think… I'd say about five times a year."
+      ],
+      "translations": {
+        "uk": "дайте подумати",
+        "de": "lass mich überlegen",
+        "fr": "laissez-moi réfléchir",
+        "es": "déjame pensar",
+        "it": "fammi pensare",
+        "pt": "deixe-me pensar",
+        "pl": "niech pomyślę",
+        "ru": "дайте подумать",
+        "zh": "让我想想",
+        "ja": "ええと、考えさせてください"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "it goes without saying",
+      "part_of_speech": "phrase",
+      "cefr": "C1",
+      "topic": "Daily Life",
+      "ipa": "/ɪt ɡoʊz wɪˈθaʊt ˈseɪɪŋ/",
+      "definition": "Used to say that something is so obvious that you do not really need to say it.",
+      "examples": [
+        "It goes without saying that family is important to me."
+      ],
+      "translations": {
+        "uk": "само собою зрозуміло",
+        "de": "es versteht sich von selbst",
+        "fr": "il va sans dire",
+        "es": "ni que decir tiene",
+        "it": "va da sé",
+        "pt": "nem é preciso dizer",
+        "pl": "to oczywiste",
+        "ru": "само собой разумеется",
+        "zh": "不用说",
+        "ja": "言うまでもなく"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "for the most part",
+      "part_of_speech": "phrase",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/fɔːr ðə moʊst pɑːrt/",
+      "definition": "Mostly; in most cases.",
+      "examples": [
+        "For the most part, I enjoyed my school years."
+      ],
+      "translations": {
+        "uk": "здебільшого",
+        "de": "größtenteils",
+        "fr": "pour la plupart",
+        "es": "en su mayor parte",
+        "it": "per la maggior parte",
+        "pt": "na maior parte",
+        "pl": "w większości",
+        "ru": "по большей части",
+        "zh": "在很大程度上",
+        "ja": "大部分は"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "more often than not",
+      "part_of_speech": "phrase",
+      "cefr": "C1",
+      "topic": "Daily Life",
+      "ipa": "/mɔːr ˈɔːfən ðæn nɑːt/",
+      "definition": "Usually; more than half of the time.",
+      "examples": [
+        "More often than not, I cook dinner myself."
+      ],
+      "translations": {
+        "uk": "найчастіше",
+        "de": "meistens",
+        "fr": "le plus souvent",
+        "es": "la mayoría de las veces",
+        "it": "il più delle volte",
+        "pt": "na maioria das vezes",
+        "pl": "najczęściej",
+        "ru": "чаще всего",
+        "zh": "多半",
+        "ja": "たいていは"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "all things considered",
+      "part_of_speech": "phrase",
+      "cefr": "C1",
+      "topic": "Daily Life",
+      "ipa": "/ɔːl θɪŋz kənˈsɪdərd/",
+      "definition": "After thinking about all the facts.",
+      "examples": [
+        "All things considered, it was a great trip."
+      ],
+      "translations": {
+        "uk": "зваживши все",
+        "de": "alles in allem",
+        "fr": "tout bien considéré",
+        "es": "bien pensado",
+        "it": "tutto sommato",
+        "pt": "pensando bem",
+        "pl": "biorąc wszystko pod uwagę",
+        "ru": "принимая всё во внимание",
+        "zh": "总的来说",
+        "ja": "総合的に見て"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "I'd say",
+      "part_of_speech": "phrase",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/aɪd seɪ/",
+      "definition": "Used to give an opinion or a guess in a polite way.",
+      "examples": [
+        "I'd say I spend about two hours a day online."
+      ],
+      "translations": {
+        "uk": "я б сказав",
+        "de": "ich würde sagen",
+        "fr": "je dirais",
+        "es": "yo diría",
+        "it": "direi",
+        "pt": "eu diria",
+        "pl": "powiedziałbym",
+        "ru": "я бы сказал",
+        "zh": "我会说",
+        "ja": "〜だと思います"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "off the top of my head",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Idioms",
+      "ipa": "/ɔːf ðə tɑːp əv maɪ hed/",
+      "definition": "Without thinking carefully or checking the facts.",
+      "examples": [
+        "Off the top of my head, I can name three famous painters."
+      ],
+      "translations": {
+        "uk": "навскидку",
+        "de": "aus dem Stegreif",
+        "fr": "de mémoire",
+        "es": "así de pronto",
+        "it": "così su due piedi",
+        "pt": "de cabeça",
+        "pl": "tak na szybko",
+        "ru": "навскидку",
+        "zh": "我随口说",
+        "ja": "ぱっと思いつくのは"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "these days",
+      "part_of_speech": "phrase",
+      "cefr": "A2",
+      "topic": "Time",
+      "ipa": "/ðiːz deɪz/",
+      "definition": "At the present time, compared with the past.",
+      "examples": [
+        "These days, most people pay by card."
+      ],
+      "translations": {
+        "uk": "нині",
+        "de": "heutzutage",
+        "fr": "de nos jours",
+        "es": "hoy en día",
+        "it": "oggigiorno",
+        "pt": "hoje em dia",
+        "pl": "obecnie",
+        "ru": "в наши дни",
+        "zh": "如今",
+        "ja": "最近は"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "if I'm not mistaken",
+      "part_of_speech": "phrase",
+      "cefr": "B2",
+      "topic": "Daily Life",
+      "ipa": "/ɪf aɪm nɑːt mɪˈsteɪkən/",
+      "definition": "Used when you think something is true but are not completely sure.",
+      "examples": [
+        "If I'm not mistaken, the festival takes place in July."
+      ],
+      "translations": {
+        "uk": "якщо я не помиляюся",
+        "de": "wenn ich mich nicht irre",
+        "fr": "si je ne me trompe pas",
+        "es": "si no me equivoco",
+        "it": "se non sbaglio",
+        "pt": "se não me engano",
+        "pl": "jeśli się nie mylę",
+        "ru": "если я не ошибаюсь",
+        "zh": "如果我没记错的话",
+        "ja": "間違っていなければ"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "I've never really thought about it",
+      "part_of_speech": "phrase",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/aɪv ˈnevər ˈrɪli θɔːt əˈbaʊt ɪt/",
+      "definition": "Used to gain time when a question is new to you.",
+      "examples": [
+        "I've never really thought about it, but I suppose I'd like to live by the sea."
+      ],
+      "translations": {
+        "uk": "я ніколи про це не думав",
+        "de": "darüber habe ich nie wirklich nachgedacht",
+        "fr": "je n'y ai jamais vraiment pensé",
+        "es": "nunca lo he pensado realmente",
+        "it": "non ci ho mai pensato davvero",
+        "pt": "nunca pensei muito nisso",
+        "pl": "nigdy się nad tym nie zastanawiałem",
+        "ru": "я никогда об этом особо не думал",
+        "zh": "我从来没真正想过这个",
+        "ja": "あまり考えたことがありません"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "the main reason is that",
+      "part_of_speech": "phrase",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/ðə meɪn ˈriːzən ɪz ðæt/",
+      "definition": "Used to give the most important reason for something.",
+      "examples": [
+        "The main reason is that I want to study abroad."
+      ],
+      "translations": {
+        "uk": "головна причина в тому, що",
+        "de": "der Hauptgrund ist, dass",
+        "fr": "la raison principale est que",
+        "es": "la razón principal es que",
+        "it": "il motivo principale è che",
+        "pt": "o principal motivo é que",
+        "pl": "głównym powodem jest to, że",
+        "ru": "главная причина в том, что",
+        "zh": "主要原因是",
+        "ja": "主な理由は〜です"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "what I like most about",
+      "part_of_speech": "phrase",
+      "cefr": "B1",
+      "topic": "Daily Life",
+      "ipa": "/wʌt aɪ laɪk moʊst əˈbaʊt/",
+      "definition": "Used to say which part of something you like best.",
+      "examples": [
+        "What I like most about my town is the old market."
+      ],
+      "translations": {
+        "uk": "що мені найбільше подобається в",
+        "de": "was mir an … am besten gefällt",
+        "fr": "ce que j'aime le plus dans",
+        "es": "lo que más me gusta de",
+        "it": "ciò che mi piace di più di",
+        "pt": "o que eu mais gosto em",
+        "pl": "to, co najbardziej lubię w",
+        "ru": "что мне больше всего нравится в",
+        "zh": "我最喜欢…的地方是",
+        "ja": "〜で一番好きなのは"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Speaking Vocabulary"
+    },
+    {
+      "word": "take into account",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/teɪk ˈɪntuː əˈkaʊnt/",
+      "definition": "To consider something when you make a decision or judgement.",
+      "examples": [
+        "The plan does not take into account the needs of older people."
+      ],
+      "translations": {
+        "uk": "враховувати",
+        "de": "berücksichtigen",
+        "fr": "tenir compte de",
+        "es": "tener en cuenta",
+        "it": "tenere conto di",
+        "pt": "levar em conta",
+        "pl": "brać pod uwagę",
+        "ru": "учитывать",
+        "zh": "考虑到",
+        "ja": "考慮に入れる"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "pose a threat",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Environment",
+      "ipa": "/poʊz ə θret/",
+      "definition": "To be a possible danger to someone or something.",
+      "examples": [
+        "Rising sea levels pose a threat to coastal cities."
+      ],
+      "translations": {
+        "uk": "становити загрозу",
+        "de": "eine Bedrohung darstellen",
+        "fr": "représenter une menace",
+        "es": "suponer una amenaza",
+        "it": "rappresentare una minaccia",
+        "pt": "representar uma ameaça",
+        "pl": "stanowić zagrożenie",
+        "ru": "представлять угрозу",
+        "zh": "构成威胁",
+        "ja": "脅威となる"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "draw a conclusion",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/drɔː ə kənˈkluːʒən/",
+      "definition": "To decide what you believe after thinking about the facts.",
+      "examples": [
+        "It is too early to draw a conclusion from these results."
+      ],
+      "translations": {
+        "uk": "робити висновок",
+        "de": "eine Schlussfolgerung ziehen",
+        "fr": "tirer une conclusion",
+        "es": "sacar una conclusión",
+        "it": "trarre una conclusione",
+        "pt": "tirar uma conclusão",
+        "pl": "wyciągać wniosek",
+        "ru": "делать вывод",
+        "zh": "得出结论",
+        "ja": "結論を出す"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "reach a consensus",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/riːtʃ ə kənˈsensəs/",
+      "definition": "To reach an agreement that most people accept.",
+      "examples": [
+        "The committee failed to reach a consensus on the budget."
+      ],
+      "translations": {
+        "uk": "дійти консенсусу",
+        "de": "einen Konsens erzielen",
+        "fr": "parvenir à un consensus",
+        "es": "llegar a un consenso",
+        "it": "raggiungere un consenso",
+        "pt": "chegar a um consenso",
+        "pl": "osiągnąć konsensus",
+        "ru": "прийти к консенсусу",
+        "zh": "达成共识",
+        "ja": "合意に達する"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "conduct research",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Science",
+      "ipa": "/kənˈdʌkt ˈriːsɝːtʃ/",
+      "definition": "To do a careful study to find new facts.",
+      "examples": [
+        "Scientists conducted research on sleep and memory."
+      ],
+      "translations": {
+        "uk": "проводити дослідження",
+        "de": "Forschung betreiben",
+        "fr": "mener des recherches",
+        "es": "realizar una investigación",
+        "it": "condurre una ricerca",
+        "pt": "realizar pesquisas",
+        "pl": "prowadzić badania",
+        "ru": "проводить исследование",
+        "zh": "开展研究",
+        "ja": "研究を行う"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "meet the needs",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/miːt ðə niːdz/",
+      "definition": "To provide what someone needs.",
+      "examples": [
+        "Schools must meet the needs of all students."
+      ],
+      "translations": {
+        "uk": "задовольняти потреби",
+        "de": "den Bedürfnissen gerecht werden",
+        "fr": "répondre aux besoins",
+        "es": "satisfacer las necesidades",
+        "it": "soddisfare le esigenze",
+        "pt": "atender às necessidades",
+        "pl": "zaspokajać potrzeby",
+        "ru": "удовлетворять потребности",
+        "zh": "满足需求",
+        "ja": "ニーズを満たす"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "bridge the gap",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/brɪdʒ ðə ɡæp/",
+      "definition": "To reduce the difference between two groups or things.",
+      "examples": [
+        "Free online courses can help bridge the gap between rich and poor students."
+      ],
+      "translations": {
+        "uk": "подолати розрив",
+        "de": "die Kluft überbrücken",
+        "fr": "combler le fossé",
+        "es": "reducir la brecha",
+        "it": "colmare il divario",
+        "pt": "reduzir a distância",
+        "pl": "zmniejszyć różnicę",
+        "ru": "сократить разрыв",
+        "zh": "弥合差距",
+        "ja": "格差を埋める"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "address an issue",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/əˈdres ən ˈɪʃuː/",
+      "definition": "To start dealing with a problem.",
+      "examples": [
+        "The government must address the issue of youth unemployment."
+      ],
+      "translations": {
+        "uk": "розв'язувати проблему",
+        "de": "ein Problem angehen",
+        "fr": "s'attaquer à un problème",
+        "es": "abordar un problema",
+        "it": "affrontare un problema",
+        "pt": "abordar uma questão",
+        "pl": "zająć się problemem",
+        "ru": "решать проблему",
+        "zh": "解决问题",
+        "ja": "問題に取り組む"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "a growing number of",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ə ˈɡroʊɪŋ ˈnʌmbər əv/",
+      "definition": "More and more people or things.",
+      "examples": [
+        "A growing number of people work from home."
+      ],
+      "translations": {
+        "uk": "дедалі більше",
+        "de": "eine wachsende Zahl von",
+        "fr": "un nombre croissant de",
+        "es": "un número creciente de",
+        "it": "un numero crescente di",
+        "pt": "um número cada vez maior de",
+        "pl": "coraz więcej",
+        "ru": "всё больше",
+        "zh": "越来越多的",
+        "ja": "ますます多くの"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "a wide range of",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ə waɪd reɪndʒ əv/",
+      "definition": "Many different kinds of things.",
+      "examples": [
+        "The library offers a wide range of books and films."
+      ],
+      "translations": {
+        "uk": "широкий вибір",
+        "de": "eine große Auswahl an",
+        "fr": "un large éventail de",
+        "es": "una amplia gama de",
+        "it": "un'ampia gamma di",
+        "pt": "uma ampla variedade de",
+        "pl": "szeroki wybór",
+        "ru": "широкий спектр",
+        "zh": "各种各样的",
+        "ja": "幅広い"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "take measures",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/teɪk ˈmeʒərz/",
+      "definition": "To do things in order to solve a problem.",
+      "examples": [
+        "Cities are taking measures to reduce traffic."
+      ],
+      "translations": {
+        "uk": "вживати заходів",
+        "de": "Maßnahmen ergreifen",
+        "fr": "prendre des mesures",
+        "es": "tomar medidas",
+        "it": "prendere provvedimenti",
+        "pt": "tomar medidas",
+        "pl": "podejmować działania",
+        "ru": "принимать меры",
+        "zh": "采取措施",
+        "ja": "対策を講じる"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "run the risk",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/rʌn ðə rɪsk/",
+      "definition": "To be in a situation where something bad could happen.",
+      "examples": [
+        "If you skip breakfast, you run the risk of feeling tired."
+      ],
+      "translations": {
+        "uk": "ризикувати",
+        "de": "Gefahr laufen",
+        "fr": "courir le risque",
+        "es": "correr el riesgo",
+        "it": "correre il rischio",
+        "pt": "correr o risco",
+        "pl": "ryzykować",
+        "ru": "рисковать",
+        "zh": "冒…的风险",
+        "ja": "〜する危険を冒す"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "place emphasis on",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/pleɪs ˈemfəsɪs ɑːn/",
+      "definition": "To give special importance to something.",
+      "examples": [
+        "Modern schools place emphasis on creativity."
+      ],
+      "translations": {
+        "uk": "робити наголос на",
+        "de": "Wert legen auf",
+        "fr": "mettre l'accent sur",
+        "es": "hacer hincapié en",
+        "it": "porre l'accento su",
+        "pt": "dar ênfase a",
+        "pl": "kłaść nacisk na",
+        "ru": "делать упор на",
+        "zh": "强调",
+        "ja": "〜を重視する"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "shed light on",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Science",
+      "ipa": "/ʃed laɪt ɑːn/",
+      "definition": "To help explain something that was not clear.",
+      "examples": [
+        "The new study sheds light on how birds navigate."
+      ],
+      "translations": {
+        "uk": "проливати світло на",
+        "de": "Licht ins Dunkel bringen",
+        "fr": "faire la lumière sur",
+        "es": "arrojar luz sobre",
+        "it": "far luce su",
+        "pt": "lançar luz sobre",
+        "pl": "rzucać światło na",
+        "ru": "проливать свет на",
+        "zh": "揭示",
+        "ja": "〜を明らかにする"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "give rise to",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Advanced Words",
+      "ipa": "/ɡɪv raɪz tuː/",
+      "definition": "To cause something to happen or exist.",
+      "examples": [
+        "The new law gave rise to many protests."
+      ],
+      "translations": {
+        "uk": "спричиняти",
+        "de": "zu etwas führen",
+        "fr": "donner lieu à",
+        "es": "dar lugar a",
+        "it": "dare origine a",
+        "pt": "dar origem a",
+        "pl": "dawać początek",
+        "ru": "порождать",
+        "zh": "引起",
+        "ja": "〜を引き起こす"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "in the long run",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Time",
+      "ipa": "/ɪn ðə lɔːŋ rʌn/",
+      "definition": "After a long period of time; in the end.",
+      "examples": [
+        "Healthy habits save money in the long run."
+      ],
+      "translations": {
+        "uk": "у довгостроковій перспективі",
+        "de": "auf lange Sicht",
+        "fr": "à long terme",
+        "es": "a la larga",
+        "it": "a lungo andare",
+        "pt": "a longo prazo",
+        "pl": "na dłuższą metę",
+        "ru": "в долгосрочной перспективе",
+        "zh": "从长远来看",
+        "ja": "長い目で見れば"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "a key factor",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Advanced Words",
+      "ipa": "/ə kiː ˈfæktər/",
+      "definition": "One of the most important things that influence a result.",
+      "examples": [
+        "Price is a key factor when people choose a phone."
+      ],
+      "translations": {
+        "uk": "ключовий чинник",
+        "de": "ein entscheidender Faktor",
+        "fr": "un facteur clé",
+        "es": "un factor clave",
+        "it": "un fattore chiave",
+        "pt": "um fator-chave",
+        "pl": "kluczowy czynnik",
+        "ru": "ключевой фактор",
+        "zh": "关键因素",
+        "ja": "重要な要因"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "widely accepted",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Science",
+      "ipa": "/ˈwaɪdli əkˈseptɪd/",
+      "definition": "Believed or agreed by most people.",
+      "examples": [
+        "It is widely accepted that exercise improves mood."
+      ],
+      "translations": {
+        "uk": "загальновизнаний",
+        "de": "weithin anerkannt",
+        "fr": "largement admis",
+        "es": "ampliamente aceptado",
+        "it": "ampiamente accettato",
+        "pt": "amplamente aceito",
+        "pl": "powszechnie akceptowany",
+        "ru": "общепринятый",
+        "zh": "被广泛接受的",
+        "ja": "広く認められている"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "strike a balance",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Daily Life",
+      "ipa": "/straɪk ə ˈbæləns/",
+      "definition": "To find a good middle point between two different things.",
+      "examples": [
+        "Students need to strike a balance between study and rest."
+      ],
+      "translations": {
+        "uk": "знайти баланс",
+        "de": "ein Gleichgewicht finden",
+        "fr": "trouver un équilibre",
+        "es": "encontrar un equilibrio",
+        "it": "trovare un equilibrio",
+        "pt": "encontrar um equilíbrio",
+        "pl": "znaleźć równowagę",
+        "ru": "найти баланс",
+        "zh": "找到平衡",
+        "ja": "バランスを取る"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "make a contribution",
+      "part_of_speech": "collocation",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/meɪk ə ˌkɑːntrɪˈbjuːʃən/",
+      "definition": "To help to achieve something together with others.",
+      "examples": [
+        "Volunteers make a huge contribution to the community."
+      ],
+      "translations": {
+        "uk": "робити внесок",
+        "de": "einen Beitrag leisten",
+        "fr": "apporter une contribution",
+        "es": "hacer una contribución",
+        "it": "dare un contributo",
+        "pt": "dar uma contribuição",
+        "pl": "wnieść wkład",
+        "ru": "вносить вклад",
+        "zh": "做出贡献",
+        "ja": "貢献する"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "gain insight into",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Education",
+      "ipa": "/ɡeɪn ˈɪnsaɪt ˈɪntuː/",
+      "definition": "To start to understand something better.",
+      "examples": [
+        "Travelling helps you gain insight into other cultures."
+      ],
+      "translations": {
+        "uk": "глибше зрозуміти",
+        "de": "Einblick gewinnen in",
+        "fr": "mieux comprendre",
+        "es": "obtener una visión de",
+        "it": "acquisire una comprensione di",
+        "pt": "obter uma compreensão de",
+        "pl": "zyskać wgląd w",
+        "ru": "получить представление о",
+        "zh": "深入了解",
+        "ja": "〜への理解を深める"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    },
+    {
+      "word": "come to terms with",
+      "part_of_speech": "collocation",
+      "cefr": "C1",
+      "topic": "Emotions",
+      "ipa": "/kʌm tə tɝːmz wɪð/",
+      "definition": "To slowly accept a sad or difficult situation.",
+      "examples": [
+        "It took her a year to come to terms with moving abroad."
+      ],
+      "translations": {
+        "uk": "змиритися з",
+        "de": "sich abfinden mit",
+        "fr": "accepter",
+        "es": "aceptar",
+        "it": "fare i conti con",
+        "pt": "aceitar",
+        "pl": "pogodzić się z",
+        "ru": "смириться с",
+        "zh": "接受（现实）",
+        "ja": "〜を受け入れる"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Academic Collocations"
+    }
+  ]
+}
