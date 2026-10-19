@@ -1,0 +1,741 @@
+{
+  "package": "practice-3",
+  "description": "Nine hand-written reading and listening practices B1–C2 for the full lessons that had no text: second conditional, passive, gerund/infinitive, deduction, passive tenses, wish, inversion, cleft sentences, subjunctive.",
+  "lessons": [
+    {
+      "kind": "practice",
+      "skill": "reading",
+      "cefr": "B1",
+      "sequence": 10,
+      "topic": "Daily Life",
+      "title": "Ask Jo: advice for teens",
+      "description": "Two readers write to an advice blog, and Jo answers with what she would do in their place.",
+      "material": {
+        "type": "blog",
+        "body": "Dear Jo,\nMy best friend always copies my homework. At first I didn't mind, but now she asks every single day, and last week our teacher noticed that our answers were the same. I don't want to lose her as a friend. What should I do?\nNina, 15\n\nDear Nina,\nIf I were you, I would talk to her before the next test. Be honest but kind: tell her that you're worried about getting into trouble. If she really is a good friend, she'll understand. You could also offer to study together — if you explained the hard parts to her, she wouldn't need to copy. And if the teacher asks you about it, tell the truth.\n\nDear Jo,\nI spend about eight hours a day on my phone. I know it's too much, but whenever I try to stop, I feel bored and I go straight back to it. My marks are getting worse.\nDan, 16\n\nDear Dan,\nYou're not alone — lots of people feel the same. If I were in your position, I wouldn't try to stop completely. Start small: turn off notifications after nine and charge your phone outside your bedroom. If you had a hobby that kept your hands busy, like drawing or skateboarding, you would reach for your phone less often. Try it for two weeks and see what happens."
+      },
+      "exercises": [
+        {
+          "type": "match",
+          "prompt": "Before you read: match the words with their meanings.",
+          "pairs": {
+            "copy": "to do the same as someone else instead of your own work",
+            "notice": "to see or realise something",
+            "notification": "a short message from an app on your phone",
+            "marks": "the results you get for school work"
+          }
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Nina's teacher saw that the two girls had the same answers.",
+          "answer": "true",
+          "explanation": "“last week our teacher noticed that our answers were the same”"
+        },
+        {
+          "type": "choice",
+          "prompt": "What is Jo's first piece of advice for Nina?",
+          "options": [
+            "Stop being friends with her.",
+            "Talk to her friend before the next test.",
+            "Tell the teacher immediately."
+          ],
+          "answer": "Talk to her friend before the next test.",
+          "explanation": "“If I were you, I would talk to her before the next test.”"
+        },
+        {
+          "type": "fill",
+          "prompt": "If you explained the hard parts to her, she ___ need to copy.",
+          "answer": "wouldn't",
+          "accept": [
+            "would not"
+          ],
+          "explanation": "“if you explained the hard parts to her, she wouldn't need to copy”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Jo tells Dan to stop using his phone completely.",
+          "answer": "false",
+          "explanation": "“I wouldn't try to stop completely. Start small”"
+        },
+        {
+          "type": "choice",
+          "prompt": "Why does Jo suggest a hobby like drawing or skateboarding?",
+          "options": [
+            "Because it would keep his hands busy.",
+            "Because it is cheaper than a phone.",
+            "Because his teacher likes it."
+          ],
+          "answer": "Because it would keep his hands busy.",
+          "explanation": "“If you had a hobby that kept your hands busy … you would reach for your phone less often.”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Dan's parents want him to use his phone less.",
+          "answer": "not_given",
+          "explanation": "Dan's letter doesn't mention his parents."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "reading",
+      "cefr": "B1",
+      "sequence": 11,
+      "topic": "Food",
+      "title": "From bean to bar: how chocolate is made",
+      "description": "A short article about the journey of chocolate, from the cacao tree to the shop.",
+      "material": {
+        "type": "article",
+        "body": "Chocolate is loved all over the world, but few people know how much work goes into a single bar.\n\nIt all starts with the cacao tree, which is grown in hot, wet countries near the equator. Most of the world's cacao is produced in West Africa, especially in Côte d'Ivoire and Ghana. The fruit, called pods, are cut from the trees by hand, because the trees are too delicate for machines.\n\nInside each pod there are around forty beans. The beans are taken out, covered with banana leaves and left for about a week. During this time they change colour and start to develop their famous taste. Then they are dried in the sun and sent to factories in other countries.\n\nIn the factory, the beans are roasted, and their shells are removed. What is left is crushed into a thick, dark paste. To make milk chocolate, sugar and milk are added. The mixture is stirred for hours until it becomes smooth, and then it is poured into moulds and cooled.\n\nChocolate was first drunk, not eaten. The Maya and the Aztecs made a bitter drink from cacao more than two thousand years ago. Solid chocolate bars were only invented in the nineteenth century."
+      },
+      "exercises": [
+        {
+          "type": "match",
+          "prompt": "Before you read: match the words with their meanings.",
+          "pairs": {
+            "pod": "the fruit of the cacao tree",
+            "roast": "to cook something in a hot oven",
+            "mould": "a container that gives something its shape",
+            "bitter": "with a strong taste that is not sweet"
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Where is most of the world's cacao produced?",
+          "options": [
+            "In South America",
+            "In West Africa",
+            "In Europe"
+          ],
+          "answer": "In West Africa",
+          "explanation": "“Most of the world's cacao is produced in West Africa”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The pods are cut from the trees by machines.",
+          "answer": "false",
+          "explanation": "“The fruit … are cut from the trees by hand”"
+        },
+        {
+          "type": "fill",
+          "prompt": "The beans are covered with banana ___ and left for about a week.",
+          "answer": "leaves",
+          "explanation": "“covered with banana leaves and left for about a week”"
+        },
+        {
+          "type": "order",
+          "prompt": "Put the steps in the factory in order.",
+          "explanation": "roasted → shells removed → crushed into a paste → poured into moulds",
+          "order": [
+            "The beans are roasted.",
+            "The shells are removed.",
+            "The beans are crushed into a paste.",
+            "The chocolate is poured into moulds."
+          ]
+        },
+        {
+          "type": "truefalse",
+          "prompt": "People drank chocolate long before chocolate bars were invented.",
+          "answer": "true",
+          "explanation": "“Chocolate was first drunk, not eaten … Solid chocolate bars were only invented in the nineteenth century.”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Dark chocolate is healthier than milk chocolate.",
+          "answer": "not_given",
+          "explanation": "The article doesn't compare how healthy they are."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "listening",
+      "cefr": "B1",
+      "sequence": 12,
+      "topic": "Culture",
+      "title": "Podcast: learning to skate at 19",
+      "description": "Lena talks about starting a new hobby later than everyone else.",
+      "material": {
+        "type": "podcast",
+        "segments": [
+          {
+            "speaker": "Host",
+            "text": "Welcome to New Hobbies. My guest today is Lena, who started skateboarding at nineteen. Lena, why did you decide to try it?"
+          },
+          {
+            "speaker": "Lena",
+            "text": "I'd always wanted to learn, but I was too scared of falling. Then last year I watched a video of a seventy-year-old woman skating, and I thought: if she can do it, so can I."
+          },
+          {
+            "speaker": "Host",
+            "text": "How did the first lesson go?"
+          },
+          {
+            "speaker": "Lena",
+            "text": "Honestly, I hated it. I kept falling, and I couldn't stop thinking about the kids watching me. But my teacher told me to keep trying, and by the third lesson I could ride without holding her hand."
+          },
+          {
+            "speaker": "Host",
+            "text": "What do you enjoy most about it now?"
+          },
+          {
+            "speaker": "Lena",
+            "text": "I enjoy learning something completely new. At work I'm good at most things, so it's nice to be a beginner again. And I love meeting people at the skatepark — I've made some great friends there."
+          },
+          {
+            "speaker": "Host",
+            "text": "Any advice for listeners who want to start?"
+          },
+          {
+            "speaker": "Lena",
+            "text": "Don't avoid trying just because you're older than everyone else. Buy good protection, find a teacher, and practise a little every day. And remember to have fun!"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "Why didn't Lena start skating earlier?",
+          "options": [
+            "She didn't have a skateboard.",
+            "She was afraid of falling.",
+            "She had no free time."
+          ],
+          "answer": "She was afraid of falling.",
+          "explanation": "“I was too scared of falling.”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "A video of an older woman made Lena decide to try.",
+          "answer": "true",
+          "explanation": "“I watched a video of a seventy-year-old woman skating”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Lena enjoyed her first lesson.",
+          "answer": "false",
+          "explanation": "“Honestly, I hated it.”"
+        },
+        {
+          "type": "fill",
+          "prompt": "My teacher told me to keep ___.",
+          "answer": "trying",
+          "explanation": "keep + -ing: “told me to keep trying”"
+        },
+        {
+          "type": "choice",
+          "prompt": "What does Lena enjoy most?",
+          "options": [
+            "Winning competitions",
+            "Learning something completely new",
+            "Filming videos"
+          ],
+          "answer": "Learning something completely new",
+          "explanation": "“I enjoy learning something completely new.”"
+        },
+        {
+          "type": "listen",
+          "text": "practise a little every day",
+          "explanation": "“practise a little every day”"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "listening",
+      "cefr": "B2",
+      "sequence": 10,
+      "topic": "Culture",
+      "title": "Dialogue: the missing painting",
+      "description": "Two students try to work out what happened to a painting that disappeared from the school hall.",
+      "material": {
+        "type": "dialogue",
+        "segments": [
+          {
+            "speaker": "Ella",
+            "text": "Have you seen the hall? The big painting of the sea isn't there any more. Someone must have taken it last night."
+          },
+          {
+            "speaker": "Sam",
+            "text": "Last night? It can't have been last night — the school was locked at six, and the alarm didn't go off."
+          },
+          {
+            "speaker": "Ella",
+            "text": "Then it must have happened this morning. Look, there's a ladder by the wall, and the floor is still wet."
+          },
+          {
+            "speaker": "Sam",
+            "text": "Wet? It might have been the cleaner. They usually wash the floor early."
+          },
+          {
+            "speaker": "Ella",
+            "text": "But why would a cleaner take a painting? That doesn't make sense. Wait — there's a note on the wall. It says, “Back soon. Mr K.”"
+          },
+          {
+            "speaker": "Sam",
+            "text": "Mr K… that must be Mr Kowalski, the art teacher. He could have taken it to his room to repair the frame. It was broken at the corner, remember?"
+          },
+          {
+            "speaker": "Ella",
+            "text": "You might be right. Or he may have sent it to be cleaned before the parents' evening. Either way, it can't have been stolen. Thieves don't usually leave notes!"
+          },
+          {
+            "speaker": "Sam",
+            "text": "True. Let's ask him at break before we start a rumour."
+          },
+          {
+            "speaker": "Ella",
+            "text": "Look, there he is, by the stairs. Mr Kowalski! Did you take the painting from the hall?"
+          },
+          {
+            "speaker": "Mr Kowalski",
+            "text": "I did, yes. I came in at seven this morning to fix the frame before it fell off the wall. Didn’t you see my note?"
+          },
+          {
+            "speaker": "Sam",
+            "text": "We did. Ella was sure that someone must have stolen it in the middle of the night."
+          },
+          {
+            "speaker": "Mr Kowalski",
+            "text": "Well, she can’t have looked very carefully at the ladder — it’s mine. The painting will be back on the wall by Friday, good as new."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "type": "truefalse",
+          "prompt": "Sam thinks the painting was taken during the night.",
+          "answer": "false",
+          "explanation": "“It can't have been last night — the school was locked at six”"
+        },
+        {
+          "type": "choice",
+          "prompt": "What clues do they find in the hall?",
+          "options": [
+            "A ladder and a wet floor",
+            "Broken glass and footprints",
+            "An open window"
+          ],
+          "answer": "A ladder and a wet floor",
+          "explanation": "“there's a ladder by the wall, and the floor is still wet”"
+        },
+        {
+          "type": "choice",
+          "prompt": "Who do they think wrote the note?",
+          "options": [
+            "The cleaner",
+            "The head teacher",
+            "The art teacher"
+          ],
+          "answer": "The art teacher",
+          "explanation": "“that must be Mr Kowalski, the art teacher”"
+        },
+        {
+          "type": "fill",
+          "prompt": "He ___ have taken it to his room to repair the frame.",
+          "answer": "could",
+          "explanation": "“He could have taken it to his room to repair the frame.”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The frame of the painting was damaged.",
+          "answer": "true",
+          "explanation": "“It was broken at the corner”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Mr Kowalski painted the picture himself.",
+          "answer": "not_given",
+          "explanation": "They don't say who painted it."
+        },
+        {
+          "type": "listen",
+          "text": "Thieves don't usually leave notes",
+          "explanation": "“Thieves don't usually leave notes!”"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "reading",
+      "cefr": "B2",
+      "sequence": 11,
+      "topic": "Technology",
+      "title": "The bridge that was printed",
+      "description": "A news article about a steel bridge made by robots with a 3D printer.",
+      "material": {
+        "type": "article",
+        "body": "A footbridge that was printed by robots has been opened to the public in a European city — and it may change the way bridges are built in the future.\n\nThe 12-metre steel bridge, which crosses one of the city's old canals, was produced by four robotic arms over six months. Instead of being made from separate parts, it was built up layer by layer from melted steel, in the same way that small plastic objects are made by home 3D printers.\n\nWhile the bridge was being printed, thousands of tiny sensors were added to its structure. These sensors are now being used to collect information about the bridge: how much it moves, how it reacts to temperature and how many people cross it every day. The data will be analysed by engineers, who hope to learn how 3D-printed metal behaves over many years.\n\nBefore it was opened, the bridge had been tested with heavy weights for several weeks to make sure it was safe. According to the designers, it is just as strong as a traditional bridge, but it uses less material and can be produced in shapes that would be impossible with traditional methods.\n\nCritics say the technology is still too slow and expensive to be used for large projects. However, supporters believe that within twenty years many smaller structures, from bus stops to playgrounds, will be printed rather than built."
+      },
+      "exercises": [
+        {
+          "type": "match",
+          "prompt": "Before you read: match the words with their meanings.",
+          "pairs": {
+            "footbridge": "a bridge for people walking, not for cars",
+            "canal": "a man-made river for boats",
+            "sensor": "a small device that measures something",
+            "layer": "one thin level of a material on top of another"
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "How long did it take to produce the bridge?",
+          "options": [
+            "Six weeks",
+            "Six months",
+            "Twelve months"
+          ],
+          "answer": "Six months",
+          "explanation": "“produced by four robotic arms over six months”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The bridge was made from many separate parts.",
+          "answer": "false",
+          "explanation": "“Instead of being made from separate parts, it was built up layer by layer”"
+        },
+        {
+          "type": "fill",
+          "prompt": "While the bridge was being printed, thousands of tiny ___ were added to its structure.",
+          "answer": "sensors",
+          "explanation": "“thousands of tiny sensors were added to its structure”"
+        },
+        {
+          "type": "choice",
+          "prompt": "What had been done before the bridge was opened?",
+          "options": [
+            "It had been tested with heavy weights.",
+            "It had been painted by artists.",
+            "It had been moved to another canal."
+          ],
+          "answer": "It had been tested with heavy weights.",
+          "explanation": "“the bridge had been tested with heavy weights for several weeks”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Critics think the technology is ready for very large projects.",
+          "answer": "false",
+          "explanation": "“still too slow and expensive to be used for large projects”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The bridge cost less than a traditional bridge.",
+          "answer": "not_given",
+          "explanation": "It uses less material, but the cost is not given."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "reading",
+      "cefr": "B2",
+      "sequence": 12,
+      "topic": "Daily Life",
+      "title": "Things I wish I'd known at fifteen",
+      "description": "A blog post in which a 24-year-old looks back at her teenage years.",
+      "material": {
+        "type": "blog",
+        "body": "Last week I found my old diary from when I was fifteen. Reading it was funny and a little painful, so I decided to write the post I wish someone had shown me back then.\n\nFirst, I wish I hadn't worried so much about what other people thought. I spent hours choosing clothes and deleting photos because I was sure everyone was judging me. In reality, everyone was far too busy worrying about themselves.\n\nSecond, I wish I had kept playing the piano. I gave up because practising felt boring, and now, at twenty-four, I'm paying for lessons and starting almost from zero. If only someone had told me that boring practice is how you get good at anything!\n\nThird, I wish I had been kinder to my parents. They weren't perfect, but they were trying. My mum still wishes I would call more often — so I've started calling her every Sunday.\n\nOf course, some things I don't regret at all. I'm glad I joined the drama club, even though I was shy, because that's where I met my best friend. And I'm glad I made mistakes, because they taught me more than any advice.\n\nSo, if you're fifteen and reading this: relax, keep practising the things you love, and call your mum."
+      },
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "What made the writer decide to write this post?",
+          "options": [
+            "A conversation with her mum",
+            "Finding her old diary",
+            "A question from a reader"
+          ],
+          "answer": "Finding her old diary",
+          "explanation": "“Last week I found my old diary from when I was fifteen.”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "At fifteen, she believed other people were judging her.",
+          "answer": "true",
+          "explanation": "“I was sure everyone was judging me”"
+        },
+        {
+          "type": "fill",
+          "prompt": "I wish I had kept playing the ___.",
+          "answer": "piano",
+          "explanation": "“I wish I had kept playing the piano.”"
+        },
+        {
+          "type": "choice",
+          "prompt": "What does her mum wish?",
+          "options": [
+            "That she would call more often",
+            "That she would play the piano again",
+            "That she would move back home"
+          ],
+          "answer": "That she would call more often",
+          "explanation": "“My mum still wishes I would call more often”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "She regrets joining the drama club.",
+          "answer": "false",
+          "explanation": "“I'm glad I joined the drama club … that's where I met my best friend.”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "She now works as a piano teacher.",
+          "answer": "not_given",
+          "explanation": "She says she is taking lessons, not teaching."
+        },
+        {
+          "type": "match",
+          "prompt": "Match each wish with what it is about.",
+          "pairs": {
+            "I wish I hadn't worried so much.": "a regret about the past",
+            "My mum wishes I would call more often.": "an annoying habit someone wants to change",
+            "If only someone had told me!": "a strong regret about the past, with if only"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "reading",
+      "cefr": "C1",
+      "sequence": 10,
+      "topic": "Travel",
+      "title": "The night the lights went out",
+      "description": "A dramatic travel story about a power cut on a mountain train.",
+      "material": {
+        "type": "story",
+        "body": "Never had I seen a sky so full of stars. It was nearly midnight, and our train was climbing slowly through the mountains when, without any warning, every light on board went out.\n\nAt first nobody spoke. Then a child started laughing, and the spell was broken. Not only had the lights gone, but the heating had stopped too, and within minutes we could see our breath. Little did we know that we would be sitting there for the next five hours.\n\nHardly had the conductor walked through the carriage when people began to ask questions. Was there an accident? Would another train come? He shrugged and smiled. “Only when the line is checked,” he said, “will we be able to move.”\n\nStrangely, those five hours turned out to be the best part of the whole trip. Strangers shared blankets, biscuits and stories. An old man taught three teenagers a card game from his childhood; a woman from Brazil sang quietly in Portuguese. Rarely do people talk to each other like that on a normal journey.\n\nNo sooner had the lights come back on than everyone returned to their phones, as if nothing had happened. But I still have the address of the old man, and every December he sends me a card with a drawing of a train under the stars."
+      },
+      "exercises": [
+        {
+          "type": "truefalse",
+          "prompt": "The power cut happened in the early evening.",
+          "answer": "false",
+          "explanation": "“It was nearly midnight”"
+        },
+        {
+          "type": "choice",
+          "prompt": "What else stopped working besides the lights?",
+          "options": [
+            "The doors",
+            "The heating",
+            "The toilets"
+          ],
+          "answer": "The heating",
+          "explanation": "“Not only had the lights gone, but the heating had stopped too”"
+        },
+        {
+          "type": "fill",
+          "prompt": "Little did we know that we would be sitting there for the next ___ hours.",
+          "answer": "five",
+          "explanation": "“we would be sitting there for the next five hours”"
+        },
+        {
+          "type": "choice",
+          "prompt": "According to the conductor, when could the train move again?",
+          "options": [
+            "When another train arrived",
+            "When the line had been checked",
+            "When the sun came up"
+          ],
+          "answer": "When the line had been checked",
+          "explanation": "“Only when the line is checked will we be able to move.”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The writer thinks the delay was the worst part of the trip.",
+          "answer": "false",
+          "explanation": "“those five hours turned out to be the best part of the whole trip”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The train company gave the passengers free food.",
+          "answer": "not_given",
+          "explanation": "Strangers shared biscuits; nothing is said about the company."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the inverted sentence with its neutral meaning.",
+          "pairs": {
+            "Never had I seen a sky so full of stars.": "I had never seen a sky so full of stars.",
+            "Rarely do people talk to each other like that.": "People rarely talk to each other like that.",
+            "No sooner had the lights come back on than…": "As soon as the lights came back on…"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "listening",
+      "cefr": "C1",
+      "sequence": 11,
+      "topic": "Work",
+      "title": "Interview: a video game sound designer",
+      "description": "Maya explains what her job really involves — and what people get wrong about it.",
+      "material": {
+        "type": "interview",
+        "segments": [
+          {
+            "speaker": "Host",
+            "text": "Maya, you design sound for video games. What do people usually get wrong about your job?"
+          },
+          {
+            "speaker": "Maya",
+            "text": "What most people imagine is someone composing music all day. In fact, it's the small sounds that take up most of my time: footsteps, doors, wind, the click of a menu."
+          },
+          {
+            "speaker": "Host",
+            "text": "Where do those sounds come from?"
+          },
+          {
+            "speaker": "Maya",
+            "text": "Very often, from my kitchen. It was a bag of frozen peas that gave us the sound of a character walking on snow in our last game. All I did was squeeze it slowly next to a microphone."
+          },
+          {
+            "speaker": "Host",
+            "text": "That's brilliant. What's the hardest part?"
+          },
+          {
+            "speaker": "Maya",
+            "text": "The thing that's hardest is knowing when to stop. You can always add another layer, another detail. But what players actually notice is when something sounds wrong, not when it sounds perfect."
+          },
+          {
+            "speaker": "Host",
+            "text": "How did you get into the industry?"
+          },
+          {
+            "speaker": "Maya",
+            "text": "It was a school project that started it. We had to make a short film, and nobody wanted to do the sound, so I volunteered. What surprised me was how much the sound changed the mood of the whole film. After that, all I wanted to do was record things."
+          },
+          {
+            "speaker": "Host",
+            "text": "And what do you love most about the job?"
+          },
+          {
+            "speaker": "Maya",
+            "text": "It's the moment when someone plays the game for the first time and jumps out of their chair. That's when I know the sound is doing its job."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "What takes up most of Maya's time?",
+          "options": [
+            "Composing music",
+            "Small everyday sounds",
+            "Recording actors' voices"
+          ],
+          "answer": "Small everyday sounds",
+          "explanation": "“it's the small sounds that take up most of my time”"
+        },
+        {
+          "type": "fill",
+          "prompt": "It was a bag of frozen ___ that gave us the sound of a character walking on snow.",
+          "answer": "peas",
+          "explanation": "“It was a bag of frozen peas that gave us the sound…”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Maya recorded the snow sound outside in winter.",
+          "answer": "false",
+          "explanation": "She squeezed a bag of frozen peas next to a microphone — “from my kitchen”."
+        },
+        {
+          "type": "choice",
+          "prompt": "According to Maya, what do players actually notice?",
+          "options": [
+            "When a sound is perfect",
+            "When a sound is wrong",
+            "When the music is loud"
+          ],
+          "answer": "When a sound is wrong",
+          "explanation": "“what players actually notice is when something sounds wrong, not when it sounds perfect”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "Maya has won awards for her work.",
+          "answer": "not_given",
+          "explanation": "Awards are not mentioned."
+        },
+        {
+          "type": "listen",
+          "text": "That's when I know the sound is doing its job",
+          "explanation": "“That's when I know the sound is doing its job.”"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "skill": "reading",
+      "cefr": "C2",
+      "sequence": 10,
+      "topic": "Culture",
+      "title": "A proposal to the city council",
+      "description": "A formal letter from a youth group asking the council to keep the city library open later.",
+      "material": {
+        "type": "letter",
+        "body": "Dear Members of the City Council,\n\nWe are writing on behalf of the Riverside Youth Forum to propose a change to the opening hours of the Central Library, which currently closes at six o'clock on weekdays.\n\nFor many young people in our area, the library is the only quiet place where they can study. A survey we carried out among 300 students found that almost two thirds of them do not have a desk at home, and that most are unable to visit the library before five because of school and part-time jobs. It is therefore essential that the library remain open until at least nine o'clock from Monday to Thursday.\n\nWe recognise that longer hours would involve additional costs. We would therefore suggest that the council consider a pilot scheme of six months, during which the number of visitors be recorded each evening. Should the scheme prove unsuccessful, the original hours could be restored. We also propose that volunteers from the Forum be trained to support library staff in the evenings, which would reduce the cost considerably.\n\nA similar scheme in a neighbouring city offers an encouraging example. There, evening opening was introduced two years ago, and the number of young visitors after six o’clock has since tripled. Teachers have also reported that students who use the library in the evenings tend to hand in their homework more regularly. We would be glad to share the details of that scheme with the council.\n\nIt is our firm belief that access to a safe place to learn should not depend on one's family circumstances. We respectfully request that this proposal be discussed at the next council meeting, and we would welcome the opportunity to present our survey in person.\n\nYours faithfully,\nThe Riverside Youth Forum"
+      },
+      "exercises": [
+        {
+          "type": "choice",
+          "prompt": "What is the main purpose of the letter?",
+          "options": [
+            "To complain about library staff",
+            "To ask for longer opening hours",
+            "To ask for a new library building"
+          ],
+          "answer": "To ask for longer opening hours",
+          "explanation": "“to propose a change to the opening hours of the Central Library”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "According to the survey, most students cannot visit the library before five o'clock.",
+          "answer": "true",
+          "explanation": "“most are unable to visit the library before five”"
+        },
+        {
+          "type": "fill",
+          "prompt": "It is therefore essential that the library ___ open until at least nine o'clock.",
+          "answer": "remain",
+          "explanation": "Subjunctive after “it is essential that”: “that the library remain open”."
+        },
+        {
+          "type": "choice",
+          "prompt": "How does the Forum suggest reducing the cost?",
+          "options": [
+            "By charging students a fee",
+            "By training volunteers to support the staff",
+            "By closing the library at weekends"
+          ],
+          "answer": "By training volunteers to support the staff",
+          "explanation": "“volunteers from the Forum be trained to support library staff in the evenings, which would reduce the cost”"
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The Forum wants the new hours to be permanent from the start.",
+          "answer": "false",
+          "explanation": "They suggest “a pilot scheme of six months”."
+        },
+        {
+          "type": "truefalse",
+          "prompt": "The council has already agreed to the proposal.",
+          "answer": "not_given",
+          "explanation": "The letter asks for the proposal to be discussed; there is no answer yet."
+        },
+        {
+          "type": "match",
+          "prompt": "Match the formal phrase with its meaning.",
+          "pairs": {
+            "on behalf of": "representing a group",
+            "Should the scheme prove unsuccessful": "if the trial does not work",
+            "We respectfully request": "we politely ask"
+          }
+        }
+      ]
+    }
+  ]
+}
