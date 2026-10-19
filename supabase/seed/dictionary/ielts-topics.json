@@ -1,0 +1,1082 @@
+{
+  "package": "ielts-topics",
+  "kind": "words",
+  "description": "IELTS: topic vocabulary for Travel, Culture, Work, Global Issues and Media (hand-written).",
+  "words": [
+    {
+      "word": "itinerary",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/aɪˈtɪnəreri/",
+      "definition": "A detailed plan of a journey, with places and times.",
+      "examples": [
+        "Our itinerary includes three days in Rome."
+      ],
+      "translations": {
+        "uk": "маршрут",
+        "de": "Reiseplan",
+        "fr": "itinéraire",
+        "es": "itinerario",
+        "it": "itinerario",
+        "pt": "itinerário",
+        "pl": "plan podróży",
+        "ru": "маршрут",
+        "zh": "行程",
+        "ja": "旅程表"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "excursion",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ɪkˈskɝːʒən/",
+      "definition": "A short trip, usually made by a group for pleasure.",
+      "examples": [
+        "We went on an excursion to the mountains."
+      ],
+      "translations": {
+        "uk": "екскурсія",
+        "de": "Ausflug",
+        "fr": "excursion",
+        "es": "excursión",
+        "it": "escursione",
+        "pt": "excursão",
+        "pl": "wycieczka",
+        "ru": "экскурсия",
+        "zh": "远足",
+        "ja": "小旅行"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "off the beaten track",
+      "part_of_speech": "idiom",
+      "cefr": "C1",
+      "topic": "Travel",
+      "ipa": "/ɔːf ðə ˈbiːtən træk/",
+      "definition": "In a quiet place that few tourists visit.",
+      "examples": [
+        "We stayed in a village off the beaten track."
+      ],
+      "translations": {
+        "uk": "далеко від туристичних стежок",
+        "de": "abseits der ausgetretenen Pfade",
+        "fr": "hors des sentiers battus",
+        "es": "fuera de las rutas turísticas",
+        "it": "fuori dai sentieri battuti",
+        "pt": "fora do circuito turístico",
+        "pl": "z dala od utartych szlaków",
+        "ru": "вдали от туристических маршрутов",
+        "zh": "人迹罕至的地方",
+        "ja": "人があまり行かない場所に"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "ecotourism",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Travel",
+      "ipa": "/ˌiːkoʊˈtʊrɪzəm/",
+      "definition": "Travel that tries to protect nature and help local people.",
+      "examples": [
+        "Ecotourism brings money to small villages without harming the forest."
+      ],
+      "translations": {
+        "uk": "екотуризм",
+        "de": "Ökotourismus",
+        "fr": "écotourisme",
+        "es": "ecoturismo",
+        "it": "ecoturismo",
+        "pt": "ecoturismo",
+        "pl": "ekoturystyka",
+        "ru": "экотуризм",
+        "zh": "生态旅游",
+        "ja": "エコツーリズム"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "mass tourism",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Travel",
+      "ipa": "/mæs ˈtʊrɪzəm/",
+      "definition": "Travel by very large numbers of people to the same places.",
+      "examples": [
+        "Mass tourism has changed the old town completely."
+      ],
+      "translations": {
+        "uk": "масовий туризм",
+        "de": "Massentourismus",
+        "fr": "tourisme de masse",
+        "es": "turismo de masas",
+        "it": "turismo di massa",
+        "pt": "turismo de massa",
+        "pl": "turystyka masowa",
+        "ru": "массовый туризм",
+        "zh": "大众旅游",
+        "ja": "マスツーリズム"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "picturesque",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˌpɪktʃəˈresk/",
+      "definition": "Very pretty, especially in an old-fashioned way.",
+      "examples": [
+        "We walked through a picturesque fishing village."
+      ],
+      "translations": {
+        "uk": "мальовничий",
+        "de": "malerisch",
+        "fr": "pittoresque",
+        "es": "pintoresco",
+        "it": "pittoresco",
+        "pt": "pitoresco",
+        "pl": "malowniczy",
+        "ru": "живописный",
+        "zh": "风景如画的",
+        "ja": "絵のように美しい"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "breathtaking",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˈbreθteɪkɪŋ/",
+      "definition": "Extremely beautiful or surprising.",
+      "examples": [
+        "The view from the top was breathtaking."
+      ],
+      "translations": {
+        "uk": "захопливий",
+        "de": "atemberaubend",
+        "fr": "à couper le souffle",
+        "es": "impresionante",
+        "it": "mozzafiato",
+        "pt": "de tirar o fôlego",
+        "pl": "zapierający dech",
+        "ru": "захватывающий дух",
+        "zh": "令人惊叹的",
+        "ja": "息をのむような"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "layover",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˈleɪoʊvər/",
+      "definition": "A short stop between two flights.",
+      "examples": [
+        "We had a four-hour layover in Istanbul."
+      ],
+      "translations": {
+        "uk": "пересадка",
+        "de": "Zwischenstopp",
+        "fr": "escale",
+        "es": "escala",
+        "it": "scalo",
+        "pt": "escala",
+        "pl": "przesiadka",
+        "ru": "пересадка",
+        "zh": "中途停留",
+        "ja": "乗り継ぎ"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "hospitality",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˌhɑːspɪˈtæləti/",
+      "definition": "Friendly and generous treatment of guests.",
+      "examples": [
+        "We were amazed by the hospitality of the local people."
+      ],
+      "translations": {
+        "uk": "гостинність",
+        "de": "Gastfreundschaft",
+        "fr": "hospitalité",
+        "es": "hospitalidad",
+        "it": "ospitalità",
+        "pt": "hospitalidade",
+        "pl": "gościnność",
+        "ru": "гостеприимство",
+        "zh": "好客",
+        "ja": "おもてなし"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "local cuisine",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˈloʊkəl kwɪˈziːn/",
+      "definition": "The typical food of a particular place.",
+      "examples": [
+        "Trying the local cuisine is the best part of travelling."
+      ],
+      "translations": {
+        "uk": "місцева кухня",
+        "de": "lokale Küche",
+        "fr": "cuisine locale",
+        "es": "cocina local",
+        "it": "cucina locale",
+        "pt": "culinária local",
+        "pl": "kuchnia lokalna",
+        "ru": "местная кухня",
+        "zh": "当地美食",
+        "ja": "郷土料理"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "backpacker",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˈbækpækər/",
+      "definition": "A person who travels cheaply, carrying their things in a backpack.",
+      "examples": [
+        "The hostel was full of backpackers from all over the world."
+      ],
+      "translations": {
+        "uk": "бекпекер",
+        "de": "Rucksacktourist",
+        "fr": "routard",
+        "es": "mochilero",
+        "it": "viaggiatore zaino in spalla",
+        "pt": "mochileiro",
+        "pl": "backpacker",
+        "ru": "бэкпекер",
+        "zh": "背包客",
+        "ja": "バックパッカー"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "overcrowded",
+      "part_of_speech": "adjective",
+      "cefr": "B2",
+      "topic": "Travel",
+      "ipa": "/ˌoʊvərˈkraʊdɪd/",
+      "definition": "With too many people in it.",
+      "examples": [
+        "The beaches are overcrowded in August."
+      ],
+      "translations": {
+        "uk": "переповнений",
+        "de": "überfüllt",
+        "fr": "surpeuplé",
+        "es": "abarrotado",
+        "it": "sovraffollato",
+        "pt": "superlotado",
+        "pl": "przepełniony",
+        "ru": "переполненный",
+        "zh": "过度拥挤的",
+        "ja": "混雑した"
+      },
+      "word_type": "word",
+      "ielts_category": "Travel"
+    },
+    {
+      "word": "cultural heritage",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/ˈkʌltʃərəl ˈherɪtɪdʒ/",
+      "definition": "The traditions, buildings and art that a society has from its past.",
+      "examples": [
+        "Old buildings are an important part of our cultural heritage."
+      ],
+      "translations": {
+        "uk": "культурна спадщина",
+        "de": "kulturelles Erbe",
+        "fr": "patrimoine culturel",
+        "es": "patrimonio cultural",
+        "it": "patrimonio culturale",
+        "pt": "patrimônio cultural",
+        "pl": "dziedzictwo kulturowe",
+        "ru": "культурное наследие",
+        "zh": "文化遗产",
+        "ja": "文化遺産"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "diversity",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Culture",
+      "ipa": "/daɪˈvɝːsəti/",
+      "definition": "A range of different people or things.",
+      "examples": [
+        "London is famous for its cultural diversity."
+      ],
+      "translations": {
+        "uk": "різноманітність",
+        "de": "Vielfalt",
+        "fr": "diversité",
+        "es": "diversidad",
+        "it": "diversità",
+        "pt": "diversidade",
+        "pl": "różnorodność",
+        "ru": "разнообразие",
+        "zh": "多样性",
+        "ja": "多様性"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "custom",
+      "part_of_speech": "noun",
+      "cefr": "B1",
+      "topic": "Culture",
+      "ipa": "/ˈkʌstəm/",
+      "definition": "A traditional way of doing something in a society.",
+      "examples": [
+        "It is a local custom to give flowers on this day."
+      ],
+      "translations": {
+        "uk": "звичай",
+        "de": "Brauch",
+        "fr": "coutume",
+        "es": "costumbre",
+        "it": "usanza",
+        "pt": "costume",
+        "pl": "zwyczaj",
+        "ru": "обычай",
+        "zh": "习俗",
+        "ja": "習慣"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "identity",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Culture",
+      "ipa": "/aɪˈdentəti/",
+      "definition": "Who a person or group is and what makes them different.",
+      "examples": [
+        "Language is an important part of national identity."
+      ],
+      "translations": {
+        "uk": "ідентичність",
+        "de": "Identität",
+        "fr": "identité",
+        "es": "identidad",
+        "it": "identità",
+        "pt": "identidade",
+        "pl": "tożsamość",
+        "ru": "идентичность",
+        "zh": "身份",
+        "ja": "アイデンティティ"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "indigenous",
+      "part_of_speech": "adjective",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/ɪnˈdɪdʒənəs/",
+      "definition": "Living in a place from the earliest times.",
+      "examples": [
+        "The museum shows the art of indigenous peoples."
+      ],
+      "translations": {
+        "uk": "корінний",
+        "de": "indigen",
+        "fr": "autochtone",
+        "es": "indígena",
+        "it": "indigeno",
+        "pt": "indígena",
+        "pl": "rdzenny",
+        "ru": "коренной",
+        "zh": "土著的",
+        "ja": "先住の"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "folklore",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/ˈfoʊklɔːr/",
+      "definition": "The traditional stories and beliefs of a group of people.",
+      "examples": [
+        "Dragons appear in the folklore of many countries."
+      ],
+      "translations": {
+        "uk": "фольклор",
+        "de": "Folklore",
+        "fr": "folklore",
+        "es": "folclore",
+        "it": "folclore",
+        "pt": "folclore",
+        "pl": "folklor",
+        "ru": "фольклор",
+        "zh": "民间传说",
+        "ja": "民間伝承"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "etiquette",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/ˈetɪket/",
+      "definition": "The rules of polite behaviour in a society or group.",
+      "examples": [
+        "Table etiquette is very different in Japan."
+      ],
+      "translations": {
+        "uk": "етикет",
+        "de": "Etikette",
+        "fr": "étiquette",
+        "es": "etiqueta",
+        "it": "galateo",
+        "pt": "etiqueta",
+        "pl": "etykieta",
+        "ru": "этикет",
+        "zh": "礼仪",
+        "ja": "エチケット"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "taboo",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/təˈbuː/",
+      "definition": "A subject or action that people avoid because it is not socially acceptable.",
+      "examples": [
+        "In some cultures, talking about money is a taboo."
+      ],
+      "translations": {
+        "uk": "табу",
+        "de": "Tabu",
+        "fr": "tabou",
+        "es": "tabú",
+        "it": "tabù",
+        "pt": "tabu",
+        "pl": "tabu",
+        "ru": "табу",
+        "zh": "禁忌",
+        "ja": "タブー"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "ritual",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/ˈrɪtʃuəl/",
+      "definition": "A set of actions that are always done in the same way, often for a ceremony.",
+      "examples": [
+        "Drinking tea in the afternoon is a daily ritual for my grandma."
+      ],
+      "translations": {
+        "uk": "ритуал",
+        "de": "Ritual",
+        "fr": "rituel",
+        "es": "ritual",
+        "it": "rituale",
+        "pt": "ritual",
+        "pl": "rytuał",
+        "ru": "ритуал",
+        "zh": "仪式",
+        "ja": "儀式"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "cultural exchange",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Culture",
+      "ipa": "/ˈkʌltʃərəl ɪksˈtʃeɪndʒ/",
+      "definition": "When people from different countries share ideas and traditions.",
+      "examples": [
+        "The school has a cultural exchange programme with Spain."
+      ],
+      "translations": {
+        "uk": "культурний обмін",
+        "de": "kultureller Austausch",
+        "fr": "échange culturel",
+        "es": "intercambio cultural",
+        "it": "scambio culturale",
+        "pt": "intercâmbio cultural",
+        "pl": "wymiana kulturalna",
+        "ru": "культурный обмен",
+        "zh": "文化交流",
+        "ja": "文化交流"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "preserve",
+      "part_of_speech": "verb",
+      "cefr": "B2",
+      "topic": "Culture",
+      "ipa": "/prɪˈzɝːv/",
+      "definition": "To keep something in its original state or protect it from harm.",
+      "examples": [
+        "The town works hard to preserve its old buildings."
+      ],
+      "translations": {
+        "uk": "зберігати",
+        "de": "bewahren",
+        "fr": "préserver",
+        "es": "conservar",
+        "it": "preservare",
+        "pt": "preservar",
+        "pl": "zachowywać",
+        "ru": "сохранять",
+        "zh": "保护",
+        "ja": "保存する"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "artifact",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Culture",
+      "ipa": "/ˈɑːrtɪfækt/",
+      "definition": "An object made by people, especially one of historical interest.",
+      "examples": [
+        "The museum has thousands of ancient artifacts."
+      ],
+      "translations": {
+        "uk": "артефакт",
+        "de": "Artefakt",
+        "fr": "objet ancien",
+        "es": "artefacto",
+        "it": "manufatto",
+        "pt": "artefato",
+        "pl": "artefakt",
+        "ru": "артефакт",
+        "zh": "文物",
+        "ja": "工芸品"
+      },
+      "word_type": "word",
+      "ielts_category": "Culture"
+    },
+    {
+      "word": "workload",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˈwɝːkloʊd/",
+      "definition": "The amount of work a person has to do.",
+      "examples": [
+        "Teachers complain about their heavy workload."
+      ],
+      "translations": {
+        "uk": "навантаження",
+        "de": "Arbeitsbelastung",
+        "fr": "charge de travail",
+        "es": "carga de trabajo",
+        "it": "carico di lavoro",
+        "pt": "carga de trabalho",
+        "pl": "obciążenie pracą",
+        "ru": "рабочая нагрузка",
+        "zh": "工作量",
+        "ja": "仕事量"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "job satisfaction",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/dʒɑːb ˌsætɪsˈfækʃən/",
+      "definition": "The feeling of enjoying your job.",
+      "examples": [
+        "For many people, job satisfaction is more important than money."
+      ],
+      "translations": {
+        "uk": "задоволення від роботи",
+        "de": "Arbeitszufriedenheit",
+        "fr": "satisfaction professionnelle",
+        "es": "satisfacción laboral",
+        "it": "soddisfazione lavorativa",
+        "pt": "satisfação no trabalho",
+        "pl": "satysfakcja z pracy",
+        "ru": "удовлетворённость работой",
+        "zh": "工作满意度",
+        "ja": "仕事への満足感"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "freelancer",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˈfriːlænsər/",
+      "definition": "A person who works for different companies rather than for one employer.",
+      "examples": [
+        "As a freelancer, she chooses her own projects."
+      ],
+      "translations": {
+        "uk": "фрилансер",
+        "de": "Freiberufler",
+        "fr": "indépendant",
+        "es": "autónomo",
+        "it": "libero professionista",
+        "pt": "freelancer",
+        "pl": "freelancer",
+        "ru": "фрилансер",
+        "zh": "自由职业者",
+        "ja": "フリーランサー"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "burnout",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Work",
+      "ipa": "/ˈbɝːnaʊt/",
+      "definition": "Extreme tiredness caused by working too hard for too long.",
+      "examples": [
+        "Long hours without breaks can lead to burnout."
+      ],
+      "translations": {
+        "uk": "вигорання",
+        "de": "Burnout",
+        "fr": "épuisement professionnel",
+        "es": "agotamiento",
+        "it": "esaurimento",
+        "pt": "esgotamento",
+        "pl": "wypalenie zawodowe",
+        "ru": "выгорание",
+        "zh": "职业倦怠",
+        "ja": "燃え尽き症候群"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "internship",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˈɪntɝːnʃɪp/",
+      "definition": "A period of work, often unpaid, to get experience.",
+      "examples": [
+        "She did an internship at a design company."
+      ],
+      "translations": {
+        "uk": "стажування",
+        "de": "Praktikum",
+        "fr": "stage",
+        "es": "prácticas",
+        "it": "tirocinio",
+        "pt": "estágio",
+        "pl": "staż",
+        "ru": "стажировка",
+        "zh": "实习",
+        "ja": "インターンシップ"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "career path",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/kəˈrɪr pæθ/",
+      "definition": "The jobs a person does as they develop in their working life.",
+      "examples": [
+        "Choosing a career path at seventeen is not easy."
+      ],
+      "translations": {
+        "uk": "кар'єрний шлях",
+        "de": "Karriereweg",
+        "fr": "parcours professionnel",
+        "es": "trayectoria profesional",
+        "it": "percorso professionale",
+        "pt": "trajetória profissional",
+        "pl": "ścieżka kariery",
+        "ru": "карьерный путь",
+        "zh": "职业道路",
+        "ja": "キャリアパス"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "workforce",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Work",
+      "ipa": "/ˈwɝːkfɔːrs/",
+      "definition": "All the people who work in a company, industry or country.",
+      "examples": [
+        "Women make up half of the workforce."
+      ],
+      "translations": {
+        "uk": "робоча сила",
+        "de": "Belegschaft",
+        "fr": "main-d'œuvre",
+        "es": "mano de obra",
+        "it": "forza lavoro",
+        "pt": "força de trabalho",
+        "pl": "siła robocza",
+        "ru": "рабочая сила",
+        "zh": "劳动力",
+        "ja": "労働力"
+      },
+      "word_type": "word",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "flexible hours",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Work",
+      "ipa": "/ˈfleksəbəl aʊərz/",
+      "definition": "A system in which workers can choose when they start and finish.",
+      "examples": [
+        "The company offers flexible hours to parents."
+      ],
+      "translations": {
+        "uk": "гнучкий графік",
+        "de": "flexible Arbeitszeiten",
+        "fr": "horaires flexibles",
+        "es": "horario flexible",
+        "it": "orario flessibile",
+        "pt": "horário flexível",
+        "pl": "elastyczne godziny pracy",
+        "ru": "гибкий график",
+        "zh": "弹性工作时间",
+        "ja": "フレックスタイム"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Work"
+    },
+    {
+      "word": "human rights",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/ˈhjuːmən raɪts/",
+      "definition": "The basic rights that every person should have.",
+      "examples": [
+        "The organisation protects human rights around the world."
+      ],
+      "translations": {
+        "uk": "права людини",
+        "de": "Menschenrechte",
+        "fr": "droits de l'homme",
+        "es": "derechos humanos",
+        "it": "diritti umani",
+        "pt": "direitos humanos",
+        "pl": "prawa człowieka",
+        "ru": "права человека",
+        "zh": "人权",
+        "ja": "人権"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "humanitarian aid",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/hjuːˌmænɪˈteriən eɪd/",
+      "definition": "Help such as food and medicine given to people in a crisis.",
+      "examples": [
+        "Humanitarian aid arrived after the earthquake."
+      ],
+      "translations": {
+        "uk": "гуманітарна допомога",
+        "de": "humanitäre Hilfe",
+        "fr": "aide humanitaire",
+        "es": "ayuda humanitaria",
+        "it": "aiuti umanitari",
+        "pt": "ajuda humanitária",
+        "pl": "pomoc humanitarna",
+        "ru": "гуманитарная помощь",
+        "zh": "人道主义援助",
+        "ja": "人道支援"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "famine",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Society",
+      "ipa": "/ˈfæmɪn/",
+      "definition": "A situation in which many people do not have enough food for a long time.",
+      "examples": [
+        "The drought caused a terrible famine."
+      ],
+      "translations": {
+        "uk": "голод",
+        "de": "Hungersnot",
+        "fr": "famine",
+        "es": "hambruna",
+        "it": "carestia",
+        "pt": "fome",
+        "pl": "głód",
+        "ru": "голод",
+        "zh": "饥荒",
+        "ja": "飢饉"
+      },
+      "word_type": "word",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "access to education",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Education",
+      "ipa": "/ˈækses tuː ˌedʒuˈkeɪʃən/",
+      "definition": "The chance to go to school and learn.",
+      "examples": [
+        "Access to education is still limited for girls in some regions."
+      ],
+      "translations": {
+        "uk": "доступ до освіти",
+        "de": "Zugang zu Bildung",
+        "fr": "accès à l'éducation",
+        "es": "acceso a la educación",
+        "it": "accesso all'istruzione",
+        "pt": "acesso à educação",
+        "pl": "dostęp do edukacji",
+        "ru": "доступ к образованию",
+        "zh": "受教育的机会",
+        "ja": "教育を受ける機会"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "developing country",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Society",
+      "ipa": "/dɪˈveləpɪŋ ˈkʌntri/",
+      "definition": "A poorer country that is trying to build its industry and economy.",
+      "examples": [
+        "Many developing countries depend on farming."
+      ],
+      "translations": {
+        "uk": "країна, що розвивається",
+        "de": "Entwicklungsland",
+        "fr": "pays en développement",
+        "es": "país en desarrollo",
+        "it": "paese in via di sviluppo",
+        "pt": "país em desenvolvimento",
+        "pl": "kraj rozwijający się",
+        "ru": "развивающаяся страна",
+        "zh": "发展中国家",
+        "ja": "発展途上国"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Global Issues"
+    },
+    {
+      "word": "mainstream media",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Media",
+      "ipa": "/ˈmeɪnstriːm ˈmiːdiə/",
+      "definition": "The large, well-known newspapers, TV and radio companies.",
+      "examples": [
+        "Young people trust the mainstream media less than before."
+      ],
+      "translations": {
+        "uk": "основні ЗМІ",
+        "de": "Mainstream-Medien",
+        "fr": "médias traditionnels",
+        "es": "medios de comunicación tradicionales",
+        "it": "media tradizionali",
+        "pt": "grande mídia",
+        "pl": "główne media",
+        "ru": "основные СМИ",
+        "zh": "主流媒体",
+        "ja": "主流メディア"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "misinformation",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Media",
+      "ipa": "/ˌmɪsɪnfərˈmeɪʃən/",
+      "definition": "Wrong information, especially when it spreads quickly.",
+      "examples": [
+        "Misinformation spreads faster than the truth online."
+      ],
+      "translations": {
+        "uk": "дезінформація",
+        "de": "Fehlinformation",
+        "fr": "désinformation",
+        "es": "información errónea",
+        "it": "disinformazione",
+        "pt": "desinformação",
+        "pl": "dezinformacja",
+        "ru": "дезинформация",
+        "zh": "错误信息",
+        "ja": "誤情報"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "media coverage",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Media",
+      "ipa": "/ˈmiːdiə ˈkʌvərɪdʒ/",
+      "definition": "The amount of attention a story gets in newspapers, TV and online.",
+      "examples": [
+        "The protest received a lot of media coverage."
+      ],
+      "translations": {
+        "uk": "висвітлення в ЗМІ",
+        "de": "Medienberichterstattung",
+        "fr": "couverture médiatique",
+        "es": "cobertura mediática",
+        "it": "copertura mediatica",
+        "pt": "cobertura da mídia",
+        "pl": "relacje medialne",
+        "ru": "освещение в СМИ",
+        "zh": "媒体报道",
+        "ja": "メディア報道"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "tabloid",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Media",
+      "ipa": "/ˈtæblɔɪd/",
+      "definition": "A newspaper with small pages, short stories and lots of celebrity news.",
+      "examples": [
+        "The tabloids wrote about the singer's wedding for weeks."
+      ],
+      "translations": {
+        "uk": "таблоїд",
+        "de": "Boulevardzeitung",
+        "fr": "tabloïd",
+        "es": "prensa amarilla",
+        "it": "tabloid",
+        "pt": "tabloide",
+        "pl": "tabloid",
+        "ru": "таблоид",
+        "zh": "小报",
+        "ja": "タブロイド紙"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "press freedom",
+      "part_of_speech": "noun",
+      "cefr": "C1",
+      "topic": "Media",
+      "ipa": "/pres ˈfriːdəm/",
+      "definition": "The right of journalists to report news without control by the government.",
+      "examples": [
+        "Press freedom is essential in a democracy."
+      ],
+      "translations": {
+        "uk": "свобода преси",
+        "de": "Pressefreiheit",
+        "fr": "liberté de la presse",
+        "es": "libertad de prensa",
+        "it": "libertà di stampa",
+        "pt": "liberdade de imprensa",
+        "pl": "wolność prasy",
+        "ru": "свобода прессы",
+        "zh": "新闻自由",
+        "ja": "報道の自由"
+      },
+      "word_type": "collocation",
+      "ielts_category": "Media"
+    },
+    {
+      "word": "clickbait",
+      "part_of_speech": "noun",
+      "cefr": "B2",
+      "topic": "Media",
+      "ipa": "/ˈklɪkbeɪt/",
+      "definition": "Online content with a shocking title that makes people click on it.",
+      "examples": [
+        "The headline was just clickbait — the article said nothing new."
+      ],
+      "translations": {
+        "uk": "клікбейт",
+        "de": "Clickbait",
+        "fr": "piège à clics",
+        "es": "clickbait",
+        "it": "clickbait",
+        "pt": "clickbait",
+        "pl": "clickbait",
+        "ru": "кликбейт",
+        "zh": "标题党",
+        "ja": "釣り記事"
+      },
+      "word_type": "word",
+      "ielts_category": "Media"
+    }
+  ]
+}
